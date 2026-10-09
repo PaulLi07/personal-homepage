@@ -1,0 +1,21 @@
+# Local system and editor files
+.DS_Store
+._*
+*.swp
+*.swo
+*.log
+
+# Dependencies, caches, and local artifacts
+node_modules/
+.cache/
+__pycache__/
+*.py[cod]
+/artifacts/
+/dist/
+/build/
+*.zip
+
+# Local configuration
+.env
+.env.*
+!.env.example

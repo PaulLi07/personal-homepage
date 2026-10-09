@@ -2,6 +2,8 @@
 
 This folder, `personal-homepage` at the workspace root, is the canonical source for the user's personal website. Continue maintaining these files when the user requests website changes. `outputs/personal-homepage` is a compatibility symlink to this folder; other extracted folders and older HTML files under `outputs` are historical copies.
 
+Read `README.md`, `docs/ARCHITECTURE.md`, and `docs/WORKFLOW.md` for project entry points, extension constraints, and the basic work protocol.
+
 ## Confirmed profile
 
 - Name: Yuhong Li
@@ -41,10 +43,19 @@ Keep HTML, styles, scripts, and images separate. Preserve relative asset URLs so
 
 ## Verification and delivery
 
-Check the affected JavaScript files with `node --check`. Verify local resource paths when adding assets. For layout or interaction changes, inspect the affected desktop and mobile views in the available browser and check relevant dialog/navigation behavior. Keep keyboard access and reduced-motion behavior intact.
+Run `npm run check` and `git diff --check` before committing. For layout or interaction changes, inspect the affected desktop and mobile views in the available browser and check relevant dialog/navigation behavior. Keep keyboard access and reduced-motion behavior intact. The maintenance commands do not introduce browser runtime dependencies or a build step.
+
+## Git work protocol
+
+- Repository root is this folder, not the surrounding multi-project workspace. `origin` is the HTTPS repository above; local `main` tracks `origin/main`.
+- Start by checking Git status. Fetch before synchronization or publication; inspect existing uncommitted user work and remote differences before editing or integrating changes.
+- Preserve the remote's existing commit history. Use fast-forward-only pulls; do not discard user changes, hard-reset working files, or force-push shared history as a routine workflow.
+- Small content, fix, or documentation tasks may be committed locally on `main`. Use a task branch for larger features or design changes; validate before integrating into local `main`.
+- Local commits are part of authorized maintenance. Review and stage only the task's files, using a short `feat:`, `fix:`, `style:`, `docs:`, or `chore:` subject. Leave unrelated user changes intact.
+- Update the framework/workflow documentation when the relevant structure changes; record significant changes in `CHANGELOG.md`.
 
 The user maintains the public website by manually uploading local updates to GitHub. Ordinary maintenance requests authorize local changes; publish or push remotely only when the user asks for that action. Do not schedule background maintenance from this standing request.
 
-The current upload guide is in `README.md`. When requested or when delivering an updated source package, regenerate `outputs/personal-homepage-source.zip` from this canonical folder. Place `index.html` at `personal-homepage/index.html` inside the archive. Exclude `.DS_Store`, Git metadata, caches, and previous archives. Tell the user to upload the contents of this folder to the repository root.
+The upload guide is in `docs/WORKFLOW.md`. Use `npm run package` when delivering an updated source package; it generates `outputs/personal-homepage-source.zip` outside this repository, with `personal-homepage/index.html` inside the archive. Exclude system files, Git metadata, caches, and previous archives. Tell the user to upload the contents of this folder to the repository root. A publish/push request overrides the ordinary local-only delivery mode; execute the authorized publication without asking for redundant permission.
 
 Record substantial new user preferences here when they change the ongoing maintenance requirements.
