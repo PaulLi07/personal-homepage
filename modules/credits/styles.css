@@ -1,0 +1,9 @@
+/* 素材署名：独立来源页面。 */
+.credits-page { max-width: 860px; margin: 0 auto; padding: 60px var(--gutter); }
+.credits-page h1 { font-size: 38px; margin: 35px 0 20px; }
+.credits-page h2 { font-size: 23px; margin: 35px 0 18px; }
+.credits-page p { color: var(--muted); margin-bottom: 14px; }
+.credits-list { padding: 0; list-style: none; }
+.credits-list li { padding: 17px 0; border-bottom: 1px solid var(--line); }
+.credits-list a { color: var(--accent); }
+.credits-list small { display: block; margin-top: 5px; color: var(--muted); }

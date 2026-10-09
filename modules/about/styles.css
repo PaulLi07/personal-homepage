@@ -1,0 +1,34 @@
+/* 简介：个人资料与图片分栏。 */
+.about { position: relative; min-height: 100svh; padding: 150px var(--gutter) 62px; background: linear-gradient(180deg,#192229e8,var(--background) 95%); }
+.mainAbout { display: grid; grid-template-columns: minmax(0, 65fr) minmax(0, 32fr); gap: 3%; }
+.aboutimg { height: clamp(390px, 63vh, 720px); position: relative; overflow: hidden; }
+.aboutimg img { object-position: center 56%; }
+.image-caption { position: absolute; bottom: 17px; left: 20px; padding: 5px 9px; background: #11191fba; color: #ffffffd1; font-size: 9px; letter-spacing: 1.4px; text-transform: uppercase; }
+.abouttext { display: flex; flex-direction: column; justify-content: space-between; gap: 28px; }
+.normalIntro { display: grid; gap: 18px; }
+.normalIntro p { font-size: clamp(14px, 1.23vw, 20px); line-height: 1.55; }
+.normalIntro p:first-child { font-size: clamp(19px, 1.55vw, 24px); line-height: 1.55; }
+.profile-facts { margin: 15px 0 0; }
+.profile-facts div { padding-block: 11px; border-bottom: 1px solid var(--line); display: grid; grid-template-columns: 86px 1fr; gap: 18px; }
+.profile-facts dt { font-size: 12px; color: var(--muted); }
+.profile-facts dd { margin: 0; font-size: 13px; overflow-wrap: anywhere; }
+.profile-facts a:hover { color: var(--accent); }
+.at-a-glance h3 { font-size: 22px; margin-bottom: 12px; }
+.at-a-glance p { font-size: 14px; color: var(--muted); }
+
+@media (max-width:1000px) {
+  .mainAbout { grid-template-columns: minmax(0,60fr) minmax(0,37fr); }
+  .aboutimg { height: 550px; }
+  .profile-facts div { grid-template-columns: 68px 1fr; gap: 10px; }
+}
+
+@media (max-width:760px) {
+  .about { padding-block: 150px 50px; }
+  .mainAbout { grid-template-columns: minmax(0,1fr); gap: 30px; }
+  .aboutimg { height: min(63vw,420px); min-height: 270px; }
+  .normalIntro p { font-size: 15px; }
+  .normalIntro p:first-child { font-size: 21px; }
+  .abouttext { gap: 26px; }
+  .profile-facts dd { font-size: 13px; }
+  .at-a-glance h3 { font-size: 21px; }
+}

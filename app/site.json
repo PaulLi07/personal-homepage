@@ -1,0 +1,97 @@
+{
+  "sharedStyles": [
+    "shared/base.css",
+    "shared/navigation/styles.css"
+  ],
+  "afterStyles": [
+    "shared/transitions/styles.css",
+    "shared/details/styles.css"
+  ],
+  "sharedScripts": [
+    "shared/runtime.js",
+    "shared/transitions/transitions.js",
+    "shared/details/dialog.js",
+    "shared/navigation/navigation.js",
+    "shared/reveal.js"
+  ],
+  "sections": [
+    {
+      "id": "home",
+      "folder": "modules/home",
+      "view": "modules/home/section.html",
+      "styles": [
+        "modules/home/styles.css"
+      ],
+      "scripts": [
+        "modules/home/module.js"
+      ],
+      "container": "page1",
+      "preloadImages": [
+        "modules/home/images/hero.jpg"
+      ]
+    },
+    {
+      "id": "about",
+      "folder": "modules/about",
+      "view": "modules/about/section.html",
+      "styles": [
+        "modules/about/styles.css"
+      ],
+      "scripts": [
+        "modules/about/module.js"
+      ],
+      "container": "page1"
+    },
+    {
+      "id": "academic",
+      "folder": "modules/academic",
+      "view": "modules/academic/section.html",
+      "styles": [
+        "modules/academic/styles.css"
+      ],
+      "scripts": [
+        "modules/academic/research/content.js",
+        "modules/academic/publications/content.js",
+        "modules/academic/notes/content.js",
+        "modules/academic/projects/content.js",
+        "modules/academic/module.js"
+      ],
+      "detailGroup": "academic"
+    },
+    {
+      "id": "life",
+      "folder": "modules/life",
+      "view": "modules/life/section.html",
+      "styles": [
+        "modules/life/styles.css"
+      ],
+      "scripts": [
+        "modules/life/moments/content.js",
+        "modules/life/places/content.js",
+        "modules/life/notes/content.js",
+        "modules/life/outside/content.js",
+        "modules/life/module.js"
+      ],
+      "detailGroup": "life"
+    },
+    {
+      "id": "contact",
+      "folder": "modules/contact",
+      "view": "modules/contact/section.html",
+      "styles": [
+        "modules/contact/styles.css"
+      ],
+      "scripts": [
+        "modules/contact/module.js"
+      ]
+    }
+  ],
+  "credits": {
+    "folder": "modules/credits",
+    "view": "modules/credits/page.html",
+    "styles": [
+      "modules/credits/styles.css"
+    ],
+    "scripts": []
+  }
+}

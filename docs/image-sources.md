@@ -1,22 +1,27 @@
 # 图片来源与替换说明
 
-当前图片均为下载的占位图，不是个人照片或 AI 生成图片。下列路径均相对于网站根目录。
+当前图片均为下载的占位图，不是个人照片或 AI 生成图片。各功能维护自己的图片，共 13 个文件（含独立背景副本）；下列路径相对于网站根目录。
 
-| `assets/images/` 中的文件 | 使用位置 | 来源与署名 | 建议替换内容 |
-| --- | --- | --- | --- |
-| `hero-carina.jpg` | 首页背景；学术区背景 | [宇宙悬崖（Cosmic Cliffs）](https://images.nasa.gov/details/carina_nebula)，NASA / ESA / CSA / STScI | 宽幅宇宙图片，约 1920 × 1100 或更大 |
-| `about-placeholder.jpg` | 简介区图片 | [山间湖泊](https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k)，Ivan Rohovchenko / Unsplash | 个人肖像、校园照片或个人拍摄的风景 |
-| `research-placeholder.jpg` | 研究缩略图、预览与详情 | 同一张 Cosmic Cliffs 图片；独立文件，便于单独替换 | 研究相关图片或示意图 |
-| `publications-placeholder.jpg` | 论文成果区；联系区背景 | [仙女座星系（Andromeda Galaxy）](https://images.nasa.gov/details/PIA04921)，NASA/JPL/California Institute of Technology | 论文插图或其他宽幅图片 |
-| `notes-placeholder.jpg` | 笔记缩略图、预览与详情 | [创生之柱（Pillars of Creation）](https://images.nasa.gov/details/GSFC_20171208_Archive_e000842)，NASA / ESA / Hubble Heritage Team (STScI/AURA) | 笔记本、黑板或学习场景图片 |
-| `projects-placeholder.jpg` | 项目缩略图、预览与详情 | [地出（Earthrise）](https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/)，NASA / Bill Anders | 项目插图或截图 |
-| `life-moments.jpg` | 生活片段图库（Moments） | 同一张 Ivan Rohovchenko 照片；独立文件，便于单独替换 | 个人回忆照片 |
-| `life-places.jpg` | 地点图库（Places） | [海岸悬崖](https://unsplash.com/photos/rocky-cliffs-meet-the-oceans-frothy-waves-YRu3lLu4n-k)，Benjamin Chambon / Unsplash | 旅行照片 |
-| `life-notes.jpg` | 日常细节（Little things）；生活区背景 | [Kalen Emsley](https://unsplash.com/@kalenemsley) / Unsplash；准确的图片下载 URL 见下载清单 | 日常细节照片 |
-| `life-outside.jpg` | 户外图库（Outside） | [海岸线](https://unsplash.com/fr/photos/un-plan-deau-pres-dune-falaise-rocheuse-tbTUtOJMs_0)，Tomáš Malík / Unsplash | 个人户外照片 |
+| 模块中的文件 | 使用位置 | 来源与署名 | 建议替换内容 |
+|---|---|---|---|
+| `modules/home/images/hero.jpg` | 首屏背景 | [宇宙悬崖（Cosmic Cliffs）](https://images.nasa.gov/details/carina_nebula)，NASA / ESA / CSA / STScI | 宽幅宇宙图片，约 1920 × 1100 或更大 |
+| `modules/about/images/portrait.jpg` | 简介图片 | [山间湖泊](https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k)，Ivan Rohovchenko / Unsplash | 个人肖像、校园照片或个人风景 |
+| `modules/academic/research/images/cover.jpg` | 研究缩略图、预览与详情 | 同一张 Cosmic Cliffs；NASA / ESA / CSA / STScI，独立文件 | 研究图片或示意图 |
+| `modules/academic/publications/images/cover.jpg` | 论文缩略图、预览与详情 | [仙女座星系（Andromeda Galaxy）](https://images.nasa.gov/details/PIA04921)，NASA/JPL/California Institute of Technology | 论文插图或宽幅图片 |
+| `modules/academic/notes/images/cover.jpg` | 笔记缩略图、预览与详情 | [创生之柱（Pillars of Creation）](https://images.nasa.gov/details/GSFC_20171208_Archive_e000842)，NASA / ESA / Hubble Heritage Team (STScI/AURA) | 笔记本、黑板或学习图片 |
+| `modules/academic/projects/images/cover.jpg` | 项目缩略图、预览与详情 | [地出（Earthrise）](https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/)，NASA / Bill Anders | 项目插图或截图 |
+| `modules/life/moments/images/cover.jpg` | 生活片段图库（Moments） | 同一张山间湖泊；Ivan Rohovchenko / Unsplash，独立文件 | 个人回忆照片 |
+| `modules/life/places/images/cover.jpg` | 地点图库（Places） | [海岸悬崖](https://unsplash.com/photos/rocky-cliffs-meet-the-oceans-frothy-waves-YRu3lLu4n-k)，Benjamin Chambon / Unsplash | 旅行照片 |
+| `modules/life/notes/images/cover.jpg` | 日常细节（Little things）图库 | [Kalen Emsley](https://unsplash.com/@kalenemsley) / Unsplash；直接下载 URL 见清单 | 日常细节照片 |
+| `modules/life/outside/images/cover.jpg` | 户外图库（Outside） | [海岸线](https://unsplash.com/fr/photos/un-plan-deau-pres-dune-falaise-rocheuse-tbTUtOJMs_0)，Tomáš Malík / Unsplash | 个人户外照片 |
+| `modules/academic/images/background.jpg` | 学术区独立背景副本 | 同一张 Cosmic Cliffs；NASA / ESA / CSA / STScI | 可独立替换的宽幅学术背景 |
+| `modules/contact/images/background.jpg` | 联系区独立背景副本 | 同一张 Andromeda Galaxy；NASA/JPL/California Institute of Technology | 可独立替换的宽幅联系背景 |
+| `modules/life/images/background.jpg` | 生活区独立背景副本 | 同一张湖泊照片；Kalen Emsley / Unsplash | 可独立替换的宽幅生活背景 |
 
-用同名 JPG 文件替换图片即可更新所有引用位置。若更改扩展名，需同时更新 `index.html` 和 `js/content.js` 中的路径。图片容器使用 `object-fit: cover`；若人物照片需要调整裁切位置，可修改 `css/styles.css` 中的 `object-position`。
+## 替换方法
 
-替换占位图时，还需更新 `index.html`、`js/content.js` 和 `credits.html` 中的替代文本、署名、来源链接与占位说明。这些网页呈现内容必须使用英文；仍在使用的下载图片应保留署名。
+同名 JPG 可直接替换；文件扩展名变化时，更新所属模块的 `section.html` 与相关 `content.js` 路径。图片使用 `object-fit: cover`，裁切位置在所属模块 `styles.css` 中调整。学术、生活与联系背景均独立保存；替换详情封面不会同步改变这些背景。
 
-使用规则参考：[NASA 图片与媒体指南](https://www.nasa.gov/nasa-brand-center/images-and-media/)与 [Unsplash 授权说明](https://unsplash.com/license)。实际下载使用的直接 URL 保存在 `download-manifest.json`。
+同步更新模块中的英文替代文本、署名、来源链接和占位说明，以及 `modules/credits/page.html`、本清单和 `download-manifest.json`。仍使用的下载图片保留署名。最后运行 `npm run assemble` 更新根页面，不手改生成的 `index.html` 或 `credits.html`。
+
+使用规则参考：[NASA 图片与媒体指南](https://www.nasa.gov/nasa-brand-center/images-and-media/)与 [Unsplash 授权说明](https://unsplash.com/license)。原始下载 URL 保存在 [下载清单](download-manifest.json)；独立副本共享来源 URL，不代表新增下载或个人照片。

@@ -6,159 +6,176 @@
   <meta name="description" content="Yuhong Li — a graduate student in theoretical physics at Nankai University. Research, notes, projects, and life beyond the desk.">
   <meta name="theme-color" content="#192229">
   <title>Yuhong Li · Theoretical Physics</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
-  <link rel="preload" href="assets/images/hero-carina.jpg" as="image">
-  <link rel="stylesheet" href="css/styles.css">
-  <script defer src="js/content.js"></script>
-  <script defer src="js/transitions.js"></script>
-  <script defer src="js/gallery.js"></script>
-  <script defer src="js/main.js"></script>
+  <link rel="icon" href="shared/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="modules/home/images/hero.jpg" as="image">
+  <link rel="stylesheet" href="shared/base.css">
+  <link rel="stylesheet" href="shared/navigation/styles.css">
+  <link rel="stylesheet" href="modules/home/styles.css">
+  <link rel="stylesheet" href="modules/about/styles.css">
+  <link rel="stylesheet" href="modules/academic/styles.css">
+  <link rel="stylesheet" href="modules/life/styles.css">
+  <link rel="stylesheet" href="modules/contact/styles.css">
+  <link rel="stylesheet" href="shared/transitions/styles.css">
+  <link rel="stylesheet" href="shared/details/styles.css">
+  <script defer src="shared/runtime.js"></script>
+  <script defer src="shared/transitions/transitions.js"></script>
+  <script defer src="shared/details/dialog.js"></script>
+  <script defer src="shared/navigation/navigation.js"></script>
+  <script defer src="shared/reveal.js"></script>
+  <script defer src="modules/home/module.js"></script>
+  <script defer src="modules/about/module.js"></script>
+  <script defer src="modules/academic/research/content.js"></script>
+  <script defer src="modules/academic/publications/content.js"></script>
+  <script defer src="modules/academic/notes/content.js"></script>
+  <script defer src="modules/academic/projects/content.js"></script>
+  <script defer src="modules/academic/module.js"></script>
+  <script defer src="modules/life/moments/content.js"></script>
+  <script defer src="modules/life/places/content.js"></script>
+  <script defer src="modules/life/notes/content.js"></script>
+  <script defer src="modules/life/outside/content.js"></script>
+  <script defer src="modules/life/module.js"></script>
+  <script defer src="modules/contact/module.js"></script>
+  <script defer src="app/main.js"></script>
 </head>
 <body>
+  <!-- 此页由 scripts/assemble.py 生成；修改 app 模板及 modules 源码。 -->
   <a class="skip-link" href="#main">Skip to content</a>
-
-  <header class="navbar" aria-label="Main navigation">
-    <a class="name" href="#home" aria-label="Yuhong Li, home">
-      <span class="full-name">Yuhong Li</span>
-      <span class="site-edition">A personal website</span>
-    </a>
-    <nav class="navlinks" aria-label="Sections">
-      <a class="links" href="#about"><span class="roll"><span>About</span><span aria-hidden="true">About</span></span></a>
-      <a class="links" href="#academic"><span class="roll"><span>Academic</span><span aria-hidden="true">Academic</span></span></a>
-      <a class="links" href="#life"><span class="roll"><span>Life</span><span aria-hidden="true">Life</span></span></a>
-      <a class="links" href="#contact"><span class="roll"><span>Contact</span><span aria-hidden="true">Contact</span></span></a>
-      <a class="buttondiv nav-email" href="mailto:2310408@mail.nankai.edu.cn"><span class="roll"><span>Say hello ↗</span><span aria-hidden="true">Say hello ↗</span></span></a>
-    </nav>
-  </header>
-
+<header class="navbar" aria-label="Main navigation">
+  <a class="name" href="#home" aria-label="Yuhong Li, home">
+    <span class="full-name">Yuhong Li</span>
+    <span class="site-edition">A personal website</span>
+  </a>
+  <nav class="navlinks" aria-label="Sections">
+    <a class="links" href="#about"><span class="roll"><span>About</span><span aria-hidden="true">About</span></span></a>
+    <a class="links" href="#academic"><span class="roll"><span>Academic</span><span aria-hidden="true">Academic</span></span></a>
+    <a class="links" href="#life"><span class="roll"><span>Life</span><span aria-hidden="true">Life</span></span></a>
+    <a class="links" href="#contact"><span class="roll"><span>Contact</span><span aria-hidden="true">Contact</span></span></a>
+    <a class="buttondiv nav-email" href="mailto:2310408@mail.nankai.edu.cn"><span class="roll"><span>Say hello ↗</span><span aria-hidden="true">Say hello ↗</span></span></a>
+  </nav>
+</header>
   <main id="main">
     <div class="page1">
-      <div class="hero-backdrop" aria-hidden="true">
-        <img class="scaleImage" src="assets/images/hero-carina.jpg" alt="" width="1920" height="1111" fetchpriority="high">
-      </div>
-      <section class="landing-div" id="home" aria-labelledby="home-title">
-        <p class="scroll-note">Scroll to explore ↓</p>
-        <div class="hero-marker"><p>Nankai University</p><p>Theoretical physics · Graduate student</p></div>
-        <div class="bottomtext">
-          <div class="maintext">
-            <p class="eyebrow">An academic &amp; personal space</p>
-            <h1 id="home-title">Yuhong Li.<br><em>Theoretical physics.</em></h1>
-          </div>
-          <div class="subtext">
-            <p>Welcome. I’m Yuhong, a graduate student at Nankai University studying theoretical physics.</p>
-            <h2 class="alagtext">A space for ideas,<br>work, and everyday life.</h2>
-            <div class="buttons">
-              <a class="buttondiv solid" href="#academic"><span class="roll"><span>Explore my work ↗</span><span aria-hidden="true">Explore my work ↗</span></span></a>
-              <a class="buttondiv" href="#about"><span class="roll"><span>About me</span><span aria-hidden="true">About me</span></span></a>
-            </div>
-          </div>
-        </div>
-        <a class="photo-credit" href="https://images.nasa.gov/details/carina_nebula" target="_blank" rel="noopener noreferrer">Cosmic Cliffs · NASA / ESA / CSA / STScI</a>
-      </section>
-
-      <section class="about" id="about" aria-labelledby="about-title">
-        <div data-reveal><p class="eyebrow">01 · A little introduction</p><h2 class="section-heading" id="about-title">About me.</h2></div>
-        <div class="mainAbout">
-          <figure class="aboutimg" data-reveal>
-            <img src="assets/images/about-placeholder.jpg" alt="A quiet lake framed by mountains and evergreen trees" width="1600" height="2125" loading="lazy">
-            <figcaption class="image-caption">A view for now · A portrait to come</figcaption>
-          </figure>
-          <div class="abouttext" data-reveal>
-            <div class="normalIntro">
-              <p>I’m Yuhong Li, a graduate student at Nankai University.</p>
-              <p>My academic field is theoretical physics. This website brings together my research, academic notes, projects, and a few glimpses of life along the way.</p>
-              <dl class="profile-facts">
-                <div><dt>Based at</dt><dd>Nankai University</dd></div>
-                <div><dt>Field</dt><dd>Theoretical physics</dd></div>
-                <div><dt>Email</dt><dd><a href="mailto:2310408@mail.nankai.edu.cn">2310408@mail.nankai.edu.cn</a></dd></div>
-              </dl>
-            </div>
-            <div class="at-a-glance">
-              <h3>A work in progress.</h3>
-              <p>Research updates, reading notes, and personal stories will find their place here over time.</p>
-            </div>
-          </div>
-        </div>
-      </section>
+<div class="hero-backdrop" aria-hidden="true">
+  <img class="scaleImage" src="modules/home/images/hero.jpg" alt="" width="1920" height="1111" fetchpriority="high">
+</div>
+<section class="landing-div" id="home" aria-labelledby="home-title">
+  <p class="scroll-note">Scroll to explore ↓</p>
+  <div class="hero-marker"><p>Nankai University</p><p>Theoretical physics · Graduate student</p></div>
+  <div class="bottomtext">
+    <div class="maintext">
+      <p class="eyebrow">An academic &amp; personal space</p>
+      <h1 id="home-title">Yuhong Li.<br><em>Theoretical physics.</em></h1>
     </div>
-
-    <section class="page2" id="academic" aria-labelledby="academic-title">
-      <div class="section-background" aria-hidden="true"><img src="assets/images/hero-carina.jpg" alt="" loading="lazy"></div>
-      <div class="projectPreview">
-        <div class="preview-stack">
-          <img class="is-active" src="assets/images/research-placeholder.jpg" alt="The Cosmic Cliffs in the Carina Nebula" data-preview="research" loading="lazy">
-          <img src="assets/images/publications-placeholder.jpg" alt="The Andromeda Galaxy in ultraviolet light" data-preview="publications" aria-hidden="true" loading="lazy">
-          <img src="assets/images/notes-placeholder.jpg" alt="The Pillars of Creation in the Eagle Nebula" data-preview="notes" aria-hidden="true" loading="lazy">
-          <img src="assets/images/projects-placeholder.jpg" alt="Earth rising above the lunar horizon" data-preview="projects" aria-hidden="true" loading="lazy">
-        </div>
-        <p class="preview-caption"><span id="preview-label" aria-live="polite">Research</span><span>Choose a section below ↘</span></p>
+    <div class="subtext">
+      <p>Welcome. I’m Yuhong, a graduate student at Nankai University studying theoretical physics.</p>
+      <h2 class="alagtext">A space for ideas,<br>work, and everyday life.</h2>
+      <div class="buttons">
+        <a class="buttondiv solid" href="#academic"><span class="roll"><span>Explore my work ↗</span><span aria-hidden="true">Explore my work ↗</span></span></a>
+        <a class="buttondiv" href="#about"><span class="roll"><span>About me</span><span aria-hidden="true">About me</span></span></a>
       </div>
-      <div class="academic-overview">
-        <div class="academic-header" data-reveal><p class="eyebrow">02 · Questions, ideas, and work</p><h2 class="section-heading" id="academic-title">Academic.</h2></div>
-        <div class="mainprojectsdiv">
-          <div class="academic-intro" data-reveal>
-            <p>A growing collection of research, publications, study notes, and projects in theoretical physics.</p>
-            <p>Hover to preview. Select a section to explore.</p>
-          </div>
-          <div class="projects" aria-label="Academic sections" data-reveal>
-            <button class="projectBox is-selected" data-academic="research" aria-label="Open Research" aria-haspopup="dialog"><span class="thumbnail"><img src="assets/images/research-placeholder.jpg" alt="" loading="lazy"></span><span class="thumb-label">Research ↗</span></button>
-            <button class="projectBox" data-academic="publications" aria-label="Open Publications" aria-haspopup="dialog"><span class="thumbnail"><img src="assets/images/publications-placeholder.jpg" alt="" loading="lazy"></span><span class="thumb-label">Publications ↗</span></button>
-            <button class="projectBox" data-academic="notes" aria-label="Open Notes" aria-haspopup="dialog"><span class="thumbnail"><img src="assets/images/notes-placeholder.jpg" alt="" loading="lazy"></span><span class="thumb-label">Notes ↗</span></button>
-            <button class="projectBox" data-academic="projects" aria-label="Open Projects" aria-haspopup="dialog"><span class="thumbnail"><img src="assets/images/projects-placeholder.jpg" alt="" loading="lazy"></span><span class="thumb-label">Projects ↗</span></button>
-          </div>
-        </div>
+    </div>
+  </div>
+  <a class="photo-credit" href="https://images.nasa.gov/details/carina_nebula" target="_blank" rel="noopener noreferrer">Cosmic Cliffs · NASA / ESA / CSA / STScI</a>
+</section>
+<section class="about" id="about" aria-labelledby="about-title">
+  <div data-reveal><p class="eyebrow">01 · A little introduction</p><h2 class="section-heading" id="about-title">About me.</h2></div>
+  <div class="mainAbout">
+    <figure class="aboutimg" data-reveal>
+      <img src="modules/about/images/portrait.jpg" alt="A quiet lake framed by mountains and evergreen trees" width="1600" height="2125" loading="lazy">
+      <figcaption class="image-caption">A view for now · A portrait to come</figcaption>
+    </figure>
+    <div class="abouttext" data-reveal>
+      <div class="normalIntro">
+        <p>I’m Yuhong Li, a graduate student at Nankai University.</p>
+        <p>My academic field is theoretical physics. This website brings together my research, academic notes, projects, and a few glimpses of life along the way.</p>
+        <dl class="profile-facts">
+          <div><dt>Based at</dt><dd>Nankai University</dd></div>
+          <div><dt>Field</dt><dd>Theoretical physics</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:2310408@mail.nankai.edu.cn">2310408@mail.nankai.edu.cn</a></dd></div>
+        </dl>
       </div>
-    </section>
-
-    <section class="page3" id="life" aria-labelledby="life-title">
-      <div class="section-background life-background" aria-hidden="true"><img src="assets/images/life-notes.jpg" alt="" loading="lazy"></div>
-      <div class="life-heading"><p class="eyebrow">03 · Beyond the desk</p><h2 class="section-heading" id="life-title">Life, in fragments.</h2></div>
-      <button class="movable photo-one" data-life="moments" aria-label="Open Moments gallery" aria-haspopup="dialog"><span class="life-image"><img src="assets/images/life-moments.jpg" alt="A lake surrounded by mountains" loading="lazy"></span><span class="life-caption">Moments ↗</span></button>
-      <button class="movable photo-two" data-life="places" aria-label="Open Places gallery" aria-haspopup="dialog"><span class="life-image"><img src="assets/images/life-places.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy"></span><span class="life-caption">Places ↗</span></button>
-      <button class="movable photo-three" data-life="notes" aria-label="Open Little things gallery" aria-haspopup="dialog"><span class="life-image"><img src="assets/images/life-notes.jpg" alt="Mountains reflected in a misty lake" loading="lazy"></span><span class="life-caption">Little things ↗</span></button>
-      <button class="movable photo-four" data-life="outside" aria-label="Open Outside gallery" aria-haspopup="dialog"><span class="life-image"><img src="assets/images/life-outside.jpg" alt="Blue water and an open coastline" loading="lazy"></span><span class="life-caption">Outside ↗</span></button>
-      <p class="life-footnote">A few borrowed views for now.<br>Personal photographs and stories to follow.</p>
-    </section>
-
-    <section class="page4" id="contact" aria-labelledby="contact-title">
-      <div class="section-background contact-background" aria-hidden="true"><img src="assets/images/publications-placeholder.jpg" alt="" loading="lazy"></div>
-      <div class="contact-overview">
-        <div>
-          <div data-reveal><p class="eyebrow">04 · Keep in touch</p><h2 class="contact-heading" id="contact-title">Let’s connect.</h2></div>
-          <div class="socials" data-reveal>
-            <div class="social-column"><p>For academic conversations,<br>questions, or a simple hello.</p><a class="contact-email" href="mailto:2310408@mail.nankai.edu.cn">2310408@mail.nankai.edu.cn ↗</a></div>
-            <div class="social-column"><p>Projects, code, and work<br>as it takes shape.</p><a class="links" href="https://github.com/PaulLi07" target="_blank" rel="noopener noreferrer"><span class="roll"><span>GitHub ↗</span><span aria-hidden="true">GitHub ↗</span></span></a></div>
-            <div class="social-column"><p>Graduate student<br>Theoretical physics</p><span>Nankai University</span></div>
-          </div>
-        </div>
-        <footer class="contactlower">
-          <p class="signature">Yuhong Li.</p>
-          <p class="love">Thank you for stopping by.</p>
-          <div class="footer-meta"><span>© <span id="current-year">2026</span> Yuhong Li</span><a href="credits.html">Image credits</a><a href="#home">Back to top ↑</a></div>
-        </footer>
+      <div class="at-a-glance">
+        <h3>A work in progress.</h3>
+        <p>Research updates, reading notes, and personal stories will find their place here over time.</p>
       </div>
-    </section>
+    </div>
+  </div>
+</section>
+    </div>
+<section class="page2" id="academic" aria-labelledby="academic-title">
+  <div class="section-background" aria-hidden="true"><img src="modules/academic/images/background.jpg" alt="" loading="lazy"></div>
+  <div class="projectPreview">
+    <div class="preview-stack">
+      <img class="is-active" src="modules/academic/research/images/cover.jpg" alt="The Cosmic Cliffs in the Carina Nebula" data-preview="research" loading="lazy">
+      <img src="modules/academic/publications/images/cover.jpg" alt="The Andromeda Galaxy in ultraviolet light" data-preview="publications" aria-hidden="true" loading="lazy">
+      <img src="modules/academic/notes/images/cover.jpg" alt="The Pillars of Creation in the Eagle Nebula" data-preview="notes" aria-hidden="true" loading="lazy">
+      <img src="modules/academic/projects/images/cover.jpg" alt="Earth rising above the lunar horizon" data-preview="projects" aria-hidden="true" loading="lazy">
+    </div>
+    <p class="preview-caption"><span id="preview-label" aria-live="polite">Research</span><span>Choose a section below ↘</span></p>
+  </div>
+  <div class="academic-overview">
+    <div class="academic-header" data-reveal><p class="eyebrow">02 · Questions, ideas, and work</p><h2 class="section-heading" id="academic-title">Academic.</h2></div>
+    <div class="mainprojectsdiv">
+      <div class="academic-intro" data-reveal>
+        <p>A growing collection of research, publications, study notes, and projects in theoretical physics.</p>
+        <p>Hover to preview. Select a section to explore.</p>
+      </div>
+      <div class="projects" aria-label="Academic sections" data-reveal>
+        <button class="projectBox is-selected" data-academic="research" aria-label="Open Research" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/research/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Research ↗</span></button>
+        <button class="projectBox" data-academic="publications" aria-label="Open Publications" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/publications/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Publications ↗</span></button>
+        <button class="projectBox" data-academic="notes" aria-label="Open Notes" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/notes/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Notes ↗</span></button>
+        <button class="projectBox" data-academic="projects" aria-label="Open Projects" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/projects/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Projects ↗</span></button>
+      </div>
+    </div>
+  </div>
+</section>
+<section class="page3" id="life" aria-labelledby="life-title">
+  <div class="section-background life-background" aria-hidden="true"><img src="modules/life/images/background.jpg" alt="" loading="lazy"></div>
+  <div class="life-heading"><p class="eyebrow">03 · Beyond the desk</p><h2 class="section-heading" id="life-title">Life, in fragments.</h2></div>
+  <button class="movable photo-one" data-life="moments" aria-label="Open Moments gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/moments/images/cover.jpg" alt="A lake surrounded by mountains" loading="lazy"></span><span class="life-caption">Moments ↗</span></button>
+  <button class="movable photo-two" data-life="places" aria-label="Open Places gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/places/images/cover.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy"></span><span class="life-caption">Places ↗</span></button>
+  <button class="movable photo-three" data-life="notes" aria-label="Open Little things gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/notes/images/cover.jpg" alt="Mountains reflected in a misty lake" loading="lazy"></span><span class="life-caption">Little things ↗</span></button>
+  <button class="movable photo-four" data-life="outside" aria-label="Open Outside gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/outside/images/cover.jpg" alt="Blue water and an open coastline" loading="lazy"></span><span class="life-caption">Outside ↗</span></button>
+  <p class="life-footnote">A few borrowed views for now.<br>Personal photographs and stories to follow.</p>
+</section>
+<section class="page4" id="contact" aria-labelledby="contact-title">
+  <div class="section-background contact-background" aria-hidden="true"><img src="modules/contact/images/background.jpg" alt="" loading="lazy"></div>
+  <div class="contact-overview">
+    <div>
+      <div data-reveal><p class="eyebrow">04 · Keep in touch</p><h2 class="contact-heading" id="contact-title">Let’s connect.</h2></div>
+      <div class="socials" data-reveal>
+        <div class="social-column"><p>For academic conversations,<br>questions, or a simple hello.</p><a class="contact-email" href="mailto:2310408@mail.nankai.edu.cn">2310408@mail.nankai.edu.cn ↗</a></div>
+        <div class="social-column"><p>Projects, code, and work<br>as it takes shape.</p><a class="links" href="https://github.com/PaulLi07" target="_blank" rel="noopener noreferrer"><span class="roll"><span>GitHub ↗</span><span aria-hidden="true">GitHub ↗</span></span></a></div>
+        <div class="social-column"><p>Graduate student<br>Theoretical physics</p><span>Nankai University</span></div>
+      </div>
+    </div>
+    <footer class="contactlower">
+      <p class="signature">Yuhong Li.</p>
+      <p class="love">Thank you for stopping by.</p>
+      <div class="footer-meta"><span>© <span id="current-year">2026</span> Yuhong Li</span><a href="credits.html">Image credits</a><a href="#home">Back to top ↑</a></div>
+    </footer>
+  </div>
+</section>
     <noscript><p class="noscript-note">Enable JavaScript to open academic sections and photo galleries. You can still browse this page and use the contact links.</p></noscript>
   </main>
-
-  <dialog class="detail-overlay" id="detail-dialog" aria-labelledby="detail-title">
-    <div class="panel-layout">
-      <div class="panel-left">
-        <button class="buttondiv closeBtn" id="close-detail" type="button"><span class="roll"><span>← Return to page</span><span aria-hidden="true">← Return to page</span></span></button>
-        <p class="eyebrow panel-kicker" id="detail-kicker"></p>
-        <h2 class="projecttitle" id="detail-title"></h2>
-        <p class="projectshorttag" id="detail-subtitle"></p>
-        <figure class="projectflip"><img id="detail-image" src="assets/images/research-placeholder.jpg" alt=""></figure>
-        <a class="panel-image-credit" id="detail-credit" target="_blank" rel="noopener noreferrer"></a>
-      </div>
-      <div class="right-part">
-        <nav class="detail-tabs" id="detail-tabs" aria-label="Academic sections"></nav>
-        <div class="description"><h3 id="detail-description-title">Overview</h3><div id="detail-description"></div></div>
-        <dl class="detail-facts" id="detail-facts"></dl>
-        <div class="detail-list"><h3 id="detail-list-title"></h3><div id="detail-entries"></div></div>
-        <a class="buttondiv panel-link" id="detail-link" hidden target="_blank" rel="noopener noreferrer"></a>
-      </div>
+<dialog class="detail-overlay" id="detail-dialog" aria-labelledby="detail-title">
+  <div class="panel-layout">
+    <div class="panel-left">
+      <button class="buttondiv closeBtn" id="close-detail" type="button"><span class="roll"><span>← Return to page</span><span aria-hidden="true">← Return to page</span></span></button>
+      <p class="eyebrow panel-kicker" id="detail-kicker"></p>
+      <h2 class="projecttitle" id="detail-title"></h2>
+      <p class="projectshorttag" id="detail-subtitle"></p>
+      <figure class="projectflip"><img id="detail-image" alt=""></figure>
+      <a class="panel-image-credit" id="detail-credit" target="_blank" rel="noopener noreferrer"></a>
     </div>
-  </dialog>
+    <div class="right-part">
+      <nav class="detail-tabs" id="detail-tabs" aria-label="Academic sections"></nav>
+      <div class="description"><h3 id="detail-description-title">Overview</h3><div id="detail-description"></div></div>
+      <dl class="detail-facts" id="detail-facts"></dl>
+      <div class="detail-list"><h3 id="detail-list-title"></h3><div id="detail-entries"></div></div>
+      <a class="buttondiv panel-link" id="detail-link" hidden target="_blank" rel="noopener noreferrer"></a>
+    </div>
+  </div>
+</dialog>
 </body>
 </html>

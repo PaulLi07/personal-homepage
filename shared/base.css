@@ -1,0 +1,54 @@
+/* 共享基础：色彩、重置、文字、按钮与通用展示状态。 */
+:root {
+  color-scheme: dark;
+  --background: #192229;
+  --dark: #11191f;
+  --white: #f2f0e9;
+  --muted: #c1c7c8;
+  --accent: #c5e0f1;
+  --line: #ffffff35;
+  --gutter: clamp(20px, 2.2vw, 40px);
+  --body: -apple-system, BlinkMacSystemFont, "Segoe UI", Arial, sans-serif;
+  --display: var(--body);
+  --contrast: var(--body);
+}
+* { box-sizing: border-box; }
+[hidden] { display: none !important; }
+html { scroll-behavior: smooth; }
+body { margin: 0; background: var(--background); color: var(--white); font: 15px/1.65 var(--body); -webkit-font-smoothing: antialiased; }
+a { color: inherit; text-decoration: none; }
+button { color: inherit; font: inherit; background: none; border: 0; cursor: pointer; }
+button, a { -webkit-tap-highlight-color: transparent; }
+img { display: block; width: 100%; height: 100%; object-fit: cover; }
+h1, h2, h3, p, figure { margin: 0; }
+h1, h2, h3 { font-family: var(--display); font-weight: 500; line-height: 1.2; letter-spacing: -.025em; }
+h1 em, h2 em, h3 em { font-family: var(--body); font-style: normal; font-weight: 400; color: var(--accent); }
+::selection { background: var(--accent); color: var(--dark); }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--accent); outline-offset: 5px; }
+.eyebrow { font-size: 10px; text-transform: uppercase; letter-spacing: 2px; color: var(--accent); }
+.buttondiv { font-family: var(--body); font-size: 14px; }
+.roll { display: block; height: 1.4em; line-height: 1.4; overflow: hidden; }
+.roll > span { display: block; transition: transform .3s cubic-bezier(.2,.7,.3,1); }
+a:hover .roll > span, button:hover .roll > span, a:focus-visible .roll > span, button:focus-visible .roll > span { transform: translateY(-100%); }
+.buttondiv { display: inline-block; padding: 11px 20px; border: 1px solid #ffffffad; letter-spacing: .1px; }
+.buttondiv.solid { background: var(--background); }
+.buttondiv:hover { border-color: var(--accent); }
+.page1 { position: relative; }
+.section-heading { font-size: clamp(34px, 3.4vw, 52px); line-height: 1.2; margin: 14px 0 30px; }
+.section-background { position: absolute; inset: 0; z-index: -2; overflow: hidden; }
+.section-background img { filter: brightness(.29) saturate(.47); }
+.section-background::after { content: ""; position: absolute; inset: 0; background: linear-gradient(0deg,var(--background),#19222930 65%,#19222990); }
+.noscript-note { padding: 25px var(--gutter); background: var(--dark); }
+.js-enabled [data-reveal] { opacity: 0; transform: translateY(24px); transition: opacity .7s,transform .7s; }
+.js-enabled [data-reveal].is-visible { opacity: 1; transform: none; }
+
+@media (max-width:760px) {
+  .buttondiv { font-size: 13px; padding: 10px 18px; }
+  .section-heading { font-size: 36px; }
+}
+
+@media (prefers-reduced-motion:reduce) {
+  html { scroll-behavior: auto; }
+  *,*::before,*::after { animation-duration: .01ms !important; animation-iteration-count: 1 !important; transition-duration: .01ms !important; }
+  .js-enabled [data-reveal] { opacity: 1; transform: none; }
+}

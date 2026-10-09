@@ -2,11 +2,13 @@
   "name": "yuhong-li-personal-homepage",
   "version": "0.1.0",
   "private": true,
-  "description": "Static academic and personal website for Yuhong Li",
+  "description": "按功能模块组织的英文个人学术主页",
   "scripts": {
     "check": "node scripts/check.mjs",
-    "preview": "python3 -m http.server 8767 --bind 127.0.0.1",
-    "package": "python3 scripts/package.py"
+    "preview": "npm run assemble && python3 -m http.server 8767 --bind 127.0.0.1",
+    "package": "npm run assemble && python3 scripts/package.py",
+    "assemble": "python3 scripts/assemble.py",
+    "test:compat": "node scripts/test-compatibility.cjs"
   },
   "engines": {
     "node": ">=18"

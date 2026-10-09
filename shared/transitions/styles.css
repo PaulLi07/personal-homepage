@@ -1,0 +1,7 @@
+/* 过渡：开场遮罩与详情揭幕。 */
+.loader, .transition-columns { position: fixed; inset: 0; z-index: 1000; display: grid; grid-template-columns: repeat(5,1fr); pointer-events: none; }
+.colordiv { background: var(--background); height: 100%; }
+.loader-label { position: absolute; inset: 43% 0 auto; text-align: center; font: 400 26px/1.3 var(--body); letter-spacing: .5px; z-index: 2; }
+.loader-label small { display: block; margin-top: 16px; font: 10px/1.6 var(--body); letter-spacing: 2px; }
+.loader.is-leaving .loader-label { opacity: 0; transition: opacity .15s; }
+.detail-overlay .transition-columns { z-index: 5; }

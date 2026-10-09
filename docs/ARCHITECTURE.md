@@ -1,91 +1,99 @@
 # 项目框架概要
 
-这是无构建步骤的纯静态网站：浏览器直接读取 HTML、CSS、普通 JavaScript 和本地图片。
-正式源码位于工作区根目录 `personal-homepage/`，GitHub Pages 从仓库根目录提供文件。
-所有网页呈现内容使用英文；所有说明文档使用中文。文件路径、命令、代码标识、网址和专有名称保留原文。
+网站按功能组织源码，在本地将 HTML 片段装配成完整静态页面。浏览器读取普通 HTML、CSS、JavaScript 和本地图片，运行时无构建、无框架依赖、无需请求片段；生成的根页面支持直接文件打开和 GitHub Pages 仓库子路径。
 
-## 文件职责
+所有说明文档使用中文，所有网页呈现内容使用英文；路径、命令、代码标识、网址和专有名称保留原文。
 
-| 文件 / 目录 | 职责 |
+## 目录与边界
+
+```text
+app/                       模块清单、页面外壳与初始化胶水
+modules/
+  home/                    首屏
+  about/                   简介
+  academic/                学术概览
+    research/ publications/ notes/ projects/
+  life/                    生活概览
+    moments/ places/ notes/ outside/
+  contact/                 联系
+  credits/                 独立素材署名页
+shared/                    基础样式、导航、详情弹窗、过渡与注册接口
+scripts/                   本地装配、检查、预览与打包
+docs/                      框架、协议、素材及测试记录
+index.html, credits.html   装配生成的发布页面
+```
+
+主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、`images/cover.jpg` 与 `README.md`。无行为的模块无需空脚本，无图片的模块无需空图片目录。
+
+`shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
+
+目前模块图片共 13 个文件。学术、生活和联系区各自使用 `images/background.jpg`，与详情封面独立；替换子模块封面不会联动改变父区背景。来源与副本关系见 [图片清单](image-sources.md)。
+
+## 装配与运行
+
+| 文件 | 职责 |
 |---|---|
-| `index.html` | 首页、About、Academic、Life、Contact，以及共用详情弹窗的 HTML 骨架 |
-| `credits.html` | 独立图片来源页；只加载样式，不加载首页脚本 |
-| `css/styles.css` | 色彩变量、所有布局、响应式样式、动画状态和减少动态效果规则 |
-| `js/content.js` | 学术栏目和生活相册的详情数据 |
-| `js/transitions.js` | 开场五栏揭幕与打开详情时的动画 |
-| `js/gallery.js` | 缩略图预览、详情渲染、弹窗、哈希路由与焦点恢复 |
-| `js/main.js` | 启动开场、年份、导航状态、滚动隐藏、生活照片漂移和进入动画 |
-| `assets/images/` | 随源码交付的本地占位图片 |
-| `assets/favicon.svg` | 网站图标 |
-| `docs/` | 框架、素材来源、下载清单和参考网站分析；`modules/` 保存扩展模块说明与兼容性测试记录 |
-| `scripts/`, `package.json` | 本地检查、预览和打包命令；不参与网页运行 |
-| `AGENTS.md`, `CHANGELOG.md` | 代理维护约定与重要变更记录 |
-| `.nojekyll` | 让 GitHub Pages 按静态文件提供内容 |
+| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts` 与各模块的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序，路径相对于站点根 |
+| `app/index.template.html` | 首页文档外壳与装配位置 |
+| `app/credits.template.html` | 素材署名页外壳与装配位置 |
+| `app/main.js` | 取得共享服务并初始化注册模块；不放具体模块内容 |
+| `scripts/assemble.py` | 读取清单与模板，嵌入 HTML 片段，输出根页面并引用对应 CSS / JS |
+| `scripts/test-compatibility.cjs` | 可选浏览器实测工具，自启临时子路径服务器；不参与网站运行、装配或普通检查 |
+| `index.html`、`credits.html` | 生成产物，供本地文件打开、预览与直接上传；禁止手改 |
+| `shared/favicon.svg` | 跨页面网站图标 |
+| `shared/base.css`、`shared/runtime.js` | 基础样式与统一注册入口 |
+| `shared/reveal.js` | `initReveals(roots)`，观察传入公共根节点内的进入动画元素 |
+| `shared/navigation/` | `view.html`、`styles.css`、`navigation.js`，提供跨模块导航 |
+| `shared/details/` | `view.html`、`styles.css`、`dialog.js`，提供共用详情弹窗 |
+| `shared/transitions/` | `styles.css`、`transitions.js`，提供共用开场与详情过渡 |
 
-## 加载顺序与接口
+`npm run assemble` 写入生成页面。`npm run check` 只读检查生成物是否与源码一致及语法、资源、注册关系；若生成物过期，先显式装配。`npm run preview`、`npm run package` 先装配。提交时同时保留模块源码与最新生成页面；上传包无需在 GitHub 服务器重新装配。
 
-`index.html` 用 `defer` 按以下顺序加载脚本；执行时 HTML 已解析，顺序必须保留：
+装配工具使用 Python 3.9+。`sections` 中连续模块若声明同一个 `container`，装配器把它们包入共同容器；当前 home 与 about 使用 `container: "page1"`，保持连续背景。模板通过 `{{sections}}` 装配分区；新增分区只需清单和导航，不需要新增模板占位；停用分区时同步导航及其他公开入口。图片预载随模块清单声明，模板不绑定具体模块图片。
 
-1. `content.js`：建立 `window.HOMEPAGE_CONTENT`。
-2. `transitions.js`：建立 `window.HomepageTransitions = { start, openDetail }`。
-3. `gallery.js`：读取数据与动画接口，绑定按钮并处理当前详情链接。
-4. `main.js`：调用 `start()`，绑定首页导航和滚动行为。
+脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `sections` 顺序加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在模块样式前，`afterStyles` 在模块样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
 
-后三个脚本使用立即执行函数隔离内部变量；只有上面两个对象作为全局接口。
-`start()` 为异步开场函数；`main.js` 调用后继续初始化，不等待动画结束。
-开场有 1600 毫秒的移除兜底，不等待全部图片；减少动态效果时跳过开场与详情动画。
-`openDetail(dialog, sourceRect)` 接收已经打开的弹窗及可选的来源图片位置。
+## 注册接口与共享服务
 
-## 内容数据
+`shared/runtime.js` 提供单一全局入口 `window.Homepage`：
 
-`HOMEPAGE_CONTENT` 目前包含两个分组，每个对象键也是详情链接中的栏目标识：
+- `registerSection({ id, init?, detailGroup? })`：登记页面分区；可选初始化函数只处理本模块功能。详情分组模块声明 `detailGroup: { id, label, descriptionTitle }`，由胶水传给详情服务。
+- `registerDetail(group, key, data)`：登记一条详情；`group` 与 `key` 对应路由，例如 `academic` / `research`。
 
-- `academic`：`research`、`publications`、`notes`、`projects`。
-- `life`：`moments`、`places`、`notes`、`outside`。
+`app/main.js` 为初始化函数传入 `{ root, details, reducedMotion }`：`root` 是本模块 DOM 根节点，`details` 是共用详情服务，`reducedMotion` 是减少动态效果的 `MediaQueryList`，通过 `.matches` 判断并监听偏好变化。模块应在自己的 `root` 内查询元素，使用 `details.open(group, key, { trigger, source })` 打开详情，使用 `details.onSelect(group, callback)` 响应所属分组的切换，使用 `details.getItem(group, key)` 读取已注册详情，不查询其他模块 DOM。
 
-各栏目共用以下字段：
+胶水使用 `createDetails({ dialog, content, groups, transitions })` 创建共用详情控制器，`groups` 来自注册分区的 `detailGroup`，控制器负责弹窗、历史与焦点恢复；共享导航管理页面导航，过渡服务管理共用动画。创建函数保存在统一 `Homepage` 接口内，模块通过传入服务使用控制器，而非自行创建重复弹窗。
+
+导航入口为 `createNavigation({ root, sections })`，只接收导航和公共分区根节点；过渡入口为 `createTransitions(reducedMotion)`。胶水调用 `initReveals(roots)` 启动共享进入动画，观察逻辑留在 `shared/reveal.js`，不放回胶水层。胶水逐模块隔离初始化异常，不阻断其他模块和共享服务启动。共享入口和使用边界见 [共享层说明](../shared/README.md)。
+
+注册接口替代旧的 `window.HOMEPAGE_CONTENT` 和 `window.HomepageTransitions` 全局。详情由子模块独立贡献，父模块负责自己的概览与入口；不跨目录读取其他模块内部数据。
+
+## 详情数据
+
+学术详情为 `academic/{research,publications,notes,projects}/content.js`，生活详情为 `life/{moments,places,notes,outside}/content.js`，路径均位于 `modules/` 下。各文件注册自己的数据：
 
 | 字段 | 用途 |
 |---|---|
-| `title`, `label`, `kicker`, `subtitle` | 详情标题、切换按钮文字、栏目编号与简短介绍 |
-| `image`, `imageAlt`, `credit`, `source` | 本地图片路径、替代文本、署名与来源链接 |
-| `description` | 段落字符串数组 |
-| `facts` | 可选的 `{ label, value }` 数组，渲染为资料列表 |
-| `listTitle`, `emptyMessage`, `entries` | 条目区标题、空状态文字与内容数组 |
-| `link` | 可选的 `{ label, url }`，渲染详情底部链接 |
+| `title`、`label`、`kicker`、`subtitle` | 详情标题、切换文字、编号与简介 |
+| `image`、`imageAlt`、`credit`、`source` | 图片路径、英文替代文本、署名及来源 |
+| `description` | 英文段落字符串数组 |
+| `facts` | 可选的 `{ label, value }` 资料数组 |
+| `listTitle`、`emptyMessage`、`entries` | 条目区标题、空状态及内容数组 |
+| `link` | 可选的 `{ label, url }` 底部链接 |
 
-每个 `entries` 条目格式为 `{ title, meta, description, url }`；后三个字段可省略。
-`description` 和 `entries` 必须保持数组；没有真实内容时使用 `entries: []`。
-文字通过 `textContent` 写入页面，不解析 HTML；条目链接在新标签页打开。
-首页简介、邮箱、缩略图和照片按钮仍写在 `index.html`，不会从数据文件自动生成。
+条目格式为 `{ title, meta, description, url }`，后三个字段可省略；`description`、`entries` 保持数组，没有真实内容则使用 `entries: []`。共用详情按文本渲染内容，不解析条目中的 HTML。
 
-## 导航与详情路由
+## 路由与扩展
 
-首页锚点为 `#home`、`#about`、`#academic`、`#life`、`#contact`。
-详情格式为 `#academic/research` 或 `#life/moments`；直接访问也能打开对应弹窗。
-路由匹配仅接受 `academic` / `life` 两组和小写英文字母组成的栏目键。
-点击栏目用 `history.pushState` 新增详情状态；弹窗内切换栏目用 `replaceState` 替换。
-`hashchange`、`popstate` 均调用路由处理；无效详情链接关闭弹窗。
-从页面打开后关闭会后退并恢复按钮焦点；直接详情链接关闭后定位到所属分区。
-原生 `<dialog>` 提供模态行为，关闭按钮和 Escape 走同一逻辑；打开时禁止背景滚动。
+首页锚点保持 `#home`、`#about`、`#academic`、`#life`、`#contact`；详情保持 `#academic/research`、`#life/moments` 等格式。共用详情服务管理打开、切换、关闭、刷新直达、前进与后退；原生 `<dialog>` 提供模态与键盘基础行为，关闭后恢复焦点。
 
-## 扩展与修改位置
+- 添加论文、笔记或故事：编辑对应子模块 `content.js`，同步该模块说明与测试记录。
+- 增加详情子模块：建立其目录、内容、图片和说明，声明脚本；在父模块自己的片段中增加入口，调整父模块布局。
+- 增加首页模块：建立独立片段、样式、按需脚本和资源，登记 `app/site.json` 与导航；使用注册接口初始化，不将功能逻辑写入 `app/main.js`。
+- 增加详情分组或共享能力：说明需求与接口，回归共用详情、导航及使用者，不能仅为单模块方便扩大共享层。
+- 调整资料或替换图片：先在对应模块修改，再同步其他展示相同资料的模块、署名页和图片清单；这是显式维护，模块之间不直接读取内部源码。
+- 每次扩展维护模块内 `README.md` 及 `docs/modules/<标识>.md`，记录实测证据并在索引登记。
 
-- 增加论文、笔记或故事：只补充对应栏目的 `entries`，必要时修改介绍与空状态文字。
-- 增加学术栏目：在 `content.js` 加对象，同时在 `index.html` 加对应 `data-preview` 图片和 `data-academic` 按钮。
-- 增加生活相册：在数据中加对象，同时添加 `data-life` 按钮和图片；需为新照片编写位置与手机布局。
-- 现有分组内的弹窗切换按钮会自动按数据对象顺序生成；首页按钮与预览不会自动生成。
-- 增加首页分区：修改导航、`section[id]` 和样式；导航当前区域判断会扫描所有 `main section[id]`。
-- 增加第三种详情分组：还需修改 `gallery.js` 的路由正则、按钮选择器与分组识别逻辑。
-- 替换图片：同步检查 HTML 与数据中的路径、替代文本、占位说明、`credits.html` 和素材文档。
-- 调整身份资料：检查 `index.html` 的所有出现位置及 `gallery.js` 的页面标题，不只修改数据文件。
-- 每次扩展模块：按 [模块模板](modules/TEMPLATE.md) 新建或更新对应中文说明，在 [模块目录](modules/README.md) 登记，并记录兼容性测试结果；具体要求见 [工作协议](WORKFLOW.md)。
+保留相对路径，不以 `/` 开头引用资源。提交前装配并检查，再按 [工作协议](WORKFLOW.md) 实测桌面、手机、键盘、详情路由、子路径和减少动态效果；静态检查不能替代浏览器测试。
 
-## 维护约束与检查点
-
-保留相对资源路径，例如 `assets/images/...`；勿改为从 `/` 开始的站点根路径。
-保持 HTML、样式、脚本、图片分离；当前无 npm 依赖、打包器、服务器端接口或外部运行时。
-`gallery.js` 依赖详情区域的固定 ID；`main.js` 依赖 `.navbar`、`#life` 和 `#current-year`。
-修改选择器或加载顺序时须检查所有使用处；增加第五个学术栏目时须调整当前四列缩略图布局。
-提交前运行 `npm run check` 与 `git diff --check`；模块扩展、布局或交互改动还须实际测试桌面、手机、键盘和详情直达链接，并记录浏览器兼容性。静态检查不能替代浏览器测试。
-工作协议以根目录 `AGENTS.md` 为准；素材替换参考 `docs/image-sources.md`。
+`npm run test:compat` 使用维护环境已有的 Playwright 和三个测试内核，支持 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定模块位置。它检查已装配页面，报告写入忽略的 `artifacts/compatibility-results.json`；实际证据与限制记录在模块文档。测试工具不是网页依赖，基础维护不自动安装它。模块扩展同步补案例，具体范围见工作协议。

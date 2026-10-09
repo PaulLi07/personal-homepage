@@ -1,0 +1,33 @@
+/* 联系：联系方式、署名与页脚。 */
+.page4 { position: relative; min-height: max(100svh,850px); isolation: isolate; overflow: hidden; }
+.contact-background img { filter: saturate(.15) brightness(.19); object-position: center bottom; }
+.contact-overview { padding: 150px var(--gutter) 28px; min-height: inherit; display: flex; flex-direction: column; justify-content: space-between; gap: 50px; }
+.contact-heading { font-size: clamp(38px,4vw,60px); margin-top: 12px; }
+.socials { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 8%; margin-top: 45px; }
+.social-column { display: flex; flex-direction: column; align-items: flex-start; gap: 23px; }
+.social-column p { font-size: clamp(14px,1.2vw,19px); line-height: 1.5; color: #ffffffc9; }
+.contact-email { font-size: 15px; overflow-wrap: anywhere; }
+.socialslink { display: flex; flex-wrap: wrap; gap: 20px; }
+.contactlower { text-align: center; position: relative; padding-block: 0 13px; }
+.signature { font-size: clamp(56px,6.2vw,92px); white-space: nowrap; line-height: 1.15; letter-spacing: -.03em; font-weight: 500; }
+.signature em { margin-left: .05em; }
+.love { width: fit-content; max-width: 100%; margin: 25px auto 0; padding: 8px 17px; border: 1px solid var(--line); background: var(--background); font-size: 10px; letter-spacing: .8px; }
+.footer-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 30px; color: #ffffff91; font-size: 9px; }
+.footer-meta a:hover { color: var(--accent); }
+
+@media (max-width:1000px) {
+  .socials { gap: 5%; }
+}
+
+@media (max-width:760px) {
+  .page4 { min-height: 1050px; }
+  .contact-overview { padding-block: 150px 26px; gap: 65px; }
+  .contact-heading { font-size: 38px; }
+  .socials { grid-template-columns: minmax(0,1fr); gap: 30px; margin-top: 35px; }
+  .social-column { gap: 16px; max-width: 530px; }
+  .social-column p { font-size: 14px; }
+  .contact-email { font-size: 15px; }
+  .signature { font-size: clamp(48px,8vw,62px); }
+  .love { font-size: 8px; padding-inline: 12px; }
+  .footer-meta { font-size: 8px; margin-top: 24px; }
+}

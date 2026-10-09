@@ -1,8 +1,6 @@
-/* Five-column reveals follow the transition structure of the reference.
-   Native Web Animations keep this site independent of third-party runtimes. */
-(function () {
+/* 共用过渡服务采用原生动画；减少动态效果时跳过动画。 */
+window.Homepage.createTransitions = function (reducedMotion) {
   "use strict";
-  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
   const settled = animation => animation.finished.catch(() => {});
 
   function columns(parent, className) {
@@ -45,7 +43,7 @@
     small.textContent = "YUHONG LI · A PERSONAL SPACE";
     greeting.append(small);
     loader.append(greeting);
-    // Never wait on all images. A missing or slow image must not block the page.
+    // 不等待全部图片，慢速或失效图片不能阻塞页面。
     const failSafe = window.setTimeout(() => {
       loader.remove();
       document.documentElement.classList.add("is-ready");
@@ -85,5 +83,5 @@
     ], { duration: 650, delay: 170, easing: "ease-out" });
   }
 
-  window.HomepageTransitions = { start, openDetail };
-})();
+  return { start, openDetail };
+};

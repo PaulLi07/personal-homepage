@@ -1,0 +1,49 @@
+/* 首页：共用首屏背景、欢迎区与开场标题。 */
+.hero-backdrop { position: sticky; top: 0; height: 100svh; min-height: 650px; margin-bottom: max(-100svh, -650px); overflow: hidden; pointer-events: none; }
+/* 首屏背景由 .page1 容器覆盖首屏与简介区域。 */
+@supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 650px)); } }
+.scaleImage { filter: brightness(.66) saturate(.67); transform: scale(1.08); object-position: 50% 45%; }
+.hero-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,#08141b38,transparent 35%,#0710169e), linear-gradient(90deg,#11191f20,transparent); }
+.landing-div { position: relative; min-height: max(100svh, 650px); padding: 145px var(--gutter) 45px; display: flex; align-items: flex-end; }
+.hero-marker { position: absolute; top: 25%; right: var(--gutter); text-align: right; font-size: 10px; letter-spacing: 1.8px; color: #e4e9ea; }
+.hero-marker p + p { margin-top: 8px; color: #ffffff9c; }
+.bottomtext { width: 100%; display: flex; justify-content: space-between; gap: 7%; align-items: flex-end; }
+.maintext { width: 62%; }
+.maintext .eyebrow { margin-bottom: 23px; }
+.maintext h1 { font-size: clamp(42px, 4.5vw, 70px); line-height: 1.16; }
+.subtext { width: 32%; max-width: 520px; padding-bottom: 6px; }
+.subtext > p { font-size: clamp(14px, 1.17vw, 19px); line-height: 1.5; max-width: 420px; }
+.alagtext { margin-top: 21px; font-size: clamp(19px, 1.65vw, 25px); line-height: 1.45; font-weight: 400; }
+.buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 23px; }
+.scroll-note { position: absolute; top: 145px; left: var(--gutter); color: #ffffffaf; font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; }
+.photo-credit { position: absolute; right: var(--gutter); bottom: 12px; font-size: 8px; color: #ffffffa6; }
+.js-enabled.is-ready .maintext h1 { animation: enter-title 1s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes enter-title { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: none; } }
+
+@media (max-width:1000px) {
+  .maintext h1 { font-size: 4.8vw; }
+}
+
+@media (max-width:760px) {
+  .hero-backdrop { min-height: 740px; margin-bottom: calc(-1 * max(100svh,740px)); }
+  .landing-div { min-height: max(100svh,740px); padding-block: 190px 48px; }
+  .scroll-note { top: 135px; font-size: 8px; }
+  .hero-marker { top: 24%; font-size: 8px; }
+  .bottomtext { flex-direction: column; align-items: flex-start; gap: 28px; }
+  .maintext { width: 100%; }
+  .maintext h1 { font-size: clamp(38px,6.6vw,50px); }
+  .maintext .eyebrow { margin-bottom: 19px; font-size: 8px; }
+  .subtext { width: min(100%,450px); }
+  .subtext > p { font-size: 14px; }
+  .alagtext { font-size: 21px; margin-top: 14px; }
+  .buttons { margin-top: 18px; }
+  .photo-credit { font-size: 7px; }
+}
+
+@media (max-width:400px) {
+  .hero-marker { top: 27%; }
+  .scroll-note { top: 150px; }
+  .landing-div { min-height: max(100svh,820px); padding-top: 250px; }
+  .hero-backdrop { min-height: 820px; margin-bottom: calc(-1 * max(100svh,820px)); }
+  .maintext h1 { font-size: 38px; }
+}
