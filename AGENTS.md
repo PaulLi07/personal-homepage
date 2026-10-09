@@ -1,61 +1,70 @@
-# Personal homepage maintenance
+# 个人主页维护约定
 
-This folder, `personal-homepage` at the workspace root, is the canonical source for the user's personal website. Continue maintaining these files when the user requests website changes. `outputs/personal-homepage` is a compatibility symlink to this folder; other extracted folders and older HTML files under `outputs` are historical copies.
+工作区根目录的 `personal-homepage/` 是个人网站的正式源码目录，后续网站维护都在这里进行。`outputs/personal-homepage` 是兼容链接；其他解压目录及旧 HTML 文件属于历史副本。
 
-Read `README.md`, `docs/ARCHITECTURE.md`, and `docs/WORKFLOW.md` for project entry points, extension constraints, and the basic work protocol.
+开始维护前阅读 `README.md`、`docs/ARCHITECTURE.md` 和 `docs/WORKFLOW.md`，了解项目入口、扩展约束与工作流程。
 
-## Confirmed profile
+## 语言与模块要求
 
-- Name: Yuhong Li
-- Affiliation: Nankai University
-- Position: graduate student
-- Academic field: theoretical physics
-- Email: 2310408@mail.nankai.edu.cn
-- GitHub: PaulLi07
-- Repository: https://github.com/PaulLi07/personal-homepage
-- Website: https://paulli07.github.io/personal-homepage/
+- **所有说明文档必须使用中文。** 包括 README、维护约定、框架概要、工作协议、模块说明、素材说明和变更记录。文件路径、代码标识、命令、网址及专有名称保留原文。
+- **所有网页呈现内容必须使用英文。** 包括正文、导航、标题、按钮、弹窗、提示、空状态、图片署名、页面标题与描述，以及辅助技术读取的替代文本和无障碍标签。`credits.html` 也属于网页。
+- **每次扩展模块必须维护对应的简洁中文说明，并测试兼容性。** 新模块在 `docs/modules/<模块标识>.md` 建立说明；已有模块扩展时更新对应文件，没有说明则先补建。使用 `docs/modules/TEMPLATE.md`，并在模块目录的 `README.md` 登记。
+- 模块说明至少记录用途、入口、文件与数据接口、维护方式，以及兼容性测试环境、结果和未覆盖项。说明与测试随功能一起交付；具体测试要求见 `docs/WORKFLOW.md`。
 
-Use these facts and any later information supplied by the user. Research topics, publications, achievements, and personal stories currently remain placeholders; do not invent them.
+## 已确认的个人资料
 
-## Design preferences
+- 姓名：Yuhong Li
+- 学校：Nankai University（南开大学）
+- 身份：研究生
+- 学术领域：理论物理
+- 邮箱：2310408@mail.nankai.edu.cn
+- GitHub：PaulLi07
+- 仓库：https://github.com/PaulLi07/personal-homepage
+- 网站：https://paulli07.github.io/personal-homepage/
 
-- All visitor-facing website content is in English. Maintenance documentation may be in Chinese.
-- A simple academic style with a universe theme: elegant, artistic, and restrained.
-- Regular-width typography and moderate heading sizes. The user explicitly rejected condensed, oversized display lettering.
-- Preserve the framework adapted from https://swarajsingh-portfolio-25.pages.dev/: full-screen photographic hero, split About section, Academic thumbnails with large previews and full-screen details, scattered Life photographs, and Contact section.
-- Navigation: About, Academic, Life, Contact. Academic includes Research, Publications, Notes, and Projects.
-- Use the downloaded placeholder images until the user replaces them or requests other online images. Do not generate replacement images unless the user changes this preference.
+使用以上事实及用户后续提供的信息。研究课题、论文、成果和个人故事目前仍是占位内容，不得编造。
 
-## Files and editing
+## 设计偏好
 
-- `index.html`: main page structure, profile information, navigation, and visible copy.
-- `credits.html`: visitor-facing asset attribution.
-- `css/styles.css`: typography, layout, responsive rules, and visual styling.
-- `js/content.js`: academic entries and Life gallery descriptions, images, and attribution.
-- `js/gallery.js`: previews, dialogs, section switching, hash routes, focus restoration.
-- `js/transitions.js`: opening and detail transitions.
-- `js/main.js`: navigation, scroll behavior, and reveal effects.
-- `assets/images/`: local images. Keep replacement filenames when practical; update alt text, placeholder captions, and credits when images change.
-- `docs/image-sources.md` and `docs/download-manifest.json`: image origins and replacement guide.
-- `docs/reference-analysis.md`: analysis of the original reference framework.
+- 简洁的学术风格，结合宇宙主题，保持优雅、艺术感与克制。
+- 使用常规字形和适中的标题字号；用户明确拒绝窄体、超大展示文字。
+- 保留参考网站 https://swarajsingh-portfolio-25.pages.dev/ 的框架：全屏摄影首屏、左右分栏简介、学术缩略图与大图预览及全屏详情、散落式生活照片、联系区域。
+- 导航为 About、Academic、Life、Contact；学术栏目包括 Research、Publications、Notes、Projects。
+- 使用已下载的占位图片，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
 
-Keep HTML, styles, scripts, and images separate. Preserve relative asset URLs so the site works under the GitHub Pages repository path. The website is static and requires no build process or external runtime dependencies.
+## 文件与修改职责
 
-## Verification and delivery
+- `index.html`：首页结构、个人资料、导航和展示文字。
+- `credits.html`：面向访客的素材署名页。
+- `css/styles.css`：字体、布局、响应式规则与视觉样式。
+- `js/content.js`：学术与生活相册的文字、图片、条目和署名数据。
+- `js/gallery.js`：预览、弹窗、栏目切换、哈希路由及焦点恢复。
+- `js/transitions.js`：开场与详情过渡动画。
+- `js/main.js`：导航、滚动和进入动画。
+- `assets/images/`：本地图片；替换时尽量保留文件名，并同步英文替代文本、占位说明和署名。
+- `docs/image-sources.md`、`docs/download-manifest.json`：图片来源与替换依据。
+- `docs/reference-analysis.md`：参考网站框架分析。
+- `docs/modules/`：各扩展模块的中文说明与兼容性测试记录。
 
-Run `npm run check` and `git diff --check` before committing. For layout or interaction changes, inspect the affected desktop and mobile views in the available browser and check relevant dialog/navigation behavior. Keep keyboard access and reduced-motion behavior intact. The maintenance commands do not introduce browser runtime dependencies or a build step.
+HTML、样式、脚本和图片保持分离。保留相对资源路径，使网站兼容 GitHub Pages 仓库子路径。网站是纯静态页面，无构建步骤和外部运行时依赖。
 
-## Git work protocol
+## 验证与交付
 
-- Repository root is this folder, not the surrounding multi-project workspace. `origin` is the HTTPS repository above; local `main` tracks `origin/main`.
-- Start by checking Git status. Fetch before synchronization or publication; inspect existing uncommitted user work and remote differences before editing or integrating changes.
-- Preserve the remote's existing commit history. Use fast-forward-only pulls; do not discard user changes, hard-reset working files, or force-push shared history as a routine workflow.
-- Small content, fix, or documentation tasks may be committed locally on `main`. Use a task branch for larger features or design changes; validate before integrating into local `main`.
-- Local commits are part of authorized maintenance. Review and stage only the task's files, using a short `feat:`, `fix:`, `style:`, `docs:`, or `chore:` subject. Leave unrelated user changes intact.
-- Update the framework/workflow documentation when the relevant structure changes; record significant changes in `CHANGELOG.md`.
+提交前运行 `npm run check` 和 `git diff --check`。模块扩展、布局或交互修改必须进行实际浏览器验证，覆盖桌面与手机视口及受影响的导航、详情和键盘操作；保持减少动态效果设置有效。
 
-The user maintains the public website by manually uploading local updates to GitHub. Ordinary maintenance requests authorize local changes; publish or push remotely only when the user asks for that action. Do not schedule background maintenance from this standing request.
+按工作协议记录实际浏览器与版本、视口、测试结果和未覆盖环境。静态检查通过不等于兼容性测试通过；没有运行的环境不能写为通过。已发现的兼容性故障应修复并复测后再完成扩展。
 
-The upload guide is in `docs/WORKFLOW.md`. Use `npm run package` when delivering an updated source package; it generates `outputs/personal-homepage-source.zip` outside this repository, with `personal-homepage/index.html` inside the archive. Exclude system files, Git metadata, caches, and previous archives. Tell the user to upload the contents of this folder to the repository root. A publish/push request overrides the ordinary local-only delivery mode; execute the authorized publication without asking for redundant permission.
+## Git 工作协议
 
-Record substantial new user preferences here when they change the ongoing maintenance requirements.
+- Git 仓库根目录是本目录，不是外层多项目工作区。`origin` 为上述 HTTPS 仓库，本地 `main` 跟踪 `origin/main`。
+- 开始先检查状态；同步或发布前获取远端状态，检查用户未提交的改动及远端差异，再编辑或整合。
+- 保留远端现有提交历史，只使用快进拉取；日常工作不得丢弃用户改动、硬重置工作区或强制推送共享历史。
+- 小范围内容、修复和文档任务可以在 `main` 本地提交；较大功能或设计调整使用任务分支，验证后再合入本地 `main`。
+- 本地提交属于已授权的维护工作。检查并仅暂存本任务文件，提交说明使用 `feat:`、`fix:`、`style:`、`docs:` 或 `chore:` 加简短描述，保留无关改动。
+- 框架或流程变化时同步对应文档；模块扩展同步模块说明及测试记录；重要变更写入 `CHANGELOG.md`。
+
+用户通过手动上传更新公开网站。普通维护完成本地修改与提交；仅在用户要求发布或推送时更新远端，不因长期维护约定自行创建后台定时任务。
+
+上传流程见 `docs/WORKFLOW.md`。交付更新源码包时运行 `npm run package`，在仓库外生成 `outputs/personal-homepage-source.zip`，其中包含 `personal-homepage/index.html`。排除系统文件、Git 元数据、缓存和旧压缩包；上传时将该文件夹的内部内容放入远端仓库根目录。用户明确请求发布或推送时，直接执行已授权的发布工作，不重复索要许可。
+
+用户提出新的长期维护要求时，在这里同步记录。

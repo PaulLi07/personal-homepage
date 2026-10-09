@@ -1,26 +1,26 @@
-# Reference source analysis
+# 参考网站源码分析
 
-Reference: <https://swarajsingh-portfolio-25.pages.dev/>
+参考网站：<https://swarajsingh-portfolio-25.pages.dev/>
 
-Read on 2026-10-08: the complete HTML document (39,444 bytes), compiled stylesheet `assets/index-BYyCr5JF.css` (12,800 bytes), and JavaScript bundle `assets/index-CFzbJSSm.js` (176,959 bytes). The application-specific code was separated from the bundled libraries for inspection. These downloaded research copies are outside the upload folder.
+2026-10-08 已读取完整 HTML（39,444 字节）、编译后的样式表 `assets/index-BYyCr5JF.css`（12,800 字节）与 JavaScript 包 `assets/index-CFzbJSSm.js`（176,959 字节），并分离应用代码与库代码进行检查。下载的分析副本存放在上传文件夹之外。
 
-## Original framework
+## 原站框架
 
-| Original structure | Behavior found in source | Adaptation |
+| 原站结构 | 源码中的行为 | 本站适配 |
 | --- | --- | --- |
-| Fixed navbar | Name and year on the left; four sections and a résumé button on the right; hides while scrolling down; duplicate labels roll on hover | Name, About, Academic, Life, Contact, and email link; same navigation behavior |
-| Loader | Greeting, image-load counter, five equal vertical color strips | Brief greeting and five strips; bounded startup avoids waiting indefinitely for images |
-| `.page1`, `.landing-div` | Shared full-screen background for the opening section and introduction; lower-edge title on the left and a short bio on the right | NASA background, academic identity, two-column hero |
-| `#about`, `.mainAbout` | Approximately 65% image / 32% introduction, with facts near the bottom | Landscape portrait placeholder, actual student information, profile facts |
-| `.page2`, `#projects` | Full-screen background, four bottom thumbnails, large right-hand hover preview revealed with a horizontal clip | Research, Publications, Notes, Projects; same preview composition |
-| `.projects-overlay` | Fixed full-screen detail; left 44% for title and image, right 56% for description and supporting information; curtain and image transition | Accessible native dialog with the same split, detail navigation, description, facts, and editable entries |
-| `.page3`, `#cover` | Four scattered photographs around a central Recognition title | Life gallery with four photographs and a central title |
-| `.page4`, `#contact` | Full-screen background, three contact columns, name and a thank-you badge near the bottom | Email, GitHub, affiliation, name, and thank-you line |
+| 固定导航栏 | 左侧为姓名与年份；右侧为四个分区与简历按钮；向下滚动时隐藏；悬停时重复文字滚动 | 姓名、About、Academic、Life、Contact 与邮箱链接；保留相同导航行为 |
+| 加载画面 | 问候语、图片加载计数器与五条等宽竖向色带 | 简短问候与五条色带；限制启动等待时间，避免图片导致无限等待 |
+| `.page1`、`.landing-div` | 首屏与简介共用全屏背景；底部左侧为标题，右侧为简短简介 | NASA 背景、学术身份与双栏首屏 |
+| `#about`、`.mainAbout` | 图片约占 65%，简介约占 32%，底部列出个人信息 | 风景占位图、真实学生资料与个人信息 |
+| `.page2`、`#projects` | 全屏背景、底部四张缩略图；右侧大图在悬停时通过水平裁切展开 | Research、Publications、Notes、Projects；保留预览布局 |
+| `.projects-overlay` | 固定全屏详情；左侧 44% 为标题与图片，右侧 56% 为描述与补充信息；使用幕帘与图片过渡 | 同样分栏的原生无障碍对话框，含详情导航、描述、信息与可编辑条目 |
+| `.page3`、`#cover` | 四张错落照片围绕中央 Recognition 标题 | 四张照片与中央标题组成的 Life 图库 |
+| `.page4`、`#contact` | 全屏背景、三栏联系方式；底部为姓名与致谢标记 | 邮箱、GitHub、单位、姓名与致谢文字 |
 
-## Styling and runtime
+## 样式与运行方式
 
-The reference uses Tailwind CSS 4.1.14, GSAP 3.13.0, ScrollTrigger, ScrollSmoother, SplitText, ScrollTo, and Flip. Headings use Staatliches and Stint Ultra Condensed; the palette is dark moss `#242A23` and ice blue `#C5E0F1`.
+原站使用 Tailwind CSS 4.1.14、GSAP 3.13.0、ScrollTrigger、ScrollSmoother、SplitText、ScrollTo 与 Flip。标题字体为 Staatliches 与 Stint Ultra Condensed；配色为深苔绿 `#242A23` 与冰蓝 `#C5E0F1`。
 
-At the user's request, this adaptation uses regular system typography at moderate sizes. The dark palette becomes a cool charcoal, retaining the ice-blue accent and photographic full-screen structure. It does not retain the condensed display fonts.
+按用户要求，本站使用常规系统字体与适中字号，不保留窄体展示字体。深色底调整为冷调炭灰，保留冰蓝点缀与全屏照片结构。
 
-The layout and interaction framework are recreated in separate HTML, CSS, and JavaScript files. CSS, native Web Animations, and IntersectionObserver implement the reference's essential transitions without a build step or a downloaded third-party runtime. It supports keyboard navigation, Escape to close details, browser back, relative asset paths, and reduced motion. The original résumé, awards, project copy, and personal photos are replaced with appropriate academic sections and clearly identified placeholders.
+布局与交互分别写在独立 HTML、CSS 和 JavaScript 文件中。使用 CSS、原生 Web Animations 与 IntersectionObserver 实现主要过渡，无需构建步骤或下载第三方运行库。支持键盘导航、Escape 关闭详情、浏览器返回、相对资源路径与减少动态效果偏好。原站简历、奖项、项目文案和个人照片已替换为相应学术分区及明确标识的占位内容。

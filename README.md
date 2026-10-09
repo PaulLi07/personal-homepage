@@ -1,6 +1,6 @@
-# Yuhong Li · Personal Homepage
+# Yuhong Li 个人主页
 
-Nankai University 理论物理研究生的英文个人主页。采用 HTML、CSS、原生 JavaScript 和本地图片，浏览器直接运行，无框架依赖和构建步骤。
+南开大学理论物理研究生的英文个人主页。采用 HTML、CSS、原生 JavaScript 和本地图片，浏览器直接运行，无框架依赖和构建步骤。
 
 - 网站：<https://paulli07.github.io/personal-homepage/>
 - 远端：<https://github.com/PaulLi07/personal-homepage>
@@ -35,10 +35,17 @@ npm run package     # 源码 ZIP：../outputs/personal-homepage-source.zip
 
 新增论文、笔记、项目或故事，优先编辑 `js/content.js` 的 `entries`。没有真实资料的栏目保留空数组。替换图片时同步更新路径、替代文本、占位说明和署名。
 
+## 固定维护要求
+
+- 所有说明文档使用中文；文件路径、命令、代码标识、网址和专有名称保留原文。
+- 所有网页呈现内容使用英文，包括页面标题、提示、图片替代文本和无障碍标签。
+- 每次扩展模块都要在 `docs/modules/` 新建或更新对应的简洁中文说明，并完成兼容性测试；在说明中记录实际环境、结果和未覆盖项。
+
 ## 维护文档
 
 - [框架概要](docs/ARCHITECTURE.md)：加载顺序、数据结构、路由和功能扩展入口。
 - [工作协议](docs/WORKFLOW.md)：Git、检查、提交和发布流程。
+- [模块说明目录](docs/modules/README.md)与[模块模板](docs/modules/TEMPLATE.md)：扩展说明及兼容性测试记录。
 - [AGENTS.md](AGENTS.md)：后续代理维护时必须遵守的项目约定。
 - [CHANGELOG.md](CHANGELOG.md)：重要变更记录。
 - [图片替换清单](docs/image-sources.md)：占位素材对应位置及来源。
