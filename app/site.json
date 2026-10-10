@@ -47,10 +47,15 @@
       "folder": "modules/academic",
       "view": "modules/academic/section.html",
       "styles": [
-        "modules/academic/styles.css"
+        "modules/academic/styles.css",
+        "modules/academic/experience/log.css"
       ],
       "scripts": [
         "modules/academic/experience/content.js",
+        "modules/academic/experience/data.js",
+        "modules/academic/experience/entries.js",
+        "modules/academic/experience/log.js",
+        "modules/academic/experience/integration.js",
         "modules/academic/publications/content.js",
         "modules/academic/notes/content.js",
         "modules/academic/projects/content.js",
@@ -65,7 +70,6 @@
       "styles": [
         "modules/life/styles.css",
         "modules/life/moments/blog.css",
-        "modules/life/moments/author.css",
         "modules/life/relationship/security.css"
       ],
       "scripts": [
@@ -73,7 +77,6 @@
         "modules/life/moments/data.js",
         "modules/life/moments/posts.js",
         "modules/life/moments/blog.js",
-        "modules/life/moments/author.js",
         "modules/life/moments/integration.js",
         "modules/life/travels/content.js",
         "modules/life/creations/content.js",
@@ -105,5 +108,19 @@
       "modules/credits/styles.css"
     ],
     "scripts": []
-  }
+  },
+  "services": [
+    {
+      "id": "author",
+      "folder": "modules/author",
+      "styles": [
+        "modules/author/styles.css"
+      ],
+      "scripts": [
+        "modules/author/config.js",
+        "modules/author/session.js",
+        "modules/author/editor.js"
+      ]
+    }
+  ]
 }

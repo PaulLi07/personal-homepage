@@ -17,13 +17,16 @@ modules/
     moments/ travels/ creations/ relationship/
   contact/                 联系
   credits/                 独立素材署名页
+  author/                  两栏共用的密码登录、GitHub 连接与编辑器服务
 shared/                    基础样式、导航、详情弹窗、过渡与注册接口
 scripts/                   本地装配、检查、预览与打包
 docs/                      框架、协议、素材及测试记录
 index.html, credits.html   装配生成的发布页面
 ```
 
-主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、封面和说明；Moments 的博客与作者行为、Relationship 的加密行为各自在本模块扩展。无行为的模块无需空脚本，无图片的模块无需空图片目录。
+主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、封面和说明；Experience 日志、Moments 博客、Relationship 解密行为留在各自模块，统一会话与编辑器由 author 服务提供。无行为的模块无需空脚本，无图片的模块无需空图片目录。
+
+`modules/author/` 是用户要求的共用功能服务，不占首页分区，无 HTML 根节点且不调用 `registerSection`。`app/site.json` 的 `services` 声明其 `id`、`folder`、`styles`、`scripts`；配置、会话与通用编辑器在共享基础之后、分区脚本之前装配。Experience 与 Moments 只接入服务，各自维护读者、数据 schema 和文件路径。
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
@@ -33,13 +36,14 @@ index.html, credits.html   装配生成的发布页面
 
 | 文件 | 职责 |
 |---|---|
-| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts` 与各模块的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序，路径相对于站点根 |
+| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts`、`services` 与分区的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序，路径相对于站点根 |
 | `app/index.template.html` | 首页文档外壳与装配位置 |
 | `app/credits.template.html` | 素材署名页外壳与装配位置 |
 | `app/main.js` | 取得共享服务并初始化注册模块；不放具体模块内容 |
 | `scripts/assemble.py` | 读取清单与模板，嵌入 HTML 片段，输出根页面并引用对应 CSS / JS |
 | `scripts/test-compatibility.cjs` | 可选浏览器实测工具，自启临时子路径服务器；不参与网站运行、装配或普通检查 |
 | `scripts/test-features.cjs` | 可选博客、模拟作者发布和加密视图测试；临时夹具通过请求拦截提供，不发布真实文章 |
+| `scripts/test-author-log.cjs` | 用随机作者密码、临时双集合与模拟 GitHub 验证统一会话、加密缓存和独立发布 |
 | `scripts/test-security.cjs`、`scripts/relationship.cjs` | 离线算法回归与本地密文生成 / 格式检查；不参与网页运行 |
 | `index.html`、`credits.html` | 生成产物，供本地文件打开、预览与直接上传；禁止手改 |
 | `shared/favicon.svg` | 跨页面网站图标 |
@@ -53,7 +57,7 @@ index.html, credits.html   装配生成的发布页面
 
 装配工具使用 Python 3.9+。`sections` 中连续模块若声明同一个 `container`，装配器把它们包入共同容器；当前 home 与 about 使用 `container: "page1"`，保持连续背景。模板通过 `{{sections}}` 装配分区；新增分区只需清单和导航，不需要新增模板占位；停用分区时同步导航及其他公开入口。图片预载随模块清单声明，模板不绑定具体模块图片。
 
-脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `sections` 顺序加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在模块样式前，`afterStyles` 在模块样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
+脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载作者配置 / 会话 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
 
 ## 注册接口与共享服务
 
@@ -68,7 +72,7 @@ index.html, credits.html   装配生成的发布页面
 
 胶水使用 `createDetails({ dialog, content, views, groups, transitions })` 创建详情服务，`views` 为注册表，`groups` 来自分区的 `detailGroup`。胶水只传递这些接口，不解释文章、作者权限或加密数据；共享服务负责弹窗、历史与焦点恢复。
 
-自定义 `render({ host, route, signal, navigate })` 只操作自己的 `host`。`route` 是栏目后的尾段，如文章标识或 `author`；`navigate(null)` 返回栏目根，`navigate(slug)` 进入正文。关闭、切换或重新渲染时由生命周期清理事件与异步结果；`render` 可返回幂等的清理函数（允许重复调用），私密明文与作者令牌不得留在后续视图中。
+自定义 `render({ host, route, signal, navigate })` 只操作自己的 `host`。`route` 是栏目后的尾段，如文章标识或 `author`；`navigate(null)` 返回栏目根，`navigate(slug)` 进入正文。关闭、切换或重新渲染时由生命周期清理事件、DOM 与异步结果；`render` 可返回幂等的清理函数（允许重复调用）。Relationship 明文随详情清理；统一作者会话按独立生命周期管理，不能因关闭一栏使另一栏退出。
 
 导航入口为 `createNavigation({ root, sections })`，只接收导航和公共分区根节点；过渡入口为 `createTransitions(reducedMotion)`。胶水调用 `initReveals(roots)` 启动共享进入动画，观察逻辑留在 `shared/reveal.js`，不放回胶水层。胶水逐模块隔离初始化异常，不阻断其他模块和共享服务启动。共享入口和使用边界见 [共享层说明](../shared/README.md)。
 
@@ -91,15 +95,23 @@ index.html, credits.html   装配生成的发布页面
 
 Moments 的 `posts.js` 使用 `Homepage.registerBlogPosts(JSON数组)` 登记文章，格式为 `{ id, title, date, excerpt, body, author }`；正文为英文纯文本，作者为 Yuhong Li，文章标识 `author` 保留给工作台。`data.js` 管文章校验与 getter，`integration.js` 将读者与作者视图接入注册接口。
 
-作者工作台默认方案为 GitHub PAT，检查 `PaulLi07` 与仓库所有者并依赖 GitHub 真正授权；令牌只在当前视图内存中保存，关闭即丢弃。先完整部署新版本，用户点击 `Publish` 后才通过 Contents API 的 PUT 更新 `main` 分支的 `posts.js`；此行为与普通本地源码维护分开。
+Experience 的 `entries.js` 使用 `Homepage.registerAcademicLogs(JSON数组)` 登记独立学术日志，增加 `kind` 与可选 `reference`。类型限定 Research / Learning / Seminar / Milestone，参考链接仅绝对 HTTPS；`data.js` 提供校验、规范化与 `getAcademicLogs()`，命名空间为 `experience.entries`。日志读者与接入行为留在 Experience，不读取 Moments 内部。
+
+`modules/author/config.js` 只保存随机盐、PBKDF2-SHA256 600000 次派生校验值及 owner / repo，不保存原密码。`Homepage.authorSession` 提供 `isUnlocked`、`isConnected`、`unlock`、`connect`、`signOut`、`forgetConnection`、`request`、`subscribe`；订阅状态包含 `unlocked`、`connected`、`remembered`、`restoreError`。首次密码登录后连接 GitHub PAT，核验 `PaulLi07`、仓库所有者与 push 权限，真正的授权由 GitHub 执行。
+
+解锁 / 连接在当前页面跨两栏和关闭详情保持；Sign out 清会话内存，刷新或页面离开清内存。只有用户选择 remember，才将 PAT 加密保存在当前浏览器 localStorage；缓存用独立密码派生材料与随机盐 / IV，公开校验值不能直接解开它。刷新先输入密码解密缓存，再重新 GET `/user` 与仓库验证；篡改或失效仅留下未连接状态，Forget 删除缓存与当前连接。
+
+当前 GitHub 请求收到 401 时，服务清连接、取消同代请求，保留已解锁工作台与草稿；编辑器显示重新连接入口。会话订阅仅在解锁状态改变时重建表单，避免连接状态变化丢失草稿；缓存删除失败不显示成功。
+
+通用编辑器接收当前集合的 schema、读写路径和 getter；用户主动点击 `Publish to GitHub`，才重读远端 SHA 并 PUT 到 `main` 的对应 `entries.js` 或 `posts.js`。冲突不覆盖、保留草稿，两集合不互写；远端登记文件严格解析 JSON 而不执行。`Download update` 只导出当前集合登记文件。以上行为与普通本地源码维护分开。
 
 Relationship 的公开介绍保持空条目；`encrypted.js` 默认登记 `null`，配置后只存密文。`data.js`、`security.js` 和 `integration.js` 归本模块，解密与密码界面不进入共享服务。工具使用 AES-GCM 256 位与 PBKDF2-SHA256 600000 次，用户在本地设置至少 12 字符的口令；明文只允许位于项目外或未跟踪的 `.private/`，后者禁止跟踪、打包与公开部署。
 
 ## 路由与扩展
 
-首页锚点保持 `#home`、`#about`、`#academic`、`#life`、`#contact`；普通详情如 `#academic/experience`、`#life/travels`。Moments 列表为 `#life/moments`，正文为 `#life/moments/<slug>`，作者工作台为 `#life/moments/author`。共用服务管理嵌套路由、刷新、历史、关闭与焦点恢复，不承载模块业务。旧详情链接 research → experience、places → travels、life/notes → creations、outside → relationship 通过分组 aliases 规范到新地址，避免既有书签失效。
+首页锚点保持 `#home`、`#about`、`#academic`、`#life`、`#contact`；普通详情如 `#life/travels`。Experience 与 Moments 各使用栏目根列表、`/<slug>` 正文、`/author` 工作台；如 `#academic/experience/author`、`#life/moments/author`。共用服务管理嵌套路由、刷新、历史、关闭与焦点恢复，不承载模块业务。旧详情链接 research → experience、places → travels、life/notes → creations、outside → relationship 通过分组 aliases 规范到新地址，避免既有书签失效。
 
-- 添加论文或普通栏目条目：编辑对应子模块 `content.js`；博客文章编辑或通过作者工作台发布到 `posts.js`，私密内容只通过本地工具更新 `encrypted.js`。
+- 添加论文或普通栏目条目：编辑对应子模块 `content.js`；学术日志维护 `entries.js`，生活文章维护 `posts.js`，两者可分别通过统一作者工作台更新；私密内容只通过本地工具更新 `encrypted.js`。
 - 增加详情子模块：建立其目录、内容、图片和说明，声明脚本；在父模块自己的片段中增加入口，调整父模块布局。
 - 增加首页模块：建立独立片段、样式、按需脚本和资源，登记 `app/site.json` 与导航；使用注册接口初始化，不将功能逻辑写入 `app/main.js`。
 - 增加详情分组或共享能力：说明需求与接口，回归共用详情、导航及使用者，不能仅为单模块方便扩大共享层。
@@ -108,6 +120,6 @@ Relationship 的公开介绍保持空条目；`encrypted.js` 默认登记 `null`
 
 保留相对路径，不以 `/` 开头引用资源。提交前装配并检查，再按 [工作协议](WORKFLOW.md) 实测桌面、手机、键盘、详情路由、子路径和减少动态效果；静态检查不能替代浏览器测试。
 
-`npm run test:compat` 与 `npm run test:features` 使用维护环境已有的 Playwright 和三个测试内核，支持 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定模块位置。它们检查已装配页面，报告写入忽略且不交付的 `artifacts/`；实际证据与限制记录在模块文档。`npm run test:security` 离线验证加密算法，`npm run relationship:check` 检查正式密文格式。测试工具不是网页依赖，基础维护不自动安装它。模块扩展同步补案例，具体范围见工作协议。
+`npm run test:compat`、`npm run test:features`、`npm run test:author` 使用维护环境已有的 Playwright 和三个测试内核，支持 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定模块位置。它们检查已装配页面，报告写入忽略且不交付的 `artifacts/`；实际证据与限制记录在模块文档。`npm run test:author-security` 离线验证作者会话和加密缓存，`npm run test:security` 验证 Relationship 算法，`npm run relationship:check` 检查正式密文格式。测试工具不是网页依赖，基础维护不自动安装它。模块扩展同步补案例，具体范围见工作协议。
 
-2026-10-10 新栏目及自定义详情已完成三内核、三个视口回归，功能流程与加密算法另行实测，证据见 [兼容性记录](COMPATIBILITY.md)。新增生命周期与路由仍须验证清理、焦点、历史和异步取消；模拟 GitHub 请求不能替代真实授权和部署验证。
+此前自定义详情与加密空间的证据见 [兼容性记录](COMPATIBILITY.md)；本次统一作者、加密连接缓存和学术日志的证据见 [author 记录](modules/author.md)。新增生命周期与路由仍须验证清理、焦点、历史和异步取消；模拟 GitHub 请求不能替代真实授权和部署验证。

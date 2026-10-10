@@ -26,3 +26,5 @@
 布局与交互按功能放入 `modules/`，各模块分别维护 HTML 片段、CSS、JavaScript、图片和简洁说明；真正复用的导航、详情与过渡放入 `shared/`。本地装配将片段生成根页面，上传后无需服务器构建，运行时仍使用 CSS、原生 Web Animations 与 IntersectionObserver，不依赖第三方运行库。支持键盘导航、Escape 关闭详情、浏览器返回、相对资源路径与减少动态效果偏好。原站简历、奖项、项目文案和个人照片已替换为相应学术分区及明确标识的占位内容。
 
 2026-10-10 新增的 Moments 博客、GitHub PAT 作者工作台与 Relationship 加密空间属于本站独立扩展，不是参考站的功能。它们通过自定义详情视图接入公共外壳，业务与私有数据仍在各自模块；三内核、三个视口的本次实测及 GitHub 模拟范围见 [兼容性记录](COMPATIBILITY.md)。
+
+随后按用户需求，Experience 扩展为独立学术日志，和 Moments 共用 `modules/author/` 的密码登录、GitHub 连接与通用编辑器。两集合与读者视图仍各自维护；配置只存密码派生校验值，用户主动选择后才在当前浏览器加密记住连接，刷新需密码恢复并重新验证 GitHub 权限。此扩展同样不来自参考站，当前证据见 [author 记录](modules/author.md)。

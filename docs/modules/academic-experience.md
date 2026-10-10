@@ -1,4 +1,25 @@
-# 学术经历详情测试记录
+# 学术日志与经历详情测试记录
+
+## 2026-10-10：学术日志与统一作者集成
+
+- 就近说明：[模块 README](../../modules/academic/experience/README.md)；入口为列表、`/<slug>` 正文和 `/author` 作者工作台。
+- 实际环境：Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5；各测 1440×900、390×844、320×780，HTTP `/personal-homepage/` 子路径。手机宽度为视口模拟，未测真机。
+- 命令：`npm run test:compat`、`npm run test:features`、`npm run test:author`；报告为忽略的 `artifacts/compatibility-results.json`、`feature-results.json`、`author-log-results.json`。
+- 正式 `entries.js` 为空，测试只替换 HTTP 响应；没有编造或发布学术经历。测试 GitHub 请求全部拦截，真实远端写入为 0。
+
+| 检查项 | 结果 | 实际证据 |
+|---|---|---|
+| 学术列表与阅读 | 通过 | 空列表、日期倒序、四种类型、正文及换行、安全文字呈现；日志与生活文章独立 |
+| 路由与焦点 | 通过 | 直接记录链接、刷新、未找到状态、返回列表标题焦点；基础脚本回归历史、键盘与关闭落点 |
+| HTTPS 参考链接 | 通过 | 可选引用显示、英文链接文本、新标签页的 `noopener noreferrer`；字段规范化拒绝不安全协议 |
+| 统一密码与连接 | 通过 | 两栏共享登录，密码后可编辑，首次 GitHub 连接、无效身份及权限拒绝、退出锁定 |
+| 独立集合发布 | 通过 | 类型与参考字段保留，只 PUT 当前集合和 main；409 保草稿，重试读取新 SHA 并保留远端记录 |
+| 加密缓存与生命周期 | 通过 | 关闭后会话保持、刷新密码恢复和重验、篡改拒绝、Forget 清连接；详情卸载清理视图 |
+| 布局与回归 | 通过 | 三内核及三宽度无横向溢出；正常与减少动态效果、首页、署名与其他栏目回归 |
+
+视觉核对已查看 Chromium 桌面列表及 390 像素编辑器截图；保持常规字体，细线分条与日期 / 类型突出学术日志。未覆盖真实 GitHub 授权、分支保护、线上新部署、外部引用实际可达性、手机真机和历史或品牌浏览器版本。DOM / 存储检查不证明堆内存物理擦除。
+
+## 静态经历详情的历史记录
 
 - 就近说明：[模块 README](../../modules/academic/experience/README.md)；入口：`#academic/experience`。
 - 测试日期：2026-10-10（北京时间）；改动范围：Research 改为 Experience、路径与已知资料占位。

@@ -161,9 +161,10 @@ async function inspectManifest() {
   await pathList(manifest.afterStyles, "site.afterStyles");
   await pathList(manifest.sharedScripts, "site.sharedScripts");
   if (!Array.isArray(manifest.sections)) { fail("site.sections: 必须是模块数组"); manifest.sections = []; }
+  if (!Array.isArray(manifest.services ?? [])) { fail("site.services: 必须是服务模块数组"); manifest.services = []; }
   const ids = new Set();
   const groups = new Set();
-  const modules = [...manifest.sections, { ...manifest.credits, id: "credits" }];
+  const modules = [...(manifest.services || []).map(module => ({...module, service: true})), ...manifest.sections, { ...manifest.credits, id: "credits" }];
   if (!object(manifest.credits)) fail("site.credits: 必须是模块对象");
   for (const [i, module] of modules.entries()) {
     if (!object(module)) { fail(`site.sections[${i}]: 必须是模块对象`); continue; }
@@ -172,7 +173,7 @@ async function inspectManifest() {
     if (ids.has(module.id)) fail(`${label}: 重复模块 id`);
     ids.add(module.id);
     await manifestPath(module.folder, `${label}.folder`, true);
-    await manifestPath(module.view, `${label}.view`);
+    if (!module.service) await manifestPath(module.view, `${label}.view`);
     await pathList(module.styles, `${label}.styles`);
     await pathList(module.scripts, `${label}.scripts`);
     if (module.preloadImages !== undefined) await pathList(module.preloadImages, `${label}.preloadImages`);
@@ -193,7 +194,7 @@ async function inspectManifest() {
 }
 
 async function readRegistrations(modules) {
-  const context = vm.createContext({ window: {}, TextEncoder }, { codeGeneration: { strings: false, wasm: false } });
+  const context = vm.createContext({ window: {addEventListener() {}, removeEventListener() {}}, TextEncoder, TextDecoder, AbortController }, { codeGeneration: { strings: false, wasm: false } });
   vm.runInContext(`window.__registrations = { sections: [], details: [], views: [], data: [] };
     window.Homepage = {
       registerSection(module) { window.__registrations.sections.push({ source: window.__source, module, initType: typeof module?.init }); },
@@ -216,7 +217,7 @@ async function readRegistrations(modules) {
 
 async function inspectDetails(modules, groups) {
   const registrations = await readRegistrations(modules);
-  const sections = new Set(modules.filter(object).map(module => module.id));
+  const sections = new Set(modules.filter(module => object(module) && !module.service).map(module => module.id));
   const owners = new Map();
   for (const module of modules.filter(object)) {
     for (const script of Array.isArray(module.scripts) ? module.scripts : []) owners.set(script, module);
@@ -238,10 +239,10 @@ async function inspectDetails(modules, groups) {
     registeredSections.add(module.id);
   }
   for (const module of modules.filter(object)) {
-    if (module.id !== "credits" && !html.get(sitePage)?.ids.has(module.id)) {
+    if (!module.service && module.id !== "credits" && !html.get(sitePage)?.ids.has(module.id)) {
       fail(`index.html: 缺少模块根元素 id="${module.id}"`);
     }
-    if (module.id !== "credits" && module.scripts?.length && !registeredSections.has(module.id)) {
+    if (!module.service && module.id !== "credits" && module.scripts?.length && !registeredSections.has(module.id)) {
       fail(`site.${module.id}: 脚本未 registerSection 对应模块`);
     }
   }

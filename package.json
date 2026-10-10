@@ -11,7 +11,10 @@
     "test:compat": "node scripts/test-compatibility.cjs",
     "test:features": "node scripts/test-features.cjs",
     "relationship:check": "node scripts/relationship.cjs --check",
-    "test:security": "node scripts/test-security.cjs"
+    "test:security": "node scripts/test-security.cjs",
+    "test:author": "node scripts/test-author-log.cjs",
+    "test:author-security": "node scripts/test-author-session.cjs",
+    "author:password": "python3 modules/author/tools/configure.py"
   },
   "engines": {
     "node": ">=18"

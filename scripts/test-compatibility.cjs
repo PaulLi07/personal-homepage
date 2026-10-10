@@ -43,7 +43,10 @@ async function assertOpen(page, title) {
     return image.complete && image.naturalWidth > 0;
   });
   assert.equal(await page.locator("#detail-image").evaluate(image => image.complete && image.naturalWidth > 0), true);
-  if (title === "Moments.") {
+  if (title === "Experience.") {
+    assert.equal(await page.locator('.academic-log[data-log-view="list"]').count(), 1);
+    assert.equal(await page.getByText("No entries yet", {exact: true}).isVisible(), true);
+  } else if (title === "Moments.") {
     assert.equal(await page.locator('.moments-blog[data-blog-view="list"]').count(), 1);
     assert.equal(await page.getByText("No posts yet", {exact: true}).isVisible(), true);
   } else if (title === "Relationship.") {

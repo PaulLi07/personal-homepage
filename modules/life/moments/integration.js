@@ -5,8 +5,13 @@
   api.registerDetailView("life", "moments", {
     render({host, route, signal, navigate}) {
       if (route === "author") {
-        return api.createBlogAuthor({
-          posts: api.getBlogPosts,
+        return api.createAuthorEditor({
+          collection: {
+            id: "moments", label: "Moments", eyebrow: "Life · Author workspace",
+            editorTitle: "Write a new post", noun: "post", registration: "registerBlogPosts",
+            path: "modules/life/moments/posts.js", getRecords: api.getBlogPosts,
+            normalize: api.normalizeBlogPosts, fields: []
+          },
           onPublished(post, posts) {
             api.registerBlogPosts(posts);
             api.registerData("moments.lastPublished", post.id);
@@ -22,7 +27,7 @@
       }).render({host, route, signal});
       if (route && route === api.getData("moments.lastPublished")) {
         const notice = document.createElement("p");
-        notice.className = "moments-author__status";
+        notice.className = "author-status";
         notice.setAttribute("role", "status");
         notice.textContent = "Published to GitHub. The live website may take a moment to update.";
         host.prepend(notice);

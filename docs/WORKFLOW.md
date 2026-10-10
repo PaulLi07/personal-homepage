@@ -8,8 +8,9 @@
 - **所有网页呈现内容使用英文。** 包括正文、导航、按钮、弹窗、提示、空状态、图片署名、页面标题与描述、替代文本和无障碍标签；署名页同样遵守。
 - 页面保持常规字形、适中字号、简洁学术风与宇宙主题，只使用用户提供的真实资料。
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
-- 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。没有用户资料的经历、旅行与创作保持空条目。
+- 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。Experience 学术日志与 Moments 生活文章分别维护，没有用户资料时保持空数组，不编造内容。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
+- 用户已要求统一作者登录，允许 `modules/author/` 以无 HTML 根节点的 `services` 模块提供两栏共用的会话与编辑器；集合 schema、数据和读者视图仍由各自模块负责。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
 - 根 `index.html`、`credits.html` 是生成产物，修改源片段或模板后显式装配，禁止手改生成页面。保持相对资源路径、普通脚本和直接文件打开能力。
@@ -62,13 +63,15 @@ git switch -c feat/short-topic
 
 ### 可重复测试工具
 
-`scripts/test-compatibility.cjs` 提供 `npm run test:compat`，`scripts/test-features.cjs` 提供 `npm run test:features`。先装配并执行普通检查，再按改动范围运行；它们不会自动装配，也不会安装工具或下载浏览器。维护环境需预先提供 Playwright 及 Chromium、Firefox、WebKit，可通过 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定已有模块路径。测试依赖不参与网站运行，普通 `check` 保持离线、只读且不需要测试工具。
+`scripts/test-compatibility.cjs`、`scripts/test-features.cjs`、`scripts/test-author-log.cjs` 分别提供 `npm run test:compat`、`npm run test:features`、`npm run test:author`。先装配并执行普通检查，再按改动范围运行；它们不会自动装配，也不会安装工具或下载浏览器。维护环境需预先提供 Playwright 及 Chromium、Firefox、WebKit，可通过 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定已有模块路径。测试依赖不参与网站运行，普通 `check` 保持离线、只读且不需要测试工具。
 
-浏览器脚本自启临时 HTTP 服务，验证仓库子路径，不依赖常驻 `preview`。基础案例覆盖三个内核、1440×900 / 390×844 / 320×780 视口、详情入口、键盘、历史、资源、动画、文件打开和署名页返回。功能案例覆盖博客嵌套路由、身份或写权限错误、远端版本冲突、草稿保留、重新读取 SHA、关闭清理、错误口令及解锁后再锁定；文章、密文、令牌与 GitHub 响应均为临时夹具，远端写入全部拦截。窄屏模拟不等于真机，GitHub API 模拟通过不等于真实账号发布成功。
+浏览器脚本自启临时 HTTP 服务，验证仓库子路径，不依赖常驻 `preview`。基础案例覆盖三个内核、1440×900 / 390×844 / 320×780 视口、详情入口、键盘、历史、资源、动画、文件打开和署名页返回。功能案例覆盖读者嵌套路由与 Relationship 解锁 / 清理；统一作者案例覆盖密码拒绝、两栏会话复用、GitHub 身份或权限错误、发布冲突、最新 SHA、集合隔离、退出、加密连接缓存、刷新重验与篡改拒绝。文章、密码、密文、令牌与 GitHub 响应均为临时夹具，远端写入全部拦截。窄屏模拟不等于真机，GitHub API 模拟通过不等于真实账号发布成功。
 
-报告写入被忽略且不交付的 `artifacts/compatibility-results.json` 与 `artifacts/feature-results.json`。核对本次命令退出结果与报告日期，将相关证据和限制写入 `docs/modules/`；旧报告存在不代表本轮通过。新增模块或改变数据、路由和接口时同步补测试案例，自动检查之外仍按任务范围检查实际视觉布局，不能套用旧模块结果。
+报告写入被忽略且不交付的 `artifacts/compatibility-results.json`、`feature-results.json`、`author-log-results.json`。核对本次命令退出结果与报告日期，将相关证据和限制写入 `docs/modules/`；旧报告存在不代表本轮通过。新增模块或改变数据、路由和接口时同步补测试案例，自动检查之外仍按任务范围检查实际视觉布局，不能套用旧模块结果。
 
 `npm run test:security` 无需 Playwright，用内存随机夹具验证算法往返、独立 Web Crypto 互通、篡改拒绝、格式边界及注册解析；它不配置真实口令，不请求网络，不修改正式密文。`npm run relationship:check` 只读检查 `encrypted.js` 格式，默认空值合法。2026-10-10 的本次结果见 [兼容性记录](COMPATIBILITY.md)；格式通过不代表真实私密资料、打包排除或线上环境已经验证。
+
+`npm run test:author-security` 离线验证统一会话、密码派生、缓存加密 / 篡改、取消、401 与请求边界；只用随机密码及模拟 GitHub。它与真实页面 `test:author` 分开，不能以离线通过替代浏览器焦点、表单和双集合发布测试。
 
 ## 5. 装配、检查与提交
 
@@ -106,14 +109,15 @@ git push origin main
 
 不要将身份令牌写入远端 URL、配置或仓库。部署后检查线上首页、学术详情、生活栏目、博客阅读、关系空间未配置或锁定状态、署名页与手机布局。手动上传过更新后先 `git fetch origin`，比较再同步，保持一份正式源码。
 
-### Moments 作者发布
+### 统一作者与两栏发布
 
-1. 先完整部署新版本的生成页面、模块脚本、样式及资源，再使用 `#life/moments/author`；只上传文章文件不能让旧版网站获得作者工作台。
-2. 本次推荐默认使用 GitHub PAT。用户在网页输入令牌，工作台核验账号 `PaulLi07`、目标仓库所有者与写权限；真正的仓库授权仍由 GitHub 执行，前端按钮不是权限边界。
-3. PAT 仅在当前作者工作台内存中保留，关闭、切换或退出即丢弃；不写源码、浏览器持久存储、URL 或日志，不通过聊天收集。
-4. 文章正文使用英文纯文本；`posts.js` 是 `registerBlogPosts(JSON数组)` 登记文件，不能执行任意远端脚本。文章标识稳定，`author` 保留给工作台。
-5. 用户主动点击 `Publish` 后，浏览器向 GitHub Contents API 发出 PUT，更新 `main` 的 `modules/life/moments/posts.js`。保留远端文件版本校验，冲突时重新检查远端，不能覆盖他人变化。
-6. Pages 更新后检查读者列表、正文及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；有分歧则保留并整合双方内容，避免旧 ZIP 覆盖浏览器新发布的 `posts.js`。
+1. 先完整部署新版本的生成页面、作者服务、模块脚本、样式及资源，再使用 `#academic/experience/author` 或 `#life/moments/author`；仅上传数据文件不能让旧版网站获得新工作台。
+2. 统一作者密码只以随机盐与 PBKDF2-SHA256 600000 次派生校验值保存在配置；不把用户原密码写入源码、文档、日志或聊天。输入密码后才显示编辑器；首次使用再连接 GitHub PAT。更改密码使用 `npm run author:password` 的本地隐藏输入与确认，随后完整部署；旧连接缓存需重新建立。
+3. 用户已选择在线发布并记住加密连接的流程；首次连接时勾选 remember。工作台核验 `PaulLi07`、仓库所有者与写权限，真实仓库授权仍由 GitHub 执行。未选择记住时只保留会话内存，选择后仅加密缓存进当前浏览器 localStorage；明文密码与令牌不进入持久存储、URL、Cookie、历史或源码。
+4. 会话可跨两栏与详情关闭保持。Sign out 清内存并锁定两处，保存的加密连接可保留；Forget 删除缓存及当前连接。刷新 / 页面离开清内存；刷新后须输入密码解密缓存，再 GET `/user` 与仓库重验，损坏或失效时重新连接。请求返回 401 时保持解锁和草稿，清连接后重新授权；缓存删除失败须如实提示。
+5. Experience 在 `entries.js` 登记英文日志，增加 Research / Learning / Seminar / Milestone 类型与可选 HTTPS 参考；Moments 在 `posts.js` 登记英文生活文章。两集合独立，标识稳定，`author` 保留；远端文件严格解析纯 JSON 登记，不能执行脚本或把正文当 HTML。
+6. 用户点击 `Publish to GitHub` 才 PUT 到 `main` 的当前数据文件；每次先重读 SHA、保留远端内容，冲突不覆盖且保留草稿。`Download update` 只导出当前集合文件，手动上传同样遵守 Git 同步与资料保留规则。
+7. Pages 更新后检查读者列表、正文及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；有分歧则保留并整合双方内容，避免旧 ZIP 覆盖在线更新的 `entries.js` 或 `posts.js`。作者服务接口与本次证据见 [author 记录](modules/author.md)。
 
 ### Relationship 本地配置
 
@@ -132,12 +136,14 @@ npm run relationship:check
 |---|---|
 | 改功能 | 对应 `modules/<功能>/README.md` 及同目录源码 |
 | 改详情 | 对应学术 / 生活子模块的 `content.js` |
-| Moments 文章 / 作者入口 | `modules/life/moments/posts.js` / `#life/moments/author` |
+| 两栏数据 / 作者入口 | Experience 的 `entries.js` 与 `/author`；Moments 的 `posts.js` 与 `/author` |
 | 本地生成 Relationship 密文 | `node scripts/relationship.cjs --input /项目外/relationship.json` |
 | 改模块声明或外壳 | `app/site.json`、`app/*.template.html` |
 | 装配 / 只读检查 | `npm run assemble` / `npm run check` |
 | 可选浏览器兼容性测试 | `npm run test:compat`；工具来源可用 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定 |
 | 可选功能集成测试 | `npm run test:features`；GitHub API 全部模拟，真实远端写入为 0 |
+| 统一作者与学术日志测试 | `npm run test:author`；随机密码及双集合夹具，GitHub 全模拟 |
+| 离线作者会话 / 更改作者密码 | `npm run test:author-security` / `npm run author:password`（本地交互，不使用命令参数传密码） |
 | 离线加密算法 / 正式密文格式 | `npm run test:security` / `npm run relationship:check` |
 | 本地预览 | `npm run preview`，默认端口 8767 |
 | 替换图片 | 对应模块 `images/` 与图片来源文档 |

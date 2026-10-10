@@ -42,8 +42,9 @@ def render(template, replacements):
 def pages():
     config = json.loads(read("app/site.json"))
     sections = config["sections"]
-    styles = config["sharedStyles"] + [path for module in sections for path in module["styles"]] + config.get("afterStyles", [])
-    scripts = config["sharedScripts"] + [path for module in sections for path in module["scripts"]] + ["app/main.js"]
+    features = config.get("services", []) + sections
+    styles = config["sharedStyles"] + [path for module in features for path in module["styles"]] + config.get("afterStyles", [])
+    scripts = config["sharedScripts"] + [path for module in features for path in module["scripts"]] + ["app/main.js"]
     assembled = []
     container = None
     for module in sections:

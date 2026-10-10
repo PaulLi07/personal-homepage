@@ -29,15 +29,17 @@ npm run assemble
 npm run check
 npm run test:compat
 npm run test:features
+npm run test:author
+npm run test:author-security
 npm run test:security
 npm run relationship:check
 ```
 
 Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/path/to/playwright npm run test:compat` 指定模块路径。它是可选测试工具，网站运行、普通检查、预览和打包不依赖它；`npm run check` 不安装依赖或下载浏览器。
 
-两个浏览器脚本自行启动临时服务器，在 `/personal-homepage/` 下验证页面，无需常驻预览。`test:compat` 检查布局、资源、导航、详情、键盘、历史、动画和文件打开；`test:features` 使用临时文章与密文、完全模拟 GitHub API，验证博客、作者发布流程和解锁生命周期。报告分别为 `artifacts/compatibility-results.json` 与 `artifacts/feature-results.json`；该目录被忽略且不用于源码交付。`test:security` 离线验证加密算法，`relationship:check` 只读检查正式密文登记文件。
+浏览器脚本自行启动临时服务器，在 `/personal-homepage/` 下验证页面，无需常驻预览。`test:compat` 检查布局、资源、导航、详情、键盘、历史、动画和文件打开；`test:features` 检查博客与加密视图；`test:author` 用随机密码、临时文章与完全模拟的 GitHub API，检查统一作者、加密连接缓存及两栏独立发布。报告分别为 `artifacts/compatibility-results.json`、`feature-results.json`、`author-log-results.json`；该目录被忽略且不用于源码交付。`test:author-security` 离线验证作者会话与缓存，`test:security` 验证 Relationship 算法，`relationship:check` 只读检查正式密文登记文件。
 
-2026-10-10 两套浏览器测试均在三个内核、三个视口通过，功能测试共 81 个流程，加密算法 9 项通过；GitHub 真实写入为 0。实际环境和限制见 [兼容性实测](docs/COMPATIBILITY.md)。模拟视口不等于手机真机，模拟发布不等于真实账号或线上部署验证。
+2026-10-10 统一作者与学术日志在三个内核、三个视口通过，共 144 个流程；离线作者会话 21 项通过，真实 GitHub 写入为 0，正式配置与两栏数据文件保持不变。环境及范围见 [author 记录](docs/modules/author.md)，基础与 Relationship 证据见 [兼容性实测](docs/COMPATIBILITY.md)。模拟视口不等于手机真机，模拟发布不等于真实账号或线上部署验证。
 
 ## 功能入口
 
@@ -47,6 +49,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/about/` | 个人简介与资料 |
 | `modules/academic/` | Experience、Publications、Notes、Projects；对应 `experience/`、`publications/`、`notes/`、`projects/` |
 | `modules/life/` | Moments 博客、Travels 旅行、Creations 创作、Relationship 加密空间；各自保存内容、行为和资源 |
+| `modules/author/` | Experience 与 Moments 共同使用的密码登录、GitHub 连接和编辑器服务 |
 | `modules/contact/` | 联系方式、背景与年份 |
 | `modules/credits/` | 图片署名独立页面 |
 | `shared/` | 真正跨模块使用的基础样式、导航、详情弹窗、过渡与注册接口 |
@@ -54,15 +57,19 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `scripts/` | 装配、检查、预览和打包工具 |
 | `docs/` | 框架、协议、素材来源及模块测试记录 |
 
-先打开对应功能目录的 `README.md`，再修改同目录源码。学术与普通生活栏目编辑 `content.js`；Moments 文章维护 `posts.js`；Relationship 只由本地工具生成密文。没有真实资料时保留空条目。不要手改根目录 `index.html`、`credits.html`，它们会被装配覆盖。
+先打开对应功能目录的 `README.md`，再修改同目录源码。公开介绍与普通栏目编辑 `content.js`；Experience 学术日志维护 `entries.js`，Moments 文章维护 `posts.js`；Relationship 只由本地工具生成密文。没有真实资料时保留空条目。不要手改根目录 `index.html`、`credits.html`，它们会被装配覆盖。
 
-## Moments 博客与作者工作台
+## 学术日志、生活博客与统一作者入口
 
-访客从 `#life/moments` 查看文章列表，从 `#life/moments/<slug>` 阅读正文。`#life/moments/author` 是作者工作台；`author` 不能用作文章标识。文章数据是 `posts.js` 中登记的 JSON 数组，正文按普通英文文本显示。
+Experience 的 `#academic/experience` 展示学术日志，支持 Research / Learning / Seminar / Milestone 分类与可选 HTTPS 参考链接；Moments 的 `#life/moments` 展示生活文章。两栏各以 `/<slug>` 阅读正文、`/author` 进入工作台，数据分别在 `entries.js` 和 `posts.js`，正文均为普通英文文本。`author` 不能用作文章标识。
 
-本次推荐默认通过 GitHub PAT 使用作者工作台。先完整部署新版本，再在网页作者入口输入具有目标仓库写权限的令牌；工作台核验 `PaulLi07` 身份、仓库所有者与权限。真正的写入授权由 GitHub 执行，访客看到作者按钮不代表能发布。
+先完整部署新版本。在任一作者入口输入统一作者密码，首次使用再连接具有目标仓库写权限的 GitHub PAT，并勾选记住加密连接；此后在同一浏览器只需密码恢复与权限重验。工作台核验 `PaulLi07`、仓库所有者与写权限，GitHub 执行真正授权。源码只保留随机盐与密码派生校验值，不保留原密码；更改密码使用 `npm run author:password` 在本地终端交互输入，随后完整部署新配置。
 
-令牌只存当前工作台内存，关闭或退出即丢弃，不进入源码或浏览器持久存储。用户点击 `Publish` 后才通过 GitHub Contents API 的 PUT 更新主分支 `modules/life/moments/posts.js`，触发后续 Pages 更新。在线发文后，本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；存在分歧时先保留并整合双方内容，避免旧源码包覆盖新文章。细节见 [Moments 说明](modules/life/moments/README.md)。
+默认令牌只存当前页面会话内存；主动勾选记住连接后，才以密码派生密钥加密保存在当前浏览器。两栏及详情关闭共享已登录会话；`Sign out`、刷新或离开页面清内存。刷新后先输入密码解开缓存，再重新验证 GitHub 身份和权限；`Forget saved connection` 删除缓存。明文密码与令牌不进入源码、持久存储、URL、Cookie、历史或日志。
+
+连接失效返回 401 时保留已解锁工作台和草稿，重新连接 GitHub 后再发布。浏览器缓存损坏或无权限时不会自动连接；忘记连接的存储删除失败会如实提示。
+
+点击 `Publish to GitHub` 才更新 `main` 中当前栏目的数据文件，发布前重读 SHA、保留远端文章，冲突不覆盖草稿；`Download update` 可只导出数据文件自行上传。两栏互不改写。在线发布后，本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；存在分歧时保留并整合双方内容，避免旧源码包覆盖新文章。接口见 [作者模块](modules/author/README.md)，读者细节见 [Experience](modules/academic/experience/README.md) 与 [Moments](modules/life/moments/README.md)。
 
 ## Relationship 加密空间
 

@@ -3,14 +3,14 @@ window.Homepage.registerDetail("academic", "experience", {
   "title": "Experience.",
   "label": "Experience",
   "kicker": "Academic · 01",
-  "subtitle": "An academic path in theoretical physics.",
+  "subtitle": "An academic log of research, learning, and milestones.",
   "image": "modules/academic/experience/images/cover.jpg",
   "imageAlt": "The Cosmic Cliffs in the Carina Nebula",
   "credit": "NASA, ESA, CSA, STScI · Cosmic Cliffs",
   "source": "https://images.nasa.gov/details/carina_nebula",
   "description": [
     "I am a graduate student at Nankai University, studying theoretical physics.",
-    "Academic experience and milestones will be added here once the details are ready to share."
+    "This academic log will collect research updates, learning notes, seminar records, and milestones as they are ready to share."
   ],
   "facts": [
     {
@@ -22,7 +22,7 @@ window.Homepage.registerDetail("academic", "experience", {
       "value": "Nankai University"
     }
   ],
-  "listTitle": "Academic experience",
-  "emptyMessage": "Academic experience has not been added yet.",
+  "listTitle": "Academic log",
+  "emptyMessage": "No academic entries have been added yet.",
   "entries": []
 });

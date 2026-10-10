@@ -14,6 +14,11 @@ const ENGINES = ["chromium", "firefox", "webkit"];
 const VIEWPORTS = [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 320, height: 780 }];
 const FILE_API = "/repos/PaulLi07/personal-homepage/contents/modules/life/moments/posts.js";
 const password = crypto.randomBytes(32).toString("base64url");
+const authorPassword = crypto.randomBytes(32).toString("base64url");
+const authorSalt = crypto.randomBytes(16);
+const authorConfig = {version: 1, iterations: 600000, salt: authorSalt.toString("base64"),
+  verifier: crypto.pbkdf2Sync(authorPassword, authorSalt, 600000, 32, "sha256").toString("base64"),
+  owner: "PaulLi07", repo: "personal-homepage"};
 const testToken = "feature-test-only-" + crypto.randomBytes(24).toString("hex");
 const privateFixture = {
   title: "Private integration fixture",
@@ -64,18 +69,18 @@ async function assertLayout(page) {
 }
 
 async function assertNoLeaks(page, { locked = false } = {}) {
-  const checks = await page.evaluate(({password, testToken, privateFixture, locked}) => {
+  const checks = await page.evaluate(({password, authorPassword, testToken, privateFixture, locked}) => {
     const values = [...Object.values(localStorage), ...Object.values(sessionStorage)];
     const persisted = values.join("\n") + document.cookie + JSON.stringify(history.state) + location.href;
     const text = document.body.textContent;
     return {
       emptyStorage: localStorage.length === 0 && sessionStorage.length === 0,
-      credentialsAbsent: !persisted.includes(password) && !persisted.includes(testToken),
+      credentialsAbsent: !persisted.includes(password) && !persisted.includes(authorPassword) && !persisted.includes(testToken),
       privateAbsent: !locked || (!text.includes(privateFixture.title) && !text.includes(privateFixture.body)),
       noExecutedMarkup: !window.__blogFixtureExecuted && !window.__privateFixtureExecuted
     };
-  }, { password, testToken, privateFixture, locked });
-  assert.equal(checks.emptyStorage, true, "新增功能写入浏览器持久存储");
+  }, { password, authorPassword, testToken, privateFixture, locked });
+  assert.equal(checks.emptyStorage, true, "未选择记住连接却写入浏览器持久存储");
   assert.equal(checks.credentialsAbsent, true, "测试凭据被持久化或进入路由");
   assert.equal(checks.privateAbsent, true, "锁定后仍有私密正文 DOM");
   assert.equal(checks.noExecutedMarkup, true, "正文标签被执行");
@@ -100,6 +105,9 @@ async function intercept(context, origin, encryptedSource, mock) {
   await context.route("**/*", async route => {
     const request = route.request();
     const url = new URL(request.url());
+    if (url.origin === origin && url.pathname === PREFIX + "modules/author/config.js") {
+      return route.fulfill({ contentType: "text/javascript", body: "window.Homepage.authorConfig = " + JSON.stringify(authorConfig) + ";\n" });
+    }
     if (url.origin === origin && url.pathname === PREFIX + "modules/life/moments/posts.js") {
       return route.fulfill({ contentType: "text/javascript", body: blogSource(fixtures) });
     }
@@ -181,9 +189,17 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
     screenshots.push("artifacts/screenshots/" + filename);
   }
   async function authorSignIn() {
-    await nativeTabTo(page, '.moments-author input[name="token"]');
+    await nativeTabTo(page, '.author-workspace input[name="author-password"]');
+    await page.keyboard.insertText(authorPassword);
+    await page.getByRole("button", {name: "Sign in", exact: true}).click();
+    await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
+  }
+  async function connectGitHub() {
+    await nativeTabTo(page, '.author-workspace input[name="token"]');
     await page.keyboard.insertText(testToken);
-    await page.getByRole("button", {name: "Verify author", exact: true}).click();
+    assert.equal(await page.locator('.author-workspace input[name="remember"]').isChecked(), false, "默认启用了记住连接");
+    await page.locator('.author-workspace input[name="remember"]').uncheck();
+    await page.getByRole("button", {name: "Connect GitHub", exact: true}).click();
   }
   async function unlock() {
     await nativeTabTo(page, 'input[name="relationship-password"]');
@@ -232,49 +248,54 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
       await page.locator(".moments-blog__back").click();
       await page.waitForURL(url + "#life/moments");
     });
-    await step("非作者与无推送权限账号拒绝", async () => {
+    await step("作者密码入口与非作者、无推送权限连接拒绝", async () => {
       await page.locator("[data-blog-author]").click();
       await page.waitForURL(url + "#life/moments/author");
-      await page.getByRole("button", {name: "Verify author", exact: true}).click();
-      await waitText(page, ".moments-author__status", "Enter your GitHub token");
-      assert.equal(mock.calls.length, 0, "空令牌发送了 API 请求");
+      assert.equal(await page.locator('.author-workspace input[name="title"]').isVisible(), false, "密码验证前可见编辑器");
+      assert.equal(await page.locator('.author-workspace input[name="token"]').isVisible(), false, "密码验证前可见 GitHub 连接入口");
       await authorSignIn();
-      await waitText(page, ".moments-author__status", "Access is limited to PaulLi07");
-      assert.equal(await page.locator('.moments-author input[name="token"]').inputValue(), "");
-      assert.equal(await page.locator('.moments-author input[name="title"]').count(), 0);
+      assert.equal(mock.calls.length, 0, "作者密码登录调用了 GitHub");
+      assert.equal(await page.locator(".author-workspace [data-view-heading]").evaluate(node => document.activeElement === node), true, "作者登录后标题未获得焦点");
+      await connectGitHub();
+      await waitText(page, ".author-workspace__status", "Access is limited to PaulLi07");
+      assert.equal(await page.locator('.author-workspace input[name="token"]').inputValue(), "");
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isConnected()), false);
       assert.equal(mock.calls.some(call => call.path === "/repos/PaulLi07/personal-homepage"), false);
       await assertNoLeaks(page);
       mock.login = "PaulLi07";
       mock.canPush = false;
-      await authorSignIn();
-      await waitText(page, ".moments-author__status", "cannot publish");
-      assert.equal(await page.locator('.moments-author input[name="title"]').count(), 0);
+      await connectGitHub();
+      await waitText(page, ".author-workspace__status", "cannot publish");
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isConnected()), false);
       assert.equal(mock.reads.length, 0);
       assert.equal(mock.puts.length, 0);
+      await assertNoLeaks(page);
     });
     await step("作者验证、冲突不覆盖和草稿保留", async () => {
       mock.canPush = true;
-      await authorSignIn();
-      await page.locator('.moments-author input[name="title"]').waitFor({state: "visible"});
-      assert.equal(mock.reads.length, 1);
-      assert.equal(await page.locator(".moments-author [data-view-heading]").evaluate(node => document.activeElement === node), true, "作者验证后标题未获得焦点");
+      await connectGitHub();
+      await page.waitForFunction(() => window.Homepage.authorSession.isConnected());
+      await page.waitForFunction(() => Array.from(document.querySelectorAll(".author-workspace button"))
+        .find(button => button.textContent === "Publish to GitHub")?.disabled === false);
+      await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
+      assert.equal(mock.reads.length, 0, "连接自动读取了文章集合");
       await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
-      await waitText(page, ".moments-author__status", "Invalid or duplicate post address");
-      assert.equal(mock.reads.length, 1, "无效草稿发送了发布读取请求");
-      await page.locator('.moments-author input[name="title"]').fill("Publishing fixture");
-      await page.locator('.moments-author input[name="id"]').fill("feature-published-" + viewport.width);
-      await page.locator('.moments-author input[name="date"]').fill("2026-10-10");
-      await page.locator('.moments-author textarea[name="excerpt"]').fill("A temporary publication check.");
-      await page.locator('.moments-author textarea[name="body"]').fill("A temporary publication fixture.\n<script>window.__blogFixtureExecuted=true</script>");
+      await waitText(page, ".author-workspace__status", "Invalid or duplicate post address");
+      assert.equal(mock.reads.length, 0, "无效草稿发送了发布读取请求");
+      await page.locator('.author-workspace input[name="title"]').fill("Publishing fixture");
+      await page.locator('.author-workspace input[name="id"]').fill("feature-published-" + viewport.width);
+      await page.locator('.author-workspace input[name="date"]').fill("2026-10-10");
+      await page.locator('.author-workspace textarea[name="excerpt"]').fill("A temporary publication check.");
+      await page.locator('.author-workspace textarea[name="body"]').fill("A temporary publication fixture.\n<script>window.__blogFixtureExecuted=true</script>");
       await assertLayout(page);
       await screenshot("author-editor");
       await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
-      await waitText(page, ".moments-author__status", "Nothing was overwritten");
-      assert.equal(mock.reads.length, 2);
+      await waitText(page, ".author-workspace__status", "Nothing was overwritten");
+      assert.equal(mock.reads.length, 1);
       assert.equal(mock.puts.length, 1);
       assert.equal(mock.remotePosts.length, fixtures.length);
-      assert.equal(await page.locator('.moments-author input[name="title"]').inputValue(), "Publishing fixture");
-      assert.equal(await page.locator('.moments-author textarea[name="body"]').inputValue(), "A temporary publication fixture.\n<script>window.__blogFixtureExecuted=true</script>");
+      assert.equal(await page.locator('.author-workspace input[name="title"]').inputValue(), "Publishing fixture");
+      assert.equal(await page.locator('.author-workspace textarea[name="body"]').inputValue(), "A temporary publication fixture.\n<script>window.__blogFixtureExecuted=true</script>");
       await assertNoLeaks(page);
     });
     await step("发布重新读取 SHA、保留文章并展示新正文", async () => {
@@ -282,36 +303,43 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
       await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
       await page.waitForURL(url + "#life/moments/feature-published-" + viewport.width);
       assert.equal(await page.locator(".moments-blog__title").textContent(), "Publishing fixture");
-      assert.equal(mock.reads.length, 3);
+      assert.equal(mock.reads.length, 2);
       assert.equal(mock.puts.length, 2);
       assert.notEqual(mock.puts[0].sha, mock.puts[1].sha);
       assert.equal(mock.remotePosts.length, fixtures.length + 1);
-      assert.equal(await page.locator(".moments-author").count(), 0);
+      assert.equal(await page.locator(".author-workspace").count(), 0);
       assert.equal(await page.locator(".moments-blog__body script").count(), 0);
       await assertNoLeaks(page);
     });
-    await step("作者切栏目与关闭清除视图和凭据", async () => {
+    await step("作者会话跨栏目和关闭保持，退出清除，卸载销毁视图", async () => {
       await page.locator("[data-blog-author]").click();
-      await authorSignIn();
-      await page.locator('.moments-author input[name="title"]').waitFor({state: "visible"});
-      await page.getByRole("button", {name: "Sign out", exact: true}).click();
-      assert.equal(await page.locator(".moments-author [data-view-heading]").evaluate(node => document.activeElement === node), true, "Sign out 后作者标题未获得焦点");
-      assert.equal(await page.locator('.moments-author input[name="token"]').inputValue(), "");
-      const previous = await page.locator(".moments-author").elementHandle();
-      await page.locator('.moments-author input[name="token"]').fill(testToken);
+      await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isUnlocked() && window.Homepage.authorSession.isConnected()), true);
+      const identityRequests = mock.calls.filter(call => call.path === "/user").length;
+      const previous = await page.locator(".author-workspace").elementHandle();
       await page.locator("#detail-tabs").getByRole("button", {name: "Travels", exact: true}).click();
-      assert.equal(await previous.evaluate(node => !node.isConnected && node.childElementCount === 0), true);
+      assert.equal(await previous.evaluate(node => !node.isConnected
+        && Array.from(node.querySelectorAll("input,textarea")).every(input => input.value === "")), true, "切栏目后作者视图仍连接或字段未清除");
       await page.locator("#detail-tabs").getByRole("button", {name: "Moments", exact: true}).click();
       await page.locator("[data-blog-author]").click();
-      assert.equal(await page.locator('.moments-author input[name="token"]').inputValue(), "");
-      const closing = await page.locator(".moments-author").elementHandle();
-      await page.locator('.moments-author input[name="token"]').fill(testToken);
+      await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isUnlocked() && window.Homepage.authorSession.isConnected()), true);
+      const closing = await page.locator(".author-workspace").elementHandle();
       await page.locator("#close-detail").click();
-      assert.equal(await closing.evaluate(node => !node.isConnected && node.childElementCount === 0), true);
-      assert.equal(await page.locator(".moments-author").count(), 0);
+      assert.equal(await closing.evaluate(node => !node.isConnected
+        && Array.from(node.querySelectorAll("input,textarea")).every(input => input.value === "")), true, "关闭后作者视图仍连接或字段未清除");
+      assert.equal(await page.locator(".author-workspace").count(), 0);
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isUnlocked() && window.Homepage.authorSession.isConnected()), true);
       await page.locator('[data-life="moments"]').click();
       await page.locator("[data-blog-author]").click();
-      assert.equal(await page.locator('.moments-author input[name="token"]').inputValue(), "");
+      await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
+      assert.equal(mock.calls.filter(call => call.path === "/user").length, identityRequests, "复用当前会话时重新验证身份");
+      await page.getByRole("button", {name: "Sign out", exact: true}).click();
+      await page.locator('.author-workspace input[name="author-password"]').waitFor({state: "visible"});
+      assert.equal(await page.locator(".author-workspace [data-view-heading]").evaluate(node => document.activeElement === node), true, "Sign out 后作者标题未获得焦点");
+      assert.equal(await page.locator('.author-workspace input[name="author-password"]').inputValue(), "");
+      assert.equal(await page.evaluate(() => window.Homepage.authorSession.isUnlocked() || window.Homepage.authorSession.isConnected()), false);
+      assert.equal(await page.locator('.author-workspace input[name="title"]').isVisible(), false);
       await assertNoLeaks(page);
     });
     await step("关系内容锁定、错误口令及正确解密", async () => {
@@ -372,7 +400,7 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
       freshReads: mock.reads.length, mockedPuts: mock.puts.length, realWrites: 0 } };
   } catch (error) {
     return { viewport, status: "失败", steps, screenshots,
-      error: String(error.stack || error).replaceAll(password, "[测试口令]").replaceAll(testToken, "[测试令牌]"),
+      error: String(error.stack || error).replaceAll(password, "[测试口令]").replaceAll(authorPassword, "[测试作者口令]").replaceAll(testToken, "[测试令牌]"),
       mockErrors: mock.errors, blockedRequests: mock.blocked, pageErrors: errors };
   } finally { await context.close(); }
 }

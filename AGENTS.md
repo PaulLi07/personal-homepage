@@ -27,22 +27,26 @@
 
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
-- 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Moments 的文章、作者工作台与 Relationship 的加密行为留在各自目录。
+- 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Experience 学术日志与 Moments 文章分别保存自己的数据、读者视图和接入行为；Relationship 的加密行为留在自己的目录。
+- 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它只管理作者会话、GitHub 连接和通用编辑器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
 - `shared/runtime.js` 提供单一 `window.Homepage` 注册入口；模块通过 `registerSection({ id, init?, detailGroup? })`、`registerDetail(group, key, data)` 贡献功能。自定义详情通过 `registerDetailView(group, key, { render })` 注册；`render({ host, route, signal, navigate })` 只操作传入容器，可返回清理函数。
-- `registerData(key, value)` / `getData(key)` 只提供命名空间数据登记；文章校验、模块数据 getter、作者认证和解密业务仍在所属模块。`app/main.js` 只把视图注册表传给详情服务，为分区初始化传入 `{ root, details, reducedMotion }`，不解释博客或加密内容。
+- `registerData(key, value)` / `getData(key)` 只提供命名空间数据登记；文章校验、模块数据 getter、统一作者认证与解密业务仍在所属功能模块。`app/main.js` 只把视图注册表传给详情服务，为分区初始化传入 `{ root, details, reducedMotion }`，不解释日志、博客、作者权限或加密内容。
 - 模块不直接读取其他模块内部文件、选择器或数据；通过清单、注册接口或明确的共享服务连接。模块图片独立保存，哪怕内容暂时相同，也应能单独替换。
 - 根目录 `index.html`、`credits.html` 是生成产物，禁止手改；修改源模块或模板后运行 `npm run assemble` 并一并提交生成页面。
 - 保留普通脚本、相对资源路径和无外部运行时依赖；生成页面可直接以文件方式打开，上传后无需服务器构建。
 
-## Moments 与作者发布
+## Experience、Moments 与统一作者入口
 
 - `modules/life/moments/posts.js` 只登记 JSON 文章数组，使用 `Homepage.registerBlogPosts([...])`；不执行任意远端脚本，不把正文作为 HTML 注入。没有真实文章时保持空数组。
-- 列表为 `#life/moments`，正文为 `#life/moments/<slug>`，作者工作台为 `#life/moments/author`；`author` 为保留标识。
-- 本次推荐默认使用 GitHub PAT 作者工作台。认证检查登录账号 `PaulLi07`、目标仓库所有者及仓库写权限；界面入口或前端身份判断不能替代 GitHub 的真实授权。
-- PAT 只保存在当前工作台的内存中，关闭、切换详情或退出时丢弃；不写入源码、URL、日志、浏览器持久存储或聊天。不要代用户收集令牌。
-- 用户在浏览器主动点击 `Publish` 后，工作台通过 GitHub Contents API 的 PUT 更新主分支 `modules/life/moments/posts.js`，并保留远端版本校验；普通维护不能自动发布文章。
+- `modules/academic/experience/entries.js` 独立登记学术日志数组，使用 `Homepage.registerAcademicLogs([...])`；类型为 Research / Learning / Seminar / Milestone，可选参考链接仅允许绝对 HTTPS 地址。不编造日志或将生活文章写入此集合。
+- 两栏分别使用 `#academic/experience` 与 `#life/moments` 列表、`/<slug>` 正文、`/author` 作者工作台；`author` 为保留标识。未登录仅显示密码入口，编辑器由统一作者服务提供。
+- 作者配置只保存随机盐与 PBKDF2-SHA256 600000 次派生的密码校验值，不保存或记录用户原密码。首次输入作者密码进入编辑器，再连接 GitHub PAT；真正写权限仍由 GitHub 执行，必须核验 `PaulLi07`、仓库所有者和写权限。
+- 用户已选择在线发布并记住加密连接的使用方式；首次连接时主动勾选 remember，才用密码派生密钥加密 PAT 并保存在当前浏览器 `localStorage`。未勾选时只在会话内存保留。不得保存明文密码或 PAT，也不把它们写入源码、URL、Cookie、历史、日志或聊天。
+- 当前页面的解锁和连接可跨两栏及详情关闭保持，直到 `Sign out`、刷新或页面离开；退出清内存但可保留加密连接，`Forget saved connection` 删除加密缓存与当前连接。刷新后必须再次输入密码才能恢复缓存，且重新 GET `/user` 与仓库验证身份和权限；篡改或失效缓存不得自动连接。
+- GitHub 请求收到 401 时清当前连接并保留解锁与草稿，重新连接后再发布；忘记缓存失败应如实提示，不得声称已删除。
+- 用户主动点击 `Publish to GitHub` 后，工作台才通过 Contents API 的 PUT 更新 `main` 中当前栏目的 `entries.js` 或 `posts.js`；发布前重读 SHA 并保留远端文章，冲突不覆盖且保留草稿，两集合不得互写。`Download update` 只导出当前集合的纯 JSON 登记文件，不发布。
 - 首次使用工作台前先完整部署包含新脚本、样式与生成页面的版本。浏览器发布后，本地维护先获取远端新提交并处理差异。
 
 ## Relationship 的私密边界
@@ -58,7 +62,7 @@
 
 按工作协议在模块测试记录中写明日期、浏览器版本、视口、模拟或真机、结果、问题与未覆盖项。已发现故障须修复并复测；没有运行的环境不能写为通过，也不能把一种内核的测试称为跨浏览器测试通过。
 
-基础兼容性使用 `npm run test:compat`；博客、模拟作者发布与加密视图使用 `npm run test:features`；加密算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。2026-10-10 的实测范围与限制见 [兼容性记录](docs/COMPATIBILITY.md)，后续修改仍需重新验证。
+基础兼容性使用 `npm run test:compat`；博客与加密视图使用 `npm run test:features`；统一作者、加密连接缓存和双集合发布使用 `npm run test:author`；离线作者会话使用 `npm run test:author-security`；Relationship 算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。作者密码配置工具为 `npm run author:password`，只在本地终端交互输入，测试不使用真实配置密码。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。共用证据见 [兼容性记录](docs/COMPATIBILITY.md)，统一作者记录见 [author](docs/modules/author.md)，后续修改仍需重新验证。
 
 ## Git 与发布协议
 
