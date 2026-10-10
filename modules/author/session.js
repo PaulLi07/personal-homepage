@@ -9,6 +9,14 @@
     REPOSITORY + "/contents/modules/life/moments/posts.js",
     REPOSITORY + "/contents/modules/academic/experience/entries.js"
   ]);
+  const SHA = /^[0-9a-f]{40}$/;
+  const validSha = value => typeof value === "string" && SHA.test(value);
+  const GIT = REPOSITORY + "/git/";
+  const isObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
+  const keysAre = (value, keys) => isObject(value) && Object.keys(value).sort().join(",") === keys.split(",").sort().join(",");
+  const validMessage = value => typeof value === "string" && Boolean(value.trim()) && value.length <= 256;
+  const validBase64 = value => typeof value === "string" && Boolean(value)
+    && /^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(value);
   const ITERATIONS = 600000;
   const STORAGE_KEY = "personal-homepage:author-connection:v1";
   const MASTER_DOMAIN = "personal-homepage:author:master:v1:";
@@ -23,6 +31,7 @@
   let generation = 0;
   let remembered = false;
   let restoreError = "";
+  let publication = null;
   try { remembered = window.localStorage.getItem(STORAGE_KEY) !== null; } catch (_) { /* 存储不可用仍可使用内存会话。 */ }
 
   function state(event) {
@@ -36,8 +45,14 @@
     return value;
   }
   function cancelled() { return new DOMException("The author operation was cancelled.", "AbortError"); }
+  function clearPublication(context = publication) {
+    if (!context || context !== publication) return;
+    context.signal?.removeEventListener("abort", context.cancel);
+    publication = null;
+  }
   function invalidate() {
     generation += 1;
+    clearPublication();
     for (const operation of operations) operation.controller.abort();
   }
   function operationFor(signal) {
@@ -211,15 +226,64 @@
     operation.check();
   }
   function allowedRequest(path, method, body) {
-    if (typeof path !== "string" || (method !== "GET" && method !== "PUT")) throw new Error("This author request is not allowed.");
+    if (typeof path !== "string") throw new Error("This author request is not allowed.");
     if (method === "GET") {
       if (body !== undefined) throw new Error("This author request is not allowed.");
       if (path === "/user" || path === REPOSITORY) return {path};
       for (const contentPath of CONTENT_PATHS) {
         if (path === contentPath || path === contentPath + "?ref=main") return {path: contentPath + "?ref=main"};
+        if (path.startsWith(contentPath + "?ref=") && SHA.test(path.slice((contentPath + "?ref=").length))) return {path};
+      }
+      if (path === GIT + "ref/heads/main") return {path, gitStage: "head"};
+      if (publication?.head && path === GIT + "commits/" + publication.head && !publication.baseTree) {
+        return {path, gitStage: "base", publication};
       }
       throw new Error("This author request is not allowed.");
     }
+    if (method === "POST" && path === GIT + "blobs" && publication?.baseTree && !publication.tree
+      && keysAre(body, "content,encoding")
+      && body.encoding === "base64" && typeof body.content === "string" && body.content.length <= 2796204
+      && validBase64(body.content)) {
+      const padding = body.content.endsWith("==") ? 2 : body.content.endsWith("=") ? 1 : 0;
+      if (body.content.length / 4 * 3 - padding <= 2 * 1024 * 1024) {
+        return {path, body: {content: body.content, encoding: "base64"}, gitStage: "blob", publication};
+      }
+    }
+    if (method === "POST" && path === GIT + "trees" && publication?.baseTree && !publication.tree
+      && keysAre(body, "base_tree,tree") && body.base_tree === publication.baseTree
+      && Array.isArray(body.tree) && body.tree.length >= 2 && body.tree.length <= 7) {
+      const data = body.tree.filter(item => isObject(item) && CONTENT_PATHS.has(REPOSITORY + "/contents/" + item.path));
+      if (data.length === 1) {
+        const folder = data[0].path.slice(0, data[0].path.lastIndexOf("/")) + "/images/posts/";
+        const seen = new Set();
+        let batch = null;
+        const valid = body.tree.every(item => {
+          if (!keysAre(item, "path,mode,type,sha") || item.mode !== "100644" || item.type !== "blob"
+            || !validSha(item.sha) || !publication.blobs.has(item.sha) || typeof item.path !== "string" || seen.has(item.path)) return false;
+          seen.add(item.path);
+          if (item === data[0]) return true;
+          if (!item.path.startsWith(folder)) return false;
+          const match = item.path.slice(folder.length).match(/^([a-z0-9]+(?:-[a-z0-9]+)*)\/([0-9a-f]{24})-([1-6])\.jpg$/);
+          if (!match || match[1].length > 80 || match[1] === "author") return false;
+          const key = match[1] + "/" + match[2];
+          if (batch && batch !== key) return false;
+          batch = key;
+          return true;
+        });
+        if (valid) return {path, gitStage: "tree", publication, body: {base_tree: body.base_tree,
+          tree: body.tree.map(item => ({path: item.path, mode: "100644", type: "blob", sha: item.sha}))}};
+      }
+    }
+    if (method === "POST" && path === GIT + "commits" && publication?.tree && !publication.commit
+      && keysAre(body, "message,tree,parents") && validMessage(body.message) && body.tree === publication.tree
+      && Array.isArray(body.parents) && body.parents.length === 1 && body.parents[0] === publication.head) {
+      return {path, gitStage: "commit", publication, body: {message: body.message, tree: body.tree, parents: [body.parents[0]]}};
+    }
+    if (method === "PATCH" && path === GIT + "refs/heads/main" && publication?.commit
+      && keysAre(body, "sha,force") && body.sha === publication.commit && body.force === false) {
+      return {path, gitStage: "ref", publication, body: {sha: body.sha, force: false}};
+    }
+    if (method !== "PUT") throw new Error("This author request is not allowed.");
     if (!CONTENT_PATHS.has(path) || !body || Array.isArray(body) || body.branch !== "main"
       || Object.keys(body).sort().join(",") !== "branch,content,message,sha"
       || typeof body.message !== "string" || !body.message.trim() || body.message.length > 256
@@ -229,6 +293,29 @@
       throw new Error("Publishing requires an allowed file, its current SHA, and the main branch.");
     }
     return {path, body: {message: body.message, branch: "main", sha: body.sha, content: body.content}};
+  }
+  // SHA 必须沿同一发布流程取得，不能通过外部树或提交绕过目录白名单。
+  function recordGitResult(allowed, result) {
+    if (!allowed.gitStage) return;
+    const context = allowed.publication;
+    if (context !== publication) throw cancelled();
+    const invalid = () => new Error("GitHub returned an unexpected response. Check the repository before retrying.");
+    if (allowed.gitStage === "head" || allowed.gitStage === "ref") {
+      if (result?.ref !== "refs/heads/main" || result.object?.type !== "commit" || !validSha(result.object.sha)) throw invalid();
+      if (allowed.gitStage === "head") context.head = result.object.sha;
+      else {
+        if (result.object.sha !== context.commit) throw invalid();
+        clearPublication(context);
+      }
+      return;
+    }
+    if (!validSha(result?.sha)) throw invalid();
+    if (allowed.gitStage === "base") {
+      if (result.sha !== context.head || !validSha(result.tree?.sha)) throw invalid();
+      context.baseTree = result.tree.sha;
+    } else if (allowed.gitStage === "blob") context.blobs.add(result.sha);
+    else if (allowed.gitStage === "tree") context.tree = result.sha;
+    else if (allowed.gitStage === "commit") context.commit = result.sha;
   }
 
   api.authorSession = Object.freeze({
@@ -328,8 +415,22 @@
       if (!unlocked || !token) throw new Error("Connect the author workspace to GitHub before making this request.");
       const allowed = allowedRequest(path, method, body);
       const operation = operationFor(signal);
-      try { return await rawRequest(allowed.path, token, {method, body: allowed.body, operation}); }
+      if (allowed.gitStage === "head") {
+        clearPublication();
+        const context = {head: null, baseTree: null, blobs: new Set(), tree: null, commit: null, signal};
+        context.cancel = () => clearPublication(context);
+        publication = context;
+        signal?.addEventListener("abort", context.cancel, {once: true});
+        allowed.publication = context;
+      }
+      try {
+        const result = await rawRequest(allowed.path, token, {method, body: allowed.body, operation});
+        recordGitResult(allowed, result);
+        return result;
+      }
       catch (error) {
+        if (allowed.publication) clearPublication(allowed.publication);
+        else if (publication && publication.signal === signal) clearPublication();
         operation.check();
         if (error.status === 401 && unlocked && token) {
           invalidate();

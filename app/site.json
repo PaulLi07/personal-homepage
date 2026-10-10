@@ -111,6 +111,16 @@
   },
   "services": [
     {
+      "id": "article-photos",
+      "folder": "modules/article-photos",
+      "styles": [
+        "modules/article-photos/styles.css"
+      ],
+      "scripts": [
+        "modules/article-photos/photos.js"
+      ]
+    },
+    {
       "id": "author",
       "folder": "modules/author",
       "styles": [
@@ -119,6 +129,7 @@
       "scripts": [
         "modules/author/config.js",
         "modules/author/session.js",
+        "modules/author/publisher.js",
         "modules/author/editor.js"
       ]
     }

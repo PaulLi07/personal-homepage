@@ -169,7 +169,8 @@ async function inspectManifest() {
   for (const [i, module] of modules.entries()) {
     if (!object(module)) { fail(`site.sections[${i}]: 必须是模块对象`); continue; }
     const label = `site.${module.id || i}`;
-    if (!routeId(module.id)) fail(`${label}.id: 现有注册接口只支持小写英文字母模块标识`);
+    const validId = module.service ? typeof module.id === "string" && /^[a-z]+(?:-[a-z]+)*$/.test(module.id) : routeId(module.id);
+    if (!validId) fail(`${label}.id: 页面模块使用小写英文字母，功能服务可使用连字符分段`);
     if (ids.has(module.id)) fail(`${label}: 重复模块 id`);
     ids.add(module.id);
     await manifestPath(module.folder, `${label}.folder`, true);

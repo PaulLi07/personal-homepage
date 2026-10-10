@@ -20,8 +20,9 @@
 | 服务 | 就近说明 | 测试记录 |
 |---|---|---|
 | 统一作者登录与编辑器 | [author](../../modules/author/README.md) | [author.md](author.md) |
+| 文章照片 | [article-photos](../../modules/article-photos/README.md) | [article-photos.md](article-photos.md) |
 
-该服务按用户要求由 Experience 与 Moments 共同使用，无 HTML 根节点；数据集合与读者视图保持各自独立。会话、加密连接缓存及双集合发布的实际测试范围见其专门记录。
+两项服务按用户要求由 Experience 与 Moments 共同使用，无 HTML 根节点；数据集合、照片文件与读者视图保持各自独立。会话、加密连接缓存、照片和双集合发布的实际测试范围见各自专门记录。
 
 ## 详情子模块
 

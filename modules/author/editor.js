@@ -7,16 +7,6 @@
     experience: {path: "modules/academic/experience/entries.js", registration: "registerAcademicLogs"}
   });
   const encoder = new TextEncoder();
-  const MAX_BYTES = 900000;
-  function encode(source) {
-    let binary = "";
-    for (const byte of encoder.encode(source)) binary += String.fromCharCode(byte);
-    return btoa(binary);
-  }
-  function decode(value) {
-    return new TextDecoder("utf-8", {fatal: true}).decode(
-      Uint8Array.from(atob(value.replace(/\s/g, "")), character => character.charCodeAt(0)));
-  }
   const node = (tag, text, className) => {
     const element = document.createElement(tag);
     if (text !== undefined) element.textContent = text;
@@ -29,26 +19,9 @@
       || typeof collection.getRecords !== "function" || typeof collection.normalize !== "function") {
       throw new TypeError("An allowed author collection is required.");
     }
-    const FILE_API = "/repos/PaulLi07/personal-homepage/contents/" + contract.path;
     const session = api.authorSession;
-    function parseRecords(source) {
-      const pattern = new RegExp("^\\s*(?:/\\*[\\s\\S]*?\\*/\\s*)?window\\.Homepage\\."
-        + contract.registration + "\\(\\s*([\\s\\S]*)\\s*\\);?\\s*$");
-      const match = source.match(pattern);
-      if (!match) throw new Error("The remote data needs maintenance. No changes were published.");
-      try { return collection.normalize(JSON.parse(match[1])); }
-      catch (_) { throw new Error("The remote data needs maintenance. No changes were published."); }
-    }
-    function sourceFor(records) {
-      const source = "/* 公开英文内容；仅包含作者已经确认发布的记录。 */\nwindow.Homepage."
-        + contract.registration + "(" + JSON.stringify(collection.normalize(records), null, 2) + ");\n";
-      if (encoder.encode(source).length > MAX_BYTES) throw new Error("This collection is too large. Contact the maintainer before adding more entries.");
-      return source;
-    }
-    function merge(records, entry) {
-      if (records.some(item => item.id === entry.id)) throw new Error("This address is already in use. Choose a different address.");
-      return collection.normalize([...records, entry]);
-    }
+    const publisher = api.createAuthorPublisher(collection);
+    const {sourceFor, merge} = publisher;
     return {
       render({host, signal}) {
         if (signal?.aborted) return () => {};
@@ -63,6 +36,8 @@
         let connectionForm = null;
         let publish = null;
         let forget = null;
+        let photoPicker = null;
+        let download = null;
         const section = node("section", undefined, "author-workspace author-workspace--" + collection.id);
         section.setAttribute("aria-label", collection.label + " author workspace");
         const status = node("p", "", "author-workspace__status");
@@ -72,6 +47,7 @@
         function dispose() {
           if (!active) return;
           active = false;
+          photoPicker?.dispose(); photoPicker = null;
           unsubscribe();
           formController?.abort();
           controller.abort();
@@ -91,7 +67,9 @@
         function updateControls() {
           if (!active) return;
           section.querySelectorAll("button,input,textarea,select").forEach(element => { element.disabled = busy; });
-          if (publish) publish.disabled = busy || !currentState?.connected;
+          photoPicker?.setDisabled(busy);
+          if (publish) publish.disabled = busy || photoPicker?.isPreparing() || !currentState?.connected;
+          if (download) download.disabled = busy || photoPicker?.isPreparing();
           if (forget) forget.hidden = !currentState?.remembered;
           if (connectionForm) connectionForm.hidden = Boolean(currentState?.connected);
           if (connectedMessage && currentState) {
@@ -102,9 +80,10 @@
         }
         function header(title) {
           formController?.abort();
+          photoPicker?.dispose(); photoPicker = null;
           formController = new AbortController();
           section.replaceChildren();
-          publish = null; forget = null; connectedMessage = null; connectionForm = null;
+          publish = null; download = null; forget = null; connectedMessage = null; connectionForm = null;
           const heading = node("h3", title);
           heading.tabIndex = -1;
           heading.setAttribute("data-view-heading", "");
@@ -227,15 +206,25 @@
           for (const extra of collection.fields || []) field(form, extra.name, extra.label, {...extra, maxLength: extra.name === "reference" ? 2000 : undefined});
           field(form, "excerpt", collection.id === "experience" ? "Summary" : "Short introduction", {maxLength: 600, multiline: true});
           field(form, "body", collection.id === "experience" ? "Log entry" : "Article", {maxLength: 50000, multiline: true});
+          const photos = node("div");
+          form.append(photos);
+          photoPicker = api.articlePhotos.createPicker({host: photos, collectionId: collection.id,
+            signal: formController.signal, onChange: updateControls});
           form.append(node("p", "Write in English using plain text. Line breaks are preserved. Entries are public once published; keep a local copy of longer drafts."));
           const controls = node("div", undefined, "author-workspace__actions");
           publish = node("button", "Publish to GitHub", "author-workspace__button");
           publish.type = "submit";
-          const download = button("Download update", () => {
+          download = button("Download update", () => {
             if (busy || !session.isUnlocked()) return;
             try {
               const entry = draft();
               const source = sourceFor(merge(collection.normalize(collection.getRecords()), entry));
+              const files = photoPicker.getFiles(entry.id);
+              if (files.length) {
+                api.articlePhotos.downloadBundle([{path: contract.path, bytes: encoder.encode(source)}, ...files], entry.id + "-update.zip");
+                status.textContent = "Update downloaded. Extract the ZIP and upload its contents to the repository root to publish manually.";
+                return;
+              }
               const url = URL.createObjectURL(new Blob([source], {type: "text/javascript;charset=utf-8"}));
               const link = document.createElement("a");
               link.href = url;
@@ -249,9 +238,16 @@
           form.append(controls);
           section.append(form, status);
           function draft() {
-            const entry = Object.fromEntries(new FormData(form));
-            for (const key of Object.keys(entry)) entry[key] = entry[key].trim();
+            const data = new FormData(form);
+            let entry = {};
+            for (const key of ["id", "title", "date", "excerpt", "body", ...(collection.fields || []).map(extra => extra.name)]) {
+              const value = data.get(key);
+              if (typeof value === "string") entry[key] = value.trim();
+            }
             entry.author = "Yuhong Li";
+            entry = collection.normalize([entry])[0];
+            const selected = photoPicker.getPhotos(entry.id);
+            if (selected.length) entry.photos = selected;
             return collection.normalize([entry])[0];
           }
           listen(form, "submit", async event => {
@@ -264,18 +260,8 @@
             busy = true; updateControls();
             status.textContent = "Publishing to GitHub…";
             try {
-              const file = await session.request(FILE_API + "?ref=main", {signal: controller.signal});
-              if (file.type !== "file" || file.encoding !== "base64" || typeof file.sha !== "string" || !file.sha
-                || typeof file.content !== "string" || typeof file.size !== "number" || file.size < 0 || file.size > MAX_BYTES
-                || file.content.length > 1300000) throw new Error("The remote data needs maintenance. No changes were published.");
-              const source = decode(file.content);
-              if (encoder.encode(source).length > MAX_BYTES) throw new Error("The remote data needs maintenance. No changes were published.");
-              const records = merge(parseRecords(source), entry);
-              const result = await session.request(FILE_API, {method: "PUT", signal: controller.signal, body: {
-                message: "feat: publish " + collection.label + " " + collection.noun + " " + entry.id,
-                branch: "main", sha: file.sha, content: encode(sourceFor(records))
-              }});
-              if (!result.commit?.sha) throw new Error("GitHub returned an unexpected response. Check the repository before retrying.");
+              const records = await publisher.publish(entry, {files: photoPicker.getFiles(entry.id), signal: controller.signal,
+                onProgress(message) { if (active) status.textContent = message; }});
               if (active) { status.textContent = "Published to GitHub. The live website may take a moment to update."; onPublished?.(entry, records); }
             } catch (error) { if (active && error.name !== "AbortError") status.textContent = error.message; }
             finally { busy = false; updateControls(); }

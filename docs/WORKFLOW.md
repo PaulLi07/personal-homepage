@@ -10,7 +10,7 @@
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
 - 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。Experience 学术日志与 Moments 生活文章分别维护，没有用户资料时保持空数组，不编造内容。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
-- 用户已要求统一作者登录，允许 `modules/author/` 以无 HTML 根节点的 `services` 模块提供两栏共用的会话与编辑器；集合 schema、数据和读者视图仍由各自模块负责。
+- `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与 ZIP，在作者和栏目数据之前加载。集合数据、读者和实际照片仍由各自模块负责，Relationship 不接入公开附图。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
 - 根 `index.html`、`credits.html` 是生成产物，修改源片段或模板后显式装配，禁止手改生成页面。保持相对资源路径、普通脚本和直接文件打开能力。
@@ -73,6 +73,8 @@ git switch -c feat/short-topic
 
 `npm run test:author-security` 离线验证统一会话、密码派生、缓存加密 / 篡改、取消、401 与请求边界；只用随机密码及模拟 GitHub。它与真实页面 `test:author` 分开，不能以离线通过替代浏览器焦点、表单和双集合发布测试。
 
+`npm run test:photos` 验证旧记录无图兼容、张数超限拒绝、输入格式和尺寸、JPEG 输出及总量、英文 alt/纯文本 caption、受控路径、预览排序删除、关闭取消、原比例图库与 ZIP。发布测试同时覆盖无图 Contents 流程、有图同版 head/tree/数据读取、照片和数据的一次提交、已有附图保留、分支冲突及未更新 `main` 时不显示文章。使用临时照片和模拟 GitHub，不上传示例资料；报告为 `artifacts/photo-results.json`，对应证据记录在 [照片模块](modules/article-photos.md)。新增功能仍按实际范围补测，不以现有脚本代替未覆盖的操作。
+
 ## 5. 装配、检查与提交
 
 ```sh
@@ -91,7 +93,7 @@ git status --short --branch
 - 提交使用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，一个提交围绕一个目的，保留无关改动。
 - 暂存前核对中文文档、英文网页、模块说明、实测记录与生成物；系统文件、缓存、ZIP 和 Git 元数据不属于网站源码。
 - `.private/` 拒绝跟踪、打包和公开部署，不得使用强制暂存绕过忽略规则；密码、PAT 和私密明文不进入源码、日志或聊天。
-- 资源修改同步英文替代文本、占位说明、署名页及 `docs/image-sources.md`、`docs/download-manifest.json`。
+- 公共封面和占位素材变更同步英文替代文本、来源说明、署名页及素材清单；文章附图留在自己的记录目录，维护英文 alt 与可选 caption，保留其他已发布照片。
 
 ## 6. 发布与交付
 
@@ -114,10 +116,12 @@ git push origin main
 1. 先完整部署新版本的生成页面、作者服务、模块脚本、样式及资源，再使用 `#academic/experience/author` 或 `#life/moments/author`；仅上传数据文件不能让旧版网站获得新工作台。
 2. 统一作者密码只以随机盐与 PBKDF2-SHA256 600000 次派生校验值保存在配置；不把用户原密码写入源码、文档、日志或聊天。输入密码后才显示编辑器；首次使用再连接 GitHub PAT。更改密码使用 `npm run author:password` 的本地隐藏输入与确认，随后完整部署；旧连接缓存需重新建立。
 3. 用户已选择在线发布并记住加密连接的流程；首次连接时勾选 remember。工作台核验 `PaulLi07`、仓库所有者与写权限，真实仓库授权仍由 GitHub 执行。未选择记住时只保留会话内存，选择后仅加密缓存进当前浏览器 localStorage；明文密码与令牌不进入持久存储、URL、Cookie、历史或源码。
-4. 会话可跨两栏与详情关闭保持。Sign out 清内存并锁定两处，保存的加密连接可保留；Forget 删除缓存及当前连接。刷新 / 页面离开清内存；刷新后须输入密码解密缓存，再 GET `/user` 与仓库重验，损坏或失效时重新连接。请求返回 401 时保持解锁和草稿，清连接后重新授权；缓存删除失败须如实提示。
-5. Experience 在 `entries.js` 登记英文日志，增加 Research / Learning / Seminar / Milestone 类型与可选 HTTPS 参考；Moments 在 `posts.js` 登记英文生活文章。两集合独立，标识稳定，`author` 保留；远端文件严格解析纯 JSON 登记，不能执行脚本或把正文当 HTML。
-6. 用户点击 `Publish to GitHub` 才 PUT 到 `main` 的当前数据文件；每次先重读 SHA、保留远端内容，冲突不覆盖且保留草稿。`Download update` 只导出当前集合文件，手动上传同样遵守 Git 同步与资料保留规则。
-7. Pages 更新后检查读者列表、正文及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；有分歧则保留并整合双方内容，避免旧 ZIP 覆盖在线更新的 `entries.js` 或 `posts.js`。作者服务接口与本次证据见 [author 记录](modules/author.md)。
+4. 会话可跨两栏与详情关闭保持。Sign out 清内存并锁定两处，保存的加密连接可保留；Forget 删除缓存及当前连接。刷新 / 页面离开清内存；刷新后须输入密码解密缓存，再 GET `/user` 与仓库重验，损坏或失效时重新连接。请求返回 401 时保持解锁和草稿，清连接后重新连接 GitHub；缓存删除失败须如实提示。
+5. Experience 在 `entries.js` 登记英文日志，增加学术类型与可选 HTTPS 参考；Moments 在 `posts.js` 登记英文生活文章。两集合独立，标识稳定，`author` 保留。可选 `photos` 最多 6 张，仅 `{ src, alt, caption? }`；路径固定当前文章的 `images/posts/<id>/<24hex>-<1..6>.jpg`，禁止外链、跨文与路径穿越。保留旧无图结构及已有合法附图；远端只解析纯 JSON，不执行脚本或注入 HTML。
+6. 原图接受 JPEG、PNG、WebP，每张最多 10 MiB；浏览器重绘移除元数据，输出长边最多 1920 像素、每张最多 2 MiB、合计最多 8 MiB 的 JPEG。填写非空英文 alt（最多 300 字符）与可选英文 caption（最多 600 字符），处理完成后方可发布或下载。
+7. 编辑器只管表单；`author/publisher.js` 独立解析、合并与发布。用户点击 `Publish to GitHub` 后，无图保持 Contents GET / PUT 与 SHA 校验；带图 GET `main` head 及对应 commit 的 tree SHA，并以 `?ref=head` 读取同版数据，POST 照片与数据 blobs / tree / commit（`parents: [head]`），最后 PATCH `main` 且 `force: false`。照片与数据同次可见提交，冲突保留草稿，不强制覆盖；未更新 `main` 的 Git 对象不会作为网页文章出现。已有 Contents 读写 PAT 可继续使用，无需重新授权。
+8. `Download update` 无图下载数据 JS，有图下载包含数据与新照片、保留仓库相对目录的 ZIP。解压后上传内部内容至仓库根，禁止仅上传 ZIP；先核对远端最新记录，保留既有图片。下载与普通手动上传都没有自动 SHA 冲突保护。
+9. Pages 更新后检查列表、正文、全部附图及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对后以 `git pull --ff-only` 同步；有分歧则保留双方内容，避免旧包覆盖在线更新的记录或照片。本轮实测见 [照片记录](modules/article-photos.md)，历史作者证据见 [author 记录](modules/author.md)。
 
 ### Relationship 本地配置
 
@@ -143,6 +147,7 @@ npm run relationship:check
 | 可选浏览器兼容性测试 | `npm run test:compat`；工具来源可用 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定 |
 | 可选功能集成测试 | `npm run test:features`；GitHub API 全部模拟，真实远端写入为 0 |
 | 统一作者与学术日志测试 | `npm run test:author`；随机密码及双集合夹具，GitHub 全模拟 |
+| 文章照片与带图发布测试 | `npm run test:photos`；临时图片与 GitHub 全模拟，真实远端写入为 0 |
 | 离线作者会话 / 更改作者密码 | `npm run test:author-security` / `npm run author:password`（本地交互，不使用命令参数传密码） |
 | 离线加密算法 / 正式密文格式 | `npm run test:security` / `npm run relationship:check` |
 | 本地预览 | `npm run preview`，默认端口 8767 |

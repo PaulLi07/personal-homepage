@@ -17,20 +17,21 @@ modules/
     moments/ travels/ creations/ relationship/
   contact/                 联系
   credits/                 独立素材署名页
-  author/                  两栏共用的密码登录、GitHub 连接与编辑器服务
+  author/                  两栏共用的密码登录、GitHub 连接、编辑器与发布器
+  article-photos/          照片规范、处理、选图、图库与 ZIP 服务
 shared/                    基础样式、导航、详情弹窗、过渡与注册接口
 scripts/                   本地装配、检查、预览与打包
 docs/                      框架、协议、素材及测试记录
 index.html, credits.html   装配生成的发布页面
 ```
 
-主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、封面和说明；Experience 日志、Moments 博客、Relationship 解密行为留在各自模块，统一会话与编辑器由 author 服务提供。无行为的模块无需空脚本，无图片的模块无需空图片目录。
+主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、封面和说明；Experience 日志、Moments 博客、Relationship 解密行为留在各自模块。统一会话、表单和发布器归 author，图片能力归 article-photos；公开附图文件仍留在所属文章。无行为的模块无需空脚本，无图片的模块无需空图片目录。
 
-`modules/author/` 是用户要求的共用功能服务，不占首页分区，无 HTML 根节点且不调用 `registerSection`。`app/site.json` 的 `services` 声明其 `id`、`folder`、`styles`、`scripts`；配置、会话与通用编辑器在共享基础之后、分区脚本之前装配。Experience 与 Moments 只接入服务，各自维护读者、数据 schema 和文件路径。
+`modules/author/` 与 `modules/article-photos/` 是共用功能服务，不占首页分区，无 HTML 根节点且不调用 `registerSection`。`app/site.json` 的 `services` 声明各自 `id`、`folder`、`styles`、`scripts`；先装配照片服务，再装配作者配置、会话、发布器和编辑器，均在共享基础之后、分区脚本之前。Experience 与 Moments 各自维护读者、集合 schema 和文件路径，通过公开接口接入。
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-目前模块图片共 13 个文件。学术、生活和联系区各自使用 `images/background.jpg`，与详情封面独立；替换子模块封面不会联动改变父区背景。来源与副本关系见 [图片清单](image-sources.md)。
+固定封面与背景共 13 个图片文件。学术、生活和联系区各自使用 `images/background.jpg`，与详情封面独立；替换子模块封面不会联动改变父区背景。公开文章附图随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材来源与副本关系见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
@@ -52,12 +53,16 @@ index.html, credits.html   装配生成的发布页面
 | `shared/navigation/` | `view.html`、`styles.css`、`navigation.js`，提供跨模块导航 |
 | `shared/details/` | `view.html`、`styles.css`、`dialog.js`，提供共用详情弹窗 |
 | `shared/transitions/` | `styles.css`、`transitions.js`，提供共用开场与详情过渡 |
+| `modules/article-photos/photos.js`、`styles.css` | 照片 schema、受控路径、解码重绘、选图、画廊与 ZIP；不读作者凭据或执行 GitHub 发布 |
+| `modules/author/session.js` | 作者密码与连接生命周期，以及受限 GitHub 请求 |
+| `modules/author/publisher.js` | `createAuthorPublisher(collection)`，解析、归一化、合并与当前集合发布 |
+| `modules/author/editor.js` | 表单、草稿和状态；调用照片与发布服务，不承载 Git 提交流程 |
 
 `npm run assemble` 写入生成页面。`npm run check` 只读检查生成物是否与源码一致及语法、资源、注册关系；若生成物过期，先显式装配。`npm run preview`、`npm run package` 先装配。提交时同时保留模块源码与最新生成页面；上传包无需在 GitHub 服务器重新装配。
 
 装配工具使用 Python 3.9+。`sections` 中连续模块若声明同一个 `container`，装配器把它们包入共同容器；当前 home 与 about 使用 `container: "page1"`，保持连续背景。模板通过 `{{sections}}` 装配分区；新增分区只需清单和导航，不需要新增模板占位；停用分区时同步导航及其他公开入口。图片预载随模块清单声明，模板不绑定具体模块图片。
 
-脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载作者配置 / 会话 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
+脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载照片能力及作者配置 / 会话 / 发布器 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
 
 ## 注册接口与共享服务
 
@@ -93,9 +98,13 @@ index.html, credits.html   装配生成的发布页面
 
 条目格式为 `{ title, meta, description, url }`，后三个字段可省略；`description`、`entries` 保持数组，没有真实内容则使用 `entries: []`。共用详情按文本渲染内容，不解析条目中的 HTML。
 
-Moments 的 `posts.js` 使用 `Homepage.registerBlogPosts(JSON数组)` 登记文章，格式为 `{ id, title, date, excerpt, body, author }`；正文为英文纯文本，作者为 Yuhong Li，文章标识 `author` 保留给工作台。`data.js` 管文章校验与 getter，`integration.js` 将读者与作者视图接入注册接口。
+Moments 的 `posts.js` 使用 `Homepage.registerBlogPosts(JSON数组)` 登记文章，格式为 `{ id, title, date, excerpt, body, author, photos? }`；正文为英文纯文本，作者为 Yuhong Li，文章标识 `author` 保留给工作台。`data.js` 管文章校验与 getter，`integration.js` 将读者与作者视图接入注册接口。
 
 Experience 的 `entries.js` 使用 `Homepage.registerAcademicLogs(JSON数组)` 登记独立学术日志，增加 `kind` 与可选 `reference`。类型限定 Research / Learning / Seminar / Milestone，参考链接仅绝对 HTTPS；`data.js` 提供校验、规范化与 `getAcademicLogs()`，命名空间为 `experience.entries`。日志读者与接入行为留在 Experience，不读取 Moments 内部。
+
+两集合可选 `photos: [{ src, alt, caption? }]`，最多 6 张，英文替代文本非空且最多 300 字符，可选说明最多 600 字符。`Homepage.articlePhotos.normalize(photos, collectionId, entryId)` 剥除未知字段并限制为当前栏目、当前文章的 `images/posts/<id>/<24位小写十六进制标识>-<1..6>.jpg`。无 `photos` 的旧记录保持原结构；有图时读者在正文后调用 `renderGallery()` 并传入标识与信号，图库负责原比例、延迟加载、异步解码、纯文本说明及监听清理。
+
+照片服务还提供 `prepare()`、`createPicker()` 与 `downloadBundle()`。JPEG、PNG、WebP 输入每张最多 10 MiB；浏览器重绘移除元数据，输出长边最多 1920 像素、每张最多 2 MiB、合计最多 8 MiB 的 JPEG。组件处理预览、英文 alt、可选 caption、排序删除和取消；ZIP 保留仓库相对路径，无外部运行时依赖。作者服务与读者只使用这些接口，Relationship 不接入公开照片能力。
 
 `modules/author/config.js` 只保存随机盐、PBKDF2-SHA256 600000 次派生校验值及 owner / repo，不保存原密码。`Homepage.authorSession` 提供 `isUnlocked`、`isConnected`、`unlock`、`connect`、`signOut`、`forgetConnection`、`request`、`subscribe`；订阅状态包含 `unlocked`、`connected`、`remembered`、`restoreError`。首次密码登录后连接 GitHub PAT，核验 `PaulLi07`、仓库所有者与 push 权限，真正的授权由 GitHub 执行。
 
@@ -103,7 +112,13 @@ Experience 的 `entries.js` 使用 `Homepage.registerAcademicLogs(JSON数组)` �
 
 当前 GitHub 请求收到 401 时，服务清连接、取消同代请求，保留已解锁工作台与草稿；编辑器显示重新连接入口。会话订阅仅在解锁状态改变时重建表单，避免连接状态变化丢失草稿；缓存删除失败不显示成功。
 
-通用编辑器接收当前集合的 schema、读写路径和 getter；用户主动点击 `Publish to GitHub`，才重读远端 SHA 并 PUT 到 `main` 的对应 `entries.js` 或 `posts.js`。冲突不覆盖、保留草稿，两集合不互写；远端登记文件严格解析 JSON 而不执行。`Download update` 只导出当前集合登记文件。以上行为与普通本地源码维护分开。
+`Homepage.createAuthorPublisher(collection)` 返回 `sourceFor`、`merge`、`publish`，独立负责远端纯 JSON 登记解析、归一化、已有记录与照片保留及发布。`createAuthorEditor()` 只处理当前集合表单、草稿和状态；用户主动点击 `Publish to GitHub` 后调用发布器，两集合不互写。
+
+无图发布保持 Contents GET / PUT 和当前 SHA 校验。带图发布先 GET `main` head 及对应 commit，取得该提交中的 tree SHA，再以 `?ref=head` 读取同版集合；POST 照片和数据 blobs、带 `base_tree` 的 tree、`parents: [head]` 的 commit，最后 PATCH `main` 且 `force: false`。照片与数据在同一次可见 Git 提交出现；并发冲突保留草稿，未更新 `main` 的 Git 对象不会作为网页文章出现。会话限制固定仓库、分支、数据文件及受控照片写入，真正授权仍由 GitHub 的 Contents 读写权限执行，原 PAT 不需重新授权。
+
+会话另外保存单次发布上下文，把取得的 head / 基树、本次上传 blob、受控新树、新 commit 和分支更新绑定起来；外部 SHA 不能绕过路径限制。重新获取 head、请求失败、视图取消、退出或授权失效都会清理旧上下文，重新发布重新读取版本。
+
+`Download update` 基于当前页面数据，无图下载当前集合 JS，有图通过照片服务下载数据与新照片的 ZIP；解压内部内容到仓库根，不能上传 ZIP 本身。手动更新前核对远端最新记录与图片。以上行为与普通本地源码维护分开。
 
 Relationship 的公开介绍保持空条目；`encrypted.js` 默认登记 `null`，配置后只存密文。`data.js`、`security.js` 和 `integration.js` 归本模块，解密与密码界面不进入共享服务。工具使用 AES-GCM 256 位与 PBKDF2-SHA256 600000 次，用户在本地设置至少 12 字符的口令；明文只允许位于项目外或未跟踪的 `.private/`，后者禁止跟踪、打包与公开部署。
 
@@ -123,3 +138,5 @@ Relationship 的公开介绍保持空条目；`encrypted.js` 默认登记 `null`
 `npm run test:compat`、`npm run test:features`、`npm run test:author` 使用维护环境已有的 Playwright 和三个测试内核，支持 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定模块位置。它们检查已装配页面，报告写入忽略且不交付的 `artifacts/`；实际证据与限制记录在模块文档。`npm run test:author-security` 离线验证作者会话和加密缓存，`npm run test:security` 验证 Relationship 算法，`npm run relationship:check` 检查正式密文格式。测试工具不是网页依赖，基础维护不自动安装它。模块扩展同步补案例，具体范围见工作协议。
 
 此前自定义详情与加密空间的证据见 [兼容性记录](COMPATIBILITY.md)；本次统一作者、加密连接缓存和学术日志的证据见 [author 记录](modules/author.md)。新增生命周期与路由仍须验证清理、焦点、历史和异步取消；模拟 GitHub 请求不能替代真实授权和部署验证。
+
+照片服务及带图 Git 提交是后续扩展，必须补测处理限制、英文图片描述、原比例图库、旧记录保留、ZIP 路径与内容、单次可见提交、分支冲突及关闭取消。实测结论待本轮证据记录，不沿用文字发布的历史结果。

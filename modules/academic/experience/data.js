@@ -6,6 +6,14 @@
   const kinds = new Set(["Research", "Learning", "Seminar", "Milestone"]);
   const nonempty = value => typeof value === "string" && value.trim().length > 0;
 
+  function photosFor(entry) {
+    if (entry.photos === undefined) return undefined;
+    try {
+      if (!Array.isArray(entry.photos)) throw new Error("Invalid photos.");
+      return api.articlePhotos.normalize(entry.photos, "experience", entry.id);
+    } catch (_) { throw new Error("Invalid academic entry photos."); }
+  }
+
   function validReference(value) {
     if (value === undefined || value === "") return true;
     if (typeof value !== "string" || value !== value.trim() || !/^https:\/\//i.test(value)) return false;
@@ -35,13 +43,16 @@
         || entry.id.length > 80 || entry.author !== "Yuhong Li") throw new Error("Invalid entry content or author.");
       if (!kinds.has(entry.kind)) throw new Error("Choose a valid academic entry type.");
       if (!validReference(entry.reference)) throw new Error("A reference link must use HTTPS.");
+      photosFor(entry);
     }
     return entries;
   };
   api.normalizeAcademicLogs = entries => {
     api.validateAcademicLogs(entries);
-    return entries.map(({id, title, date, excerpt, body, author, kind, reference}) => ({
-      id, title, date, excerpt, body, author, kind, ...(reference ? {reference} : {})
+    return entries.map(entry => ({
+      id: entry.id, title: entry.title, date: entry.date, excerpt: entry.excerpt, body: entry.body,
+      author: entry.author, kind: entry.kind, ...(entry.reference ? {reference: entry.reference} : {}),
+      ...(entry.photos === undefined ? {} : {photos: photosFor(entry)})
     }));
   };
   api.registerAcademicLogs = entries => api.registerData(key, api.normalizeAcademicLogs(entries));

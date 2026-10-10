@@ -1,6 +1,7 @@
 /* 博客只渲染传入的模块容器，路由与作者入口交由胶水回调处理。 */
 "use strict";
 window.Homepage.createBlogView = function ({ posts, onNavigate, onAuthorRequested } = {}) {
+  const api = window.Homepage;
   const slugPattern = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
   const formatter = new Intl.DateTimeFormat("en", {
     year: "numeric", month: "long", day: "numeric", timeZone: "UTC"
@@ -25,7 +26,10 @@ window.Homepage.createBlogView = function ({ posts, onNavigate, onAuthorRequeste
           || typeof post.author !== "string" || !post.author.trim() || seen.has(post.id)) return false;
         seen.add(post.id);
         return true;
-      }).map(post => ({ ...post })).sort((left, right) => right.date.localeCompare(left.date));
+      }).map(post => ({id: post.id, title: post.title, date: post.date, excerpt: post.excerpt,
+        body: post.body, author: post.author, ...(post.photos === undefined ? {} : {
+          photos: api.articlePhotos.normalize(post.photos, "moments", post.id)
+        })})).sort((left, right) => right.date.localeCompare(left.date));
     } catch {
       return null;
     }
@@ -107,6 +111,9 @@ window.Homepage.createBlogView = function ({ posts, onNavigate, onAuthorRequeste
           const body = element("div", "moments-blog__body");
           body.textContent = post.body.replace(/\r\n?/g, "\n");
           article.append(body);
+          if (post.photos?.length) api.articlePhotos.renderGallery(article, post.photos, {
+            collectionId: "moments", entryId: post.id, signal: renderSignal
+          });
           section.append(article);
         }
       } else {

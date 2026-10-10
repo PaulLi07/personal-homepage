@@ -1,0 +1,28 @@
+/* 照片服务只影响自己的阅读画廊与作者选图组件。 */
+.article-photos { display: grid; gap: 1.8rem; width: 100%; margin-top: 2rem; min-width: 0; }
+.article-photos__figure { margin: 0; min-width: 0; }
+.article-photos__image { display: block; width: 100%; height: auto; max-height: 42rem; object-fit: contain; background: #11191f; border: 1px solid var(--line); box-sizing: border-box; }
+.article-photos__image[hidden] { display: none; }
+.article-photos__caption, .article-photos__unavailable { margin-top: .7rem; color: var(--muted); font-size: .85rem; line-height: 1.7; white-space: pre-wrap; overflow-wrap: anywhere; }
+.article-photo-picker { min-width: 0; margin-top: 1.3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.article-photo-picker h4, .article-photo-picker h5 { margin: 0 0 .8rem; font: 500 1rem/1.5 var(--body); }
+.article-photo-picker__help, .article-photo-picker__empty, .article-photo-picker__status { font-size: .85rem; line-height: 1.7; color: var(--muted); overflow-wrap: anywhere; }
+.article-photo-picker__status { min-height: 1.7em; color: var(--accent); margin: .8rem 0; }
+.article-photo-picker__choose, .article-photo-picker__field { display: grid; gap: .55rem; min-width: 0; color: var(--white); font-size: .85rem; }
+.article-photo-picker__input { width: 100%; min-width: 0; font: inherit; color: var(--muted); }
+.article-photo-picker__input::file-selector-button { margin-right: .7rem; padding: .65rem .8rem; border: 1px solid var(--line); background: #11191f; color: var(--white); font: inherit; cursor: pointer; }
+.article-photo-picker__list { display: grid; gap: 1rem; }
+.article-photo-picker__item { display: grid; grid-template-columns: minmax(0, 9rem) minmax(0, 1fr); gap: 1rem; min-width: 0; padding: 1rem; border: 1px solid var(--line); background: #11191f50; }
+.article-photo-picker__preview { width: 100%; height: auto; max-height: 10rem; object-fit: contain; background: #11191f; }
+.article-photo-picker__fields { display: grid; gap: .8rem; min-width: 0; }
+.article-photo-picker__field input, .article-photo-picker__field textarea { width: 100%; min-width: 0; box-sizing: border-box; padding: .75rem; border: 1px solid var(--line); border-radius: 3px; background: #11191f; color: var(--white); font: inherit; line-height: 1.6; }
+.article-photo-picker__field textarea { resize: vertical; }
+.article-photo-picker__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.article-photo-picker__button { min-height: 44px; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 3px; background: transparent; color: var(--accent); font: inherit; font-size: .8rem; cursor: pointer; }
+.article-photo-picker button:disabled, .article-photo-picker input:disabled, .article-photo-picker textarea:disabled { opacity: .55; cursor: default; }
+.article-photo-picker input:focus-visible, .article-photo-picker textarea:focus-visible, .article-photo-picker button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+@media (max-width: 480px) {
+  .article-photo-picker__item { grid-template-columns: minmax(0, 1fr); padding: .8rem; }
+  .article-photo-picker__preview { max-height: 13rem; }
+  .article-photos { gap: 1.4rem; }
+}

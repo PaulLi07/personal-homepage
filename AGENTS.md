@@ -29,6 +29,7 @@
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
 - 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Experience 学术日志与 Moments 文章分别保存自己的数据、读者视图和接入行为；Relationship 的加密行为留在自己的目录。
 - 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它只管理作者会话、GitHub 连接和通用编辑器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
+- 两栏文章照片共用独立的 `modules/article-photos/` 服务，负责照片规范、处理、选择预览、阅读图组及下载 ZIP；图片实体仍保存在所属栏目的 `images/posts/<文章标识>/`，不建立集中照片目录。`modules/author/publisher.js` 处理数据合并与 GitHub 提交，编辑器只连接表单与这些服务。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
 - `shared/runtime.js` 提供单一 `window.Homepage` 注册入口；模块通过 `registerSection({ id, init?, detailGroup? })`、`registerDetail(group, key, data)` 贡献功能。自定义详情通过 `registerDetailView(group, key, { render })` 注册；`render({ host, route, signal, navigate })` 只操作传入容器，可返回清理函数。
@@ -46,7 +47,10 @@
 - 用户已选择在线发布并记住加密连接的使用方式；首次连接时主动勾选 remember，才用密码派生密钥加密 PAT 并保存在当前浏览器 `localStorage`。未勾选时只在会话内存保留。不得保存明文密码或 PAT，也不把它们写入源码、URL、Cookie、历史、日志或聊天。
 - 当前页面的解锁和连接可跨两栏及详情关闭保持，直到 `Sign out`、刷新或页面离开；退出清内存但可保留加密连接，`Forget saved connection` 删除加密缓存与当前连接。刷新后必须再次输入密码才能恢复缓存，且重新 GET `/user` 与仓库验证身份和权限；篡改或失效缓存不得自动连接。
 - GitHub 请求收到 401 时清当前连接并保留解锁与草稿，重新连接后再发布；忘记缓存失败应如实提示，不得声称已删除。
-- 用户主动点击 `Publish to GitHub` 后，工作台才通过 Contents API 的 PUT 更新 `main` 中当前栏目的 `entries.js` 或 `posts.js`；发布前重读 SHA 并保留远端文章，冲突不覆盖且保留草稿，两集合不得互写。`Download update` 只导出当前集合的纯 JSON 登记文件，不发布。
+- 用户主动点击 `Publish to GitHub` 后才写入 GitHub。纯文字文章保留 Contents API 的 PUT；带照片文章基于当前 `main` 提交创建照片与数据 blobs、基于原树创建新树、创建单父提交，再以 `force: false` 更新 `main`，使照片与文章同时出现在一次提交中。先合并当前提交的远端记录，冲突保留草稿，两集合不得互写，禁止强制更新分支或删除历史。
+- 会话请求必须将 head、基树、上传的 blob、受控新树、新 commit 与分支更新绑定到同一次发布；不能接受任意外部树或提交 SHA。失败、取消、新 head、退出或授权失效须清理发布上下文，重试从最新 head 开始。
+- 每篇最多 6 张 JPEG / PNG / WebP 原图，每张不超过 10 MiB。浏览器重绘为长边不超过 1920 的 JPEG，去除原图元数据；输出每张不超过 2 MiB、合计不超过 8 MiB。照片的英文替代文本必填、英文图注可选，路径只允许所属模块当前文章的受控 JPG 路径。公开文章照片不用于 Relationship 私密内容。
+- `Download update` 无照片时导出当前集合的纯 JSON 登记 JS；有照片时下载含该 JS 与 JPEG 的 ZIP，路径相对于仓库根目录。两者均不发布、不读取最新远端；手动上传须解压、核对远端并保留已有记录。关闭、退出或切换时清理照片预览 URL 和内存草稿。
 - 首次使用工作台前先完整部署包含新脚本、样式与生成页面的版本。浏览器发布后，本地维护先获取远端新提交并处理差异。
 
 ## Relationship 的私密边界
@@ -63,6 +67,8 @@
 按工作协议在模块测试记录中写明日期、浏览器版本、视口、模拟或真机、结果、问题与未覆盖项。已发现故障须修复并复测；没有运行的环境不能写为通过，也不能把一种内核的测试称为跨浏览器测试通过。
 
 基础兼容性使用 `npm run test:compat`；博客与加密视图使用 `npm run test:features`；统一作者、加密连接缓存和双集合发布使用 `npm run test:author`；离线作者会话使用 `npm run test:author-security`；Relationship 算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。作者密码配置工具为 `npm run author:password`，只在本地终端交互输入，测试不使用真实配置密码。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。共用证据见 [兼容性记录](docs/COMPATIBILITY.md)，统一作者记录见 [author](docs/modules/author.md)，后续修改仍需重新验证。
+
+照片扩展运行 `npm run test:photos`，实际测试选择、压缩、顺序、替代文本、图注、阅读、ZIP 内容、同提交发布、冲突与请求白名单，并回归纯文字作者发布。只用临时图与模拟 GitHub，不读取浏览器的真实凭据，不替用户发表测试文章。
 
 ## Git 与发布协议
 

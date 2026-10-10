@@ -30,6 +30,7 @@ npm run check
 npm run test:compat
 npm run test:features
 npm run test:author
+npm run test:photos
 npm run test:author-security
 npm run test:security
 npm run relationship:check
@@ -41,6 +42,8 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 
 2026-10-10 统一作者与学术日志在三个内核、三个视口通过，共 144 个流程；离线作者会话 21 项通过，真实 GitHub 写入为 0，正式配置与两栏数据文件保持不变。环境及范围见 [author 记录](docs/modules/author.md)，基础与 Relationship 证据见 [兼容性实测](docs/COMPATIBILITY.md)。模拟视口不等于手机真机，模拟发布不等于真实账号或线上部署验证。
 
+`test:photos` 单独验证照片处理、选图、图库、ZIP、Git 请求边界和两栏带图发布；报告为 `artifacts/photo-results.json`。实际证据见 [照片记录](docs/modules/article-photos.md)，不能沿用文字发布结论。
+
 ## 功能入口
 
 | 目录 | 负责内容 |
@@ -49,7 +52,8 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/about/` | 个人简介与资料 |
 | `modules/academic/` | Experience、Publications、Notes、Projects；对应 `experience/`、`publications/`、`notes/`、`projects/` |
 | `modules/life/` | Moments 博客、Travels 旅行、Creations 创作、Relationship 加密空间；各自保存内容、行为和资源 |
-| `modules/author/` | Experience 与 Moments 共同使用的密码登录、GitHub 连接和编辑器服务 |
+| `modules/author/` | Experience 与 Moments 共用的密码登录、GitHub 连接、表单编辑和独立发布器 |
+| `modules/article-photos/` | 无首页分区的照片服务：数据规范、处理、选图、图库及 ZIP；照片文件仍归各文章 |
 | `modules/contact/` | 联系方式、背景与年份 |
 | `modules/credits/` | 图片署名独立页面 |
 | `shared/` | 真正跨模块使用的基础样式、导航、详情弹窗、过渡与注册接口 |
@@ -61,7 +65,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 
 ## 学术日志、生活博客与统一作者入口
 
-Experience 的 `#academic/experience` 展示学术日志，支持 Research / Learning / Seminar / Milestone 分类与可选 HTTPS 参考链接；Moments 的 `#life/moments` 展示生活文章。两栏各以 `/<slug>` 阅读正文、`/author` 进入工作台，数据分别在 `entries.js` 和 `posts.js`，正文均为普通英文文本。`author` 不能用作文章标识。
+Experience 的 `#academic/experience` 展示学术日志，支持 Research / Learning / Seminar / Milestone 分类与可选 HTTPS 参考链接；Moments 的 `#life/moments` 展示生活文章。两栏各以 `/<slug>` 阅读正文、`/author` 进入工作台，数据分别在 `entries.js` 和 `posts.js`，正文为普通英文文本，可附最多 6 张公开照片。`author` 不能用作文章标识。
 
 先完整部署新版本。在任一作者入口输入统一作者密码，首次使用再连接具有目标仓库写权限的 GitHub PAT，并勾选记住加密连接；此后在同一浏览器只需密码恢复与权限重验。工作台核验 `PaulLi07`、仓库所有者与写权限，GitHub 执行真正授权。源码只保留随机盐与密码派生校验值，不保留原密码；更改密码使用 `npm run author:password` 在本地终端交互输入，随后完整部署新配置。
 
@@ -69,7 +73,15 @@ Experience 的 `#academic/experience` 展示学术日志，支持 Research / Lea
 
 连接失效返回 401 时保留已解锁工作台和草稿，重新连接 GitHub 后再发布。浏览器缓存损坏或无权限时不会自动连接；忘记连接的存储删除失败会如实提示。
 
-点击 `Publish to GitHub` 才更新 `main` 中当前栏目的数据文件，发布前重读 SHA、保留远端文章，冲突不覆盖草稿；`Download update` 可只导出数据文件自行上传。两栏互不改写。在线发布后，本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；存在分歧时保留并整合双方内容，避免旧源码包覆盖新文章。接口见 [作者模块](modules/author/README.md)，读者细节见 [Experience](modules/academic/experience/README.md) 与 [Moments](modules/life/moments/README.md)。
+点击 `Publish to GitHub` 才更新 `main`。无图文章保持 Contents API 读取与 PUT；带图文章由独立发布器把照片与当前集合数据放入同一次 Git 提交，再以非强制方式更新 `main`。发布前读取远端记录并保留已有文章及附图；冲突保留草稿，两栏互不改写。原有 Contents 读写 PAT 可继续使用，无需为附图重新授权。
+
+`Download update` 无图时导出数据 JS，有图时导出包含数据与新照片、保留仓库相对目录的 ZIP。解压后把内部内容放到仓库根目录，不把 ZIP 本身上传网站；手动上传前核对远端最新数据。在线发布后，本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步，避免旧源码包覆盖新文章和图片。接口见 [作者模块](modules/author/README.md)，读者细节见 [Experience](modules/academic/experience/README.md) 与 [Moments](modules/life/moments/README.md)。
+
+## 公开文章附图
+
+每篇最多选择 6 张 JPEG、PNG 或 WebP，原图每张不超过 10 MiB。浏览器重绘移除原文件元数据，统一输出长边不超过 1920 像素的 JPEG；每张最多 2 MiB，处理后合计最多 8 MiB。每张填写非空英文替代文本，可添加英文说明；阅读时在正文后按原比例显示。
+
+可选数据字段为 `photos: [{ src, alt, caption? }]`。文件保存在当前栏目自己的 `images/posts/<文章 id>/<24位小写十六进制标识>-<1..6>.jpg`，不接受外链、跨栏目或跨文章引用。照片处理、选图、画廊与 ZIP 属于 [照片服务](modules/article-photos/README.md)，表单与发布器通过接口调用；旧的无图记录保持兼容。Relationship 私密空间不接入公开附图服务，正式文章数组仍保持空数组直到用户提供内容。
 
 ## Relationship 加密空间
 
