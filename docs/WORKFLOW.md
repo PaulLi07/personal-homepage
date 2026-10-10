@@ -8,6 +8,7 @@
 - **所有网页呈现内容使用英文。** 包括正文、导航、按钮、弹窗、提示、空状态、图片署名、页面标题与描述、替代文本和无障碍标签；署名页同样遵守。
 - 页面保持常规字形、适中字号、简洁学术风与宇宙主题，只使用用户提供的真实资料。
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
+- 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。没有用户资料的经历、旅行与创作保持空条目。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
@@ -38,10 +39,10 @@ git switch -c feat/short-topic
 模块指可独立维护的页面分区、详情栏目或功能。新增模块、扩展功能或改变接口，都必须随代码交付对应的简洁中文说明；纯文字纠错不属于模块扩展。
 
 1. 新模块在自己的目录建立 `README.md`，记录用途、入口、文件职责、数据与共享接口、修改方法。详情子模块也保留就近说明，无需复制整段源码。
-2. 在 `docs/modules/<模块标识>.md` 链接模块 README 并记录兼容性测试，使用 [模板](modules/TEMPLATE.md)，在 [目录](modules/README.md) 登记。详情标识使用 `academic-research` 等简短小写名称。
+2. 在 `docs/modules/<模块标识>.md` 链接模块 README 并记录兼容性测试，使用 [模板](modules/TEMPLATE.md)，在 [目录](modules/README.md) 登记。详情标识使用 `academic-experience` 等简短小写名称。
 3. 扩展已有模块时更新就近说明和测试记录；没有对应说明的先补建。框架边界和清单变化同步 `docs/ARCHITECTURE.md`，重要变化同步 `CHANGELOG.md`。
-4. 详情模块通过 `registerDetail(group, key, data)` 注册；页面模块通过 `registerSection({ id, init? })` 登记，并使用初始化传入的 `{ root, details, reducedMotion }`。
-5. 单模块能力留在模块中；只有多个模块实际复用且接口明确时才加入共享层。接口变化注明使用者并回归。
+4. 公开详情通过 `registerDetail` 注册；自定义详情通过 `registerDetailView(group, key, { render })` 注册，接收 `{ host, route, signal, navigate }` 并可返回清理函数。页面模块仍使用 `registerSection` 和初始化传入的 `{ root, details, reducedMotion }`。
+5. `registerData` / `getData` 只登记数据，模块维护自己的 getter、校验和业务。单模块能力留在模块中，胶水只传视图注册表与共享服务；接口变化注明使用者并回归。
 6. 修改完成后运行 `npm run assemble`，再检查及实测。源码、生成页面、模块说明和测试记录一起提交，不留到以后补写。
 
 ## 4. 兼容性测试
@@ -61,11 +62,13 @@ git switch -c feat/short-topic
 
 ### 可重复测试工具
 
-`scripts/test-compatibility.cjs` 提供 `npm run test:compat`。先装配并执行普通检查，再运行该命令；它不会自动装配，也不会安装工具或下载浏览器。维护环境需预先提供 Playwright 及 Chromium、Firefox、WebKit，可通过 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定已有模块路径。测试依赖不参与网站运行，普通 `check` 保持离线、只读且不需要测试工具。
+`scripts/test-compatibility.cjs` 提供 `npm run test:compat`，`scripts/test-features.cjs` 提供 `npm run test:features`。先装配并执行普通检查，再按改动范围运行；它们不会自动装配，也不会安装工具或下载浏览器。维护环境需预先提供 Playwright 及 Chromium、Firefox、WebKit，可通过 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定已有模块路径。测试依赖不参与网站运行，普通 `check` 保持离线、只读且不需要测试工具。
 
-脚本自启临时 HTTP 服务，验证仓库子路径，不依赖常驻 `preview`。现有案例覆盖三个内核、1440×900 / 390×844 / 320×780 视口、八个详情入口与直达、空状态、键盘和焦点、历史、资源、正常及减少动态效果、直接文件打开和署名页返回。窄屏使用视口或触摸模拟，不能称为真机；内核版本不能代替 Chrome、Edge、Safari 各品牌和版本的测试。
+浏览器脚本自启临时 HTTP 服务，验证仓库子路径，不依赖常驻 `preview`。基础案例覆盖三个内核、1440×900 / 390×844 / 320×780 视口、详情入口、键盘、历史、资源、动画、文件打开和署名页返回。功能案例覆盖博客嵌套路由、身份或写权限错误、远端版本冲突、草稿保留、重新读取 SHA、关闭清理、错误口令及解锁后再锁定；文章、密文、令牌与 GitHub 响应均为临时夹具，远端写入全部拦截。窄屏模拟不等于真机，GitHub API 模拟通过不等于真实账号发布成功。
 
-报告写入被忽略的 `artifacts/compatibility-results.json`。核对本次命令退出结果与报告日期，将相关证据和限制写入 `docs/modules/`；旧报告存在不代表本轮通过。新增模块或改变数据、路由和接口时同步补测试案例，自动检查之外仍按任务范围检查实际视觉布局，不能套用旧模块结果。
+报告写入被忽略且不交付的 `artifacts/compatibility-results.json` 与 `artifacts/feature-results.json`。核对本次命令退出结果与报告日期，将相关证据和限制写入 `docs/modules/`；旧报告存在不代表本轮通过。新增模块或改变数据、路由和接口时同步补测试案例，自动检查之外仍按任务范围检查实际视觉布局，不能套用旧模块结果。
+
+`npm run test:security` 无需 Playwright，用内存随机夹具验证算法往返、独立 Web Crypto 互通、篡改拒绝、格式边界及注册解析；它不配置真实口令，不请求网络，不修改正式密文。`npm run relationship:check` 只读检查 `encrypted.js` 格式，默认空值合法。2026-10-10 的本次结果见 [兼容性记录](COMPATIBILITY.md)；格式通过不代表真实私密资料、打包排除或线上环境已经验证。
 
 ## 5. 装配、检查与提交
 
@@ -84,6 +87,7 @@ git status --short --branch
 - `preview` 与 `package` 先装配，再预览或打包；打包前仍需完成本任务检查与实测。
 - 提交使用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，一个提交围绕一个目的，保留无关改动。
 - 暂存前核对中文文档、英文网页、模块说明、实测记录与生成物；系统文件、缓存、ZIP 和 Git 元数据不属于网站源码。
+- `.private/` 拒绝跟踪、打包和公开部署，不得使用强制暂存绕过忽略规则；密码、PAT 和私密明文不进入源码、日志或聊天。
 - 资源修改同步英文替代文本、占位说明、署名页及 `docs/image-sources.md`、`docs/download-manifest.json`。
 
 ## 6. 发布与交付
@@ -92,7 +96,7 @@ git status --short --branch
 
 **手动上传：**运行 `npm run package`，解压 `../outputs/personal-homepage-source.zip`，将解压后 `personal-homepage/` 内部文件和目录上传到仓库根目录。保留生成的 `index.html`、`credits.html`、模块和共享资源以及 `.nojekyll`；服务器无需重新装配。
 
-本次功能模块迁移还需在远端同步删除旧的 `css/`、`js/`、`assets/` 目录；它们已从本地移除，内容改由模块与共享目录维护。通过 Git 推送本次提交会同步这些删除；仅上传新增文件不会清理远端旧目录，手动上传时需一并处理。
+手动上传当前版本时，远端旧的 `css/`、`js/`、`assets/` 目录及 `modules/academic/research/`、`modules/life/places/`、`modules/life/notes/`、`modules/life/outside/` 需随迁移删除；后四项分别由 experience / travels / creations / relationship 替代。它们已从正式源码移除，通过 Git 推送相应提交会同步删除；上传新增文件不会自动清理旧目录。先核对远端内容并保留用户新增资料及 Git 历史，再按迁移范围处理。
 
 **Git 推送：**按授权范围核对远端最新状态和待发布提交，再执行：
 
@@ -100,7 +104,27 @@ git status --short --branch
 git push origin main
 ```
 
-不要将身份令牌写入远端 URL、配置或仓库。部署后检查线上首页、学术详情、生活照片、署名页与手机布局。手动上传过更新后先 `git fetch origin`，比较再同步，保持一份正式源码。
+不要将身份令牌写入远端 URL、配置或仓库。部署后检查线上首页、学术详情、生活栏目、博客阅读、关系空间未配置或锁定状态、署名页与手机布局。手动上传过更新后先 `git fetch origin`，比较再同步，保持一份正式源码。
+
+### Moments 作者发布
+
+1. 先完整部署新版本的生成页面、模块脚本、样式及资源，再使用 `#life/moments/author`；只上传文章文件不能让旧版网站获得作者工作台。
+2. 本次推荐默认使用 GitHub PAT。用户在网页输入令牌，工作台核验账号 `PaulLi07`、目标仓库所有者与写权限；真正的仓库授权仍由 GitHub 执行，前端按钮不是权限边界。
+3. PAT 仅在当前作者工作台内存中保留，关闭、切换或退出即丢弃；不写源码、浏览器持久存储、URL 或日志，不通过聊天收集。
+4. 文章正文使用英文纯文本；`posts.js` 是 `registerBlogPosts(JSON数组)` 登记文件，不能执行任意远端脚本。文章标识稳定，`author` 保留给工作台。
+5. 用户主动点击 `Publish` 后，浏览器向 GitHub Contents API 发出 PUT，更新 `main` 的 `modules/life/moments/posts.js`。保留远端文件版本校验，冲突时重新检查远端，不能覆盖他人变化。
+6. Pages 更新后检查读者列表、正文及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对改动后以 `git pull --ff-only` 同步；有分歧则保留并整合双方内容，避免旧 ZIP 覆盖浏览器新发布的 `posts.js`。
+
+### Relationship 本地配置
+
+默认 `encrypted.js` 登记 `null`，没有初始口令。用户准备只含英文 `title` 与 `body` 的明文 JSON，放在项目外，或已忽略且未跟踪的 `.private/`，在自己的交互终端运行：
+
+```sh
+node scripts/relationship.cjs --input /项目外/relationship.json
+npm run relationship:check
+```
+
+工具隐藏输入并确认至少 12 字符的独立口令，使用 AES-GCM 256 位与 PBKDF2-SHA256 600000 次生成 `encrypted.js`。不从聊天、参数或源码读取明文密码；公开部署只允许密文与通用介绍，`.private/`、明文备份和私密照片不上传。随后装配、检查、实测并按发布授权更新网站。浏览器解锁需要可用 Web Crypto；关闭、切换或主动锁定后清理明文。
 
 ## 7. 常用入口
 
@@ -108,9 +132,13 @@ git push origin main
 |---|---|
 | 改功能 | 对应 `modules/<功能>/README.md` 及同目录源码 |
 | 改详情 | 对应学术 / 生活子模块的 `content.js` |
+| Moments 文章 / 作者入口 | `modules/life/moments/posts.js` / `#life/moments/author` |
+| 本地生成 Relationship 密文 | `node scripts/relationship.cjs --input /项目外/relationship.json` |
 | 改模块声明或外壳 | `app/site.json`、`app/*.template.html` |
 | 装配 / 只读检查 | `npm run assemble` / `npm run check` |
 | 可选浏览器兼容性测试 | `npm run test:compat`；工具来源可用 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定 |
+| 可选功能集成测试 | `npm run test:features`；GitHub API 全部模拟，真实远端写入为 0 |
+| 离线加密算法 / 正式密文格式 | `npm run test:security` / `npm run relationship:check` |
 | 本地预览 | `npm run preview`，默认端口 8767 |
 | 替换图片 | 对应模块 `images/` 与图片来源文档 |
 | 模块说明 / 测试 | 模块内 `README.md` / `docs/modules/<标识>.md` |

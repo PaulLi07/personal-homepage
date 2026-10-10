@@ -11,6 +11,8 @@ body.modal-open { overflow: hidden; }
 .projectflip { margin-top: 28px; width: 100%; flex: 1; min-height: 260px; max-height: 46vh; overflow: hidden; }
 .panel-image-credit { margin-top: 9px; font-size: 8px; color: #ffffff90; }
 .right-part { display: flex; flex-direction: column; justify-content: flex-end; padding-top: 50px; padding-bottom: 12px; gap: 29px; }
+.has-custom-view .right-part { justify-content: flex-start; }
+#detail-custom { min-width: 0; }
 .detail-tabs { display: flex; flex-wrap: wrap; gap: 17px; padding-bottom: 14px; border-bottom: 1px solid var(--line); }
 .detail-tabs button { padding: 0; font-size: 11px; color: var(--muted); }
 .detail-tabs button[aria-current] { color: var(--accent); }

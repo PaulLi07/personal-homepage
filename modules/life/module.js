@@ -1,6 +1,6 @@
 window.Homepage.registerSection({
   id: "life",
-  detailGroup: { id: "life", label: "Life galleries", descriptionTitle: "The story" },
+  detailGroup: { id: "life", label: "Life sections", descriptionTitle: "The story", aliases: {places: "travels", notes: "creations", outside: "relationship"} },
   init({ root, details, reducedMotion }) {
     const photographs = Array.from(root.querySelectorAll("[data-life]"));
     photographs.forEach(button => {

@@ -15,7 +15,7 @@ const object = value => value !== null && typeof value === "object" && !Array.is
 const string = value => typeof value === "string" && value.trim().length > 0;
 const simpleAnchor = value => /^[a-z][\w:-]*$/i.test(value);
 const routeId = value => typeof value === "string" && /^[a-z]+$/.test(value);
-const ignored = new Set([".git", "node_modules", ".cache", "__pycache__", "artifacts", "dist", "build"]);
+const ignored = new Set([".git", "node_modules", ".cache", ".private", "__pycache__", "artifacts", "dist", "build"]);
 const javascript = new Set([".js", ".mjs", ".cjs"]);
 const sitePage = join(root, "index.html");
 
@@ -193,11 +193,14 @@ async function inspectManifest() {
 }
 
 async function readRegistrations(modules) {
-  const context = vm.createContext({ window: {} }, { codeGeneration: { strings: false, wasm: false } });
-  vm.runInContext(`window.__registrations = { sections: [], details: [] };
+  const context = vm.createContext({ window: {}, TextEncoder }, { codeGeneration: { strings: false, wasm: false } });
+  vm.runInContext(`window.__registrations = { sections: [], details: [], views: [], data: [] };
     window.Homepage = {
       registerSection(module) { window.__registrations.sections.push({ source: window.__source, module, initType: typeof module?.init }); },
-      registerDetail(group, key, content) { window.__registrations.details.push({ source: window.__source, group, key, content }); }
+      registerDetail(group, key, content) { window.__registrations.details.push({ source: window.__source, group, key, content }); },
+      registerDetailView(group, key, view) { window.__registrations.views.push({source: window.__source, group, key, renderType: typeof view?.render}); },
+      registerData(key, value) { window.__registrations.data.push({source: window.__source, key, value}); },
+      getData(key) { return window.__registrations.data.slice().reverse().find(entry => entry.key === key)?.value; }
     };`, context, { timeout: 100 });
   for (const module of modules.filter(object)) {
     for (const script of Array.isArray(module.scripts) ? module.scripts : []) {
@@ -285,6 +288,19 @@ async function inspectDetails(modules, groups) {
     }
   }
   const homepage = html.get(sitePage);
+  const viewKeys = new Set();
+  for (const {source, group, key, renderType} of registrations.views) {
+    const id = group + "/" + key;
+    if (!detailKeys.get(group)?.has(key) || owners.get(source)?.detailGroup !== group
+      || renderType !== "function" || viewKeys.has(id)) fail(`${source}: 自定义详情视图无效或重复：${id}`);
+    viewKeys.add(id);
+  }
+  for (const {source, key, value} of registrations.data) {
+    if (key === "relationship.encrypted" && value !== null) {
+      const validation = spawnSync(process.execPath, [join(root, "scripts/relationship.cjs"), "--check"], {cwd: root, encoding: "utf8"});
+      if (validation.error || validation.status !== 0) fail(`${source}: 密文配置检查失败`);
+    }
+  }
   if (!homepage) { fail("缺少 index.html"); return; }
   for (const [group, keys] of detailKeys) {
     const markers = group === "academic" ? [`data-${group}`, "data-preview"] : [`data-${group}`];
@@ -297,6 +313,8 @@ async function inspectDetails(modules, groups) {
 }
 
 try {
+  const trackedPrivate = spawnSync("git", ["ls-files", "--", ".private"], {cwd: root, encoding: "utf8"});
+  if (trackedPrivate.status === 0 && trackedPrivate.stdout.trim()) fail(".private 明文目录不得被 Git 跟踪；请先移出公开版本库。");
   await inspectFiles();
   const { modules, groups } = await inspectManifest();
   await inspectDetails(modules, groups);

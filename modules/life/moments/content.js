@@ -3,14 +3,14 @@ window.Homepage.registerDetail("life", "moments", {
   "title": "Moments.",
   "label": "Moments",
   "kicker": "Life · 01",
-  "subtitle": "Small memories, collected along the way.",
+  "subtitle": "A journal of moments, thoughts and everyday life.",
   "image": "modules/life/moments/images/cover.jpg",
   "imageAlt": "A lake framed by mountains and evergreen trees",
   "credit": "Ivan Rohovchenko / Unsplash · Placeholder photograph",
   "source": "https://unsplash.com/photos/a-lake-with-trees-and-mountains-in-the-background-8fVmVlnrN5k",
   "description": [
-    "A place for personal photographs and the stories behind them.",
-    "This landscape is a temporary placeholder. Personal memories will be added here."
+    "Personal writing and memories, collected over time.",
+    "This landscape is a temporary placeholder. New posts will appear in the journal."
   ],
   "listTitle": "Stories",
   "emptyMessage": "Personal stories to follow.",

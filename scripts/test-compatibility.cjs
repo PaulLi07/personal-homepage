@@ -15,8 +15,8 @@ try {
 const engines = ["chromium", "firefox", "webkit"];
 const viewports = [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 320, height: 780 }];
 const routes = {
-  academic: { research: "Research.", publications: "Publications.", notes: "Notes.", projects: "Projects." },
-  life: { moments: "Moments.", places: "Places.", notes: "Little things.", outside: "Outside." }
+  academic: { experience: "Experience.", publications: "Publications.", notes: "Notes.", projects: "Projects." },
+  life: { moments: "Moments.", travels: "Travels.", creations: "Creations.", relationship: "Relationship." }
 };
 const mime = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" };
 const server = http.createServer(async (request, response) => {
@@ -43,7 +43,12 @@ async function assertOpen(page, title) {
     return image.complete && image.naturalWidth > 0;
   });
   assert.equal(await page.locator("#detail-image").evaluate(image => image.complete && image.naturalWidth > 0), true);
-  assert.equal(await page.locator("#detail-entries .empty-state").count(), 1);
+  if (title === "Moments.") {
+    assert.equal(await page.locator('.moments-blog[data-blog-view="list"]').count(), 1);
+    assert.equal(await page.getByText("No posts yet", {exact: true}).isVisible(), true);
+  } else if (title === "Relationship.") {
+    assert.equal(await page.getByText("Not configured yet.", {exact: true}).isVisible(), true);
+  } else assert.equal(await page.locator("#detail-entries .empty-state").count(), 1);
 }
 
 async function assertLayout(page) {
@@ -112,10 +117,10 @@ async function runViewport(browser, engine, viewport, url) {
       assert.equal(await button.evaluate(node => document.activeElement === node), true, "关闭后焦点未恢复");
     }
   }
-  const research = page.locator('[data-academic="research"]');
-  await research.focus();
+  const experience = page.locator('[data-academic="experience"]');
+  await experience.focus();
   await page.keyboard.press("Enter");
-  await assertOpen(page, "Research.");
+  await assertOpen(page, "Experience.");
   await page.keyboard.press("Tab");
   assert.equal(await page.locator("#detail-dialog").evaluate(dialog => dialog.contains(document.activeElement)), true, "焦点离开模态区域");
   await page.locator("#close-detail").focus();
@@ -145,6 +150,24 @@ async function runViewport(browser, engine, viewport, url) {
   }
   await page.goto(url + "#academic/missing");
   assert.equal(await page.locator("#detail-dialog").evaluate(dialog => dialog.open), false);
+  for (const [oldRoute, newRoute, title] of [
+    ["academic/research", "academic/experience", "Experience."],
+    ["life/places", "life/travels", "Travels."],
+    ["life/notes", "life/creations", "Creations."],
+    ["life/outside", "life/relationship", "Relationship."]
+  ]) {
+    await page.goto(url + "#" + oldRoute);
+    await assertOpen(page, title);
+    assert.equal(new URL(page.url()).hash, "#" + newRoute);
+  }
+  await page.goto(url + "#home");
+  await page.locator('[data-life="moments"]').scrollIntoViewIfNeeded();
+  const pageY = await page.evaluate(() => window.scrollY);
+  await page.locator('[data-life="moments"]').click();
+  await assertOpen(page, "Moments.");
+  await page.locator("#close-detail").click();
+  await page.waitForFunction(() => !document.getElementById("detail-dialog").open);
+  assert.equal(Math.abs(await page.evaluate(() => window.scrollY) - pageY) < 3, true, "从生活区关闭时跳回首屏");
   await page.goto(url + "credits.html");
   await assertLayout(page);
   assert.equal(await page.locator("h1").textContent(), "Image credits.");
@@ -169,8 +192,8 @@ async function runEngine(engine, url) {
     page.on("pageerror", error => errors.push(error.message));
     await page.goto(url);
     await page.waitForFunction(() => document.documentElement.classList.contains("is-ready") && !document.querySelector(".loader"));
-    await page.locator('[data-academic="research"]').click();
-    await assertOpen(page, "Research.");
+    await page.locator('[data-academic="experience"]').click();
+    await assertOpen(page, "Experience.");
     await page.waitForFunction(() => !document.querySelector(".transition-columns"));
     await page.keyboard.press("Escape");
     await page.waitForFunction(() => !document.getElementById("detail-dialog").open);
@@ -209,8 +232,8 @@ async function runEngine(engine, url) {
     });
     await faultPage.goto(url);
     assert.equal(await faultPage.locator("#contact").getAttribute("data-initialized"), "true", "单模块异常阻断后续模块");
-    await faultPage.locator('[data-academic="research"]').click();
-    await assertOpen(faultPage, "Research.");
+    await faultPage.locator('[data-academic="experience"]').click();
+    await assertOpen(faultPage, "Experience.");
     await faultPage.locator("#close-detail").click();
     await faultPage.waitForFunction(() => !document.getElementById("detail-dialog").open);
     assert.equal(isolated, true);

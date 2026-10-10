@@ -50,7 +50,7 @@
         "modules/academic/styles.css"
       ],
       "scripts": [
-        "modules/academic/research/content.js",
+        "modules/academic/experience/content.js",
         "modules/academic/publications/content.js",
         "modules/academic/notes/content.js",
         "modules/academic/projects/content.js",
@@ -63,13 +63,25 @@
       "folder": "modules/life",
       "view": "modules/life/section.html",
       "styles": [
-        "modules/life/styles.css"
+        "modules/life/styles.css",
+        "modules/life/moments/blog.css",
+        "modules/life/moments/author.css",
+        "modules/life/relationship/security.css"
       ],
       "scripts": [
         "modules/life/moments/content.js",
-        "modules/life/places/content.js",
-        "modules/life/notes/content.js",
-        "modules/life/outside/content.js",
+        "modules/life/moments/data.js",
+        "modules/life/moments/posts.js",
+        "modules/life/moments/blog.js",
+        "modules/life/moments/author.js",
+        "modules/life/moments/integration.js",
+        "modules/life/travels/content.js",
+        "modules/life/creations/content.js",
+        "modules/life/relationship/content.js",
+        "modules/life/relationship/data.js",
+        "modules/life/relationship/encrypted.js",
+        "modules/life/relationship/security.js",
+        "modules/life/relationship/integration.js",
         "modules/life/module.js"
       ],
       "detailGroup": "life"

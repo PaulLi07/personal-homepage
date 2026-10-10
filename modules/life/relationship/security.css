@@ -1,0 +1,15 @@
+/* Relationship 密码视图只控制自身容器，不改变其他详情布局。 */
+.relationship-security { width: 100%; min-width: 0; }
+.relationship-security h3 { font-size: clamp(22px, 2vw, 30px); font-weight: 500; line-height: 1.4; margin-bottom: 18px; overflow-wrap: anywhere; }
+.relationship-security p { color: var(--muted); font-size: 14px; line-height: 1.8; }
+.relationship-security form { margin-top: 22px; }
+.relationship-security label { display: block; font-size: 13px; margin-bottom: 9px; }
+.relationship-security input { display: block; width: 100%; max-width: 420px; box-sizing: border-box; border: 1px solid var(--line); border-radius: 3px; padding: 13px 14px; background: #ffffff06; color: var(--white); font: inherit; }
+.relationship-security input:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.relationship-security .relationship-actions { margin-top: 18px; }
+.relationship-security .relationship-actions button { min-height: 44px; }
+.relationship-security .relationship-status { min-height: 26px; margin-top: 14px; }
+.relationship-security [aria-invalid="true"] { border-color: #d3a69e; }
+.relationship-security .relationship-body { color: var(--white); white-space: pre-wrap; overflow-wrap: anywhere; }
+.relationship-security [disabled] { cursor: progress; opacity: .65; }
+@media (max-width: 760px) { .relationship-security input { max-width: none; font-size: 16px; } }

@@ -19,13 +19,13 @@
 
 | 分组 / 栏目 | 就近说明 | 测试记录 |
 |---|---|---|
-| academic / 研究 | [research](../../modules/academic/research/README.md) | [academic-research.md](academic-research.md) |
+| academic / 学术经历 | [experience](../../modules/academic/experience/README.md) | [academic-experience.md](academic-experience.md) |
 | academic / 论文成果 | [publications](../../modules/academic/publications/README.md) | [academic-publications.md](academic-publications.md) |
 | academic / 学术笔记 | [notes](../../modules/academic/notes/README.md) | [academic-notes.md](academic-notes.md) |
 | academic / 项目 | [projects](../../modules/academic/projects/README.md) | [academic-projects.md](academic-projects.md) |
-| life / 生活片段 | [moments](../../modules/life/moments/README.md) | [life-moments.md](life-moments.md) |
-| life / 地点 | [places](../../modules/life/places/README.md) | [life-places.md](life-places.md) |
-| life / 日常细节 | [notes](../../modules/life/notes/README.md) | [life-notes.md](life-notes.md) |
-| life / 户外 | [outside](../../modules/life/outside/README.md) | [life-outside.md](life-outside.md) |
+| life / Moments 博客 | [moments](../../modules/life/moments/README.md) | [life-moments.md](life-moments.md) |
+| life / 旅行 | [travels](../../modules/life/travels/README.md) | [life-travels.md](life-travels.md) |
+| life / 创作 | [creations](../../modules/life/creations/README.md) | [life-creations.md](life-creations.md) |
+| life / 关系空间 | [relationship](../../modules/life/relationship/README.md) | [life-relationship.md](life-relationship.md) |
 
-本次模块化重构已完成三内核、三个视口的实际验证，证据见 [实测总记录](../COMPATIBILITY.md) 及各模块记录。后续扩展重新实测，没有运行的浏览器或设备保留“未测试”。子模块可引用父分组中明确列出本栏目的逐项证据，不能用一个笼统“父模块通过”覆盖未测栏目。
+2026-10-10 当前栏目与自定义详情已完成三内核、三个视口实测；基础回归、81 个功能流程、9 项算法及打包排除证据见 [实测总记录](../COMPATIBILITY.md)，其中保留 2026-10-09 重构历史。GitHub API 全模拟，真实写入为 0；手机真机、品牌版本与线上部署未测。子模块可引用父分组中明确列出本栏目的逐项证据，不能用笼统“父模块通过”覆盖未测栏目；后续扩展仍需重新验证。

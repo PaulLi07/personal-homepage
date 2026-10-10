@@ -14,6 +14,9 @@
   <link rel="stylesheet" href="modules/about/styles.css">
   <link rel="stylesheet" href="modules/academic/styles.css">
   <link rel="stylesheet" href="modules/life/styles.css">
+  <link rel="stylesheet" href="modules/life/moments/blog.css">
+  <link rel="stylesheet" href="modules/life/moments/author.css">
+  <link rel="stylesheet" href="modules/life/relationship/security.css">
   <link rel="stylesheet" href="modules/contact/styles.css">
   <link rel="stylesheet" href="shared/transitions/styles.css">
   <link rel="stylesheet" href="shared/details/styles.css">
@@ -24,15 +27,24 @@
   <script defer src="shared/reveal.js"></script>
   <script defer src="modules/home/module.js"></script>
   <script defer src="modules/about/module.js"></script>
-  <script defer src="modules/academic/research/content.js"></script>
+  <script defer src="modules/academic/experience/content.js"></script>
   <script defer src="modules/academic/publications/content.js"></script>
   <script defer src="modules/academic/notes/content.js"></script>
   <script defer src="modules/academic/projects/content.js"></script>
   <script defer src="modules/academic/module.js"></script>
   <script defer src="modules/life/moments/content.js"></script>
-  <script defer src="modules/life/places/content.js"></script>
-  <script defer src="modules/life/notes/content.js"></script>
-  <script defer src="modules/life/outside/content.js"></script>
+  <script defer src="modules/life/moments/data.js"></script>
+  <script defer src="modules/life/moments/posts.js"></script>
+  <script defer src="modules/life/moments/blog.js"></script>
+  <script defer src="modules/life/moments/author.js"></script>
+  <script defer src="modules/life/moments/integration.js"></script>
+  <script defer src="modules/life/travels/content.js"></script>
+  <script defer src="modules/life/creations/content.js"></script>
+  <script defer src="modules/life/relationship/content.js"></script>
+  <script defer src="modules/life/relationship/data.js"></script>
+  <script defer src="modules/life/relationship/encrypted.js"></script>
+  <script defer src="modules/life/relationship/security.js"></script>
+  <script defer src="modules/life/relationship/integration.js"></script>
   <script defer src="modules/life/module.js"></script>
   <script defer src="modules/contact/module.js"></script>
   <script defer src="app/main.js"></script>
@@ -106,22 +118,22 @@
   <div class="section-background" aria-hidden="true"><img src="modules/academic/images/background.jpg" alt="" loading="lazy"></div>
   <div class="projectPreview">
     <div class="preview-stack">
-      <img class="is-active" src="modules/academic/research/images/cover.jpg" alt="The Cosmic Cliffs in the Carina Nebula" data-preview="research" loading="lazy">
+      <img class="is-active" src="modules/academic/experience/images/cover.jpg" alt="The Cosmic Cliffs in the Carina Nebula" data-preview="experience" loading="lazy">
       <img src="modules/academic/publications/images/cover.jpg" alt="The Andromeda Galaxy in ultraviolet light" data-preview="publications" aria-hidden="true" loading="lazy">
       <img src="modules/academic/notes/images/cover.jpg" alt="The Pillars of Creation in the Eagle Nebula" data-preview="notes" aria-hidden="true" loading="lazy">
       <img src="modules/academic/projects/images/cover.jpg" alt="Earth rising above the lunar horizon" data-preview="projects" aria-hidden="true" loading="lazy">
     </div>
-    <p class="preview-caption"><span id="preview-label" aria-live="polite">Research</span><span>Choose a section below ↘</span></p>
+    <p class="preview-caption"><span id="preview-label" aria-live="polite">Experience</span><span>Choose a section below ↘</span></p>
   </div>
   <div class="academic-overview">
     <div class="academic-header" data-reveal><p class="eyebrow">02 · Questions, ideas, and work</p><h2 class="section-heading" id="academic-title">Academic.</h2></div>
     <div class="mainprojectsdiv">
       <div class="academic-intro" data-reveal>
-        <p>A growing collection of research, publications, study notes, and projects in theoretical physics.</p>
+        <p>Academic experience, publications, study notes, and projects in theoretical physics.</p>
         <p>Hover to preview. Select a section to explore.</p>
       </div>
       <div class="projects" aria-label="Academic sections" data-reveal>
-        <button class="projectBox is-selected" data-academic="research" aria-label="Open Research" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/research/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Research ↗</span></button>
+        <button class="projectBox is-selected" data-academic="experience" aria-label="Open Experience" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/experience/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Experience ↗</span></button>
         <button class="projectBox" data-academic="publications" aria-label="Open Publications" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/publications/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Publications ↗</span></button>
         <button class="projectBox" data-academic="notes" aria-label="Open Notes" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/notes/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Notes ↗</span></button>
         <button class="projectBox" data-academic="projects" aria-label="Open Projects" aria-haspopup="dialog"><span class="thumbnail"><img src="modules/academic/projects/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Projects ↗</span></button>
@@ -132,10 +144,10 @@
 <section class="page3" id="life" aria-labelledby="life-title">
   <div class="section-background life-background" aria-hidden="true"><img src="modules/life/images/background.jpg" alt="" loading="lazy"></div>
   <div class="life-heading"><p class="eyebrow">03 · Beyond the desk</p><h2 class="section-heading" id="life-title">Life, in fragments.</h2></div>
-  <button class="movable photo-one" data-life="moments" aria-label="Open Moments gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/moments/images/cover.jpg" alt="A lake surrounded by mountains" loading="lazy"></span><span class="life-caption">Moments ↗</span></button>
-  <button class="movable photo-two" data-life="places" aria-label="Open Places gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/places/images/cover.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy"></span><span class="life-caption">Places ↗</span></button>
-  <button class="movable photo-three" data-life="notes" aria-label="Open Little things gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/notes/images/cover.jpg" alt="Mountains reflected in a misty lake" loading="lazy"></span><span class="life-caption">Little things ↗</span></button>
-  <button class="movable photo-four" data-life="outside" aria-label="Open Outside gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/outside/images/cover.jpg" alt="Blue water and an open coastline" loading="lazy"></span><span class="life-caption">Outside ↗</span></button>
+  <button class="movable photo-one" data-life="moments" aria-label="Open Moments blog" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/moments/images/cover.jpg" alt="A lake surrounded by mountains" loading="lazy"></span><span class="life-caption">Moments ↗</span></button>
+  <button class="movable photo-two" data-life="travels" aria-label="Open Travels gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/travels/images/cover.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy"></span><span class="life-caption">Travels ↗</span></button>
+  <button class="movable photo-three" data-life="creations" aria-label="Open Creations gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/creations/images/cover.jpg" alt="Mountains reflected in a misty lake" loading="lazy"></span><span class="life-caption">Creations ↗</span></button>
+  <button class="movable photo-four" data-life="relationship" aria-label="Open Relationship space" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/relationship/images/cover.jpg" alt="Blue water and an open coastline" loading="lazy"></span><span class="life-caption">Relationship ↗</span></button>
   <p class="life-footnote">A few borrowed views for now.<br>Personal photographs and stories to follow.</p>
 </section>
 <section class="page4" id="contact" aria-labelledby="contact-title">
@@ -170,6 +182,7 @@
     </div>
     <div class="right-part">
       <nav class="detail-tabs" id="detail-tabs" aria-label="Academic sections"></nav>
+      <div id="detail-custom" hidden></div>
       <div class="description"><h3 id="detail-description-title">Overview</h3><div id="detail-description"></div></div>
       <dl class="detail-facts" id="detail-facts"></dl>
       <div class="detail-list"><h3 id="detail-list-title"></h3><div id="detail-entries"></div></div>

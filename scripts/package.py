@@ -6,7 +6,7 @@ import subprocess
 from zipfile import ZIP_DEFLATED, ZipFile
 
 ROOT = Path(__file__).resolve().parent.parent
-EXCLUDED_DIRS = {".git", "node_modules", ".cache", "__pycache__", "artifacts", "dist", "build"}
+EXCLUDED_DIRS = {".git", "node_modules", ".cache", ".private", "__pycache__", "artifacts", "dist", "build"}
 
 
 def include(path):

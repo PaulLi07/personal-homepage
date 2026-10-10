@@ -3,6 +3,8 @@
   "use strict";
   const sections = new Map();
   const content = Object.create(null);
+  const views = Object.create(null);
+  const data = new Map();
   const validId = value => typeof value === "string" && /^[a-z]+$/.test(value);
 
   window.Homepage = {
@@ -19,6 +21,17 @@
       content[group][key] = item;
     },
     getSections() { return Array.from(sections.values()); },
-    getContent() { return content; }
+    getContent() { return content; },
+    registerDetailView(group, key, view) {
+      if (!validId(group) || !validId(key) || typeof view?.render !== "function") {
+        throw new Error("Invalid detail view registration.");
+      }
+      const id = group + "/" + key;
+      if (views[id]) throw new Error("Duplicate detail view registration.");
+      views[id] = view;
+    },
+    getDetailViews() { return views; },
+    registerData(key, value) { data.set(key, value); },
+    getData(key) { return data.get(key); }
   };
 })();

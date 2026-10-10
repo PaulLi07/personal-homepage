@@ -1,6 +1,6 @@
 window.Homepage.registerSection({
   id: "academic",
-  detailGroup: { id: "academic", label: "Academic sections", descriptionTitle: "Overview" },
+  detailGroup: { id: "academic", label: "Academic sections", descriptionTitle: "Overview", aliases: {research: "experience"} },
   init({ root, details }) {
     const buttons = Array.from(root.querySelectorAll("[data-academic]"));
     const previews = Array.from(root.querySelectorAll("[data-preview]"));

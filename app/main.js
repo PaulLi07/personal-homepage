@@ -9,7 +9,7 @@
     .map(module => [module.detailGroup.id, module.detailGroup]));
   const details = api.createDetails({
     dialog: document.getElementById("detail-dialog"),
-    content: api.getContent(), groups, transitions
+    content: api.getContent(), views: api.getDetailViews(), groups, transitions
   });
   transitions.start();
   modules.forEach(module => {

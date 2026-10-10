@@ -1,0 +1,26 @@
+/* Moments 博客的列表、正文与作者入口样式，选择器局限于本模块。 */
+.moments-blog { width: 100%; min-width: 0; }
+.moments-blog__header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 20px; padding-bottom: 25px; border-bottom: 1px solid var(--line); }
+.moments-blog__header h3 { font-size: 27px; line-height: 1.25; }
+.moments-blog__eyebrow { color: var(--accent); font-size: 10px; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 10px; }
+.moments-blog__button { display: inline-block; padding: 9px 15px; border: 1px solid var(--line); font-size: 12px; line-height: 1.5; text-align: left; transition: border-color .2s, background .2s; }
+.moments-blog__button:hover { border-color: var(--accent); background: #c5e0f10b; }
+.moments-blog__author { color: var(--muted); font-size: 11px; }
+.moments-blog__card { padding-block: 26px; border-bottom: 1px solid var(--line); }
+.moments-blog__card h4 { margin: 0 0 11px; font-size: 21px; line-height: 1.4; font-weight: 500; overflow-wrap: anywhere; }
+.moments-blog__meta { display: flex; flex-wrap: wrap; gap: 5px 15px; color: var(--muted); font-size: 11px; line-height: 1.7; }
+.moments-blog__excerpt { margin: 15px 0 19px; color: #ffffffc9; font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; white-space: pre-wrap; }
+.moments-blog__back { margin: 23px 0 29px; padding: 0; color: var(--accent); font-size: 12px; line-height: 1.6; }
+.moments-blog__back:hover { text-decoration: underline; text-underline-offset: 4px; }
+.moments-blog__title { margin: 0 0 15px; font-size: clamp(24px,2.3vw,34px); line-height: 1.35; font-weight: 500; letter-spacing: -.02em; overflow-wrap: anywhere; }
+.moments-blog__body { margin-top: 28px; color: #ffffffcd; font-size: 15px; line-height: 1.9; white-space: pre-wrap; overflow-wrap: anywhere; }
+.moments-blog__state { padding: 34px 0; }
+.moments-blog__state h4 { margin: 0 0 12px; font-size: 21px; line-height: 1.4; font-weight: 400; }
+.moments-blog__state p { max-width: 480px; color: var(--muted); font-size: 14px; line-height: 1.8; }
+@media (max-width:760px) {
+  .moments-blog__header { align-items: flex-start; padding-bottom: 22px; gap: 18px; }
+  .moments-blog__header h3 { font-size: 24px; }
+  .moments-blog__card { padding-block: 23px; }
+  .moments-blog__card h4 { font-size: 20px; }
+  .moments-blog__body { font-size: 14px; margin-top: 23px; }
+}

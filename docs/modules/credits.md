@@ -1,5 +1,10 @@
 # 图片署名模块测试记录
 
+## 2026-10-10 栏目署名同步
+
+署名条目已同步到 Experience、Travels、Creations、Relationship 的模块路径。`npm run test:compat` 在 Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5 的 1440×900、390×844、320×780 视口验证图片资源、英文文字、署名页无横向溢出和返回 Contact 入口通过；手机为模拟视口。真实线上部署及外部素材链接未实测，见 [兼容性实测](../COMPATIBILITY.md)。
+
+
 - 就近说明：[模块 README](../../modules/credits/README.md)。
 - 测试时间：2026-10-09 15:40（北京时间）；改动标识：功能模块重构。
 - 实际环境：chromium 151.0.7922.34、firefox 153.0、webkit 26.5；1440×900、390×844、320×780。

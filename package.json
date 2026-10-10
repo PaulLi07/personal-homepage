@@ -8,7 +8,10 @@
     "preview": "npm run assemble && python3 -m http.server 8767 --bind 127.0.0.1",
     "package": "npm run assemble && python3 scripts/package.py",
     "assemble": "python3 scripts/assemble.py",
-    "test:compat": "node scripts/test-compatibility.cjs"
+    "test:compat": "node scripts/test-compatibility.cjs",
+    "test:features": "node scripts/test-features.cjs",
+    "relationship:check": "node scripts/relationship.cjs --check",
+    "test:security": "node scripts/test-security.cjs"
   },
   "engines": {
     "node": ">=18"
