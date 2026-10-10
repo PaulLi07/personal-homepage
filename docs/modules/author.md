@@ -3,7 +3,7 @@
 - 就近说明：[模块 README](../../modules/author/README.md)。
 - 入口：`#academic/experience/author` 与 `#life/moments/author`；服务本身没有 HTML 根节点。
 - 测试日期：2026-10-10（北京时间）；范围：密码登录、跨栏目会话、可选加密连接缓存与双集合编辑 / 发布。
-- 发布路径：自启临时 HTTP 服务的 `/personal-homepage/`。
+- 自动化测试路径：自启临时 HTTP 服务的 `/personal-homepage/`；正式线上验证另见下方记录。
 - 浏览器命令：`npm run test:author`；本次报告 `artifacts/author-log-results.json` 的时间为北京时间约 13:45，该目录被忽略且不随源码交付。
 
 ## 实际环境与结果
@@ -41,4 +41,12 @@
 
 `npm run check` 通过。`npm run author:password` 的本地隐藏输入配置工具由集成验收使用临时夹具检查，只生成盐与派生校验值，不以参数传密码；这不是浏览器登录或真实发布测试。
 
-未覆盖项：线上新版本部署、真实 GitHub 凭据 / 写入、手机真机、品牌或历史版本浏览器、外部参考实际跳转、文件方式下作者发布；浏览器存储不可用 / 删除失败只在离线案例覆盖。DOM / 存储断言不能证明浏览器堆内存或密码管理器的物理清除。
+## 正式上线与首次连接（2026-10-10）
+
+完整源码 `48aad34` 经 SSH 推送，`main` / `origin/main` 同步；公开 HTTP 核对首页、署名页、全部 34 个 JS、14 个 CSS 与抽样 5 张图片，共 55 个资源的响应字节均与本地一致。
+
+用户本人创建 fine-grained PAT 并输入 Chrome（macOS 桌面，未单独记录版本）正式网站工作台。`#academic/experience/author` 显示 `Connected as PaulLi07. Your encrypted connection is saved in this browser.`；同一页面通过 hash 切换 `#life/moments/author` 再返回，已解锁、已连接与已保存状态持续有效。应用的真实 GET 已验证账号、仓库所有者及 push 权限；加密连接保存与双模块共享会话通过。密码、PAT 和缓存密文均不记录。
+
+本次未发送真实 Contents PUT、未创建测试文章，也未实测真实凭据下刷新后的密码恢复或分支保护下写入。操作说明见 [作者登录与日志发布说明](../BLOG-PUBLISHING.md)。
+
+仍未覆盖：手机真机、品牌或历史版本浏览器的完整兼容矩阵、外部参考实际跳转、文件方式下作者发布；浏览器存储不可用 / 删除失败只在离线案例覆盖。正式 Chrome 仅验证上述首次连接流程，不能替代完整兼容测试；DOM / 存储断言不能证明浏览器堆内存或密码管理器的物理清除。

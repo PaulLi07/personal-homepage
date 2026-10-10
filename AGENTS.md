@@ -66,7 +66,7 @@
 
 ## Git 与发布协议
 
-- 仓库根目录为本目录，`origin` 为上述 HTTPS 仓库，`main` 跟踪 `origin/main`。
+- 仓库根目录为本目录，`origin` 使用上述 HTTPS 地址获取，推送地址为 `git@github.com:PaulLi07/personal-homepage.git`，`main` 跟踪 `origin/main`。当前电脑已验证 SSH 推送；普通 `git push origin main` 使用该推送地址，不在配置中保存令牌。
 - 开始先检查状态；同步或发布前获取远端，检查未提交用户改动和远端差异。保留远端历史，使用快进拉取，不硬重置用户文件或强制推送共享历史。
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
 - 本地提交属于已授权维护，只暂存本任务文件；提交说明采用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，保留无关改动。

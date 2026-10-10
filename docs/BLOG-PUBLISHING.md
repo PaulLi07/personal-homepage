@@ -62,6 +62,14 @@
 
 发布若显示网络结果不确定，先查看 GitHub 提交和文章地址再重试，避免重复操作。网页发布后维护本地项目时，先获取并快进同步远端文章，再进行本地编辑；不要用旧 ZIP 或本地空数组覆盖已经在线发表的 `posts.js` 或 `entries.js`。
 
-浏览器集成验证使用模拟 GitHub 响应，不使用真实令牌、提交文章或触发线上部署。未实测真实账户权限、分支保护和部署设置；是否允许实际发布仍取决于作者的 GitHub 配置。
+自动化浏览器集成验证使用模拟 GitHub 响应，不使用真实令牌、提交文章或触发线上部署。正式上线与真实账户首次连接的证据另行记录如下；实际发文仍受 GitHub 授权和仓库规则约束。
+
+## 2026-10-10 上线与首次连接
+
+完整源码 `48aad34` 已通过 SSH 推送，`main` 与 `origin/main` 一致。线上首页、署名页、全部 34 个 JS 和 14 个 CSS 文件及抽样 5 张图片，共 55 个 HTTP 资源与本地字节一致，确认本次完整版本已部署。
+
+用户本人创建 fine-grained PAT 并在 Chrome（macOS 桌面，未单独记录版本）正式网站的 `#academic/experience/author` 输入，工作台显示 `Connected as PaulLi07. Your encrypted connection is saved in this browser.`。在同一页面切换到 `#life/moments/author` 再返回 Experience，均保持已解锁、已连接和已保存状态；真实账号、仓库所有者与 push 权限已通过应用 GET 验证，加密保存与双栏目共享会话已实测。令牌创建和输入由用户操作，记录不包含密码、PAT 或缓存密文。
+
+本次没有发送真实 Contents PUT 或创建测试文章；真实凭据下刷新后的密码恢复、分支保护下写入尚未实测。更多环境与模拟流程见 [作者服务测试记录](modules/author.md)。
 
 统一登录与编辑器见 [作者模块说明](../modules/author/README.md)，学术日志字段见 [Experience 说明](../modules/academic/experience/README.md)。博客模块接口见 [Moments 说明](../modules/life/moments/README.md)，通用提交和发布流程见 [工作协议](WORKFLOW.md)。

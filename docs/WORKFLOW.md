@@ -17,7 +17,7 @@
 
 ## 2. Git 开始与同步
 
-`origin` 为 `https://github.com/PaulLi07/personal-homepage.git`，`main` 跟踪 `origin/main`。
+`origin` 的获取地址为 `https://github.com/PaulLi07/personal-homepage.git`，推送地址为 `git@github.com:PaulLi07/personal-homepage.git`，`main` 跟踪 `origin/main`。当前电脑已验证 SSH 推送；`git push origin main` 会使用已配置的推送地址，浏览器内的作者令牌不参与本地 Git 操作。换电脑后需自行建立对应 Git 身份，远端地址中不得加入令牌。
 
 ```sh
 git status --short --branch
