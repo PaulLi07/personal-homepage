@@ -15,8 +15,12 @@
   const isObject = value => value !== null && typeof value === "object" && !Array.isArray(value);
   const keysAre = (value, keys) => isObject(value) && Object.keys(value).sort().join(",") === keys.split(",").sort().join(",");
   const validMessage = value => typeof value === "string" && Boolean(value.trim()) && value.length <= 256;
-  const validBase64 = value => typeof value === "string" && Boolean(value)
-    && /^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(value);
+  const base64Size = value => value.length / 4 * 3 - (value.endsWith("==") ? 2 : value.endsWith("=") ? 1 : 0);
+  const validBase64 = value => {
+    if (typeof value !== "string" || !value || value.length % 4 !== 0) return false;
+    const end = value.length - (value.endsWith("==") ? 2 : value.endsWith("=") ? 1 : 0);
+    return end > 0 && !/[^A-Za-z0-9+/]/.test(value.slice(0, end));
+  };
   const ITERATIONS = 600000;
   const STORAGE_KEY = "personal-homepage:author-connection:v1";
   const MASTER_DOMAIN = "personal-homepage:author:master:v1:";
@@ -242,32 +246,43 @@
     }
     if (method === "POST" && path === GIT + "blobs" && publication?.baseTree && !publication.tree
       && keysAre(body, "content,encoding")
-      && body.encoding === "base64" && typeof body.content === "string" && body.content.length <= 2796204
+      && body.encoding === "base64" && typeof body.content === "string" && body.content.length <= 13981016
       && validBase64(body.content)) {
-      const padding = body.content.endsWith("==") ? 2 : body.content.endsWith("=") ? 1 : 0;
-      if (body.content.length / 4 * 3 - padding <= 2 * 1024 * 1024) {
+      if (base64Size(body.content) <= 10 * 1024 * 1024) {
         return {path, body: {content: body.content, encoding: "base64"}, gitStage: "blob", publication};
       }
     }
     if (method === "POST" && path === GIT + "trees" && publication?.baseTree && !publication.tree
       && keysAre(body, "base_tree,tree") && body.base_tree === publication.baseTree
-      && Array.isArray(body.tree) && body.tree.length >= 2 && body.tree.length <= 7) {
+      && Array.isArray(body.tree) && body.tree.length >= 2 && body.tree.length <= 13) {
       const data = body.tree.filter(item => isObject(item) && CONTENT_PATHS.has(REPOSITORY + "/contents/" + item.path));
       if (data.length === 1) {
-        const folder = data[0].path.slice(0, data[0].path.lastIndexOf("/")) + "/images/posts/";
+        const folder = data[0].path.slice(0, data[0].path.lastIndexOf("/"));
         const seen = new Set();
-        let batch = null;
+        const batches = {};
+        const counts = {photos: 0, documents: 0};
+        let article = null;
         const valid = body.tree.every(item => {
           if (!keysAre(item, "path,mode,type,sha") || item.mode !== "100644" || item.type !== "blob"
             || !validSha(item.sha) || !publication.blobs.has(item.sha) || typeof item.path !== "string" || seen.has(item.path)) return false;
           seen.add(item.path);
-          if (item === data[0]) return true;
-          if (!item.path.startsWith(folder)) return false;
-          const match = item.path.slice(folder.length).match(/^([a-z0-9]+(?:-[a-z0-9]+)*)\/([0-9a-f]{24})-([1-6])\.jpg$/);
+          const bytes = publication.blobs.get(item.sha);
+          if (item === data[0]) return bytes <= 900000;
+          const photoPrefix = folder + "/images/posts/";
+          const documentPrefix = folder + "/documents/posts/";
+          const kind = item.path.startsWith(photoPrefix) ? "photos" : item.path.startsWith(documentPrefix) ? "documents" : null;
+          if (!kind) return false;
+          const relative = item.path.slice((kind === "photos" ? photoPrefix : documentPrefix).length);
+          const match = relative.match(kind === "photos"
+            ? /^([a-z0-9]+(?:-[a-z0-9]+)*)\/([0-9a-f]{24})-([1-9])\.jpg$/
+            : /^([a-z0-9]+(?:-[a-z0-9]+)*)\/([0-9a-f]{24})-([1-3])\.pdf$/);
           if (!match || match[1].length > 80 || match[1] === "author") return false;
-          const key = match[1] + "/" + match[2];
-          if (batch && batch !== key) return false;
-          batch = key;
+          if (article && article !== match[1]) return false;
+          article = match[1];
+          if (batches[kind] && batches[kind] !== match[2]) return false;
+          batches[kind] = match[2];
+          counts[kind] += 1;
+          if (counts[kind] > (kind === "photos" ? 9 : 3) || bytes > (kind === "photos" ? 2 : 10) * 1024 * 1024) return false;
           return true;
         });
         if (valid) return {path, gitStage: "tree", publication, body: {base_tree: body.base_tree,
@@ -289,7 +304,7 @@
       || typeof body.message !== "string" || !body.message.trim() || body.message.length > 256
       || typeof body.sha !== "string" || !/^[A-Za-z0-9_-]{1,128}$/.test(body.sha)
       || typeof body.content !== "string" || !body.content || body.content.length > 1300000
-      || !/^(?:[A-Za-z0-9+/]{4})*(?:[A-Za-z0-9+/]{2}==|[A-Za-z0-9+/]{3}=)?$/.test(body.content)) {
+      || !validBase64(body.content)) {
       throw new Error("Publishing requires an allowed file, its current SHA, and the main branch.");
     }
     return {path, body: {message: body.message, branch: "main", sha: body.sha, content: body.content}};
@@ -313,7 +328,7 @@
     if (allowed.gitStage === "base") {
       if (result.sha !== context.head || !validSha(result.tree?.sha)) throw invalid();
       context.baseTree = result.tree.sha;
-    } else if (allowed.gitStage === "blob") context.blobs.add(result.sha);
+    } else if (allowed.gitStage === "blob") context.blobs.set(result.sha, base64Size(allowed.body.content));
     else if (allowed.gitStage === "tree") context.tree = result.sha;
     else if (allowed.gitStage === "commit") context.commit = result.sha;
   }
@@ -417,7 +432,7 @@
       const operation = operationFor(signal);
       if (allowed.gitStage === "head") {
         clearPublication();
-        const context = {head: null, baseTree: null, blobs: new Set(), tree: null, commit: null, signal};
+        const context = {head: null, baseTree: null, blobs: new Map(), tree: null, commit: null, signal};
         context.cancel = () => clearPublication(context);
         publication = context;
         signal?.addEventListener("abort", context.cancel, {once: true});

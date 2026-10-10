@@ -2,7 +2,25 @@
 
 本文件保存可随源码交付的中文实测概要；原始 JSON、截图和临时产物位于被忽略的 `artifacts/`，不进入源码包。后续扩展应更新对应模块记录和案例，重新验证当前版本。
 
-## 2026-10-10：两栏文章照片
+## 2026-10-10：九图、PDF 与学术资料当前扩展
+
+本轮照片上限为 9 张，新增独立 PDF 附件服务；Publications 拆成三分类，加入用户论文、ORCID 与 BESIII 项目链接。以下为本轮实际证据，后续章节保留旧版本历史；同名 artifacts 报告已更新。
+
+| 浏览器内核 | 版本 | 视口 | 附件 / 学术 / 作者 / 旧功能 / 基础 |
+|---|---|---|---|
+| Chromium | 151.0.7922.34 | 1440×900、390×844、320×780 | 全部通过 |
+| Firefox | 153.0 | 1440×900、390×844、320×780 | 全部通过 |
+| WebKit | 26.5 | 1440×900、390×844、320×780 | 全部通过 |
+
+- `test:photos`：北京时间 16:17，33 流程/环境，共 297；真实九图选择与十图拒绝、两集合 PDF-only 与混合 ZIP/原子发布、13 项受控树、PDF 原字节、旧附件保留、失败草稿及事务取消通过。证据见 [附件](modules/article-photos.md)、[PDF](modules/article-documents.md)。
+- `test:academic-profile`：16:17，8 流程/环境，共 72；三分类目录、各深链/刷新/历史/键盘/空状态、arXiv 题名与 Abstract/PDF 链接、ORCID、BESIII、英文及窄屏通过。证据见 [Publications](modules/academic-publications.md) 及三子分类记录。
+- `test:author`：16:16，共 144 流程；`test:features`：16:16，共 81 流程；`test:author-security`：离线 21 项。统一会话、加密缓存、纯文发布与 Relationship 均回归，正式配置/文章/密文未改。
+- `test:compat`：16:23，三内核三视口、正常/减少动画、直接文件打开与模块故障隔离通过。旧普通空列表断言按当前 Publications 自定义目录和 Projects 的 BESIII 非空条目适配，保留八栏目、导航、键盘焦点、历史、aliases、触摸模拟、直达刷新及本地坏资源检查。
+- 已查看 Chromium 桌面 Publications 目录与 PDF 阅读、手机 arXiv 与 PDF 选择截图，常规字形、英文文字、链接和窄屏布局正常。
+
+GitHub API 全模拟，真实远端写入 0；测试使用临时素材及随机凭据，不读取用户浏览器连接，原正式配置/文章/密文保持原字节。PDF 大文件 10/30 MiB 和 ZIP 52 MiB 独立边界只在 Chromium 桌面额外验证，不称为九环境全部大文件实测。视口模拟不是手机真机；未测试品牌历史版本、线上新部署、真实附件发布及 PDF 阅读器渲染。PDF 只验证基本边界、保留原元数据，不宣称完整解析或安全扫描。
+
+## 2026-10-10：两栏文章照片（六图版本历史）
 
 本轮新增独立照片服务、共用选图编辑与图库、ZIP、独立发布器和 Git 对象请求事务。照片文件仍归 Experience / Moments 各自文章；正式作者配置、两个文章数组和 Relationship 密文未改。
 
@@ -126,3 +144,7 @@ Chromium 视觉对照覆盖三个视口的首页各分区、全部八个详情�
 手机为视口模拟，Chromium / WebKit 另测触摸模拟；Firefox 窄屏测试鼠标与键盘。没有手机真机、各品牌 Chrome / Edge / Safari、历史版本、外部站点可达性或 GitHub Pages 新版本上线后的测试。头部与静态资料的视觉对照主要使用 Chromium；不宣称全平台兼容。
 
 后续扩展必须更新相关模块记录和测试案例，重新实测；本记录不能代替未来版本验证。
+
+## 发布 API 大文件离线边界
+
+2026-10-10 北京时间 16:25，Node.js v25.8.0（macOS arm64）读取当前会话源码，以随机密码、真实 Web Crypto、内存存储和模拟 fetch 完成 8 项独立断言。Experience/Moments 分别取得合法 head/base 后，恰好 10 MiB 的 Base64 blob 到达模拟接口并逐字节解码一致，没有正则或栈错误；10 MiB+1 字节在 fetch 前拒绝；本次 10 MiB blob 作为受控 PDF 新树条目通过，同一大 blob 改用 JPG 路径在 fetch 前拒绝。共 12 次模拟请求，真实网络和写入 0，源码未改。报告 `artifacts/author-blob-boundary-results.json` 不交付；该结果不增加 297 个浏览器流程或原离线会话 21 项的计数。

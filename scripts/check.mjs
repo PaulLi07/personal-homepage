@@ -195,7 +195,7 @@ async function inspectManifest() {
 }
 
 async function readRegistrations(modules) {
-  const context = vm.createContext({ window: {addEventListener() {}, removeEventListener() {}}, TextEncoder, TextDecoder, AbortController }, { codeGeneration: { strings: false, wasm: false } });
+  const context = vm.createContext({ window: {addEventListener() {}, removeEventListener() {}}, TextEncoder, TextDecoder, AbortController, URL }, { codeGeneration: { strings: false, wasm: false } });
   vm.runInContext(`window.__registrations = { sections: [], details: [], views: [], data: [] };
     window.Homepage = {
       registerSection(module) { window.__registrations.sections.push({ source: window.__source, module, initType: typeof module?.init }); },

@@ -1,25 +1,25 @@
-/* 本栏目的英文内容与图片在本目录维护；暂无真实条目时保持 entries 为空。 */
+/* 栏目外壳由共用详情呈现，分类目录与条目由本模块自定义视图维护。 */
 window.Homepage.registerDetail("academic", "publications", {
   "title": "Publications.",
   "label": "Publications",
   "kicker": "Academic · 02",
-  "subtitle": "Papers, preprints, and academic contributions.",
+  "subtitle": "Internal notes, preprints, and published papers.",
   "image": "modules/academic/publications/images/cover.jpg",
   "imageAlt": "An ultraviolet view of the Andromeda Galaxy",
   "credit": "NASA/JPL-Caltech · Andromeda Galaxy",
   "source": "https://images.nasa.gov/details/PIA04921",
   "description": [
-    "A place for publications and preprints, with links to the original papers and a short introduction to each contribution.",
-    "The list will be updated when publication information is available."
+    "Browse internal notes, arXiv preprints, and published papers.",
+    "Original records and full-text links are provided where available."
   ],
   "facts": [
     {
       "label": "Collection",
-      "value": "Papers & preprints"
+      "value": "Internal note · arXiv · Published"
     },
     {
       "label": "Links",
-      "value": "DOI and arXiv links to follow"
+      "value": "Original records & full texts"
     }
   ],
   "listTitle": "Publication list",

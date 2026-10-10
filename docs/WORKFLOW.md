@@ -9,8 +9,10 @@
 - 页面保持常规字形、适中字号、简洁学术风与宇宙主题，只使用用户提供的真实资料。
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
 - 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。Experience 学术日志与 Moments 生活文章分别维护，没有用户资料时保持空数组，不编造内容。
+- Publications 再分 Internal note、arXiv、Published，各目录独立 `data.js` 与中文 README；分类目录及 `/internal-note`、`/arxiv`、`/published` 子路由使用既有自定义详情接口，不建立另一套弹窗。仅登记用户提供并核对的论文资料；当前内部材料和已发表分类为空。
+- ORCID 在 About 与 Contact 同步显示，BESIII 官方链接在 Projects；arXiv:2610.11981 展示官方题名、2026-10-08 日期及 BESIII Collaboration 署名。不据此推断个人贡献、合作组角色或正式发表状态。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
-- `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与 ZIP，在作者和栏目数据之前加载。集合数据、读者和实际照片仍由各自模块负责，Relationship 不接入公开附图。
+- `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与混合 ZIP，`modules/article-documents/` 独立提供 PDF 规范、选择与阅读链接。加载顺序为照片、PDF、作者，再加载栏目数据。集合数据、读者和实际文件仍由各自模块负责，Relationship 不接入公开附件。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
 - 根 `index.html`、`credits.html` 是生成产物，修改源片段或模板后显式装配，禁止手改生成页面。保持相对资源路径、普通脚本和直接文件打开能力。
@@ -73,7 +75,9 @@ git switch -c feat/short-topic
 
 `npm run test:author-security` 离线验证统一会话、密码派生、缓存加密 / 篡改、取消、401 与请求边界；只用随机密码及模拟 GitHub。它与真实页面 `test:author` 分开，不能以离线通过替代浏览器焦点、表单和双集合发布测试。
 
-`npm run test:photos` 验证旧记录无图兼容、张数超限拒绝、输入格式和尺寸、JPEG 输出及总量、英文 alt/纯文本 caption、受控路径、预览排序删除、关闭取消、原比例图库与 ZIP。发布测试同时覆盖无图 Contents 流程、有图同版 head/tree/数据读取、照片和数据的一次提交、已有附图保留、分支冲突及未更新 `main` 时不显示文章。使用临时照片和模拟 GitHub，不上传示例资料；报告为 `artifacts/photo-results.json`，对应证据记录在 [照片模块](modules/article-photos.md)。新增功能仍按实际范围补测，不以现有脚本代替未覆盖的操作。
+`npm run test:photos` 验证旧记录零附件兼容、9 张 / 18 MiB 照片边界、输入格式和尺寸、JPEG 输出、英文 alt / 纯文本 caption、受控路径、预览排序删除、关闭取消与原比例图库；还需覆盖 PDF 3 份 / 30 MiB、每份 10 MiB、英文标题、原字节与基本头尾检查、阅读链接及混合 ZIP。发布测试覆盖零附件 Contents、任意附件同版 head / tree / 数据读取、文件和数据的一次提交、已有照片和 PDF 保留、分支冲突及未更新 `main` 时不显示文章。使用临时文件和模拟 GitHub，不上传示例资料；报告为 `artifacts/photo-results.json`，对应证据由本轮验证后登记。
+
+`npm run test:academic-profile` 验证 Publications 三分类点击、直达、刷新、返回、空状态与安全文本，核对 arXiv 题名、元信息及 Abstract / PDF 外链，同时检查 About / Contact ORCID、Projects BESIII 和窄屏布局。既有历史测试记录保持原样，本轮附件 297 流程与学术资料 72 流程在三内核/三视口通过，证据见对应模块记录；后续修改仍须重新实测。
 
 ## 5. 装配、检查与提交
 
@@ -93,7 +97,7 @@ git status --short --branch
 - 提交使用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，一个提交围绕一个目的，保留无关改动。
 - 暂存前核对中文文档、英文网页、模块说明、实测记录与生成物；系统文件、缓存、ZIP 和 Git 元数据不属于网站源码。
 - `.private/` 拒绝跟踪、打包和公开部署，不得使用强制暂存绕过忽略规则；密码、PAT 和私密明文不进入源码、日志或聊天。
-- 公共封面和占位素材变更同步英文替代文本、来源说明、署名页及素材清单；文章附图留在自己的记录目录，维护英文 alt 与可选 caption，保留其他已发布照片。
+- 公共封面和占位素材变更同步英文替代文本、来源说明、署名页及素材清单；文章照片和 PDF 留在自己的记录目录，维护英文 alt / caption 与附件标题，保留其他已发布文件。
 
 ## 6. 发布与交付
 
@@ -117,11 +121,11 @@ git push origin main
 2. 统一作者密码只以随机盐与 PBKDF2-SHA256 600000 次派生校验值保存在配置；不把用户原密码写入源码、文档、日志或聊天。输入密码后才显示编辑器；首次使用再连接 GitHub PAT。更改密码使用 `npm run author:password` 的本地隐藏输入与确认，随后完整部署；旧连接缓存需重新建立。
 3. 用户已选择在线发布并记住加密连接的流程；首次连接时勾选 remember。工作台核验 `PaulLi07`、仓库所有者与写权限，真实仓库授权仍由 GitHub 执行。未选择记住时只保留会话内存，选择后仅加密缓存进当前浏览器 localStorage；明文密码与令牌不进入持久存储、URL、Cookie、历史或源码。
 4. 会话可跨两栏与详情关闭保持。Sign out 清内存并锁定两处，保存的加密连接可保留；Forget 删除缓存及当前连接。刷新 / 页面离开清内存；刷新后须输入密码解密缓存，再 GET `/user` 与仓库重验，损坏或失效时重新连接。请求返回 401 时保持解锁和草稿，清连接后重新连接 GitHub；缓存删除失败须如实提示。
-5. Experience 在 `entries.js` 登记英文日志，增加学术类型与可选 HTTPS 参考；Moments 在 `posts.js` 登记英文生活文章。两集合独立，标识稳定，`author` 保留。可选 `photos` 最多 6 张，仅 `{ src, alt, caption? }`；路径固定当前文章的 `images/posts/<id>/<24hex>-<1..6>.jpg`，禁止外链、跨文与路径穿越。保留旧无图结构及已有合法附图；远端只解析纯 JSON，不执行脚本或注入 HTML。
-6. 原图接受 JPEG、PNG、WebP，每张最多 10 MiB；浏览器重绘移除元数据，输出长边最多 1920 像素、每张最多 2 MiB、合计最多 8 MiB 的 JPEG。填写非空英文 alt（最多 300 字符）与可选英文 caption（最多 600 字符），处理完成后方可发布或下载。
-7. 编辑器只管表单；`author/publisher.js` 独立解析、合并与发布。用户点击 `Publish to GitHub` 后，无图保持 Contents GET / PUT 与 SHA 校验；带图 GET `main` head 及对应 commit 的 tree SHA，并以 `?ref=head` 读取同版数据，POST 照片与数据 blobs / tree / commit（`parents: [head]`），最后 PATCH `main` 且 `force: false`。照片与数据同次可见提交，冲突保留草稿，不强制覆盖；未更新 `main` 的 Git 对象不会作为网页文章出现。已有 Contents 读写 PAT 可继续使用，无需重新授权。
-8. `Download update` 无图下载数据 JS，有图下载包含数据与新照片、保留仓库相对目录的 ZIP。解压后上传内部内容至仓库根，禁止仅上传 ZIP；先核对远端最新记录，保留既有图片。下载与普通手动上传都没有自动 SHA 冲突保护。
-9. Pages 更新后检查列表、正文、全部附图及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对后以 `git pull --ff-only` 同步；有分歧则保留双方内容，避免旧包覆盖在线更新的记录或照片。本轮实测见 [照片记录](modules/article-photos.md)，历史作者证据见 [author 记录](modules/author.md)。
+5. Experience 在 `entries.js` 登记英文日志，增加学术类型与可选 HTTPS 参考；Moments 在 `posts.js` 登记英文生活文章。两集合独立，标识稳定，`author` 保留。可选 `photos: [{ src, alt, caption? }]` 最多 9 张，路径为当前文章的 `images/posts/<id>/<24hex>-<1..9>.jpg`；可选 `attachments: [{ src, title, size }]` 最多 3 份，路径为 `documents/posts/<id>/<24hex>-<1..3>.pdf`。禁止外链、跨文与路径穿越，保留旧结构及已有合法附件；远端只解析纯 JSON，不执行脚本或注入 HTML。
+6. 原图接受 JPEG、PNG、WebP，每张最多 10 MiB；浏览器重绘移除元数据，输出长边最多 1920 像素、每张最多 2 MiB、合计最多 18 MiB 的 JPEG。填写非空英文 alt（最多 300 字符）与可选英文 caption（最多 600 字符）。PDF 每份最多 10 MiB、合计最多 30 MiB，英文 title 非空且最多 160 字符、size 与原字节数一致；保留原字节和元数据，只做大小与头尾基本检查，不进行完整解析或扫描。读者使用 Open PDF / Download PDF 链接，不内嵌 iframe。处理完成后方可发布或下载。
+7. 编辑器只管表单；`author/publisher.js` 独立解析、合并与发布。用户点击 `Publish to GitHub` 后，零附件保持 Contents GET / PUT 与 SHA 校验；有任意照片或 PDF 就 GET `main` head 及对应 commit 的 tree SHA，并以 `?ref=head` 读取同版数据，POST 附件与数据 blobs / tree / commit（`parents: [head]`），最后 PATCH `main` 且 `force: false`。附件与数据同次可见提交，冲突保留草稿，不强制覆盖；未更新 `main` 的 Git 对象不会作为网页文章出现。会话绑定同次 head、基树、blob、受控 tree、commit 与 main 更新，失败、取消、新 head 或授权失效后清理；每份 blob 最多 10 MiB，tree 最多 13 项，照片与 PDF 各自一个批次标识且只能属于同一文章。已有 Contents 读写 PAT 可继续使用，无需重新授权。
+8. `Download update` 零附件下载数据 JS，有任意附件下载包含数据与新照片 / PDF、保留仓库相对目录的 ZIP，文件负载最多 52 MiB。解压后上传内部内容至仓库根，禁止仅上传 ZIP；先核对远端最新记录，保留既有文件。下载与普通手动上传都没有自动 SHA 冲突保护。
+9. Pages 更新后检查列表、正文、全部照片、PDF 打开 / 下载及直达链接。下一次本地维护或打包前先 `git fetch origin`，核对后以 `git pull --ff-only` 同步；有分歧则保留双方内容，避免旧包覆盖在线更新的记录或文件。本轮附件与学术结果见各自模块记录，历史作者证据见 [author 记录](modules/author.md)。
 
 ### Relationship 本地配置
 
@@ -147,7 +151,8 @@ npm run relationship:check
 | 可选浏览器兼容性测试 | `npm run test:compat`；工具来源可用 `HOMEPAGE_PLAYWRIGHT_MODULE` 指定 |
 | 可选功能集成测试 | `npm run test:features`；GitHub API 全部模拟，真实远端写入为 0 |
 | 统一作者与学术日志测试 | `npm run test:author`；随机密码及双集合夹具，GitHub 全模拟 |
-| 文章照片与带图发布测试 | `npm run test:photos`；临时图片与 GitHub 全模拟，真实远端写入为 0 |
+| 照片 / PDF 与附件发布测试 | `npm run test:photos`；临时文件与 GitHub 全模拟，真实远端写入为 0 |
+| 学术资料及论文分类测试 | `npm run test:academic-profile`；分类路由、元信息、资料外链与兼容性 |
 | 离线作者会话 / 更改作者密码 | `npm run test:author-security` / `npm run author:password`（本地交互，不使用命令参数传密码） |
 | 离线加密算法 / 正式密文格式 | `npm run test:security` / `npm run relationship:check` |
 | 本地预览 | `npm run preview`，默认端口 8767 |

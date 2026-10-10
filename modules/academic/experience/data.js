@@ -13,6 +13,11 @@
       return api.articlePhotos.normalize(entry.photos, "experience", entry.id);
     } catch (_) { throw new Error("Invalid academic entry photos."); }
   }
+  function attachmentsFor(entry) {
+    if (entry.attachments === undefined) return undefined;
+    try { return api.articleDocuments.normalize(entry.attachments, "experience", entry.id); }
+    catch (_) { throw new Error("Invalid academic entry PDF attachments."); }
+  }
 
   function validReference(value) {
     if (value === undefined || value === "") return true;
@@ -44,6 +49,7 @@
       if (!kinds.has(entry.kind)) throw new Error("Choose a valid academic entry type.");
       if (!validReference(entry.reference)) throw new Error("A reference link must use HTTPS.");
       photosFor(entry);
+      attachmentsFor(entry);
     }
     return entries;
   };
@@ -52,7 +58,8 @@
     return entries.map(entry => ({
       id: entry.id, title: entry.title, date: entry.date, excerpt: entry.excerpt, body: entry.body,
       author: entry.author, kind: entry.kind, ...(entry.reference ? {reference: entry.reference} : {}),
-      ...(entry.photos === undefined ? {} : {photos: photosFor(entry)})
+      ...(entry.photos === undefined ? {} : {photos: photosFor(entry)}),
+      ...(entry.attachments === undefined ? {} : {attachments: attachmentsFor(entry)})
     }));
   };
   api.registerAcademicLogs = entries => api.registerData(key, api.normalizeAcademicLogs(entries));

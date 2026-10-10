@@ -11,6 +11,11 @@
       return api.articlePhotos.normalize(post.photos, "moments", post.id);
     } catch (_) { throw new Error("Invalid post photos."); }
   }
+  function attachmentsFor(post) {
+    if (post.attachments === undefined) return undefined;
+    try { return api.articleDocuments.normalize(post.attachments, "moments", post.id); }
+    catch (_) { throw new Error("Invalid post PDF attachments."); }
+  }
   api.validateBlogPosts = function (posts) {
     if (!Array.isArray(posts) || posts.length > 500) throw new Error("Invalid blog data.");
     const ids = new Set();
@@ -27,6 +32,7 @@
       if (post.title.length > 160 || post.excerpt.length > 600 || post.body.length > 50000
         || post.id.length > 80 || post.author !== "Yuhong Li") throw new Error("Invalid post content or author.");
       photosFor(post);
+      attachmentsFor(post);
     }
     return posts;
   };
@@ -34,7 +40,8 @@
     api.validateBlogPosts(posts);
     // 严格保存允许的字段，避免未知远端字段参与呈现或下一次发布。
     return posts.map(post => ({id: post.id, title: post.title, date: post.date, excerpt: post.excerpt,
-      body: post.body, author: post.author, ...(post.photos === undefined ? {} : {photos: photosFor(post)})}));
+      body: post.body, author: post.author, ...(post.photos === undefined ? {} : {photos: photosFor(post)}),
+      ...(post.attachments === undefined ? {} : {attachments: attachmentsFor(post)})}));
   };
   api.registerBlogPosts = posts => api.registerData(key, api.normalizeBlogPosts(posts));
   api.getBlogPosts = () => api.getData(key) || [];

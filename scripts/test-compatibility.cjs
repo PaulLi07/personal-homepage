@@ -13,6 +13,7 @@ try {
   process.exit(1);
 }
 const engines = ["chromium", "firefox", "webkit"];
+const externalRequests = [];
 const viewports = [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 320, height: 780 }];
 const routes = {
   academic: { experience: "Experience.", publications: "Publications.", notes: "Notes.", projects: "Projects." },
@@ -25,7 +26,7 @@ const server = http.createServer(async (request, response) => {
     if (!pathname.startsWith("/personal-homepage/")) throw new Error("Invalid prefix");
     const relative = pathname.slice("/personal-homepage/".length) || "index.html";
     const file = path.resolve(root, relative);
-    if (!file.startsWith(root + path.sep) || relative.split("/").includes(".git")) throw new Error("Invalid path");
+    if (!file.startsWith(root + path.sep) || relative.split("/").some(part => [".git", ".private"].includes(part))) throw new Error("Invalid path");
     const data = await fs.readFile(file);
     response.writeHead(200, { "Content-Type": (mime[path.extname(file)] || "application/octet-stream") + "; charset=utf-8" });
     response.end(data);
@@ -34,6 +35,16 @@ const server = http.createServer(async (request, response) => {
     response.end("Not found");
   }
 });
+
+async function guardNetwork(context, url) {
+  const origin = new URL(url).origin;
+  await context.route("**/*", route => {
+    const target = new URL(route.request().url());
+    if (["file:", "blob:"].includes(target.protocol) || target.origin === origin) return route.continue();
+    externalRequests.push({method: route.request().method(), url: target.href});
+    return route.abort();
+  });
+}
 
 async function assertOpen(page, title) {
   await page.waitForFunction(() => document.getElementById("detail-dialog").open);
@@ -51,6 +62,21 @@ async function assertOpen(page, title) {
     assert.equal(await page.getByText("No posts yet", {exact: true}).isVisible(), true);
   } else if (title === "Relationship.") {
     assert.equal(await page.getByText("Not configured yet.", {exact: true}).isVisible(), true);
+  } else if (title === "Publications.") {
+    const directory = page.locator('.publication-library[data-publication-view="directory"]');
+    assert.equal(await directory.count(), 1);
+    assert.equal(await directory.isVisible(), true);
+    assert.deepEqual(await directory.locator('button[data-publication-category]').evaluateAll(nodes => nodes.map(node => node.dataset.publicationCategory)), ["internal-note", "arxiv", "published"]);
+    assert.equal(await page.locator("#detail-dialog").evaluate(dialog => dialog.classList.contains("has-custom-view")), true);
+    assert.equal(await page.locator("#detail-entries").isVisible(), false);
+  } else if (title === "Projects.") {
+    assert.equal(await page.locator("#detail-entries .detail-entry").count(), 1);
+    const link = page.locator('#detail-entries .detail-entry a[href="http://bes3.ihep.ac.cn/"]');
+    assert.equal(await link.isVisible(), true);
+    assert.equal(await link.textContent(), "BESIII Collaboration ↗");
+    assert.equal(await link.getAttribute("target"), "_blank");
+    assert.equal(await link.getAttribute("rel"), "noopener noreferrer");
+    assert.equal(await page.locator("#detail-entries .empty-state").count(), 0);
   } else assert.equal(await page.locator("#detail-entries .empty-state").count(), 1);
 }
 
@@ -71,6 +97,7 @@ async function assertLayout(page) {
 
 async function runViewport(browser, engine, viewport, url) {
   const context = await browser.newContext({ viewport, reducedMotion: "reduce", hasTouch: viewport.width < 700 });
+  await guardNetwork(context, url);
   const page = await context.newPage();
   const errors = [];
   page.on("pageerror", error => errors.push(error.message));
@@ -190,6 +217,7 @@ async function runEngine(engine, url) {
       catch (error) { error.message = `${engine} ${viewport.width}×${viewport.height}: ${error.message}`; throw error; }
     }
     const context = await browser.newContext({ viewport: viewports[0], reducedMotion: "no-preference" });
+    await guardNetwork(context, url);
     const page = await context.newPage();
     const errors = [];
     page.on("pageerror", error => errors.push(error.message));
@@ -208,6 +236,7 @@ async function runEngine(engine, url) {
     assert.deepEqual(errors, []);
     await context.close();
     const fileContext = await browser.newContext({ viewport: viewports[0], reducedMotion: "reduce" });
+    await guardNetwork(fileContext, url);
     const local = await fileContext.newPage();
     const fileErrors = [];
     local.on("pageerror", error => fileErrors.push(error.message));
@@ -218,6 +247,7 @@ async function runEngine(engine, url) {
     assert.deepEqual(fileErrors, []);
     await fileContext.close();
     const faultContext = await browser.newContext({ viewport: viewports[0], reducedMotion: "reduce" });
+    await guardNetwork(faultContext, url);
     const faultPage = await faultContext.newPage();
     const uncaught = [];
     let isolated = false;
@@ -255,8 +285,9 @@ async function runEngine(engine, url) {
     const completed = await Promise.allSettled(engines.map(engine => runEngine(engine, url)));
     const failure = completed.find(result => result.status === "rejected");
     if (failure) throw failure.reason;
+    assert.deepEqual(externalRequests, [], "存在不应外发的请求");
     const browsers = completed.map(result => result.value);
-    const report = { date: new Date().toISOString(), prefix: "/personal-homepage/", browsers, limits: ["手机为视口或触摸模拟，未测试手机真机。", "引擎实测不等于各版本 Chrome、Edge、Safari 品牌浏览器实测。"] };
+    const report = { date: new Date().toISOString(), prefix: "/personal-homepage/", browsers, externalRequests: 0, realWrites: 0, limits: ["手机为视口或触摸模拟，未测试手机真机。", "引擎实测不等于各版本 Chrome、Edge、Safari 品牌浏览器实测。", "只验证外链目标与安全属性，所有外部请求拦截；不进行真实 GitHub 写入。"] };
     await fs.mkdir(path.join(root, "artifacts"), { recursive: true });
     await fs.writeFile(path.join(root, "artifacts/compatibility-results.json"), JSON.stringify(report, null, 2) + "\n");
     console.log("兼容性测试全部通过；报告：artifacts/compatibility-results.json。");

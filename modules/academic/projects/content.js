@@ -1,30 +1,35 @@
-/* 本栏目的英文内容与图片在本目录维护；暂无真实条目时保持 entries 为空。 */
+/* 合作组链接由用户提供；不推断个人角色、分析课题或具体贡献。 */
 window.Homepage.registerDetail("academic", "projects", {
   "title": "Projects.",
   "label": "Projects",
   "kicker": "Academic · 04",
-  "subtitle": "Ideas made concrete through work and exploration.",
+  "subtitle": "Research collaborations, projects, and code.",
   "image": "modules/academic/projects/images/cover.jpg",
   "imageAlt": "Earth rising above the Moon, photographed by Apollo 8",
   "credit": "NASA / Bill Anders · Apollo 8 Earthrise",
   "source": "https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/",
   "description": [
-    "A home for academic projects, calculations, and code, with enough context to explain the question behind each piece of work.",
-    "Project descriptions and links will be added when they are ready to share."
+    "Links to research collaborations and academic projects.",
+    "Further project descriptions and code will be added when they are ready to share."
   ],
   "facts": [
     {
       "label": "Collection",
-      "value": "Projects & code"
+      "value": "Projects & collaborations"
     },
     {
       "label": "Profile",
       "value": "GitHub · PaulLi07"
     }
   ],
-  "listTitle": "Selected projects",
+  "listTitle": "Research collaborations & projects",
   "emptyMessage": "Project details have not been added yet.",
-  "entries": [],
+  "entries": [{
+    "title": "BESIII Collaboration",
+    "meta": "Research collaboration",
+    "description": "Official website of the BESIII Collaboration.",
+    "url": "http://bes3.ihep.ac.cn/"
+  }],
   "link": {
     "label": "Visit GitHub ↗",
     "url": "https://github.com/PaulLi07"

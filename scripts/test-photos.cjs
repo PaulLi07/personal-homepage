@@ -20,23 +20,27 @@ const configSource = "window.Homepage.authorConfig = " + JSON.stringify({version
   owner: "PaulLi07", repo: "personal-homepage"}) + ";\n";
 const redact = value => String(value).replaceAll(password, "[测试密码]").replaceAll(token, "[测试令牌]");
 const collections = {
-  moments: {route: "#life/moments", file: "modules/life/moments/posts.js", registration: "registerBlogPosts",
+  moments: {route: "#life/moments", file: "modules/life/moments/posts.js", registration: "registerBlogPosts", documents: "modules/life/moments/documents/posts/",
     images: "modules/life/moments/images/posts/", root: ".moments-blog", body: ".moments-blog__body"},
-  experience: {route: "#academic/experience", file: "modules/academic/experience/entries.js", registration: "registerAcademicLogs",
+  experience: {route: "#academic/experience", file: "modules/academic/experience/entries.js", registration: "registerAcademicLogs", documents: "modules/academic/experience/documents/posts/",
     images: "modules/academic/experience/images/posts/", root: ".academic-log", body: ".academic-log__body"}
 };
 const registration = (name, records) => "window.Homepage." + collections[name].registration + "(" + JSON.stringify(records) + ");\n";
 const digest = value => crypto.createHash("sha1").update(value).digest("hex");
 const blobSHA = bytes => digest(Buffer.concat([Buffer.from("blob " + bytes.length + "\0"), bytes]));
-let fixtureImages, noisyImage;
+let fixtureImages;
 const fileAPI = name => REPO + "/contents/" + collections[name].file;
 const photoPath = (name, id, index = 1) => collections[name].images + id + "/" + "a".repeat(24) + "-" + index + ".jpg";
+const documentPath = (name, id, index = 1) => collections[name].documents + id + "/" + "b".repeat(24) + "-" + index + ".pdf";
+const pdfBytes = Buffer.from("%PDF-1.7\n1 0 obj\n<< /Type /Catalog /Pages 2 0 R >>\nendobj\n2 0 obj\n<< /Type /Pages /Count 0 /Kids [] >>\nendobj\ntrailer\n<< /Root 1 0 R >>\n%%EOF\n", "utf8");
+const pdfFile = index => ({name: "temporary-document-" + index + ".pdf", mimeType: "application/pdf", buffer: pdfBytes});
 const fixtures = Object.fromEntries(Object.keys(collections).map(name => [name, [{
   id: "temporary-" + name, title: "Temporary " + name + " with a photograph", date: "2026-10-09",
   excerpt: "A temporary photo reader fixture.", body: "An independent temporary article.\n\nSecond paragraph.", author: "Yuhong Li",
   ...(name === "experience" ? {kind: "Research", reference: "https://example.org/temporary-academic-reference"} : {}),
   photos: [{src: photoPath(name, "temporary-" + name), alt: "A temporary landscape",
-    caption: "Temporary caption <img src=x onerror=window.__photoExecuted=true>"}]
+    caption: "Temporary caption <img src=x onerror=window.__photoExecuted=true>"}],
+  attachments: [{src: documentPath(name, "temporary-" + name), title: "Temporary PDF <img src=x onerror=window.__photoExecuted=true>", size: pdfBytes.length}]
 }]]));
 
 function parseRecords(source, name) {
@@ -132,7 +136,7 @@ function readZIP(bytes) {
 }
 function freshMock() {
   return {head: digest("initial-photo-head"), baseTree: digest("initial-photo-tree"), mode: null,
-    records: structuredClone(fixtures), blobs: new Map(), trees: new Map(), commits: new Map(), photos: new Map(),
+    records: structuredClone(fixtures), blobs: new Map(), trees: new Map(), commits: new Map(), photos: new Map(), documents: new Map(),
     calls: [], reads: [], blobWrites: [], treeWrites: [], commitWrites: [], patches: [], puts: [], errors: [], blocked: []};
 }
 
@@ -140,7 +144,7 @@ let playwright;
 try { playwright = require(process.env.HOMEPAGE_PLAYWRIGHT_MODULE || "playwright"); }
 catch { console.error("未找到 Playwright；请用 HOMEPAGE_PLAYWRIGHT_MODULE 指定已有维护环境。"); process.exit(1); }
 const mime = {".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml",
-  ".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".json": "application/json"};
+  ".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".pdf": "application/pdf", ".json": "application/json"};
 const server = http.createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
@@ -166,6 +170,7 @@ async function intercept(context, origin, mock) {
       }
       const relative = url.pathname.slice(PREFIX.length);
       if (mock.photos.has(relative)) return route.fulfill({contentType: "image/jpeg", body: mock.photos.get(relative)});
+      if (mock.documents.has(relative)) return route.fulfill({contentType: "application/pdf", body: mock.documents.get(relative)});
       if (url.pathname.startsWith(PREFIX)) return route.continue();
     }
     if (url.origin !== "https://api.github.com") { mock.blocked.push({method: request.method(), path: url.pathname}); return route.abort(); }
@@ -219,17 +224,25 @@ async function intercept(context, origin, mock) {
           assert.deepEqual(records.find(next => next.id === record.id), JSON.parse(JSON.stringify(record)), "原子发布改写或丢失旧记录");
         }
         const added = records.filter(record => !mock.records[currentName].some(old => old.id === record.id));
-        assert.equal(added.length, 1); assert.ok(added[0].photos.length >= 1);
-        const photoEntries = body.tree.filter(entry => entry.path !== dataEntries[0].path);
-        assert.deepEqual(photoEntries.map(entry => entry.path).sort(), added[0].photos.map(photo => photo.src).sort());
-        assert.equal(body.tree.length, added[0].photos.length + 1);
+        assert.equal(added.length, 1);
+        const photos = added[0].photos || [], attachments = added[0].attachments || [];
+        assert.ok(photos.length + attachments.length >= 1); assert.ok(photos.length <= 9 && attachments.length <= 3);
+        const assetEntries = body.tree.filter(entry => entry.path !== dataEntries[0].path);
+        assert.deepEqual(assetEntries.map(entry => entry.path).sort(), [...photos, ...attachments].map(asset => asset.src).sort());
+        assert.equal(body.tree.length, photos.length + attachments.length + 1); assert.ok(body.tree.length <= 13);
         for (const entry of body.tree) {
           assert.equal(entry.mode, "100644"); assert.equal(entry.type, "blob"); assert.ok(mock.blobs.has(entry.sha));
           if (entry.path === dataEntries[0].path) continue;
-          assert.ok(new RegExp("^" + collections[currentName].images + added[0].id + "/[a-f0-9]{24}-[1-6]\\.jpg$").test(entry.path));
-          const info = inspectJPEG(mock.blobs.get(entry.sha));
-          assert.ok(Math.max(info.width, info.height) <= 1920 && info.bytes <= 2 * 1024 * 1024);
-          assert.equal(info.markers.includes(0xe1) || info.markers.includes(0xed), false, "发布 JPEG 残留私人元数据");
+          const bytes = mock.blobs.get(entry.sha);
+          if (entry.path.endsWith(".jpg")) {
+            assert.ok(new RegExp("^" + collections[currentName].images + added[0].id + "/[a-f0-9]{24}-[1-9]\\.jpg$").test(entry.path));
+            const info = inspectJPEG(bytes); assert.ok(Math.max(info.width, info.height) <= 1920 && info.bytes <= 2 * 1024 * 1024);
+            assert.equal(info.markers.includes(0xe1) || info.markers.includes(0xed), false, "发布 JPEG 残留私人元数据");
+          } else {
+            assert.ok(new RegExp("^" + collections[currentName].documents + added[0].id + "/[a-f0-9]{24}-[1-3]\\.pdf$").test(entry.path));
+            assert.ok(bytes.equals(pdfBytes), "发布 PDF 原始字节被更改");
+            assert.equal(attachments.find(asset => asset.src === entry.path).size, bytes.length);
+          }
         }
         const sha = digest(JSON.stringify(body));
         mock.trees.set(sha, {name: currentName, records, entries: body.tree});
@@ -251,6 +264,7 @@ async function intercept(context, origin, mock) {
         if (status !== 200) { mock.head = digest("concurrent-head-" + mock.patches.length); mock.baseTree = digest("concurrent-tree-" + mock.patches.length); return respond({message: "Temporary branch conflict"}, status); }
         mock.records[commit.tree.name] = commit.tree.records;
         for (const entry of commit.tree.entries) if (entry.path.endsWith(".jpg")) mock.photos.set(entry.path, mock.blobs.get(entry.sha));
+        for (const entry of commit.tree.entries) if (entry.path.endsWith(".pdf")) mock.documents.set(entry.path, mock.blobs.get(entry.sha));
         mock.head = body.sha; mock.baseTree = digest("tree-after-" + body.sha);
         return respond({ref: "refs/heads/main", object: {type: "commit", sha: body.sha}});
       }
@@ -276,6 +290,7 @@ async function signIn(page) {
   await page.locator('.author-workspace [name="title"]').waitFor({state: "visible"});
 }
 async function connect(page) {
+  if (await page.evaluate(() => window.Homepage.authorSession.isConnected())) return;
   await page.locator('.author-workspace [name="token"]').fill(token);
   await page.getByRole("button", {name: "Connect GitHub", exact: true}).click();
   await page.waitForFunction(() => window.Homepage.authorSession.isConnected());
@@ -315,20 +330,6 @@ async function makeImages(page) {
       buffer: index === 0 ? metadataJPEG(bytes) : bytes};
   });
 }
-async function makeNoise(page) {
-  const source = await page.evaluate(() => {
-    const canvas = document.createElement("canvas"); canvas.width = canvas.height = 1920;
-    const context = canvas.getContext("2d"), image = context.createImageData(1920, 1920);
-    let seed = 0x59c472e1;
-    for (let offset = 0; offset < image.data.length; offset += 4) {
-      for (let channel = 0; channel < 3; channel++) { seed ^= seed << 13; seed ^= seed >>> 17; seed ^= seed << 5; image.data[offset + channel] = seed & 255; }
-      image.data[offset + 3] = 255;
-    }
-    context.putImageData(image, 0, 0); return canvas.toDataURL("image/jpeg", .99).split(",")[1];
-  });
-  const buffer = Buffer.from(source, "base64"); assert.ok(buffer.length <= 10 * 1024 * 1024);
-  return {name: "temporary-noise.jpg", mimeType: "image/jpeg", buffer};
-}
 async function choose(page, files) {
   await page.locator(".article-photo-picker__input").setInputFiles(files);
   await page.waitForFunction(() => !document.querySelector(".article-photo-picker")?.textContent.includes("Processing photos"));
@@ -343,6 +344,31 @@ async function fillPhotos(page, alts) {
   await page.waitForFunction(() => Array.from(document.querySelectorAll(".article-photo-picker__preview")).every(image => image.complete && image.naturalWidth > 0));
 }
 async function photoAlts(page) { return page.locator('.article-photo-picker__item [name="photo-alt"]').evaluateAll(nodes => nodes.map(node => node.value)); }
+async function chooseDocuments(page, files) {
+  await page.locator('.article-document-picker input[type="file"]').setInputFiles(files);
+  await page.waitForFunction(() => !document.querySelector(".article-document-picker")?.textContent.includes("Preparing PDF documents"));
+}
+async function fillDocuments(page, titles) {
+  const items = page.locator(".article-document-picker__item"); assert.equal(await items.count(), titles.length);
+  for (const [index, title] of titles.entries()) await items.nth(index).locator('[name="document-title"]').fill(title);
+}
+async function readerDocuments(page, name, record, count) {
+  const items = page.locator(".article-documents__item"); assert.equal(await items.count(), count);
+  assert.equal(await page.locator(".article-documents iframe, .article-documents object, .article-documents embed").count(), 0);
+  for (let index = 0; index < count; index++) {
+    const item = items.nth(index), source = record.attachments[index].src;
+    assert.equal(await item.locator(".article-documents__title").textContent(), record.attachments[index].title);
+    assert.equal(await item.locator(".article-documents__title img").count(), 0);
+    for (const selector of [".article-documents__open", ".article-documents__download"]) {
+      const anchor = item.locator(selector), href = await anchor.getAttribute("href");
+      assert.equal(new URL(href, page.url()).pathname, PREFIX + source);
+      assert.ok((await anchor.getAttribute("rel")).includes("noopener"));
+      if (selector.endsWith("__open")) assert.equal(await anchor.getAttribute("target"), "_blank");
+      else assert.ok(await anchor.getAttribute("download"));
+    }
+    assert.ok(source.startsWith(collections[name].documents));
+  }
+}
 async function waitPublishIdle(page) {
   await page.waitForFunction(() => {
     const label = window.Homepage.authorSession.isConnected() ? "Publish to GitHub" : "Connect GitHub";
@@ -350,15 +376,17 @@ async function waitPublishIdle(page) {
     return button && !button.disabled;
   });
 }
-async function downloadZIP(page, name, record) {
+async function downloadZIP(page, name, record, photoCount = 2, documentCount = 0) {
   const promise = page.waitForEvent("download"); await page.getByRole("button", {name: "Download update", exact: true}).click();
   const download = await promise; assert.equal(download.suggestedFilename(), record.id + "-update.zip");
   const files = readZIP(await fs.readFile(await download.path())); assert.ok(files.has(collections[name].file));
   const records = parseRecords(files.get(collections[name].file).toString("utf8"), name), added = records.find(entry => entry.id === record.id);
-  assert.ok(added && added.photos.length === 2); assert.equal(files.size, 3);
+  assert.ok(added); assert.equal((added.photos || []).length, photoCount); assert.equal((added.attachments || []).length, documentCount);
+  assert.equal(files.size, photoCount + documentCount + 1);
   assert.ok(fixtures[name].every(entry => records.some(next => next.id === entry.id)), "下载丢失旧文");
-  for (const photo of added.photos) { assert.ok(files.has(photo.src)); const info = inspectJPEG(files.get(photo.src)); assert.ok(Math.max(info.width, info.height) <= 1920); }
-  for (const [file, bytes] of files) { assert.equal(bytes.includes(Buffer.from(password)) || bytes.includes(Buffer.from(token)), false); assert.ok(file.startsWith(collections[name].images) || file === collections[name].file); }
+  for (const photo of added.photos || []) { assert.ok(files.has(photo.src)); const info = inspectJPEG(files.get(photo.src)); assert.ok(Math.max(info.width, info.height) <= 1920); }
+  for (const attachment of added.attachments || []) { assert.ok(files.has(attachment.src)); assert.ok(files.get(attachment.src).equals(pdfBytes)); assert.equal(attachment.size, pdfBytes.length); }
+  for (const [file, bytes] of files) { assert.equal(bytes.includes(Buffer.from(password)) || bytes.includes(Buffer.from(token)), false); assert.ok(file.startsWith(collections[name].images) || file.startsWith(collections[name].documents) || file === collections[name].file); }
   return added;
 }
 async function loadedGallery(page, mock, count) {
@@ -391,7 +419,8 @@ async function loadedGallery(page, mock, count) {
 }
 async function screenshot(page, engine, viewport, name, results) {
   if (engine !== "chromium" || ![1440, 390].includes(viewport.width)) return;
-  const selector = name === "picker" ? ".article-photo-picker__item" : ".article-photos__figure";
+  const selector = name === "picker" ? ".article-photo-picker__item" : name === "pdf-picker" ? ".article-document-picker__item"
+    : name === "pdf-reader" ? ".article-documents__item" : ".article-photos__figure";
   for (const image of await page.locator(selector + " img").all()) {
     await image.scrollIntoViewIfNeeded(); await image.evaluate(image => image.decode());
   }
@@ -420,7 +449,10 @@ async function runViewport(browser, engine, viewport, url) {
   };
   try {
     await page.goto(url + collections.moments.route); images = fixtureImages;
-    for (const name of Object.keys(collections)) mock.photos.set(fixtures[name][0].photos[0].src, images[0].buffer);
+    for (const name of Object.keys(collections)) {
+      mock.photos.set(fixtures[name][0].photos[0].src, images[0].buffer);
+      mock.documents.set(fixtures[name][0].attachments[0].src, pdfBytes);
+    }
     await step("三种输入转无元数据 JPEG、尺寸上限与中止", async () => {
       const results = await page.evaluate(async files => {
         const api = window.Homepage.articlePhotos; if (!api) throw new Error("articlePhotos is unavailable");
@@ -467,12 +499,45 @@ async function runViewport(browser, engine, viewport, url) {
           [{...good, src: valid.replace("a".repeat(24), "A".repeat(24))}], [{...good, alt: " "}],
           [{...good, alt: "x".repeat(301)}], [{...good, caption: "x".repeat(601)}], [{...good, caption: {unsafe: true}}],
           [good, good],
-          Array.from({length: 7}, (_, index) => ({...good, src: images + id + "/" + "a".repeat(24) + "-" + (index + 1) + ".jpg"}))
+          Array.from({length: 10}, (_, index) => ({...good, src: images + id + "/" + "a".repeat(24) + "-" + (index + 1) + ".jpg"}))
         ].map(photos => { try { api.normalize(photos, "moments", id); return false; } catch { return true; } });
         return {normalized, empty: api.normalize(undefined, "moments", id), bad};
       }, {valid: fixtures.moments[0].photos[0].src, images: collections.moments.images, id: fixtures.moments[0].id});
       assert.deepEqual(result.empty, []); assert.deepEqual(Object.keys(result.normalized[0]).sort(), ["alt", "caption", "src"]);
       assert.ok(result.bad.every(Boolean)); assert.equal(mock.calls.length, 0);
+    });
+    await step("PDF 原字节、基础格式、大小、中止与字段路径白名单", async () => {
+      const result = await page.evaluate(async ({base64, valid, size, id, prefix}) => {
+        const api = window.Homepage.articleDocuments, bytes = Uint8Array.from(atob(base64), ch => ch.charCodeAt(0));
+        const prepared = await api.prepare(new File([bytes], "temporary.pdf", {type: "application/pdf"}), {});
+        const blobBytes = new Uint8Array(await prepared.blob.arrayBuffer());
+        const denied = [];
+        const large = new Uint8Array(10 * 1024 * 1024 + 1); large.set(bytes.subarray(0, 10)); large.set(new TextEncoder().encode("%%EOF\n"), large.length - 6);
+        for (const file of [
+          new File([bytes], "wrong.png", {type: "image/png"}), new File(["not-a-pdf\n%%EOF\n"], "header.pdf", {type: "application/pdf"}),
+          new File(["%PDF-1.7\nno eof"], "eof.pdf", {type: "application/pdf"}),
+          new File([bytes, "malicious trailing bytes"], "trailing.pdf", {type: "application/pdf"}),
+          new File([large], "large.pdf", {type: "application/pdf"})
+        ]) { try { await api.prepare(file, {}); denied.push(false); } catch { denied.push(true); } }
+        const controller = new AbortController(); const pending = api.prepare(new File([bytes], "cancel.pdf", {type: "application/pdf"}), {signal: controller.signal}); controller.abort();
+        let aborted = false; try { await pending; } catch (error) { aborted = error.name === "AbortError"; }
+        const good = {src: valid, title: "Temporary PDF title", size, privateMetadata: "discard"};
+        const bad = [
+          [{...good, src: "https://example.org/test.pdf"}], [{...good, src: "javascript:alert(1)"}], [{...good, src: "../" + valid}],
+          [{...good, src: valid.replace(id, "another-entry")}], [{...good, src: valid.replace("life/moments", "academic/experience")}],
+          [{...good, src: valid + "?secret=1"}], [{...good, src: valid.replace("b".repeat(24), "B".repeat(24))}],
+          [{...good, title: " "}], [{...good, title: "x".repeat(161)}], [{...good, title: {unsafe: true}}],
+          [{...good, size: 0}], [{...good, size: -1}], [{...good, size: 1.5}], [{...good, size: "143"}],
+          [{...good, size: 10 * 1024 * 1024 + 1}], [good, good],
+          Array.from({length: 4}, (_, index) => ({...good, src: prefix + id + "/" + "b".repeat(24) + "-" + (index + 1) + ".pdf"}))
+        ].map(items => { try { api.normalize(items, "moments", id); return false; } catch { return true; } });
+        return {bytes: Array.from(prepared.bytes), blobBytes: Array.from(blobBytes), blobType: prepared.blob.type, denied, aborted, bad,
+          normalized: api.normalize([good], "moments", id), empty: api.normalize(undefined, "moments", id)};
+      }, {base64: pdfBytes.toString("base64"), valid: fixtures.moments[0].attachments[0].src, size: pdfBytes.length,
+        id: fixtures.moments[0].id, prefix: collections.moments.documents});
+      assert.ok(Buffer.from(result.bytes).equals(pdfBytes)); assert.deepEqual(result.blobBytes, result.bytes); assert.equal(result.blobType, "application/pdf");
+      assert.ok(result.denied.every(Boolean)); assert.equal(result.aborted, true); assert.ok(result.bad.every(Boolean));
+      assert.deepEqual(result.empty, []); assert.deepEqual(Object.keys(result.normalized[0]).sort(), ["size", "src", "title"]); assert.equal(mock.calls.length, 0);
     });
     await step("两栏图片阅读、纯文本 caption、直达与刷新", async () => {
       for (const [name, item] of Object.entries(collections)) {
@@ -483,16 +548,26 @@ async function runViewport(browser, engine, viewport, url) {
         assert.equal(await page.locator(".article-photos__image").getAttribute("alt"), "A temporary landscape");
         assert.equal(await page.locator(".article-photos__caption").textContent(), fixtures[name][0].photos[0].caption);
         assert.equal(await page.locator(".article-photos__caption img").count(), 0); await layout(page);
+        await readerDocuments(page, name, fixtures[name][0], 1);
         await page.reload(); await page.locator(".article-photos__figure").waitFor({state: "visible"}); await loadedGallery(page, mock, 1);
       }
       assert.equal(mock.calls.length, 0);
     });
     await author(page, url, "moments"); await signIn(page); const moment = await draft(page, "moments", "photo-update");
-    await step("8 MiB 总量上限、本批回滚与处理中禁用", async () => {
-      await page.locator(".article-photo-picker__input").setInputFiles(Array.from({length: 6}, (_, index) => ({...noisyImage, name: "temporary-noise-" + index + ".jpg"})));
+    await step("九张照片合法、第十张拒绝及失败批次回滚", async () => {
+      await page.locator(".article-photo-picker__input").setInputFiles(Array.from({length: 9}, (_, index) => ({...images[index % 3], name: "temporary-nine-" + index + "." + ["jpg", "png", "webp"][index % 3]})));
       assert.equal(await page.getByRole("button", {name: "Download update", exact: true}).isDisabled(), true);
-      await page.locator(".article-photo-picker__status").filter({hasText: "8 MiB"}).waitFor({state: "visible"});
-      assert.equal(await page.locator(".article-photo-picker__item").count(), 0, "总量超限后残留本批图片");
+      await page.waitForFunction(() => !document.querySelector(".article-photo-picker")?.textContent.includes("Processing photos"));
+      const items = page.locator(".article-photo-picker__item"); assert.equal(await items.count(), 9);
+      await fillPhotos(page, Array.from({length: 9}, (_, index) => "Temporary photo " + (index + 1)));
+      await choose(page, [images[0]]); assert.equal(await items.count(), 9, "第十张未被拒绝");
+      await downloadZIP(page, "moments", moment, 9);
+      await items.last().getByRole("button", {name: /remove.*photo/i}).click();
+      await items.last().getByRole("button", {name: /remove.*photo/i}).click();
+      const prior = await photoAlts(page);
+      await choose(page, [images[0], {name: "broken.jpg", mimeType: "image/jpeg", buffer: Buffer.from([255, 216, 255, 217])}]);
+      assert.deepEqual(await photoAlts(page), prior, "失败批次改变已有照片");
+      while (await items.count()) await items.last().getByRole("button", {name: /remove.*photo/i}).click();
       await page.waitForFunction(() => window.__photoURLs.size === 0);
       assert.equal(await page.getByRole("button", {name: "Download update", exact: true}).isDisabled(), false);
       assert.equal(mock.calls.length, 0);
@@ -504,7 +579,7 @@ async function runViewport(browser, engine, viewport, url) {
       assert.equal(mock.calls.length, 0); assert.equal(await page.locator(".article-photo-picker__item").count(), 3);
       await page.locator('.article-photo-picker__item [name="photo-alt"]').first().fill("Temporary JPEG landscape"); await layout(page);
     });
-    await step("键盘排序、移除与六张上限", async () => {
+    await step("键盘排序、移除与九张上限", async () => {
       const items = page.locator(".article-photo-picker__item");
       await items.first().getByRole("button", {name: /move.*down/i}).click();
       assert.deepEqual(await photoAlts(page), ["Temporary PNG landscape", "Temporary JPEG landscape", "Temporary WebP landscape"]);
@@ -513,8 +588,8 @@ async function runViewport(browser, engine, viewport, url) {
       assert.equal(await items.nth(1).getByRole("button", {name: /move.*up/i}).evaluate(button => button === document.activeElement), true, "排序后键盘焦点丢失");
       await items.nth(2).getByRole("button", {name: /remove.*photo/i}).click();
       assert.deepEqual(await photoAlts(page), ["Temporary PNG landscape", "Temporary WebP landscape"]);
-      await choose(page, Array.from({length: 5}, (_, index) => ({...images[0], name: "extra-" + index + ".jpg"})));
-      assert.equal(await items.count(), 2, "超出六张后仍加入图片");
+      await choose(page, Array.from({length: 8}, (_, index) => ({...images[0], name: "extra-" + index + ".jpg"})));
+      assert.equal(await items.count(), 2, "超出九张后仍加入图片");
       await nativeTabTo(page, '.article-photo-picker__item [name="photo-alt"]'); await layout(page);
       await screenshot(page, engine, viewport, "picker", screenshots);
     });
@@ -548,7 +623,7 @@ async function runViewport(browser, engine, viewport, url) {
     }
     await step("同提交照片与正文、保留远端旧文且两栏独立", async () => {
       const other = JSON.stringify(mock.records.experience);
-      mock.records.moments.push({...fixtures.moments[0], id: "concurrent-moment", title: "A concurrent temporary article", photos: undefined});
+      mock.records.moments.push({...fixtures.moments[0], id: "concurrent-moment", title: "A concurrent temporary article", photos: undefined, attachments: undefined});
       const head = mock.head, patches = mock.patches.length;
       await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
       await page.waitForURL(url + collections.moments.route + "/" + moment.id);
@@ -631,6 +706,8 @@ async function runViewport(browser, engine, viewport, url) {
           () => badTree({path: "../README.md", mode: "100644", type: "blob", sha}),
           () => badTree({path: "modules/life/relationship/encrypted.js", mode: "100644", type: "blob", sha}),
           () => badTree({path: "modules/academic/experience/images/posts/entry/" + "a".repeat(24) + "-1.jpg", mode: "100644", type: "blob", sha}),
+          () => badTree({path: "modules/life/moments/documents/posts/../" + "b".repeat(24) + "-1.pdf", mode: "100644", type: "blob", sha}),
+          () => badTree({path: "modules/academic/experience/documents/posts/entry/" + "b".repeat(24) + "-1.pdf", mode: "100644", type: "blob", sha}),
           () => session.request(repo + "/git/refs/heads/main", {method: "PATCH", body: {sha: "A".repeat(40), force: false}}),
           () => session.request(repo + "/git/blobs", {method: "POST", body: {encoding: "base64", content: "not$$base64"}}),
           () => session.request(repo + "/git/commits", {method: "POST", body: {message: "Temporary", tree: sha, parents: [sha, sha]}}),
@@ -642,12 +719,82 @@ async function runViewport(browser, engine, viewport, url) {
       }, {repo: REPO, data: Buffer.from(registration("moments", mock.records.moments)).toString("base64"), photo: images[0].buffer.toString("base64")});
       assert.ok(rejected.every(Boolean)); assert.equal(mock.calls.length, before + 4, "非法请求到达 GitHub 层");
     });
+    await step("九张照片 ZIP 及同提交发布完整保留九条路径", async () => {
+      await author(page, url, "moments"); const record = await draft(page, "moments", "nine-photos");
+      await choose(page, Array.from({length: 9}, (_, index) => ({...images[index % 3], name: "nine-publish-" + index + "." + ["jpg", "png", "webp"][index % 3]})));
+      await fillPhotos(page, Array.from({length: 9}, (_, index) => "Temporary ninth-photo test " + (index + 1)));
+      const added = await downloadZIP(page, "moments", record, 9);
+      assert.ok(added.photos[8].src.endsWith("-9.jpg"));
+      await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
+      await page.waitForURL(url + collections.moments.route + "/" + record.id);
+      assert.equal(mock.treeWrites.at(-1).paths.length, 10); await loadedGallery(page, mock, 9); await layout(page);
+    });
+    await step("PDF 标题、三份上限、键盘排序删除及失败批次回滚", async () => {
+      await author(page, url, "moments"); await draft(page, "moments", "pdf-validation");
+      await chooseDocuments(page, [pdfFile(0), pdfFile(1), pdfFile(2)]);
+      const items = page.locator(".article-document-picker__item"); assert.equal(await items.count(), 3);
+      await fillDocuments(page, ["Temporary first PDF", "Temporary second PDF", "Temporary third PDF"]);
+      await chooseDocuments(page, [pdfFile(3)]); assert.equal(await items.count(), 3, "第四份 PDF 未被拒绝");
+      const before = mock.calls.length;
+      await items.first().locator('[name="document-title"]').fill("");
+      await page.getByRole("button", {name: "Download update", exact: true}).click();
+      await page.locator(".author-workspace__status").filter({hasText: /title/i}).waitFor({state: "visible"}); assert.equal(mock.calls.length, before);
+      await items.first().locator('[name="document-title"]').fill("Temporary first PDF");
+      await items.nth(2).getByRole("button", {name: /move.*up/i}).focus(); await page.keyboard.press("Enter");
+      assert.equal(await items.nth(1).getByRole("button", {name: /move.*up/i}).evaluate(node => node === document.activeElement), true);
+      assert.deepEqual(await items.locator('[name="document-title"]').evaluateAll(nodes => nodes.map(node => node.value)), ["Temporary first PDF", "Temporary third PDF", "Temporary second PDF"]);
+      await nativeTabTo(page, '.article-document-picker__item [name="document-title"]'); await layout(page);
+      await screenshot(page, engine, viewport, "pdf-picker", screenshots);
+      await items.last().getByRole("button", {name: /remove.*document/i}).click();
+      await items.last().getByRole("button", {name: /remove.*document/i}).click();
+      await chooseDocuments(page, [pdfFile(1), {name: "broken.pdf", mimeType: "application/pdf", buffer: Buffer.from("%PDF-1.7\nmissing end")}]);
+      assert.equal(await items.count(), 1); assert.equal(await items.first().locator('[name="document-title"]').inputValue(), "Temporary first PDF");
+      await page.locator("#close-detail").click(); await author(page, url, "moments"); assert.equal(await items.count(), 0);
+    });
+    for (const name of Object.keys(collections)) {
+      await step(name + " PDF-only ZIP 与原子发布，保留旧图及 PDF", async () => {
+        const otherName = name === "moments" ? "experience" : "moments", other = JSON.stringify(mock.records[otherName]);
+        await author(page, url, name); const record = await draft(page, name, "pdf-only");
+        await chooseDocuments(page, [pdfFile(0), pdfFile(1), pdfFile(2)]);
+        await fillDocuments(page, ["Temporary PDF <img src=x onerror=window.__photoExecuted=true>", "Temporary supporting PDF", "Temporary final PDF"]);
+        const added = await downloadZIP(page, name, record, 0, 3), puts = mock.puts.length;
+        await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click(); await page.waitForURL(url + collections[name].route + "/" + record.id);
+        assert.equal(mock.puts.length, puts); assert.equal(mock.treeWrites.at(-1).paths.length, 4); assert.equal(JSON.stringify(mock.records[otherName]), other);
+        assert.deepEqual(mock.records[name].find(item => item.id === fixtures[name][0].id), fixtures[name][0]);
+        await readerDocuments(page, name, added, 3); assert.equal(await page.locator(".article-photos__image").count(), 0); await layout(page);
+        if (name === "moments") await screenshot(page, engine, viewport, "pdf-reader", screenshots);
+      });
+      await author(page, url, name); const mixed = await draft(page, name, "mixed-assets"), count = name === "experience" ? 9 : 2;
+      await choose(page, Array.from({length: count}, (_, index) => ({...images[index % 3], name: "mixed-" + index + "." + ["jpg", "png", "webp"][index % 3]})));
+      await fillPhotos(page, Array.from({length: count}, (_, index) => "Temporary mixed photograph " + (index + 1)));
+      await chooseDocuments(page, [pdfFile(0), pdfFile(1), pdfFile(2)]); await fillDocuments(page, ["Temporary mixed PDF one", "Temporary mixed PDF two", "Temporary mixed PDF three"]);
+      if (name === "moments") for (const failure of ["blob-500", "patch-409", "blob-401"]) {
+        await step("混合附件失败保留 PDF 与照片：" + failure, async () => {
+          const patches = mock.patches.length; mock.mode = failure;
+          await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click();
+          await page.waitForFunction(() => !document.querySelector(".author-workspace__status")?.textContent.includes("Publishing to GitHub")); await waitPublishIdle(page);
+          assert.equal(page.url(), url + collections[name].route + "/author");
+          assert.equal(await page.locator('.author-workspace [name="body"]').inputValue(), mixed.body);
+          assert.equal(await page.locator(".article-photo-picker__item").count(), count); assert.equal(await page.locator(".article-document-picker__item").count(), 3);
+          assert.equal(mock.patches.length - patches, failure === "patch-409" ? 1 : 0); mock.mode = null;
+          if (failure === "blob-401") { assert.equal(await page.evaluate(() => window.Homepage.authorSession.isConnected()), false); await connect(page); }
+        });
+      }
+      await step(name + " 混合附件 ZIP 与同提交照片/PDF/数据原子发布", async () => {
+        const added = await downloadZIP(page, name, mixed, count, 3), other = JSON.stringify(mock.records[name === "moments" ? "experience" : "moments"]), puts = mock.puts.length;
+        await page.getByRole("button", {name: "Publish to GitHub", exact: true}).click(); await page.waitForURL(url + collections[name].route + "/" + mixed.id);
+        assert.equal(mock.treeWrites.at(-1).paths.length, count + 4); assert.equal(mock.puts.length, puts);
+        assert.equal(JSON.stringify(mock.records[name === "moments" ? "experience" : "moments"]), other);
+        await loadedGallery(page, mock, count); await readerDocuments(page, name, added, 3); await layout(page);
+      });
+    }
     await step("详情关闭、中止处理、预览释放与重新打开", async () => {
       await author(page, url, "moments"); await draft(page, "moments", "cleanup"); await choose(page, images.slice(0, 2));
       await fillPhotos(page, ["Temporary cleanup photo one", "Temporary cleanup photo two"]);
+      await chooseDocuments(page, [pdfFile(0)]); await fillDocuments(page, ["Temporary cleanup PDF"]);
       assert.ok(await page.evaluate(() => window.__photoURLs.size > 0));
       await page.locator("#close-detail").click(); await page.waitForFunction(() => !document.getElementById("detail-dialog").open && window.__photoURLs.size === 0);
-      await author(page, url, "moments"); assert.equal(await page.locator(".article-photo-picker__item").count(), 0);
+      await author(page, url, "moments"); assert.equal(await page.locator(".article-photo-picker__item").count(), 0); assert.equal(await page.locator(".article-document-picker__item").count(), 0);
       await page.locator(".article-photo-picker__input").setInputFiles(images);
       await page.locator("#close-detail").click(); await page.waitForFunction(() => !document.getElementById("detail-dialog").open && window.__photoURLs.size === 0);
       await author(page, url, "experience"); assert.equal(await page.locator(".article-photo-picker__item").count(), 0);
@@ -674,7 +821,7 @@ async function runEngine(engine, url) {
   finally { if (browser) await browser.close(); }
 }
 (async () => {
-  const protectedFiles = ["modules/author/config.js", ...Object.values(collections).map(item => item.file)];
+  const protectedFiles = ["modules/author/config.js", "modules/life/relationship/encrypted.js", ...Object.values(collections).map(item => item.file)];
   const originals = await Promise.all(protectedFiles.map(file => fs.readFile(path.join(ROOT, file))));
   await fs.mkdir(path.join(ROOT, "artifacts/screenshots"), {recursive: true});
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
@@ -682,7 +829,7 @@ async function runEngine(engine, url) {
     const url = "http://127.0.0.1:" + server.address().port + PREFIX;
     // WebKit 能解码 WebP，但不保证 canvas 可编码 WebP；统一生成真实三格式输入再跨内核验证解码。
     const fixtureBrowser = await playwright.chromium.launch({headless: true});
-    try { const fixturePage = await fixtureBrowser.newPage(); fixtureImages = await makeImages(fixturePage); noisyImage = await makeNoise(fixturePage); }
+    try { const fixturePage = await fixtureBrowser.newPage(); fixtureImages = await makeImages(fixturePage); }
     finally { await fixtureBrowser.close(); }
     const browsers = await Promise.all(ENGINES.map(engine => runEngine(engine, url)));
     const sourceUnchanged = (await Promise.all(protectedFiles.map(file => fs.readFile(path.join(ROOT, file)))))

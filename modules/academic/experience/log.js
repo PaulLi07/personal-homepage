@@ -91,6 +91,9 @@ window.Homepage.createAcademicLogView = function ({ entries, onNavigate, onAutho
           if (entry.photos?.length) api.articlePhotos.renderGallery(article, entry.photos, {
             collectionId: "experience", entryId: entry.id, signal: controller.signal
           });
+          if (entry.attachments?.length) api.articleDocuments.renderAttachments(article, entry.attachments, {
+            collectionId: "experience", entryId: entry.id, signal: controller.signal
+          });
           if (entry.reference) article.append(reference(entry));
           section.append(article);
         }

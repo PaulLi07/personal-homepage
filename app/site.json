@@ -48,7 +48,8 @@
       "view": "modules/academic/section.html",
       "styles": [
         "modules/academic/styles.css",
-        "modules/academic/experience/log.css"
+        "modules/academic/experience/log.css",
+        "modules/academic/publications/styles.css"
       ],
       "scripts": [
         "modules/academic/experience/content.js",
@@ -57,6 +58,12 @@
         "modules/academic/experience/log.js",
         "modules/academic/experience/integration.js",
         "modules/academic/publications/content.js",
+        "modules/academic/publications/data.js",
+        "modules/academic/publications/internal-note/data.js",
+        "modules/academic/publications/arxiv/data.js",
+        "modules/academic/publications/published/data.js",
+        "modules/academic/publications/view.js",
+        "modules/academic/publications/integration.js",
         "modules/academic/notes/content.js",
         "modules/academic/projects/content.js",
         "modules/academic/module.js"
@@ -118,6 +125,16 @@
       ],
       "scripts": [
         "modules/article-photos/photos.js"
+      ]
+    },
+    {
+      "id": "article-documents",
+      "folder": "modules/article-documents",
+      "styles": [
+        "modules/article-documents/styles.css"
+      ],
+      "scripts": [
+        "modules/article-documents/documents.js"
       ]
     },
     {

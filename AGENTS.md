@@ -15,6 +15,8 @@
 
 - 姓名：Yuhong Li；学校：Nankai University（南开大学）；身份：研究生；领域：理论物理。
 - 邮箱：2310408@mail.nankai.edu.cn；GitHub：PaulLi07。
+- 用户提供的 ORCID：<https://orcid.org/0009-0005-6858-4000>，在 About 和 Contact 同步展示；Projects 展示 BESIII Collaboration 官方链接 <http://bes3.ihep.ac.cn/>，不推断个人角色或贡献。
+- 用户指定论文 arXiv:2610.11981，官方元信息已核对为 2026-10-08 提交、BESIII Collaboration 署名；只展示核实的题名、日期及 Abstract / PDF 链接，不推断个人主导角色或正式发表状态。
 - 仓库：<https://github.com/PaulLi07/personal-homepage>。
 - 网站：<https://paulli07.github.io/personal-homepage/>。
 - 研究课题、论文、成果和个人故事目前仍有占位内容，使用用户提供的事实，不得编造。
@@ -28,8 +30,10 @@
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
 - 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Experience 学术日志与 Moments 文章分别保存自己的数据、读者视图和接入行为；Relationship 的加密行为留在自己的目录。
-- 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它只管理作者会话、GitHub 连接和通用编辑器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
+- 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它管理作者会话、GitHub 连接、通用编辑器与独立发布器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
 - 两栏文章照片共用独立的 `modules/article-photos/` 服务，负责照片规范、处理、选择预览、阅读图组及下载 ZIP；图片实体仍保存在所属栏目的 `images/posts/<文章标识>/`，不建立集中照片目录。`modules/author/publisher.js` 处理数据合并与 GitHub 提交，编辑器只连接表单与这些服务。
+- 两栏 PDF 附件由独立的 `modules/article-documents/` 服务负责规范、选择及阅读链接，实体归当前集合的 `documents/posts/<文章标识>/`。装配顺序为照片服务、PDF 服务、作者服务，再加载分区数据；PDF 不进入照片处理逻辑。
+- Publications 使用自定义详情视图；`internal-note/`、`arxiv/`、`published/` 各自保存 `data.js` 和中文 README，通过 `registerPublicationCategory` 独立登记。分类目录及子路由沿用共用弹窗、历史和焦点，不集中成一份论文数据。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
 - `shared/runtime.js` 提供单一 `window.Homepage` 注册入口；模块通过 `registerSection({ id, init?, detailGroup? })`、`registerDetail(group, key, data)` 贡献功能。自定义详情通过 `registerDetailView(group, key, { render })` 注册；`render({ host, route, signal, navigate })` 只操作传入容器，可返回清理函数。
@@ -47,10 +51,12 @@
 - 用户已选择在线发布并记住加密连接的使用方式；首次连接时主动勾选 remember，才用密码派生密钥加密 PAT 并保存在当前浏览器 `localStorage`。未勾选时只在会话内存保留。不得保存明文密码或 PAT，也不把它们写入源码、URL、Cookie、历史、日志或聊天。
 - 当前页面的解锁和连接可跨两栏及详情关闭保持，直到 `Sign out`、刷新或页面离开；退出清内存但可保留加密连接，`Forget saved connection` 删除加密缓存与当前连接。刷新后必须再次输入密码才能恢复缓存，且重新 GET `/user` 与仓库验证身份和权限；篡改或失效缓存不得自动连接。
 - GitHub 请求收到 401 时清当前连接并保留解锁与草稿，重新连接后再发布；忘记缓存失败应如实提示，不得声称已删除。
-- 用户主动点击 `Publish to GitHub` 后才写入 GitHub。纯文字文章保留 Contents API 的 PUT；带照片文章基于当前 `main` 提交创建照片与数据 blobs、基于原树创建新树、创建单父提交，再以 `force: false` 更新 `main`，使照片与文章同时出现在一次提交中。先合并当前提交的远端记录，冲突保留草稿，两集合不得互写，禁止强制更新分支或删除历史。
+- 用户主动点击 `Publish to GitHub` 后才写入 GitHub。无照片且无 PDF 的文章保留 Contents GET / PUT；只要有任意附件，就基于当前 `main` 提交创建附件与数据 blobs、基于原树创建新树、创建单父提交，再以 `force: false` 更新 `main`，使附件与文章同时出现在一次提交中。先合并同一提交的远端记录，保留已有照片和 PDF；冲突保留草稿，两集合不得互写，禁止强制更新分支或删除历史。
 - 会话请求必须将 head、基树、上传的 blob、受控新树、新 commit 与分支更新绑定到同一次发布；不能接受任意外部树或提交 SHA。失败、取消、新 head、退出或授权失效须清理发布上下文，重试从最新 head 开始。
-- 每篇最多 6 张 JPEG / PNG / WebP 原图，每张不超过 10 MiB。浏览器重绘为长边不超过 1920 的 JPEG，去除原图元数据；输出每张不超过 2 MiB、合计不超过 8 MiB。照片的英文替代文本必填、英文图注可选，路径只允许所属模块当前文章的受控 JPG 路径。公开文章照片不用于 Relationship 私密内容。
-- `Download update` 无照片时导出当前集合的纯 JSON 登记 JS；有照片时下载含该 JS 与 JPEG 的 ZIP，路径相对于仓库根目录。两者均不发布、不读取最新远端；手动上传须解压、核对远端并保留已有记录。关闭、退出或切换时清理照片预览 URL 和内存草稿。
+- Git blob 每份最多 10 MiB；tree 最多 13 项，即当前集合数据文件、9 张照片和 3 份 PDF。路径只允许同一集合、同一文章；照片与 PDF 分别使用自己的批次标识，不允许跨文章混用。
+- 每篇最多 9 张 JPEG / PNG / WebP 原图，每张不超过 10 MiB。浏览器重绘为长边不超过 1920 的 JPEG，去除原图元数据；输出每张不超过 2 MiB、合计不超过 18 MiB。`photos: [{ src, alt, caption? }]` 的英文 alt 必填且最多 300 字符，caption 可选且最多 600 字符；路径为当前集合的 `images/posts/<id>/<24hex>-<1..9>.jpg`。
+- `attachments: [{ src, title, size }]` 最多 3 份 PDF，每份最多 10 MiB、合计最多 30 MiB；英文标题非空且最多 160 字符，size 与原字节大小一致。路径为当前集合的 `documents/posts/<id>/<24hex>-<1..3>.pdf`；只做大小及头尾基本检查，保留原字节和元数据，不进行完整 PDF 解析或扫描。读者使用 Open PDF / Download PDF 链接，不内嵌 iframe。
+- `Download update` 无附件时导出当前集合的纯 JSON 登记 JS；有任意照片或 PDF 时下载含数据与附件的 ZIP，文件负载最多 52 MiB，路径相对于仓库根。两者均不发布、不读取最新远端；手动上传须解压、核对远端并保留已有记录及文件。关闭、退出或切换时清理预览 URL、附件字节引用和内存草稿。公开文章附件不接入 Relationship 私密内容。
 - 首次使用工作台前先完整部署包含新脚本、样式与生成页面的版本。浏览器发布后，本地维护先获取远端新提交并处理差异。
 
 ## Relationship 的私密边界
@@ -68,7 +74,7 @@
 
 基础兼容性使用 `npm run test:compat`；博客与加密视图使用 `npm run test:features`；统一作者、加密连接缓存和双集合发布使用 `npm run test:author`；离线作者会话使用 `npm run test:author-security`；Relationship 算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。作者密码配置工具为 `npm run author:password`，只在本地终端交互输入，测试不使用真实配置密码。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。共用证据见 [兼容性记录](docs/COMPATIBILITY.md)，统一作者记录见 [author](docs/modules/author.md)，后续修改仍需重新验证。
 
-照片扩展运行 `npm run test:photos`，实际测试选择、压缩、顺序、替代文本、图注、阅读、ZIP 内容、同提交发布、冲突与请求白名单，并回归纯文字作者发布。只用临时图与模拟 GitHub，不读取浏览器的真实凭据，不替用户发表测试文章。
+照片及 PDF 扩展运行 `npm run test:photos`，实际测试照片处理、9 张与 18 MiB 边界、PDF 原字节与基本检查、3 份与 30 MiB 边界、顺序、英文描述、阅读链接、混合 ZIP、同提交发布、冲突与请求白名单，并回归零附件 Contents 发布。`npm run test:academic-profile` 验证 Publications 三分类、题名元信息、导航与外链，以及 About / Contact ORCID 和 Projects BESIII。只用临时附件及模拟 GitHub，不读取浏览器真实凭据，不替用户发表测试文章；旧测试记录不替代本轮结果。
 
 ## Git 与发布协议
 

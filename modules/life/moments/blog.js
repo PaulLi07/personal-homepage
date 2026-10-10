@@ -29,6 +29,8 @@ window.Homepage.createBlogView = function ({ posts, onNavigate, onAuthorRequeste
       }).map(post => ({id: post.id, title: post.title, date: post.date, excerpt: post.excerpt,
         body: post.body, author: post.author, ...(post.photos === undefined ? {} : {
           photos: api.articlePhotos.normalize(post.photos, "moments", post.id)
+        }), ...(post.attachments === undefined ? {} : {
+          attachments: api.articleDocuments.normalize(post.attachments, "moments", post.id)
         })})).sort((left, right) => right.date.localeCompare(left.date));
     } catch {
       return null;
@@ -112,6 +114,9 @@ window.Homepage.createBlogView = function ({ posts, onNavigate, onAuthorRequeste
           body.textContent = post.body.replace(/\r\n?/g, "\n");
           article.append(body);
           if (post.photos?.length) api.articlePhotos.renderGallery(article, post.photos, {
+            collectionId: "moments", entryId: post.id, signal: renderSignal
+          });
+          if (post.attachments?.length) api.articleDocuments.renderAttachments(article, post.attachments, {
             collectionId: "moments", entryId: post.id, signal: renderSignal
           });
           section.append(article);

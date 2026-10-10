@@ -1,10 +1,10 @@
 /* 两栏共用的公开文章照片服务；处理、预览和下载均在浏览器本地完成。 */
 (function () {
   "use strict";
-  const MAX_PHOTOS = 6;
+  const MAX_PHOTOS = 9;
   const MAX_INPUT = 10 * 1024 * 1024;
   const MAX_OUTPUT = 2 * 1024 * 1024;
-  const MAX_TOTAL = 8 * 1024 * 1024;
+  const MAX_TOTAL = 18 * 1024 * 1024;
   const MAX_PIXELS = 40000000;
   const folders = Object.freeze({moments: "modules/life/moments", experience: "modules/academic/experience"});
   const slug = /^[a-z0-9]+(?:-[a-z0-9]+)*$/;
@@ -32,13 +32,13 @@
     const folder = folderFor(collectionId);
     entryFor(entryId);
     if (photos === undefined) return [];
-    if (!Array.isArray(photos) || photos.length > MAX_PHOTOS) throw new Error("An article can include up to six photos.");
+    if (!Array.isArray(photos) || photos.length > MAX_PHOTOS) throw new Error("An article can include up to nine photos.");
     const prefix = folder + "/images/posts/" + entryId + "/";
     const sources = new Set();
     return photos.map(photo => {
       if (!photo || typeof photo !== "object" || Array.isArray(photo)
         || typeof photo.src !== "string" || !photo.src.startsWith(prefix)
-        || !/^[a-f0-9]{24}-[1-6]\.jpg$/.test(photo.src.slice(prefix.length)) || sources.has(photo.src)) {
+        || !/^[a-f0-9]{24}-[1-9]\.jpg$/.test(photo.src.slice(prefix.length)) || sources.has(photo.src)) {
         throw new Error("A photo must belong to this article and collection.");
       }
       if (typeof photo.alt !== "string" || !photo.alt.trim() || photo.alt.length > 300) {
@@ -248,7 +248,7 @@
     if (!host || typeof host.append !== "function") throw new TypeError("An article gallery host is required.");
     checkAbort(signal);
     const prefix = folderFor(collectionId) + "/images/posts/";
-    if (photos !== undefined && !Array.isArray(photos)) throw new Error("An article can include up to six photos.");
+    if (photos !== undefined && !Array.isArray(photos)) throw new Error("An article can include up to nine photos.");
     if (!photos?.length) { if (entryId !== undefined) entryFor(entryId); return () => {}; }
     const inferred = typeof photos[0]?.src === "string" && photos[0].src.startsWith(prefix)
       ? photos[0].src.slice(prefix.length).split("/")[0] : null;
@@ -290,7 +290,7 @@
     const input = node("input", "article-photo-picker__input");
     input.type = "file"; input.multiple = true; input.accept = "image/jpeg,image/png,image/webp";
     label.append(input);
-    const help = node("p", "article-photo-picker__help", "Up to 6 photos. JPEG, PNG or WebP, up to 10 MiB each. Photos become public with the article; location metadata is removed.");
+    const help = node("p", "article-photo-picker__help", "Up to 9 photos. JPEG, PNG or WebP, up to 10 MiB each. Photos become public with the article; location metadata is removed.");
     const status = node("p", "article-photo-picker__status", "");
     status.setAttribute("role", "status");
     const list = node("div", "article-photo-picker__list");
@@ -370,7 +370,7 @@
       const files = Array.from(input.files || []);
       input.value = "";
       if (!active || disabled || preparing || !files.length) return;
-      if (items.length + files.length > MAX_PHOTOS) { status.textContent = "An article can include up to six photos."; return; }
+      if (items.length + files.length > MAX_PHOTOS) { status.textContent = "An article can include up to nine photos."; return; }
       preparing = true; status.textContent = "Processing photos…"; updateControls(); notify();
       const staged = [];
       try {
@@ -379,7 +379,7 @@
           const prepared = await prepare(file, {signal: controller.signal});
           staged.push({...prepared, alt: "", caption: "", url: URL.createObjectURL(prepared.blob)});
           total += prepared.bytes.length;
-          if (total > MAX_TOTAL) throw new Error("The prepared photos must total no more than 8 MiB. Remove a photo or choose smaller images.");
+          if (total > MAX_TOTAL) throw new Error("The prepared photos must total no more than 18 MiB. Remove a photo or choose smaller images.");
         }
         checkAbort(controller.signal);
         items.push(...staged);
@@ -436,7 +436,7 @@
         || file.path.split("/").some(part => !part || part.startsWith(".")) || names.has(file.path)
         || !(file.bytes instanceof Uint8Array)) throw new Error("A download file needs a safe relative path and bytes.");
       names.add(file.path); total += file.bytes.length;
-      if (total > 16 * 1024 * 1024) throw new Error("The download bundle is too large.");
+      if (total > 52 * 1024 * 1024) throw new Error("The download bundle is too large.");
       const filename = encoder.encode(file.path), checksum = crc32(file.bytes);
       const header = new Uint8Array(30), h = new DataView(header.buffer);
       h.setUint32(0, 0x04034b50, true); h.setUint16(4, 20, true); h.setUint16(6, 0x800, true);

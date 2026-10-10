@@ -37,6 +37,7 @@
         let publish = null;
         let forget = null;
         let photoPicker = null;
+        let documentPicker = null;
         let download = null;
         const section = node("section", undefined, "author-workspace author-workspace--" + collection.id);
         section.setAttribute("aria-label", collection.label + " author workspace");
@@ -48,6 +49,7 @@
           if (!active) return;
           active = false;
           photoPicker?.dispose(); photoPicker = null;
+          documentPicker?.dispose(); documentPicker = null;
           unsubscribe();
           formController?.abort();
           controller.abort();
@@ -68,8 +70,10 @@
           if (!active) return;
           section.querySelectorAll("button,input,textarea,select").forEach(element => { element.disabled = busy; });
           photoPicker?.setDisabled(busy);
-          if (publish) publish.disabled = busy || photoPicker?.isPreparing() || !currentState?.connected;
-          if (download) download.disabled = busy || photoPicker?.isPreparing();
+          documentPicker?.setDisabled(busy);
+          const preparing = photoPicker?.isPreparing() || documentPicker?.isPreparing();
+          if (publish) publish.disabled = busy || preparing || !currentState?.connected;
+          if (download) download.disabled = busy || preparing;
           if (forget) forget.hidden = !currentState?.remembered;
           if (connectionForm) connectionForm.hidden = Boolean(currentState?.connected);
           if (connectedMessage && currentState) {
@@ -81,6 +85,7 @@
         function header(title) {
           formController?.abort();
           photoPicker?.dispose(); photoPicker = null;
+          documentPicker?.dispose(); documentPicker = null;
           formController = new AbortController();
           section.replaceChildren();
           publish = null; download = null; forget = null; connectedMessage = null; connectionForm = null;
@@ -210,6 +215,10 @@
           form.append(photos);
           photoPicker = api.articlePhotos.createPicker({host: photos, collectionId: collection.id,
             signal: formController.signal, onChange: updateControls});
+          const documents = node("div");
+          form.append(documents);
+          documentPicker = api.articleDocuments.createPicker({host: documents, collectionId: collection.id,
+            signal: formController.signal, onChange: updateControls});
           form.append(node("p", "Write in English using plain text. Line breaks are preserved. Entries are public once published; keep a local copy of longer drafts."));
           const controls = node("div", undefined, "author-workspace__actions");
           publish = node("button", "Publish to GitHub", "author-workspace__button");
@@ -219,7 +228,7 @@
             try {
               const entry = draft();
               const source = sourceFor(merge(collection.normalize(collection.getRecords()), entry));
-              const files = photoPicker.getFiles(entry.id);
+              const files = selectedFiles(entry.id);
               if (files.length) {
                 api.articlePhotos.downloadBundle([{path: contract.path, bytes: encoder.encode(source)}, ...files], entry.id + "-update.zip");
                 status.textContent = "Update downloaded. Extract the ZIP and upload its contents to the repository root to publish manually.";
@@ -248,7 +257,12 @@
             entry = collection.normalize([entry])[0];
             const selected = photoPicker.getPhotos(entry.id);
             if (selected.length) entry.photos = selected;
+            const attachments = documentPicker.getAttachments(entry.id);
+            if (attachments.length) entry.attachments = attachments;
             return collection.normalize([entry])[0];
+          }
+          function selectedFiles(entryId) {
+            return [...photoPicker.getFiles(entryId), ...documentPicker.getFiles(entryId)];
           }
           listen(form, "submit", async event => {
             event.preventDefault();
@@ -260,7 +274,7 @@
             busy = true; updateControls();
             status.textContent = "Publishing to GitHub…";
             try {
-              const records = await publisher.publish(entry, {files: photoPicker.getFiles(entry.id), signal: controller.signal,
+              const records = await publisher.publish(entry, {files: selectedFiles(entry.id), signal: controller.signal,
                 onProgress(message) { if (active) status.textContent = message; }});
               if (active) { status.textContent = "Published to GitHub. The live website may take a moment to update."; onPublished?.(entry, records); }
             } catch (error) { if (active && error.name !== "AbortError") status.textContent = error.message; }

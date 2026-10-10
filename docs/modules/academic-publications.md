@@ -17,3 +17,13 @@
 父组记录：[academic](academic.md)；完整环境和共用服务证据见 [实测总记录](../COMPATIBILITY.md)。静态检查通过，不代替浏览器验证。
 
 未覆盖项：手机真机、品牌或历史版本浏览器、线上新部署。直接文件打开只单独验证共用 moments 详情，其余本栏目直达在 HTTP 子路径验证；外部来源链接未实际跳转。
+
+## 2026-10-10：Publications 分类与真实资料
+
+`npm run test:academic-profile` 在 Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5 ×1440×900、390×844、320×780 通过，共 72 流程（8/环境）。日期为北京时间 16:17，测试路径 `/personal-homepage/`，报告 `artifacts/academic-profile-results.json`。
+
+Internal note、arXiv、Published 逐分类点击、直达、刷新、前进后退、返回目录、空状态、Tab/Enter/Escape 与焦点恢复均通过。arXiv 真实题名、合作组署名、日期、Abstract 和 PDF 目标/新标签属性核对，元信息按纯文本显示、危险 URL 与无效日期拒绝；九环境无水平溢出，所有网页文字英文。ORCID 在 About/Contact 中一致，BESIII 在 Projects 中作为合作组链接，均实际核对。没有添加虚构作者角色或研究成果。
+
+论文信息来源为 [arXiv 官方记录](https://arxiv.org/abs/2610.11981)，ORCID 与 BESIII 链接由用户提供。查看了 Chromium 桌面目录及手机 arXiv 截图，标题/署名/日期/两链接正常。截图为 `artifacts/screenshots/academic-{1440,390}-{directory,arxiv}.png`。
+
+测试全程拦截外网，外部网络请求和真实远端写入均为 0；源码保持原字节。未验证外部网站点击后的实时内容、手机真机、品牌/历史浏览器或线上新部署。Publications 分类数据与维护说明见其各自目录，未来扩展仍须重新测试。

@@ -1,0 +1,21 @@
+/* PDF 组件独立于正文和照片，不创建内嵌阅读器。 */
+.article-documents { min-width: 0; margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.article-documents h4, .article-documents__title, .article-document-picker h4, .article-document-picker h5 { margin: 0 0 .6rem; font: 500 1rem/1.5 var(--body); overflow-wrap: anywhere; }
+.article-documents__list { display: grid; gap: 1rem; margin: 1rem 0 0; padding: 0; list-style: none; }
+.article-documents__item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1rem; border: 1px solid var(--line); background: #11191f50; }
+.article-documents__summary { min-width: 0; flex: 1 1 14rem; }
+.article-documents__meta, .article-document-picker__help, .article-document-picker__empty, .article-document-picker__size { margin: .5rem 0; color: var(--muted); font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
+.article-documents__actions, .article-document-picker__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
+.article-documents__open, .article-documents__download, .article-document-picker__button { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 3px; background: transparent; color: var(--accent); font: inherit; font-size: .8rem; text-decoration: none; cursor: pointer; }
+.article-documents a:focus-visible, .article-document-picker input:focus-visible, .article-document-picker button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.article-document-picker { min-width: 0; margin-top: 1.3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
+.article-document-picker__choose, .article-document-picker__field { display: grid; gap: .55rem; min-width: 0; color: var(--white); font-size: .85rem; }
+.article-document-picker__input { width: 100%; min-width: 0; font: inherit; color: var(--muted); }
+.article-document-picker__input::file-selector-button { margin-right: .7rem; padding: .65rem .8rem; border: 1px solid var(--line); background: #11191f; color: var(--white); font: inherit; cursor: pointer; }
+.article-document-picker__status { min-height: 1.7em; margin: .8rem 0; color: var(--accent); font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
+.article-document-picker__list { display: grid; gap: 1rem; }
+.article-document-picker__item { min-width: 0; padding: 1rem; border: 1px solid var(--line); background: #11191f50; }
+.article-document-picker__field input { width: 100%; min-width: 0; box-sizing: border-box; padding: .75rem; border: 1px solid var(--line); border-radius: 3px; background: #11191f; color: var(--white); font: inherit; line-height: 1.6; }
+.article-document-picker__actions { margin-top: .8rem; }
+.article-document-picker button:disabled, .article-document-picker input:disabled { opacity: .55; cursor: default; }
+@media (max-width: 480px) { .article-documents__item, .article-document-picker__item { padding: .8rem; } }
