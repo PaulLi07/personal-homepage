@@ -22,6 +22,7 @@ modules/
   author/                  两栏共用的密码登录、GitHub 连接、编辑器与发布器
   article-photos/          照片规范、处理、选图、图库与 ZIP 服务
   article-documents/       PDF 附件规范、选择及 Open / Download 链接
+  particle-background/    主页面粒子配置、局部模拟、Canvas 与生命周期
 shared/                    基础样式、导航、详情弹窗、过渡与注册接口
 scripts/                   本地装配、检查、预览与打包
 docs/                      框架、协议、素材及测试记录
@@ -31,6 +32,8 @@ index.html, credits.html   装配生成的发布页面
 主模块在自己的目录保存 `section.html`、`styles.css`、按需的 `module.js`、`images/` 和 `README.md`；署名模块使用 `page.html`。详情子模块保存 `content.js`、封面和说明；Experience 日志、Moments 博客、Publications 分类与 Relationship 解密行为留在各自模块。统一会话、表单和发布器归 author，照片能力归 article-photos，PDF 能力归 article-documents；公开附件文件仍留在所属文章。无行为的模块无需空脚本，无图片的模块无需空图片目录。
 
 `modules/author/`、`modules/article-photos/` 与 `modules/article-documents/` 是共用功能服务，不占首页分区，无 HTML 根节点且不调用 `registerSection`。`app/site.json` 的 `services` 声明各自 `id`、`folder`、`styles`、`scripts`；依次装配照片、PDF、作者配置 / 会话 / 发布器 / 编辑器，均在共享基础之后、分区脚本之前。Experience 与 Moments 各自维护读者、集合 schema 和文件路径，通过公开接口接入。
+
+2026-10-11 新增 `particle-background` 服务，独立保存 `config.js`、`simulation.js`、`background.js` 与 `styles.css`，按此脚本顺序通过同一清单装配。它不需要 HTML 片段、图片或第三方依赖，也不与文章、附件、凭据共享业务数据；`app/main.js` 只负责挂载，具体配置、模拟、输入与生命周期均在服务内。
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
@@ -50,6 +53,8 @@ index.html, credits.html   装配生成的发布页面
 | `scripts/test-author-log.cjs` | 用随机作者密码、临时双集合与模拟 GitHub 验证统一会话、加密缓存和独立发布 |
 | `scripts/test-photos.cjs` | 临时照片与 PDF、混合 ZIP、同次提交与 Git 请求边界；真实写入全部拦截 |
 | `scripts/test-academic-profile.cjs` | 三分类导航、论文元信息与外链、ORCID 及 BESIII 资料 |
+| `scripts/test-particle-simulation.cjs` | 离线粒子参数、局部规则、指针与数值边界；不需要浏览器依赖 |
+| `scripts/test-particles.cjs` | 三内核粒子绘制、层级、输入、暂停恢复、性能预算与失效回退 |
 | `scripts/test-security.cjs`、`scripts/relationship.cjs` | 离线算法回归与本地密文生成 / 格式检查；不参与网页运行 |
 | `index.html`、`credits.html` | 生成产物，供本地文件打开、预览与直接上传；禁止手改 |
 | `shared/favicon.svg` | 跨页面网站图标 |
@@ -60,6 +65,7 @@ index.html, credits.html   装配生成的发布页面
 | `shared/transitions/` | `styles.css`、`transitions.js`，提供共用开场与详情过渡 |
 | `modules/article-photos/photos.js`、`styles.css` | 照片 schema、受控路径、解码重绘、选图、画廊与 ZIP；不读作者凭据或执行 GitHub 发布 |
 | `modules/article-documents/documents.js`、`styles.css` | PDF schema、受控路径、基本字节检查、选择与 Open / Download 链接；保留原字节，不执行发布 |
+| `modules/particle-background/` | 独立配置与校验、网格局部规则和 curl 流场、Canvas 绘制与暂停 / 降级 / 清理；胶水只挂载 |
 | `modules/author/session.js` | 作者密码与连接生命周期，以及受限 GitHub 请求 |
 | `modules/author/publisher.js` | `createAuthorPublisher(collection)`，解析、归一化、合并与当前集合发布 |
 | `modules/author/editor.js` | 表单、草稿和状态；调用照片与发布服务，不承载 Git 提交流程 |
@@ -88,6 +94,14 @@ index.html, credits.html   装配生成的发布页面
 导航入口为 `createNavigation({ root, sections })`，只接收导航和公共分区根节点；过渡入口为 `createTransitions(reducedMotion)`。胶水调用 `initReveals(roots)` 启动共享进入动画，观察逻辑留在 `shared/reveal.js`，不放回胶水层。胶水逐模块隔离初始化异常，不阻断其他模块和共享服务启动。共享入口和使用边界见 [共享层说明](../shared/README.md)。
 
 注册接口替代旧的 `window.HOMEPAGE_CONTENT` 和 `window.HomepageTransitions` 全局。详情由子模块独立贡献，父模块负责自己的概览与入口；不跨目录读取其他模块内部数据。
+
+### 粒子背景服务
+
+`Homepage.particleBackground.mount({ root, reducedMotion, dialog, config? })` 接收 `#main`、动态偏好的 `MediaQueryList` 与 `#detail-dialog`，返回控制器；重挂先卸载旧实例。公共服务及控制器均提供 `configure()`、`getConfig()`、`getStats()`、`dispose()`，控制器另提供 `pause()` / `resume()`。模拟和渲染不访问其他模块内部，只利用传入的公共根节点及状态。
+
+Canvas 固定当前视口，`aria-hidden`、不接收指针事件；服务样式通过 `has-particle-background` 将原背景图片置于底层、粒子置于中间、模块内容置于前景，无需修改各模块源码。后台和详情暂停，详情隐藏 Canvas；减少动态效果保留静态图，Canvas 不可用则退回原页面。数量按面积及手机上限调整，像素比有上限，慢帧可自适应减量，不能将目标频率当作硬件帧率保证。参数与诊断字段见 [维护指南](PARTICLE-BACKGROUND.md)；这是艺术性网格规则与 curl 流场，不宣称严格物理精度。
+
+本轮留在功能分支、不整合主分支、不推送；新层级、运动及生命周期已单独实测：三内核 / 三视口、两种动态偏好、201 个流程通过，离线核心 227 条断言通过；环境与限制见 [测试记录](modules/particle-background.md)。
 
 ## 详情数据
 

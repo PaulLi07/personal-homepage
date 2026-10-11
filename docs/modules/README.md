@@ -22,8 +22,11 @@
 | 统一作者登录与编辑器 | [author](../../modules/author/README.md) | [author.md](author.md) |
 | 文章照片 | [article-photos](../../modules/article-photos/README.md) | [article-photos.md](article-photos.md) |
 | 文章 PDF 附件 | [article-documents](../../modules/article-documents/README.md) | [article-documents.md](article-documents.md) |
+| 主页面粒子背景 | [particle-background](../../modules/particle-background/README.md) | [particle-background.md](particle-background.md) |
 
-三项服务按用户要求由 Experience 与 Moments 共同使用，无 HTML 根节点；数据集合、照片和 PDF 文件与读者视图保持各自独立。会话、加密连接缓存、照片和双集合发布的实际测试范围见各自专门记录。
+作者、照片与 PDF 三项服务按用户要求由 Experience 与 Moments 共同使用，无 HTML 根节点；数据集合、照片和 PDF 文件与读者视图保持各自独立。会话、加密连接缓存、照片和双集合发布的实际测试范围见各自专门记录。
+
+新增粒子背景服务面向整个主页面，不承载文章或作者业务，参数、模拟、Canvas 与暂停 / 清理独立维护。2026-10-11 本轮保留功能分支；粒子和前景层级已单独完成 201 个三内核浏览器流程及 227 条离线断言；环境与限制见本服务记录，下面的历史结论保持原样。维护与回退见 [专门指南](../PARTICLE-BACKGROUND.md)。
 
 ## 详情子模块
 

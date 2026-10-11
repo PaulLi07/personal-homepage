@@ -56,6 +56,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/author/` | Experience 与 Moments 共用的密码登录、GitHub 连接、表单编辑和独立发布器 |
 | `modules/article-photos/` | 无首页分区的照片服务：数据规范、处理、选图、图库及 ZIP；照片文件仍归各文章 |
 | `modules/article-documents/` | 两栏 PDF 附件规范、选择及 Open / Download 链接；原文件仍归各文章 |
+| `modules/particle-background/` | 主页面粒子背景服务：局部运动、鼠标扰动、Canvas、配置与性能预算，无图片或运行时依赖 |
 | `modules/contact/` | 联系方式、背景与年份 |
 | `modules/credits/` | 图片署名独立页面 |
 | `shared/` | 真正跨模块使用的基础样式、导航、详情弹窗、过渡与注册接口 |
@@ -117,6 +118,12 @@ npm run relationship:check
 - 每次模块扩展同步模块内的简洁 `README.md`，在 `docs/modules/` 登记对应测试记录，并完成实际兼容性测试。
 - 模块维护自己的资源；通过声明的共享服务交互，不直接读取其他模块内部。共享目录只接收已被多个模块使用的能力。
 
+## 2026-10-11 粒子背景分支
+
+本轮在 `feat/emergent-particle-background` 开发，交付后保留功能分支，不整合 `main`、不推送。旧版 `main` 与 `backup/pre-emergence-2026-10-11` 保留在 `93bf256`，157 文件的旧静态源码包为 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip`。
+
+效果以局部规则和流场形成尘埃流及涡旋，参数集中在模块 `config.js`；手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果均由服务负责。可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真；本轮三内核 / 三视口及两种动态偏好共 201 流程通过，离线 227 条断言通过；视口模拟不等于真机。参数、接口和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
+
 ## 维护文档
 
 - [框架概要](docs/ARCHITECTURE.md)：模块边界、装配、注册接口与扩展位置。
@@ -125,6 +132,7 @@ npm run relationship:check
 - [兼容性实测](docs/COMPATIBILITY.md)：2026-10-10 新栏目及独立功能的实测环境、范围与限制，保留此前重构记录。
 - [维护约定](AGENTS.md)与[变更记录](CHANGELOG.md)：后续工作规则与重要变化。
 - [图片替换清单](docs/image-sources.md)与[参考分析](docs/reference-analysis.md)：素材来源及设计框架依据。
+- [粒子背景维护与回退](docs/PARTICLE-BACKGROUND.md)：配置、生命周期、性能统计、功能分支与旧版恢复。
 
 ## Git 与发布
 

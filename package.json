@@ -16,7 +16,9 @@
     "test:author-security": "node scripts/test-author-session.cjs",
     "author:password": "python3 modules/author/tools/configure.py",
     "test:photos": "node scripts/test-photos.cjs",
-    "test:academic-profile": "node scripts/test-academic-profile.cjs"
+    "test:academic-profile": "node scripts/test-academic-profile.cjs",
+    "test:particles": "node scripts/test-particles.cjs",
+    "test:particle-simulation": "node scripts/test-particle-simulation.cjs"
   },
   "engines": {
     "node": ">=18"

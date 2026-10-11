@@ -33,6 +33,7 @@
 - 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它管理作者会话、GitHub 连接、通用编辑器与独立发布器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
 - 两栏文章照片共用独立的 `modules/article-photos/` 服务，负责照片规范、处理、选择预览、阅读图组及下载 ZIP；图片实体仍保存在所属栏目的 `images/posts/<文章标识>/`，不建立集中照片目录。`modules/author/publisher.js` 处理数据合并与 GitHub 提交，编辑器只连接表单与这些服务。
 - 两栏 PDF 附件由独立的 `modules/article-documents/` 服务负责规范、选择及阅读链接，实体归当前集合的 `documents/posts/<文章标识>/`。装配顺序为照片服务、PDF 服务、作者服务，再加载分区数据；PDF 不进入照片处理逻辑。
+- 粒子背景独立放在 `modules/particle-background/`，以清单 `services` 加载自己的配置、模拟、绘制与样式，不占导航分区，不放进 `shared/` 或具体栏目。胶水只向 `mount()` 传主页面根节点、动态偏好与详情根节点；运动、输入、暂停和清理留在服务内。无图片、凭据、网络或第三方运行时依赖，艺术性局部规则不能宣称严格物理仿真。
 - Publications 使用自定义详情视图；`internal-note/`、`arxiv/`、`published/` 各自保存 `data.js` 和中文 README，通过 `registerPublicationCategory` 独立登记。分类目录及子路由沿用共用弹窗、历史和焦点，不集中成一份论文数据。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
@@ -76,11 +77,14 @@
 
 照片及 PDF 扩展运行 `npm run test:photos`，实际测试照片处理、9 张与 18 MiB 边界、PDF 原字节与基本检查、3 份与 30 MiB 边界、顺序、英文描述、阅读链接、混合 ZIP、同提交发布、冲突与请求白名单，并回归零附件 Contents 发布。`npm run test:academic-profile` 验证 Publications 三分类、题名元信息、导航与外链，以及 About / Contact ORCID 和 Projects BESIII。只用临时附件及模拟 GitHub，不读取浏览器真实凭据，不替用户发表测试文章；旧测试记录不替代本轮结果。
 
+粒子背景扩展使用 `npm run test:particle-simulation` 验证离线配置、局部规则、指针作用与数值边界，再使用 `npm run test:particles` 实测三内核、三视口、正常与减少动态效果、鼠标与触摸、配置、层级、暂停恢复、DPR、文件打开、失效回退及卸载。慢帧降级使用明确标注的人工负载，不能作为真实性能；诊断中的运动偏好按原生 change 事件维护。报告写入被忽略的 `artifacts/particle-results.json`，结果及限制同步 [粒子记录](docs/modules/particle-background.md)。
+
 ## Git 与发布协议
 
 - 仓库根目录为本目录，`origin` 使用上述 HTTPS 地址获取，推送地址为 `git@github.com:PaulLi07/personal-homepage.git`，`main` 跟踪 `origin/main`。当前电脑已验证 SSH 推送；普通 `git push origin main` 使用该推送地址，不在配置中保存令牌。
 - 开始先检查状态；同步或发布前获取远端，检查未提交用户改动和远端差异。保留远端历史，使用快进拉取，不硬重置用户文件或强制推送共享历史。
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
+- **2026-10-11 粒子背景的用户明确约定优先于上条通用流程：**本轮保留 `feat/emergent-particle-background`，完成后不整合 `main`、不推送。`main` 与 `backup/pre-emergence-2026-10-11` 保留基线 `93bf256`，旧静态包保留在仓库外；先保存未提交改动再切回旧分支，不硬重置或强制覆盖。接口、参数与回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)，本轮新功能须有独立实测记录，不能沿用旧通过结论。
 - 本地提交属于已授权维护，只暂存本任务文件；提交说明采用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，保留无关改动。
 - 框架或流程变化同步文档；模块扩展同步就近说明与测试记录，重要变化写入 `CHANGELOG.md`。
 - 普通维护完成本地修改和提交；只有用户请求发布或推送时更新远端，不因长期维护自行创建定时任务。

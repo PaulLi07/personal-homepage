@@ -118,6 +118,18 @@
   },
   "services": [
     {
+      "id": "particle-background",
+      "folder": "modules/particle-background",
+      "styles": [
+        "modules/particle-background/styles.css"
+      ],
+      "scripts": [
+        "modules/particle-background/config.js",
+        "modules/particle-background/simulation.js",
+        "modules/particle-background/background.js"
+      ]
+    },
+    {
       "id": "article-photos",
       "folder": "modules/article-photos",
       "styles": [

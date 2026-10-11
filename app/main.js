@@ -12,6 +12,12 @@
     content: api.getContent(), views: api.getDetailViews(), groups, transitions
   });
   transitions.start();
+  try {
+    api.particleBackground?.mount({
+      root: document.getElementById("main"), reducedMotion,
+      dialog: document.getElementById("detail-dialog")
+    });
+  } catch (error) { console.error("Unable to initialize particle background", error); }
   modules.forEach(module => {
     const root = document.getElementById(module.id);
     if (root && module.init) {
