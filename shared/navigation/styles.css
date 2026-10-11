@@ -1,7 +1,8 @@
 /* 导航：固定栏、当前区域、窄屏布局与跳转入口。 */
+:root { --navigation-height: 110px; }
 .skip-link { position: fixed; top: -100px; left: 20px; padding: 10px 18px; background: var(--accent); color: var(--dark); z-index: 1001; }
 .skip-link:focus { top: 15px; }
-.navbar { position: fixed; inset: 0 0 auto; z-index: 100; padding: 23px var(--gutter); display: flex; justify-content: space-between; align-items: center; min-height: 110px; transition: transform .35s, background .35s; }
+.navbar { position: fixed; inset: 0 0 auto; z-index: 100; padding: 23px var(--gutter); display: flex; justify-content: space-between; align-items: center; min-height: var(--navigation-height); transition: transform .35s, background .35s; }
 .navbar.is-scrolled { background: #192229e8; backdrop-filter: blur(12px); }
 .navbar.is-hidden { transform: translateY(-100%); }
 .navbar:focus-within { transform: none; }
@@ -17,7 +18,8 @@
 }
 
 @media (max-width:760px) {
-  .navbar { min-height: 105px; padding-block: 17px; align-items: flex-start; }
+  :root { --navigation-height: 105px; }
+  .navbar { padding-block: 17px; align-items: flex-start; }
   .full-name { font-size: 20px; }
   .site-edition { font-size: 10px; }
   .navlinks { gap: 19px; flex-wrap: wrap; justify-content: flex-end; max-width: 280px; padding-top: 9px; }
@@ -26,7 +28,8 @@
 }
 
 @media (max-width:400px) {
-  .navbar { flex-direction: column; gap: 11px; min-height: 122px; }
+  :root { --navigation-height: 122px; }
+  .navbar { flex-direction: column; gap: 11px; }
   .name { display: flex; width: 100%; align-items: baseline; justify-content: space-between; }
   .site-edition { font-size: 10px; }
   .navlinks { padding: 0; width: 100%; max-width: none; justify-content: space-between; gap: 10px; }

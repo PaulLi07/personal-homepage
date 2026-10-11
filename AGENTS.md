@@ -46,6 +46,7 @@
 - `registerData(key, value)` / `getData(key)` 只提供命名空间数据登记；文章校验、模块数据 getter、统一作者认证与解密业务仍在所属功能模块。`app/main.js` 只把视图注册表传给详情服务，为分区初始化传入 `{ root, details, reducedMotion }`，不解释日志、博客、作者权限或加密内容。
 - 模块不直接读取其他模块内部文件、选择器或数据；通过清单、注册接口或明确的共享服务连接。模块图片独立保存，哪怕内容暂时相同，也应能单独替换。
 - 根目录 `index.html`、`credits.html` 是生成产物，禁止手改；修改源模块或模板后运行 `npm run assemble` 并一并提交生成页面。
+- 装配为全部 CSS 和静态 JS 的引用增加内容 SHA256 前 12 位的 `?v=` 版本。`app/site.json` 中 `liveScripts` 必须是所属模块 `scripts` 的子集，当前仅声明 Experience 的 `entries.js` 和 Moments 的 `posts.js`，保持原 URL，让在线直接发布数据无需重新装配 HTML。图片仍使用原资源路径，作者业务不因此改变；版本串不含凭据。
 - 保留普通脚本、相对资源路径和无外部运行时依赖；生成页面可直接以文件方式打开，上传后无需服务器构建。
 
 ## Experience、Moments 与统一作者入口
@@ -76,6 +77,8 @@
 
 先装配，再运行 `npm run check` 和 `git diff --check`。`check` 只读验证，不应悄悄修复过期生成物。模块扩展、布局与交互修改必须实测桌面、手机视口及受影响的导航、详情、键盘和减少动态效果行为。
 
+常驻预览没有热更新。修改并装配后必须刷新用户实际打开的预览标签，核对新版图片、结构、资源 URL 和计算样式，不能只验证新建测试标签或磁盘文件。普通导航点击须在正常动画下等待滚动和导航栏状态稳定，检查固定栏是否遮住目标标题、白框及首行内容；元素居中时可见或 hash 正确不能替代这项检查。导航公开 `--navigation-height`（桌面 110px、宽度 ≤760 时 105px、≤400 时 122px），当前 Life 用它设置 `scroll-margin-top`。
+
 按工作协议在模块测试记录中写明日期、浏览器版本、视口、模拟或真机、结果、问题与未覆盖项。已发现故障须修复并复测；没有运行的环境不能写为通过，也不能把一种内核的测试称为跨浏览器测试通过。
 
 基础兼容性使用 `npm run test:compat`；博客与加密视图使用 `npm run test:features`；统一作者、加密连接缓存和双集合发布使用 `npm run test:author`；离线作者会话使用 `npm run test:author-security`；Relationship 算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。作者密码配置工具为 `npm run author:password`，只在本地终端交互输入，测试不使用真实配置密码。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。共用证据见 [兼容性记录](docs/COMPATIBILITY.md)，统一作者记录见 [author](docs/modules/author.md)，后续修改仍需重新验证。
@@ -91,6 +94,7 @@
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
 - **2026-10-11 粒子背景的用户明确约定优先于上条通用流程：**本轮保留 `feat/emergent-particle-background`，完成后不整合 `main`、不推送。`main` 与 `backup/pre-emergence-2026-10-11` 保留基线 `93bf256`，旧静态包保留在仓库外；先保存未提交改动再切回旧分支，不硬重置或强制覆盖。接口、参数与回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)，本轮新功能须有独立实测记录，不能沿用旧通过结论。
 - 本轮栏目布局之前的可回退点为 `backup/pre-section-layout-2026-10-11`（`3a2677c`），对应 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`；它保留此前仅 About 为黑色粒子表面的版本。更早的 `main` / `93bf256` 与原备份仍保留；选择回退点时核对版本范围，不丢弃后续内容。
+- 缓存与导航修复之前另有 `backup/pre-preview-fixes-2026-10-11`（`14f5bf6`）；此前 16:04 的 255 流程 / 12234 断言保留为历史。最终回归于 16:33–16:37 完成：基础九环境及正常 Life 导航 24 项、作者 144 流程、粒子 255 流程 / 12234 断言通过，生产源码未被测试修改、外部请求与真实写入为 0；详见 [粒子记录](docs/modules/particle-background.md)。照片 / PDF 专门矩阵及离线核心未重跑。仍保留功能分支、不整合 `main`、不推送。
 - 本地提交属于已授权维护，只暂存本任务文件；提交说明采用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，保留无关改动。
 - 框架或流程变化同步文档；模块扩展同步就近说明与测试记录，重要变化写入 `CHANGELOG.md`。
 - 普通维护完成本地修改和提交；只有用户请求发布或推送时更新远端，不因长期维护自行创建定时任务。

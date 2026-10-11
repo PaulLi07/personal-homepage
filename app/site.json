@@ -68,6 +68,7 @@
         "modules/academic/projects/content.js",
         "modules/academic/module.js"
       ],
+      "liveScripts": ["modules/academic/experience/entries.js"],
       "detailGroup": "academic"
     },
     {
@@ -94,6 +95,7 @@
         "modules/life/relationship/integration.js",
         "modules/life/module.js"
       ],
+      "liveScripts": ["modules/life/moments/posts.js"],
       "detailGroup": "life"
     },
     {

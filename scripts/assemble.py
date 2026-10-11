@@ -2,6 +2,7 @@
 """装配功能模块，生成可直接上传的静态页面；--check 只读检查同步状态。"""
 
 import argparse
+import hashlib
 import json
 from pathlib import Path
 import re
@@ -20,14 +21,20 @@ def read(relative):
     return local_file(relative).read_text(encoding="utf-8")
 
 
-def tags(paths, kind):
+def versioned_path(path):
+    # 内容版本不依赖时间戳；源码变化时浏览器请求新 URL，独立解压仍可复现。
+    digest = hashlib.sha256(local_file(path).read_bytes()).hexdigest()[:12]
+    return f"{path}?v={digest}"
+
+
+def tags(paths, kind, live_scripts=()):
     for path in paths:
         local_file(path)
     if kind == "styles":
-        return "\n".join(f'  <link rel="stylesheet" href="{path}">' for path in paths)
+        return "\n".join(f'  <link rel="stylesheet" href="{versioned_path(path)}">' for path in paths)
     if kind == "images":
         return "\n".join(f'  <link rel="preload" href="{path}" as="image">' for path in paths)
-    return "\n".join(f'  <script defer src="{path}"></script>' for path in paths)
+    return "\n".join(f'  <script defer src="{path if path in live_scripts else versioned_path(path)}"></script>' for path in paths)
 
 
 def render(template, replacements):
@@ -45,6 +52,12 @@ def pages():
     features = config.get("services", []) + sections
     styles = config["sharedStyles"] + [path for module in features for path in module["styles"]] + config.get("afterStyles", [])
     scripts = config["sharedScripts"] + [path for module in features for path in module["scripts"]] + ["app/main.js"]
+    live_scripts = set()
+    for module in features:
+        declared = module.get("liveScripts", [])
+        if not isinstance(declared, list) or any(path not in module["scripts"] for path in declared):
+            raise ValueError("liveScripts 必须是所属模块 scripts 的子集")
+        live_scripts.update(declared)
     assembled = []
     container = None
     for module in sections:
@@ -62,7 +75,7 @@ def pages():
     fragments.update({
         "preloads": tags([path for module in sections for path in module.get("preloadImages", [])], "images"),
         "styles": tags(styles, "styles"),
-        "scripts": tags(scripts, "scripts"),
+        "scripts": tags(scripts, "scripts", live_scripts),
         "navigation": read("shared/navigation/view.html").rstrip(),
         "details": read("shared/details/view.html").rstrip(),
     })

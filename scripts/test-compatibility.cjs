@@ -4,6 +4,7 @@ const fs = require("node:fs/promises");
 const http = require("node:http");
 const path = require("node:path");
 const { pathToFileURL } = require("node:url");
+const { execFileSync } = require("node:child_process");
 const root = path.resolve(__dirname, "..");
 let playwright;
 try {
@@ -15,6 +16,11 @@ try {
 const engines = ["chromium", "firefox", "webkit"];
 const externalRequests = [];
 const viewports = [{ width: 1440, height: 900 }, { width: 390, height: 844 }, { width: 320, height: 780 }];
+const navigationViewports = [
+  {width:1440,height:900},{width:1280,height:720},{width:1024,height:768},{width:900,height:700},
+  {width:768,height:1024},{width:431,height:767},{width:390,height:844},{width:320,height:780}
+];
+const headings = {about:"#about-title",academic:"#academic-title",life:"#life-title",contact:"#contact-title"};
 const routes = {
   academic: { experience: "Experience.", publications: "Publications.", notes: "Notes.", projects: "Projects." },
   life: { moments: "Moments.", travels: "Travels.", creations: "Creations.", relationship: "Relationship." }
@@ -95,6 +101,69 @@ async function assertLayout(page) {
   assert.equal(await page.evaluate(() => /[\u4e00-\u9fff]/.test(document.body.innerText)), false, "网页呈现中文");
 }
 
+async function stableNavigation(page, id) {
+  // 保留原生平滑滚动和CSS动画；连续浏览器帧的真实落点稳定后检查。
+  await page.evaluate(id => new Promise((resolve,reject) => {
+    const start=performance.now();let previous=null,stable=0;
+    function frame(){
+      const top=document.getElementById(id).getBoundingClientRect().top;
+      stable=previous!==null&&Math.abs(top-previous)<.2?stable+1:0;previous=top;
+      if(stable>=8&&performance.now()-start>=300)return resolve();
+      if(performance.now()-start>8000)return reject(new Error("Native navigation did not settle: "+id));
+      requestAnimationFrame(frame);
+    }
+    requestAnimationFrame(frame);
+  }),id);
+}
+
+async function assertNavigationExposed(page,id) {
+  const value=await page.evaluate(({id,heading})=>{
+    const rect=node=>{const b=node.getBoundingClientRect();return {top:b.top,bottom:b.bottom,left:b.left,right:b.right,width:b.width,height:b.height};};
+    const navbar=document.querySelector(".navbar"),title=document.querySelector(heading),nav=rect(navbar);
+    return {id,title:rect(title),navbar:nav,navbarBottom:Math.max(0,Math.min(innerHeight,nav.bottom)),
+      frame:id==="life"?rect(document.querySelector(".life-frame")):null,width:innerWidth,height:innerHeight};
+  },{id,heading:headings[id]});
+  const message=id+"导航落点遮挡："+JSON.stringify(value);
+  assert.equal(await page.locator(headings[id]).isVisible(),true,message);
+  assert.ok(value.title.width>0&&value.title.height>0,message);
+  assert.ok(value.title.top>=value.navbarBottom-.5,message);
+  assert.ok(value.title.bottom<=value.height+.5&&value.title.left>=-.5&&value.title.right<=value.width+.5,message);
+  if(value.frame)assert.ok(value.frame.top>=value.navbarBottom-.5,"Life框顶被导航覆盖："+JSON.stringify(value));
+  return value;
+}
+
+async function runNavigationLayout(browser,engine,viewport,url,{baseline}={}) {
+  const context=await browser.newContext({viewport,reducedMotion:"no-preference"});
+  await guardNetwork(context,url);
+  // 仅冒烟时以指定旧提交的两份CSS验证故障，不回切工作区、不修改源文件。
+  if(baseline)for(const filename of ["modules/life/styles.css","shared/navigation/styles.css"]){
+    const source=execFileSync("git",["show",baseline+":"+filename],{cwd:root,encoding:"utf8"});
+    await context.route(url=>url.pathname.endsWith("/"+filename),route=>route.fulfill({contentType:"text/css",body:source}));
+  }
+  const page=await context.newPage(),errors=[];
+  page.on("pageerror",error=>errors.push(error.message));
+  page.on("response",response=>{if(response.status()>=400)errors.push(response.status()+" "+response.url());});
+  try{
+    await page.goto(url+"#home");
+    await page.waitForFunction(()=>document.documentElement.classList.contains("is-ready")&&!document.querySelector(".loader"));
+    await page.locator('.navlinks a[href="#life"]').click();await page.waitForURL("**/#life");
+    await stableNavigation(page,"life");const geometry=await assertNavigationExposed(page,"life");
+    await page.waitForFunction(()=>Array.from(document.querySelectorAll("#life [data-life] img")).every(image=>image.complete&&image.naturalWidth>0));
+    assert.equal(await page.evaluate(()=>document.documentElement.scrollWidth<=innerWidth+1),true,"真实导航场景横向溢出");
+    let screenshot;
+    if(engine==="chromium"&&[1440,431].includes(viewport.width)){
+      screenshot="artifacts/screenshots/compat-navigation-"+viewport.width+"-life.png";
+      await fs.mkdir(path.join(root,"artifacts/screenshots"),{recursive:true});
+      await page.screenshot({path:path.join(root,screenshot)});
+    }
+    await page.locator('[data-life="moments"]').click();await assertOpen(page,"Moments.");
+    await page.keyboard.press("Escape");await page.waitForFunction(()=>!document.getElementById("detail-dialog").open);
+    await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-life="moments"]'));
+    assert.deepEqual(errors,[],"真实导航脚本或素材出错");
+    return {viewport,status:"通过",geometry,photos:"四张实际加载，Moments点击/关闭/回焦点通过",...(screenshot?{screenshot}:{})};
+  }finally{await context.close();}
+}
+
 async function runViewport(browser, engine, viewport, url) {
   const context = await browser.newContext({ viewport, reducedMotion: "reduce", hasTouch: viewport.width < 700 });
   await guardNetwork(context, url);
@@ -112,6 +181,7 @@ async function runViewport(browser, engine, viewport, url) {
     await page.locator(`.navlinks a[href="#${id}"]`).click();
     await page.waitForURL("**/#" + id);
     await page.waitForFunction(id => document.querySelector(`.navlinks a[href="#${id}"]`).getAttribute("aria-current") === "location", id);
+    await stableNavigation(page,id);await assertNavigationExposed(page,id);
   }
   for (const id of ["about", "academic"]) {
     await page.locator('.name[href="#home"]').click();
@@ -255,11 +325,11 @@ async function runEngine(engine, url) {
     faultPage.on("console", message => {
       if (message.type() === "error" && message.text().includes("Unable to initialize section: life")) isolated = true;
     });
-    await faultPage.route("**/modules/life/module.js", async route => {
+    await faultPage.route(url=>url.pathname.endsWith("/modules/life/module.js"), async route => {
       const source = await fs.readFile(path.join(root, "modules/life/module.js"), "utf8");
       await route.fulfill({ contentType: "text/javascript", body: source.replace("init({ root, details, reducedMotion }) {", 'init({ root, details, reducedMotion }) { throw new Error("Module isolation fixture");') });
     });
-    await faultPage.route("**/modules/contact/module.js", async route => {
+    await faultPage.route(url=>url.pathname.endsWith("/modules/contact/module.js"), async route => {
       const source = await fs.readFile(path.join(root, "modules/contact/module.js"), "utf8");
       await route.fulfill({ contentType: "text/javascript", body: source.replace("init({ root }) {", 'init({ root }) { root.dataset.initialized = "true";') });
     });
@@ -272,8 +342,13 @@ async function runEngine(engine, url) {
     assert.equal(isolated, true);
     assert.deepEqual(uncaught, []);
     await faultContext.close();
-    const result = { engine, version: browser.version(), results, motion: "正常与减少动态效果通过", file: "直接文件打开及详情通过", isolation: "单模块初始化故障隔离通过" };
-    console.log(`${engine} ${result.version}：三个视口、八栏目、路由、键盘、动画和文件打开通过。`);
+    const navigationLayout=[];
+    for(const viewport of navigationViewports){
+      try{navigationLayout.push(await runNavigationLayout(browser,engine,viewport,url));}
+      catch(error){error.message=engine+" normal导航 "+viewport.width+"×"+viewport.height+"："+error.message;throw error;}
+    }
+    const result = { engine, version: browser.version(), results, navigationLayout, motion: "正常与减少动态效果通过", file: "直接文件打开及详情通过", isolation: "单模块初始化故障隔离通过" };
+    console.log(`${engine} ${result.version}：原三个视口、八栏目等回归及正常导航八个视口布局通过。`);
     return result;
   } finally { await browser.close(); }
 }
@@ -282,6 +357,13 @@ async function runEngine(engine, url) {
   await new Promise(resolve => server.listen(0, "127.0.0.1", resolve));
   try {
     const url = `http://127.0.0.1:${server.address().port}/personal-homepage/`;
+    if(process.argv.includes("--navigation-smoke")){
+      const browser=await playwright.chromium.launch({headless:true});
+      const baseline=process.argv.find(value=>value.startsWith("--navigation-baseline="))?.split("=").slice(1).join("=");
+      try{console.log(JSON.stringify(await runNavigationLayout(browser,"chromium",{width:431,height:767},url,{baseline})));}
+      finally{await browser.close();}
+      assert.deepEqual(externalRequests,[]);return;
+    }
     const completed = await Promise.allSettled(engines.map(engine => runEngine(engine, url)));
     const failure = completed.find(result => result.status === "rejected");
     if (failure) throw failure.reason;

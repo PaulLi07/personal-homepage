@@ -1,5 +1,5 @@
 /* 生活：纯黑画布、白色双层轮廓与独立照片。 */
-.page3 { min-height: 100svh; position: relative; padding: 36px var(--gutter) 56px; background: #000; overflow: hidden; }
+.page3 { min-height: 100svh; position: relative; padding: 36px var(--gutter) 56px; background: #000; overflow: hidden; scroll-margin-top: var(--navigation-height,110px); }
 .life-frame { position: relative; min-height: max(800px,calc(100svh - 92px)); border: 1px solid #ffffffb8; }
 .life-frame::before { content: ""; position: absolute; inset: 9px -9px -9px 9px; border: 1px solid #ffffff40; pointer-events: none; }
 .life-heading { position: absolute; z-index: 3; inset: 42% 26% auto; text-align: center; pointer-events: none; }

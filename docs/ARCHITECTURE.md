@@ -43,11 +43,11 @@ index.html, credits.html   装配生成的发布页面
 
 | 文件 | 职责 |
 |---|---|
-| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts`、`services` 与分区的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序，路径相对于站点根 |
+| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts`、`services` 与分区的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序；`liveScripts` 声明本模块需保持原 URL 的数据脚本子集，路径相对于站点根 |
 | `app/index.template.html` | 首页文档外壳与装配位置 |
 | `app/credits.template.html` | 素材署名页外壳与装配位置 |
 | `app/main.js` | 取得共享服务并初始化注册模块；不放具体模块内容 |
-| `scripts/assemble.py` | 读取清单与模板，嵌入 HTML 片段，输出根页面并引用对应 CSS / JS |
+| `scripts/assemble.py` | 读取清单与模板，嵌入片段，输出根页面；CSS 与静态 JS 引用附内容 SHA256 前 12 位版本，`liveScripts` 保持原 URL |
 | `scripts/test-compatibility.cjs` | 可选浏览器实测工具，自启临时子路径服务器；不参与网站运行、装配或普通检查 |
 | `scripts/test-features.cjs` | 可选博客、模拟作者发布和加密视图测试；临时夹具通过请求拦截提供，不发布真实文章 |
 | `scripts/test-author-log.cjs` | 用随机作者密码、临时双集合与模拟 GitHub 验证统一会话、加密缓存和独立发布 |
@@ -76,6 +76,10 @@ index.html, credits.html   装配生成的发布页面
 
 脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载照片、PDF 能力及作者配置 / 会话 / 发布器 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
 
+装配生成 `path?v=<内容 SHA256 前 12 位>`，内容变化后 CSS / 静态 JS 使用新 URL。`liveScripts` 必须是模块 `scripts` 的子集，当前仅 Experience 的 `modules/academic/experience/entries.js` 与 Moments 的 `modules/life/moments/posts.js` 保留原 URL，在线直接发布只更新数据即可，无需重新装配 HTML；作者业务不改变。图片引用及预载仍使用原路径，版本串不包含凭据。
+
+预览服务器没有热更新；已打开的标签仍持有旧文档，必须在装配后刷新用户实际标签，再核对资源 URL、图片、DOM 和计算样式。固定导航公开 `--navigation-height`：桌面 110px、宽度 ≤760 时 105px、≤400 时 122px。当前 Life 用 `scroll-margin-top: var(--navigation-height, 110px)` 留出锚点空间；扩展栏目需在正常动画的实际导航点击后验证标题及边框，不能只检查居中可见或 hash。
+
 ## 注册接口与共享服务
 
 `shared/runtime.js` 提供单一全局入口 `window.Homepage`：
@@ -103,7 +107,7 @@ Canvas 固定当前视口，`aria-hidden`、不接收指针事件；绘制范围
 
 渲染直接使用 Canvas `arc` 填充白色实心圆点，不使用 sprite、渐变或 blur。用户要求粒子微小、密集、清晰，默认半径 `0.4`–`0.85` CSS 像素，透明度 `0.85`；前景图片、文字、链接及按钮保持可读。后台和所有详情暂停，读者与作者详情均隐藏 Canvas；减少动态效果保留静态图，Canvas 不可用退回原页面。数量按面积及手机上限调整，像素比有上限，慢帧可自适应减量，不能将目标频率当作硬件帧率保证。参数与诊断字段见 [维护指南](PARTICLE-BACKGROUND.md)；这是艺术性网格规则与 curl 流场，不宣称严格物理精度。
 
-本轮留在功能分支、不整合主分支、不推送。2026-10-11 当前三个黑色区域、细线 / 相框与 Home / Contact 图片替换已通过三内核 / 三视口、两种动态偏好的 18 个主环境及 12 个补测，共 255 流程、12234 断言；基础兼容性回归通过，外部请求与真实写入为 0。此前 237 / 8088 属于历史证据，核心模拟未修改、本轮未重测，227 条离线断言不计为本轮结果。范围与限制见 [测试记录](modules/particle-background.md)。
+本轮留在功能分支、不整合主分支、不推送。2026-10-11 最终回归于北京时间 16:33–16:37 完成，覆盖缓存与导航修复：基础三内核九环境、正常 Life 导航 24 项、作者 144 流程、粒子 255 流程 / 12234 断言均通过；生产源码未被测试修改，外部请求与真实写入为 0。16:04 及更早结果为历史；照片 / PDF 专门矩阵、离线核心本轮未重跑，227 条离线断言仍属此前证据。范围与限制见 [测试记录](modules/particle-background.md)。
 
 ## 详情数据
 

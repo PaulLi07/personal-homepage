@@ -20,6 +20,10 @@ npm run package     # 先装配再生成 ../outputs/personal-homepage-source.zip
 
 网站运行时只读取普通 HTML、CSS、JavaScript 和本地资源，无外部运行时依赖。装配只在维护时进行；上传包已包含生成页面，GitHub Pages 无需构建。也可直接在浏览器中打开生成的 `index.html`；模块不依赖运行时请求 HTML 片段。
 
+常驻 `preview` 没有热更新。修改并装配后，必须刷新用户实际打开的预览标签，确认新版图片、结构、样式和资源 URL。装配为 CSS 与静态 JS 加入内容 SHA256 前 12 位的 `?v=`；两份在线文章数据 `entries.js` / `posts.js` 由清单 `liveScripts` 保持原 URL，直接发布文章无需重装 HTML。图片仍用原路径，需核对实际显示。
+
+检查导航时按正常动画点击各栏目，等待滚动及固定导航栏稳定，确认目标标题与边框没有被遮挡；元素居中可见或 hash 正确不能替代实际点击后的布局检查。
+
 ## 可重复兼容性测试
 
 维护环境已安装 Playwright 及其 Chromium、Firefox、WebKit 浏览器时，在装配与检查后执行：
@@ -124,11 +128,13 @@ npm run relationship:check
 
 本轮栏目布局之前另有 `backup/pre-section-layout-2026-10-11`（`3a2677c`）与 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`，保留此前仅 About 的黑色粒子版本。回退前先保存当前改动，再按所需版本选择备份；两组备份均保留。
 
+缓存与固定导航修复之前的回退点为 `backup/pre-preview-fixes-2026-10-11`（`14f5bf6`），前述 `main` 与备份继续保留。本轮仍不整合主分支、不推送。
+
 粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About、Academic、Life 各自的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
 
 Academic 与 Life 去掉整区背景图，分别采用学术细线和白色细框、克制叠层相框。Home 使用 Ivan Rohovchenko / Unsplash 的山水图，独立保存于自己的 `hero.jpg`；Contact 使用用户提供的原始 `background.png`，原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。
 
-局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 本轮三个黑色区域、相框和图片替换已通过 255 个流程、12234 条断言，覆盖三内核 / 三视口、两种动态偏好的 18 个主环境及 12 个补测；基础兼容性亦回归通过，外部请求与真实写入均为 0。此前 237 个流程 / 8088 条断言保留为历史；核心模拟未修改、本轮未重测，227 条离线断言仅为此前证据。参数、接口、实测限制和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
+局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 最终回归于北京时间 16:33–16:37 完成：基础三内核九环境及正常 Life 导航的 24 项检查、作者 144 流程、粒子 255 流程 / 12234 断言通过，生产源码未被测试修改，外部请求与真实写入为 0。16:04 记录和此前 237 / 8088 保留为历史；照片 / PDF 专门矩阵及离线核心未重跑，227 条离线断言仍仅为此前证据。参数、接口、截图范围、实测限制和回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
 
 ## 维护文档
 
