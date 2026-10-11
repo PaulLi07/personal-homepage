@@ -21,6 +21,7 @@
 - 网站：<https://paulli07.github.io/personal-homepage/>。
 - 研究课题、论文、成果和个人故事目前仍有占位内容，使用用户提供的事实，不得编造。
 - 采用简洁学术风与宇宙主题，保持优雅、艺术感和克制；使用常规字体和适中标题，用户拒绝窄体超大展示文字。
+- 粒子必须微小、密集、清晰，呈白色实心圆点；禁止模糊光晕、渐变精灵或模糊滤镜。只在公开标记的纯黑背景区域显示，不能覆盖图片背景或区域内图片。当前 About 用 `data-particle-surface="black"` 声明纯黑 `#000` 背景，其他图片区域保持原样且不绘制粒子。粒径参数表示 CSS 像素半径，默认 `0.4`–`0.85`，透明度 `0.85`。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
@@ -34,6 +35,8 @@
 - 两栏文章照片共用独立的 `modules/article-photos/` 服务，负责照片规范、处理、选择预览、阅读图组及下载 ZIP；图片实体仍保存在所属栏目的 `images/posts/<文章标识>/`，不建立集中照片目录。`modules/author/publisher.js` 处理数据合并与 GitHub 提交，编辑器只连接表单与这些服务。
 - 两栏 PDF 附件由独立的 `modules/article-documents/` 服务负责规范、选择及阅读链接，实体归当前集合的 `documents/posts/<文章标识>/`。装配顺序为照片服务、PDF 服务、作者服务，再加载分区数据；PDF 不进入照片处理逻辑。
 - 粒子背景独立放在 `modules/particle-background/`，以清单 `services` 加载自己的配置、模拟、绘制与样式，不占导航分区，不放进 `shared/` 或具体栏目。胶水只向 `mount()` 传主页面根节点、动态偏好与详情根节点；运动、输入、暂停和清理留在服务内。无图片、凭据、网络或第三方运行时依赖，艺术性局部规则不能宣称严格物理仿真。
+- 可绘区域由模块公开的 `data-particle-surface="black"` 界定；模块自身保证背景纯黑，服务核验声明区域自身的计算样式、读取视口矩形并排除其中 `img` 及公开 `data-particle-exclude` 矩形，不扫描其他模块私有结构来推断可绘范围。前景使用 `data-particle-foreground`；样式、图片、滚动及 CSS 过渡结束后刷新遮罩，静态重绘不推进模拟。直接使用 Canvas `arc` 填充白色实心点，不使用 sprite、渐变或 blur；读者和作者详情均继续暂停并隐藏粒子。
+- 纯黑区域中的 CSS 背景图片容器、SVG、视频等非 `img` 视觉内容必须由所属模块声明 `data-particle-exclude`；服务不自动识别它们。`data-particle-foreground` 设置普通容器为相对定位，绝对或粘性定位组件用外层容器接入。扩展必须验证相关边界，不将现有 `img` 案例说成任意图片自动识别。
 - Publications 使用自定义详情视图；`internal-note/`、`arxiv/`、`published/` 各自保存 `data.js` 和中文 README，通过 `registerPublicationCategory` 独立登记。分类目录及子路由沿用共用弹窗、历史和焦点，不集中成一份论文数据。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。

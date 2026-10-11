@@ -2,7 +2,7 @@
   "use strict";
   const defaults = Object.freeze({
     enabled: true, count: 4800, mobileCount: 1400, averageSpeed: 22,
-    minSize: 0.32, maxSize: 1.15, opacity: 0.6,
+    minSize: 0.4, maxSize: 0.85, opacity: 0.85,
     interactionRadius: 170, interactionStrength: 1,
     alignment: 0.7, cohesion: 0.18, separation: 0.6,
     flowScale: 190, turbulence: 0.65, fps: 45,

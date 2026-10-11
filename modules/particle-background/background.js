@@ -6,7 +6,8 @@
   let current = null;
   let lastStats = {status: "disposed", count: 0, requestedCount: 0, frameCount: 0, running: false,
     reducedMotion: false, width: 0, height: 0, pixelRatio: 1, meanSpeed: 0, maxSpeed: 0,
-    finite: true, stepMs: 0, frameMs: 0, pointerActive: false, adaptiveLevel: 1};
+    finite: true, stepMs: 0, frameMs: 0, pointerActive: false, adaptiveLevel: 1,
+    renderedCount: 0, surfaceCount: 0};
 
   function mount({root, reducedMotion, dialog, config} = {}) {
     if (!root || root.ownerDocument !== document || typeof root.prepend !== "function") {
@@ -29,31 +30,20 @@
     let context;
     try { context = canvas.getContext("2d", {alpha: true, desynchronized: true}); }
     catch (_) { context = null; }
-    let alive = true, manualPause = false, unsupported = !context, animation = 0;
+    let alive = true, manualPause = false, unsupported = !context, animation = 0, maskPaint = 0;
     let width = 0, height = 0, pixelRatio = 1, simulation = null;
     let frameCount = 0, simulationTime = 0, lastFrame = 0, previousRender = 0;
-    let frameMs = 0, adaptiveLevel = 1, slowFrames = 0;
+    let frameMs = 0, adaptiveLevel = 1, slowFrames = 0, renderedCount = 0, surfaceCount = 0;
     const pointer = {x: 0, y: 0, vx: 0, vy: 0, active: false};
     let pointerTime = 0;
-    const sprite = document.createElement("canvas");
-    sprite.width = sprite.height = 24;
-    const spriteContext = context ? sprite.getContext("2d") : null;
-    if (context && !spriteContext) unsupported = true;
-    if (spriteContext) {
-      const glow = spriteContext.createRadialGradient(12, 12, 0, 12, 12, 12);
-      glow.addColorStop(0, "rgba(255,255,255,1)");
-      glow.addColorStop(.22, "rgba(255,255,255,.92)");
-      glow.addColorStop(.5, "rgba(255,255,255,.2)");
-      glow.addColorStop(1, "rgba(255,255,255,0)");
-      spriteContext.fillStyle = glow;
-      spriteContext.fillRect(0, 0, 24, 24);
-    }
     root.prepend(canvas);
     const blocked = () => manualPause || document.hidden || Boolean(dialog?.open);
     const desiredCount = () => api.particleConfig.effectiveCount(configuration, width, height, coarse.matches);
     function stop() {
       if (animation) window.cancelAnimationFrame(animation);
+      if (maskPaint) window.cancelAnimationFrame(maskPaint);
       animation = 0;
+      maskPaint = 0;
       lastFrame = previousRender = 0;
       pointer.active = false;
       pointer.vx = pointer.vy = 0;
@@ -75,16 +65,65 @@
       else simulation.resize(width, height, count);
       if (!animation) draw();
     }
+    function visibleRect(node, padding = 0) {
+      const bounds = node.getBoundingClientRect();
+      const style = window.getComputedStyle(node);
+      if (style.display === "none" || style.visibility === "hidden") return null;
+      if (!bounds.width || !bounds.height) return null;
+      const rect = {left: Math.max(0, bounds.left - padding), top: Math.max(0, bounds.top - padding),
+        right: Math.min(width, bounds.right + padding), bottom: Math.min(height, bounds.bottom + padding)};
+      return rect.right > rect.left && rect.bottom > rect.top ? rect : null;
+    }
+    function visibleMask() {
+      const surfaces = [], images = new Set();
+      root.querySelectorAll('[data-particle-surface="black"]').forEach(node => {
+        const rect = visibleRect(node);
+        if (!rect) return;
+        const style = window.getComputedStyle(node);
+        // 属性由区域所有者声明；同时核实本身是无背景图的、不透明纯黑色。
+        if (style.backgroundColor !== "rgb(0, 0, 0)" || style.backgroundImage !== "none" || Number(style.opacity) !== 1) return;
+        surfaces.push(rect);
+        node.querySelectorAll("img").forEach(image => images.add(image));
+      });
+      document.querySelectorAll("[data-particle-exclude]").forEach(node => images.add(node));
+      // 图片及公共遮挡区域多留一像素，防止圆边抗锯齿进入图片。
+      const holes = Array.from(images, node => visibleRect(node, 1)).filter(Boolean);
+      return {surfaces, holes};
+    }
     function draw() {
       if (!alive || unsupported || !simulation) return;
       context.clearRect(0, 0, width, height);
+      renderedCount = 0;
+      const {surfaces, holes} = visibleMask();
+      surfaceCount = surfaces.length;
+      if (!surfaceCount) return;
+      context.save();
+      context.beginPath();
+      surfaces.forEach(rect => context.rect(rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top));
+      context.clip();
+      holes.forEach(rect => {
+        context.beginPath(); context.rect(0, 0, width, height);
+        context.rect(rect.left, rect.top, rect.right - rect.left, rect.bottom - rect.top);
+        context.clip("evenodd");
+      });
+      context.globalAlpha = configuration.opacity;
+      context.fillStyle = "#fff";
+      context.shadowBlur = 0;
+      context.filter = "none";
+      context.beginPath();
       const particles = simulation.particles;
       for (let i = 0; i < particles.count; i += 1) {
-        const span = particles.size[i] * 4;
-        context.globalAlpha = configuration.opacity * particles.alpha[i];
-        context.drawImage(sprite, particles.x[i] - span / 2, particles.y[i] - span / 2, span, span);
+        const x = particles.x[i], y = particles.y[i], radius = particles.size[i], guard = radius + 1;
+        if (!surfaces.some(rect => x - guard >= rect.left && x + guard <= rect.right
+          && y - guard >= rect.top && y + guard <= rect.bottom)) continue;
+        if (holes.some(rect => x + guard >= rect.left && x - guard <= rect.right
+          && y + guard >= rect.top && y - guard <= rect.bottom)) continue;
+        context.moveTo(x + radius, y);
+        context.arc(x, y, radius, 0, Math.PI * 2);
+        renderedCount += 1;
       }
-      context.globalAlpha = 1;
+      context.fill();
+      context.restore();
     }
     function degrade() {
       if (!configuration.adaptiveQuality) { slowFrames = 0; return; }
@@ -152,7 +191,7 @@
     function stats() {
       const measured = simulation?.stats() || {count: 0, meanSpeed: 0, maxSpeed: 0, finite: true, lastStepMs: 0};
       return {...measured, stepMs: measured.lastStepMs, frameMs, frameCount, width, height, pixelRatio,
-        requestedCount: width ? desiredCount() : 0, adaptiveLevel, pointerActive: pointer.active,
+        requestedCount: width ? desiredCount() : 0, renderedCount, surfaceCount, adaptiveLevel, pointerActive: pointer.active,
         reducedMotion: motionReduced, running: Boolean(animation),
         status: !alive ? "disposed" : unsupported ? "unsupported" : !configuration.enabled ? "disabled"
           : blocked() ? "paused" : motionReduced ? "reduced" : "running"};
@@ -161,17 +200,48 @@
       if (!alive) return;
       stop(); alive = false;
       lastStats = stats();
-      signalController.abort(); observer?.disconnect();
+      signalController.abort(); observer?.disconnect(); maskObserver.disconnect();
       media.removeEventListener("change", onMotionChange);
       coarse.removeEventListener("change", onResize);
       simulation?.dispose(); simulation = null;
       canvas.remove(); root.classList.remove("has-particle-background");
-      sprite.width = sprite.height = 0;
       if (current === controller) current = null;
     }
     function onResize() { resize(); sync(); }
     function onMotionChange(event) { motionReduced = event.matches; sync(); }
+    function onScroll() {
+      if (!alive || unsupported || !configuration.enabled || document.hidden || dialog?.open) return;
+      // 即时同步可见边界，静态模式不需要另起动画；不推动模拟或增加帧统计。
+      try { draw(); }
+      catch (_) {
+        unsupported = true; stop(); canvas.hidden = true;
+        root.classList.remove("has-particle-background");
+      }
+    }
+    function onMaskChange() {
+      if (!alive || unsupported || !configuration.enabled || document.hidden || dialog?.open || maskPaint) return;
+      // 样式变更后的受控补绘；CSS 过渡结束时再确认最终遮罩，不推进粒子模拟。
+      maskPaint = window.requestAnimationFrame(() => { maskPaint = 0; onScroll(); });
+    }
+    const maskSelector = '[data-particle-surface], [data-particle-exclude]';
+    const maskObserver = new MutationObserver(records => {
+      if (records.some(record => record.target instanceof Element
+        && (record.target.closest(maskSelector) || record.type === "childList"
+          || ["data-particle-surface", "data-particle-exclude"].includes(record.attributeName)))) onMaskChange();
+    });
+    maskObserver.observe(root, {subtree: true, childList: true, attributes: true,
+      attributeFilter: ["style", "class", "data-particle-surface", "data-particle-exclude", "src"]});
+    document.querySelectorAll("[data-particle-exclude]").forEach(node =>
+      maskObserver.observe(node, {subtree: true, childList: true, attributes: true,
+        attributeFilter: ["style", "class", "data-particle-exclude", "src"]}));
+    for (const event of ["transitionend", "transitioncancel", "animationend"]) {
+      document.addEventListener(event, event => {
+        if (event.target instanceof Element && event.target.closest(maskSelector)) onMaskChange();
+      }, {signal});
+    }
+    root.addEventListener("load", onMaskChange, {capture: true, signal});
     window.addEventListener("resize", onResize, {passive: true, signal});
+    window.addEventListener("scroll", onScroll, {passive: true, signal});
     window.addEventListener("pointermove", event => {
       if (!alive || motionReduced || blocked() || !configuration.enabled || event.pointerType === "touch") return;
       const now = performance.now();

@@ -39,6 +39,25 @@ async function setupContext(browser, options, url, unsupported = false) {
     if (["file:","blob:"].includes(target.protocol) || target.origin === new URL(url).origin) return route.continue();
     blocked.push({method:route.request().method(),url:target.href}); return route.abort();
   });
+  await context.addInitScript(() => {
+    const prototype=CanvasRenderingContext2D.prototype,originals={};
+    window.__particlePaintTrace={arc:0,fill:0,drawImage:0,gradient:0,blur:0,nonWhiteFill:0,minRadius:Infinity,maxRadius:0};
+    for(const name of ["arc","fill","drawImage","createRadialGradient","createLinearGradient","createConicGradient"]){
+      const original=prototype[name];if(typeof original!=="function")continue;
+      originals[name]=original;
+      prototype[name]=function(...args){
+        if(this.canvas.classList.contains("particle-background__canvas")){
+          const trace=window.__particlePaintTrace;
+          if(name==="arc"){trace.arc++;trace.minRadius=Math.min(trace.minRadius,args[2]);trace.maxRadius=Math.max(trace.maxRadius,args[2]);}
+          else if(name==="fill"){trace.fill++;if(!["#ffffff","white","rgb(255, 255, 255)"].includes(this.fillStyle))trace.nonWhiteFill++;}
+          else if(name==="drawImage")trace.drawImage++;else trace.gradient++;
+          if(this.shadowBlur>0 || /blur\(/i.test(this.filter||""))trace.blur++;
+        }
+        return original.apply(this,args);
+      };
+    }
+    window.__restoreParticlePaintMethods=()=>{for(const [name,method]of Object.entries(originals))prototype[name]=method;};
+  });
   if (unsupported) await context.addInitScript(() => {
     const getContext = HTMLCanvasElement.prototype.getContext;
     HTMLCanvasElement.prototype.getContext = function (type, ...args) { return type === "2d" ? null : getContext.call(this,type,...args); };
@@ -73,8 +92,81 @@ async function pixels(page) {
     return {hash:hash>>>0,visible,different,width:canvas.width,height:canvas.height};
   });
 }
+async function surfacePixels(page,selector) {
+  return page.evaluate(({canvasSelector,selector})=>{
+    const canvas=document.querySelector(canvasSelector),context=canvas.getContext("2d"),ratio=canvas.width/innerWidth;
+    const rect=node=>{const value=node.getBoundingClientRect();return {left:value.left,top:value.top,right:value.right,bottom:value.bottom};};
+    const surfaces=Array.from(document.querySelectorAll('[data-particle-surface="black"]')).map(rect);
+    const images=Array.from(document.querySelectorAll('[data-particle-surface="black"] img')).map(rect);
+    const excludes=Array.from(document.querySelectorAll("[data-particle-exclude]")).map(rect);
+    const target=selector?rect(document.querySelector(selector)):null;
+    const contains=(box,x,y,margin=0)=>x>=box.left+margin&&x<box.right-margin&&y>=box.top+margin&&y<box.bottom-margin;
+    const data=context.getImageData(0,0,canvas.width,canvas.height).data;
+    let visible=0,outsideSurface=0,imagePixels=0,excludedPixels=0,targetPixels=0,nonWhite=0;
+    for(let y=0;y<canvas.height;y++)for(let x=0;x<canvas.width;x++){
+      const index=(y*canvas.width+x)*4;if(!data[index+3])continue;
+      const cssX=(x+.5)/ratio,cssY=(y+.5)/ratio;visible++;
+      if(!surfaces.some(box=>contains(box,cssX,cssY,-1/ratio)))outsideSurface++;
+      if(images.some(box=>contains(box,cssX,cssY,1/ratio)))imagePixels++;
+      if(excludes.some(box=>contains(box,cssX,cssY,1/ratio)))excludedPixels++;
+      if(target&&contains(target,cssX,cssY,1/ratio))targetPixels++;
+      if(data[index]!==255||data[index+1]!==255||data[index+2]!==255)nonWhite++;
+    }
+    return {visible,outsideSurface,imagePixels,excludedPixels,targetPixels,nonWhite,surfaces,images,background:getComputedStyle(document.querySelector("#about")).backgroundColor};
+  },{canvasSelector:CANVAS,selector});
+}
+async function scrollSection(page,id) {
+  await page.locator("#"+id).evaluate(node=>{
+    const rect=node.getBoundingClientRect();
+    window.scrollTo({top:scrollY+rect.top+Math.max(0,(rect.height-innerHeight)/2),behavior:"instant"});
+  });
+  await browserFrames(page,4);
+}
+async function settleGeometry(page) {
+  await page.evaluate(async()=>{
+    for(let round=0;round<4;round++){
+      const nodes=document.querySelectorAll('[data-particle-surface="black"], [data-particle-exclude]');
+      const animations=Array.from(new Set(Array.from(nodes).flatMap(node=>node.getAnimations({subtree:true}))))
+        .filter(animation=>animation.playState==="running"&&Number.isFinite(animation.effect?.getComputedTiming().endTime));
+      if(!animations.length)break;
+      await Promise.all(animations.map(animation=>animation.finished.catch(()=>{})));
+    }
+  });
+  await browserFrames(page,2);
+}
+async function heroReady(page) {
+  await page.waitForFunction(()=>document.documentElement.classList.contains("is-ready")&&!document.querySelector(".loader"));
+  await page.waitForFunction(()=>{const image=document.querySelector(".hero-backdrop img");return image?.complete&&image.naturalWidth>0;});
+  await page.locator("#home-title").waitFor({state:"visible"});
+  assert.equal(await page.locator(".hero-backdrop img").evaluate(node=>getComputedStyle(node).visibility!=="hidden"&&Number(getComputedStyle(node).opacity)>0),true);
+  assert.match(await page.locator("#home-title").innerText(),/Yuhong Li/);
+}
+async function assertBlackSurface(page) {
+  // 有限CSS过渡结束后对齐当前矩形与Canvas，避免把合成中间帧当成固定几何。
+  await settleGeometry(page);
+  const value=await surfacePixels(page);
+  assert.equal(value.background,"rgb(0, 0, 0)");assert.ok(value.visible>0,"纯黑背景未画出粒子");
+  assert.equal(value.outsideSurface,0,"粒子画到纯黑surface之外");
+  assert.equal(value.imagePixels,0,"粒子画到About照片内");
+  assert.equal(value.excludedPixels,0,"粒子画到公共排除区域内");
+  assert.equal(value.nonWhite,0,"粒子实际像素不是纯白");
+  const state=await stats(page);assert.ok(state.renderedCount>0&&state.renderedCount<state.count,"当帧黑区绘制数未与全模拟数量区分");
+  return value;
+}
+async function pointerPath(page) {
+  return page.evaluate(()=>{
+    const surface=document.querySelector('[data-particle-surface="black"]').getBoundingClientRect();
+    const images=Array.from(document.querySelectorAll('[data-particle-surface="black"] img'),node=>node.getBoundingClientRect());
+    const allowed=(x,y)=>x>surface.left&&x<surface.right&&y>surface.top&&y<surface.bottom&&!images.some(box=>x>box.left&&x<box.right&&y>box.top&&y<box.bottom);
+    for(const y of [.82,.6,.35,.2,.95].map(value=>value*innerHeight))for(const pair of [[.18,.8],[.73,.95]]){
+      const x1=innerWidth*pair[0],x2=innerWidth*pair[1];
+      if([x1,(x1+x2)/2,x2].every(x=>allowed(x,y)))return {from:{x:x1,y},to:{x:x2,y}};
+    }
+    throw new Error("No visible black area for the pointer fixture.");
+  });
+}
 function finiteStats(value) {
-  for (const name of ["count","requestedCount","frameCount","width","height","pixelRatio","meanSpeed","maxSpeed","stepMs","frameMs","adaptiveLevel"]) {
+  for (const name of ["count","requestedCount","renderedCount","surfaceCount","frameCount","width","height","pixelRatio","meanSpeed","maxSpeed","stepMs","frameMs","adaptiveLevel"]) {
     assert.equal(typeof value[name],"number","缺少stats字段："+name); assert.ok(Number.isFinite(value[name]),name+"不是有限数");
   }
   assert.equal(value.finite,true); assert.equal(typeof value.running,"boolean"); assert.equal(typeof value.pointerActive,"boolean");
@@ -107,6 +199,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
   return assertionScopes.run(scope,async()=>{
   const environment = await setupContext(browser,{viewport,reducedMotion,hasTouch:viewport.width<700},url);
   const {context,page,errors,blocked}=environment, steps=[],screenshots=[],performance=[];
+  let rendering;
   const reduced = reducedMotion==="reduce";
   const step=async(name,task)=>{await task();await layout(page);steps.push({name,status:"通过"});};
   try {
@@ -114,7 +207,9 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
     await page.waitForFunction(() => Boolean(window.Homepage?.particleBackground));
     await step("独立Canvas默认数量、语义、层级及参数接口",async()=>{
       const initial=await config(page); assert.equal(initial.count,4800); assert.equal(initial.mobileCount,1400); assert.equal(initial.averageSpeed,22);
+      assert.equal(initial.minSize,.4);assert.equal(initial.maxSize,.85);assert.equal(initial.opacity,.85);
       await configure(page,{adaptiveQuality:false});
+      await heroReady(page);
       await page.locator(CANVAS).waitFor({state:"visible"});
       assert.equal(await page.locator("#main").evaluate(node=>node.classList.contains("has-particle-background")),true);
       assert.equal(await page.locator(CANVAS).getAttribute("aria-hidden"),"true");
@@ -125,13 +220,66 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await hitTest(page,'.navlinks a[href="#about"]');
       assert.equal(await page.locator("#main input[type=range]").count(),0,"额外前台参数表单");
     });
-    await step("真实非空像素与运动/减少动态效果",async()=>{
+    await step("图片背景透明与纯黑区域白色实心圆点",async()=>{
+      await scrollSection(page,"home");assert.equal((await pixels(page)).visible,0,"首页图片上仍有粒子");
+      assert.equal((await stats(page)).renderedCount,0);
+      const home=await surfacePixels(page),visibleSurfaces=home.surfaces.filter(box=>box.left<viewport.width&&box.right>0&&box.top<viewport.height&&box.bottom>0);
+      assert.equal((await stats(page)).surfaceCount,visibleSurfaces.length);
+      await shot(page,engine,viewport,reduced?"hero-reduce":"hero",screenshots);
+      for(const id of ["academic","life","contact"]){
+        await scrollSection(page,id);
+        const value=await surfacePixels(page,"#"+id);assert.equal(value.targetPixels,0,id+"图片背景上仍有粒子");assert.equal(value.outsideSurface,0);
+      }
+      await scrollSection(page,"about");const surface=await assertBlackSurface(page);
+      const trace=await page.evaluate(()=>window.__particlePaintTrace);
+      assert.ok(trace.arc>0&&trace.fill>0,"未实际使用圆弧填充");assert.equal(trace.drawImage,0,"粒子仍使用模糊sprite");
+      assert.equal(trace.gradient,0);assert.equal(trace.blur,0);assert.equal(trace.nonWhiteFill,0);
+      assert.ok(trace.minRadius>=.4-.00001&&trace.maxRadius<=.85+.00001,"默认半径超出微小圆点范围");
+      const painted=await stats(page);
+      rendering={surface,trace,simulationCount:painted.count,renderedCount:painted.renderedCount,geometryBoundaryToleranceDevicePixels:1};
+      await page.evaluate(()=>window.__restoreParticlePaintMethods());
+    });
+    await step("非纯黑、渐变或半透明surface拒绝绘制",async()=>{
+      for(const patch of [{backgroundColor:"rgb(1, 1, 1)"},{backgroundImage:"linear-gradient(#000, #000)"},{opacity:"0.5"}]){
+        await page.evaluate(patch=>{
+          const node=document.querySelector("#about");window.__particleSurfaceStyle=node.getAttribute("style");
+          Object.assign(node.style,patch);window.scrollBy({top:2,behavior:"instant"});
+        },patch);
+        await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"不合格surface仍画出粒子");
+        assert.equal((await stats(page)).renderedCount,0);
+        await page.evaluate(()=>{
+          const node=document.querySelector("#about");
+          if(window.__particleSurfaceStyle===null)node.removeAttribute("style");else node.setAttribute("style",window.__particleSurfaceStyle);
+          window.scrollBy({top:-2,behavior:"instant"});
+        });
+        await browserFrames(page,4);await assertBlackSurface(page);
+      }
+      const beforeStaticChange=await stats(page);
+      await page.evaluate(()=>{
+        const node=document.querySelector("#about");window.__particleSurfaceStyle=node.getAttribute("style");
+        node.style.backgroundColor="rgb(1, 1, 1)";
+      });
+      await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"静态样式变化没有刷新遮罩");
+      assert.equal((await stats(page)).renderedCount,0);
+      if(reduced)assert.equal((await stats(page)).frameCount,beforeStaticChange.frameCount,"样式刷新推动了静态模拟");
+      await page.evaluate(()=>{
+        const node=document.querySelector("#about");
+        if(window.__particleSurfaceStyle===null)node.removeAttribute("style");else node.setAttribute("style",window.__particleSurfaceStyle);
+      });
+      await browserFrames(page,4);await assertBlackSurface(page);
+      await page.evaluate(()=>document.querySelector("#about").removeAttribute("data-particle-surface"));
+      await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"移除surface属性后残留粒子");
+      assert.equal((await stats(page)).surfaceCount,0);assert.equal((await stats(page)).renderedCount,0);
+      await page.evaluate(()=>document.querySelector("#about").setAttribute("data-particle-surface","black"));
+      await browserFrames(page,4);await assertBlackSurface(page);
+    });
+    await step("纯黑区域真实像素运动与减少动态效果静止",async()=>{
       if (!reduced) await particleFrames(page,10); else await browserFrames(page);
       const first=await pixels(page); assert.ok(first.visible>0 && first.different>0,"Canvas没有实际粒子像素");
       if (!reduced) await particleFrames(page,6); else await browserFrames(page);
       const second=await pixels(page);
       assert.equal(first.hash===second.hash,reduced,"动画/静态像素行为不符");
-      await shot(page,engine,viewport,reduced?"hero-reduce":"hero",screenshots);
+      await assertBlackSurface(page);
     });
     await step("配置有限数、张数、大小与不透明度边界",async()=>{
       const before=await config(page);
@@ -156,7 +304,8 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       if (!reduced) await particleFrames(page,6); else await browserFrames(page);
       const second=await pixels(page); assert.equal(first.hash,second.hash,"零速度无指针时没有静止");
       assert.ok((await stats(page)).meanSpeed<.01,"零平均速度仍有显著移动");
-      await page.mouse.move(viewport.width*.25,viewport.height*.35); await page.mouse.move(viewport.width*.7,viewport.height*.55,{steps:12});
+      const path=await pointerPath(page);
+      await page.mouse.move(path.from.x,path.from.y);await page.mouse.move(path.to.x,path.to.y,{steps:12});
       if (!reduced) {
         const active=await stats(page); assert.equal(active.pointerActive,true);
         await particleFrames(page,4); const disturbed=await pixels(page);
@@ -211,6 +360,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       const state=await stats(page), dimensions=await page.locator(CANVAS).evaluate(node=>({width:node.width,height:node.height}));
       assert.equal(dimensions.width,Math.round(state.width*state.pixelRatio)); assert.equal(dimensions.height,Math.round(state.height*state.pixelRatio));
       await page.setViewportSize(viewport);
+      await scrollSection(page,"about");await assertBlackSurface(page);
       await page.evaluate(()=>{
         window.__particleMediaChanges=0;
         window.__particleMedia=matchMedia("(prefers-reduced-motion: reduce)");
@@ -220,6 +370,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await page.waitForFunction(value=>{const state=window.Homepage.particleBackground.getStats();return window.__particleMediaChanges>=1&&state.reducedMotion===value&&state.running===!value;},!reduced);
       assert.equal((await stats(page)).running,reduced); await page.emulateMedia({reducedMotion});
       await page.waitForFunction(value=>{const state=window.Homepage.particleBackground.getStats();return window.__particleMediaChanges>=2&&state.reducedMotion===value&&state.running===!value;},reduced);
+      await assertBlackSurface(page);
     });
     await step("enabled关开、销毁重启与单实例",async()=>{
       await configure(page,{enabled:false}); assert.equal((await stats(page)).running,false);
@@ -238,13 +389,14 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await page.evaluate(()=>window.__particleTestController.pause()); const first=await stats(page); assert.equal(first.running,false);
       await browserFrames(page); assert.equal((await stats(page)).frameCount,first.frameCount);
       await page.evaluate(()=>window.__particleTestController.resume()); assert.equal((await stats(page)).running,!reduced);
+      await scrollSection(page,"about");await assertBlackSurface(page);
     });
     if(!reduced)await step("固定数量实测step/frame性能样本",async()=>{
       await configure(page,{adaptiveQuality:false}); await page.waitForFunction(()=>!window.Homepage.particleBackground.getStats().pointerActive);
       for(let index=0;index<10;index++){await particleFrames(page,2);const state=await stats(page);finiteStats(state);performance.push({count:state.count,frameCount:state.frameCount,stepMs:state.stepMs,frameMs:state.frameMs});}
     });
     assert.deepEqual(errors,[]); assert.deepEqual(blocked,[]);
-    return {viewport,reducedMotion,status:"通过",assertions:scope.assertions,steps,screenshots,performance,stats:await stats(page),externalRequests:0,realWrites:0};
+    return {viewport,reducedMotion,status:"通过",assertions:scope.assertions,steps,screenshots,performance,rendering,stats:await stats(page),externalRequests:0,realWrites:0};
   } catch(error){console.error(engine+" "+viewport.width+" "+reducedMotion+"："+error.message.split("\n")[0]);return {viewport,reducedMotion,status:"失败",assertions:scope.assertions,steps,error:error.stack,stats:await stats(page),mediaChanges:await page.evaluate(()=>window.__particleMediaChanges),pageErrors:errors,blocked};}
   finally{await context.close();}
   });
@@ -261,6 +413,7 @@ async function extras(browser,engine,url){
     try{
       await page.goto(name==="file"?pathToFileURL(path.join(ROOT,"index.html")).href+"#home":url+"#home");
       await page.waitForFunction(()=>Boolean(window.Homepage?.particleBackground));
+      await heroReady(page);
       if(name==="adaptive"){
         await page.evaluate(()=>{
           const api=window.Homepage,original=api.createDustSimulation;
@@ -288,6 +441,7 @@ async function extras(browser,engine,url){
         assert.equal((await stats(page)).running,false);
         await page.locator('[data-academic="publications"]').click();await page.locator('.publication-library[data-publication-view="directory"]').waitFor({state:"visible"});
       }else{
+        await scrollSection(page,"about");await assertBlackSurface(page);
         await page.locator(CANVAS).waitFor({state:"visible"});assert.ok((await pixels(page)).different>0);finiteStats(await stats(page));
         if(name==="dpr"){
           await configure(page,{maxPixelRatio:1.5});assert.equal((await stats(page)).pixelRatio,1.5);
@@ -320,7 +474,7 @@ async function extras(browser,engine,url){
     const passed=sourceUnchanged&&browsers.every(browser=>browser.results?.length===6&&browser.results.every(result=>result.status==="通过")&&browser.extras.every(result=>result.status==="通过"));
     const flows=browsers.reduce((sum,browser)=>sum+(browser.results||[]).reduce((n,result)=>n+result.steps.length,0)+(browser.extras||[]).length,0);
     const assertions=browsers.reduce((sum,browser)=>sum+(browser.results||[]).reduce((n,result)=>n+result.assertions,0)+(browser.extras||[]).reduce((n,result)=>n+result.assertions,0),0);
-    const report={date:new Date().toISOString(),passed,sourceUnchanged,prefix:PREFIX,flows,assertions,browsers,limits:["桌面与手机视口/触屏模拟，不等于品牌浏览器版本或手机真机。","visibility使用document属性与事件受控模拟，未测试真实后台标签页功耗。","性能为当前Mac/headless环境的step/frame采样，不构成真机FPS保证；像素读取期间不采性能。","自适应降级通过180粒子与每帧人工24ms模拟；不计入真实性能样本。","不访问外网、不读取真实作者凭据、不修改正式配置、文章或密文。"]};
+    const report={date:new Date().toISOString(),passed,sourceUnchanged,prefix:PREFIX,flows,assertions,browsers,limits:["桌面与手机视口/触屏模拟，不等于品牌浏览器版本或手机真机。","visibility使用document属性与事件受控模拟，未测试真实后台标签页功耗。","像素与公共排除矩形在有限CSS过渡结束后比较；合成过渡中的矩形与Canvas可能相差一帧，不代表图片覆盖。","性能为当前Mac/headless环境的step/frame采样，不构成真机FPS保证；像素读取与绘制观察期间不采性能，观察方法在采样前恢复原生。","自适应降级通过180粒子与每帧人工24ms模拟；不计入真实性能样本。","不访问外网、不读取真实作者凭据、不修改正式配置、文章或密文。"]};
     await fs.writeFile(path.join(ROOT,"artifacts/particle-results.json"),JSON.stringify(report,null,2)+"\n");
     console.log("粒子背景测试"+(passed?"全部通过":"存在失败")+"；报告：artifacts/particle-results.json。");if(!passed)process.exitCode=1;
   }finally{await new Promise(resolve=>server.close(resolve));}

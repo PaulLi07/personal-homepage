@@ -1,5 +1,5 @@
 /* 简介：个人资料与图片分栏。 */
-.about { position: relative; min-height: 100svh; padding: 150px var(--gutter) 62px; background: linear-gradient(180deg,#192229e8,var(--background) 95%); }
+.about { position: relative; min-height: 100svh; padding: 150px var(--gutter) 62px; background: #000; }
 .mainAbout { display: grid; grid-template-columns: minmax(0, 65fr) minmax(0, 32fr); gap: 3%; }
 .aboutimg { height: clamp(390px, 63vh, 720px); position: relative; overflow: hidden; }
 .aboutimg img { object-position: center 56%; }

@@ -56,7 +56,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/author/` | Experience 与 Moments 共用的密码登录、GitHub 连接、表单编辑和独立发布器 |
 | `modules/article-photos/` | 无首页分区的照片服务：数据规范、处理、选图、图库及 ZIP；照片文件仍归各文章 |
 | `modules/article-documents/` | 两栏 PDF 附件规范、选择及 Open / Download 链接；原文件仍归各文章 |
-| `modules/particle-background/` | 主页面粒子背景服务：局部运动、鼠标扰动、Canvas、配置与性能预算，无图片或运行时依赖 |
+| `modules/particle-background/` | 仅纯黑区域的微小白色实心点：局部运动、鼠标扰动、Canvas、配置与性能预算，无图片或运行时依赖 |
 | `modules/contact/` | 联系方式、背景与年份 |
 | `modules/credits/` | 图片署名独立页面 |
 | `shared/` | 真正跨模块使用的基础样式、导航、详情弹窗、过渡与注册接口 |
@@ -122,7 +122,9 @@ npm run relationship:check
 
 本轮在 `feat/emergent-particle-background` 开发，交付后保留功能分支，不整合 `main`、不推送。旧版 `main` 与 `backup/pre-emergence-2026-10-11` 保留在 `93bf256`，157 文件的旧静态源码包为 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip`。
 
-效果以局部规则和流场形成尘埃流及涡旋，参数集中在模块 `config.js`；手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果均由服务负责。可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真；本轮三内核 / 三视口及两种动态偏好共 201 流程通过，离线 227 条断言通过；视口模拟不等于真机。参数、接口和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
+粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About 的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
+
+局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 本轮修正通过三内核 / 三视口、两种动态偏好的 237 个流程、8088 条断言及离线核心 227 条断言，并完成基础兼容性回归。参数、接口和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
 
 ## 维护文档
 

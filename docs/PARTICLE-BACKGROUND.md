@@ -1,10 +1,22 @@
 # 粒子背景维护与回退
 
-功能源码位于 [粒子模块](../modules/particle-background/README.md)，独立注册为 `services`，覆盖主页面而不改变栏目内容。局部邻域规则参考 [Craig Reynolds 的 Boids 说明](https://www.red3d.com/cwr/boids/)中分离、对齐与聚集的思路；实际实现采用网格聚合与平滑 curl 流场，并非精确复现 Boids 或严格物理模型。画面变化来自局部速度与密度反馈、流场及鼠标扰动，不只是独立随机漂移。
+功能源码位于 [粒子模块](../modules/particle-background/README.md)，独立注册为 `services`，只在主页面明确标记的纯黑区域绘制。局部邻域规则参考 [Craig Reynolds 的 Boids 说明](https://www.red3d.com/cwr/boids/)中分离、对齐与聚集的思路；实际实现采用网格聚合与平滑 curl 流场，并非精确复现 Boids 或严格物理模型。画面变化来自局部速度与密度反馈、流场及鼠标扰动，不只是独立随机漂移。
+
+## 外观与绘制边界
+
+长期偏好为微小、密集、清晰的白色实心圆点，禁止模糊光晕。渲染直接用 Canvas `arc` 填白，不使用 sprite、渐变、blur 或模糊滤镜；粒径字段明确表示 CSS 像素半径。
+
+可绘模块以公开属性 `data-particle-surface="black"` 声明纯黑背景，并在自己的样式中保证 `#000`。当前只由 About 声明；其余区域保留图片背景，不绘粒子。服务将绘制裁剪到这些区域与当前视口相交的矩形，并排除区域内的 `img` 矩形，不覆盖头像或其他图片。不能仅为扩大粒子覆盖范围给图片背景加此属性，也不依赖服务推测 CSS 背景。
+
+声明后还会校验区域自身的计算样式：纯黑、不透明、无背景图；不满足时不绘制。区域里的 `img` 自动避让，全页面公开 `data-particle-exclude` 额外声明遮挡区域，目前由导航栏使用；矩形多留一像素防止圆边进入图片。`data-particle-foreground` 将对应模块内容放到前景，服务样式不依赖栏目私有类名。旋转或复杂形状的图片按外包矩形保守避让，可能多留空白。
+
+`img` 之外的 CSS 背景图片容器、SVG、视频等必须在所属模块显式声明 `data-particle-exclude`，不会自动识别。前景属性将普通容器设为相对定位；绝对或粘性定位组件应使用外层容器接入，避免改变原定位。后续模块扩展需新增这些接口的实测案例。
+
+新增纯黑区域时，只在对应模块声明这个公共属性并维护自身背景；服务仍负责矩形裁剪和滚动 / 尺寸变化，不把模块私有选择器写进服务。随后必须实测图片排除、黑色边界、前景可读性和滚动位置。所有读者及作者详情打开时继续暂停且隐藏粒子。
 
 ## 参数
 
-默认值集中于 `modules/particle-background/config.js`。尺寸、视口和鼠标坐标使用 CSS 像素，速度使用 CSS 像素/秒；内部模拟时间使用秒。
+默认值集中于 `modules/particle-background/config.js`。粒径为 CSS 像素半径；视口和鼠标坐标使用 CSS 像素，速度使用 CSS 像素/秒，内部模拟时间使用秒。
 
 | 键 | 默认值 | 允许范围及用途 |
 |---|---|---|
@@ -12,8 +24,8 @@
 | `count` | `4800` | 整数 0–12000；1440×900 参考视口的数量预算 |
 | `mobileCount` | `1400` | 整数 0–4000；窄屏或粗指针设备的数量上限 |
 | `averageSpeed` | `22` | 0–160；平均运动速度参数 |
-| `minSize` / `maxSize` | `0.32` / `1.15` | 各 0.15–3，最小值不大于最大值；粒子尺寸 |
-| `opacity` | `0.6` | 0–1；整体透明度 |
+| `minSize` / `maxSize` | `0.4` / `0.85` | 各 0.15–3，最小值不大于最大值；白色实心圆点半径，单位 CSS 像素 |
+| `opacity` | `0.85` | 0–1；整体透明度 |
 | `interactionRadius` | `170` | 20–450；鼠标扰动范围 |
 | `interactionStrength` | `1` | 0–5；鼠标旋转及排斥强度 |
 | `alignment` | `0.7` | 0–3；局部速度对齐权重 |
@@ -40,13 +52,14 @@ Homepage.particleBackground.getStats();
 Homepage.particleBackground.configure({ enabled: false });
 ```
 
-`configure()` 返回冻结的完整配置，非法补丁在生效前抛出英文错误。需要永久调整时修改源码默认值，执行 `npm run assemble` 与 `npm run check`，再验证桌面、窄屏、键盘、鼠标、详情、减少动态效果和文件打开。生成的 `index.html` 禁止手改。
+`configure()` 返回冻结的完整配置，非法补丁在生效前抛出英文错误。需要永久调整时修改源码默认值，执行 `npm run assemble` 与 `npm run check`，再验证桌面、窄屏、黑色表面裁剪与图片排除、键盘、鼠标、详情、减少动态效果和文件打开。配置数量或半径不会扩大公开标记的绘制范围；生成的 `index.html` 禁止手改。
 
 `getStats()` 返回诊断快照，不包含文章、作者会话或凭据。主要字段：
 
 | 字段 | 含义 |
 |---|---|
 | `requestedCount` / `count` | 当前视口完整预算 / 当前模拟数量 |
+| `renderedCount` / `surfaceCount` | 最近一次绘制的圆点数 / 视口内有效纯黑区域数；图片排除后通常小于模拟数量 |
 | `frameCount` / `running` | 已完成动画帧 / 当前是否安排动画 |
 | `width` / `height` / `pixelRatio` | CSS 视口尺寸及实际 Canvas 像素比 |
 | `meanSpeed` / `maxSpeed` / `finite` | 速度统计及数值是否有限 |
@@ -54,7 +67,7 @@ Homepage.particleBackground.configure({ enabled: false });
 | `pointerActive` / `reducedMotion` | 鼠标扰动状态 / 当前减少动态效果偏好 |
 | `adaptiveLevel` / `status` | 数量预算系数 / 当前生命周期状态 |
 
-`status` 为 `unsupported`、`disabled`、`reduced`、`paused`、`running` 或 `disposed`。后台或手动暂停保留画面，详情打开时暂停并隐藏画面；减少动态效果静态显示。Canvas 无法使用或绘制失败则停用效果。控制器的 `resume()` 仍遵守后台、详情及减少动态效果限制。
+`status` 为 `unsupported`、`disabled`、`reduced`、`paused`、`running` 或 `disposed`。后台或手动暂停保留画面，详情打开时暂停并隐藏画面；减少动态效果静态显示。滚动仍刷新区域与图片遮罩，区域样式、公开属性、图片加载和 CSS 过渡结束也触发合并补绘；这些重画不推动模拟或增加动画帧统计，卸载时取消补绘并断开观察器。Canvas 无法使用或绘制失败则停用效果。控制器的 `resume()` 仍遵守后台、详情及减少动态效果限制。
 
 ## 分支与回退
 
@@ -67,4 +80,4 @@ Homepage.particleBackground.configure({ enabled: false });
 3. 从旧包恢复：解压到独立目录，核对英文页面和资源后预览；用户要求部署旧网站时再上传包内文件。不要用旧包直接覆盖当前源码或用户新增资料。ZIP 不会自动清理远端新增文件，必要清理应另行核对范围。
 4. 将来已发布后回退：在部署分支创建明确的 `git revert <功能提交>` 回退提交，保留后续文章、附件和其他改动，再检查、实测及按授权发布。若涉及多个提交，先核对提交范围与冲突；不使用硬重置、强制切换、强制推送或删目录替代回退。
 
-旧测试属于旧版本证据；本轮粒子的实际环境、性能观测和未覆盖项见 [测试记录](modules/particle-background.md)，本轮已通过 201 个浏览器流程与 227 条离线断言。模拟视口不代表手机真机，测试机器的耗时不代表所有设备。
+2026-10-11 本次修正已通过三内核 / 三视口、正常与减少动态效果，共 237 个浏览器流程、8088 条断言，离线核心 227 条断言及基础兼容性亦回归通过。实际环境、性能观测、修复问题及历史证据见 [测试记录](modules/particle-background.md)。模拟视口不代表手机真机，测试机器的耗时不代表所有设备。

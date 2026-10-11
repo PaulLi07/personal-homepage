@@ -5,6 +5,7 @@
 - 入口：`#about`。
 - 文件：`section.html` 为简介片段，`styles.css` 管分栏与手机布局，`module.js` 注册分区，`images/portrait.jpg` 为个人图片占位。
 - 接口与边界：通过 `registerSection({ id: "about" })` 登记；进入动画由共享服务处理，模块没有跨功能数据读取。
+- 粒子接入：本模块维护纯黑 `#000` 背景，在根节点声明公开 `data-particle-surface="black"`，标题与内容容器声明 `data-particle-foreground`。粒子服务仅接入这些公开边界，裁剪图片区域，背景颜色及布局仍由本模块负责；不可把这个标记放在图片背景上。
 - 维护：修改资料编辑片段；用户提供的 ORCID 为 `https://orcid.org/0009-0005-6858-4000`，与联系区明确重复展示，不据此补写未经提供的个人经历。替换个人图片时同步英文替代文本、占位说明及署名页。更新重复出现的身份资料时显式核对首页和联系区。
 - 验证：[兼容性测试记录](../../docs/modules/about.md)；本轮运行 `npm run test:academic-profile` 检查 ORCID 展示、外链、键盘与手机布局，再回归分栏、图片裁切、邮箱及相邻首页。本轮 `test:academic-profile` 三内核/三视口、共 72 流程通过，具体环境和未覆盖项见所链测试记录；外链目标和属性已核对，测试不访问外站。
 
