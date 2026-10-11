@@ -21,7 +21,9 @@
 - 网站：<https://paulli07.github.io/personal-homepage/>。
 - 研究课题、论文、成果和个人故事目前仍有占位内容，使用用户提供的事实，不得编造。
 - 采用简洁学术风与宇宙主题，保持优雅、艺术感和克制；使用常规字体和适中标题，用户拒绝窄体超大展示文字。
-- 粒子必须微小、密集、清晰，呈白色实心圆点；禁止模糊光晕、渐变精灵或模糊滤镜。只在公开标记的纯黑背景区域显示，不能覆盖图片背景或区域内图片。当前 About 用 `data-particle-surface="black"` 声明纯黑 `#000` 背景，其他图片区域保持原样且不绘制粒子。粒径参数表示 CSS 像素半径，默认 `0.4`–`0.85`，透明度 `0.85`。
+- 粒子必须微小、密集、清晰，呈白色实心圆点；禁止模糊光晕、渐变精灵或模糊滤镜。只在公开标记的纯黑背景区域显示，不能覆盖图片背景或区域内图片。当前 About、Academic、Life 各自用 `data-particle-surface="black"` 声明纯黑 `#000` 背景；Academic 与 Life 不再使用整区背景图。粒径参数表示 CSS 像素半径，默认 `0.4`–`0.85`，透明度 `0.85`。
+- Academic 使用克制的学术细线区分层次；Life 保留错落照片，用白色细框和轻微叠层形成相框，不恢复整区图片背景或用粗重装饰遮挡内容。
+- Home 使用 About 的山水图内容，但保存独立 `modules/home/images/hero.jpg`，署名为 Ivan Rohovchenko / Unsplash。Contact 使用用户提供的原始 PNG，独立保存为 `modules/contact/images/background.png`；只注明用户提供、原作者与来源尚未确认，不能称为用户亲自拍摄。Home 与 Contact 均保留图片背景，不声明黑色粒子表面。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
@@ -88,6 +90,7 @@
 - 开始先检查状态；同步或发布前获取远端，检查未提交用户改动和远端差异。保留远端历史，使用快进拉取，不硬重置用户文件或强制推送共享历史。
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
 - **2026-10-11 粒子背景的用户明确约定优先于上条通用流程：**本轮保留 `feat/emergent-particle-background`，完成后不整合 `main`、不推送。`main` 与 `backup/pre-emergence-2026-10-11` 保留基线 `93bf256`，旧静态包保留在仓库外；先保存未提交改动再切回旧分支，不硬重置或强制覆盖。接口、参数与回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)，本轮新功能须有独立实测记录，不能沿用旧通过结论。
+- 本轮栏目布局之前的可回退点为 `backup/pre-section-layout-2026-10-11`（`3a2677c`），对应 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`；它保留此前仅 About 为黑色粒子表面的版本。更早的 `main` / `93bf256` 与原备份仍保留；选择回退点时核对版本范围，不丢弃后续内容。
 - 本地提交属于已授权维护，只暂存本任务文件；提交说明采用 `feat:`、`fix:`、`style:`、`docs:`、`chore:` 加简短描述，保留无关改动。
 - 框架或流程变化同步文档；模块扩展同步就近说明与测试记录，重要变化写入 `CHANGELOG.md`。
 - 普通维护完成本地修改和提交；只有用户请求发布或推送时更新远端，不因长期维护自行创建定时任务。

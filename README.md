@@ -122,9 +122,13 @@ npm run relationship:check
 
 本轮在 `feat/emergent-particle-background` 开发，交付后保留功能分支，不整合 `main`、不推送。旧版 `main` 与 `backup/pre-emergence-2026-10-11` 保留在 `93bf256`，157 文件的旧静态源码包为 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip`。
 
-粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About 的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
+本轮栏目布局之前另有 `backup/pre-section-layout-2026-10-11`（`3a2677c`）与 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`，保留此前仅 About 的黑色粒子版本。回退前先保存当前改动，再按所需版本选择备份；两组备份均保留。
 
-局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 本轮修正通过三内核 / 三视口、两种动态偏好的 237 个流程、8088 条断言及离线核心 227 条断言，并完成基础兼容性回归。参数、接口和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
+粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About、Academic、Life 各自的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
+
+Academic 与 Life 去掉整区背景图，分别采用学术细线和白色细框、克制叠层相框。Home 使用 Ivan Rohovchenko / Unsplash 的山水图，独立保存于自己的 `hero.jpg`；Contact 使用用户提供的原始 `background.png`，原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。
+
+局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 本轮三个黑色区域、相框和图片替换已通过 255 个流程、12234 条断言，覆盖三内核 / 三视口、两种动态偏好的 18 个主环境及 12 个补测；基础兼容性亦回归通过，外部请求与真实写入均为 0。此前 237 个流程 / 8088 条断言保留为历史；核心模拟未修改、本轮未重测，227 条离线断言仅为此前证据。参数、接口、实测限制和先保存改动再回退的步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
 
 ## 维护文档
 

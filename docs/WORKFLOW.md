@@ -14,7 +14,7 @@
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
 - `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与混合 ZIP，`modules/article-documents/` 独立提供 PDF 规范、选择与阅读链接。加载顺序为照片、PDF、作者，再加载栏目数据。集合数据、读者和实际文件仍由各自模块负责，Relationship 不接入公开附件。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
-- 粒子背景独立作为 `modules/particle-background/` 服务，胶水只挂载公共根节点及状态；参数、局部规则、鼠标输入、Canvas 层级、暂停和清理不放回胶水或栏目。调整时同步验证前景可读性、手机数量、DPR、减少动态效果、详情与失效回退。
+- 粒子背景独立作为 `modules/particle-background/` 服务，胶水只挂载公共根节点及状态；参数、局部规则、鼠标输入、Canvas 层级、暂停和清理不放回胶水或栏目。只绘制模块声明的纯黑区域，图片及公开排除区域保持干净。当前 About / Academic / Life 为黑区，Academic 使用细线、Life 使用白框叠层；Home 山水与 Contact 用户夜景各自维护独立图片。调整时同步验证前景可读性、手机数量、DPR、减少动态效果、详情与失效回退。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
 - 根 `index.html`、`credits.html` 是生成产物，修改源片段或模板后显式装配，禁止手改生成页面。保持相对资源路径、普通脚本和直接文件打开能力。
 
@@ -38,7 +38,7 @@ git switch -c feat/short-topic
 
 通过检查与实测后整合到本地 `main`。
 
-**本轮例外（2026-10-11，用户明确要求）：**粒子背景保留在 `feat/emergent-particle-background`，完成后也不整合 `main`、不推送。`main` 与 `backup/pre-emergence-2026-10-11` 保留 `93bf256`，仓库外另有 157 文件的旧包。回退前先完整保存未提交及所需忽略文件，再切回旧分支；不硬重置、强制推送或删目录回退。临时关闭及后续已部署版本的回退见 [专门指南](PARTICLE-BACKGROUND.md)。
+**本轮例外（2026-10-11，用户明确要求）：**粒子背景保留在 `feat/emergent-particle-background`，完成后也不整合 `main`、不推送。`main` 与 `backup/pre-emergence-2026-10-11` 保留 `93bf256`，仓库外另有 157 文件的旧包。回退前先完整保存未提交及所需忽略文件，再切回旧分支；不硬重置、强制推送或删目录回退。本轮栏目布局前另存 `backup/pre-section-layout-2026-10-11`（`3a2677c`）及 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`，可仅回退这次分区与图片变化。临时关闭及后续已部署版本的回退见 [专门指南](PARTICLE-BACKGROUND.md)。
 
 ## 3. 模块扩展与说明
 
@@ -106,11 +106,13 @@ git status --short --branch
 
 普通维护完成本地修改、检查、实测与提交，交付摘要说明变更、验证和提交状态。仅在用户明确请求发布或推送时更新远端。
 
-本轮粒子背景按第 2 节的明确约定只交付功能分支与本地预览；下面的常规部署步骤不构成本轮合并或推送授权。新服务已单独完成 201 个浏览器流程和 227 条离线断言；环境、人工负载与未覆盖项见 [粒子记录](modules/particle-background.md)，后续改动须重新测试。
+本轮粒子背景按第 2 节的明确约定只交付功能分支与本地预览；下面的常规部署步骤不构成本轮合并或推送授权。2026-10-11 分区和图片更新完成三内核 / 三视口、两种动态偏好的 255 个流程与 12234 条断言，基础兼容性回归通过；核心模拟未修改、未重测，201 / 237 及离线 227 均为此前版本历史。环境、人工负载与未覆盖项见 [粒子记录](modules/particle-background.md)，后续改动须重新测试。
 
 **手动上传：**运行 `npm run package`，解压 `../outputs/personal-homepage-source.zip`，将解压后 `personal-homepage/` 内部文件和目录上传到仓库根目录。保留生成的 `index.html`、`credits.html`、模块和共享资源以及 `.nojekyll`；服务器无需重新装配。
 
 手动上传当前版本时，远端旧的 `css/`、`js/`、`assets/` 目录及 `modules/academic/research/`、`modules/life/places/`、`modules/life/notes/`、`modules/life/outside/` 需随迁移删除；后四项分别由 experience / travels / creations / relationship 替代。它们已从正式源码移除，通过 Git 推送相应提交会同步删除；上传新增文件不会自动清理旧目录。先核对远端内容并保留用户新增资料及 Git 历史，再按迁移范围处理。
+
+本次布局移除的三个旧文件为 `modules/academic/images/background.jpg`、`modules/life/images/background.jpg`、`modules/contact/images/background.jpg`。手动上传新内容不会删除它们；确认远端仍为旧背景文件后再清理，不删除四栏目各自的 `images/cover.jpg` 或用户新附件。
 
 **Git 推送：**按授权范围核对远端最新状态和待发布提交，再执行：
 

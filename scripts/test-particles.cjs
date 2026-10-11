@@ -17,6 +17,7 @@ const ROOT = path.resolve(__dirname, ".."), PREFIX = "/personal-homepage/";
 const ENGINES = ["chromium", "firefox", "webkit"];
 const VIEWPORTS = [{width:1440,height:900},{width:390,height:844},{width:320,height:780}];
 const CANVAS = "canvas.particle-background__canvas";
+const BLACK_SECTIONS = ["about", "academic", "life"];
 const MIME = {".html":"text/html", ".css":"text/css", ".js":"text/javascript", ".svg":"image/svg+xml", ".jpg":"image/jpeg", ".png":"image/png", ".webp":"image/webp"};
 let playwright;
 try { playwright = require(process.env.HOMEPAGE_PLAYWRIGHT_MODULE || "playwright"); }
@@ -96,7 +97,12 @@ async function surfacePixels(page,selector) {
   return page.evaluate(({canvasSelector,selector})=>{
     const canvas=document.querySelector(canvasSelector),context=canvas.getContext("2d"),ratio=canvas.width/innerWidth;
     const rect=node=>{const value=node.getBoundingClientRect();return {left:value.left,top:value.top,right:value.right,bottom:value.bottom};};
-    const surfaces=Array.from(document.querySelectorAll('[data-particle-surface="black"]')).map(rect);
+    const surfaces=Array.from(document.querySelectorAll('[data-particle-surface="black"]')).filter(node=>{
+      const bounds=node.getBoundingClientRect(),style=getComputedStyle(node);
+      return bounds.width>0&&bounds.height>0&&bounds.left<innerWidth&&bounds.right>0&&bounds.top<innerHeight&&bounds.bottom>0
+        &&style.display!=="none"&&style.visibility!=="hidden"&&style.backgroundColor==="rgb(0, 0, 0)"
+        &&style.backgroundImage==="none"&&Number(style.opacity)===1;
+    }).map(rect);
     const images=Array.from(document.querySelectorAll('[data-particle-surface="black"] img')).map(rect);
     const excludes=Array.from(document.querySelectorAll("[data-particle-exclude]")).map(rect);
     const target=selector?rect(document.querySelector(selector)):null;
@@ -112,7 +118,9 @@ async function surfacePixels(page,selector) {
       if(target&&contains(target,cssX,cssY,1/ratio))targetPixels++;
       if(data[index]!==255||data[index+1]!==255||data[index+2]!==255)nonWhite++;
     }
-    return {visible,outsideSurface,imagePixels,excludedPixels,targetPixels,nonWhite,surfaces,images,background:getComputedStyle(document.querySelector("#about")).backgroundColor};
+    const background=getComputedStyle(document.querySelector(selector||"#about"));
+    return {visible,outsideSurface,imagePixels,excludedPixels,targetPixels,nonWhite,surfaces,images,
+      background:background.backgroundColor,backgroundImage:background.backgroundImage,opacity:Number(background.opacity)};
   },{canvasSelector:CANVAS,selector});
 }
 async function scrollSection(page,id) {
@@ -141,17 +149,35 @@ async function heroReady(page) {
   assert.equal(await page.locator(".hero-backdrop img").evaluate(node=>getComputedStyle(node).visibility!=="hidden"&&Number(getComputedStyle(node).opacity)>0),true);
   assert.match(await page.locator("#home-title").innerText(),/Yuhong Li/);
 }
-async function assertBlackSurface(page) {
+async function visibleImagesReady(page,id) {
+  await page.waitForFunction(id=>Array.from(document.querySelectorAll("#"+id+" img")).every(image=>{
+    const bounds=image.getBoundingClientRect();
+    return image.getAttribute("aria-hidden")==="true"||bounds.right<=0||bounds.left>=innerWidth||bounds.bottom<=0||bounds.top>=innerHeight
+      ||image.complete&&image.naturalWidth>0;
+  }),id);
+  await browserFrames(page,2);
+}
+async function assertBlackSurface(page,id="about") {
   // 有限CSS过渡结束后对齐当前矩形与Canvas，避免把合成中间帧当成固定几何。
   await settleGeometry(page);
-  const value=await surfacePixels(page);
-  assert.equal(value.background,"rgb(0, 0, 0)");assert.ok(value.visible>0,"纯黑背景未画出粒子");
+  const value=await surfacePixels(page,"#"+id);
+  assert.equal(value.background,"rgb(0, 0, 0)");assert.equal(value.backgroundImage,"none");assert.equal(value.opacity,1);
+  assert.ok(value.targetPixels>0,id+"纯黑背景未画出粒子");
   assert.equal(value.outsideSurface,0,"粒子画到纯黑surface之外");
-  assert.equal(value.imagePixels,0,"粒子画到About照片内");
+  assert.equal(value.imagePixels,0,"粒子画到黑区照片或封面内");
   assert.equal(value.excludedPixels,0,"粒子画到公共排除区域内");
   assert.equal(value.nonWhite,0,"粒子实际像素不是纯白");
   const state=await stats(page);assert.ok(state.renderedCount>0&&state.renderedCount<state.count,"当帧黑区绘制数未与全模拟数量区分");
+  assert.equal(state.surfaceCount,value.surfaces.length,"可见纯黑区域数量不符");
   return value;
+}
+async function assertRejectedSurface(page,id="about") {
+  await settleGeometry(page);
+  const value=await surfacePixels(page,"#"+id),state=await stats(page);
+  assert.equal(value.targetPixels,0,"不合格或已移除标记的"+id+"仍画出粒子");
+  assert.equal(value.outsideSurface,0);assert.equal(value.imagePixels,0);assert.equal(value.excludedPixels,0);
+  assert.equal(state.surfaceCount,value.surfaces.length,"相邻黑区的真实可见数量不符");
+  if(!value.surfaces.length){assert.equal(value.visible,0);assert.equal(state.renderedCount,0);}
 }
 async function pointerPath(page) {
   return page.evaluate(()=>{
@@ -185,6 +211,7 @@ async function hitTest(page,selector) {
 }
 async function shot(page,engine,viewport,name,screenshots) {
   if (engine!=="chromium" || ![1440,390].includes(viewport.width)) return;
+  await settleGeometry(page);
   const filename="artifacts/screenshots/particles-"+viewport.width+"-"+name+".png";
   await page.screenshot({path:path.join(ROOT,filename),animations:"disabled"}); screenshots.push(filename);
 }
@@ -214,21 +241,35 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       assert.equal(await page.locator("#main").evaluate(node=>node.classList.contains("has-particle-background")),true);
       assert.equal(await page.locator(CANVAS).getAttribute("aria-hidden"),"true");
       assert.equal(await page.locator(CANVAS).evaluate(node=>getComputedStyle(node).pointerEvents),"none");
+      assert.equal(await page.locator(CANVAS).evaluate(node=>getComputedStyle(node).filter),"none","Canvas本身被CSS滤镜模糊");
       assert.equal(await page.locator(CANVAS).evaluate(node=>node.closest("#main")!==null),true);
       const state=await stats(page); finiteStats(state); assert.equal(state.count,viewport.width<700?1400:4800);
       assert.equal(state.reducedMotion,reduced); assert.equal(state.running,!reduced);
       await hitTest(page,'.navlinks a[href="#about"]');
       assert.equal(await page.locator("#main input[type=range]").count(),0,"额外前台参数表单");
     });
-    await step("图片背景透明与纯黑区域白色实心圆点",async()=>{
-      await scrollSection(page,"home");assert.equal((await pixels(page)).visible,0,"首页图片上仍有粒子");
-      assert.equal((await stats(page)).renderedCount,0);
-      const home=await surfacePixels(page),visibleSurfaces=home.surfaces.filter(box=>box.left<viewport.width&&box.right>0&&box.top<viewport.height&&box.bottom>0);
-      assert.equal((await stats(page)).surfaceCount,visibleSurfaces.length);
+    await step("Home/Contact图片透明与三个纯黑栏目白色实心圆点",async()=>{
+      assert.deepEqual(await page.locator('[data-particle-surface="black"]').evaluateAll(nodes=>nodes.map(node=>node.id)),BLACK_SECTIONS);
+      for(const id of ["academic","life"])assert.equal(await page.locator("#"+id+" .section-background").count(),0,id+"整区背景图仍保留");
+      const heroFile=await fs.readFile(path.join(ROOT,"modules/home/images/hero.jpg"));
+      assert.equal(heroFile.equals(await fs.readFile(path.join(ROOT,"modules/about/images/portrait.jpg"))),true,"Home未复制About原山水图");
+      const contactFile=await fs.readFile(path.join(ROOT,"modules/contact/images/background.png"));
+      assert.equal(contactFile.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),true,"Contact资源不是PNG");
+      assert.equal(await page.locator("#contact .section-background img").getAttribute("src"),"modules/contact/images/background.png");
+      await scrollSection(page,"home");await settleGeometry(page);
+      const home=await surfacePixels(page,"#home");assert.equal(home.targetPixels,0,"首页图片上仍有粒子");assert.equal(home.outsideSurface,0);
+      assert.equal((await stats(page)).surfaceCount,home.surfaces.length);
       await shot(page,engine,viewport,reduced?"hero-reduce":"hero",screenshots);
-      for(const id of ["academic","life","contact"]){
-        await scrollSection(page,id);
-        const value=await surfacePixels(page,"#"+id);assert.equal(value.targetPixels,0,id+"图片背景上仍有粒子");assert.equal(value.outsideSurface,0);
+      await scrollSection(page,"contact");await settleGeometry(page);
+      const contactImage=page.locator("#contact .section-background img");await contactImage.waitFor({state:"visible"});
+      await contactImage.evaluate(image=>image.complete&&image.naturalWidth>0||new Promise((resolve,reject)=>{image.onload=()=>resolve(true);image.onerror=reject;}));
+      const contact=await surfacePixels(page,"#contact");assert.equal(contact.targetPixels,0,"Contact图片上仍有粒子");assert.equal(contact.outsideSurface,0);
+      await shot(page,engine,viewport,reduced?"contact-reduce":"contact",screenshots);
+      const sections={};
+      for(const id of BLACK_SECTIONS){
+        await scrollSection(page,id);await visibleImagesReady(page,id);
+        sections[id]=await assertBlackSurface(page,id);
+        if(id!=="about")await shot(page,engine,viewport,id+(reduced?"-reduce":""),screenshots);
       }
       await scrollSection(page,"about");const surface=await assertBlackSurface(page);
       const trace=await page.evaluate(()=>window.__particlePaintTrace);
@@ -236,8 +277,44 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       assert.equal(trace.gradient,0);assert.equal(trace.blur,0);assert.equal(trace.nonWhiteFill,0);
       assert.ok(trace.minRadius>=.4-.00001&&trace.maxRadius<=.85+.00001,"默认半径超出微小圆点范围");
       const painted=await stats(page);
-      rendering={surface,trace,simulationCount:painted.count,renderedCount:painted.renderedCount,geometryBoundaryToleranceDevicePixels:1};
+      rendering={surface,sections,home,contact,trace,simulationCount:painted.count,renderedCount:painted.renderedCount,geometryBoundaryToleranceDevicePixels:1};
       await page.evaluate(()=>window.__restoreParticlePaintMethods());
+    });
+    await step("学术封面切换和生活白框叠层、四卡键盘交互",async()=>{
+      for(const [key,label]of [["experience","Experience"],["publications","Publications"],["notes","Notes"],["projects","Projects"]]){
+        const button=page.locator('[data-academic="'+key+'"]');await button.scrollIntoViewIfNeeded();await button.focus();
+        assert.equal(await page.locator("#preview-label").textContent(),label);
+        const active=page.locator('.preview-stack img.is-active');assert.equal(await active.count(),1);
+        assert.equal(await active.getAttribute("data-preview"),key);assert.equal(await active.getAttribute("aria-hidden"),"false");
+        await page.waitForFunction(key=>{const image=document.querySelector('[data-preview="'+key+'"]');return image.complete&&image.naturalWidth>0;},key);
+        await assertBlackSurface(page,"academic");await hitTest(page,'[data-academic="'+key+'"]');
+      }
+      if(viewport.width>700){await page.locator('[data-academic="notes"]').hover();assert.equal(await page.locator("#preview-label").textContent(),"Notes");}
+      await scrollSection(page,"life");
+      const frame=await page.locator(".life-frame").evaluate(node=>{
+        const style=getComputedStyle(node),layer=getComputedStyle(node,"::before"),rect=node.getBoundingClientRect();
+        return {width:rect.width,height:rect.height,foreground:node.hasAttribute("data-particle-foreground"),excluded:node.hasAttribute("data-particle-exclude"),
+          border:style.borderTopWidth,color:style.borderTopColor,borderStyle:style.borderTopStyle,
+          layerContent:layer.content,layerBorder:layer.borderTopWidth,layerColor:layer.borderTopColor,layerPosition:layer.position,
+          layerInset:[layer.top,layer.right,layer.bottom,layer.left]};
+      });
+      assert.ok(frame.width>0&&frame.height>0);assert.equal(frame.foreground,true);assert.equal(frame.excluded,false,"生活整框被排除，框内没有粒子");
+      assert.ok(parseFloat(frame.border)>=1);assert.equal(frame.borderStyle,"solid");assert.match(frame.color,/rgba?\(255, 255, 255(?:\)|,)/);
+      assert.ok(!["none","normal"].includes(frame.layerContent));assert.ok(parseFloat(frame.layerBorder)>0);
+      assert.match(frame.layerColor,/rgba?\(255, 255, 255(?:\)|,)/);assert.equal(frame.layerPosition,"absolute");
+      assert.ok(frame.layerInset.some(value=>parseFloat(value)!==0),"生活第二轮廓未偏移");
+      for(const [key,title]of [["moments","Moments."],["travels","Travels."],["creations","Creations."],["relationship","Relationship."]]){
+        const selector='[data-life="'+key+'"]',button=page.locator(selector);await button.scrollIntoViewIfNeeded();
+        await page.waitForFunction(selector=>{const image=document.querySelector(selector+" img");return image.complete&&image.naturalWidth>0;},selector);
+        await hitTest(page,selector);await button.focus();await page.keyboard.press("Enter");
+        await page.waitForFunction(()=>document.getElementById("detail-dialog").open);
+        assert.equal(new URL(page.url()).hash,"#life/"+key);assert.equal(await page.locator("#detail-title").textContent(),title);
+        assert.equal((await stats(page)).running,false);
+        await page.keyboard.press("Escape");await page.waitForFunction(()=>!document.getElementById("detail-dialog").open);
+        await page.waitForFunction(selector=>document.activeElement===document.querySelector(selector),selector);
+        assert.equal((await stats(page)).running,!reduced);await assertBlackSurface(page,"life");
+      }
+      rendering.lifeFrame=frame;await scrollSection(page,"about");await assertBlackSurface(page);
     });
     await step("非纯黑、渐变或半透明surface拒绝绘制",async()=>{
       for(const patch of [{backgroundColor:"rgb(1, 1, 1)"},{backgroundImage:"linear-gradient(#000, #000)"},{opacity:"0.5"}]){
@@ -245,8 +322,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
           const node=document.querySelector("#about");window.__particleSurfaceStyle=node.getAttribute("style");
           Object.assign(node.style,patch);window.scrollBy({top:2,behavior:"instant"});
         },patch);
-        await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"不合格surface仍画出粒子");
-        assert.equal((await stats(page)).renderedCount,0);
+        await browserFrames(page,4);await assertRejectedSurface(page);
         await page.evaluate(()=>{
           const node=document.querySelector("#about");
           if(window.__particleSurfaceStyle===null)node.removeAttribute("style");else node.setAttribute("style",window.__particleSurfaceStyle);
@@ -259,8 +335,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
         const node=document.querySelector("#about");window.__particleSurfaceStyle=node.getAttribute("style");
         node.style.backgroundColor="rgb(1, 1, 1)";
       });
-      await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"静态样式变化没有刷新遮罩");
-      assert.equal((await stats(page)).renderedCount,0);
+      await browserFrames(page,4);await assertRejectedSurface(page);
       if(reduced)assert.equal((await stats(page)).frameCount,beforeStaticChange.frameCount,"样式刷新推动了静态模拟");
       await page.evaluate(()=>{
         const node=document.querySelector("#about");
@@ -268,8 +343,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       });
       await browserFrames(page,4);await assertBlackSurface(page);
       await page.evaluate(()=>document.querySelector("#about").removeAttribute("data-particle-surface"));
-      await browserFrames(page,4);assert.equal((await pixels(page)).visible,0,"移除surface属性后残留粒子");
-      assert.equal((await stats(page)).surfaceCount,0);assert.equal((await stats(page)).renderedCount,0);
+      await browserFrames(page,4);await assertRejectedSurface(page);
       await page.evaluate(()=>document.querySelector("#about").setAttribute("data-particle-surface","black"));
       await browserFrames(page,4);await assertBlackSurface(page);
     });

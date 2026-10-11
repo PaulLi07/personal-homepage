@@ -1,5 +1,5 @@
 {
-  "modules/home/images/hero.jpg": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
+  "modules/home/images/hero.jpg": "https://images.unsplash.com/photo-1669327195331-cd47e0d5eef0?auto=format&fit=max&w=1600&q=85",
   "modules/about/images/portrait.jpg": "https://images.unsplash.com/photo-1669327195331-cd47e0d5eef0?auto=format&fit=max&w=1600&q=85",
   "modules/academic/experience/images/cover.jpg": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
   "modules/academic/publications/images/cover.jpg": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg",
@@ -9,7 +9,5 @@
   "modules/life/travels/images/cover.jpg": "https://images.unsplash.com/photo-1752007085564-8c25ced4f024?auto=format&fit=max&w=1000&q=85",
   "modules/life/creations/images/cover.jpg": "https://images.unsplash.com/photo-1626495121472-477b55186c0b?auto=format&fit=max&w=1000&q=85",
   "modules/life/relationship/images/cover.jpg": "https://images.unsplash.com/photo-1546260912-ad4e2adc72a0?auto=format&fit=max&w=1000&q=85",
-  "modules/academic/images/background.jpg": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
-  "modules/contact/images/background.jpg": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg",
-  "modules/life/images/background.jpg": "https://images.unsplash.com/photo-1626495121472-477b55186c0b?auto=format&fit=max&w=1000&q=85"
+  "modules/contact/images/background.png": null
 }

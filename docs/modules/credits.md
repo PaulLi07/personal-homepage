@@ -1,5 +1,11 @@
 # 图片署名模块测试记录
 
+## 2026-10-11：当前素材用途同步
+
+英文署名已同步：山水图用于 Home / About / Moments；Academic / Life 不再使用整区背景图，Contact 标记为用户提供图且原作者 / 来源未确认。当前下载清单包含 11 个实际文件，其中 Contact 来源 URL 为 `null`，不伪造作者或链接。
+
+`npm run test:compat` 于北京时间 16:05:17 在 Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5，1440×900 / 390×844 / 320×780 通过：英文内容、无横向溢出及返回 Contact 正常；另以静态检查核对清单的全部文件与当前用途。手机为模拟，外部来源访问和线上新部署未测试，见 [总记录](../COMPATIBILITY.md)。以下为历史记录。
+
 ## 2026-10-10 栏目署名同步
 
 署名条目已同步到 Experience、Travels、Creations、Relationship 的模块路径。`npm run test:compat` 在 Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5 的 1440×900、390×844、320×780 视口验证图片资源、英文文字、署名页无横向溢出和返回 Contact 入口通过；手机为模拟视口。真实线上部署及外部素材链接未实测，见 [兼容性实测](../COMPATIBILITY.md)。

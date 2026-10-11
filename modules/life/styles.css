@@ -1,40 +1,48 @@
-/* 生活：照片位置、背景与响应式布局。 */
-.page3 { min-height: max(100svh,850px); position: relative; background: var(--dark); isolation: isolate; overflow: hidden; }
-.life-background img { opacity: .23; filter: grayscale(1) brightness(.45); }
+/* 生活：纯黑画布、白色双层轮廓与独立照片。 */
+.page3 { min-height: 100svh; position: relative; padding: 36px var(--gutter) 56px; background: #000; overflow: hidden; }
+.life-frame { position: relative; min-height: max(800px,calc(100svh - 92px)); border: 1px solid #ffffffb8; }
+.life-frame::before { content: ""; position: absolute; inset: 9px -9px -9px 9px; border: 1px solid #ffffff40; pointer-events: none; }
 .life-heading { position: absolute; z-index: 3; inset: 42% 26% auto; text-align: center; pointer-events: none; }
-.life-heading .section-heading { font-size: clamp(32px,3.3vw,50px); margin-top: 16px; text-shadow: 0 2px 35px #000; }
+.life-heading .section-heading { font-size: clamp(32px,3.3vw,50px); margin-top: 16px; }
 .movable { position: absolute; padding: 0; text-align: center; z-index: 2; translate: 0 var(--drift,0px); transition: transform .5s; }
-.movable:hover { transform: translateY(-8px) rotate(0deg); }
-.movable .life-image { display: block; width: 100%; height: 100%; overflow: hidden; }
-.movable img { box-shadow: 0 15px 45px #0006; filter: saturate(.68); transition: filter .4s, transform .6s; }
-.movable:hover img { filter: none; transform: scale(1.04); }
+.movable:hover, .movable:focus-visible { transform: translateY(-5px) rotate(0deg); }
+.movable .life-image { display: block; position: relative; width: 100%; height: 100%; border: 1px solid #ffffffdc; background: #000; }
+.movable .life-image::before { content: ""; position: absolute; inset: 8px -8px -8px 8px; z-index: -1; border: 1px solid #ffffff59; background: #000; pointer-events: none; }
+.movable img { filter: saturate(.68); transition: filter .4s; }
+.movable:hover img, .movable:focus-visible img { filter: none; }
 .movable .life-caption { display: block; padding-top: 12px; font: 400 14px/1.5 var(--body); }
 .photo-one { top: 21%; left: 12%; width: 17%; height: 40%; transform: rotate(-5deg); }
 .photo-two { top: 39%; right: 12%; width: 16%; height: 36%; transform: rotate(6deg); }
 .photo-three { top: 12%; right: 34%; width: 21%; height: 25%; transform: rotate(3deg); }
 .photo-four { top: 70%; left: 35%; width: 21%; height: 23%; transform: rotate(-4deg); }
-.life-footnote { position: absolute; left: var(--gutter); bottom: 28px; color: #ffffff8f; font-size: 10px; max-width: 250px; }
+.life-footnote { position: absolute; left: 28px; bottom: 26px; color: #ffffff8f; font-size: 10px; max-width: 250px; }
 
 @media (max-width:1000px) {
-  .page3 { min-height: 900px; }
+  .life-frame { min-height: 840px; }
   .life-heading { inset-inline: 25%; }
 }
 
 @media (max-width:760px) {
-  .page3 { min-height: 1020px; }
-  .photo-one { top: 22%; left: 6%; width: 29%; height: 24%; }
-  .photo-two { top: 56%; right: 6%; width: 28%; height: 28%; }
-  .photo-three { top: 14%; right: 6%; width: 43%; height: 21%; }
-  .photo-four { top: 76%; left: 10%; width: 38%; height: 16%; }
-  .life-heading { inset: 53% 12% auto; }
+  .page3 { min-height: 0; padding-block: 28px 46px; }
+  .life-frame { min-height: 0; padding: 30px 18px 26px; display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 36px 26px; align-items: start; }
+  .life-frame::before { inset: 6px -6px -6px 6px; }
+  .life-heading { position: relative; inset: auto; grid-column: 1 / -1; text-align: left; }
   .life-heading .section-heading { font-size: 34px; }
+  .movable { position: relative; inset: auto; width: auto; height: auto; min-width: 0; }
+  .movable .life-image { height: auto; aspect-ratio: .8; }
+  .movable .life-image::before { inset: 6px -6px -6px 6px; }
+  .photo-one { margin-top: 8px; transform: rotate(-3deg); }
+  .photo-two { margin-top: 30px; transform: rotate(3deg); }
+  .photo-three { transform: rotate(-2deg); }
+  .photo-four { margin-top: 12px; transform: rotate(2deg); }
+  .photo-three .life-image { aspect-ratio: 1.1; }
+  .photo-four .life-image { aspect-ratio: .9; }
   .movable .life-caption { font-size: 13px; padding-top: 8px; }
-  .life-footnote { bottom: 20px; max-width: 210px; font-size: 8px; }
+  .life-footnote { position: static; grid-column: 1 / -1; max-width: 250px; font-size: 9px; }
 }
 
 @media (max-width:400px) {
   .life-heading .section-heading { font-size: 28px; }
-  .page3 { min-height: 950px; }
 }
 
 @media (prefers-reduced-motion:reduce) {
