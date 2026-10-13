@@ -120,6 +120,8 @@
       const t = elapsed % 100000;
       const pointerActive = pointer?.active === true && Number.isFinite(pointer.x) && Number.isFinite(pointer.y);
       const px = pointerActive ? pointer.x : 0, py = pointerActive ? pointer.y : 0;
+      const offsetX = pointerActive && Number.isFinite(pointer.offsetX) ? pointer.offsetX : 0;
+      const offsetY = pointerActive && Number.isFinite(pointer.offsetY) ? pointer.offsetY : 0;
       const pvx = pointerActive && Number.isFinite(pointer.vx) ? Math.max(-3000, Math.min(3000, pointer.vx)) : 0;
       const pvy = pointerActive && Number.isFinite(pointer.vy) ? Math.max(-3000, Math.min(3000, pointer.vy)) : 0;
       const gestureSpeed = Math.min(2000, Math.hypot(pvx, pvy));
@@ -195,7 +197,9 @@
         let nextVX = vx[i] + (directionX / length * targetSpeed - vx[i]) * blend;
         let nextVY = vy[i] + (directionY / length * targetSpeed - vy[i]) * blend;
         if (pointerActive && settings.interactionStrength) {
-          const dx = positionX - px, dy = positionY - py, distanceSquared = dx * dx + dy * dy;
+          // 输入与可见粒子使用同一坐标系，视差及边缘回绕后搅动仍跟随鼠标。
+          const dx = wrap(positionX + offsetX, w) - px, dy = wrap(positionY + offsetY, h) - py;
+          const distanceSquared = dx * dx + dy * dy;
           if (distanceSquared < radiusSquared) {
             const distance = Math.sqrt(distanceSquared), divisor = Math.max(distance, 1);
             const influence = Math.pow(1 - distance / radius, 2) * settings.interactionStrength;

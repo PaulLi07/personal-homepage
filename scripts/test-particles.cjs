@@ -71,6 +71,21 @@ async function setupContext(browser, options, url, unsupported = false) {
 const stats = page => page.evaluate(() => window.Homepage.particleBackground.getStats());
 const config = page => page.evaluate(() => window.Homepage.particleBackground.getConfig());
 const configure = (page,patch) => page.evaluate(patch => window.Homepage.particleBackground.configure(patch),patch);
+async function waitParallax(page,x=0,y=0) {
+  await page.waitForFunction(({x,y})=>{
+    const state=window.Homepage.particleBackground.getStats();
+    return Math.abs(state.parallaxX-x)<.00001&&Math.abs(state.parallaxY-y)<.00001;
+  },{x,y});
+}
+function assertParallaxZero(state) {
+  // JS 的 -0 与 0 都是数学零；这里仍严格拒绝任何非零偏移。
+  assert.equal(state.parallaxX===0,true,"暂停/关闭后水平视差没有清零");
+  assert.equal(state.parallaxY===0,true,"暂停/关闭后垂直视差没有清零");
+}
+function parallaxPoint(viewport,x,y,distance=40) {
+  const clientX=Math.round(viewport.width*x),clientY=Math.round(viewport.height*y);
+  return {x:clientX,y:clientY,targetX:-(clientX/viewport.width*2-1)*distance,targetY:-(clientY/viewport.height*2-1)*distance};
+}
 async function browserFrames(page,count=8) {
   await page.evaluate(count => new Promise(resolve => {
     const step = () => { if (--count <= 0) resolve(); else requestAnimationFrame(step); }; requestAnimationFrame(step);
@@ -192,7 +207,7 @@ async function pointerPath(page) {
   });
 }
 function finiteStats(value) {
-  for (const name of ["count","requestedCount","renderedCount","surfaceCount","frameCount","width","height","pixelRatio","meanSpeed","maxSpeed","stepMs","frameMs","adaptiveLevel"]) {
+  for (const name of ["count","requestedCount","renderedCount","surfaceCount","frameCount","width","height","pixelRatio","meanSpeed","maxSpeed","stepMs","frameMs","adaptiveLevel","parallaxX","parallaxY"]) {
     assert.equal(typeof value[name],"number","缺少stats字段："+name); assert.ok(Number.isFinite(value[name]),name+"不是有限数");
   }
   assert.equal(value.finite,true); assert.equal(typeof value.running,"boolean"); assert.equal(typeof value.pointerActive,"boolean");
@@ -226,7 +241,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
   return assertionScopes.run(scope,async()=>{
   const environment = await setupContext(browser,{viewport,reducedMotion,hasTouch:viewport.width<700},url);
   const {context,page,errors,blocked}=environment, steps=[],screenshots=[],performance=[];
-  let rendering;
+  let rendering,parallax;
   const reduced = reducedMotion==="reduce";
   const step=async(name,task)=>{await task();await layout(page);steps.push({name,status:"通过"});};
   try {
@@ -235,6 +250,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
     await step("独立Canvas默认数量、语义、层级及参数接口",async()=>{
       const initial=await config(page); assert.equal(initial.count,4800); assert.equal(initial.mobileCount,1400); assert.equal(initial.averageSpeed,22);
       assert.equal(initial.minSize,.4);assert.equal(initial.maxSize,.85);assert.equal(initial.opacity,.85);
+      assert.equal(initial.parallaxDistance,40);assert.equal(initial.parallaxResponse,8);
       await configure(page,{adaptiveQuality:false});
       await heroReady(page);
       await page.locator(CANVAS).waitFor({state:"visible"});
@@ -359,7 +375,8 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       const before=await config(page);
       const rejected=await page.evaluate(()=>{
         const api=window.Homepage.particleBackground;
-        return [{unknown:true},{count:1.5},{averageSpeed:NaN},{opacity:Infinity},{minSize:2,maxSize:1},{count:-1},{opacity:-1}]
+        return [{unknown:true},{count:1.5},{averageSpeed:NaN},{opacity:Infinity},{minSize:2,maxSize:1},{count:-1},{opacity:-1},
+          {parallaxDistance:-1},{parallaxDistance:121},{parallaxDistance:NaN},{parallaxResponse:0},{parallaxResponse:21},{parallaxResponse:Infinity}]
           .map(patch=>{try{api.configure(patch);return false;}catch{return true;}});
       });
       assert.ok(rejected.every(Boolean)); assert.deepEqual(await config(page),before);
@@ -370,9 +387,95 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await configure(page,{opacity:.55});assert.ok((await pixels(page)).visible>0);
       await configure(page,before);
     });
+    await step("零速隔离的真实鼠标反向视差、驻留及图片裁剪",async()=>{
+      const before=await config(page);
+      await scrollSection(page,"about");await settleGeometry(page);
+      await configure(page,{averageSpeed:0,interactionStrength:0,parallaxDistance:40,parallaxResponse:20});
+      await page.mouse.move(viewport.width/2,viewport.height/2);await waitParallax(page);
+      assert.equal(await page.locator(CANVAS).evaluate(node=>getComputedStyle(node).transform),"none","Canvas被整体transform，可能移动裁剪区");
+      const first=await pixels(page);await browserFrames(page,4);assert.equal((await pixels(page)).hash,first.hash,"零速无局部互动仍有底层自漂");
+      assert.ok((await stats(page)).meanSpeed<.01);
+      parallax={distance:40,response:20,isolatedSpeed:0,isolatedInteraction:0,samples:[]};
+      if(reduced){
+        const frame=(await stats(page)).frameCount;
+        await page.mouse.move(viewport.width*.8,viewport.height*.2);await browserFrames(page,6);
+        assertParallaxZero(await stats(page));assert.equal((await stats(page)).frameCount,frame);
+        assert.equal((await pixels(page)).hash,first.hash,"减少动态效果下鼠标仍推动视差");
+      }else{
+        let previous=first;
+        for(const point of [{name:"left",x:.2,y:.5},{name:"right",x:.8,y:.5},{name:"up",x:.5,y:.2},{name:"down",x:.5,y:.8}]){
+          const {x,y,targetX,targetY}=parallaxPoint(viewport,point.x,point.y);
+          const prior=await stats(page);
+          await page.evaluate(()=>{
+            window.__parallaxMove=null;
+            window.addEventListener("pointermove",()=>{window.__parallaxMove=window.Homepage.particleBackground.getStats();},{once:true});
+          });
+          await page.mouse.move(x,y);
+          const during=await page.evaluate(()=>window.__parallaxMove);
+          assert.ok(during!==null);assert.ok(Math.abs(during.parallaxX-prior.parallaxX)<.05&&Math.abs(during.parallaxY-prior.parallaxY)<.05,"鼠标事件直接跳到目标，没有平滑跟随");
+          await waitParallax(page,targetX,targetY);await particleFrames(page,2);
+          const state=await stats(page),paint=await pixels(page);
+          finiteStats(state);assert.ok(state.meanSpeed<.01,"视差夹具产生了模拟速度");
+          assert.ok(Math.abs(state.parallaxX-targetX)<.00001&&Math.abs(state.parallaxY-targetY)<.00001,"诊断偏移不是视口中心的反向坐标");
+          assert.notEqual(paint.hash,previous.hash,"真实鼠标视差没有改变黑区实际像素");
+          const mask=await assertBlackSurface(page);
+          parallax.samples.push({direction:point.name,targetX,targetY,parallaxX:state.parallaxX,parallaxY:state.parallaxY,hash:paint.hash,imagePixels:mask.imagePixels,outsideSurface:mask.outsideSurface});
+          previous=paint;
+        }
+        const held=await stats(page),paint=await pixels(page);
+        await page.waitForTimeout(1050);await particleFrames(page,2);
+        const after=await stats(page);
+        assert.equal(after.pointerActive,false,"局部手势未按900ms失活");
+        assert.equal(after.parallaxX,held.parallaxX);assert.equal(after.parallaxY,held.parallaxY,"鼠标停留后视差被局部手势超时清除");
+        assert.equal((await pixels(page)).hash,paint.hash,"驻留视差仍有底层自漂");
+        parallax.held={durationMs:1050,parallaxX:after.parallaxX,parallaxY:after.parallaxY,pointerActive:after.pointerActive};
+      }
+      await configure(page,before);
+    });
+    await step("视差离窗、blur、touch归中与禁用/详情/减少动态效果清理",async()=>{
+      const before=await config(page);
+      await configure(page,{averageSpeed:0,interactionStrength:0,parallaxDistance:40,parallaxResponse:20});
+      const engage=async()=>{
+        const point=parallaxPoint(viewport,.8,.8);
+        await page.mouse.move(viewport.width/2,viewport.height/2);await page.mouse.move(point.x,point.y);
+        await waitParallax(page,reduced?0:point.targetX,reduced?0:point.targetY);
+      };
+      for(const type of ["pointerout","blur","pointermove"]){
+        await engage();
+        const release=await page.evaluate(type=>{
+          const api=window.Homepage.particleBackground,prior=api.getStats();
+          const event=type==="blur"?new Event(type):new PointerEvent(type,{bubbles:true,cancelable:true,pointerType:type==="pointermove"?"touch":"mouse",relatedTarget:null,clientX:30,clientY:30});
+          const allowed=window.dispatchEvent(event);return {prior,after:api.getStats(),allowed,prevented:event.defaultPrevented};
+        },type);
+        assert.equal(release.allowed,true);assert.equal(release.prevented,false);
+        if(!reduced){assert.equal(release.after.parallaxX,release.prior.parallaxX);assert.equal(release.after.parallaxY,release.prior.parallaxY,"离窗/触摸直接跳回，未平滑归中");}
+        await waitParallax(page);assert.equal((await stats(page)).pointerActive,false);
+        await assertBlackSurface(page);
+      }
+      await engage();await configure(page,{parallaxDistance:0});assertParallaxZero(await stats(page));
+      await page.mouse.move(viewport.width*.2,viewport.height*.2);await browserFrames(page,4);assertParallaxZero(await stats(page));
+      await configure(page,{parallaxDistance:40});await engage();
+      await configure(page,{enabled:false});assertParallaxZero(await stats(page));assert.equal((await stats(page)).running,false);
+      await configure(page,{enabled:true});assertParallaxZero(await stats(page));
+      if(!reduced){
+        await engage();await page.emulateMedia({reducedMotion:"reduce"});
+        await page.waitForFunction(()=>window.Homepage.particleBackground.getStats().reducedMotion);assertParallaxZero(await stats(page));
+        const frame=(await stats(page)).frameCount,paint=await pixels(page);
+        await page.mouse.move(viewport.width*.2,viewport.height*.2);await browserFrames(page,4);
+        assertParallaxZero(await stats(page));assert.equal((await stats(page)).frameCount,frame);assert.equal((await pixels(page)).hash,paint.hash);
+        await page.emulateMedia({reducedMotion:"no-preference"});await page.waitForFunction(()=>window.Homepage.particleBackground.getStats().running);
+        await engage();
+      }
+      const button=page.locator('[data-academic="notes"]');await button.focus();await page.keyboard.press("Enter");
+      await page.waitForFunction(()=>document.getElementById("detail-dialog").open);assertParallaxZero(await stats(page));
+      assert.equal((await stats(page)).pointerActive,false);assert.equal((await stats(page)).running,false);
+      await page.keyboard.press("Escape");await page.waitForFunction(()=>!document.getElementById("detail-dialog").open);assertParallaxZero(await stats(page));
+      await configure(page,before);await scrollSection(page,"about");
+    });
     await step("后台调速、静止与真实鼠标扰动",async()=>{
+      const before=await config(page);
       await page.mouse.move(0,0); await page.waitForFunction(()=>!window.Homepage.particleBackground.getStats().pointerActive);
-      await configure(page,{averageSpeed:0});
+      await configure(page,{averageSpeed:0,parallaxDistance:0});assertParallaxZero(await stats(page));
       if (!reduced) await particleFrames(page,12); else await browserFrames(page);
       const first=await pixels(page);
       if (!reduced) await particleFrames(page,6); else await browserFrames(page);
@@ -385,7 +488,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
         await particleFrames(page,4); const disturbed=await pixels(page);
         assert.notEqual(disturbed.hash,second.hash,"鼠标移动没有扰动零速粒子"); assert.ok((await stats(page)).meanSpeed>0);
       }
-      await configure(page,{averageSpeed:22}); await page.mouse.move(0,0);
+      await configure(page,before); await page.mouse.move(0,0);
       await shot(page,engine,viewport,reduced?"mouse-reduce":"mouse-field",screenshots);
     });
     await step("触摸指针不激活扰动且不取消默认事件",async()=>{
@@ -414,6 +517,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
     await step("详情暂停、指针清理及关闭恢复",async()=>{
       await page.waitForFunction(()=>!window.Homepage.particleBackground.getStats().running);
       const first=await stats(page); assert.equal(first.pointerActive,false); await browserFrames(page);
+      assertParallaxZero(first);
       assert.equal((await stats(page)).frameCount,first.frameCount,"详情打开后仍在绘制");
       await page.keyboard.press("Escape"); await page.waitForFunction(()=>!document.getElementById("detail-dialog").open);
       assert.equal((await stats(page)).running,!reduced);
@@ -424,7 +528,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
         Object.defineProperty(document,"hidden",{configurable:true,value:true});
         Object.defineProperty(document,"visibilityState",{configurable:true,value:"hidden"}); document.dispatchEvent(new Event("visibilitychange"));
       });
-      const first=await stats(page); assert.equal(first.running,false); await browserFrames(page); assert.equal((await stats(page)).frameCount,first.frameCount);
+      const first=await stats(page); assert.equal(first.running,false);assertParallaxZero(first); await browserFrames(page); assert.equal((await stats(page)).frameCount,first.frameCount);
       await page.evaluate(()=>{delete document.hidden;delete document.visibilityState;document.dispatchEvent(new Event("visibilitychange"));});
       assert.equal((await stats(page)).running,!reduced); if(!reduced)await particleFrames(page,4);
     });
@@ -432,6 +536,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await page.setViewportSize({width:viewport.width+30,height:viewport.height+35});
       await page.waitForFunction(dimensions=>{const s=window.Homepage.particleBackground.getStats();return s.width===dimensions.width&&s.height===dimensions.height;},{width:viewport.width+30,height:viewport.height+35});
       const state=await stats(page), dimensions=await page.locator(CANVAS).evaluate(node=>({width:node.width,height:node.height}));
+      assertParallaxZero(state);
       assert.equal(dimensions.width,Math.round(state.width*state.pixelRatio)); assert.equal(dimensions.height,Math.round(state.height*state.pixelRatio));
       await page.setViewportSize(viewport);
       await scrollSection(page,"about");await assertBlackSurface(page);
@@ -447,7 +552,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await assertBlackSurface(page);
     });
     await step("enabled关开、销毁重启与单实例",async()=>{
-      await configure(page,{enabled:false}); assert.equal((await stats(page)).running,false);
+      await configure(page,{enabled:false}); assert.equal((await stats(page)).running,false);assertParallaxZero(await stats(page));
       assert.equal(await page.locator("#main").evaluate(node=>node.classList.contains("has-particle-background")),false);
       await configure(page,{enabled:true}); assert.equal((await stats(page)).running,!reduced);
       await page.evaluate(()=>window.Homepage.particleBackground.dispose()); assert.equal(await page.locator(CANVAS).count(),0);
@@ -456,11 +561,13 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       await page.evaluate(()=>{window.__particleDisposedController=window.__particleTestController;});
       await mount(page);assert.equal(await page.locator(CANVAS).count(),1);finiteStats(await stats(page));
       const disposed=await page.evaluate(()=>window.__particleDisposedController.getStats());
+      assertParallaxZero(disposed);
       assert.equal(disposed.status,"disposed");assert.equal(disposed.running,false);
       await browserFrames(page,4);
       assert.equal((await page.evaluate(()=>window.__particleDisposedController.getStats())).frameCount,disposed.frameCount);
       assert.equal(await page.evaluate(()=>{try{window.__particleDisposedController.configure({opacity:.5});return false;}catch{return true;}}),true);
-      await page.evaluate(()=>window.__particleTestController.pause()); const first=await stats(page); assert.equal(first.running,false);
+      const point=parallaxPoint(viewport,.8,.8);await page.mouse.move(point.x,point.y);await waitParallax(page,reduced?0:point.targetX,reduced?0:point.targetY);
+      await page.evaluate(()=>window.__particleTestController.pause()); const first=await stats(page); assert.equal(first.running,false);assertParallaxZero(first);
       await browserFrames(page); assert.equal((await stats(page)).frameCount,first.frameCount);
       await page.evaluate(()=>window.__particleTestController.resume()); assert.equal((await stats(page)).running,!reduced);
       await scrollSection(page,"about");await assertBlackSurface(page);
@@ -470,7 +577,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       for(let index=0;index<10;index++){await particleFrames(page,2);const state=await stats(page);finiteStats(state);performance.push({count:state.count,frameCount:state.frameCount,stepMs:state.stepMs,frameMs:state.frameMs});}
     });
     assert.deepEqual(errors,[]); assert.deepEqual(blocked,[]);
-    return {viewport,reducedMotion,status:"通过",assertions:scope.assertions,steps,screenshots,performance,rendering,stats:await stats(page),externalRequests:0,realWrites:0};
+    return {viewport,reducedMotion,status:"通过",assertions:scope.assertions,steps,screenshots,performance,rendering,parallax,stats:await stats(page),externalRequests:0,realWrites:0};
   } catch(error){console.error(engine+" "+viewport.width+" "+reducedMotion+"："+error.message.split("\n")[0]);return {viewport,reducedMotion,status:"失败",assertions:scope.assertions,steps,error:error.stack,stats:await stats(page),mediaChanges:await page.evaluate(()=>window.__particleMediaChanges),pageErrors:errors,blocked};}
   finally{await context.close();}
   });

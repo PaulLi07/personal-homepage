@@ -45,6 +45,7 @@ try {
   test("配置类型、范围、冻结与合并", () => {
     ok(Object.isFrozen(config)); ok(Object.isFrozen(config.defaults)); ok(Object.isFrozen(config.normalize({})));
     equal(config.defaults.count, 4800); equal(config.defaults.mobileCount, 1400); equal(config.defaults.averageSpeed, 22);
+    equal(config.defaults.parallaxDistance, 40); equal(config.defaults.parallaxResponse, 8);
     const patch = {opacity: 0.3}, base = {count: 700};
     const merged = config.normalize(patch, base);
     equal(merged.opacity, 0.3); equal(merged.count, 700); equal(merged.fps, 45);
@@ -57,6 +58,7 @@ try {
       count: [0, 12000], mobileCount: [0, 4000], averageSpeed: [0, 160],
       minSize: [0.15, 3], maxSize: [0.15, 3], opacity: [0, 1],
       interactionRadius: [20, 450], interactionStrength: [0, 5],
+      parallaxDistance: [0, 120], parallaxResponse: [1, 20],
       alignment: [0, 3], cohesion: [0, 3], separation: [0, 3],
       flowScale: [50, 800], turbulence: [0, 3], fps: [15, 60], maxPixelRatio: [1, 2]
     };
@@ -68,6 +70,19 @@ try {
     equal(config.normalize({minSize: 0.15, maxSize: 3, count: 0, mobileCount: 0}).count, 0);
     equal(config.normalize({minSize: 3, maxSize: 3, count: 12000, mobileCount: 4000}).maxSize, 3);
     rejects(() => config.normalize({}, {unknown: 1}));
+  });
+
+  test("视差参数的严格边界、连续值与配置合并", () => {
+    for (const [key, minimum, maximum] of [["parallaxDistance", 0, 120], ["parallaxResponse", 1, 20]]) {
+      equal(config.normalize({[key]: minimum})[key], minimum);
+      equal(config.normalize({[key]: maximum})[key], maximum);
+      rejects(() => config.normalize({[key]: minimum - 0.0001}));
+      rejects(() => config.normalize({[key]: maximum + 0.0001}));
+    }
+    equal(config.normalize({parallaxDistance: 40.5}).parallaxDistance, 40.5);
+    equal(config.normalize({parallaxResponse: 8.5}).parallaxResponse, 8.5);
+    const merged = config.normalize({parallaxDistance: 0}, {parallaxDistance: 120, parallaxResponse: 20});
+    equal(merged.parallaxDistance, 0); equal(merged.parallaxResponse, 20);
   });
 
   test("桌面密度、手机上限与明确关闭", () => {
@@ -135,6 +150,51 @@ try {
     moving.updateConfig({averageSpeed: 22}); advance(moving, 180);
     ok(moving.stats().meanSpeed > 17 && moving.stats().meanSpeed < 27);
     moving.dispose(); still.dispose(); pointerView.dispose();
+  });
+
+  test("视差屏幕坐标的局部指针作用、双向环绕与确定性", () => {
+    // 单粒子且平均速度为零，把正常流场和邻域耦合排除；只改变公开数组中的内存夹具位置。
+    const stationary = {averageSpeed: 0, interactionRadius: 20, alignment: 0, cohesion: 0, separation: 0};
+    const cases = [
+      {name: "视口内部", position: [150, 150], offset: [80, -60], screen: [220, 90], logical: [140, 150], wrong: [140, 150]},
+      {name: "右侧与上侧环绕", position: [395, 5], offset: [20, -20], screen: [25, 285], logical: [405, 5], wrong: [385, 5]},
+      {name: "左侧与下侧环绕", position: [5, 295], offset: [-20, 20], screen: [375, 15], logical: [-5, 295], wrong: [15, 295]}
+    ];
+    for (const fixture of cases) {
+      const simulations = Array.from({length: 5}, () => create(stationary, 1, 400, 300));
+      const [corrected, repeated, uncorrected, wrongScreen, logicalReference] = simulations;
+      for (const simulation of simulations) {
+        simulation.particles.x[0] = fixture.position[0]; simulation.particles.y[0] = fixture.position[1];
+      }
+      const initial = snapshot(corrected);
+      const gesture = {vx: 600, vy: 300, active: true};
+      const visiblePointer = {...gesture, x: fixture.screen[0], y: fixture.screen[1],
+        offsetX: fixture.offset[0], offsetY: fixture.offset[1]};
+      corrected.step(0.05, visiblePointer, 1); repeated.step(0.05, visiblePointer, 1);
+      uncorrected.step(0.05, {...gesture, x: fixture.screen[0], y: fixture.screen[1]}, 1);
+      wrongScreen.step(0.05, {...visiblePointer, x: fixture.wrong[0], y: fixture.wrong[1]}, 1);
+      logicalReference.step(0.05, {...gesture, x: fixture.logical[0], y: fixture.logical[1]}, 1);
+      ok(corrected.stats().meanSpeed > 0, fixture.name + "：可见位置附近受到扰动");
+      ok(corrected.particles.x[0] !== initial.x[0] || corrected.particles.y[0] !== initial.y[0], fixture.name);
+      equal(snapshot(corrected), snapshot(repeated), fixture.name + "：重复输入确定性");
+      equal(snapshot(corrected), snapshot(logicalReference), fixture.name + "：等价的局部距离");
+      equal(snapshot(uncorrected), initial, fixture.name + "：缺少屏幕坐标校正时没有假互动");
+      equal(snapshot(wrongScreen), initial, fixture.name + "：不同屏幕位置不受扰动");
+      ok(simulations.every(simulation => simulation.stats().finite), fixture.name + "：坐标与速度保持有限");
+      simulations.forEach(simulation => simulation.dispose());
+    }
+  });
+
+  test("缺省、undefined 和零视差偏移保留旧指针行为", () => {
+    const legacy = create({averageSpeed: 0}), omitted = create({averageSpeed: 0}), zero = create({averageSpeed: 0});
+    const pointer = {x: 720, y: 450, vx: 800, vy: 500, active: true};
+    advance(legacy, 45, pointer);
+    advance(omitted, 45, {...pointer, offsetX: undefined, offsetY: undefined});
+    advance(zero, 45, {...pointer, offsetX: 0, offsetY: 0});
+    ok(legacy.stats().meanSpeed > 0);
+    equal(snapshot(omitted), snapshot(legacy)); equal(snapshot(zero), snapshot(legacy));
+    ok([legacy, omitted, zero].every(simulation => simulation.stats().finite));
+    legacy.dispose(); omitted.dispose(); zero.dispose();
   });
 
   test("步长上限、最大参数与输入拒绝", () => {

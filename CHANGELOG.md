@@ -4,6 +4,13 @@
 
 ## 2026-10-13
 
+### 鼠标视差
+
+- 白色粒子随鼠标位置反向平滑偏移，增加可调整的每轴幅度 `parallaxDistance` 与响应 `parallaxResponse`，以及 `parallaxX/Y` 诊断；停留保持位置，离窗/失焦后回中，触摸不驱动。
+- 在固定黑区与图片遮罩内绘制偏移并回绕后的圆点，校正局部搅动坐标；减少动态效果、详情、暂停、禁用、调整视口及卸载清零。回退点为 `backup/pre-parallax-2026-10-13`（`5e3f03a`），验证见 [粒子测试记录](docs/modules/particle-background.md)。
+
+### 分隔线与相框
+
 - About / Academic 交界增加 3px 白色横线与中央空心小菱形，装饰归 Academic 前景容器，不参与导航或键盘交互。
 - Academic 主线加粗为 3px，次线和图片框 2px；Life 主框和照片边框 3px、偏移副框 2px，并提高白色亮度，保留相框叠层、窄屏双列和照片粒子排除。
 - 本轮兼容性结果见 [实测记录](docs/COMPATIBILITY.md)；继续在功能分支维护，改动前版本为 `93ad9fc`。
