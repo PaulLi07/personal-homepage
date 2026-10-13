@@ -3,9 +3,9 @@
 展示散落照片与 Moments、Travels、Creations、Relationship 四个生活栏目的入口。
 
 - 入口：`#life`；详情为 `#life/<栏目>`。
-- 文件：`section.html` 保存照片按钮，`styles.css` 管纯黑背景、白色细框、照片轮廓与手机布局，`module.js` 管本区点击及照片漂移。四个子目录各自维护内容与封面；原整区背景已从当前目录移除，历史保留在 Git 与回退包。
+- 文件：`section.html` 保存照片按钮，`styles.css` 管纯黑背景、白色相框、照片轮廓与手机布局，`module.js` 管本区点击及照片漂移。四个子目录各自维护内容与封面；原整区背景已从当前目录移除，历史保留在 Git 与回退包。
 - 接口与边界：注册 `life` 分区，初始化接收 `{ root, details, reducedMotion }`；通过详情服务打开栏目，只查询本区元素。减少动态效果时应停止照片漂移。
-- 布局与粒子：根节点用 `data-particle-surface="black"` 声明 `#000`。普通 `.life-frame` 外层为前景，白色主框及偏移的伪元素细框均无整体变换；四张 `.life-image` 使用白边和略偏移轮廓。桌面保留散落布局，手机改为错落双列，框内黑底继续显示粒子。仅照片按钮声明 `data-particle-exclude`，不排除整个框；原绝对定位组件不直接添加前景属性。
+- 布局与粒子：根节点用 `data-particle-surface="black"` 声明 `#000`。普通 `.life-frame` 外层为前景，主框与四张 `.life-image` 使用 3px 亮白边，偏移副框使用 2px 较淡白边，形成前后层次；主框无整体变换。桌面保留散落布局，手机改为错落双列，沿用 6px 副框偏移以控制外沿，框内黑底继续显示粒子。仅照片按钮声明 `data-particle-exclude`，不排除整个框；原绝对定位组件不直接添加前景属性。
 - 锚点留白：`#life` 的 `scroll-margin-top` 使用导航公开的 `--navigation-height`，避免点击导航后白框顶与标题被固定栏遮挡；不读取导航私有节点，也不改变自然滚动和详情关闭的位置恢复。
 - 扩展：Moments 独立保存博客数据、读者视图与作者发布；Relationship 独立保存密文和解锁逻辑。公开封面不受访问密码保护；私密内容不能放在通用 content.js 或 images/ 中。
 - 缓存边界：清单的 `liveScripts` 声明 Moments `posts.js` 保持原 URL；其他脚本及样式装配为内容版本 URL。浏览器直接发布文章不要求重新生成整页，完整源码更新仍须装配并刷新实际预览。
