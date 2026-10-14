@@ -10,8 +10,6 @@
 .contact-email { font-size: 15px; overflow-wrap: anywhere; }
 .socialslink { display: flex; flex-wrap: wrap; gap: 20px; }
 .contactlower { text-align: center; position: relative; padding-block: 0 13px; }
-.signature { font-size: clamp(56px,6.2vw,92px); white-space: nowrap; line-height: 1.15; letter-spacing: -.03em; font-weight: 500; }
-.signature em { margin-left: .05em; }
 .love { width: fit-content; max-width: 100%; margin: 25px auto 0; padding: 8px 17px; border: 1px solid var(--line); background: var(--background); font-size: 10px; letter-spacing: .8px; }
 .footer-meta { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 10px; margin-top: 30px; color: #ffffff91; font-size: 9px; }
 .footer-meta a:hover { color: var(--accent); }
@@ -29,7 +27,6 @@
   .social-column { gap: 12px; max-width: 530px; }
   .social-column p { font-size: 14px; }
   .contact-email { font-size: 15px; }
-  .signature { font-size: clamp(48px,8vw,62px); }
   .love { font-size: 8px; padding-inline: 12px; }
   .footer-meta { font-size: 8px; margin-top: 24px; }
 }
