@@ -124,11 +124,11 @@ npm run relationship:check
 
 ## 2026-10-11 粒子背景分支
 
-本轮在 `feat/emergent-particle-background` 开发，交付后保留功能分支，不整合 `main`、不推送。旧版 `main` 与 `backup/pre-emergence-2026-10-11` 保留在 `93bf256`，157 文件的旧静态源码包为 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip`。
+粒子功能在 `feat/emergent-particle-background` 开发；用户于 2026-10-14 确认效果并授权整合到 `main`、更新 GitHub。保留功能分支和各回退点；发布前远端另存 `backup/pre-publish-2026-10-14`（`3c8c364`）。加入粒子之前的版本由 `backup/pre-emergence-2026-10-11` 保留在 `93bf256`，157 文件的旧静态源码包为 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip`。
 
 本轮栏目布局之前另有 `backup/pre-section-layout-2026-10-11`（`3a2677c`）与 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`，保留此前仅 About 的黑色粒子版本。回退前先保存当前改动，再按所需版本选择备份；两组备份均保留。
 
-缓存与固定导航修复之前的回退点为 `backup/pre-preview-fixes-2026-10-11`（`14f5bf6`），前述 `main` 与备份继续保留。本轮仍不整合主分支、不推送。
+缓存与固定导航修复之前的回退点为 `backup/pre-preview-fixes-2026-10-11`（`14f5bf6`），前述备份继续保留。后续普通维护仍在用户请求发布时推送。
 
 粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About、Academic、Life 各自的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
 

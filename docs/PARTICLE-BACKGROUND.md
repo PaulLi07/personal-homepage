@@ -74,7 +74,7 @@ Homepage.particleBackground.configure({ enabled: false });
 
 ## 分支与回退
 
-2026-10-11 的基线为 `93bf256`：`main` 与 `backup/pre-emergence-2026-10-11` 保留该版本；新功能在 `feat/emergent-particle-background` 开发。本次交付仍保留功能分支，不整合 `main`、不推送。旧源码包 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip` 包含基线的 157 个文件，可恢复旧静态网站，但不含 Git 元数据或被忽略的私密资料。
+2026-10-11 的基线为 `93bf256`，由 `backup/pre-emergence-2026-10-11` 保留；新功能在 `feat/emergent-particle-background` 开发。用户于 2026-10-14 确认效果并授权将当前版本整合到 `main`、推送 GitHub；保留功能分支及全部回退点，发布前远端另存 `backup/pre-publish-2026-10-14`（`3c8c364`）。`main` 将跟随发布更新，不再作为旧版回退入口。旧源码包 `../outputs/personal-homepage-pre-emergence-2026-10-11.zip` 包含基线的 157 个文件，可恢复旧静态网站，但不含 Git 元数据或被忽略的私密资料。
 
 栏目背景、相框与图片更新之前的独立回退点为 `backup/pre-section-layout-2026-10-11`（`3a2677c`）；166 文件旧包为 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`。该版本保留此前仅 About 的黑色粒子表面，与完全加入粒子前的 `93bf256` 区分；两组备份都保留。静态包不能恢复 Git 元数据或忽略的私密资料。
 
@@ -83,9 +83,9 @@ Homepage.particleBackground.configure({ enabled: false });
 按需要选择回退方式：
 
 1. 临时关掉效果：调用 `configure({ enabled: false })`，刷新后恢复默认。长期关掉：将源码 `enabled` 改为 `false` 后装配、检查；无需删除模块或历史。
-2. 回到本地旧版本：先检查并保存当前所有未提交改动。可在功能分支提交，或使用 `git stash push --include-untracked` 保存已跟踪及未跟踪文件；仍需单独保留所需的忽略文件，并确认保存完整。只回退本轮栏目布局时使用 `git switch backup/pre-section-layout-2026-10-11`；回到加入粒子之前使用 `git switch main` 或 `git switch backup/pre-emergence-2026-10-11`。之后再检查、装配和预览；切回功能分支后按保存方式恢复，处理差异，不丢弃其他维护工作。
+2. 回到本地旧版本：先检查并保存当前所有未提交改动。可在功能分支提交，或使用 `git stash push --include-untracked` 保存已跟踪及未跟踪文件；仍需单独保留所需的忽略文件，并确认保存完整。只回退本轮栏目布局时使用 `git switch backup/pre-section-layout-2026-10-11`；回到加入粒子之前使用 `git switch backup/pre-emergence-2026-10-11`。之后再检查、装配和预览；切回功能分支后按保存方式恢复，处理差异，不丢弃其他维护工作。
 3. 从旧包恢复：解压到独立目录，核对英文页面和资源后预览；用户要求部署旧网站时再上传包内文件。不要用旧包直接覆盖当前源码或用户新增资料。ZIP 不会自动清理远端新增文件，必要清理应另行核对范围。
-4. 将来已发布后回退：在部署分支创建明确的 `git revert <功能提交>` 回退提交，保留后续文章、附件和其他改动，再检查、实测及按授权发布。若涉及多个提交，先核对提交范围与冲突；不使用硬重置、强制切换、强制推送或删目录替代回退。
+4. 已发布版本回退：在部署分支创建明确的 `git revert <功能提交>` 回退提交，保留后续文章、附件和其他改动，再检查、实测及按授权发布。若涉及多个提交，先核对提交范围与冲突；不使用硬重置、强制切换、强制推送或删目录替代回退。
 
 2026-10-11 缓存与导航修复后的最终回归通过：粒子 255 个流程 / 12234 条断言，覆盖三内核 / 三视口、正常与减少动态效果的 18 个主环境及 12 个补测；报告 `artifacts/particle-results.json` 时间为 `2026-10-11T08:37:16.908Z`（北京时间 16:37:16）。基础报告 `artifacts/compatibility-results.json` 时间为 `2026-10-11T08:33:04.261Z`（16:33:04），包含原九环境及三内核、八视口的正常 Life 导航 24 项；作者报告于 16:34:45 完成 144 流程。三项回归全部通过，生产源码未被测试修改，外部请求与真实写入均为 0。
 
