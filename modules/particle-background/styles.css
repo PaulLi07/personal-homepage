@@ -1,4 +1,5 @@
-/* 公共属性声明黑色区域与前景，不依赖各栏目内部选择器。 */
+/* 公共属性声明黑色区域与前景，不依赖各栏目内部选择器。
+   Canvas 只作视口绘制窗口；粒子在 JS 中按文档坐标减去滚动量，不锚定屏幕。 */
 #main.has-particle-background { position: relative; isolation: isolate; }
 .particle-background__canvas { position: fixed; inset: 0; width: 100%; height: 100%; z-index: 1; pointer-events: none; user-select: none; }
 #main.has-particle-background [data-particle-foreground] { position: relative; z-index: 2; }

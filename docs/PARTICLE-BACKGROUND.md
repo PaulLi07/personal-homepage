@@ -28,8 +28,6 @@
 | `opacity` | `0.85` | 0–1；整体透明度 |
 | `interactionRadius` | `170` | 20–450；鼠标扰动范围 |
 | `interactionStrength` | `1` | 0–5；鼠标旋转及排斥强度 |
-| `parallaxDistance` | `40` | 0–120；每轴最大视差位移，单位 CSS 像素；0 立即关闭视差 |
-| `parallaxResponse` | `8` | 1–20；视差跟随响应，单位每秒；越大越快 |
 | `alignment` | `0.7` | 0–3；局部速度对齐权重 |
 | `cohesion` | `0.18` | 0–3；局部聚集权重 |
 | `separation` | `0.6` | 0–3；密集区分离权重 |
@@ -41,7 +39,7 @@
 
 实际数量按视口面积缩放：桌面最多 12000；宽度不大于 760 或粗指针设备再受 `mobileCount` 限制，`count: 0` 明确禁用粒子数量。不要将 `count` 参数直接当作每个设备的实际数量。
 
-视差将鼠标相对于视口中心的位置映射为反向偏移，用指数平滑跟随；以默认 40px 为例，左右两边之间的最大相对位移为 80px。鼠标停留时保持位置，离窗/失焦后回中；触摸不会驱动视差，触摸开始、移动或取消会释放鼠标目标。减少动态效果、暂停、详情打开、禁用、调整视口与卸载清零。只移动并回绕粒子坐标，屏幕中的黑区、图片排除及内容位置固定；局部搅动同时使用校正后的可见坐标。
+粒子按文档坐标减去实际页面 `scrollX/Y`，与页面同向等距移动。Canvas 仍只覆盖当前视口，采用周期坐标补齐进入视野的粒子，不创建整页大小的画布；黑区与图片遮罩按当前屏幕矩形裁剪。滚动不会改变模拟速度，减少动态效果下仍随页面移动；鼠标保留局部搅动，使用同一滚动偏移校正坐标。2026-10-14 按用户澄清移除了上一轮误加的整层鼠标视差及两个相关配置参数。
 
 自适应质量累积慢帧后仅降低数量，最低保留当前视口预算的 55%；它不承诺特定硬件的帧率。重新配置会恢复完整预算，再重新评估；关闭自适应可用于比较，不宜据一次桌面表现提高手机预算。
 
@@ -51,7 +49,6 @@
 
 ```js
 Homepage.particleBackground.configure({ count: 3600, mobileCount: 1000 });
-Homepage.particleBackground.configure({ parallaxDistance: 40, parallaxResponse: 8 });
 Homepage.particleBackground.getConfig();
 Homepage.particleBackground.getStats();
 Homepage.particleBackground.configure({ enabled: false });
@@ -70,7 +67,7 @@ Homepage.particleBackground.configure({ enabled: false });
 | `meanSpeed` / `maxSpeed` / `finite` | 速度统计及数值是否有限 |
 | `stepMs` / `frameMs` | 最近模拟耗时 / 平滑后的模拟与绘制耗时，不能直接换算为屏幕实际帧率 |
 | `pointerActive` / `reducedMotion` | 鼠标扰动状态 / 当前减少动态效果偏好 |
-| `parallaxX` / `parallaxY` | 当前横/纵视差位移，单位 CSS 像素；独立于局部扰动的 900ms 活跃状态 |
+| `scrollX` / `scrollY` | 最近绘制采用的页面横/纵滚动量，单位 CSS 像素；粒子绘制减去此偏移 |
 | `adaptiveLevel` / `status` | 数量预算系数 / 当前生命周期状态 |
 
 `status` 为 `unsupported`、`disabled`、`reduced`、`paused`、`running` 或 `disposed`。后台或手动暂停保留画面，详情打开时暂停并隐藏画面；减少动态效果静态显示。滚动仍刷新区域与图片遮罩，区域样式、公开属性、图片加载和 CSS 过渡结束也触发合并补绘；这些重画不推动模拟或增加动画帧统计，卸载时取消补绘并断开观察器。Canvas 无法使用或绘制失败则停用效果。控制器的 `resume()` 仍遵守后台、详情及减少动态效果限制。
@@ -81,7 +78,7 @@ Homepage.particleBackground.configure({ enabled: false });
 
 栏目背景、相框与图片更新之前的独立回退点为 `backup/pre-section-layout-2026-10-11`（`3a2677c`）；166 文件旧包为 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`。该版本保留此前仅 About 的黑色粒子表面，与完全加入粒子前的 `93bf256` 区分；两组备份都保留。静态包不能恢复 Git 元数据或忽略的私密资料。
 
-2026-10-13 鼠标视差更新前另存 `backup/pre-parallax-2026-10-13`（`5e3f03a`），保留此前加粗的分隔线与相框。当前视差回归见 [模块测试记录](modules/particle-background.md)；下方 2026-10-11 数字属于历史。
+2026-10-13 鼠标视差更新前另存 `backup/pre-parallax-2026-10-13`（`5e3f03a`），保留此前加粗的分隔线与相框。该鼠标视差现已按用户澄清移除，仅作为历史保留。2026-10-14 滚动修正前另存 `backup/pre-scroll-follow-2026-10-14`（`a7f81d1`）；当前回归见 [模块测试记录](modules/particle-background.md)，下方 2026-10-11 数字属于历史。
 
 按需要选择回退方式：
 

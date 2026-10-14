@@ -4,7 +4,6 @@
     enabled: true, count: 4800, mobileCount: 1400, averageSpeed: 22,
     minSize: 0.4, maxSize: 0.85, opacity: 0.85,
     interactionRadius: 170, interactionStrength: 1,
-    parallaxDistance: 40, parallaxResponse: 8,
     alignment: 0.7, cohesion: 0.18, separation: 0.6,
     flowScale: 190, turbulence: 0.65, fps: 45,
     maxPixelRatio: 1.5, adaptiveQuality: true
@@ -13,7 +12,6 @@
     count: [0, 12000], mobileCount: [0, 4000], averageSpeed: [0, 160],
     minSize: [0.15, 3], maxSize: [0.15, 3], opacity: [0, 1],
     interactionRadius: [20, 450], interactionStrength: [0, 5],
-    parallaxDistance: [0, 120], parallaxResponse: [1, 20],
     alignment: [0, 3], cohesion: [0, 3], separation: [0, 3],
     flowScale: [50, 800], turbulence: [0, 3], fps: [15, 60],
     maxPixelRatio: [1, 2]

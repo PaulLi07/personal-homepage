@@ -8,7 +8,7 @@
   let lastStats = {status: "disposed", count: 0, requestedCount: 0, frameCount: 0, running: false,
     reducedMotion: false, width: 0, height: 0, pixelRatio: 1, meanSpeed: 0, maxSpeed: 0,
     finite: true, stepMs: 0, frameMs: 0, pointerActive: false, adaptiveLevel: 1,
-    renderedCount: 0, surfaceCount: 0, parallaxX: 0, parallaxY: 0};
+    renderedCount: 0, surfaceCount: 0, scrollX: 0, scrollY: 0};
 
   function mount({root, reducedMotion, dialog, config} = {}) {
     if (!root || root.ownerDocument !== document || typeof root.prepend !== "function") {
@@ -36,7 +36,11 @@
     let frameCount = 0, simulationTime = 0, lastFrame = 0, previousRender = 0;
     let frameMs = 0, adaptiveLevel = 1, slowFrames = 0, renderedCount = 0, surfaceCount = 0;
     const pointer = {x: 0, y: 0, vx: 0, vy: 0, active: false};
-    const parallax = {x: 0, y: 0, normalizedX: 0, normalizedY: 0, engaged: false};
+    const pageScroll = {x: 0, y: 0};
+    function readScroll() {
+      pageScroll.x = window.scrollX || 0;
+      pageScroll.y = window.scrollY || 0;
+    }
     let pointerTime = 0;
     root.prepend(canvas);
     const blocked = () => manualPause || document.hidden || Boolean(dialog?.open);
@@ -45,19 +49,6 @@
       pointer.active = false;
       pointer.vx = pointer.vy = 0;
       pointerTime = 0;
-      parallax.engaged = false;
-      parallax.normalizedX = parallax.normalizedY = 0;
-    }
-    function updateParallax(dt) {
-      const distance = configuration.parallaxDistance;
-      const targetX = parallax.engaged ? -parallax.normalizedX * distance : 0;
-      const targetY = parallax.engaged ? -parallax.normalizedY * distance : 0;
-      const blend = 1 - Math.exp(-configuration.parallaxResponse * dt);
-      parallax.x += (targetX - parallax.x) * blend;
-      parallax.y += (targetY - parallax.y) * blend;
-      // 收敛后停在精确目标，零速画面不会永远发生亚像素漂移。
-      if (Math.abs(targetX - parallax.x) < .005) parallax.x = targetX;
-      if (Math.abs(targetY - parallax.y) < .005) parallax.y = targetY;
     }
     function stop() {
       if (animation) window.cancelAnimationFrame(animation);
@@ -66,7 +57,6 @@
       maskPaint = 0;
       lastFrame = previousRender = 0;
       releasePointer();
-      parallax.x = parallax.y = 0;
     }
     function resize() {
       if (!alive || unsupported) return;
@@ -78,7 +68,6 @@
       const count = Math.round(desiredCount() * adaptiveLevel);
       if (changed) {
         releasePointer();
-        parallax.x = parallax.y = 0;
         canvas.width = Math.round(width * ratio);
         canvas.height = Math.round(height * ratio);
         context.setTransform(ratio, 0, 0, ratio, 0, 0);
@@ -114,6 +103,7 @@
     }
     function draw() {
       if (!alive || unsupported || !simulation) return;
+      readScroll();
       context.clearRect(0, 0, width, height);
       renderedCount = 0;
       const {surfaces, holes} = visibleMask();
@@ -135,8 +125,9 @@
       context.beginPath();
       const particles = simulation.particles;
       for (let i = 0; i < particles.count; i += 1) {
-        // 只移动圆点坐标；黑区及图片的屏幕遮罩保持原位。
-        const x = wrap(particles.x[i] + parallax.x, width), y = wrap(particles.y[i] + parallax.y, height);
+        // 粒子锚定文档坐标：减去实际滚动量，与页面同向等距移动。
+        // 仅绘制视口内的周期单元，避免创建整页高的大画布。
+        const x = wrap(particles.x[i] - pageScroll.x, width), y = wrap(particles.y[i] - pageScroll.y, height);
         const radius = particles.size[i], guard = radius + 1;
         if (!surfaces.some(rect => x - guard >= rect.left && x + guard <= rect.right
           && y - guard >= rect.top && y + guard <= rect.bottom)) continue;
@@ -177,8 +168,8 @@
       try {
         const ratio = Math.min(configuration.maxPixelRatio, Math.max(1, window.devicePixelRatio || 1));
         if (width !== window.innerWidth || height !== window.innerHeight || pixelRatio !== ratio) resize();
-        updateParallax(Math.min(.25, frameDelta));
-        simulation.step(dt, {...pointer, offsetX: parallax.x, offsetY: parallax.y}, simulationTime);
+        readScroll();
+        simulation.step(dt, {...pointer, offsetX: -pageScroll.x, offsetY: -pageScroll.y}, simulationTime);
         draw();
         frameCount += 1;
         const elapsed = performance.now() - start;
@@ -208,8 +199,6 @@
       const normalized = api.particleConfig.normalize(patch, configuration);
       if (!alive) throw new Error("The particle background has been disposed.");
       configuration = normalized;
-      parallax.x = Math.max(-configuration.parallaxDistance, Math.min(configuration.parallaxDistance, parallax.x));
-      parallax.y = Math.max(-configuration.parallaxDistance, Math.min(configuration.parallaxDistance, parallax.y));
       adaptiveLevel = 1; slowFrames = 0;
       simulation?.updateConfig(configuration);
       resize(); sync();
@@ -220,7 +209,7 @@
       const measured = simulation?.stats() || {count: 0, meanSpeed: 0, maxSpeed: 0, finite: true, lastStepMs: 0};
       return {...measured, stepMs: measured.lastStepMs, frameMs, frameCount, width, height, pixelRatio,
         requestedCount: width ? desiredCount() : 0, renderedCount, surfaceCount, adaptiveLevel, pointerActive: pointer.active,
-        parallaxX: parallax.x, parallaxY: parallax.y,
+        scrollX: pageScroll.x, scrollY: pageScroll.y,
         reducedMotion: motionReduced, running: Boolean(animation),
         status: !alive ? "disposed" : unsupported ? "unsupported" : !configuration.enabled ? "disabled"
           : blocked() ? "paused" : motionReduced ? "reduced" : "running"};
@@ -237,13 +226,13 @@
       if (current === controller) current = null;
     }
     function onResize() {
-      releasePointer(); parallax.x = parallax.y = 0;
+      releasePointer();
       resize(); sync();
     }
     function onMotionChange(event) { motionReduced = event.matches; sync(); }
     function onScroll() {
       if (!alive || unsupported || !configuration.enabled || document.hidden || dialog?.open) return;
-      // 即时同步可见边界，静态模式不需要另起动画；不推动模拟或增加帧统计。
+      // 按实际滚动位置同步粒子与遮罩；减动模式仍随页面走，不推进模拟。
       try { draw(); }
       catch (_) {
         unsupported = true; stop(); canvas.hidden = true;
@@ -285,9 +274,6 @@
       pointer.vx = Math.max(-1600, Math.min(1600, pointer.vx * .4 + vx * .6));
       pointer.vy = Math.max(-1600, Math.min(1600, pointer.vy * .4 + vy * .6));
       pointer.x = event.clientX; pointer.y = event.clientY; pointer.active = true; pointerTime = now;
-      parallax.normalizedX = Math.max(-1, Math.min(1, event.clientX / width * 2 - 1));
-      parallax.normalizedY = Math.max(-1, Math.min(1, event.clientY / height * 2 - 1));
-      parallax.engaged = true;
     }, {passive: true, signal});
     window.addEventListener("pointerout", event => { if (!event.relatedTarget) releasePointer(); }, {passive: true, signal});
     for (const type of ["pointerdown", "pointercancel"]) {

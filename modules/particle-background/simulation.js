@@ -197,7 +197,7 @@
         let nextVX = vx[i] + (directionX / length * targetSpeed - vx[i]) * blend;
         let nextVY = vy[i] + (directionY / length * targetSpeed - vy[i]) * blend;
         if (pointerActive && settings.interactionStrength) {
-          // 输入与可见粒子使用同一坐标系，视差及边缘回绕后搅动仍跟随鼠标。
+          // 输入与可见粒子使用同一坐标系，页面滚动及边缘回绕后搅动仍跟随鼠标。
           const dx = wrap(positionX + offsetX, w) - px, dy = wrap(positionY + offsetY, h) - py;
           const distanceSquared = dx * dx + dy * dy;
           if (distanceSquared < radiusSquared) {
