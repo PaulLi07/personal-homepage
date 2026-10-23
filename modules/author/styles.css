@@ -3,7 +3,7 @@
 .author-workspace h3 { font: 500 clamp(28px, 2.8vw, 36px)/1.25 var(--body); letter-spacing: -.03em; margin: 10px 0 20px; overflow-wrap: anywhere; }
 .author-workspace h4 { font: 500 20px/1.4 var(--body); letter-spacing: -.02em; margin: 0 0 12px; }
 .author-workspace p { color: var(--muted); font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
-.author-workspace__eyebrow { color: var(--muted); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
+.author-workspace__eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
 .author-workspace form { display: grid; min-width: 0; gap: 20px; margin-top: 24px; }
 .author-workspace__field { display: grid; min-width: 0; gap: 10px; color: var(--white); font-size: 14px; }
 .author-workspace input:not([type="checkbox"]):not([type="file"]), .author-workspace textarea, .author-workspace select { width: 100%; max-width: 100%; min-width: 0; min-height: 48px; box-sizing: border-box; border: 1px solid #ffffff30; border-radius: 11px; padding: 13px 14px; background: #111114; color: var(--white); font: inherit; font-size: 16px; }

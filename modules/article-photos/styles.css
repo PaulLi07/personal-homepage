@@ -18,7 +18,7 @@
 .article-photo-picker__field input, .article-photo-picker__field textarea { width: 100%; min-width: 0; box-sizing: border-box; min-height: 48px; padding: 12px; border: 1px solid #ffffff30; border-radius: 11px; background: #111114; color: var(--white); font: inherit; font-size: 16px; line-height: 1.7; }
 .article-photo-picker__field textarea { resize: vertical; }
 .article-photo-picker__actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.article-photo-picker__button { min-height: 44px; max-width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--accent); font: inherit; font-size: 13px; cursor: pointer; }
+.article-photo-picker__button { min-height: 44px; max-width: 100%; padding: 10px 12px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--accent); font: inherit; font-size: 14px; cursor: pointer; }
 .article-photo-picker__button:hover { background: var(--surface-raised); }
 .article-photo-picker button:disabled, .article-photo-picker input:disabled, .article-photo-picker textarea:disabled { opacity: .55; cursor: default; }
 .article-photo-picker input:focus-visible, .article-photo-picker textarea:focus-visible, .article-photo-picker button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }

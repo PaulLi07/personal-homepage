@@ -32,7 +32,7 @@ h1 em, h2 em, h3 em { font-family: var(--body); font-style: normal; font-weight:
 a:focus-visible, button:focus-visible { outline: 3px solid #9ac7ffc9; outline-offset: 4px; }
 section[id] { scroll-margin-top: var(--navigation-height,76px); }
 #home { scroll-margin-top: 0; }
-.eyebrow { font-size: 11px; line-height: 1.5; text-transform: uppercase; letter-spacing: 1.3px; color: var(--accent); font-weight: 500; }
+.eyebrow { font-size: 12px; line-height: 1.5; text-transform: uppercase; letter-spacing: 1.3px; color: var(--accent); font-weight: 500; }
 /* 保留既有双文本标记，静态呈现第一份，取消重复的文字翻滚。 */
 .roll { display: block; line-height: 1.4; }
 .roll > span { display: block; }

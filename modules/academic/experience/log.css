@@ -2,14 +2,14 @@
 .academic-log { width: 100%; max-width: 700px; min-width: 0; }
 .academic-log__header { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: 18px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
 .academic-log__header h3 { font-size: 29px; line-height: 1.25; letter-spacing: -.03em; }
-.academic-log__eyebrow { margin-bottom: 10px; color: var(--muted); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; }
+.academic-log__eyebrow { margin-bottom: 10px; color: var(--muted); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
 .academic-log__button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 10px 16px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); font-size: 14px; line-height: 1.5; text-align: left; transition: border-color .2s, background .2s; }
 .academic-log__button:hover { border-color: #ffffff45; background: var(--surface-raised); }
-.academic-log__author { color: var(--muted); font-size: 13px; }
+.academic-log__author { color: var(--muted); font-size: 14px; }
 .academic-log__card { padding-block: 29px; border-bottom: 1px solid var(--line); }
 .academic-log__card h4 { margin: 0 0 14px; font-size: 24px; font-weight: 500; line-height: 1.4; letter-spacing: -.02em; overflow-wrap: anywhere; }
-.academic-log__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--muted); font-size: 13px; line-height: 1.7; }
-.academic-log__kind { padding: 4px 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--accent); font-size: 12px; }
+.academic-log__meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 14px; color: var(--muted); font-size: 14px; line-height: 1.7; }
+.academic-log__kind { padding: 4px 9px; border: 1px solid var(--line); border-radius: 7px; background: var(--surface); color: var(--accent); font-size: 13px; }
 .academic-log__excerpt { margin: 19px 0 22px; color: #e0e0e6; font-size: 16px; line-height: 1.85; white-space: pre-wrap; overflow-wrap: anywhere; }
 .academic-log__actions { display: flex; flex-wrap: wrap; align-items: center; gap: 14px; }
 .academic-log__reference { display: inline-flex; align-items: center; min-height: 44px; color: var(--accent); font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; }

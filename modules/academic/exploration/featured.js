@@ -15,6 +15,7 @@
       if (!category) return;
       const entry = category.entries[0];
       title.textContent = entry.title;
+      if (entry.titleTex) window.Homepage.math?.renderText(title, entry.titleTex, {fallback: entry.title});
       metadata.textContent = entry.identifier + " · " + entry.authors;
       link.href = "#academic/publications/" + category.id;
       link.addEventListener("click", event => {

@@ -1,13 +1,13 @@
 /* 黑白漫画造景：纸面、墨线、立体侧板与草地，仅限路牌和地面。 */
 .academic-signpost { isolation: isolate; padding-top: 3px; }
-.academic-signpost-kicker { display: table; margin: 0 0 9px 8px; padding: 3px 7px; background: #ededed; color: #111; border: 1px solid #111; outline: 1px solid #ededed; font-size: 9px; font-weight: 700; line-height: 1.5; text-transform: uppercase; letter-spacing: .08em; transform: rotate(-1.2deg); }
+.academic-signpost-kicker { display: table; margin: 0 0 9px 8px; padding: 3px 7px; background: #ededed; color: #111; border: 1px solid #111; outline: 1px solid #ededed; font-size: 12px; font-weight: 700; line-height: 1.5; text-transform: uppercase; letter-spacing: .08em; transform: rotate(-1.2deg); }
 .academic-signboard { position: relative; display: grid; gap: 5px; padding: 5px 10px 8px 6px; z-index: 2; }
 .academic-signboard .projectBox { position: relative; isolation: isolate; display: grid; grid-template-columns: 22px minmax(0, 1fr) 17px; align-items: center; gap: 10px; width: 100%; min-height: 62px; padding: 10px 41px 19px 19px; border: 0; border-radius: 0; background: none; text-align: left; color: #111; transform: rotate(-.7deg); }
 .academic-signboard .projectBox:nth-child(2) { transform: translateX(3px) rotate(.45deg); }
 .academic-signboard .projectBox:nth-child(3) { transform: translateX(-1px) rotate(-.4deg); }
 .academic-signboard .projectBox:nth-child(4) { transform: translateX(2px) rotate(.65deg); }
 .academic-signboard .projectBox::before { content: ""; position: absolute; inset: 0; z-index: -1; background: url("sign-plank.svg") center / 100% 100% no-repeat; }
-.academic-sign-index { font-size: 10px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.5; color: #454545; }
+.academic-sign-index { font-size: 12px; font-weight: 700; font-variant-numeric: tabular-nums; line-height: 1.5; color: #454545; }
 .academic-signboard .thumb-label { color: #111; font-size: clamp(14px, 1.3vw, 18px); line-height: 1.4; font-weight: 650; letter-spacing: -.015em; }
 .academic-sign-arrow { font-size: 21px; line-height: 1; font-weight: 700; color: #171717; }
 .academic-signboard .projectBox.is-selected::before { filter: invert(1); }
@@ -24,7 +24,7 @@
   .academic-signboard .projectBox { min-height: 54px; grid-template-columns: 17px minmax(0, 1fr) 13px; gap: 6px; padding: 8px 30px 16px 15px; }
   .academic-signboard .thumb-label { font-size: 14px; }
   .academic-sign-arrow { font-size: 17px; }
-  .academic-signpost-kicker { font-size: 8px; letter-spacing: .04em; }
+  .academic-signpost-kicker { font-size: 12px; letter-spacing: .04em; }
 }
 @media (max-width: 760px) {
   /* 窄屏裁取草地局部，避免把整幅草簇横向压成密集白栅栏。 */
@@ -33,13 +33,13 @@
   .academic-signboard { padding: 5px 10px 8px 6px; gap: 5px; }
   .academic-signboard .projectBox { min-height: 56px; grid-template-columns: 17px minmax(0, 1fr) 13px; gap: 6px; padding: 9px 28px 17px 15px; }
   .academic-signboard .thumb-label { font-size: 14px; }
-  .academic-sign-index { font-size: 9px; }
+  .academic-sign-index { font-size: 12px; }
   .academic-sign-arrow { font-size: 17px; }
-  .academic-signpost-kicker { font-size: 8px; margin-left: 5px; letter-spacing: .04em; }
+  .academic-signpost-kicker { font-size: 12px; margin-left: 5px; letter-spacing: .04em; }
   .academic-signpost-pole { width: 15px; }
 }
 @media (max-width: 360px) {
   .academic-signboard .projectBox { padding-inline: 12px 26px; grid-template-columns: 15px minmax(0, 1fr) 12px; gap: 4px; }
-  .academic-signboard .thumb-label { font-size: 13px; }
+  .academic-signboard .thumb-label { font-size: 14px; }
   .academic-sign-arrow { font-size: 16px; }
 }

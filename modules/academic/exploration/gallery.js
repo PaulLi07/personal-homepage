@@ -14,7 +14,6 @@
     const index = root.querySelector("[data-scene-index]");
     const explore = root.querySelector("[data-scene-explore]");
     const action = root.querySelector("[data-scene-open]");
-    const toggle = root.querySelector("[data-scene-toggle]");
     const preference = reducedMotion || window.matchMedia("(prefers-reduced-motion: reduce)");
     const configuredInterval = Number(config.intervalMs);
     const interval = Number.isFinite(configuredInterval) && configuredInterval >= 1000
@@ -24,7 +23,6 @@
     let selected = null;
     let timer = null;
     let visible = false;
-    let manuallyPaused = false;
     let destroyed = false;
     let observer = null;
 
@@ -43,19 +41,12 @@
 
     function canPlay() {
       return !destroyed && keys.length > 1 && visible && !document.hidden
-        && !isReduced() && !manuallyPaused && holds.size === 0;
+        && !isReduced() && holds.size === 0;
     }
 
     function updatePlayback() {
       root.dataset.scenePlayback = isReduced() ? "reduced"
-        : manuallyPaused ? "paused" : canPlay() ? "playing" : "held";
-      if (!toggle) return;
-      toggle.disabled = isReduced();
-      toggle.textContent = isReduced() ? "Paused" : manuallyPaused ? "Play" : "Pause";
-      toggle.setAttribute("aria-pressed", String(isReduced() || manuallyPaused));
-      toggle.setAttribute("aria-label", isReduced()
-        ? "Automatic previews are off while reduced motion is enabled"
-        : manuallyPaused ? "Play automatic previews" : "Pause automatic previews");
+        : canPlay() ? "playing" : "held";
     }
 
     function schedule() {
@@ -95,7 +86,7 @@
       if (description) description.textContent = item.subtitle || "";
       if (index) index.textContent = String(keys.indexOf(key) + 1).padStart(2, "0")
         + " / " + String(keys.length).padStart(2, "0");
-      if (explore) explore.textContent = "Explore " + item.label + " ↗";
+      if (explore) explore.textContent = "Explore ↗";
       if (action) action.setAttribute("aria-label", "Open " + item.label);
       schedule();
     }
@@ -115,11 +106,6 @@
       schedule();
     }
 
-    if (toggle) listen(toggle, "click", () => {
-      if (isReduced()) return;
-      manuallyPaused = !manuallyPaused;
-      schedule();
-    });
     listen(document, "visibilitychange", schedule);
     listen(window, "hashchange", schedule);
     listen(window, "popstate", schedule);

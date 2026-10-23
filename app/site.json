@@ -136,6 +136,18 @@
   },
   "services": [
     {
+      "id": "math",
+      "folder": "shared/math",
+      "styles": [
+        "shared/math/vendor/katex.min.css",
+        "shared/math/styles.css"
+      ],
+      "scripts": [
+        "shared/math/vendor/katex.min.js",
+        "shared/math/render.js"
+      ]
+    },
+    {
       "id": "particle-background",
       "folder": "modules/particle-background",
       "styles": [

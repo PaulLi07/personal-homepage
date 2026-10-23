@@ -12,7 +12,7 @@
     if (!walker || !path) return { destroy() {} };
     mounted.get(walker)?.destroy();
     const settings = config.walker || {};
-    const height = finite(settings.heightPx, 46, 32, 72);
+    const height = finite(settings.heightPx, 60, 32, 72);
     const width = height * 40 / 46;
     const previousStyles = new Map();
     function setStyle(node, property, value) {

@@ -161,7 +161,7 @@ try {
   test("首帧保持姿态、30帧节流和单一RAF链；大卡顿限制推进", () => {
     const f = fixture();
     equal(f.callbacks.size, 0); equal(f.walker.dataset.walkPaused, "true");
-    equal(f.directors[0].options.width, 260);
+    equal(f.directors[0].options.width, 300 - 60 * 40 / 46);
     equal(f.figures[0].renders.length, 1); equal(f.fallback.hidden, true);
     f.visible(true, 0); equal(f.callbacks.size, 1);
     f.frame(0); equal(f.directors[0].advances.length, 0); equal(f.callbacks.size, 1);
@@ -238,13 +238,13 @@ try {
   test("路径缩放保留相位；尺寸参数与窄路径边界", () => {
     const f = fixture(); f.visible(true); f.frame(0); f.frame(40);
     equal(f.resizeObservers[0].target, f.walkway);
-    f.resize(220); equal(f.directors[0].widths.at(-1), 180);
+    f.resize(220); equal(f.directors[0].widths.at(-1), 220 - 60 * 40 / 46);
     equal(f.directors[0].phase, 40); equal(f.callbacks.size, 1);
     f.resize(25); equal(f.directors[0].widths.at(-1), 0);
     equal(f.walker.style.getPropertyValue("left"), "0px");
-    equal(f.walker.style.getPropertyValue("--academic-character-height"), "46px");
-    equal(f.walker.style.getPropertyValue("--academic-character-width"), "40px");
-    equal(f.walkway.style.getPropertyValue("min-height"), "52px");
+    equal(f.walker.style.getPropertyValue("--academic-character-height"), "60px");
+    equal(f.walker.style.getPropertyValue("--academic-character-width"), String(60 * 40 / 46) + "px");
+    equal(f.walkway.style.getPropertyValue("min-height"), "66px");
     f.instance.destroy();
     const large = fixture({ mount: false });
     large.mount({ walker: { heightPx: 1000 } });
@@ -253,7 +253,7 @@ try {
     large.instance.destroy();
     const invalid = fixture({ mount: false });
     invalid.mount({ walker: { heightPx: NaN } });
-    equal(invalid.walker.style.getPropertyValue("--academic-character-height"), "46px");
+    equal(invalid.walker.style.getPropertyValue("--academic-character-height"), "60px");
     invalid.instance.destroy();
   });
 
@@ -264,7 +264,7 @@ try {
     f.window.emit("scroll"); equal(f.callbacks.size, 0);
     f.setBox({ width: 1000, height: 600, left: 0, right: 1000, top: 0, bottom: 600 });
     f.resize(200); equal(f.callbacks.size, 1);
-    equal(f.directors[0].widths.at(-1), 160); equal(f.directors[0].phase, 40);
+    equal(f.directors[0].widths.at(-1), 200 - 60 * 40 / 46); equal(f.directors[0].phase, 40);
     f.frame(100000); equal(f.directors[0].phase, 40);
     f.instance.destroy(); equal(f.listenerCount(), 0);
   });

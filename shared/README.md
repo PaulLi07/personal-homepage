@@ -9,6 +9,7 @@
 | `navigation/` | `view.html`、`styles.css`；`createNavigation({ root, sections })` | 首页各公共分区 |
 | `details/` | `view.html`、`styles.css`；`createDetails({ dialog, content, views, groups, transitions })` | 学术、旅行、创作、Moments 博客与 Relationship |
 | `transitions/` | `styles.css`；`createTransitions(reducedMotion)` | 首页开场与共用详情 |
+| `math/` | `Homepage.math.renderText(host, source, {fallback})`；本地KaTeX行内公式、安全选项及文本回退 | Publications题名、Academic精选论文 |
 | `reveal.js` | `initReveals(roots)`，管理传入根节点内的进入动画 | 各分区及胶水 |
 
 仅使用单一 `window.Homepage` 接口。胶水负责创建共享服务和传入公共节点；模块使用 `{ root, details, reducedMotion }`，在自己的根节点内查询，通过 `details.open`、`onSelect`、`getItem` 使用登记内容。导航和进入动画只接收公共根节点，不能读取模块的私有内容结构。
@@ -38,3 +39,5 @@
 2026-10-11 缓存与导航修复已在三内核的 24 个正常导航场景和原三视口基础兼容性中通过；旧 431 像素 CSS 夹具可复现遮挡，修复后通过。粒子及作者装配回归亦通过，实际时间、范围与限制见 [粒子记录](../docs/modules/particle-background.md)及[兼容性总记录](../docs/COMPATIBILITY.md)。
 
 修改共享注册、选择器或服务行为时同步 [框架概要](../docs/ARCHITECTURE.md)，回归首页、学术、生活和相关署名页面，在受影响模块的测试记录中写明证据。共享层说明中文，所有呈现给网页访客的文字英文。
+
+2026-10-23全局可读性调整：原8–11px辅助文字提高至12px，部分元信息/控件提高至13–14px，保留正文/标题层级及16px输入；字体由所属模块各自维护，不加入全局强制最小字号以免破坏数学上下标。Academic图注透明及两处公式的接入、离线与浏览器证据见[统一记录](../docs/COMPATIBILITY.md#readability-math-2026-10-23)。

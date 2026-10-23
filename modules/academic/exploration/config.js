@@ -5,7 +5,7 @@
     config: Object.freeze({
       intervalMs: 5000,
       walker: Object.freeze({
-        heightPx: 46,
+        heightPx: 60,
         speedPxPerSecond: 24,
         stepDurationMs: 850,
         durationScale: 1,

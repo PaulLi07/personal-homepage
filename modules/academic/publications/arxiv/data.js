@@ -8,6 +8,7 @@ window.Homepage.registerPublicationCategory({
   "entries": [{
     "id": "arxiv-2610-11981",
     "title": "Observation of χcJ → Λ K⁰S Ξ̄⁰ + c.c. and improved measurements of χcJ → Λ K⁻ Ξ̄⁺ + c.c.",
+    "titleTex": "Observation of \\(\\chi_{cJ} \\to \\Lambda K^0_S \\bar{\\Xi}^0 + \\mathrm{c.c.}\\) and improved measurements of \\(\\chi_{cJ} \\to \\Lambda K^- \\bar{\\Xi}^+ + \\mathrm{c.c.}\\)",
     "authors": "BESIII Collaboration",
     "date": "2026-10-08",
     "identifier": "arXiv:2610.11981",

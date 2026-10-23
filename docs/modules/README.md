@@ -23,6 +23,7 @@ Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modul
 
 | 服务 | 就近说明 | 测试记录 |
 |---|---|---|
+| 本地数学公式排版 | [math](../../shared/math/README.md) | [math.md](math.md) |
 | 统一作者登录与编辑器 | [author](../../modules/author/README.md) | [author.md](author.md) |
 | 文章照片 | [article-photos](../../modules/article-photos/README.md) | [article-photos.md](article-photos.md) |
 | 文章 PDF 附件 | [article-documents](../../modules/article-documents/README.md) | [article-documents.md](article-documents.md) |

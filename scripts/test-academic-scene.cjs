@@ -59,7 +59,7 @@ function fixture({ intervalMs, intersectionObserver = true, legacyPreference = f
   const buttons = keys.map(key => new Element({ academic: key }));
   const images = keys.map(key => new Element({ preview: key }));
   const steps = keys.map(key => new Element({ sceneStep: key }));
-  const fields = Object.fromEntries(["title", "description", "index", "explore", "open", "toggle"]
+  const fields = Object.fromEntries(["title", "description", "index", "explore", "open"]
     .map(key => [key, new Element()]));
   const featured = { link: new Element(), title: new Element(), metadata: new Element() };
   const root = new Element();
@@ -198,10 +198,12 @@ try {
     equal(f.api.config.intervalMs, 5000);
     equal(f.gallery.getKey(), "experience");
     equal(f.timers.size, 0);
+    equal(f.root.querySelector("[data-scene-toggle]"), null);
+    equal(f.root.dataset.scenePlayback, "held");
     equal(f.fields.title.textContent, "Experience");
     equal(f.fields.description.textContent, "Description experience");
     equal(f.fields.index.textContent, "01 / 04");
-    equal(f.fields.explore.textContent, "Explore Experience ↗");
+    equal(f.fields.explore.textContent, "Explore ↗");
     equal(f.fields.open.attrs["aria-label"], "Open Experience");
     equal(f.buttons[0].attrs["aria-current"], "true");
     equal(f.images[0].attrs["aria-hidden"], "false");
@@ -245,7 +247,7 @@ try {
     f.buttons[3].emit("pointerenter", { pointerType: "mouse" });
     equal(f.gallery.getKey(), "experience");
     f.tick(20000); equal(f.gallery.getKey(), "experience");
-    f.focus(f.fields.toggle); equal(f.gallery.getKey(), "projects");
+    f.focus(null); equal(f.gallery.getKey(), "projects");
     f.buttons[3].emit("pointerleave", { pointerType: "mouse" });
     f.focus(f.fields.open);
     f.buttons[1].emit("pointerenter", { pointerType: "mouse" });
@@ -267,7 +269,7 @@ try {
     const child = new Element(); f.buttons[2].children.push(child);
     f.buttons[2].emit("focusout", { relatedTarget: child });
     equal(f.timers.size, 0);
-    f.focus(f.fields.toggle); equal(f.timers.size, 1);
+    f.focus(null); equal(f.timers.size, 1);
     f.buttons[3].emit("pointerenter", { pointerType: "touch" });
     equal(f.gallery.getKey(), "notes"); equal(f.timers.size, 1);
     f.click(f.buttons[3]); equal(f.opens.at(-1).key, "projects");
@@ -331,21 +333,28 @@ try {
     f.cleanup();
   });
 
-  test("减少动态偏好实时变化与手动暂停保持", () => {
+  test("无播放控件仍按五秒循环，动态偏好实时暂停并完整恢复计时", () => {
     const f = fixture(); f.visible(true);
+    equal(f.root.dataset.scenePlayback, "playing");
+    f.tick(5000); equal(f.gallery.getKey(), "publications");
+    f.tick(4000);
     f.preference.matches = true; f.preference.emit("change");
-    equal(f.timers.size, 0); equal(f.fields.toggle.disabled, true);
-    equal(f.root.dataset.scenePlayback, "reduced");
-    ok(f.fields.toggle.attrs["aria-label"].includes("reduced motion"));
-    f.click(f.fields.toggle); equal(f.timers.size, 0);
-    f.preference.matches = false; f.preference.emit("change"); equal(f.timers.size, 1);
-    f.click(f.fields.toggle); equal(f.fields.toggle.textContent, "Play");
     equal(f.timers.size, 0);
-    f.visible(false); f.visible(true); equal(f.timers.size, 0);
+    equal(f.root.dataset.scenePlayback, "reduced");
+    f.tick(20000); equal(f.gallery.getKey(), "publications");
+    f.preference.matches = false; f.preference.emit("change"); equal(f.timers.size, 1);
+    equal(f.root.dataset.scenePlayback, "playing");
+    f.tick(4999); equal(f.gallery.getKey(), "publications");
+    f.tick(1); equal(f.gallery.getKey(), "notes");
+    f.buttons[0].emit("pointerenter", { pointerType: "mouse" });
+    equal(f.root.dataset.scenePlayback, "held");
     f.preference.matches = true; f.preference.emit("change");
     f.preference.matches = false; f.preference.emit("change"); equal(f.timers.size, 0);
-    f.click(f.fields.toggle); equal(f.timers.size, 1);
-    equal(f.fields.toggle.attrs["aria-pressed"], "false");
+    equal(f.root.dataset.scenePlayback, "held");
+    f.buttons[0].emit("pointerleave", { pointerType: "mouse" });
+    equal(f.timers.size, 1);
+    equal(f.root.dataset.scenePlayback, "playing");
+    f.tick(5000); equal(f.gallery.getKey(), "publications");
     f.cleanup();
   });
 

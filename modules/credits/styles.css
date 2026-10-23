@@ -6,4 +6,4 @@
 .credits-list { padding: 0; list-style: none; }
 .credits-list li { padding: 17px 0; border-bottom: 1px solid var(--line); }
 .credits-list a { color: var(--accent); }
-.credits-list small { display: block; margin-top: 5px; color: var(--muted); }
+.credits-list small { display: block; margin-top: 5px; color: var(--muted); font-size: 14px; line-height: 1.7; }

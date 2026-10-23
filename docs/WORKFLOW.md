@@ -176,3 +176,7 @@ npm run relationship:check
 ### 人物动作库回归
 
 扩展Academic人物动作时运行 `npm run test:walker-actions`（纯素材、随机导演、连续性与30分钟模拟时钟）和 `npm run test:walker-lifecycle`（内存DOM/时钟的暂停、恢复、缩放、卸载），并用 `npm run test:academic-scene` 回归现有入口。离线结果不代表浏览器观感；仍须实测桌面/窄屏、动作衔接、人物/草地基线、详情/离屏暂停和恢复。未运行的原生系统偏好或品牌内核应如实记录。
+
+## 2026-10-23：可读性与公式维护
+
+辅助文字原则上不小于12px，按模块适度调整，正文/标题层级保持；公式的上下标不受全局最小字号覆盖。公开论文采用必填纯文本 `title` 与可选 `titleTex`，后者只通过[本地数学服务](../shared/math/README.md)排版，新增公式需运行 `npm run test:math` 并实测窄屏换行。Academic图片下方图注/进度区透明，仅照片本身排除粒子；播放按钮已移除，自动轮播及条件暂停继续保留。人物默认60px，调整时核对路径、动作与草地基线。本轮分支 `feat/readability-and-math`，回退点 `backup/pre-readability-math-2026-10-23`（`555de1d`），未授权推送。

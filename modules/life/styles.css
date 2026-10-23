@@ -3,7 +3,7 @@
 .life-frame { position: relative; min-height: max(820px, calc(100svh - 92px)); border: 3px solid #ffffffd9; border-radius: 20px; }
 .life-frame::before { content: ""; position: absolute; inset: 9px -9px -9px 9px; border: 2px solid #ffffff52; border-radius: 20px; pointer-events: none; }
 .life-heading { position: absolute; z-index: 3; inset: 43% 30% auto; text-align: center; pointer-events: none; }
-.life-heading .eyebrow { color: var(--muted); font-size: 11px; line-height: 1.8; }
+.life-heading .eyebrow { color: var(--muted); font-size: 12px; line-height: 1.8; }
 .life-heading .section-heading { font-size: clamp(32px, 3.3vw, 48px); line-height: 1.15; letter-spacing: -.04em; margin-top: 17px; }
 .movable { position: absolute; padding: 0; text-align: left; z-index: 2; translate: 0 var(--drift, 0px); transition: transform .4s; border-radius: 18px; }
 .movable:hover, .movable:focus-visible { transform: translateY(-4px) rotate(0deg); z-index: 4; }
@@ -16,15 +16,15 @@
 .photo-two { top: 35%; right: 8%; width: 20%; height: 37%; transform: rotate(2.5deg); }
 .photo-three { top: 10%; right: 35%; width: 22%; height: 26%; transform: rotate(2deg); }
 .photo-four { top: 70%; left: 36%; width: 23%; height: 20%; transform: rotate(-2deg); }
-.life-footnote { position: absolute; left: 30px; bottom: 28px; color: var(--muted); font-size: 11px; line-height: 1.7; max-width: 250px; }
+.life-footnote { position: absolute; left: 30px; bottom: 28px; color: var(--muted); font-size: 12px; line-height: 1.7; max-width: 250px; }
 
 @media (max-width: 1000px) and (min-width: 761px) {
   .life-frame { min-height: 840px; }
   .life-heading { inset-inline: 30%; }
   .life-heading .section-heading { font-size: 34px; }
-  .life-heading .eyebrow { font-size: 10px; }
-  .life-footnote { left: 24px; font-size: 10px; max-width: 185px; }
-  .movable .life-caption { font-size: 13px; }
+  .life-heading .eyebrow { font-size: 12px; }
+  .life-footnote { left: 24px; font-size: 12px; max-width: 185px; }
+  .movable .life-caption { font-size: 14px; }
 }
 
 @media (max-width: 760px) {
@@ -32,7 +32,7 @@
   .life-frame { min-height: 0; padding: 30px 20px 27px; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 36px 24px; align-items: start; }
   .life-frame::before { inset: 6px -6px -6px 6px; }
   .life-heading { position: relative; inset: auto; grid-column: 1 / -1; text-align: left; }
-  .life-heading .eyebrow { font-size: 10px; }
+  .life-heading .eyebrow { font-size: 12px; }
   .life-heading .section-heading { font-size: 34px; margin-top: 14px; max-width: 12ch; }
   .movable { position: relative; inset: auto; width: auto; height: auto; min-width: 0; }
   .movable .life-image { height: auto; aspect-ratio: .8; }
@@ -43,15 +43,15 @@
   .photo-four { margin-top: 15px; transform: rotate(2deg); }
   .photo-three .life-image { aspect-ratio: 1.02; }
   .photo-four .life-image { aspect-ratio: .9; }
-  .movable .life-caption { font-size: 13px; padding-top: 11px; white-space: nowrap; }
-  .life-footnote { position: static; grid-column: 1 / -1; max-width: 28ch; font-size: 11px; }
+  .movable .life-caption { font-size: 14px; padding-top: 11px; white-space: normal; }
+  .life-footnote { position: static; grid-column: 1 / -1; max-width: 28ch; font-size: 12px; }
 }
 
 @media (max-width: 400px) {
   .life-frame { padding-inline: 17px; column-gap: 18px; }
   .life-heading .section-heading { font-size: 30px; }
-  .movable .life-caption { font-size: 12px; padding-inline: 1px; }
-  .life-footnote { font-size: 10px; }
+  .movable .life-caption { font-size: 13px; padding-inline: 1px; }
+  .life-footnote { font-size: 12px; }
 }
 
 @media (prefers-reduced-motion: reduce) {

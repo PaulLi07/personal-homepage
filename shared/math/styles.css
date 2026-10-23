@@ -1,0 +1,6 @@
+/* 只调整显式数学宿主；KaTeX 的度量、衬线和变量斜体由本地字体负责。 */
+[data-math-rendered] { min-width: 0; }
+.math-inline { white-space: normal; overflow-wrap: normal; }
+.math-inline > .katex { font-size: 1.06em; font-weight: 400; letter-spacing: 0; white-space: normal; }
+.math-inline .katex-html { white-space: normal; }
+.math-inline .katex .katex-base { white-space: nowrap; }

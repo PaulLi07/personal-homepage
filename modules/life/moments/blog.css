@@ -2,13 +2,13 @@
 .moments-blog { width: 100%; max-width: 700px; min-width: 0; }
 .moments-blog__header { display: flex; align-items: center; justify-content: space-between; flex-wrap: wrap; gap: 18px; padding-bottom: 26px; border-bottom: 1px solid var(--line); }
 .moments-blog__header h3 { font-size: 29px; line-height: 1.25; letter-spacing: -.03em; }
-.moments-blog__eyebrow { color: var(--muted); font-size: 11px; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 10px; }
+.moments-blog__eyebrow { color: var(--muted); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; margin-bottom: 10px; }
 .moments-blog__button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; padding: 10px 16px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); font-size: 14px; line-height: 1.5; text-align: left; transition: border-color .2s, background .2s; }
 .moments-blog__button:hover { border-color: #ffffff45; background: var(--surface-raised); }
-.moments-blog__author { color: var(--muted); font-size: 13px; }
+.moments-blog__author { color: var(--muted); font-size: 14px; }
 .moments-blog__card { padding-block: 29px; border-bottom: 1px solid var(--line); }
 .moments-blog__card h4 { margin: 0 0 14px; font-size: 24px; line-height: 1.4; font-weight: 500; letter-spacing: -.02em; overflow-wrap: anywhere; }
-.moments-blog__meta { display: flex; flex-wrap: wrap; gap: 8px 14px; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.moments-blog__meta { display: flex; flex-wrap: wrap; gap: 8px 14px; color: var(--muted); font-size: 14px; line-height: 1.7; }
 .moments-blog__excerpt { margin: 19px 0 22px; color: #e0e0e6; font-size: 16px; line-height: 1.85; overflow-wrap: anywhere; white-space: pre-wrap; }
 .moments-blog__back { min-height: 44px; margin: 18px 0 24px; padding: 8px 0; color: var(--accent); font-size: 14px; line-height: 1.6; }
 .moments-blog__back:hover { text-decoration: underline; text-underline-offset: 4px; }

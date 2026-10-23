@@ -2,7 +2,7 @@
 
 入口为 `#academic/publications/arxiv`。`data.js` 独立保存分类说明与预印本元信息，通过 `Homepage.registerPublicationCategory` 登记，条目格式见[父模块说明](../README.md)。
 
-当前包含用户提供的 [arXiv:2610.11981](https://arxiv.org/abs/2610.11981)，官方页面元信息核对日期为 2026-10-10：提交于 2026-10-08，合作组署名为 BESIII Collaboration；全文链接为 <https://arxiv.org/pdf/2610.11981>。题名使用 Unicode 文本保留粒子与反粒子标识；没有新增摘要、完整作者名单或个人贡献声明。
+当前包含用户提供的 [arXiv:2610.11981](https://arxiv.org/abs/2610.11981)，官方页面元信息核对日期为 2026-10-10：提交于 2026-10-08，合作组署名为 BESIII Collaboration；全文链接为 <https://arxiv.org/pdf/2610.11981>。题名保留 Unicode 纯文本回退，并用可选 `titleTex` 交给本地KaTeX排版粒子变量、上下标与反粒子横线；没有新增摘要、完整作者名单或个人贡献声明。
 
 增加论文时核对官方题名、作者或合作组、日期与链接，只登记真实资料。预印本不自动归入 Published；正式发表信息由用户确认后单独维护。
 

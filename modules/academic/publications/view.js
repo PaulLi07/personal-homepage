@@ -100,7 +100,9 @@
             [...selected.entries].sort((left, right) => right.date.localeCompare(left.date)).forEach(entry => {
               const article = node("article", "publication-library__entry");
               article.dataset.publicationId = entry.id;
-              article.append(node("h4", "publication-library__title", entry.title), node("p", "publication-library__authors", entry.authors));
+              const title = node("h4", "publication-library__title", entry.title);
+              if (entry.titleTex) api.math?.renderText(title, entry.titleTex, {fallback: entry.title});
+              article.append(title, node("p", "publication-library__authors", entry.authors));
               const metadata = node("p", "publication-library__metadata");
               const date = node("time", "", formatter.format(new Date(entry.date + "T00:00:00Z")));
               date.dateTime = entry.date;

@@ -1,5 +1,27 @@
 # 兼容性与功能实测
 
+<a id="readability-math-2026-10-23"></a>
+## 2026-10-23：透明图注、字号、公式与60px人物
+
+本轮回退点 `backup/pre-readability-math-2026-10-23`（`555de1d`），任务分支 `feat/readability-and-math`；只整合本地main，未授权推送。用户已有未提交人像保持原字节、不纳入提交。
+
+环境：macOS / Codex应用内浏览器，工具未提供内核和精确版本。主页检查1440×1000、820×1180、320×780、390×844；手机/平板均为模拟视口。署名页另测1280×720和390×844。实际刷新用户原预览标签，并在最后装配后再刷新核对。
+
+| 检查项 | 实际结果 |
+|---|---|
+| Academic图注与粒子 | 图窗和图注计算背景为透明，图注不再有排除祖先；图片容器保留公开排除标记。桌面/手机预览粒子透出图注、照片保持干净；没有Pause/Play按钮，仅保留序号/进度 |
+| 字体 | 原8–11px辅助文字提升至12px，部分元信息/按钮提升至13–14px；正文与标题层级保持。320px导航104px高、12px副标题，首页双按钮自然换行；Publications路牌14px标签无裁切、Life的Relationship标签与长邮箱均适配 |
+| 公式 | 精选及Publications各两段KaTeX，字体状态loaded、无katex-error；数学斜体、上下标、反粒子横线正常。320px详情论文标题宽/滚动宽均269px，精选题名宽/滚动宽均231px，长公式在箭头/加号附近自然换行 |
+| 人物 | 实际高60px、宽约52.17px，路径高66px；320px路径宽78px，保留约25.8px行走空间，人物不出界。320px脚底/草地基线均645.34375px，820px差值0；保留随机动作及连贯衔接 |
+| 轮播与暂停 | 无按钮时实见四栏自动更换；键盘聚焦Publications切换预览，Enter正常进入详情。320px详情与作者入口打开后间隔检查wave进度0.8559保持、walkPaused=true；Escape关闭恢复原入口焦点 |
+| 导航与详情 | 普通首页→Academic导航稳定后：1440px分隔顶115.80px>导航底76px，320px分隔顶134.23px>104px。Life白框顶1440为110.09px>76px、320为132.48px>104px。Experience/作者入口、Publications三分类、Notes、Projects、Moments、Travels、Creations、Relationship正常，所测详情横向溢出0；Relationship保持原未配置空状态 |
+| 全站回归 | 1440px及320px查看Home/About/Life/Contact与长邮箱；署名页14px来源小字，390px正常折行。320px作者密码输入保持16px、未输入凭据或调用发布。页面均无正向横向溢出；共享导航/详情未改路由及权限 |
+
+离线检查：`test:math`93断言、`test:academic-scene`15流程/127断言、`test:walker-actions`10流程/1289断言、`test:walker-lifecycle`9流程/110断言，共1619断言通过；`npm run assemble`、`npm run check`、`git diff --check`通过。离线夹具与真实UI证据分别记录，不能互相替代。
+
+未测试：独立Chrome/Firefox/Safari内核矩阵、真机、原生系统减少动态偏好、真实作者解锁/附件上传/远端发布及线上部署；减少动态、故障回退与时钟由离线夹具覆盖。浏览器URL策略禁止file://，因此本轮未实测直接文件打开；相对资源和本地字体完整性已静态核对。截图在仓库外 `../outputs/readability-math-preview-2026-10-23/`。历史三内核通过结论不能替代本轮。
+
+
 <a id="walker-actions-2026-10-23"></a>
 ## 2026-10-23：人物随机动作库
 

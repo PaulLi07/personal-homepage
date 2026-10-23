@@ -6,7 +6,7 @@
 .article-documents__summary { min-width: 0; flex: 1 1 14rem; }
 .article-documents__meta, .article-document-picker__help, .article-document-picker__empty, .article-document-picker__size { margin: 8px 0; color: var(--muted); font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
 .article-documents__actions, .article-document-picker__actions { display: flex; flex-wrap: wrap; gap: 8px; }
-.article-documents__open, .article-documents__download, .article-document-picker__button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; box-sizing: border-box; padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--accent); font: inherit; font-size: 13px; line-height: 1.6; text-decoration: none; cursor: pointer; }
+.article-documents__open, .article-documents__download, .article-document-picker__button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; box-sizing: border-box; padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--accent); font: inherit; font-size: 14px; line-height: 1.6; text-decoration: none; cursor: pointer; }
 .article-documents__open:hover, .article-documents__download:hover, .article-document-picker__button:hover { background: var(--surface-raised); }
 .article-documents a:focus-visible, .article-document-picker input:focus-visible, .article-document-picker button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
 .article-document-picker { min-width: 0; margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--line); }

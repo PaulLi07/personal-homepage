@@ -11,7 +11,7 @@
 .profile-facts { margin: 8px 0 0; border: 1px solid #ffffff1f; background: var(--surface, #1c1c1e); border-radius: 16px; padding: 4px 22px; }
 .profile-facts div { padding-block: 15px; border-bottom: 1px solid #ffffff14; display: grid; grid-template-columns: 78px minmax(0, 1fr); gap: 22px; align-items: baseline; }
 .profile-facts div:last-child { border: 0; }
-.profile-facts dt { font-size: 12px; color: var(--muted); }
+.profile-facts dt { font-size: 13px; color: var(--muted); }
 .profile-facts dd { margin: 0; font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; color: var(--white); }
 .profile-facts a { text-decoration: underline; text-decoration-color: #ffffff30; text-underline-offset: 4px; transition: color .2s, text-decoration-color .2s; }
 .profile-facts a:hover { color: var(--accent); text-decoration-color: var(--accent); }
@@ -26,7 +26,7 @@
   .normalIntro > p:first-child { font-size: 24px; }
   .profile-facts { padding-inline: 16px; }
   .profile-facts div { grid-template-columns: 61px minmax(0, 1fr); gap: 12px; }
-  .profile-facts dd { font-size: 13px; }
+  .profile-facts dd { font-size: 14px; }
 }
 
 @media (max-width:760px) {
@@ -41,7 +41,7 @@
   .normalIntro > p:first-child { font-size: 25px; }
   .profile-facts { padding-inline: 18px; margin-top: 5px; }
   .profile-facts div { grid-template-columns: 65px minmax(0, 1fr); gap: 13px; padding-block: 15px; }
-  .profile-facts dd { font-size: 13px; }
+  .profile-facts dd { font-size: 14px; }
   .at-a-glance { padding-block: 16px; padding-left: 19px; }
   .about-note-marker { top: 15px; }
 }
