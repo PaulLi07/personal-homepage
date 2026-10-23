@@ -172,3 +172,7 @@ npm run relationship:check
 | 替换图片 | 对应模块 `images/` 与图片来源文档 |
 | 模块说明 / 测试 | 模块内 `README.md` / `docs/modules/<标识>.md` |
 | 查看远端 / 待发布 | `git remote -v` / `git log --oneline origin/main..HEAD` |
+
+### 人物动作库回归
+
+扩展Academic人物动作时运行 `npm run test:walker-actions`（纯素材、随机导演、连续性与30分钟模拟时钟）和 `npm run test:walker-lifecycle`（内存DOM/时钟的暂停、恢复、缩放、卸载），并用 `npm run test:academic-scene` 回归现有入口。离线结果不代表浏览器观感；仍须实测桌面/窄屏、动作衔接、人物/草地基线、详情/离屏暂停和恢复。未运行的原生系统偏好或品牌内核应如实记录。

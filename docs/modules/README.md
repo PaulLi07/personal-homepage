@@ -51,3 +51,5 @@ Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modul
 2026-10-10 当前栏目与自定义详情已完成三内核、三个视口实测；基础回归、81 个功能流程、9 项算法及打包排除证据见 [实测总记录](../COMPATIBILITY.md)，其中保留 2026-10-09 重构历史。GitHub API 全模拟，真实写入为 0；手机真机、品牌版本与线上部署未测。子模块可引用父分组中明确列出本栏目的逐项证据，不能用笼统“父模块通过”覆盖未测栏目；后续扩展仍需重新验证。
 
 本轮九图/PDF 测试 297 流程与学术分类/ORCID/BESIII 测试 72 流程均已在同样九环境实测通过，结果分别见 [附件](article-photos.md)、[PDF](article-documents.md) 和 [Publications](academic-publications.md)。
+
+Academic人物随机动作的素材库、接口和调参见 [人物说明](../../modules/academic/exploration/character/README.md)，当前验证见 [动作记录](academic.md#walker-actions-2026-10-23)。

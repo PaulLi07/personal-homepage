@@ -1,98 +1,149 @@
-/* 装饰人物独立处理步态、暂停与清理；不读取详情弹窗或其他模块的内部结构。 */
+/* 人物生命周期胶水：连接独立骨架与动作导演，暂停不推进动作时钟。 */
 (function () {
   "use strict";
   const api = window.Homepage.academicExploration;
-  const namespace = "http://www.w3.org/2000/svg";
   const mounted = new WeakMap();
-
-  function element(name, attributes, children = []) {
-    const node = document.createElementNS(namespace, name);
-    Object.entries(attributes).forEach(([key, value]) => node.setAttribute(key, value));
-    children.forEach(child => node.appendChild(child));
-    return node;
-  }
-
-  function limb(className, path) {
-    return element("g", { class: className }, [element("path", { d: path })]);
-  }
-
-  function createFigure() {
-    return element("svg", {
-      class: "academic-walker-art", viewBox: "0 0 32 42", "aria-hidden": "true", focusable: "false",
-      fill: "none", stroke: "currentColor", "stroke-width": "1.7", "stroke-linecap": "round", "stroke-linejoin": "round"
-    }, [element("g", { class: "academic-walker-body" }, [
-      limb("academic-walker-arm academic-walker-arm--back", "M17 14 L15 20 L13 24"),
-      limb("academic-walker-leg academic-walker-leg--back", "M16 23 L15 31 L17 40 L20 40"),
-      element("circle", { cx: "17.5", cy: "6", r: "3.2" }),
-      element("path", { d: "M17 11.5 L16 23" }),
-      limb("academic-walker-arm academic-walker-arm--front", "M17 14 L20 20 L22 23"),
-      limb("academic-walker-leg academic-walker-leg--front", "M16 23 L18 31 L17 40 L20 40")
-    ])]);
-  }
-
-  function duration(value, fallback, minimum, maximum) {
-    return Number.isFinite(value) ? Math.min(maximum, Math.max(minimum, value)) : fallback;
-  }
+  const finite = (value, fallback, minimum, maximum) => Number.isFinite(value)
+    ? Math.max(minimum, Math.min(maximum, value)) : fallback;
 
   api.mountWalker = function ({ root, config = {}, reducedMotion } = {}) {
     const walker = root?.querySelector("[data-scene-walker]");
-    if (!walker) return { destroy() {} };
+    const path = root?.querySelector("[data-scene-walkway]");
+    if (!walker || !path) return { destroy() {} };
     mounted.get(walker)?.destroy();
-
-    const figure = createFigure();
+    const settings = config.walker || {};
+    const height = finite(settings.heightPx, 46, 32, 72);
+    const width = height * 40 / 46;
+    const previousStyles = new Map();
+    function setStyle(node, property, value) {
+      previousStyles.set(property, [node, node.style.getPropertyValue(property)]);
+      node.style.setProperty(property, value);
+    }
+    setStyle(walker, "--academic-character-height", height + "px");
+    setStyle(walker, "--academic-character-width", width + "px");
+    setStyle(path, "min-height", (height + 6) + "px");
+    setStyle(walker, "left", "0px");
+    const pathWidth = () => Math.max(0, path.clientWidth - width);
+    const director = api.character.createDirector({ width: pathWidth(), config: settings });
+    const figure = api.character.createFigure();
     const fallback = walker.querySelector("[data-walker-fallback]");
     const fallbackHidden = fallback?.hidden;
     if (fallback) fallback.hidden = true;
-    walker.appendChild(figure);
-    walker.style.setProperty("--academic-walk-duration", duration(config.walkDurationMs, 16000, 4000, 120000) + "ms");
-    walker.style.setProperty("--academic-step-duration", duration(config.stepDurationMs, 850, 300, 4000) + "ms");
-
+    walker.appendChild(figure.element);
     const media = reducedMotion && typeof reducedMotion === "object"
       ? reducedMotion : window.matchMedia("(prefers-reduced-motion: reduce)");
-    let intersecting = typeof window.IntersectionObserver !== "function";
+    const listeners = [];
+    let intersecting = false;
+    let paused = true;
+    let pageSuspended = false;
     let destroyed = false;
+    let frameId = null;
+    let lastTimestamp = null;
+
+    function listen(target, event, handler, options) {
+      target.addEventListener(event, handler, options);
+      listeners.push(() => target.removeEventListener(event, handler, options));
+    }
+    function render() {
+      const frame = director.getFrame();
+      const left = frame.x + "px";
+      // 静态片段不重复写布局样式，避免唤醒外围的样式观察器。
+      if (walker.style.getPropertyValue("left") !== left) walker.style.setProperty("left", left);
+      if (walker.dataset.walkAction !== frame.action) walker.dataset.walkAction = frame.action;
+      walker.dataset.walkProgress = frame.progress.toFixed(4);
+      figure.render(frame);
+    }
+    function stopClock() {
+      if (frameId !== null) window.cancelAnimationFrame(frameId);
+      frameId = null;
+      lastTimestamp = null;
+    }
+    function tick(timestamp) {
+      frameId = null;
+      if (destroyed || paused) return;
+      if (lastTimestamp === null) lastTimestamp = timestamp;
+      const elapsed = timestamp - lastTimestamp;
+      // 每秒最多绘制30次；大卡顿不让人物跳过整段动作。
+      if (elapsed >= 1000 / 30) {
+        director.advance(Math.min(elapsed, 80));
+        render();
+        lastTimestamp = timestamp;
+      }
+      frameId = window.requestAnimationFrame(tick);
+    }
     function updatePause() {
       if (destroyed) return;
-      const reduced = reducedMotion === true || media.matches;
+      const reduced = reducedMotion === true || Boolean(media.matches);
       const detailOpen = /^#[a-z]+\/[a-z]/.test(window.location.hash);
+      const next = pageSuspended || reduced || !intersecting || document.hidden || detailOpen;
       walker.dataset.walkReduced = String(reduced);
-      walker.dataset.walkPaused = String(reduced || !intersecting || document.hidden || detailOpen);
+      walker.dataset.walkPaused = String(next);
+      if (next) stopClock();
+      else if (paused || frameId === null) {
+        lastTimestamp = null;
+        frameId = window.requestAnimationFrame(tick);
+      }
+      paused = next;
     }
-    // 原生弹窗的焦点/关闭事件只作为刷新信号；关闭后等待其拥有者先恢复路由。
-    const schedulePause = () => queueMicrotask(updatePause);
+    const schedulePause = () => window.queueMicrotask(updatePause);
+    function measureVisibility() {
+      const box = root.getBoundingClientRect();
+      intersecting = box.width > 0 && box.height > 0 && box.bottom > 0 && box.right > 0
+        && box.top < window.innerHeight && box.left < window.innerWidth;
+      updatePause();
+    }
+    function resize() {
+      if (destroyed) return;
+      director.resize(pathWidth());
+      render();
+    }
     const observer = typeof window.IntersectionObserver === "function"
       ? new window.IntersectionObserver(entries => {
-        intersecting = entries.some(entry => entry.isIntersecting);
+        const entry = entries.find(item => item.target === root);
+        if (entry) intersecting = entry.isIntersecting;
         updatePause();
       }, { threshold: 0 }) : null;
     observer?.observe(root);
-    document.addEventListener("visibilitychange", updatePause);
-    document.addEventListener("focusin", schedulePause);
-    document.addEventListener("close", schedulePause, true);
-    window.addEventListener("hashchange", updatePause);
-    window.addEventListener("popstate", updatePause);
-    if (media.addEventListener) media.addEventListener("change", updatePause);
-    else media.addListener?.(updatePause);
+    if (!observer) {
+      listen(window, "scroll", measureVisibility, { passive: true });
+      listen(window, "resize", measureVisibility);
+      measureVisibility();
+    }
+    const resizeObserver = typeof window.ResizeObserver === "function"
+      ? new window.ResizeObserver(resize) : null;
+    resizeObserver?.observe(path);
+    if (!resizeObserver) listen(window, "resize", resize);
+    listen(document, "visibilitychange", updatePause);
+    listen(document, "focusin", schedulePause);
+    listen(document, "close", schedulePause, true);
+    listen(window, "hashchange", updatePause);
+    listen(window, "popstate", updatePause);
+    // 往返缓存恢复不补算离开期间的时间。
+    listen(window, "pagehide", () => { pageSuspended = true; updatePause(); });
+    listen(window, "pageshow", () => { pageSuspended = false; lastTimestamp = null; updatePause(); });
+    if (media.addEventListener) listen(media, "change", updatePause);
+    else if (media.addListener) {
+      media.addListener(updatePause);
+      listeners.push(() => media.removeListener(updatePause));
+    }
+    render();
     updatePause();
-
     const instance = {
       destroy() {
         if (destroyed) return;
         destroyed = true;
+        stopClock();
         observer?.disconnect();
-        document.removeEventListener("visibilitychange", updatePause);
-        document.removeEventListener("focusin", schedulePause);
-        document.removeEventListener("close", schedulePause, true);
-        window.removeEventListener("hashchange", updatePause);
-        window.removeEventListener("popstate", updatePause);
-        if (media.removeEventListener) media.removeEventListener("change", updatePause);
-        else media.removeListener?.(updatePause);
-        figure.remove();
+        resizeObserver?.disconnect();
+        listeners.splice(0).forEach(remove => remove());
+        figure.destroy?.();
+        figure.element.remove();
         if (fallback) fallback.hidden = fallbackHidden;
-        delete walker.dataset.walkPaused;
-        delete walker.dataset.walkReduced;
-        walker.style.removeProperty("--academic-walk-duration");
-        walker.style.removeProperty("--academic-step-duration");
+        ["walkPaused", "walkReduced", "walkAction", "walkProgress"].forEach(key => { delete walker.dataset[key]; });
+        previousStyles.forEach(([node, value], property) => {
+          if (value) node.style.setProperty(property, value);
+          else node.style.removeProperty(property);
+        });
         mounted.delete(walker);
       }
     };

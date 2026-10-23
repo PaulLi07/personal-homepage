@@ -19,7 +19,9 @@
     "test:academic-profile": "node scripts/test-academic-profile.cjs",
     "test:particles": "node scripts/test-particles.cjs",
     "test:particle-simulation": "node scripts/test-particle-simulation.cjs",
-    "test:academic-scene": "node scripts/test-academic-scene.cjs"
+    "test:academic-scene": "node scripts/test-academic-scene.cjs",
+    "test:walker-actions": "node scripts/test-walker-actions.cjs",
+    "test:walker-lifecycle": "node scripts/test-walker-lifecycle.cjs"
   },
   "engines": {
     "node": ">=18"

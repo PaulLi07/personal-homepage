@@ -188,3 +188,7 @@ Publications 使用 `#academic/publications` 分类目录与 `/internal-note`、
 ## 2026-10-23 漫画造景维护
 
 Academic场景新增独立 `exploration/comic.css` 和原生 `sign-plank.svg` / `grass.svg`，分别维护路牌纸面/立体侧板及漫画草地，按清单加载；`scene.css`仅保留空间布局与共同接地基线，轮播、导航、人物脚本及公共接口保持。资产不放入共享素材目录，完整导航和草地区域通过公开属性排除粒子。测试见 [漫画记录](modules/academic.md#academic-comic-2026-10-23)。
+
+## 人物动作库与独立时间轴
+
+Academic探索场景的 `character/` 保存 `clips.js`（素材/关节采样）、`director.js`（加权抽取/位移/衔接）和 `figure.js`（SVG渲染）；上级 `walker.js` 只连接工厂、活跃时钟和生命周期。素材/导演不访问DOM；渲染器不决定动作或位置。清单依次装配素材、导演、骨架和挂载器，保留普通脚本/文件打开结构。`config.walker`集中调尺寸、速度、时长与权重。详情暂停只用公开URL与原生事件，不新增共享层业务。接口与验证见 [动作库说明](../modules/academic/exploration/character/README.md)。

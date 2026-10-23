@@ -1,6 +1,8 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 42" fill="none" stroke="#f5f7fc" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-  <!-- 无脚本时的静态回退；动态人物由 walker.js 创建同样的线描轮廓。 -->
-  <path d="M17 14 15 20 13 24M16 23 15 31 17 40 20 40" opacity=".48"/>
-  <circle cx="17.5" cy="6" r="3.2"/>
-  <path d="M17 11.5 16 23M17 14 20 20 22 23M16 23 18 31 17 40 20 40"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 -46 40 46" fill="none" stroke="#f5f5f5" stroke-width="1.65" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+  <!-- 与动作库共同的站姿；无脚本时也保持脚底基线。 -->
+  <path d="M0-30-3.4-25-4.2-20.5M0-19-2-9.5-3 0h2.2" opacity=".5"/>
+  <path d="M0-33.7V-30L0-19M0-30 3.2-25 4-20M0-19 2-9.5 3 0h2.2"/>
+  <circle cx="0" cy="-37" r="3.3"/>
+  <circle cx="1.45" cy="-37.5" r=".38" fill="#f5f5f5" stroke="none"/>
+  <path d="M2.8 -36.95 l1.15 .65 l-1.15 .2" stroke-width="1.05"/>
 </svg>

@@ -10,6 +10,8 @@
 
 Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
 
+场景人物新增可调的随机动作素材库，动作/导演/SVG骨架独立维护；尺寸、权重、速度与衔接见 [人物说明](modules/academic/exploration/character/README.md)，本轮验证见 [记录](docs/modules/academic.md#walker-actions-2026-10-23)。
+
 ## 快速开始
 
 基础维护命令使用 Node.js 18+ 和 Python 3.9+，无需运行 `npm install`。

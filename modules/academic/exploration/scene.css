@@ -21,7 +21,7 @@
 .academic-gallery-toggle { margin-left: auto; min-width: 58px; min-height: 44px; padding: 8px; font-size: 11px; color: #c7c7d0; border-radius: 0; }
 .academic-gallery-toggle:hover { color: #fff; }
 .academic-gallery-toggle:disabled { cursor: default; color: var(--muted); }
-.academic-walkway { position: absolute; left: 36%; width: 42%; height: 42px; bottom: var(--ground-line-offset); pointer-events: none; }
+.academic-walkway { position: absolute; left: 36%; width: 42%; height: 52px; bottom: var(--ground-line-offset); pointer-events: none; }
 @media (max-width: 1100px) and (min-width: 761px) {
   .academic-scene { --pole-height: 60px; column-gap: 3%; padding-bottom: 125px; }
   .academic-window-explore { font-size: 10px; }

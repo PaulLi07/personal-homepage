@@ -4,10 +4,11 @@ Academic自己的表现子模块：路牌、悬浮图窗、地面和步行人物
 
 | 文件 | 职责 |
 |---|---|
-| `config.js` | `intervalMs`轮播间隔、`walkDurationMs`人物往返周期、`stepDurationMs`步态周期，均为毫秒 |
+| `config.js` | `intervalMs`轮播间隔及独立 `walker` 尺寸/速度/动作权重配置 |
 | `gallery.js` | 图窗选择、四栏循环、独立暂停原因、视口/页面可见及动态偏好 |
 | `navigation.js` | 路牌和图窗的鼠标、触摸、焦点、点击入口 |
-| `walker.js`、`walker.css` | 创建线描SVG、往返与步态、暂停和清理 |
+| `walker.js`、`walker.css` | 人物外壳与挂载、绘制节流、暂停恢复和清理 |
+| `character/` | 独立动作素材、加权导演和SVG骨架，见就近README |
 | `walker.svg` | 无脚本的静态人物回退 |
 | `featured.js` | 通过Publications公开getter展示已有精选论文 |
 | `scene.js` | 连接图窗、导航、人物与详情订阅，提供清理函数 |
@@ -21,7 +22,7 @@ Academic自己的表现子模块：路牌、悬浮图窗、地面和步行人物
 
 轮播每次使用一个定时器，恢复后完整等待间隔，避免后台积压。鼠标/键盘暂停互相独立，触摸不留下hover状态。图窗已离屏时不将其作为详情过渡起点，避免手机详情从屏幕外飞入。图窗不设 `aria-live`，避免自动轮播反复朗读；播放/暂停按钮有英文说明。详情暂停只读公开URL，通过focus、history和原生close信号同步，不读取共用弹窗内部节点。
 
-布局在 `.academic-scene` 集中定义 `--sign-width`（桌面30%）、`--pole-height` 和 `--ground-line-offset`。步行路径宽度及位置由父场景控制，人物内部尺寸32×38px。减少动态效果由CSS与脚本共同停止；人物为装饰、隐藏于辅助技术，不承担点击。
+布局在 `.academic-scene` 集中定义 `--sign-width`（桌面30%）、`--pole-height` 和 `--ground-line-offset`。步行路径宽度及位置由父场景控制，人物外壳尺寸40×46px，可经配置调整。减少动态效果由CSS与脚本共同停止；人物为装饰、隐藏于辅助技术，不承担点击。
 
 验证命令 `npm run test:academic-scene` 是Node VM离线行为验证，不能替代浏览器。真实预览见 [Academic测试记录](../../../docs/modules/academic.md#academic-scene-2026-10-23)。说明用中文，网页内容用英文。
 
@@ -32,3 +33,7 @@ Academic自己的表现子模块：路牌、悬浮图窗、地面和步行人物
 地面资产为1280×96 SVG，地表基线位于y≈26，因此脚底/立柱共同使用 `--ground-line-offset:70px`（96−26）。草地在场景内部占96px高，不覆盖精选论文；手机将草图至少保持700px宽并裁取局部，避免草簇压缩成栅栏。调画幅或基线时须同时核对脚底、立柱与草地位置。所有SVG为本站代码绘制，无位图生成、外部字体或新运行时依赖。
 
 实测见 [漫画本轮记录](../../../docs/modules/academic.md#academic-comic-2026-10-23)。回退点 `backup/pre-academic-comic-2026-10-23`（`7e4425c`），任务分支 `style/academic-comic-signpost`。未请求发布时只在本地维护。
+
+## 随机动作人物
+
+人物采用 [独立动作库](character/README.md)：六种日常动作加转身连接片段，以共用站姿和五次缓动衔接；根位移与整数步态共同渐入/渐出。动作不连续重复，最多两段静态动作后继续行走，窄屏边缘也能随机停留。离屏/后台/详情/动态偏好暂停冻结动作进度，恢复不补算离开时间。动作、调度、SVG渲染、生命周期互不混合，参数在 `config.js` 的 `walker`。当前验证见 [记录](../../../docs/modules/academic.md#walker-actions-2026-10-23)。

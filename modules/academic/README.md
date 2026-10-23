@@ -26,3 +26,5 @@
 本轮分支 `feat/academic-exploration-scene`；回退点 `backup/pre-academic-scene-2026-10-23` 指向 `ed981de`。用户已有未提交人像保留原字节，不能因回退样式覆盖。实测与限制见 [记录](../../docs/modules/academic.md#academic-scene-2026-10-23)，尚未推送。
 
 2026-10-23后续路牌优化仅影响导航与地面造景：独立 `comic.css` / `sign-plank.svg` / `grass.svg` 维护纸面、侧板厚度、排线、草簇和土层；原轮播、入口及人物业务不变。说明及调参见场景README，验证见 [本轮记录](../../docs/modules/academic.md#academic-comic-2026-10-23)。
+
+同日进一步将人物略放大为40×46px，新增独立动作素材/导演/骨架及加权随机衔接；外壳仍由场景挂载，原导航、路牌、草地和图窗行为保持。调参、扩展与验证见 [人物动作库](exploration/character/README.md) 及 [本轮记录](../../docs/modules/academic.md#walker-actions-2026-10-23)。
