@@ -27,6 +27,7 @@
 - Home 继续独立使用 `modules/home/images/hero.jpg` 原山水图，署名为 Ivan Rohovchenko / Unsplash；不再要求与 About 图片相同。About 的 `modules/about/images/portrait.jpg` 已由用户替换为 6240×4160 户外人像，本轮保留原字节；只按观察描述图片，不推断人物身份、拍摄地点、摄影者或来源。Contact 使用用户提供的原始 PNG，独立保存为 `modules/contact/images/background.png`；只注明用户提供、原作者与来源尚未确认，不能称为用户亲自拍摄。Home 与 Contact 均保留图片背景，不声明黑色粒子表面。
 - 2026-10-23 用户批准 Apple 风格优化：保留摄影首屏、宇宙粒子、学术四栏目与生活照片叠层，使用系统字体、正常字形、适中标题、石墨灰面板、克制磨砂和清楚的主次按钮；不引入窄体巨字或无层次的大块黑色。视觉令牌与模块边界见 [设计约定](docs/DESIGN-APPLE.md)，本轮实际验证统一链接 [兼容性记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)，不得沿用旧测试结论。
 - 同日后续批准仅精修 Academic：参考 NASA Science 的专题层次，四入口整卡 `1:1`、`0px` 圆角，图片、标题说明内嵌，桌面四列、≤900px 两列；大预览也改直角，仅覆盖本区旧圆角约定。保留纯黑粒子表面、前景与图片 `data-particle-exclude`。上部标题/说明从 `details.getItem()` 读取，序号随栏目切换；精选论文仅从公开 `getPublicationCategories()` 取 arXiv 首条，否则首个非空分类首条，不复制资料，缺失、抛错或全空则隐藏。实际验证见 [Academic 本轮记录](docs/modules/academic.md#academic-science-2026-10-23)，其他板块规则不变。
+- 2026-10-23 后续用户批准 Academic 改为学术探索场景，取代前述四正方形卡片：桌面左侧30%四行直角路牌接地，顶部在右侧大图中部至下半部；地面小人用SVG/CSS缓慢行走，图窗自动循环四栏，悬停/聚焦/详情/离屏暂停，支持手机与减少动态效果。场景按配置、轮播、导航、人物、精选索引和胶水独立放在 `modules/academic/exploration/`，父入口只接线，不读取其他模块私有实现；继续遵守中文文档/英文页面及实测协议。回退点 `backup/pre-academic-scene-2026-10-23`（`ed981de`），任务分支 `feat/academic-exploration-scene`，本轮未授权推送。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。

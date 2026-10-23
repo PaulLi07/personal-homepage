@@ -48,6 +48,8 @@
       "view": "modules/academic/section.html",
       "styles": [
         "modules/academic/styles.css",
+        "modules/academic/exploration/scene.css",
+        "modules/academic/exploration/walker.css",
         "modules/academic/experience/log.css",
         "modules/academic/publications/styles.css"
       ],
@@ -66,9 +68,17 @@
         "modules/academic/publications/integration.js",
         "modules/academic/notes/content.js",
         "modules/academic/projects/content.js",
+        "modules/academic/exploration/config.js",
+        "modules/academic/exploration/gallery.js",
+        "modules/academic/exploration/navigation.js",
+        "modules/academic/exploration/walker.js",
+        "modules/academic/exploration/featured.js",
+        "modules/academic/exploration/scene.js",
         "modules/academic/module.js"
       ],
-      "liveScripts": ["modules/academic/experience/entries.js"],
+      "liveScripts": [
+        "modules/academic/experience/entries.js"
+      ],
       "detailGroup": "academic"
     },
     {
@@ -95,7 +105,9 @@
         "modules/life/relationship/integration.js",
         "modules/life/module.js"
       ],
-      "liveScripts": ["modules/life/moments/posts.js"],
+      "liveScripts": [
+        "modules/life/moments/posts.js"
+      ],
       "detailGroup": "life"
     },
     {

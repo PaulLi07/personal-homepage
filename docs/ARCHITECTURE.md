@@ -86,7 +86,9 @@ Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，
 
 后续样式维护见 [设计约定](DESIGN-APPLE.md)。前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`，验证见 [Apple 兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，备份 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`，尚未推送；本轮证据见 [Academic 记录](modules/academic.md#academic-science-2026-10-23)。
 
-Academic 概览的四入口为整卡 `1:1`、`0px` 圆角，图片及标题说明内嵌，桌面四列、≤900px 两列；大预览也为直角，仅覆盖本区旧圆角约定。黑区、前景和图片排除声明保留。动态栏目标题、说明经 `details.getItem()` 读取，序号随选择切换；精选论文经公开 `getPublicationCategories()` 读取，优先 arXiv 首条，否则取首个非空分类首条，缺失、抛错或全空时隐藏，不复制子模块资料。
+Academic 概览现由 `modules/academic/exploration/` 独立管理探索场景，替代此前四正方形卡片。配置、轮播、路牌导航、人物、精选索引分别维护，`scene.js`连接工厂及详情订阅，父 `module.js` 仅挂载。清单声明CSS/普通脚本顺序，无新增服务、框架或运行时网络依赖。桌面30%左下路牌与右侧大图错位，手机上下排列；地面/人物为SVG与CSS，显式声明粒子排除。参数与接口见 [场景说明](../modules/academic/exploration/README.md)，验证见 [当前记录](modules/academic.md#academic-scene-2026-10-23)。任务分支 `feat/academic-exploration-scene`，回退 `backup/pre-academic-scene-2026-10-23`（`ed981de`）。
+
+栏目标题、说明仍经 `details.getItem()`读取，精选论文仍经公开 `getPublicationCategories()`读取，不复制子模块资料。人物与轮播分别响应可见性和减少动态效果；详情状态仅从公开URL与原生事件同步。原作者、附件与论文分类接口保持。
 
 ## 注册接口与共享服务
 

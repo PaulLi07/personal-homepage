@@ -8,6 +8,8 @@
 
 2026-10-23 已按批准方案优化为深色 Apple 风格；维护约定见 [设计说明](docs/DESIGN-APPLE.md)，实际桌面/手机预览及未覆盖范围见 [本轮记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)。以下旧测试数字保留为对应历史阶段，不能代替本次验证。
 
+Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
+
 ## 快速开始
 
 基础维护命令使用 Node.js 18+ 和 Python 3.9+，无需运行 `npm install`。

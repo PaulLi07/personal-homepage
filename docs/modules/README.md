@@ -6,7 +6,7 @@
 
 本轮 Apple 风格设计、逐模块实际预览和限制见 [2026-10-23 记录](../COMPATIBILITY.md#apple-design-2026-10-23)；维护约定见 [设计说明](../DESIGN-APPLE.md)。以下旧矩阵保留为历史，不能代替本轮验证。
 
-Academic最新直角专题目录、精选论文与公开详情接口的验证见 [专项记录](academic.md#academic-science-2026-10-23)，不沿用前一轮结果。
+Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modules/academic/exploration/README.md)，本次验证见 [专项记录](academic.md#academic-scene-2026-10-23)，不沿用前一轮结果。
 
 ## 主模块
 
