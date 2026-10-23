@@ -1,7 +1,7 @@
-/* 高椰林接地，完整树冠先占上方留白；正常比例图窗在树冠下方悬浮。 */
-.academic-scene { --sign-width: min(100%, 300px); --ground-line-offset: 70px; --pole-height: clamp(64px, 5vw, 95px); --scene-gap: clamp(24px, 2vw, 36px); --palm-width: clamp(320px, 27vw, 420px); --palm-root-height: calc(var(--palm-width) * 2.2875); --photo-top: calc(var(--palm-width) * .625 + 22px); position: relative; display: grid; grid-template-columns: clamp(250px, 21vw, 330px) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; min-height: calc(var(--palm-root-height) + var(--ground-line-offset)); padding: var(--photo-top) var(--academic-inset) 100px clamp(48px, 5.5vw, 88px); }
-.academic-signpost { position: absolute; z-index: 3; left: clamp(48px, 5.5vw, 88px); bottom: var(--ground-line-offset); width: min(21vw, 300px); min-width: 250px; padding-bottom: var(--pole-height); background: transparent; }
-.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: end; width: min(calc(100% - clamp(100px, 9.5vw, 170px)), calc(var(--palm-width) * 2.3)); margin-right: clamp(100px, 9.5vw, 170px); min-width: 0; position: relative; z-index: 1; background: transparent; }
+/* 紧凑三角构图：图窗左移，路牌接地，交叠椰冠仅占右上方而非整排留白。 */
+.academic-scene { --sign-width: clamp(240px, 18vw, 270px); --ground-line-offset: 70px; --pole-height: clamp(64px, 5vw, 80px); --scene-gap: clamp(20px, 1.6vw, 28px); --palm-width: clamp(350px, 30vw, 500px); --photo-top: 64px; --scene-left: clamp(40px, 4.2vw, 72px); position: relative; display: grid; grid-template-columns: var(--sign-width) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; min-height: 610px; padding: var(--photo-top) var(--academic-inset) 112px var(--scene-left); }
+.academic-signpost { position: absolute; z-index: 3; left: var(--scene-left); bottom: var(--ground-line-offset); width: var(--sign-width); padding-bottom: var(--pole-height); background: transparent; }
+.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: start; width: min(calc(100% - clamp(90px, 9vw, 180px)), clamp(700px, 55vw, 1040px)); min-width: 0; position: relative; z-index: 1; background: transparent; }
 .academic-image-entry { display: block; width: 100%; padding: 0; text-align: left; border-radius: 0; background: transparent; }
 .preview-stack { display: block; position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #111114; border: 2px solid #ffffff8a; box-shadow: 0 20px 45px #ffffff04; }
 .preview-stack img { position: absolute; inset: 0; opacity: 0; transition: opacity .25s ease; }
@@ -19,27 +19,33 @@
 .academic-gallery-steps span { width: 20px; height: 2px; background: #ffffff35; transition: background-color .25s ease; }
 .academic-gallery-steps span.is-active { background: var(--accent); }
 .academic-walkway { position: absolute; left: 40%; width: 30%; height: 66px; bottom: var(--ground-line-offset); pointer-events: none; }
-/* 窄屏用原生加长树干素材，树冠仍高于照片；路牌在图下接同一地面。 */
-@media (max-width: 1100px) {
-  .academic-scene { --sign-width: min(52%, 330px); --pole-height: 64px; --palm-width: clamp(200px, calc(12vw + 150px), 290px); --palm-root-height: calc(var(--palm-width) * 4.06527778); display: flex; flex-direction: column; padding: var(--photo-top) var(--academic-inset) 0; }
-  .academic-image-window { order: 0; align-self: start; width: 75%; margin: 0 0 38px; }
-  .academic-signpost { order: 1; position: relative; left: auto; bottom: auto; width: var(--sign-width); min-width: 0; margin: auto 0 var(--ground-line-offset) clamp(8px, 1.2vw, 14px); }
-  .academic-window-description { max-width: 56ch; }
+/* 超宽屏把主体收拢在1800px构图内；贯穿草地和分隔线仍保持全宽。 */
+@media (min-width: 1800px) {
+  .academic-scene { --scene-left: calc((100% - 1800px) / 2 + 72px); padding-right: calc((100% - 1800px) / 2 + 32px); }
+  .academic-walkway { left: calc((100% - 1800px) / 2 + 720px); width: 540px; }
+}
+/* 平板保留并排构图；手机把照片与下方漫画造景分层，避免长树干撑高页面。 */
+@media (max-width: 1200px) {
+  .academic-scene { --sign-width: 220px; --scene-left: clamp(32px, 4.6vw, 50px); --palm-width: clamp(290px, 32vw, 350px); min-height: 580px; }
+  .academic-image-window { width: calc(100% - 140px); }
   #preview-label { font-size: 21px; }
-  .academic-walkway { left: 51%; width: 18%; }
+  .academic-walkway { left: 43%; width: 26%; }
+}
+@media (max-width: 900px) and (min-width: 761px) {
+  .academic-scene { --sign-width: 205px; --scene-left: 32px; --photo-top: 48px; --palm-width: 300px; min-height: 545px; }
+  .academic-image-window { width: calc(100% - 115px); }
+  .academic-window-caption { gap: 12px; }
 }
 @media (max-width: 760px) {
-  .academic-scene { --sign-width: min(62%, 310px); }
-  .academic-image-window { margin-bottom: 34px; }
+  .academic-scene { --sign-width: min(78%, 270px); --pole-height: 64px; --palm-width: clamp(180px, 56vw, 290px); display: flex; flex-direction: column; min-height: 0; padding: 20px var(--academic-inset) 0; }
+  .academic-image-window { order: 0; width: 100%; margin: 0 0 28px; }
+  .academic-signpost { order: 1; position: relative; left: auto; bottom: auto; width: var(--sign-width); margin: 0 0 var(--ground-line-offset) 0; }
   .academic-window-caption { gap: 12px; padding-top: 12px; }
   .academic-window-description { font-size: 14px; }
   .academic-gallery-controls { gap: 12px; }
-  .academic-walkway { left: 62%; width: 16%; }
+  .academic-walkway { left: 66%; width: 22%; }
 }
 @media (max-width: 480px) {
-  .academic-scene { --sign-width: min(67%, 270px); }
   .academic-window-explore { display: none; }
-  .academic-window-caption, .academic-window-description, .academic-gallery-controls { max-width: calc(100% - 20px); }
-  .academic-walkway { left: 67%; width: 21%; }
 }
 @media (prefers-reduced-motion: reduce) { .preview-stack img, .academic-gallery-steps span { transition: none; } }
