@@ -302,7 +302,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       const heroFile=await fs.readFile(path.join(ROOT,"modules/home/images/hero.jpg"));
       assert.equal(heroFile.subarray(0,3).equals(Buffer.from([255,216,255])),true,"Home资源不是JPEG");
       assert.equal(await page.locator(".hero-backdrop img").getAttribute("src"),"modules/home/images/hero.jpg","Home未使用独立图片");
-      assert.equal((await page.locator("#about img").getAttribute("src")).split("?")[0],"modules/about/images/portrait.jpg","About未使用独立人像");
+      assert.equal((await page.locator("#about [data-gallery-fallback]").getAttribute("src")).split("?")[0],"modules/about/gallery/images/portrait-landscape.jpg","About未使用独立相册人像");
       const contactFile=await fs.readFile(path.join(ROOT,"modules/contact/images/background.png"));
       assert.equal(contactFile.subarray(0,8).equals(Buffer.from([137,80,78,71,13,10,26,10])),true,"Contact资源不是PNG");
       assert.equal(await page.locator("#contact .section-background img").getAttribute("src"),"modules/contact/images/background.png");

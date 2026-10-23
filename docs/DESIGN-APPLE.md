@@ -87,3 +87,7 @@ git worktree add --detach ../personal-homepage-pre-apple-preview backup/pre-appl
 本轮结果统一见 [2026-10-23 兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)，模块具体说明见各自 README 和 `docs/modules/`。本文件只规定维护方法，不宣称任何未运行的测试通过，也不能用历史记录代替本轮验证。
 
 后续 Academic 精修及精选链接返回行为的实际结果另见 [Academic 本轮记录](modules/academic.md#academic-science-2026-10-23)，上一轮证据不代替此次验证。
+
+## About横向相册（2026-10-23后续批准）
+
+About改为3:2横向照片、右侧轻资料列表、照片下无标题说明；桌面左右约60:40扣除间距，≤900px按照片→资料→说明。保留18–20px圆角与清楚常规字体；序号半透明覆盖在照片底部，左右箭头位于画幅两侧，来源/暂停也放画幅内，不再在图下创建控制条。细边线与留白替代重资料卡片；黑区和说明透出粒子，照片框排除。相册独立6秒轮播与暂停/手动能力，减少动态关闭自动播放。此条取代旧About竖幅人像布局，不改变其他模块。

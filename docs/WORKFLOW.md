@@ -180,3 +180,7 @@ npm run relationship:check
 ## 2026-10-23：可读性与公式维护
 
 辅助文字原则上不小于12px，按模块适度调整，正文/标题层级保持；公式的上下标不受全局最小字号覆盖。公开论文采用必填纯文本 `title` 与可选 `titleTex`，后者只通过[本地数学服务](../shared/math/README.md)排版，新增公式需运行 `npm run test:math` 并实测窄屏换行。Academic图片下方图注/进度区透明，仅照片本身排除粒子；播放按钮已移除，自动轮播及条件暂停继续保留。人物默认60px，调整时核对路径、动作与草地基线。本轮分支 `feat/readability-and-math`，回退点 `backup/pre-readability-math-2026-10-23`（`555de1d`），未授权推送。
+
+## About相册维护（2026-10-23）
+
+相册照片与计时参数在 `modules/about/gallery/photos.js`，新增照片归该模块images并维护英文alt/署名、尺寸、焦点和SHA12；首张同步片段静态回退。用户原人像保留原字节，仅生成单独网页缩放副本。图内底部显示半透明序号，两侧显示箭头，不在图片下另设控制条；图下个人说明直接编辑About片段。每次扩展运行 `npm run test:about-gallery`、装配及检查，实测小屏控件不重叠、手动/自动切换、暂停/恢复、图片排除粒子及普通导航。分支 `feat/about-photo-gallery`，回退 `backup/pre-about-gallery-2026-10-23`（`6cf69f5`），未授权推送。

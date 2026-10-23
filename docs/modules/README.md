@@ -8,6 +8,8 @@
 
 Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modules/academic/exploration/README.md)，漫画路牌与草地本次验证见 [专项记录](academic.md#academic-comic-2026-10-23)，不沿用前一轮结果。
 
+About最新横向相册、图内半透明序号/两侧箭头、右侧资料及无标题说明见[模块说明](../../modules/about/README.md)与[本轮记录](about.md#about-gallery-2026-10-23)。
+
 ## 主模块
 
 | 模块 | 就近说明 | 测试记录 |

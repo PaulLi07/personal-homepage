@@ -9,5 +9,8 @@
   "modules/life/travels/images/cover.jpg": "https://images.unsplash.com/photo-1752007085564-8c25ced4f024?auto=format&fit=max&w=1000&q=85",
   "modules/life/creations/images/cover.jpg": "https://images.unsplash.com/photo-1626495121472-477b55186c0b?auto=format&fit=max&w=1000&q=85",
   "modules/life/relationship/images/cover.jpg": "https://images.unsplash.com/photo-1546260912-ad4e2adc72a0?auto=format&fit=max&w=1000&q=85",
-  "modules/contact/images/background.png": null
+  "modules/contact/images/background.png": null,
+  "modules/about/gallery/images/portrait-landscape.jpg": null,
+  "modules/about/gallery/images/misty-lake.jpg": "https://images.unsplash.com/photo-1626495121472-477b55186c0b?auto=format&fit=max&w=1000&q=85",
+  "modules/about/gallery/images/coastal-cliffs.jpg": "https://images.unsplash.com/photo-1752007085564-8c25ced4f024?auto=format&fit=max&w=1000&q=85"
 }

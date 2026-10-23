@@ -22,7 +22,8 @@
     "test:academic-scene": "node scripts/test-academic-scene.cjs",
     "test:walker-actions": "node scripts/test-walker-actions.cjs",
     "test:walker-lifecycle": "node scripts/test-walker-lifecycle.cjs",
-    "test:math": "node scripts/test-math.cjs"
+    "test:math": "node scripts/test-math.cjs",
+    "test:about-gallery": "node scripts/test-about-gallery.cjs"
   },
   "engines": {
     "node": ">=18"

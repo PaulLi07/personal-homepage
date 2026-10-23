@@ -37,7 +37,7 @@ index.html, credits.html   装配生成的发布页面
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-当前网页使用 11 个固定图片文件：9 个下载的占位图片、1 个用户已替换的人像及 1 个用户提供的 PNG。Home 的 `images/hero.jpg` 继续保留 Ivan Rohovchenko / Unsplash 原山水图；About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景、学术细线和克制的相框层次；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
+当前网页使用13个固定图片文件：11个下载占位图（含About相册独立副本）、1个人像网页缩放副本和1个用户提供的PNG。Home 的 `images/hero.jpg` 继续保留 Ivan Rohovchenko / Unsplash 原山水图；About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景、学术细线和克制的相框层次；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
@@ -196,3 +196,7 @@ Academic探索场景的 `character/` 保存 `clips.js`（素材/关节采样）�
 ## 本地数学排版服务（2026-10-23）
 
 `shared/math/` 由清单首个service装配KaTeX 0.19.0、本地WOFF2字体、封装及局部样式，在runtime之后、论文数据和消费者之前加载；Publications及Academic精选共用 `Homepage.math.renderText(host, source, {fallback})`。条目可选 `titleTex` 与必填纯文本 `title` 并存，英文文本节点与显式行内LaTeX分别处理。固定不信任扩展指令、限制展开与尺寸，错误恢复纯文本；不扫描页面或改变作者编辑/发布流程。参见[接口及来源](../shared/math/README.md)、[实测](modules/math.md)。
+
+## About相册（2026-10-23）
+
+`modules/about/gallery/` 独立维护照片清单、轮播、图内浮层样式与本地素材；About入口只传root与动态偏好，不读取其他图库私有实现。父CSS仅组合照片、资料与无标题说明，图片画幅内显式排除粒子。相册照片由photos.js集中列出，首图另在HTML提供静态回退；修改首图同步两处并运行回归。用户原图保留，网页使用去元数据的缩放副本；素材与验证见[模块说明](../modules/about/README.md)。

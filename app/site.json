@@ -35,9 +35,12 @@
       "folder": "modules/about",
       "view": "modules/about/section.html",
       "styles": [
-        "modules/about/styles.css"
+        "modules/about/styles.css",
+        "modules/about/gallery/styles.css"
       ],
       "scripts": [
+        "modules/about/gallery/photos.js",
+        "modules/about/gallery/gallery.js",
         "modules/about/module.js"
       ],
       "container": "page1"
