@@ -84,7 +84,9 @@ index.html, credits.html   装配生成的发布页面
 
 Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或外部字体依赖。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的摄影构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立摄影背景。
 
-后续样式维护见 [设计约定](DESIGN-APPLE.md)。当前开发分支为 `feat/apple-homepage-design`，改版前备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`；本轮尚未推送。验证结果统一见 [本轮兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)，设计说明本身不代表浏览器测试通过。
+后续样式维护见 [设计约定](DESIGN-APPLE.md)。前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`，验证见 [Apple 兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，备份 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`，尚未推送；本轮证据见 [Academic 记录](modules/academic.md#academic-science-2026-10-23)。
+
+Academic 概览的四入口为整卡 `1:1`、`0px` 圆角，图片及标题说明内嵌，桌面四列、≤900px 两列；大预览也为直角，仅覆盖本区旧圆角约定。黑区、前景和图片排除声明保留。动态栏目标题、说明经 `details.getItem()` 读取，序号随选择切换；精选论文经公开 `getPublicationCategories()` 读取，优先 arXiv 首条，否则取首个非空分类首条，缺失、抛错或全空时隐藏，不复制子模块资料。
 
 ## 注册接口与共享服务
 
@@ -95,7 +97,7 @@ Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，
 - `registerDetailView(group, key, { render })`：为已有栏目登记自定义详情视图，供日志、博客、Publications 分类及 Relationship 加密空间复用同一个弹窗外壳。
 - `registerData(key, value)` / `getData(key)`：保存模块命名空间的数据；具体格式、校验与 getter 仍由模块负责，例如 `getBlogPosts()` 和 `getEncryptedRelationship()`。
 
-`app/main.js` 为初始化函数传入 `{ root, details, reducedMotion }`：`root` 是本模块 DOM 根节点，`details` 是共用详情服务，`reducedMotion` 是减少动态效果的 `MediaQueryList`，通过 `.matches` 判断并监听偏好变化。模块应在自己的 `root` 内查询元素，使用 `details.open(group, key, { trigger, source })` 打开详情，使用 `details.onSelect(group, callback)` 响应所属分组的切换，使用 `details.getItem(group, key)` 读取已注册详情，不查询其他模块 DOM。
+`app/main.js` 为初始化函数传入 `{ root, details, reducedMotion }`：`root` 是本模块 DOM 根节点，`details` 是共用详情服务，`reducedMotion` 是减少动态效果的 `MediaQueryList`，通过 `.matches` 判断并监听偏好变化。模块应在自己的 `root` 内查询元素，使用 `details.open(group, key, { trigger, source, route = null })` 打开详情，使用 `details.onSelect(group, callback)` 响应所属分组的切换，使用 `details.getItem(group, key)` 读取已注册详情，不查询其他模块 DOM。可选 `route` 必须匹配 `^[a-z0-9]+(?:-[a-z0-9]+)*$` 且目标已注册自定义视图，非法值在修改历史前拒绝；旧调用默认 `null`。Academic 精选链接传入 `trigger` 和分类路由，使关闭恢复焦点与进入前滚动位置，修饰键点击保留原 `href`。
 
 胶水使用 `createDetails({ dialog, content, views, groups, transitions })` 创建详情服务，`views` 为注册表，`groups` 来自分区的 `detailGroup`。胶水只传递这些接口，不解释文章、作者权限或加密数据；共享服务负责弹窗、历史与焦点恢复。
 

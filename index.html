@@ -16,7 +16,7 @@
   <link rel="stylesheet" href="modules/author/styles.css?v=678e84746f5a">
   <link rel="stylesheet" href="modules/home/styles.css?v=daa3440b432e">
   <link rel="stylesheet" href="modules/about/styles.css?v=79656458ca76">
-  <link rel="stylesheet" href="modules/academic/styles.css?v=d4692a35cf46">
+  <link rel="stylesheet" href="modules/academic/styles.css?v=bb6379f484d9">
   <link rel="stylesheet" href="modules/academic/experience/log.css?v=5de2da332056">
   <link rel="stylesheet" href="modules/academic/publications/styles.css?v=1fbc91a04b49">
   <link rel="stylesheet" href="modules/life/styles.css?v=95e490871eab">
@@ -27,7 +27,7 @@
   <link rel="stylesheet" href="shared/details/styles.css?v=886ffee01fbf">
   <script defer src="shared/runtime.js?v=978275e14ac0"></script>
   <script defer src="shared/transitions/transitions.js?v=b7f1f127e823"></script>
-  <script defer src="shared/details/dialog.js?v=81d9e98c44b7"></script>
+  <script defer src="shared/details/dialog.js?v=f50ba8885494"></script>
   <script defer src="shared/navigation/navigation.js?v=dd5e16d4941b"></script>
   <script defer src="shared/reveal.js?v=8dda6ba601e7"></script>
   <script defer src="modules/particle-background/config.js?v=42f54013907e"></script>
@@ -55,7 +55,7 @@
   <script defer src="modules/academic/publications/integration.js?v=2af22cc42ded"></script>
   <script defer src="modules/academic/notes/content.js?v=28db7b1c2267"></script>
   <script defer src="modules/academic/projects/content.js?v=ca114d6d0dfb"></script>
-  <script defer src="modules/academic/module.js?v=ae4751572826"></script>
+  <script defer src="modules/academic/module.js?v=0761c8ae28c9"></script>
   <script defer src="modules/life/moments/content.js?v=3b64dce6e9d9"></script>
   <script defer src="modules/life/moments/data.js?v=7e5d2c065294"></script>
   <script defer src="modules/life/moments/posts.js"></script>
@@ -144,6 +144,12 @@
     <div class="academic-header" data-reveal>
       <p class="eyebrow">02 · Questions, ideas, and work</p>
       <h2 class="section-heading" id="academic-title">Academic.</h2>
+      <p class="academic-intro">Research, reading, and the work in between.<br>A collection from my studies in theoretical physics.</p>
+      <div class="academic-focus">
+        <p class="academic-focus-kicker">In this collection <span id="academic-preview-index" aria-hidden="true">01 / 04</span></p>
+        <h3 id="academic-focus-title">Experience</h3>
+        <p id="academic-focus-description">An academic log of research, learning, and milestones.</p>
+      </div>
     </div>
     <div class="projectPreview">
       <div class="preview-stack" data-particle-exclude>
@@ -152,20 +158,45 @@
         <img src="modules/academic/notes/images/cover.jpg" alt="The Pillars of Creation in the Eagle Nebula" data-preview="notes" aria-hidden="true" loading="lazy">
         <img src="modules/academic/projects/images/cover.jpg" alt="Earth rising above the lunar horizon" data-preview="projects" aria-hidden="true" loading="lazy">
       </div>
-      <p class="preview-caption"><span id="preview-label" aria-live="polite">Experience</span><span>Choose a section below ↘</span></p>
+      <p class="preview-caption"><span id="preview-label" aria-live="polite">Experience</span><span>Explore the collection below <span aria-hidden="true">↘</span></span></p>
     </div>
     <div class="mainprojectsdiv">
-      <div class="academic-intro" data-reveal>
-        <p>Academic experience, publications, study notes, and projects in theoretical physics.</p>
-        <p>Hover to preview. Select a section to explore.</p>
+      <div class="academic-directory-heading">
+        <h3>Explore academic work</h3>
+        <p>Four ways into the collection.</p>
       </div>
-      <div class="projects" aria-label="Academic sections" data-reveal>
-        <button class="projectBox is-selected" data-academic="experience" aria-label="Open Experience" aria-haspopup="dialog"><span class="thumbnail" data-particle-exclude><img src="modules/academic/experience/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Experience ↗</span></button>
-        <button class="projectBox" data-academic="publications" aria-label="Open Publications" aria-haspopup="dialog"><span class="thumbnail" data-particle-exclude><img src="modules/academic/publications/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Publications ↗</span></button>
-        <button class="projectBox" data-academic="notes" aria-label="Open Notes" aria-haspopup="dialog"><span class="thumbnail" data-particle-exclude><img src="modules/academic/notes/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Notes ↗</span></button>
-        <button class="projectBox" data-academic="projects" aria-label="Open Projects" aria-haspopup="dialog"><span class="thumbnail" data-particle-exclude><img src="modules/academic/projects/images/cover.jpg" alt="" loading="lazy"></span><span class="thumb-label">Projects ↗</span></button>
+      <div class="projects" aria-label="Academic sections">
+        <button class="projectBox is-selected" data-academic="experience" aria-label="Open Experience" aria-haspopup="dialog">
+          <span class="thumbnail" data-particle-exclude><img src="modules/academic/experience/images/cover.jpg" alt="" loading="lazy"></span>
+          <span class="academic-card-index" aria-hidden="true">01</span>
+          <span class="academic-card-copy"><span class="thumb-label">Experience</span><span class="thumb-description">Research, learning &amp; milestones</span></span>
+          <span class="academic-card-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="projectBox" data-academic="publications" aria-label="Open Publications" aria-haspopup="dialog">
+          <span class="thumbnail" data-particle-exclude><img src="modules/academic/publications/images/cover.jpg" alt="" loading="lazy"></span>
+          <span class="academic-card-index" aria-hidden="true">02</span>
+          <span class="academic-card-copy"><span class="thumb-label">Publications</span><span class="thumb-description">Internal notes, preprints &amp; papers</span></span>
+          <span class="academic-card-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="projectBox" data-academic="notes" aria-label="Open Notes" aria-haspopup="dialog">
+          <span class="thumbnail" data-particle-exclude><img src="modules/academic/notes/images/cover.jpg" alt="" loading="lazy"></span>
+          <span class="academic-card-index" aria-hidden="true">03</span>
+          <span class="academic-card-copy"><span class="thumb-label">Notes</span><span class="thumb-description">Reading, study &amp; ideas</span></span>
+          <span class="academic-card-arrow" aria-hidden="true">↗</span>
+        </button>
+        <button class="projectBox" data-academic="projects" aria-label="Open Projects" aria-haspopup="dialog">
+          <span class="thumbnail" data-particle-exclude><img src="modules/academic/projects/images/cover.jpg" alt="" loading="lazy"></span>
+          <span class="academic-card-index" aria-hidden="true">04</span>
+          <span class="academic-card-copy"><span class="thumb-label">Projects</span><span class="thumb-description">Collaborations, projects &amp; code</span></span>
+          <span class="academic-card-arrow" aria-hidden="true">↗</span>
+        </button>
       </div>
     </div>
+    <a class="academic-publication" id="academic-featured-publication" href="#academic/publications" data-particle-exclude hidden>
+      <span class="academic-publication-kicker">Selected publication</span>
+      <span class="academic-publication-copy"><span id="academic-publication-title"></span><span id="academic-publication-meta"></span></span>
+      <span class="academic-publication-arrow" aria-hidden="true">↗</span>
+    </a>
   </div>
 </section>
 <section class="page3" id="life" aria-labelledby="life-title" data-particle-surface="black">

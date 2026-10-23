@@ -214,14 +214,15 @@ window.Homepage.createDetails = function ({ dialog, content, views = {}, groups,
       if (selection && selection.group === group) callback(selection.key);
       return () => listeners.get(group).delete(callback);
     },
-    open(group, key, { trigger, source } = {}) {
+    open(group, key, { trigger, source, route = null } = {}) {
       if (!groups[group] || !itemFor(group, key)) return;
+      if (route !== null && (typeof route !== "string" || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(route) || !views[group + "/" + key])) return;
       returnFocus = trigger || null;
       pagePosition = {x: window.scrollX, y: window.scrollY};
       baseHash = location.hash && !location.hash.includes("/") ? location.hash : "#" + group;
       openedFromPage = true;
-      history.pushState({ homepageDetail: true, baseHash }, "", "#" + group + "/" + key);
-      show(group, key, source && source.getBoundingClientRect());
+      history.pushState({ homepageDetail: true, baseHash }, "", "#" + group + "/" + key + (route ? "/" + route : ""));
+      show(group, key, source && source.getBoundingClientRect(), route);
     },
     start() {
       closeButton.addEventListener("click", close);

@@ -26,6 +26,7 @@
 - About 与 Academic 之间使用白色横线和中央小菱形分隔，由 Academic 自己管理装饰。用户于 2026-10-13 要求加粗白色边线：Academic 主线 3px、次线和图片框 2px；Life 保留错落照片，主框和照片边框 3px、偏移副框 2px，通过明暗区分叠层。保持简洁，不让装饰遮挡内容。
 - Home 继续独立使用 `modules/home/images/hero.jpg` 原山水图，署名为 Ivan Rohovchenko / Unsplash；不再要求与 About 图片相同。About 的 `modules/about/images/portrait.jpg` 已由用户替换为 6240×4160 户外人像，本轮保留原字节；只按观察描述图片，不推断人物身份、拍摄地点、摄影者或来源。Contact 使用用户提供的原始 PNG，独立保存为 `modules/contact/images/background.png`；只注明用户提供、原作者与来源尚未确认，不能称为用户亲自拍摄。Home 与 Contact 均保留图片背景，不声明黑色粒子表面。
 - 2026-10-23 用户批准 Apple 风格优化：保留摄影首屏、宇宙粒子、学术四栏目与生活照片叠层，使用系统字体、正常字形、适中标题、石墨灰面板、克制磨砂和清楚的主次按钮；不引入窄体巨字或无层次的大块黑色。视觉令牌与模块边界见 [设计约定](docs/DESIGN-APPLE.md)，本轮实际验证统一链接 [兼容性记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)，不得沿用旧测试结论。
+- 同日后续批准仅精修 Academic：参考 NASA Science 的专题层次，四入口整卡 `1:1`、`0px` 圆角，图片、标题说明内嵌，桌面四列、≤900px 两列；大预览也改直角，仅覆盖本区旧圆角约定。保留纯黑粒子表面、前景与图片 `data-particle-exclude`。上部标题/说明从 `details.getItem()` 读取，序号随栏目切换；精选论文仅从公开 `getPublicationCategories()` 取 arXiv 首条，否则首个非空分类首条，不复制资料，缺失、抛错或全空则隐藏。实际验证见 [Academic 本轮记录](docs/modules/academic.md#academic-science-2026-10-23)，其他板块规则不变。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
@@ -45,6 +46,7 @@
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
 - `shared/runtime.js` 提供单一 `window.Homepage` 注册入口；模块通过 `registerSection({ id, init?, detailGroup? })`、`registerDetail(group, key, data)` 贡献功能。自定义详情通过 `registerDetailView(group, key, { render })` 注册；`render({ host, route, signal, navigate })` 只操作传入容器，可返回清理函数。
+- 共用 `details.open(group, key, { trigger, source, route = null })` 可选子路由只接受 `^[a-z0-9]+(?:-[a-z0-9]+)*$` 且目标须已登记自定义视图；旧调用默认 `null`。Academic 精选链接通过公开接口传 `trigger` 与分类路由，关闭恢复焦点及滚动位置；修饰键点击保留原 `href`，不由 Academic 读共享弹窗 DOM 或另建路由系统。
 - `registerData(key, value)` / `getData(key)` 只提供命名空间数据登记；文章校验、模块数据 getter、统一作者认证与解密业务仍在所属功能模块。`app/main.js` 只把视图注册表传给详情服务，为分区初始化传入 `{ root, details, reducedMotion }`，不解释日志、博客、作者权限或加密内容。
 - 模块不直接读取其他模块内部文件、选择器或数据；通过清单、注册接口或明确的共享服务连接。模块图片独立保存，哪怕内容暂时相同，也应能单独替换。
 - 根目录 `index.html`、`credits.html` 是生成产物，禁止手改；修改源模块或模板后运行 `npm run assemble` 并一并提交生成页面。
@@ -95,6 +97,7 @@
 - 开始先检查状态；同步或发布前获取远端，检查未提交用户改动和远端差异。保留远端历史，使用快进拉取，不硬重置用户文件或强制推送共享历史。
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
 - 2026-10-23 Apple 风格改版在 `feat/apple-homepage-design` 进行，原点为 `28880ba`，改版前回退分支为 `backup/pre-apple-design-2026-10-23`。用户已有的人像图片独立保留，不能因回退样式而用旧山水图覆盖；回退方法与图片备份见 [设计约定](docs/DESIGN-APPLE.md)。本轮尚未推送，当前设计授权不等于远端发布授权。
+- 后续 Academic 专题精修分支为 `feat/academic-science-directory`，回退分支 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`；尚未推送，保留前一轮分支及人像保护约定。
 - **2026-10-14 发布授权：**用户确认当前效果并明确要求更新到 GitHub，允许将已验证的 `feat/emergent-particle-background` 快进整合到 `main` 并推送，取代 2026-10-11 暂不合并和推送的阶段约定。此次授权仅适用于当前版本，后续普通维护仍按发布请求推送。保留功能分支、`backup/pre-emergence-2026-10-11`（`93bf256`）及其他历史备份；发布前的远端版本另存 `backup/pre-publish-2026-10-14`（`3c8c364`）。先保存未提交改动再切回旧分支，不硬重置或强制覆盖。接口、参数与回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)，本轮新功能须有独立实测记录，不能沿用旧通过结论。
 - 本轮栏目布局之前的可回退点为 `backup/pre-section-layout-2026-10-11`（`3a2677c`），对应 166 文件旧包 `../outputs/personal-homepage-pre-section-layout-2026-10-11.zip`；它保留此前仅 About 为黑色粒子表面的版本。更早的 `93bf256` 由原备份保留；选择回退点时核对版本范围，不丢弃后续内容。
 - 缓存与导航修复之前另有 `backup/pre-preview-fixes-2026-10-11`（`14f5bf6`）；此前 16:04 的 255 流程 / 12234 断言保留为历史。最终回归于 16:33–16:37 完成：基础九环境及正常 Life 导航 24 项、作者 144 流程、粒子 255 流程 / 12234 断言通过，生产源码未被测试修改、外部请求与真实写入为 0；详见 [粒子记录](docs/modules/particle-background.md)。照片 / PDF 专门矩阵及离线核心未重跑。当时仅本地交付；当前发布授权见上条。

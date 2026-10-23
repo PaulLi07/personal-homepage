@@ -15,6 +15,8 @@
 
 `registerDetailView(group, key, { render })` 为栏目登记自定义视图。服务提供 `{ host, route, signal, navigate }`，管理同一弹窗内的嵌套路由、历史与焦点；渲染器只操作自己的 `host`，可返回幂等清理函数（允许重复调用）。关闭、切换或重新渲染时终止视图生命周期，模块清除监听、DOM、输入及异步结果。Experience 与 Moments 分别使用栏目根列表、`/<slug>` 正文、`/author` 工作台。
 
+`details.open(group, key, { trigger, source, route = null })` 可选传入一级子路由；非空值必须符合小写字母、数字与单连字符组成的 slug 白名单，且目标已注册自定义视图，否则在修改历史前返回。旧调用默认 `null`。Academic 精选论文通过该接口保留进入前的滚动位置和 `trigger` 返回焦点；链接自身保留 `href`，修饰键点击仍按浏览器原生行为处理。共享服务只验证路由形状与视图登记，不解释论文分类业务。
+
 `registerData(key, value)` / `getData(key)` 只保存命名空间数据，模块定义自己的 getter 和格式校验。共享层不解释日志 / 文章 JSON、GitHub PAT、身份或仓库授权、密码、AES-GCM 密文；集合业务属于 Experience / Moments，作者会话和编辑器属于独立 `modules/author/` 服务，解密属于 Relationship。胶水只传 `views`，不加入业务或绑定模块内部图片。
 
 按用户要求，统一作者服务通过清单 `services` 装配，提供 `Homepage.authorSession` 和通用编辑器，不占用页面根节点。当前页面会话跨两栏及详情关闭保持；Sign out、刷新或页面离开清内存，Forget 删除加密连接缓存。作者服务自行管理可选加密 localStorage 与刷新密码恢复 / GitHub 重验；共享弹窗只清理视图，不代它退出。Relationship 明文仍随关闭或切换清理。
@@ -29,7 +31,7 @@
 
 2026-10-23 Apple 风格调整的中性色令牌、系统字体、圆角、留白与动效约定见 [设计说明](../docs/DESIGN-APPLE.md)。`base.css` 提供 `--surface`、`--surface-raised`、`--white`、`--muted`、`--accent`、`--primary` 等共享变量，模块负责自己的构图，不把模块选择器集中到共享层。Home 继续独立保存原山水背景；About 为用户已替换的人像，两者无需同源。共享代码不能读取或交换这两张图片。
 
-本轮仍在 `feat/apple-homepage-design` 开发，备份为 `backup/pre-apple-design-2026-10-23`（`28880ba`），尚未推送；实际验证统一见 [本轮兼容性记录](../docs/COMPATIBILITY.md#apple-design-2026-10-23)，不将下述历史结果视为本轮证据。
+前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份为 `backup/pre-apple-design-2026-10-23`（`28880ba`）；对应验证见 [Apple 兼容性记录](../docs/COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，回退点为 `backup/pre-academic-science-2026-10-23`（`c7cdd07`），尚未推送；可选 `route` 接口的本轮证据见 [Academic 记录](../docs/modules/academic.md#academic-science-2026-10-23)，不沿用历史通过结论。
 
 常驻本地预览没有自动热更新。装配后须重新加载用户实际查看的标签，确认资源内容版本 URL 与当前布局；独立浏览器通过不能证明旧标签已经更新。2026-10-11 修正证据见 [兼容性记录](../docs/COMPATIBILITY.md)。
 
