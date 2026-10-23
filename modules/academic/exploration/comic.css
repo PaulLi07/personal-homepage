@@ -42,8 +42,11 @@
   .academic-sign-arrow { font-size: 16px; }
 }
 
-/* 原生透明SVG以前景合成，叶片间隙透出粒子；不使用img矩形遮罩。根基线为SVG y747。 */
-.academic-tree { position: absolute; z-index: 2; right: var(--academic-inset); bottom: calc(var(--ground-line-offset) - var(--palm-width) * .01806); width: var(--palm-width); aspect-ratio: 720 / 760; background: transparent url("coconut-palms.svg") center bottom / contain no-repeat; pointer-events: none; user-select: none; }
+/* 仅原生树干加长，树冠不变形；desktop根y1647，窄屏根y2927，均留13px。 */
+.academic-tree { position: absolute; z-index: 0; right: max(4px, calc(var(--academic-inset) - 28px)); bottom: calc(var(--ground-line-offset) - var(--palm-width) * .01805556); width: var(--palm-width); aspect-ratio: 720 / 1660; background: transparent url("coconut-palms.svg") center bottom / contain no-repeat; pointer-events: none; user-select: none; }
+@media (max-width: 1100px) {
+  .academic-tree { right: 0; aspect-ratio: 720 / 2940; background-image: url("coconut-palms-mobile.svg"); }
+}
 @media (max-width: 480px) {
-  .academic-tree { right: 0; }
+  .academic-tree { right: -10px; }
 }

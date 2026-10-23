@@ -1,45 +1,45 @@
-/* 图窗占中右部，路牌右移，椰林在右下独立接地，不挤占图片轨道。 */
-.academic-scene { --sign-width: min(100%, 300px); --ground-line-offset: 70px; --pole-height: clamp(150px, 16vw, 230px); --scene-gap: clamp(24px, 2vw, 36px); --palm-width: clamp(290px, 26vw, 420px); --ground-space: calc(var(--palm-width) * 1.05556 - 180px); position: relative; display: grid; grid-template-columns: clamp(250px, 21vw, 330px) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; padding: 0 var(--academic-inset) var(--ground-space) clamp(48px, 5.5vw, 88px); }
-.academic-signpost { grid-column: 1; grid-row: 1; align-self: end; position: relative; z-index: 3; left: auto; bottom: calc(var(--ground-line-offset) - var(--ground-space)); width: var(--sign-width); padding-bottom: var(--pole-height); background: transparent; }
-.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: center; width: 100%; max-width: 1280px; min-width: 0; position: relative; z-index: 1; background: transparent; }
+/* 高椰林接地，完整树冠先占上方留白；正常比例图窗在树冠下方悬浮。 */
+.academic-scene { --sign-width: min(100%, 300px); --ground-line-offset: 70px; --pole-height: clamp(64px, 5vw, 95px); --scene-gap: clamp(24px, 2vw, 36px); --palm-width: clamp(320px, 27vw, 420px); --palm-root-height: calc(var(--palm-width) * 2.2875); --photo-top: calc(var(--palm-width) * .625 + 22px); position: relative; display: grid; grid-template-columns: clamp(250px, 21vw, 330px) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; min-height: calc(var(--palm-root-height) + var(--ground-line-offset)); padding: var(--photo-top) var(--academic-inset) 100px clamp(48px, 5.5vw, 88px); }
+.academic-signpost { position: absolute; z-index: 3; left: clamp(48px, 5.5vw, 88px); bottom: var(--ground-line-offset); width: min(21vw, 300px); min-width: 250px; padding-bottom: var(--pole-height); background: transparent; }
+.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: end; width: min(calc(100% - clamp(100px, 9.5vw, 170px)), calc(var(--palm-width) * 2.3)); margin-right: clamp(100px, 9.5vw, 170px); min-width: 0; position: relative; z-index: 1; background: transparent; }
 .academic-image-entry { display: block; width: 100%; padding: 0; text-align: left; border-radius: 0; background: transparent; }
 .preview-stack { display: block; position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #111114; border: 2px solid #ffffff8a; box-shadow: 0 20px 45px #ffffff04; }
 .preview-stack img { position: absolute; inset: 0; opacity: 0; transition: opacity .25s ease; }
 .preview-stack img.is-active { opacity: 1; }
 .academic-image-corner { position: absolute; left: 16px; bottom: 16px; width: 34px; height: 34px; display: grid; place-items: center; border: 1px solid #ffffff70; background: #0009; color: #fff; font-size: 22px; }
-.academic-window-caption { display: flex; justify-content: space-between; align-items: baseline; gap: 18px; padding: 15px var(--palm-width) 0 0; }
+.academic-window-caption { display: flex; justify-content: flex-start; align-items: baseline; gap: 22px; padding: 15px 0 0; }
 #preview-label { font-size: 23px; font-weight: 500; line-height: 1.3; letter-spacing: -.025em; }
 .academic-window-explore { color: var(--accent); font-size: 13px; line-height: 1.6; white-space: nowrap; }
-.academic-window-description { display: block; color: var(--muted); margin: 7px 0 0; max-width: min(56ch, calc(100% - var(--palm-width))); min-height: 3.2em; font-size: 14px; line-height: 1.6; }
+.academic-window-description { display: block; color: var(--muted); margin: 7px 0 0; max-width: 56ch; min-height: 1.6em; font-size: 14px; line-height: 1.6; }
 .academic-image-entry:hover .preview-stack { border-color: #fff; }
 .academic-image-entry:focus-visible { outline: 3px solid var(--accent); outline-offset: -4px; }
-.academic-gallery-controls { display: flex; align-items: center; gap: 15px; min-height: 40px; }
+.academic-gallery-controls { display: flex; align-items: center; gap: 15px; min-height: 32px; }
 .academic-gallery-index { color: #a7a7b0; font-size: 12px; font-variant-numeric: tabular-nums; letter-spacing: .08em; }
 .academic-gallery-steps { display: flex; gap: 6px; }
 .academic-gallery-steps span { width: 20px; height: 2px; background: #ffffff35; transition: background-color .25s ease; }
 .academic-gallery-steps span.is-active { background: var(--accent); }
 .academic-walkway { position: absolute; left: 40%; width: 30%; height: 66px; bottom: var(--ground-line-offset); pointer-events: none; }
-/* 中窄屏让照片独占上方，路牌与树在共同草地上，避免把图窗挤扁。 */
+/* 窄屏用原生加长树干素材，树冠仍高于照片；路牌在图下接同一地面。 */
 @media (max-width: 1100px) {
-  .academic-scene { --sign-width: min(52%, 330px); --pole-height: 64px; --palm-width: min(44vw, 390px); display: flex; flex-direction: column; padding: 0 var(--academic-inset); }
-  .academic-image-window { order: 0; align-self: center; width: 100%; margin-bottom: 38px; }
-  .academic-signpost { order: 1; grid-column: auto; grid-row: auto; align-self: start; bottom: auto; width: var(--sign-width); margin: 0 0 var(--ground-line-offset) clamp(8px, 1.2vw, 14px); }
-  .academic-window-caption { padding-right: 0; }
+  .academic-scene { --sign-width: min(52%, 330px); --pole-height: 64px; --palm-width: clamp(200px, calc(12vw + 150px), 290px); --palm-root-height: calc(var(--palm-width) * 4.06527778); display: flex; flex-direction: column; padding: var(--photo-top) var(--academic-inset) 0; }
+  .academic-image-window { order: 0; align-self: start; width: 75%; margin: 0 0 38px; }
+  .academic-signpost { order: 1; position: relative; left: auto; bottom: auto; width: var(--sign-width); min-width: 0; margin: auto 0 var(--ground-line-offset) clamp(8px, 1.2vw, 14px); }
   .academic-window-description { max-width: 56ch; }
   #preview-label { font-size: 21px; }
   .academic-walkway { left: 51%; width: 18%; }
 }
 @media (max-width: 760px) {
-  .academic-scene { --sign-width: min(62%, 310px); --palm-width: min(44vw, 300px); }
+  .academic-scene { --sign-width: min(62%, 310px); }
   .academic-image-window { margin-bottom: 34px; }
   .academic-window-caption { gap: 12px; padding-top: 12px; }
-  .academic-window-description { font-size: 14px; min-height: 3.2em; }
+  .academic-window-description { font-size: 14px; }
   .academic-gallery-controls { gap: 12px; }
   .academic-walkway { left: 62%; width: 16%; }
 }
 @media (max-width: 480px) {
-  .academic-scene { --sign-width: min(67%, 270px); --palm-width: 45vw; }
-  .academic-signpost { margin-top: 45px; }
+  .academic-scene { --sign-width: min(67%, 270px); }
+  .academic-window-explore { display: none; }
+  .academic-window-caption, .academic-window-description, .academic-gallery-controls { max-width: calc(100% - 20px); }
   .academic-walkway { left: 67%; width: 21%; }
 }
 @media (prefers-reduced-motion: reduce) { .preview-stack img, .academic-gallery-steps span { transition: none; } }

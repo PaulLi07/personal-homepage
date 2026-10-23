@@ -208,3 +208,5 @@ About只在自己的styles.css/gallery/styles.css以局部 `--about-inset` 组�
 后续比例反馈由各模块局部修正：About采用2.5%／65%／30%／2.5%的外侧留白、图片和资料组合；Academic恢复16:9中栏图窗，新增本模块 `exploration/tree.svg` 和既有comic样式中的静态叶树，右侧与路牌形成平衡。树在片段中作为无交互装饰声明粒子排除，不新增注册接口、脚本、共享服务或清单项。资料、轮播、人物动作及胶水保持原职责。验证见[本轮记录](COMPATIBILITY.md#balanced-composition-2026-10-23)。
 
 2026-10-24按最新反馈将叶树替换为本模块原创 `exploration/coconut-palms.svg`，旧tree.svg移除；Academic两轨道扩大中右图片，椰林绝对定位在右下。路牌/椰林采用透明CSS背景及已有前景层合成，取消整块矩形排除，让图形空隙中的粒子可见。仅照片、实体草地等实心区域继续排除，无粒子服务或胶水代码变更。这个明确透明装饰例外由所属模块承担造景与验证，不能把它推广为任意透明img自动识别。见[本次实测](COMPATIBILITY.md#coconut-palms-2026-10-24)。
+
+后续高度修正仍只归Academic探索模块：原生桌面高椰林720×1660，新增窄屏 `coconut-palms-mobile.svg` 720×2940，仅延长曲干、叶冠比例相同；CSS按宽度和原生根基线推导地面与照片留白，确保最低叶尖高于照片。图窗缩至中间尺度，图片/文字高于装饰层；没有新JS、共享接口或清单变化。见[最新验证](COMPATIBILITY.md#tall-palms-2026-10-24)。
