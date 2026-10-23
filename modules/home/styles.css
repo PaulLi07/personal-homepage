@@ -1,49 +1,62 @@
-/* 首页：共用首屏背景、欢迎区与开场标题。 */
-.hero-backdrop { position: sticky; top: 0; height: 100svh; min-height: 650px; margin-bottom: max(-100svh, -650px); overflow: hidden; pointer-events: none; }
-/* 首屏背景由 .page1 容器覆盖首屏与简介区域。 */
-@supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 650px)); } }
-.scaleImage { filter: brightness(.66) saturate(.67); transform: scale(1.08); object-position: 50% 45%; }
-.hero-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg,#08141b38,transparent 35%,#0710169e), linear-gradient(90deg,#11191f20,transparent); }
-.landing-div { position: relative; min-height: max(100svh, 650px); padding: 145px var(--gutter) 45px; display: flex; align-items: flex-end; }
-.hero-marker { position: absolute; top: 25%; right: var(--gutter); text-align: right; font-size: 10px; letter-spacing: 1.8px; color: #e4e9ea; }
-.hero-marker p + p { margin-top: 8px; color: #ffffff9c; }
-.bottomtext { width: 100%; display: flex; justify-content: space-between; gap: 7%; align-items: flex-end; }
-.maintext { width: 62%; }
-.maintext .eyebrow { margin-bottom: 23px; }
-.maintext h1 { font-size: clamp(42px, 4.5vw, 70px); line-height: 1.16; }
-.subtext { width: 32%; max-width: 520px; padding-bottom: 6px; }
-.subtext > p { font-size: clamp(14px, 1.17vw, 19px); line-height: 1.5; max-width: 420px; }
-.alagtext { margin-top: 21px; font-size: clamp(19px, 1.65vw, 25px); line-height: 1.45; font-weight: 400; }
-.buttons { display: flex; flex-wrap: wrap; gap: 14px; margin-top: 23px; }
-.scroll-note { position: absolute; top: 145px; left: var(--gutter); color: #ffffffaf; font-size: 10px; letter-spacing: 1.8px; text-transform: uppercase; }
-.photo-credit { position: absolute; right: var(--gutter); bottom: 12px; font-size: 8px; color: #ffffffa6; }
-.js-enabled.is-ready .maintext h1 { animation: enter-title 1s cubic-bezier(.2,.7,.2,1) both; }
-@keyframes enter-title { from { opacity: 0; transform: translateY(60px); } to { opacity: 1; transform: none; } }
+/* 首页：山水摄影、清晰身份层级与简洁入口，背景不接入粒子。 */
+.hero-backdrop { position: sticky; top: 0; height: 100svh; min-height: 700px; margin-bottom: max(-100svh, -700px); overflow: hidden; pointer-events: none; }
+@supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 700px)); } }
+.scaleImage { filter: brightness(.72) saturate(.72); transform: scale(1.035); object-position: 50% 46%; }
+.hero-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #070b102b, transparent 30%, #05080d7a 68%, #000d), linear-gradient(90deg, #05080d30, transparent 75%); }
+.landing-div { position: relative; min-height: max(100svh, 700px); padding: calc(var(--navigation-height, 76px) + 70px) var(--gutter) 84px; display: flex; align-items: flex-end; scroll-margin-top: 0; }
+.hero-marker { position: absolute; top: 27%; right: var(--gutter); padding: 17px 21px; border: 1px solid #ffffff29; border-radius: 16px; background: #1a20292e; text-align: right; font-size: 13px; line-height: 1.5; letter-spacing: .01em; -webkit-backdrop-filter: blur(12px); backdrop-filter: blur(12px); }
+.hero-marker p:first-child { font-weight: 500; }
+.hero-marker p + p { margin-top: 3px; color: #f5f5f7ad; font-size: 12px; }
+.bottomtext { width: 100%; display: grid; grid-template-columns: minmax(0, 1.3fr) minmax(0, 1fr); gap: clamp(38px, 7.5vw, 110px); align-items: end; }
+.maintext { min-width: 0; }
+.maintext .eyebrow { color: #e7eaf0b8; margin-bottom: 22px; }
+.maintext h1 { font-size: clamp(48px, 4.65vw, 60px); font-weight: 600; line-height: 1.12; letter-spacing: -.045em; }
+.maintext h1 em { display: inline-block; padding-top: 10px; color: #ecf0f5d6; font-size: .7em; font-weight: 400; letter-spacing: -.035em; }
+.subtext { min-width: 0; max-width: 420px; padding-bottom: 2px; }
+.subtext > p { margin-top: 17px; color: #f5f5f7b8; font-size: 16px; line-height: 1.65; max-width: 390px; }
+.alagtext { font-size: clamp(22px, 1.9vw, 28px); line-height: 1.3; font-weight: 500; letter-spacing: -.025em; }
+.buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
+.landing-div .buttondiv { min-height: 46px; display: inline-flex; align-items: center; justify-content: center; gap: 10px; border-color: #ffffff3d; border-radius: 12px; background: #ffffff0d; padding: 11px 19px; }
+.landing-div .buttondiv.solid { background: #f5f5f7; border-color: #f5f5f7; color: #161619; }
+.landing-div .buttondiv:hover { background: #ffffff20; border-color: #ffffff80; }
+.landing-div .buttondiv.solid:hover { background: #dce8f8; border-color: #dce8f8; }
+.scroll-note { position: absolute; top: calc(var(--navigation-height, 76px) + 38px); left: var(--gutter); display: flex; align-items: center; gap: 11px; color: #f5f5f7a6; font-size: 12px; letter-spacing: .03em; }
+.scroll-note > span { width: 26px; height: 26px; display: grid; place-items: center; border: 1px solid #ffffff38; border-radius: 50%; font-size: 15px; }
+.photo-credit { position: absolute; right: var(--gutter); bottom: 23px; max-width: calc(100% - var(--gutter) * 2); font-size: 10px; color: #f5f5f78f; }
+.photo-credit:hover { color: #f5f5f7; }
+.js-enabled.is-ready .maintext h1 { animation: enter-title .8s cubic-bezier(.2,.7,.2,1) both; }
+@keyframes enter-title { from { opacity: 0; transform: translateY(22px); } to { opacity: 1; transform: none; } }
 
-@media (max-width:1000px) {
-  .maintext h1 { font-size: 4.8vw; }
+@media (max-width:1000px) and (min-width:761px) {
+  .bottomtext { grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr); gap: 32px; }
+  .maintext h1 { font-size: 48px; }
+  .maintext h1 em { font-size: .65em; }
+  .subtext > p { font-size: 15px; }
 }
 
 @media (max-width:760px) {
-  .hero-backdrop { min-height: 740px; margin-bottom: calc(-1 * max(100svh,740px)); }
-  .landing-div { min-height: max(100svh,740px); padding-block: 190px 48px; }
-  .scroll-note { top: 135px; font-size: 8px; }
-  .hero-marker { top: 24%; font-size: 8px; }
-  .bottomtext { flex-direction: column; align-items: flex-start; gap: 28px; }
-  .maintext { width: 100%; }
-  .maintext h1 { font-size: clamp(38px,6.6vw,50px); }
-  .maintext .eyebrow { margin-bottom: 19px; font-size: 8px; }
-  .subtext { width: min(100%,450px); }
-  .subtext > p { font-size: 14px; }
-  .alagtext { font-size: 21px; margin-top: 14px; }
-  .buttons { margin-top: 18px; }
-  .photo-credit { font-size: 7px; }
+  .hero-backdrop { min-height: 810px; margin-bottom: calc(-1 * max(100svh, 810px)); }
+  .landing-div { min-height: max(100svh, 810px); padding-block: calc(var(--navigation-height, 104px) + 180px) 70px; }
+  .scaleImage { object-position: 48% 46%; }
+  .scroll-note { top: calc(var(--navigation-height, 104px) + 23px); font-size: 11px; }
+  .hero-marker { top: calc(var(--navigation-height, 104px) + 78px); left: var(--gutter); right: auto; padding: 0; text-align: left; border: 0; background: transparent; -webkit-backdrop-filter: none; backdrop-filter: none; }
+  .hero-marker p:first-child { font-size: 12px; }
+  .hero-marker p + p { font-size: 11px; }
+  .bottomtext { grid-template-columns: minmax(0, 1fr); gap: 28px; }
+  .maintext h1 { font-size: clamp(42px, 7.8vw, 54px); }
+  .maintext h1 em { font-size: .66em; padding-top: 9px; }
+  .maintext .eyebrow { margin-bottom: 15px; font-size: 10px; }
+  .subtext { width: min(100%, 440px); max-width: none; }
+  .subtext > p { font-size: 15px; margin-top: 12px; }
+  .alagtext { font-size: 22px; }
+  .buttons { margin-top: 23px; }
+  .photo-credit { font-size: 9px; bottom: 20px; }
 }
 
 @media (max-width:400px) {
-  .hero-marker { top: 27%; }
-  .scroll-note { top: 150px; }
-  .landing-div { min-height: max(100svh,820px); padding-top: 250px; }
-  .hero-backdrop { min-height: 820px; margin-bottom: calc(-1 * max(100svh,820px)); }
-  .maintext h1 { font-size: 38px; }
+  .hero-backdrop { min-height: 830px; margin-bottom: calc(-1 * max(100svh, 830px)); }
+  .landing-div { min-height: max(100svh, 830px); }
+  .maintext h1 { font-size: 42px; }
+  .maintext h1 em { font-size: .62em; }
+  .landing-div .buttondiv { font-size: 13px; padding-inline: 16px; }
 }

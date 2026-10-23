@@ -1,5 +1,11 @@
 # 文章照片与附件发布兼容性测试记录
 
+## 2026-10-23：Apple 风格更新
+
+隔离临时文章中使用三张既有本地图：320×780的Experience和1440×900的Moments检查原比例、圆角及说明；作者320×780选择入口可收缩。未重跑新选照片、排序、9图及大小边界。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[照片服务](../../modules/article-photos/README.md)、[PDF 服务](../../modules/article-documents/README.md)。
 - 本轮命令：`npm run test:photos`；报告 `artifacts/photo-results.json` 不交付。
 - 本轮日期：2026-10-10，北京时间 16:17；HTTP 路径 `/personal-homepage/`。

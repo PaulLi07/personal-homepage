@@ -25,7 +25,7 @@ window.Homepage.createTransitions = function (reducedMotion) {
       .filter(child => child.classList.contains("colordiv"))
       .map((column, i) => settled(column.animate([
         { transform: "translateY(0)" }, { transform: "translateY(-105%)" }
-      ], { duration, delay: i * 55, easing: "cubic-bezier(.65,0,.25,1)", fill: "forwards" }))));
+      ], { duration, delay: i * 28, easing: "cubic-bezier(.65,0,.25,1)", fill: "forwards" }))));
     curtain.remove();
   }
 
@@ -55,7 +55,7 @@ window.Homepage.createTransitions = function (reducedMotion) {
         }));
       }
       document.documentElement.classList.add("is-ready");
-      await revealColumns(loader, 600);
+      await revealColumns(loader, 340);
     } finally {
       window.clearTimeout(failSafe);
       loader.remove();
@@ -66,7 +66,7 @@ window.Homepage.createTransitions = function (reducedMotion) {
   function openDetail(dialog, sourceRect) {
     if (reducedMotion.matches || !Element.prototype.animate) return;
     const curtain = columns(dialog, "transition-columns");
-    revealColumns(curtain, 530);
+    revealColumns(curtain, 280);
     const image = dialog.querySelector("#detail-image");
     const target = image.getBoundingClientRect();
     if (sourceRect && sourceRect.width && target.width) {
@@ -75,12 +75,12 @@ window.Homepage.createTransitions = function (reducedMotion) {
       image.animate([
         { transform: `translate(${dx}px, ${dy}px) scale(${sourceRect.width / target.width}, ${sourceRect.height / target.height})`, opacity: .6 },
         { transform: "translate(0,0) scale(1)", opacity: 1 }
-      ], { duration: 780, delay: 160, easing: "cubic-bezier(.2,.7,.2,1)" });
+      ], { duration: 420, delay: 80, easing: "cubic-bezier(.2,.7,.2,1)" });
     }
     dialog.querySelector(".right-part").animate([
-      { opacity: 0, transform: "translateY(24px)" },
+      { opacity: 0, transform: "translateY(12px)" },
       { opacity: 1, transform: "translateY(0)" }
-    ], { duration: 650, delay: 170, easing: "ease-out" });
+    ], { duration: 320, delay: 80, easing: "ease-out" });
   }
 
   return { start, openDetail };

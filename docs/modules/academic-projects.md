@@ -1,5 +1,11 @@
 # 项目详情测试记录
 
+## 2026-10-23：Apple 风格更新
+
+桌面通过实际栏目页签打开，BESIII条目和GitHub链接正常；未访问外部站点，本轮未单独测试手机Projects。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[模块 README](../../modules/academic/projects/README.md)。
 - 入口：`#academic/projects`。
 - 测试时间：2026-10-09 15:40（北京时间）；改动标识：功能模块重构。

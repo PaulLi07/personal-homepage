@@ -1,21 +1,22 @@
-/* PDF 组件独立于正文和照片，不创建内嵌阅读器。 */
-.article-documents { min-width: 0; margin-top: 2rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
-.article-documents h4, .article-documents__title, .article-document-picker h4, .article-document-picker h5 { margin: 0 0 .6rem; font: 500 1rem/1.5 var(--body); overflow-wrap: anywhere; }
-.article-documents__list { display: grid; gap: 1rem; margin: 1rem 0 0; padding: 0; list-style: none; }
-.article-documents__item { display: flex; align-items: center; justify-content: space-between; gap: 1rem; flex-wrap: wrap; padding: 1rem; border: 1px solid var(--line); background: #11191f50; }
+/* PDF 组件使用独立附件卡片，不创建内嵌阅读器。 */
+.article-documents { min-width: 0; margin-top: 32px; padding-top: 26px; border-top: 1px solid var(--line); }
+.article-documents h4, .article-documents__title, .article-document-picker h4, .article-document-picker h5 { margin: 0 0 12px; font: 500 18px/1.5 var(--body); overflow-wrap: anywhere; }
+.article-documents__list { display: grid; gap: 14px; margin: 18px 0 0; padding: 0; list-style: none; }
+.article-documents__item { display: flex; align-items: center; justify-content: space-between; min-width: 0; gap: 18px; flex-wrap: wrap; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
 .article-documents__summary { min-width: 0; flex: 1 1 14rem; }
-.article-documents__meta, .article-document-picker__help, .article-document-picker__empty, .article-document-picker__size { margin: .5rem 0; color: var(--muted); font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
-.article-documents__actions, .article-document-picker__actions { display: flex; flex-wrap: wrap; gap: .5rem; }
-.article-documents__open, .article-documents__download, .article-document-picker__button { display: inline-flex; align-items: center; min-height: 44px; box-sizing: border-box; padding: .6rem .8rem; border: 1px solid var(--line); border-radius: 3px; background: transparent; color: var(--accent); font: inherit; font-size: .8rem; text-decoration: none; cursor: pointer; }
-.article-documents a:focus-visible, .article-document-picker input:focus-visible, .article-document-picker button:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
-.article-document-picker { min-width: 0; margin-top: 1.3rem; padding-top: 1.4rem; border-top: 1px solid var(--line); }
-.article-document-picker__choose, .article-document-picker__field { display: grid; gap: .55rem; min-width: 0; color: var(--white); font-size: .85rem; }
-.article-document-picker__input { width: 100%; min-width: 0; font: inherit; color: var(--muted); }
-.article-document-picker__input::file-selector-button { margin-right: .7rem; padding: .65rem .8rem; border: 1px solid var(--line); background: #11191f; color: var(--white); font: inherit; cursor: pointer; }
-.article-document-picker__status { min-height: 1.7em; margin: .8rem 0; color: var(--accent); font-size: .85rem; line-height: 1.7; overflow-wrap: anywhere; }
-.article-document-picker__list { display: grid; gap: 1rem; }
-.article-document-picker__item { min-width: 0; padding: 1rem; border: 1px solid var(--line); background: #11191f50; }
-.article-document-picker__field input { width: 100%; min-width: 0; box-sizing: border-box; padding: .75rem; border: 1px solid var(--line); border-radius: 3px; background: #11191f; color: var(--white); font: inherit; line-height: 1.6; }
-.article-document-picker__actions { margin-top: .8rem; }
+.article-documents__meta, .article-document-picker__help, .article-document-picker__empty, .article-document-picker__size { margin: 8px 0; color: var(--muted); font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.article-documents__actions, .article-document-picker__actions { display: flex; flex-wrap: wrap; gap: 8px; }
+.article-documents__open, .article-documents__download, .article-document-picker__button { display: inline-flex; align-items: center; min-height: 44px; max-width: 100%; box-sizing: border-box; padding: 10px 13px; border: 1px solid var(--line); border-radius: 10px; background: transparent; color: var(--accent); font: inherit; font-size: 13px; line-height: 1.6; text-decoration: none; cursor: pointer; }
+.article-documents__open:hover, .article-documents__download:hover, .article-document-picker__button:hover { background: var(--surface-raised); }
+.article-documents a:focus-visible, .article-document-picker input:focus-visible, .article-document-picker button:focus-visible { outline: 2px solid var(--primary); outline-offset: 3px; }
+.article-document-picker { min-width: 0; margin-top: 24px; padding-top: 26px; border-top: 1px solid var(--line); }
+.article-document-picker__choose, .article-document-picker__field { display: grid; gap: 10px; min-width: 0; color: var(--white); font-size: 14px; }
+.article-document-picker__input { width: 100%; max-width: 100%; min-width: 0; font: inherit; font-size: 14px; color: var(--muted); }
+.article-document-picker__input::file-selector-button { min-height: 44px; margin-right: 12px; padding: 10px 14px; border: 1px solid var(--line); border-radius: 11px; background: var(--surface); color: var(--white); font: inherit; cursor: pointer; }
+.article-document-picker__status { min-height: 1.7em; margin: 14px 0; color: var(--accent); font-size: 14px; line-height: 1.8; overflow-wrap: anywhere; }
+.article-document-picker__list { display: grid; gap: 16px; }
+.article-document-picker__item { min-width: 0; padding: 22px; border: 1px solid var(--line); border-radius: 18px; background: var(--surface); }
+.article-document-picker__field input { width: 100%; min-width: 0; min-height: 48px; box-sizing: border-box; padding: 12px; border: 1px solid #ffffff30; border-radius: 11px; background: #111114; color: var(--white); font: inherit; font-size: 16px; line-height: 1.7; }
+.article-document-picker__actions { margin-top: 14px; }
 .article-document-picker button:disabled, .article-document-picker input:disabled { opacity: .55; cursor: default; }
-@media (max-width: 480px) { .article-documents__item, .article-document-picker__item { padding: .8rem; } }
+@media (max-width: 480px) { .article-documents__item, .article-document-picker__item { padding: 18px 14px; } }

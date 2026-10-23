@@ -1,5 +1,11 @@
 # 粒子背景：说明与测试记录
 
+## 2026-10-23：Apple 风格更新
+
+主页面黑区白点、照片无覆盖、滚动和详情隐藏作视觉冒烟；离线模拟259断言/9组通过。粒子代码未改，未重跑三内核逐像素、原生减动或完整性能矩阵。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[模块 README](../../modules/particle-background/README.md)；参数与安全回退：[维护指南](../PARTICLE-BACKGROUND.md)。
 - 入口：`app/site.json` 的独立服务与 `app/main.js` 挂载；主页面 `#main`，无额外导航、作者业务、图片或网络依赖。
 - 分支：`feat/emergent-particle-background`；`main` 与 `backup/pre-emergence-2026-10-11` 保留基线 `93bf256`，本轮不整合、不推送。

@@ -37,7 +37,7 @@ index.html, credits.html   装配生成的发布页面
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-当前网页使用 11 个固定图片文件：10 个下载的占位图片及 1 个用户提供的 PNG。Home 的 `images/hero.jpg` 与 About 的 `images/portrait.jpg` 内容相同、来源同为 Ivan Rohovchenko / Unsplash，但独立保存和替换；Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 移除整区背景图，分别由自己的样式提供纯黑背景、学术细线和克制的相框层次；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材来源与副本关系见 [图片清单](image-sources.md)。
+当前网页使用 11 个固定图片文件：9 个下载的占位图片、1 个用户已替换的人像及 1 个用户提供的 PNG。Home 的 `images/hero.jpg` 继续保留 Ivan Rohovchenko / Unsplash 原山水图；About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景、学术细线和克制的相框层次；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
@@ -76,9 +76,15 @@ index.html, credits.html   装配生成的发布页面
 
 脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载照片、PDF 能力及作者配置 / 会话 / 发布器 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
 
-装配生成 `path?v=<内容 SHA256 前 12 位>`，内容变化后 CSS / 静态 JS 使用新 URL。`liveScripts` 必须是模块 `scripts` 的子集，当前仅 Experience 的 `modules/academic/experience/entries.js` 与 Moments 的 `modules/life/moments/posts.js` 保留原 URL，在线直接发布只更新数据即可，无需重新装配 HTML；作者业务不改变。图片引用及预载仍使用原路径，版本串不包含凭据。
+装配生成 `path?v=<内容 SHA256 前 12 位>`，内容变化后 CSS / 静态 JS 使用新 URL。`liveScripts` 必须是模块 `scripts` 的子集，当前仅 Experience 的 `modules/academic/experience/entries.js` 与 Moments 的 `modules/life/moments/posts.js` 保留原 URL，在线直接发布只更新数据即可，无需重新装配 HTML；作者业务不改变。图片引用及预载仍归所属模块；About 人像片段手动附加内容 SHA256 前 12 位 `?v=` 避免旧图缓存，换图同步更新，此例不代表所有图片已经自动版本化。版本串不包含凭据。
 
-预览服务器没有热更新；已打开的标签仍持有旧文档，必须在装配后刷新用户实际标签，再核对资源 URL、图片、DOM 和计算样式。固定导航公开 `--navigation-height`：桌面 110px、宽度 ≤760 时 105px、≤400 时 122px。当前 Life 用 `scroll-margin-top: var(--navigation-height, 110px)` 留出锚点空间；扩展栏目需在正常动画的实际导航点击后验证标题及边框，不能只检查居中可见或 hash。
+预览服务器没有热更新；已打开的标签仍持有旧文档，必须在装配后刷新用户实际标签，再核对资源 URL、图片、DOM 和计算样式。固定导航公开 `--navigation-height`：桌面 76px、宽度 ≤760 时 104px。基础层以该变量设置分区锚点留白，Home 为 0；Academic 与 Life 各在自己的模块以 `calc(var(--navigation-height, 76px) + 16px)` 留出额外分隔空间，不读取导航内部结构。扩展栏目需在正常动画的实际导航点击后验证标题及边框，不能只检查居中可见或 hash。
+
+## 2026-10-23 视觉维护入口
+
+Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或外部字体依赖。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的摄影构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立摄影背景。
+
+后续样式维护见 [设计约定](DESIGN-APPLE.md)。当前开发分支为 `feat/apple-homepage-design`，改版前备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`；本轮尚未推送。验证结果统一见 [本轮兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)，设计说明本身不代表浏览器测试通过。
 
 ## 注册接口与共享服务
 
@@ -107,7 +113,7 @@ Canvas 固定当前视口，`aria-hidden`、不接收指针事件；绘制范围
 
 渲染直接使用 Canvas `arc` 填充白色实心圆点，不使用 sprite、渐变或 blur。用户要求粒子微小、密集、清晰，默认半径 `0.4`–`0.85` CSS 像素，透明度 `0.85`；前景图片、文字、链接及按钮保持可读。后台和所有详情暂停，读者与作者详情均隐藏 Canvas；减少动态效果保留静态图，Canvas 不可用退回原页面。数量按面积及手机上限调整，像素比有上限，慢帧可自适应减量，不能将目标频率当作硬件帧率保证。参数与诊断字段见 [维护指南](PARTICLE-BACKGROUND.md)；这是艺术性网格规则与 curl 流场，不宣称严格物理精度。
 
-本轮留在功能分支、不整合主分支、不推送。2026-10-11 最终回归于北京时间 16:33–16:37 完成，覆盖缓存与导航修复：基础三内核九环境、正常 Life 导航 24 项、作者 144 流程、粒子 255 流程 / 12234 断言均通过；生产源码未被测试修改，外部请求与真实写入为 0。16:04 及更早结果为历史；照片 / PDF 专门矩阵、离线核心本轮未重跑，227 条离线断言仍属此前证据。范围与限制见 [测试记录](modules/particle-background.md)。
+历史阶段曾留在功能分支、不整合主分支、不推送。2026-10-11 最终回归于北京时间 16:33–16:37 完成，覆盖缓存与导航修复：基础三内核九环境、正常 Life 导航 24 项、作者 144 流程、粒子 255 流程 / 12234 断言均通过；生产源码未被测试修改，外部请求与真实写入为 0。16:04 及更早结果为历史；照片 / PDF 专门矩阵、离线核心本轮未重跑，227 条离线断言仍属此前证据。范围与限制见 [测试记录](modules/particle-background.md)。
 
 ## 详情数据
 

@@ -6,6 +6,8 @@
 - 远端：<https://github.com/PaulLi07/personal-homepage>
 - 正式源码：工作区根目录的 `personal-homepage/`；`outputs/personal-homepage` 为兼容链接，其他解压副本属于历史快照。
 
+2026-10-23 已按批准方案优化为深色 Apple 风格；维护约定见 [设计说明](docs/DESIGN-APPLE.md)，实际桌面/手机预览及未覆盖范围见 [本轮记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)。以下旧测试数字保留为对应历史阶段，不能代替本次验证。
+
 ## 快速开始
 
 基础维护命令使用 Node.js 18+ 和 Python 3.9+，无需运行 `npm install`。
@@ -20,7 +22,7 @@ npm run package     # 先装配再生成 ../outputs/personal-homepage-source.zip
 
 网站运行时只读取普通 HTML、CSS、JavaScript 和本地资源，无外部运行时依赖。装配只在维护时进行；上传包已包含生成页面，GitHub Pages 无需构建。也可直接在浏览器中打开生成的 `index.html`；模块不依赖运行时请求 HTML 片段。
 
-常驻 `preview` 没有热更新。修改并装配后，必须刷新用户实际打开的预览标签，确认新版图片、结构、样式和资源 URL。装配为 CSS 与静态 JS 加入内容 SHA256 前 12 位的 `?v=`；两份在线文章数据 `entries.js` / `posts.js` 由清单 `liveScripts` 保持原 URL，直接发布文章无需重装 HTML。图片仍用原路径，需核对实际显示。
+常驻 `preview` 没有热更新。修改并装配后，必须刷新用户实际打开的预览标签，确认新版图片、结构、样式和资源 URL。装配为 CSS 与静态 JS 加入内容 SHA256 前 12 位的 `?v=`；两份在线文章数据 `entries.js` / `posts.js` 由清单 `liveScripts` 保持原 URL，直接发布文章无需重装 HTML。图片仍归所属模块；About 人像的片段手动使用内容散列查询参数，换图时同步更新，需核对实际显示。
 
 检查导航时按正常动画点击各栏目，等待滚动及固定导航栏稳定，确认目标标题与边框没有被遮挡；元素居中可见或 hash 正确不能替代实际点击后的布局检查。
 

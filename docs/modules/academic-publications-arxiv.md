@@ -1,5 +1,11 @@
 # arXiv 分类测试记录
 
+## 2026-10-23：Apple 风格更新
+
+桌面实际打开现有条目，320×780检查长题名、元信息和按钮换行；Abstract/PDF地址正确，未访问外部站点。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[分类 README](../../modules/academic/publications/arxiv/README.md)。
 - 入口：`#academic/publications/arxiv`；数据仅在分类自己的 `data.js`。
 - 兼容性测试：2026-10-10 北京时间 16:17，Chromium 151.0.7922.34、Firefox 153.0、WebKit 26.5 各在 1440×900、390×844、320×780 通过。

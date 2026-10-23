@@ -1,6 +1,6 @@
 {
   "modules/home/images/hero.jpg": "https://images.unsplash.com/photo-1669327195331-cd47e0d5eef0?auto=format&fit=max&w=1600&q=85",
-  "modules/about/images/portrait.jpg": "https://images.unsplash.com/photo-1669327195331-cd47e0d5eef0?auto=format&fit=max&w=1600&q=85",
+  "modules/about/images/portrait.jpg": null,
   "modules/academic/experience/images/cover.jpg": "https://images-assets.nasa.gov/image/carina_nebula/carina_nebula~large.jpg",
   "modules/academic/publications/images/cover.jpg": "https://images-assets.nasa.gov/image/PIA04921/PIA04921~medium.jpg",
   "modules/academic/notes/images/cover.jpg": "https://images-assets.nasa.gov/image/GSFC_20171208_Archive_e000842/GSFC_20171208_Archive_e000842~medium.jpg",

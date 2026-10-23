@@ -1,5 +1,11 @@
 # 文章 PDF 附件兼容性测试记录
 
+## 2026-10-23：Apple 风格更新
+
+隔离Experience在320×780检查618字节临时PDF卡片、Open/Download路径及download文件名；作者320×780选择入口可收缩。未实际打开或下载PDF、未选新文件、未重跑3份与大小边界。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[模块 README](../../modules/article-documents/README.md)。
 - 使用者：Experience 与 Moments 的数据、读者、统一编辑器及发布器；服务不占首页分区。
 - 日期：2026-10-10；布局为 Playwright 模拟视口，真实 API 写入 0。

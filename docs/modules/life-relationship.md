@@ -1,5 +1,11 @@
 # 关系空间详情测试记录
 
+## 2026-10-23：Apple 风格更新
+
+桌面实际切换Relationship，当前尚未配置的英文状态正常；算法离线9项通过。未设置密码/私密内容，本轮未测试其手机解锁表单。
+
+环境为 macOS / Codex 应用内浏览器（工具未提供内核及精确版本），手机和平板均为视口模拟。范围与未覆盖项见 [本轮统一记录](../COMPATIBILITY.md#apple-design-2026-10-23)；历史三内核结论不替代本次结果。
+
 - 就近说明：[模块 README](../../modules/life/relationship/README.md)；入口：`#life/relationship`。
 - 测试日期：2026-10-10（北京时间）；改动范围：Relationship 独立加密视图及关闭生命周期。
 - 实际环境：chromium 151.0.7922.34、firefox 153.0、webkit 26.5；各测 1440×900、390×844、320×780。
