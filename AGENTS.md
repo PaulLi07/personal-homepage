@@ -28,6 +28,7 @@
 - 2026-10-23 用户批准 Apple 风格优化：保留摄影首屏、宇宙粒子、学术四栏目与生活照片叠层，使用系统字体、正常字形、适中标题、石墨灰面板、克制磨砂和清楚的主次按钮；不引入窄体巨字或无层次的大块黑色。视觉令牌与模块边界见 [设计约定](docs/DESIGN-APPLE.md)，本轮实际验证统一链接 [兼容性记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)，不得沿用旧测试结论。
 - 同日后续批准仅精修 Academic：参考 NASA Science 的专题层次，四入口整卡 `1:1`、`0px` 圆角，图片、标题说明内嵌，桌面四列、≤900px 两列；大预览也改直角，仅覆盖本区旧圆角约定。保留纯黑粒子表面、前景与图片 `data-particle-exclude`。上部标题/说明从 `details.getItem()` 读取，序号随栏目切换；精选论文仅从公开 `getPublicationCategories()` 取 arXiv 首条，否则首个非空分类首条，不复制资料，缺失、抛错或全空则隐藏。实际验证见 [Academic 本轮记录](docs/modules/academic.md#academic-science-2026-10-23)，其他板块规则不变。
 - 2026-10-23 后续用户批准 Academic 改为学术探索场景，取代前述四正方形卡片：桌面左侧30%四行直角路牌接地，顶部在右侧大图中部至下半部；地面小人用SVG/CSS缓慢行走，图窗自动循环四栏，悬停/聚焦/详情/离屏暂停，支持手机与减少动态效果。场景按配置、轮播、导航、人物、精选索引和胶水独立放在 `modules/academic/exploration/`，父入口只接线，不读取其他模块私有实现；继续遵守中文文档/英文页面及实测协议。回退点 `backup/pre-academic-scene-2026-10-23`（`ed981de`），任务分支 `feat/academic-exploration-scene`，本轮未授权推送。
+- 同日后续用户要求路牌与道路呈现独立的立体黑白漫画风，允许与周围Apple风格不同。四块箭头木牌用黑白纸面、墨线、侧板排线、螺钉和立柱；地面改为漫画草地及土层，沿用人物行走和四栏预览/路由。样式及原生SVG归 `academic/exploration/`；外层排除粒子，手机裁取草地图局部，脚底/立柱/地表按共同基线对齐。回退 `backup/pre-academic-comic-2026-10-23`（`7e4425c`），分支 `style/academic-comic-signpost`，未授权推送。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。

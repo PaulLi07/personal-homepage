@@ -17,7 +17,8 @@
   <link rel="stylesheet" href="modules/home/styles.css?v=daa3440b432e">
   <link rel="stylesheet" href="modules/about/styles.css?v=79656458ca76">
   <link rel="stylesheet" href="modules/academic/styles.css?v=008e9ba011f1">
-  <link rel="stylesheet" href="modules/academic/exploration/scene.css?v=bf036623df6b">
+  <link rel="stylesheet" href="modules/academic/exploration/scene.css?v=c5590364b2a9">
+  <link rel="stylesheet" href="modules/academic/exploration/comic.css?v=d42a986691f2">
   <link rel="stylesheet" href="modules/academic/exploration/walker.css?v=b09e6f0c63d1">
   <link rel="stylesheet" href="modules/academic/experience/log.css?v=5de2da332056">
   <link rel="stylesheet" href="modules/academic/publications/styles.css?v=1fbc91a04b49">
@@ -154,7 +155,7 @@
       <p class="academic-intro">Exploring theoretical physics through research, reading and collaboration.</p>
     </header>
     <div class="academic-scene" data-academic-scene role="region" aria-label="Explore academic work">
-      <nav class="academic-signpost" aria-label="Academic sections">
+      <nav class="academic-signpost" aria-label="Academic sections" data-particle-exclude>
         <p class="academic-signpost-kicker" data-particle-exclude>Explore academic work</p>
         <div class="academic-signboard" data-particle-exclude>
           <button class="projectBox" type="button" data-academic="experience" aria-label="Open Experience" aria-haspopup="dialog"><span class="academic-sign-index" aria-hidden="true">01</span><span class="thumb-label">Experience</span><span class="academic-sign-arrow" aria-hidden="true">↗</span></button>
@@ -183,7 +184,7 @@
         </div>
       </div>
       <div class="academic-walkway" data-scene-walkway aria-hidden="true" data-particle-exclude><div class="academic-walker" data-scene-walker><img class="academic-walker-fallback" data-walker-fallback src="modules/academic/exploration/walker.svg" alt=""></div></div>
-      <svg class="academic-ground" viewBox="0 0 1280 26" preserveAspectRatio="none" aria-hidden="true" focusable="false" data-particle-exclude><path d="M0 19H168Q186 19 198 17T230 18H552Q569 18 582 16T613 17H948Q970 17 986 19H1280"/><path class="academic-ground-detail" d="M115 24h32m478-2h21m393 2h47"/></svg>
+      <div class="academic-ground" aria-hidden="true" data-particle-exclude><img src="modules/academic/exploration/grass.svg" alt="" loading="lazy"></div>
     </div>
     <a class="academic-publication" id="academic-featured-publication" href="#academic/publications" data-particle-exclude hidden>
       <span class="academic-publication-kicker">Selected publication</span>

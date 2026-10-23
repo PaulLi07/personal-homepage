@@ -49,6 +49,7 @@
       "styles": [
         "modules/academic/styles.css",
         "modules/academic/exploration/scene.css",
+        "modules/academic/exploration/comic.css",
         "modules/academic/exploration/walker.css",
         "modules/academic/experience/log.css",
         "modules/academic/publications/styles.css"
