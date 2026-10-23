@@ -6,7 +6,7 @@
 
 - `photos.js`：公开冻结配置 `Homepage.aboutGallery.config`；`intervalMs` 默认 `6000`，`photos` 顺序即播放顺序。每项含 `id`、仓库相对 `src`、英文 `alt`、原图 `width/height`、裁切焦点 `position`、英文 `credit` 和 `placeholder`。
 - `gallery.js`：`Homepage.aboutGallery.mount({ root, reducedMotion, config? })` 返回 `{ destroy() }`。`root` 是照片框 `[data-about-gallery]`；配置缺省读取上述公开清单。父模块只负责调用；控制器自身管理页面离开和往返缓存清理。
-- `styles.css`：相册直角画幅（优先3:2、最高680px）、淡入、两侧箭头及图内底部半透明序号/播放按钮；照片下方不另设控件条。
+- `styles.css`：相册直角画幅（桌面高350–600px、宽度由父模块65%轨道决定；≤900px用16:10）、淡入、两侧箭头及图内底部半透明序号/播放按钮；照片下方不另设控件条。
 - `images/`：相册自己的照片副本/展示衍生图。用户原始 `../images/portrait.jpg` 保留原字节，不直接压缩覆盖；来源及缓存键同步维护在素材清单。
 
 HTML 保留第一张静态 `[data-gallery-fallback]`，即使脚本缺失仍能显示图片。容器使用 `[data-gallery-slides]`，控制器追加其余 `img.about-gallery__slide`；`is-active` 表示当前图。两侧按钮为 `[data-gallery-prev]` / `[data-gallery-next]`，播放按钮为 `[data-gallery-toggle]`，均在静态 HTML 中默认隐藏，至少两张图解码可用后才启用。`[data-gallery-index]` 表示可用/待加载照片中的序号；坏图从总数中排除。`[data-gallery-announcement]` 只朗读手动切换，避免自动轮播持续播报。`[data-gallery-credit]` 保留 `credits.html` 链接并更新当前图的英文无障碍署名。
