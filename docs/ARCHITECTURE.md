@@ -200,3 +200,7 @@ Academic探索场景的 `character/` 保存 `clips.js`（素材/关节采样）�
 ## About相册（2026-10-23）
 
 `modules/about/gallery/` 独立维护照片清单、轮播、图内浮层样式与本地素材；About入口只传root与动态偏好，不读取其他图库私有实现。父CSS仅组合照片、资料与无标题说明，图片画幅内显式排除粒子。相册照片由photos.js集中列出，首图另在HTML提供静态回退；修改首图同步两处并运行回归。用户原图保留，网页使用去元数据的缩放副本；素材与验证见[模块说明](../modules/about/README.md)。
+
+## 分区全宽布局（2026-10-23）
+
+About只在自己的styles.css/gallery/styles.css以局部 `--about-inset` 组织Gallery＋右侧资料的全宽组合；Academic在自己的styles.css/exploration样式以 `--academic-inset` 展开图窗、路牌与全幅草地。媒体铺开、文字限安全边距和阅读行宽；不改变shared/base.css的全局gutter、不改胶水或数据接口。图片/地面仍由所属模块声明粒子排除。当前验证见[About](modules/about.md#edge-layout-2026-10-23)与[Academic](modules/academic.md#edge-layout-2026-10-23)。

@@ -17,8 +17,9 @@
 .academic-signpost-pole { position: absolute; width: 18px; height: calc(var(--pole-height) + 16px); left: 44%; bottom: 0; z-index: 1; border: 2px solid #121212; outline: 1.5px solid #eee; background: repeating-linear-gradient(118deg, transparent 0 8px, #1115 8px 9px), linear-gradient(90deg, #ededed 0 65%, #777 65% 72%, #1c1c1c 72%); box-shadow: 4px 2px 0 #000, 5px 2px 0 #dedede; }
 .academic-signpost-pole::before { content: ""; position: absolute; width: 7px; height: 7px; top: 6px; left: 3px; border: 1px solid #171717; border-radius: 50%; background: #ddd; }
 .academic-signpost-pole::after { content: ""; position: absolute; width: 60px; height: 8px; left: -22px; bottom: -4px; border: 1px solid #e8e8e8; border-radius: 50%; background: repeating-linear-gradient(150deg, #111 0 4px, #ddd 4px 5px); transform: rotate(-3deg); }
-.academic-ground { position: absolute; width: 100%; height: 96px; left: 0; bottom: 0; pointer-events: none; }
-.academic-ground img { display: block; width: 100%; height: 100%; object-fit: fill; }
+/* 固定原始草地比例并水平接续，宽屏不横向拉长草簇；保留原img资源节点。 */
+.academic-ground { position: absolute; width: 100%; height: 96px; left: 0; bottom: 0; overflow: hidden; background: url("grass.svg") left bottom / 1280px 96px repeat-x; pointer-events: none; }
+.academic-ground img { display: block; width: 1280px; max-width: none; height: 96px; object-fit: fill; visibility: hidden; }
 @media (max-width: 1100px) and (min-width: 761px) {
   .academic-signboard { padding-right: 8px; gap: 4px; }
   .academic-signboard .projectBox { min-height: 54px; grid-template-columns: 17px minmax(0, 1fr) 13px; gap: 6px; padding: 8px 30px 16px 15px; }
@@ -27,9 +28,6 @@
   .academic-signpost-kicker { font-size: 12px; letter-spacing: .04em; }
 }
 @media (max-width: 760px) {
-  /* 窄屏裁取草地局部，避免把整幅草簇横向压成密集白栅栏。 */
-  .academic-ground { overflow: hidden; }
-  .academic-ground img { width: max(100%, 700px); max-width: none; }
   .academic-signboard { padding: 5px 10px 8px 6px; gap: 5px; }
   .academic-signboard .projectBox { min-height: 56px; grid-template-columns: 17px minmax(0, 1fr) 13px; gap: 6px; padding: 9px 28px 17px 15px; }
   .academic-signboard .thumb-label { font-size: 14px; }

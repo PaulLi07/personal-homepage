@@ -1,9 +1,10 @@
 /* 简介只管理相册、真实资料与个人说明的组合，轮播细节由gallery维护。 */
-.about { position: relative; min-height: 100svh; padding: 112px var(--gutter) 104px; background: #000; scroll-margin-top: var(--navigation-height, 76px); }
+.about { --about-inset: clamp(24px, 2vw, 32px); position: relative; min-height: 100svh; padding: 112px 0 104px; background: #000; scroll-margin-top: var(--navigation-height, 76px); }
+.about > [data-reveal] { padding-inline: var(--about-inset); }
 .about .section-heading { margin-bottom: 44px; }
-.mainAbout { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); grid-template-areas: "gallery profile" "statement ."; gap: 30px clamp(32px, 4vw, 58px); align-items: center; }
+.mainAbout { display: grid; grid-template-columns: minmax(0, 5fr) minmax(0, 3fr); grid-template-areas: "gallery profile" "statement ."; gap: 30px 0; align-items: center; }
 .about-gallery { grid-area: gallery; }
-.abouttext { grid-area: profile; min-width: 0; padding-block: 2px; }
+.abouttext { grid-area: profile; min-width: 0; padding: 24px var(--about-inset); }
 .abouttext h3 { font-size: clamp(26px, 2.2vw, 32px); line-height: 1.25; font-weight: 500; letter-spacing: -.025em; }
 .about-role { margin-top: 7px; color: var(--muted); font-size: 16px; line-height: 1.6; }
 .profile-facts { margin: 24px 0 0; border-top: 1px solid #ffffff30; }
@@ -12,20 +13,19 @@
 .profile-facts dd { margin: 0; font-size: 14px; line-height: 1.6; overflow-wrap: anywhere; color: var(--white); }
 .profile-facts a { text-decoration: underline; text-decoration-color: #ffffff30; text-underline-offset: 4px; transition: color .2s, text-decoration-color .2s; }
 .profile-facts a:hover { color: var(--accent); text-decoration-color: var(--accent); }
-.about-statement { grid-area: statement; max-width: 65ch; min-width: 0; font-size: 17px; line-height: 1.85; color: #c8c8d0; }
+.about-statement { grid-area: statement; margin-inline: var(--about-inset); max-width: 65ch; min-width: 0; font-size: 17px; line-height: 1.85; color: #c8c8d0; }
 @media (max-width: 1100px) and (min-width: 901px) {
-  .mainAbout { grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); column-gap: 32px; }
   .abouttext h3 { font-size: 26px; }
   .profile-facts div { padding-block: 12px; grid-template-columns: 62px minmax(0, 1fr); gap: 12px; }
 }
 @media (max-width: 900px) {
   .mainAbout { grid-template-columns: minmax(0, 1fr); grid-template-areas: "gallery" "profile" "statement"; row-gap: 30px; }
-  .abouttext { width: 100%; max-width: 680px; }
+  .abouttext { width: 100%; max-width: none; padding: 0 var(--about-inset); }
   .profile-facts { margin-top: 20px; }
   .profile-facts div { grid-template-columns: 90px minmax(0, 1fr); gap: 24px; }
 }
 @media (max-width: 760px) {
-  .about { padding-block: 80px 78px; scroll-margin-top: var(--navigation-height, 104px); }
+  .about { --about-inset: 20px; padding-block: 80px 78px; scroll-margin-top: var(--navigation-height, 104px); }
   .about .section-heading { margin-bottom: 30px; }
   .mainAbout { row-gap: 28px; }
   .abouttext h3 { font-size: 27px; }
@@ -33,5 +33,6 @@
   .about-statement { font-size: 16px; line-height: 1.85; }
 }
 @media (max-width: 400px) {
+  .about { --about-inset: 18px; }
   .profile-facts div { grid-template-columns: minmax(0, 1fr); gap: 4px; padding-block: 11px; }
 }

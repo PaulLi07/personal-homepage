@@ -184,3 +184,7 @@ npm run relationship:check
 ## About相册维护（2026-10-23）
 
 相册照片与计时参数在 `modules/about/gallery/photos.js`，新增照片归该模块images并维护英文alt/署名、尺寸、焦点和SHA12；首张同步片段静态回退。用户原人像保留原字节，仅生成单独网页缩放副本。图内底部显示半透明序号，两侧显示箭头，不在图片下另设控制条；图下个人说明直接编辑About片段。每次扩展运行 `npm run test:about-gallery`、装配及检查，实测小屏控件不重叠、手动/自动切换、暂停/恢复、图片排除粒子及普通导航。分支 `feat/about-photo-gallery`，回退 `backup/pre-about-gallery-2026-10-23`（`6cf69f5`），未授权推送。
+
+## 全宽组合维护（2026-10-23）
+
+About的Gallery与右侧资料共同全宽，不能误改为Gallery独占整行；图片区直角左贴边，资料和说明按局部inset留白。Academic全宽场景保持路牌受控尺寸、图片贴右、草地贯穿及共同脚底基线。调整各自样式，不改全局gutter影响其他模块。必须实际核对901/1024/1440与超宽布局、小屏控件/说明、图窗边缘焦点、粒子边界和真实导航。回退点 `073d6b3`，分支 `style/edge-to-edge-sections`，未授权推送。

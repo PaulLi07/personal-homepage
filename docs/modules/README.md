@@ -10,6 +10,8 @@ Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modul
 
 About最新横向相册、图内半透明序号/两侧箭头、右侧资料及无标题说明见[模块说明](../../modules/about/README.md)与[本轮记录](about.md#about-gallery-2026-10-23)。
 
+About组合全宽与Academic全幅场景的最新布局及实测见[About记录](about.md#edge-layout-2026-10-23)和[Academic记录](academic.md#edge-layout-2026-10-23)，不将相册单独铺满桌面整行。
+
 ## 主模块
 
 | 模块 | 就近说明 | 测试记录 |
