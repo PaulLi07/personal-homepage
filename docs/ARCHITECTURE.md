@@ -206,3 +206,5 @@ Academic探索场景的 `character/` 保存 `clips.js`（素材/关节采样）�
 About只在自己的styles.css/gallery/styles.css以局部 `--about-inset` 组织Gallery＋右侧资料的全宽组合；Academic在自己的styles.css/exploration样式以 `--academic-inset` 展开图窗、路牌与全幅草地。媒体铺开、文字限安全边距和阅读行宽；不改变shared/base.css的全局gutter、不改胶水或数据接口。图片/地面仍由所属模块声明粒子排除。当前验证见[About](modules/about.md#edge-layout-2026-10-23)与[Academic](modules/academic.md#edge-layout-2026-10-23)。
 
 后续比例反馈由各模块局部修正：About采用2.5%／65%／30%／2.5%的外侧留白、图片和资料组合；Academic恢复16:9中栏图窗，新增本模块 `exploration/tree.svg` 和既有comic样式中的静态叶树，右侧与路牌形成平衡。树在片段中作为无交互装饰声明粒子排除，不新增注册接口、脚本、共享服务或清单项。资料、轮播、人物动作及胶水保持原职责。验证见[本轮记录](COMPATIBILITY.md#balanced-composition-2026-10-23)。
+
+2026-10-24按最新反馈将叶树替换为本模块原创 `exploration/coconut-palms.svg`，旧tree.svg移除；Academic两轨道扩大中右图片，椰林绝对定位在右下。路牌/椰林采用透明CSS背景及已有前景层合成，取消整块矩形排除，让图形空隙中的粒子可见。仅照片、实体草地等实心区域继续排除，无粒子服务或胶水代码变更。这个明确透明装饰例外由所属模块承担造景与验证，不能把它推广为任意透明img自动识别。见[本次实测](COMPATIBILITY.md#coconut-palms-2026-10-24)。
