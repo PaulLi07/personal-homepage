@@ -1,12 +1,12 @@
 /* 照片保持原底座，前景纸面微抬；标题独立浮层，不截获鼠标。 */
 @font-face { font-family: "Life Brush"; src: url("fonts/kaushan-script-latin.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
 @font-face { font-family: "Life Caveat"; src: url("fonts/caveat-latin.woff2") format("woff2"); font-style: normal; font-weight: 400; font-display: swap; }
-.life-stack { --life-yellow: #ffe23c; --title-x: 14%; --title-y: 19%; --title-turn: -8deg; position: relative; margin: 60px auto 0; max-width: 960px; }
-.life-stack__stage { position: relative; width: 100%; aspect-ratio: 960 / 600; isolation: isolate; }
-.life-polaroid { --card-x: 43%; --card-y: 26%; --card-turn: -5deg; position: absolute; left: var(--card-x); top: var(--card-y); width: 52%; min-width: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: #171717; text-align: left; z-index: var(--stack-order, 1); transform: translateX(-50%) rotate(var(--card-turn)); -webkit-tap-highlight-color: transparent; }
-.life-polaroid[data-life="travels"] { --card-x: 68%; --card-y: 8%; --card-turn: 6deg; }
-.life-polaroid[data-life="creations"] { --card-x: 30%; --card-y: 2%; --card-turn: -7deg; }
-.life-polaroid[data-life="relationship"] { --card-x: 66%; --card-y: 41%; --card-turn: 4deg; }
+.life-stack { --life-yellow: #ffe23c; --title-x: 14%; --title-y: 19%; --title-turn: -8deg; position: relative; margin: 60px auto 0; max-width: 1100px; }
+.life-stack__stage { position: relative; width: 100%; aspect-ratio: 1100 / 720; isolation: isolate; }
+.life-polaroid { --card-x: 41%; --card-y: 26%; --card-turn: -2.5deg; position: absolute; left: var(--card-x); top: var(--card-y); width: 55%; min-width: 0; padding: 0; border: 0; border-radius: 0; background: transparent; color: #171717; text-align: left; z-index: var(--stack-order, 1); transform: translateX(-50%) rotate(var(--card-turn)); -webkit-tap-highlight-color: transparent; }
+.life-polaroid[data-life="travels"] { --card-x: 66%; --card-y: 8%; --card-turn: 2.5deg; }
+.life-polaroid[data-life="creations"] { --card-x: 32%; --card-y: 2%; --card-turn: -3deg; }
+.life-polaroid[data-life="relationship"] { --card-x: 65%; --card-y: 40%; --card-turn: 2deg; }
 .life-paper { display: block; padding: clamp(10px, 1.2vw, 15px) clamp(10px, 1.2vw, 15px) 0; background: #f5f5f2; border: 1px solid #fff; box-shadow: 0 16px 32px #0007, 0 1px 3px #000a; transform: translateY(0); transition: transform .2s ease, box-shadow .2s ease; }
 .life-polaroid.is-active .life-paper { transform: translateY(-6px); box-shadow: 0 22px 40px #0009, 0 1px 3px #000a; }
 .life-image { display: block; width: 100%; aspect-ratio: 3 / 2; overflow: hidden; background: #171719; }
@@ -27,10 +27,10 @@
 @media (max-width: 760px) {
   .life-stack { margin-top: 50px; --title-x: 8%; --title-y: 18%; }
   .life-stack__stage { aspect-ratio: 1 / 1.3; }
-  .life-polaroid { width: 76%; --card-x: 41%; --card-y: 24%; --card-turn: -5deg; }
-  .life-polaroid[data-life="travels"] { --card-x: 60%; --card-y: 7%; --card-turn: 5deg; }
-  .life-polaroid[data-life="creations"] { --card-x: 42%; --card-y: 0%; --card-turn: -6deg; }
-  .life-polaroid[data-life="relationship"] { --card-x: 57%; --card-y: 52%; --card-turn: 4deg; }
+  .life-polaroid { width: 80%; --card-x: 41%; --card-y: 26%; --card-turn: -2.5deg; }
+  .life-polaroid[data-life="travels"] { --card-x: 60%; --card-y: 8%; --card-turn: 2.5deg; }
+  .life-polaroid[data-life="creations"] { --card-x: 43%; --card-y: 0%; --card-turn: -2.5deg; }
+  .life-polaroid[data-life="relationship"] { --card-x: 58%; --card-y: 52%; --card-turn: 2deg; }
   .life-paper { padding: 10px 10px 0; }
   .life-caption { gap: 8px; padding: 9px 1px 13px; font-size: 23px; }
   .life-card-arrow { font-size: 17px; }
