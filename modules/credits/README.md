@@ -6,7 +6,7 @@
 - 文件：`page.html` 为独立页面内容，`styles.css` 管本页布局，`README.md` 为本说明；无业务脚本和私有图片。由 `app/credits.template.html` 装配为根页面。
 - 接口与边界：在 `app/site.json` 的 `credits` 项声明片段与样式；只依赖共享基础样式，无详情或导航脚本。来源资料显式维护，不读取其他模块内部。
 - 维护：图片替换或新增时核对使用位置、作者和来源链接，更新本片段与素材文档后装配；不要直接修改根 `credits.html`。
-- 当前来源：Home、Moments 的山水图署名 Ivan Rohovchenko / Unsplash，独立文件共享来源。About 已由用户独立替换为人像，摄影者与来源尚未确认，不再沿用原山水图署名。Cosmic Cliffs 仅用于 Experience，Andromeda 用于 Publications，Misty lake 用于 Creations；Academic / Life 整区已无背景图，不保留过时背景位置说明。Contact 的 PNG 只注明用户提供、原作者与来源尚未确认，不称为用户亲自拍摄。
+- 当前来源：Moments 的山水图署名 Ivan Rohovchenko / Unsplash。Home 已替换为用户提供的舷窗地球图片，摄影者与原始来源尚未确认，不沿用旧山水署名。About 人像与 Contact PNG 同样只注明用户提供、原作者与来源尚未确认，不称为用户亲自拍摄。Cosmic Cliffs 仅用于 Experience，Andromeda 用于 Publications，Misty lake 用于 Creations；Academic / Life 整区已无背景图，不保留过时背景位置说明。
 - 验证：[兼容性测试记录](../../docs/modules/credits.md)；改动后关注首页返回、来源链接、桌面/手机可读性和直接文件打开。
 
 本说明使用中文；片段和数据中的网页文字使用英文。修改源文件后装配，不手改根目录生成页面。

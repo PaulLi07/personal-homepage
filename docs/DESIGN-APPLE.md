@@ -50,7 +50,7 @@
 
 ## 图片与粒子边界
 
-- Home 继续使用 `modules/home/images/hero.jpg` 的独立原山水图，来源为 Ivan Rohovchenko / Unsplash。
+- Home原独立山水图已于2026-10-25按用户要求换为 `modules/home/images/hero-earth-window.jpg` 舷窗地球图；仅标明站主提供，摄影者与来源未确认，保持图片背景与文字蒙层。
 - About 的 `modules/about/images/portrait.jpg` 已由用户替换为 6240×4160 户外人像，本次样式更新不修改图片原字节；替代文本只描述可见内容，不推断人物身份、地点、摄影者或来源。它与 Home 不再是同一张图，不能用字节相同的断言约束两者。
 - Contact 继续使用用户提供的 `modules/contact/images/background.png` 原图；只确认用户提供，不称为用户本人拍摄。图片归属和署名统一见 [素材清单](image-sources.md)。
 - About / Academic / Life 根背景保持纯黑 `#000`，继续声明 `data-particle-surface="black"` 和前景属性；石墨灰资料卡片由所属模块提供，不改变粒子公开接口。Home / Contact 摄影背景不声明黑色粒子表面。
