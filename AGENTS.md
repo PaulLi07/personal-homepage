@@ -48,7 +48,6 @@
 
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
 - Life照片堆归 `modules/life/stack/`，配置、控制器、样式和本地字体独立维护；仅通过公开详情与粒子接口接入，不把博客、作者登录或私密资料合并进入口控制器。
-- Life摄影手账装饰独立归 `modules/life/decor/`：银白回形针随Travels纸面层级，左下透明胶片线稿置于照片后方；≤760px只留小回形针。装饰隐藏于辅助技术、不接收指针、无独立动画，透明孔隙保留粒子；原四照片/纸边排除规则不变。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
 - 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Experience 学术日志与 Moments 文章分别保存自己的数据、读者视图和接入行为；Relationship 的加密行为留在自己的目录。
 - 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它管理作者会话、GitHub 连接、通用编辑器与独立发布器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。
@@ -56,7 +55,7 @@
 - 两栏 PDF 附件由独立的 `modules/article-documents/` 服务负责规范、选择及阅读链接，实体归当前集合的 `documents/posts/<文章标识>/`。装配顺序为照片服务、PDF 服务、作者服务，再加载分区数据；PDF 不进入照片处理逻辑。
 - 粒子背景独立放在 `modules/particle-background/`，以清单 `services` 加载自己的配置、模拟、绘制与样式，不占导航分区，不放进 `shared/` 或具体栏目。胶水只向 `mount()` 传主页面根节点、动态偏好与详情根节点；运动、输入、暂停和清理留在服务内。无图片、凭据、网络或第三方运行时依赖，艺术性局部规则不能宣称严格物理仿真。
 - 可绘区域由模块公开的 `data-particle-surface="black"` 界定；模块自身保证背景纯黑，服务核验声明区域自身的计算样式、读取视口矩形并排除其中 `img` 及公开 `data-particle-exclude` 矩形，不扫描其他模块私有结构来推断可绘范围。前景使用 `data-particle-foreground`；样式、图片、滚动及 CSS 过渡结束后刷新遮罩，静态重绘不推进模拟。直接使用 Canvas `arc` 填充白色实心点，不使用 sprite、渐变或 blur；读者和作者详情均继续暂停并隐藏粒子。
-- 纯黑区域中的 CSS 背景图片容器、SVG、视频等非 `img` 视觉内容通常由所属模块声明 `data-particle-exclude`；服务不自动识别它们。用户批准的Academic透明造景与Life透明装饰例外：使用既有前景层合成，不排除整矩形，实线遮住粒子而空隙透出。`data-particle-foreground` 设置普通容器为相对定位，绝对或粘性定位组件用外层容器接入。扩展必须验证相关边界，不将现有 `img` 案例说成任意图片自动识别。
+- 纯黑区域中的 CSS 背景图片容器、SVG、视频等非 `img` 视觉内容必须由所属模块声明 `data-particle-exclude`；服务不自动识别它们。`data-particle-foreground` 设置普通容器为相对定位，绝对或粘性定位组件用外层容器接入。扩展必须验证相关边界，不将现有 `img` 案例说成任意图片自动识别。
 - Publications 使用自定义详情视图；`internal-note/`、`arxiv/`、`published/` 各自保存 `data.js` 和中文 README，通过 `registerPublicationCategory` 独立登记。分类目录及子路由沿用共用弹窗、历史和焦点，不集中成一份论文数据。
 - `app/site.json` 声明模块与装配顺序；`app/index.template.html`、`app/credits.template.html` 保存页面外壳；`app/main.js` 只负责装配后的初始化。
 - `shared/` 仅保存真正跨模块的基础样式、导航、详情弹窗、过渡、进入动画及注册接口，不能成为杂物目录。只有多个功能实际复用且接口清楚的能力才放入共享层；入口与使用者记录在 `shared/README.md`。
