@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "dama-lxe",
+  "name": "DAMA/LXe",
+  "full_name": "DAMA liquid-xenon experiment",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "DAMA/LXe was a historical low-background liquid-xenon detector in the DAMA programme, using different isotopically enriched xenon targets to study elastic/inelastic dark-matter scattering and other rare processes.",
+  "physics_targets": [
+    "Elastic WIMP scattering",
+    "Inelastic WIMP scattering"
+  ],
+  "detection_principle": "Liquid-xenon scintillation energy and pulse shape constrain nuclear recoils and de-excitation signals from excited nuclei. This is a different detector from DAMA's NaI annual-modulation apparatus.",
+  "technologies": [
+    "Liquid-xenon scintillation",
+    "Pulse-shape discrimination"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2012",
+    "evidence": "A 2012 collaboration report summarizes completed dark-matter results; the current hardware status has not been verified.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DAMA Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Liquid-xenon mass",
+      "value": "Approximately 6.5 kg",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Isotopic configurations",
+      "value": "Krypton-depleted xenon, with possible enrichment in 129Xe or 136Xe",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2012",
+      "summary": "Constraints on elastic and inelastic DM–129Xe scattering were reported.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMA/NaI",
+    "DAMA/LIBRA",
+    "XMASS"
+  ],
+  "resources": {
+    "official_website": "https://dama.web.roma2.infn.it/?page_id=56",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://inspirehep.net/files/6b3654da8044e16bfa33ca5d61937171",
+      "caption": "Original DAMA/LXe apparatus: the liquid-xenon detector's inner copper vessel is at left; shielding is at the back right, with vacuum, purification, filling and recovery systems in front. From The DAMA/LXe experiment at Gran Sasso: recent performances and results, Figure 1 (PDF page 1, journal page 409).",
+      "credit": "R. Bernabei, P. Belli, R. Cerulli et al. / DAMA collaboration; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://inspirehep.net/files/6b3654da8044e16bfa33ca5d61937171",
+      "width": 850,
+      "height": 555,
+      "sha256": "f7c2ed0b9b28271c9f00b490d3cfacaabae8e909285d0d3076dc6d044c6cd6d9",
+      "mime_type": "image/webp",
+      "source_sha256": "5cf39682bc02a60c08d6a91f3d15cf73a76b52ed7e54b41018a2b538b347d666",
+      "source_dimensions": {
+        "width": 850,
+        "height": 555
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://pbelli.users.roma2.infn.it/pdf/belli_DM2012.pdf",
+      "caption": "DAMA/LXe apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DAMA Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DAMA/LXe: results on rare processes",
+      "url": "https://pbelli.users.roma2.infn.it/pdf/belli_DM2012.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Experiments — The DAMA Project",
+      "url": "https://dama.web.roma2.infn.it/?page_id=56",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator"
+    ]
+  }
+}

@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "nucal",
+  "name": "NuCal",
+  "full_name": "NuCal beam-dump experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "NuCal operated at the U-70 accelerator, Protvino, in the Serpukhov region. The record connects its historical apparatus to modern reinterpretations; historical results are not labeled as current operation.",
+  "physics_targets": [
+    "Dark photons (historical reinterpretation)",
+    "Inelastic dark matter",
+    "Long-lived dark sector"
+  ],
+  "detection_principle": "Protons strike an iron target; weakly coupled particles traverse shielding and produce electromagnetic final states in the downstream decay region. Historical search results constrain light mediators and dark-sector models.",
+  "technologies": [
+    "70 GeV proton beam",
+    "beam dump",
+    "Decay region",
+    "Calorimeter"
+  ],
+  "sites": [
+    {
+      "name": "U-70 accelerator, Protvino, Serpukhov region",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "U-70 accelerator, Protvino, Serpukhov region",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Historical 1989 beam experiment; modern papers including 2019 reinterpret dark sectors",
+    "as_of": "1989",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1989",
+      "event": "Historical 1989 beam experiment; modern papers including 2019 reinterpret dark sectors",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NuCal Collaboration / project team",
+    "lead_institutions": [
+      "Institute for High Energy Physics, Protvino"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original proton-beam energy",
+      "value": "70 GeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Historical exposure",
+      "value": "Approximately 1.7×10¹⁸ POT; reinterpretation adds model assumptions about acceptance",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "NuCal",
+      "status": "completed",
+      "description": "Historical 1989 beam experiment; modern papers including 2019 reinterpret dark sectors"
+    }
+  ],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "Combined with data including CHARM, constrains surviving dark-photon and inelastic-dark-matter regions.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "CHARM",
+    "SHiP"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1908.07525",
+      "https://scoap3-prod-backend.s3.cern.ch/media/harvested_files/10.1007/JHEP02%282025%29127/13130_2025_Article_25568.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://link.springer.com/content/pdf/10.1007/BF01548556.pdf",
+      "caption": "NuCal beam-dump layout from the original 1991 paper, showing proton beam, beam monitors, dump target, iron shielding and downstream neutrino detector.",
+      "credit": "J. Blümlein et al., Zeitschrift für Physik C 51 (1991) 341, Fig. 2",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://link.springer.com/content/pdf/10.1007/BF01548556.pdf",
+      "width": 821,
+      "height": 458,
+      "sha256": "1b1cb42f09cc0f588d8dcb2fb34a3876d38f4a8f96b5c45b92ea2528c39349b7",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1908.07525",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The high-energy frontier of the intensity frontier: closing the dark photon, inelastic dark matter, and muon g-2 windows",
+      "url": "https://arxiv.org/abs/1908.07525",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-08-20",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Historical beam-dump descriptions including NuCal, JHEP 02 (2025) 127",
+      "url": "https://scoap3-prod-backend.s3.cern.ch/media/harvested_files/10.1007/JHEP02%282025%29127/13130_2025_Article_25568.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

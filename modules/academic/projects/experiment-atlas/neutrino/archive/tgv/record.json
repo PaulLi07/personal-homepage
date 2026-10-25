@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "tgv",
+  "name": "TGV",
+  "full_name": "Telescope Germanium Vertical",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "TGV uses stacked germanium detectors and thin isotope foils to investigate double-beta processes, including double-electron capture of cadmium-106. Its TGV-II configuration operated at the Modane underground laboratory.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Cadmium foils are sandwiched between low-background planar HPGe detectors. Coincident characteristic X rays following electron capture provide a signature, while the stack geometry rejects uncorrelated backgrounds.",
+  "technologies": [
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "France; Modane underground laboratory",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Modane underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": null,
+    "evidence": "Published TGV-II work documents low-background double-electron-capture searches with enriched cadmium-106 at Modane. The cited historical literature does not establish the current operating status.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "TGV Collaboration",
+    "lead_institutions": [
+      "Joint Institute for Nuclear Research",
+      "Czech Technical University in Prague"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "TGV-II detector stack",
+      "value": "32 germanium detectors",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Principal capture isotope",
+      "value": "106Cd",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Underground shielding",
+      "value": "Approximately 4800 metres water equivalent at Modane",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2006",
+      "summary": "The TGV-II publication reported preliminary limits on double-electron capture and positron/electron-capture channels of 106Cd from a low-background measurement at Modane.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "nemo"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://inspirehep.net/literature/1701092",
+      "https://starfos.tacr.cz/en/vysledky-vyzkumu/RIV%2F68407700%3A21670%2F15%3A00233358"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://www-kam2.icrr.u-tokyo.ac.jp/event/3/contributions/275/attachments/446/482/taup2019_ERukhadze1.pdf#page=7",
+      "caption": "Photographs of the TGV-II germanium detector stack and enriched cadmium foils, from the collaboration TAUP 2019 presentation.",
+      "credit": "E. Rukhadze / TGV Collaboration, TAUP 2019",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www-kam2.icrr.u-tokyo.ac.jp/event/3/contributions/275/attachments/446/482/taup2019_ERukhadze1.pdf#page=7",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1440,
+      "sha256": "38ab6ede700eab2b5dd5bccf96316a1bdb9df48425802594b1b40df04a918bd2",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "5e4c99c408e1157d396e9bdaec87954edefd06dbd6143298b8e6268f61f3fd65",
+      "source_dimensions": {
+        "width": 2000,
+        "height": 1500
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for double electron capture of 106Cd",
+      "url": "https://inspirehep.net/literature/1701092",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2006",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "New search for double electron capture in Cd-106 decay with the TGV-2 spectrometer",
+      "url": "https://starfos.tacr.cz/en/vysledky-vyzkumu/RIV%2F68407700%3A21670%2F15%3A00233358",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The cited source is a 2006 publication, not a 2018 result. Current operation could not be established from the cited historical literature."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "neutron"
+    ],
+    "technology_tags": [
+      "neutron"
+    ],
+    "is_europe": true
+  }
+}

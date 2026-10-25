@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "id": "sno",
+  "name": "SNO",
+  "full_name": "Sudbury Neutrino Observatory",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "solar",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "neutron"
+  ],
+  "nobel_prize_years": [
+    2015
+  ],
+  "role": "dedicated",
+  "summary": "SNO used heavy water to measure both electron-flavour and total active solar-neutrino fluxes. Comparing the charged- and neutral-current channels demonstrated that solar electron neutrinos transform into other active flavours.",
+  "physics_targets": [
+    "Solar-neutrino flavour transformation",
+    "Total active boron-8 solar-neutrino flux",
+    "Solar oscillation parameters"
+  ],
+  "detection_principle": "Electron neutrinos break up deuterons through charged-current interactions; all active flavours produce neutrons through neutral-current deuteron breakup. Cherenkov light measures charged particles, while neutron detection used pure heavy water, dissolved salt and helium-3 counters in successive phases.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "Canada; underground in Sudbury, Ontario",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Canada; underground in Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2006-11-28",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1999",
+      "event": "Detector observations began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2001–2002",
+      "event": "Solar flavour-transformation results",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2006-11-28",
+      "event": "Final official data run",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "Arthur McDonald shared the Nobel Prize for neutrino oscillations",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SNO Collaboration",
+    "lead_institutions": [
+      "Queen's University",
+      "University of Oxford",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Heavy water",
+      "value": "1,000 tonnes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Acrylic vessel",
+      "value": "12 m diameter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2 km underground in Creighton mine",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Physics phases",
+      "value": "Pure D2O, salt-enhanced neutron capture and NCD neutron counters",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2002",
+      "summary": "Neutral-current and charged-current flux measurements showed that the missing electron neutrinos survive as other active flavours.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "sno-plus",
+    "homestake",
+    "super-kamiokande"
+  ],
+  "resources": {
+    "official_website": "https://sno.phy.queensu.ca/sno/",
+    "publication_links": [
+      "https://arxiv.org/abs/nucl-ex/0204008"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/nucl-ex/9910016",
+      "caption": "SNO heavy-water vessel, photomultiplier support structure and underground cavity (Figure 2 of the detector paper).",
+      "credit": "SNO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/nucl-ex/9910016",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 960,
+      "height": 1035,
+      "sha256": "dcb490b3381bc303a6774d79fcaa24c51f8f4043cd26c680e9dd636ddbcee041",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SNO official experiment archive",
+      "url": "https://sno.phy.queensu.ca/sno/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SNO Collaboration, Direct evidence for neutrino flavour transformation from neutral currents",
+      "url": "https://arxiv.org/abs/nucl-ex/0204008",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2002-04-20",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MIT SNO group: final data run on 28 November 2006",
+      "url": "https://www.lns.mit.edu/neutrino/SNO.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2006",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "neutron"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "neutron"
+    ],
+    "is_europe": false
+  }
+}

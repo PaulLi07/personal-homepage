@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "antares",
+  "name": "ANTARES",
+  "full_name": "Astronomy with a Neutrino Telescope and Abyss environmental RESearch",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Historical deep-sea neutrino telescope that searched for dark matter in the Sun and Galaxy; now shut down and dismantled.",
+  "physics_targets": [
+    "Solar WIMPs",
+    "Galactic-center annihilation / decay"
+  ],
+  "detection_principle": "Photomultiplier tubes record Cherenkov light from charged secondary particles produced by neutrinos in seawater, reconstructing upward-going tracks and cascades.",
+  "technologies": [
+    "Deep-sea water Cherenkov detection"
+  ],
+  "sites": [
+    {
+      "name": "Mediterranean Sea near Toulon, about 40 km from La Seyne-sur-Mer",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Mediterranean Sea near Toulon, about 40 km from La Seyne-sur-Mer",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2022-06-23",
+    "evidence": "Data taking stopped on 2022-02-12; the main detector was dismantled in May–June.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022-02-12",
+      "event": "Cable disconnected, ending data taking",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022-06",
+      "event": "Recovery of the main seabed detector completed",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANTARES collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Instrumented volume",
+      "value": "About 0.01 km³",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "KM3NeT",
+    "IceCube"
+  ],
+  "resources": {
+    "official_website": "https://antares.in2p3.fr/antares-is-now-fully-dismantled/",
+    "publication_links": [
+      "https://zenodo.org/doi/10.5281/zenodo.10653001"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.infn.it/en/the-antares-adventure-has-come-to-an-end/",
+      "caption": "Conceptual illustration of the optical detection lines of the ANTARES undersea neutrino telescope; not an underwater photograph.",
+      "credit": "ANTARES instrument illustration published by INFN; the individual illustrator is not identified",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.infn.it/wp-content/uploads/2022/03/anatares.png",
+      "width": 792,
+      "height": 528,
+      "sha256": "d662279aeb3d1090c1893e4793952a39a14b83665e2f950465a58c292199afff",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://antares.in2p3.fr/antares-is-now-fully-dismantled/",
+      "caption": "ANTARES project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://antares.in2p3.fr/antares-is-now-fully-dismantled/",
+      "title": "ANTARES fully dismantled",
+      "source_date": "2022-06-23",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://zenodo.org/doi/10.5281/zenodo.10653001",
+      "title": "ANTARES Collaboration overview",
+      "source_date": "2024",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.infn.it/en/the-antares-adventure-has-come-to-an-end/",
+      "title": "INFN: end of ANTARES",
+      "source_date": "2022-03-07",
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

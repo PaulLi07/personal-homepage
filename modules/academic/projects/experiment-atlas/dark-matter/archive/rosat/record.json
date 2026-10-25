@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "id": "rosat",
+  "name": "ROSAT",
+  "full_name": "Röntgensatellit / Roentgen Satellite",
+  "aliases": [
+    "RASS",
+    "ROSAT All-Sky Survey"
+  ],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Historical German–US–UK soft-X-ray and extreme-ultraviolet astronomy satellite, operating from 1990 to 1999. ROSAT hot-gas imaging provided evidence for gravitational potentials and dark-matter halos in galaxies and groups, and survey archives for later cosmology. Included here for gravity and structure research, without claiming observation of particle-dark-matter X-ray decay.",
+  "physics_targets": [
+    "Geometry of galactic dark-matter halos",
+    "Total gravitational mass of galaxy groups and clusters",
+    "Spatial distributions of dark and visible matter"
+  ],
+  "detection_principle": "A grazing-incidence X-ray telescope with PSPC or HRI measures hot-gas surface brightness and morphology. Models of gas in a gravitational potential, together with temperature or optical distributions, infer total mass and dark matter. This differs from searches for photons produced by dark-matter annihilation / decay.",
+  "technologies": [
+    "Grazing-incidence X-ray telescope",
+    "PSPC position-sensitive proportional counter",
+    "HRI high-resolution imager",
+    "WFC extreme-ultraviolet Wide Field Camera"
+  ],
+  "sites": [
+    {
+      "name": "Historical ROSAT satellite Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Historical ROSAT satellite Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Mission ended; historical archive available",
+    "as_of": "1999-02-12",
+    "evidence": "NASA HEASARC lists a mission lifetime of 1990-06-01 to 1999-02-12 and provides historical data products.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1990-06-01",
+      "event": "Launched and began an all-sky survey, followed by pointed observations.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1992-04-25/1992-04-27",
+      "event": "PSPC observed hot gas in the NGC2300 galaxy group, supplying data for mass inference.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "1993-11-29",
+      "event": "NGC720 geometric dark-matter study submitted as a preprint; published the following year.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1999-02-12",
+      "event": "Mission ended.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ROSAT German / US / UK mission partnership",
+    "lead_institutions": [
+      "Max Planck Institute for Extraterrestrial Physics",
+      "NASA"
+    ],
+    "participants_note": "Joint German–US–UK mission. Dark-matter geometry studies were analyses by astronomers using ROSAT data, not a separate dedicated dark-matter collaboration."
+  },
+  "key_parameters": [
+    {
+      "name": "X-ray energy band",
+      "value": "0.1–2.5 keV, according to the HEASARC mission page",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "PSPC field of view and effective area",
+      "value": "About 2° diameter; about 240 cm² at 1 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "HRI spatial resolution",
+      "value": "About 2 arcseconds FWHM",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "All-sky survey",
+      "status": "completed",
+      "description": "About the first six months of the mission, using PSPC; produced RASS."
+    },
+    {
+      "name": "Pointed observations",
+      "status": "completed",
+      "description": "Deep exposures after the all-sky survey, including hot-gas studies of galaxies and groups."
+    },
+    {
+      "name": "Data reanalysis",
+      "status": "archival",
+      "description": "HEASARC preserves catalogs, spectra, light curves, images and raw data."
+    }
+  ],
+  "results": [
+    {
+      "date": "1994",
+      "summary": "Using PSPC images of NGC720, Buote and Canizares found that mass following optical light alone could not reproduce the X-ray isophotes, providing geometric evidence for dark matter under their gas and gravity modeling assumptions.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1993-01-04",
+      "summary": "NASA describes additional gravitational mass inferred from hot gas in the NGC2300 group. “Dark matter found” in the news title refers to gravitational evidence, not discovery of dark-matter particles.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Astrophysical research on dark-matter distributions and gravitational evidence. No independent ROSAT sterile-neutrino or dark-matter decay-line search was verified in this review, so particle limits from other X-ray missions are not assigned to ROSAT.",
+  "related_experiments": [
+    "Chandra",
+    "XMM-Newton",
+    "eROSITA",
+    "Dark Energy Survey"
+  ],
+  "resources": {
+    "official_website": "https://heasarc.gsfc.nasa.gov/docs/rosat/rosat.html",
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/9311073"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/rosat/gallery/rosat_sat.html",
+      "caption": "Official exterior illustration of the ROSAT satellite, showing the telescope body, solar panels and antenna; not an in-orbit photograph.",
+      "credit": "Max-Planck-Institut für extraterrestrische Physik (MPE), included in NASA HEASARC's image archive",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://heasarc.gsfc.nasa.gov/Images/rosat/rosat.gif",
+      "width": 458,
+      "height": 550,
+      "sha256": "d43e700d425172fa8bccb230093e704c29ccb9f5b0205a95030cbcb85a43a550",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/rosat/rosat.html",
+      "caption": "ROSAT official source page for instrument, mission or facility images",
+      "credit": "Original institution / collaboration; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only, with no downloaded image for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NASA HEASARC: ROSAT mission characteristics",
+      "url": "https://heasarc.gsfc.nasa.gov/docs/rosat/rosat.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2020-09-24",
+      "supports": [
+        "Mission lifetime, partner countries, payload, energy band and archive"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Buote & Canizares: Geometrical Evidence for Dark Matter in NGC 720",
+      "url": "https://arxiv.org/abs/astro-ph/9311073",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1993-11-29",
+      "supports": [
+        "Original geometric-dark-matter research using ROSAT PSPC data; ApJ 427, 86 (1994)"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NASA: Dark Matter Found in a Typical Cluster of Galaxies",
+      "url": "https://science.nasa.gov/missions/hubble/dark-matter-found-in-a-typical-cluster-of-galaxies/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1993-01-04",
+      "supports": [
+        "ROSAT hot-gas observations of the NGC2300 group and gravitational dark-matter evidence"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "MPE: ROSAT – the end of an exceptional satellite",
+      "url": "https://www.mpe.mpg.de/229897/News_20111114",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2011-11-14",
+      "supports": [
+        "Historical mission, hot-gas and galaxy-cluster mass studies"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Gravitational-mass inference from soft-X-ray-emitting hot gas depends on gas state, geometry and gravity models; it does not identify particles.",
+      "This dossier is primarily classified as cosmology_structure. Being an X-ray satellite does not automatically make it a particle indirect-detection experiment.",
+      "ROSAT galaxy-cluster mass studies and later archive-based cosmology have not been exhaustively covered.",
+      "Historical orbital map coordinates and specific image permissions have not been verified."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

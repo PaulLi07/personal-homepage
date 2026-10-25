@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "holmes",
+  "name": "HOLMES",
+  "full_name": "HOLMES holmium calorimetric neutrino-mass experiment",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "HOLMES determines neutrino mass from the endpoint of holmium-163 electron capture measured inside cryogenic calorimeters. Its first array result demonstrates an approach that can be scaled through multiplexed detector readout.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "Holmium is ion-implanted into absorbers coupled to transition-edge sensors. Each pixel measures all de-excitation energy except that carried by the neutrino; microwave multiplexing reads out many low-temperature sensors.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Italy; laboratories in Genoa, Milano-Bicocca, and elsewhere",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; laboratories in Genoa, Milano-Bicocca, and elsewhere",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2025",
+    "evidence": "The first HOLMES result set m_beta below 27 eV/c2 at 90% credibility.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "HOLMES Collaboration",
+    "lead_institutions": [
+      "University of Milano-Bicocca",
+      "INFN",
+      "National Institute of Standards and Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "163Ho",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Reported mean energy resolution",
+      "value": "6 eV FWHM",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "First spectrum",
+      "value": "About 7 x 10^7 events over two months",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The first HOLMES result set m_beta below 27 eV/c2 at 90% credibility.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "echo",
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://holmes1.mib.infn.it/holmes/",
+    "publication_links": [
+      "https://arxiv.org/abs/2503.19920"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://holmes1.mib.infn.it/holmes/holmes",
+      "caption": "HOLMES dilution-refrigerator cryogenic assembly used for microcalorimeter measurements.",
+      "credit": "HOLMES Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/detector-9.webp",
+      "original_url": "https://holmes1.mib.infn.it/holmes/holmes",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 532,
+      "height": 709,
+      "sha256": "e614b4351dcbecb897e53ba7822a04ed4a32220bb106bc08ce0ae889a4e2e132",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "4a23a04ffaad0efeeab97ba8667e36946469780312bc08fa1d8d139b734abfc9",
+      "source_dimensions": {
+        "width": 532,
+        "height": 709
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "HOLMES: official experiment / institutional overview",
+      "url": "https://holmes1.mib.infn.it/holmes/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Most stringent bound on electron neutrino mass obtained with a scalable low temperature microcalorimeter array",
+      "url": "https://arxiv.org/abs/2503.19920",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

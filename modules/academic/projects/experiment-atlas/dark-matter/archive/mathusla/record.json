@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "id": "mathusla",
+  "name": "MATHUSLA",
+  "full_name": "MAssive Timing Hodoscope for Ultra-Stable neutraL pArticles",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "MATHUSLA is proposed at a surface site near CERN LHC CMS Point 5. It targets long-lived particles at the High-Luminosity LHC; design sensitivities are not measured limits.",
+  "physics_targets": [
+    "Long-lived dark sector",
+    "Dark scalars",
+    "Hidden-valley models"
+  ],
+  "detection_principle": "Neutral long-lived particles produced at the LHC pass through overburden into a surface decay volume. Multilayer timed tracking reconstructs upward displaced vertices to reject downward cosmic rays.",
+  "technologies": [
+    "Large-area tracking",
+    "Scintillator timing",
+    "Air decay volume"
+  ],
+  "sites": [
+    {
+      "name": "Proposed surface site near CERN LHC CMS Point 5",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Proposed surface site near CERN LHC CMS Point 5",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2025 strategy input discusses the MATHUSLA40 proposal, without confirming a completed full detector",
+    "as_of": "2025",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "2025 strategy input discusses the MATHUSLA40 proposal, without confirming a completed full detector",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MATHUSLA Collaboration / project team",
+    "lead_institutions": [
+      "MATHUSLA international collaboration"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2025 proposal name",
+      "value": "MATHUSLA40; follow this design document without conflating the earlier 200 m design",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MATHUSLA",
+      "status": "proposed",
+      "description": "2025 strategy input discusses the MATHUSLA40 proposal, without confirming a completed full detector"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "ATLAS",
+    "CMS",
+    "CODEX-b",
+    "ANUBIS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://indico.cern.ch/event/1439855/contributions/6461476/attachments/3045848/5381774/MATHUSLA_2025_european_strategy_submission.pdf",
+      "https://arxiv.org/abs/1901.04040"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/1439855/contributions/6461476/attachments/3045848/5381774/MATHUSLA_2025_european_strategy_submission.pdf",
+      "caption": "2025 MATHUSLA40 engineering concept (report Fig. 4), showing roof and rear-wall tracking modules and supports. Source PDF p. 6.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/1439855/contributions/6461476/attachments/3045848/5381774/MATHUSLA_2025_european_strategy_submission.pdf",
+      "width": 889,
+      "height": 839,
+      "sha256": "82a1cd4331d71203ae9eb67569171f9186462421407a18718e5c4b0678d7d575",
+      "mime_type": "image/webp",
+      "source_sha256": "516b375df7e2555dbb67a63610d511e06a9763f02c4a00f10f1f9b74eeaa2cbf",
+      "source_dimensions": {
+        "width": 889,
+        "height": 839
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/1439855/contributions/6461476/attachments/3045848/5381774/MATHUSLA_2025_european_strategy_submission.pdf",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MATHUSLA: An External Long-Lived Particle Detector, European Strategy submission",
+      "url": "https://indico.cern.ch/event/1439855/contributions/6461476/attachments/3045848/5381774/MATHUSLA_2025_european_strategy_submission.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "MATHUSLA: A Detector Proposal to Explore the Lifetime Frontier",
+      "url": "https://arxiv.org/abs/1901.04040",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2019-01-13",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

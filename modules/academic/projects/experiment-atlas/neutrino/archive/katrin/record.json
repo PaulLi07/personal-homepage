@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "katrin",
+  "name": "KATRIN",
+  "full_name": "KArlsruhe TRItium Neutrino experiment",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass",
+    "sterile"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "KATRIN measures the electron-antineutrino mass from the tritium beta-decay endpoint at Karlsruhe. Its large electrostatic spectrometer resolves the small spectral distortion associated with a nonzero neutrino mass.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "A windowless gaseous tritium source supplies beta electrons. Magnetic transport guides them into a MAC-E filter, which scans the integrated electron spectrum close to its 18.6 keV endpoint.",
+  "technologies": [
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Germany; KIT, Karlsruhe",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Germany; KIT, Karlsruhe",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-05-27",
+    "evidence": "The endpoint neutrino-mass campaign reached 1000 measurement days and was followed by commissioning of TRISTAN, reported in May 2026. The published 0.45 eV/c2 mass bound uses the earlier 259-day sample.",
+    "source_ids": [
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "KATRIN Collaboration",
+    "lead_institutions": [
+      "Karlsruhe Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Isotope",
+      "value": "Molecular tritium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Endpoint energy",
+      "value": "Approximately 18.6 keV",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Published 2025 bound",
+      "value": "m_beta below 0.45 eV/c2 at 90% confidence",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Endpoint active-neutrino-mass campaign",
+      "status": "completed",
+      "description": "Precision tritium endpoint measurements; complete accumulated data remain subject to analysis"
+    },
+    {
+      "name": "TRISTAN sterile-neutrino upgrade",
+      "status": "commissioning",
+      "description": "Named high-rate detector upgrade; separate programme dossier provided"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Five measurement campaigns yielded the published 0.45 eV/c2 limit; this is an upper bound, not a measured mass.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "mainz",
+    "troitsk",
+    "project-8",
+    "tristan"
+  ],
+  "resources": {
+    "official_website": "https://www.katrin.kit.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2406.13516"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.katrin.kit.edu/",
+      "caption": "Interior of the KATRIN main spectrometer, from the experiment official website.",
+      "credit": "KATRIN Collaboration / Karlsruhe Institute of Technology",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://www.katrin.kit.edu/img/layout/Header_1920-700.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 700,
+      "sha256": "b4b94342c798059498222102b42440baaff131ce3cfe2da697ce332a87f01a89",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "a3dc7847b360463111564d37b489b6d91b972a62f07b68ddbcd2d4c56be0b936",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 700
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "KATRIN: official experiment / institutional overview",
+      "url": "https://www.katrin.kit.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Direct neutrino-mass measurement based on 259 days of KATRIN data",
+      "url": "https://arxiv.org/abs/2406.13516",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KATRIN reaches 1000 measurement days and inaugurates TRISTAN commissioning",
+      "url": "https://www.polimi.it/en/the-politecnico/news/news-detail/weighing-the-invisible-the-challenge-of-the-katrin-project",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

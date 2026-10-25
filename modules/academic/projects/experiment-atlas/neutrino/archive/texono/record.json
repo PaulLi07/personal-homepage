@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "id": "texono",
+  "name": "TEXONO",
+  "full_name": "Taiwan EXperiment On NeutrinO",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "semiconductor",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "TEXONO studies low-energy reactor-antineutrino interactions with progressively lower-threshold germanium detectors and earlier scintillator targets. Its Kuo-Sheng programme measured electron scattering and searched for coherent nuclear recoils before the reactor was decommissioned.",
+  "physics_targets": [
+    "Reactor antineutrino-electron scattering",
+    "Neutrino magnetic moment",
+    "Reactor CEvNS"
+  ],
+  "detection_principle": "Germanium ionization spectrometers and, in earlier phases, CsI scintillators measure recoil spectra. Shielding, active vetoes and reactor-on/off comparisons constrain weak and electromagnetic interactions.",
+  "technologies": [
+    "Semiconductor detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Kuo-Sheng Reactor Neutrino Laboratory",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Kuosheng nuclear power plant, Wanli District, New Taipei City, Taiwan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_reactor_measurement_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2025-03-03",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "Low-threshold germanium CEvNS programme began at Kuo-Sheng",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Kuo-Sheng reactor decommissioned",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Final-site constraint and Sanmen continuation announced",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TEXONO Collaboration",
+    "lead_institutions": [
+      "Academia Sinica",
+      "Tsinghua University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Generation-3 Ge target",
+      "value": "1,434 g crystal mass; 1,383 g fiducial mass in the CEvNS analysis",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Kuo-Sheng reactor-neutrino laboratory; Sanmen continuation planned",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "CEvNS rate limit",
+      "value": "4.7 times the Standard Model prediction in the reported analysis",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "28 m from Kuo-Sheng Core 1",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "No neutrino recoil excess was observed before reactor shutdown. The continuation at Sanmen is distinct from evidence of a completed measurement there.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "recode",
+    "gemma",
+    "nugen"
+  ],
+  "resources": {
+    "official_website": "https://www.phys.sinica.edu.tw/index_detail.php?eng=T&id=research&newsid=1158",
+    "publication_links": [
+      "https://arxiv.org/abs/2411.18812"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/0712.1645",
+      "caption": "Layout of the anti-Compton detector, inner shielding and radon purge for TEXONO's ultra-low-energy germanium detector (2008 paper, Figure 1).",
+      "credit": "S. T. Lin et al. / TEXONO collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/0712.1645",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 699,
+      "height": 576,
+      "sha256": "a6dab7ad2fbf5d2be424ceee3b7571f977c2a8f97cbe1fb53570150e52dd9f68",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Academia Sinica, Towards observation of reactor neutrino coherent scattering",
+      "url": "https://www.phys.sinica.edu.tw/index_detail.php?eng=T&id=research&newsid=1158",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "TEXONO Collaboration, Reactor CEvNS search at Kuo-Sheng",
+      "url": "https://arxiv.org/abs/2411.18812",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "semiconductor",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "semiconductor",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

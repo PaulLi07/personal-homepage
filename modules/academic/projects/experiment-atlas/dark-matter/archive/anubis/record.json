@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "anubis",
+  "name": "ANUBIS",
+  "full_name": "AN Underground Belayed In-Shaft experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "ANUBIS is proposed for the CERN ATLAS cavern; the current design covers its ceiling. It uses an existing underground LHC cavern to search for long-lived particles. Its historical In-Shaft name is retained although the layout has changed.",
+  "physics_targets": [
+    "Neutral long-lived particles",
+    "Dark scalars",
+    "Heavy neutral leptons"
+  ],
+  "detection_principle": "Large-area RPCs detect particles escaping ATLAS and decaying in its cavern. Tracks and timing reconstruct displaced vertices, correlated with ATLAS information.",
+  "technologies": [
+    "RPC tracking",
+    "Timing",
+    "Large-volume air decay region"
+  ],
+  "sites": [
+    {
+      "name": "CERN ATLAS cavern; current design covers its ceiling",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN ATLAS cavern; current design covers its ceiling",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Full detector remains proposed; proANUBIS has construction, commissioning and performance reports",
+    "as_of": "2026",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Full detector remains proposed; proANUBIS has construction, commissioning and performance reports",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANUBIS Collaboration / project team",
+    "lead_institutions": [
+      "University of Cambridge",
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Geometry version",
+      "value": "Revised to ceiling geometry in 2025; the original shaft layout must not be treated as the current final design",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "proANUBIS",
+      "status": "commissioning",
+      "description": "Proof of concept, background and performance measurements"
+    },
+    {
+      "name": "ANUBIS",
+      "status": "proposed",
+      "description": "Full ceiling-layout proposal"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Prototype performance and calibration studies are public; full-instrument sensitivities remain projections.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "ATLAS",
+    "CODEX-b",
+    "MATHUSLA"
+  ],
+  "resources": {
+    "official_website": "https://twiki.cern.ch/twiki/bin/view/ANUBIS/",
+    "publication_links": [
+      "https://arxiv.org/abs/2401.09914"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://twiki.cern.ch/twiki/bin/view/ANUBIS/",
+      "caption": "Installed vertical proANUBIS prototype, showing yellow frame and detector layers; not the full ANUBIS array.",
+      "credit": "ANUBIS Collaboration; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://twiki.cern.ch/twiki/pub/ANUBIS/WebHome/proAnubis_standing.png",
+      "width": 936,
+      "height": 1300,
+      "sha256": "c90e44e21ac5a2dc05440beaeca762bda0d5969a50dbb2274c74736c9daa0632",
+      "mime_type": "image/webp",
+      "source_sha256": "7ef4f09a9d299568882109ef3fab7d8bcc85afdc0874d26b0d94e03af40519a9",
+      "source_dimensions": {
+        "width": 936,
+        "height": 1300
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://twiki.cern.ch/twiki/bin/view/ANUBIS/",
+      "caption": "ANUBIS design and prototype-paper resources",
+      "credit": "ANUBIS Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ANUBIS collaboration public TWiki",
+      "url": "https://twiki.cern.ch/twiki/bin/view/ANUBIS/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Installation of proANUBIS",
+      "url": "https://arxiv.org/abs/2401.09914",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-01-18",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

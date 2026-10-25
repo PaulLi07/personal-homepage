@@ -1,0 +1,4040 @@
+{
+  "imported": "2026-10-25",
+  "catalog_updated": "2026-10-23",
+  "source_map": "Neutrino_World_Map",
+  "record_count": 252,
+  "records": [
+    {
+      "id": "acorne",
+      "source_record": "Neutrino_Archive/experiments/acorne/record.json",
+      "source_record_sha256": "6add068f11e133e7e6270fa6f9215d53b54e5990d3f04984eeaae1ef7a4b59bd",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/acorne/images/representative.png",
+          "source_sha256": "a043bd431032406e34e89044168dd507bff1271f34d4ba11f8e0561be2eef9e8",
+          "local_path": "images/representative.png",
+          "sha256": "a043bd431032406e34e89044168dd507bff1271f34d4ba11f8e0561be2eef9e8",
+          "bytes": 113817,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/acorne/record.json"
+    },
+    {
+      "id": "amadeus",
+      "source_record": "Neutrino_Archive/experiments/amadeus/record.json",
+      "source_record_sha256": "75e5f0543f33c4a1c97653e9694f3c541b7b4f89e38adc31cf9748dfb006b44d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/amadeus/images/representative.png",
+          "source_sha256": "f4c29d49c6616968e806e03a307702fd3966efe6f930bef7373ce0fbda4c5150",
+          "local_path": "images/representative.png",
+          "sha256": "f4c29d49c6616968e806e03a307702fd3966efe6f930bef7373ce0fbda4c5150",
+          "bytes": 270783,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/amadeus/record.json"
+    },
+    {
+      "id": "amanda",
+      "source_record": "Neutrino_Archive/experiments/amanda/record.json",
+      "source_record_sha256": "2a038cd37812aac380b0e430ff10cfc0959c5e93153e61ffa9a20b27c3a87669",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/amanda/images/representative.jpg",
+          "source_sha256": "26aeb6cddbdf6a3d01399eb368f8b1afd254e1c8451310f2f5ec1f1bcce23b2d",
+          "local_path": "images/representative.jpg",
+          "sha256": "26aeb6cddbdf6a3d01399eb368f8b1afd254e1c8451310f2f5ec1f1bcce23b2d",
+          "bytes": 40948,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/amanda/record.json"
+    },
+    {
+      "id": "amore",
+      "source_record": "Neutrino_Archive/experiments/amore/record.json",
+      "source_record_sha256": "030b44fa178ded306b5605fc55280c17d0a63dff929514586705a4bf3d111b62",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/amore/images/representative.png",
+          "source_sha256": "58d7f6332ac428b879095535fd9b93062f2c5bb5f1cafcd23c5b1d58d3c82337",
+          "local_path": "images/representative.webp",
+          "sha256": "d1c46ab7635ba66ba17966898a75e080892b240e61f8b9b8535eddef2bc6f250",
+          "bytes": 98434,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/amore/record.json"
+    },
+    {
+      "id": "anita",
+      "source_record": "Neutrino_Archive/experiments/anita/record.json",
+      "source_record_sha256": "b37bedccaefeddd1fc3bbb0e4ec688dc48b56a2627a4bfd901599114d137025d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/anita/images/representative.png",
+          "source_sha256": "76de8097de2ffd0ae89c38283e34f46cc663b6b37ee6aefdb6cd88cddacb831a",
+          "local_path": "images/representative.webp",
+          "sha256": "58c093950b39078b7858ba77fabc554ecfb73c9f40f1cbf33f0bd4ba2d27842b",
+          "bytes": 118862,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/anita/record.json"
+    },
+    {
+      "id": "annie",
+      "source_record": "Neutrino_Archive/experiments/annie/record.json",
+      "source_record_sha256": "a8006ee1f3bc6324de04498ca6fc323d48686b7dd3db19ef11ae15c9a5e902a6",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/annie/images/representative-audit.png",
+          "source_sha256": "c882f816fc219ca58869304f9faeaf5d74efdfe00772c73685d0bc82e23d5b9b",
+          "local_path": "images/representative-audit.png",
+          "sha256": "c882f816fc219ca58869304f9faeaf5d74efdfe00772c73685d0bc82e23d5b9b",
+          "bytes": 122712,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/annie/record.json"
+    },
+    {
+      "id": "antares",
+      "source_record": "Neutrino_Archive/experiments/antares/record.json",
+      "source_record_sha256": "0058fc1488a8ec32bbb48c22ab09d167a97c51fd4c91f289f7d9048fad61ef7d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/antares/images/representative.png",
+          "source_sha256": "d662279aeb3d1090c1893e4793952a39a14b83665e2f950465a58c292199afff",
+          "local_path": "images/representative.png",
+          "sha256": "d662279aeb3d1090c1893e4793952a39a14b83665e2f950465a58c292199afff",
+          "bytes": 387029,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/antares/record.json"
+    },
+    {
+      "id": "ara",
+      "source_record": "Neutrino_Archive/experiments/ara/record.json",
+      "source_record_sha256": "85794a7eb499c053ea7b31685e3fa3049b7e427476b11783a3cded5b6388f123",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ara/images/representative.png",
+          "source_sha256": "4ca3af03a1775e57837bff8633949e105a777266de387d365b3e71dfbc4193ba",
+          "local_path": "images/representative.webp",
+          "sha256": "ba764e95cc01e0d6a5d3a933008d5a1abf18f77bbc71d075ba4eebaa9c49fa85",
+          "bytes": 84182,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/ara/record.json"
+    },
+    {
+      "id": "argoneut",
+      "source_record": "Neutrino_Archive/experiments/argoneut/record.json",
+      "source_record_sha256": "c45f520fed363ec4b73ffe5c723f421b955f1520bbffaa111fd50eefe889755a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/argoneut/images/representative.png",
+          "source_sha256": "f503fe57c2393037fea4d562285fd336a9b8923ecd4bee321916defeea73129d",
+          "local_path": "images/representative.png",
+          "sha256": "f503fe57c2393037fea4d562285fd336a9b8923ecd4bee321916defeea73129d",
+          "bytes": 321994,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/argoneut/record.json"
+    },
+    {
+      "id": "arianna",
+      "source_record": "Neutrino_Archive/experiments/arianna/record.json",
+      "source_record_sha256": "216618f98e59f8ab1510f07b80eaf5025b5a96fbc6998b9654b10c864390e9ce",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/arianna/images/representative.png",
+          "source_sha256": "92e0ca811fd6e8b00175957ad59fed67203ad8f2da86683da8c7c17e30c7e891",
+          "local_path": "images/representative.png",
+          "sha256": "92e0ca811fd6e8b00175957ad59fed67203ad8f2da86683da8c7c17e30c7e891",
+          "bytes": 303639,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/arianna/record.json"
+    },
+    {
+      "id": "ashra",
+      "source_record": "Neutrino_Archive/experiments/ashra/record.json",
+      "source_record_sha256": "5140a1428fa1fbb777f43990d6be88b0b370541ba132ec96cee13786857f83d9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ashra/images/representative.jpg",
+          "source_sha256": "411ca3a10277e6ba21db08aa1f76c7cdf165007a876ce8a3f9c46482637d9981",
+          "local_path": "images/representative.jpg",
+          "sha256": "411ca3a10277e6ba21db08aa1f76c7cdf165007a876ce8a3f9c46482637d9981",
+          "bytes": 65048,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ashra/record.json"
+    },
+    {
+      "id": "atucha-ii",
+      "source_record": "Neutrino_Archive/experiments/atucha-ii/record.json",
+      "source_record_sha256": "972943af3e76edfbb3353adbe64ece91af0c7678be935e24ffb89ff219bd2911",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/atucha-ii/images/representative.png",
+          "source_sha256": "b4d7e02973697f59744886d16a50e85a1dcd074bb6d56c46a2f0774a2c61077b",
+          "local_path": "images/representative.webp",
+          "sha256": "87522aadedb4d5fd3f1c73bf9118d4df68ed838ad95c23a84269e5a3d252629e",
+          "bytes": 205626,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/atucha-ii/record.json"
+    },
+    {
+      "id": "aurora",
+      "source_record": "Neutrino_Archive/experiments/aurora/record.json",
+      "source_record_sha256": "60416dd302cd56d3facc3870bfb5256ff011331d797a2b5ea61ff32ece652c3f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/aurora/images/representative.png",
+          "source_sha256": "7bec7db05571e1a1e650ce62d2995de28ef5a6c327c202310b561984dfe1741c",
+          "local_path": "images/representative.png",
+          "sha256": "7bec7db05571e1a1e650ce62d2995de28ef5a6c327c202310b561984dfe1741c",
+          "bytes": 54961,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/aurora/record.json"
+    },
+    {
+      "id": "baikal-gvd",
+      "source_record": "Neutrino_Archive/experiments/baikal-gvd/record.json",
+      "source_record_sha256": "b36155b6d06dc29133ddb49e963959aec7d37c7592ae48bf4ad293f49c2e1a18",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/baikal-gvd/images/representative.png",
+          "source_sha256": "601933c27dbcd6f758a078eec60b9f050b849811c70f6fdaf4b65316862128c9",
+          "local_path": "images/representative.png",
+          "sha256": "601933c27dbcd6f758a078eec60b9f050b849811c70f6fdaf4b65316862128c9",
+          "bytes": 334922,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/baikal-gvd/record.json"
+    },
+    {
+      "id": "baikal-nt200",
+      "source_record": "Neutrino_Archive/experiments/baikal-nt200/record.json",
+      "source_record_sha256": "cbbe86c5123eb9059b4a70e2fd0c50832fee13c2ac3c9b5d2cf4c69f3ae7665a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/baikal-nt200/images/representative.jpg",
+          "source_sha256": "6fa5dfe99327fb1a351a5b9b240bd977d0a30d325b466b36d66930e3c15c4212",
+          "local_path": "images/representative.jpg",
+          "sha256": "6fa5dfe99327fb1a351a5b9b240bd977d0a30d325b466b36d66930e3c15c4212",
+          "bytes": 54385,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/baikal-nt200/record.json"
+    },
+    {
+      "id": "baksan",
+      "source_record": "Neutrino_Archive/experiments/baksan/record.json",
+      "source_record_sha256": "efce0a1541e310476b697f4c66837cb3ffc41deb9c661b0b1a7b709a7e6f2d94",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/baksan/images/representative.jpg",
+          "source_sha256": "1966b15200a264760ecf14ac1e51ad4f0fb321cf64ef7c0a41585314cf9e6899",
+          "local_path": "images/representative.jpg",
+          "sha256": "1966b15200a264760ecf14ac1e51ad4f0fb321cf64ef7c0a41585314cf9e6899",
+          "bytes": 107226,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/baksan/record.json"
+    },
+    {
+      "id": "beacon",
+      "source_record": "Neutrino_Archive/experiments/beacon/record.json",
+      "source_record_sha256": "d10c4dd9ea6cf5ef5dff45e7b7db2b6e5ed95dd0305be82fa9a96f453816947d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/beacon/images/representative.jpg",
+          "source_sha256": "eba3f723d7c7d7afcce287d1d3515aa1d81dd0d9f75d7ee63b261cef964af85e",
+          "local_path": "images/representative.jpg",
+          "sha256": "eba3f723d7c7d7afcce287d1d3515aa1d81dd0d9f75d7ee63b261cef964af85e",
+          "bytes": 302757,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/beacon/record.json"
+    },
+    {
+      "id": "bebc",
+      "source_record": "Neutrino_Archive/experiments/bebc/record.json",
+      "source_record_sha256": "015b521104b60ba9f7ed0a9c3d655cd7d57af5a62fe2ec11946c4353bdd0f618",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bebc/images/representative.jpg",
+          "source_sha256": "37570cf81812451a24612de9d8df0db22d3818b63329b89b9fc13e89cfc0345e",
+          "local_path": "images/representative.jpg",
+          "sha256": "37570cf81812451a24612de9d8df0db22d3818b63329b89b9fc13e89cfc0345e",
+          "bytes": 106862,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bebc/record.json"
+    },
+    {
+      "id": "beest",
+      "source_record": "Neutrino_Archive/experiments/beest/record.json",
+      "source_record_sha256": "a18318b474a9798db4e32421de02776957b4d56ff9023491c2283d8d00044dd8",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/beest/images/representative.jpg",
+          "source_sha256": "5e669ff42e26fe4f67b5f20dbd716c65e834774c482977dc08dd4fb1f93b8309",
+          "local_path": "images/representative.webp",
+          "sha256": "41cbe973a80ab912ef3acc37284e87e10f67669adb90e54c716c54eadbb1aaed",
+          "bytes": 88926,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/beest/record.json"
+    },
+    {
+      "id": "best",
+      "source_record": "Neutrino_Archive/experiments/best/record.json",
+      "source_record_sha256": "fbd90479750991906b02497205ee447cba4b8990dfca81a1539f9d1b56a22a29",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/best/images/representative.jpg",
+          "source_sha256": "31559763a1239ad999f08acf05c48b52b5cc0fdae69a3e3d96596a6cc1559923",
+          "local_path": "images/representative.jpg",
+          "sha256": "31559763a1239ad999f08acf05c48b52b5cc0fdae69a3e3d96596a6cc1559923",
+          "bytes": 328925,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/best/record.json"
+    },
+    {
+      "id": "best-2",
+      "source_record": "Neutrino_Archive/experiments/best-2/record.json",
+      "source_record_sha256": "db2a87f1170e01f75919c0e040e941c89f10c5893f64851b80eb69293792610d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/best-2/images/public-representative.png",
+          "source_sha256": "7c8c3efb0b116dc4c8c8837d414051e3c7fe49270e99b957997a981fa3557afa",
+          "local_path": "images/public-representative.png",
+          "sha256": "7c8c3efb0b116dc4c8c8837d414051e3c7fe49270e99b957997a981fa3557afa",
+          "bytes": 18574,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/best-2/record.json"
+    },
+    {
+      "id": "bingo",
+      "source_record": "Neutrino_Archive/experiments/bingo/record.json",
+      "source_record_sha256": "8113e60ede1ac35911c70d17688a96af739542ee52950b2ebc6c8403ad05caeb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bingo/images/representative-audit.png",
+          "source_sha256": "004f7068baf2e071390212dcc3bd58832d1edaf947a7083f22a502899bf53235",
+          "local_path": "images/representative-audit.png",
+          "sha256": "004f7068baf2e071390212dcc3bd58832d1edaf947a7083f22a502899bf53235",
+          "bytes": 20271,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bingo/record.json"
+    },
+    {
+      "id": "bnl-e-0427",
+      "source_record": "Neutrino_Archive/experiments/bnl-e-0427/record.json",
+      "source_record_sha256": "5dc87a0ec132c9de91fcc70cddd45e33e6e88e068463871b16fb9a587e7b2d76",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bnl-e-0427/images/representative.jpg",
+          "source_sha256": "753ba992e75e6ffb35d54d0392d75e46c73cca8f9d514ae44115d01975240e7d",
+          "local_path": "images/representative.jpg",
+          "sha256": "753ba992e75e6ffb35d54d0392d75e46c73cca8f9d514ae44115d01975240e7d",
+          "bytes": 33999,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bnl-e-0427/record.json"
+    },
+    {
+      "id": "bnl-e-0734",
+      "source_record": "Neutrino_Archive/experiments/bnl-e-0734/record.json",
+      "source_record_sha256": "2f065cf40714ce2ecc2dbcd30c290561b22119bf8fdee0e7a37a6bb38084e9c9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bnl-e-0734/images/representative.png",
+          "source_sha256": "eb47fa87d8f6ca1eee1011cc6fd52b527753a1c58bced0f84bc187261536d6ae",
+          "local_path": "images/representative.webp",
+          "sha256": "a125b58d4d89ab24dcd69bb792732b3d0ebb378b2597017c7838572446b65252",
+          "bytes": 345254,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/bnl-e-0734/record.json"
+    },
+    {
+      "id": "bnl-e-0776",
+      "source_record": "Neutrino_Archive/experiments/bnl-e-0776/record.json",
+      "source_record_sha256": "9c12add72c1a1b798a8d423abe3b98169832bccee072b89c5a104e16b4fc8fdf",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bnl-e-0776/images/representative.png",
+          "source_sha256": "11f5c144db088c6c92afa0e39309049c0c532fa2af6d18402296b879dae46bd4",
+          "local_path": "images/representative.png",
+          "sha256": "11f5c144db088c6c92afa0e39309049c0c532fa2af6d18402296b879dae46bd4",
+          "bytes": 32828,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bnl-e-0776/record.json"
+    },
+    {
+      "id": "bnl-e-0816",
+      "source_record": "Neutrino_Archive/experiments/bnl-e-0816/record.json",
+      "source_record_sha256": "a9d395e4429cba9ef7eb4cd641c53d09d0bb59b882f1e0561b7346d34a4bdead",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bnl-e-0816/images/representative-audit.png",
+          "source_sha256": "c186c94280fce30403a118afd4d10c775fc9f1db85a2b12685c47c271d535144",
+          "local_path": "images/representative-audit.png",
+          "sha256": "c186c94280fce30403a118afd4d10c775fc9f1db85a2b12685c47c271d535144",
+          "bytes": 79246,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bnl-e-0816/record.json"
+    },
+    {
+      "id": "borexino",
+      "source_record": "Neutrino_Archive/experiments/borexino/record.json",
+      "source_record_sha256": "cf50b0929237c6deb0893324bfed8430d4ae49fa0e635b5c2fccd1e0101e3d95",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/borexino/images/representative.png",
+          "source_sha256": "6bb5b43e54bbc09058a0844b947271d11bfcfd039dc41d0c052652f5292e3dde",
+          "local_path": "images/representative.png",
+          "sha256": "6bb5b43e54bbc09058a0844b947271d11bfcfd039dc41d0c052652f5292e3dde",
+          "bytes": 385297,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/borexino/record.json"
+    },
+    {
+      "id": "brookhaven-muon-neutrino-discovery-experiment-1962",
+      "source_record": "Neutrino_Archive/experiments/brookhaven-muon-neutrino-discovery-experiment-1962/record.json",
+      "source_record_sha256": "8e49f970b0860e13c07079e95c89afe1cf4ed0ca8b1e8d54cc8081db2933f02e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/brookhaven-muon-neutrino-discovery-experiment-1962/images/representative.jpg",
+          "source_sha256": "aa43189aaf3ae7bd8d54dca4349c8d90cc5ed33833cb441a27505bdd3f399d85",
+          "local_path": "images/representative.jpg",
+          "sha256": "aa43189aaf3ae7bd8d54dca4349c8d90cc5ed33833cb441a27505bdd3f399d85",
+          "bytes": 60821,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/brookhaven-muon-neutrino-discovery-experiment-1962/record.json"
+    },
+    {
+      "id": "bugey",
+      "source_record": "Neutrino_Archive/experiments/bugey/record.json",
+      "source_record_sha256": "88157d56aff249b7f3f7e73966f58d56f84e8108dfeaab084095f0db56a2b591",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/bugey/images/representative.png",
+          "source_sha256": "a91d0aa1e0c1d0c296fb2bdd49e4f9054843dd3f84f26760b659bf784600c8a1",
+          "local_path": "images/representative.png",
+          "sha256": "a91d0aa1e0c1d0c296fb2bdd49e4f9054843dd3f84f26760b659bf784600c8a1",
+          "bytes": 26708,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/bugey/record.json"
+    },
+    {
+      "id": "candles",
+      "source_record": "Neutrino_Archive/experiments/candles/record.json",
+      "source_record_sha256": "a97bd4cf687595cc769078ef99abb2609ef9c78382c6ac3933febbb8a35c6b69",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/candles/images/representative.png",
+          "source_sha256": "186fc7bf6ff9d610b23fc7b95e4dead4970b75d9f20c8388c4334748e63ccec4",
+          "local_path": "images/representative.png",
+          "sha256": "186fc7bf6ff9d610b23fc7b95e4dead4970b75d9f20c8388c4334748e63ccec4",
+          "bytes": 221371,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/candles/record.json"
+    },
+    {
+      "id": "ccfr",
+      "source_record": "Neutrino_Archive/experiments/ccfr/record.json",
+      "source_record_sha256": "e1133e1009be6a529e0650925cde4fa76e3bfdf2e987961e3ab02e6d09ef3868",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ccfr/images/representative.png",
+          "source_sha256": "f51ab56582c49c91cc77c48b2bd1668237ab7100414b19118537a4fbf8966f9f",
+          "local_path": "images/representative.png",
+          "sha256": "f51ab56582c49c91cc77c48b2bd1668237ab7100414b19118537a4fbf8966f9f",
+          "bytes": 16687,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ccfr/record.json"
+    },
+    {
+      "id": "cdex",
+      "source_record": "Neutrino_Archive/experiments/cdex/record.json",
+      "source_record_sha256": "54be44ee5afdc8c5ed9086688ccb76fa2a16b2ebd911b45304c55d114f0999f9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cdex/images/representative.jpg",
+          "source_sha256": "c7567369c0cc20666cdc61709ecc3809a45dcccddd8b289e8b036faf0335f152",
+          "local_path": "images/representative.jpg",
+          "sha256": "c7567369c0cc20666cdc61709ecc3809a45dcccddd8b289e8b036faf0335f152",
+          "bytes": 98832,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cdex/record.json"
+    },
+    {
+      "id": "cdhsw",
+      "source_record": "Neutrino_Archive/experiments/cdhsw/record.json",
+      "source_record_sha256": "7d1d219662780753ef4e8dd7d623685b310455c6db887ff9ba678c9371352756",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cdhsw/images/representative.jpg",
+          "source_sha256": "7c8131bb8062249ee0ba22e42a3363bff068a7c7f68f353e14c8935aaa09b1c4",
+          "local_path": "images/representative.jpg",
+          "sha256": "7c8131bb8062249ee0ba22e42a3363bff068a7c7f68f353e14c8935aaa09b1c4",
+          "bytes": 92966,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cdhsw/record.json"
+    },
+    {
+      "id": "celand",
+      "source_record": "Neutrino_Archive/experiments/celand/record.json",
+      "source_record_sha256": "13fd4c373c5e16892e9fb542d6c2325b035c70804ea070f13d39f2ca488d375c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/celand/images/public-representative.jpg",
+          "source_sha256": "dcbc6ed001c7f880507cd7e7bd4a18fe0f4e8dcde5fb6b662b87568e22b303de",
+          "local_path": "images/public-representative.jpg",
+          "sha256": "dcbc6ed001c7f880507cd7e7bd4a18fe0f4e8dcde5fb6b662b87568e22b303de",
+          "bytes": 87524,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/celand/record.json"
+    },
+    {
+      "id": "cern-ps-191",
+      "source_record": "Neutrino_Archive/experiments/cern-ps-191/record.json",
+      "source_record_sha256": "121e993d37b52b138fdb636b7d290511ef4f250ddbf53cb62d77b023963703de",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cern-ps-191/images/representative.png",
+          "source_sha256": "e32e497c45ce5af539b058ff6f2f3c66e2462a1190b141988354bb0aa10d7996",
+          "local_path": "images/representative.webp",
+          "sha256": "da470b2b18a98f7e8109bc7075bcea5be93b40c32432cde4711cb0836a995b19",
+          "bytes": 67614,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/cern-ps-191/record.json"
+    },
+    {
+      "id": "chandler",
+      "source_record": "Neutrino_Archive/experiments/chandler/record.json",
+      "source_record_sha256": "6ce7f39ceb29bb37e320c61545edbfdd6ebf86a4b69aee53bb3128ca8fe35467",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/chandler/images/representative.jpg",
+          "source_sha256": "c740d3439f246418a7f1358600272f3dbbfd7382fbe31f07837d8d9d6c6cd880",
+          "local_path": "images/representative.jpg",
+          "sha256": "c740d3439f246418a7f1358600272f3dbbfd7382fbe31f07837d8d9d6c6cd880",
+          "bytes": 138640,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/chandler/record.json"
+    },
+    {
+      "id": "charm",
+      "source_record": "Neutrino_Archive/experiments/charm/record.json",
+      "source_record_sha256": "33562346f151530260d3a63d9c32dcf7a44e50f7498c89182d75ea42ee6de564",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/charm/images/representative.jpg",
+          "source_sha256": "a3173312ff9172a25691837ff3791f89cd007eae47eb89bf572a2fa66c836f58",
+          "local_path": "images/representative.jpg",
+          "sha256": "a3173312ff9172a25691837ff3791f89cd007eae47eb89bf572a2fa66c836f58",
+          "bytes": 94413,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/charm/record.json"
+    },
+    {
+      "id": "charm-ii",
+      "source_record": "Neutrino_Archive/experiments/charm-ii/record.json",
+      "source_record_sha256": "0eaf6697e16c263c63df3fcf4270454ea956a327379d08db1e994e1494673774",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/charm-ii/images/representative.jpg",
+          "source_sha256": "aa72b45e711c446fe68a952269f925180c306ee359e04c378e82b36641e77e9e",
+          "local_path": "images/representative.jpg",
+          "sha256": "aa72b45e711c446fe68a952269f925180c306ee359e04c378e82b36641e77e9e",
+          "bytes": 107795,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/charm-ii/record.json"
+    },
+    {
+      "id": "chips",
+      "source_record": "Neutrino_Archive/experiments/chips/record.json",
+      "source_record_sha256": "d060cbeb35dda8c6b5099789fe2378323dcb6f49a6495430ffb4ec768985a663",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/chips/images/representative-audit.png",
+          "source_sha256": "71e30fba0938c581a10c943babe0715682ebf439f13c2bea2262e308f23747f9",
+          "local_path": "images/representative-audit.png",
+          "sha256": "71e30fba0938c581a10c943babe0715682ebf439f13c2bea2262e308f23747f9",
+          "bytes": 240242,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/chips/record.json"
+    },
+    {
+      "id": "chooz",
+      "source_record": "Neutrino_Archive/experiments/chooz/record.json",
+      "source_record_sha256": "1079cd1c26efdc23f9d71fccdfd5c9261caf719b48bf347d07dbca1eb35ad4d3",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/chooz/images/representative.png",
+          "source_sha256": "c3e1f6a484ba97e046211b565d2f9ce5a9828b14582c963e00a5e50e4060d587",
+          "local_path": "images/representative.png",
+          "sha256": "c3e1f6a484ba97e046211b565d2f9ce5a9828b14582c963e00a5e50e4060d587",
+          "bytes": 18160,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/chooz/record.json"
+    },
+    {
+      "id": "chorus",
+      "source_record": "Neutrino_Archive/experiments/chorus/record.json",
+      "source_record_sha256": "d2d198e134042e35a2467c47317926d84cc94871e48eb63c691acaec24c36073",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/chorus/images/representative.png",
+          "source_sha256": "082b0c36a112ac46e3b5a199f9e20e18022858488bff63943a5ea4aa06533382",
+          "local_path": "images/representative.png",
+          "sha256": "082b0c36a112ac46e3b5a199f9e20e18022858488bff63943a5ea4aa06533382",
+          "bytes": 312427,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/chorus/record.json"
+    },
+    {
+      "id": "cobra",
+      "source_record": "Neutrino_Archive/experiments/cobra/record.json",
+      "source_record_sha256": "415fd7de64cc222007c89bd1852213d5151beb84974f0f1869bace72561a6d19",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cobra/images/representative.jpg",
+          "source_sha256": "d6e9506f79e9ef2e18d62c69af0ef6c5c0a45366e83cc65d698d8f61f60d3358",
+          "local_path": "images/representative.jpg",
+          "sha256": "d6e9506f79e9ef2e18d62c69af0ef6c5c0a45366e83cc65d698d8f61f60d3358",
+          "bytes": 207346,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cobra/record.json"
+    },
+    {
+      "id": "coherent",
+      "source_record": "Neutrino_Archive/experiments/coherent/record.json",
+      "source_record_sha256": "a5aa4d37708ab92a5e8c23d54f577218053e3d5f0c6d902d1477829e221e0fe1",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/coherent/images/representative.jpg",
+          "source_sha256": "96ad1c6f4a6f248b68f231e123309c662c3f28360f6816675e08634416e268b9",
+          "local_path": "images/representative.jpg",
+          "sha256": "96ad1c6f4a6f248b68f231e123309c662c3f28360f6816675e08634416e268b9",
+          "bytes": 5930,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/coherent/record.json"
+    },
+    {
+      "id": "connie",
+      "source_record": "Neutrino_Archive/experiments/connie/record.json",
+      "source_record_sha256": "e9d19e1df4004bb7aac7b8f890f0aa96b79fe5e1d752606cac08a4d40f7a63dd",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/connie/images/representative.png",
+          "source_sha256": "cdaedc9361d1452a59eca0714a2ed1fb3a6b5a1fd52b3f5f88ef2a8cc548c4be",
+          "local_path": "images/representative.webp",
+          "sha256": "ad45e2e469c840cf349d45d01d8a1d51793139c7f1b632854800b6b4a935537d",
+          "bytes": 96734,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/connie/record.json"
+    },
+    {
+      "id": "conus",
+      "source_record": "Neutrino_Archive/experiments/conus/record.json",
+      "source_record_sha256": "a50928df1db9332950d184ec77663a2781682e2a8f4a30cb25625844eaff65fa",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/conus/images/representative.jpg",
+          "source_sha256": "d4fb093caa008e286db7d817ab747ea3e603c658a3b2af5625b5d0cbf3ae6415",
+          "local_path": "images/representative.webp",
+          "sha256": "a715a3d4e3953660cab69043cad9dac3be35af2ffd6d5424a24cb55b16d66df8",
+          "bytes": 320800,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/conus/record.json"
+    },
+    {
+      "id": "conus-plus",
+      "source_record": "Neutrino_Archive/experiments/conus-plus/record.json",
+      "source_record_sha256": "a7d48f79bdcec95a87e69aefd70d899bfb6a503eda2ddad9a27e44746160e67c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/conus-plus/images/representative.png",
+          "source_sha256": "a32f0ed671cee568c2d06f9486080a526887cef02bc87b2a8878ff1d9f3e3bd6",
+          "local_path": "images/representative.webp",
+          "sha256": "e9880d0e8c9b602caec367758e498db4aa1bf9dce99bd47cd9f5af93eb72a988",
+          "bytes": 205738,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/conus-plus/record.json"
+    },
+    {
+      "id": "cross",
+      "source_record": "Neutrino_Archive/experiments/cross/record.json",
+      "source_record_sha256": "9dca93018d6a38e74b82daf296c145470350b34acac09599f3ec0ae27686f8e1",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cross/images/representative.png",
+          "source_sha256": "d23be57676b1c346e33515a1c9e082fe6a47ae1f5a42a1982d3d6ee943d97bef",
+          "local_path": "images/representative.webp",
+          "sha256": "ec768db299768f38eea1b10c3b5d2983c31ea7477d85df1df3d70740a7a8f37d",
+          "bytes": 61796,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/cross/record.json"
+    },
+    {
+      "id": "cuore",
+      "source_record": "Neutrino_Archive/experiments/cuore/record.json",
+      "source_record_sha256": "b18b55d45d04c38244f17473e942aca961d1077e286deb385312e53fdd542410",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cuore/images/representative-audit.jpg",
+          "source_sha256": "e108aaa507e5997c3f0c5586fe45b7c022a66e5c997242a78d8aca320a751f93",
+          "local_path": "images/representative-audit.jpg",
+          "sha256": "e108aaa507e5997c3f0c5586fe45b7c022a66e5c997242a78d8aca320a751f93",
+          "bytes": 109238,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cuore/record.json"
+    },
+    {
+      "id": "cuoricino",
+      "source_record": "Neutrino_Archive/experiments/cuoricino/record.json",
+      "source_record_sha256": "01a49dde81b6cc616f51d1cc14a997bf7b2203c5d6f6a9d9ce9a10ae490a0658",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cuoricino/images/representative.png",
+          "source_sha256": "07ed28370def5ac4f32ed3184b0f16deeedba857cb00661837c0e1927a10d38c",
+          "local_path": "images/representative.png",
+          "sha256": "07ed28370def5ac4f32ed3184b0f16deeedba857cb00661837c0e1927a10d38c",
+          "bytes": 204234,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cuoricino/record.json"
+    },
+    {
+      "id": "cupid",
+      "source_record": "Neutrino_Archive/experiments/cupid/record.json",
+      "source_record_sha256": "07f847ac5ca0579965a9d71d40b6a654534528183bcf7be5d5fa3f7d0522c9f2",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cupid/images/representative-audit.png",
+          "source_sha256": "3f92d28afc6612ba713cb9077d63a83ca9472598920aa44017b01920d2299758",
+          "local_path": "images/representative-audit.png",
+          "sha256": "3f92d28afc6612ba713cb9077d63a83ca9472598920aa44017b01920d2299758",
+          "bytes": 55992,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cupid/record.json"
+    },
+    {
+      "id": "cupid-0",
+      "source_record": "Neutrino_Archive/experiments/cupid-0/record.json",
+      "source_record_sha256": "d0fca9ab199577bd05dcf0f5642f50c639cb13b672a99ad1d97f29759baaef3c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cupid-0/images/representative.jpg",
+          "source_sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+          "local_path": "images/representative.jpg",
+          "sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+          "bytes": 96411,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/cupid-0/record.json"
+    },
+    {
+      "id": "cupid-mo",
+      "source_record": "Neutrino_Archive/experiments/cupid-mo/record.json",
+      "source_record_sha256": "d2acba0c55d0307f3dc7f1ec797a1ca663d50ad459894785a8d104a733f842a6",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/cupid-mo/images/representative.png",
+          "source_sha256": "0b05bb36339e443a7e10067ad156169b96f976e8f590ec7fe816320328ef5ad3",
+          "local_path": "images/representative.webp",
+          "sha256": "943a34144a380f225342b011b9da10cd168c90a8c950d25b1b26f896d330835d",
+          "bytes": 90226,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/cupid-mo/record.json"
+    },
+    {
+      "id": "daedalus",
+      "source_record": "Neutrino_Archive/experiments/daedalus/record.json",
+      "source_record_sha256": "0fd205a928ecd4de3e8e8ef15251e3ed5124a08a7f98cb532bd90953625177cb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/daedalus/images/representative-audit.png",
+          "source_sha256": "3aaeada200012bce3960920d9bf2874d954630db06a8badc771e9cc97e33137e",
+          "local_path": "images/representative-audit.png",
+          "sha256": "3aaeada200012bce3960920d9bf2874d954630db06a8badc771e9cc97e33137e",
+          "bytes": 14125,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/daedalus/record.json"
+    },
+    {
+      "id": "danss",
+      "source_record": "Neutrino_Archive/experiments/danss/record.json",
+      "source_record_sha256": "b236b51aeb09b48af6711dcabe090c82ae8e037d898ef707230deee1fe81a322",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/danss/images/public-representative.png",
+          "source_sha256": "067b86004d95f5841930dd4946cdb9a8cf56d683317da28de69501dcc765c3ab",
+          "local_path": "images/public-representative.png",
+          "sha256": "067b86004d95f5841930dd4946cdb9a8cf56d683317da28de69501dcc765c3ab",
+          "bytes": 97641,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/danss/record.json"
+    },
+    {
+      "id": "darkside-20k",
+      "source_record": "Neutrino_Archive/experiments/darkside-20k/record.json",
+      "source_record_sha256": "f3bb9c7fe36f80d2b383e5db96920a5abaf881496e440e9a381afe32d08eb48f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/darkside-20k/images/representative-audit.png",
+          "source_sha256": "f7fc6154137105d28f2bb76077fb58ef8e13fc94ab41cec95ca532ba9a1f6131",
+          "local_path": "images/representative-audit.png",
+          "sha256": "f7fc6154137105d28f2bb76077fb58ef8e13fc94ab41cec95ca532ba9a1f6131",
+          "bytes": 147980,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/darkside-20k/record.json"
+    },
+    {
+      "id": "darwin",
+      "source_record": "Neutrino_Archive/experiments/darwin/record.json",
+      "source_record_sha256": "4beb4abd88b73f9cefb88384e6faff97fdc3da91ed7a1e5eb6ed072ff59518f2",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/darwin/images/representative-audit.png",
+          "source_sha256": "cd821265be1b5cefbaf8b900775fdd21695080840872f8cc3764c3b84932dfc8",
+          "local_path": "images/representative-audit.png",
+          "sha256": "cd821265be1b5cefbaf8b900775fdd21695080840872f8cc3764c3b84932dfc8",
+          "bytes": 108133,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/darwin/record.json"
+    },
+    {
+      "id": "daya-bay",
+      "source_record": "Neutrino_Archive/experiments/daya-bay/record.json",
+      "source_record_sha256": "961bca59ac4153670b95876db138637e95484c46028a13d42a32c96341160b73",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/daya-bay/images/legacy-082.jpg",
+          "source_sha256": "af072f7c5e3988acdf572fa6d8b06a5a983d45cc21b092962d693ff0c68cb97d",
+          "local_path": "images/legacy-082.jpg",
+          "sha256": "af072f7c5e3988acdf572fa6d8b06a5a983d45cc21b092962d693ff0c68cb97d",
+          "bytes": 224469,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/daya-bay/record.json"
+    },
+    {
+      "id": "dcba",
+      "source_record": "Neutrino_Archive/experiments/dcba/record.json",
+      "source_record_sha256": "8bc1c0b41d15ee9b29074723e959accac74ec1c1d8f39ae3162c51cee15d40b7",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/dcba/images/representative.png",
+          "source_sha256": "e3ea018cf70255568ccb9c39b873875849e4205e849ec67ee5e9e825f0c14648",
+          "local_path": "images/representative.png",
+          "sha256": "e3ea018cf70255568ccb9c39b873875849e4205e849ec67ee5e9e825f0c14648",
+          "bytes": 207961,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/dcba/record.json"
+    },
+    {
+      "id": "donut",
+      "source_record": "Neutrino_Archive/experiments/donut/record.json",
+      "source_record_sha256": "0114d3f42a9b832fef4da85cc782bf1c981c77b6385107310e3fd35ee0686769",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/donut/images/representative.png",
+          "source_sha256": "440c12c0662d8f4e6afb7a745fa68bd4695711cfe6d020aaad9e42c8656fe33d",
+          "local_path": "images/representative.png",
+          "sha256": "440c12c0662d8f4e6afb7a745fa68bd4695711cfe6d020aaad9e42c8656fe33d",
+          "bytes": 35110,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/donut/record.json"
+    },
+    {
+      "id": "double-chooz",
+      "source_record": "Neutrino_Archive/experiments/double-chooz/record.json",
+      "source_record_sha256": "2555ff3b704d9eb226e3679fc45794b1d43e308810c38965147d6dbd045dbded",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/double-chooz/images/representative.png",
+          "source_sha256": "c735a2bbf9d4872fbb9557bf60470bcb8e00f6baf93e676b95f5ac553316b4d7",
+          "local_path": "images/representative.webp",
+          "sha256": "77d8a363d6eb46a6179cfacde6f0a092b5abe872a2b29f45cceb92b12b4e1172",
+          "bytes": 240798,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/double-chooz/record.json"
+    },
+    {
+      "id": "dresden-ii-ncc-1701",
+      "source_record": "Neutrino_Archive/experiments/dresden-ii-ncc-1701/record.json",
+      "source_record_sha256": "4d0e319fefc66693b1ca4c866dd8788e98c5f8721b9e9c786bc07858272c9bc3",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/dresden-ii-ncc-1701/images/representative.png",
+          "source_sha256": "c71de20287c0dde2cab820f948f503ffd0ffb53577f200ff6bf5c893ab6aba6e",
+          "local_path": "images/representative.webp",
+          "sha256": "124390962f8fa0e35ad71ceb4f733db0cfe261ed369a35cf81566e68ab03a260",
+          "bytes": 221972,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/dresden-ii-ncc-1701/record.json"
+    },
+    {
+      "id": "dstau",
+      "source_record": "Neutrino_Archive/experiments/dstau/record.json",
+      "source_record_sha256": "c137fce3b4022137c1ca0f6a7c7d4b8a5a9149c9ea96bd147798f466d1bccc86",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/dstau/images/representative.jpg",
+          "source_sha256": "08ece6c03b1eae11280838151ebe8efd5e685776c09b657af7b315249082ce01",
+          "local_path": "images/representative.webp",
+          "sha256": "327256f384a3acaec04fc864dfdb51d43c1706b748df9016ef33337cccf87315",
+          "bytes": 402386,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/dstau/record.json"
+    },
+    {
+      "id": "dumand",
+      "source_record": "Neutrino_Archive/experiments/dumand/record.json",
+      "source_record_sha256": "6953aa4e025e07f20fd58f9c904a750b5761aa8548238cc46e2952e9401491fe",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/dumand/images/representative.png",
+          "source_sha256": "a9b838628b85d3cd7060f7e923e62bafa265cd85c1e0c57dd6693a2251cc27da",
+          "local_path": "images/representative.png",
+          "sha256": "a9b838628b85d3cd7060f7e923e62bafa265cd85c1e0c57dd6693a2251cc27da",
+          "bytes": 293612,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/dumand/record.json"
+    },
+    {
+      "id": "dune",
+      "source_record": "Neutrino_Archive/experiments/dune/record.json",
+      "source_record_sha256": "9e9de04a706a30509848a8bcf880200bda3aef5fbb01e019e47b77f2a143e65b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/dune/images/representative-audit.png",
+          "source_sha256": "e7145182d125e876db91d637f314be7d1e44e19003ebcc567102f03fd1b82aa7",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "f3ce3444c8f0aca2614ddf0bbe12ab44b7efe26aac40c59e0bc5add626937017",
+          "bytes": 114502,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/dune/record.json"
+    },
+    {
+      "id": "echo",
+      "source_record": "Neutrino_Archive/experiments/echo/record.json",
+      "source_record_sha256": "5e57632ebf255fdc39a5527aa3e74a2835f3968fc1829b80af2735d32fe865ce",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/echo/images/representative.png",
+          "source_sha256": "3dbae1890d2d293d8d6ae9d9af938ef313ebed6b32b3ef89c6c8ccc2c11a005e",
+          "local_path": "images/representative.webp",
+          "sha256": "dc74505d3926d93b619e27a7a60c03c7e136881c195e53ccf11081aa8eeecb15",
+          "bytes": 50828,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/echo/record.json"
+    },
+    {
+      "id": "elegant",
+      "source_record": "Neutrino_Archive/experiments/elegant/record.json",
+      "source_record_sha256": "5c103174cb562672fa3734614af88e319872a375bdc88e1b2801fb5bbd2e293d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/elegant/images/representative.png",
+          "source_sha256": "b2da7bf83608a7b823ae27e39620eac0fedb13c190c3403cc06731a4257bb4c9",
+          "local_path": "images/representative.png",
+          "sha256": "b2da7bf83608a7b823ae27e39620eac0fedb13c190c3403cc06731a4257bb4c9",
+          "bytes": 36063,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/elegant/record.json"
+    },
+    {
+      "id": "enubet",
+      "source_record": "Neutrino_Archive/experiments/enubet/record.json",
+      "source_record_sha256": "79eae6c8efceb661b8ca03edaa985ac82a150777b6ce37e8087d2b29f5042407",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/enubet/images/representative.png",
+          "source_sha256": "67e83d65511819ab0a4e93342073f08d077881be8fe6a375b6a3755511335738",
+          "local_path": "images/representative.webp",
+          "sha256": "a2d969dd169f88474965d8d623269a69fa203eae7373cfbca4ef4a4a471b8406",
+          "bytes": 179576,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/enubet/record.json"
+    },
+    {
+      "id": "eos",
+      "source_record": "Neutrino_Archive/experiments/eos/record.json",
+      "source_record_sha256": "4167b9e6f06fff1e8ab085329f879abffab5515a963470359841353f12b4bab5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/eos/images/representative.jpg",
+          "source_sha256": "d66783ef2c9adc60a2bfc8b9ec995a3e644c1c7738e4def743cd8fb9a01938ac",
+          "local_path": "images/representative.jpg",
+          "sha256": "d66783ef2c9adc60a2bfc8b9ec995a3e644c1c7738e4def743cd8fb9a01938ac",
+          "bytes": 108229,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/eos/record.json"
+    },
+    {
+      "id": "essnusb",
+      "source_record": "Neutrino_Archive/experiments/essnusb/record.json",
+      "source_record_sha256": "e44dfc19fb24c33602bcc0e0447210e83d3da4bfc7c9e131283f67fb0b7aa882",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/essnusb/images/representative-audit.png",
+          "source_sha256": "0cabe8959d188b5af1bdfbbedcfca1ab06b0280cc417626935945aa5a31ccb6c",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "e9b420c628b24a65f79e9e8e040ee0a7fd7bdc7c704e34707bb8de44a419d3a3",
+          "bytes": 215296,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/essnusb/record.json"
+    },
+    {
+      "id": "euso-spb2",
+      "source_record": "Neutrino_Archive/experiments/euso-spb2/record.json",
+      "source_record_sha256": "0a960a8ddb027c54193c92b1143dfef077a7784c7ad766ed21827d1be7a79d6e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/euso-spb2/images/representative.jpg",
+          "source_sha256": "5f906f523761e37b7f54d7a7ac05a84a60ac9dbdd4e68498b0b3a9c3c5573481",
+          "local_path": "images/representative.jpg",
+          "sha256": "5f906f523761e37b7f54d7a7ac05a84a60ac9dbdd4e68498b0b3a9c3c5573481",
+          "bytes": 58713,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/euso-spb2/record.json"
+    },
+    {
+      "id": "eva",
+      "source_record": "Neutrino_Archive/experiments/eva/record.json",
+      "source_record_sha256": "444bb9336e28cd5fb70e1d6e8339c9c58a4fdf1ce731476fe85e3cbd6db7b150",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/eva/images/representative.png",
+          "source_sha256": "70bf2262052b11b5ba0088e986f4cd87398a80aa4fb36dd842a8e0515342ba33",
+          "local_path": "images/representative.png",
+          "sha256": "70bf2262052b11b5ba0088e986f4cd87398a80aa4fb36dd842a8e0515342ba33",
+          "bytes": 93265,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/eva/record.json"
+    },
+    {
+      "id": "exo",
+      "source_record": "Neutrino_Archive/experiments/exo/record.json",
+      "source_record_sha256": "0c356948e77764db6a1e5eab934fd7409469d207d363af11f300790d931b5512",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/exo/images/representative.jpg",
+          "source_sha256": "d7ee1d5816128a9c2bde83b431d3873f8050b5d4808373d265c914ef8ccee5e4",
+          "local_path": "images/representative.jpg",
+          "sha256": "d7ee1d5816128a9c2bde83b431d3873f8050b5d4808373d265c914ef8ccee5e4",
+          "bytes": 208977,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/exo/record.json"
+    },
+    {
+      "id": "faser",
+      "source_record": "Neutrino_Archive/experiments/faser/record.json",
+      "source_record_sha256": "d4a9a99d561e0286d65b490e1c15aff6df62a867e1aa74d5d1bc14c84d74d36b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/faser/images/representative-audit.png",
+          "source_sha256": "e8df009952c815b3bbf862d82f16da744377d5d33ea08b378823aeca28a7f22e",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "4a74d9a08d61b30c2f4958df8398d2b164fed6423799a7b841d716bd3343d1bb",
+          "bytes": 155178,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/faser/record.json"
+    },
+    {
+      "id": "flare",
+      "source_record": "Neutrino_Archive/experiments/flare/record.json",
+      "source_record_sha256": "7ad65d94e01a1fe3bac4dae4faf4f3e5c1d29b71dfe18fff668b9ed0f95b4cb0",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/flare/images/representative.png",
+          "source_sha256": "f3297237102eebd80ab612c742d84789db83f696bf61b9fdf22a4c2e13372f18",
+          "local_path": "images/representative.webp",
+          "sha256": "68cf0d99d454ec539d7ae9e44f08af83041df02c814a5699cdff1e33f25f10c6",
+          "bytes": 134494,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/flare/record.json"
+    },
+    {
+      "id": "fnal-e-0021",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0021/record.json",
+      "source_record_sha256": "a143f449db709f581a07bcb72ec286cd4e804d167331a805cec4bafba7836054",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0021/images/representative.png",
+          "source_sha256": "85b83b9c6efa598200bd14bd47ce1843974bda40bded557cbf121a1f11605239",
+          "local_path": "images/representative.webp",
+          "sha256": "dbbbfada62e0f3b9d681fe664f93093fead00ee6d34b1a7d68b7ccfc88105584",
+          "bytes": 206142,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/fnal-e-0021/record.json"
+    },
+    {
+      "id": "fnal-e-0031",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0031/record.json",
+      "source_record_sha256": "6de9ecfcd8675bbd285c9e8ad8fb1b04eebae8c830dcd94f7c4d8618c49fd597",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0031/images/representative.jpg",
+          "source_sha256": "f19b3bb25fb5a1b9a730a72b6d17de1d725dbc2e33b0110d75f157fb9a6e9a71",
+          "local_path": "images/representative.webp",
+          "sha256": "d289bb876ef01a41b1c85316fa602a9a435ad23e634a9ce8ac5325fae5e90af1",
+          "bytes": 372572,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/fnal-e-0031/record.json"
+    },
+    {
+      "id": "fnal-e-0053",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0053/record.json",
+      "source_record_sha256": "5467e2c016574343fee153b8e1a74739cee6ce030b97f9adfc5be8c0acc2096f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0053/images/representative.jpg",
+          "source_sha256": "f19b3bb25fb5a1b9a730a72b6d17de1d725dbc2e33b0110d75f157fb9a6e9a71",
+          "local_path": "images/representative.webp",
+          "sha256": "d289bb876ef01a41b1c85316fa602a9a435ad23e634a9ce8ac5325fae5e90af1",
+          "bytes": 372572,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/fnal-e-0053/record.json"
+    },
+    {
+      "id": "fnal-e-0531",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0531/record.json",
+      "source_record_sha256": "52e11a718a3993e5247776be079aa1cd4f3039583ba99a84c5cdd150603f19cd",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0531/images/representative.png",
+          "source_sha256": "4b94c43959adf7c2f6adb40674c869adf55ffc5554bec2d433de86a942a6a428",
+          "local_path": "images/representative.png",
+          "sha256": "4b94c43959adf7c2f6adb40674c869adf55ffc5554bec2d433de86a942a6a428",
+          "bytes": 62961,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/fnal-e-0531/record.json"
+    },
+    {
+      "id": "fnal-e-0545",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0545/record.json",
+      "source_record_sha256": "d6c94b995c50ebf8f18513f4fed9091cf6b890da938b135bd66485ad1f38dc84",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0545/images/representative.jpg",
+          "source_sha256": "f19b3bb25fb5a1b9a730a72b6d17de1d725dbc2e33b0110d75f157fb9a6e9a71",
+          "local_path": "images/representative.webp",
+          "sha256": "d289bb876ef01a41b1c85316fa602a9a435ad23e634a9ce8ac5325fae5e90af1",
+          "bytes": 372572,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/fnal-e-0545/record.json"
+    },
+    {
+      "id": "fnal-e-0613",
+      "source_record": "Neutrino_Archive/experiments/fnal-e-0613/record.json",
+      "source_record_sha256": "f0f3b08c684a069562a4ebbbd3a106aa3f0d643f0986c94d1aed6b70e7526d5a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/fnal-e-0613/images/representative.png",
+          "source_sha256": "b862851e2a6c2d91afa2b8879fe7ee00589181c9573f092b1c11ed45f859dd07",
+          "local_path": "images/representative.png",
+          "sha256": "b862851e2a6c2d91afa2b8879fe7ee00589181c9573f092b1c11ed45f859dd07",
+          "bytes": 35812,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/fnal-e-0613/record.json"
+    },
+    {
+      "id": "forte",
+      "source_record": "Neutrino_Archive/experiments/forte/record.json",
+      "source_record_sha256": "80c85a04320fce20bd9ccc3e5dc837e549e42143b40570c8648f7e3c1d17aaef",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/forte/images/representative.png",
+          "source_sha256": "d7713b98d388d23a8a24bd5311c92d665ead6d235d91d07ec4a1a795fa1eb7a9",
+          "local_path": "images/representative.png",
+          "sha256": "d7713b98d388d23a8a24bd5311c92d665ead6d235d91d07ec4a1a795fa1eb7a9",
+          "bytes": 48560,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/forte/record.json"
+    },
+    {
+      "id": "frejus",
+      "source_record": "Neutrino_Archive/experiments/frejus/record.json",
+      "source_record_sha256": "882d19b142c295773418a34e622967d9eb90911159f3176c380b07dd388ad415",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/frejus/images/representative.jpg",
+          "source_sha256": "6d5fbc7b7afa60fc807761b4d41248d7a0c49ebe078442d979c697843360f9ba",
+          "local_path": "images/representative.jpg",
+          "sha256": "6d5fbc7b7afa60fc807761b4d41248d7a0c49ebe078442d979c697843360f9ba",
+          "bytes": 138092,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/frejus/record.json"
+    },
+    {
+      "id": "gallex",
+      "source_record": "Neutrino_Archive/experiments/gallex/record.json",
+      "source_record_sha256": "30ff2d87a19c6f6f302a4c4e78898a747af6b10fa26965ec63f331d30612009e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gallex/images/representative.png",
+          "source_sha256": "b70d0605e4b2479982d0242daa719281bfb2a3d2bb0ab36d29a0a27e4316ac71",
+          "local_path": "images/representative.png",
+          "sha256": "b70d0605e4b2479982d0242daa719281bfb2a3d2bb0ab36d29a0a27e4316ac71",
+          "bytes": 40794,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gallex/record.json"
+    },
+    {
+      "id": "gargamelle",
+      "source_record": "Neutrino_Archive/experiments/gargamelle/record.json",
+      "source_record_sha256": "45e22bcdbfb5818595aafea4160d253be55dfbd5f38a67e44e6af3973221c38f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gargamelle/images/representative.webp",
+          "source_sha256": "1889ddc5ba0fc763f3557b6248914b85e723abbd627ae278752ef49986ba169b",
+          "local_path": "images/representative.webp",
+          "sha256": "1889ddc5ba0fc763f3557b6248914b85e723abbd627ae278752ef49986ba169b",
+          "bytes": 101228,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gargamelle/record.json"
+    },
+    {
+      "id": "gemma",
+      "source_record": "Neutrino_Archive/experiments/gemma/record.json",
+      "source_record_sha256": "acc1641e3ef1a05494a6d10d9fd0698a153a8d59f6a4fb4eb79977772486df5c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gemma/images/representative.png",
+          "source_sha256": "8860d1318e943db3ddd63057196253508410829a9de645ab1794362139544126",
+          "local_path": "images/representative.png",
+          "sha256": "8860d1318e943db3ddd63057196253508410829a9de645ab1794362139544126",
+          "bytes": 71306,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gemma/record.json"
+    },
+    {
+      "id": "genius",
+      "source_record": "Neutrino_Archive/experiments/genius/record.json",
+      "source_record_sha256": "b36286eb7545506bbdf69fe10299639836c31c8cd8c9f61accad3435ae995d11",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/genius/images/representative-audit.png",
+          "source_sha256": "a4fb8b2d51d752709405c071840bff7fd7c215d21261465e4558d9afdcf4a0ba",
+          "local_path": "images/representative-audit.png",
+          "sha256": "a4fb8b2d51d752709405c071840bff7fd7c215d21261465e4558d9afdcf4a0ba",
+          "bytes": 154467,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/genius/record.json"
+    },
+    {
+      "id": "gerda",
+      "source_record": "Neutrino_Archive/experiments/gerda/record.json",
+      "source_record_sha256": "0a530718397a06bda77fc1989b953e3db7d92f25454e749008f57e7035b300f1",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gerda/images/representative.jpg",
+          "source_sha256": "9f43afd75eb1a84a56821281078b29a90ae1dd11dd7e4de620bff1312baae0f9",
+          "local_path": "images/representative.jpg",
+          "sha256": "9f43afd75eb1a84a56821281078b29a90ae1dd11dd7e4de620bff1312baae0f9",
+          "bytes": 74420,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gerda/record.json"
+    },
+    {
+      "id": "glue",
+      "source_record": "Neutrino_Archive/experiments/glue/record.json",
+      "source_record_sha256": "da6f4bb5c7762ed31aa2255fe19193be176613f2961c2c5da81346659325bc16",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/glue/images/representative.png",
+          "source_sha256": "34481d4d35a4fddeae2e6dadd0f08347d2d7122112b208731586814365339015",
+          "local_path": "images/representative.png",
+          "sha256": "34481d4d35a4fddeae2e6dadd0f08347d2d7122112b208731586814365339015",
+          "bytes": 40704,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/glue/record.json"
+    },
+    {
+      "id": "gno",
+      "source_record": "Neutrino_Archive/experiments/gno/record.json",
+      "source_record_sha256": "f53b3dcc57bc6a691930f21ccd8593d1224dafdf551178cbdf97dac7a2b88c90",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gno/images/representative.png",
+          "source_sha256": "f6e889268a1b63084a8d87605ba6a7c9aa6f7bf15f51052ed3ec648afbf657e6",
+          "local_path": "images/representative.png",
+          "sha256": "f6e889268a1b63084a8d87605ba6a7c9aa6f7bf15f51052ed3ec648afbf657e6",
+          "bytes": 7772,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gno/record.json"
+    },
+    {
+      "id": "gotthard",
+      "source_record": "Neutrino_Archive/experiments/gotthard/record.json",
+      "source_record_sha256": "83cb773441df12c0ad5e5f7fe538e99e5d2a264c99171dd234a1b6a27cd286f2",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gotthard/images/representative.png",
+          "source_sha256": "1a1e3bfb8339e1a41494b415bb4d2eab1d86738c095a2dbff7986ae023781772",
+          "local_path": "images/representative.webp",
+          "sha256": "6f1143b90807d2afbc3e97c3ead52a1bc7b71ffe4550c26edff6ba5330371e3a",
+          "bytes": 117432,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/gotthard/record.json"
+    },
+    {
+      "id": "grand",
+      "source_record": "Neutrino_Archive/experiments/grand/record.json",
+      "source_record_sha256": "7641cf0b6ac9bfbaabeeb3ee3fa8e59fad4580db66b3f20710b06f7d3ddce6eb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/grand/images/representative.png",
+          "source_sha256": "11c99a2659ccc8a95975e38a5934c0b21174c91e6e369405de146ad089c64cc5",
+          "local_path": "images/representative.webp",
+          "sha256": "e25dd4ec673e59311f5eba781195c7dbb30bf2867c67a4dbee8aef263e448dab",
+          "bytes": 211318,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/grand/record.json"
+    },
+    {
+      "id": "gosgen",
+      "source_record": "Neutrino_Archive/experiments/gosgen/record.json",
+      "source_record_sha256": "1dbb3f5f7db50310371971d86129c1fccb7057953e60755d6174fc58a4f49a05",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/gosgen/images/representative.png",
+          "source_sha256": "a58bb4c34688621025eb64c4ff0a8b6ac6cdc049c8d51321c8b5cf0c205ed6e1",
+          "local_path": "images/representative.png",
+          "sha256": "a58bb4c34688621025eb64c4ff0a8b6ac6cdc049c8d51321c8b5cf0c205ed6e1",
+          "bytes": 67308,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/gosgen/record.json"
+    },
+    {
+      "id": "halo",
+      "source_record": "Neutrino_Archive/experiments/halo/record.json",
+      "source_record_sha256": "71593b7eb3bc474a7ff7e58595b0e8d4bd538bc184ed0ce60a0cb8348085aeb9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/halo/images/representative.png",
+          "source_sha256": "eba997f917d06e4b1d33bf6b42d721534be2f12897023c773dbe757b4bbe9490",
+          "local_path": "images/representative.webp",
+          "sha256": "393256c69ff21d0898e10f4734c5533b5f2aa875d0405bc921e6e5c612e2bf26",
+          "bytes": 227340,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/halo/record.json"
+    },
+    {
+      "id": "hanohano",
+      "source_record": "Neutrino_Archive/experiments/hanohano/record.json",
+      "source_record_sha256": "0eecce8386b29186379516f3ea321e665f2bcea08958c19344c5918359dd774b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/hanohano/images/representative.png",
+          "source_sha256": "8598ecfa87e26b2a9acfe2a419ba92e267d36c4679e361006aa3d42ef6cdc9f1",
+          "local_path": "images/representative.png",
+          "sha256": "8598ecfa87e26b2a9acfe2a419ba92e267d36c4679e361006aa3d42ef6cdc9f1",
+          "bytes": 9340,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/hanohano/record.json"
+    },
+    {
+      "id": "heidelberg-moscow",
+      "source_record": "Neutrino_Archive/experiments/heidelberg-moscow/record.json",
+      "source_record_sha256": "0c4cfc6be957aeab98276f0b66085f1d29592cfc80d64ff12c3d15bddb01945f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/heidelberg-moscow/images/representative.png",
+          "source_sha256": "a427dc79aaeaab4d702160bb40dfbbb40616baee76b005605d2720ce6537ed58",
+          "local_path": "images/representative.png",
+          "sha256": "a427dc79aaeaab4d702160bb40dfbbb40616baee76b005605d2720ce6537ed58",
+          "bytes": 63138,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/heidelberg-moscow/record.json"
+    },
+    {
+      "id": "heron",
+      "source_record": "Neutrino_Archive/experiments/heron/record.json",
+      "source_record_sha256": "7613ebb5ec12ff8081ab8d6f77322fd518a6aff15dd1231213499b89de63da19",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/heron/images/representative.png",
+          "source_sha256": "ce57f96dffebfdea0617db2f56ce4fad526000e4a76f4794260ded76c56575ff",
+          "local_path": "images/representative.webp",
+          "sha256": "f449ce405a4f58c398240b8de0137a923c628542309cd350b721d59b1fcd9188",
+          "bytes": 164808,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/heron/record.json"
+    },
+    {
+      "id": "heron-helium",
+      "source_record": "Neutrino_Archive/experiments/heron-helium/record.json",
+      "source_record_sha256": "076bb0c15764e4c6eb27bb63ea4c099dc5901a18730d01863523039bb2f04c63",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/heron-helium/images/representative.png",
+          "source_sha256": "adde33f5ac677abd05cc749d4f1461a88cef247728f431b68f5304df58e87299",
+          "local_path": "images/representative.png",
+          "sha256": "adde33f5ac677abd05cc749d4f1461a88cef247728f431b68f5304df58e87299",
+          "bytes": 68777,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/heron-helium/record.json"
+    },
+    {
+      "id": "holmes",
+      "source_record": "Neutrino_Archive/experiments/holmes/record.json",
+      "source_record_sha256": "34d6fef04fdd948c0cc9fe05200769bbadb142344361d688a0c1d65c678fcb1b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/holmes/images/detector-9.png",
+          "source_sha256": "4a23a04ffaad0efeeab97ba8667e36946469780312bc08fa1d8d139b734abfc9",
+          "local_path": "images/detector-9.webp",
+          "sha256": "e614b4351dcbecb897e53ba7822a04ed4a32220bb106bc08ce0ae889a4e2e132",
+          "bytes": 67846,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/holmes/record.json"
+    },
+    {
+      "id": "homestake",
+      "source_record": "Neutrino_Archive/experiments/homestake/record.json",
+      "source_record_sha256": "1777939ae8237db67735a6ed00e6c704f9bc652502778bd83ab94f0a4fc97064",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/homestake/images/representative.webp",
+          "source_sha256": "2325b8cd68e2687f159048789bc2517a672364045b3e742e4406d486bf458853",
+          "local_path": "images/representative.webp",
+          "sha256": "2325b8cd68e2687f159048789bc2517a672364045b3e742e4406d486bf458853",
+          "bytes": 33990,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/homestake/record.json"
+    },
+    {
+      "id": "hunt",
+      "source_record": "Neutrino_Archive/experiments/hunt/record.json",
+      "source_record_sha256": "f25de6587b6cd5b7652b239a7d7d951cf1f8883afa715c817013ac0418d26b84",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/hunt/images/representative.jpg",
+          "source_sha256": "52bc86bc62eec916e54d5b7c82079ba63cd7210a6a13cea60387b03972626d96",
+          "local_path": "images/representative.webp",
+          "sha256": "0d9fda6923da912d972a15f5d56f97d7245fa9a8d94b121d2d262b3851c8892a",
+          "bytes": 318066,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/hunt/record.json"
+    },
+    {
+      "id": "hunter",
+      "source_record": "Neutrino_Archive/experiments/hunter/record.json",
+      "source_record_sha256": "31c2ad8e994522adc2ce2d26c6b8ed78d39cab6688f9f46daef52f1e635976e0",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/hunter/images/representative.png",
+          "source_sha256": "8520d29a2f039b08f8af93cb1bfd7b54f184c162c9a513e0b247fe6c434024b4",
+          "local_path": "images/representative.png",
+          "sha256": "8520d29a2f039b08f8af93cb1bfd7b54f184c162c9a513e0b247fe6c434024b4",
+          "bytes": 211726,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/hunter/record.json"
+    },
+    {
+      "id": "hyper-kamiokande",
+      "source_record": "Neutrino_Archive/experiments/hyper-kamiokande/record.json",
+      "source_record_sha256": "975ad7ef7f33bd1d5647fcd1cf847f8eacb4100b8cb8746a7c10c37609db3b4c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/hyper-kamiokande/images/representative.jpg",
+          "source_sha256": "86fb7a6115eefe6b53e0ccff43e2de547173c684f831235c8e5b3a9b6725ebd0",
+          "local_path": "images/representative.jpg",
+          "sha256": "86fb7a6115eefe6b53e0ccff43e2de547173c684f831235c8e5b3a9b6725ebd0",
+          "bytes": 269998,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/hyper-kamiokande/record.json"
+    },
+    {
+      "id": "icarus",
+      "source_record": "Neutrino_Archive/experiments/icarus/record.json",
+      "source_record_sha256": "2b11bbce67372b5a76e72e49c882aa8c4159f310681e2bea9f01c3d73fe9ace6",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/icarus/images/representative-audit.png",
+          "source_sha256": "7c3b11d6aa7531b6ab194f05adffae73580fb019d1398003be7bdf84d14ebd14",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "4c4770d114d74830318db4df455a44717357fe606363bd21355d8e5b64a21d30",
+          "bytes": 157058,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/icarus/record.json"
+    },
+    {
+      "id": "icecube",
+      "source_record": "Neutrino_Archive/experiments/icecube/record.json",
+      "source_record_sha256": "e248ec3f2f92d63280682ba313e31c275bcf4062f9de6524b941a67d0bd599fb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/icecube/images/representative.jpg",
+          "source_sha256": "be0ae6728a5f75259ec3816d46c4e80199269e24c00258c386ceaba0fbed4b74",
+          "local_path": "images/representative.webp",
+          "sha256": "e37dbb5cf86cbd30bc4a2aa4adc231a213a7b6207e4b2ca05b426dc804b05b0a",
+          "bytes": 331206,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/icecube/record.json"
+    },
+    {
+      "id": "icecube-gen2",
+      "source_record": "Neutrino_Archive/experiments/icecube-gen2/record.json",
+      "source_record_sha256": "7dd1bf53df078200cc6de0d9ad537eb55cb427311869d35a38f12ed906b0cce7",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/icecube-gen2/images/representative.jpg",
+          "source_sha256": "690e367d5f035b4071ed6748b4fe36b73a29e44987d52ad3001a7bae50daa45e",
+          "local_path": "images/representative.jpg",
+          "sha256": "690e367d5f035b4071ed6748b4fe36b73a29e44987d52ad3001a7bae50daa45e",
+          "bytes": 83038,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/icecube-gen2/record.json"
+    },
+    {
+      "id": "igex",
+      "source_record": "Neutrino_Archive/experiments/igex/record.json",
+      "source_record_sha256": "043d2873fb939828fb53a09139e324399e468e656edeb8e618273ff6fa5c9ff1",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/igex/images/representative.png",
+          "source_sha256": "7eac22db3097d10bbd34ccd094e263768bbe2c3d694c141592af068480cc6a7f",
+          "local_path": "images/representative.webp",
+          "sha256": "ea86fe37ee4c8e42a170d3d61e26b2e7f8ead95b4de836bc59d87b29a0f001c4",
+          "bytes": 46826,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/igex/record.json"
+    },
+    {
+      "id": "ihep-jinr",
+      "source_record": "Neutrino_Archive/experiments/ihep-jinr/record.json",
+      "source_record_sha256": "adacce3a4b0868eabb1e132c5d57e70f290006ebbbd6bd5e7995fc818d741606",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ihep-jinr/images/representative.png",
+          "source_sha256": "bbe887ed390ccd13bab50b11442f1bc9f25f1ef3ab5d01507bc5a91ca44f14b4",
+          "local_path": "images/representative.png",
+          "sha256": "bbe887ed390ccd13bab50b11442f1bc9f25f1ef3ab5d01507bc5a91ca44f14b4",
+          "bytes": 256375,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ihep-jinr/record.json"
+    },
+    {
+      "id": "ill",
+      "source_record": "Neutrino_Archive/experiments/ill/record.json",
+      "source_record_sha256": "5538abe28da74c4ebbc7df847c264095e29800d09f2665925bce7c2a05b67ace",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ill/images/representative.png",
+          "source_sha256": "590cdabdd3d6f41b1ed57c2b0cc775bf024d29dff8f2f6c306ac071ae4b01461",
+          "local_path": "images/representative.png",
+          "sha256": "590cdabdd3d6f41b1ed57c2b0cc775bf024d29dff8f2f6c306ac071ae4b01461",
+          "bytes": 282928,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ill/record.json"
+    },
+    {
+      "id": "imb",
+      "source_record": "Neutrino_Archive/experiments/imb/record.json",
+      "source_record_sha256": "ff91b881281a6a3610cb157e6a763668dc125f1044962ae303f4f1e5dd24a07c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/imb/images/representative.png",
+          "source_sha256": "d08af1b9a1f2cff8462280601f09fe797a1b463436dc656c793a1239079a7196",
+          "local_path": "images/representative.webp",
+          "sha256": "77f183a872681e1f11245871d149610dc2c275911350fb0d98d9395672feb10d",
+          "bytes": 93382,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/imb/record.json"
+    },
+    {
+      "id": "ino",
+      "source_record": "Neutrino_Archive/experiments/ino/record.json",
+      "source_record_sha256": "d4c7dcbce73428ca69759d450ce889d1245f373a329cf0655f1153a8ea59e4a9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ino/images/representative.jpg",
+          "source_sha256": "b6d1251332263acbe607f7967cdc436bf93926ae723605c64435d230b10b24de",
+          "local_path": "images/representative.jpg",
+          "sha256": "b6d1251332263acbe607f7967cdc436bf93926ae723605c64435d230b10b24de",
+          "bytes": 18404,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ino/record.json"
+    },
+    {
+      "id": "isodar",
+      "source_record": "Neutrino_Archive/experiments/isodar/record.json",
+      "source_record_sha256": "a7600e2e9e76c61c0247e860ffe2411bda016efdf6d1f90f3a00e84a418ccd47",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/isodar/images/representative-audit.png",
+          "source_sha256": "0806e104faf79a4f47d8eedfc064de082395b50583a82ea4bc93cc9a16dcd38e",
+          "local_path": "images/representative-audit.png",
+          "sha256": "0806e104faf79a4f47d8eedfc064de082395b50583a82ea4bc93cc9a16dcd38e",
+          "bytes": 172945,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/isodar/record.json"
+    },
+    {
+      "id": "jne",
+      "source_record": "Neutrino_Archive/experiments/jne/record.json",
+      "source_record_sha256": "387cebd75cc98e80e6d8fc549850df0fad8453ec8749bad250e16dc2d628784b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/jne/images/public-representative.png",
+          "source_sha256": "d617433926f2f6d0cfc4dce81a626a00a80f196c22bdc8f93872af7fc4a3233e",
+          "local_path": "images/public-representative.webp",
+          "sha256": "c57e67b680e3f5f5d3b6ffeb8f45b014307640cdfdaa391c2db9eefe8b4e7d03",
+          "bytes": 143722,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/jne/record.json"
+    },
+    {
+      "id": "jsns2",
+      "source_record": "Neutrino_Archive/experiments/jsns2/record.json",
+      "source_record_sha256": "01ec59e7d06a3a8e0ec7a1fdfbf8675070a13e2f90ccbb6746a3900958e6a2a3",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/jsns2/images/representative-audit.png",
+          "source_sha256": "8365fd3c037d379c7f4fb1b998ad088d8031e9eac5cb10202774b92b2a310cb1",
+          "local_path": "images/representative-audit.png",
+          "sha256": "8365fd3c037d379c7f4fb1b998ad088d8031e9eac5cb10202774b92b2a310cb1",
+          "bytes": 292522,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/jsns2/record.json"
+    },
+    {
+      "id": "jsns2-ii",
+      "source_record": "Neutrino_Archive/experiments/jsns2-ii/record.json",
+      "source_record_sha256": "bab65b6edb920a069201cead01aa44aace7bfb84cffba8389eebd2b753bb67e8",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/jsns2-ii/images/representative-audit.png",
+          "source_sha256": "7c1e4d52e893d958ccfc57cd9ae34d177902d6cebc67e4466d98de2f1a90814a",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "9734fce8f1f97e48c86d88f831b1a4a031ed4c479c5666af33151f43b776e32d",
+          "bytes": 170200,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/jsns2-ii/record.json"
+    },
+    {
+      "id": "juno",
+      "source_record": "Neutrino_Archive/experiments/juno/record.json",
+      "source_record_sha256": "0aaa0be517462917ebd32185b0fa30c06ae5ddff6f52d2d2cf60d08a61265ac4",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/juno/images/representative.png",
+          "source_sha256": "07fce40db1d497917b38e66314da4aeb04b2695907b15d6732de5faddd4a722e",
+          "local_path": "images/representative.png",
+          "sha256": "07fce40db1d497917b38e66314da4aeb04b2695907b15d6732de5faddd4a722e",
+          "bytes": 315402,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/juno/record.json"
+    },
+    {
+      "id": "k2k",
+      "source_record": "Neutrino_Archive/experiments/k2k/record.json",
+      "source_record_sha256": "59c5bece4a0ccaa7b46f984ad96eee793b23dd35e484e1957ba9c69478efc719",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/k2k/images/representative.png",
+          "source_sha256": "89839fceb8f7cc7a12f9af7d0ff19e5ec519b52125bf6af63108361e616aa0f1",
+          "local_path": "images/representative.png",
+          "sha256": "89839fceb8f7cc7a12f9af7d0ff19e5ec519b52125bf6af63108361e616aa0f1",
+          "bytes": 99385,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/k2k/record.json"
+    },
+    {
+      "id": "kamiokande",
+      "source_record": "Neutrino_Archive/experiments/kamiokande/record.json",
+      "source_record_sha256": "4e6db6923831aab963ac1eead868a136fb3943f893f7df31f5db2d61126387c5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kamiokande/images/representative.jpg",
+          "source_sha256": "892acdfb98c72c652eecf5c8c5201aa24af6b021f112d9299adefaa10faa0bfe",
+          "local_path": "images/representative.jpg",
+          "sha256": "892acdfb98c72c652eecf5c8c5201aa24af6b021f112d9299adefaa10faa0bfe",
+          "bytes": 36168,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/kamiokande/record.json"
+    },
+    {
+      "id": "kamland",
+      "source_record": "Neutrino_Archive/experiments/kamland/record.json",
+      "source_record_sha256": "0ed7099f6cdba6582711a0abb6ead7969923c7a436abc8ee22f7754aed82be8a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kamland/images/representative.jpg",
+          "source_sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+          "local_path": "images/representative.jpg",
+          "sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+          "bytes": 90881,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/kamland/record.json"
+    },
+    {
+      "id": "kamland-zen",
+      "source_record": "Neutrino_Archive/experiments/kamland-zen/record.json",
+      "source_record_sha256": "5f90e8ad19ed27ce33389f63f07fa9313f81dfeb8997fcbf1ac9a1784d5ba661",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kamland-zen/images/representative-audit.png",
+          "source_sha256": "668daa31cd9af5f60e2c83cf90130536b11a23c04e8bf217fe41e65347365e2d",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "8a3cad86050e5cd35319e57852473a8cddac0cb6c64271f7df517e868eedee5c",
+          "bytes": 131788,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/kamland-zen/record.json"
+    },
+    {
+      "id": "kamland2",
+      "source_record": "Neutrino_Archive/experiments/kamland2/record.json",
+      "source_record_sha256": "9865fd4fca691f69c48f11ba3da51d9fd66e56e447d213ee13a6334fefa8113e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kamland2/images/representative.jpg",
+          "source_sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+          "local_path": "images/representative.jpg",
+          "sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+          "bytes": 90881,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/kamland2/record.json"
+    },
+    {
+      "id": "kamland2-zen",
+      "source_record": "Neutrino_Archive/experiments/kamland2-zen/record.json",
+      "source_record_sha256": "ca2e0bfd04ba70dd9efdcdca8efe3d7613f9b919b21c8b618fa2dd24e35051c9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kamland2-zen/images/representative-audit.png",
+          "source_sha256": "85a4c72b46efa01f479acaa91f3b7b1f543be98100bd3025460501883f9f884d",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "974a94ca2ea606b9b6647b9c82c5f4962523e53c0e357e96cb6197fe83fc1808",
+          "bytes": 191914,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/kamland2-zen/record.json"
+    },
+    {
+      "id": "karmen",
+      "source_record": "Neutrino_Archive/experiments/karmen/record.json",
+      "source_record_sha256": "d033e0a5df7f2c2c0540e10c242fd750ea50687eca1fad1a3c11e4637c652923",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/karmen/images/representative.png",
+          "source_sha256": "306846af229a3d91b68a733cbf6b875bd472868f7218421b49d96882d1831d2c",
+          "local_path": "images/representative.png",
+          "sha256": "306846af229a3d91b68a733cbf6b875bd472868f7218421b49d96882d1831d2c",
+          "bytes": 75585,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/karmen/record.json"
+    },
+    {
+      "id": "kaska",
+      "source_record": "Neutrino_Archive/experiments/kaska/record.json",
+      "source_record_sha256": "a0f57a1b1a50dde6e0d76f32dacc8f3af753a8329d407dceb138d558cc9f59cb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/kaska/images/public-representative.png",
+          "source_sha256": "89c7c11361c5dd0c6ec8fbfffa0de3cf27c9c8a13b43ed32f1bd6634dd0be09c",
+          "local_path": "images/public-representative.png",
+          "sha256": "89c7c11361c5dd0c6ec8fbfffa0de3cf27c9c8a13b43ed32f1bd6634dd0be09c",
+          "bytes": 301757,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/kaska/record.json"
+    },
+    {
+      "id": "katrin",
+      "source_record": "Neutrino_Archive/experiments/katrin/record.json",
+      "source_record_sha256": "b41ba242778f609079d23bd3694ca0bd51ed4fef29e7476b730fc1c5bea875e8",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/katrin/images/representative-audit.png",
+          "source_sha256": "a3dc7847b360463111564d37b489b6d91b972a62f07b68ddbcd2d4c56be0b936",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "b4b94342c798059498222102b42440baaff131ce3cfe2da697ce332a87f01a89",
+          "bytes": 299760,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/katrin/record.json"
+    },
+    {
+      "id": "km3net",
+      "source_record": "Neutrino_Archive/experiments/km3net/record.json",
+      "source_record_sha256": "5b613113d5367f90687f0cb6b9bbe4a203370ef3bb090bc5cb752933545f306e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/km3net/images/representative.png",
+          "source_sha256": "56c4f8fa34868eeba589f1675c94e09c82e017d1e084b0623d886973dfb0d641",
+          "local_path": "images/representative.webp",
+          "sha256": "dac510aaf2277964391c5533e04fcb1224c01b57b00d5657ab848eaca875c45b",
+          "bytes": 158444,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/km3net/record.json"
+    },
+    {
+      "id": "krasnoyarsk",
+      "source_record": "Neutrino_Archive/experiments/krasnoyarsk/record.json",
+      "source_record_sha256": "d3d907566a6211446bc704404c474981de6a725d6d42f9adbdc3c97cb17c4956",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/krasnoyarsk/images/representative.png",
+          "source_sha256": "e84505eb084f844fb70c11fb214ad6f4bca2543634a86c77cca775f4b7c3515d",
+          "local_path": "images/representative.png",
+          "sha256": "e84505eb084f844fb70c11fb214ad6f4bca2543634a86c77cca775f4b7c3515d",
+          "bytes": 22730,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/krasnoyarsk/record.json"
+    },
+    {
+      "id": "lampf-0645",
+      "source_record": "Neutrino_Archive/experiments/lampf-0645/record.json",
+      "source_record_sha256": "ddd50d49bc2d85c9f04076828843aef1c5630672f96ebb0ea525d48dfaed9396",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lampf-0645/images/representative.png",
+          "source_sha256": "46295872bb800b3a1603fabd892c49848aa4b5d597e5660690cb0a67ba03dc52",
+          "local_path": "images/representative.png",
+          "sha256": "46295872bb800b3a1603fabd892c49848aa4b5d597e5660690cb0a67ba03dc52",
+          "bytes": 79967,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lampf-0645/record.json"
+    },
+    {
+      "id": "lampf-0764",
+      "source_record": "Neutrino_Archive/experiments/lampf-0764/record.json",
+      "source_record_sha256": "a32dcfac1ca495979cbe7559c55b346d10501a180f36f9c93eff1202a2578694",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lampf-0764/images/representative.png",
+          "source_sha256": "3670b5d5163d6b2257e9b0a8326eb79282a23762a2546847ea4cd2a8ad715d5f",
+          "local_path": "images/representative.png",
+          "sha256": "3670b5d5163d6b2257e9b0a8326eb79282a23762a2546847ea4cd2a8ad715d5f",
+          "bytes": 134915,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lampf-0764/record.json"
+    },
+    {
+      "id": "lariat",
+      "source_record": "Neutrino_Archive/experiments/lariat/record.json",
+      "source_record_sha256": "f4c435310c9f094e10589046347c6634df283d5582296980d8385a9e2338a16f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lariat/images/representative.png",
+          "source_sha256": "e86aae008b4742e6b5dbaeae45e0f869878584ac61a56a83250c06bfc561c1c8",
+          "local_path": "images/representative.webp",
+          "sha256": "22ffb4d5890b685df38e33539189581b40bf0eb0175cbc337c1e66b2965526bf",
+          "bytes": 88008,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/lariat/record.json"
+    },
+    {
+      "id": "legend-1000",
+      "source_record": "Neutrino_Archive/experiments/legend-1000/record.json",
+      "source_record_sha256": "60ef660e2e4135bbdb435c90362c9e03571b4755d88694235aab3fe42dcc591f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/legend-1000/images/representative-audit.png",
+          "source_sha256": "d4e78f424292244580f4dbaf61373013fdfde9a25f823ff19a0f2b41756e11bb",
+          "local_path": "images/representative-audit.png",
+          "sha256": "d4e78f424292244580f4dbaf61373013fdfde9a25f823ff19a0f2b41756e11bb",
+          "bytes": 103487,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/legend-1000/record.json"
+    },
+    {
+      "id": "legend",
+      "source_record": "Neutrino_Archive/experiments/legend/record.json",
+      "source_record_sha256": "ac8332f17d026e1ef378a662794bc171dafe88b58da99771d75cdc1ef56e013b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/legend/images/representative-audit.png",
+          "source_sha256": "fa3f98c5830ec15528d805894d2fb4d3276c245dd203b343f8a1ddcfe0dd7884",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "3452443126087589543c0c875dbddd95870d408acbdb31b99a06322cf3373ddd",
+          "bytes": 259942,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/legend/record.json"
+    },
+    {
+      "id": "lena",
+      "source_record": "Neutrino_Archive/experiments/lena/record.json",
+      "source_record_sha256": "15d39569e867ea17701be34efb6b7a5590a5724856e41ababedaec60c2a0101b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lena/images/representative.png",
+          "source_sha256": "f16c8746e49db403f0eb979d3f660484816c22a7394d78a72a78a9a4ed4b4132",
+          "local_path": "images/representative.webp",
+          "sha256": "d7c9f56c217429778146195c125131d39fe838ab45e62a1216e2e98681312744",
+          "bytes": 168456,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/lena/record.json"
+    },
+    {
+      "id": "lens",
+      "source_record": "Neutrino_Archive/experiments/lens/record.json",
+      "source_record_sha256": "e49a7ba28f17099f3aedc1c4101bf02a74120d1cf7472439ef63a6891ea5adea",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lens/images/public-representative.png",
+          "source_sha256": "2e89ced71990c8862cdee304be58629d9925cd0985d399f299ebf3f119f1938c",
+          "local_path": "images/public-representative.png",
+          "sha256": "2e89ced71990c8862cdee304be58629d9925cd0985d399f299ebf3f119f1938c",
+          "bytes": 202179,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lens/record.json"
+    },
+    {
+      "id": "lsd",
+      "source_record": "Neutrino_Archive/experiments/lsd/record.json",
+      "source_record_sha256": "3f5689d0411542441c0a5aaa0aff1100dfa322fab1b4c1d94d8a874c9f5b4df4",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lsd/images/representative.png",
+          "source_sha256": "3efbda05d7ece82f5fbb377a9d2978a4c40aef6e5290991bb54a176bba6f8a67",
+          "local_path": "images/representative.png",
+          "sha256": "3efbda05d7ece82f5fbb377a9d2978a4c40aef6e5290991bb54a176bba6f8a67",
+          "bytes": 37976,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lsd/record.json"
+    },
+    {
+      "id": "lsnd",
+      "source_record": "Neutrino_Archive/experiments/lsnd/record.json",
+      "source_record_sha256": "6b22ee5ab10755a2a20b22789e7cc3c264427a0a9a856bd2cd76894283b69c0b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lsnd/images/representative.jpg",
+          "source_sha256": "f4e3495cc86738ac6439464d830703f2cff44ccbabe7cf1cabe8587f90c1be2a",
+          "local_path": "images/representative.jpg",
+          "sha256": "f4e3495cc86738ac6439464d830703f2cff44ccbabe7cf1cabe8587f90c1be2a",
+          "bytes": 234688,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lsnd/record.json"
+    },
+    {
+      "id": "lucifer",
+      "source_record": "Neutrino_Archive/experiments/lucifer/record.json",
+      "source_record_sha256": "bbce7f7dae4631dd2f6fd0826386265090990b0ac87314359188a7b129153e99",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lucifer/images/representative.jpg",
+          "source_sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+          "local_path": "images/representative.jpg",
+          "sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+          "bytes": 96411,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lucifer/record.json"
+    },
+    {
+      "id": "lunaska",
+      "source_record": "Neutrino_Archive/experiments/lunaska/record.json",
+      "source_record_sha256": "3df62c6ccc526a5a3638b887f38f2db9d1117cc99f8082ad5dd64ce31534fb3c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lunaska/images/representative.png",
+          "source_sha256": "80db6f4f2a1e3efde804073007080a92e249a412f776c41f37e608e176433464",
+          "local_path": "images/representative.png",
+          "sha256": "80db6f4f2a1e3efde804073007080a92e249a412f776c41f37e608e176433464",
+          "bytes": 180234,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lunaska/record.json"
+    },
+    {
+      "id": "lvd",
+      "source_record": "Neutrino_Archive/experiments/lvd/record.json",
+      "source_record_sha256": "1ad6f7063df623081228de97932f1901c40a3b897873c85650974404d09296ac",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lvd/images/representative.png",
+          "source_sha256": "2d2ad13d8fbf9fb3c5af0fb90b68ed0fb7d25646e90d72715846d884682ad08a",
+          "local_path": "images/representative.png",
+          "sha256": "2d2ad13d8fbf9fb3c5af0fb90b68ed0fb7d25646e90d72715846d884682ad08a",
+          "bytes": 16478,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lvd/record.json"
+    },
+    {
+      "id": "lz-lux-zeplin",
+      "source_record": "Neutrino_Archive/experiments/lz-lux-zeplin/record.json",
+      "source_record_sha256": "8540cde309bf49fc52ddee280b84d4a509942ef568e5e663578e96ba4bfa80e5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/lz-lux-zeplin/images/representative-audit.jpg",
+          "source_sha256": "2a57040cd3e10cd1ebcd9cd08a009d535487fe79fa0e1bebdf2ebf974af802de",
+          "local_path": "images/representative-audit.jpg",
+          "sha256": "2a57040cd3e10cd1ebcd9cd08a009d535487fe79fa0e1bebdf2ebf974af802de",
+          "bytes": 77378,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/lz-lux-zeplin/record.json"
+    },
+    {
+      "id": "macro",
+      "source_record": "Neutrino_Archive/experiments/macro/record.json",
+      "source_record_sha256": "2ce738cd48fb15940d07e5ca1611a552fbef6eeb487998b9ddb3842631a4fa3b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/macro/images/representative.jpg",
+          "source_sha256": "ff17bcf90fcada612a9ac111191cc1bbccb640fefe975718b6b8ffcff525d028",
+          "local_path": "images/representative.jpg",
+          "sha256": "ff17bcf90fcada612a9ac111191cc1bbccb640fefe975718b6b8ffcff525d028",
+          "bytes": 101464,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/macro/record.json"
+    },
+    {
+      "id": "mainz",
+      "source_record": "Neutrino_Archive/experiments/mainz/record.json",
+      "source_record_sha256": "c769cd4129a019f6d9a839bc5bc80f1518680b7d81983ae944b4d9982d19fad5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/mainz/images/representative.png",
+          "source_sha256": "c031269e21370db481175ef9805cc88506e46b9312ff241dd7d5b443755cbfb3",
+          "local_path": "images/representative.png",
+          "sha256": "c031269e21370db481175ef9805cc88506e46b9312ff241dd7d5b443755cbfb3",
+          "bytes": 19497,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/mainz/record.json"
+    },
+    {
+      "id": "majorana",
+      "source_record": "Neutrino_Archive/experiments/majorana/record.json",
+      "source_record_sha256": "b4f1380a722723c52832fd8072d92dff167bf62455503f0caef3077d0472970c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/majorana/images/representative.webp",
+          "source_sha256": "1aaeb3fb6a75a54c2903c56129ccf22dda7a106b2b11c72257ccde29ac5a7668",
+          "local_path": "images/representative.webp",
+          "sha256": "1aaeb3fb6a75a54c2903c56129ccf22dda7a106b2b11c72257ccde29ac5a7668",
+          "bytes": 36318,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/majorana/record.json"
+    },
+    {
+      "id": "genova",
+      "source_record": "Neutrino_Archive/experiments/genova/record.json",
+      "source_record_sha256": "8fb083231325150609ffc5dec2882ad496eb8d0ef8ee3e72bedf697463f72752",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/genova/images/representative.png",
+          "source_sha256": "1de9feff781a2b20d89df499d1db8ee3420c01045ffef313f3ba7b66bc0350be",
+          "local_path": "images/representative.png",
+          "sha256": "1de9feff781a2b20d89df499d1db8ee3420c01045ffef313f3ba7b66bc0350be",
+          "bytes": 51553,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/genova/record.json"
+    },
+    {
+      "id": "mare",
+      "source_record": "Neutrino_Archive/experiments/mare/record.json",
+      "source_record_sha256": "121eac23288c57acdafbf94e5adca5e10c56d06a9b936d3dc729a18e127bcda8",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/mare/images/representative.png",
+          "source_sha256": "29613c282c2c490860d329bf8ec5ad9cd635d5edcd81566e32a4c00df4c79e3f",
+          "local_path": "images/representative.png",
+          "sha256": "29613c282c2c490860d329bf8ec5ad9cd635d5edcd81566e32a4c00df4c79e3f",
+          "bytes": 322557,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/mare/record.json"
+    },
+    {
+      "id": "mibeta",
+      "source_record": "Neutrino_Archive/experiments/mibeta/record.json",
+      "source_record_sha256": "a8a2bc40f61808d6dfc86b5d3f173477d72cf321d0169897e4efc499981b6790",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/mibeta/images/representative.jpg",
+          "source_sha256": "0900ecf76351a26b028bd8c28305d73703d162b35f545779678a84aad9cc59c1",
+          "local_path": "images/representative.jpg",
+          "sha256": "0900ecf76351a26b028bd8c28305d73703d162b35f545779678a84aad9cc59c1",
+          "bytes": 6320,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/mibeta/record.json"
+    },
+    {
+      "id": "microboone",
+      "source_record": "Neutrino_Archive/experiments/microboone/record.json",
+      "source_record_sha256": "d03f6bf0ea00a593db2036bce603180a2b8d64ce2b1e3408110c8a68fe5ee38a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/microboone/images/legacy-091.jpg",
+          "source_sha256": "03472457ebd8a1909e346314c354e34ede5d8baaa9155b9aff284012f2d196b8",
+          "local_path": "images/legacy-091.jpg",
+          "sha256": "03472457ebd8a1909e346314c354e34ede5d8baaa9155b9aff284012f2d196b8",
+          "bytes": 210743,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/microboone/record.json"
+    },
+    {
+      "id": "midbd",
+      "source_record": "Neutrino_Archive/experiments/midbd/record.json",
+      "source_record_sha256": "69a103cae67c7222bc600b4d94487733f253ea46764c49de0bd4b4410f846ea2",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/midbd/images/representative-audit.png",
+          "source_sha256": "d2ef3656758c6d7464d1c8e0b531219afa9da6130e49ae5bb0d790636f3ef698",
+          "local_path": "images/representative-audit.png",
+          "sha256": "d2ef3656758c6d7464d1c8e0b531219afa9da6130e49ae5bb0d790636f3ef698",
+          "bytes": 35015,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/midbd/record.json"
+    },
+    {
+      "id": "miner",
+      "source_record": "Neutrino_Archive/experiments/miner/record.json",
+      "source_record_sha256": "6424e37036210b3bcf003839994f6844e26781e27161986063da6f3dcd56b00d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/miner/images/representative.png",
+          "source_sha256": "fa5cf64fbb6b94be0962471765a93a937931df6730184c4fc580b43cffde16b7",
+          "local_path": "images/representative.png",
+          "sha256": "fa5cf64fbb6b94be0962471765a93a937931df6730184c4fc580b43cffde16b7",
+          "bytes": 61340,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/miner/record.json"
+    },
+    {
+      "id": "minerva",
+      "source_record": "Neutrino_Archive/experiments/minerva/record.json",
+      "source_record_sha256": "6c4cdbd2b25b1196b35363f513224eb19f09f5e580665f290f905db16bc4bfd5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/minerva/images/representative-audit.png",
+          "source_sha256": "50798f6256f9a1a0bc64abe779cf7c8c275f7ac3b26785f345ab9c320db1c385",
+          "local_path": "images/representative-audit.png",
+          "sha256": "50798f6256f9a1a0bc64abe779cf7c8c275f7ac3b26785f345ab9c320db1c385",
+          "bytes": 115692,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/minerva/record.json"
+    },
+    {
+      "id": "miniboone",
+      "source_record": "Neutrino_Archive/experiments/miniboone/record.json",
+      "source_record_sha256": "9dd073a9c570b24aec7f7214d5c295574afc063a2654c4f9d7e89fa3f066247e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/miniboone/images/representative.png",
+          "source_sha256": "b131cad9ee59a925c1407edac74538859aeb1b93660b396edca9301529349cc2",
+          "local_path": "images/representative.png",
+          "sha256": "b131cad9ee59a925c1407edac74538859aeb1b93660b396edca9301529349cc2",
+          "bytes": 33036,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/miniboone/record.json"
+    },
+    {
+      "id": "minos",
+      "source_record": "Neutrino_Archive/experiments/minos/record.json",
+      "source_record_sha256": "ca22aacac9db381ded3c8fd5684a267b877c2094f96415d114307e3ab59543ff",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/minos/images/representative-audit.png",
+          "source_sha256": "a2d834d9ce7e14acc9dc511d3ecb6f220286c6027218fdbf00705591870948f3",
+          "local_path": "images/representative-audit.png",
+          "sha256": "a2d834d9ce7e14acc9dc511d3ecb6f220286c6027218fdbf00705591870948f3",
+          "bytes": 57500,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/minos/record.json"
+    },
+    {
+      "id": "minsis",
+      "source_record": "Neutrino_Archive/experiments/minsis/record.json",
+      "source_record_sha256": "a608044f2278ec61e425817a3cf77b34fb1fcd41d1de6eb19224c021b234031c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/minsis/images/representative-audit.png",
+          "source_sha256": "98bfc7e3fcffc86b5504c32c7d12f0e491ad64a09db6a813c9dfab7bf642899f",
+          "local_path": "images/representative-audit.png",
+          "sha256": "98bfc7e3fcffc86b5504c32c7d12f0e491ad64a09db6a813c9dfab7bf642899f",
+          "bytes": 24230,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/minsis/record.json"
+    },
+    {
+      "id": "moment",
+      "source_record": "Neutrino_Archive/experiments/moment/record.json",
+      "source_record_sha256": "655a4dd7a0741cb6aff7e80a7b784049d36866c7ccb43b557f98ba8084a7fc49",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/moment/images/representative-audit.png",
+          "source_sha256": "f11b295ca59db1233a7e060879232fe38f6cb7e19415dc5f52e962a7876bca31",
+          "local_path": "images/representative-audit.png",
+          "sha256": "f11b295ca59db1233a7e060879232fe38f6cb7e19415dc5f52e962a7876bca31",
+          "bytes": 59775,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/moment/record.json"
+    },
+    {
+      "id": "moon",
+      "source_record": "Neutrino_Archive/experiments/moon/record.json",
+      "source_record_sha256": "48679facab3bcaf28db5d1fac2e3220b9c92b54a38b2e8984d05c44bbfe2298b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/moon/images/representative-audit.png",
+          "source_sha256": "74bf748c49261ad2fdbf951ef62554d32143c2879c4c2ec82d26cc4da4445479",
+          "local_path": "images/representative-audit.png",
+          "sha256": "74bf748c49261ad2fdbf951ef62554d32143c2879c4c2ec82d26cc4da4445479",
+          "bytes": 56271,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/moon/record.json"
+    },
+    {
+      "id": "munu",
+      "source_record": "Neutrino_Archive/experiments/munu/record.json",
+      "source_record_sha256": "825b42ce847f6b0d5c532f7523a2d39ac65bb48e1766cce126fae936c1a6869b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/munu/images/representative.png",
+          "source_sha256": "259055cf01347c38af3596b73189c62de8d69d37098116c2c896fd4921f2cffe",
+          "local_path": "images/representative.png",
+          "sha256": "259055cf01347c38af3596b73189c62de8d69d37098116c2c896fd4921f2cffe",
+          "bytes": 62300,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/munu/record.json"
+    },
+    {
+      "id": "nemo",
+      "source_record": "Neutrino_Archive/experiments/nemo/record.json",
+      "source_record_sha256": "0e1268787df7f6be8e4e9d0f157bab9af49579e95470c3622a3a5f77b36939d9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nemo/images/representative.jpg",
+          "source_sha256": "85f2388b9446ecd49a26b24b16159aad6ac544da7c1eb711ff8daf179edc2e64",
+          "local_path": "images/representative.jpg",
+          "sha256": "85f2388b9446ecd49a26b24b16159aad6ac544da7c1eb711ff8daf179edc2e64",
+          "bytes": 20713,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nemo/record.json"
+    },
+    {
+      "id": "nemo-telescope",
+      "source_record": "Neutrino_Archive/experiments/nemo-telescope/record.json",
+      "source_record_sha256": "e5fbeb57b28b8f8fc0ae51cb5c923deff6c1d8b3014f6702dbead237c6720fb0",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nemo-telescope/images/representative.png",
+          "source_sha256": "da71724fee5ea1cdb6a6bf8c4eddab6089d0556c88dfc568023969ebc3d6ed1e",
+          "local_path": "images/representative.png",
+          "sha256": "da71724fee5ea1cdb6a6bf8c4eddab6089d0556c88dfc568023969ebc3d6ed1e",
+          "bytes": 102299,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nemo-telescope/record.json"
+    },
+    {
+      "id": "neon",
+      "source_record": "Neutrino_Archive/experiments/neon/record.json",
+      "source_record_sha256": "3f67a824bc87025c96705d2f2f3978ec97a0df0c451818c4c8982b2e73662d8b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/neon/images/public-representative.png",
+          "source_sha256": "e2c119fa99da1f4497432094aa1265c988499ffc8763b2a084277ad329033500",
+          "local_path": "images/public-representative.webp",
+          "sha256": "bc55ebd608635c290eebfd00fdd08692c3412a581f6c4cf78632c30ab9deb3bb",
+          "bytes": 71826,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/neon/record.json"
+    },
+    {
+      "id": "neon-south-china-sea",
+      "source_record": "Neutrino_Archive/experiments/neon-south-china-sea/record.json",
+      "source_record_sha256": "953f219a40c0df6c3914d420e42e575642d6e42193d04b6b3b24a4620ab68a4f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/neon-south-china-sea/images/representative.png",
+          "source_sha256": "d8b739deec627068e8f7d0e6e8d93ec2d4cc8c2a34e410fb9d28ac026cdb27d1",
+          "local_path": "images/representative.png",
+          "sha256": "d8b739deec627068e8f7d0e6e8d93ec2d4cc8c2a34e410fb9d28ac026cdb27d1",
+          "bytes": 372343,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/neon-south-china-sea/record.json"
+    },
+    {
+      "id": "neos",
+      "source_record": "Neutrino_Archive/experiments/neos/record.json",
+      "source_record_sha256": "d94330084da6ec04692e086c6e14eb66b0f92eb21f03a224aba62e3832267ab1",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/neos/images/public-representative.png",
+          "source_sha256": "d9a33e3e5f8132b4daa83cf3f0f3581fd412d9a847a23ebd8f95df4c1a7bdcbe",
+          "local_path": "images/public-representative.webp",
+          "sha256": "eb9dd572d3ec79bafcd567bd0611cb0813649458045e22167a6c7f8bf78b5e59",
+          "bytes": 98402,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/neos/record.json"
+    },
+    {
+      "id": "nestor",
+      "source_record": "Neutrino_Archive/experiments/nestor/record.json",
+      "source_record_sha256": "27ba3d2dda650f7581f2ea4b776361c1fdb8ab1ab9cee95da57d43da4dfb9c2e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nestor/images/representative.jpg",
+          "source_sha256": "52abba8e21c74208c98d30dd84e86af78242ff6d553e2e195d75840fdffbb97b",
+          "local_path": "images/representative.jpg",
+          "sha256": "52abba8e21c74208c98d30dd84e86af78242ff6d553e2e195d75840fdffbb97b",
+          "bytes": 10309,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nestor/record.json"
+    },
+    {
+      "id": "neutrino-4",
+      "source_record": "Neutrino_Archive/experiments/neutrino-4/record.json",
+      "source_record_sha256": "6782fd28ca5e639e43bbca9d71d5be06a5089f60a3992cf889ec2427b0155fef",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/neutrino-4/images/public-representative.png",
+          "source_sha256": "0d69e6db1fe591b6f8029e7ed795b80136ff52a6f19eb32babb4ea59ce333c38",
+          "local_path": "images/public-representative.webp",
+          "sha256": "cc83d6e65720130268d3e0fff990571a79ec2428d00a609c9345b1cf7a48fe5f",
+          "bytes": 84190,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/neutrino-4/record.json"
+    },
+    {
+      "id": "neutrinos-angra",
+      "source_record": "Neutrino_Archive/experiments/neutrinos-angra/record.json",
+      "source_record_sha256": "22e2cac6071a163862c4986ecf5dc5c5d4c45303be64cbd4789dbd5bdcbf7a4a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/neutrinos-angra/images/representative.jpg",
+          "source_sha256": "3f2b5b538b3cd2ae43e5c4ac34488ac006c42f723d51c2807d5d4c438b12a57d",
+          "local_path": "images/representative.jpg",
+          "sha256": "3f2b5b538b3cd2ae43e5c4ac34488ac006c42f723d51c2807d5d4c438b12a57d",
+          "bytes": 114241,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/neutrinos-angra/record.json"
+    },
+    {
+      "id": "nexo",
+      "source_record": "Neutrino_Archive/experiments/nexo/record.json",
+      "source_record_sha256": "ac9a09480e8b45637c12932ecd5180e2981acfcd5411eed6bdb34cb6cc54e92e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nexo/images/representative.png",
+          "source_sha256": "fa5f1263724a447676417294db4c61f9dc5778dece13a76d2d090e5b224953aa",
+          "local_path": "images/representative.png",
+          "sha256": "fa5f1263724a447676417294db4c61f9dc5778dece13a76d2d090e5b224953aa",
+          "bytes": 248052,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nexo/record.json"
+    },
+    {
+      "id": "next",
+      "source_record": "Neutrino_Archive/experiments/next/record.json",
+      "source_record_sha256": "ebe525ef60af701a0a24193ded6359b0338dc5820aeef3edac2efa338ae4da2d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/next/images/representative.jpg",
+          "source_sha256": "e77b214f98687c842feff7ae014c38aa4dc4f4974a92640a468302ebe8074122",
+          "local_path": "images/representative.webp",
+          "sha256": "80730bc49f45e8d18edc3aec8f71704408e42b49074b72896e915ac9b60e2a7b",
+          "bytes": 256692,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/next/record.json"
+    },
+    {
+      "id": "ninja",
+      "source_record": "Neutrino_Archive/experiments/ninja/record.json",
+      "source_record_sha256": "1431e8b3439b8ca4ed375472f5748de13972819e23765321084e3acf4d22945d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ninja/images/representative.png",
+          "source_sha256": "602567416ce68d33b06a08de9cbbe4d65fce9e31a0fc3be2b498a67f186cf41c",
+          "local_path": "images/representative.png",
+          "sha256": "602567416ce68d33b06a08de9cbbe4d65fce9e31a0fc3be2b498a67f186cf41c",
+          "bytes": 17467,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ninja/record.json"
+    },
+    {
+      "id": "nomad",
+      "source_record": "Neutrino_Archive/experiments/nomad/record.json",
+      "source_record_sha256": "77c1e8cc786c09a6aa14db017b45cab3340c747f66bf045074d5091763b89c9d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nomad/images/representative.png",
+          "source_sha256": "c2e2fffd00ebd483cc488ab368002e918508a8802d0fa2d3ba654cb4e85e8b8a",
+          "local_path": "images/representative.png",
+          "sha256": "c2e2fffd00ebd483cc488ab368002e918508a8802d0fa2d3ba654cb4e85e8b8a",
+          "bytes": 54334,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nomad/record.json"
+    },
+    {
+      "id": "nova",
+      "source_record": "Neutrino_Archive/experiments/nova/record.json",
+      "source_record_sha256": "9c6131c696db2a0adeb4858c925d3971d959ef633bc222f8ab0c4848aed60867",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nova/images/legacy-092.jpg",
+          "source_sha256": "baac80548a1f207c42fb1898e7c7c3ceaf6d70f30253e70e2182ed53aeaf0710",
+          "local_path": "images/legacy-092.jpg",
+          "sha256": "baac80548a1f207c42fb1898e7c7c3ceaf6d70f30253e70e2182ed53aeaf0710",
+          "bytes": 105850,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nova/record.json"
+    },
+    {
+      "id": "nta",
+      "source_record": "Neutrino_Archive/experiments/nta/record.json",
+      "source_record_sha256": "0bf019553af8018f2fc3b0bfb0aa18eeb35ae180188d8ee99ab0908e64f5cb6a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nta/images/representative.png",
+          "source_sha256": "cb3af210e0d461d8b7ae7db1ffacba6733558dfc116e505c97e4ef219f1be052",
+          "local_path": "images/representative.webp",
+          "sha256": "223ed50598294e11721939b38bce1496e70b1896ddab5809cbe6c2bcd7c847df",
+          "bytes": 82444,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/nta/record.json"
+    },
+    {
+      "id": "nucifer",
+      "source_record": "Neutrino_Archive/experiments/nucifer/record.json",
+      "source_record_sha256": "ed84a0e9c9d4b72d6758052128e5b9f49f51a4211c28842b5eea9ba9cf837a08",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nucifer/images/representative.png",
+          "source_sha256": "6ee00cfec328ea365c99d33f239655f0997488aceadababb25aa08f18e2a457c",
+          "local_path": "images/representative.webp",
+          "sha256": "aeb604044d50bf3a5c9f9e1411c434283ee3a287a8de25522642f00f3636da3b",
+          "bytes": 105460,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/nucifer/record.json"
+    },
+    {
+      "id": "nucleus",
+      "source_record": "Neutrino_Archive/experiments/nucleus/record.json",
+      "source_record_sha256": "f7511cf6e8feec7f2d6e4714664683f46e077f05daef7cd5916ec0587de3ec63",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nucleus/images/public-representative.jpg",
+          "source_sha256": "51bcdff352c9882cd2688bc019e7d1ad40167600eed2a6a2d5b6e578c1550ad2",
+          "local_path": "images/public-representative.webp",
+          "sha256": "beedde5b9e282b6eff34bb83d8e536fb9bb66adefe4993748b48f438feadcd21",
+          "bytes": 601436,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/nucleus/record.json"
+    },
+    {
+      "id": "nudoubt-plus-plus",
+      "source_record": "Neutrino_Archive/experiments/nudoubt-plus-plus/record.json",
+      "source_record_sha256": "be498be482c4b7d88567a39595d00f44cb444da315e5a1b100b92da0e68b870a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nudoubt-plus-plus/images/representative-audit.png",
+          "source_sha256": "d58d9d51135b3ff4d5c48d2786612e63c711547c8c7adcc8e64c2acebc8c548b",
+          "local_path": "images/representative-audit.png",
+          "sha256": "d58d9d51135b3ff4d5c48d2786612e63c711547c8c7adcc8e64c2acebc8c548b",
+          "bytes": 53526,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nudoubt-plus-plus/record.json"
+    },
+    {
+      "id": "nugen",
+      "source_record": "Neutrino_Archive/experiments/nugen/record.json",
+      "source_record_sha256": "37e35dc28690fee60a695393d75a085d07597d4899b4478becf0c469680006f4",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nugen/images/public-representative.jpg",
+          "source_sha256": "821f8e37ff01cba81b6672ea1af466371f5618cb9794e4aefd254d2d43cec593",
+          "local_path": "images/public-representative.webp",
+          "sha256": "4ab67b0b281d46b79bf01bf065065d0a6f6b2fa5cd9d79d9608dbd57a92c2dbd",
+          "bytes": 168622,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/nugen/record.json"
+    },
+    {
+      "id": "nulat",
+      "source_record": "Neutrino_Archive/experiments/nulat/record.json",
+      "source_record_sha256": "f30be8a080c69ac4427f4645303fea296b7ac9c81120c8b8f7a3e3ca515a4e4d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nulat/images/representative.png",
+          "source_sha256": "49602ba9029200528ed0e302395ae5aac1044054ecca0a0d1de2d48e3cdbf5dc",
+          "local_path": "images/representative.webp",
+          "sha256": "9d37305cfaa1256c71a65aeb03419022519e0d8e37d7f75fae5125f2a843a86c",
+          "bytes": 164418,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/nulat/record.json"
+    },
+    {
+      "id": "numecs",
+      "source_record": "Neutrino_Archive/experiments/numecs/record.json",
+      "source_record_sha256": "76e57dade34462aa3f17dd7f10c56b308548dc2203c6ebaa617de3226d6a27ff",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/numecs/images/representative-audit.png",
+          "source_sha256": "ebba73b17779488d5e5d06ce44b806b0da9d244c595b18c01ccc2a0232112baf",
+          "local_path": "images/representative-audit.png",
+          "sha256": "ebba73b17779488d5e5d06ce44b806b0da9d244c595b18c01ccc2a0232112baf",
+          "bytes": 198335,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/numecs/record.json"
+    },
+    {
+      "id": "numoon",
+      "source_record": "Neutrino_Archive/experiments/numoon/record.json",
+      "source_record_sha256": "b20c32469d2bf31a135edbb6b1fd1ef7dc36ee53e86baa071337d6262f3593f4",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/numoon/images/representative.png",
+          "source_sha256": "945f34cc7627514027642fffa90ee0ff1f241e9076e7e73149a27cc1f9fe584a",
+          "local_path": "images/representative.png",
+          "sha256": "945f34cc7627514027642fffa90ee0ff1f241e9076e7e73149a27cc1f9fe584a",
+          "bytes": 50257,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/numoon/record.json"
+    },
+    {
+      "id": "nuscope",
+      "source_record": "Neutrino_Archive/experiments/nuscope/record.json",
+      "source_record_sha256": "e0ba6b0ccf070b35902641afda6f480f9d78f3cf3981bc633a5bfc48cd2b5a45",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nuscope/images/representative.png",
+          "source_sha256": "98baf2ae874e9f3964cdc3264f9693b9f9551978b6e8f7f7f4b44e7a2ee8d541",
+          "local_path": "images/representative.png",
+          "sha256": "98baf2ae874e9f3964cdc3264f9693b9f9551978b6e8f7f7f4b44e7a2ee8d541",
+          "bytes": 100650,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nuscope/record.json"
+    },
+    {
+      "id": "nusex",
+      "source_record": "Neutrino_Archive/experiments/nusex/record.json",
+      "source_record_sha256": "958ae5b4bccfb134c40de9630fe4dd059bf5d75756e05e125d47b4c126c0f5c0",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nusex/images/representative.jpg",
+          "source_sha256": "0b3800a677fd79d6fbc3afdf26aab19861c1e6166c9455ef5f71b2a6ee119951",
+          "local_path": "images/representative.jpg",
+          "sha256": "0b3800a677fd79d6fbc3afdf26aab19861c1e6166c9455ef5f71b2a6ee119951",
+          "bytes": 97345,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nusex/record.json"
+    },
+    {
+      "id": "nustorm",
+      "source_record": "Neutrino_Archive/experiments/nustorm/record.json",
+      "source_record_sha256": "c3ffa6f12abec2ed9be1115f1787b69fad21509cca3bf8fdd1f384652aae7e7b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nustorm/images/representative.png",
+          "source_sha256": "634155f710be7d1634f067b8338792a7bbd71edd9f7d03ad52c082e7586e255a",
+          "local_path": "images/representative.png",
+          "sha256": "634155f710be7d1634f067b8338792a7bbd71edd9f7d03ad52c082e7586e255a",
+          "bytes": 106417,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nustorm/record.json"
+    },
+    {
+      "id": "nutev",
+      "source_record": "Neutrino_Archive/experiments/nutev/record.json",
+      "source_record_sha256": "bab240e95c8284c2ee86f38b771981e84d083412a54dd4e6cf3512a7f5ea470a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nutev/images/representative.png",
+          "source_sha256": "f51ab56582c49c91cc77c48b2bd1668237ab7100414b19118537a4fbf8966f9f",
+          "local_path": "images/representative.png",
+          "sha256": "f51ab56582c49c91cc77c48b2bd1668237ab7100414b19118537a4fbf8966f9f",
+          "bytes": 16687,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nutev/record.json"
+    },
+    {
+      "id": "nndex",
+      "source_record": "Neutrino_Archive/experiments/nndex/record.json",
+      "source_record_sha256": "a5bc69140ab4e1a41ddc50f7a2d50b4a4f2092824da62bee5fdae9a1c70d829b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/nndex/images/representative-audit.png",
+          "source_sha256": "fb6550c842cd026cc598a1cd695b3aca1203021fd6bb54e62d90e62d6e3e0d7d",
+          "local_path": "images/representative-audit.png",
+          "sha256": "fb6550c842cd026cc598a1cd695b3aca1203021fd6bb54e62d90e62d6e3e0d7d",
+          "bytes": 47398,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/nndex/record.json"
+    },
+    {
+      "id": "opera",
+      "source_record": "Neutrino_Archive/experiments/opera/record.json",
+      "source_record_sha256": "e59b16a4536002d78135cdf3ce8dc61b0e92805ec259c5c9da36df98eceb9a83",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/opera/images/representative.jpg",
+          "source_sha256": "18262d2a151677bb5055a55303170e8d02e8539cf7cf2c3a0e357172c8e918e5",
+          "local_path": "images/representative.jpg",
+          "sha256": "18262d2a151677bb5055a55303170e8d02e8539cf7cf2c3a0e357172c8e918e5",
+          "bytes": 155191,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/opera/record.json"
+    },
+    {
+      "id": "orland",
+      "source_record": "Neutrino_Archive/experiments/orland/record.json",
+      "source_record_sha256": "d08be3fcbe0db07ed8476bd04092e19f3f239dcce44eb047b864dfd121c2da4b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/orland/images/representative-audit.png",
+          "source_sha256": "ad60c2cabd5b30ae03aa249a33fc69249e8612bcabceb249a628ff67906b33aa",
+          "local_path": "images/representative-audit.png",
+          "sha256": "ad60c2cabd5b30ae03aa249a33fc69249e8612bcabceb249a628ff67906b33aa",
+          "bytes": 211028,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/orland/record.json"
+    },
+    {
+      "id": "oscsns",
+      "source_record": "Neutrino_Archive/experiments/oscsns/record.json",
+      "source_record_sha256": "409dffd0dfd7752b42ca06cfe8c1f40f52761f9e1f57f25cd9966c1fb27575ae",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/oscsns/images/representative-audit.png",
+          "source_sha256": "cfc4cba498264da124bb9e33cb0a5e6cfb4162b2db1c372aba799020a4abe30a",
+          "local_path": "images/representative-audit.png",
+          "sha256": "cfc4cba498264da124bb9e33cb0a5e6cfb4162b2db1c372aba799020a4abe30a",
+          "bytes": 200515,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/oscsns/record.json"
+    },
+    {
+      "id": "p-one",
+      "source_record": "Neutrino_Archive/experiments/p-one/record.json",
+      "source_record_sha256": "7648a39fd7c332fedda7032135395f861486ebe305487e3ed0c9d2141b82e03e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/p-one/images/representative.jpg",
+          "source_sha256": "b7ee49c15b87349041273fa17c8bd143c85f55393f1149f058b6b170154e49b0",
+          "local_path": "images/representative.jpg",
+          "sha256": "b7ee49c15b87349041273fa17c8bd143c85f55393f1149f058b6b170154e49b0",
+          "bytes": 34072,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/p-one/record.json"
+    },
+    {
+      "id": "palo-verde",
+      "source_record": "Neutrino_Archive/experiments/palo-verde/record.json",
+      "source_record_sha256": "f62ccc76819da7d7c60c4b5977dcffe68ca63196fe81acd06f9bdcc29eb7859d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/palo-verde/images/representative.png",
+          "source_sha256": "40751747ea49799a1a9aac571081708deee1463abeff0a4c0d481139cfcbfcc9",
+          "local_path": "images/representative.png",
+          "sha256": "40751747ea49799a1a9aac571081708deee1463abeff0a4c0d481139cfcbfcc9",
+          "bytes": 47328,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/palo-verde/record.json"
+    },
+    {
+      "id": "pandax",
+      "source_record": "Neutrino_Archive/experiments/pandax/record.json",
+      "source_record_sha256": "a71565f0274083ccfbfed38a7183b07e1cd6851984bedd73e6b10e0fc4efa4cc",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pandax/images/representative-audit.jpg",
+          "source_sha256": "eb99aa600e1728a9370f113a4b2d21647e0cac63a196d13200751ae6d442b78b",
+          "local_path": "images/representative-audit.jpg",
+          "sha256": "eb99aa600e1728a9370f113a4b2d21647e0cac63a196d13200751ae6d442b78b",
+          "bytes": 146415,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/pandax/record.json"
+    },
+    {
+      "id": "pandax-iii",
+      "source_record": "Neutrino_Archive/experiments/pandax-iii/record.json",
+      "source_record_sha256": "e6e938ed5ad17fc4bf1ef2b2af2c3b56dd9193cb47704d9a4e7c13d84f720d63",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pandax-iii/images/representative-audit.png",
+          "source_sha256": "4f946b56a52c99744a1db9dd1904da598c42c96d4f1461b0edcccf9ffaf0a63e",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "3901f878d598c90242d36460b486b070c28e3bd9321ea529f83030b22158d5bd",
+          "bytes": 71856,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/pandax-iii/record.json"
+    },
+    {
+      "id": "pandax-xt",
+      "source_record": "Neutrino_Archive/experiments/pandax-xt/record.json",
+      "source_record_sha256": "0a13b2b2e2b5d29885f4a8175824decf0108edbe8c394f3940d393049b6e5c0b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pandax-xt/images/representative-audit.png",
+          "source_sha256": "e7dcbb93e3a521e3d5af34b82dea2ff4e6e2206102de2b736f1b63e3cef8b522",
+          "local_path": "images/representative-audit.png",
+          "sha256": "e7dcbb93e3a521e3d5af34b82dea2ff4e6e2206102de2b736f1b63e3cef8b522",
+          "bytes": 74828,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/pandax-xt/record.json"
+    },
+    {
+      "id": "pbr",
+      "source_record": "Neutrino_Archive/experiments/pbr/record.json",
+      "source_record_sha256": "4225b3299cf2590f7c976257fc6a609c97b7224a87cf6187ecac6f7b692a09f2",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pbr/images/representative.png",
+          "source_sha256": "ecb0925ac6bef704dfa2c3bd98d95222b9c162dcc71d8cd53364a9c24fec6dab",
+          "local_path": "images/representative.webp",
+          "sha256": "4367fc90ba6f8029e0b7a3726f856094d766b2be9e3b6ac6572184bc665aba61",
+          "bytes": 51962,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/pbr/record.json"
+    },
+    {
+      "id": "pierre-auger",
+      "source_record": "Neutrino_Archive/experiments/pierre-auger/record.json",
+      "source_record_sha256": "040abc78237a83919b6ef1fb62f05314a07072279c650b603891b76251b081b8",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pierre-auger/images/representative.png",
+          "source_sha256": "d811ac7bca30be135dec9fd949bc08bd8f0bec1952d69468390b023bb0bc5e38",
+          "local_path": "images/representative.webp",
+          "sha256": "56b59aee4babed1548171680259df570c6dbacd1858d2203d7ef258f29773ad4",
+          "bytes": 118630,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/pierre-auger/record.json"
+    },
+    {
+      "id": "poemma",
+      "source_record": "Neutrino_Archive/experiments/poemma/record.json",
+      "source_record_sha256": "d7e01cb1d0a670ef19b8c60b05aee689a8f2a221151d4ad141d13be677021c2f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/poemma/images/representative.png",
+          "source_sha256": "b501a9a43811cb60a3f80a04c3c6badbfbfd3d90a0d2096a51392d1cf3ecf6d7",
+          "local_path": "images/representative.webp",
+          "sha256": "154ec38c9356f486659d5be2ebf2284779b93f7da73784a1f589a3ac4504b1f7",
+          "bytes": 89418,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/poemma/record.json"
+    },
+    {
+      "id": "project-8",
+      "source_record": "Neutrino_Archive/experiments/project-8/record.json",
+      "source_record_sha256": "601d5ed0c36e3efa07273a92128df0feec542c1c5e039fcac4c6e9f874fc056c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/project-8/images/representative-audit.png",
+          "source_sha256": "38a920454dc0922feccf1c48addce37e8998ef2d5967d65afaa2e6401bb791e3",
+          "local_path": "images/representative-audit.png",
+          "sha256": "38a920454dc0922feccf1c48addce37e8998ef2d5967d65afaa2e6401bb791e3",
+          "bytes": 42345,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/project-8/record.json"
+    },
+    {
+      "id": "prospect",
+      "source_record": "Neutrino_Archive/experiments/prospect/record.json",
+      "source_record_sha256": "93d06577a83d9a6b5c7688f7c5824903336f5aca9ecf16ec50c72df8c24db852",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/prospect/images/public-representative.png",
+          "source_sha256": "2542f06facce424f1ce4841706acc7605db9a1a229a8e1d6147b62ec400cc670",
+          "local_path": "images/public-representative.webp",
+          "sha256": "4b920bca8e77ea537ea0b012caf156ec1e79cf1de3a6a18a9b2f057aad62527d",
+          "bytes": 79152,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/prospect/record.json"
+    },
+    {
+      "id": "prospect-ii",
+      "source_record": "Neutrino_Archive/experiments/prospect-ii/record.json",
+      "source_record_sha256": "bc94ab07d058328da5d53a040ed5492ee55f832b57bf8195d5638840cc28cdfa",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/prospect-ii/images/representative.png",
+          "source_sha256": "1d5a07d7b46e4f4b71ec39f64cdcd4565ac6327d79c4a8a020a47ad4a6bc1753",
+          "local_path": "images/representative.webp",
+          "sha256": "a6ad135ed73e89f9273375ffee48519b0f25a6a3a3086e5ec83ffc8a731243b2",
+          "bytes": 195844,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/prospect-ii/record.json"
+    },
+    {
+      "id": "ptolemy",
+      "source_record": "Neutrino_Archive/experiments/ptolemy/record.json",
+      "source_record_sha256": "fbf66d09ac4d277a65460599b5ce78554e5d21117a7819fe0dff1ed0b7614428",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ptolemy/images/representative-audit.png",
+          "source_sha256": "98d4b070da94e918aa20ecddae25e5c2262b09a54e147356980ec2cbe6675590",
+          "local_path": "images/representative-audit.png",
+          "sha256": "98d4b070da94e918aa20ecddae25e5c2262b09a54e147356980ec2cbe6675590",
+          "bytes": 146892,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/ptolemy/record.json"
+    },
+    {
+      "id": "pueo",
+      "source_record": "Neutrino_Archive/experiments/pueo/record.json",
+      "source_record_sha256": "352c76ed64c8ababb68f1061b77cde1bdbaed7c4f6958dcad3e24cfb59cfac0c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/pueo/images/representative.png",
+          "source_sha256": "83f8447357dd8f9ff44e54a217dec064bceae787207c001332ab3649a5faa0aa",
+          "local_path": "images/representative.webp",
+          "sha256": "76d4bd4cb74dbc73057e4cb09127a41eb949bf6b5c8968c88be19fa64f0b411d",
+          "bytes": 109990,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/pueo/record.json"
+    },
+    {
+      "id": "qtnm",
+      "source_record": "Neutrino_Archive/experiments/qtnm/record.json",
+      "source_record_sha256": "75dd20444b681c350dc7a4d573a9dd3b529344bf80ef3129667336e46233bf0d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/qtnm/images/representative-audit.jpg",
+          "source_sha256": "f0f0db4e22bf4daea6cb06096947f5b348c246090cbe8421364d61bf6e78d6f7",
+          "local_path": "images/representative-audit.jpg",
+          "sha256": "f0f0db4e22bf4daea6cb06096947f5b348c246090cbe8421364d61bf6e78d6f7",
+          "bytes": 223659,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/qtnm/record.json"
+    },
+    {
+      "id": "recode",
+      "source_record": "Neutrino_Archive/experiments/recode/record.json",
+      "source_record_sha256": "b1bfc8c1a624b8f7da8b0f7e1790c2c2d9e89244844a228421977690d36e3554",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/recode/images/public-representative.png",
+          "source_sha256": "81b94f9f69df0c0f399854e659b57ddbaa884b1ab13717c985996ea1e5703eca",
+          "local_path": "images/public-representative.png",
+          "sha256": "81b94f9f69df0c0f399854e659b57ddbaa884b1ab13717c985996ea1e5703eca",
+          "bytes": 183707,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/recode/record.json"
+    },
+    {
+      "id": "red-100",
+      "source_record": "Neutrino_Archive/experiments/red-100/record.json",
+      "source_record_sha256": "0162cb638587b23950ba8f7b78a16d8b980229f0fad95844fd11c9ac89030999",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/red-100/images/public-representative.png",
+          "source_sha256": "5a21574547ea4ef41842478ad830369ce18c41b940411c9059c642815e65a47e",
+          "local_path": "images/public-representative.png",
+          "sha256": "5a21574547ea4ef41842478ad830369ce18c41b940411c9059c642815e65a47e",
+          "bytes": 294001,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/red-100/record.json"
+    },
+    {
+      "id": "relics",
+      "source_record": "Neutrino_Archive/experiments/relics/record.json",
+      "source_record_sha256": "86e2590e91606a9766f3dec010847a2d8e9447f67ae9c199d005921d8ec00252",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/relics/images/public-representative.png",
+          "source_sha256": "4e50d89be43aad03d4188f665332ed96a55e8109cfc24958100a6458b8299ddf",
+          "local_path": "images/public-representative.webp",
+          "sha256": "dfb0df671bd71d8c11429c65f033c39611fab1bed7676b76bbebd594935bf952",
+          "bytes": 92586,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/relics/record.json"
+    },
+    {
+      "id": "reno",
+      "source_record": "Neutrino_Archive/experiments/reno/record.json",
+      "source_record_sha256": "07260c6a9914cfdd300ce9960a60db7141a5a912bb0118b47047fc082cc63f15",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/reno/images/representative.png",
+          "source_sha256": "129cdc339dc7babf6f4dd5111eb3a865b0b182aa3a29fb17a785d1c05cab7cb1",
+          "local_path": "images/representative.webp",
+          "sha256": "4e49d7ffce61d6e0d197eb2344ba27e902ec56f0711b2eb53d48965991568406",
+          "bytes": 127428,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/reno/record.json"
+    },
+    {
+      "id": "resun",
+      "source_record": "Neutrino_Archive/experiments/resun/record.json",
+      "source_record_sha256": "74058ac935c45445a9203a5c331168d1e8f728c0a1a1f567a54ecd799501027c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/resun/images/representative.png",
+          "source_sha256": "d1cfb61e9ac3b64048234f042accf09b30e5d3fdb24204bd7130894945533eee",
+          "local_path": "images/representative.png",
+          "sha256": "d1cfb61e9ac3b64048234f042accf09b30e5d3fdb24204bd7130894945533eee",
+          "bytes": 116236,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/resun/record.json"
+    },
+    {
+      "id": "ret",
+      "source_record": "Neutrino_Archive/experiments/ret/record.json",
+      "source_record_sha256": "a7c8993f0a02c7abefe341c05ffc86e17eda8dcd3e8d696065312bc8ce27c29d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ret/images/representative.png",
+          "source_sha256": "5eff55cf300d0a698a72c3262d0ec30578f6ce8a0d6ce92c797e544ff7b8ec2b",
+          "local_path": "images/representative.webp",
+          "sha256": "61d196d87c0485ffda4447274b44e482d4cdd74e6c1a1d67557444a6e9b0868c",
+          "bytes": 223288,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/ret/record.json"
+    },
+    {
+      "id": "rice",
+      "source_record": "Neutrino_Archive/experiments/rice/record.json",
+      "source_record_sha256": "cb2a2302b78a8f9d1875a775f0fade8350286ee2b33ba26b5a78428caf52e84f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/rice/images/representative.png",
+          "source_sha256": "186bdcc958ac146076d64ad7fcb1521a3a954af0f3ad7ae3f16e56c50573d5cc",
+          "local_path": "images/representative.png",
+          "sha256": "186bdcc958ac146076d64ad7fcb1521a3a954af0f3ad7ae3f16e56c50573d5cc",
+          "bytes": 15459,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/rice/record.json"
+    },
+    {
+      "id": "ricochet",
+      "source_record": "Neutrino_Archive/experiments/ricochet/record.json",
+      "source_record_sha256": "f77945167ea08b319f7cb9e31d83d7acca0105790ec9fbe59d77ce2ea1358a06",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ricochet/images/public-representative.jpg",
+          "source_sha256": "94116018f3a09052a206df6c8e6d2f3c6d41ada3d2d17467e6bd8515f1748569",
+          "local_path": "images/public-representative.webp",
+          "sha256": "bdbcb51d8d553d0c5b2edced4a03cb4765feb845c552a69269bb13c598d7da49",
+          "bytes": 269626,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/ricochet/record.json"
+    },
+    {
+      "id": "rno-g",
+      "source_record": "Neutrino_Archive/experiments/rno-g/record.json",
+      "source_record_sha256": "12b1016f62c9000c4ba0a47ae760e24bfc9c2d45c7645be3f13f05d44f757561",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/rno-g/images/representative.jpg",
+          "source_sha256": "7838a1dc9bb3e5fceb057ec89f906422bbd19b57f9020f44a544db4d92845fb2",
+          "local_path": "images/representative.jpg",
+          "sha256": "7838a1dc9bb3e5fceb057ec89f906422bbd19b57f9020f44a544db4d92845fb2",
+          "bytes": 228471,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/rno-g/record.json"
+    },
+    {
+      "id": "rovno",
+      "source_record": "Neutrino_Archive/experiments/rovno/record.json",
+      "source_record_sha256": "57721fdc01fd503206f7820d342a9cb13d57145fa2b637fa94e7ab79b7518323",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/rovno/images/representative.png",
+          "source_sha256": "f9d090ec72ec38c375bc0ea5272d8f516daf6a52370979aeaa0f9a6f350bc7ba",
+          "local_path": "images/representative.png",
+          "sha256": "f9d090ec72ec38c375bc0ea5272d8f516daf6a52370979aeaa0f9a6f350bc7ba",
+          "bytes": 66129,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/rovno/record.json"
+    },
+    {
+      "id": "sage",
+      "source_record": "Neutrino_Archive/experiments/sage/record.json",
+      "source_record_sha256": "6208b19e35331bb321f11b176f7fc9abe226d9616496e99db14ad4e449979d8d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sage/images/representative.png",
+          "source_sha256": "5c7611c09fac35e9c2477be1a077cd80461783a7c182ddc98ede8887a2fdc6c2",
+          "local_path": "images/representative.webp",
+          "sha256": "edd4026d00b1f22ccf529aa32751b484d68b5f743dd24dd5e1a5d16606e19ad2",
+          "bytes": 52910,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/sage/record.json"
+    },
+    {
+      "id": "saturne",
+      "source_record": "Neutrino_Archive/experiments/saturne/record.json",
+      "source_record_sha256": "2b27fdb2f91cb194d38e300568cf67838f3d38909b666a4d0a99d24d7ca5984f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/saturne/images/representative-audit.png",
+          "source_sha256": "24be86d7ba196b0c573014aa0b9da621514716ab40b71a36caab8a62eb6c5e34",
+          "local_path": "images/representative-audit.png",
+          "sha256": "24be86d7ba196b0c573014aa0b9da621514716ab40b71a36caab8a62eb6c5e34",
+          "bytes": 273509,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/saturne/record.json"
+    },
+    {
+      "id": "saund",
+      "source_record": "Neutrino_Archive/experiments/saund/record.json",
+      "source_record_sha256": "8bddf238d205bad9b09b3e075503d9b99f1d0730307fd72d325f783a5dff8cac",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/saund/images/representative.png",
+          "source_sha256": "8cfc70117ca411b2672c0695708be53cb31197cecbc12d1b3eb51da8105a9789",
+          "local_path": "images/representative.png",
+          "sha256": "8cfc70117ca411b2672c0695708be53cb31197cecbc12d1b3eb51da8105a9789",
+          "bytes": 63965,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/saund/record.json"
+    },
+    {
+      "id": "savannah-river",
+      "source_record": "Neutrino_Archive/experiments/savannah-river/record.json",
+      "source_record_sha256": "5bb7baf0a00995079ba930827583efdae86d2ad064d2f65accb5a2d8fde1d859",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/savannah-river/images/public-representative.png",
+          "source_sha256": "e5ed032f18db9e7b74d5ee5adf1c7710423326acc8ffa9b6b062c77d760279a2",
+          "local_path": "images/public-representative.png",
+          "sha256": "e5ed032f18db9e7b74d5ee5adf1c7710423326acc8ffa9b6b062c77d760279a2",
+          "bytes": 220619,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/savannah-river/record.json"
+    },
+    {
+      "id": "sbc",
+      "source_record": "Neutrino_Archive/experiments/sbc/record.json",
+      "source_record_sha256": "fbd55bba43815a041e3cb38c062494f3855ec1863558fe98781df577a999a549",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sbc/images/representative.png",
+          "source_sha256": "18a3511e5fb1b4b2cc86a43855df1f96a9aed511c8a11fdc0b6ba6367675bdf5",
+          "local_path": "images/representative.png",
+          "sha256": "18a3511e5fb1b4b2cc86a43855df1f96a9aed511c8a11fdc0b6ba6367675bdf5",
+          "bytes": 190310,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/sbc/record.json"
+    },
+    {
+      "id": "sbnd",
+      "source_record": "Neutrino_Archive/experiments/sbnd/record.json",
+      "source_record_sha256": "fc23f796f463916a8a383fea01f376bbbd7a65e04db05ff137f68f44ba1a5a63",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sbnd/images/representative-audit.png",
+          "source_sha256": "5b76f43ed160ce28609000de877f35d685d995245290d61e45f3b725b7b7f03d",
+          "local_path": "images/representative-audit.png",
+          "sha256": "5b76f43ed160ce28609000de877f35d685d995245290d61e45f3b725b7b7f03d",
+          "bytes": 228095,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/sbnd/record.json"
+    },
+    {
+      "id": "sciboone",
+      "source_record": "Neutrino_Archive/experiments/sciboone/record.json",
+      "source_record_sha256": "148d9366ce9761cc30fd6e8ab3c4b77a1605a32755bc2e6bc7ca52a990d9c92c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sciboone/images/representative.jpg",
+          "source_sha256": "f99431efb616d12c713dd2b4a718625852cf186d49de3fb63c7904012390bb95",
+          "local_path": "images/representative.jpg",
+          "sha256": "f99431efb616d12c713dd2b4a718625852cf186d49de3fb63c7904012390bb95",
+          "bytes": 80669,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/sciboone/record.json"
+    },
+    {
+      "id": "selena",
+      "source_record": "Neutrino_Archive/experiments/selena/record.json",
+      "source_record_sha256": "7689990316fdbb30673a21f9def7d56beb6e3989343bac54c99f629d988df07c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/selena/images/representative-audit.png",
+          "source_sha256": "472784fcddd0186a7c8d382e88c9b9b04999ddd5b920f7bfe973439f63229a97",
+          "local_path": "images/representative-audit.png",
+          "sha256": "472784fcddd0186a7c8d382e88c9b9b04999ddd5b920f7bfe973439f63229a97",
+          "bytes": 93241,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/selena/record.json"
+    },
+    {
+      "id": "ship",
+      "source_record": "Neutrino_Archive/experiments/ship/record.json",
+      "source_record_sha256": "150ff471405181765652dc94ac7e39fcbe5dd11c2fccc44114f604705229b3ce",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/ship/images/representative.png",
+          "source_sha256": "e93df2469cdf55fd3fec9d96953236e4e1e707370a85d0fe39216cbb4990b768",
+          "local_path": "images/representative.webp",
+          "sha256": "82e16aedcaeac7fb67f491b3594c51aea2407f9f306a3c7916e400a5b2c4908f",
+          "bytes": 93646,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/ship/record.json"
+    },
+    {
+      "id": "skat",
+      "source_record": "Neutrino_Archive/experiments/skat/record.json",
+      "source_record_sha256": "12edd23c4d649f9e3f4056ca4d9ba19eab5ed729c88bf1d7cf3f65143f469295",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/skat/images/representative.png",
+          "source_sha256": "ff041fba98ca2ba1c98690172152bd877a6b6551437a7d99551b99363bcd737c",
+          "local_path": "images/representative.png",
+          "sha256": "ff041fba98ca2ba1c98690172152bd877a6b6551437a7d99551b99363bcd737c",
+          "bytes": 266600,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/skat/record.json"
+    },
+    {
+      "id": "snappy",
+      "source_record": "Neutrino_Archive/experiments/snappy/record.json",
+      "source_record_sha256": "69f79d1eaeb342e6afede43e91b846fb0b54d77e62bd6f5c545b88197839c15d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/snappy/images/representative-audit.jpg",
+          "source_sha256": "e48b42a7d887e5427d5a0165458ff27834e8a9c00e7f4141392dac90a12f7969",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "4b573d8f974ca4158634cd506892b94e01f9033f3d16c4c1db8a2b51286eb678",
+          "bytes": 281158,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/snappy/record.json"
+    },
+    {
+      "id": "snd-lhc",
+      "source_record": "Neutrino_Archive/experiments/snd-lhc/record.json",
+      "source_record_sha256": "c7240ff77d4c3bf0973b566dffd8f4857a2cf5d3d1b77613b4aefb0e35d56b1b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/snd-lhc/images/representative-audit.png",
+          "source_sha256": "764ecb341ae2d5d5060315979b396db03cdd669180f9f5f1a4355d4a3a122dfa",
+          "local_path": "images/representative-audit.png",
+          "sha256": "764ecb341ae2d5d5060315979b396db03cdd669180f9f5f1a4355d4a3a122dfa",
+          "bytes": 80402,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/snd-lhc/record.json"
+    },
+    {
+      "id": "sno",
+      "source_record": "Neutrino_Archive/experiments/sno/record.json",
+      "source_record_sha256": "3df921a355c3fd7b80bd46fd17ebb9371d1ceb7ae06987d666057f44f9c94875",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sno/images/representative.png",
+          "source_sha256": "dcb490b3381bc303a6774d79fcaa24c51f8f4043cd26c680e9dd636ddbcee041",
+          "local_path": "images/representative.png",
+          "sha256": "dcb490b3381bc303a6774d79fcaa24c51f8f4043cd26c680e9dd636ddbcee041",
+          "bytes": 219872,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/sno/record.json"
+    },
+    {
+      "id": "sno-plus",
+      "source_record": "Neutrino_Archive/experiments/sno-plus/record.json",
+      "source_record_sha256": "7f2b10e7a807ac5ce8ff6a5ceabbbd86f5593bc44c4a6d00591863aa79896a1d",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sno-plus/images/public-representative.png",
+          "source_sha256": "13005c132210dda44b046a3f6c0e634d425cd281d25f82ff03bc65c8935b9edc",
+          "local_path": "images/public-representative.webp",
+          "sha256": "dde338d6c8b41c58ad491fe306c12af21f32b5858f2276fb573fceec8a2fa6c4",
+          "bytes": 144460,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/sno-plus/record.json"
+    },
+    {
+      "id": "solid",
+      "source_record": "Neutrino_Archive/experiments/solid/record.json",
+      "source_record_sha256": "b2e0410ee18632695ef2d9b0026d9149d85422085c4f7820d1fa42f29fb128d3",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/solid/images/public-representative.png",
+          "source_sha256": "0dd2983f408d69e7051e67d5d7fae57c7d8602de8dd76753998ebe8008a0cbce",
+          "local_path": "images/public-representative.png",
+          "sha256": "0dd2983f408d69e7051e67d5d7fae57c7d8602de8dd76753998ebe8008a0cbce",
+          "bytes": 113778,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/solid/record.json"
+    },
+    {
+      "id": "solotvina",
+      "source_record": "Neutrino_Archive/experiments/solotvina/record.json",
+      "source_record_sha256": "115859a4e7515c90208b6ceaf72efa0a802dceb7e6b8955b6b86f1142da97744",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/solotvina/images/representative.png",
+          "source_sha256": "c3f2f0f1d7321684c75e1dcffde67285123ff743cff44f35a250e5594177c83f",
+          "local_path": "images/representative.png",
+          "sha256": "c3f2f0f1d7321684c75e1dcffde67285123ff743cff44f35a250e5594177c83f",
+          "bytes": 39952,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/solotvina/record.json"
+    },
+    {
+      "id": "songs",
+      "source_record": "Neutrino_Archive/experiments/songs/record.json",
+      "source_record_sha256": "c980e15b8560c1e16de552e0f9ccd5b5b5761c6845e0a06045bd12873c23c5ca",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/songs/images/representative.png",
+          "source_sha256": "1eca66edf3729c0c37c40717ace13f1c16b70851ddde4513eebd7ba114567f7a",
+          "local_path": "images/representative.png",
+          "sha256": "1eca66edf3729c0c37c40717ace13f1c16b70851ddde4513eebd7ba114567f7a",
+          "bytes": 316865,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/songs/record.json"
+    },
+    {
+      "id": "soudan-2",
+      "source_record": "Neutrino_Archive/experiments/soudan-2/record.json",
+      "source_record_sha256": "2c38a113014a3c7cfedabed11b69c5b38e3c56d801750d7972b4400dc1ab3a9c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/soudan-2/images/representative.jpg",
+          "source_sha256": "4e1b9b424834fa35410f30b30757f2dc1685122706feb19b1e9c27b00596fa78",
+          "local_path": "images/representative.jpg",
+          "sha256": "4e1b9b424834fa35410f30b30757f2dc1685122706feb19b1e9c27b00596fa78",
+          "bytes": 102732,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/soudan-2/record.json"
+    },
+    {
+      "id": "sox",
+      "source_record": "Neutrino_Archive/experiments/sox/record.json",
+      "source_record_sha256": "2f31f54625ce8fb798ea0d87c9f2b9a8888ab2be6d3501090279d2267645dd76",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/sox/images/public-representative.png",
+          "source_sha256": "1defc8a27cb56eb479dc04cd25dacb0b871823030874340d307c6c1c98b49655",
+          "local_path": "images/public-representative.webp",
+          "sha256": "49a8eca203b68dcdf79c6ccf88e0bdbbf8eb2a3a5874116621d952a7c712b370",
+          "bytes": 144910,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/sox/record.json"
+    },
+    {
+      "id": "spats",
+      "source_record": "Neutrino_Archive/experiments/spats/record.json",
+      "source_record_sha256": "8765ade2beb8c4922cfeb195758cf2101a15cfb4317ff92b5aa75b2fef741281",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/spats/images/representative.png",
+          "source_sha256": "8d9cb51ae0cd882816cf931b379cb02f2254290c0d06fc09b20c8948b862bd23",
+          "local_path": "images/representative.png",
+          "sha256": "8d9cb51ae0cd882816cf931b379cb02f2254290c0d06fc09b20c8948b862bd23",
+          "bytes": 223365,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/spats/record.json"
+    },
+    {
+      "id": "stereo",
+      "source_record": "Neutrino_Archive/experiments/stereo/record.json",
+      "source_record_sha256": "dee4f5e99d2b596138ad38f250d13ff6a785e18c087ebe0c4a2e2849dfc6e031",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/stereo/images/public-representative.png",
+          "source_sha256": "bcc2cab255da094a772d3a68fa22e917db73aa7adb6452af54e79c1afaacf79e",
+          "local_path": "images/public-representative.webp",
+          "sha256": "816ea72c6ebc6f1e669ca9532ff68d4a89465202cc37d387e1eecaf2ef7cb88d",
+          "bytes": 95400,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/stereo/record.json"
+    },
+    {
+      "id": "super-kamiokande",
+      "source_record": "Neutrino_Archive/experiments/super-kamiokande/record.json",
+      "source_record_sha256": "a018cc0ce522186727b8bbff1e4ae035fcb5bdd2cd930216e91b7534284a6638",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/super-kamiokande/images/representative.jpg",
+          "source_sha256": "47679b24d7a18a7a1b4a07af867dd5bbf1dfb7aa93b54048924f55d00af05e07",
+          "local_path": "images/representative.jpg",
+          "sha256": "47679b24d7a18a7a1b4a07af867dd5bbf1dfb7aa93b54048924f55d00af05e07",
+          "bytes": 189592,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/super-kamiokande/record.json"
+    },
+    {
+      "id": "supernemo",
+      "source_record": "Neutrino_Archive/experiments/supernemo/record.json",
+      "source_record_sha256": "3857c39d0314c5b593e54066707e327117ef16e54493336370bcefdfc3dbfecb",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/supernemo/images/representative.png",
+          "source_sha256": "8378caac79c20499eb7ce7cab6eeeec75be5fc82f046454c1b21ae9d5dfb2810",
+          "local_path": "images/representative.png",
+          "sha256": "8378caac79c20499eb7ce7cab6eeeec75be5fc82f046454c1b21ae9d5dfb2810",
+          "bytes": 356217,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/supernemo/record.json"
+    },
+    {
+      "id": "t2k",
+      "source_record": "Neutrino_Archive/experiments/t2k/record.json",
+      "source_record_sha256": "11e5a6b6b108132ce0182f0ded3e3ae7c0d2312af7c73759460d963ac9a20dc5",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/t2k/images/representative-audit.png",
+          "source_sha256": "a94f2aedb05db5810af6cc4d712b41f7ba0eed445918b107ee3b2eca731bf108",
+          "local_path": "images/representative-audit.png",
+          "sha256": "a94f2aedb05db5810af6cc4d712b41f7ba0eed445918b107ee3b2eca731bf108",
+          "bytes": 111454,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/t2k/record.json"
+    },
+    {
+      "id": "tambo",
+      "source_record": "Neutrino_Archive/experiments/tambo/record.json",
+      "source_record_sha256": "faeb6ea436b7f13c5ca07af30acf8ad818422d2d97c535c4099d59838b916703",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/tambo/images/representative.png",
+          "source_sha256": "c77ed5f4091de7815e18dc44edcd93cf0e13cd542ad69adaf6723cf38b6b8311",
+          "local_path": "images/representative.webp",
+          "sha256": "93a8c7e494b50530655a6aa61d6cbbc37803c366ee9478551b95579abecc6b7c",
+          "bytes": 121766,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/tambo/record.json"
+    },
+    {
+      "id": "tao",
+      "source_record": "Neutrino_Archive/experiments/tao/record.json",
+      "source_record_sha256": "01274ac8f16ac6da2f8b430d028f2ae60e4001607e023ae42cba9ea6d710b73a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/tao/images/public-representative.png",
+          "source_sha256": "74f9292ac82bc5b0716f7e65e756e0de0b91a49c7ae4a118eeed46cbb3bee5d1",
+          "local_path": "images/public-representative.webp",
+          "sha256": "971551aefeb627a2bc60c2a2959dacf541eabf7036d11e62f4e9aa1e3dbc09d5",
+          "bytes": 122336,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/tao/record.json"
+    },
+    {
+      "id": "taroge-m",
+      "source_record": "Neutrino_Archive/experiments/taroge-m/record.json",
+      "source_record_sha256": "79da1d22a7a1196e12bf86232d776c3b99bc2d351c0b9dae0fac310c0969a03e",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/taroge-m/images/representative.png",
+          "source_sha256": "9c40684bb546236db4ea0b6ba6460b1919ea1244e52278ad033205793f996334",
+          "local_path": "images/representative.webp",
+          "sha256": "b78008c354931b1824cc22f6e7755a1c79dd9672936dc5c0162c2c2a1c1a05ee",
+          "bytes": 224758,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/taroge-m/record.json"
+    },
+    {
+      "id": "taroge",
+      "source_record": "Neutrino_Archive/experiments/taroge/record.json",
+      "source_record_sha256": "0abd7f9256ef8703f7d47f683bb13a40a7b5a666c6db4eee4410766e71e32ad9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/taroge/images/representative.png",
+          "source_sha256": "5baae43d8e7a03a217650836e5217405b72bc3ae5b69737626a86f48bc38f6fc",
+          "local_path": "images/representative.png",
+          "sha256": "5baae43d8e7a03a217650836e5217405b72bc3ae5b69737626a86f48bc38f6fc",
+          "bytes": 247659,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/taroge/record.json"
+    },
+    {
+      "id": "telescope-array",
+      "source_record": "Neutrino_Archive/experiments/telescope-array/record.json",
+      "source_record_sha256": "2c96bf1b8eecee7f36ed24ad3d21a33b031878232df8c9549ad5e3ae09e9cd2b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/telescope-array/images/representative.jpg",
+          "source_sha256": "58056105210ba8e4ced4edda1b9cd1316eea8a2fe4d7b0cc922a1c41435ae3d5",
+          "local_path": "images/representative.jpg",
+          "sha256": "58056105210ba8e4ced4edda1b9cd1316eea8a2fe4d7b0cc922a1c41435ae3d5",
+          "bytes": 124153,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/telescope-array/record.json"
+    },
+    {
+      "id": "texono",
+      "source_record": "Neutrino_Archive/experiments/texono/record.json",
+      "source_record_sha256": "2a20edef6103165254c5beeff6e565636a719f1fb12545b07ea6523053ad730f",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/texono/images/representative.png",
+          "source_sha256": "a6dab7ad2fbf5d2be424ceee3b7571f977c2a8f97cbe1fb53570150e52dd9f68",
+          "local_path": "images/representative.png",
+          "sha256": "a6dab7ad2fbf5d2be424ceee3b7571f977c2a8f97cbe1fb53570150e52dd9f68",
+          "bytes": 34528,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/texono/record.json"
+    },
+    {
+      "id": "tgv",
+      "source_record": "Neutrino_Archive/experiments/tgv/record.json",
+      "source_record_sha256": "94f1d29d37098aa384f1bad47038307eb55e39e37f048698897ee333bb04a765",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/tgv/images/representative.png",
+          "source_sha256": "5e4c99c408e1157d396e9bdaec87954edefd06dbd6143298b8e6268f61f3fd65",
+          "local_path": "images/representative.webp",
+          "sha256": "38ab6ede700eab2b5dd5bccf96316a1bdb9df48425802594b1b40df04a918bd2",
+          "bytes": 283112,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/tgv/record.json"
+    },
+    {
+      "id": "theia",
+      "source_record": "Neutrino_Archive/experiments/theia/record.json",
+      "source_record_sha256": "db0a2c25c183bbf7fdf2acf1e8291bf2b1bbcf60d518af19a5102b423d0680e4",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/theia/images/public-representative.png",
+          "source_sha256": "0016a741fe4d0d2af48ad9cad3df67df4e4ab5aff4a70c82f867081393f10ec7",
+          "local_path": "images/public-representative.webp",
+          "sha256": "d86dec04a69ca5bd90f81d76c4880cba0b70f32bf1cafb78a2d47f5699c08e38",
+          "bytes": 74462,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/theia/record.json"
+    },
+    {
+      "id": "titus",
+      "source_record": "Neutrino_Archive/experiments/titus/record.json",
+      "source_record_sha256": "0610c50f2ddf75f26a3104533f1dfa96bd69e68c87dde4e100c494a660acb098",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/titus/images/representative-audit.png",
+          "source_sha256": "ff8d2ec38337a7a7e18abdad4157e4090598cc32f4e413f3a4702c8d0b95da93",
+          "local_path": "images/representative-audit.png",
+          "sha256": "ff8d2ec38337a7a7e18abdad4157e4090598cc32f4e413f3a4702c8d0b95da93",
+          "bytes": 349320,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/titus/record.json"
+    },
+    {
+      "id": "trident",
+      "source_record": "Neutrino_Archive/experiments/trident/record.json",
+      "source_record_sha256": "a9756ce0f89579bb393729486a8d497cc9a0eb45fc40528b87d726426e9658e9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/trident/images/representative.png",
+          "source_sha256": "b8965a79bb41103d468150b55af7a7e015a007575c1245c6cd0d6872ce10bd2e",
+          "local_path": "images/representative.png",
+          "sha256": "b8965a79bb41103d468150b55af7a7e015a007575c1245c6cd0d6872ce10bd2e",
+          "bytes": 154644,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/trident/record.json"
+    },
+    {
+      "id": "trinity",
+      "source_record": "Neutrino_Archive/experiments/trinity/record.json",
+      "source_record_sha256": "223597a843739c984b3afe12fc80d41d37b4a4e1cfec51dc22cf41a853b71e79",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/trinity/images/representative.jpg",
+          "source_sha256": "57ec66efdd6cb3a3db99594eb0f242d1b0d37b0212d469e4951ad32250686d7d",
+          "local_path": "images/representative.jpg",
+          "sha256": "57ec66efdd6cb3a3db99594eb0f242d1b0d37b0212d469e4951ad32250686d7d",
+          "bytes": 228359,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/trinity/record.json"
+    },
+    {
+      "id": "tristan",
+      "source_record": "Neutrino_Archive/experiments/tristan/record.json",
+      "source_record_sha256": "778e4280809f103d744d7eee5430c9dfd94bace1e34dac3248cfbe3c89269e8b",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/tristan/images/representative.png",
+          "source_sha256": "da081219add052e3c830544fb01085786dd46a171163f6abd5e96441d2aa922a",
+          "local_path": "images/representative.png",
+          "sha256": "da081219add052e3c830544fb01085786dd46a171163f6abd5e96441d2aa922a",
+          "bytes": 277813,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/tristan/record.json"
+    },
+    {
+      "id": "troitsk",
+      "source_record": "Neutrino_Archive/experiments/troitsk/record.json",
+      "source_record_sha256": "196c5dfbb485857b911914f41374076ff67771d0424b2ec23fad17b3e143866c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/troitsk/images/representative.png",
+          "source_sha256": "4e51688878859035f0f6fff1c7dbc5dc0f95f4452348675965e746524e5abe2f",
+          "local_path": "images/representative.png",
+          "sha256": "4e51688878859035f0f6fff1c7dbc5dc0f95f4452348675965e746524e5abe2f",
+          "bytes": 29370,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/troitsk/record.json"
+    },
+    {
+      "id": "wagasci-babymind",
+      "source_record": "Neutrino_Archive/experiments/wagasci-babymind/record.json",
+      "source_record_sha256": "38ee60cdf0ebe4c0a32b905029ad98eacb0a3dd54d24354ae969e26e6548844a",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/wagasci-babymind/images/representative.png",
+          "source_sha256": "d5c2c0a388d9acc6e42a17e94c9159b48564bc7fb0c069d2bbcc6fe7bd73dd57",
+          "local_path": "images/representative.png",
+          "sha256": "d5c2c0a388d9acc6e42a17e94c9159b48564bc7fb0c069d2bbcc6fe7bd73dd57",
+          "bytes": 173755,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/wagasci-babymind/record.json"
+    },
+    {
+      "id": "watchman",
+      "source_record": "Neutrino_Archive/experiments/watchman/record.json",
+      "source_record_sha256": "2c6eacd7ec27ca66d11ca86cfadcf1d744ec6d8a02350fc3d51711564ad91666",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/watchman/images/representative.png",
+          "source_sha256": "4098e9eead2a17109f4c63f95b9c6826a13f001ee50eac5c389ee48f384aaf64",
+          "local_path": "images/representative.webp",
+          "sha256": "55180a56829552b25c65fb5ef85f49f796f704cdaf3bfba2d3783826a3368647",
+          "bytes": 254508,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/watchman/record.json"
+    },
+    {
+      "id": "wcte",
+      "source_record": "Neutrino_Archive/experiments/wcte/record.json",
+      "source_record_sha256": "ba431294fe62e71f467aeffb9d08e1c13eeca6da81b1a9591062c45799edda4c",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/wcte/images/representative.png",
+          "source_sha256": "4ecc21e8d0b673edd830d9b992c4efaddcf2a86355bcf6d889cacf31b3cf8a9f",
+          "local_path": "images/representative.webp",
+          "sha256": "2ed0a6affd399fdf0d9604ba78033369eeb750c42785db07deb21400e8130367",
+          "bytes": 164868,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/wcte/record.json"
+    },
+    {
+      "id": "xenon",
+      "source_record": "Neutrino_Archive/experiments/xenon/record.json",
+      "source_record_sha256": "5f12f3cd1f5c5a8d009f474abdec658ac8bc2a57466494e9390aaeb73e85fa97",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/xenon/images/representative.png",
+          "source_sha256": "aa37fd91cd4bc37eaf35dfd7356164e5583ef8b6f01ef7885d8a690cc544a32c",
+          "local_path": "images/representative.webp",
+          "sha256": "02c0b92f48a95cbed97c1450a423c62ea1e2f401b579f61e5fb9e8489609210c",
+          "bytes": 149270,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/xenon/record.json"
+    },
+    {
+      "id": "xlzd",
+      "source_record": "Neutrino_Archive/experiments/xlzd/record.json",
+      "source_record_sha256": "c0abfd7428115b987017c6e340dd15f3f213c0e9bac1d26e5e8aee65aecfd960",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/xlzd/images/representative-audit.png",
+          "source_sha256": "aecb2801c2ef16a90367cc78af43f7b1feae4a1530a46ae93236b390700f43a1",
+          "local_path": "images/representative-audit.webp",
+          "sha256": "328b970d81e54736591ac72d7cecda000c6387d4d1851ba3768f5b5a6b075309",
+          "bytes": 119264,
+          "derived": true
+        }
+      ],
+      "record_path": "archive/xlzd/record.json"
+    },
+    {
+      "id": "xmass",
+      "source_record": "Neutrino_Archive/experiments/xmass/record.json",
+      "source_record_sha256": "94ee0c82d8474c1e32938c3304b0f47ea1cbaea97cbb7003ccfc7a382ae825f0",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/xmass/images/representative.jpg",
+          "source_sha256": "3840e8b932bdcceb6c491a2ea14ea2bfa5ce52695fc1b250d3db25e260e02182",
+          "local_path": "images/representative.jpg",
+          "sha256": "3840e8b932bdcceb6c491a2ea14ea2bfa5ce52695fc1b250d3db25e260e02182",
+          "bytes": 100245,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/xmass/record.json"
+    },
+    {
+      "id": "zicos",
+      "source_record": "Neutrino_Archive/experiments/zicos/record.json",
+      "source_record_sha256": "187912abdf6f60b8ba18522354d91eb7ba0e935d97b337cf4a25101d185f8eb9",
+      "images": [
+        {
+          "source_path": "Neutrino_Archive/experiments/zicos/images/representative-audit.png",
+          "source_sha256": "2d78ca1e484137594d0ebc2a9809c7d58cc7bf1c1cd105544c6af50f9fb9f6fe",
+          "local_path": "images/representative-audit.png",
+          "sha256": "2d78ca1e484137594d0ebc2a9809c7d58cc7bf1c1cd105544c6af50f9fb9f6fe",
+          "bytes": 178614,
+          "derived": false
+        }
+      ],
+      "record_path": "archive/zicos/record.json"
+    }
+  ]
+}

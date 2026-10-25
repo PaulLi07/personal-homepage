@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "beest",
+  "name": "BeEST",
+  "full_name": "Beryllium Electron capture in Superconducting Tunnel junctions experiment",
+  "aliases": [],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BeEST searches for heavy sterile-neutrino admixtures through recoil spectroscopy of beryllium-7 electron capture. Radioactive atoms are embedded in superconducting quantum sensors.",
+  "physics_targets": [
+    "Sub-MeV sterile-neutrino mixing",
+    "Electron-capture recoil spectroscopy",
+    "Quantum properties of neutrino emission"
+  ],
+  "detection_principle": "A 7Be atom captures an electron and recoils as 7Li. An implanted superconducting tunnel junction measures recoil and atomic de-excitation energy. A heavy-neutrino admixture would shift part of the recoil distribution; material effects and atomic final states must be modelled.",
+  "technologies": [
+    "Superconducting tunnel junction quantum sensors",
+    "Electron-capture nuclear recoil spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "Lawrence Livermore National Laboratory, California; published Phase-II measurement",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Lawrence Livermore National Laboratory, California; published Phase-II measurement",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2024",
+    "evidence": "The first sterile-neutrino search was followed by the 36-pixel Phase-III programme. TRIUMF supplied isotope production and implantation; the cited Phase-II recoil measurement was performed at LLNL.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "BeEST Collaboration",
+    "lead_institutions": [
+      "Lawrence Livermore National Laboratory",
+      "Colorado School of Mines",
+      "TRIUMF"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Radioactive isotope",
+      "value": "7Be implanted in superconducting tunnel junctions",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Phase-III array",
+      "value": "36 detector pixels",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Published laboratory limits on sub-MeV sterile-neutrino admixtures.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2024",
+      "summary": "Documented signal processing and spectral modelling for the larger Phase-III sensor array.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A recoil-spectrum distortion tests a heavy-neutrino admixture; it is not automatically an active-neutrino mass measurement or proof of cosmological dark matter.",
+  "related_experiments": [
+    "best",
+    "hunter",
+    "holmes"
+  ],
+  "resources": {
+    "official_website": "https://beest.mines.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2010.09603",
+      "https://arxiv.org/abs/2409.19085"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2010.09603",
+      "caption": "Design illustration of the BeEST superconducting tunnel junction sensor used for implanted-7Be recoil spectroscopy, from Figure 1 of the first sterile-neutrino-search paper.",
+      "credit": "BeEST Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2010.09603",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "41cbe973a80ab912ef3acc37284e87e10f67669adb90e54c716c54eadbb1aaed",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "5e669ff42e26fe4f67b5f20dbd716c65e834774c482977dc08dd4fb1f93b8309",
+      "source_dimensions": {
+        "width": 3298,
+        "height": 1855
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Limits on the Existence of sub-MeV Sterile Neutrinos from the Decay of 7Be in Superconducting Quantum Sensors",
+      "url": "https://arxiv.org/abs/2010.09603",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Signal processing and spectral modeling for the BeEST experiment",
+      "url": "https://arxiv.org/abs/2409.19085",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "BeEST Collaboration: experiment website",
+      "url": "https://beest.mines.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "e141",
+  "name": "E141",
+  "full_name": "SLAC E141 electron-beam-dump experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "E141 operated at SLAC, Menlo Park, California. This classic electron-beam-dump experiment remains a historical constraint in modern portal-model exclusion plots.",
+  "physics_targets": [
+    "Short-lived axions",
+    "Dark photons (historical reinterpretation)"
+  ],
+  "detection_principle": "A high-energy electron beam strikes a high-Z target; short-lived visible decays of light weakly coupled particles are sought behind shielding. Later dark-photon interpretations require lifetime and acceptance recalculation.",
+  "technologies": [
+    "Electron beam dump",
+    "Shielding",
+    "Downstream visible-decay detection"
+  ],
+  "sites": [
+    {
+      "name": "SLAC, Menlo Park, California",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "SLAC, Menlo Park, California",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Original short-lived-axion search published in 1987, later a historical dark-photon constraint",
+    "as_of": "1987",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1987",
+      "event": "Original short-lived-axion search published in 1987, later a historical dark-photon constraint",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "E141 Collaboration / project team",
+    "lead_institutions": [
+      "SLAC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original beam",
+      "value": "Approximately 9 GeV electron beam, tungsten target",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Catalog role",
+      "value": "The original experiment targeted short-lived axions; dark-sector relevance includes later dark-photon reinterpretations",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "E141",
+      "status": "completed",
+      "description": "Original short-lived-axion search published in 1987, later a historical dark-photon constraint"
+    }
+  ],
+  "results": [
+    {
+      "date": "1987",
+      "summary": "The original short-lived-axion search published exclusions; these are not a cosmic-dark-matter discovery.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "E137",
+    "E774"
+  ],
+  "resources": {
+    "official_website": "https://indico.triumf.ca/event/89/contributions/2730/attachments/2076/2305/Doria_ARIEL2020.pdf",
+    "publication_links": [
+      "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.755"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://ahro.slac.stanford.edu/resources/slac-history/faculty-and-staff-biographies/richard-taylor",
+      "caption": "Historical 1977 photograph of the magnetic-spectrometer system in SLAC End Station A. E141 used its 8 GeV spectrometer in 1986 to measure positrons behind the dump; this image shows the earlier facility, rather than E141 running.",
+      "credit": "SLAC – Richard Muffley, 1977; SLAC Archives image description",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://ahro.slac.stanford.edu/sites/default/files/styles/centered/public/2024-04/M2909.JPG?itok=xPomyeXx&cb=57d26c79",
+      "width": 646,
+      "height": 800,
+      "sha256": "ca9f703c19fa655885d558a687ccfefa4b5f0b54b58b294229d1117519c6016b",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.755",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for short-lived axions in an electron-beam-dump experiment",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/PhysRevLett.59.755",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark matter at electron accelerators — ARIEL 2020",
+      "url": "https://indico.triumf.ca/event/89/contributions/2730/attachments/2076/2305/Doria_ARIEL2020.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

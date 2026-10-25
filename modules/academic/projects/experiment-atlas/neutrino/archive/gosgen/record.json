@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "gosgen",
+  "name": "Gösgen",
+  "full_name": "Gösgen reactor-neutrino oscillation experiments",
+  "aliases": [
+    "Gosgen",
+    "Goesgen"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Caltech–SIN–TUM programme at Gösgen compared reactor-antineutrino spectra at several tens of metres. Moving the same detector between baselines reduced dependence on an absolute source calculation and supplied important early disappearance constraints.",
+  "physics_targets": [
+    "Short-baseline reactor oscillations",
+    "Reactor antineutrino spectral measurements"
+  ],
+  "detection_principle": "Inverse beta decay is identified through positron signals in segmented scintillator and a delayed neutron tag. Relative spectra at different core distances are tested for energy-dependent disappearance.",
+  "technologies": [
+    "Scintillator detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; Gösgen nuclear power plant",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; Gösgen nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1986",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1982–1986",
+      "event": "Successive disappearance analyses published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1986",
+      "event": "Detailed three-position analysis published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Gösgen Collaboration",
+    "lead_institutions": [
+      "California Institute of Technology",
+      "Technical University of Munich",
+      "Swiss Institute for Nuclear Research"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Core distances",
+      "value": "37.9, 45.9 and 64.7 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor thermal power",
+      "value": "2.8 GW",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Typical sample",
+      "value": "About 10,000 antineutrinos at each position",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1986",
+      "summary": "The measured spectra were consistent with no oscillations in the tested region, with limits from both relative-only and source-constrained analyses.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "ill",
+    "bugey"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.34.2621",
+      "https://doi.org/10.1016/0370-2693(85)90059-0"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://doi.org/10.1103/PhysRevD.34.2621",
+      "caption": "Gösgen segmented scintillator and helium-3 chamber detector: detection principle and assembly (Figure 3).",
+      "credit": "Caltech–SIN–TUM Collaboration / Physical Review D",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://doi.org/10.1103/PhysRevD.34.2621",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 600,
+      "height": 428,
+      "sha256": "a58bb4c34688621025eb64c4ff0a8b6ac6cdc049c8d51321c8b5cf0c205ed6e1",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "G. Zacek et al., Neutrino-oscillation experiments at Gösgen",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.34.2621",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1986-11-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "V. Zacek et al., Improved Gösgen oscillation limits",
+      "url": "https://doi.org/10.1016/0370-2693(85)90059-0",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1985",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "neutron"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "neutron"
+    ],
+    "is_europe": true
+  }
+}

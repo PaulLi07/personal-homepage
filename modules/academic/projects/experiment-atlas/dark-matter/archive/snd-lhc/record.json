@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "id": "snd-lhc",
+  "name": "SND@LHC",
+  "full_name": "Scattering and Neutrino Detector at the LHC",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "SND@LHC is located off axis in CERN LHC tunnel TI18, approximately 480 m downstream of the ATLAS interaction point. Its multipurpose forward-neutrino program officially includes weakly coupled particles that might constitute dark matter.",
+  "physics_targets": [
+    "Light dark matter",
+    "Weakly coupled particle scattering",
+    "Dark-sector portals"
+  ],
+  "detection_principle": "Dense tungsten targets and emulsion record interaction vertices, with electronic calorimetry and a muon system measuring final states. Weakly coupled dark-matter scattering may resemble neutral-current events and must be separated from neutrino backgrounds.",
+  "technologies": [
+    "Tungsten-emulsion target",
+    "Scintillating fibers",
+    "Hadronic calorimeter",
+    "Muon system"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC TI18, off axis approximately 480 m downstream of the ATLAS interaction point",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN LHC TI18, off axis approximately 480 m downstream of the ATLAS interaction point",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Run 3 detector has operated; the high-luminosity upgrade is a separate design stage",
+    "as_of": "2026",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Run 3 detector has operated; the high-luminosity upgrade is a separate design stage",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SND@LHC Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Run 3 target mass",
+      "value": "Approximately 830 kg tungsten target",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Run 3 pseudorapidity coverage",
+      "value": "7.2 < η < 8.4",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SND@LHC",
+      "status": "operating",
+      "description": "Run 3 emulsion and electronic-detector system"
+    },
+    {
+      "name": "SND@HL-LHC",
+      "status": "proposed",
+      "description": "Proposed replacement of emulsion with fully electronic silicon tracking for high rates"
+    }
+  ],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Collider neutrinos have been measured; this is not a dark-matter discovery.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "date": "2026",
+      "summary": "Upgrade studies assess future light-dark-matter-scattering sensitivity; these are projections.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "FASER",
+    "SHiP",
+    "FLArE"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/sndlhc",
+    "publication_links": [
+      "https://www.mdpi.com/2073-8994/15/6/1256",
+      "https://link.springer.com/article/10.1140/epjc/s10052-026-15924-5"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/sndlhc",
+      "caption": "Underground tunnel installation area housing SND@LHC.",
+      "credit": "CERN; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://cds.cern.ch/images/CERN-PHOTO-202203-042-14/file?size=large",
+      "width": 1440,
+      "height": 810,
+      "sha256": "4a3f6cf2f224fbd66b64aa4f5cefc4efa2cb0cf59cee96120da2d52179aab391",
+      "mime_type": "image/webp",
+      "source_sha256": "cd792308a35a0b0ac4afda9c258f3bacf8f589bada543754ee89c2f081eff334",
+      "source_dimensions": {
+        "width": 1440,
+        "height": 810
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://home.cern/science/experiments/sndlhc",
+      "caption": "SND@LHC apparatus photographs",
+      "credit": "SND@LHC Collaboration / CERN",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SND@LHC — CERN",
+      "url": "https://home.cern/science/experiments/sndlhc",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "SND@LHC: A New Experiment in Neutrino Physics at the LHC",
+      "url": "https://www.mdpi.com/2073-8994/15/6/1256",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-06-14",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "SND@LHC upgrade for the high-luminosity LHC",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-026-15924-5",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

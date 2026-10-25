@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "ships",
+  "name": "SHIPS",
+  "full_name": "Solar Hidden Photon Search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A solar hidden-photon telescope at Hamburg Observatory and DESY.",
+  "physics_targets": [
+    "Solar hidden photons"
+  ],
+  "detection_principle": "Solar hidden photons oscillate into ordinary photons inside a Sun-pointing opaque high-vacuum tube; optics focus them onto a low-noise photomultiplier.",
+  "technologies": [
+    "Solar tracking",
+    "Vacuum conversion bores",
+    "Photomultiplier tubes"
+  ],
+  "sites": [
+    {
+      "name": "Hamburg Observatory，Bergedorf",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Hamburg Observatory，Bergedorf",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2015",
+    "evidence": "2015 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Results from the Solar Hidden Photon Search (SHIPS)",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHIPS Collaboration / project team",
+    "lead_institutions": [
+      "Hamburg Observatory",
+      "DESY"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Solar exposure",
+      "value": "330 h; background exposure 330 h",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Typical photon energy",
+      "value": "Approximately 3 eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "No solar hidden-photon conversion signal; the 95% CL upper limit on the generated photon flux is approximately 25 mHz/m².",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1502.04490",
+      "https://arxiv.org/abs/1111.5797"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1502.04490",
+      "caption": "The TSHIPS solar hidden-photon telescope mounted on the OLT at Hamburg Observatory (apparatus figure associated with the 2015 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1502.04490v1/olt.jpg",
+      "width": 1440,
+      "height": 1920,
+      "sha256": "b7eae0b42386286479f13e3e46f3e80a2ed897032c3baa1b1a54045028868846",
+      "mime_type": "image/webp",
+      "source_sha256": "9e88b48631a69703850b31707ca0d29c481e043835dbaa6470172f3dcb6996bb",
+      "source_dimensions": {
+        "width": 3000,
+        "height": 4000
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1502.04490",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SHIPS Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Results from the Solar Hidden Photon Search (SHIPS)",
+      "url": "https://arxiv.org/abs/1502.04490",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Solar Hidden Photon Search project description",
+      "url": "https://arxiv.org/abs/1111.5797",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

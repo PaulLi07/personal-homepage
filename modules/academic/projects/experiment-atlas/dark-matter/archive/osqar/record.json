@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "osqar",
+  "name": "OSQAR",
+  "full_name": "Optical Search for QED vacuum magnetic birefringence, Axions and photon Regeneration",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A historical ALP search using laser-photon regeneration in LHC dipole magnets.",
+  "physics_targets": [
+    "Scalar and pseudoscalar ALPs"
+  ],
+  "detection_principle": "Photons convert to ALPs in the first magnetic region, cross a wall, and regenerate as visible light in the second magnetic region.",
+  "technologies": [
+    "Laser light shining through a wall",
+    "Superconducting magnets",
+    "Low-noise photon detection"
+  ],
+  "sites": [
+    {
+      "name": "CERN magnet test facility",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN magnet test facility",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2015",
+    "evidence": "2015 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "New Exclusion Limits for the Search of Scalar and Pseudoscalar Axion-Like Particles from Light Shining Through a Wall",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "OSQAR Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "CNRS Grenoble",
+      "Czech participating institutes"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2014 configuration",
+      "value": "9 T；2×14.3 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Laser",
+      "value": "532 nm、18.5 W",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "No regenerated photons; in the near-zero-mass limit, pseudoscalar / scalar couplings are constrained below 3.5 / 3.2×10⁻⁸ GeV⁻¹ respectively (95% CL).",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [
+    "ALPS",
+    "GammeV"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1506.08082"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1506.08082",
+      "caption": "OSQAR photon-regeneration layout with two magnet sections and an opaque wall (Fig. 1, 2015 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/1506.08082v2/OsqarPaper2014_fig1.png",
+      "width": 1177,
+      "height": 392,
+      "sha256": "79522f7c880a5d63a14cd2c6fc4643e5566b36d96cd2345a75268bc9496fe52d",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1506.08082",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "OSQAR Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New Exclusion Limits for the Search of Scalar and Pseudoscalar Axion-Like Particles from Light Shining Through a Wall",
+      "url": "https://arxiv.org/abs/1506.08082",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

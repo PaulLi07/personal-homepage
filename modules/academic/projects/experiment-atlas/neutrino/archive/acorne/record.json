@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "acorne",
+  "name": "ACoRNE",
+  "full_name": "Acoustic Cosmic Ray Neutrino Experiment",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "acoustic"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "A UK feasibility programme used the Rona naval hydrophone array off northwest Scotland to study acoustic detection of ultra-high-energy neutrinos, backgrounds, calibration and signal reconstruction.",
+  "physics_targets": [
+    "Ultra-high-energy neutrinos",
+    "Acoustic pulse detection and calibration"
+  ],
+  "detection_principle": "Rapid cascade heating in water can generate a bipolar acoustic pulse. Continuously recorded hydrophone signals were analysed with matched filters, spectral filters and coincidences to separate possible cascade-like pulses from biological and environmental noise.",
+  "technologies": [
+    "Thermo-acoustic particle detection with hydrophones or piezoelectric sensors"
+  ],
+  "sites": [
+    {
+      "name": "Rona naval hydrophone range, northwest Scotland",
+      "country": "United Kingdom",
+      "country_code": "GBR",
+      "location": "Rona naval hydrophone range, northwest Scotland",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The archive records a historical R&D programme documented by 2005–2008 campaigns; no present-day full-scale neutrino observatory is established.",
+    "source_ids": [
+      "s1",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005-12",
+      "event": "First dedicated acoustic-neutrino feasibility data recorded at Rona.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2007",
+      "event": "Initial array performance and signal-processing results published.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2008",
+      "event": "Calibration and data-acquisition development reported.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ACoRNE Collaboration",
+    "lead_institutions": [
+      "Northumbria University",
+      "University of Sheffield",
+      "Lancaster University",
+      "University College London"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "2005 readout",
+      "value": "Eight hydrophones; 140 kHz sampling with 16-bit precision",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Array scale",
+      "value": "Approximately 1.5 km long in water approximately 230 m deep",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First recording",
+      "value": "15 days in December 2005, yielding approximately 2.8 TB",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2007",
+      "summary": "Initial data demonstrated continuous recording and background-filtering methods. Published sensitivity estimates are not a confirmed acoustic-neutrino observation.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "saund",
+    "amadeus",
+    "spats"
+  ],
+  "resources": {
+    "official_website": "https://researchportal.northumbria.ac.uk/en/publications/first-data-from-acorne-and-signal-processing-techniques/",
+    "publication_links": [
+      "https://doi.org/10.1088/1742-6596/81/1/012011",
+      "https://www.hep.shef.ac.uk/research/acorne/docs/iopapp2008.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "published_result",
+      "source_url": "https://doi.org/10.1088/1742-6596/81/1/012011",
+      "caption": "Measured and simulated response of the Rona hydrophones used by ACoRNE (2007 paper, Figure 1).",
+      "credit": "S. Danaher / ACoRNE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/d1401e07f2a114d32d8b78021ea0984f",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1058,
+      "height": 822,
+      "sha256": "a043bd431032406e34e89044168dd507bff1271f34d4ba11f8e0561be2eef9e8",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "S. Danaher for the ACoRNE Collaboration, First Data from ACoRNE and Signal Processing Techniques",
+      "url": "https://doi.org/10.1088/1742-6596/81/1/012011",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Northumbria University, First Data from ACoRNE and Signal Processing Techniques",
+      "url": "https://researchportal.northumbria.ac.uk/en/publications/first-data-from-acorne-and-signal-processing-techniques/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2007",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "ACoRNE Collaboration, The ACORNE Project",
+      "url": "https://www.hep.shef.ac.uk/research/acorne/docs/iopapp2008.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2008",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A precise final project shutdown date is not established by the cited sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GBR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "acoustic"
+    ],
+    "technology_tags": [
+      "acoustic"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "kamland-zen",
+  "name": "KamLAND-Zen",
+  "full_name": "Kamioka Liquid-scintillator Antineutrino Detector - Zero Neutrino Double-Beta Decay",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "KamLAND-Zen dissolved enriched xenon in an inner scintillator balloon inside KamLAND to search for xenon-136 neutrinoless double-beta decay. The Zen-400 and Zen-800 datasets remain distinct from the later KamLAND2-Zen upgrade proposal.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Scintillation light measures the combined decay energy and reconstructed position. Event timing, spatial cuts and background models isolate xenon-136 decays within the inner balloon.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; inside KamLAND, Kamioka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; inside KamLAND, Kamioka",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2024-08",
+    "evidence": "The complete KamLAND-Zen search found no neutrinoless decay and improved the combined half-life limit.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "KamLAND-Zen Collaboration",
+    "lead_institutions": [
+      "Tohoku University Research Center for Neutrino Science"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate isotope",
+      "value": "136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Zen-800 xenon inventory",
+      "value": "Approximately 745 kg of enriched xenon",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Complete combined limit",
+      "value": "T1/2 above 3.8 x 10^26 yr at 90% confidence",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The complete KamLAND-Zen search found no neutrinoless decay and improved the combined half-life limit.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "kamland",
+    "kamland2-zen"
+  ],
+  "resources": {
+    "official_website": "https://www.awa.tohoku.ac.jp/kamland/",
+    "publication_links": [
+      "https://arxiv.org/abs/2406.11438"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2276/attachments/860/1264/TAUP2025_KamLANDZen_KellyWeerman.pdf",
+      "caption": "KamLAND-Zen inner balloon and xenon-loaded scintillator geometry, shown in the collaboration TAUP 2025 overview.",
+      "credit": "KamLAND-Zen Collaboration / K. Weerman",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2276/attachments/860/1264/TAUP2025_KamLANDZen_KellyWeerman.pdf#page=8",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 938,
+      "height": 1223,
+      "sha256": "8a3cad86050e5cd35319e57852473a8cddac0cb6c64271f7df517e868eedee5c",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "668daa31cd9af5f60e2c83cf90130536b11a23c04e8bf217fe41e65347365e2d",
+      "source_dimensions": {
+        "width": 938,
+        "height": 1223
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "KamLAND-Zen: official experiment / institutional overview",
+      "url": "https://www.awa.tohoku.ac.jp/kamland/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Search for Majorana Neutrinos with the Complete KamLAND-Zen Dataset",
+      "url": "https://arxiv.org/abs/2406.11438",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

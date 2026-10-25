@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en" data-visualize-standalone="">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="theme-color" content="#292c32">
+<meta name="description" content="Explore dark matter experiments around the world, with independent illustrated experiment dossiers.">
+<title>Dark Matter Experiments World Map</title>
+<link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+<link rel="stylesheet" href="reference.css"><link rel="stylesheet" href="styles.css"><link rel="stylesheet" href="viewer.css">
+<!-- atlas-shell-css:start -->
+<link rel="stylesheet" href="../map-shell.css">
+<!-- atlas-shell-css:end -->
+</head>
+<body>
+<!-- atlas-nav:start -->
+<nav class="atlas-shell" aria-label="Experiment Atlas navigation">
+  <div class="atlas-shell__inner">
+    <a class="atlas-shell__back" href="../../../../../index.html#academic/projects">← Back to Projects</a>
+    <p class="atlas-shell__brand">Experiment Atlas</p>
+    <ul class="atlas-shell__maps" aria-label="Experiment maps">
+      <li><a class="atlas-shell__map" href="../neutrino/index.html" aria-label="Open Neutrino experiments">Neutrino</a></li>
+      <li><a class="atlas-shell__map" href="index.html" aria-label="Open Dark matter experiments" aria-current="page">Dark matter</a></li>
+    </ul>
+  </div>
+</nav>
+<!-- atlas-nav:end -->
+<div id="neutrino-world-counts">
+<h3>Dark matter experiments by country · Updated <time datetime="2026-10-23">23 October 2026</time></h3>
+<div class="viz-row"><span class="text-small">Compiled from the experiment archive · Historical experiments included · Future projects available separately</span><span class="text-small tabular-nums"><span id="nw-total">Loading catalog…</span></span></div>
+<section class="nw-filter-deck" aria-label="Experiment filters" id="filters" hidden>
+<div class="text-small nw-physics-heading">Physics categories</div>
+<div class="viz-controls" id="nw-filters" aria-label="Physics categories"></div>
+<div class="viz-controls"><button class="btn" id="nw-future" type="button" aria-pressed="false">Under construction / future · Separate count</button></div>
+<div class="text-small">Detection technologies</div><div class="viz-controls" id="nw-tech-filters" aria-label="Detection technologies"></div>
+<div class="text-small">Countries and regions</div><div class="viz-row" id="nw-country-buttons" aria-label="Countries and regions"></div>
+</section>
+<p class="text-small" id="loading-message" role="status">Loading the experiment catalog and world map…</p>
+<div class="dm-notice" id="load-error" role="alert" hidden><p id="error-message"></p><button class="btn" type="button" id="retry-load">Retry</button></div>
+<div class="dm-notice" id="file-notice" hidden><p>This interactive map loads local data files. Open it through the homepage website or its local web preview, then reload the page.</p></div>
+<p class="dm-notice" id="route-notice" role="alert" hidden>This experiment link is not valid. Please choose an experiment from the map or list.</p>
+<div class="nw-layout" id="atlas-content" hidden>
+<div class="nw-map-panel"><div class="nw-map-viewport" tabindex="0" role="region" aria-label="World map. Scroll horizontally to explore all labeled regions."><div class="nw-map" id="world-map"></div></div><p class="nw-map-pan-hint">Scroll the map horizontally to explore all regions.</p>
+<div class="viz-row text-small"><span><i class="nw-swatch" style="opacity:.22"></i>1–4</span><span><i class="nw-swatch" style="opacity:.45"></i>5–9</span><span><i class="nw-swatch" style="opacity:.65"></i>10–19</span><span><i class="nw-swatch" style="opacity:.9"></i>20 or more</span><span>Gray: no entries counted in the catalog</span></div></div>
+<div class="card" id="nw-detail"><h4 id="nw-name" aria-live="polite" tabindex="-1">All countries and regions</h4><div id="nw-list"></div><div id="empty-state" class="text-small" hidden><p>No experiments match these filters.</p><button class="btn" id="empty-reset" type="button">Reset filters</button></div></div>
+</div>
+
+<details id="methodology"><summary>Counting methodology, archive sources, and included entries</summary>
+<div class="viz-controls dm-search-tools"><label for="search">Search <input class="form-control" id="search" type="search" placeholder="Name, acronym, science or technology" aria-label="Search experiments" autocomplete="off"></label><label for="status-filter">Status <select class="form-select" id="status-filter" aria-label="Experiment status"></select></label><label for="sort-order">Sort <select class="form-select" id="sort-order" aria-label="Sort experiments"><option value="name">Name A–Z</option><option value="year">Status evidence: newest first</option></select></label><button class="btn" id="reset-filters" type="button">Reset all filters</button></div>
+<p>This map is based on 297 independently maintained experiment or project-series dossiers. Historical experiments, operating facilities, prototypes, named proposals and multipurpose observatories with a documented dark-matter programme are included. This is a catalog, not a census of every experiment worldwide or a count of simultaneously operating detectors.</p>
+<p>Click an experiment name on the right to read its scientific overview, detector concept, key parameters, programme, results and references, and to view its representative image. Photographs, historical prototypes and future design concepts retain their original stage descriptions.</p>
+<p>Counts follow the detector or explicitly identified candidate site, rather than collaboration nationality or headquarters. A series is counted once in each associated country; therefore country totals may sum to more than the unique global total. Space missions, global networks and projects without a confirmed site are listed separately. Europe is the deduplicated union of the country set specified in the catalog; Russia and Greenland retain separate counts.</p>
+<p>Statuses refer to the evidence dates stated in each dossier. An undated website is not proof of operation on the catalog update date. The future filter includes proposed, planned, research-and-development, construction and commissioning entries; series containing several stages remain in their own mixed-status category.</p>
+<p>The map uses the same geographic paths, projection, typography, colors and page layout as the supplied <em>Neutrino Experiments World Map</em>. Detailed experiment text and images are read from separate files when a dossier is opened. Image captions contain numbered citations; scientific references and image credits are collected at the end of each dossier.</p>
+</details>
+</div>
+<noscript><p>This interactive map requires JavaScript.</p></noscript>
+<script>if(location.protocol==='file:'){document.getElementById('file-notice').hidden=false;document.getElementById('loading-message').hidden=true;}</script>
+<script type="module" src="js/app.js"></script>
+</body></html>

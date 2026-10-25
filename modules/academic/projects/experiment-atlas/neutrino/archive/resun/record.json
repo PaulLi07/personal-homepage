@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "resun",
+  "name": "RESUN",
+  "full_name": "Radio EVLA Search for UHE Neutrinos",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical lunar-neutrino search at the Very Large Array used fast coincidence measurements across radio antennas to look for ultra-high-energy neutrinos interacting in the lunar regolith.",
+  "physics_targets": [
+    "Ultra-high-energy neutrinos",
+    "Lunar Askaryan emission"
+  ],
+  "detection_principle": "A neutrino-induced lunar shower can emit a nanosecond Askaryan pulse. Simultaneous voltage triggers in four radio antennas, corrected for geometric delays, discriminate lunar pulses from instrumental noise and terrestrial interference.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Karl G. Jansky Very Large Array, Socorro, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Karl G. Jansky Very Large Array, Socorro, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The cited sources document historical observing campaigns and published limits; they do not establish continuous current neutrino-search operation.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "RESUN-A proof-of-concept observing phase completed.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2009–2010",
+      "event": "First results and extended project description published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RESUN Collaboration",
+    "lead_institutions": [
+      "University of Iowa",
+      "NRAO",
+      "University of California, Berkeley CASPER"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "RESUN-A receiver",
+      "value": "1.45 GHz centre frequency; 50 MHz bandwidth",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "RESUN-A geometry",
+      "value": "One sub-array of four VLA/EVLA antennas",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "name": "RESUN-A exposure",
+      "value": "45 observing hours",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "No lunar-origin pulses were detected during 45 hours. The first-results paper reported 90% confidence flux upper limits rather than a detected neutrino flux.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "glue",
+    "lunaska",
+    "numoon"
+  ],
+  "resources": {
+    "official_website": "https://casper.astro.berkeley.edu/wiki/RESUN",
+    "publication_links": [
+      "https://arxiv.org/abs/0910.5949",
+      "https://doi.org/10.1016/j.astropartphys.2010.08.008"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/0910.5949",
+      "caption": "RESUN-A and RESUN-B lunar beam arrangements (2009 paper, Figure 7).",
+      "credit": "T. R. Jaeger, R. L. Mutel and K. G. Gayley",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/0910.5949",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 780,
+      "height": 426,
+      "sha256": "d1cfb61e9ac3b64048234f042accf09b30e5d3fdb24204bd7130894945533eee",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "T. R. Jaeger, R. L. Mutel and K. G. Gayley, UHE neutrino searches using a Lunar target: First Results from the RESUN search",
+      "url": "https://arxiv.org/abs/0910.5949",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "T. R. Jaeger et al., Project RESUN, a radio EVLA search for UHE neutrinos",
+      "url": "https://doi.org/10.1016/j.astropartphys.2010.08.008",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "CASPER, RESUN hardware and deployment description",
+      "url": "https://casper.astro.berkeley.edu/wiki/RESUN",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

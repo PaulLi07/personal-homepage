@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "newathena",
+  "name": "NewAthena",
+  "full_name": "New Advanced Telescope for High Energy Astrophysics",
+  "aliases": [
+    "Athena"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "ESA's restructured large X-ray-observatory project. High-resolution spectroscopy can test keV dark-matter decay, but early Athena forecasts cannot be used directly as the performance of the revised configuration.",
+  "physics_targets": [
+    "keV sterile neutrinos",
+    "Dark-matter decay lines"
+  ],
+  "detection_principle": "High-throughput X-ray mirrors, X-IFU microcalorimeters and wide-field imaging search dark-matter-rich targets for narrow lines.",
+  "technologies": [
+    "X-IFU cryogenic microcalorimeters",
+    "WFI wide-field imaging"
+  ],
+  "sites": [
+    {
+      "name": "Future space-observation orbit, subject to ESA's design",
+      "country": "Space",
+      "country_code": null,
+      "location": "Future space-observation orbit, subject to ESA's design",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Announced plan",
+    "as_of": null,
+    "evidence": "ESA gives a planned launch in 2039. This is a future design, not an instrument already in orbit.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023-11",
+      "event": "ESA endorsed the restructured NewAthena concept",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NewAthena collaboration / mission team",
+    "lead_institutions": [
+      "ESA"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Planned launch",
+      "value": "2039; subject to ESA's current design plan",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original Athena design",
+      "status": "superseded",
+      "description": "Early literature forecasts refer to this configuration"
+    },
+    {
+      "name": "NewAthena",
+      "status": "planned",
+      "description": "Restructured mission design"
+    }
+  ],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "Sensitivity forecasts for the original Athena design; no observational results yet.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "XRISM",
+    "XMM-Newton"
+  ],
+  "resources": {
+    "official_website": "https://www.esa.int/Science_Exploration/Space_Science/NewAthena_factsheet",
+    "publication_links": [
+      "https://arxiv.org/abs/1509.02758"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.esa.int/Science_Exploration/Space_Science/NewAthena_factsheet",
+      "caption": "Historical Athena space-telescope concept illustration used on ESA's NewAthena page. It conveys the mission concept and is not the final engineering design of the restructured mission.",
+      "credit": "ESA Multimedia, Athena concept illustration; source media entry dated May 2012",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.esa.int/var/esa/storage/images/esa_multimedia/images/2012/05/athena_advanced_telescope_for_high-energy_astrophysics/10304915-2-eng-GB/Athena_Advanced_Telescope_for_High-ENergy_Astrophysics_pillars.jpg",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "ed850aa046053aeba3fb0cbcb711cfcbcdca34794bef7a3e221eb1be8ab03f3c",
+      "mime_type": "image/webp",
+      "source_sha256": "19db6fa498dbd62616367a53ad7162a5587cd2f3e66def54e0ccfdb2775457a6",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 1440
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.esa.int/Science_Exploration/Space_Science/NewAthena_factsheet",
+      "caption": "NewAthena project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/NewAthena_factsheet",
+      "title": "ESA: NewAthena factsheet",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1509.02758",
+      "title": "Toward the full test of the nuMSM sterile neutrino dark matter model with Athena",
+      "source_date": "2015",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Early Athena sensitivities require recalculation before application to NewAthena. Final parameters and mission-adoption status require subsequent engineering documentation."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "beam_particle",
+      "photon_telescope",
+      "optical_survey",
+      "quantum_sensor"
+    ]
+  }
+}

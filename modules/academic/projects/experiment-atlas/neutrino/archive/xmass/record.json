@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "xmass",
+  "name": "XMASS",
+  "full_name": "Xenon detector for weakly interacting MASSive particles - neutrino programme",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "XMASS was a single-phase liquid-xenon detector at Kamioka. Alongside dark-matter work, it searched for rare xenon decay channels and investigated low-energy solar-neutrino signatures.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays",
+    "Solar-neutrino interactions",
+    "Rare xenon weak decays"
+  ],
+  "detection_principle": "Photomultipliers surrounding liquid xenon record scintillation light without extracting ionization charge. Light yield, event position and timing are used to select low-background electron-recoil and rare-decay samples.",
+  "technologies": [
+    "Scintillator detectors",
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground at Kamioka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground at Kamioka",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2019",
+    "evidence": "XMASS-I constrained the rare double-electron-capture process using a low-background liquid-xenon exposure.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "XMASS Collaboration",
+    "lead_institutions": [
+      "University of Tokyo Institute for Cosmic Ray Research"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "XMASS-I xenon mass",
+      "value": "Approximately 832 kg",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector type",
+      "value": "Single-phase liquid-xenon scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Rare-decay channel",
+      "value": "124Xe two-neutrino double-electron capture searches",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "XMASS-I constrained the rare double-electron-capture process using a low-background liquid-xenon exposure.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The archive records the neutrino and weak-decay research of a historical dark-matter detector. A double-electron-capture search is distinct from a neutrinoless double-beta-decay discovery.",
+  "related_experiments": [
+    "xenon"
+  ],
+  "resources": {
+    "official_website": "https://www-sk.icrr.u-tokyo.ac.jp/xmass/",
+    "publication_links": [
+      "https://arxiv.org/abs/1510.00754"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.ipmu.jp/en/story/8009",
+      "caption": "Construction of XMASS-I on 25 February 2010, showing the spherical detector assembly and staff.",
+      "credit": "© Kamioka Observatory, ICRR, The University of Tokyo, as credited in the official IPMU article.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.ipmu.jp/sites/default/files/images/DSC_9695-m.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 680,
+      "height": 455,
+      "sha256": "3840e8b932bdcceb6c491a2ea14ea2bfa5ce52695fc1b250d3db25e260e02182",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "XMASS: official experiment / institutional overview",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/xmass/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Search for two-neutrino double electron capture on 124Xe with the XMASS-I detector",
+      "url": "https://arxiv.org/abs/1510.00754",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "xenon"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

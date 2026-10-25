@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "darkside-20k",
+  "name": "DarkSide-20k",
+  "full_name": "DarkSide-20k liquid-argon observatory",
+  "aliases": [],
+  "category": "supernova",
+  "physics_categories": [
+    "supernova",
+    "cevns"
+  ],
+  "technology_tags": [
+    "lar",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "DarkSide-20k is a liquid-argon dark-matter experiment under construction at Gran Sasso with a dedicated supernova-neutrino programme. Its low-threshold ionization channel can detect a burst through coherent neutrino-nucleus scattering.",
+  "physics_targets": [
+    "Core-collapse supernova neutrinos",
+    "Coherent elastic neutrino-nucleus scattering"
+  ],
+  "detection_principle": "The dual-phase argon time projection chamber measures scintillation and extracted ionization. The low-threshold supernova forecast uses coherent nuclear recoils for an all-flavour burst measurement. The 2026 trigger study also considers charged-current argon reactions; they are a separate interaction channel.",
+  "technologies": [
+    "Liquid-argon time projection chambers",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso Underground Laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso Underground Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-06",
+    "evidence": "The June 2026 supernova-trigger contribution describes simulation-based development. The published Galactic-supernova reach is a forecast, not a detected burst.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DarkSide-20k Collaboration",
+    "lead_institutions": [
+      "Gran Sasso National Laboratory",
+      "Global Argon Dark Matter Collaboration"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Liquid-argon target and fiducial volume",
+      "value": "Approximately 50 tonnes active target in the supernova study; approximately 20 tonnes fiducial mass in the dark-matter design",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Core-collapse signal",
+      "value": "Coherent nuclear recoils and charged-current interactions",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Low-threshold study",
+      "value": "Ionization-only analysis; approximately 0.5 keV nuclear recoil threshold assumed",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-06",
+      "summary": "The June 2026 supernova-trigger contribution describes simulation-based development. The published Galactic-supernova reach is a forecast, not a detected burst.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "coherent",
+    "juno",
+    "dune",
+    "halo"
+  ],
+  "resources": {
+    "official_website": "https://ds-web.lngs.infn.it/index.php/wimps-and-beyond/darkside-20k-as-a-neutrino-observatory/",
+    "publication_links": [
+      "https://arxiv.org/abs/2011.07819",
+      "https://indico.global/event/15740/contributions/147629/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://agenda.infn.it/event/34702/contributions/195864/attachments/103918/145584/Fiorillo_IFAE2023-red.pdf",
+      "caption": "DarkSide-20k detector and cryostat concept shown by the collaboration at IFAE 2023; a technical rendering.",
+      "credit": "DarkSide Collaboration / G. Fiorillo",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://agenda.infn.it/event/34702/contributions/195864/attachments/103918/145584/Fiorillo_IFAE2023-red.pdf#page=16",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 606,
+      "height": 711,
+      "sha256": "f7fc6154137105d28f2bb76077fb58ef8e13fc94ab41cec95ca532ba9a1f6131",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Sensitivity of future liquid argon dark matter search experiments to core-collapse supernova neutrinos",
+      "url": "https://arxiv.org/abs/2011.07819",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-11-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DarkSide-20k as a neutrino observatory",
+      "url": "https://ds-web.lngs.infn.it/index.php/wimps-and-beyond/darkside-20k-as-a-neutrino-observatory/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Real-Time Supernova Neutrino Triggers for DarkSide-20k",
+      "url": "https://indico.global/event/15740/contributions/147629/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "lar",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "lar",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

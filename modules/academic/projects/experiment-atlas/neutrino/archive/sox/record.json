@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "sox",
+  "name": "SOX / CeSOX",
+  "full_name": "Short distance neutrino Oscillations with BoreXino",
+  "aliases": [
+    "SOX",
+    "CeSOX"
+  ],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "SOX was a proposed artificial-source disappearance experiment using the Borexino detector at Gran Sasso. Its planned cerium-144 source would test metre-scale sterile-neutrino oscillations. The project was cancelled before source deployment in February 2018 because the required source activity could not be manufactured.",
+  "physics_targets": [
+    "Light sterile-neutrino disappearance",
+    "Reactor and gallium anomalies"
+  ],
+  "detection_principle": "Electron antineutrinos from the cerium-144/praseodymium-144 decay chain would be detected through inverse beta decay. The spatial and energy dependence of events would test short-baseline disappearance. Earlier designs also considered chromium-51 electron-neutrino sources.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Borexino at Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "LNGS underground laboratory, Abruzzo",
+      "latitude": 42.454,
+      "longitude": 13.576,
+      "precision": "approximate_site",
+      "site_status": "proposed_source_deployment_not_realized"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Cancelled / never operated",
+    "as_of": "2018-02-01",
+    "evidence": "INFN and CEA cancelled the source experiment when the supplier could not deliver the required source activity. The planned source run did not take place.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "Multi-phase source-oscillation concept published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2018-02-01",
+      "event": "Project cancellation announced",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SOX / CeSOX Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "CEA/IRFU"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Host detector",
+      "value": "Borexino organic liquid-scintillator detector",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Final source concept",
+      "value": "Cerium-144/praseodymium-144 antineutrino generator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source-production shortfall",
+      "value": "At most 50 kCi available, approximately one third of the required activity",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "No SOX source-neutrino exposure or oscillation result was obtained. Cancellation must not be confused with the successful Borexino solar-neutrino programme.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "borexino",
+    "celand",
+    "best"
+  ],
+  "resources": {
+    "official_website": "https://www.infn.it/infn-e-cea-annullano-il-progetto-sox-per-l-impossibilita-di-realizzare-la-sorgente-con-le-caratteristiche-necessarie-all-esperimento/",
+    "publication_links": [
+      "https://arxiv.org/abs/1304.7721"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1304.7721",
+      "caption": "Early SOX design showing alternative source locations around Borexino; the source programme was not realized.",
+      "credit": "Borexino Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/abs/1304.7721",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1729,
+      "height": 1667,
+      "sha256": "49a8eca203b68dcdf79c6ccf88e0bdbbf8eb2a3a5874116621d952a7c712b370",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected final local figure and checked its apparatus identity and design/measurement stage against the public source.",
+      "source_sha256": "1defc8a27cb56eb479dc04cd25dacb0b871823030874340d307c6c1c98b49655",
+      "source_dimensions": {
+        "width": 1729,
+        "height": 1667
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INFN and CEA announce cancellation of the SOX project",
+      "url": "https://www.infn.it/infn-e-cea-annullano-il-progetto-sox-per-l-impossibilita-di-realizzare-la-sorgente-con-le-caratteristiche-necessarie-all-esperimento/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2018-02-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Borexino Collaboration, SOX: Short distance neutrino Oscillations with BoreXino",
+      "url": "https://arxiv.org/abs/1304.7721",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-04-29",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

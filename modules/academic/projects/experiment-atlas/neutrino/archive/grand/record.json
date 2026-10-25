@@ -1,0 +1,245 @@
+{
+  "schema_version": "1.0",
+  "id": "grand",
+  "name": "GRAND",
+  "full_name": "Giant Radio Array for Neutrino Detection",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A staged international radio-array project seeks cosmogenic tau neutrinos by observing highly inclined air showers over very large areas. Implemented prototypes test the approach before a full observatory.",
+  "physics_targets": [
+    "Ultra-high-energy tau neutrinos",
+    "Cosmic rays and gamma rays",
+    "Radio detection of inclined air showers"
+  ],
+  "detection_principle": "Radio antennas on favourable terrain detect geomagnetic emission from air showers, including those from Earth-skimming tau leptons. Autonomous triggering and rejection of impulsive radio backgrounds are central challenges.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "GRANDProto300",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Xiao Dushan near Dunhuang, Gansu",
+      "latitude": 40.9,
+      "longitude": 94.3,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "GRAND@Auger",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Pierre Auger Observatory site near Malargüe",
+      "latitude": -35.2,
+      "longitude": -69.3,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "GRAND@Nançay",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Nançay Radio Observatory",
+      "latitude": 47.38,
+      "longitude": 2.2,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "Prototype arrays are implemented; the final global array and its neutrino exposure remain future goals.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018",
+      "event": "Full science and design report released.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Antenna deployment began at Xiao Dushan, China.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Commissioning and calibration of a partial GP300 array reported.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GRAND Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Full GRAND concept",
+      "value": "Up to 200,000 antennas over approximately 200,000 km²; long-term design",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "GRANDProto300 design",
+      "value": "300 antennas over approximately 200 km²",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Prototype operating band",
+      "value": "50–200 MHz",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Documented deployment",
+      "value": "ICRC2025 abstract reports 50 detection units at the Chinese site",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Prototype programme",
+      "summary": "Measured radio backgrounds and calibration signals while developing self-triggered air-shower reconstruction. The complete GRAND sensitivity remains a design projection.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "heron",
+    "beacon",
+    "taroge-m"
+  ],
+  "resources": {
+    "official_website": "https://grand.cnrs.fr/overview/grandproto300/",
+    "publication_links": [
+      "https://arxiv.org/abs/1810.09994"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/1810.09994v3",
+      "caption": "Detection-principle diagram for GRAND10k from Figure 16 of the original GRAND design paper: a mountainside antenna array receives radio signals from cosmic-ray or Earth-skimming tau-neutrino-induced air showers. Lower-left inset: HorizonAntenna concept. A proposed array design, not a photograph of a completed full array.",
+      "credit": "GRAND Collaboration, “Science and Design,” arXiv:1810.09994v3, Figure 16",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1810.09994v3/grand_det_principle.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1358,
+      "sha256": "e25dd4ec673e59311f5eba781195c7dbb30bf2867c67a4dbee8aef263e448dab",
+      "mime_type": "image/webp",
+      "source_sha256": "11c99a2659ccc8a95975e38a5934c0b21174c91e6e369405de146ad089c64cc5",
+      "source_dimensions": {
+        "width": 1985,
+        "height": 1404
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GRAND Collaboration, GRANDProto300",
+      "url": "https://grand.cnrs.fr/overview/grandproto300/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "GRAND Collaboration, science and design",
+      "url": "https://arxiv.org/abs/1810.09994",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "GRAND Collaboration, Progress of GRANDProto300 at ICRC2025",
+      "url": "https://indico.cern.ch/event/1258933/contributions/6490681/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN",
+      "ARG",
+      "FRA",
+      "GLOBAL",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": true
+  }
+}

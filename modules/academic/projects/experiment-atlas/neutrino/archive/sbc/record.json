@@ -1,0 +1,299 @@
+{
+  "schema_version": "1.0",
+  "id": "sbc",
+  "name": "SBC",
+  "full_name": "Scintillating Bubble Chamber",
+  "aliases": [
+    "SBC-LAr10",
+    "SBC-SNOLAB"
+  ],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "reactor",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bubble",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "SBC develops liquid-argon bubble chambers for very small nuclear recoils, combining bubble formation with scintillation readout. A 10 kg Fermilab detector characterizes the technology. Future reactor deployments have been studied for coherent neutrino scattering, alongside a separate low-background dark-matter programme at SNOLAB.",
+  "physics_targets": [
+    "Coherent elastic reactor-neutrino–nucleus scattering",
+    "Low-energy weak-interaction and new-physics tests",
+    "Low-mass dark matter"
+  ],
+  "detection_principle": "A nuclear recoil can nucleate a bubble in superheated argon while also producing scintillation. Optical imaging and acoustic channels identify bubble formation; scintillation adds energy information and helps event characterization.",
+  "technologies": [
+    "Superheated liquid-argon bubble chamber",
+    "Scintillation readout",
+    "Optical and acoustic bubble monitoring"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab MINOS underground facility",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Batavia, Illinois",
+      "latitude": 41.84,
+      "longitude": -88.26,
+      "precision": "approximate_site",
+      "site_status": "calibration_detector"
+    },
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Sudbury, Ontario",
+      "latitude": 46.47,
+      "longitude": -81.19,
+      "precision": "approximate_site",
+      "site_status": "planned_low_background_darkmatter_detector"
+    },
+    {
+      "name": "ININ TRIGA reactor",
+      "country": "Mexico",
+      "country_code": "MEX",
+      "location": "Near Mexico City",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_reactor_site"
+    },
+    {
+      "name": "Laguna Verde nuclear power station",
+      "country": "Mexico",
+      "country_code": "MEX",
+      "location": "Veracruz, Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_reactor_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-08",
+    "evidence": "The October 2026 collaboration report documents Fermilab characterization data and a forthcoming SNOLAB twin. A reactor CEvNS deployment remains prospective.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "ININ and Laguna Verde reactor-CEvNS configurations studied",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2025-10",
+      "event": "Fermilab SBC-LAr10 observed first bubbles and began a calibration campaign",
+      "source_ids": [
+        "s5"
+      ]
+    },
+    {
+      "date": "2026-10",
+      "event": "Collaboration reported detector-characterization progress",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SBC Collaboration",
+    "lead_institutions": [
+      "Fermilab",
+      "Northwestern University",
+      "Drexel University",
+      "Universidad Nacional Autónoma de México"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Calibration target",
+      "value": "10 kg liquid argon at Fermilab",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Calibration design threshold",
+      "value": "100 eV target threshold in the detailed calibration plan; a goal requiring response measurements",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Reactor study A",
+      "value": "10 kg at 3 m from a 1 MW thermal research reactor; proposed ININ option",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Reactor study B",
+      "value": "100 kg at 30 m from a 2 GW thermal reactor; proposed Laguna Verde option",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SBC-LAr10 Fermilab",
+      "status": "Characterization and calibration",
+      "description": "10 kg device in the MINOS underground facility; first bubble events do not by themselves establish a 40–100 eV calibrated response.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "name": "SBC-SNOLAB",
+      "status": "Future low-background deployment",
+      "description": "A twin chamber for dark-matter studies; distinct from a reactor experiment.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor CEvNS configurations",
+      "status": "Proposed",
+      "description": "ININ 10 kg and Laguna Verde 100 kg are sensitivity-study options, not verified operating neutrino detectors.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "First bubble-nucleating events and multi-channel detector characterization were reported. No reactor-neutrino CEvNS detection is claimed by this archive.",
+      "source_ids": [
+        "s1",
+        "s5"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nucleus",
+    "ricochet",
+    "conus-plus"
+  ],
+  "resources": {
+    "official_website": "https://dm.ci.northwestern.edu/research.html",
+    "publication_links": [
+      "https://indico.nikhef.nl/event/7584/contributions/31309/",
+      "https://arxiv.org/abs/2511.19817",
+      "https://doi.org/10.1103/PhysRevD.105.113005",
+      "https://indico.global/event/16063/contributions/149235/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://dm.ci.northwestern.edu/research.html",
+      "caption": "SBC-LAr10 design cutaway showing its argon vessel, scintillation sensors, camera viewports and pressure system.",
+      "credit": "SBC Collaboration / Northwestern University",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://dm.ci.northwestern.edu/images/sbc_rendering.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 582,
+      "height": 515,
+      "sha256": "18a3511e5fb1b4b2cc86a43855df1f96a9aed511c8a11fdc0b6ba6367675bdf5",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected final local figure and checked its apparatus identity and design/measurement stage against the public source."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "G. Putnam for SBC, Status and Prospects of SBC-LAr10, LIDINE 2026",
+      "url": "https://indico.nikhef.nl/event/7584/contributions/31309/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SBC Collaboration, Calibration Plan for the SBC 10-kg Liquid Argon Detector with 100 eV Target Threshold",
+      "url": "https://arxiv.org/abs/2511.19817",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-11-25",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "New physics searches in a low threshold scintillating argon bubble chamber measuring coherent elastic neutrino-nucleus scattering in reactors",
+      "url": "https://doi.org/10.1103/PhysRevD.105.113005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Northwestern University Dahl group, Scintillating Bubble Chambers",
+      "url": "https://dm.ci.northwestern.edu/research.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "R. Neilson for SBC, First Bubbles in the SBC-LAr10 Detector",
+      "url": "https://indico.global/event/16063/contributions/149235/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN",
+      "MEX"
+    ],
+    "technology_groups": [
+      "bubble",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bubble",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

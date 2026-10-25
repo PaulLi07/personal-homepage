@@ -1,0 +1,19 @@
+/* Main page styles are taken verbatim from the supplied English reference. */
+[hidden]{display:none!important}
+.dm-notice{padding:14px 16px;border:1px solid #ffffff24;border-radius:12px;background:#343840;font-size:12px;line-height:1.7;margin-top:16px}
+.dm-search-tools{align-items:end;margin-top:14px!important;gap:12px!important}
+.dm-search-tools label{display:grid;gap:5px;font-size:11px;min-width:150px}
+.dm-search-tools label:first-child{flex:1;min-width:220px}
+.dm-search-tools input,.dm-search-tools select{font:inherit;color:var(--foreground);background:#3b3f48;border:1px solid #ffffff21;border-radius:7px;padding:7px 9px;min-width:0}
+.dm-search-tools .btn{min-height:32px!important}
+#neutrino-world-counts #nw-list .nw-experiment-row{cursor:pointer}
+/* SVG's native focus outline follows the bounding box, not the country shape. */
+#neutrino-world-counts .nw-country:focus{outline:none}
+#neutrino-world-counts .nw-country:focus-visible{stroke:#91c5ff;stroke-width:2;vector-effect:non-scaling-stroke;paint-order:fill stroke}
+#neutrino-world-counts .nw-map-viewport:focus:not(:focus-visible){outline:none}
+#neutrino-world-counts .nw-region-label text{pointer-events:auto;cursor:pointer}
+#neutrino-world-counts .nw-region-label text:focus{outline:none}
+#neutrino-world-counts .nw-region-label text:focus-visible{text-decoration:underline}
+#neutrino-world-counts #empty-state p{margin:0 0 10px}
+#neutrino-world-counts>details{margin-top:21px}
+html:has(.dm-archive-dialog[open]){overflow:hidden}

@@ -1,0 +1,220 @@
+{
+  "schema_version": "1.0",
+  "id": "lena",
+  "name": "LENA",
+  "full_name": "Low Energy Neutrino Astronomy",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "solar",
+    "geo",
+    "supernova",
+    "reactor",
+    "accelerator"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "LENA proposed a 50-kiloton liquid-scintillator observatory with broad solar, geoneutrino and supernova-neutrino capabilities. Its technical studies examined a large underground cylindrical detector at European candidate sites. LENA is a historical proposal; an operating 50-kiloton LENA detector is not established by the reviewed sources.",
+  "physics_targets": [
+    "Solar, terrestrial and supernova neutrinos",
+    "Diffuse supernova neutrino background",
+    "Reactor and accelerator oscillations",
+    "Nucleon decay"
+  ],
+  "detection_principle": "Scintillation light from inverse beta decay, neutrino-electron scattering and neutrino interactions on carbon would provide low-threshold calorimetry. Photomultiplier coverage and a surrounding veto would suppress radioactive and cosmic backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Pyhäsalmi mine",
+      "country": "Finland",
+      "country_code": "FIN",
+      "location": "Pyhäjärvi, Finland",
+      "latitude": 63.66,
+      "longitude": 26.04,
+      "precision": "approximate_site",
+      "site_status": "historical_candidate_site"
+    },
+    {
+      "name": "Fréjus / Modane underground site",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "French Alps, near Modane",
+      "latitude": 45.18,
+      "longitude": 6.69,
+      "precision": "approximate_site",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Historical proposal",
+    "as_of": "2014-09",
+    "evidence": "The design white paper and later physics studies describe a proposed detector. Candidate-site and sensitivity studies are not construction or operational milestones.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2011",
+      "event": "Large-detector white paper submitted",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2012",
+      "event": "Revised design and physics case published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2014",
+      "event": "Detailed diffuse-supernova-neutrino sensitivity study released",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LENA Collaboration",
+    "lead_institutions": [
+      "Technical University of Munich",
+      "University of Hamburg",
+      "University of Oulu"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed target",
+      "value": "50 kilotonnes of liquid scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reference tank",
+      "value": "Approximately 100 m tall and 30 m diameter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Candidate underground sites",
+      "value": "Pyhäsalmi and Fréjus in the design study",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Illustrative DSNB window",
+      "value": "9.5–25 MeV in the 2014 sensitivity study",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design programme",
+      "summary": "The studies forecasted sensitivity to low-energy and supernova-neutrino signals. These predictions are not measured LENA neutrino events.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "borexino",
+    "kamland",
+    "juno",
+    "theia"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1104.5620",
+      "https://arxiv.org/abs/1409.2240"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1104.5620",
+      "caption": "Artist’s cutaway of the proposed LENA scintillator detector; Figure 1 of the design white paper.",
+      "credit": "LENA design-study authors",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1104.5620v3/lena_alternative.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 614,
+      "height": 1336,
+      "sha256": "d7c9f56c217429778146195c125131d39fe838ab45e62a1216e2e98681312744",
+      "mime_type": "image/webp",
+      "visual_review_note": "Final local design image inspected against the original paper figure and its proposed detector configuration.",
+      "source_sha256": "f16c8746e49db403f0eb979d3f660484816c22a7394d78a72a78a9a4ed4b4132",
+      "source_dimensions": {
+        "width": 614,
+        "height": 1336
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "M. Wurm et al., The next-generation liquid-scintillator neutrino observatory LENA",
+      "url": "https://arxiv.org/abs/1104.5620",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2012-03-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "R. Möllenberg et al., Detecting the Diffuse Supernova Neutrino Background with LENA",
+      "url": "https://arxiv.org/abs/1409.2240",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014-09-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "No full-scale deployment or operating exposure was established from the reviewed primary sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FIN",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

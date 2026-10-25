@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "id": "jne",
+  "name": "JNE",
+  "full_name": "Jinping Neutrino Experiment",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "geo",
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "JNE develops a low-background neutrino programme at the deeply shielded China Jinping Underground Laboratory. Its upgraded one-tonne prototype has operated with water and liquid scintillator at CJPL-I, while a larger detector is under construction for solar, geoneutrino and astrophysical measurements.",
+  "physics_targets": [
+    "Solar neutrinos",
+    "Geoneutrinos",
+    "Supernova and diffuse supernova neutrinos",
+    "Hybrid optical detector development"
+  ],
+  "detection_principle": "Scintillation and Cherenkov light in an optically instrumented target are studied to combine low thresholds and directionality. Deep rock shielding and distance from coastal nuclear reactors favour solar and terrestrial-neutrino measurements.",
+  "technologies": [
+    "Scintillator detectors",
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Jinping underground laboratory, Sichuan",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Jinping underground laboratory, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Prototype operation and larger-detector construction",
+    "as_of": "2026-09-28",
+    "evidence": "The September 2026 collaboration paper documents completed upgraded-prototype runs and explicitly identifies the larger JNE detector as under construction.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Jinping neutrino-programme workshop",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Larger-detector R&D and planning reported",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-09",
+      "event": "Upgraded prototype operating performance reported",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "JNE Collaboration",
+    "lead_institutions": [
+      "Tsinghua University",
+      "China Jinping Underground Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Rock overburden",
+      "value": "Approximately 2,400 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Demonstrator",
+      "value": "One-tonne prototype at CJPL-I",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Larger stage",
+      "value": "Multi-hundred-tonne / approximately 500 m³ design programme",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "JNE-1ton",
+      "status": "Prototype measurement campaigns",
+      "description": "Upgraded water and liquid-scintillator campaigns took place during 2024–2026 at CJPL-I.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Larger JNE detector",
+      "status": "Under construction",
+      "description": "The 2026 collaboration publication identifies the larger detector as under construction; a full-scale solar-neutrino measurement is not claimed.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The upgraded prototype demonstrated water and liquid-scintillator operating modes and muon reconstruction. This is detector R&D, not a completed full-scale solar or geoneutrino measurement.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "juno",
+    "theia"
+  ],
+  "resources": {
+    "official_website": "https://jinping.hep.tsinghua.edu.cn/index.php",
+    "publication_links": [
+      "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2471/",
+      "https://arxiv.org/abs/2609.35135"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2609.35135",
+      "caption": "Schematic of the upgraded JNE one-tonne prototype; this is distinct from the larger detector under construction.",
+      "credit": "JNE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2609.35135v1/figs/new1ton.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1270,
+      "sha256": "c57e67b680e3f5f5d3b6ffeb8f45b014307640cdfdaa391c2db9eefe8b4e7d03",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "d617433926f2f6d0cfc4dce81a626a00a80f196c22bdc8f93872af7fc4a3233e",
+      "source_dimensions": {
+        "width": 4033,
+        "height": 2668
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Jinping Neutrino Experiment official website",
+      "url": "https://jinping.hep.tsinghua.edu.cn/index.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "JNE Collaboration, Research and development at TAUP2025",
+      "url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2471/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "JNE Collaboration, Upgraded one-tonne water-Cherenkov prototype performance",
+      "url": "https://arxiv.org/abs/2609.35135",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-28",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

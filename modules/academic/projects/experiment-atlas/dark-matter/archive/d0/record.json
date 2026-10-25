@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "d0",
+  "name": "D0",
+  "full_name": "DØ experiment",
+  "aliases": [
+    "DØ"
+  ],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "D0 operated at the Fermilab Tevatron, Batavia, Illinois. This historical general-purpose collider experiment tested visible dark-photon decays in hidden-valley models as portal interactions, rather than directly observing cosmic dark matter.",
+  "physics_targets": [
+    "Dark photons",
+    "Hidden-valley dark sector",
+    "Supersymmetric dark sector"
+  ],
+  "detection_principle": "Photon, collimated-lepton-pair and large missing-transverse-energy combinations in proton–antiproton collisions test dark-photon decays in supersymmetric hidden-valley frameworks.",
+  "technologies": [
+    "Silicon and fiber tracking",
+    "Liquid-argon calorimeter",
+    "Muon detection"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Tevatron, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab Tevatron, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Listed dark-photon results use historical Tevatron samples published in 2009",
+    "as_of": "2009",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009",
+      "event": "Listed dark-photon results use historical Tevatron samples published in 2009",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "D0 Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Beam type",
+      "value": "High-energy Tevatron proton–antiproton collisions",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Signal signature",
+      "value": "Photon + closely collimated lepton pair + missing transverse energy",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "D0",
+      "status": "completed",
+      "description": "Listed dark-photon results use historical Tevatron samples published in 2009"
+    }
+  ],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "No dark-photon excess above background; constraints were set on specific supersymmetric hidden-valley models.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "CDF",
+    "ATLAS",
+    "CMS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0905.1478"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://inspirehep.net/files/e64b513eb1265d0f49a39f9d562559b2",
+      "caption": "Open DØ detector at Fermilab, showing calorimetry and surrounding supports; from a retrospective on the twentieth anniversary of the top-quark discovery.",
+      "credit": "Dmitri Denisov, Costas Vellidis / Fermilab, retrospective Fig. 3 right; no separate photographer credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/e64b513eb1265d0f49a39f9d562559b2",
+      "width": 303,
+      "height": 338,
+      "sha256": "76669445ed4d96948ac735a73c1376c4265298425d66ede3a77358c1f7fb311d",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/0905.1478",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for dark photons from supersymmetric hidden valleys",
+      "url": "https://arxiv.org/abs/0905.1478",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009-06-02",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "atucha-ii",
+  "name": "Atucha-II",
+  "full_name": "Atucha-II Skipper-CCD reactor experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "cevns",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Atucha-II experiment operates a gram-scale Skipper-CCD inside reactor containment in Argentina. Its close proximity and single-electron charge resolution make it a testbed for low-energy reactor-neutrino and exotic-particle interactions.",
+  "physics_targets": [
+    "Reactor CEvNS sensitivity",
+    "Low-threshold silicon detection",
+    "Reactor-produced millicharged particles"
+  ],
+  "detection_principle": "Repeated charge sampling in silicon resolves ionization with sub-electron readout noise. A cryogenic sensor, lead and polypropylene shielding, and reactor-on/off samples characterize low-energy backgrounds and support CEvNS and new-particle searches.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Atucha-II nuclear power plant",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Atucha-II nuclear power plant",
+      "latitude": -33.966,
+      "longitude": -59.205,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2024",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021-12",
+      "event": "Skipper-CCD installed at Atucha-II",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Deployment performance and joint particle-search results reported",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Atucha-II Collaboration",
+    "lead_institutions": [
+      "Universidad de Buenos Aires",
+      "Fermilab",
+      "Nucleoeléctrica Argentina"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Sensor mass",
+      "value": "Approximately 2 g; fiducial selections are analysis dependent",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Distance",
+      "value": "12 m from the reactor core",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout noise",
+      "value": "Approximately 0.17 electrons",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The initial campaign established sub-electron detector performance inside containment; the joint CONNIE/Atucha analysis set millicharged-particle constraints rather than a neutrino discovery.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "connie"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2401.07885",
+      "https://arxiv.org/abs/2405.16316"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2401.07885",
+      "caption": "Atucha-II reactor containment and Skipper-CCD installation layout (Figure 2, left panel).",
+      "credit": "Atucha-II Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2401.07885",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1913,
+      "sha256": "87522aadedb4d5fd3f1c73bf9118d4df68ed838ad95c23a84269e5a3d252629e",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "b4d7e02973697f59744886d16a50e85a1dcd074bb6d56c46a2f0774a2c61077b",
+      "source_dimensions": {
+        "width": 5000,
+        "height": 4982
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Atucha-II Collaboration, Deployment and performance inside reactor containment",
+      "url": "https://arxiv.org/abs/2401.07885",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-01-15",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CONNIE and Atucha-II Collaborations, Reactor-produced millicharged-particle search",
+      "url": "https://arxiv.org/abs/2405.16316",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-05-25",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ARG"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

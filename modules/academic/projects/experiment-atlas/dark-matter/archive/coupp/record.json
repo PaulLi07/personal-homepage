@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "coupp",
+  "name": "COUPP",
+  "full_name": "Chicagoland Observatory for Underground Particle Physics",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "COUPP was a dark-matter programme using an iodine/fluorine liquid bubble chamber. It was tested at Fermilab and produced underground WIMP results at SNOLAB before merging with PICASSO to form PICO.",
+  "physics_targets": [
+    "Spin-dependent WIMPs",
+    "Spin-independent WIMPs"
+  ],
+  "detection_principle": "Nuclear-recoil energy deposition nucleates bubbles in superheated CF3I. Acoustic readout discriminates alpha backgrounds, and multiple bubbles help identify neutrons.",
+  "technologies": [
+    "CF3I bubble chamber",
+    "Acoustic background discrimination"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermi National Accelerator Laboratory, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2013",
+    "evidence": "The official PICO history confirms COUPP as a predecessor; independent historical results were published in 2012–2013.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "COUPP Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "2012 underground detector",
+      "value": "4 kg CF3I",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2012",
+      "summary": "Underground bubble-chamber data constrain spin-dependent and spin-independent dark-matter scattering.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "PICO",
+    "PICASSO"
+  ],
+  "resources": {
+    "official_website": "https://www.picoexperiment.com/",
+    "publication_links": [
+      "https://arxiv.org/abs/1204.3094"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://news.fnal.gov/2013/05/new-dark-matter-detector-begins-search-invisible-particles/",
+      "caption": "COUPP-60 installed underground at SNOLAB, showing the pressure vessel, control lines and inner wall of the surrounding water shield.",
+      "credit": "SNOLAB; published in a 2013 Fermilab news article.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://news.fnal.gov/wp-content/uploads/2016/07/Coupp1-hr.jpg",
+      "width": 1920,
+      "height": 1277,
+      "sha256": "886230a1cd53c7fc672498b4488b42f209acf949b1c41fd7d84c25b6e7dde40d",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "17076d6e5bde167659a2ec53e3a4be11f9c3cafccff9d91d08f8ca884bd241a5",
+      "source_dimensions": {
+        "width": 3008,
+        "height": 2000
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1204.3094",
+      "caption": "COUPP apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "COUPP Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "First dark matter search results from a 4-kg CF3I bubble chamber operated in a deep underground site",
+      "url": "https://arxiv.org/abs/1204.3094",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "PICO collaboration origins",
+      "url": "https://www.picoexperiment.com/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "bubble"
+    ]
+  }
+}

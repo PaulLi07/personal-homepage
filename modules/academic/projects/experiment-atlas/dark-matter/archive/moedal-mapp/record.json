@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "moedal-mapp",
+  "name": "MoEDAL-MAPP",
+  "full_name": "MoEDAL Apparatus for Penetrating Particles",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "MoEDAL-MAPP is based in underground tunnels near LHCb at CERN LHC Point 8. Its parent experiment is MoEDAL; magnetic-monopole sensitivity does not automatically make all MoEDAL running a dark-matter search.",
+  "physics_targets": [
+    "Millicharged particles",
+    "Dark pions",
+    "Long-lived dark sector"
+  ],
+  "detection_principle": "MAPP uses multilayer low-threshold scintillator units to detect weak ionization and related modules to study weakly coupled long-lived particles. This MoEDAL extension has dark-sector targets distinct from the original monopole search.",
+  "technologies": [
+    "Plastic scintillators",
+    "PMT",
+    "Low-ionization coincidence detection"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC Point 8, underground tunnel near LHCb",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN LHC Point 8, underground tunnel near LHCb",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "A 2025 collaboration report states MAPP-1 is installed; full subsequent extensions still require approval",
+    "as_of": "2025-04",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-04",
+      "event": "A 2025 collaboration report states MAPP-1 is installed; full subsequent extensions still require approval",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MoEDAL-MAPP Collaboration / project team",
+    "lead_institutions": [
+      "University of Alberta",
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Series distinctions",
+      "value": "MAPP-1 is the existing installation; MAPP-2 and outrigger are subsequent proposals",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "2025 dark-pion study",
+      "value": "Millicharged dark pions in SIMP models; the paper's sensitivity assumptions are not measured limits",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MAPP-1",
+      "status": "commissioning",
+      "description": "Installation confirmed by the 2025 report; actual physics-data-taking start remains unverified"
+    },
+    {
+      "name": "MAPP-2 / MAPP outrigger",
+      "status": "proposed",
+      "description": "Approval and funding of extensions require independent confirmation"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The updated dark-pion paper gives HL-LHC MAPP-1 projections with background assumptions, rather than exclusions.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "LHCb",
+    "milliQan",
+    "FORMOSA"
+  ],
+  "resources": {
+    "official_website": "https://indico.global/event/5646/contributions/123338/attachments/57944/111356/IOP2025_Magnan.pdf",
+    "publication_links": [
+      "https://arxiv.org/abs/2509.02821"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.global/event/5646/contributions/123338/attachments/57944/111356/IOP2025_Magnan.pdf",
+      "caption": "MAPP-1 installed in the tunnel, from the 2025 IOP report; the image represents the MAPP-1 phase. Source PDF p. 12.",
+      "credit": "Anne-Marie Magnan (IOP 2025 report); no separate photographer is credited in the figure",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://indico.global/event/5646/contributions/123338/attachments/57944/111356/IOP2025_Magnan.pdf",
+      "width": 466,
+      "height": 394,
+      "sha256": "d1930d05e7227c4e463385c95c1330ae02a7c9b7ac566dbd9246026f0f6cd82a",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2509.02821",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MoEDAL/MAPP status — IOP 2025",
+      "url": "https://indico.global/event/5646/contributions/123338/attachments/57944/111356/IOP2025_Magnan.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04-09",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Searching for Dark Pions with the MoEDAL-MAPP Detector at the LHC",
+      "url": "https://arxiv.org/abs/2509.02821",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-31",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

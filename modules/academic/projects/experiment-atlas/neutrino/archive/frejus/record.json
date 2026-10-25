@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "frejus",
+  "name": "Frejus",
+  "full_name": "Fréjus underground nucleon-decay and neutrino experiment",
+  "aliases": [],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "sampling",
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical fine-grained iron calorimeter at the Modane Underground Laboratory searched for nucleon decay and studied atmospheric-neutrino interactions and muons.",
+  "physics_targets": [
+    "Nucleon decay",
+    "Atmospheric neutrino flavour content",
+    "Underground cosmic-ray muons"
+  ],
+  "detection_principle": "Alternating iron absorber sheets and flash-tube tracking planes imaged charged-particle topologies. Interleaved Geiger planes triggered the apparatus, allowing neutrino interactions to be distinguished from throughgoing muons.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "France; Frejus underground laboratory, Modane",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Frejus underground laboratory, Modane",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The founding collaboration reports describe the installed historical apparatus; it is not a present-day Modane detector.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1984",
+      "event": "Partial detector began operation in March.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1985",
+      "event": "Full detector completed in June.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1980s–1990s",
+      "event": "Atmospheric-neutrino and nucleon-decay analyses published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Frejus Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Total mass",
+      "value": "912 tonnes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Dimensions",
+      "value": "Approximately 12.3 × 6 × 6 m³",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Approximately 0.93 million flash tubes with 113 Geiger trigger planes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Historical results",
+      "summary": "Recorded contained atmospheric-neutrino interactions and set nucleon-decay limits; its flavour-ratio precision was lower than later large oscillation experiments.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "soudan-2",
+    "nusex"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://ntrs.nasa.gov/citations/19850027825",
+      "https://ntrs.nasa.gov/api/citations/19860022011/downloads/19860022011.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "caption": "Frejus detector, reproduced from Yuichi Oyama’s historical neutrino-detector lecture (page 32).",
+      "credit": "Original experiment collaboration / Yuichi Oyama, KEK/J-PARC",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf#page=32",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 896,
+      "height": 670,
+      "sha256": "6d5fbc7b7afa60fc807761b4d41248d7a0c49ebe078442d979c697843360f9ba",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fréjus Collaboration, Search for proton decay in the Fréjus experiment",
+      "url": "https://ntrs.nasa.gov/citations/19850027825",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1985",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Fréjus Collaboration, detector structure and initial data",
+      "url": "https://ntrs.nasa.gov/api/citations/19860022011/downloads/19860022011.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1985",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Yuichi Oyama, Neutrino physics and detectors: From Kamiokande to T2K",
+      "url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling",
+      "gas"
+    ],
+    "technology_tags": [
+      "sampling",
+      "gas"
+    ],
+    "is_europe": true
+  }
+}

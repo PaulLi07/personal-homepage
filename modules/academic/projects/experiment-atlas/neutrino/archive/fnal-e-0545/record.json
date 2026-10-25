@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "fnal-e-0545",
+  "name": "FNAL-E-0545",
+  "full_name": "Fermilab Experiment E545, neutrino-deuterium programme",
+  "aliases": [
+    "Fermilab E545"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bubble"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Fermilab E545 used a deuterium-filled 15-foot bubble chamber to compare neutrino interactions on neutrons and protons, measuring quasi-elastic scattering, neutral currents and hadronic final states.",
+  "physics_targets": [
+    "Neutron-versus-proton charged-current and neutral-current cross sections",
+    "Quasi-elastic axial form factors",
+    "Nucleon structure and hadronization"
+  ],
+  "detection_principle": "Photographs recorded the charged-particle tracks produced in deuterium. Event topology and kinematic reconstruction separated neutron and proton interactions, with the weakly bound target enabling nucleon-level studies subject to deuterium corrections.",
+  "technologies": [
+    "Bubble chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1983",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1982",
+      "event": "Flux and total charged-current results published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1983",
+      "event": "Quasi-elastic axial-form-factor result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FNAL-E-0545 Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector",
+      "value": "Fermilab 15-foot bubble chamber",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "Liquid deuterium",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "High-energy wide-band muon neutrinos",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1983",
+      "summary": "Extracted an axial mass of about 1.05 GeV in the stated dipole-form-factor model, compatible with earlier low-energy measurements.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "bnl-e-0427",
+    "fnal-e-0031",
+    "fnal-e-0053"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.28.436",
+      "https://doi.org/10.1103/PhysRevLett.49.98"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.flickr.com/photos/37916456@N02/13471969905",
+      "caption": "Cryogenic equipment being installed around the Fermilab 15-foot bubble chamber, circa 1974. This is the shared apparatus used by multiple exposure programmes.",
+      "credit": "US Department of Energy / Fermilab",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://upload.wikimedia.org/wikipedia/commons/2/2e/HD.7A.020_%2813471969905%29.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1516,
+      "height": 1920,
+      "sha256": "d289bb876ef01a41b1c85316fa602a9a435ad23e634a9ce8ac5325fae5e90af1",
+      "mime_type": "image/webp",
+      "source_sha256": "f19b3bb25fb5a1b9a730a72b6d17de1d725dbc2e33b0110d75f157fb9a6e9a71",
+      "source_dimensions": {
+        "width": 2527,
+        "height": 3200
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "T. Kitagaki et al., High-energy quasielastic muon-neutrino scattering in deuterium",
+      "url": "https://doi.org/10.1103/PhysRevD.28.436",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1983",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "T. Kitagaki et al., Neutrino flux and total charged-current cross sections in neutrino-deuterium interactions",
+      "url": "https://doi.org/10.1103/PhysRevLett.49.98",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1982",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "bubble"
+    ],
+    "technology_tags": [
+      "bubble"
+    ],
+    "is_europe": false
+  }
+}

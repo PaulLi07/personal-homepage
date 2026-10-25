@@ -1,0 +1,147 @@
+{
+  "schema_version": "1.0",
+  "id": "iaxo",
+  "name": "IAXO",
+  "full_name": "International Axion Observatory",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "proposal",
+  "summary": "A next-generation large solar-axion telescope combining a large magnetic volume, X-ray focusing and extremely low-background detectors.",
+  "physics_targets": [
+    "Solar axions",
+    "ALP",
+    "Axion–photon and axion–electron couplings"
+  ],
+  "detection_principle": "Solar axions convert to X-rays inside a magnet; focusing optics concentrate them onto small-area detectors.",
+  "technologies": [
+    "Large magnets",
+    "X-ray telescopes",
+    "Low-background detectors"
+  ],
+  "sites": [
+    {
+      "name": "Proposed international axion observatory; final site and full construction status unverified",
+      "country": "Undetermined / international / space",
+      "country_code": null,
+      "location": "Proposed international axion observatory; final site and full construction status unverified",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Public proposal / conceptual design",
+    "as_of": "2019",
+    "evidence": "2019 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Physics potential of the International Axion Observatory (IAXO)",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "IAXO Collaboration / project team",
+    "lead_institutions": [],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Projected coupling reach",
+      "value": "g_aγ approximately 10⁻¹² GeV⁻¹; g_ae approximately 10⁻¹³; both are design projections",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "The physics study reports discovery potential; BabyIAXO construction does not establish completion of the full IAXO instrument.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [
+    "CAST",
+    "BabyIAXO"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1904.09155"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1904.09155",
+      "caption": "Full IAXO design with magnet cryostat, eight telescope/detector channels and tracking platform (Fig. 16, 2019 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/1904.09155v3/pics/system_wo_dome.jpg",
+      "width": 1787,
+      "height": 1118,
+      "sha256": "288fe7557775521cd3761c5db7f46ec3541b023e59d7b4d2876401bd1d3edc80",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1904.09155",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "IAXO Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Physics potential of the International Axion Observatory (IAXO)",
+      "url": "https://arxiv.org/abs/1904.09155",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

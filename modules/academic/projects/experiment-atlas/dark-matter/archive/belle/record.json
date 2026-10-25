@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "belle",
+  "name": "Belle",
+  "full_name": "Belle experiment at KEKB",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "Belle operated at KEKB, KEK, Tsukuba, Ibaraki. It is a historical B-factory experiment; Belle II is a separate successor, rather than another operating phase of the same experiment.",
+  "physics_targets": [
+    "Dark photons",
+    "Dark Higgs bosons",
+    "Invisible meson decays"
+  ],
+  "detection_principle": "Multiple lepton/hadron pairs are reconstructed in e⁺e⁻ collisions to seek dark-Higgs production with dark photons and narrow mass peaks; missing mass also enables inclusive final states.",
+  "technologies": [
+    "Drift chambers",
+    "Silicon vertexing",
+    "CsI calorimeter",
+    "Particle identification"
+  ],
+  "sites": [
+    {
+      "name": "KEK, Tsukuba, Ibaraki, KEKB",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "KEK, Tsukuba, Ibaraki, KEKB",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Dark-sector analyses of historical Belle samples completed",
+    "as_of": "2015",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Dark-sector analyses of historical Belle samples completed",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Belle Collaboration / project team",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed 2015 analysis sample",
+      "value": "977 fb⁻¹, the full Belle sample used in this paper",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Belle",
+      "status": "completed",
+      "description": "Dark-sector analyses of historical Belle samples completed"
+    }
+  ],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "No significant dark-Higgsstrahlung signal; 90% confidence limits were obtained on production cross section and coupling.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "Belle II",
+    "BaBar"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1502.00084"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www2.kek.jp/proffice/archives/activity/ipns/belle.html",
+      "caption": "Official Belle detector cutaway identifying the silicon vertex detector, drift chamber, Cherenkov counters, calorimeter and muon system.",
+      "credit": "KEK; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www2.kek.jp/proffice/archives/activity/ipns/images/belleillusts.gif",
+      "width": 250,
+      "height": 163,
+      "sha256": "1d4a793092ea86bd62c245cecdee417a3c3fdbd8641058aa1b1a1a843cf2c5e5",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1502.00084",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for the dark photon and the dark Higgs boson at Belle",
+      "url": "https://arxiv.org/abs/1502.00084",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-01-31",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

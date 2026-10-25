@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "id": "kamland",
+  "name": "KamLAND",
+  "full_name": "Kamioka Liquid-scintillator Anti-Neutrino Detector",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "geo",
+    "reactor",
+    "solar",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "KamLAND used a kilotonne liquid-scintillator detector at Kamioka to establish long-baseline reactor-antineutrino disappearance and map its energy dependence. It also pioneered geoneutrino detection and contributed low-energy solar and astrophysical studies.",
+  "physics_targets": [
+    "Solar-sector reactor oscillations",
+    "Uranium/thorium geoneutrinos",
+    "Low-energy astrophysical antineutrinos",
+    "Solar neutrinos"
+  ],
+  "detection_principle": "Inverse beta decay creates a prompt positron and delayed neutron capture. Large target mass, underground shielding and purification suppress backgrounds. Solar neutrinos are studied through neutrino-electron elastic scattering in separate low-background analyses.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground at Kamioka, Gifu Prefecture",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground at Kamioka, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2024-08",
+    "evidence": "The official Tohoku RCNS research profile explicitly states that the 22-year KamLAND observation programme ended in August 2024.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2002",
+      "event": "Observations began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2003",
+      "event": "Initial reactor-antineutrino disappearance result",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2005",
+      "event": "First geoneutrino evidence",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2024-08",
+      "event": "Original KamLAND observations ended for the KamLAND2 upgrade",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KamLAND Collaboration",
+    "lead_institutions": [
+      "Tohoku University Research Center for Neutrino Science",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Liquid scintillator",
+      "value": "Approximately 1,000 tonnes",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Typical reactor baseline",
+      "value": "Flux-weighted approximately 180 km, varying with reactor operation",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 1,000 m below ground at Kamioka",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Geoneutrino spectroscopy separately constrained uranium and thorium contributions to the terrestrial signal.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "kamland2",
+    "kamland-zen",
+    "borexino",
+    "juno"
+  ],
+  "resources": {
+    "official_website": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+    "publication_links": [
+      "https://arxiv.org/abs/0801.4589",
+      "https://doi.org/10.1029/2022GL099566"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/Pictures.html",
+      "caption": "Cutaway design of the underground KamLAND liquid-scintillator detector, showing the spherical vessel and photodetector region.",
+      "credit": "Stanford Gratta Lab / KamLAND collaboration gallery",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/kamland-detector_new_illustration_websize.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 581,
+      "height": 800,
+      "sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Tohoku RCNS: KamLAND completion and KamLAND2 upgrade",
+      "url": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KamLAND Collaboration, Precision oscillation measurement",
+      "url": "https://arxiv.org/abs/0801.4589",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008-01-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KamLAND Collaboration, U and Th abundances from geoneutrino spectroscopy",
+      "url": "https://doi.org/10.1029/2022GL099566",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

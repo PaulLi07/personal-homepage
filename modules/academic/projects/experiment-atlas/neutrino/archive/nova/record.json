@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "id": "nova",
+  "name": "NOvA",
+  "full_name": "NuMI Off-axis electron-neutrino Appearance",
+  "aliases": [
+    "NOVA"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NOvA is an off-axis, long-baseline experiment measuring muon-flavour disappearance and electron-flavour appearance in neutrino and antineutrino beams from Fermilab.",
+  "physics_targets": [
+    "Neutrino mass ordering and leptonic CP phase",
+    "Atmospheric mixing parameters and electron-flavour appearance",
+    "Neutrino cross sections, exotic interactions and supernova signals"
+  ],
+  "detection_principle": "Two functionally similar detectors contain liquid scintillator in highly segmented PVC cells. Wavelength-shifting fibres carry light to avalanche photodiodes. Long tracks and electromagnetic showers identify muon and electron charged-current interactions.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; near site at Fermilab and far site at Ash River, Minnesota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; near site at Fermilab and far site at Ash River, Minnesota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "Fermilab programme page retrieved on 23 October 2026 lists NOvA as operating.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "Full-detector physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Joint NOvA-T2K oscillation analysis reported",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2026 archive review",
+      "event": "Laboratory programme lists NOvA as operating",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NOvA Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "810 km, Fermilab to Ash River, Minnesota",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Far detector",
+      "value": "14-kiloton segmented liquid-scintillator detector",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam geometry",
+      "value": "About 14 mrad off the NuMI beam axis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Combined information with T2K in a joint oscillation fit, improving consistency checks across different baselines, energies and detector technologies.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2025-10",
+      "summary": "The first joint NOvA-T2K fit sharpened oscillation constraints but found no strong preference for either mass ordering. Its CP-violation interpretation is conditional on the ordering and the three-flavour framework.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "t2k",
+    "minos",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://novaexperiment.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/2510.19888"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.pma.caltech.edu/news/neutrino-experiments-in-us-and-japan-join-forces",
+      "caption": "NOvA far detector module structure",
+      "credit": "Caltech / NOvA",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/legacy-092.jpg",
+      "original_url": "https://www.pma.caltech.edu/news/neutrino-experiments-in-us-and-japan-join-forces",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 600,
+      "height": 441,
+      "sha256": "baac80548a1f207c42fb1898e7c7c3ceaf6d70f30253e70e2182ed53aeaf0710",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NOvA Collaboration, experiment overview",
+      "url": "https://novaexperiment.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Fermilab Neutrino Physics, experiments programme",
+      "url": "https://neutrinophysics.fnal.gov/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Caltech, Neutrino experiments in US and Japan join forces",
+      "url": "https://www.pma.caltech.edu/news/neutrino-experiments-in-us-and-japan-join-forces",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "T2K and NOvA Collaborations, Joint neutrino oscillation analysis from the T2K and NOvA experiments",
+      "url": "https://arxiv.org/abs/2510.19888",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

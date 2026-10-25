@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "supercdms",
+  "name": "SuperCDMS",
+  "full_name": "Super Cryogenic Dark Matter Search",
+  "aliases": [
+    "SuperCDMS Soudan",
+    "SuperCDMS SNOLAB",
+    "CDMSlite"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "SuperCDMS continues the CDMS cryogenic semiconductor programme. After Soudan, low-threshold Ge/Si arrays are being deployed at SNOLAB in Canada to target light dark matter.",
+  "physics_targets": [
+    "Light WIMPs",
+    "Dark-matter–electron scattering",
+    "Bosonic dark-matter absorption"
+  ],
+  "detection_principle": "The iZIP mode combines ionization and phonons for background discrimination. High-voltage operation amplifies phonons through the Neganov–Trofimov–Luke effect, lowering the detectable ionization energy.",
+  "technologies": [
+    "Cryogenic Ge/Si",
+    "iZIP",
+    "High-voltage phonon amplification",
+    "TES"
+  ],
+  "sites": [
+    {
+      "name": "Soudan Underground Laboratory",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Soudan underground laboratory, Minnesota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": "2026-08-07",
+    "evidence": "The collaboration announced the start of initial SNOLAB science data taking and planned to warm up for maintenance after a short run. This does not establish continuous data taking in October 2026.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-03-17",
+      "event": "SNOLAB detector cooled to operating temperature",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "date": "2026-08-07",
+      "event": "Start of first science data taking announced",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SuperCDMS Collaboration",
+    "lead_institutions": [
+      "SLAC National Accelerator Laboratory",
+      "University of Minnesota"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "SNOLAB operating temperature",
+      "value": "Approximately 30 mK",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SuperCDMS Soudan / CDMSlite",
+      "status": "completed",
+      "description": "Previous-generation data and low-threshold results"
+    },
+    {
+      "name": "SuperCDMS SNOLAB",
+      "status": "operating",
+      "description": "First science operation in 2026, followed by planned maintenance and optimization"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CDMS",
+    "EDELWEISS",
+    "CRESST"
+  ],
+  "resources": {
+    "official_website": "https://supercdms.slac.stanford.edu/news-and-outreach/news",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://supercdms.slac.stanford.edu/news-and-outreach/news",
+      "caption": "The SuperCDMS SNOLAB apparatus on 7 July 2026, photographed before installation of the water-tank shielding components.",
+      "credit": "SuperCDMS collaboration / SLAC; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://supercdms.slac.stanford.edu/sites/default/files/styles/centered/public/2026-08/SuperCDMS-SNOLAB-20260707.jpg?itok=hRGN0imE&cb=76088c06",
+      "width": 812,
+      "height": 433,
+      "sha256": "04360a9898196c93d5616e9942465740edc8af33ffa14356392e5bc5dd5b4876",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://supercdms.slac.stanford.edu/news-and-outreach/news",
+      "caption": "SuperCDMS apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "SuperCDMS Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "SuperCDMS SNOLAB Starts its Science",
+      "url": "https://supercdms.slac.stanford.edu/news-and-outreach/news",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-07",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "SuperCDMS public analysis material",
+      "url": "https://supercdms.slac.stanford.edu/science-results/public-material",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Actual start and end dates of the warm-up and maintenance following the first run have not been verified."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "quantum_sensor"
+    ]
+  }
+}

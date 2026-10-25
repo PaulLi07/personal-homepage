@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "kepler",
+  "name": "Kepler / K2",
+  "full_name": "Kepler Space Telescope dark matter microlensing analyses",
+  "aliases": [
+    "Kepler / K2",
+    "K2"
+  ],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Space photometry mission primarily designed for exoplanets. Its public light curves have been used in dedicated analyses searching for primordial-black-hole dark matter.",
+  "physics_targets": [
+    "Primordial black holes"
+  ],
+  "detection_principle": "Searches stellar light curves for short, approximately symmetric gravitational-lensing brightenings, simulates detection efficiency and constrains the primordial-black-hole fraction.",
+  "technologies": [
+    "Precision space photometry",
+    "Microlensing"
+  ],
+  "sites": [
+    {
+      "name": "Kepler heliocentric orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Kepler heliocentric orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2018-10-30",
+    "evidence": "NASA confirms retirement on 2018-10-30.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009-03-06",
+      "event": "Launch, using the local date on NASA's page",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2013-05",
+      "event": "Second reaction wheel failed, ending the original mission; subsequently repurposed as K2",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2018-10-30",
+      "event": "Retirement",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Kepler / K2 collaboration / mission team",
+    "lead_institutions": [
+      "NASA Ames"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Dark-matter data set cited here",
+      "value": "First two years of Kepler",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Primary-mirror diameter",
+      "value": "About 1.4 m; the entrance aperture is about 1 m, a different quantity",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original Kepler mission",
+      "status": "completed",
+      "description": "Long-term high-precision photometry of a fixed sky field"
+    },
+    {
+      "name": "K2",
+      "status": "completed",
+      "description": "Extended mission stabilized using solar-radiation pressure after reaction-wheel failure"
+    }
+  ],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "Two years of light curves were searched for primordial-black-hole lensing, producing mass-dependent upper limits.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "Subaru/HSC",
+    "Roman"
+  ],
+  "resources": {
+    "official_website": "https://science.nasa.gov/mission/kepler/",
+    "publication_links": [
+      "https://arxiv.org/abs/1307.5798"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://science.nasa.gov/mission/kepler/",
+      "caption": "Official concept illustration of the Kepler spacecraft, showing its telescope barrel, solar panels and antenna; not an in-orbit photograph.",
+      "credit": "NASA source page; no individual illustrator is identified for this image",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://images-assets.nasa.gov/image/ARC-2006-ACD06-0131-013/ARC-2006-ACD06-0131-013~large.jpg?w=1920&h=1275&fit=clip&crop=faces%2Cfocalpoint",
+      "width": 1920,
+      "height": 1275,
+      "sha256": "b6b56e63c7ea863b6e61f4f8dd0ae5735ab71c45f3c87dbb6dc41875cfeb3773",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://science.nasa.gov/mission/kepler/",
+      "caption": "NASA Kepler mission gallery and spacecraft-illustration source page",
+      "credit": "NASA; see the page for individual image credits",
+      "reuse_status": "Source-page reference only, with no image downloaded for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/1307.5798",
+      "title": "Experimental Limits on PBH Dark Matter from first two years of Kepler data",
+      "source_date": "2013",
+      "type": "primary_paper",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "id": "s2",
+      "url": "https://science.nasa.gov/mission/kepler/",
+      "title": "NASA: Kepler / K2 mission",
+      "source_date": "2026-01-05",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Mission orbit, launch, retirement and hardware overview"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Instrument parameters and launch / retirement dates still require a dedicated recheck. Scientific descriptions follow the cited dark-matter studies; the official NASA representative image and its source are separately recorded under media."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

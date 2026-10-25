@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "id": "macro",
+  "name": "MACRO",
+  "full_name": "Monopole, Astrophysics and Cosmic Ray Observatory",
+  "aliases": [],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling",
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A multipurpose Gran Sasso underground detector combined tracking and timing to search for monopoles, study cosmic-ray muons and measure atmospheric neutrinos.",
+  "physics_targets": [
+    "Atmospheric neutrino oscillations",
+    "Astrophysical neutrino sources",
+    "Supernova bursts",
+    "Magnetic monopoles and rare particles"
+  ],
+  "detection_principle": "Streamer tubes reconstructed tracks while scintillation counters supplied timing for upward/downward discrimination. Nuclear track detectors supplemented searches for highly ionising particles.",
+  "technologies": [
+    "Liquid-scintillator timing counters",
+    "Limited streamer-tube tracking",
+    "Nuclear track detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso underground laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "LNGS explicitly dates MACRO operation to 1989–2000.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1989",
+      "event": "First supermodule data taking.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1994",
+      "event": "Full detector configuration operated.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2000",
+      "event": "Data taking ended in December.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MACRO Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "Boston University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector envelope",
+      "value": "Approximately 76.6 × 12 × 9.3 m³",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Structure",
+      "value": "Six supermodules combining scintillator, streamer tubes and track detectors",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Overburden",
+      "value": "Approximately 3,700 m water equivalent at Gran Sasso",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Atmospheric programme",
+      "summary": "Upgoing muon distributions and energy-dependent studies supported muon-neutrino oscillations.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "Source searches",
+      "summary": "Point-source and rare-particle searches produced limits rather than established new sources or monopoles.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "soudan-2",
+    "super-kamiokande",
+    "lvd"
+  ],
+  "resources": {
+    "official_website": "https://gallery.lngs.infn.it/en/gallery/past-experiment/macro/",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0110021"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://agenda.infn.it/event/33395/contributions/184766/attachments/99621/138355/ICD_Bernardini.pdf",
+      "caption": "Photograph of the MACRO detector hall and orange support structure at the Gran Sasso underground laboratory, Italy.",
+      "credit": "INFN International Cosmic Day presentation ICD_Bernardini.pdf, PDF page 16; no individual photographer is listed",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://agenda.infn.it/event/33395/contributions/184766/attachments/99621/138355/ICD_Bernardini.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 511,
+      "height": 411,
+      "sha256": "ff17bcf90fcada612a9ac111191cc1bbccb640fefe975718b6b8ffcff525d028",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LNGS, MACRO historical experiment",
+      "url": "https://gallery.lngs.infn.it/en/gallery/past-experiment/macro/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MACRO Collaboration, atmospheric neutrino oscillations",
+      "url": "https://arxiv.org/abs/hep-ex/0110021",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling",
+      "gas"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling",
+      "gas"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "tao",
+  "name": "TAO",
+  "full_name": "Taishan Antineutrino Observatory",
+  "aliases": [
+    "JUNO-TAO"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "TAO is JUNO’s close-to-reactor companion experiment, built to measure a high-resolution antineutrino reference spectrum at Taishan. Its low-temperature, silicon-photomultiplier readout provides high light collection in a compact detector.",
+  "physics_targets": [
+    "High-resolution reactor-antineutrino reference spectrum",
+    "Inputs to JUNO mass-ordering analyses",
+    "Short-baseline spectral tests"
+  ],
+  "detection_principle": "A spherical liquid-scintillator target detects inverse beta decay. Operating at approximately minus 50 degrees Celsius reduces silicon-photomultiplier dark noise; extensive optical coverage supports precision spectral reconstruction.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Taishan nuclear power plant, Guangdong, 43.2 m from the reactor core",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Taishan nuclear power plant, Guangdong, 43.2 m from the reactor core",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-16",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Conceptual design report published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Installation completed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-02-10",
+      "event": "Physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-10-16",
+      "event": "Commissioning and first reactor-antineutrino results submitted",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TAO Collaboration",
+    "lead_institutions": [
+      "Institute of High Energy Physics, Chinese Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator",
+      "value": "2.8 tonnes in a 1.8 m diameter sphere",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Baseline",
+      "value": "43.2 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Operating temperature",
+      "value": "Approximately -50 °C",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Light yield",
+      "value": "Approximately 4,000 photoelectrons per MeV in commissioning",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The first result compared 31.3 reactor-on and 29.4 reactor-off days and observed a clear IBD excess, validating high-performance reactor-antineutrino measurement.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "juno"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2610.23331",
+      "https://arxiv.org/abs/2005.08745"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2610.23331",
+      "caption": "Cross-section of TAO, including the cold scintillator target, silicon-photomultiplier shell and outer veto systems.",
+      "credit": "TAO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2610.23331v1/figures/tao-design.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1227,
+      "height": 853,
+      "sha256": "971551aefeb627a2bc60c2a2959dacf541eabf7036d11e62f4e9aa1e3dbc09d5",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "74f9292ac82bc5b0716f7e65e756e0de0b91a49c7ae4a118eeed46cbb3bee5d1",
+      "source_dimensions": {
+        "width": 1227,
+        "height": 853
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "JUNO Collaboration, TAO commissioning performance and first results",
+      "url": "https://arxiv.org/abs/2610.23331",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "JUNO Collaboration, TAO conceptual design report",
+      "url": "https://arxiv.org/abs/2005.08745",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-05-18",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

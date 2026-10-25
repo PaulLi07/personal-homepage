@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "id": "mibeta",
+  "name": "MiBeta (187Re)",
+  "full_name": "Milano beta-decay calorimetric neutrino-mass experiment",
+  "aliases": [
+    "MiBeta"
+  ],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MiBeta was a historical direct neutrino-mass experiment using silver-perrhenate microcalorimeters. It studied the low-energy beta spectrum of rhenium-187 with the source embedded in the detector.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "Low-temperature AgReO4 absorbers measure the decay energy as a thermal pulse. Only the antineutrino escapes, so the shape near the beta endpoint carries the effective mass information.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Milano / Como low-temperature detector laboratories",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Milano / Como low-temperature detector laboratories",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003",
+    "evidence": "The collaboration reported the performance and beta-spectrum measurement of its ten-crystal calorimeter array.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "MiBeta Collaboration",
+    "lead_institutions": [
+      "University of Milano-Bicocca",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "187Re",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Array",
+      "value": "10 AgReO4 microcalorimeters in the final measurement",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Endpoint energy",
+      "value": "Approximately 2.47 keV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "The collaboration reported the performance and beta-spectrum measurement of its ten-crystal calorimeter array.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "genova",
+    "mare"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0302006",
+      "https://www.boa.unimib.it/handle/10281/13671"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1511.00968",
+      "caption": "Photograph of a MiBeta AgReO4 microcalorimeter, Figure 20 of the experimental review.",
+      "credit": "MiBeta Collaboration / A. Nucciotti",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/abs/1511.00968",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 457,
+      "height": 171,
+      "sha256": "0900ecf76351a26b028bd8c28305d73703d162b35f545779678a84aad9cc59c1",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A bolometric measurement of the antineutrino mass",
+      "url": "https://arxiv.org/abs/hep-ex/0302006",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "New limits from the Milano neutrino mass experiment with thermal microcalorimeters",
+      "url": "https://www.boa.unimib.it/handle/10281/13671",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2004",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "id": "flash",
+  "name": "FLASH",
+  "full_name": "FINUDA magnet for Light Axion SearcH",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "proposal",
+  "summary": "A low-frequency, large-volume resonant-cavity proposal using the FINUDA facility, covering axions and other weakly coupled fields.",
+  "physics_targets": [
+    "QCD axions",
+    "Dark photons",
+    "Scalar fields"
+  ],
+  "detection_principle": "Axions convert to very-high-frequency signals in a magnetic field, with cavity output read by cryogenic microstrip SQUID amplifiers.",
+  "technologies": [
+    "Large microwave cavities",
+    "Microstrip SQUID",
+    "Cryogenic facilities"
+  ],
+  "sites": [
+    {
+      "name": "INFN Frascati, FINUDA magnet and cryogenic facility",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Frascati, FINUDA magnet and cryogenic facility",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "The future search for low-frequency axions and new physics with the FLASH resonant cavity experiment at Frascati National Laboratories",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FLASH Collaboration / project team",
+    "lead_institutions": [
+      "INFN Frascati"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design axion masses",
+      "value": "0.49–1.49 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target frequency band",
+      "value": "100–300 MHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "A 2023 report presents the apparatus design, projected sensitivity and work to restore the FINUDA facility.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "KLASH"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2309.00351"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2309.00351",
+      "caption": "Two FLASH resonator designs proposed for different frequency bands, with tuning systems omitted (Fig. 7, 2023 conceptual-design paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2309.00351v1/cavities.png",
+      "width": 1600,
+      "height": 900,
+      "sha256": "52edd0c2d6d29578122225a7f8eb22a131f20ce532ff972626f5df61c4165983",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2309.00351",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "FLASH Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The future search for low-frequency axions and new physics with the FLASH resonant cavity experiment at Frascati National Laboratories",
+      "url": "https://arxiv.org/abs/2309.00351",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "spin_magnetometry",
+      "quantum_sensor"
+    ]
+  }
+}

@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "jsns2-ii",
+  "name": "JSNS2-II",
+  "full_name": "J-PARC Sterile Neutrino Search, second-baseline extension",
+  "aliases": [
+    "JSNS2 second detector"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "JSNS2-II adds a farther liquid-scintillator detector to JSNS2 so that a possible appearance signal can be tested through its baseline dependence. The farther apparatus was completed and being commissioned in May 2026.",
+  "physics_targets": [
+    "Baseline-dependent test of the LSND anomaly",
+    "Joint short-baseline electron-antineutrino appearance analysis"
+  ],
+  "detection_principle": "The far detector uses the same prompt-positron and delayed-gadolinium-capture inverse-beta signature as JSNS2. Comparing two baselines helps separate an oscillatory signal from source normalization and detector backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; J-PARC MLF far-detector site",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; J-PARC MLF far-detector site",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "Commissioning",
+    "as_of": "2026-05-22",
+    "evidence": "The dated May 2026 collaboration contribution states the far detector is complete and currently being commissioned.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-10",
+      "event": "J-PARC newsletter described preparation of the two-detector programme",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "event": "Completed far detector undergoing calibration and commissioning",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "JSNS2-II Collaboration",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Far baseline",
+      "value": "48 m from the J-PARC MLF mercury target",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detection channel",
+      "value": "Inverse beta decay with delayed gadolinium neutron capture",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Relationship",
+      "value": "Second-baseline extension of JSNS2, not an independent neutrino source",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-05",
+      "summary": "Commissioning report documents scintillator conditioning, liquid-level stabilization and trigger development. It does not establish a final oscillation result.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "jsns2",
+    "lsnd"
+  ],
+  "resources": {
+    "official_website": "https://j-parc.jp/c/en/topics/2025/10/21001628.html",
+    "publication_links": [
+      "https://indico.neutrino.or.kr/event/505/contributions/2023/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://indico.global/event/15740/contributions/155582/attachments/72488/140902/Neutrino_oral_DonghaLee_20260624_submit.pdf#page=24",
+      "caption": "Completed JSNS2-II far detector and commissioning activities reported in June 2026.",
+      "credit": "JSNS2 Collaboration, Neutrino 2026, slide 24",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico.global/event/15740/contributions/155582/attachments/72488/140902/Neutrino_oral_DonghaLee_20260624_submit.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1300,
+      "height": 732,
+      "sha256": "9734fce8f1f97e48c86d88f831b1a4a031ed4c479c5666af33151f43b776e32d",
+      "mime_type": "image/webp",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible.",
+      "source_sha256": "7c1e4d52e893d958ccfc57cd9ae34d177902d6cebc67e4466d98de2f1a90814a",
+      "source_dimensions": {
+        "width": 1300,
+        "height": 732
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "JSNS2 Collaboration, Status of JSNS2 and JSNS2-II",
+      "url": "https://indico.neutrino.or.kr/event/505/contributions/2023/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "J-PARC Project Newsletter No.100, JSNS2/JSNS2-II status",
+      "url": "https://j-parc.jp/c/en/topics/2025/10/21001628.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

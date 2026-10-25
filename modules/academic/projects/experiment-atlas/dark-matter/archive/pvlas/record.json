@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "pvlas",
+  "name": "PVLAS",
+  "full_name": "Polarizzazione del Vuoto con LASer",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A vacuum magnetic-birefringence and dichroism experiment also providing laboratory constraints on ALP and millicharged-particle couplings.",
+  "physics_targets": [
+    "ALP",
+    "Millicharged particles",
+    "QED vacuum birefringence"
+  ],
+  "detection_principle": "Precision polarimetry compares tiny laser ellipticity and rotation after passage through a magnetic field, identifying changes from vacuum nonlinearities or new particles.",
+  "technologies": [
+    "Laser polarimeters",
+    "Rotating magnets",
+    "High-finesse optical cavities"
+  ],
+  "sites": [
+    {
+      "name": "INFN / University of Ferrara; earlier Legnaro phase",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN / University of Ferrara; earlier Legnaro phase",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2020",
+    "evidence": "2020 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "The PVLAS experiment: a 25 year effort to measure vacuum magnetic birefringence",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PVLAS Collaboration / project team",
+    "lead_institutions": [
+      "INFN",
+      "University of Ferrara"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Ferrara-phase magnetic field",
+      "value": "2.5 T",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Early superconducting magnet",
+      "status": "completed",
+      "description": "Rotating-superconducting-magnet phase."
+    },
+    {
+      "name": "Permanent-magnet apparatus",
+      "status": "completed",
+      "description": "Ferrara phase with two rotating permanent magnets."
+    }
+  ],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "The 2020 summary reports no significant measurement of the QED-predicted signal. The results constrain new-particle models; the earlier anomaly cannot be retained as a dark-matter discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2005.12913",
+      "https://arxiv.org/abs/1406.6518"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2005.12913",
+      "caption": "Magnet and optical-bench layout of PVLAS-FE (upper schematic of Fig. 19, 2020 summary paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2005.12913v1/optical-bench.png",
+      "width": 1102,
+      "height": 359,
+      "sha256": "3260cc66faa8d6bb65b867857c1015c091b4cea7839dfe0e253ac44e17505006",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2005.12913",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "PVLAS Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The PVLAS experiment: a 25 year effort to measure vacuum magnetic birefringence",
+      "url": "https://arxiv.org/abs/2005.12913",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "First results from the new PVLAS apparatus",
+      "url": "https://arxiv.org/abs/1406.6518",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "id": "kids",
+  "name": "KiDS",
+  "full_name": "Kilo-Degree Survey",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Wide-field VST / OmegaCAM survey using weak-lensing tomography to map matter structure and test cold dark matter and modified gravity.",
+  "physics_targets": [
+    "Dark-matter distribution",
+    "Cold-dark-matter structure models"
+  ],
+  "detection_principle": "Precisely measures background-galaxy distortions and photometric redshifts in multifilter images, using shear correlation functions to constrain mass clustering.",
+  "technologies": [
+    "OmegaCAM",
+    "Weak-lensing tomography"
+  ],
+  "sites": [
+    {
+      "name": "ESO Paranal，VLT Survey Telescope",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "ESO Paranal，VLT Survey Telescope",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Current operational status not fully verified",
+    "as_of": null,
+    "evidence": "Science data products remain public; completion of all survey data taking was not verified in this review.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "KiDS collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Originally planned area",
+      "value": "1500 deg², four u g r i bands; not the actual area of an individual release",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "KiDS-450 / KV450",
+      "status": "implemented",
+      "description": "Early science data set"
+    },
+    {
+      "name": "KiDS-1000",
+      "status": "implemented",
+      "description": "Subsequent analyses on roughly thousand-square-degree scales"
+    }
+  ],
+  "results": [
+    {
+      "date": null,
+      "summary": "The official data page provides KiDS-1000, DES joint-shear and dark-matter / modified-gravity test products.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "DES",
+    "Euclid",
+    "Subaru/HSC"
+  ],
+  "resources": {
+    "official_website": "https://kids.strw.leidenuniv.nl/DR3/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://gallery.media.inaf.it/main.php/v/video/presskit/gw2017/strumenti/VLT%20survey%20telescope%20VST.jpg.html",
+      "caption": "Photograph inside the Paranal dome of the VLT Survey Telescope (VST), used for KiDS. VST and OmegaCAM perform wide-field imaging.",
+      "credit": "ESO / INAF / G. Lombardi",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://gallery.media.inaf.it/main.php/d/31066-3/VLT+survey+telescope+VST.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "ed4c7652ac57ee33152ab17fbf58ea56eb152a5b65056939b7380d5f3eca9cdc",
+      "mime_type": "image/webp",
+      "source_sha256": "2dbea2c61bcc300cf015b25031a59866cd179d6812c3e9375c0819242f2e91e0",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://kids.strw.leidenuniv.nl/DR3/",
+      "caption": "KiDS project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://kids.strw.leidenuniv.nl/DR3/",
+      "title": "KiDS DR3 survey and instrument",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://kids.strw.leidenuniv.nl/sciencedata.php",
+      "title": "KiDS science data products",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHL"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

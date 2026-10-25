@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "id": "fermi-lat",
+  "name": "Fermi-LAT",
+  "full_name": "Fermi Large Area Telescope",
+  "aliases": [
+    "GLAST LAT",
+    "Fermi Large Area Telescope"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Fermi's main high-energy gamma-ray instrument searches the Galactic center, dwarf spheroidal galaxies, dark subhalos and diffuse sky for indirect dark-matter signals, and also measures cosmic-ray electrons.",
+  "physics_targets": [
+    "WIMP annihilation / decay",
+    "Gamma-ray lines",
+    "Electron–positron spectrum"
+  ],
+  "detection_principle": "Incoming gamma rays convert to electron–positron pairs in tungsten layers. A silicon-strip tracker measures direction, a CsI calorimeter measures energy, and an anticoincidence system rejects charged particles.",
+  "technologies": [
+    "Silicon–tungsten tracker",
+    "CsI calorimeter",
+    "Anticoincidence detector"
+  ],
+  "sites": [
+    {
+      "name": "Fermi satellite, low Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Fermi satellite, low Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2026-07-13",
+    "evidence": "FSSC's operational history records completion of the 100000th orbit on 2026-07-13; the 2019 data-management document is used only as historical mission information.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008-06-11",
+      "event": "Launch",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2008-08-11",
+      "event": "Commissioning completed; first observing cycle began",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2026-07-13",
+      "event": "Completed the 100000th orbit",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Fermi-LAT collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Nominal energy band",
+      "value": "About 20 MeV to above 300 GeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Field of view",
+      "value": "About 2.4 sr",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": null,
+      "summary": "Established indirect searches across multiple classes of dark-matter-rich targets. This dossier does not interpret the Galactic-center excess as confirmed dark matter.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "H.E.S.S.",
+    "MAGIC",
+    "VERITAS"
+  ],
+  "resources": {
+    "official_website": "https://fermi.gsfc.nasa.gov/science/instruments/lat.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://fermi.gsfc.nasa.gov/science/instruments/lat.html",
+      "caption": "Exploded view of the Fermi-LAT detector, showing the tracker, calorimeter and anticoincidence system.",
+      "credit": "NASA Fermi Science Support Center; the source page labels the image “LAT Structure”",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://fermi.gsfc.nasa.gov/science/instruments/LAT_structure.jpg",
+      "width": 383,
+      "height": 356,
+      "sha256": "2651bbd9d09478a13df1618398aea2bfab0edd1d439ddde34c69ac3c8f43908f",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://fermi.gsfc.nasa.gov/science/instruments/lat.html",
+      "caption": "Fermi-LAT project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://fermi.gsfc.nasa.gov/science/instruments/lat.html",
+      "title": "NASA: Large Area Telescope",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://s3df.slac.stanford.edu/data/fermi/DMP/FGST-DMP.pdf",
+      "title": "Fermi GST LAT Data Management Principles",
+      "source_date": "2019-04-27",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://fermi.gsfc.nasa.gov/science/eteu/dm/",
+      "title": "NASA: Fermi Searches for Dark Matter",
+      "source_date": null,
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "id": "s4",
+      "url": "https://fermi.gsfc.nasa.gov/ssc/history/operations/",
+      "title": "NASA FSSC: Fermi operational history",
+      "source_date": null,
+      "type": "official",
+      "accessed": "2026-10-23",
+      "supports": [
+        "2008 launch and start of the science mission",
+        "2026 operational milestone"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+{
+  "schema_version": "1.0",
+  "id": "milagro",
+  "name": "Milagro",
+  "full_name": "Milagro Gamma-Ray Observatory",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Historical wide-field water-Cherenkov gamma-ray observatory that searched for dark matter, including neutralino annihilation near the Sun.",
+  "physics_targets": [
+    "Neutralino dark matter"
+  ],
+  "detection_principle": "Photomultipliers in a large water pond record Cherenkov light from shower particles; directions and fluxes test possible solar-associated gamma-ray signals.",
+  "technologies": [
+    "Water-pond Cherenkov array"
+  ],
+  "sites": [
+    {
+      "name": "Near Los Alamos, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Near Los Alamos, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": null,
+    "evidence": "Archived historical experiment; no unchecked precise shutdown date is supplied here.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2003",
+      "event": "Relic-neutralino search reported",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Milagro collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "Solar-direction searches tested specific neutralino scenarios.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "HAWC"
+  ],
+  "resources": {
+    "official_website": "https://physics.nyu.edu/experimentalparticle/milagro.html",
+    "publication_links": [
+      "https://pa.msu.edu/sites/_pa/assets/File/research/hep/HAWC/Milagro%20papers/Conference%20Papers/Proceedings%20of%20the%2028th%20ICRC/ICRC2003_HE_3_3.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://physics.nyu.edu/experimentalparticle/milagro.html",
+      "caption": "Photograph of the Milagro observatory pond and surrounding site.",
+      "credit": "New York University Experimental Particle Physics / Milagro page; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://physics.nyu.edu/experimentalparticle/images/hdrsite.jpg",
+      "width": 1152,
+      "height": 864,
+      "sha256": "1a8e1ffe2932d45734b2b64bcfd994cbed7785f96bfe7612f073df356d69b787",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://physics.nyu.edu/experimentalparticle/milagro.html",
+      "caption": "Milagro project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://physics.nyu.edu/experimentalparticle/milagro.html",
+      "title": "NYU: Milagro",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://pa.msu.edu/sites/_pa/assets/File/research/hep/HAWC/Milagro%20papers/Conference%20Papers/Proceedings%20of%20the%2028th%20ICRC/ICRC2003_HE_3_3.pdf",
+      "title": "Milagro Collaboration: Search for Relic Neutralinos",
+      "source_date": "2003",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Complete operating start / end dates and historical hardware parameters require supplementation from instrument papers."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

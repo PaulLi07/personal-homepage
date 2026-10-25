@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "gotthard",
+  "name": "Gotthard",
+  "full_name": "Gotthard underground xenon double-beta-decay experiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Gotthard xenon time projection chamber was an early high-pressure gas detector for xenon-136 double-beta decay in Switzerland. Its event imaging anticipated later gas-xenon tracking calorimeters.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "An enriched xenon gas volume supplies both the isotope and ionization medium. Charge readout measures deposited energy and track topology, distinguishing candidate two-electron decays from gamma-induced backgrounds.",
+  "technologies": [
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; Gotthard underground laboratory",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; Gotthard underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2019",
+    "evidence": "The historical xenon-TPC programme is documented by the 1989 apparatus thesis and a 2019 retrospective review, which discusses later search results published through 1998.",
+    "source_ids": [
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Gotthard Collaboration",
+    "lead_institutions": [
+      "California Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active medium",
+      "value": "High-pressure xenon enriched in 136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector type",
+      "value": "Gas time projection chamber",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Historical site",
+      "value": "Gotthard tunnel underground laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1989",
+      "summary": "A detector thesis documented construction and performance of the Gotthard high-pressure xenon chamber.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "next"
+  ],
+  "resources": {
+    "official_website": "https://thesis.caltech.edu/7741/",
+    "publication_links": [
+      "https://doi.org/10.3389/fphy.2019.00051"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://thesis.caltech.edu/7741/",
+      "caption": "Schematic of the xenon time projection chamber described in the Gotthard experiment detector thesis, Figure 2.1.",
+      "credit": "B. M. G. O'Callaghan-Hay, Caltech detector thesis, 1989",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://thesis.caltech.edu/7741/",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1293,
+      "height": 1060,
+      "sha256": "6f1143b90807d2afbc3e97c3ead52a1bc7b71ffe4550c26edff6ba5330371e3a",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "1a1e3bfb8339e1a41494b415bb4d2eab1d86738c095a2dbff7986ae023781772",
+      "source_dimensions": {
+        "width": 1293,
+        "height": 1060
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Gotthard: official experiment / institutional overview",
+      "url": "https://thesis.caltech.edu/7741/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "A High Pressure Xenon Time Projection Chamber for Double Beta Decay",
+      "url": "https://thesis.caltech.edu/7741/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "High Pressure Gas Xenon TPCs for Double Beta Decay Searches",
+      "url": "https://doi.org/10.3389/fphy.2019.00051",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas"
+    ],
+    "technology_tags": [
+      "gas"
+    ],
+    "is_europe": true
+  }
+}

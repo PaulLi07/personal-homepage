@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "hades",
+  "name": "HADES",
+  "full_name": "High Acceptance Di-Electron Spectrometer",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "HADES is based at GSI Helmholtzzentrum für Schwerionenforschung, Darmstadt. This multipurpose strong-interaction and nuclear-physics experiment supports dark-sector searches through its dilepton capabilities.",
+  "physics_targets": [
+    "Dark photon U"
+  ],
+  "detection_principle": "Inclusive e⁺e⁻ spectra from proton and ion collisions test new narrow resonances in radiative meson decays; different collision systems control ordinary hadronic-decay backgrounds.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "RICH",
+    "Charged-particle tracking",
+    "Lepton identification"
+  ],
+  "sites": [
+    {
+      "name": "GSI Helmholtzzentrum für Schwerionenforschung，Darmstadt",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "GSI Helmholtzzentrum für Schwerionenforschung，Darmstadt",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Listed evidence is the 2013 dark-photon analysis; current operation requires a GSI update",
+    "as_of": "2013",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "Listed evidence is the 2013 dark-photon analysis; current operation requires a GSI update",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HADES Collaboration / project team",
+    "lead_institutions": [
+      "GSI"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed collision systems",
+      "value": "3.5 GeV pp/pNb；1.756 GeV/u Ar+KCl",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "HADES",
+      "status": "operating",
+      "description": "Listed evidence is the 2013 dark-photon analysis; current operation requires a GSI update"
+    }
+  ],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "The dark-photon search found no significant mass peak and constrained photon–U mixing.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "WASA-at-COSY",
+    "A1 / MAMI dark-photon search",
+    "PHENIX"
+  ],
+  "resources": {
+    "official_website": "https://hades.gsi.de/",
+    "publication_links": [
+      "https://arxiv.org/abs/1311.0216"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.hades.gsi.de/node/2",
+      "caption": "Official HADES spectrometer schematic showing detector components surrounding the beam axis.",
+      "credit": "HADES Collaboration; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.hades.gsi.de/sites/default/files/web/media/page/detector/Hades_bw_small_400pix.png",
+      "width": 400,
+      "height": 267,
+      "sha256": "998e16ed5631d038cf605d7620d38d1db217b660c7c972c430e08afb7217d34d",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://hades.gsi.de/",
+      "caption": "Official HADES apparatus and physics-results resources",
+      "credit": "HADES Collaboration / GSI",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Searching a Dark Photon with HADES",
+      "url": "https://arxiv.org/abs/1311.0216",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-11-01",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "HADES official experiment website",
+      "url": "https://hades.gsi.de/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

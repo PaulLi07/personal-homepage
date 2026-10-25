@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "nugen",
+  "name": "nuGeN",
+  "full_name": "nuGeN reactor-neutrino experiment",
+  "aliases": [
+    "νGeN",
+    "nuGEN",
+    "GEMMA-II"
+  ],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "nuGeN deploys a low-threshold high-purity germanium detector directly below a Kalinin reactor core to search for CEvNS. The movable installation exploits a high flux and changes source distance for systematic checks.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Neutrino electromagnetic interactions",
+    "Low-threshold germanium detector performance"
+  ],
+  "detection_principle": "Germanium ionization signals are measured with low-noise electronics inside active and passive shielding. Reactor-on and reactor-off spectra are subtracted and fitted for a coherent-scattering contribution.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Kalinin nuclear power plant",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Kalinin nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2025-02-21",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Installation at Kalinin",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "First CEvNS constraints published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Updated constraints reported",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "nuGeN Collaboration",
+    "lead_institutions": [
+      "Joint Institute for Nuclear Research"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Germanium mass",
+      "value": "1.41 kg",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Minimum core distance",
+      "value": "11.1 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis threshold",
+      "value": "0.29 keV electron equivalent in the 2025 analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "No statistically significant difference between reactor-on and reactor-off rates was found; upper limits on CEvNS event numbers were derived.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gemma",
+    "danss",
+    "conus-plus"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2502.18502",
+      "https://doi.org/10.1103/PhysRevD.106.L051101"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2502.18502",
+      "caption": "The nuGeN germanium detector before deployment at Kalinin, as shown in the 2025 collaboration paper.",
+      "credit": "nuGeN Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2502.18502v1/figures/detector.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 781,
+      "sha256": "4ab67b0b281d46b79bf01bf065065d0a6f6b2fa5cd9d79d9608dbd57a92c2dbd",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "821f8e37ff01cba81b6672ea1af466371f5618cb9794e4aefd254d2d43cec593",
+      "source_dimensions": {
+        "width": 3342,
+        "height": 1360
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "nuGeN Collaboration, New reactor CEvNS constraints",
+      "url": "https://arxiv.org/abs/2502.18502",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-02-21",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "nuGeN Collaboration, First constraints on reactor CEvNS",
+      "url": "https://doi.org/10.1103/PhysRevD.106.L051101",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "chooz",
+  "name": "CHOOZ",
+  "full_name": "CHOOZ reactor-neutrino oscillation experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CHOOZ was a kilometre-baseline reactor-antineutrino disappearance experiment in the French Ardennes. Its null result strongly limited electron-flavour mixing at the atmospheric mass splitting before the later discovery of a nonzero theta13.",
+  "physics_targets": [
+    "Theta13-related electron-antineutrino disappearance",
+    "Reactor flux and spectrum"
+  ],
+  "detection_principle": "A gadolinium-loaded liquid-scintillator target detects inverse beta decay through prompt positron light and delayed gamma rays from neutron capture on gadolinium. Reactor power changes and shutdown periods constrain backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; underground near the Chooz nuclear power plant, Ardennes",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; underground near the Chooz nuclear power plant, Ardennes",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1997–1998",
+      "event": "Reactor-antineutrino data campaign",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2003",
+      "event": "Final detailed detector and oscillation analysis published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CHOOZ Collaboration",
+    "lead_institutions": [
+      "CNRS/IN2P3",
+      "CEA"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "Approximately 1 km from the two reactor cores",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "Approximately 5 tonnes of gadolinium-loaded scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Overburden",
+      "value": "Approximately 300 metres water equivalent",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "The final analysis found no disappearance signal. Its confidence construction and systematic treatment should be retained when quoting an exclusion limit.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "double-chooz",
+    "palo-verde"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0301017",
+      "https://arxiv.org/abs/hep-ex/9907037"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/hep-ex/0301017",
+      "caption": "CHOOZ detector cross section in its final apparatus report.",
+      "credit": "CHOOZ Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0301017",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 539,
+      "height": 649,
+      "sha256": "c3e1f6a484ba97e046211b565d2f9ce5a9828b14582c963e00a5e50e4060d587",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CHOOZ Collaboration, Search for neutrino oscillations on a long baseline at CHOOZ",
+      "url": "https://arxiv.org/abs/hep-ex/0301017",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003-01-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CHOOZ Collaboration, Limits on neutrino oscillations",
+      "url": "https://arxiv.org/abs/hep-ex/9907037",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999-07-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

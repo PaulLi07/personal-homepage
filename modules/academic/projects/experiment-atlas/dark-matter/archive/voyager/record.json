@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "id": "voyager",
+  "name": "Voyager",
+  "full_name": "Voyager 1 / Voyager 2 — Cosmic Ray Subsystem",
+  "aliases": [
+    "Voyager 1",
+    "Voyager 2",
+    "Voyager CRS"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "NASA planetary and interstellar mission series. Its direct dark-matter connection is external reanalysis of Voyager 1's combined electron / positron flux beyond the heliopause, constraining MeV particle dark matter and evaporating primordial black holes. The spacecraft were not designed specifically for dark matter.",
+  "physics_targets": [
+    "MeV–sub-GeV dark-matter annihilation or decay into electrons and positrons",
+    "Hawking radiation from primordial black holes",
+    "Interstellar low-energy cosmic-ray backgrounds"
+  ],
+  "detection_principle": "The CRS electron telescope measures penetrating-particle energy deposits with solid-state detectors and tungsten absorber layers of different thicknesses. Beyond the heliopause, Voyager 1 measures a combined low-energy electron / positron spectrum without the strong suppression from near-Earth solar modulation. External analyses compare it with propagated dark-matter-product spectra. The instrument does not distinguish electrons from positrons event by event.",
+  "technologies": [
+    "Cosmic Ray Subsystem CRS",
+    "TET solid-state electron telescope",
+    "High- and low-energy particle telescopes",
+    "Cosmic-ray measurements beyond the heliopause"
+  ],
+  "sites": [
+    {
+      "name": "Voyager 1 / 2 in deep space and the local interstellar medium",
+      "country": "Space",
+      "country_code": null,
+      "location": "The spacecraft follow different deep-space trajectories; dark-matter reanalyses mainly use Voyager 1 data beyond the heliopause",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Mission continuing; key historical particle instruments have been switched off",
+    "as_of": "2026-04-17",
+    "evidence": "NASA's instrument page records Voyager 1 CRS shutdown on 2025-02-25; JPL records LECP shutdown on 2026-04-17 to extend the mission. The Voyager 2 CRS page says it remains on with shutdown planned in 2026; the plan is not treated here as completed.",
+    "source_ids": [
+      "s2",
+      "s5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1977-08-20",
+      "event": "Voyager 2 launched.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1977-09-05",
+      "event": "Voyager 1 launched.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2012",
+      "event": "Voyager 1 crossed the heliopause, entering the interstellar cosmic-ray environment used in the dark-matter analyses cited here.",
+      "source_ids": [
+        "s3",
+        "s6"
+      ]
+    },
+    {
+      "date": "2017",
+      "event": "Published MeV dark-matter limits using Voyager 1 / AMS-02.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Published primordial-black-hole dark-matter constraints from the Voyager 1 electron–positron spectrum.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2025-02-25",
+      "event": "NASA's instrument page records Voyager 1 CRS shutdown to conserve power.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "event": "Voyager 1 LECP switched off to extend the spacecraft mission.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NASA Voyager mission / CRS instrument team; independent DM reanalyses",
+    "lead_institutions": [
+      "NASA/JPL-Caltech",
+      "NASA Goddard Space Flight Center",
+      "Caltech"
+    ],
+    "participants_note": "Distinguish the spacecraft and CRS teams, authors of the original cosmic-ray measurements, and independent researchers such as Boudaud et al. who performed dark-matter interpretations; this is not a separate NASA dark-matter-search collaboration."
+  },
+  "key_parameters": [
+    {
+      "name": "CRS nominal electron science band",
+      "value": "3–110 MeV; the original interstellar spectrum reaches about 2.7 MeV",
+      "source_ids": [
+        "s2",
+        "s6"
+      ]
+    },
+    {
+      "name": "TET structure",
+      "value": "8 solid-state detectors, each 3 mm thick and 4.5 cm² in area, interleaved with tungsten absorbers of different thicknesses",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Electron / positron separation",
+      "value": "CRS does not resolve charge sign; dark-matter analyses use the combined e−+e+ flux",
+      "source_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Planetary exploration and interstellar mission",
+      "status": "operating_history",
+      "description": "The spacecraft series continues Solar-System / interstellar science; dark-matter research was not an original mission objective."
+    },
+    {
+      "name": "Historical Voyager 1 CRS cosmic-ray data",
+      "status": "completed",
+      "description": "CRS was switched off in 2025, but previously acquired data remain available for dark-matter reanalysis."
+    },
+    {
+      "name": "Voyager2 CRS",
+      "status": "status_date_uncertain",
+      "description": "NASA's page records the instrument as on, with shutdown planned in 2026; the final execution date was not verified in this review."
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "Independent analyses constrain MeV dark-matter annihilation / decay using the low-energy cosmic-ray spectrum beyond the heliopause and extend mass coverage jointly with AMS-02. Limits depend on propagation and the assumed final state.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "summary": "The Voyager 1 spectrum constrains the dark-matter fraction in evaporating primordial black holes. Under the paper's model, PBHs below 10^16 g contribute less than about 0.1%; this is not an exclusion across all PBH masses.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Classified here as indirect detection through cosmic-ray products, even though particles are counted directly aboard the spacecraft. Dark-matter constraints come from external reanalysis of real cosmic-ray data, not from the spacecraft measuring dark-matter particles.",
+  "related_experiments": [
+    "AMS-02",
+    "PAMELA",
+    "BESS"
+  ],
+  "resources": {
+    "official_website": "https://voyager.gsfc.nasa.gov/instruments.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1612.07698",
+      "https://arxiv.org/abs/1807.03075",
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC8507217/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://voyager.gsfc.nasa.gov/instruments.html",
+      "caption": "Diagram of the Voyager spacecraft and locations of its principal scientific instruments, including the Cosmic Ray Subsystem.",
+      "credit": "NASA Goddard Voyager instrument-information page; no individual illustrator is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://voyager.gsfc.nasa.gov/assets/vgr/images/instruments_3.jpg",
+      "width": 640,
+      "height": 482,
+      "sha256": "5f7e3c2c2b75537f4ecdbd9fdf1d5d8ceb2e67ffb5cdc08d426b5794410cf611",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://voyager.gsfc.nasa.gov/instruments.html",
+      "caption": "Voyager official source page for instrument, mission or facility images",
+      "credit": "Original institution / collaboration; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only, with no downloaded image for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NASA GSFC: Voyager Cosmic Ray Subsystem instruments",
+      "url": "https://voyager.gsfc.nasa.gov/instruments.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NASA: Voyager instruments and instrument status",
+      "url": "https://science.nasa.gov/mission/voyager/instruments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Boudaud, Lavalle & Salati: Novel cosmic-ray electron and positron constraints on MeV dark matter",
+      "url": "https://arxiv.org/abs/1612.07698",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-06-27",
+      "supports": [
+        "Independent dark-matter limits using Voyager 1 and AMS-02"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Boudaud & Cirelli: Voyager 1 e± Further Constrain Primordial Black Holes as Dark Matter",
+      "url": "https://arxiv.org/abs/1807.03075",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-01-14",
+      "supports": [
+        "Constraints on the evaporating-primordial-black-hole dark-matter fraction"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "NASA JPL: Shuts Off Instrument on Voyager 1 to Keep Spacecraft Operating",
+      "url": "https://www.jpl.nasa.gov/news/nasa-shuts-off-instrument-on-voyager-1-to-keep-spacecraft-operating/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-04-17",
+      "supports": [
+        "Voyager 1 LECP shutdown and mission continuation"
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "Cummings et al.: Galactic Cosmic Rays in the Local Interstellar Medium, Voyager 1 Observations and Model Results",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC8507217/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016",
+      "supports": [
+        "Original interstellar cosmic-ray spectrum, absence of electron–positron charge separation and data period"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "The Voyager 1 CRS shutdown date follows NASA's instrument page, 2025-02-25; UTC conventions or operational logs may record neighboring dates.",
+      "NASA's instrument page still retains a “planned shutdown in 2026” entry for Voyager 2 CRS; it is not evidence of completed shutdown.",
+      "MeV-particle and PBH results are independent reanalyses, not NASA dark-matter discovery announcements.",
+      "Real-time spacecraft positions, remaining instrument counts and specific image permissions have not been checked individually."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

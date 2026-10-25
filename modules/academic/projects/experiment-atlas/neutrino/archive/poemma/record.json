@@ -1,0 +1,224 @@
+{
+  "schema_version": "1.0",
+  "id": "poemma",
+  "name": "POEMMA",
+  "full_name": "Probe Of Extreme Multi-Messenger Astrophysics",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A space-mission concept would observe air showers from above with paired satellites, combining cosmic-ray fluorescence and neutrino-induced Cherenkov measurements.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic-ray sources",
+    "Transient cosmic neutrinos above approximately 20 PeV",
+    "Extreme-energy particle physics"
+  ],
+  "detection_principle": "Two wide-field telescopes in loose formation would image ultraviolet fluorescence from cosmic-ray air showers and fast Cherenkov flashes near the Earth’s limb from tau-neutrino-induced showers.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Low Earth orbit concept",
+      "country": "Global network",
+      "country_code": null,
+      "location": "Proposed pair of Earth-orbiting spacecraft",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "NASA’s April 2026 event explicitly discusses POEMMA as a mission concept.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017–2021",
+      "event": "NASA-funded probe-class concept and design studies.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Roadmap update released.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "NASA community meeting retained POEMMA among mission concepts.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "POEMMA Collaboration",
+    "lead_institutions": [
+      "University of Chicago",
+      "NASA Goddard Space Flight Center"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline mission",
+      "value": "Two identical satellites in loose formation",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Orbit concept",
+      "value": "Approximately 525 km altitude",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Main optics",
+      "value": "Approximately 3.3 m entrance aperture, wide-field Schmidt design",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Observation modes",
+      "value": "Stereo fluorescence and Earth-limb Cherenkov imaging",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Mission study",
+      "summary": "Science reach is calculated for a proposed mission; POEMMA has not produced a space-based neutrino detection.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "euso-spb2",
+    "pbr"
+  ],
+  "resources": {
+    "official_website": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/crn-sig-meeting-27-april-2026/",
+    "publication_links": [
+      "https://ntrs.nasa.gov/citations/20210000090",
+      "https://arxiv.org/abs/2012.07945"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2012.07945",
+      "caption": "POEMMA spacecraft concept in deployed and stowed configurations.",
+      "credit": "POEMMA Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2012.07945v3/Figures/POEMMA_Deployed_Stowed.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 845,
+      "sha256": "154ec38c9356f486659d5be2ebf2284779b93f7da73784a1f589a3ac4504b1f7",
+      "mime_type": "image/webp",
+      "source_sha256": "b501a9a43811cb60a3f80a04c3c6badbfbfd3d90a0d2096a51392d1cf3ecf6d7",
+      "source_dimensions": {
+        "width": 2227,
+        "height": 980
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "POEMMA Collaboration, observatory mission concept",
+      "url": "https://ntrs.nasa.gov/citations/20210000090",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "POEMMA Collaboration, mission science and instrument design",
+      "url": "https://arxiv.org/abs/2012.07945",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NASA, POEMMA mission-concept discussion",
+      "url": "https://science.nasa.gov/astrophysics/programs/physics-of-the-cosmos/community/crn-sig-meeting-27-april-2026/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-04-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

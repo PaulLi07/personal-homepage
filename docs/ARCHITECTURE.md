@@ -1,6 +1,6 @@
 # 项目框架概要
 
-网站按功能组织源码，在本地将 HTML 片段装配成完整静态页面。浏览器读取普通 HTML、CSS、JavaScript 和本地资源，运行时无构建、无框架依赖、无需请求片段；生成的根页面支持直接文件打开和 GitHub Pages 仓库子路径。
+网站按功能组织源码，在本地将 HTML 片段装配成完整静态页面。浏览器读取普通 HTML、CSS、JavaScript 和本地资源，运行时无构建、无框架依赖、无需请求片段；生成的根页面支持直接文件打开和 GitHub Pages 仓库子路径。实验地图是独立静态页面，使用 ES Module 和本地数据请求，须由 HTTP 服务或 Pages 访问。
 
 所有说明文档使用中文，所有网页呈现内容使用英文；路径、命令、代码标识、网址和专有名称保留原文。
 
@@ -12,7 +12,10 @@ modules/
   home/                    首屏
   about/                   简介
   academic/                学术概览
-    experience/ notes/ projects/
+    experience/ notes/
+    projects/              项目与合作组
+      experiment-atlas/    地图登记、入口视图、公共顶栏与本地维护工具
+        neutrino/ dark-matter/  各自页面、代码、数据、档案与图片
     publications/          论文分类目录与视图
       internal-note/ arxiv/ published/  各自的数据与说明
   life/                    生活概览
@@ -38,13 +41,13 @@ index.html, credits.html   装配生成的发布页面
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-当前网页使用13个固定图片文件：10个下载占位图（含About相册独立副本）、2个用户提供图片的JPEG网页副本和1个用户提供的PNG。Home 的 `images/hero-rain.jpg` 为用户提供的黑白雨景网页副本，2400×1348 JPEG，原输入为2848×1600 JPEG；片段与预载共同引用新路径以避开旧图缓存。只注明站主提供，摄影者和来源未确认，不推断人物身份、关系或地点；此前舷窗地球图保留在Git历史。About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景；Academic保留分隔与漫画场景，Life使用独立的白边拍立得照片堆而非整区白框；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
+主页面固定素材使用13个图片文件（不含实验地图档案）：10个下载占位图（含About相册独立副本）、2个用户提供图片的JPEG网页副本和1个用户提供的PNG。Home 的 `images/hero-rain.jpg` 为用户提供的黑白雨景网页副本，2400×1348 JPEG，原输入为2848×1600 JPEG；片段与预载共同引用新路径以避开旧图缓存。只注明站主提供，摄影者和来源未确认，不推断人物身份、关系或地点；此前舷窗地球图保留在Git历史。About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景；Academic保留分隔与漫画场景，Life使用独立的白边拍立得照片堆而非整区白框；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
 | 文件 | 职责 |
 |---|---|
-| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts`、`services` 与分区的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序；`liveScripts` 声明本模块需保持原 URL 的数据脚本子集，路径相对于站点根 |
+| `app/site.json` | `sharedStyles`、`afterStyles`、`sharedScripts`、`services` 与分区的 `view`、`styles`、`scripts`、可选的 `preloadImages` 声明装配顺序；`standalonePages` 声明模块内完整独立页面供路径检查，不嵌入主页；`liveScripts` 声明本模块需保持原 URL 的数据脚本子集，路径相对于站点根 |
 | `app/index.template.html` | 首页文档外壳与装配位置 |
 | `app/credits.template.html` | 素材署名页外壳与装配位置 |
 | `app/main.js` | 取得共享服务并初始化注册模块；不放具体模块内容 |
@@ -76,11 +79,19 @@ index.html, credits.html   装配生成的发布页面
 
 装配工具使用 Python 3.9+。`sections` 中连续模块若声明同一个 `container`，装配器把它们包入共同容器；当前 home 与 about 使用 `container: "page1"`，保持连续背景。模板通过 `{{sections}}` 装配分区；新增分区只需清单和导航，不需要新增模板占位；停用分区时同步导航及其他公开入口。图片预载随模块清单声明，模板不绑定具体模块图片。
 
-脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载照片、PDF 能力及作者配置 / 会话 / 发布器 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。
+主页面脚本使用普通 `defer` 标签。`sharedScripts` 依次加载注册接口、过渡、详情与导航；随后按 `services` 加载照片、PDF 能力及作者配置 / 会话 / 发布器 / 编辑器，再按 `sections` 加载详情数据与模块脚本，最后执行 `app/main.js`。`sharedStyles` 在功能样式前，`afterStyles` 在功能样式后，署名页只引用基础与本页样式、不加载首页脚本。主页面顺序以 `app/site.json` 为准，不使用运行时模板请求或 ES Module 导入，保留文件打开方式。地图独立页面使用自己的 ES Module，资源路径以各地图目录为基准，不进入主页脚本清单。
 
 装配生成 `path?v=<内容 SHA256 前 12 位>`，内容变化后 CSS / 静态 JS 使用新 URL。`liveScripts` 必须是模块 `scripts` 的子集，当前仅 Experience 的 `modules/academic/experience/entries.js` 与 Moments 的 `modules/life/moments/posts.js` 保留原 URL，在线直接发布只更新数据即可，无需重新装配 HTML；作者业务不改变。图片引用及预载仍归所属模块；About 人像片段手动附加内容 SHA256 前 12 位 `?v=` 避免旧图缓存，换图同步更新，此例不代表所有图片已经自动版本化。版本串不包含凭据。
 
 预览服务器没有热更新；已打开的标签仍持有旧文档，必须在装配后刷新用户实际标签，再核对资源 URL、图片、DOM 和计算样式。固定导航公开 `--navigation-height`：桌面 76px、宽度 ≤760 时 104px。基础层以该变量设置分区锚点留白，Home 为 0；Academic 与 Life 各在自己的模块以 `calc(var(--navigation-height, 76px) + 16px)` 留出额外分隔空间，不读取导航内部结构。扩展栏目需在正常动画的实际导航点击后验证标题及边框，不能只检查居中可见或 hash。
+
+## 实验地图集（2026-10-25）
+
+`academic/projects/experiment-atlas/` 自己维护登记、Projects视图、元数据和地图顶栏；`integration.js` 通过 `registerDetailView` 接线，合作组继续读取公开的Projects内容。每图独立保存HTML/CSS/JS、`data/catalog.json`、`archive/<id>/record.json`及相应图片，不读取其他工作目录，不使用符号链接或本机后台服务。地图之间只用原生链接切换，不共用检索状态。
+
+`registry.js` 是入口标题/路径的唯一登记；`refresh_metadata.py` 从本地索引生成统计，`sync_shell.py` 从登记生成两图顶栏。每图 `tools/build_data.py` 从自己的英文档案重建索引及计数缩略图，`verify_portable.py` 检查资源路径闭合。日常维护全部在主页内完成；再次导入外源属于单独明确操作，不能成为构建依赖。
+
+清单 `standalonePages` 仅声明完整独立页面；`scripts/check.mjs` 按各自HTML目录检查其资源、重复ID和锚点，其他装配片段仍按站点根解析。地图目录随普通静态文件打包上传，Pages无需额外后台。维护步骤见[地图集说明](../modules/academic/projects/experiment-atlas/README.md)，本轮独立副本及桌面/手机证据见[记录](modules/experiment-atlas.md)。
 
 ## 2026-10-23 视觉维护入口
 

@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "kamland2-zen",
+  "name": "KamLAND2-Zen",
+  "full_name": "KamLAND2-Zen upgraded xenon double-beta-decay programme",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "KamLAND2-Zen is the planned xenon-loaded scintillator programme using the KamLAND2 detector upgrade. Improved light collection and energy resolution are intended to distinguish a smaller neutrinoless signal from two-neutrino-decay backgrounds.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Enriched xenon in a scintillator balloon supplies the decay source. Higher light yield, upgraded photodetection and reduced backgrounds improve the calorimetric measurement around the xenon-136 endpoint.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; KamLAND site, Kamioka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; KamLAND site, Kamioka",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Planned",
+    "as_of": "2024-08",
+    "evidence": "The research profile distinguishes the completed original KamLAND observations from the detector upgrade; projected KamLAND2-Zen reach is a design goal.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "KamLAND2-Zen Collaboration",
+    "lead_institutions": [
+      "Tohoku University Research Center for Neutrino Science"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector medium",
+      "value": "Xenon-loaded liquid scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Upgrade priority",
+      "value": "Improved energy resolution and lower backgrounds",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": null,
+      "summary": "The research profile distinguishes the completed original KamLAND observations from the detector upgrade; projected KamLAND2-Zen reach is a design goal.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "kamland-zen",
+    "kamland2"
+  ],
+  "resources": {
+    "official_website": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2406.11438"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2276/attachments/860/1264/TAUP2025_KamLANDZen_KellyWeerman.pdf",
+      "caption": "KamLAND2-Zen upgrade concept with improved light collection, shown at TAUP 2025.",
+      "credit": "KamLAND-Zen Collaboration / K. Weerman",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2276/attachments/860/1264/TAUP2025_KamLANDZen_KellyWeerman.pdf#page=23",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1241,
+      "height": 1754,
+      "sha256": "974a94ca2ea606b9b6647b9c82c5f4962523e53c0e357e96cb6197fe83fc1808",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "85a4c72b46efa01f479acaa91f3b7b1f543be98100bd3025460501883f9f884d",
+      "source_dimensions": {
+        "width": 1241,
+        "height": 1754
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "KamLAND2-Zen: official experiment / institutional overview",
+      "url": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Tohoku RCNS: KamLAND, KamLAND2 and double-beta-decay programme",
+      "url": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Search for Majorana Neutrinos with the Complete KamLAND-Zen Dataset",
+      "url": "https://arxiv.org/abs/2406.11438",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

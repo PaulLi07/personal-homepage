@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "belle-ii",
+  "name": "Belle II",
+  "full_name": "Belle II experiment at SuperKEKB",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "Belle II is located at SuperKEKB, KEK, Tsukuba, Ibaraki. This second-generation B-factory detector has dedicated dark-sector and low-multiplicity physics working groups.",
+  "physics_targets": [
+    "Light dark matter",
+    "Invisible Z′",
+    "Dark photons",
+    "Dark Higgs bosons",
+    "ALP"
+  ],
+  "detection_principle": "Known initial states in e⁺e⁻ collisions enable missing-mass/energy analyses for dimuons accompanied by invisible Z′ bosons, low-multiplicity dark sectors and long-lived decays.",
+  "technologies": [
+    "Silicon vertexing",
+    "Central drift chamber",
+    "CsI calorimeter",
+    "Particle identification"
+  ],
+  "sites": [
+    {
+      "name": "KEK, Tsukuba, Ibaraki, SuperKEKB",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "KEK, Tsukuba, Ibaraki, SuperKEKB",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "2019–2021 data used in multiple dark-sector searches",
+    "as_of": "2021",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "2019–2021 data used in multiple dark-sector searches",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Belle II Collaboration / project team",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed invisible-Z′ analysis",
+      "value": "79.7 fb⁻¹, 2019–2020, center-of-mass energy 10.58 GeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Belle II",
+      "status": "operating",
+      "description": "2019–2021 data used in multiple dark-sector searches"
+    }
+  ],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "The dimuon plus missing-energy search sets 90% confidence upper limits on production and coupling of invisible Lμ−Lτ Z′ bosons.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "Belle",
+    "BaBar"
+  ],
+  "resources": {
+    "official_website": "https://docs.belle2.org/pub_data/documents/4411/",
+    "publication_links": [
+      "https://arxiv.org/abs/2305.08490"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.belle2.de/en/belle-2-experiment/belle-ii-detector",
+      "caption": "Belle II detector photograph showing its cylindrical structure and end-detector components.",
+      "credit": "Belle II / KEK",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.belle2.de/fileadmin/user_upload/belle/direct_uploads/Detektor-III-wide.jpg",
+      "width": 1920,
+      "height": 640,
+      "sha256": "d7d4aca2502b7ee8a083e29076b80415be8c2a8b8b213e15fbc4444147147879",
+      "mime_type": "image/webp",
+      "source_sha256": "21fd3c1e8b9f94bd48ecbf7ade4d79e1ceae8122086ff028c73646ed57d632b3",
+      "source_dimensions": {
+        "width": 3840,
+        "height": 1280
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2305.08490",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for an invisible Z prime in final states with two muons and missing energy at Belle II",
+      "url": "https://docs.belle2.org/pub_data/documents/4411/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2023-06-07",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark sectors and tau physics at Belle II",
+      "url": "https://arxiv.org/abs/2305.08490",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-05-15",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

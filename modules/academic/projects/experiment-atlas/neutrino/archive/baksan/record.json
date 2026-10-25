@@ -1,0 +1,234 @@
+{
+  "schema_version": "1.0",
+  "id": "baksan",
+  "name": "Baksan",
+  "full_name": "Baksan Underground Scintillation Telescope",
+  "aliases": [
+    "Baksan",
+    "BUST",
+    "Baksan BUST"
+  ],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric",
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A long-running liquid-scintillator telescope at the Baksan Neutrino Observatory searches for stellar-collapse bursts and studies cosmic-ray and neutrino-induced muons.",
+  "physics_targets": [
+    "Galactic stellar-collapse neutrino bursts",
+    "Atmospheric neutrino-induced muons",
+    "Cosmic-ray muon physics"
+  ],
+  "detection_principle": "Layered scintillation counters measure charged-particle energy deposition and timing. A supernova produces a short excess of low-energy events, principally through inverse beta decay in the scintillator.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Baksan underground observatory, North Caucasus",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Baksan underground observatory, North Caucasus",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The current INR project description lists the telescope and its continuing burst-search programme.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1977",
+      "event": "BUST began operation.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1987",
+      "event": "A burst coincident with SN1987A was recorded.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "Continuing programme",
+      "event": "INR lists supernova monitoring and muon studies among its activities.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Baksan Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Russian Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Counters",
+      "value": "3,180 standard liquid-scintillator counters in the current INR apparatus description",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Scintillator mass",
+      "value": "Approximately 330 tonnes total; burst analyses may use a smaller inner fiducial subset",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Geometry",
+      "value": "Four horizontal and four vertical recording layers",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Shielding",
+      "value": "Approximately 850 m water equivalent",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1987–1988",
+      "summary": "The Baksan burst was reported as a neutrino signal associated with SN1987A.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "Long exposure",
+      "summary": "Decades of monitoring constrain the rate of Galactic stellar collapses.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "sage",
+    "best",
+    "lvd"
+  ],
+  "resources": {
+    "official_website": "https://new.inr.ru/en/scientific-activity/applied-research/projects/neuskoritelnye-eksperimenty/poisk-neytrinnykh-vspleskov-ot-kollapsiruyushchikh-zvyezd-s-pomoshchyu-baksanskogo-podzemnogo-stsint/",
+    "publication_links": [
+      "https://www.sciencedirect.com/science/article/pii/0370269388916516"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://new.inr.ru/en/scientific-activity/applied-research/projects/neuskoritelnye-eksperimenty/poisk-neytrinnykh-vspleskov-ot-kollapsiruyushchikh-zvyezd-s-pomoshchyu-baksanskogo-podzemnogo-stsint/",
+      "caption": "Photograph of internal detector units of the Baksan Underground Scintillation Telescope.",
+      "credit": "Institute for Nuclear Research, Russian Academy of Sciences (INR RAS) project page; no individual photographer is listed",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.inr.ru/rus/bno/lbpst1.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 650,
+      "height": 437,
+      "sha256": "1966b15200a264760ecf14ac1e51ad4f0fb321cf64ef7c0a41585314cf9e6899",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INR RAS, BUST and stellar-collapse burst search",
+      "url": "https://new.inr.ru/en/scientific-activity/applied-research/projects/neuskoritelnye-eksperimenty/poisk-neytrinnykh-vspleskov-ot-kollapsiruyushchikh-zvyezd-s-pomoshchyu-baksanskogo-podzemnogo-stsint/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "INR RAS, Baksan Neutrino Observatory",
+      "url": "https://www.inr.ru/eng/ebno.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Baksan Collaboration, SN1987A neutrino signal",
+      "url": "https://www.sciencedirect.com/science/article/pii/0370269388916516",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "Baksan is an observatory with multiple experiments. This dossier covers BUST, not SAGE or BEST."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

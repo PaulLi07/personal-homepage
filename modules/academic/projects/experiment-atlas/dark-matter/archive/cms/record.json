@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "cms",
+  "name": "CMS",
+  "full_name": "Compact Muon Solenoid",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "CMS is located at CERN LHC Point 5, Cessy. This general-purpose LHC experiment covers invisible and visible dark-sector signatures.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-sector mediators",
+    "Inelastic dark matter",
+    "Strongly coupled dark sector"
+  ],
+  "detection_principle": "Tracking, calorimetry and muon systems seek missing transverse momentum, displaced dilepton decays and semivisible jets. These signatures test different models and cannot be combined into a universal mass-exclusion line.",
+  "technologies": [
+    "Silicon tracking",
+    "Electromagnetic and hadronic calorimeters",
+    "Superconducting solenoid",
+    "Muon detection"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC Point 5，Cessy",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN LHC Point 5，Cessy",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "LHC-data analysis continues; a new inelastic-dark-matter search published in 2026",
+    "as_of": "2026-09-23",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-09-23",
+      "event": "LHC-data analysis continues; a new inelastic-dark-matter search published in 2026",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CMS Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Semivisible-jet analysis data",
+      "value": "138 fb⁻¹, 13 TeV proton collisions; Run 2 sample",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CMS",
+      "status": "operating",
+      "description": "LHC-data analysis continues; a new inelastic-dark-matter search published in 2026"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026-07-30",
+      "summary": "A nonresonant strongly coupled dark-matter search found no significant excess and constrained semivisible-jet models.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "date": "2026-09-23",
+      "summary": "A low-momentum displaced-electron-pair search found no significant signal and constrained the electron channel of inelastic dark matter.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "ATLAS",
+    "milliQan",
+    "FACET"
+  ],
+  "resources": {
+    "official_website": "https://cms.cern/index.php/news/chasing-dark-matter-mysterious-electron-pairs",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://cms.cern/detector",
+      "caption": "CMS detector end view showing concentric detector components and surrounding structures.",
+      "credit": "CMS / CERN; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://cms.cern/sites/default/files/2022-06/detector_stripe01-min_0_0.jpeg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "fde22e35743ae7ebfde5878742712b0638b713fef0a6ccb29618e3f6d913185e",
+      "mime_type": "image/webp",
+      "source_sha256": "ad4fe79214b18b2d1b011fa38329192574f0592cc9c379ea11d5f3f80d746318",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://cms.cern/index.php/news/chasing-dark-matter-mysterious-electron-pairs",
+      "caption": "CMS candidate-event display, rather than an image of a dark-matter discovery",
+      "credit": "CMS Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Chasing dark matter with mysterious electron pairs",
+      "url": "https://cms.cern/index.php/news/chasing-dark-matter-mysterious-electron-pairs",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-23",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "CMS-PAS-EXO-24-010",
+      "url": "https://cms-results.web.cern.ch/cms-results/public-results/preliminary-results/EXO-24-010/index.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-30",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

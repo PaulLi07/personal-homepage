@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "lsd",
+  "name": "LSD",
+  "full_name": "Liquid Scintillation Detector at Mont Blanc",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "supernova",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A Soviet–Italian underground liquid-scintillator detector monitored stellar-collapse bursts and cosmic-ray particles in the Mont Blanc tunnel.",
+  "physics_targets": [
+    "Core-collapse neutrino bursts",
+    "Cosmic-ray muons",
+    "Atmospheric neutrinos and rare processes"
+  ],
+  "detection_principle": "Scintillation counters embedded in substantial iron shielding detected prompt energy deposits and delayed neutron signatures. Low-energy burst searches looked for clustered events over seconds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France-Italy; underground laboratory in the Mont Blanc tunnel",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France-Italy; underground laboratory in the Mont Blanc tunnel",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The investigator review explicitly dates continuous operation January 1985–March 1999.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1984–1985",
+      "event": "Commissioning and continuous monitoring began.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1987",
+      "event": "Five-event burst recorded at 02:52 UT on 23 February.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1999",
+      "event": "Continuous programme ended in March.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LSD Collaboration",
+    "lead_institutions": [
+      "University of Torino",
+      "Institute for Nuclear Research, Russian Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator target",
+      "value": "Approximately 90 tonnes; later precise description gives 86.4 tonnes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Segmentation",
+      "value": "72 counters of approximately 1.5 m³",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Thresholds",
+      "value": "Approximately 5 MeV for inner counters and 7 MeV for outer counters",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Shielding",
+      "value": "Approximately 5,200 m water equivalent",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "SN1987A discussion",
+      "summary": "LSD’s early burst preceded the principal Kamiokande-II, IMB and Baksan signals by several hours. Its association and physical interpretation remain debated; it is not treated as equivalent confirmation of the main burst.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "lvd",
+    "nusex",
+    "kamiokande"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://ntrs.nasa.gov/api/citations/19850027753/downloads/19850027753.pdf",
+      "https://doi.org/10.1051/epjconf/201819103004"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://ntrs.nasa.gov/api/citations/19850027753/downloads/19850027753.pdf",
+      "caption": "LSD 90-tonne scintillation-counter and iron-shielding layout at Mont Blanc.",
+      "credit": "LSD Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://ntrs.nasa.gov/api/citations/19850027753/downloads/19850027753.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 790,
+      "height": 745,
+      "sha256": "3efbda05d7ece82f5fbb377a9d2978a4c40aef6e5290991bb54a176bba6f8a67",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LSD Collaboration, Research programme of LSD in the Mont Blanc laboratory",
+      "url": "https://ntrs.nasa.gov/api/citations/19850027753/downloads/19850027753.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1985",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "LSD investigator review, detector description and SN1987A discussion",
+      "url": "https://doi.org/10.1051/epjconf/201819103004",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

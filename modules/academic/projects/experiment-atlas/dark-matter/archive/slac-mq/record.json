@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "slac-mq",
+  "name": "SLAC-mQ",
+  "full_name": "SLAC millicharged-particle search",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "SLAC-mQ operated at SLAC, Menlo Park, California. This early dedicated small-charge-particle search used an apparatus distinct from SLAC E137.",
+  "physics_targets": [
+    "Millicharged particles",
+    "Light dark matter (reinterpretation)"
+  ],
+  "detection_principle": "An electron beam dump produces candidate particles, while downstream low-threshold scintillators seek weak ionization; the same historical data have also been interpreted as dark-matter–electron scattering.",
+  "technologies": [
+    "Electron beam dump",
+    "Low-threshold scintillators",
+    "PMT",
+    "Timing correlations"
+  ],
+  "sites": [
+    {
+      "name": "SLAC, Menlo Park, California",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "SLAC, Menlo Park, California",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Original millicharge result public in 1998; light-dark-matter reinterpretation in 2013",
+    "as_of": "1998",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1998",
+      "event": "Original millicharge result public in 1998; light-dark-matter reinterpretation in 2013",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SLAC-mQ Collaboration / project team",
+    "lead_institutions": [
+      "SLAC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original search target",
+      "value": "Particles with charges far below the electron charge",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Mediator scale in later reinterpretation",
+      "value": "The 2013 study covers dark-photon scenarios around 1–30 MeV; exact reach is model dependent",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SLAC-mQ",
+      "status": "completed",
+      "description": "Original millicharge result public in 1998; light-dark-matter reinterpretation in 2013"
+    }
+  ],
+  "results": [
+    {
+      "date": "1998",
+      "summary": "The original experiment set limits on millicharged particles.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "date": "2013",
+      "summary": "Historical data constrain light-dark-matter models, rather than representing renewed operation.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "E137",
+    "milliQan",
+    "FerMINI"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/9804008",
+      "https://arxiv.org/abs/1307.6861"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/hep-ex/9804008",
+      "caption": "Fig. 1 of the original SLAC-mQ paper: longitudinal layout of beam target, shielding, muon counters and small-charge detector. Source PDF p. 4.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/hep-ex/9804008",
+      "width": 601,
+      "height": 248,
+      "sha256": "7e4485e008677ae1f7f7515d61ed8b6c6f9279792c3f8f5362f8097e1e0bbbc0",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/hep-ex/9804008",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for Millicharged Particles at SLAC",
+      "url": "https://arxiv.org/abs/hep-ex/9804008",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1998-04-17",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Searching for Light Dark Matter with the SLAC Millicharge Experiment",
+      "url": "https://arxiv.org/abs/1307.6861",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-07-25",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "euso-spb2",
+  "name": "EUSO-SPB2",
+  "full_name": "Extreme Universe Space Observatory on a Super Pressure Balloon 2",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A balloon-borne pathfinder tested complementary fluorescence and Cherenkov telescopes for future cosmic-ray and tau-neutrino observation from above the atmosphere.",
+  "physics_targets": [
+    "Air-shower imaging from a balloon",
+    "Cosmic rays",
+    "Instrumentation and backgrounds for future tau-neutrino searches"
+  ],
+  "detection_principle": "The downward fluorescence telescope searched for cosmic-ray tracks, while the horizon-pointing Cherenkov telescope tested fast air-shower observations and backgrounds relevant to future tau-neutrino searches.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Wanaka balloon launch",
+      "country": "New Zealand",
+      "country_code": "NZL",
+      "location": "South Pacific balloon flight from Wanaka, New Zealand",
+      "latitude": -44.73,
+      "longitude": 169.24,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "NASA gives the completed flight interval and explicitly states premature termination from a balloon leak.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023-05-13",
+      "event": "Launched from Wanaka, New Zealand.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "event": "Flight ended prematurely after a balloon leak.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Camera and readout characterisation published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "EUSO-SPB2 Collaboration",
+    "lead_institutions": [
+      "JEM-EUSO Collaboration",
+      "NASA Columbia Scientific Balloon Facility"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Payload",
+      "value": "Separate fluorescence and Cherenkov telescopes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Cherenkov camera",
+      "value": "512 silicon-photomultiplier pixels",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "100 MS/s, 12-bit digitisation",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Flight",
+      "value": "13–15 May 2023; approximately 1.5 days before premature termination",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023 flight",
+      "summary": "The mission provided instrumental and background data despite a short flight; no confirmed astrophysical tau-neutrino detection is claimed here.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "poemma",
+    "pbr",
+    "trinity"
+  ],
+  "resources": {
+    "official_website": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/euso_spb.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2406.08274"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/euso_spb.html",
+      "caption": "EUSO-SPB2 during balloon launch at Wanaka, New Zealand.",
+      "credit": "NASA / EUSO-SPB2 Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://heasarc.gsfc.nasa.gov/Images/misc_missions/euso_spb2_sm.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 540,
+      "height": 283,
+      "sha256": "5f906f523761e37b7f54d7a7ac05a84a60ac9dbdd4e68498b0b3a9c3c5573481",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NASA HEASARC, EUSO-SPB mission history and payload",
+      "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/euso_spb.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Instrument team, camera and readout for EUSO-SPB2 and Trinity",
+      "url": "https://arxiv.org/abs/2406.08274",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "NZL"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

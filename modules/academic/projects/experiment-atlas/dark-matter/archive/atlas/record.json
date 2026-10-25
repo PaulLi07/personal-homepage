@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "atlas",
+  "name": "ATLAS",
+  "full_name": "A Toroidal LHC ApparatuS",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "ATLAS is located at CERN LHC Point 1 near Meyrin. It is a general-purpose LHC detector, with dark matter forming part of its broad physics program.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-sector mediators",
+    "Dark Higgs bosons",
+    "Long-lived dark particles"
+  ],
+  "detection_principle": "Jets, leptons, photons and transverse-momentum imbalance reconstruct monojet, monophoton, invisible-Higgs and displaced-vertex signatures. Standard Model backgrounds from neutrinos and mismeasurement require separate control.",
+  "technologies": [
+    "Silicon tracking",
+    "Calorimeter",
+    "Superconducting magnets",
+    "Muon spectrometer"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC Point 1, near Meyrin",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN LHC Point 1, near Meyrin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "2022–2024 Run 3 data already have dark-photon-analysis reports",
+    "as_of": "2024",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "2022–2024 Run 3 data already have dark-photon-analysis reports",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ATLAS Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Integrated luminosity of the listed Run 3 dark-photon analysis",
+      "value": "165 fb⁻¹ (2022–2024; not all ATLAS data)",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ATLAS",
+      "status": "operating",
+      "description": "2022–2024 Run 3 data already have dark-photon-analysis reports"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The collaboration reports long-lived-dark-photon searches using displaced dilepton/photon vertices, interpreted as 95% confidence upper limits.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "CMS"
+  ],
+  "resources": {
+    "official_website": "https://atlas.cern/updates/feature/dark-matter",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://atlas.cern/Discover/Detector",
+      "caption": "ATLAS detector end view during installation, showing toroidal magnets and detector structures.",
+      "credit": "CERN",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://cds.cern.ch/images/CERN-EX-0706038-02/file?size=large",
+      "width": 1615,
+      "height": 1081,
+      "sha256": "643f05fee58f6aa6215f729f0b96fdea8cca7da15d54716ba7bea8381c0ac8fc",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://atlas.cern/updates/feature/dark-matter",
+      "caption": "ATLAS dark-matter-search principles and event displays; see individual captions for the image type",
+      "credit": "ATLAS Collaboration / CERN",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Searching for Dark Matter with the ATLAS detector",
+      "url": "https://atlas.cern/updates/feature/dark-matter",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Search for long-lived dark photons with vertexed displaced lepton pairs",
+      "url": "https://indico.cern.ch/event/1639855/contributions/7220615/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

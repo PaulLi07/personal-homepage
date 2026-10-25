@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "exo",
+  "name": "EXO",
+  "full_name": "Enriched Xenon Observatory / EXO-200",
+  "aliases": [
+    "EXO-200"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "EXO-200 was a liquid-xenon time projection chamber at the Waste Isolation Pilot Plant. It measured xenon-136 two-neutrino decay and searched for the neutrinoless mode, providing the experimental foundation for the larger nEXO proposal.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Ionization and scintillation jointly reconstruct energy and three-dimensional event positions. The anticorrelation of charge and light improves energy resolution; topology separates single-site double-beta events from many gamma backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Waste Isolation Pilot Plant, Carlsbad, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Waste Isolation Pilot Plant, Carlsbad, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2018-12",
+    "evidence": "The full dataset produced a 90% confidence lower half-life limit of 3.5 x 10^25 yr.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "EXO Collaboration",
+    "lead_institutions": [
+      "Stanford University",
+      "SLAC National Accelerator Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Xenon inventory",
+      "value": "Approximately 200 kg, enriched to 80.6% in 136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Primary site",
+      "value": "WIPP, near Carlsbad, New Mexico",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Complete search exposure",
+      "value": "234.1 kg yr of 136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "The full dataset produced a 90% confidence lower half-life limit of 3.5 x 10^25 yr.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "nexo"
+  ],
+  "resources": {
+    "official_website": "https://ecap.nat.fau.de/indexphp/research/neutrino-physics/exo-200/",
+    "publication_links": [
+      "https://arxiv.org/abs/1906.02723"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://ecap.nat.fau.de/indexphp/research/neutrino-physics/exo-200/",
+      "caption": "EXO-200 time projection chamber insert, photographed during detector assembly.",
+      "credit": "EXO Collaboration / Erlangen Centre for Astroparticle Physics",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://ecap.nat.fau.de/wp-content/uploads/2026/02/tpc_insert-1024x768.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1024,
+      "height": 768,
+      "sha256": "d7ee1d5816128a9c2bde83b431d3873f8050b5d4808373d265c914ef8ccee5e4",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "EXO: official experiment / institutional overview",
+      "url": "https://ecap.nat.fau.de/indexphp/research/neutrino-physics/exo-200/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Search for Neutrinoless Double-Beta Decay with the Complete EXO-200 Dataset",
+      "url": "https://arxiv.org/abs/1906.02723",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "xenon"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

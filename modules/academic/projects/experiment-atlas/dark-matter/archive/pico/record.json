@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "id": "pico",
+  "name": "PICO",
+  "full_name": "PICO",
+  "aliases": [
+    "PICO-2L",
+    "PICO-60",
+    "PICO-40L",
+    "PICO-500"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "PICO formed through the merger of PICASSO and COUPP. Its fluorocarbon superheated-liquid bubble chambers primarily probe spin-dependent WIMP–proton interactions.",
+  "physics_targets": [
+    "Spin-dependent WIMP–proton scattering",
+    "WIMP nuclear recoils"
+  ],
+  "detection_principle": "Nuclear recoils trigger bubbles in superheated liquid. Cameras and acoustic signals locate and identify events, while temperature and pressure set the nuclear-recoil threshold.",
+  "technologies": [
+    "C3F8 bubble chamber",
+    "Acoustic readout",
+    "Optical imaging"
+  ],
+  "sites": [
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": null,
+    "evidence": "The collaboration website lists 2L, 60 and 40L as built and PICO-500 as under installation/construction; that status text is not dated.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "PICO Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "PICO-500 designed active volume",
+      "value": "Approximately 250 L according to the detector page; volume must not be confused with mass.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Target material",
+      "value": "C3F8",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PICO-2L / PICO-60",
+      "status": "completed",
+      "description": "Early physics results"
+    },
+    {
+      "name": "PICO-40L",
+      "status": "commissioning",
+      "description": "Subsequent low-background technology phase; date requires verification."
+    },
+    {
+      "name": "PICO-500",
+      "status": "construction",
+      "description": "Funded, with installation/construction in SNOLAB Cube Hall"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "PICASSO",
+    "COUPP",
+    "SBC"
+  ],
+  "resources": {
+    "official_website": "https://www.picoexperiment.com/pico-detectors/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.picoexperiment.com/pico-detectors/",
+      "caption": "Official PICO detector-evolution illustration, combining bubble-chamber photographs with designs for subsequent detectors.",
+      "credit": "E. Vázquez Jáuregui / PICO collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.picoexperiment.com/wp-content/uploads/2025/02/PICO-Evolution.png",
+      "width": 882,
+      "height": 318,
+      "sha256": "f45ee2a86b9f9f9ce0a0d9b5fde971685665c94422e9003e05acd2f7fca8f437",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.picoexperiment.com/pico-detectors/",
+      "caption": "PICO apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "PICO Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "PICO Detectors",
+      "url": "https://www.picoexperiment.com/pico-detectors/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "PICO official project website",
+      "url": "https://www.picoexperiment.com/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "bubble"
+    ]
+  }
+}

@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "cangaroo",
+  "name": "CANGAROO",
+  "full_name": "Collaboration of Australia and Nippon for a GAmma Ray Observatory in the Outback",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Historical Japanese–Australian Cherenkov-telescope series whose Galactic-center observations tested cold-dark-matter radiation.",
+  "physics_targets": [
+    "Galactic-center WIMP signals"
+  ],
+  "detection_principle": "Single and later multiple telescopes image atmospheric Cherenkov light to reconstruct very-high-energy gamma-ray spectra.",
+  "technologies": [
+    "Imaging atmospheric Cherenkov telescopes"
+  ],
+  "sites": [
+    {
+      "name": "Woomera，South Australia",
+      "country": "Australia",
+      "country_code": "AUS",
+      "location": "Woomera，South Australia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2012-03-31",
+    "evidence": "ICRR's official history explicitly states that the project ended on 2012-03-31.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1992",
+      "event": "Project began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1999",
+      "event": "Phase II began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2004-03",
+      "event": "Phase III stereoscopic observations began",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2012-03-31",
+      "event": "Project ended",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CANGAROO collaboration / mission team",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "University of Adelaide"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Phase III array",
+      "value": "4 telescopes of 10 m aperture",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CANGAROO-I",
+      "status": "completed",
+      "description": "Single 3.8 m telescope"
+    },
+    {
+      "name": "CANGAROO-II",
+      "status": "completed",
+      "description": "Single 7 m telescope upgraded to 10 m"
+    },
+    {
+      "name": "CANGAROO-III",
+      "status": "completed",
+      "description": "Four-telescope array"
+    }
+  ],
+  "results": [
+    {
+      "date": "2004",
+      "summary": "Galactic-center observations constrained specific cold-dark-matter-halo scenarios; not a dark-matter discovery.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "H.E.S.S.",
+    "CTAO"
+  ],
+  "resources": {
+    "official_website": "https://www.icrr.u-tokyo.ac.jp/en/about-icrr-2/timeline/gamma-ray-research/",
+    "publication_links": [
+      "https://www.icrr.u-tokyo.ac.jp/can/paper/tnacd7-morim.pdf",
+      "https://digital.library.adelaide.edu.au/items/e6579964-3beb-46e8-800a-c4c2508fe675"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/can/paper/tnacd7-morim.pdf",
+      "caption": "Photograph of the four 10 m Cherenkov telescopes of CANGAROO-III at Woomera, Australia.",
+      "credit": "CANGAROO-III Collaboration / M. Mori status report, PDF page 2",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.icrr.u-tokyo.ac.jp/can/paper/tnacd7-morim.pdf",
+      "width": 715,
+      "height": 346,
+      "sha256": "7cc5d6964db0d72a829ca832c64150a9cef8c82db31bc7c68bc5c916d7443908",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/en/about-icrr-2/timeline/gamma-ray-research/",
+      "caption": "CANGAROO project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.icrr.u-tokyo.ac.jp/en/about-icrr-2/timeline/gamma-ray-research/",
+      "title": "ICRR gamma-ray research chronology",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.icrr.u-tokyo.ac.jp/can/paper/tnacd7-morim.pdf",
+      "title": "CANGAROO-III status report",
+      "source_date": "2005",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://digital.library.adelaide.edu.au/items/e6579964-3beb-46e8-800a-c4c2508fe675",
+      "title": "CANGAROO-II: Detection of sub-TeV gamma rays from the Galactic center",
+      "source_date": "2004",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "The official project-end date need not be the final scientific observing night; the two must be distinguished."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "AUS"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

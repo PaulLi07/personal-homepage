@@ -1,0 +1,237 @@
+{
+  "schema_version": "1.0",
+  "id": "ligo",
+  "name": "LIGO — dark matter searches",
+  "full_name": "Laser Interferometer Gravitational-Wave Observatory dark-matter searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A two-site US gravitational-wave observatory also directly testing ultralight scalar, vector and tensor dark matter through mirror and beam-splitter responses, and conducting astronomical searches including primordial black holes.",
+  "physics_targets": [
+    "Ultralight scalar dark matter",
+    "Vector dark photons",
+    "Tensor dark matter"
+  ],
+  "detection_principle": "Ultralight fields can change optical-component dimensions, exert baryon-dependent forces or produce strainlike tensor responses; the two interferometers are analyzed spectrally and cross-correlated.",
+  "technologies": [
+    "Long-arm laser interferometry",
+    "Multistation cross-correlation",
+    "Low-noise mirrors and suspensions"
+  ],
+  "sites": [
+    {
+      "name": "LIGO Hanford，Washington",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "LIGO Hanford，Washington",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "LIGO Livingston，Louisiana",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "LIGO Livingston，Louisiana",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2026",
+    "evidence": "2026 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Direct Multimodel Dark Matter Search with Gravitational-Wave Interferometers Using Data from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LIGO — dark matter searches Collaboration / project team",
+    "lead_institutions": [
+      "Caltech",
+      "MIT",
+      "LIGO Scientific Collaboration"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Data for this analysis",
+      "value": "LIGO H1/L1 O4a; 2023-05-24 to 2024-01-16",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Analysis band",
+      "value": "10–2000 Hz",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Interferometer arm length",
+      "value": "Hanford and Livingston each have two 4 km arms.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Advanced LIGO O3",
+      "status": "results_published",
+      "description": "Used jointly with Virgo data for dark-photon searches."
+    },
+    {
+      "name": "Advanced LIGO O4a",
+      "status": "results_published",
+      "description": "H1/L1 provide the scalar, vector and tensor direct-dark-matter searches; the analysis does not use data from all three LVK observatories."
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The O4a three-model search published in 2026 found no dark-matter evidence and set model-specific coupling limits. Although authored by LVK, it actually used the two LIGO detectors' data.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A multipurpose gravitational-wave observatory covering direct ultralight-field searches and astronomical dark-matter candidates. Ordinary gravitational-wave detection is not a dark-matter discovery; primordial-black-hole interpretations require separate tests.",
+  "related_experiments": [
+    "Virgo",
+    "KAGRA",
+    "GEO600",
+    "LISA"
+  ],
+  "resources": {
+    "official_website": "https://www.ligo.caltech.edu/WA/page/facilities",
+    "publication_links": [
+      "https://journals.aps.org/prl/abstract/10.1103/qdnd-rsnh",
+      "https://arxiv.org/html/2510.27022",
+      "https://arxiv.org/abs/2105.13085"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.ligo.caltech.edu/WA/page/facilities",
+      "caption": "Central station and interferometer-arm beam tubes at LIGO Livingston, Louisiana, United States.",
+      "credit": "Caltech/MIT/LIGO Lab / W. Katzman",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.ligo.caltech.edu/system/media_files/binaries/208/original/LLO_corner_station_w_two_arms.jpg?1431977185",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "76cb07e0107a5f44b8535248134e5dfbef9a3b47f05eaa6847199b1910057b36",
+      "mime_type": "image/webp",
+      "source_sha256": "d96e7dec11a31d9c4a59547a7a56a13ea3c5a916a2735159e6ba564a7baf989c",
+      "source_dimensions": {
+        "width": 5312,
+        "height": 2988
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.ligo.caltech.edu/WA/page/facilities",
+      "caption": "Photographs of the LIGO Hanford and Livingston facilities.",
+      "credit": "Caltech / MIT / LIGO Laboratory; see the page for the specific image credit",
+      "reuse_status": "Not downloaded in this entry; image permission and credit unverified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Direct Multimodel Dark Matter Search with Gravitational-Wave Interferometers Using Data from the First Part of the Fourth LIGO-Virgo-KAGRA Observing Run",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/qdnd-rsnh",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "O4a direct DM paper — data section",
+      "url": "https://arxiv.org/html/2510.27022",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "key_parameters",
+        "results",
+        "science_scope"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "LIGO facilities and observatory photographs",
+      "url": "https://www.ligo.caltech.edu/WA/page/facilities",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "sites",
+        "collaboration",
+        "key_parameters",
+        "media"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "LIGO and Virgo O3 dark photon result",
+      "url": "https://arxiv.org/abs/2105.13085",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "Project status, approval / construction milestones and subsequent results after the 2026 source require further verification."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

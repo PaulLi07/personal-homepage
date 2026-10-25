@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "id": "wcte",
+  "name": "WCTE",
+  "full_name": "Water Cherenkov Test Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "WCTE was a CERN charged-particle test-beam experiment validating water-Cherenkov reconstruction and multi-PMT technology for Hyper-Kamiokande and its Intermediate Water Cherenkov Detector. The principal beam campaign is complete and the collaboration is analysing the data.",
+  "physics_targets": [
+    "Water-Cherenkov detector calibration and reconstruction",
+    "Multi-PMT photosensor performance",
+    "Hadronic interactions and neutron production relevant to neutrino experiments"
+  ],
+  "detection_principle": "Identified low-momentum charged particles enter a water tank instrumented with multi-PMT modules. Their measured beam momentum and species calibrate Cherenkov-light response, reconstruction and secondary-neutron production relevant to neutrino-water events.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "CERN East Area T9 beamline",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Meyrin, Geneva",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-07",
+    "evidence": "The 2026 collaboration report states that the beam campaign ran from October 2024 to June 2025. The CERN Greybook lists Data Analysis; its administrative transition date of 25 August 2025 is not the physical beam-run end date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-06",
+      "event": "Detector construction began at CERN.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024-10 to 2025-06",
+      "event": "Principal charged-particle beam campaign.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2025-08-25",
+      "event": "CERN Greybook administrative status changed to Data Analysis.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WCTE Collaboration",
+    "lead_institutions": [
+      "TRIUMF",
+      "University of Tokyo",
+      "Carleton University",
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Water tank",
+      "value": "40-tonne water capacity, approximately 4 m diameter and height",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Photon detection",
+      "value": "97 multi-PMT modules; each module contains nineteen 3-inch PMTs",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Test-beam momentum range",
+      "value": "Approximately 200-1000 MeV/c for pions, muons, electrons and protons",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Reported the assembly, optical testing and installation of multi-PMT modules.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "summary": "Presented detector performance, beam monitoring and the data-analysis programme after the completed beam campaign.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "WCTE receives charged particles rather than a neutrino beam. It is included as a named neutrino-detector calibration experiment, consistent with the archive treatment of ENUBET, DsTau and LArIAT.",
+  "related_experiments": [
+    "hyper-kamiokande",
+    "t2k",
+    "annie"
+  ],
+  "resources": {
+    "official_website": "https://greybook.cern.ch/experiment/detail?id=WCTE",
+    "publication_links": [
+      "https://arxiv.org/abs/2504.07216",
+      "https://indico.cern.ch/event/1522800/contributions/6987082/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2504.07216",
+      "caption": "Installed WCTE multi-PMT modules on the bottom endcap, top endcap and barrel support structure.",
+      "credit": "M. Gola et al. / WCTE, Figure 26",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2504.07216",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 657,
+      "height": 738,
+      "sha256": "2ed0a6affd399fdf0d9604ba78033369eeb750c42785db07deb21400e8130367",
+      "mime_type": "image/webp",
+      "source_sha256": "4ecc21e8d0b673edd830d9b992c4efaddcf2a86355bcf6d889cacf31b3cf8a9f",
+      "source_dimensions": {
+        "width": 657,
+        "height": 738
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CERN Greybook, Water Cherenkov Test Experiment",
+      "url": "https://greybook.cern.ch/experiment/detail?id=WCTE",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "M. Gola et al., Assembly, testing, and installation of mPMT photosensor for the Water Cherenkov Test Experiment",
+      "url": "https://arxiv.org/abs/2504.07216",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "WCTE Collaboration, The Water Cherenkov Test Experiment: Detector Performance, Beam Monitoring, and Physics Reach, ICHEP 2026",
+      "url": "https://indico.cern.ch/event/1522800/contributions/6987082/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": true
+  }
+}

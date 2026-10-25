@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "id": "project-8",
+  "name": "Project 8",
+  "full_name": "Project 8 cyclotron-radiation neutrino-mass experiment",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Project 8 develops cyclotron-radiation emission spectroscopy for direct neutrino-mass measurements. It infers a beta electron’s kinetic energy from microwave radiation while the electron orbits in a magnetic field.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "Electrons trapped in a magnetic field radiate at an energy-dependent cyclotron frequency. A microwave receiver follows the radiation track in time, measuring the beta spectrum without extracting the electron into a conventional spectrometer.",
+  "technologies": [
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "United States; prototype laboratories in Seattle and elsewhere; the site for the large-scale phase is undecided",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; prototype laboratories in Seattle and elsewhere; the site for the large-scale phase is undecided",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2023",
+    "evidence": "Project 8 demonstrated a tritium beta spectrum and a first CRES neutrino-mass limit.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Project 8 Collaboration",
+    "lead_institutions": [
+      "University of Washington",
+      "Massachusetts Institute of Technology",
+      "Pacific Northwest National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Method",
+      "value": "Cyclotron Radiation Emission Spectroscopy (CRES)",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Beta source",
+      "value": "Tritium in demonstrated molecular-gas measurements",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Long-term approach",
+      "value": "Atomic tritium for reduced molecular final-state uncertainty",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Project 8 demonstrated a tritium beta spectrum and a first CRES neutrino-mass limit.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://www.project8.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2212.05048"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2212.05048",
+      "caption": "Cutaway of the Project 8 cryogenic cyclotron-radiation-emission spectroscopy cell (Fig. 1).",
+      "credit": "Project 8 Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2212.05048#page=2",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 439,
+      "height": 202,
+      "sha256": "38a920454dc0922feccf1c48addce37e8998ef2d5967d65afaa2e6401bb791e3",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Project 8: official experiment / institutional overview",
+      "url": "https://www.project8.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Tritium Beta Spectrum Measurement and Neutrino Mass Limit from Cyclotron Radiation Emission Spectroscopy",
+      "url": "https://arxiv.org/abs/2212.05048",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

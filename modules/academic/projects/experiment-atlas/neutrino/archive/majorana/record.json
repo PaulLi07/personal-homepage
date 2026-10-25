@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "majorana",
+  "name": "Majorana Demonstrator",
+  "full_name": "Majorana Demonstrator",
+  "aliases": [
+    "Majorana"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Majorana Demonstrator used ultralow-background germanium detector arrays at SURF. It searched for germanium-76 neutrinoless double-beta decay and demonstrated radiopure construction methods for LEGEND.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Enriched germanium diodes provide both the source and high-resolution calorimeter. Pulse-shape analysis rejects multisite energy deposits, while ultrapure copper and shielding reduce radioactive backgrounds.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; SURF underground laboratory",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; SURF underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Enriched-germanium double-beta search completed",
+    "as_of": "2021",
+    "evidence": "The final enriched-detector search reported a half-life lower bound and demonstrated low backgrounds for future germanium arrays.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Majorana Demonstrator Collaboration",
+    "lead_institutions": [
+      "University of Washington",
+      "Oak Ridge National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector mass",
+      "value": "Up to 40.4 kg of detectors in the final search, including 27.2 kg enriched to approximately 88% in 76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Source isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Site depth",
+      "value": "4850-foot level at SURF",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "The final enriched-detector search reported a half-life lower bound and demonstrated low backgrounds for future germanium arrays.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "legend",
+    "gerda"
+  ],
+  "resources": {
+    "official_website": "https://www.npl.washington.edu/majorana/",
+    "publication_links": [
+      "https://arxiv.org/abs/2207.07638"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://sanfordlab.org/news/legacy-majorana-demonstrator",
+      "caption": "The MAJORANA DEMONSTRATOR germanium array suspended inside a glovebox in the clean room at SURF's 4850-foot level.",
+      "credit": "Nick Hubbard / Sanford Underground Research Facility",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://sanfordlab.org/sites/default/files/styles/x_small_480w/public/inline-images/6-MJD-open%20cryostat%20in%20glovebox_0.jpeg.webp?itok=D9cJeEwp",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 480,
+      "height": 720,
+      "sha256": "1aaeb3fb6a75a54c2903c56129ccf22dda7a106b2b11c72257ccde29ac5a7668",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Majorana Demonstrator: official experiment / institutional overview",
+      "url": "https://www.npl.washington.edu/majorana/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Final Result of the Majorana Demonstrator Search for Neutrinoless Double-beta Decay in 76Ge",
+      "url": "https://arxiv.org/abs/2207.07638",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "change",
+  "name": "ChangE",
+  "full_name": "Coupled Hot Atom eNsembles to search for liGht dark mattEr",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A Chinese hot-atom hybrid-spin system extending the light-dark-matter search bandwidth through different spin-coupling regimes.",
+  "physics_targets": [
+    "Axion–neutron coupling",
+    "Axion–proton coupling"
+  ],
+  "detection_principle": "Coupled alkali-metal and neon-21 spins measure axion-induced nuclear-spin responses in low-frequency self-compensating and high-frequency hybrid-resonance regimes.",
+  "technologies": [
+    "Hot-atom ensembles",
+    "Alkali-metal–neon-21 hybrid spins",
+    "Comagnetometers"
+  ],
+  "sites": [
+    {
+      "name": "Beihang University, Beijing",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Beihang University, Beijing",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2025",
+    "evidence": "2025 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Dark Matter Search with a Resonantly-Coupled Hybrid Spin System",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ChangE Collaboration / project team",
+    "lead_institutions": [
+      "Beihang University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Frequency range in the 2025 published version",
+      "value": "0.01–1000 Hz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Nucleon-coupling limits incorporating dark-matter stochasticity were obtained, improving existing laboratory constraints in some frequency bands.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "NASDUCK",
+    "SAPPHIRE",
+    "CASPEr"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2306.08039",
+      "https://indico.itp.ac.cn/event/149/contributions/412/attachments/337/726/2023-07-28-JL--.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2306.08039",
+      "caption": "Optical paths, cell and magnetic shielding of ChangE's potassium–rubidium–neon hybrid-spin apparatus (Fig. 5 of the paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2306.08039v2/fig-setup.png",
+      "width": 597,
+      "height": 519,
+      "sha256": "59985f6309ef24cc99a8e98416528cad16b5802759e8a8cb8d1b5761f1192d60",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2306.08039",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ChangE Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Dark Matter Search with a Resonantly-Coupled Hybrid Spin System",
+      "url": "https://arxiv.org/abs/2306.08039",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ChangE collaboration presentation: Dark matter search with a strongly-coupled hybrid spin system",
+      "url": "https://indico.itp.ac.cn/event/149/contributions/412/attachments/337/726/2023-07-28-JL--.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "spin_magnetometry"
+    ]
+  }
+}

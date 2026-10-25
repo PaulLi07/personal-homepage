@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "orland",
+  "name": "ORLaND",
+  "full_name": "Oak Ridge Laboratory for Neutrino Detectors",
+  "aliases": [
+    "Oak Ridge Large Neutrino Detector",
+    "CoNDOR"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "supernova",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "ORLaND was a proposed multi-detector neutrino laboratory beside the SNS at Oak Ridge. Its plans included a large scintillation-Cherenkov detector, often called CoNDOR in later reports, and smaller detectors for neutrino-nucleus measurements.",
+  "physics_targets": [
+    "Low-energy neutrino-nucleus cross sections for supernova modelling",
+    "Short-baseline oscillations",
+    "Neutrino-electron scattering and weak-interaction tests"
+  ],
+  "detection_principle": "Pulsed stopped-pion and stopped-muon neutrinos from the SNS would illuminate several targets in a shielded underground hall. Optical light from charged reaction products would identify flavour and interaction channels, while beam timing reduces backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "SNS, Oak Ridge National Laboratory",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Oak Ridge, Tennessee; proposed shielded detector hall",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2001",
+    "evidence": "The contemporary laboratory and technical reports describe a proposed facility. It is not the later operating COHERENT detector programme.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2000",
+      "event": "Large SNS neutrino-facility proposal described.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2001",
+      "event": "ORLaND and CoNDOR programme report issued.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ORLaND Collaboration",
+    "lead_institutions": [
+      "Oak Ridge National Laboratory",
+      "University of Tennessee",
+      "University of South Carolina"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original large-detector concept",
+      "value": "Approximately 2,000 tonnes, with additional smaller detectors in a common bunker",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Source energy scale",
+      "value": "Tens of MeV from stopped pion and muon decays",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "name": "Facility design",
+      "value": "Underground or shielded experimental hall adjacent to the SNS target station",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2000-2001",
+      "summary": "Developed facility, detector and physics plans, without a completed ORLaND neutrino exposure.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The proposal evolved across reports. The quoted 2,000-tonne mass belongs to the original large-detector concept and should not be transferred automatically to every later CoNDOR configuration. ORLaND, OscSNS and COHERENT are separate named programmes.",
+  "related_experiments": [
+    "oscsns",
+    "coherent"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://digital.library.unt.edu/ark:/67531/metadc723786/",
+      "https://scholars.duke.edu/publication/919325",
+      "https://www.osti.gov/servlets/purl/9200"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_rendering",
+      "source_url": "https://digital.library.unt.edu/ark:/67531/metadc723786/",
+      "caption": "Artist rendering of the proposed ORLaND bunker and CoNDOR detector; a design rather than a constructed facility.",
+      "credit": "F. Plasil / ORLaND, Figure 5",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://digital.library.unt.edu/iiif/ark:/67531/metadc723786/m1/6/full/max/0/default.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 495,
+      "height": 543,
+      "sha256": "ad60c2cabd5b30ae03aa249a33fc69249e8612bcabceb249a628ff67906b33aa",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "F. Plasil, ORLaND - Oak Ridge Laboratory for Neutrino Detectors",
+      "url": "https://digital.library.unt.edu/ark:/67531/metadc723786/",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "2001-06-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ORLaND: A Proposed Neutrino Facility at the Oak Ridge National Laboratory",
+      "url": "https://scholars.duke.edu/publication/919325",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2000-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Y. V. Efremenko, A Large Neutrino Detector Facility at the Spallation Neutron Source at Oak Ridge National Laboratory",
+      "url": "https://www.osti.gov/servlets/purl/9200",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

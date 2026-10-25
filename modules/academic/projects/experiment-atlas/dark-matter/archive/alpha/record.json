@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "id": "alpha",
+  "name": "ALPHA",
+  "full_name": "Axion Longitudinal Plasma HAloscope",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "The international ALPHA collaboration proposes artificial plasma materials to detect higher-mass QCD axions.",
+  "physics_targets": [
+    "QCD axions"
+  ],
+  "detection_principle": "A metamaterial of parallel wires provides a tunable effective plasma frequency, enhancing observable electromagnetic excitations on axion resonance.",
+  "technologies": [
+    "Wire metamaterials",
+    "Plasma axion haloscopes",
+    "Microwave cavities"
+  ],
+  "sites": [
+    {
+      "name": "Yale Wright Laboratory，New Haven",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Yale Wright Laboratory，New Haven",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "construction"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "Construction and subsystem commissioning",
+    "as_of": "2026-07-23",
+    "evidence": "The collaboration's DPF2026 report describes commissioning and then projected first science operation in early 2028; this is a planned, not achieved, date.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021-05",
+      "event": "ALPHA Consortium established (as documented on the official project page).",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023-09",
+      "event": "First collaboration meeting held at Yale Wright Lab.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025-02-24",
+      "event": "Dilution refrigerator installation.",
+      "source_ids": [
+        "s5"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Phase I design and sensitivity projections published.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ALPHA Collaboration / project team",
+    "lead_institutions": [
+      "Stockholm University",
+      "Yale University",
+      "University of California, Berkeley"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Phase I design scan",
+      "value": "10–20 GHz, approximately 40–80 μeV; design sensitivity approaches KSVZ.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The initial design and R&D / commissioning progress are public; these sources report no completed cosmic-axion-search limit.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "MADMAX",
+    "HAYSTAC"
+  ],
+  "resources": {
+    "official_website": "https://axion-dm.yale.edu/alpha-experiment",
+    "publication_links": [
+      "https://arxiv.org/abs/2608.10292"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://physics.yale.edu/posts/2025-02-28-alpha-experiment-reaches-milestone-towards-the-search-for-dark-matter",
+      "caption": "The ALPHA dilution refrigerator and team members at its installation at Yale Wright Laboratory in February 2025.",
+      "credit": "Yale Wright Laboratory / ALPHA Collaboration",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://physics.yale.edu/sites/default/files/2025-03/alpha-fridge-install-2025.jpg",
+      "width": 500,
+      "height": 281,
+      "sha256": "fa872bf151aee6dfefc946e9f6ff00de22535131d234420e304c51c5d8cac40a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://physics.yale.edu/posts/2025-02-28-alpha-experiment-reaches-milestone-towards-the-search-for-dark-matter",
+      "caption": "Installation of the ALPHA dilution refrigerator, from Yale's official 2025 report.",
+      "credit": "Yale Wright Laboratory / ALPHA Collaboration",
+      "reuse_status": "Not downloaded in this entry; verify image permission and credit before formal webpage use"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ALPHA Experiment — Axion Dark Matter at Yale",
+      "url": "https://axion-dm.yale.edu/alpha-experiment",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ALPHA — Berkeley Axion Works",
+      "url": "https://axions.berkeley.edu/alpha/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Design of ALPHA Phase I: A Plasma Haloscope for 10–20 GHz Post-Inflation Axions",
+      "url": "https://arxiv.org/abs/2608.10292",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "sites",
+        "status",
+        "key_parameters",
+        "phases",
+        "results",
+        "timeline"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "ALPHA DAQ development — DPF 2026",
+      "url": "https://indico.fnal.gov/event/72820/contributions/341069/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-23",
+      "supports": [
+        "status",
+        "phases",
+        "results"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Yale ALPHA experiment reaches installation milestone",
+      "url": "https://physics.yale.edu/posts/2025-02-28-alpha-experiment-reaches-milestone-towards-the-search-for-dark-matter",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-02-28",
+      "supports": [
+        "sites",
+        "media",
+        "timeline"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "First science operation in early 2028 was only a projection at the 2026 conference and requires subsequent verification."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf"
+    ]
+  }
+}

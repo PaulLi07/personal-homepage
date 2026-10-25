@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "id": "pbr",
+  "name": "PBR",
+  "full_name": "POEMMA-Balloon with Radio",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed long-duration balloon successor to EUSO-SPB2 would combine optical and radio views of air showers while maturing technology for future space-based observations.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic rays",
+    "High-altitude horizontal air showers",
+    "Transient very-high-energy tau neutrinos"
+  ],
+  "detection_principle": "A shared wide-field Schmidt optical system measures fluorescence and Cherenkov signals, complemented by radio antennas for coincident air-shower observations and neutrino-targeted follow-up.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Wanaka proposed launch",
+      "country": "New Zealand",
+      "country_code": "NZL",
+      "location": "Planned stratospheric balloon mission from New Zealand",
+      "latitude": -44.73,
+      "longitude": 169.24,
+      "precision": "approximate_site",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "The 2026 collaboration overview describes a planned 2027 launch.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Mission overview and development status presented.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Detailed instrument overview published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2027 target",
+      "event": "Planned launch window in the 2026 overview.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PBR Collaboration",
+    "lead_institutions": [
+      "JEM-EUSO Collaboration"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Optics",
+      "value": "Approximately 1.1 m modified Schmidt system",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Platforms",
+      "value": "NASA super-pressure balloon concept from Wanaka, New Zealand",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Combined readout",
+      "value": "Optical fluorescence/Cherenkov and radio measurements",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Schedule",
+      "value": "First-half 2027 launch is the published plan, not a completed event",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Development programme",
+      "summary": "Hybrid optical-radio observations and projected neutrino sensitivity are under development; a flight dataset is not yet established by the cited sources.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "poemma",
+    "euso-spb2",
+    "pueo"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://meetings-archive.aps.org/smt/2025/apr-c22/3/",
+      "https://www.mdpi.com/2571-712X/9/1/19"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico.cern.ch/event/1258933/contributions/6490663/attachments/3107483/5507711/PBR_Overview.pdf",
+      "caption": "POEMMA-Balloon with Radio payload design.",
+      "credit": "PBR Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/1258933/contributions/6490663/attachments/3107483/5507711/PBR_Overview.pdf#page=6",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 567,
+      "height": 878,
+      "sha256": "4367fc90ba6f8029e0b7a3726f856094d766b2be9e3b6ac6572184bc665aba61",
+      "mime_type": "image/webp",
+      "source_sha256": "ecb0925ac6bef704dfa2c3bd98d95222b9c162dcc71d8cd53364a9c24fec6dab",
+      "source_dimensions": {
+        "width": 567,
+        "height": 878
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PBR Collaboration, mission overview at APS Global Physics Summit",
+      "url": "https://meetings-archive.aps.org/smt/2025/apr-c22/3/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PBR Collaboration, balloon-borne multimessenger multi-detector observatory",
+      "url": "https://www.mdpi.com/2571-712X/9/1/19",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PBR Collaboration — representative apparatus image",
+      "url": "https://indico.cern.ch/event/1258933/contributions/6490663/attachments/3107483/5507711/PBR_Overview.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "NZL"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "radio"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

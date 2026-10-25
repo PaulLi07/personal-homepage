@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "gemma",
+  "name": "GEMMA",
+  "full_name": "Germanium Experiment for measurement of the Magnetic Moment of Antineutrino",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "GEMMA searched for an anomalous magnetic moment of reactor electron antineutrinos with a low-background germanium spectrometer at Kalinin. A magnetic contribution would enhance the low-energy electron-recoil spectrum over the weak-interaction expectation.",
+  "physics_targets": [
+    "Effective electron-antineutrino magnetic moment",
+    "Reactor antineutrino-electron scattering"
+  ],
+  "detection_principle": "A high-purity germanium crystal measures electron-recoil ionization. Active sodium-iodide shielding and passive copper, polyethylene and lead reduce backgrounds. Reactor-on/off comparison constrains an additional low-energy scattering component.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Kalinin nuclear power plant",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Kalinin nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": "2012",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "Reactor measurement programme began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2012",
+      "event": "Improved magnetic-moment limit published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GEMMA Collaboration",
+    "lead_institutions": [
+      "Institute for Theoretical and Experimental Physics",
+      "Joint Institute for Nuclear Research"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Germanium mass",
+      "value": "1.5 kg",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "13.9 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis threshold",
+      "value": "2.8 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Magnetic-moment bound",
+      "value": "Less than 2.9 × 10^-11 Bohr magnetons at 90% confidence",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2012",
+      "summary": "No magnetic scattering excess was established. Upgrade sensitivities in the same paper are projections and are not achieved GEMMA limits.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nugen",
+    "texono",
+    "munu"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1155/2012/350150",
+      "https://arxiv.org/abs/0906.1926"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://doi.org/10.1155/2012/350150",
+      "caption": "GEMMA germanium detector inside active and passive shielding and its position below the reactor (Figure 3).",
+      "credit": "A. G. Beda et al., Advances in High Energy Physics (2012), CC BY",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://doi.org/10.1155/2012/350150",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 900,
+      "height": 585,
+      "sha256": "8860d1318e943db3ddd63057196253508410829a9de645ab1794362139544126",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A. G. Beda et al., Results of the GEMMA magnetic-moment search",
+      "url": "https://doi.org/10.1155/2012/350150",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "A. G. Beda et al., GEMMA magnetic-moment search",
+      "url": "https://arxiv.org/abs/0906.1926",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009-06-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The cited campaign is established; a reliable recent operating-state statement was not found."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "id": "cupid-mo",
+  "name": "CUPID-Mo",
+  "full_name": "CUPID-Mo enriched-molybdate demonstrator",
+  "aliases": [
+    "cupid-mo"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CUPID-Mo operated enriched lithium-molybdate scintillating bolometers at Modane. It validated the molybdenum-100 detector technology adopted for CUPID and produced a low-background double-beta-decay search.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Li2MoO4 crystals contain the isotope and measure decay energy as heat. Separate light detectors distinguish alpha particles from electron events, with coincidence cuts suppressing multisite backgrounds.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Laboratoire Souterrain de Modane",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Laboratoire Souterrain de Modane",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2020",
+    "evidence": "The final analysis set a molybdenum-100 half-life limit and established detector performance for CUPID.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "cupid-mo Collaboration",
+    "lead_institutions": [
+      "CNRS/IN2P3",
+      "Massachusetts Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "20 enriched Li2MoO4 scintillating bolometers",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Isotope exposure in final search",
+      "value": "1.47 kg yr of 100Mo",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Operating period",
+      "value": "2019-2020 physics dataset",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The final analysis set a molybdenum-100 half-life limit and established detector performance for CUPID.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cupid",
+    "cupid-0"
+  ],
+  "resources": {
+    "official_website": "https://cupid-mo.mit.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2202.08716"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/2202.08716",
+      "caption": "CUPID-Mo detector towers and a lithium-molybdate / germanium light-detector module, Figure 1 of the final-results paper.",
+      "credit": "CUPID-Mo Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2202.08716",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 576,
+      "height": 910,
+      "sha256": "943a34144a380f225342b011b9da10cd168c90a8c950d25b1b26f896d330835d",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "0b05bb36339e443a7e10067ad156169b96f976e8f590ec7fe816320328ef5ad3",
+      "source_dimensions": {
+        "width": 576,
+        "height": 910
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "cupid-mo: official experiment / institutional overview",
+      "url": "https://cupid-mo.mit.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Final results on the neutrinoless double-beta decay half-life limit of 100Mo from the CUPID-Mo experiment",
+      "url": "https://arxiv.org/abs/2202.08716",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

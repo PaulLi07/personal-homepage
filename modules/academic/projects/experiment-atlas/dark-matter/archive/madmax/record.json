@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "id": "madmax",
+  "name": "MADMAX",
+  "full_name": "MAgnetized Disk and Mirror Axion eXperiment",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An experiment enhancing high-frequency axion conversion with multiple dielectric disks and a mirror; prototypes have produced physics results and must be distinguished from the final-scale instrument.",
+  "physics_targets": [
+    "QCD axions",
+    "Dark photons"
+  ],
+  "detection_principle": "Radiation from dielectric interfaces adds coherently in a magnetic field; tuning disk separations enhances conversion power.",
+  "technologies": [
+    "Dielectric axion haloscopes",
+    "Sapphire disks",
+    "Cryogenic microwave reception"
+  ],
+  "sites": [
+    {
+      "name": "DESY / University of Hamburg prototype construction",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "DESY / University of Hamburg prototype construction",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "CERN SPS North Area / Morpurgo magnet, Prévessin",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN SPS North Area / Morpurgo magnet, Prévessin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2026-05",
+    "evidence": "Official May 2026 update: the cryogenic system reached approximately 4 K; subsequent assembly and transfer to CERN remained planned.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "First search for axion dark matter with a MADMAX prototype",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MADMAX Collaboration / project team",
+    "lead_institutions": [
+      "Max Planck Institute for Physics",
+      "DESY",
+      "University of Hamburg",
+      "CPPM"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2024 prototype",
+      "value": "Three sapphire disks; CERN 1.6 T Morpurgo magnet",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Data-taking",
+      "value": "14.5 days; two narrow intervals near 76.6 and 79.4 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CB100 / CB200 / open prototypes",
+      "status": "results_published",
+      "description": "Prototype tests and dark-matter searches at CERN and in Germany."
+    },
+    {
+      "name": "Subsequent cryogenic prototype",
+      "status": "construction",
+      "description": "Cryogenic-system acceptance completed in 2026; full detector assembly remains ongoing."
+    },
+    {
+      "name": "Final MADMAX",
+      "status": "planned",
+      "description": "Large-scale QCD-axion search, not treated as already operating."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The prototype found no axions, demonstrating the real search capability of a dielectric haloscope.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://madmax.mpp.mpg.de/news.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2409.11777"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2409.11777",
+      "caption": "Dielectric disks, reflector and microwave receiving chain of the MADMAX CB200 prototype (Fig. 1, 2024 search paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2409.11777v2/Figures/CB_200_2024_ILLUSTRATION_05.jpg",
+      "width": 1920,
+      "height": 663,
+      "sha256": "89e62c7f65faf8a93193b53574acb722b0a70c5f5e17e06e6f15fbc899e4ab7a",
+      "mime_type": "image/webp",
+      "source_sha256": "865281b3ceb311f68e9712efd6ff72188575dcb76d3657ca21ee4feaf0204373",
+      "source_dimensions": {
+        "width": 2400,
+        "height": 829
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2409.11777",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "MADMAX Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First search for axion dark matter with a MADMAX prototype",
+      "url": "https://arxiv.org/abs/2409.11777",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MADMAX News",
+      "url": "https://madmax.mpp.mpg.de/news.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases",
+        "status"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MADMAX at the forefront of the search for axions",
+      "url": "https://home.cern/madmax-forefront-search-axions/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-05-13",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

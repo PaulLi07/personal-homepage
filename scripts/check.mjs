@@ -79,8 +79,12 @@ async function filesWithin(directory) {
 
 async function inspectFiles() {
   const files = await filesWithin(root);
-  // 模板和模块片段以站点根为资源基准；只有完整根页面独立校验锚点与重复 ID。
-  for (const path of files.filter(path => extname(path) === ".html" && dirname(path) === root)) {
+  const fileManifest = JSON.parse(await readFile(join(root, "app/site.json"), "utf8"));
+  const standalone = new Set([...(fileManifest.sections || []), ...(fileManifest.services || []), fileManifest.credits]
+    .filter(object).flatMap(module => Array.isArray(module.standalonePages) ? module.standalonePages : [])
+    .filter(string).map(path => resolve(root, path)));
+  // 完整独立页面按自身目录检查；模板和装配片段仍以站点根为资源基准。
+  for (const path of files.filter(path => extname(path) === ".html" && (dirname(path) === root || standalone.has(path)))) {
     const source = (await readFile(path, "utf8")).replace(/<!--[\s\S]*?-->/g, "");
     const tags = [...source.matchAll(/<[^>]+>/g)].map(match => attributes(match[0]));
     const ids = new Set();
@@ -99,7 +103,7 @@ async function inspectFiles() {
       }
     }
   }
-  for (const path of files.filter(path => extname(path) === ".html" && dirname(path) !== root)) {
+  for (const path of files.filter(path => extname(path) === ".html" && dirname(path) !== root && !standalone.has(path))) {
     const source = (await readFile(path, "utf8")).replace(/<!--[\s\S]*?-->/g, "");
     for (const match of source.matchAll(/<[^>]+>/g)) {
       const tag = attributes(match[0]);
@@ -178,6 +182,7 @@ async function inspectManifest() {
     await pathList(module.styles, `${label}.styles`);
     await pathList(module.scripts, `${label}.scripts`);
     if (module.preloadImages !== undefined) await pathList(module.preloadImages, `${label}.preloadImages`);
+    if (module.standalonePages !== undefined) await pathList(module.standalonePages, `${label}.standalonePages`);
     if (module.detailGroup !== undefined) {
       if (!routeId(module.detailGroup)) fail(`${label}.detailGroup: 详情路由只支持小写英文字母`);
       if (groups.has(module.detailGroup)) fail(`${label}: 重复 detailGroup`);

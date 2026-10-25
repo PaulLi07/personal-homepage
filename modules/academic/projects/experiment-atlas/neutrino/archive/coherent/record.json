@@ -1,0 +1,213 @@
+{
+  "schema_version": "1.0",
+  "id": "coherent",
+  "name": "COHERENT",
+  "full_name": "COHERENT neutrino-scattering programme",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "cevns",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "COHERENT measures neutrino interactions at the pulsed Spallation Neutron Source in Oak Ridge. Its multi-target programme established coherent elastic neutrino-nucleus scattering and tests how the interaction scales with nuclear composition.",
+  "physics_targets": [
+    "Coherent elastic neutrino-nucleus scattering",
+    "Nuclear weak charge and form factors",
+    "Nonstandard neutrino interactions",
+    "Neutrino-induced nuclear reactions"
+  ],
+  "detection_principle": "Pions and muons decaying at rest provide prompt muon neutrinos and delayed electron neutrinos and muon antineutrinos. Timing relative to the proton beam suppresses steady backgrounds. Low-threshold CsI, argon and germanium detectors observe nuclear recoils; other targets study complementary channels.",
+  "technologies": [
+    "Scintillator detectors",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Neutrino Alley at the Oak Ridge SNS, Tennessee",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Neutrino Alley at the Oak Ridge SNS, Tennessee",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-20",
+    "evidence": "The October 2026 collaboration publication documents the active Ge-Mini measurement programme; configurations have separate running periods.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "First CEvNS observation published using CsI",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Argon CEvNS result published",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-10",
+      "event": "Improved Ge-Mini CEvNS cross-section measurement published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "COHERENT Collaboration",
+    "lead_institutions": [
+      "Oak Ridge National Laboratory",
+      "Duke University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "First target",
+      "value": "14.6 kg CsI[Na] scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Pion/muon decay at rest at the SNS",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "2026 Ge result",
+      "value": "Flux-averaged cross section 0.98 ± 0.10 (stat) ± 0.10 (syst) times the Standard Model expectation",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Ge-Mini recorded 124 +14/-12 signal counts and reached a measurement with systematic uncertainty comparable to statistical uncertainty.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "conus-plus",
+    "ricochet"
+  ],
+  "resources": {
+    "official_website": "https://coherent.ornl.gov/",
+    "publication_links": [
+      "https://journals.aps.org/prl/abstract/10.1103/999m-b763",
+      "https://arxiv.org/abs/1708.01294",
+      "https://doi.org/10.1103/PhysRevLett.126.012002"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://sites.duke.edu/coherent/photo-gallery/",
+      "caption": "COHERENT CsI detector installation, with personnel examining the apparatus beside shielding.",
+      "credit": "COHERENT collaboration photo gallery; no separate photographer is credited on the page",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://sites.duke.edu/coherent/files/2017/06/1600px-Csina-install-IMG_1723-150x150.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 150,
+      "height": 150,
+      "sha256": "96ad1c6f4a6f248b68f231e123309c662c3f28360f6816675e08634416e268b9",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "COHERENT Collaboration, Measurement of CEvNS on germanium",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/999m-b763",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-20",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "COHERENT Collaboration, Observation of coherent elastic neutrino-nucleus scattering",
+      "url": "https://arxiv.org/abs/1708.01294",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-08-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "COHERENT Collaboration, First CEvNS measurement on argon",
+      "url": "https://doi.org/10.1103/PhysRevLett.126.012002",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-01-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "COHERENT collaboration website",
+      "url": "https://coherent.ornl.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

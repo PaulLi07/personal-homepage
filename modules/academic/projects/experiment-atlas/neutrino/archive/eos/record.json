@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "eos",
+  "name": "Eos",
+  "full_name": "Eos hybrid optical neutrino-detector demonstrator",
+  "aliases": [],
+  "category": "crosssection",
+  "physics_categories": [
+    "crosssection"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Eos is a Berkeley hybrid optical detector demonstrator that integrates Cherenkov and scintillation detection techniques. It tests the photon timing, calibration and reconstruction methods needed for large future neutrino detectors such as Theia.",
+  "physics_targets": [
+    "Hybrid optical neutrino-detector development",
+    "Cherenkov/scintillation separation",
+    "Calibration and reconstruction"
+  ],
+  "detection_principle": "Fast photomultipliers measure photon arrival times and positions in water and scintillating media. Separating prompt directional Cherenkov photons from scintillation light is intended to combine event direction with calorimetric energy measurement.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "University of California, Berkeley",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of California, Berkeley",
+      "latitude": 37.872,
+      "longitude": -122.257,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "Commissioning",
+    "as_of": "2024-03-08",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-03-08",
+      "event": "First LED calibration light detected",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Eos Collaboration",
+    "lead_institutions": [
+      "University of California, Berkeley",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Dimensions",
+      "value": "Approximately 3.5 m tall and 3 m wide",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Photomultiplier array with fast optical calibration",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scientific role",
+      "value": "Technology demonstrator, not a large underground neutrino observatory",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Single-photon LED pulses demonstrated integration of the detector and calibration system. First light does not imply observation of neutrinos.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "theia"
+  ],
+  "resources": {
+    "official_website": "https://nuclearscience.lbl.gov/2024/04/01/first-light-with-the-eos-hybrid-neutrino-detector/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://physicalsciences.lbl.gov/2024/04/02/first-light-with-the-eos-hybrid-neutrino-detector/",
+      "caption": "Eos hybrid optical detector during assembly in January 2024.",
+      "credit": "Berkeley Lab Physical Sciences Area",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://physicalsciences.lbl.gov/wp-content/uploads/sites/2/2024/06/BLDS-NEWS-IMAGE-1025x685px-Eos-Detector-4web.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1025,
+      "height": 685,
+      "sha256": "d66783ef2c9adc60a2bfc8b9ec995a3e644c1c7738e4def743cd8fb9a01938ac",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Berkeley Lab: First light with Eos",
+      "url": "https://nuclearscience.lbl.gov/2024/04/01/first-light-with-the-eos-hybrid-neutrino-detector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Berkeley Lab: Eos detector and Theia technology programme",
+      "url": "https://nino.lbl.gov/eos/detector.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

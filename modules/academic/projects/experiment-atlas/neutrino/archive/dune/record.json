@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "dune",
+  "name": "DUNE",
+  "full_name": "Deep Underground Neutrino Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "atmospheric",
+    "crosssection",
+    "solar",
+    "supernova"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "DUNE is a long-baseline neutrino programme under construction, joining a Fermilab near-detector complex to large underground liquid-argon detectors in South Dakota. Its full far-detector physics programme is distinct from operating prototypes.",
+  "physics_targets": [
+    "Leptonic CP violation and the neutrino mass ordering",
+    "Precision oscillation parameters",
+    "Supernova-burst neutrinos and baryon-number violation"
+  ],
+  "detection_principle": "A wide-band accelerator beam is sampled near its source and after a 1,300 km flight. Liquid-argon time projection chambers image electron and muon final states and measure calorimetric energy to compare neutrino and antineutrino oscillation spectra.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; near site at Fermilab and far site at SURF in Lead, South Dakota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; near site at Fermilab and far site at SURF in Lead, South Dakota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-10-19",
+    "evidence": "UKRI dated 19 October 2026 reports far-detector sensor production; LBNF/DUNE documents construction milestones.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-08",
+      "event": "Far-site cavern excavation completion commemorated",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "event": "Underground delivery of far-detector structural steel began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-10-19",
+      "event": "UK announced completion of half of its 137 anode plane assemblies",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DUNE Collaboration",
+    "lead_institutions": [
+      "Fermilab",
+      "Brookhaven National Laboratory",
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "1,300 km, Fermilab to Sanford Underground Research Facility",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Far-detector design",
+      "value": "Modular liquid-argon TPCs; technical design described a staged 40-kiloton fiducial programme",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Underground site",
+      "value": "SURF, Lead, South Dakota; approximately 1.5 km depth",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-10",
+      "summary": "Construction and detector-component production milestones are documented; full-scale long-baseline oscillation results are not yet available.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "icarus",
+    "microboone",
+    "sbnd",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://lbnf-dune.fnal.gov/about/milestones/",
+    "publication_links": [
+      "https://arxiv.org/abs/2002.02967"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://indico.global/event/15740/contributions/155589/attachments/72630/140788/Neutrino2026-DUNE-June2026-v2.pdf#page=9",
+      "caption": "Horizontal-drift and vertical-drift DUNE far-detector concepts.",
+      "credit": "DUNE Collaboration, Neutrino 2026, slide 9",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico.global/event/15740/contributions/155589/attachments/72630/140788/Neutrino2026-DUNE-June2026-v2.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1300,
+      "height": 732,
+      "sha256": "f3ce3444c8f0aca2614ddf0bbe12ab44b7efe26aac40c59e0bc5add626937017",
+      "mime_type": "image/webp",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible.",
+      "source_sha256": "e7145182d125e876db91d637f314be7d1e44e19003ebcc567102f03fd1b82aa7",
+      "source_dimensions": {
+        "width": 1300,
+        "height": 732
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LBNF/DUNE, project milestones",
+      "url": "https://lbnf-dune.fnal.gov/about/milestones/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "UKRI, UK halfway milestone in mission to unlock neutrino secrets",
+      "url": "https://www.ukri.org/news/uk-halfway-milestone-in-mission-to-unlock-neutrino-secrets/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "DUNE Collaboration, Far Detector Technical Design Report, Volume I",
+      "url": "https://arxiv.org/abs/2002.02967",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-02-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "Detector staging, funding profiles and commissioning dates can evolve; quoted technical-design scale is a design specification rather than installed fiducial mass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": false
+  }
+}

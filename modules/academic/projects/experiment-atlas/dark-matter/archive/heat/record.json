@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "heat",
+  "name": "HEAT",
+  "full_name": "High Energy Antimatter Telescope",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Historical balloon-borne magnetic spectrometer measuring positron and antiparticle abundances, providing observational constraints on dark-matter explanations of cosmic-ray positrons.",
+  "physics_targets": [
+    "Features in the positron spectrum",
+    "Antiprotons"
+  ],
+  "detection_principle": "A magnetic spectrometer separates charge signs; a TRD, calorimeter and TOF jointly reject proton backgrounds.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "Transition-radiation detector",
+    "Electromagnetic calorimeter",
+    "TOF"
+  ],
+  "sites": [
+    {
+      "name": "Balloon launch from Fort Sumner, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Balloon launch from Fort Sumner, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    },
+    {
+      "name": "Balloon launch from Lynn Lake, Manitoba",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Balloon launch from Lynn Lake, Manitoba",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2004",
+    "evidence": "The included 1994, 1995 and 2000 flights are historical data analyses; they do not establish retirement dates for all subsequent hardware.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1994",
+      "event": "Fort Sumner flight",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1995",
+      "event": "Lynn Lake flight",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2000",
+      "event": "HEAT-pbar flight",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HEAT collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "1995 positron measurement",
+      "value": "1—50 GeV",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "2000 HEAT-pbar measurement",
+      "value": "5—15 GeV",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "HEAT-e±",
+      "status": "completed",
+      "description": "Electron–positron flight series"
+    },
+    {
+      "name": "HEAT-pbar",
+      "status": "completed",
+      "description": "Separate antiparticle-identification configuration"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "AMS-02",
+    "PAMELA"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/9505141",
+      "https://arxiv.org/abs/astro-ph/9703192",
+      "https://arxiv.org/abs/astro-ph/0412230"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico.cern.ch/event/44160/attachments/941255/1334840/Schubnell.pdf",
+      "caption": "HEAT-e± balloon magnetic-spectrometer diagram showing its TRD, TOF, twin-coil magnet, tracker and calorimeter.",
+      "credit": "M. Schubnell / HEAT-e± Collaboration, 2009 CERN conference presentation, PDF page 15",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://indico.cern.ch/event/44160/attachments/941255/1334840/Schubnell.pdf",
+      "width": 572,
+      "height": 612,
+      "sha256": "1c37e702880e015684bafaa63a855c4e15701bc8d947cffe936d49cbfadf2563",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/astro-ph/9505141",
+      "title": "HEAT: Cosmic Ray Positrons at High Energies",
+      "source_date": "1995",
+      "type": "primary_paper",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/astro-ph/9703192",
+      "title": "HEAT: Measurements of the Cosmic-Ray Positron Fraction From 1 to 50 GeV",
+      "source_date": "1997",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/astro-ph/0412230",
+      "title": "HEAT-pbar: New Measurement of the Cosmic-Ray Positron Fraction",
+      "source_date": "2004",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

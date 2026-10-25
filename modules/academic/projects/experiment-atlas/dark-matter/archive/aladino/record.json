@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "aladino",
+  "name": "ALADInO",
+  "full_name": "Antimatter Large Acceptance Detector In Orbit",
+  "aliases": [
+    "ALADINO"
+  ],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "ALADInO is a high-acceptance space antimatter-detection proposal for deployment near Sun–Earth L2; the final mission orbit awaits approval. No launch date is confirmed, and design performance must not be presented as observational results.",
+  "physics_targets": [
+    "Cosmic antimatter",
+    "Positrons",
+    "Antiprotons",
+    "Antinuclei",
+    "Indirect dark-matter signatures"
+  ],
+  "detection_principle": "A high-acceptance superconducting magnetic spectrometer separates matter from antimatter, combining particle identification and calorimetry to extend high-energy antiparticle spectra and distinguish dark-matter, pulsar and propagation explanations.",
+  "technologies": [
+    "Superconducting magnetic spectrometer",
+    "Particle tracking",
+    "Three-dimensional calorimeter",
+    "Time of flight"
+  ],
+  "sites": [
+    {
+      "name": "Proposed deployment near Sun–Earth L2; final mission orbit awaits approval",
+      "country": "Space / international project",
+      "country_code": null,
+      "location": "Proposed deployment near Sun–Earth L2; final mission orbit awaits approval",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2021 science case and 2022 design paper; a long-term space-mission concept",
+    "as_of": "2022-05-11",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022-05-11",
+      "event": "2021 science case and 2022 design paper; a long-term space-mission concept",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ALADInO Collaboration / project team",
+    "lead_institutions": [
+      "ALADInO Collaboration",
+      "INFN"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Detection objective",
+      "value": "Extend energy coverage and sensitivity to rare fluxes beyond existing space antiparticle measurements",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Principal observables",
+      "value": "Electrons / positrons, antiprotons and rare antinuclei; not underground direct scattering",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ALADInO",
+      "status": "proposed",
+      "description": "2021 science case and 2022 design paper; a long-term space-mission concept"
+    }
+  ],
+  "results": [],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "AMS-02",
+    "AMS-100",
+    "PAMELA"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.mdpi.com/2410-390X/6/2/19",
+      "https://doi.org/10.1007/s10686-021-09708-w"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://agenda.infn.it/event/39042/contributions/222899/attachments/116426/167810/Duranti-Space.pdf",
+      "caption": "Conceptual ALADInO space antimatter spectrometer, showing the toroidal magnet, tracking layers, time-of-flight detectors and central calorimeter; a proposal illustration.",
+      "credit": "Matteo Duranti / INFN Perugia, TREDI 2024 presentation Duranti-Space.pdf, page 20",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://agenda.infn.it/event/39042/contributions/222899/attachments/116426/167810/Duranti-Space.pdf",
+      "width": 557,
+      "height": 471,
+      "sha256": "57364af28fe071755408425c537344a7c20ae837f066ec1949eb65901fee3153",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.mdpi.com/2410-390X/6/2/19",
+      "caption": "Source page for original research / design documents and figures; design drawings do not establish that an instrument has been built.",
+      "credit": "See the paper authors, collaboration and figure caption",
+      "reuse_status": "Individual reuse permission remains to be verified; no image was downloaded for this entry"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Design of an Antimatter Large Acceptance Detector In Orbit (ALADInO)",
+      "url": "https://www.mdpi.com/2410-390X/6/2/19",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022-05-11",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "High precision particle astrophysics as a new window on the universe with ALADInO",
+      "url": "https://doi.org/10.1007/s10686-021-09708-w",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating.",
+      "The MDPI article page returned an access-rate limit in this review. The design and dark-matter science are cross-supported by the original paper's bibliography and the 2021 science case; detailed engineering values were not filled without support."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

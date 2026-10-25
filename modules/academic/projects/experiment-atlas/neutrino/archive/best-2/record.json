@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "best-2",
+  "name": "BEST-2",
+  "full_name": "Baksan Experiment on Sterile Transitions 2",
+  "aliases": [],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "BEST-2 is a proposed follow-up to BEST using a cobalt-58 electron-neutrino source and a three-zone gallium target. Its different neutrino energy and finer spatial sampling would test the gallium anomaly and distinguish possible oscillation patterns.",
+  "physics_targets": [
+    "Gallium source anomaly",
+    "Energy-dependent sterile-neutrino disappearance"
+  ],
+  "detection_principle": "Neutrino capture on gallium-71 creates germanium-71 atoms. Separate chemical extraction and low-background decay counting in three target zones would compare capture probabilities at different distances from the source.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "Baksan Neutrino Observatory",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Caucasus, Russia",
+      "latitude": 43.275,
+      "longitude": 42.69,
+      "precision": "approximate_site",
+      "site_status": "proposed_followup_in_existing_gallium_infrastructure"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2025-01",
+    "evidence": "The 2025 paper proposes the cobalt-58 experiment. An exposure with that source was not established by the reviewed sources.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Predecessor BEST exposed a two-zone target to chromium-51",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "event": "Cobalt-58 BEST-2 proposal submitted",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BEST-2 Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Russian Academy of Sciences",
+      "Joint Institute for Nuclear Research"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed source",
+      "value": "Cobalt-58 electron-capture neutrino source",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Spatial sampling",
+      "value": "Three separately counted gallium target zones",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Illustrative source activity",
+      "value": "400 kCi in the sensitivity and exposure calculations",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Proposal",
+      "summary": "The publication calculates expected event yields and sensitivity. It does not report a BEST-2 source-neutrino measurement.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "best",
+    "sage",
+    "sox",
+    "celand"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2501.08127",
+      "https://arxiv.org/abs/2201.07364"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2501.08127",
+      "caption": "Proposed three-zone BEST-2 gallium target around a cobalt-58 source; Figure 3 of the design study.",
+      "credit": "V. N. Gavrin et al. / BEST-2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://arxiv.org/abs/2501.08127",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 473,
+      "height": 478,
+      "sha256": "7c8c3efb0b116dc4c8c8837d414051e3c7fe49270e99b957997a981fa3557afa",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected final local figure and checked its apparatus identity and design/measurement stage against the public source."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "V. N. Gavrin et al., Experiment BEST-2 with 58Co neutrino source",
+      "url": "https://arxiv.org/abs/2501.08127",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-01-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "V. V. Barinov et al., A Search for Electron Neutrino Transitions to Sterile States in the BEST Experiment",
+      "url": "https://arxiv.org/abs/2201.07364",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-01-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": false
+  }
+}

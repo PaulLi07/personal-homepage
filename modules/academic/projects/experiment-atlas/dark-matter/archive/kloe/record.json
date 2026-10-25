@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "id": "kloe",
+  "name": "KLOE / KLOE-2",
+  "full_name": "K LOng Experiment and KLOE-2",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "KLOE / KLOE-2 operated at DAΦNE, INFN Laboratori Nazionali di Frascati. Successive upgrades at the same facility are grouped in one record; dark-sector searches form part of a multipurpose physics program.",
+  "physics_targets": [
+    "Dark photon U",
+    "Dark Higgs bosons",
+    "Light dark sector"
+  ],
+  "detection_principle": "At the ϕ factory, radiative return in e⁺e⁻ collisions produces U bosons sought as e⁺e⁻, μ⁺μ⁻ or π⁺π⁻ mass peaks; dark-Higgsstrahlung may yield lepton pairs plus missing energy.",
+  "technologies": [
+    "Large-volume drift chamber",
+    "Electromagnetic calorimeter",
+    "Superconducting magnets"
+  ],
+  "sites": [
+    {
+      "name": "INFN Laboratori Nazionali di Frascati，DAΦNE",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Laboratori Nazionali di Frascati，DAΦNE",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "KLOE-2 completed data-taking on 30 March 2018; analysis continues",
+    "as_of": "2018-03-30",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018-03-30",
+      "event": "KLOE-2 completed data-taking on 30 March 2018; analysis continues",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KLOE / KLOE-2 Collaboration / project team",
+    "lead_institutions": [
+      "INFN-LNF"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Collision-energy region",
+      "value": "Near the ϕ resonance, approximately 1.02 GeV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Listed ππγ dark-photon sample",
+      "value": "Approximately 28 million π⁺π⁻γ events",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "KLOE",
+      "status": "completed",
+      "description": "Early ϕ-factory phase"
+    },
+    {
+      "name": "KLOE-2",
+      "status": "completed",
+      "description": "2014–2018 upgrade phase; archived-data analysis continues"
+    }
+  ],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "No signal in dark-Higgsstrahlung with μ⁺μ⁻ plus missing final states.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "date": "2016",
+      "summary": "No U signal in π⁺π⁻; complementary limits were obtained at masses of 527–987 MeV.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "PADME",
+    "BaBar",
+    "BESIII"
+  ],
+  "resources": {
+    "official_website": "https://w3.lnf.infn.it/research/particle-physics/kloe-2/?lang=en",
+    "publication_links": [
+      "https://arxiv.org/abs/1603.06086",
+      "https://arxiv.org/abs/1501.06795"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://w3.lnf.infn.it/research/particle-physics/kloe-2/?lang=en",
+      "caption": "Photograph of the KLOE detector end and central drift chamber.",
+      "credit": "INFN-LNF; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://w3.lnf.infn.it/wp-content/uploads/2015/06/kloe-1024x822.jpg",
+      "width": 1024,
+      "height": 822,
+      "sha256": "7da1b393be0d1b10bb17ad9eea1b4516b1442a6bdc251e0b742d740d939b2d4e",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://w3.lnf.infn.it/research/particle-physics/kloe-2/?lang=en",
+      "caption": "Official KLOE-2 experiment-description and apparatus-image resources",
+      "credit": "INFN-LNF",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "KLOE-2 — INFN-LNF",
+      "url": "https://w3.lnf.infn.it/research/particle-physics/kloe-2/?lang=en",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Limit on the production of a low-mass vector boson in e+e- to U gamma, U to pi+pi-",
+      "url": "https://arxiv.org/abs/1603.06086",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016-03-19",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Search for dark Higgsstrahlung in e+e- to mu+mu- and missing energy events with the KLOE experiment",
+      "url": "https://arxiv.org/abs/1501.06795",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-01-27",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

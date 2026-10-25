@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "nexo",
+  "name": "nEXO",
+  "full_name": "Next-generation Enriched Xenon Observatory",
+  "aliases": [
+    "nexo"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "nEXO is a proposed large liquid-xenon observatory for xenon-136 neutrinoless double-beta decay. It builds on EXO-200 with a substantially larger isotope inventory and improved background rejection.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "A single-phase liquid-xenon time projection chamber measures scintillation and ionization. Three-dimensional position reconstruction, energy resolution and self-shielding distinguish candidate double-beta events from radioactive backgrounds.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "SNOLAB, Sudbury, Ontario",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "SNOLAB, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed / near-term construction funding constrained",
+    "as_of": "2026-03-27",
+    "evidence": "The full detector has not been built. A May 2025 collaboration presentation reproduces the December 2024 DOE decision to prioritize LEGEND-1000 and notes that near-term US funding is unlikely to permit substantial nEXO advancement, while detector R&D may continue subject to appropriations. DOE reiterated the LEGEND-1000 priority in March 2026.",
+    "source_ids": [
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-12",
+      "event": "DOE selected LEGEND-1000 for near-term investment; the decision limited near-term nEXO advancement while allowing continued R&D subject to appropriations.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "nexo Collaboration",
+    "lead_institutions": [
+      "Lawrence Livermore National Laboratory",
+      "SLAC National Accelerator Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Design xenon inventory",
+      "value": "Approximately 5000 kg",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Enrichment target",
+      "value": "About 90% in 136Xe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate site",
+      "value": "SNOLAB, Canada; proposal location",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Five-tonne detector proposal",
+      "status": "proposed",
+      "description": "The full nEXO detector remains a proposal; the published design sensitivity is not an achieved limit and near-term construction funding is constrained.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Detector R&D",
+      "status": "research_development",
+      "description": "The collaboration continues development studies; the cited funding decision does not constitute approval or completion of full-detector construction.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "The report presents the five-tonne detector concept and projected half-life sensitivity; no full-detector measurement is claimed.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "exo"
+  ],
+  "resources": {
+    "official_website": "https://nexo.llnl.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1805.11142"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://nexo.llnl.gov/",
+      "caption": "Design schematic of the proposed nEXO liquid-xenon detector; this is a concept rendering rather than a completed apparatus.",
+      "credit": "nEXO Collaboration / Lawrence Livermore National Laboratory",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://nexo.llnl.gov/sites/nexo/files/styles/carousel_580_430/public/2020-08/featured-image-schematic.png?itok=XiIdbD8K",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 466,
+      "height": 400,
+      "sha256": "fa5f1263724a447676417294db4c61f9dc5778dece13a76d2d090e5b224953aa",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "nexo: official experiment / institutional overview",
+      "url": "https://nexo.llnl.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "nEXO Pre-Conceptual Design Report",
+      "url": "https://arxiv.org/abs/1805.11142",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Thomas Brunner, Hunting for Majorana neutrinos with liquid xenon (nEXO status and reproduced DOE decision, slide 23)",
+      "url": "https://indico.global/event/14295/contributions/123800/attachments/58637/112885/20250515-EIEIOO-summer-student-workshop-nEXO.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-05-15",
+      "supports": [
+        "December 2024 DOE funding decision, continuing R&D and preferred SNOLAB site"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "US DOE Office of Science, High Energy and Nuclear Physics 101 (slide 27)",
+      "url": "https://science.osti.gov/-/media/About/pdf/scac/meetings/2026/HENP-to-SCAC---032726.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-03-27",
+      "supports": [
+        "LEGEND-1000 selected in December 2024 as first priority for nuclear-physics investment; nEXO remains a proposed technology"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A near-term funding constraint is not treated as permanent cancellation. No approved full-detector construction start is established by the cited material."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

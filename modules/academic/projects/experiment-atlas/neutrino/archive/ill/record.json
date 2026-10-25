@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "ill",
+  "name": "ILL",
+  "full_name": "ILL Grenoble historical reactor-neutrino experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The historical Grenoble experiment measured reactor antineutrinos at very short distance from the compact high-flux ILL reactor. Its spectrum and rate are part of the reference dataset used in later discussions of reactor-flux predictions.",
+  "physics_targets": [
+    "Reactor antineutrino energy spectrum",
+    "Very-short-baseline disappearance",
+    "Absolute reactor yield"
+  ],
+  "detection_principle": "An inverse-beta-decay detector used a hydrogen-rich scintillating target with a delayed neutron signature. Reactor-on and reactor-off running separated neutrinos from background at a core distance below ten metres.",
+  "technologies": [
+    "Scintillator detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "France; Institut Laue-Langevin research reactor, Grenoble",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Institut Laue-Langevin research reactor, Grenoble",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1981",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1981",
+      "event": "Original interaction/spectrum result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ILL Collaboration",
+    "lead_institutions": [
+      "California Institute of Technology",
+      "Technical University of Munich",
+      "Institut des Sciences Nucléaires Grenoble"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "8.76 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Compact high-flux research-reactor core",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reaction",
+      "value": "Electron antineutrino plus proton to positron plus neutron",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1981",
+      "summary": "The experiment measured a reactor spectrum and interaction rate that were later re-evaluated as reactor power and flux calculations improved.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The historical ILL experiment, distinct from the later STEREO and Ricochet detectors at the same institute.",
+  "related_experiments": [
+    "stereo",
+    "ricochet",
+    "gosgen"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.24.1097"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf",
+      "caption": "Historical ILL/Grenoble reactor-neutrino detector diagrams reproduced in a reactor-neutrino lecture.",
+      "credit": "F. A. Danevich / Institute for Nuclear Research, 2015 lecture; H. Kwon et al. original diagrams",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1296,
+      "height": 972,
+      "sha256": "590cdabdd3d6f41b1ed57c2b0cc775bf024d29dff8f2f6c306ac071ae4b01461",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "H. Kwon et al., Study of reactor antineutrino interaction with protons",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.24.1097",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1981",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "neutron"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "neutron"
+    ],
+    "is_europe": true
+  }
+}

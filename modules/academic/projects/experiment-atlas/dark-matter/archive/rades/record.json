@@ -1,0 +1,249 @@
+{
+  "schema_version": "1.0",
+  "id": "rades",
+  "name": "RADES",
+  "full_name": "Relic Axion Dark-Matter Exploratory Setup",
+  "aliases": [
+    "CAST-RADES"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "RADES increases the effective detection volume at high frequencies with coupled microwave-cavity arrays; CAST-RADES is an implemented phase.",
+  "physics_targets": [
+    "QCD axions"
+  ],
+  "detection_principle": "Multiple small cavities form an electromagnetic-filter resonator that coherently receives axion-conversion signals in a strong field.",
+  "technologies": [
+    "Coupled-cavity arrays",
+    "Microwave filters",
+    "Cryogenic readout"
+  ],
+  "sites": [
+    {
+      "name": "CERN CAST apparatus, Meyrin",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN CAST apparatus, Meyrin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "DESY Hamburg: planned RADES-BabyIAXO location",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "DESY Hamburg: planned RADES-BabyIAXO location",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2025",
+    "evidence": "Published 2025 high-field superconducting-cavity results coexist with the future BabyIAXO approach; they do not mean the full BabyIAXO instrument is operating.",
+    "source_ids": [
+      "s4",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "First results of the CAST-RADES haloscope search for axions at 34.67 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RADES Collaboration / project team",
+    "lead_institutions": [],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Published scan",
+      "value": "34.6738–34.6771 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CAST-RADES",
+      "status": "results_published",
+      "description": "Cavity-array search in the CAST magnet."
+    },
+    {
+      "name": "RADES-BabyIAXO",
+      "status": "proposed",
+      "description": "Planned low-frequency search using the BabyIAXO magnet."
+    },
+    {
+      "name": "HTS cavity at 11.7 T",
+      "status": "results_published",
+      "description": "High-temperature-superconducting-tape-coated cavity in CERN's high-field magnet."
+    }
+  ],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The 2021 result found no signal and set a coupling limit of approximately 4×10⁻¹³ GeV⁻¹ at 95% credibility.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "The high-temperature-superconductor-coated cavity collected 27 h of data in CERN's 11.7 T magnet, finding no excess at 36.5676–36.5699 μeV.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "CAST",
+    "BabyIAXO"
+  ],
+  "resources": {
+    "official_website": "https://rades.upct.es/Experiments.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2104.13798",
+      "https://arxiv.org/abs/2306.17243",
+      "https://arxiv.org/abs/2403.07790"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2104.13798",
+      "caption": "CAST-RADES multicell microwave cavity before copper plating (open) and after plating (closed), photographed in the left panel of Fig. 1 of the 2021 paper.",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2104.13798v2/figures/5Cavity-2.png",
+      "width": 1211,
+      "height": 881,
+      "sha256": "f76f4d51812b85652e894a8c2f353f8c861d8d01ffe90bee040797a0b75fe8c8",
+      "mime_type": "image/webp",
+      "source_sha256": "a1d7fc080e6d131f8eb842f73be7b197244bc6963eb2d1245b7ac8b1c246f2b3",
+      "source_dimensions": {
+        "width": 1211,
+        "height": 881
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2104.13798",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "RADES Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First results of the CAST-RADES haloscope search for axions at 34.67 μeV",
+      "url": "https://arxiv.org/abs/2104.13798",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "RADES International Experiments",
+      "url": "https://rades.upct.es/Experiments.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "A proposal for a low-frequency axion search in the 1–2 μeV range and below with the BabyIAXO magnet",
+      "url": "https://arxiv.org/abs/2306.17243",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases",
+        "status"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "RADES axion search results with a High-Temperature Superconducting cavity in an 11.7 T magnet",
+      "url": "https://arxiv.org/abs/2403.07790",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "results",
+        "key_parameters",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "RADES CERN apparatus photographs and plots",
+      "url": "https://cds.cern.ch/record/2891247/plots",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

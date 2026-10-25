@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "nulat",
+  "name": "NuLat",
+  "full_name": "NuLat compact antineutrino-detector project",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NuLat develops a compact fast-timing antineutrino detector based on a Raghavan optical lattice. Fine spatial segmentation is intended to reconstruct inverse-beta-decay topology, suppress backgrounds and support reactor-neutrino measurements.",
+  "physics_targets": [
+    "Compact reactor-antineutrino detection",
+    "Sterile-neutrino sensitivity studies",
+    "Fast optical-lattice detector development"
+  ],
+  "detection_principle": "Lithium-loaded scintillator cubes are separated by air gaps. Total internal reflection directs light along three orthogonal axes to photomultipliers, localizing energy deposits and the delayed lithium neutron-capture signal.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "University of Hawaii detector-development laboratories",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of Hawaii detector-development laboratories",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2015",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Compact detector and physics concept published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NuLat Collaboration",
+    "lead_institutions": [
+      "University of Hawaii at Manoa",
+      "Virginia Tech",
+      "NIST"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Technology",
+      "value": "Lithiated scintillator in an optical lattice",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Fast-timing photomultipliers along three axes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Configuration",
+      "value": "Prototype/development project; reactor sensitivity remains prospective",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "The design studies motivate a very-short-baseline neutrino programme; no positive reactor-neutrino observation is asserted.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "chandler"
+  ],
+  "resources": {
+    "official_website": "https://www.phys.hawaii.edu/~nulat/",
+    "publication_links": [
+      "https://arxiv.org/abs/1501.06935"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1501.06935",
+      "caption": "Simulation of optical light channeling in the NuLat Raghavan optical lattice (Figure 1).",
+      "credit": "C. Lane et al. / NuLat Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/1501.06935",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 825,
+      "height": 730,
+      "sha256": "9d37305cfaa1256c71a65aeb03419022519e0d8e37d7f75fae5125f2a843a86c",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "49602ba9029200528ed0e302395ae5aac1044054ecca0a0d1de2d48e3cdbf5dc",
+      "source_dimensions": {
+        "width": 825,
+        "height": 730
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "University of Hawaii: NuLat project",
+      "url": "https://www.phys.hawaii.edu/~nulat/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NuLat Collaboration, A very-short-baseline compact antineutrino-detector concept",
+      "url": "https://arxiv.org/abs/1501.06935",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-01-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A current deployment schedule and reactor operating campaign were not established."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "id": "sabre",
+  "name": "SABRE",
+  "full_name": "Sodium-iodide with Active Background REjection",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "SABRE develops low-background NaI(Tl) dark-matter observations in both hemispheres. Their seasons are opposite while the expected Galactic-signal phase is the same, helping test environmental variations and the dark-matter interpretation of DAMA's annual modulation.",
+  "physics_targets": [
+    "Dark-matter annual modulation",
+    "Same-target test of DAMA"
+  ],
+  "detection_principle": "High-purity crystals and low-background optical readout measure annual variations in low-energy events. The northern and southern detectors use different shielding schemes; their original common design must not be assumed to describe identical present configurations.",
+  "technologies": [
+    "NaI(Tl)",
+    "Annual modulation",
+    "Active/passive shielding"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "SUPL",
+      "country": "Australia",
+      "country_code": "AUS",
+      "location": "Stawell Underground Physics Laboratory in the Stawell gold mine, Victoria",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2026-09",
+    "evidence": "The 2025 collaboration report describes separate northern and southern designs. A 2026 report still discusses deployment objectives for SABRE-North; this is not confirmation of completed long-term physics operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "SABRE Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Northern and southern designs",
+      "value": "North uses fully passive shielding; South retains an active anticoincidence design.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SABRE Proof-of-Principle",
+      "status": "completed",
+      "description": "Crystal and background demonstration phase"
+    },
+    {
+      "name": "SABRE North",
+      "status": "construction",
+      "description": "Northern-hemisphere project at LNGS"
+    },
+    {
+      "name": "SABRE South",
+      "status": "commissioning",
+      "description": "Southern-hemisphere detector at SUPL; the current status of full-detector data taking requires confirmation."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMA/LIBRA",
+    "ANAIS-112",
+    "COSINE",
+    "COSINUS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.global/event/652/contributions/16892/attachments/57432/110292/DM2025_SABRENorth_Cataldi_v2.pdf",
+      "caption": "The SABRE Proof-of-Principle apparatus at LNGS, showing shielding around the liquid-scintillator active veto. From G. Cataldi's Dark Matter 2025 collaboration presentation, page 6; this photograph represents the 2018–2022 demonstration phase.",
+      "credit": "SABRE North Collaboration; Gabriella Cataldi / INFN Lecce collaboration presentation. No individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.global/event/652/contributions/16892/attachments/57432/110292/DM2025_SABRENorth_Cataldi_v2.pdf",
+      "width": 693,
+      "height": 801,
+      "sha256": "1976eab01b9cfea513060790b8433752e445e5ac55a58cd8bde1f186f22e076e",
+      "mime_type": "image/webp",
+      "source_sha256": "3e2cf708b91eff34d8743a353cd0527b8f7837ecc66e4572c3d91a06e1f42121",
+      "source_dimensions": {
+        "width": 693,
+        "height": 801
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://indico.cern.ch/event/1258933/contributions/6475972/attachments/3104681/5502077/ICRC2025%20Bolognino_v01.pdf",
+      "caption": "SABRE apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "SABRE Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The SABRE South Experiment at the Stawell Underground Physics Laboratory",
+      "url": "https://indico.cern.ch/event/1258933/contributions/6475972/attachments/3104681/5502077/ICRC2025%20Bolognino_v01.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-17",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "SABRE-North: the low radioactivity approach to dark matter annual modulation detection",
+      "url": "https://indico.stfc.ac.uk/event/1730/contributions/11115/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-21",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "A consistent official confirmation of the exact start dates of full-detector physics data taking in the two hemispheres has not been obtained."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "AUS",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

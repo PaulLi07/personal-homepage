@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "ldmx",
+  "name": "LDMX",
+  "full_name": "Light Dark Matter eXperiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "LDMX is a proposed dedicated missing-momentum experiment at SLAC End Station A, California.",
+  "physics_targets": [
+    "MeV–GeV dark matter",
+    "Dark-sector mediators",
+    "ALP"
+  ],
+  "detection_principle": "Each electron's momentum and energy are measured before and after a thin target, selecting large missing momentum without corresponding calorimeter energy. Hadronic and finely segmented electromagnetic calorimeters reject photonuclear backgrounds.",
+  "technologies": [
+    "Silicon tracking",
+    "Thin target",
+    "High-granularity electromagnetic calorimeter",
+    "Hadron veto"
+  ],
+  "sites": [
+    {
+      "name": "SLAC End Station A, California",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "SLAC End Station A, California",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "2025 project paper presents the proposed SLAC deployment design",
+    "as_of": "2025-08-15",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-08-15",
+      "event": "2025 project paper presents the proposed SLAC deployment design",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LDMX Collaboration / project team",
+    "lead_institutions": [
+      "SLAC",
+      "Fermilab",
+      "Caltech",
+      "Lund University"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Planned electron beam",
+      "value": "8 GeV from LCLS-II; design parameter",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "LDMX",
+      "status": "planned",
+      "description": "2025 project paper presents the proposed SLAC deployment design"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The paper gives expected MeV–GeV dark-sector sensitivity as design projections, rather than achieved exclusions.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "NA64",
+    "BDX"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2508.11833",
+      "https://arxiv.org/abs/1808.05219"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1808.05219",
+      "caption": "Fig. 16 of the initial LDMX design study: full detector concept with a person for scale, representing the 2018 design stage. Source PDF p. 27.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/pdf/1808.05219",
+      "width": 1136,
+      "height": 853,
+      "sha256": "4a8806a53d4a662f227eef8234347dde52de463e035d8d30fb87ee5763700cda",
+      "mime_type": "image/webp",
+      "source_sha256": "c3b75784e2d4ff1d41cdccf56b0bbb72a5a8e43ac7df4f5fec1972de8a928ae8",
+      "source_dimensions": {
+        "width": 1136,
+        "height": 853
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2508.11833",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "LDMX — The Light Dark Matter EXperiment",
+      "url": "https://arxiv.org/abs/2508.11833",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-15",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Light Dark Matter eXperiment initial design study",
+      "url": "https://arxiv.org/abs/1808.05219",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-08-15",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

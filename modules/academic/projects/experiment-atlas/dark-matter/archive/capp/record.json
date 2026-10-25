@@ -1,0 +1,211 @@
+{
+  "schema_version": "1.0",
+  "id": "capp",
+  "name": "CAPP / IBS-DMAG",
+  "full_name": "Center for Axion and Precision Physics Research axion experiments",
+  "aliases": [
+    "CAPP-12T",
+    "CAPP-12TB",
+    "CAPP-MAX",
+    "IBS-DMAG"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A Korean IBS cavity-axion program using several magnet and cavity configurations; this archive groups the series instead of treating each run number as a separate collaboration.",
+  "physics_targets": [
+    "QCD axions"
+  ],
+  "detection_principle": "Axions convert to resonant microwaves in a strong field; cryogenic copper cavities, high-field magnets and low-noise amplifiers improve weak-power detection.",
+  "technologies": [
+    "Microwave cavities",
+    "High-field superconducting magnets",
+    "Cryogenic amplifiers"
+  ],
+  "sites": [
+    {
+      "name": "IBS / KAIST，Daejeon",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "IBS / KAIST，Daejeon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Extensive search for axion dark matter over 1 GHz with CAPP’s Main Axion eXperiment",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CAPP / IBS-DMAG Collaboration / project team",
+    "lead_institutions": [
+      "Institute for Basic Science",
+      "KAIST"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Flagship configuration",
+      "value": "12 T magnet, 320 mm bore, 37 L copper cavity",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CAPP multiple-cavity / magnet approaches",
+      "status": "documented",
+      "description": "CAPP-8TB, 9T, 12T and other configurations are distinguished by publication."
+    },
+    {
+      "name": "ACTION",
+      "status": "research_development",
+      "description": "Toroidal-cavity and toroidal-field R&D, not counted again here."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "A 2024 paper reports a high-sensitivity scan above 1 GHz.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://centers.ibs.re.kr/html/capp_en/center/center_0102.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2402.12892",
+      "https://arxiv.org/abs/1609.03752"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2402.12892",
+      "caption": "Photograph and mechanical cutaway of CAPP's ultralow-temperature resonant cavity ULC (Fig. 4, 2024 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2402.12892v1/FIG4_ULC_design.png",
+      "width": 1920,
+      "height": 1149,
+      "sha256": "47d53709780cc71ec2a918cb45b181c0f75331a6b2aed5239854859933cae179",
+      "mime_type": "image/webp",
+      "source_sha256": "f107e9f497db4ebf6fd55c962c82d0508d670764a22c91b7a1381f8168e41131",
+      "source_dimensions": {
+        "width": 3541,
+        "height": 2119
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2402.12892",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "CAPP / IBS-DMAG Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Extensive search for axion dark matter over 1 GHz with CAPP’s Main Axion eXperiment",
+      "url": "https://arxiv.org/abs/2402.12892",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IBS CAPP Mission",
+      "url": "https://centers.ibs.re.kr/html/capp_en/center/center_0102.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Axion Haloscopes with Toroidal Geometry at CAPP/IBS",
+      "url": "https://arxiv.org/abs/1609.03752",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "IBS Dark Matter Axion Group",
+      "url": "https://ibs.re.kr/kor/sub02_03_16.do",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-19",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "KOR"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

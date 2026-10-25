@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "xenon",
+  "name": "XENON",
+  "full_name": "XENON experiment - neutrino and rare-decay programme",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "The XENON series uses low-background liquid xenon primarily for dark-matter searches. Its neutrino programme includes solar-neutrino scattering and rare xenon decay processes, notably double-electron capture.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays",
+    "Solar-neutrino interactions",
+    "Rare xenon weak decays"
+  ],
+  "detection_principle": "Prompt scintillation and delayed electroluminescence provide energy, position and interaction discrimination in a dual-phase TPC. Very low radioactive backgrounds allow rare electron-recoil and nuclear-recoil studies.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso, an international collaboration",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso, an international collaboration",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2024",
+    "evidence": "XENON1T observed the two-neutrino double-electron-capture decay of 124Xe, a rare standard weak process distinct from neutrinoless decay.",
+    "source_ids": [
+      "s2",
+      "s4"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "XENON Collaboration",
+    "lead_institutions": [
+      "Columbia University",
+      "INFN Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Current detector stage",
+      "value": "XENONnT",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Active liquid xenon",
+      "value": "Approximately 5.9 tonnes in XENONnT",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Rare-decay example",
+      "value": "Two-neutrino double-electron capture of 124Xe",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "XENON1T observed the two-neutrino double-electron-capture decay of 124Xe, a rare standard weak process distinct from neutrinoless decay.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-08-29",
+      "summary": "XENONnT reported a low-energy solar-neutrino measurement using electron recoils. Its electron-scattering channel differs from coherent nuclear scattering; priority claims require comparison with earlier measurements.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "This is a multipurpose detector programme. Observed two-neutrino double-electron capture conserves lepton number and does not establish a Majorana neutrino mass.",
+  "related_experiments": [
+    "pandax",
+    "lz-lux-zeplin"
+  ],
+  "resources": {
+    "official_website": "https://xenonexperiment.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2608.29450"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf",
+      "caption": "The XENONnT TPC suspended from the inner-cryostat top flange during assembly. A PTFE panel is removed to reveal the cathode high-voltage connection (instrumentation paper, Figure 3).",
+      "credit": "XENON collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 702,
+      "height": 1161,
+      "sha256": "02c0b92f48a95cbed97c1450a423c62ea1e2f401b579f61e5fb9e8489609210c",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "aa37fd91cd4bc37eaf35dfd7356164e5583ef8b6f01ef7885d8a690cc544a32c",
+      "source_dimensions": {
+        "width": 702,
+        "height": 1161
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "XENON: official experiment / institutional overview",
+      "url": "https://xenonexperiment.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Observation of two-neutrino double electron capture in 124Xe with XENON1T",
+      "url": "https://www.nature.com/articles/s41586-019-1124-4",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "First Measurement of Solar Neutrinos through Elastic Neutrino-Electron Scattering at the keV Scale",
+      "url": "https://arxiv.org/abs/2608.29450",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-29",
+      "supports": [
+        "Channel-specific neutrino result"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "The XENONnT Dark Matter Experiment",
+      "url": "https://arxiv.org/abs/2402.10446",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-02-16",
+      "supports": [
+        "XENONnT apparatus and active xenon mass"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,151 @@
+{
+  "schema_version": "1.0",
+  "id": "numecs",
+  "name": "NuMECS",
+  "full_name": "Neutrino Mass via Electron Capture Spectroscopy",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "NuMECS is a US calorimetric development programme for determining neutrino mass from the electron-capture spectrum of holmium-163. It demonstrated isotope production, purification, incorporation and spectroscopy; its prototype spectrum is not a sub-eV mass measurement.",
+  "physics_targets": [
+    "Effective electron-neutrino mass"
+  ],
+  "detection_principle": "Holmium is enclosed in a gold absorber coupled to a superconducting transition-edge sensor. The calorimeter measures atomic de-excitation energy while the neutrino escapes; endpoint distortions can constrain its effective mass.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Los Alamos National Laboratory, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Los Alamos National Laboratory, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_prototype_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2015-10-13",
+    "evidence": "A 40-hour prototype measurement recorded the holmium-163 spectrum at approximately 0.1 Bq. This source establishes historical R&D, rather than continuous operation in 2026.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NuMECS Collaboration",
+    "lead_institutions": [
+      "Los Alamos National Laboratory",
+      "National Institute of Standards and Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Isotope",
+      "value": "163Ho",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Sensor",
+      "value": "Transition-edge superconducting microcalorimeter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Prototype exposure",
+      "value": "40 hours at approximately 0.1 Bq",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015-10-13",
+      "summary": "A 40-hour prototype measurement recorded the holmium-163 spectrum at approximately 0.1 Bq. This source establishes historical R&D, rather than continuous operation in 2026.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "echo",
+    "holmes"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1510.03874"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1510.03874",
+      "caption": "Transition-edge sensors and absorber attachment used in NuMECS holmium spectroscopy (Fig. 3).",
+      "credit": "NuMECS Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/1510.03874#page=5",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 586,
+      "height": 203,
+      "sha256": "ebba73b17779488d5e5d06ce44b806b0da9d244c595b18c01ccc2a0232112baf",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Development of holmium-163 electron-capture spectroscopy with transition-edge sensors",
+      "url": "https://arxiv.org/abs/1510.03874",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-10-13",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

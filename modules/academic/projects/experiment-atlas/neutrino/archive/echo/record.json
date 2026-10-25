@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "echo",
+  "name": "ECHo",
+  "full_name": "Electron Capture in 163Ho experiment",
+  "aliases": [
+    "ECHO"
+  ],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "ECHo uses implanted holmium-163 and cryogenic magnetic calorimeters to determine the effective electron-neutrino mass from the electron-capture endpoint. It is a direct kinematic approach independent of double-beta-decay assumptions.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "The detector absorbs the atomic de-excitation energy following electron capture. A paramagnetic sensor and SQUID readout measure the heat pulse; the neutrino removes the remaining energy and changes the spectral endpoint.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Kirchhoff Institute for Physics, Heidelberg",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Kirchhoff Institute for Physics, Heidelberg",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2025-09-03",
+    "evidence": "ECHo-1k reported m(nu_e) below 15 eV/c2 at 90% credible interval.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "ECHo Collaboration",
+    "lead_institutions": [
+      "Heidelberg University Kirchhoff Institute for Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "163Ho",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "Metallic magnetic calorimeter",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "ECHo-1k spectrum",
+      "value": "Approximately 200 million electron-capture events",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025-09-03",
+      "summary": "ECHo-1k reported m(nu_e) below 15 eV/c2 at 90% credible interval.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "holmes",
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://www.kip.uni-heidelberg.de/echo/",
+    "publication_links": [
+      "https://arxiv.org/abs/2509.03423"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.kip.uni-heidelberg.de/echo/experiment/microcalorimeters",
+      "caption": "Photograph of an ECHo metallic magnetic calorimeter chip for holmium electron-capture spectroscopy.",
+      "credit": "ECHo Collaboration / Heidelberg University",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.kip.uni-heidelberg.de/kw/image/m/project/echo/images/ECHoChip.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 800,
+      "height": 298,
+      "sha256": "dc74505d3926d93b619e27a7a60c03c7e136881c195e53ccf11081aa8eeecb15",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "3dbae1890d2d293d8d6ae9d9af938ef313ebed6b32b3ef89c6c8ccc2c11a005e",
+      "source_dimensions": {
+        "width": 800,
+        "height": 298
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ECHo: official experiment / institutional overview",
+      "url": "https://www.kip.uni-heidelberg.de/echo/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Improved limit on the effective electron neutrino mass with the ECHo-1k experiment",
+      "url": "https://arxiv.org/abs/2509.03423",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-09-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

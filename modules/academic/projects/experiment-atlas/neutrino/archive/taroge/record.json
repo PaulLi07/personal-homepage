@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "taroge",
+  "name": "TAROGE (Taiwan)",
+  "full_name": "Taiwan Astroparticle Radiowave Observatory for Geosynchrotron Emissions",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "A radio air-shower programme on the eastern Taiwan coastal mountains searches for ultra-high-energy cosmic rays and Earth-skimming tau-neutrino signatures. It is distinct from its Antarctic extension TAROGE-M.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic rays",
+    "Earth-skimming tau-neutrino signatures",
+    "Near-horizon radio reconstruction"
+  ],
+  "detection_principle": "High-elevation antennas looking toward the ocean detect direct or reflected geomagnetic radio pulses from near-horizon air showers. Interferometric reconstruction distinguishes downward cosmic-ray showers from potential upward tau-decay showers.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Heping and Nanao coastal mountain stations, eastern Taiwan",
+      "country": "Taiwan",
+      "country_code": "TWN",
+      "location": "Heping and Nanao coastal mountain stations, eastern Taiwan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The 2025 collaboration report describes TAROGE-4 as operational since 2019 and reports its detector performance.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "First Taiwan station deployed.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "TAROGE-4 began operation.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "TAROGE-4 performance and air-shower candidate studies reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TAROGE (Taiwan) Collaboration",
+    "lead_institutions": [
+      "National Taiwan University, Leung Center for Cosmology and Particle Astrophysics"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "Taiwan stations",
+      "value": "Four stations deployed during 2014–2019; historical phases differ",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "TAROGE-4 receiver",
+      "value": "Four dual-polarisation log-periodic dipole antennas, 180–350 MHz",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "TAROGE-4 sampling",
+      "value": "Eight channels at 1.25 Gsample/s, with 12-bit digitisation",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Reported reconstruction, calibration and cosmic-ray air-shower searches. Air-shower candidates are not a confirmed tau-neutrino sample.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "taroge-m",
+    "anita",
+    "beacon"
+  ],
+  "resources": {
+    "official_website": "https://www.lecospa.ntu.edu.tw/research/neutrinos-cosmic-rays",
+    "publication_links": [
+      "https://pos.sissa.it/501/219/pdf",
+      "https://pos.sissa.it/395/263/pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/1258933/contributions/6490649/attachments/3104671/5503248/ICRC2025_TAROGE-4_revision_6.pdf",
+      "caption": "TAROGE-4 antennas on a coastal mountain in Taiwan, from the collaboration ICRC2025 presentation.",
+      "credit": "TAROGE Collaboration; Yaocheng Chen and Chung-Yun Kuo",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://indico.cern.ch/event/1258933/contributions/6490649/attachments/3104671/5503248/ICRC2025_TAROGE-4_revision_6.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 485,
+      "height": 267,
+      "sha256": "5baae43d8e7a03a217650836e5217405b72bc3ae5b69737626a86f48bc38f6fc",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LeCosPA, Neutrinos and cosmic rays: TAROGE",
+      "url": "https://www.lecospa.ntu.edu.tw/research/neutrinos-cosmic-rays",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Y. Chen, Status and Performance of TAROGE-4 for Radio Detection of Extensive Air Showers",
+      "url": "https://pos.sissa.it/501/219/pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Y. Chen, TAROGE experiment and reconstruction technique for near-horizon events",
+      "url": "https://pos.sissa.it/395/263/pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "TWN"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

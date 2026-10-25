@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "telescope-array",
+  "name": "Telescope Array",
+  "full_name": "Telescope Array Experiment",
+  "aliases": [
+    "TA",
+    "TA SD",
+    "TAx4",
+    "TALE"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Hybrid ultrahigh-energy cosmic-ray observatory in Utah, USA, combining a surface scintillator array and fluorescence telescopes. The collaboration's diffuse and point-source ultrahigh-energy-photon searches test models including superheavy dark-matter decay.",
+  "physics_targets": [
+    "Ultrahigh-energy photons from superheavy dark-matter decay",
+    "Northern-sky photon point sources",
+    "Diffuse ultrahigh-energy photons"
+  ],
+  "detection_principle": "Measures ground particles and atmospheric fluorescence from extensive air showers. Photon analyses combine 16 reconstructed observables, including shower-front curvature, lateral distributions and waveform timing, in a multivariate classifier, then estimate hadronic backgrounds to set photon-flux limits.",
+  "technologies": [
+    "Plastic-scintillator surface array",
+    "Atmospheric fluorescence telescopes",
+    "Solar power and wireless data acquisition",
+    "Multivariate air-shower classification"
+  ],
+  "sites": [
+    {
+      "name": "Utah West Desert / Delta",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Western Utah desert near Delta, USA",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Official page describes observations; the status page is undated",
+    "as_of": null,
+    "evidence": "The ICRR mission website describes cosmic-ray observations in Utah. Its 2026 news mainly concerns recruitment, so those dates are not treated as evidence of continuous data taking.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008-03",
+      "event": "The baseline array began full hybrid observations; the surface-array paper separately describes SD operation from May 2008.",
+      "source_ids": [
+        "s4",
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Published diffuse-photon limits from nine years of data.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Published northern-sky photon point-source search results.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Telescope Array Collaboration",
+    "lead_institutions": [
+      "University of Tokyo, ICRR",
+      "University of Utah"
+    ],
+    "participants_note": "The ICRR website lists international participation from Japan, the United States, Russia, South Korea and Belgium; membership should follow authorship for each phase."
+  },
+  "key_parameters": [
+    {
+      "name": "Original surface array used in the photon analyses in this dossier",
+      "value": "507 stations; 3 m² of plastic scintillator per station; about 700 km², with 1.2 km spacing",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Original fluorescence system",
+      "value": "38 telescopes at three stations",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Typical photon-search thresholds",
+      "value": "Several integral thresholds from 10^18 eV to 10^20 eV; not a dark-matter mass range",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original TA hybrid array",
+      "status": "operating_history",
+      "description": "The parameters and photon papers in this dossier mainly refer to this configuration."
+    },
+    {
+      "name": "TALE / TAx4 extensions and expansion",
+      "status": "stage_not_reverified",
+      "description": "Retained as aliases within the same project series. Completion of individual expansion components in 2026 was not rechecked; the original 507 stations cannot be treated as the total present facility."
+    }
+  ],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "The nine-year surface-array diffuse-photon search found two candidates, compatible with expected background. The 95% CL integral flux limit above 10^18 eV is 0.067 km^-2 yr^-1 sr^-1.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2020",
+      "summary": "No significant photon point source was found in the northern-sky search. Above 10^18 eV, the direction-averaged 95% CL point-source flux limit is 0.094 km^-2 yr^-1; see the paper for other thresholds.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The collaboration's photon searches test superheavy-dark-matter models and constitute indirect detection. Their limits also test conventional cosmic-ray sources and cosmogenic photons; individual ultrahigh-energy cosmic-ray events cannot simply be labeled dark-matter candidates. TA and the Cherenkov Telescope Array Observatory (CTAO) are distinct projects.",
+  "related_experiments": [
+    "Pierre Auger Observatory",
+    "HiRes",
+    "LHAASO"
+  ],
+  "resources": {
+    "official_website": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+    "publication_links": [
+      "https://arxiv.org/abs/1811.03920",
+      "https://arxiv.org/abs/1904.00300",
+      "https://arxiv.org/abs/1201.4964"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+      "caption": "A Telescope Array surface detector in the Utah desert, USA, with a solar panel and communications antenna.",
+      "credit": "ICRR / Telescope Array project website; no individual photographer is identified beside the image",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.icrr.u-tokyo.ac.jp/ta/assets/images/top_img/01.jpg",
+      "width": 620,
+      "height": 280,
+      "sha256": "58056105210ba8e4ced4edda1b9cd1316eea8a2fe4d7b0cc922a1c41435ae3d5",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+      "caption": "Telescope Array official source page for instrument, mission or facility images",
+      "credit": "Original institution / collaboration; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only, with no downloaded image for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ICRR Telescope Array official project website",
+      "url": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Telescope Array Collaboration: Constraints on the diffuse photon flux above 10^18 eV",
+      "url": "https://arxiv.org/abs/1811.03920",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-03-19",
+      "supports": [
+        "Nine-year data set, multivariate analysis and diffuse-photon upper limits"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Telescope Array Collaboration: Search for point sources of ultra-high energy photons",
+      "url": "https://arxiv.org/abs/1904.00300",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-03-09",
+      "supports": [
+        "Point-source search, superheavy-dark-matter motivation and original array parameters"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Telescope Array Collaboration: The surface detector array of the Telescope Array experiment",
+      "url": "https://arxiv.org/abs/1201.4964",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012-01-24",
+      "supports": [
+        "Instrument design and start of hybrid observations in 2008"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Original configuration parameters are not totals for the expanded facility; the latest TAx4 and TALE phases remain to be added.",
+      "The official operational description has no explicit status-publication date, so as_of remains null.",
+      "Converting astronomical photon-flux limits to dark-matter lifetimes requires a specified halo model, mass and decay channel.",
+      "Unverified coordinates and image permissions have not been entered as established values."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov_airshower"
+    ]
+  }
+}

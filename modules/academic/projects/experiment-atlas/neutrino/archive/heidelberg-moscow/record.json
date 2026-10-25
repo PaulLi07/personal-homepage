@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "id": "heidelberg-moscow",
+  "name": "Heidelberg-Moscow",
+  "full_name": "Heidelberg-Moscow double-beta-decay experiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Heidelberg-Moscow used enriched germanium detectors at Gran Sasso for a long-running germanium-76 double-beta search. A subset of authors later claimed a signal; that interpretation was disputed and is not treated here as an established discovery.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "High-purity germanium diodes served as source and energy detector. Low-radioactivity shielding and pulse-shape selections reduced backgrounds near the 76Ge neutrinoless-decay energy.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso, a German-Russian collaboration",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso, a German-Russian collaboration",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003",
+    "evidence": "The collaboration published its accumulated enriched-germanium dataset; later GERDA results did not confirm the controversial signal claim.",
+    "source_ids": [
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Heidelberg-Moscow Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "Kurchatov Institute"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Enriched detectors",
+      "value": "Five HPGe detectors",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Active enriched mass",
+      "value": "Approximately 10.96 kg",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "76Ge enrichment",
+      "value": "About 86%",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "The collaboration published its accumulated enriched-germanium dataset; later GERDA results did not confirm the controversial signal claim.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "gerda",
+    "igex"
+  ],
+  "resources": {
+    "official_website": "https://www.mpi-hd.mpg.de/gerda/home.html",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0309016",
+      "https://arxiv.org/abs/1307.4720"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "published_result",
+      "source_url": "https://arxiv.org/abs/hep-ex/0309016",
+      "caption": "Published summed Heidelberg-Moscow detector spectrum in the high-energy range, illustrating measured radioactive backgrounds; this is not evidence of a neutrinoless-decay discovery.",
+      "credit": "Heidelberg-Moscow Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0309016",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 869,
+      "height": 594,
+      "sha256": "a427dc79aaeaab4d702160bb40dfbbb40616baee76b005605d2720ce6537ed58",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Heidelberg-Moscow: official experiment / institutional overview",
+      "url": "https://www.mpi-hd.mpg.de/gerda/home.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Results of the experiment on investigation of Germanium-76 double beta decay: Heidelberg-Moscow data",
+      "url": "https://arxiv.org/abs/hep-ex/0309016",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Results on neutrinoless double-beta decay of 76Ge from Phase I of the GERDA experiment",
+      "url": "https://arxiv.org/abs/1307.4720",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

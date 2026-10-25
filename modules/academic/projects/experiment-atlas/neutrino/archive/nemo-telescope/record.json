@@ -1,0 +1,258 @@
+{
+  "schema_version": "1.0",
+  "id": "nemo-telescope",
+  "name": "NEMO telescope",
+  "full_name": "NEutrino Mediterranean Observatory",
+  "aliases": [
+    "NEMO deep-sea telescope",
+    "NEMO-ONDE",
+    "ONDE"
+  ],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "acoustic"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "An Italian deep-sea neutrino-telescope R&D programme tested tower structures and marine infrastructure that preceded the Italian KM3NeT site.",
+  "physics_targets": [
+    "Atmospheric-muon reconstruction",
+    "Deep-sea neutrino-telescope technology",
+    "Optical-background monitoring"
+  ],
+  "detection_principle": "Optical modules on connected rigid tower arms measured Cherenkov light in seawater. Acoustic positioning, timing calibration and shore connections demonstrated systems needed for a larger telescope.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Acoustic background monitoring with the ONDE hydrophone prototype"
+  ],
+  "sites": [
+    {
+      "name": "NEMO Phase-1",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Offshore Catania, Sicily",
+      "latitude": 37.5,
+      "longitude": 15.4,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "NEMO Phase-2",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Offshore Portopalo di Capo Passero",
+      "latitude": 36.27,
+      "longitude": 16.1,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "INFN-LNS explicitly reports the Phase-2 operating interval; later large-telescope construction belongs to KM3NeT.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2006",
+      "event": "Phase-1 mini-tower deployed off Catania.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2013",
+      "event": "Phase-2 tower deployed at Capo Passero.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2014",
+      "event": "Phase-2 operation ended in June.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NEMO telescope Collaboration",
+    "lead_institutions": [
+      "INFN Laboratori Nazionali del Sud"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Phase-2 tower",
+      "value": "Eight floors and 32 optical modules; approximately 380 m tall",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Phase-2 depth",
+      "value": "Approximately 3,500 m offshore Capo Passero",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Documented operation",
+      "value": "March 2013–June 2014 for Phase-2",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "NEMO-ONDE acoustic demonstrator",
+      "status": "Completed historical R&D",
+      "description": "Four hydrophones deployed 25 km offshore Catania at 2,000 m depth in January 2005 operated for about two years; 30 Hz–43 kHz acoustic-background monitoring supported neutrino-detection feasibility and marine biology. It did not claim acoustic neutrino detection.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "The Phase-1 prototype reconstructed atmospheric-muon flux.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2015",
+      "summary": "Phase-2 documented long-term deep-water optical background and its environmental dependence.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "km3net",
+    "antares",
+    "nestor"
+  ],
+  "resources": {
+    "official_website": "https://www.lns.infn.it/it/applicazioni/attivita-interdisciplinari-marine.html",
+    "publication_links": [
+      "https://arxiv.org/abs/0910.1269",
+      "https://arxiv.org/abs/1507.05024"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://arxiv.org/abs/0910.1269",
+      "caption": "The NEMO Phase-1 four-floor mini-tower and optical-module arrangement.",
+      "credit": "NEMO-TELESCOPE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/0910.1269",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 350,
+      "height": 565,
+      "sha256": "da71724fee5ea1cdb6a6bf8c4eddab6089d0556c88dfc568023969ebc3d6ed1e",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INFN-LNS, NEMO Phase-2 apparatus and operation",
+      "url": "https://www.lns.infn.it/it/applicazioni/attivita-interdisciplinari-marine.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NEMO Collaboration, atmospheric muon flux with Phase-1",
+      "url": "https://arxiv.org/abs/0910.1269",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NEMO Collaboration, long-term optical background at Capo Passero",
+      "url": "https://arxiv.org/abs/1507.05024",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "NEMO Collaboration, NEMO-ONDE: a submarine station for real-time monitoring of acoustic background installed at 2000 m depth in the Mediterranean Sea",
+      "url": "https://arxiv.org/abs/0804.2913",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008",
+      "supports": [
+        "ONDE acoustic prototype and measurements"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "This is the marine neutrino-telescope programme, not the NEMO-3/SuperNEMO double-beta-decay experiment."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "acoustic"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "acoustic"
+    ],
+    "is_europe": true
+  }
+}

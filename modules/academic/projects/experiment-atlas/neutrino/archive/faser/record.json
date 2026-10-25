@@ -1,0 +1,268 @@
+{
+  "schema_version": "1.0",
+  "id": "faser",
+  "name": "FASER / FASERnu",
+  "full_name": "ForwArd Search ExpeRiment - neutrino programme (FASERnu)",
+  "aliases": [
+    "FASERnu",
+    "FASERnu2",
+    "FASERν2"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "sampling",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "FASER studies very forward particles at the LHC. Its FASERnu tungsten-emulsion target and electronic spectrometer have established collider-neutrino observations and enabled high-energy neutrino-interaction measurements.",
+  "physics_targets": [
+    "TeV-scale neutrino interactions and flavour-dependent cross sections",
+    "Forward hadron production in proton collisions",
+    "Neutrino fluxes complementary to SND@LHC"
+  ],
+  "detection_principle": "Neutrinos from hadron decays at ATLAS traverse rock and interact in dense material 480 m downstream. Emulsion films resolve interaction vertices and lepton signatures; scintillators, silicon tracking and a magnetic spectrometer identify penetrating muons and reconstruct electronic events.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Layered detectors (sampling calorimeters)",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; TI12 tunnel at the CERN LHC, downstream in the forward direction from ATLAS",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; TI12 tunnel at the CERN LHC, downstream in the forward direction from ATLAS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Run 3 exposure complete / analysis and future preparations",
+    "as_of": "2026-10-23",
+    "evidence": "The LHC entered Long Shutdown 3 on 29 June 2026, so the 2026-10 archive snapshot must not imply ongoing collider data taking. FASER analysis and future-detector development continue.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021-03",
+      "event": "Full detector installed in TI12",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022-07",
+      "event": "LHC Run 3 data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "event": "First direct collider-neutrino observation reported",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-06",
+      "event": "LHC Run 3 collision exposure ended.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FASER / FASERnu Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "TI12 tunnel, about 480 m downstream of ATLAS interaction point",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Neutrino target",
+      "value": "Tungsten plates interleaved with nuclear emulsion films",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "2026 electronic analysis",
+      "value": "176.8 inverse femtobarns of Run 3 data from 2022-2024",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "LHC Run 3 FASER / FASERnu",
+      "status": "completed",
+      "description": "Collider collision exposure during Run 3 is complete; the analysis programme continues during LS3.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "FASERnu2 at the proposed FPF",
+      "status": "proposed",
+      "description": "Proposed successor emulsion detector in the FPF cavern on the French side of CERN. The current official concept has a 20-tonne tungsten target and 3300 emulsion layers. It is distinct from the Run 3 FASERnu target in TI12.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Electronic detector observed collider muon-neutrino interactions with high significance.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-03",
+      "summary": "Reported a calorimeter-based high-energy electron-neutrino analysis, adding a complementary identification method to emulsion studies.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "snd-lhc",
+    "donut",
+    "ship",
+    "flare"
+  ],
+  "resources": {
+    "official_website": "https://faser.web.cern.ch/",
+    "publication_links": [
+      "https://arxiv.org/abs/2303.14185"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://indico.global/event/15740/contributions/155632/attachments/72935/141370/20260626_tariga_review_LHC_neutrinos_Neutrino2026.pdf#page=9",
+      "caption": "FASER spectrometer and upstream FASERnu emulsion target.",
+      "credit": "Tomoko Ariga / FASER Collaboration, Neutrino 2026, slide 9",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico.global/event/15740/contributions/155632/attachments/72935/141370/20260626_tariga_review_LHC_neutrinos_Neutrino2026.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1300,
+      "height": 732,
+      "sha256": "4a74d9a08d61b30c2f4958df8398d2b164fed6423799a7b841d716bd3343d1bb",
+      "mime_type": "image/webp",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible.",
+      "source_sha256": "e8df009952c815b3bbf862d82f16da744377d5d33ea08b378823aeca28a7f22e",
+      "source_dimensions": {
+        "width": 1300,
+        "height": 732
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "FASER Collaboration, experiment overview",
+      "url": "https://faser.web.cern.ch/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "FASER Collaboration, First Direct Observation of Collider Neutrinos with FASER at the LHC",
+      "url": "https://arxiv.org/abs/2303.14185",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-03-24",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "FASER Collaboration, A New Way to See Electron Neutrinos at the LHC",
+      "url": "https://faser.web.cern.ch/briefing-20260326-1/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-03-26",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "CERN, Accelerator Report: Pushing the LHC towards HiLumi LHC conditions and cut",
+      "url": "https://home.cern/accelerator-report-pushing-the-lhc-towards-hilumi-lhc-conditions-and-cut/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-06",
+      "supports": [
+        "Run 3 collision exposure ended and the LHC entered Long Shutdown 3"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Forward Physics Facility, proposed FASERnu2 detector",
+      "url": "https://fpf.web.cern.ch/faserv2/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "sampling",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "sampling",
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

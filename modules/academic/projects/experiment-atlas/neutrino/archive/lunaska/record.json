@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "id": "lunaska",
+  "name": "LUNASKA",
+  "full_name": "Lunar UHE Neutrino Astrophysics using the Square Kilometre Array",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical Australian lunar-radio programme used ATCA and Parkes to search for nanosecond Askaryan pulses from ultra-high-energy particle cascades in the Moon and develop methods for future radio arrays.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic neutrinos",
+    "Lunar Askaryan detection",
+    "Radio-array trigger and calibration development"
+  ],
+  "detection_principle": "Neutrino interactions in lunar material can produce coherent radio Cherenkov emission. Terrestrial radio telescopes observe the lunar limb with fast sampling, ionospheric de-dispersion and multi-antenna rejection of terrestrial interference.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "ATCA, Narrabri, New South Wales, and Parkes Observatory, New South Wales",
+      "country": "Australia",
+      "country_code": "AUS",
+      "location": "ATCA, Narrabri, New South Wales, and Parkes Observatory, New South Wales",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The cited papers document completed ATCA and Parkes observing campaigns; a future SKA capability is not counted as an operating LUNASKA neutrino array.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "Lunar observations carried out at ATCA in February and May.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "Parkes observing campaign neutrino limit published.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LUNASKA Collaboration",
+    "lead_institutions": [
+      "University of Adelaide",
+      "CSIRO Australia Telescope National Facility",
+      "University of Santiago de Compostela"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "2008 ATCA receiver band",
+      "value": "1.2–1.8 GHz, 600 MHz bandwidth",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "2015 Parkes result",
+      "value": "127 effective observing hours over 1.2–1.5 GHz",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target energy scale",
+      "value": "The Parkes limit reached a neutrino threshold below 10^20 eV",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "ATCA observations produced upper limits on the isotropic ultra-high-energy neutrino flux.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2015",
+      "summary": "No lunar-origin neutrino radio pulses were detected; a new Parkes flux limit was reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "glue",
+    "numoon",
+    "resun"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0911.3009",
+      "https://doi.org/10.1103/PhysRevD.91.063002",
+      "https://arxiv.org/abs/1301.6490"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/0911.3009",
+      "caption": "Three ATCA antennas used by LUNASKA; the actual observation configuration used wider antenna separations (2010 paper, Figure 1).",
+      "credit": "C. W. James et al. / LUNASKA",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/0911.3009",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 734,
+      "height": 475,
+      "sha256": "80db6f4f2a1e3efde804073007080a92e249a412f776c41f37e608e176433464",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "C. W. James et al., LUNASKA experiments using the Australia Telescope Compact Array",
+      "url": "https://arxiv.org/abs/0911.3009",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "J. D. Bray et al., Limit on the ultrahigh-energy neutrino flux from lunar observations with the Parkes radio telescope",
+      "url": "https://doi.org/10.1103/PhysRevD.91.063002",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "J. D. Bray et al., LUNASKA neutrino search with the Parkes and ATCA telescopes",
+      "url": "https://arxiv.org/abs/1301.6490",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2013",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "AUS"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

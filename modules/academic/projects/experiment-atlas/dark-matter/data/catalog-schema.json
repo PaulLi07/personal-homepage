@@ -1,0 +1,320 @@
+{
+  "updated": "2026-10-23",
+  "categories": [
+    {
+      "id": "direct_detection",
+      "label": "Direct dark matter detection",
+      "color": "#f19b58"
+    },
+    {
+      "id": "axion_ultralight",
+      "label": "Axion and ultralight dark matter experiments",
+      "color": "#b29aff"
+    },
+    {
+      "id": "accelerator",
+      "label": "Accelerator and dark-sector experiments",
+      "color": "#6bc5e8"
+    },
+    {
+      "id": "indirect_detection",
+      "label": "Indirect dark matter searches",
+      "color": "#f0cf70"
+    },
+    {
+      "id": "cosmology_structure",
+      "label": "Gravitational and cosmological probes",
+      "color": "#80c6a7"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "noble_liquid",
+      "label": "Noble-liquid detectors"
+    },
+    {
+      "id": "solid_state",
+      "label": "Solid targets and semiconductors"
+    },
+    {
+      "id": "gas_tpc",
+      "label": "Gas and directional detectors"
+    },
+    {
+      "id": "bubble",
+      "label": "Bubble chambers and superheated media"
+    },
+    {
+      "id": "scintillator",
+      "label": "Crystal and liquid scintillators"
+    },
+    {
+      "id": "resonator_rf",
+      "label": "Resonant cavities and radio frequency"
+    },
+    {
+      "id": "spin_magnetometry",
+      "label": "Magnetometry and spin sensors"
+    },
+    {
+      "id": "optical_precision",
+      "label": "Precision optics and interferometry"
+    },
+    {
+      "id": "beam_particle",
+      "label": "Beam, tracking and calorimeter detectors"
+    },
+    {
+      "id": "cherenkov_airshower",
+      "label": "Cherenkov and air-shower detectors"
+    },
+    {
+      "id": "photon_telescope",
+      "label": "X-ray and gamma-ray detectors"
+    },
+    {
+      "id": "optical_survey",
+      "label": "Astronomical surveys and lensing"
+    },
+    {
+      "id": "radio",
+      "label": "Radio detection"
+    },
+    {
+      "id": "quantum_sensor",
+      "label": "Cryogenic, quantum and mechanical sensors"
+    }
+  ],
+  "statuses": [
+    {
+      "id": "operating",
+      "label": "Operating / data taking"
+    },
+    {
+      "id": "completed",
+      "label": "Completed / historical"
+    },
+    {
+      "id": "research_development",
+      "label": "Research and development"
+    },
+    {
+      "id": "proposed",
+      "label": "Proposed"
+    },
+    {
+      "id": "planned",
+      "label": "Planned"
+    },
+    {
+      "id": "construction",
+      "label": "Under construction"
+    },
+    {
+      "id": "commissioning",
+      "label": "Commissioning"
+    },
+    {
+      "id": "mixed",
+      "label": "Multiple stages"
+    },
+    {
+      "id": "unknown",
+      "label": "Status not established"
+    }
+  ],
+  "future_statuses": [
+    "proposed",
+    "planned",
+    "research_development",
+    "construction",
+    "commissioning"
+  ],
+  "regions": [
+    {
+      "id": "EUROPE",
+      "label": "Europe",
+      "label_en": "Europe",
+      "kind": "aggregate",
+      "members": [
+        "AUT",
+        "CHE",
+        "DEU",
+        "ESP",
+        "FRA",
+        "GBR",
+        "ITA",
+        "SWE"
+      ]
+    },
+    {
+      "id": "ARG",
+      "label": "Argentina",
+      "label_en": "Argentina",
+      "kind": "country"
+    },
+    {
+      "id": "ATA",
+      "label": "Antarctica",
+      "label_en": "Antarctica",
+      "kind": "special"
+    },
+    {
+      "id": "AUS",
+      "label": "Australia",
+      "label_en": "Australia",
+      "kind": "country"
+    },
+    {
+      "id": "AUT",
+      "label": "Austria",
+      "label_en": "Austria",
+      "kind": "country"
+    },
+    {
+      "id": "BRA",
+      "label": "Brazil",
+      "label_en": "Brazil",
+      "kind": "country"
+    },
+    {
+      "id": "CAN",
+      "label": "Canada",
+      "label_en": "Canada",
+      "kind": "country"
+    },
+    {
+      "id": "CHE",
+      "label": "Switzerland",
+      "label_en": "Switzerland",
+      "kind": "country"
+    },
+    {
+      "id": "CHL",
+      "label": "Chile",
+      "label_en": "Chile",
+      "kind": "country"
+    },
+    {
+      "id": "CHN",
+      "label": "China",
+      "label_en": "China",
+      "kind": "country"
+    },
+    {
+      "id": "DEU",
+      "label": "Germany",
+      "label_en": "Germany",
+      "kind": "country"
+    },
+    {
+      "id": "ESP",
+      "label": "Spain",
+      "label_en": "Spain",
+      "kind": "country"
+    },
+    {
+      "id": "FRA",
+      "label": "France",
+      "label_en": "France",
+      "kind": "country"
+    },
+    {
+      "id": "GBR",
+      "label": "United Kingdom",
+      "label_en": "United Kingdom",
+      "kind": "country"
+    },
+    {
+      "id": "GRL",
+      "label": "Greenland (Denmark)",
+      "label_en": "Greenland",
+      "kind": "country"
+    },
+    {
+      "id": "IND",
+      "label": "India",
+      "label_en": "India",
+      "kind": "country"
+    },
+    {
+      "id": "ITA",
+      "label": "Italy",
+      "label_en": "Italy",
+      "kind": "country"
+    },
+    {
+      "id": "JPN",
+      "label": "Japan",
+      "label_en": "Japan",
+      "kind": "country"
+    },
+    {
+      "id": "KOR",
+      "label": "South Korea",
+      "label_en": "South Korea",
+      "kind": "country"
+    },
+    {
+      "id": "MEX",
+      "label": "Mexico",
+      "label_en": "Mexico",
+      "kind": "country"
+    },
+    {
+      "id": "NAM",
+      "label": "Namibia",
+      "label_en": "Namibia",
+      "kind": "country"
+    },
+    {
+      "id": "NZL",
+      "label": "New Zealand",
+      "label_en": "New Zealand",
+      "kind": "country"
+    },
+    {
+      "id": "RUS",
+      "label": "Russia",
+      "label_en": "Russia",
+      "kind": "country"
+    },
+    {
+      "id": "SWE",
+      "label": "Sweden",
+      "label_en": "Sweden",
+      "kind": "country"
+    },
+    {
+      "id": "USA",
+      "label": "United States",
+      "label_en": "United States",
+      "kind": "country"
+    },
+    {
+      "id": "SPACE",
+      "label": "Space missions",
+      "label_en": "Space missions",
+      "kind": "special"
+    },
+    {
+      "id": "GLOBAL",
+      "label": "Global networks",
+      "label_en": "Global networks",
+      "kind": "special"
+    },
+    {
+      "id": "UNSITED",
+      "label": "Site unconfirmed",
+      "label_en": "Site unconfirmed",
+      "kind": "special"
+    }
+  ],
+  "methodology": {
+    "counting": "Unique named projects or experiment series. Multiple sites may contribute to more than one country, but the global total counts each dossier once.",
+    "geography": "Country-level counts from documented detector or candidate sites; no inferred exact coordinates or headquarters locations.",
+    "status": "Statuses retain their individual evidence dates. The index update date is not a new measurement of operating status.",
+    "details": "Navigation summaries are built from independent English dossiers and images stored inside this map. Each dossier is loaded only when opened; no external archive directory is required."
+  },
+  "locale": "en"
+}

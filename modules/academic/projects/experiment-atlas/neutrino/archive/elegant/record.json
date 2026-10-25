@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "elegant",
+  "name": "ELEGANT",
+  "full_name": "ELEctron GAmma-ray Neutrino Telescope",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The ELEGANT programme used underground scintillation detectors for rare-event searches. The ELEGANT-VI calcium-fluoride configuration specifically searched for calcium-48 neutrinoless double-beta decay and preceded CANDLES.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "CaF2(Eu) scintillators act as source and detector. Surrounding scintillators veto external radiation, while energy and pulse-shape selections reduce radioactive backgrounds near the high 48Ca decay endpoint.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; phased sites including Osaka and the Oto underground laboratory",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; phased sites including Osaka and the Oto underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2008",
+    "evidence": "The ELEGANT-VI search set a 48Ca half-life limit using calcium-fluoride scintillators.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "ELEGANT Collaboration",
+    "lead_institutions": [
+      "Osaka University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Double-beta isotope",
+      "value": "48Ca",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "ELEGANT-VI target",
+      "value": "CaF2(Eu) scintillators",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Science emphasis",
+      "value": "Neutrinoless double-beta decay; historical apparatus",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2008",
+      "summary": "The ELEGANT-VI search set a 48Ca half-life limit using calcium-fluoride scintillators.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "candles"
+  ],
+  "resources": {
+    "official_website": "https://www.rcnp.osaka-u.ac.jp/candles/",
+    "publication_links": [
+      "https://arxiv.org/abs/0810.4746"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Session_IV.pdf#page=35",
+      "caption": "Historical ELEGANT-VI CaF2 detector-system schematic, Figure 4 of the collaboration NDM 2003 report; this configuration also supported dark-matter studies.",
+      "credit": "ELEGANT Collaboration, NDM 2003 proceedings",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Session_IV.pdf#page=35",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1117,
+      "height": 420,
+      "sha256": "b2da7bf83608a7b823ae27e39620eac0fedb13c190c3403cc06731a4257bb4c9",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ELEGANT: official experiment / institutional overview",
+      "url": "https://www.rcnp.osaka-u.ac.jp/candles/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Neutrinoless double beta decay of 48Ca studied by CaF2(Eu) scintillators",
+      "url": "https://arxiv.org/abs/0810.4746",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

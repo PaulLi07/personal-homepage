@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "neutrinos-angra",
+  "name": "Neutrinos-Angra",
+  "full_name": "Neutrinos-Angra reactor-monitoring experiment",
+  "aliases": [
+    "ν-Angra",
+    "Angra"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Neutrinos-Angra is a Brazilian surface-level water-Cherenkov reactor-antineutrino demonstrator beside Angra-II. It develops local instrumentation and analysis for safeguards applications in a high-background environment.",
+  "physics_targets": [
+    "Reactor-antineutrino monitoring",
+    "Water-Cherenkov detector technology",
+    "Surface-background rejection"
+  ],
+  "detection_principle": "Gadolinium-doped water provides a hydrogen target and neutron-capture tag for inverse beta decay. Photomultipliers detect Cherenkov light; external veto volumes and reactor-on/off comparisons distinguish candidate antineutrinos from cosmic backgrounds.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "Angra dos Reis nuclear site",
+      "country": "Brazil",
+      "country_code": "BRA",
+      "location": "Angra dos Reis nuclear site",
+      "latitude": -23.008,
+      "longitude": -44.457,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2024-07-29",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Complete detector installed at Angra",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2018",
+      "event": "Commissioning and stable data acquisition reported",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Reactor-on/off result submitted",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Neutrinos-Angra Collaboration",
+    "lead_institutions": [
+      "Centro Brasileiro de Pesquisas Físicas",
+      "Universidade Federal da Bahia"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Medium",
+      "value": "Gadolinium-doped water",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Location",
+      "value": "Surface laboratory beside Angra-II",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis samples",
+      "value": "Reactor-on and reactor-off periods in 2020",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "An on/off analysis reported a reactor-correlated excess in the expected visible-energy region, advancing the water-based monitoring programme.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "connie",
+    "songs"
+  ],
+  "resources": {
+    "official_website": "https://www.gov.br/cbpf/pt-br/assuntos/noticias/experimento-brasileiro-sobre-neutrinos-inicia-fase-de-coleta-de-dados",
+    "publication_links": [
+      "https://arxiv.org/abs/2407.20397",
+      "https://arxiv.org/abs/1812.11604"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.gov.br/cbpf/pt-br/assuntos/noticias/experimento-brasileiro-sobre-neutrinos-inicia-fase-de-coleta-de-dados",
+      "caption": "Photomultiplier installation inside the Neutrinos-Angra water-Cherenkov detector.",
+      "credit": "Neutrinos-Angra Collaboration / CBPF",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.gov.br/cbpf/pt-br/assuntos/noticias/experimento-brasileiro-sobre-neutrinos-inicia-fase-de-coleta-de-dados/angrasensores.jpg/@@images/image-675-552c4136ba14061bd9259b0ceb12dc67.jpeg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 675,
+      "height": 492,
+      "sha256": "3f2b5b538b3cd2ae43e5c4ac34488ac006c42f723d51c2807d5d4c438b12a57d",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Neutrinos-Angra Collaboration, Reactor-on/off analysis",
+      "url": "https://arxiv.org/abs/2407.20397",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-07-29",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Neutrinos-Angra Collaboration, Commissioning and first measurements",
+      "url": "https://arxiv.org/abs/1812.11604",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-12-31",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "CBPF: Neutrinos-Angra data-taking start",
+      "url": "https://www.gov.br/cbpf/pt-br/assuntos/noticias/experimento-brasileiro-sobre-neutrinos-inicia-fase-de-coleta-de-dados",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2018-10-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "BRA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "neutron"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "neutron"
+    ],
+    "is_europe": false
+  }
+}

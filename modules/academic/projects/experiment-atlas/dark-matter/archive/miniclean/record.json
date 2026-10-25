@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "id": "miniclean",
+  "name": "MiniCLEAN",
+  "full_name": "MiniCLEAN",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "technology_demonstrator",
+  "summary": "MiniCLEAN was a low-background single-phase noble-liquid demonstrator at SNOLAB, developing liquid-argon/liquid-neon methods for WIMP searches.",
+  "physics_targets": [
+    "WIMP"
+  ],
+  "detection_principle": "Nearly 4π photodetector coverage records liquid scintillation. Clean materials, spatial selections and scintillation timing reduce backgrounds.",
+  "technologies": [
+    "Single-phase noble liquid",
+    "Cryogenic photomultiplier tubes"
+  ],
+  "sites": [
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2019",
+    "evidence": "SNOLAB explicitly lists it as Completed: operation began in 2013 and decommissioning began in 2019.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "Operation at SNOLAB begins",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Decommissioning begins",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MiniCLEAN Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Designed target scale",
+      "value": "500 kg of liquid argon or liquid neon",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Photodetectors",
+      "value": "92",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DEAP-3600",
+    "DarkSide"
+  ],
+  "resources": {
+    "official_website": "https://www.snolab.ca/experiment/miniclean/",
+    "publication_links": [
+      "https://arxiv.org/abs/1711.02117"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1711.02117",
+      "caption": "MiniCLEAN's spherical inner detector vessel during final inspection on the floor of SNOLAB's Cube Hall (JuiJen Wang's doctoral thesis, Figure 4.7b).",
+      "credit": "JuiJen Wang / MiniCLEAN collaboration; the thesis names no individual photographer.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/1711.02117",
+      "width": 600,
+      "height": 798,
+      "sha256": "eebfc2f5585ca2c98758692b202c9ac1f648b595ba28ef600728f2d292086965",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "c5a97012cd56f6687f28b107ab57c225afc1ff0d1d766ccb85f2870160dd5bf5",
+      "source_dimensions": {
+        "width": 600,
+        "height": 798
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.snolab.ca/experiment/miniclean/",
+      "caption": "MiniCLEAN apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "MiniCLEAN Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "MiniCLEAN — SNOLAB",
+      "url": "https://www.snolab.ca/experiment/miniclean/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "MiniCLEAN Dark Matter Experiment",
+      "url": "https://arxiv.org/abs/1711.02117",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-11",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "quantum_sensor"
+    ]
+  }
+}

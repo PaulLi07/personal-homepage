@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "id": "sbnd",
+  "name": "SBND",
+  "full_name": "Short-Baseline Near Detector",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "SBND is located on the Fermilab Booster Neutrino Beam, Batavia, Illinois. This multipurpose SBN near neutrino detector has publicly proposed dark-sector studies.",
+  "physics_targets": [
+    "Light dark matter",
+    "Dark neutrinos",
+    "Millicharged particles",
+    "Heavy neutral leptons"
+  ],
+  "detection_principle": "A near-site liquid-argon TPC provides high statistics, detailed topology and optical timing for beam-dark-particle scattering or decay searches; off-axis subdivisions change the neutrino-to-dark-matter signal ratio.",
+  "technologies": [
+    "Liquid-argon TPC",
+    "Photodetection system",
+    "Cosmic-ray tagging"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Booster Neutrino Beam, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab Booster Neutrino Beam, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "First neutrino-physics run completed in 2025; design and initial performance released in 2026",
+    "as_of": "2025",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "First neutrino-physics run completed in 2025; design and initial performance released in 2026",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SBND Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Active liquid-argon mass",
+      "value": "112 tonnes",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "Distance from BNB target",
+      "value": "Approximately 110 m",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SBND",
+      "status": "operating",
+      "description": "First neutrino-physics run completed in 2025; design and initial performance released in 2026"
+    }
+  ],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "The collaboration outlines light-dark-matter, dark-neutrino and other directions; these are plans / sensitivity studies, rather than achieved exclusions.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "date": "2026",
+      "summary": "Design and initial-performance reports confirm detector data-taking capability; these results are not a dark-matter discovery.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "MicroBooNE",
+    "ICARUS",
+    "DUNE near detector"
+  ],
+  "resources": {
+    "official_website": "https://sbn-nd.fnal.gov/publications.html",
+    "publication_links": [
+      "https://www.mdpi.com/2673-9984/8/1/68",
+      "https://arxiv.org/abs/2504.00245",
+      "https://arxiv.org/abs/2610.11782"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://news.fnal.gov/2024/09/first-neutrinos-detected-at-fermilab-short-baseline-detector/",
+      "caption": "SBND during assembly in 2023, showing the liquid-argon TPC frame, sensing wires and readout cabling.",
+      "credit": "Ryan Postel / Fermilab",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://news.fnal.gov/wp-content/uploads/2025/09/sbnd2-540x350.jpg",
+      "width": 540,
+      "height": 350,
+      "sha256": "22362929d3a5945c586b5bedf088646f418692c684e07020a17fd8ba0a64bc41",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.mdpi.com/2673-9984/8/1/68",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SBND publications — official list",
+      "url": "https://sbn-nd.fnal.gov/publications.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Beyond Standard Model New Physics Searches with SBND",
+      "url": "https://www.mdpi.com/2673-9984/8/1/68",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "The Short-Baseline Near Detector at Fermilab",
+      "url": "https://arxiv.org/abs/2504.00245",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04-01",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Short-Baseline Near Detector: Design and Initial Performance",
+      "url": "https://arxiv.org/abs/2610.11782",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-07",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "beam_particle"
+    ]
+  }
+}

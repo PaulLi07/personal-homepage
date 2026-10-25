@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "cupid",
+  "name": "CUPID",
+  "full_name": "CUORE Upgrade with Particle IDentification",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CUPID is the proposed successor to CUORE, using enriched lithium-molybdate scintillating bolometers to search for molybdenum-100 neutrinoless double-beta decay. Its design combines the existing CUORE cryogenic infrastructure with particle identification.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Each crystal provides a heat measurement and a separate scintillation-light signal. The heat-to-light response identifies alpha backgrounds, while the summed decay energy tests for a narrow neutrinoless-decay peak.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; main experiment planned at Gran Sasso; related demonstrators also in Modane, France",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; main experiment planned at Gran Sasso; related demonstrators also in Modane, France",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Planned",
+    "as_of": "2025",
+    "evidence": "The collaboration described the next-generation design; its projected sensitivity is not an achieved half-life limit.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CUPID Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory",
+      "University of Milano-Bicocca"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target isotope",
+      "value": "100Mo in enriched Li2MoO4",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Cryogenic site",
+      "value": "CUORE cryostat at Gran Sasso",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Design feature",
+      "value": "Separate cryogenic heat and light readout",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The collaboration described the next-generation design; its projected sensitivity is not an achieved half-life limit.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cuore",
+    "lucifer",
+    "cupid-mo"
+  ],
+  "resources": {
+    "official_website": "https://cupid.lngs.infn.it/",
+    "publication_links": [
+      "https://arxiv.org/abs/2503.02894"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2503.02894",
+      "caption": "CUPID detector module and tower design using lithium-molybdate heat and light bolometers (Fig. 2).",
+      "credit": "CUPID Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2503.02894#page=7",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 735,
+      "height": 274,
+      "sha256": "3f92d28afc6612ba713cb9077d63a83ca9472598920aa44017b01920d2299758",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CUPID: official experiment / institutional overview",
+      "url": "https://cupid.lngs.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CUPID, the CUORE Upgrade with Particle IDentification",
+      "url": "https://arxiv.org/abs/2503.02894",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

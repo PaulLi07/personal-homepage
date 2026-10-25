@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "hps",
+  "name": "HPS",
+  "full_name": "Heavy Photon Search",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "HPS is a dedicated high-intensity electron fixed-target experiment in Jefferson Lab Hall B, Newport News, Virginia.",
+  "physics_targets": [
+    "Dark photons",
+    "Strongly interacting dark-sector particles",
+    "Long-lived particles"
+  ],
+  "detection_principle": "Electrons strike a thin tungsten target to produce dark photons; a forward spectrometer seeks narrow e⁺e⁻ peaks and displaced decay vertices.",
+  "technologies": [
+    "Silicon-microstrip vertex detector",
+    "PbWO4 calorimeter",
+    "Magnetic spectrometer"
+  ],
+  "sites": [
+    {
+      "name": "Jefferson Lab Hall B，Newport News，Virginia",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Jefferson Lab Hall B，Newport News，Virginia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Listed material confirms a 2019 run at 4.45 GeV; data analysis continues",
+    "as_of": "2019",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Listed material confirms a 2019 run at 4.45 GeV; data analysis continues",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HPS Collaboration / project team",
+    "lead_institutions": [
+      "Jefferson Lab",
+      "SLAC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2019 electron beam",
+      "value": "4.45 GeV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Search method",
+      "value": "Mass-peak and displaced-vertex searches, rather than a single universal mass sensitivity",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "HPS",
+      "status": "operating",
+      "description": "Listed material confirms a 2019 run at 4.45 GeV; data analysis continues"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "A displaced-vertex search for strongly interacting dark-sector particles was published; this entry makes no discovery claim.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "APEX",
+    "DarkLight"
+  ],
+  "resources": {
+    "official_website": "https://stem-tools.jlab.org/ugresearch/20-10",
+    "publication_links": [
+      "https://arxiv.org/abs/1910.04886",
+      "https://repo.scoap3.org/records/105047"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1910.04886",
+      "caption": "Three-dimensional HPS layout (original paper Fig. 7), showing the silicon vertex tracker, magnet and electromagnetic calorimeter. Source PDF p. 5.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1910.04886",
+      "width": 731,
+      "height": 502,
+      "sha256": "bd397a24479594069433fe5aaf522689e0842e045cc84d6bed8d4025f0679b9b",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://arxiv.org/abs/1910.04886",
+      "caption": "The HPS apparatus-paper PDF contains detector descriptions; image permission unverified",
+      "credit": "HPS Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The Heavy Photon Search Experiment",
+      "url": "https://arxiv.org/abs/1910.04886",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-10-10",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "HPS muon analysis from 2019 run",
+      "url": "https://stem-tools.jlab.org/ugresearch/20-10",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "First displaced vertex search for electroproduced dark-sector strongly interacting massive particles",
+      "url": "https://repo.scoap3.org/records/105047",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

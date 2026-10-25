@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "gno",
+  "name": "GNO",
+  "full_name": "Gallium Neutrino Observatory",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "GNO continued GALLEX solar-neutrino measurements at Gran Sasso with upgraded extraction and counting procedures. Its multi-year programme tested the time-averaged low-energy electron-neutrino capture rate across a substantial part of a solar cycle.",
+  "physics_targets": [
+    "Low-energy solar-neutrino capture",
+    "Long-term solar flux stability"
+  ],
+  "detection_principle": "Gallium-71 captures electron neutrinos to produce germanium-71. The product is chemically extracted from the gallium-chloride target and detected through low-level decay counting after each exposure.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003-04",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1998-05",
+      "event": "GNO solar exposures began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2003-04",
+      "event": "Final GNO exposure completed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2005",
+      "event": "Complete programme result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GNO Collaboration",
+    "lead_institutions": [
+      "INFN Laboratori Nazionali del Gran Sasso",
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Gallium mass",
+      "value": "Approximately 30 tonnes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Solar runs",
+      "value": "58 exposures from May 1998 to April 2003",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Combined GNO capture rate",
+      "value": "62.9 +6.0/-5.9 solar neutrino units, including systematics",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005",
+      "summary": "The full GNO result and its combination with GALLEX documented a suppressed solar electron-neutrino capture rate.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gallex",
+    "sage"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0504037",
+      "https://arxiv.org/abs/hep-ex/0006034"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/hep-ex/0504037",
+      "caption": "GNO measured solar-neutrino capture rates for individual runs (Figure 1 of the final-results paper). This is a result figure, not an apparatus photograph.",
+      "credit": "GNO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0504037",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 564,
+      "height": 324,
+      "sha256": "f6e889268a1b63084a8d87605ba6a7c9aa6f7bf15f51052ed3ec648afbf657e6",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GNO Collaboration, Complete results for five years of solar-neutrino observations",
+      "url": "https://arxiv.org/abs/hep-ex/0504037",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2005-04-13",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "GNO Collaboration, GNO I solar-neutrino results",
+      "url": "https://arxiv.org/abs/hep-ex/0006034",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2000-06-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": true
+  }
+}

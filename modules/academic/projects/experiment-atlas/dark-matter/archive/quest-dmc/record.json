@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "id": "quest-dmc",
+  "name": "QUEST-DMC",
+  "full_name": "Quantum Enhanced Superfluid Technologies for Dark Matter and Cosmology",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "QUEST-DMC studies light dark matter using superfluid helium-3 and quantum readout, alongside early-Universe analogue experiments. Its dark-matter programme exploits helium-3's unpaired neutron to probe spin-dependent interactions.",
+  "physics_targets": [
+    "Sub-GeV dark matter",
+    "Spin-dependent dark-matter–neutron scattering"
+  ],
+  "detection_principle": "Nuclear recoils generate quasiparticles in superfluid 3He. Mechanical nanowires/resonators and readout such as SQUIDs measure the tiny energy deposits.",
+  "technologies": [
+    "Superfluid 3He",
+    "Nanowire resonators",
+    "SQUID",
+    "Ultralow-temperature calorimetry"
+  ],
+  "sites": [
+    {
+      "name": "Lancaster low-temperature laboratory",
+      "country": "United Kingdom",
+      "country_code": "GBR",
+      "location": "Lancaster University",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "R&D",
+    "as_of": "2024",
+    "evidence": "The 2024 collaboration design paper and STFC page describe operating R&D equipment and a subsequent cooldown; a full low-background underground exposure has not been established.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "QUEST-DMC Collaboration",
+    "lead_institutions": [
+      "Lancaster University",
+      "Royal Holloway, University of London"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Target isotope",
+      "value": "3He, with an unpaired neutron",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Designed mass sensitivity",
+      "value": "Emphasis on 0.1–1 GeV/c²; this does not mean all parameter space is already excluded.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DELight",
+    "TESSERACT"
+  ],
+  "resources": {
+    "official_website": "https://www.ppd.stfc.ac.uk/experiment/quest-dmc/",
+    "publication_links": [
+      "https://scoap3-prod-backend.s3.cern.ch/media/files/83937/10.1140/epjc/s10052-024-12410-8_a.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.ppd.stfc.ac.uk/experiment/quest-dmc/",
+      "caption": "QUEST-DMC researchers installing cryogenic refrigeration and detection systems in the laboratory.",
+      "credit": "QUEST-DMC / STFC; no individual photographer is credited on the page.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.ppd.stfc.ac.uk/wp-content/uploads/2026/02/rqmirtiG6WDDaFQp24iFkB-1024x768.jpg",
+      "width": 1024,
+      "height": 768,
+      "sha256": "876647dd6118da9d0189498b10e7e9aae382bcf1fa55678d61c7184615ded065",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.ppd.stfc.ac.uk/experiment/quest-dmc/",
+      "caption": "QUEST-DMC apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "QUEST-DMC Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "QUEST-DMC — STFC",
+      "url": "https://www.ppd.stfc.ac.uk/experiment/quest-dmc/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "QUEST-DMC superfluid 3He detector for sub-GeV dark matter",
+      "url": "https://scoap3-prod-backend.s3.cern.ch/media/files/83937/10.1140/epjc/s10052-024-12410-8_a.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Not every R&D laboratory and future low-background deployment location has been verified individually; only established R&D locations are mapped."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GBR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "spin_magnetometry",
+      "quantum_sensor"
+    ]
+  }
+}

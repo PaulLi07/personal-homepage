@@ -1,0 +1,146 @@
+{
+  "schema_version": "1.0",
+  "id": "tibet-asgamma",
+  "name": "Tibet ASγ",
+  "full_name": "Tibet Air Shower Array / ASγ Experiment",
+  "aliases": [
+    "Tibet ASγ",
+    "Tibet AS"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Chinese–Japanese air-shower project whose diffuse ultrahigh-energy gamma-ray data have been used to constrain heavy dark-matter decay. This dossier distinguishes experimental observations from external theoretical reinterpretations.",
+  "physics_targets": [
+    "PeV-scale decaying dark matter"
+  ],
+  "detection_principle": "A ground air-shower array and muon-background rejection identify high-energy gamma rays; diffuse spectra are compared with dark-matter decay models.",
+  "technologies": [
+    "Air-shower array",
+    "Underground muon detection"
+  ],
+  "sites": [
+    {
+      "name": "Yangbajing, Tibet",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Yangbajing, Tibet",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Current operational status not fully verified",
+    "as_of": "2025-09-09",
+    "evidence": "A 2025 data reinterpretation exists, but it does not by itself establish the detector's operational status on that date.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Tibet ASγ collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative photon-energy scale",
+      "value": "Sub-PeV diffuse gamma rays",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Research papers derive heavy-dark-matter lifetime constraints from published gamma-ray data.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "Discussed jointly with LHAASO data for decaying dark matter at 10^6–10^9 GeV.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "LHAASO"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2105.05680",
+      "https://arxiv.org/abs/2509.08039"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/em/tibet_exp/exp_e.html",
+      "caption": "Structure of an individual Tibet ASγ scintillator detector, showing the upper lead plate, scintillator and PMT below.",
+      "credit": "Tibet ASγ Collaboration / ICRR collaboration instrument description",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.icrr.u-tokyo.ac.jp/em/tibet_exp/exp/detector.jpg",
+      "width": 230,
+      "height": 284,
+      "sha256": "c71df8efe661424e4c8f66f0d94360364a73098cf435fbd71fbbe3d852e4edf0",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://arxiv.org/abs/2105.05680",
+      "title": "Search for dark matter using sub-PeV gamma-rays observed by Tibet ASgamma",
+      "source_date": "2021-05-12",
+      "type": "primary_paper",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2509.08039",
+      "title": "Breaking Dark: Hunting Heavy Decaying Dark Matter with Tibet ASgamma and LHAASO-KM2A",
+      "source_date": "2025-09-09",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Current facility status and instrument photographs need independent verification from official pages; the listed dark-matter papers reinterpret data."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "beam_particle",
+      "cherenkov_airshower"
+    ]
+  }
+}

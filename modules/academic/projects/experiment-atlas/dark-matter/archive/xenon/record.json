@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "id": "xenon",
+  "name": "XENON",
+  "full_name": "XENON Dark Matter Project",
+  "aliases": [
+    "XENON10",
+    "XENON100",
+    "XENON1T",
+    "XENONnT"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "A liquid-xenon direct-detection programme at LNGS, Italy, encompassing XENON10, XENON100, XENON1T and XENONnT. Alongside WIMP nuclear recoils, low-background electron-recoil data probe axions, dark photons and other rare processes.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-matter–electron interactions",
+    "Axion/dark-photon absorption"
+  ],
+  "detection_principle": "A dual-phase TPC measures prompt liquid-xenon scintillation S1 and proportional scintillation S2 from drift electrons extracted into gas. Their ratio, drift time and light pattern provide background discrimination and three-dimensional localization.",
+  "technologies": [
+    "Dual-phase liquid-xenon TPC",
+    "Photomultiplier tubes",
+    "Water shielding and anticoincidence"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": null,
+    "evidence": "Official and partner-institution pages identify XENONnT as the current phase without dating the status text. The 2024 detector paper establishes that this generation has achieved science operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "XENON Collaboration",
+    "lead_institutions": [
+      "Columbia University",
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "XENONnT effective target mass",
+      "value": "5.9 tonnes of liquid xenon",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Experiment location",
+      "value": "LNGS Hall B",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "XENON10 / XENON100",
+      "status": "completed",
+      "description": "Early liquid-xenon stages"
+    },
+    {
+      "name": "XENON1T",
+      "status": "completed",
+      "description": "Previous tonne-scale detector"
+    },
+    {
+      "name": "XENONnT",
+      "status": "operating",
+      "description": "Multitonne liquid-xenon stage"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "LZ",
+    "PandaX",
+    "DARWIN",
+    "XLZD"
+  ],
+  "resources": {
+    "official_website": "https://xenonexperiment.org/",
+    "publication_links": [
+      "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf",
+      "caption": "The XENONnT TPC suspended from the inner-cryostat top flange during assembly. A PTFE panel is removed to reveal the cathode high-voltage connection (instrumentation paper, Figure 3).",
+      "credit": "XENON collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf",
+      "width": 702,
+      "height": 1161,
+      "sha256": "02c0b92f48a95cbed97c1450a423c62ea1e2f401b579f61e5fb9e8489609210c",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "aa37fd91cd4bc37eaf35dfd7356164e5583ef8b6f01ef7885d8a690cc544a32c",
+      "source_dimensions": {
+        "width": 702,
+        "height": 1161
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://xenonexperiment.org/",
+      "caption": "XENON apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "XENON Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "XENON official website",
+      "url": "https://xenonexperiment.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "The XENONnT dark matter experiment",
+      "url": "https://link.springer.com/content/pdf/10.1140/epjc/s10052-024-12982-5.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "XENONnT — Weizmann research activities",
+      "url": "https://www.weizmann.ac.il/particle/xenon/research-activities/xenonnt",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "The latest 2026 datasets and all numerical results have not been checked paper by paper.",
+      "The current website status has no independent publication date; the access date cannot be treated as confirmation of operation in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid"
+    ]
+  }
+}

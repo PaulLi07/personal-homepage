@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "magis-100",
+  "name": "MAGIS-100",
+  "full_name": "Matter-wave Atomic Gradiometer Interferometric Sensor",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A 100 m vertical atom interferometer for ultralight dark matter and tests of quantum mechanics, also validating technology for future gravitational-wave instruments.",
+  "physics_targets": [
+    "Ultralight dark matter"
+  ],
+  "detection_principle": "Falling ultracold strontium clouds receive shared laser pulses; interference phases reveal dark-matter-induced changes in energy levels or acceleration.",
+  "technologies": [
+    "Cold strontium atoms",
+    "Long-baseline atom interferometry",
+    "Highly stable lasers"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab，Batavia，Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab，Batavia，Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026",
+    "evidence": "2026 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Fermilab completes laser lab construction for world’s largest vertical atom interferometer",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MAGIS-100 Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab",
+      "Stanford University",
+      "Northwestern University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design baseline",
+      "value": "100 m vertical shaft",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "An official January 2026 report states that laser-laboratory construction was complete; atom-source delivery and vacuum-pipe installation remained subsequent milestones.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "AION",
+    "AEDGE"
+  ],
+  "resources": {
+    "official_website": "https://news.fnal.gov/2026/01/fermilab-completes-laser-lab-construction-for-worlds-largest-vertical-atom-interferometer/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://magis.fnal.gov/how-it-works/detector/",
+      "caption": "Official MAGIS-100 detector design: the 100 m vacuum system in the MINOS shaft, atom sources and laser-delivery optics at the top.",
+      "credit": "MAGIS-100 Collaboration / Fermilab; the original page provides no separate illustrator credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://magis.fnal.gov/wp-content/uploads/2021/10/MAGIS-detector-layout-1.jpg",
+      "width": 1200,
+      "height": 1025,
+      "sha256": "c314bfb2c347f60bf7bd3fd7f2b244c587d4e0d5d4bce57bf98298b4bb3282aa",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://news.fnal.gov/2026/01/fermilab-completes-laser-lab-construction-for-worlds-largest-vertical-atom-interferometer/",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "MAGIS-100 Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fermilab completes laser lab construction for world’s largest vertical atom interferometer",
+      "url": "https://news.fnal.gov/2026/01/fermilab-completes-laser-lab-construction-for-worlds-largest-vertical-atom-interferometer/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MAGIS-100 project",
+      "url": "https://magis.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

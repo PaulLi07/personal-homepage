@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "formosa",
+  "name": "FORMOSA",
+  "full_name": "FORward MicrOcharge SeArch",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "FORMOSA has a prototype in CERN UJ12; the full detector is a candidate for the Forward Physics Facility. It is a dedicated forward millicharged-particle search.",
+  "physics_targets": [
+    "Millicharged particles",
+    "Small-charge dark sector"
+  ],
+  "detection_principle": "Enhanced far-forward candidate-particle fluxes are searched for coincident weak-ionization light signals in multiple layers of scintillator bars.",
+  "technologies": [
+    "Plastic-scintillator bars",
+    "Photomultiplier tubes",
+    "Timing coincidences"
+  ],
+  "sites": [
+    {
+      "name": "FORMOSA demonstrator，CERN UJ12",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN UJ12 prototype deployment",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    },
+    {
+      "name": "FPF candidate site for full FORMOSA",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Proposed FPF cavern approximately 617–682 m west of ATLAS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Prototype installed and took data in 2024; full FORMOSA remains proposed",
+    "as_of": "2025-04-17",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-04-17",
+      "event": "Prototype installed and took data in 2024; full FORMOSA remains proposed",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FORMOSA Collaboration / project team",
+    "lead_institutions": [
+      "University of California Davis",
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate full-detector location",
+      "value": "Proposed FPF approximately 600 m forward of the ATLAS interaction point; final location undetermined",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Prototype installation",
+      "value": "February 2024, UJ12",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "FORMOSA demonstrator",
+      "status": "operating",
+      "description": "Prototype stage confirmed by 2024–2025 evidence"
+    },
+    {
+      "name": "FORMOSA full detector",
+      "status": "proposed",
+      "description": "Full-size deployment and FPF site remain proposed"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "milliQan",
+    "FASER",
+    "FLArE"
+  ],
+  "resources": {
+    "official_website": "https://formosa.faculty.ucdavis.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2504.12973"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://formosa.faculty.ucdavis.edu/",
+      "caption": "Full FORMOSA detector design model, showing four layers of scintillator-bar arrays and end plates; a design rendering.",
+      "credit": "FORMOSA Collaboration; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://formosa.faculty.ucdavis.edu/wp-content/uploads/sites/852/2024/10/Formosa-Detector-e1729125824332.jpg",
+      "width": 1160,
+      "height": 877,
+      "sha256": "fa9ef450bc748f4f90a8ee60b9c48cc74c2f486026ea3a39547efd50ce92b772",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://formosa.faculty.ucdavis.edu/",
+      "caption": "Full-design schematics and prototype-installation photographs; phases must be distinguished",
+      "credit": "FORMOSA Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FORMOSA official project",
+      "url": "https://formosa.faculty.ucdavis.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "FORMOSA ESPPU 2026 input",
+      "url": "https://arxiv.org/abs/2504.12973",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04-17",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Forward Physics Facility location",
+      "url": "https://fpf.web.cern.ch/location",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "The full proposed FPF is in France",
+        "Site schematic"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "zicos",
+  "name": "ZICOS",
+  "full_name": "Zirconium Complex in Organic liquid Scintillator",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "ZICOS is a Japanese R&D programme for zirconium-96 double-beta decay in an organic scintillator. It develops zirconium loading and Cherenkov-topology methods; the full detector described in design studies has not been established as operating.",
+  "physics_targets": [
+    "Double-beta and rare weak decays"
+  ],
+  "detection_principle": "Zirconium complexes dissolve in organic scintillator. Scintillation measures deposited energy, while Cherenkov-light directions can distinguish two-electron events from gamma-induced backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Full-scale detector site not selected in the cited design",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Full-scale detector site not selected in the cited design",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "site_not_selected"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2020",
+    "evidence": "The research documents scintillator development and background rejection. The large detector masses and half-life reaches in the design slides are projections.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "ZICOS Collaboration",
+    "lead_institutions": [
+      "Miyagi University of Education",
+      "University of Fukui",
+      "University of Tokyo",
+      "Tokyo University of Science"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate isotope",
+      "value": "96Zr",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Decay Q value",
+      "value": "Approximately 3.35 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector concept",
+      "value": "Zirconium-loaded scintillator with Cherenkov and scintillation readout",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "The research documents scintillator development and background rejection. The large detector masses and half-life reaches in the design slides are projections.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "theia",
+    "nudoubt-plus-plus"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1088/1742-6596/1468/1/012139",
+      "https://www.rcnp.osaka-u.ac.jp/dbd16/Data/Prog/063_ZICOS_YoshiyukiFukuda.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/dbd16/Data/Prog/063_ZICOS_YoshiyukiFukuda.pdf",
+      "caption": "ZICOS zirconium-loaded scintillator concept shown by the collaboration at DBD16; a design rendering.",
+      "credit": "ZICOS Collaboration / Y. Fukuda",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://www.rcnp.osaka-u.ac.jp/dbd16/Data/Prog/063_ZICOS_YoshiyukiFukuda.pdf#page=2",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 522,
+      "height": 680,
+      "sha256": "2d78ca1e484137594d0ebc2a9809c7d58cc7bf1c1cd105544c6af50f9fb9f6fe",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ZICOS: Neutrinoless double beta decay experiment using Zr-96 with an organic liquid scintillator",
+      "url": "https://doi.org/10.1088/1742-6596/1468/1/012139",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ZICOS: a new experiment for neutrinoless double beta decay with zirconium-96",
+      "url": "https://www.rcnp.osaka-u.ac.jp/dbd16/Data/Prog/063_ZICOS_YoshiyukiFukuda.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2016-11-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

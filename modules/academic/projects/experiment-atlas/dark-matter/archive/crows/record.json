@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "id": "crows",
+  "name": "CROWS",
+  "full_name": "CERN Resonant WISP Search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A microwave implementation of light shining through a wall, searching for weakly coupled light particles with highly isolated resonant cavities.",
+  "physics_targets": [
+    "ALP",
+    "Hidden photons"
+  ],
+  "detection_principle": "Microwaves in an emitting cavity can convert to hidden photons or axions, cross a barrier and regenerate in a receiving cavity; electromagnetic shielding rejects ordinary leakage.",
+  "technologies": [
+    "Microwave resonant cavities",
+    "Electromagnetic shielding",
+    "Microwave regeneration"
+  ],
+  "sites": [
+    {
+      "name": "CERN，Meyrin",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN，Meyrin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2013",
+    "evidence": "2013 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "First results of the CERN Resonant WISP Search (CROWS)",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CROWS Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "Karlsruhe Institute of Technology"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative masses studied",
+      "value": "Axions approximately 7.2 μeV; hidden photons approximately 10.8 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "Published coupling-exclusion limits; the targets are laboratory-produced particles, rather than Galactic-halo flux.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [
+    "Dark SRF"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1310.8098"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1310.8098",
+      "caption": "CROWS emitting microwave cavity and shielded box containing the receiving cavity (Fig. 7, 2013 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/1310.8098v1/200320132312.jpg",
+      "width": 1016,
+      "height": 650,
+      "sha256": "b15cd8c2d0245f641b6b19bab8995f77f9735d6fc1ba2a77b1551e9909c97b18",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1310.8098",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "CROWS Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First results of the CERN Resonant WISP Search (CROWS)",
+      "url": "https://arxiv.org/abs/1310.8098",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf"
+    ]
+  }
+}

@@ -8,6 +8,7 @@
 - `styles.css`：概览外壳、标题、精选论文与导航留白。
 - `module.js`：初始化接线；场景位于独立的 [exploration/](exploration/README.md)，不再在入口中混合轮播、动画与论文业务。
 - 四个详情子目录分别维护自己的内容、数据、封面和中文说明；图窗直接引用各自封面，不新建重复图片目录。
+- Projects的[实验地图集](projects/experiment-atlas/README.md)在同一详情内展示独立地图入口，中微子与暗物质地图的源码、档案、数据、图片及重建工具均归其子目录，不依赖原HEP工作目录；不把地图交互逻辑并入Academic场景。
 
 ## 当前布局与行为
 
@@ -49,3 +50,9 @@
 同日用户进一步纠正高度：树冠必须高于图片，图片适度缩小，取代上一轮下缘矮椰林。两份SVG分别重新加长原生树干，CSS联动树宽、根基线和照片上方留白；不能用整图纵向拉伸替代。回退 `backup/pre-tall-palms-2026-10-24`（`c9848a9`），分支 `style/academic-tall-palms`；验证见[记录](../../docs/modules/academic.md#tall-palms-2026-10-24)。
 
 2026-10-25小幅右移：图片与椰林通过本模块 `--scene-shift` 一同移动8–16px，保留原尺寸和SVG；≤760px偏移为0以保留完整相框。路牌杆与对应底部空间增加12px，根部仍接地。回退 `612895b`，本次验证见[记录](../../docs/modules/academic.md#front-layout-2026-10-25)。
+
+## 2026-10-25：Projects实验地图集
+
+Projects新增Experiment Atlas目录，桌面两列直角卡片、手机单列，保留下方BESIII Collaboration与GitHub链接。卡片进入各地图独立全宽页面，公共顶栏可返回Projects或切换地图；原Academic路牌、图窗、人物、粒子及其他详情的接口不变。
+
+中微子252条、暗物质297条，549份完整英文档案及549张代表图片全部保存在个人主页。每张地图独立重建索引与 `assets/preview.svg`，地图登记、入口统计和顶栏经公开接口及小型胶水连接。新增地图同时登记 `projects/experiment-atlas/registry.js` 和 `app/site.json` 的Academic `standalonePages`；日常维护无需原Web目录。命令、资源边界及新增流程见[地图集README](projects/experiment-atlas/README.md)，本轮兼容性和未覆盖项统一见[接入记录](../../docs/modules/experiment-atlas.md)。

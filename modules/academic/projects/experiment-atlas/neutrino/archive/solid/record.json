@@ -1,0 +1,256 @@
+{
+  "schema_version": "1.0",
+  "id": "solid",
+  "name": "SoLid",
+  "full_name": "Search for Oscillations with a Lithium-6 Detector",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SoLid uses a finely segmented composite scintillator detector at the BR2 research reactor in Belgium. Its short baseline and three-dimensional event localization target sterile-neutrino disappearance and the uranium-235 antineutrino spectrum.",
+  "physics_targets": [
+    "Very-short-baseline sterile oscillations",
+    "Uranium-235 reactor-antineutrino spectrum",
+    "Fine-grained scintillator technology"
+  ],
+  "detection_principle": "Five-centimetre PVT cubes provide the hydrogen target and positron signal. Lithium-6 fluoride/zinc-sulfide screens capture neutrons with a distinct pulse shape; wavelength-shifting fibres and silicon photomultipliers reconstruct prompt/delayed coincidences.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Belgium; BR2 research reactor, Mol",
+      "country": "Belgium",
+      "country_code": "BEL",
+      "location": "Belgium; BR2 research reactor, Mol",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": "2025",
+    "evidence": "The 2025 physics paper reports a completed analysis sample. The project report documents Phase-I running to July 2020 and Phase-II running from February 2021; its expected 2022 end date is not treated as a verified actual stop date.",
+    "source_ids": [
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Prototype measurements at BR2",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2018",
+      "event": "Full-detector physics data taking began",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Detailed detector performance published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2020-07",
+      "event": "Phase-I data taking ended and photosensor upgrade followed",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2021-02",
+      "event": "Phase-II stable physics data taking began",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2024–2025",
+      "event": "First sterile-oscillation result released as a preprint and published in Physical Review D",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SoLid Collaboration",
+    "lead_institutions": [
+      "SCK CEN",
+      "University of Antwerp",
+      "Vrije Universiteit Brussel",
+      "Imperial College London"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Segmentation",
+      "value": "12,800 PVT cubes of 5 cm side",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target mass",
+      "value": "Approximately 1.6 tonnes",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Measured detector baselines",
+      "value": "6.3–8.9 m",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Reactor fuel",
+      "value": "Highly enriched uranium BR2 research reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First oscillation-analysis sample",
+      "value": "280 reactor-on and 172 reactor-off live days; 29,479 ± 603 statistical antineutrino candidates",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The collaboration documented the detector response, calibration and neutron/positron reconstruction needed for a sterile-neutrino analysis.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "The first oscillation analysis obtained constraints from complementary frequentist and Bayesian fits. It did not establish a sterile-neutrino discovery.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "prospect",
+    "stereo",
+    "chandler"
+  ],
+  "resources": {
+    "official_website": "https://www.solid-experiment.org/index.html",
+    "publication_links": [
+      "https://doi.org/10.1088/1748-0221/16/02/P02025",
+      "https://arxiv.org/abs/2407.14382",
+      "https://cordis.europa.eu/project/id/682474/reporting"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detection_diagram",
+      "source_url": "https://arxiv.org/abs/2407.14382",
+      "caption": "SoLid composite-scintillator voxel and the prompt-positron/delayed-neutron detection principle.",
+      "credit": "SoLid Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://arxiv.org/html/2407.14382v1/Figures/detector.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1103,
+      "height": 1133,
+      "sha256": "0dd2983f408d69e7051e67d5d7fae57c7d8602de8dd76753998ebe8008a0cbce",
+      "mime_type": "image/png",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SoLid collaboration experiment overview",
+      "url": "https://www.solid-experiment.org/index.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SoLid Collaboration, A short-baseline reactor-neutrino experiment",
+      "url": "https://doi.org/10.1088/1748-0221/16/02/P02025",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SoLid Collaboration, Search for Very-Short-Baseline Oscillations of Reactor Antineutrinos with the SoLid Detector",
+      "url": "https://arxiv.org/abs/2407.14382",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-07-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "European Commission, SOLID final project report",
+      "url": "https://cordis.europa.eu/project/id/682474/reporting",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The exact final date of Phase-II detector operation was not independently established. A proposal or forecast end date must not be promoted to a measured operational milestone."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "BEL",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

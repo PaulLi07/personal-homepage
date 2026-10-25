@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "fnal-e-0531",
+  "name": "FNAL-E-0531",
+  "full_name": "Fermilab Experiment E531, hybrid emulsion charm experiment",
+  "aliases": [
+    "Fermilab E531"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "emulsion"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Fermilab E531 combined nuclear emulsions with electronic reconstruction to observe neutrino-produced charmed particles and measure their decay properties, advancing techniques later used for tau-neutrino detection.",
+  "physics_targets": [
+    "Neutrino-induced charm production",
+    "Charmed-particle lifetimes and decay topologies",
+    "Short-baseline tau-appearance constraints"
+  ],
+  "detection_principle": "Electronic trackers located neutrino interactions in emulsion modules. Microscopy resolved detached charm-decay vertices, while magnetic tracking, time-of-flight and calorimetry helped identify particles and reconstruct charm species.",
+  "technologies": [
+    "Nuclear emulsions"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1988",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1978-11",
+      "event": "Initial emulsion exposure began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1979-02",
+      "event": "Initial exposure period ended",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1988",
+      "event": "Charm-production cross sections published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FNAL-E-0531 Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector method",
+      "value": "Hybrid nuclear-emulsion target and electronic spectrometer",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Full published interaction sample",
+      "value": "3,855 located neutrino interactions in the charm-production analysis",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Charm sample",
+      "value": "122 charmed-particle decays in the cited cross-section report",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1978-1980s",
+      "summary": "Resolved individual charm decays and demonstrated that charm-species lifetimes differ, using hybrid tracking and emulsion analysis.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "donut",
+    "chorus"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.2183/pjab.84.1",
+      "https://inspirehep.net/literature/269384"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://doi.org/10.2183/pjab.84.1",
+      "caption": "Plan view of the E531 emulsion target and electronic spectrometer.",
+      "credit": "K. Niu / Japan Academy, Figure 14",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://doi.org/10.2183/pjab.84.1",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1356,
+      "height": 624,
+      "sha256": "4b94c43959adf7c2f6adb40674c869adf55ffc5554bec2d433de86a942a6a428",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "K. Niu, Discovery of naked charm particles and lifetime differences using emulsion techniques",
+      "url": "https://doi.org/10.2183/pjab.84.1",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "E531 Collaboration, Cross sections for neutrino production of charmed particles",
+      "url": "https://inspirehep.net/literature/269384",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "emulsion"
+    ],
+    "technology_tags": [
+      "emulsion"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "gerda",
+  "name": "GERDA",
+  "full_name": "GERmanium Detector Array",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "GERDA searched for germanium-76 neutrinoless double-beta decay with enriched high-purity germanium detectors immersed in liquid argon. Its final dataset and background-control methods underpin the succeeding LEGEND programme.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Germanium crystals are both isotope source and calorimeter. Pulse-shape analysis and an instrumented liquid-argon scintillation veto reject backgrounds around the 2039 keV decay endpoint.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2019-11",
+    "evidence": "GERDA completed its search without observing a neutrinoless-decay signal.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "GERDA Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "INFN Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Final exposure",
+      "value": "127.2 kg yr",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Final half-life limit",
+      "value": "Above 1.8 x 10^26 yr at 90% confidence",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "GERDA completed its search without observing a neutrinoless-decay signal.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "legend",
+    "majorana",
+    "heidelberg-moscow"
+  ],
+  "resources": {
+    "official_website": "https://www.mpi-hd.mpg.de/gerda/home.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2009.06079"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.mpi-hd.mpg.de/gerda/home.html",
+      "caption": "Overall GERDA model, cut away to show the large water-shield tank, central cryostat and upper clean room.",
+      "credit": "GERDA collaboration / MPIK; no individual illustrator is credited.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.mpi-hd.mpg.de/gerda/GERDA-Modell_web.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 625,
+      "height": 469,
+      "sha256": "9f43afd75eb1a84a56821281078b29a90ae1dd11dd7e4de620bff1312baae0f9",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GERDA: official experiment / institutional overview",
+      "url": "https://www.mpi-hd.mpg.de/gerda/home.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Final Results of GERDA on the Search for Neutrinoless Double-beta Decay",
+      "url": "https://arxiv.org/abs/2009.06079",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

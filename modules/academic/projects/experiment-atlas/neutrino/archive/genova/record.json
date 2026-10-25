@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "id": "genova",
+  "name": "MANU (Genoa)",
+  "full_name": "MANU Genoa rhenium-187 calorimetric neutrino-mass experiment",
+  "aliases": [
+    "GENOVA",
+    "Genova 187Re experiment"
+  ],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MANU was a pioneering direct neutrino-mass experiment in Genoa using a metallic rhenium absorber at very low temperature. It is the historical experiment labelled GENOVA in the supplied map.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "A small rhenium crystal absorbs the beta-decay energy, and an attached germanium thermistor measures the thermal pulse. Fitting the calorimetric endpoint spectrum constrains the escaping antineutrino mass.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "University of Genoa / INFN Genoa",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "University of Genoa / INFN Genoa",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2001",
+    "evidence": "The experimental review documents the pioneering MANU calorimeter and its published 2001 mass analysis.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "MANU (Genoa) Collaboration",
+    "lead_institutions": [
+      "University of Genoa",
+      "INFN Genoa"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "187Re",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Absorber",
+      "value": "1.572 mg metallic rhenium single crystal",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Thermometer",
+      "value": "Neutron-transmutation-doped germanium",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "The experimental review documents the pioneering MANU calorimeter and its published 2001 mass analysis.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "mibeta",
+    "mare"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1155/2016/9153024",
+      "https://www.nu.to.infn.it/exp/all/genova/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/1511.00968",
+      "caption": "MANU metallic-rhenium microcalorimeter and attached germanium thermometer, Figure 17 of the experimental review.",
+      "credit": "A. Nucciotti, experimental review; original MANU detector figure",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1511.00968",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 608,
+      "height": 390,
+      "sha256": "1de9feff781a2b20d89df499d1db8ee3420c01045ffef313f3ba7b66bc0350be",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The Use of Low Temperature Detectors for Direct Measurements of the Mass of the Electron Neutrino",
+      "url": "https://doi.org/10.1155/2016/9153024",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "INFN neutrino experiment catalog: Genova 187Re experiment",
+      "url": "https://www.nu.to.infn.it/exp/all/genova/",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

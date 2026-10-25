@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "darkquest",
+  "name": "DarkQuest",
+  "full_name": "DarkQuest dark-sector upgrade to SpinQuest",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "DarkQuest is a named dark-sector upgrade proposal on the SeaQuest/SpinQuest beamline at the Fermilab Main Injector, Illinois. Existing SeaQuest running must not be counted as completed DarkQuest data-taking.",
+  "physics_targets": [
+    "MeV–GeV dark photons",
+    "Dark scalars",
+    "ALP",
+    "Excited-state dark matter"
+  ],
+  "detection_principle": "A 120 GeV proton fixed target and existing magnetic spectrometer seek visible long-lived-dark-particle decays behind a beam dump; an added electromagnetic calorimeter extends electron/photon final-state sensitivity.",
+  "technologies": [
+    "Proton fixed target",
+    "Magnetic spectrometer",
+    "Electromagnetic-calorimeter upgrade"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Main Injector, SeaQuest/SpinQuest beamline, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab Main Injector, SeaQuest/SpinQuest beamline, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "DarkQuest conceptual design published in 2022; this source does not establish full-upgrade approval or operation",
+    "as_of": "2022",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "DarkQuest conceptual design published in 2022; this source does not establish full-upgrade approval or operation",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DarkQuest Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab",
+      "MIT",
+      "Boston University"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design proton beam",
+      "value": "120 GeV Main Injector",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Design focus",
+      "value": "MeV–GeV visible dark-sector signals; this range is not a measured exclusion",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SeaQuest / SpinQuest infrastructure",
+      "status": "mixed",
+      "description": "Existing beamline and spectrometer, originally targeting strong interactions / nucleon structure"
+    },
+    {
+      "name": "DarkQuest",
+      "status": "proposed",
+      "description": "Adds calorimetry for dark-sector searches"
+    },
+    {
+      "name": "LongQuest",
+      "status": "proposed",
+      "description": "Subsequent enhancement concept, not counted as a separate completed experiment"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "SHiP",
+    "CHARM"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2203.08322"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2203.08322",
+      "caption": "Plan view of the proposed DarkQuest upgrade (original paper Fig. 1), identifying the beam-absorbing magnet, tracking stations, dark-photon trigger and added electromagnetic calorimeter. Source PDF p. 4.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2203.08322",
+      "width": 1095,
+      "height": 591,
+      "sha256": "58e74d76940752599d9ef92b943ee5ba5b32c5884d625ab42840caa009ba0e03",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2203.08322",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "DarkQuest: A dark sector upgrade to SpinQuest at the 120 GeV Fermilab Main Injector",
+      "url": "https://arxiv.org/abs/2203.08322",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022-03-16",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

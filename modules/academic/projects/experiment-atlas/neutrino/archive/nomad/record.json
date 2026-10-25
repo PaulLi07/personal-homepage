@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "nomad",
+  "name": "NOMAD",
+  "full_name": "Neutrino Oscillation MAgnetic Detector",
+  "aliases": [
+    "CERN WA105"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "gas",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NOMAD searched for tau-neutrino appearance at CERN through final-state kinematics in a low-density magnetic detector, and produced precision neutrino interaction measurements.",
+  "physics_targets": [
+    "Short-baseline muon-to-tau appearance",
+    "Neutrino-nucleus and neutrino-electron interactions",
+    "Charm, coherent meson production and oscillation constraints"
+  ],
+  "detection_principle": "Drift chambers acted as both target and tracker in a dipole magnet. Transition-radiation, preshower and electromagnetic calorimeter systems identified electrons, while muon chambers identified muons. Missing transverse momentum and correlations tested tau decays without directly resolving their short flight.",
+  "technologies": [
+    "Gas time projection chambers",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN SPS",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN SPS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1999",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1991",
+      "event": "Experiment approved",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1995-1998",
+      "event": "Neutrino data-taking period",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1999",
+      "event": "Detector dismantled",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NOMAD Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active target",
+      "value": "Low-density drift-chamber target with fiducial mass about 2.7 tonnes",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Magnet",
+      "value": "0.4 T dipole based on the former UA1 magnet",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "CERN SPS West Area wide-band neutrino facility",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Historical programme",
+      "summary": "No tau-appearance signal was established; kinematic analysis supplied strong short-baseline constraints and a broad neutrino-scattering data set.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "chorus",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://archives.web.cern.ch/CERN_archive/guide/experimental_physics/SPS/isanomad/",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0104012",
+      "https://doi.org/10.1155/2014/129694"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/hep-ex/0104012",
+      "caption": "NOMAD low-density drift target and downstream particle-identification systems.",
+      "credit": "NOMAD Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0104012",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1225,
+      "height": 684,
+      "sha256": "c2e2fffd00ebd483cc488ab368002e918508a8802d0fa2d3ba654cb4e85e8b8a",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CERN Archives, administrative history of NOMAD",
+      "url": "https://archives.web.cern.ch/CERN_archive/guide/experimental_physics/SPS/isanomad/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NOMAD Collaboration, The Drift Chambers of the NOMAD Experiment",
+      "url": "https://arxiv.org/abs/hep-ex/0104012",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001-04-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "F. Vannucci, The NOMAD Experiment at CERN",
+      "url": "https://doi.org/10.1155/2014/129694",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas",
+      "sampling"
+    ],
+    "technology_tags": [
+      "gas",
+      "sampling"
+    ],
+    "is_europe": true
+  }
+}

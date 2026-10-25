@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "connie",
+  "name": "CONNIE",
+  "full_name": "Coherent Neutrino-Nucleus Interaction Experiment",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CONNIE searches for reactor-antineutrino coherent scattering in silicon at Angra-2 in Brazil. The transition from conventional scientific CCDs to Skipper-CCDs lowers the ionization threshold to the few-electron regime.",
+  "physics_targets": [
+    "Reactor CEvNS on silicon",
+    "Light vector mediators",
+    "Low-energy particle interactions"
+  ],
+  "detection_principle": "Nuclear recoils in fully depleted silicon create electron-hole pairs collected in pixels. Repeated nondestructive Skipper sampling resolves single-electron charge. Reactor-on/off spectra, spatial event selections and shielding separate a possible CEvNS signal from background.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Brazil; near the Angra dos Reis nuclear power plant, Rio de Janeiro State",
+      "country": "Brazil",
+      "country_code": "BRA",
+      "location": "Brazil; near the Angra dos Reis nuclear power plant, Rio de Janeiro State",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2025",
+    "evidence": "The 2025 collaboration strategy document reports the installed May 2024 Skipper upgrade.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014–2015",
+      "event": "Engineering run",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "First Skipper-CCDs installed at the reactor",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024-05",
+      "event": "Larger Skipper-CCD payload installed",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CONNIE Collaboration",
+    "lead_institutions": [
+      "CBPF",
+      "Fermilab",
+      "Universidad Nacional Autónoma de México"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "Approximately 30 m from the Angra-2 core",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Demonstrated analysis threshold",
+      "value": "15 eV ionization energy in the two-Skipper-CCD analysis",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "May 2024 upgrade",
+      "value": "16 Skipper-CCDs with approximately 8 g active mass",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The 2021–2022 Skipper-CCD data showed no reactor-on excess; the analysis set CEvNS-rate and light-mediator limits.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "atucha-ii",
+    "relics"
+  ],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1439855/contributions/6461681/",
+    "publication_links": [
+      "https://arxiv.org/abs/2403.15976"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2403.15976",
+      "caption": "CONNIE paper, Figure 1: a packaged Skipper CCD, the copper cold box containing CCDs, and the interface board on top of the vacuum vessel.",
+      "credit": "CONNIE collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/pdf/2403.15976",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1320,
+      "height": 477,
+      "sha256": "ad45e2e469c840cf349d45d01d8a1d51793139c7f1b632854800b6b4a935537d",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "cdaedc9361d1452a59eca0714a2ed1fb3a6b5a1fd52b3f5f88ef2a8cc548c4be",
+      "source_dimensions": {
+        "width": 1320,
+        "height": 477
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CONNIE Collaboration, European Strategy input",
+      "url": "https://indico.cern.ch/event/1439855/contributions/6461681/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CONNIE Collaboration, CEvNS and new-physics searches with Skipper-CCDs",
+      "url": "https://arxiv.org/abs/2403.15976",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-03-24",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "BRA"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

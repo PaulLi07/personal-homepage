@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "id": "ino",
+  "name": "INO",
+  "full_name": "India-based Neutrino Observatory: Iron Calorimeter",
+  "aliases": [],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed underground Indian observatory centres on a magnetised iron calorimeter for atmospheric-neutrino physics, with detector R&D carried out in prototypes.",
+  "physics_targets": [
+    "Atmospheric neutrino oscillations",
+    "Neutrino mass ordering",
+    "Muon charge and energy reconstruction"
+  ],
+  "detection_principle": "Resistive plate chambers interleaved with magnetised iron would track muons and determine their charge and momentum. Charge identification statistically separates neutrino and antineutrino interactions for matter-effect studies.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "India; proposed site at Pottipuram in the Theni district, Tamil Nadu",
+      "country": "India",
+      "country_code": "IND",
+      "location": "India; proposed site at Pottipuram in the Theni district, Tamil Nadu",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "The official FAQ describes ICAL in future tense. Site approval or prototype activity is not equated with construction completion.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2000s",
+      "event": "INO collaboration and detector-development programme formed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "Detailed ICAL physics-potential report released.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "Current archive classification",
+      "event": "Full underground detector operation is not established by the cited sources.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "INO Collaboration",
+    "lead_institutions": [
+      "Tata Institute of Fundamental Research",
+      "Institute of Mathematical Sciences, Chennai"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Planned iron mass",
+      "value": "Approximately 50,000 tonnes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Magnetic field",
+      "value": "Approximately 1.3–1.5 T design scale",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Glass resistive plate chambers between iron layers",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate underground site",
+      "value": "Pottipuram, Theni district, Tamil Nadu",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design and R&D",
+      "summary": "Sensitivity studies and RPC/magnet prototypes demonstrate the proposed method; they are not atmospheric-neutrino measurements from a complete 50-kilotonne ICAL.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "super-kamiokande",
+    "km3net"
+  ],
+  "resources": {
+    "official_website": "https://www.ino.tifr.res.in/ino/faq.php",
+    "publication_links": [
+      "https://arxiv.org/abs/1505.07380"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.ino.tifr.res.in/ino/faq.php",
+      "caption": "Proposed ICAL magnetised-iron calorimeter with three modules and interleaved detector layers.",
+      "credit": "INO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.ino.tifr.res.in/ino/FAQ/images/image005.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 337,
+      "height": 177,
+      "sha256": "b6d1251332263acbe607f7967cdc436bf93926ae723605c64435d230b10b24de",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INO Collaboration, facility and ICAL detector FAQ",
+      "url": "https://www.ino.tifr.res.in/ino/faq.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ICAL Collaboration, Physics Potential of the ICAL detector at INO",
+      "url": "https://arxiv.org/abs/1505.07380",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The schedule and full construction status require a fresh official project decision; no start-of-science date is assumed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "IND"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

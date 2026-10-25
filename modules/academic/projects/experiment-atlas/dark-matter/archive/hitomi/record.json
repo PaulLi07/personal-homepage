@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "hitomi",
+  "name": "Hitomi",
+  "full_name": "Hitomi / ASTRO-H X-ray Observatory",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Short-lived Japanese X-ray mission that, despite limited initial observations, provided an important test of the 3.5 keV dark-matter-line hypothesis through high-resolution Perseus spectra.",
+  "physics_targets": [
+    "3.5 keV line",
+    "keV sterile neutrinos"
+  ],
+  "detection_principle": "Cryogenic microcalorimeters measure photon energy through the tiny temperature rise from single-photon absorption, resolving thermal-plasma atomic lines and candidate dark-matter lines.",
+  "technologies": [
+    "SXS microcalorimeter",
+    "X-ray imaging / spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "Low Earth orbit, historical",
+      "country": "Space",
+      "country_code": null,
+      "location": "Low Earth orbit, historical",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2016-04-28",
+    "evidence": "Contact lost on 2016-03-27; recovery efforts ended on April 28.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2016-02-17",
+      "event": "Launch",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2016-03-27",
+      "event": "Communications lost",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2016-04-28",
+      "event": "Recovery efforts ended",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Hitomi collaboration / mission team",
+    "lead_institutions": [
+      "JAXA"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "SXS pixel array",
+      "value": "6 × 6",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "SXS nominal resolution",
+      "value": "Better than 7 eV at 6 keV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "Constrained the 3.5 keV line strength in a specific Perseus region; this cannot be generalized to exclusion of all dark-matter models.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "XRISM",
+    "XMM-Newton",
+    "Chandra"
+  ],
+  "resources": {
+    "official_website": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/hitomi.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1607.07420"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/hitomi.html",
+      "caption": "Artist's impression of the Hitomi (Astro-H) X-ray satellite in orbit.",
+      "credit": "NASA HEASARC Hitomi mission information; no individual illustrator is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://heasarc.gsfc.nasa.gov/docs/hitomi/images/astrohspacecraft_sm.jpg",
+      "width": 288,
+      "height": 288,
+      "sha256": "aa4beeb5e355d41bf301f6d5b3376444a32f6d8612e21541b78a4eca8a1d7440",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/hitomi.html",
+      "caption": "Hitomi project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/hitomi.html",
+      "title": "NASA HEASARC: Hitomi mission",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1607.07420",
+      "title": "Hitomi constraints on the 3.5 keV line in Perseus",
+      "source_date": "2016",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "photon_telescope",
+      "quantum_sensor"
+    ]
+  }
+}

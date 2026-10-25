@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "sage",
+  "name": "SAGE",
+  "full_name": "Soviet–American Gallium Experiment",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SAGE measured solar electron neutrinos with a metallic-gallium radiochemical target deep below the Caucasus. Its low capture threshold includes pp neutrinos, complementing chlorine and real-time water detectors.",
+  "physics_targets": [
+    "Low-energy solar-neutrino capture",
+    "Solar pp-neutrino flux",
+    "Gallium source anomaly"
+  ],
+  "detection_principle": "Gallium-71 captures an electron neutrino and becomes germanium-71. Chemical extraction isolates the germanium atoms, and low-background proportional counters measure their decays. Strong artificial-source calibrations also informed the gallium anomaly.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Baksan underground observatory",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Baksan underground observatory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": "2009",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1989",
+      "event": "Solar-neutrino exposures began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2009",
+      "event": "Long-term capture-rate and calibration analysis published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SAGE Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Russian Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target",
+      "value": "Approximately 50 tonnes of metallic gallium; inventory varied with campaign",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Capture threshold",
+      "value": "233 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Underground site",
+      "value": "Baksan neutrino observatory",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "The measured capture rate supported a solar electron-neutrino deficit; source-calibration anomalies motivated the separate BEST test.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "best",
+    "gallex",
+    "gno"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0901.2200",
+      "https://arxiv.org/abs/astro-ph/9907131"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://ufn.ru/ufn11/ufn11_9/ufn119f.pdf",
+      "caption": "SAGE chemical reactors containing the gallium target at Baksan (Figure 3 of the collaboration review).",
+      "credit": "V. N. Gavrin / SAGE, Physics–Uspekhi",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://ufn.ru/ufn11/ufn11_9/ufn119f.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 497,
+      "height": 401,
+      "sha256": "edd4026d00b1f22ccf529aa32751b484d68b5f743dd24dd5e1a5d16606e19ad2",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "5c7611c09fac35e9c2477be1a077cd80461783a7c182ddc98ede8887a2fdc6c2",
+      "source_dimensions": {
+        "width": 497,
+        "height": 401
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SAGE Collaboration, Solar capture rate and calibration implications",
+      "url": "https://arxiv.org/abs/0901.2200",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009-01-15",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SAGE Collaboration, Solar-neutrino capture rate and oscillation implications",
+      "url": "https://arxiv.org/abs/astro-ph/9907131",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999-07-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A definitive recent end-of-operation date for the solar programme was not established; BEST is not counted as continued SAGE solar running."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": false
+  }
+}

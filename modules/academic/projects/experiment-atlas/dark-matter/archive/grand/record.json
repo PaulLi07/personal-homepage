@@ -1,0 +1,291 @@
+{
+  "schema_version": "1.0",
+  "id": "grand",
+  "name": "GRAND",
+  "full_name": "Giant Radio Array for Neutrino Detection",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "GRAND includes GP300 near Dunhuang, China, prototypes at Auger in Argentina and Nançay in France, and future worldwide arrays. This multimessenger radio project's Chinese and overseas prototypes must not be conflated with a completed global facility.",
+  "physics_targets": [
+    "Neutrinos from superheavy dark-matter decay",
+    "Ultrahigh-energy gamma rays",
+    "Ultrahigh-energy cosmic rays"
+  ],
+  "detection_principle": "Ground radio antennas measure extensive air showers, focusing on upward-going / near-horizontal tau-decay showers from Earth-skimming tau neutrinos, while also measuring ultrahigh-energy cosmic rays and gamma rays.",
+  "technologies": [
+    "Broadband radio antennas",
+    "Large-area sparse arrays",
+    "Self-triggering and directional reconstruction"
+  ],
+  "sites": [
+    {
+      "name": "GRANDProto300",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Gobi Desert near Dunhuang, Gansu; prototype deployment",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    },
+    {
+      "name": "GRAND@Auger",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Pierre Auger Observatory; prototype deployment",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    },
+    {
+      "name": "GRAND@Nançay",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Nançay radio observatory; test array",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    },
+    {
+      "name": "Complete GRAND multi-array system",
+      "country": "International",
+      "country_code": null,
+      "location": "Multiple candidate sites worldwide, not yet finalized",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Three prototypes operating; GP300 expansion / commissioning continues in 2026. The complete 200k array is a future concept",
+    "as_of": "2026-06-01",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-06-01",
+      "event": "Three prototypes operating; GP300 expansion / commissioning continues in 2026. The complete 200k array is a future concept",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GRAND Collaboration / project team",
+    "lead_institutions": [
+      "GRAND Collaboration",
+      "CNRS",
+      "Chinese Academy of Sciences"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Deployed GP300 phase",
+      "value": "65 antennas in mid-2025; not evidence that all 300 or 200000 antennas have been built",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "name": "Ultimate design scale",
+      "value": "20 subarrays of about 10000 antennas each, with total coverage of order 200000 km²; a long-term design",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "GP300 / GRAND@Auger / GRAND@Nançay",
+      "status": "operating",
+      "description": "Prototype validation in China, Argentina and France"
+    },
+    {
+      "name": "GRAND10k / GRAND200k",
+      "status": "proposed",
+      "description": "Phased expansion to a global large array"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Prototype operation and cosmic-ray-candidate studies are public; no superheavy-dark-matter search result from the complete GRAND array.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "date": "2023",
+      "summary": "Theoretical work forecasts the potential of radio neutrino arrays such as GRAND to constrain heavy dark-matter decay.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "RNO-G",
+    "IceCube-Gen2",
+    "Pierre Auger Observatory"
+  ],
+  "resources": {
+    "official_website": "https://grand.cnrs.fr/",
+    "publication_links": [
+      "https://arxiv.org/abs/2507.07260",
+      "https://arxiv.org/abs/2103.03254",
+      "https://arxiv.org/abs/1810.09994"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/1810.09994v3",
+      "caption": "Detection-principle diagram for GRAND10k from Figure 16 of the original GRAND design paper: a mountainside antenna array receives radio signals from cosmic-ray or Earth-skimming tau-neutrino-induced air showers. Lower-left inset: HorizonAntenna concept. A proposed array design, not a photograph of a completed full array.",
+      "credit": "GRAND Collaboration, “Science and Design,” arXiv:1810.09994v3, Figure 16",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1810.09994v3/grand_det_principle.png",
+      "width": 1920,
+      "height": 1358,
+      "sha256": "e25dd4ec673e59311f5eba781195c7dbb30bf2867c67a4dbee8aef263e448dab",
+      "mime_type": "image/webp",
+      "source_sha256": "11c99a2659ccc8a95975e38a5934c0b21174c91e6e369405de146ad089c64cc5",
+      "source_dimensions": {
+        "width": 1985,
+        "height": 1404
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://grand.cnrs.fr/",
+      "caption": "GRAND prototype photographs, array designs and collaboration news",
+      "credit": "GRAND Collaboration",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "GRAND official project",
+      "url": "https://grand.cnrs.fr/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Status of the GRAND project",
+      "url": "https://arxiv.org/abs/2507.07260",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-09",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "GP300 project news and 2026 collaboration meeting",
+      "url": "https://grand.cnrs.fr/tag/gp300/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06-01",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Heavy decaying dark matter at future neutrino radio telescopes",
+      "url": "https://arxiv.org/abs/2103.03254",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-05-31",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    },
+    {
+      "title": "The Giant Radio Array for Neutrino Detection: Science and Design",
+      "url": "https://arxiv.org/abs/1810.09994",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2019-07-18",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S5"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN",
+      "ARG",
+      "FRA",
+      "GLOBAL",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "radio"
+    ]
+  }
+}

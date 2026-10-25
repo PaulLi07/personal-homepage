@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "id": "flare",
+  "name": "FLArE",
+  "full_name": "Forward Liquid Argon Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "FLArE is a proposed modular liquid-argon TPC in the Forward Physics Facility at CERN. It would measure the intense forward flux of high-energy collider neutrinos and search for scattering of light dark-sector particles.",
+  "physics_targets": [
+    "Electron-, muon- and tau-neutrino interactions at high energies",
+    "Forward charm production and QCD",
+    "Light dark-matter scattering and other new physics"
+  ],
+  "detection_principle": "Ionization imaging and scintillation-light timing reconstruct interactions in liquid argon. Fine spatial sampling distinguishes particle tracks and electromagnetic showers; downstream hadron and muon measurement improves containment, flavour identification and background rejection.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Proposed Forward Physics Facility cavern",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN land west of the ATLAS interaction point",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "The official FPF project description states that the detector is under development by physics and technical working groups. It does not establish a completed FLArE detector or neutrino exposure.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Named FLArE detector concept studied for far-forward dark-matter scattering.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Included in the comprehensive FPF physics and detector report.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FLArE physics and technical working groups",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed facility geometry",
+      "value": "Cavern spanning approximately 617-682 m west of ATLAS, on the French side of the border",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout concept",
+      "value": "Modular liquid-argon TPC with downstream hadron and muon measurement",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Particle-energy reconstruction goal",
+      "value": "Approximately 10 MeV to many hundreds of GeV; this describes detector dynamic range, not a dark-matter mass interval",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino programme",
+      "value": "High-energy and TeV-scale collider neutrinos; simulated event yields depend on luminosity, target mass and forward-production modelling",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021-2026",
+      "summary": "Published detector concepts and projected neutrino and new-physics capabilities. The quoted yields and sensitivity forecasts are not measured FLArE results.",
+      "source_ids": [
+        "s1",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "FLArE is a proposed experiment within the proposed FPF facility. The FPF is the host facility rather than another detector; FASERnu2, FASER2 and FORMOSA are different detector concepts.",
+  "related_experiments": [
+    "faser",
+    "snd-lhc",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://fpf.web.cern.ch/flare/",
+    "publication_links": [
+      "https://arxiv.org/abs/2203.05090",
+      "https://arxiv.org/abs/2101.10338"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://fpf.web.cern.ch/flare/",
+      "caption": "Proposed FLArE liquid-argon TPC, downstream hadron/muon system and a simulated tau-neutrino event in the FPF cavern.",
+      "credit": "Forward Physics Facility / FLArE",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://fpf.web.cern.ch/wp-content/uploads/2025/12/layout-flare.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1640,
+      "height": 930,
+      "sha256": "68cf0d99d454ec539d7ae9e44f08af83041df02c814a5699cdff1e33f25f10c6",
+      "mime_type": "image/webp",
+      "source_sha256": "f3297237102eebd80ab612c742d84789db83f696bf61b9fdf22a4c2e13372f18",
+      "source_dimensions": {
+        "width": 1640,
+        "height": 930
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Forward Physics Facility, FLArE project description",
+      "url": "https://fpf.web.cern.ch/flare/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Forward Physics Facility, proposed facility location",
+      "url": "https://fpf.web.cern.ch/location/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The Forward Physics Facility at the High-Luminosity LHC",
+      "url": "https://arxiv.org/abs/2203.05090",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2022-03-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Detecting Dark Matter with Far-Forward Emulsion and Liquid Argon Detectors at the LHC",
+      "url": "https://arxiv.org/abs/2101.10338",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-01-25",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": true
+  }
+}

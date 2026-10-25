@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "stereo",
+  "name": "STEREO",
+  "full_name": "STEREO reactor-neutrino experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "STEREO measured antineutrinos from uranium-235 fission at ILL using a six-cell detector. Comparing the cell spectra across a very short baseline tested whether sterile-neutrino oscillations explain the reactor-antineutrino anomaly.",
+  "physics_targets": [
+    "eV-scale sterile-neutrino disappearance",
+    "Uranium-235 antineutrino spectrum",
+    "Reactor-flux anomaly"
+  ],
+  "detection_principle": "Gadolinium-loaded liquid scintillator detects inverse beta decay. Six optically separated target cells sample different core distances while sharing response calibration; reactor-off periods constrain backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; ILL research reactor, Grenoble",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; ILL research reactor, Grenoble",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2020",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Physics campaign began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Final measurement campaign ended",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Full-dataset spectrum and sterile search published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "STEREO Collaboration",
+    "lead_institutions": [
+      "CEA",
+      "CNRS/IN2P3",
+      "Max Planck Institute for Nuclear Physics",
+      "Institut Laue-Langevin"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target cells",
+      "value": "Six",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Baseline",
+      "value": "Approximately 9–11 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "Approximately 1.8 m³ gadolinium-loaded liquid scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Dataset",
+      "value": "More than 100,000 neutrinos collected in 2017–2020",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "No position-dependent oscillation was found in the tested region. The measured flux deficit and spectrum favour deficiencies in source predictions over the targeted sterile-oscillation explanation.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "ill",
+    "prospect",
+    "solid"
+  ],
+  "resources": {
+    "official_website": "https://www.stereo-experiment.org/news.php",
+    "publication_links": [
+      "https://doi.org/10.1038/s41586-022-05568-2"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2210.07664",
+      "caption": "STEREO detector and six-cell target beside the ILL reactor, from the final oscillation-analysis paper.",
+      "credit": "STEREO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2210.07664v3/Figure1.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1362,
+      "height": 765,
+      "sha256": "816ea72c6ebc6f1e669ca9532ff68d4a89465202cc37d387e1eecaf2ef7cb88d",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "bcc2cab255da094a772d3a68fa22e917db73aa7adb6452af54e79c1afaacf79e",
+      "source_dimensions": {
+        "width": 1362,
+        "height": 765
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "STEREO collaboration: final results",
+      "url": "https://www.stereo-experiment.org/news.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2023-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "STEREO Collaboration, Uranium-235 spectrum rejects sterile explanation",
+      "url": "https://doi.org/10.1038/s41586-022-05568-2",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-01-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

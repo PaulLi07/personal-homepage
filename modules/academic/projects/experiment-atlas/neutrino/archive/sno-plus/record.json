@@ -1,0 +1,219 @@
+{
+  "schema_version": "1.0",
+  "id": "sno-plus",
+  "name": "SNO+",
+  "full_name": "SNO+ multipurpose neutrino experiment",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "reactor",
+    "geo",
+    "astronomy",
+    "supernova",
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SNO+ repurposes the SNO infrastructure at SNOLAB with liquid scintillator for a broad neutrino programme and a planned tellurium-loaded double-beta-decay phase. Its depth supports low-background solar, reactor and geoneutrino measurements.",
+  "physics_targets": [
+    "Solar and reactor neutrinos",
+    "Geoneutrinos",
+    "Supernova neutrinos",
+    "Tellurium-130 neutrinoless double-beta decay"
+  ],
+  "detection_principle": "Scintillation photons measure low-energy interactions; prompt/delayed inverse-beta coincidences tag antineutrinos. Early operation used pure water and then unloaded scintillator. Tellurium loading is a separate phase aimed at neutrinoless double-beta decay.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Canada; SNOLAB in Sudbury, Ontario",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Canada; SNOLAB in Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-04-07",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Water-phase measurements underway",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Full unloaded-scintillator antineutrino campaign began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Geoneutrino measurement and updated reactor-oscillation analysis reported",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SNO+ Collaboration",
+    "lead_institutions": [
+      "Queen's University",
+      "SNOLAB"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator",
+      "value": "Approximately 780 tonnes in a 12 m acrylic vessel",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2 km below ground",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "2026 antineutrino dataset",
+      "value": "685 live days from May 2022 to July 2025",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The NuPhys2026 contribution reported a Western-Hemisphere geoneutrino flux of 49 +13/-12 TNU and a reactor-oscillation mass-splitting measurement from 685 live days.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "sno",
+    "kamland",
+    "borexino",
+    "juno"
+  ],
+  "resources": {
+    "official_website": "https://snoplus.phy.queensu.ca/results.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2604.05746",
+      "https://arxiv.org/abs/2104.11687"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2104.11687",
+      "caption": "Photograph from inside SNO+ during its water phase, from the 2021 detector paper.",
+      "credit": "SNO+ Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2104.11687v3/figures/introduction/photograph.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 574,
+      "height": 862,
+      "sha256": "dde338d6c8b41c58ad491fe306c12af21f32b5858f2276fb573fceec8a2fa6c4",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "13005c132210dda44b046a3f6c0e634d425cd281d25f82ff03bc65c8935b9edc",
+      "source_dimensions": {
+        "width": 574,
+        "height": 862
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "W. Parker for SNO+, Reactor Antineutrino Oscillations and Geoneutrinos in SNO+ (NuPhys2026 contribution)",
+      "url": "https://arxiv.org/abs/2604.05746",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-04-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SNO+ collaboration results",
+      "url": "https://snoplus.phy.queensu.ca/results.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SNO+ collaboration publications",
+      "url": "https://snoplus.phy.queensu.ca/papers.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "SNO+ Collaboration, The SNO+ Experiment",
+      "url": "https://arxiv.org/abs/2104.11687",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-04-23",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

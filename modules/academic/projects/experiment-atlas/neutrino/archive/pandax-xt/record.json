@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "pandax-xt",
+  "name": "PandaX-xT",
+  "full_name": "PandaX-xT future xenon observatory",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "PandaX-xT is a proposed next-generation xenon observatory at Jinping. Its large low-background target is intended to extend dark-matter searches together with solar-neutrino and xenon-136 neutrinoless double-beta-decay studies.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "A large dual-phase xenon time projection chamber combines scintillation and ionization measurements. Energy reconstruction, self-shielding and event topology support several neutrino and rare-event channels.",
+  "technologies": [
+    "Scintillator detectors",
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Jinping underground laboratory",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Jinping underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2024",
+    "evidence": "The collaboration described a future observatory and sensitivity forecasts; these are not results from an operating xT detector.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "PandaX-xT Collaboration",
+    "lead_institutions": [
+      "Shanghai Jiao Tong University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Nominal xenon scale",
+      "value": "Tens of tonnes; stage-dependent proposal",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "China Jinping Underground Laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Neutrino programme",
+      "value": "Solar neutrinos and xenon double-beta decay",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PandaX-20T intermediate step",
+      "status": "construction",
+      "description": "A separate intermediate detector is under construction in 2026. It must not be mistaken for a completed full PandaX-xT design.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The collaboration described a future observatory and sensitivity forecasts; these are not results from an operating xT detector.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "pandax",
+    "pandax-iii"
+  ],
+  "resources": {
+    "official_website": "https://pandax.sjtu.edu.cn/",
+    "publication_links": [
+      "https://arxiv.org/abs/2402.03596"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2402.03596",
+      "caption": "PandaX-xT cryostat and time projection chamber concept (Fig. 2); a design, not a completed detector.",
+      "credit": "PandaX-xT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2402.03596#page=5",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 437,
+      "height": 365,
+      "sha256": "e7dcbb93e3a521e3d5af34b82dea2ff4e6e2206102de2b736f1b63e3cef8b522",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PandaX-xT: official experiment / institutional overview",
+      "url": "https://pandax.sjtu.edu.cn/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PandaX-xT: a multi-ten-tonne liquid xenon observatory at the China Jinping Underground Laboratory",
+      "url": "https://arxiv.org/abs/2402.03596",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PandaX-4T Concludes Staged Operation as PandaX Transitions to the 20T Phase",
+      "url": "https://pandax.sjtu.edu.cn/node/499",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-04",
+      "supports": [
+        "Status and results checked during the 2026-10-23 audit"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "xenon"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "nutev",
+  "name": "NuTeV",
+  "full_name": "Neutrinos at the Tevatron",
+  "aliases": [
+    "Fermilab E815"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NuTeV was a high-energy Fermilab neutrino-scattering experiment using a sign-selected beam and an upgraded iron-scintillator detector descended from CCFR.",
+  "physics_targets": [
+    "Weak mixing angle and electroweak consistency",
+    "Neutrino-nucleon structure and strange quarks",
+    "Rare processes and heavy neutral-particle searches"
+  ],
+  "detection_principle": "Separate neutrino and antineutrino beams illuminated a sampling calorimeter followed by a toroidal muon spectrometer. Ratios of neutral-current to charged-current interactions probed electroweak couplings with reduced common uncertainties.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2001",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1996-1997",
+      "event": "Main NuTeV exposure",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1999",
+      "event": "Calorimeter calibration report submitted",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2001",
+      "event": "Precision electroweak result submitted",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NuTeV Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector",
+      "value": "Iron-scintillator sampling calorimeter with toroidal muon spectrometer",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Sign-selected Tevatron neutrino and antineutrino beam",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Energy domain",
+      "value": "High-energy neutrino-nucleon scattering, tens to hundreds of GeV",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2001",
+      "summary": "Reported an on-shell weak-mixing-angle determination that differed from the then Standard Model expectation; interpretation is sensitive to nuclear, parton-distribution and radiative corrections.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "ccfr"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/9908056",
+      "https://arxiv.org/abs/hep-ex/0110059"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/hep-ex/9908056",
+      "caption": "NuTeV target calorimeter and downstream toroidal muon spectrometer.",
+      "credit": "NuTeV Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/9908056",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 770,
+      "height": 336,
+      "sha256": "f51ab56582c49c91cc77c48b2bd1668237ab7100414b19118537a4fbf8966f9f",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NuTeV Collaboration, Precision calibration of the NuTeV calorimeter",
+      "url": "https://arxiv.org/abs/hep-ex/9908056",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NuTeV Collaboration, Precise determination of electroweak parameters in neutrino-nucleon scattering",
+      "url": "https://arxiv.org/abs/hep-ex/0110059",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "sampling",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

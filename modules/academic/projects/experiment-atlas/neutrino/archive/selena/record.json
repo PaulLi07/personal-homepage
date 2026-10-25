@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "selena",
+  "name": "Selena",
+  "full_name": "Selena selenium imaging neutrino experiment",
+  "aliases": [
+    "SELENA"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "Selena is an R&D programme for a large selenium imaging detector combining neutrinoless double-beta-decay searches with solar-neutrino spectroscopy. Small imaging sensors have been tested; the proposed tonne-scale detector is not built.",
+  "physics_targets": [
+    "Double-beta and rare weak decays",
+    "Solar electron neutrinos"
+  ],
+  "detection_principle": "An amorphous selenium ionization layer is deposited on a CMOS active-pixel sensor. Fine tracks and spatially correlated radioactive daughters provide event identification for selenium-82 decays and neutrino capture.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Full-scale detector site not selected in the cited design",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Full-scale detector site not selected in the cited design",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "site_not_selected"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2022-03-16",
+    "evidence": "The white paper presents prototype sensor R&D and a 10-tonne selenium-82 concept. The projected 100 tonne-year science reach is not an exposure already collected.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Selena Collaboration",
+    "lead_institutions": [
+      "University of Washington",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Concept target",
+      "value": "10 tonnes of 82Se",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Amorphous selenium coupled to CMOS pixel arrays",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Proposed imaging modules",
+      "value": "Approximately 5-mm-thick selenium layers",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022-03-16",
+      "summary": "The white paper presents prototype sensor R&D and a 10-tonne selenium-82 concept. The projected 100 tonne-year science reach is not an exposure already collected.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "nndex"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2203.08779",
+      "https://arxiv.org/abs/2111.00644"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2203.08779",
+      "caption": "A Topmetal-II CMOS sensor before and after amorphous-selenium deposition in Selena R&D (Fig. 6a).",
+      "credit": "Selena Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2203.08779#page=8",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 385,
+      "height": 198,
+      "sha256": "472784fcddd0186a7c8d382e88c9b9b04999ddd5b920f7bfe973439f63229a97",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Snowmass 2021 White Paper: The Selena Neutrino Experiment",
+      "url": "https://arxiv.org/abs/2203.08779",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-03-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The Selena Neutrino Experiment",
+      "url": "https://arxiv.org/abs/2111.00644",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-11-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

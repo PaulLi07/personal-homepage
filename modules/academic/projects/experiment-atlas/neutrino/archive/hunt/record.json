@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "hunt",
+  "name": "HUNT",
+  "full_name": "High-energy Underwater Neutrino Telescope",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "An IHEP-led proposal for an exceptionally large underwater neutrino telescope is developing sensors and prototype arrays in the South China Sea and Lake Baikal.",
+  "physics_targets": [
+    "High-energy Galactic and extragalactic neutrino point sources",
+    "Cosmic-ray source identification"
+  ],
+  "detection_principle": "Widely distributed optical modules would reconstruct Cherenkov emission from high-energy neutrino interactions. Deep-water tests validate deployment, photodetection and acquisition before scaling up.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "IHEP lists HUNT under construction and pre-research, with prototype work rather than an operating 30 km³ array.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022–2025",
+      "event": "Sensor R&D and deep-water prototype campaigns.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "IHEP described construction of a small South China Sea prototype array.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HUNT Collaboration",
+    "lead_institutions": [
+      "Institute of High Energy Physics, Chinese Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Full concept",
+      "value": "Approximately 30 km³ detector volume; proposed scale",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Small South China Sea prototype",
+      "value": "Seven strings and 56 optical modules planned/in construction in the IHEP report",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Test campaigns",
+      "value": "Four rounds of deep-water tests documented by IHEP",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Prototype programme",
+      "summary": "Multiple deep-water tests demonstrated engineering progress. Projected source yields are forecasts, not observed neutrino-source discoveries.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "baikal-gvd",
+    "trident",
+    "neon-south-china-sea"
+  ],
+  "resources": {
+    "official_website": "https://ihep.cas.cn/astro/en/research/sf/ucp/202510/t20251011_7986821.html",
+    "publication_links": [
+      "https://pos.sissa.it/501/1226/pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://ihep.cas.cn/astro/en/research/sf/ucp/202510/t20251011_7986821.html",
+      "caption": "Conceptual HUNT deep-water optical-module array.",
+      "credit": "IHEP / HUNT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://ihep.cas.cn/astro/en/research/sf/ucp/202510/W020251011650570947148_ORIGIN.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1347,
+      "sha256": "0d9fda6923da912d972a15f5d56f97d7245fa9a8d94b121d2d262b3851c8892a",
+      "mime_type": "image/webp",
+      "source_sha256": "52bc86bc62eec916e54d5b7c82079ba63cd7210a6a13cea60387b03972626d96",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 1347
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IHEP, HUNT scientific goals and prototype status",
+      "url": "https://ihep.cas.cn/astro/en/research/sf/ucp/202510/t20251011_7986821.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "HUNT Collaboration, Recent Status of the HUNT Prototypes: 2025",
+      "url": "https://pos.sissa.it/501/1226/pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN",
+      "RUS"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

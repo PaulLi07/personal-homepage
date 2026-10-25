@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "amanda",
+  "name": "AMANDA",
+  "full_name": "Antarctic Muon And Neutrino Detector Array",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Historical ice-neutrino-array precursor to IceCube, searching for neutrinos from dark-matter annihilation in the Sun and Earth's core.",
+  "physics_targets": [
+    "neutralino",
+    "WIMP capture in the Sun / Earth"
+  ],
+  "detection_principle": "Optical modules record Cherenkov light from upward-going muons in ice; event counts toward the Sun / Earth's core relative to atmospheric backgrounds set limits.",
+  "technologies": [
+    "Ice-Cherenkov array"
+  ],
+  "sites": [
+    {
+      "name": "Beneath the ice at the South Pole station",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Beneath the ice at the South Pole station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2009",
+    "evidence": "Collaboration papers record joint AMANDA / IceCube operation until 2009.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "AMANDA collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "AMANDA-II",
+      "value": "19 strings, 677 modules, at about 1.5–2 km depth",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMANDA-B10",
+      "status": "completed",
+      "description": "Initial ten-string phase"
+    },
+    {
+      "name": "AMANDA-II",
+      "status": "completed",
+      "description": "19 strings and later joint operation with IceCube"
+    }
+  ],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "Multiyear solar searches constrain neutralino scenarios over 50–5000 GeV.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "IceCube"
+  ],
+  "resources": {
+    "official_website": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+    "publication_links": [
+      "https://arxiv.org/abs/1112.1840",
+      "https://doi.org/10.1088/0004-637x/763/1/33"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+      "caption": "Diagram comparing the relative scale and deployment of AMANDA and IceCube; AMANDA is the earlier South Pole subglacial detector array.",
+      "credit": "IceCube Collaboration; no individual illustrator is listed on the source page",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://res.cloudinary.com/icecube/images/w_360,h_488,c_scale/q_auto/v1606862550/data_091108_amandaii/data_091108_amandaii.jpg?_i=AA",
+      "width": 360,
+      "height": 488,
+      "sha256": "26aeb6cddbdf6a3d01399eb368f8b1afd254e1c8451310f2f5ec1f1bcce23b2d",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+      "caption": "AMANDA project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+      "title": "IceCube: AMANDA 7-year data",
+      "source_date": "2008-09",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1112.1840",
+      "title": "Multi-year search for dark matter annihilations in the Sun with AMANDA-II and IceCube",
+      "source_date": "2011",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://doi.org/10.1088/0004-637x/763/1/33",
+      "title": "IceCube Collaboration: combined IceCube–AMANDA detector",
+      "source_date": "2013",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

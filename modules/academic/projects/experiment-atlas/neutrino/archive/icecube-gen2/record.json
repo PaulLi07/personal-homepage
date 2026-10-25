@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "icecube-gen2",
+  "name": "IceCube-Gen2",
+  "full_name": "IceCube-Gen2",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The proposed next-generation South Pole observatory would combine a much larger optical array, a surface veto and a radio array to extend neutrino astronomy from TeV to EeV energies.",
+  "physics_targets": [
+    "High-statistics neutrino astronomy",
+    "Ultra-high-energy cosmogenic neutrinos",
+    "Neutrino interactions at extreme energies"
+  ],
+  "detection_principle": "Optical sensors in deep ice reconstruct Cherenkov light, while shallow radio stations detect coherent Askaryan pulses from higher-energy showers. The surface component helps identify cosmic-ray backgrounds.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "South Pole expansion area",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Proposed area around IceCube",
+      "latitude": -90,
+      "longitude": 0,
+      "precision": "approximate_site",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "A future expansion described by the project and science white paper; the full Gen2 array is not equivalent to the completed IceCube Upgrade.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Science white paper published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025–2026",
+      "event": "IceCube Upgrade deployed as a technology and calibration step toward Gen2.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "IceCube-Gen2 Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Optical design volume",
+      "value": "Approximately 8 km³ in the baseline science design",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Radio design footprint",
+      "value": "Approximately 500 km²; design-dependent",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Energy coverage",
+      "value": "Combined optical and radio programme from TeV to EeV scales",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design studies",
+      "summary": "Projected source and diffuse-flux sensitivities motivate the expansion; they are not Gen2 detections.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "icecube",
+    "rno-g",
+    "ara"
+  ],
+  "resources": {
+    "official_website": "https://icecube-gen2.wisc.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2008.04323"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://icecube.wisc.edu/news/research/2020/08/icecube-gen2-will-open-new-window-on-universe/",
+      "caption": "IceCube-Gen2 optical-array concept: blue indicates the expanded volume, red the existing IceCube and green a denser region.",
+      "credit": "IceCube Collaboration, original image-caption credit",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://res.cloudinary.com/icecube/images/w_1110,h_674,c_scale/q_auto/v1608000108/news_attachment.file_.96c6694441e3d328.47656e32736368656d617469632e6a7067/news_attachment.file_.96c6694441e3d328.47656e32736368656d617469632e6a7067.jpg?_i=AA",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1110,
+      "height": 674,
+      "sha256": "690e367d5f035b4071ed6748b4fe36b73a29e44987d52ad3001a7bae50daa45e",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IceCube-Gen2 project",
+      "url": "https://icecube-gen2.wisc.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IceCube-Gen2 Collaboration, IceCube-Gen2: the window to the extreme Universe",
+      "url": "https://arxiv.org/abs/2008.04323",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "radio"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

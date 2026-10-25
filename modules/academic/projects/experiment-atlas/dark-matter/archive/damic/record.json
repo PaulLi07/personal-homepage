@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "damic",
+  "name": "DAMIC",
+  "full_name": "Dark Matter In CCDs",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DAMIC uses scientific-grade silicon CCDs as dark-matter targets, exploiting low-noise imaging and small-charge measurements to search for light dark matter. Its successor DAMIC-M has a separate record.",
+  "physics_targets": [
+    "Low-mass WIMPs",
+    "Dark-matter–electron scattering"
+  ],
+  "detection_principle": "Pixels collect ionization charge generated in silicon. Diffusion width provides depth information, while spatial topology and radiation correlations help separate backgrounds.",
+  "technologies": [
+    "Silicon CCDs",
+    "Charge imaging",
+    "Low readout noise"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermi National Accelerator Laboratory, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": null,
+    "evidence": "The SNOLAB experiment directory lists it as active; the website does not provide day-by-day hardware operation dates.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DAMIC Collaboration",
+    "lead_institutions": [
+      "University of Washington",
+      "Fermilab"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Target material",
+      "value": "High-resistivity, fully depleted silicon CCDs",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Thickness of historical Fermilab devices",
+      "value": "250 μm; not representative of later SNOLAB devices.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Fermilab prototype",
+      "status": "completed",
+      "description": "Early CCD dark-matter demonstration"
+    },
+    {
+      "name": "DAMIC SNOLAB",
+      "status": "operating",
+      "description": "Underground low-background silicon-CCD programme"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMIC-M",
+    "SENSEI",
+    "OSCURA"
+  ],
+  "resources": {
+    "official_website": "https://www.npl.washington.edu/damic/description",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.npl.washington.edu/damic/description",
+      "caption": "The open DAMIC copper detector box, showing multiple CCD-support trays.",
+      "credit": "DAMIC collaboration / University of Washington; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.npl.washington.edu/damic/sites/www.npl.washington.edu.damic/files/box.jpg",
+      "width": 1219,
+      "height": 1920,
+      "sha256": "4871e098772c6033282bc35193088a5a3cdf078a8f29727c53a1686517f1cf4d",
+      "mime_type": "image/webp",
+      "source_sha256": "223d8f685ad6e3441a6a7b13c9dbafe2135684ef1b69278ce7588a40f373bd88",
+      "source_dimensions": {
+        "width": 1469,
+        "height": 2314
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.npl.washington.edu/damic/description",
+      "caption": "DAMIC apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DAMIC Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DAMIC — University of Washington",
+      "url": "https://www.npl.washington.edu/damic/description",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "DAMIC — Fermilab",
+      "url": "https://astro.fnal.gov/science/dark-matter/damic/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "SNOLAB experiments directory",
+      "url": "https://www.snolab.ca/science/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "id": "shaft",
+  "name": "SHAFT",
+  "full_name": "Search for Halo Axions with Ferromagnetic Toroids",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A broadband ultralight-axion prototype using ferromagnetic toroidal cores to enhance the static magnetic field.",
+  "physics_targets": [
+    "Axionlike dark matter"
+  ],
+  "detection_principle": "Axion electromagnetic coupling generates a weak oscillating field in a static magnetic field, enhanced by iron–nickel powder cores and read out by a SQUID flux sensor.",
+  "technologies": [
+    "Ferromagnetic toroidal magnets",
+    "SQUID",
+    "Broadband magnetometry"
+  ],
+  "sites": [
+    {
+      "name": "Boston University，Boston",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Boston University，Boston",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2020",
+    "evidence": "2020 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Search for axion-like dark matter with ferromagnets",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHAFT Collaboration / project team",
+    "lead_institutions": [
+      "Boston University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Scan",
+      "value": "12 peV–12 neV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Exposure",
+      "value": "41 h; magnetic sensitivity approximately 150 aT/√Hz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "Axion–photon coupling limits were obtained, reaching approximately 4.0×10⁻¹¹ GeV⁻¹ at 20 peV (95% CL).",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "ABRACADABRA"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2003.03348"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2003.03348",
+      "caption": "Single-channel SHAFT schematic with magnetic toroid, excitation winding, pickup coil and SQUID readout (Fig. 1, 2020 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2003.03348v2/fig_1.png",
+      "width": 1920,
+      "height": 1141,
+      "sha256": "21e4eb2cf623a1b030f4b88ae7a764a7c07416571af3b5b036b0350b867b7a64",
+      "mime_type": "image/webp",
+      "source_sha256": "7ef083aa9bfaf97a63ddcf9a3bd89215819243562e712850cefb5b82d70f08dc",
+      "source_dimensions": {
+        "width": 4688,
+        "height": 2786
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2003.03348",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SHAFT Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for axion-like dark matter with ferromagnets",
+      "url": "https://arxiv.org/abs/2003.03348",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "spin_magnetometry",
+      "quantum_sensor"
+    ]
+  }
+}

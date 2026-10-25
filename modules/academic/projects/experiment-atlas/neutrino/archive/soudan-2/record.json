@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "id": "soudan-2",
+  "name": "Soudan 2",
+  "full_name": "Soudan 2 iron tracking calorimeter",
+  "aliases": [],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical fine-grained calorimeter in Minnesota provided an independent atmospheric-neutrino measurement using a detector technology distinct from water Cherenkov experiments.",
+  "physics_targets": [
+    "Atmospheric flavour ratios and oscillations",
+    "Nucleon decay",
+    "Neutron–antineutron oscillations"
+  ],
+  "detection_principle": "Charged particles ionised gas in drift tubes embedded in corrugated iron. Drift time and anode/cathode readout reconstructed tracks and showers, while an external active shield rejected entering backgrounds.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; Soudan mine, Minnesota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Soudan mine, Minnesota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The laboratory history records the experiment as ending in 2001.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1980s",
+      "event": "Detector construction and early commissioning.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1989",
+      "event": "Partial-detector physics exposure began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1993",
+      "event": "Full detector completed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2001",
+      "event": "Programme ended.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Soudan 2 Collaboration",
+    "lead_institutions": [
+      "University of Minnesota",
+      "Argonne National Laboratory",
+      "University of Oxford"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Full mass",
+      "value": "Approximately 963 tonnes",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Segmentation",
+      "value": "224 calorimeter modules of approximately 4.3 tonnes each",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Approximately 1 m long, 15 mm internal-diameter drift tubes",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2,070–2,100 m water equivalent",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "The final 5.90 fiducial kilotonne-year atmospheric sample showed muon-neutrino oscillation effects in its L/E distribution.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "macro",
+    "super-kamiokande",
+    "minos"
+  ],
+  "resources": {
+    "official_website": "https://www.soudan.umn.edu/outreach/tourFAQs.shtml",
+    "publication_links": [
+      "https://doi.org/10.1016/0168-9002(96)00271-9",
+      "https://inspirehep.net/literature/624212"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "caption": "Soudan 2 detector, reproduced from Yuichi Oyama’s historical neutrino-detector lecture (page 51).",
+      "credit": "Original experiment collaboration / Yuichi Oyama, KEK/J-PARC",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf#page=51",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 694,
+      "height": 489,
+      "sha256": "4e1b9b424834fa35410f30b30757f2dc1685122706feb19b1e9c27b00596fa78",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "University of Minnesota, Soudan laboratory history",
+      "url": "https://www.soudan.umn.edu/outreach/tourFAQs.shtml",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Soudan 2 Collaboration, tracking calorimeter module design",
+      "url": "https://doi.org/10.1016/0168-9002(96)00271-9",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1996",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Soudan 2 Collaboration, atmospheric L/E distributions and oscillations",
+      "url": "https://inspirehep.net/literature/624212",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Yuichi Oyama, Neutrino physics and detectors: From Kamiokande to T2K",
+      "url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "act",
+  "name": "ACT",
+  "full_name": "Atacama Cosmology Telescope",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Retired ground-based high-resolution CMB telescope using temperature, polarization and CMB lensing to constrain dark matter and structure growth.",
+  "physics_targets": [
+    "Cold-dark-matter abundance",
+    "Growth of matter structure"
+  ],
+  "detection_principle": "Cryogenic millimeter-wave detectors scan the sky. Multifrequency foreground removal and statistical reconstruction yield CMB power spectra and lensing mass fields.",
+  "technologies": [
+    "Millimeter-wave telescope",
+    "Cryogenic detectors",
+    "CMB lensing"
+  ],
+  "sites": [
+    {
+      "name": "Chajnantor Plateau, Atacama",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "Chajnantor Plateau, Atacama",
+      "latitude": -22.958611,
+      "longitude": -67.7875,
+      "precision": "official_site_coordinates; source s3",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2022",
+    "evidence": "The website explicitly states that final data were collected in 2022 and the telescope is retired.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Observations ended",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "DR6 cosmological maps and results released",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ACT collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Primary mirror",
+      "value": "6 m",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Altitude",
+      "value": "5190 m",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MBAC",
+      "status": "completed",
+      "description": "Early camera"
+    },
+    {
+      "name": "ACTPol",
+      "status": "completed",
+      "description": "Polarization-camera phase"
+    },
+    {
+      "name": "AdvACT",
+      "status": "completed",
+      "description": "Upgraded polarization-camera phase"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "DR6 provides high-resolution CMB data constraining matter and dark-matter components.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "Planck",
+    "SPT",
+    "Simons Observatory"
+  ],
+  "resources": {
+    "official_website": "https://act.princeton.edu/",
+    "publication_links": [],
+    "data_links": [
+      "https://lambda.gsfc.nasa.gov/product/act/index.html"
+    ]
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.nist.gov/image/atacama-cosmology-telescope-0",
+      "caption": "The ACT telescope and large surrounding ground screen in the northern Chilean desert.",
+      "credit": "Mark Devlin, official NIST image page",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.nist.gov/sites/default/files/images/2023/04/11/Atacama-Cosmology-Telescope.png",
+      "width": 529,
+      "height": 352,
+      "sha256": "24d69c6ab26758b70d7470427a9acad412dcd7f5246ea587a130faea190da2a2",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://act.princeton.edu/",
+      "caption": "ACT project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://act.princeton.edu/",
+      "title": "ACT official project",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://act.princeton.edu/overview/act-dr6-science",
+      "title": "ACT DR6 science",
+      "source_date": "2025",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "id": "s3",
+      "url": "https://act.princeton.edu/overview/telescope-specifications",
+      "title": "ACT: telescope specifications",
+      "source_date": null,
+      "type": "official",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Telescope aperture, altitude and official coordinates"
+      ]
+    },
+    {
+      "id": "s4",
+      "url": "https://lambda.gsfc.nasa.gov/product/act/index.html",
+      "title": "NASA LAMBDA: ACT data",
+      "source_date": null,
+      "type": "official",
+      "accessed": "2026-10-23",
+      "supports": [
+        "New dossier fields and status verification"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHL"
+    ],
+    "technology_groups": [
+      "optical_survey",
+      "quantum_sensor"
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "amego",
+  "name": "AMEGO",
+  "full_name": "All-sky Medium Energy Gamma-ray Observatory",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "AMEGO is a larger Probe-class concept for a proposed low Earth orbit. It is cataloged separately from AMEGO-X, which uses pixel detectors and has a different budget and energy range.",
+  "physics_targets": [
+    "MeV dark matter",
+    "Gamma-ray lines and continua",
+    "Astrophysical backgrounds to dark-matter searches"
+  ],
+  "detection_principle": "Double-sided silicon-strip tracking and two types of calorimeter reconstruct both Compton and pair-conversion events, covering the MeV gap to study dark-matter-related radiation and conventional astrophysical backgrounds.",
+  "technologies": [
+    "Silicon-strip tracking",
+    "CdZnTe low-energy calorimeter",
+    "CsI high-energy calorimeter",
+    "Plastic anticoincidence detector"
+  ],
+  "sites": [
+    {
+      "name": "Proposed low Earth orbit",
+      "country": "Space / international project",
+      "country_code": null,
+      "location": "Proposed low Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "NASA Probe-class mission concept, with ComPair as a technology-demonstration path; no satellite operational data",
+    "as_of": "2021-01",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021-01",
+      "event": "NASA Probe-class mission concept, with ComPair as a technology-demonstration path; no satellite operational data",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMEGO Collaboration / project team",
+    "lead_institutions": [
+      "NASA Goddard Space Flight Center",
+      "AMEGO Team"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 design energy range",
+      "value": "200 keV to above 5 GeV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Detector components",
+      "value": "Four subsystems: silicon tracker, CZT, CsI and anticoincidence detector",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMEGO satellite",
+      "status": "proposed",
+      "description": "Probe-class space concept"
+    },
+    {
+      "name": "ComPair technology prototype",
+      "status": "research_development",
+      "description": "Prototype-validation path; prototype exposures are not satellite dark-matter data"
+    }
+  ],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "The collaboration discusses MeV dark-matter science objectives as a future capability.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "AMEGO-X",
+    "e-ASTROGAM"
+  ],
+  "resources": {
+    "official_website": "https://asd.gsfc.nasa.gov/amego/",
+    "publication_links": [
+      "https://arxiv.org/abs/2101.03105"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/2101.03105",
+      "caption": "Layered detector structure of ComPair, an AMEGO technology demonstrator; not an in-orbit photograph of a complete AMEGO space mission.",
+      "credit": "Authors of the original AMEGO / ComPair paper, arXiv:2101.03105",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/2101.03105v1/Figures/ComPairBoxes.jpg",
+      "width": 1350,
+      "height": 1442,
+      "sha256": "fc731ef755b68eb800b6ae9d254c374d23e975275be556351883e390fe63274e",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://asd.gsfc.nasa.gov/amego/",
+      "caption": "Official AMEGO source page for technology and concept figures",
+      "credit": "AMEGO / NASA GSFC",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AMEGO: Exploring the Extreme Multimessenger Universe",
+      "url": "https://arxiv.org/abs/2101.03105",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2021-01-08",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "AMEGO NASA GSFC official concept",
+      "url": "https://asd.gsfc.nasa.gov/amego/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "MeV Scale Dark Matter Candidates — AMEGO Splinter Session",
+      "url": "https://asd.gsfc.nasa.gov/conferences/aas2020/Caputo-MeVDarkMatter-AMEGOsplinter.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

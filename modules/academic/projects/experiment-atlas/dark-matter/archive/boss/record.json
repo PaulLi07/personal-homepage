@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "boss",
+  "name": "BOSS / SDSS-III",
+  "full_name": "Baryon Oscillation Spectroscopic Survey",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "SDSS-III spectroscopic survey measuring cosmic structure through galaxy distributions and the quasar Lyman-alpha forest; its data can constrain decaying or warm dark matter.",
+  "physics_targets": [
+    "Decaying dark matter",
+    "Warm dark matter",
+    "Large-scale structure"
+  ],
+  "detection_principle": "Multi-object spectroscopy measures redshifts and reconstructs three-dimensional clustering and absorption power spectra for comparison with dark-matter structure-growth predictions.",
+  "technologies": [
+    "Multi-object fiber spectroscopy",
+    "BAO",
+    "Lyman-alpha forest"
+  ],
+  "sites": [
+    {
+      "name": "Apache Point Observatory，New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Apache Point Observatory，New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2014",
+    "evidence": "This entry covers only the 2009–2014 SDSS-III BOSS project, not the entire continuing SDSS program.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009",
+      "event": "BOSS began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2014",
+      "event": "BOSS phase ended",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BOSS / SDSS-III collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Host telescope",
+      "value": "APO 2.5 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Planned quasar sample",
+      "value": "160000, original survey design value",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "BOSS-DR12 combined with other data constrains specific dark-matter decay models.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "DESI",
+    "Planck",
+    "KiDS"
+  ],
+  "resources": {
+    "official_website": "https://sdss3.org/surveys/boss.php",
+    "publication_links": [
+      "https://arxiv.org/abs/2203.07440"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.sdss.org/instruments/boss-spectrographs/",
+      "caption": "Photograph of the BOSS spectrograph optical bench; the large circular opening accommodates the blue camera.",
+      "credit": "SDSS project website; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.sdss.org/wp-content/uploads/2022/04/boss_optbench.gif",
+      "width": 378,
+      "height": 252,
+      "sha256": "7b18fae9e66db09ea31cba8533c56d6b484473ba6a6b26587a6eb2807ecae6a4",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://sdss3.org/surveys/boss.php",
+      "caption": "BOSS / SDSS-III project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://sdss3.org/surveys/boss.php",
+      "title": "SDSS-III: BOSS",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://cosmology.lbl.gov/BOSS/",
+      "title": "Berkeley Lab: BOSS",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2203.07440",
+      "title": "Constraining decaying dark matter with BOSS data and EFTofLSS",
+      "source_date": "2022-03-14",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "eBOSS and later SDSS projects are not the same exposure as this entry and are not individually expanded here."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

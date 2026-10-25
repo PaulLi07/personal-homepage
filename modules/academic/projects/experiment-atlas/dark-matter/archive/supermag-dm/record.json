@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "id": "supermag-dm",
+  "name": "SuperMAG — dark matter analysis",
+  "full_name": "SuperMAG global magnetometer network dark-matter analysis",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "Direct searches for ultralight dark-matter fields using global geomagnetic archives, rather than a single detector purpose-built for dark matter.",
+  "physics_targets": [
+    "Ultralight dark photons",
+    "Axion dark matter"
+  ],
+  "detection_principle": "Correlated oscillating magnetic fields and their characteristic spatial patterns are sought at stations on Earth's surface, treating Earth, its ionosphere and geomagnetic field as an axion or dark-photon conversion system.",
+  "technologies": [
+    "Global geomagnetic networks",
+    "Time-series correlation analysis"
+  ],
+  "sites": [
+    {
+      "name": "Global ground-based magnetometer network",
+      "country": "Undetermined / international / space",
+      "country_code": null,
+      "location": "Global ground-based magnetometer network",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Search for ultralight dark matter in the SuperMAG high-fidelity dataset",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SuperMAG — dark matter analysis Collaboration / project team",
+    "lead_institutions": [
+      "SuperMAG network; see the paper for analysis-author affiliations"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Time resolution of precision data",
+      "value": "1 s",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis frequencies",
+      "value": "10⁻³–0.98 Hz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Corresponding masses",
+      "value": "4×10⁻¹⁸–4×10⁻¹⁵ eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "No robust dark-photon or axion candidates; corresponding parameter limits were set.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "SNIPE Hunt"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2408.16045"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://urbans-presentations.developer.irf.se/presentations-2023/2023-02-13_ir.html",
+      "caption": "Facilities and magnetometers at Kiruna geomagnetic observatory, Sweden. Kiruna supplies data to SuperMAG; the photograph represents this station's hardware rather than a uniform configuration across all SuperMAG stations.",
+      "credit": "Urban Brändström / Swedish Institute of Space Physics (IRF)",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://alis.irf.se/~urban/static/mag.png",
+      "width": 1064,
+      "height": 708,
+      "sha256": "e71ba561ecfc5e842e81725ddbd8e4d437bc3d7387cf61ab6fe3c98948cd1a79",
+      "mime_type": "image/webp",
+      "source_sha256": "07de9837f8c365d4ce2ebc0238c9f8edb49f887c751544606654a85c90569644",
+      "source_dimensions": {
+        "width": 1064,
+        "height": 708
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2408.16045",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SuperMAG — dark matter analysis Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for ultralight dark matter in the SuperMAG high-fidelity dataset",
+      "url": "https://arxiv.org/abs/2408.16045",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "The number of member stations in the global network varies by dataset; analysis-institution addresses are not substituted for all observing sites."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GLOBAL"
+    ],
+    "technology_groups": [
+      "spin_magnetometry"
+    ]
+  }
+}

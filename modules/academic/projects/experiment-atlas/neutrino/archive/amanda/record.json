@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "id": "amanda",
+  "name": "AMANDA",
+  "full_name": "Antarctic Muon and Neutrino Detector Array",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The predecessor of IceCube demonstrated high-energy neutrino detection in deep Antarctic ice and measured atmospheric-neutrino samples before integration with the growing IceCube array.",
+  "physics_targets": [
+    "Atmospheric neutrinos",
+    "High-energy point sources and diffuse neutrino fluxes",
+    "Solar dark matter annihilation"
+  ],
+  "detection_principle": "Photomultiplier modules frozen into vertical boreholes recorded Cherenkov light. Upgoing muon reconstruction used the Earth to reject the much larger downgoing cosmic-ray-muon background.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; South Pole ice, US-led",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; South Pole ice, US-led",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "Berkeley Lab reports AMANDA was turned off in August 2009.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1993–1994",
+      "event": "Shallow AMANDA-A prototype deployed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1996–2000",
+      "event": "Deeper AMANDA-B and AMANDA-II strings installed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2007–2009",
+      "event": "Combined operation with IceCube.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2009",
+      "event": "Detector switched off and decommissioned.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMANDA Collaboration",
+    "lead_institutions": [
+      "University of Wisconsin–Madison",
+      "DESY"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "AMANDA-II array",
+      "value": "677 optical modules on 19 strings",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Typical depths",
+      "value": "1,500–2,000 m",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Principal neutrino sample",
+      "value": "Atmospheric muon neutrinos from roughly 100 GeV to 10 TeV",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "The atmospheric-neutrino spectrum and tests of nonstandard propagation were published; source searches found no confirmed excess.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "icecube",
+    "ara"
+  ],
+  "resources": {
+    "official_website": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+    "publication_links": [
+      "https://arxiv.org/abs/0902.0675"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+      "caption": "Diagram comparing the relative scale and deployment of AMANDA and IceCube; AMANDA is the earlier South Pole subglacial detector array.",
+      "credit": "IceCube Collaboration; no individual illustrator is listed on the source page",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://res.cloudinary.com/icecube/images/w_360,h_488,c_scale/q_auto/v1606862550/data_091108_amandaii/data_091108_amandaii.jpg?_i=AA",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 360,
+      "height": 488,
+      "sha256": "26aeb6cddbdf6a3d01399eb368f8b1afd254e1c8451310f2f5ec1f1bcce23b2d",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IceCube Collaboration, AMANDA seven-year public data",
+      "url": "https://icecube.wisc.edu/data-releases/2008/09/amanda-7-year-data/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2008-09-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Berkeley Lab IceCube group, AMANDA shutdown",
+      "url": "https://icecube.lbl.gov/News.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "IceCube Collaboration, atmospheric neutrino flux with AMANDA-II",
+      "url": "https://arxiv.org/abs/0902.0675",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

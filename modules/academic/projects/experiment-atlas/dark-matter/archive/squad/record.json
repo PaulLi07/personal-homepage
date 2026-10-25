@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "id": "squad",
+  "name": "SQuAD",
+  "full_name": "Superconducting Qubit Advantage for Dark Matter",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "proposal",
+  "summary": "A proposed high-frequency axion search using superconducting-qubit single-photon readout.",
+  "physics_targets": [
+    "QCD axions"
+  ],
+  "detection_principle": "A high-Q dielectric cavity converts axions in a magnetic field; qubits perform single-photon or quantum-nondemolition measurements to avoid the vacuum noise of phase-preserving linear amplification.",
+  "technologies": [
+    "Superconducting qubits",
+    "High-Q dielectric cavities",
+    "Single-photon readout"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab / participating institutions' R&D; final instrument site unverified",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab / participating institutions' R&D; final instrument site unverified",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2022",
+    "evidence": "2022 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Snowmass 2021 White Paper: Axion Dark Matter — SQuAD section",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SQuAD Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Target frequency range",
+      "value": "10–30 GHz; DFSZ sensitivity is a design goal",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The Snowmass document describes physics goals and technology; it does not establish that the final-scale instrument has completed data-taking.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "HAYSTAC",
+    "CARRACK"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.slac.stanford.edu/econf/C210711/papers/2203.14923.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2008.12231",
+      "caption": "Superconducting transmon qubit, storage cavity and readout cavity used by the SQuAD approach, from Fig. 1 of the 2021 single-photon dark-photon-search demonstration; this is not a complete axion-magnet system.",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2008.12231v3/device_number_splitting_V5.png",
+      "width": 421,
+      "height": 119,
+      "sha256": "08448d2fc93e0cd71387c0b79b68b9abf50e143a79c1e97df1c23c27a5da53ee",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.slac.stanford.edu/econf/C210711/papers/2203.14923.pdf",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SQuAD Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Snowmass 2021 White Paper: Axion Dark Matter — SQuAD section",
+      "url": "https://www.slac.stanford.edu/econf/C210711/papers/2203.14923.pdf",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

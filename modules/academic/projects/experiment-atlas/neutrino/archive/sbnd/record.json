@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "sbnd",
+  "name": "SBND",
+  "full_name": "Short-Baseline Near Detector",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SBND is the liquid-argon near detector of Fermilab's Short-Baseline Neutrino programme, measuring the initial Booster-beam spectrum and collecting a large neutrino-argon interaction sample.",
+  "physics_targets": [
+    "Short-baseline oscillations and sterile-neutrino tests",
+    "High-statistics neutrino-argon differential cross sections",
+    "Liquid-argon charge and photon reconstruction"
+  ],
+  "detection_principle": "Ionization electrons drift through liquid argon to wire planes, reconstructing charged particles in three dimensions. Scintillation-light sensors determine event timing and cosmic-ray taggers identify entering backgrounds. Its spectrum is compared with ICARUS at a longer baseline.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The SBND collaboration overview describes the detector as recording over one million neutrino interactions per year.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "SBN programme proposal submitted",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026 archive review",
+      "event": "Official SBND site describes recording over one million neutrino interactions per year",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SBND Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active target",
+      "value": "112 tonnes of liquid argon",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Baseline",
+      "value": "110 m from the Booster neutrino-production target",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Programme role",
+      "value": "Near detector paired with ICARUS; MicroBooNE is the earlier intermediate-baseline detector",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026 archive review",
+      "summary": "The collaboration describes an implemented detector providing the high-statistics unoscillated Booster-beam sample required by the SBN programme.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-10",
+      "summary": "Reported the detector design and measured initial performance following commissioning and neutrino data taking, documenting the implemented near detector rather than only its 2015 proposal.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "icarus",
+    "microboone",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://sbn-nd.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1503.01520",
+      "https://arxiv.org/abs/2610.11782"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/2610.11782#page=8",
+      "caption": "Exploded model of the SBND TPC, photon detectors and cosmic-ray tagger.",
+      "credit": "SBND Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2610.11782",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 718,
+      "height": 559,
+      "sha256": "5b76f43ed160ce28609000de877f35d685d995245290d61e45f3b725b7b7f03d",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SBND Collaboration, experiment overview",
+      "url": "https://sbn-nd.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SBN Collaborations, Three-Detector Short-Baseline Neutrino Programme proposal",
+      "url": "https://arxiv.org/abs/1503.01520",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-03-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SBND Collaboration, Short-Baseline Near Detector (SBND): Design and Initial Performance",
+      "url": "https://arxiv.org/abs/2610.11782",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": false
+  }
+}

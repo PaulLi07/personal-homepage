@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "cdf",
+  "name": "CDF",
+  "full_name": "Collider Detector at Fermilab",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "CDF operated at the Fermilab Tevatron, Batavia, Illinois. This historical general-purpose hadron-collider experiment published collaboration papers explicitly targeting dark matter.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-matter pair production"
+  ],
+  "detection_principle": "A monojet with large missing transverse energy tags invisible pair production through initial-state radiation; mediator or effective-interaction models translate this to production and scattering cross-section limits.",
+  "technologies": [
+    "Silicon tracking",
+    "Drift chambers",
+    "Calorimeter",
+    "Muon system"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Tevatron, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab Tevatron, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Dedicated dark-matter analysis of historical Tevatron data published in 2012",
+    "as_of": "2012",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "Dedicated dark-matter analysis of historical Tevatron data published in 2012",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CDF Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed center-of-mass energy",
+      "value": "1.96 TeV proton–antiproton collisions",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Listed integrated luminosity",
+      "value": "6.7 fb⁻¹",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CDF",
+      "status": "completed",
+      "description": "Dedicated dark-matter analysis of historical Tevatron data published in 2012"
+    }
+  ],
+  "results": [
+    {
+      "date": "2012",
+      "summary": "The monojet plus missing-transverse-energy sample is compatible with background, constraining dark-matter production and interaction models.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "D0",
+    "ATLAS",
+    "CMS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1203.0742"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://inspirehep.net/files/e64b513eb1265d0f49a39f9d562559b2",
+      "caption": "Open CDF detector at Fermilab, showing its central detector and large outer components; from a retrospective on the twentieth anniversary of the top-quark discovery.",
+      "credit": "Dmitri Denisov, Costas Vellidis / Fermilab, retrospective Fig. 3 left; no separate photographer credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/e64b513eb1265d0f49a39f9d562559b2",
+      "width": 305,
+      "height": 353,
+      "sha256": "3c0fc8b00ef18547466441bb6ee3d9df3eb0b773367672a1013a8f760c210d7b",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1203.0742",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "A search for dark matter in events with one jet and missing transverse energy in ppbar collisions at sqrt(s)=1.96 TeV",
+      "url": "https://arxiv.org/abs/1203.0742",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012-03-04",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

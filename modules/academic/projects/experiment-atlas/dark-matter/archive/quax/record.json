@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "id": "quax",
+  "name": "QUAX",
+  "full_name": "QUaerere AXion",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "The Italian QUAX program includes conventional axion–photon cavity searches and ferromagnetic haloscopes using electron spins in magnetic materials.",
+  "physics_targets": [
+    "Axion–photon coupling",
+    "Axion–electron coupling"
+  ],
+  "detection_principle": "Axion–photon coupling produces microwaves in a cavity; the ferromagnetic branch searches for hybrid magnon–photon signals from axion–electron-spin interactions.",
+  "technologies": [
+    "Cryogenic microwave cavities",
+    "Ferromagnetic materials",
+    "Quantum amplifiers"
+  ],
+  "sites": [
+    {
+      "name": "INFN Laboratori Nazionali di Frascati",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Laboratori Nazionali di Frascati",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "INFN Laboratori Nazionali di Legnaro，Padova",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Laboratori Nazionali di Legnaro，Padova",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Search for axion dark matter with the QUAX–LNF tunable haloscope",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "QUAX Collaboration / project team",
+    "lead_institutions": [
+      "INFN Frascati",
+      "INFN Legnaro",
+      "INFN Padova"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "QUAX-LNF 2024",
+      "value": "8 T field; copper cavity at approximately 30 mK; 8.831496–8.83803 GHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "QUAX-aγ",
+      "status": "results_published",
+      "description": "Axion–photon cavity searches."
+    },
+    {
+      "name": "QUAX-ae",
+      "status": "results_published",
+      "description": "Electron-spin search in ferromagnetic materials."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The LNF scan found no significant excess; the published version gives a best coupling limit of 0.882×10⁻¹³ GeV⁻¹ at 90% CL.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://w3.lnf.infn.it/research/astroparticle-physics/quax/?lang=en",
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.022008",
+      "https://arxiv.org/abs/2001.08940"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2001.08940",
+      "caption": "Microwave cavity, ten YIG spheres and cryogenic readout chain of the QUAX electron-spin axion-search prototype (Fig. 2, 2020 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2001.08940v1/app2.png",
+      "width": 782,
+      "height": 933,
+      "sha256": "8b2ffd13dfda6330ff4ec072069271b27204d5888ef1a56ec191ec8a6160373d",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.022008",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "QUAX Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for axion dark matter with the QUAX–LNF tunable haloscope",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.110.022008",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "QUAX at INFN-LNF",
+      "url": "https://w3.lnf.infn.it/research/astroparticle-physics/quax/?lang=en",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Axion search with a quantum-limited ferromagnetic haloscope",
+      "url": "https://arxiv.org/abs/2001.08940",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

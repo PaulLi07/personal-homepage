@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "id": "chips",
+  "name": "CHIPS",
+  "full_name": "Cherenkov Detectors In Mine Pits",
+  "aliases": [
+    "CHIPS-5"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "CHIPS was a Minnesota research programme testing whether water-Cherenkov neutrino detectors could be built economically inside flooded mine pits. Its deployed large prototype suffered problems that prevented neutrino data taking.",
+  "physics_targets": [
+    "Low-cost large water-Cherenkov detector construction",
+    "NuMI off-axis neutrino-detection technology"
+  ],
+  "detection_principle": "A light-tight container held purified water and photomultiplier detector planes within a flooded mine pit. The surrounding water supplied buoyant mechanical support and cosmic-ray shielding. Timing with the NuMI beam was designed to select beam-neutrino interactions.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Wentworth / PolyMet flooded mine-pit site",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Near Aurora, northern Minnesota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2024",
+    "evidence": "The final design and DAQ publications describe a completed R&D project and explain that deployment problems prevented neutrino data taking.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Large prototype deployed in the mine pit; later deployment and operational problems prevented the intended exposure.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Final apparatus and DAQ reports published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CHIPS Collaboration",
+    "lead_institutions": [
+      "University College London",
+      "University of Wisconsin-Madison",
+      "Nikhef",
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Large prototype design",
+      "value": "5 kilotonnes of water",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "NuMI geometry",
+      "value": "707 km from Fermilab, approximately 7 mrad off axis",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout strategy",
+      "value": "Modular PMT arrays with locally generated high voltage and synchronized electronics",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Demonstrated construction, instrumentation and commissioning concepts. No neutrino-oscillation or neutrino-cross-section measurement was obtained with the deployed large prototype.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nova",
+    "annie",
+    "hyper-kamiokande"
+  ],
+  "resources": {
+    "official_website": "https://cordis.europa.eu/project/id/694920/reporting/en",
+    "publication_links": [
+      "https://arxiv.org/abs/2401.11728",
+      "https://arxiv.org/abs/2408.10828"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_rendering",
+      "source_url": "https://arxiv.org/abs/2401.11728",
+      "caption": "CHIPS detector design, showing the water container, PMT planes and buoyancy structure.",
+      "credit": "CHIPS Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/2401.11728",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 534,
+      "height": 494,
+      "sha256": "71e30fba0938c581a10c943babe0715682ebf439f13c2bea2262e308f23747f9",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CHIPS Collaboration, The Design and Construction of the CHIPS Water Cherenkov Neutrino Detector",
+      "url": "https://arxiv.org/abs/2401.11728",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-01-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CHIPS Collaboration, Scalable DAQ system operating the CHIPS-5 neutrino detector",
+      "url": "https://arxiv.org/abs/2408.10828",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-08-20",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "European Commission CORDIS, CHROMIUM project reporting",
+      "url": "https://cordis.europa.eu/project/id/694920/reporting/en",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "delight",
+  "name": "DELight",
+  "full_name": "Direct search Experiment for Light dark matter",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DELight uses superfluid helium-4 and magnetic microcalorimeters to explore light dark matter. German groups received DFG funding in 2026, and Canfranc records an intention for underground deployment.",
+  "physics_targets": [
+    "Sub-GeV dark matter"
+  ],
+  "detection_principle": "Recoils in helium produce light and quasiparticles. Quasiparticles reaching the surface can evaporate helium atoms, whose small energies are measured by large-area microcalorimeters.",
+  "technologies": [
+    "Superfluid 4He",
+    "Magnetic microcalorimeters",
+    "Quantum evaporation"
+  ],
+  "sites": [
+    {
+      "name": "Heidelberg R&D laboratory",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Heidelberg University",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Prototype and technology R&D"
+    },
+    {
+      "name": "KIT R&D laboratory",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Karlsruhe Institute of Technology",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Quantum-sensor R&D"
+    },
+    {
+      "name": "LSC",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory, Pyrenees, Aragon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Candidate underground site in a 2026 expression of interest"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "R&D",
+    "as_of": "2026-07",
+    "evidence": "The 2026 institutional announcement and LSC expression of interest establish R&D and candidate deployment, not an operating underground dark-matter observatory.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-04",
+      "event": "DFG funds a multi-institution German research group",
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DELight Collaboration",
+    "lead_institutions": [
+      "Heidelberg University",
+      "Karlsruhe Institute of Technology",
+      "University of Freiburg"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Designed operating temperature",
+      "value": "Approximately 20 mK",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Readout approach",
+      "value": "Large-area LAMCAL microcalorimeters",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "TESSERACT",
+    "QUEST-DMC"
+  ],
+  "resources": {
+    "official_website": "https://delight.kit.edu/experiment.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://delight.kit.edu/experiment.html",
+      "caption": "Cross section of the DELight superfluid-helium detector design, identifying the dilution refrigerator, helium target and calorimetric sensors.",
+      "credit": "DELight collaboration / KIT; no individual illustrator is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://delight.kit.edu/images/DELight_Schematic_Pancake.png",
+      "width": 1005,
+      "height": 855,
+      "sha256": "e479112bb1951e6fdd91bdfbab1ae26ff931d954d41aff6961c4104117701ad1",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://delight.kit.edu/experiment.html",
+      "caption": "DELight apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DELight Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The DELight Experiment",
+      "url": "https://delight.kit.edu/experiment.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "DELight EoI-46-2026 — LSC proposals",
+      "url": "https://lsc-canfranc.es/en/proposals/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "New DELight Research Group Searches for Dark Matter in the Universe",
+      "url": "https://www.kit.edu/kit/english/202604-new-delight-research-group-searches-for-dark-matter-in-the-universe.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle",
+      "quantum_sensor"
+    ]
+  }
+}

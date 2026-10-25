@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "fnal-e-0021",
+  "name": "FNAL-E-0021",
+  "full_name": "Fermilab Experiment E21 (Caltech neutrino experiment)",
+  "aliases": [
+    "Fermilab E21"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Caltech-Fermilab E21 programme was an early electronic high-energy neutrino experiment at the new National Accelerator Laboratory, demonstrating neutrino detection and developing calorimetric measurements.",
+  "physics_targets": [
+    "High-energy charged-current neutrino interactions",
+    "Weak interactions and calorimetric detector development"
+  ],
+  "detection_principle": "A massive instrumented target recorded hadronic energy while spark chambers and downstream magnetic analysis characterized muons. This electronic arrangement allowed high-energy neutrino interactions to be reconstructed beyond the rate available in photographic chambers.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1973",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1971-11",
+      "event": "First neutrino observations described in the laboratory historical account",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1973-05",
+      "event": "Test-calorimeter technical report completed",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FNAL-E-0021 Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original target",
+      "value": "170-ton neutrino target in the historical laboratory account",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Large-area spark chambers for outgoing muons and target calorimetry",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Facility",
+      "value": "Fermilab Neutrino Laboratory / Wonder Building",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1973 account",
+      "summary": "Documented high-energy neutrino events, apparatus commissioning and the first calorimetric studies at the new accelerator.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "ccfr",
+    "nutev"
+  ],
+  "resources": {
+    "official_website": "https://history.fnal.gov/historical/experiments/caltech_detects_neutrinos.html",
+    "publication_links": [
+      "https://inspirehep.net/literature/2763996"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://inspirehep.net/literature/2763996",
+      "caption": "The E21 steel-scintillator test calorimeter used for apparatus calibration studies.",
+      "credit": "E21 Collaboration / Fermilab, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://inspirehep.net/literature/2763996",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1226,
+      "sha256": "dbbbfada62e0f3b9d681fe664f93093fead00ee6d34b1a7d68b7ccfc88105584",
+      "mime_type": "image/webp",
+      "source_sha256": "85b83b9c6efa598200bd14bd47ce1843974bda40bded557cbf121a1f11605239",
+      "source_dimensions": {
+        "width": 2184,
+        "height": 1395
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fermilab History and Archives, Caltech Group Detects Neutrinos",
+      "url": "https://history.fnal.gov/historical/experiments/caltech_detects_neutrinos.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1973-03-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "E21 Collaboration, E21 Test Calorimeter Studies",
+      "url": "https://inspirehep.net/literature/2763996",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "1973-05-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

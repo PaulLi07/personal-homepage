@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "isai",
+  "name": "ISAI",
+  "full_name": "Investigating Solar Axion by Iron-57",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A tabletop search for axions from solar iron-57 nuclear transitions, independently testing axion–nucleon coupling.",
+  "physics_targets": [
+    "Axions from solar nuclear transitions",
+    "Axion–nucleon coupling"
+  ],
+  "detection_principle": "Solar 14.4 keV axions are resonantly absorbed by an enriched iron-57 target; an XRPIX silicon-pixel detector reads out de-excitation X-rays.",
+  "technologies": [
+    "Enriched 57Fe targets",
+    "SOI X-ray pixels",
+    "Cosmic-ray anticoincidence",
+    "Low-background shielding"
+  ],
+  "sites": [
+    {
+      "name": "Kyoto University, Kyoto",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kyoto University, Kyoto",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "ISAI, Investigating Solar Axion by Iron-57: the experiment",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ISAI Collaboration / project team",
+    "lead_institutions": [
+      "Kyoto University",
+      "University of Tokyo",
+      "Osaka Metropolitan University",
+      "Kobe University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Target spectral line",
+      "value": "14.4 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "XRPIX7 sensing area",
+      "value": "21.9×13.8 mm²; 300 μm thickness",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "A 2023 report describes commissioning and initial observations; projected sensitivity is not evidence for axion discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1199289/contributions/5449518/",
+    "publication_links": [
+      "https://pos.sissa.it/444/1389/pdf",
+      "https://arxiv.org/abs/2212.13708"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2212.13708",
+      "caption": "ISAI iron-57 target, XRPIX main-detector module and plastic-scintillator anticoincidence design (Fig. 1, 2022 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2212.13708v1/design.svg",
+      "width": 1190,
+      "height": 522,
+      "sha256": "12a1c254ada2cf32d16e4231053577c42ada9294d651f802aa934c0879e66bb7",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://pos.sissa.it/444/1389/pdf",
+      "caption": "ISAI detector and readout schematic, Fig. 1 of the ICRC2023 paper.",
+      "credit": "ISAI Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ISAI, Investigating Solar Axion by Iron-57: the experiment",
+      "url": "https://pos.sissa.it/444/1389/pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ISAI design and scientific objectives",
+      "url": "https://arxiv.org/abs/2212.13708",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "ISAI commissioning and first observation — TAUP 2023",
+      "url": "https://indico.cern.ch/event/1199289/contributions/5449518/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

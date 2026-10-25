@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "id": "ptolemy",
+  "name": "PTOLEMY",
+  "full_name": "Princeton Tritium Observatory for Light, Early-Universe, Massive-Neutrino Yield",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass",
+    "relic"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "PTOLEMY is a research programme aimed at detecting the cosmic neutrino background through neutrino capture on tritium. It also develops precision beta spectroscopy and tritium-target technologies.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "Relic electron neutrinos could be captured on tritium without an energy threshold, producing electrons just above the beta endpoint. A thin tritium target, precision filtering and calorimetry must separate these electrons from the much larger beta spectrum.",
+  "technologies": [
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "International project; prototype R&D at Gran Sasso, Italy, and elsewhere, with the final full-array site undecided",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "International project; prototype R&D at Gran Sasso, Italy, and elsewhere, with the final full-array site undecided",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2025-08-28",
+    "evidence": "The LNGS demonstrator is being assembled to test tritium sources, electromagnetic filtering and radio-frequency preselection. Full relic-neutrino detection remains a long-term objective.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "PTOLEMY Collaboration",
+    "lead_institutions": [
+      "Princeton University",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Capture target",
+      "value": "Tritium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Signal signature",
+      "value": "Electron energy above the ordinary beta endpoint",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Status of relic-neutrino capture",
+      "value": "Not observed",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "The proposal describes the relic-neutrino capture concept and required detector developments.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A relic-neutrino capture peak has not been detected. Target loading, energy resolution and backgrounds are central technical challenges; conceptual sensitivity should not be confused with a discovery or a measured cosmic-neutrino flux.",
+  "related_experiments": [
+    "katrin",
+    "project-8"
+  ],
+  "resources": {
+    "official_website": "https://ptolemy.lngs.infn.it/",
+    "publication_links": [
+      "https://arxiv.org/abs/1808.01892"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1808.01892",
+      "caption": "The earlier PTOLEMY prototype at Princeton University (Fig. 1); the later LNGS demonstrator is a separate development stage.",
+      "credit": "PTOLEMY Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/1808.01892#page=5",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 374,
+      "height": 276,
+      "sha256": "98d4b070da94e918aa20ecddae25e5c2262b09a54e147356980ec2cbe6675590",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PTOLEMY: official experiment / institutional overview",
+      "url": "https://ptolemy.lngs.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PTOLEMY: A Proposal for Thermal Relic Detection of Massive Neutrinos and Directional Detection of MeV Dark Matter",
+      "url": "https://arxiv.org/abs/1808.01892",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Status of the PTOLEMY project, TAUP 2025",
+      "url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2414/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-28",
+      "supports": [
+        "Status and results checked during the 2026-10-23 audit"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

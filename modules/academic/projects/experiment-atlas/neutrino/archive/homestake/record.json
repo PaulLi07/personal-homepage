@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "homestake",
+  "name": "Homestake",
+  "full_name": "Homestake chlorine solar-neutrino experiment",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [
+    2002
+  ],
+  "role": "dedicated",
+  "summary": "Raymond Davis Jr. and collaborators used a deep-underground chlorine detector to make the first sustained measurement of solar neutrinos. The observed deficit became the solar-neutrino problem and motivated the later demonstration of neutrino flavour transformation.",
+  "physics_targets": [
+    "Solar electron-neutrino capture",
+    "Solar-neutrino problem"
+  ],
+  "detection_principle": "Electron-neutrino capture transforms chlorine-37 into argon-37 in a large perchloroethylene tank. Rare argon atoms are extracted and their radioactive decays counted. The technique integrates the flux over long exposures rather than reconstructing individual neutrino energies.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "United States; Homestake mine in Lead, South Dakota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Homestake mine in Lead, South Dakota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1994",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1960s",
+      "event": "Detector installed and initial solar measurements made",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1970–1994",
+      "event": "Principal published solar exposure dataset",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2002",
+      "event": "Raymond Davis shared the Nobel Prize for cosmic-neutrino detection",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Homestake Collaboration",
+    "lead_institutions": [
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target",
+      "value": "Approximately 615 tonnes of perchloroethylene",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Capture threshold",
+      "value": "0.814 MeV",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 1,480 m below ground at Homestake",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1998",
+      "summary": "The long-term capture rate was substantially below standard solar-model expectations, a historical result later explained by flavour conversion.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gallex",
+    "sage",
+    "sno"
+  ],
+  "resources": {
+    "official_website": "https://sanfordlab.org/experiments/davis-experiment",
+    "publication_links": [
+      "https://doi.org/10.1086/306040"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://sanfordlab.org/experiments/davis-experiment",
+      "caption": "Ray Davis inspecting the tank used for the Homestake chlorine solar-neutrino experiment.",
+      "credit": "Sanford Underground Research Facility / Davis historical collection",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://sanfordlab.org/sites/default/files/styles/small_768w_284h/public/images/hero/2008_06_18_Anna_Davis_tiffs-web-101.jpg.webp?itok=JNYnJyyq",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 768,
+      "height": 284,
+      "sha256": "2325b8cd68e2687f159048789bc2517a672364045b3e742e4406d486bf458853",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Sanford Lab: Davis experiment history",
+      "url": "https://sanfordlab.org/experiments/davis-experiment",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "B. T. Cleveland et al., Measurement of the solar electron-neutrino flux with Homestake",
+      "url": "https://doi.org/10.1086/306040",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1998",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": false
+  }
+}

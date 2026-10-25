@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "savannah-river",
+  "name": "Savannah River",
+  "full_name": "Savannah River Cowan–Reines neutrino experiment",
+  "aliases": [
+    "Cowan–Reines experiment",
+    "Reines–Cowan experiment"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "neutron"
+  ],
+  "nobel_prize_years": [
+    1995
+  ],
+  "role": "dedicated",
+  "summary": "Cowan, Reines and collaborators directly detected reactor electron antineutrinos at Savannah River in the 1950s. The delayed-coincidence method provided the decisive experimental confirmation of the free neutrino.",
+  "physics_targets": [
+    "First direct free-neutrino detection",
+    "Reactor antineutrino interactions"
+  ],
+  "detection_principle": "Antineutrinos undergo inverse beta decay in a water target containing cadmium. The prompt positron annihilation produces gamma rays, followed by delayed neutron-capture gamma rays. Scintillator layers detect the characteristic time-correlated light signals.",
+  "technologies": [
+    "Scintillator detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "United States; Savannah River reactor facility, South Carolina",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Savannah River reactor facility, South Carolina",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1956",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1953",
+      "event": "Earlier Hanford development campaign",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1956",
+      "event": "Savannah River confirmation published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1995",
+      "event": "Frederick Reines received the Nobel Prize for neutrino detection",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Savannah River Collaboration",
+    "lead_institutions": [
+      "Los Alamos Scientific Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Reaction",
+      "value": "Electron antineutrino + proton → positron + neutron",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutron tag",
+      "value": "Delayed capture on cadmium",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Savannah River production reactor, South Carolina",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1956",
+      "summary": "A reactor-correlated delayed-coincidence signal established direct detection of electron antineutrinos.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The original discovery apparatus. Later Savannah River interaction and magnetic-moment measurements are related historical campaigns.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www.nobelprize.org/prizes/physics/1995/reines/lecture/",
+    "publication_links": [
+      "https://doi.org/10.1126/science.124.3212.103"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.nobelprize.org/uploads/2018/06/reines-lecture.pdf#page=11",
+      "caption": "One bank of photomultiplier tubes viewing a scintillator layer in the Savannah River neutrino experiment; Reines Nobel Lecture, Figure 6.",
+      "credit": "Frederick Reines / Nobel Foundation; original experimental photograph",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://www.nobelprize.org/uploads/2018/06/reines-lecture.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 799,
+      "height": 511,
+      "sha256": "e5ed032f18db9e7b74d5ee5adf1c7710423326acc8ffa9b6b062c77d760279a2",
+      "mime_type": "image/png",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "C. L. Cowan et al., Detection of the free neutrino: a confirmation",
+      "url": "https://doi.org/10.1126/science.124.3212.103",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1956-07-20",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Frederick Reines, Nobel Lecture: The neutrino, from poltergeist to particle",
+      "url": "https://www.nobelprize.org/prizes/physics/1995/reines/lecture/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1995",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "neutron"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "neutron"
+    ],
+    "is_europe": false
+  }
+}

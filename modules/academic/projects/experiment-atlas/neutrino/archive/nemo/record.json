@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "id": "nemo",
+  "name": "NEMO",
+  "full_name": "Neutrino Ettore Majorana Observatory / NEMO-3",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NEMO-3 was a tracking calorimeter at Modane that measured double-beta decay in several isotopes. Separating the isotope foil from the detector allowed reconstruction of both electron tracks, their energies and their opening angle.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Thin source foils are surrounded by gaseous tracking cells and scintillator calorimeters. A magnetic field, time of flight and common-vertex reconstruction identify two-electron events and reject external backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; Modane underground laboratory, the main site of NEMO-3",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Modane underground laboratory, the main site of NEMO-3",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2011-01",
+    "evidence": "The final 100Mo analysis found no neutrinoless signal while measuring detailed two-neutrino-decay distributions.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NEMO Collaboration",
+    "lead_institutions": [
+      "CNRS/IN2P3",
+      "Laboratoire Souterrain de Modane"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Principal source",
+      "value": "Approximately 7 kg of 100Mo; additional isotope foils",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Physics operation",
+      "value": "February 2003 to January 2011",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Technique",
+      "value": "Tracking plus calorimetry",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "The final 100Mo analysis found no neutrinoless signal while measuring detailed two-neutrino-decay distributions.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "supernemo"
+  ],
+  "resources": {
+    "official_website": "https://nemo.in2p3.fr/",
+    "publication_links": [
+      "https://arxiv.org/abs/1506.05825"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/physics/0402115",
+      "caption": "NEMO-3 at Modane before installation of the last detector sector, Figure 2 of the detector paper.",
+      "credit": "NEMO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/abs/physics/0402115",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 264,
+      "height": 280,
+      "sha256": "85f2388b9446ecd49a26b24b16159aad6ac544da7c1eb711ff8daf179edc2e64",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NEMO: official experiment / institutional overview",
+      "url": "https://nemo.in2p3.fr/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Results of the search for neutrinoless double-beta decay in 100Mo with the NEMO-3 experiment",
+      "url": "https://arxiv.org/abs/1506.05825",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

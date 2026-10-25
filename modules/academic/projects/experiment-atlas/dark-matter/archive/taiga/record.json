@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "id": "taiga",
+  "name": "TAIGA",
+  "full_name": "Tunka Advanced Instrument for cosmic ray physics and Gamma Astronomy",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "High-energy cosmic-ray and gamma-ray project combining a wide-angle timing array with imaging telescopes; its stated science objectives include axion–photon conversion.",
+  "physics_targets": [
+    "ALP–photon conversion",
+    "High-energy gamma-ray spectral anomalies"
+  ],
+  "detection_principle": "Combines timing, intensity and imaging information from air-shower Cherenkov light to measure high-energy photon spectra and propagation effects.",
+  "technologies": [
+    "HiSCORE wide-angle detection",
+    "Imaging atmospheric Cherenkov telescopes",
+    "Hybrid air-shower observations"
+  ],
+  "sites": [
+    {
+      "name": "Tunka Valley，Siberia",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Tunka Valley，Siberia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Partly operating, with further construction continuing",
+    "as_of": "2026",
+    "evidence": "Mirror upgrade of the fifth telescope in summer 2026; observations and facility expansion proceed in parallel.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Mirror upgrade of the fifth telescope",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TAIGA collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Science-target energy range",
+      "value": "Gamma rays from several TeV to several PeV; not a dark-matter mass interval",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "LHAASO",
+    "Tibet ASγ"
+  ],
+  "resources": {
+    "official_website": "https://isu.ru/en/research/largescale_projects/worlds-largest-international-project-taiga/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://dlnp.jinr.ru/en/news/3880",
+      "caption": "Mirror-upgrade work on TAIGA's fifth imaging atmospheric Cherenkov telescope, showing installed mirror segments.",
+      "credit": "JINR Dzhelepov Laboratory, 2026 report on the fifth TAIGA telescope upgrade; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://dlnp.jinr.ru/images/gallery/gallery/20260929/large-photo-1000-1790663897-4.png",
+      "width": 1000,
+      "height": 450,
+      "sha256": "617dcdbd26d3a29bb5867cd0af0ce639446a2272f8954f106405258ef2b73bf0",
+      "mime_type": "image/webp",
+      "source_sha256": "f7f5fcf46d0a7d9349d7ed9e77d1781800340217da790e06a0d497db598a69c0",
+      "source_dimensions": {
+        "width": 1000,
+        "height": 450
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://isu.ru/en/research/largescale_projects/worlds-largest-international-project-taiga/",
+      "caption": "TAIGA project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://isu.ru/en/research/largescale_projects/worlds-largest-international-project-taiga/",
+      "title": "Irkutsk State University: TAIGA",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://dlnp.jinr.ru/en/news/3880",
+      "title": "JINR: upgrades to fifth TAIGA telescope",
+      "source_date": "2026",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Current subsystem counts, effective areas and dedicated dark-matter limits require supplementation from the relevant subsystem papers."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

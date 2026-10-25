@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "igex",
+  "name": "IGEX",
+  "full_name": "International Germanium EXperiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "IGEX was a historical international search for germanium-76 neutrinoless double-beta decay. It used enriched germanium crystals in underground low-background installations and developed pulse-shape rejection for later germanium programmes.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "The enriched germanium crystal acts as both source and semiconductor calorimeter. Shielding, underground siting and pulse-shape selection suppress continuum backgrounds near the double-beta Q value.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2002",
+    "evidence": "IGEX reported a lower bound on the 76Ge neutrinoless-decay half-life; it did not observe the decay.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "IGEX Collaboration",
+    "lead_institutions": [
+      "University of South Carolina",
+      "University of Zaragoza",
+      "Institute for Nuclear Research, Moscow"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source/detector",
+      "value": "Enriched high-purity germanium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Analysis energy",
+      "value": "Approximately 2039 keV",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2002",
+      "summary": "IGEX reported a lower bound on the 76Ge neutrinoless-decay half-life; it did not observe the decay.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "gerda",
+    "majorana"
+  ],
+  "resources": {
+    "official_website": "https://lsc-canfranc.es/",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0202026"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://zaguan.unizar.es/record/48716/files/icon.pdf",
+      "caption": "Historical photograph of the IGEX-DM RG-2 germanium-detector cryostat inside lead shielding, explicitly associated with dark-matter data taking. From María Luisa Sarsa's 2008 review of dark-matter experiments at Canfranc, Figure 19(b), PDF page 78 (journal page 81).",
+      "credit": "María Luisa Sarsa (Universidad de Zaragoza), Rev. Real Academia de Ciencias de Zaragoza 63 (2008); no individual photographer is credited.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://zaguan.unizar.es/record/48716/files/icon.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 619,
+      "height": 438,
+      "sha256": "ea86fe37ee4c8e42a170d3d61e26b2e7f8ead95b4de836bc59d87b29a0f001c4",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "7eac22db3097d10bbd34ccd094e263768bbe2c3d694c141592af068480cc6a7f",
+      "source_dimensions": {
+        "width": 619,
+        "height": 438
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IGEX: official experiment / institutional overview",
+      "url": "https://lsc-canfranc.es/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The IGEX 76Ge neutrinoless double-beta decay experiment: prospects for next generation experiments",
+      "url": "https://arxiv.org/abs/hep-ex/0202026",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2002",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "RUS",
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

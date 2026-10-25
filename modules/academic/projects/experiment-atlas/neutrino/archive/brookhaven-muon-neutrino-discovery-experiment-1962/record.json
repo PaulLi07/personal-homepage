@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "brookhaven-muon-neutrino-discovery-experiment-1962",
+  "name": "Brookhaven muon-neutrino discovery experiment (1962)",
+  "full_name": "Brookhaven accelerator muon-neutrino discovery experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [
+    1988
+  ],
+  "role": "dedicated",
+  "summary": "The 1962 Brookhaven experiment established that the neutrino accompanying a muon is distinct from the electron neutrino, opening accelerator neutrino physics and the study of lepton families.",
+  "physics_targets": [
+    "Distinction between muon and electron neutrinos",
+    "Charged-current high-energy neutrino interactions"
+  ],
+  "detection_principle": "A proton beam produced pions whose decays created a neutrino beam. A massive shield absorbed charged particles; neutrinos interacted in aluminium spark chambers. Long penetrating tracks were identified as muons, while electron-like showers were absent at the rate expected for a single neutrino species.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; AGS at Brookhaven National Laboratory, New York",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; AGS at Brookhaven National Laboratory, New York",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1962",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1962",
+      "event": "Two-neutrino-species discovery published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1988",
+      "event": "Lederman, Schwartz and Steinberger awarded the Nobel Prize for the neutrino-beam method and demonstration of lepton doublets",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Brookhaven muon-neutrino discovery experiment (1962) Collaboration",
+    "lead_institutions": [
+      "Brookhaven National Laboratory",
+      "Columbia University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Accelerator",
+      "value": "Brookhaven Alternating Gradient Synchrotron",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "Aluminium spark-chamber target with photographic tracking",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Signature",
+      "value": "Muon-producing neutrino interactions rather than the expected electron-shower population",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1962",
+      "summary": "Established the existence of a muon-associated neutrino distinct from the electron-associated neutrino.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "donut",
+    "bnl-e-0734"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/bnlweb/history/nobel/1988.php",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevLett.9.36"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.bnl.gov/bnlweb/history/nobel/1988.php",
+      "caption": "Spark-chamber apparatus used in the Brookhaven muon-neutrino discovery.",
+      "credit": "Brookhaven National Laboratory",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.bnl.gov/bnlweb/history/nobel/images/spark-chamber.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 498,
+      "height": 545,
+      "sha256": "aa43189aaf3ae7bd8d54dca4349c8d90cc5ed33833cb441a27505bdd3f399d85",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Brookhaven National Laboratory, 1988 Nobel Prize and the muon neutrino discovery",
+      "url": "https://www.bnl.gov/bnlweb/history/nobel/1988.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "G. Danby et al., Observation of High-Energy Neutrino Reactions and the Existence of Two Kinds of Neutrinos",
+      "url": "https://doi.org/10.1103/PhysRevLett.9.36",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1962-07-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

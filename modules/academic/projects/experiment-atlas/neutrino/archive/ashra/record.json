@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "id": "ashra",
+  "name": "Ashra",
+  "full_name": "All-sky Survey High Resolution Air-shower detector",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "An optical air-shower programme in Hawaii developed wide-field, high-resolution imaging and carried out early Earth-skimming tau-neutrino searches.",
+  "physics_targets": [
+    "Earth-skimming tau neutrinos",
+    "Transient gamma-ray sources",
+    "Wide-field air-shower imaging"
+  ],
+  "detection_principle": "Specialised wide-field optics and an electrostatic image pipeline detect fast atmospheric Cherenkov and fluorescence signals. A mountain provides a neutrino target for tau-emergence searches.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Ashra-1 Mauna Loa site",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Hawaii Island",
+      "latitude": 19.54,
+      "longitude": -155.58,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "Historical Ashra-1 operation and published search are documented; continuous present-day operation is not inferred from the old detector-design page.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2003–2005",
+      "event": "Ashra-1 development and site preparation.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2008",
+      "event": "GRB081203A tau-neutrino search exposure.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2011",
+      "event": "Search result published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Ashra Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "University of Hawaii"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Optical field",
+      "value": "Approximately 42° diameter per light collector",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Optical mirror",
+      "value": "Approximately 2.2 m diameter spherical mirror",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Demonstrator site",
+      "value": "Mauna Loa, Hawaii",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Technique",
+      "value": "Combined high-resolution optical imaging and fast shower triggering",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "An early observational limit was placed on PeV–EeV tau-neutrino emission associated with GRB081203A; no neutrino signal was established.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "nta",
+    "trinity"
+  ],
+  "resources": {
+    "official_website": "https://www.icrr.u-tokyo.ac.jp/~ashra/detector/index.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1106.2572",
+      "https://arxiv.org/abs/1408.6244"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/~ashra/detector/index.html",
+      "caption": "Ashra wide-field light-collector design.",
+      "credit": "Ashra Collaboration / ICRR, University of Tokyo",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.icrr.u-tokyo.ac.jp/~ashra/detector/img/Sub.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 265,
+      "height": 261,
+      "sha256": "411ca3a10277e6ba21db08aa1f76c7cdf165007a876ce8a3f9c46482637d9981",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ashra Collaboration, detector and optical system",
+      "url": "https://www.icrr.u-tokyo.ac.jp/~ashra/detector/index.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Ashra Collaboration, Observational search for PeV–EeV tau neutrinos from GRB081203A",
+      "url": "https://arxiv.org/abs/1106.2572",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "M. Sasaki and G. W.-S. Hou, NTA letter of intent and Ashra technology",
+      "url": "https://arxiv.org/abs/1408.6244",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

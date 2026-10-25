@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "gamma-400",
+  "name": "GAMMA-400",
+  "full_name": "Gamma Astronomical Multifunctional Modular Apparatus",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "GAMMA-400 is a Russian-led space gamma-ray development project for a proposed space orbit; orbital design and launch scheduling require mission updates. Question-marked years in old catalogs are not actual launch dates.",
+  "physics_targets": [
+    "WIMP gamma-ray lines",
+    "Dark-matter annihilation / decay",
+    "ALP–photon conversion"
+  ],
+  "detection_principle": "Gamma-ray pair conversion, tracking and deep calorimetry improve energy and directional resolution to search for narrow lines and spectral structure toward targets including the Galactic center.",
+  "technologies": [
+    "Conversion tracker",
+    "Calorimeter",
+    "Anticoincidence system",
+    "Time of flight"
+  ],
+  "sites": [
+    {
+      "name": "Proposed space orbit; orbital design and launch scheduling require mission updates",
+      "country": "Space / Russian-led international project",
+      "country_code": null,
+      "location": "Proposed space orbit; orbital design and launch scheduling require mission updates",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "The website still describes design and development plans in August 2026; no evidence of operation in orbit",
+    "as_of": "2026-08",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-08",
+      "event": "The website still describes design and development plans in August 2026; no evidence of operation in orbit",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GAMMA-400 Collaboration / project team",
+    "lead_institutions": [
+      "Lebedev Physical Institute",
+      "MEPhI"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "High-energy gamma-ray design range on the 2026 website",
+      "value": "20 MeV–1000 GeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "2020 dark-matter forecast scan",
+      "value": "Dark-matter masses of 1–500 GeV; not the instrument's photon-energy range",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "GAMMA-400",
+      "status": "research_development",
+      "description": "The website still describes design and development plans in August 2026; no evidence of operation in orbit"
+    }
+  ],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "Forecasts Galactic-center two-photon annihilation lines, decay lines and ALP sensitivity. Results depend on density profiles and background models; there are no measured exclusions.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "Fermi-LAT",
+    "HERD"
+  ],
+  "resources": {
+    "official_website": "https://gamma400.lebedev.ru/indexeng.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2005.09032"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/2005.09032",
+      "caption": "Cutaway design of the GAMMA-400 gamma-ray telescope detector, showing anticoincidence, tracking and calorimeter components.",
+      "credit": "GAMMA-400 collaboration website; no individual illustrator is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/2005.09032v2/figs/scheme.jpg",
+      "width": 1346,
+      "height": 1312,
+      "sha256": "8139dd758baa5d3663d3504b57bb87eda2ae1429fd8eae5bb6f754766ebe36f4",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://gamma400.lebedev.ru/indexeng.html",
+      "caption": "Official GAMMA-400 instrument-design and project images",
+      "credit": "GAMMA-400 Collaboration",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "GAMMA-400 official scientific complex",
+      "url": "https://gamma400.lebedev.ru/indexeng.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark matter searches by the planned gamma-ray telescope GAMMA-400",
+      "url": "https://arxiv.org/abs/2005.09032",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-11-25",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

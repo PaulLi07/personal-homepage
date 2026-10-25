@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "faser",
+  "name": "FASER",
+  "full_name": "ForwArd Search ExpeRiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "FASER is located in CERN LHC tunnel TI12, 480 m downstream of the ATLAS interaction point. It is a dedicated far-forward new-particle experiment that also measures collider neutrinos.",
+  "physics_targets": [
+    "Dark photons",
+    "ALP",
+    "Long-lived dark-sector particles"
+  ],
+  "detection_principle": "Light long-lived particles are sought far forward along the collision axis after traversing rock and machine shielding and decaying inside the detector, using energetic tracks and electromagnetic energy.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "Silicon tracking",
+    "Scintillator veto",
+    "Electromagnetic calorimeter"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC TI12, 480 m downstream of the ATLAS interaction point",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN LHC TI12, 480 m downstream of the ATLAS interaction point",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Run 3 data-taking, with extended dark-photon results released in 2026",
+    "as_of": "2026-03-23",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-03-23",
+      "event": "Run 3 data-taking, with extended dark-photon results released in 2026",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FASER Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "480 m downstream of the ATLAS interaction point",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Listed 2026 analysis data",
+      "value": "177 fb⁻¹，2022–2024",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "FASER Run 3",
+      "status": "operating",
+      "description": "Current small forward spectrometer"
+    },
+    {
+      "name": "FASERν",
+      "status": "operating",
+      "description": "Neutrino subdetector, not counted separately as a dark-matter project"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026-03-23",
+      "summary": "An enlarged accepted decay region and track-topology coverage set new dark-photon limits, without discovery.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "FASER2",
+    "FORMOSA",
+    "SND@LHC"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/faser",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/faser",
+      "caption": "FASER detector installation in the LHC tunnel.",
+      "credit": "CERN; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://home.cern/wp-content/uploads/2026/03/CERN-PHOTO-202011-156-9-crop2-optimised.jpg.webp",
+      "width": 1441,
+      "height": 597,
+      "sha256": "aff2119d02d4f3079036ffd64a04f04e10d5fe18c3cd35ff1577bc5c8dd512db",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://home.cern/science/experiments/faser",
+      "caption": "FASER apparatus description and photographs",
+      "credit": "FASER Collaboration / CERN",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FASER experiment at CERN",
+      "url": "https://home.cern/science/experiments/faser",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "New Dark Photon Results from FASER",
+      "url": "https://faser.web.cern.ch/briefing-20260319",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-03-23",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

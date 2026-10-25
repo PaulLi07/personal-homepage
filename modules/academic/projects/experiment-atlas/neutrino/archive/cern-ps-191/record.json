@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "cern-ps-191",
+  "name": "CERN-PS-191",
+  "full_name": "CERN Proton Synchrotron Experiment PS191",
+  "aliases": [
+    "PS191",
+    "CERN PS191"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "PS191 was a CERN short-baseline experiment searching for heavy neutral-lepton decays and studying electron-flavour events in a neutrino beam from the Proton Synchrotron.",
+  "physics_targets": [
+    "Heavy neutral-lepton mixing with electron and muon flavours",
+    "Neutrino decay",
+    "Short-baseline electron-neutrino appearance"
+  ],
+  "detection_principle": "A decay region downstream of the production target was instrumented with tracking and electromagnetic-shower identification. Candidate charged tracks and electron pairs tested hypothetical neutral-lepton decays, with neutrino interactions serving as an additional signal and background channel.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN PS beam experimental area",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN PS beam experimental area",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1988",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1986",
+      "event": "Neutrino-decay search and electron-production results published",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1988",
+      "event": "Further heavy-neutrino coupling limits published",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CERN-PS-191 Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Facility",
+      "value": "CERN Proton Synchrotron neutrino-beam area",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Signals",
+      "value": "Visible decay products of hypothetical massive neutral leptons",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector functions",
+      "value": "Charged-track reconstruction and electromagnetic shower identification",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1986-1988",
+      "summary": "Set improved limits on hypothetical heavy-neutrino couplings to ordinary neutrino flavours; the reported electron-like anomaly was not a confirmed oscillation discovery.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "charm",
+    "bnl-e-0776",
+    "ship"
+  ],
+  "resources": {
+    "official_website": "https://www.nu.to.infn.it/exp/all/cern-ps-191/",
+    "publication_links": [
+      "https://doi.org/10.1016/0370-2693(86)91602-3",
+      "https://doi.org/10.1016/0370-2693(88)90563-1"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://ep-news.web.cern.ch/from-beam-dumps-to-missing-energy-the-sps-search-for-hidden-particles/",
+      "caption": "The PS191 proton beam, shielding, helium decay volume and visible-decay detector.",
+      "credit": "PS191 Collaboration; adapted by Paolo Crivelli / CERN",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://ep-news.web.cern.ch/wp-content/uploads/2026/09/FIP-EPnews-Figure2-2048x999.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 937,
+      "sha256": "da470b2b18a98f7e8109bc7075bcea5be93b40c32432cde4711cb0836a995b19",
+      "mime_type": "image/webp",
+      "source_sha256": "e32e497c45ce5af539b058ff6f2f3c66e2462a1190b141988354bb0aa10d7996",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 999
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "G. Bernardi et al., Search for neutrino decay",
+      "url": "https://doi.org/10.1016/0370-2693(86)91602-3",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1986",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "INFN neutrino experiment index, PS191 bibliography",
+      "url": "https://www.nu.to.infn.it/exp/all/cern-ps-191/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "G. Bernardi et al., Further limits on heavy neutrino couplings",
+      "url": "https://doi.org/10.1016/0370-2693(88)90563-1",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "Precise run-dependent geometric parameters are not restated without a directly checked detector document."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": true
+  }
+}

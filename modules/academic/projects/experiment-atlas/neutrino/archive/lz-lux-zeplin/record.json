@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "lz-lux-zeplin",
+  "name": "LZ",
+  "full_name": "LUX-ZEPLIN neutrino and rare-event programme",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "doublebeta",
+    "solar",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "LZ is primarily a dark-matter experiment, but its low-background liquid-xenon target also supports solar-neutrino, coherent-scattering and xenon double-beta-decay studies. It is included here for these documented neutrino channels.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays",
+    "Solar-neutrino interactions",
+    "Rare xenon weak decays"
+  ],
+  "detection_principle": "A dual-phase xenon time projection chamber records prompt scintillation and delayed electroluminescence from extracted electrons. Their ratio and reconstructed position separate interaction populations and reduce backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; SURF in Lead, South Dakota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; SURF in Lead, South Dakota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2024",
+    "evidence": "The technical description establishes the instrument and its broader rare-event programme; channel-specific results must be distinguished from dark-matter limits.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "LZ Collaboration",
+    "lead_institutions": [
+      "Lawrence Berkeley National Laboratory",
+      "Sanford Underground Research Facility"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active xenon target",
+      "value": "Approximately 7 tonnes",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "Dual-phase liquid-xenon TPC",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Neutrino channels",
+      "value": "Solar electron recoils, nuclear recoils and xenon rare decays",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "The technical description establishes the instrument and its broader rare-event programme; channel-specific results must be distinguished from dark-matter limits.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-12-08",
+      "summary": "The 5.7 tonne-year analysis reported a solar 8B coherent-scattering signal at 4.5 sigma under the no-dark-matter hypothesis; this is evidence rather than a 5-sigma discovery.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "This multipurpose dark-matter detector is listed for its neutrino interactions and double-beta-decay programme. A solar-neutrino background estimate, projected sensitivity and an observed neutrino population are different scientific claims.",
+  "related_experiments": [
+    "xenon",
+    "pandax"
+  ],
+  "resources": {
+    "official_website": "https://lz.lbl.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1910.09124",
+      "https://arxiv.org/abs/2512.08065"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://lz.lbl.gov/",
+      "caption": "LZ time projection chamber during clean assembly and surface-dust inspection.",
+      "credit": "LZ Collaboration / Lawrence Berkeley National Laboratory",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.jpg",
+      "original_url": "https://lz.lbl.gov/wp-content/uploads/sites/6/2021/07/cropped-ScanningForDust_TPC_Crop-scaled-1-1536x558.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1536,
+      "height": 558,
+      "sha256": "2a57040cd3e10cd1ebcd9cd08a009d535487fe79fa0e1bebdf2ebf974af802de",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LZ: official experiment / institutional overview",
+      "url": "https://lz.lbl.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The LUX-ZEPLIN (LZ) Experiment",
+      "url": "https://arxiv.org/abs/1910.09124",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Searches for Light Dark Matter and Evidence of Coherent Elastic Neutrino-Nucleus Scattering of Solar Neutrinos with the LUX-ZEPLIN (LZ) Experiment",
+      "url": "https://arxiv.org/abs/2512.08065",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-12-08",
+      "supports": [
+        "Channel-specific neutrino result"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "xenon"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

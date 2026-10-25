@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "id": "kaska",
+  "name": "KASKA",
+  "full_name": "Kashiwazaki-Kariwa reactor neutrino oscillation experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "KASKA was a Japanese near/far reactor-antineutrino proposal to measure theta13 at the Kashiwazaki-Kariwa nuclear power station. It developed detector and underground-site designs during the 2000s but did not become an operating theta13 experiment.",
+  "physics_targets": [
+    "Reactor determination of theta13",
+    "Precision three-flavour oscillation parameters"
+  ],
+  "detection_principle": "Matched gadolinium-loaded scintillator detectors would detect inverse beta decay at near and far baselines. Relative event rates and spectra would isolate disappearance while cancelling reactor and detector systematics.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Kashiwazaki-Kariwa nuclear power station",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Niigata, Japan",
+      "latitude": 37.432,
+      "longitude": 138.595,
+      "precision": "approximate_site",
+      "site_status": "historical_proposed_site_not_realized"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Historical proposal / not realized",
+    "as_of": "2009",
+    "evidence": "The 2009 reactor-programme overview identifies KASKA among the historical proposals that did not proceed to the running theta13 programme.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "Project description published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2006",
+      "event": "Letter of intent and underground-background studies released",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2009",
+      "event": "Later programme overview records it as an unrealized historical proposal",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KASKA Collaboration",
+    "lead_institutions": [
+      "Tohoku University",
+      "KEK",
+      "Niigata University",
+      "Tokyo Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed configuration",
+      "value": "Four identical detectors: two near and two far",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target per detector",
+      "value": "6 tonnes of Gd-loaded liquid scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Far baseline",
+      "value": "Approximately 1.6 km",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor complex",
+      "value": "Seven reactors, 24.3 GW thermal total in the proposal",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Proposal",
+      "summary": "The design established projected theta13 sensitivity; it produced no full-scale reactor-oscillation measurement.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "daya-bay",
+    "double-chooz",
+    "reno"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0607013",
+      "https://arxiv.org/abs/hep-ex/0502002",
+      "https://neutrino.pd.infn.it/NEUTEL09/Talks/Cao.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/hep-ex/0607013",
+      "caption": "KASKA detector-unit design from the 2006 letter of intent; a proposed apparatus.",
+      "credit": "KASKA Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0607013",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 502,
+      "height": 749,
+      "sha256": "89c7c11361c5dd0c6ec8fbfffa0de3cf27c9c8a13b43ed32f1bd6634dd0be09c",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected final local figure and checked its apparatus identity and design/measurement stage against the public source."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "M. Aoki et al., Letter of Intent for KASKA",
+      "url": "https://arxiv.org/abs/hep-ex/0607013",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2006-07-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "F. Suekane, The KASKA project: a Japanese medium-baseline reactor-neutrino oscillation experiment to measure theta13",
+      "url": "https://arxiv.org/abs/hep-ex/0502002",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2005-02-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "J. Cao, Reactor Neutrino Experiments, NEUTEL 2009",
+      "url": "https://neutrino.pd.infn.it/NEUTEL09/Talks/Cao.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

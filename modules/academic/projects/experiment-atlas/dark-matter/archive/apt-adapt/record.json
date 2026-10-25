@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "id": "apt-adapt",
+  "name": "APT / ADAPT",
+  "full_name": "Advanced Particle-astrophysics Telescope / Antarctic Demonstrator for APT",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "APT is proposed for a space orbit; its named demonstrator ADAPT is a long-duration balloon payload from McMurdo, Antarctica. APT and ADAPT are grouped as one series; ADAPT and AdEPT are different instruments.",
+  "physics_targets": [
+    "Gamma rays from WIMP annihilation",
+    "Dark matter in dwarf galaxies",
+    "Cosmic-ray and transient backgrounds"
+  ],
+  "detection_principle": "An imaging scintillation calorimeter and fiber / silicon tracking combine Compton and pair-conversion imaging. Space-based APT aims to test dark-matter gamma rays with large acceptance; ADAPT validates technology and operation in a balloon environment.",
+  "technologies": [
+    "Scintillating fibers",
+    "CsI imaging calorimeter",
+    "Silicon strips",
+    "Real-time gamma-ray-burst localization"
+  ],
+  "sites": [
+    {
+      "name": "APT space mission",
+      "country": "Space",
+      "country_code": null,
+      "location": "Proposed space orbit, not approved",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    },
+    {
+      "name": "ADAPT balloon",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "McMurdo long-duration balloon facility; planned 2026–2027 Antarctic season",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "planned"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Full APT remains a proposal. ADAPT is on the formal 2026–2027 Antarctic-season flight plan but had not launched by this dossier's cutoff date",
+    "as_of": "2026-09-28",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-09-28",
+      "event": "Full APT remains a proposal. ADAPT is on the formal 2026–2027 Antarctic-season flight plan but had not launched by this dossier's cutoff date",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "APT / ADAPT Collaboration / project team",
+    "lead_institutions": [
+      "Washington University in St. Louis",
+      "NASA GSFC",
+      "APT Collaboration"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "ADAPT active cross section",
+      "value": "About 0.5 m × 0.5 m",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "ADAPT flight objective",
+      "value": "About 30 days, planned; NASA scheduling spans December 2026 to January 2027",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "APT dark-matter research",
+      "value": "Dwarf-galaxy gamma-ray sensitivity studies; ADAPT's short exposure is not long-duration APT observation",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "APT",
+      "status": "proposed",
+      "description": "Complete space-observatory concept"
+    },
+    {
+      "name": "ADAPT",
+      "status": "construction",
+      "description": "Integration and preparation for a 2026–2027 Antarctic technology-demonstration balloon flight"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Independent studies estimate that APT could test some thermal-relic models up to masses of several hundred GeV; results depend on targets, backgrounds and design assumptions.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "Fermi-LAT",
+    "AMEGO",
+    "AdEPT"
+  ],
+  "resources": {
+    "official_website": "https://adapt.physics.wustl.edu/",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.109.083032"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://adapt.physics.wustl.edu/",
+      "caption": "Layered detector design of the ADAPT prototype payload, a technology demonstrator in the APT program.",
+      "credit": "APT / ADAPT team, Washington University in St. Louis project website",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://adapt.physics.wustl.edu/assets/img/adapt-instrument.png",
+      "width": 1199,
+      "height": 927,
+      "sha256": "aea083bc2032144527975ebb2eb1f2e08765295bbd6b493742a10d4494cafc8e",
+      "mime_type": "image/webp",
+      "source_sha256": "7bd70e0d968e43db9cef4e9210ecde90691afa5ce674686743ea56c1eee2bff7",
+      "source_dimensions": {
+        "width": 1199,
+        "height": 927
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://adapt.physics.wustl.edu/",
+      "caption": "ADAPT instrument and APT orbital-observatory design drawings",
+      "credit": "APT Collaboration",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "ADAPT official project and APT collaboration",
+      "url": "https://adapt.physics.wustl.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "ADAPT 2026–2027 USAP Science Planning Summary",
+      "url": "https://www.usap.gov/sciencesupport/scienceplanningsummaries/2026_2027/results.cfm?ID=2991&formAction=detail",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "NASA Antarctic balloon operations",
+      "url": "https://www.csbf.nasa.gov/antarctica/payloads.htm",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-28",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Dark matter discovery potential of the Advanced Particle-Astrophysics Telescope",
+      "url": "https://doi.org/10.1103/PhysRevD.109.083032",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE",
+      "ATA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

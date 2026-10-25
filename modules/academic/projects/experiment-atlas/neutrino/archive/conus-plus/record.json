@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "id": "conus-plus",
+  "name": "CONUS+",
+  "full_name": "CONUS+ reactor-neutrino experiment at Leibstadt",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "cevns",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CONUS+ moved the low-threshold germanium CEvNS programme from Brokdorf to Leibstadt in Switzerland with improved detectors and shielding. It reported a reactor-antineutrino recoil signal in the fully coherent regime.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Precision low-energy weak interactions",
+    "Nonstandard neutrino interactions"
+  ],
+  "detection_principle": "High-purity germanium detectors measure ionization from small nuclear recoils. Heavy passive shielding, active vetoes and reactor-off data control backgrounds; signal predictions include the germanium nuclear-recoil ionization yield.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Leibstadt nuclear power plant",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Leibstadt nuclear power plant",
+      "latitude": 47.603,
+      "longitude": 8.184,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2025-07-30",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "Apparatus moved to Leibstadt",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023-11",
+      "event": "CONUS+ data collection began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "event": "Larger detectors installed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "First signal published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CONUS+ Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "Kernkraftwerk Leibstadt AG"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Distance",
+      "value": "Approximately 21 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor power",
+      "value": "3.6 GW thermal",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "First signal",
+      "value": "395 ± 106 events from 119 reactor-on days; 3.7 sigma significance",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector upgrade",
+      "value": "Three new detectors with 2.4 times more mass installed in November 2024",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The measured recoil excess agreed with the Standard Model prediction within uncertainties and established a compact reactor-neutrino detection method.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "conus",
+    "nucleus"
+  ],
+  "resources": {
+    "official_website": "https://www.mpi-hd.mpg.de/lin/research_conus.en.html",
+    "publication_links": [
+      "https://www.nature.com/articles/s41586-025-09322-2"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2407.11912",
+      "caption": "CONUS+ detector and shielding configuration at Leibstadt, from the apparatus publication.",
+      "credit": "CONUS+ Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2407.11912",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1780,
+      "height": 1798,
+      "sha256": "e9880d0e8c9b602caec367758e498db4aa1bf9dce99bd47cd9f5af93eb72a988",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "a32f0ed671cee568c2d06f9486080a526887cef02bc87b2a8878ff1d9f3e3bd6",
+      "source_dimensions": {
+        "width": 1780,
+        "height": 1798
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MPIK: CONUS+ operation and upgrade history",
+      "url": "https://www.mpi-hd.mpg.de/lin/research_conus.en.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CONUS+ Collaboration, Direct observation of coherent antineutrino-nucleus scattering",
+      "url": "https://www.nature.com/articles/s41586-025-09322-2",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

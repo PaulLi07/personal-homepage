@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "id": "beacon",
+  "name": "BEACON",
+  "full_name": "Beamforming Elevated Array for COsmic Neutrinos",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A mountaintop radio-neutrino concept with an implemented prototype uses elevation and interferometric triggering to survey large areas for tau-neutrino air showers.",
+  "physics_targets": [
+    "Tau neutrinos above approximately 100 PeV",
+    "Cosmic-ray air-shower validation",
+    "Transient neutrino sources"
+  ],
+  "detection_principle": "Antennas view the horizon for geomagnetic radio pulses from upward showers produced after Earth-skimming tau neutrinos interact in rock. Coherent beamforming reduces the detection threshold.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "BEACON prototype",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Barcroft Field Station, White Mountains, California",
+      "latitude": 37.58,
+      "longitude": -118.24,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "A working prototype and active design studies are documented; the large proposed station network is not treated as completed.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018–2019",
+      "event": "Prototype deployed and expanded.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Prototype design and performance published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Updated diffuse and transient sensitivity study released.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BEACON Collaboration",
+    "lead_institutions": [
+      "Pennsylvania State University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Prototype",
+      "value": "Four dual-polarisation radio antennas near Barcroft Field Station",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Site elevation",
+      "value": "Approximately 3.8 km in California’s White Mountains",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Full-array status",
+      "value": "Distributed elevated stations remain a proposed scale-up",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Prototype programme",
+      "summary": "Demonstrated radio-background characterisation and interferometric triggering; calculated full-array neutrino sensitivities remain projections.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "heron",
+    "grand",
+    "taroge-m"
+  ],
+  "resources": {
+    "official_website": "https://igc-demo.gwave.psu.edu/collaborations/beacon/",
+    "publication_links": [
+      "https://arxiv.org/abs/2206.09660",
+      "https://arxiv.org/abs/2504.13271"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://igc-demo.gwave.psu.edu/collaborations/beacon/",
+      "caption": "BEACON mountaintop radio prototype.",
+      "credit": "BEACON Collaboration / Penn State IGC",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://igc-demo.gwave.psu.edu/media/collaborations/image_BEACON.jpeg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 768,
+      "height": 1024,
+      "sha256": "eba3f723d7c7d7afcce287d1d3515aa1d81dd0d9f75d7ee63b261cef964af85e",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Penn State IGC, BEACON programme",
+      "url": "https://igc-demo.gwave.psu.edu/collaborations/beacon/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "BEACON Collaboration, design and initial performance of the prototype",
+      "url": "https://arxiv.org/abs/2206.09660",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "BEACON Collaboration, diffuse and transient neutrino sensitivity",
+      "url": "https://arxiv.org/abs/2504.13271",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

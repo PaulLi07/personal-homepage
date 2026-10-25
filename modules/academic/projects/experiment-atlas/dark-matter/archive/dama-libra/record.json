@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "dama-libra",
+  "name": "DAMA/LIBRA",
+  "full_name": "Large sodium Iodide Bulk for RAre processes",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DAMA/LIBRA succeeds DAMA/NaI with a larger, lower-background NaI(Tl) array for long-term annual-modulation measurements. Its reported modulation motivates same-target tests by ANAIS, COSINE, SABRE and COSINUS.",
+  "physics_targets": [
+    "Dark-matter annual modulation"
+  ],
+  "detection_principle": "Annual variations are fitted in low-energy single-crystal event rates and compared with control samples such as multiple-hit events and higher energies. Scintillation readout does not provide the direct event-by-event nuclear/electron recoil discrimination of cryogenic dual readout.",
+  "technologies": [
+    "NaI(Tl) scintillating crystals",
+    "Annual modulation"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": null,
+    "evidence": "The official project page describes phase-2 data taking but does not date the status update; it does not establish uninterrupted operation in October 2026.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2003-03",
+      "event": "DAMA/LIBRA operation begins",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "date": "2010",
+      "event": "Phase 1 ends and the phase-2 upgrade takes place",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DAMA Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Array size",
+      "value": "Approximately 250 kg of NaI(Tl)",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "phase1",
+      "status": "completed",
+      "description": "First-phase data"
+    },
+    {
+      "name": "phase2",
+      "status": "operating",
+      "description": "Phase following upgrades to optical readout and threshold; status date requires verification."
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The full same-target COSINE dataset challenges the dark-matter interpretation of DAMA/LIBRA's annual modulation. The DAMA claim must not be described as an established discovery.",
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMA/NaI",
+    "ANAIS-112",
+    "COSINE",
+    "SABRE",
+    "COSINUS"
+  ],
+  "resources": {
+    "official_website": "https://dama.web.roma2.infn.it/?page_id=64",
+    "publication_links": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407068/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/0804.2738",
+      "caption": "Crystals and photomultiplier tubes inside the copper enclosure after installation of DAMA/LIBRA (detector paper, lower-right panel of Figure 1).",
+      "credit": "R. Bernabei et al. / DAMA collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/0804.2738",
+      "width": 549,
+      "height": 414,
+      "sha256": "e941ce1012e6e6cfd77af2a3d37726c94e0e0a3b9d160bba4f6d852e57eee5a1",
+      "mime_type": "image/png",
+      "local_path": "images/representative.png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://dama.web.roma2.infn.it/?page_id=64",
+      "caption": "DAMA/LIBRA apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DAMA Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DAMA/LIBRA — The DAMA Project",
+      "url": "https://dama.web.roma2.infn.it/?page_id=64",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Experiments — The DAMA Project",
+      "url": "https://dama.web.roma2.infn.it/?page_id=56",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "COSINE-100 full dataset challenges the annual modulation signal of DAMA/LIBRA",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407068/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-09-05",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

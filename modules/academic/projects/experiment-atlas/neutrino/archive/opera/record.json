@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "opera",
+  "name": "OPERA",
+  "full_name": "Oscillation Project with Emulsion-tRacking Apparatus",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "OPERA detected tau-neutrino appearance in the CERN-to-Gran-Sasso muon-neutrino beam by resolving the short-lived tau-lepton decay topology in a massive emulsion target.",
+  "physics_targets": [
+    "Direct appearance of tau neutrinos through oscillation",
+    "Tau-neutrino charged-current interactions",
+    "Electron-neutrino appearance and sterile-neutrino constraints"
+  ],
+  "detection_principle": "Lead plates supplied neutrino interaction mass while nuclear-emulsion films provided micrometre-scale tracking. Electronic target trackers located candidate bricks, and magnetic spectrometers measured muons. Automated microscopy searched for tau decay kinks and detached vertices.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso, with the beam from CERN",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso, with the beam from CERN",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2018",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008-2012",
+      "event": "Main CNGS physics exposure",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2010",
+      "event": "First tau-neutrino candidate announced",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2018",
+      "event": "Final tau-appearance analysis published",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "OPERA Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "About 730 km from CERN to Gran Sasso",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "About 1.25 kilotonnes of lead-emulsion bricks",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "CNGS high-energy muon-neutrino beam, mean energy about 17 GeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "Final analysis selected ten tau-neutrino candidates and established tau appearance at 6.1-sigma significance.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "donut",
+    "icarus",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/news/news/physics/opera-collaboration-presents-its-final-results-neutrino-oscillations",
+    "publication_links": [
+      "https://arxiv.org/abs/1804.04912"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www-opera.desy.de/",
+      "caption": "The OPERA detector in Hall C at Gran Sasso during installation.",
+      "credit": "OPERA Collaboration / DESY",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www-opera.desy.de/pics/detector5.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 450,
+      "height": 600,
+      "sha256": "18262d2a151677bb5055a55303170e8d02e8539cf7cf2c3a0e357172c8e918e5",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "OPERA Collaboration, Final results on tau-neutrino appearance in the CNGS beam",
+      "url": "https://arxiv.org/abs/1804.04912",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-04-13",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CERN, OPERA collaboration presents its final results on neutrino oscillations",
+      "url": "https://home.cern/opera-collaboration-presents-its-final-results-on-neutrino-oscillations-all-data-publicly-available-on-the-cern-open-data-portal/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2018-05-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "sampling"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "sampling"
+    ],
+    "is_europe": true
+  }
+}

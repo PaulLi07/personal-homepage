@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "prospect-ii",
+  "name": "PROSPECT-II",
+  "full_name": "PROSPECT-II detector upgrade",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "PROSPECT-II is the proposed successor to PROSPECT-I at HFIR, designed for a larger effective reactor-antineutrino dataset with improved reliability and background performance. It seeks sharper sterile-oscillation tests and a high-quality uranium-235 reference spectrum.",
+  "physics_targets": [
+    "Sterile-neutrino disappearance",
+    "Uranium-235 spectrum",
+    "Reactor flux and nuclear-data tests"
+  ],
+  "detection_principle": "A segmented lithium-loaded liquid-scintillator detector identifies prompt positrons and delayed lithium captures. The upgraded design separates vulnerable detector components from scintillator and improves stable active volume and exposure.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Oak Ridge HFIR",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Oak Ridge HFIR",
+      "latitude": 35.918,
+      "longitude": -84.303,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2021",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "PROSPECT-II physics case published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PROSPECT-II Collaboration",
+    "lead_institutions": [
+      "Yale University",
+      "Oak Ridge National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed source",
+      "value": "HFIR highly enriched uranium reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Technology",
+      "value": "Segmented lithium-6-loaded liquid scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Stage",
+      "value": "Upgrade design and projected exposure",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Sterile reach and precision spectrum performance are projected, and must not be confused with Phase-I results.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "prospect"
+  ],
+  "resources": {
+    "official_website": "https://prospect.yale.edu/publications",
+    "publication_links": [
+      "https://arxiv.org/abs/2107.03934"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2107.03934",
+      "caption": "Proposed redesigned PROSPECT-II inner detector with PMTs outside the scintillator volume (Figure 11).",
+      "credit": "PROSPECT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2107.03934",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1242,
+      "sha256": "a6ad135ed73e89f9273375ffee48519b0f25a6a3a3086e5ec83ffc8a731243b2",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "1d5a07d7b46e4f4b71ec39f64cdcd4565ac6327d79c4a8a020a47ad4a6bc1753",
+      "source_dimensions": {
+        "width": 3600,
+        "height": 2329
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PROSPECT Collaboration, PROSPECT-II physics opportunities",
+      "url": "https://arxiv.org/abs/2107.03934",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-07-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PROSPECT collaboration publications",
+      "url": "https://prospect.yale.edu/publications",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A later public statement establishing completed installation or routine operation was not verified."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

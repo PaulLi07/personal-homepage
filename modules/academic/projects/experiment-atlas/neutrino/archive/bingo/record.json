@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "id": "bingo",
+  "name": "BINGO",
+  "full_name": "Bi-Isotope 0νββ Next Generation Observatory",
+  "aliases": [
+    "MINI-BINGO"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "BINGO develops background-rejection technologies for molybdenum-100 and tellurium-130 cryogenic double-beta searches. MINI-BINGO is its underground demonstrator, related to but distinct from CROSS and CUPID.",
+  "physics_targets": [
+    "Double-beta and rare weak decays"
+  ],
+  "detection_principle": "Heat-and-light bolometers use Li2MoO4 scintillation or the weak Cherenkov light of TeO2 for particle identification. Low-mass detector supports, sensitive Neganov-Trofimov-Luke light sensors and a cold BGO active veto target surface, gamma and pile-up backgrounds.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Canfranc Underground Laboratory: prototype modules",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory: prototype modules",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_prototype_site"
+    },
+    {
+      "name": "Modane Underground Laboratory: MINI-BINGO",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Modane Underground Laboratory: MINI-BINGO",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "demonstrator_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-09-21",
+    "evidence": "Two prototype modules were tested at Canfranc. The September 2026 report describes commissioned cryogenic infrastructure at Modane and a first MINI-BINGO physics campaign foreseen for autumn 2026, not yet confirmed by that report.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "BINGO Collaboration",
+    "lead_institutions": [
+      "CEA Paris-Saclay",
+      "IJCLab",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate isotopes",
+      "value": "100Mo in Li2MoO4 and 130Te in TeO2",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Published test modules",
+      "value": "Four cubic 4.5-cm Li2MoO4 crystals",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Background-index goal",
+      "value": "Order 10^-5 counts/(keV kg yr); forecast",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-09-21",
+      "summary": "Two prototype modules were tested at Canfranc. The September 2026 report describes commissioned cryogenic infrastructure at Modane and a first MINI-BINGO physics campaign foreseen for autumn 2026, not yet confirmed by that report.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "cross",
+    "cupid"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2402.12262",
+      "https://indico.stfc.ac.uk/event/1730/contributions/10975/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2402.12262",
+      "caption": "BINGO low-mass detector supports and bolometer-module design (Fig. 1).",
+      "credit": "BINGO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2402.12262#page=5",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 720,
+      "height": 274,
+      "sha256": "004f7068baf2e071390212dcc3bd58832d1edaf947a7083f22a502899bf53235",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "BINGO innovative assembly for background reduction in bolometric 0νββ experiments",
+      "url": "https://arxiv.org/abs/2402.12262",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-02-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "BINGO: toward a background-free ton-scale bolometric search for Neutrinoless Double Beta Decay",
+      "url": "https://indico.stfc.ac.uk/event/1730/contributions/10975/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-21",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

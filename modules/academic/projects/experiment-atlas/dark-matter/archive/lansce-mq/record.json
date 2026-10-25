@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "lansce-mq",
+  "name": "LANSCE-mQ",
+  "full_name": "LANSCE dedicated milli/fractionally charged particle search",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "LANSCE-mQ is proposed at LANSCE, Los Alamos National Laboratory, New Mexico. It shares the LANSCE beam environment but is distinct from the CCM liquid-argon detector concept.",
+  "physics_targets": [
+    "Millicharged particles",
+    "Fractionally charged particles",
+    "Charged dark-sector particles"
+  ],
+  "detection_principle": "An 800 MeV proton fixed target produces candidate small-charge particles. Two scintillator layers seek coincident weak-ionization light signals; on-site background measurements assess neutrons and PMT dark counts.",
+  "technologies": [
+    "EJ-200 plastic or CeBr3 scintillators",
+    "PMT",
+    "Two-layer coincidence"
+  ],
+  "sites": [
+    {
+      "name": "Los Alamos National Laboratory, LANSCE, New Mexico (proposed)",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Los Alamos National Laboratory, LANSCE, New Mexico (proposed)",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2024 proposal preprint and 2026 journal article; background measurements do not establish operation of the full search",
+    "as_of": "2026-01-27",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-01-27",
+      "event": "2024 proposal preprint and 2026 journal article; background measurements do not establish operation of the full search",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LANSCE-mQ Collaboration / project team",
+    "lead_institutions": [
+      "Los Alamos National Laboratory",
+      "LANSCE-mQ proposal authors"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed proton beam",
+      "value": "800 MeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Design configuration",
+      "value": "Two scintillator layers; material options remain under comparison",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Projected sensitive mass interval",
+      "value": "Approximately 1–300 MeV/c², from sensitivity studies",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "LANSCE-mQ",
+      "status": "proposed",
+      "description": "2024 proposal preprint and 2026 journal article; background measurements do not establish operation of the full search"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "CCM",
+    "SUBMET",
+    "FerMINI"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2407.07142",
+      "https://journals.aps.org/prd/abstract/10.1103/4bdh-sd5n"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://inspirehep.net/files/8cd70dbd265930c5cc67becfef9d67f9",
+      "caption": "LANSCE-mQ detector concept in the proposal published in 2026, showing two layers of scintillator bars and photomultiplier arrays; a proposed apparatus.",
+      "credit": "Yu-Dai Tsai et al., Physical Review D 113 (2026) 015038, Fig. 1",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/8cd70dbd265930c5cc67becfef9d67f9",
+      "width": 608,
+      "height": 368,
+      "sha256": "ddc76168dd5e2165b1255da1b95f0628d43d80ee38ba6adfdac8cbdaa5759621",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2407.07142",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "LANSCE-mQ: Dedicated search for milli/fractionally charged particles at LANL",
+      "url": "https://arxiv.org/abs/2407.07142",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2024-07-09",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Proposal for a dedicated search for millicharged and fractionally charged particles at LANL",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/4bdh-sd5n",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2026-01-27",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

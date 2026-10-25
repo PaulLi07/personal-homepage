@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "id": "texono",
+  "name": "TEXONO",
+  "full_name": "Taiwan EXperiment On NeutrinO",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "TEXONO is a multipurpose low-energy neutrino and dark-matter programme. Its low-threshold germanium data at Kuo-Sheng have been used to constrain WIMPs and bosonic dark matter; inclusion is based on those results, not simply on its neutrino research.",
+  "physics_targets": [
+    "Low-mass WIMPs",
+    "Bosonic dark matter",
+    "Reactor ALPs"
+  ],
+  "detection_principle": "Low-capacitance germanium devices measure small ionization signals, with anticoincidence shielding and low-background operation, to search for low-mass WIMP recoil spectra and absorption signals.",
+  "technologies": [
+    "Ultra-low-energy germanium",
+    "Point-contact germanium",
+    "Anticoincidence"
+  ],
+  "sites": [
+    {
+      "name": "Kuo-Sheng Reactor Neutrino Laboratory",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Near-reactor experimental facility, Kuo-Sheng nuclear power plant, New Taipei, Taiwan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": "2026-07",
+    "evidence": "A 2026 collaboration paper continues new-physics searches using Kuo-Sheng Ge data; this does not demonstrate continued operation of the original reactor.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "TEXONO Collaboration",
+    "lead_institutions": [
+      "Academia Sinica, Institute of Physics"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "2007 prototype",
+      "value": "Four channels, each with 5 g of Ge",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "2007 energy threshold",
+      "value": "220±10 eV at 50% efficiency",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2007",
+      "summary": "Ultra-low-energy germanium data constrain low-mass WIMP spin-independent and spin-dependent couplings.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CDEX",
+    "CONUS",
+    "CoGeNT"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0712.1645",
+      "https://arxiv.org/abs/2607.29205"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/0712.1645",
+      "caption": "Layout of the anti-Compton detector, inner shielding and radon purge for TEXONO's ultra-low-energy germanium detector (2008 paper, Figure 1).",
+      "credit": "S. T. Lin et al. / TEXONO collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/0712.1645",
+      "width": 699,
+      "height": 576,
+      "sha256": "a6dab7ad2fbf5d2be424ceee3b7571f977c2a8f97cbe1fb53570150e52dd9f68",
+      "mime_type": "image/png",
+      "local_path": "images/representative.png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/0712.1645",
+      "caption": "TEXONO apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "TEXONO Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "New limits on spin-independent and spin-dependent couplings of low-mass WIMP dark matter with a germanium detector at a threshold of 220 eV",
+      "url": "https://arxiv.org/abs/0712.1645",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007-12-11",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Constraining Axion-Like-Particles with germanium detector at the Kuo-Sheng Reactor Neutrino Laboratory",
+      "url": "https://arxiv.org/abs/2607.29205",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Different papers use historical datasets; publication dates must not be interpreted as data-taking dates."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

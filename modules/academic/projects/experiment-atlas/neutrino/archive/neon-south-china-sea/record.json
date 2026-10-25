@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "neon-south-china-sea",
+  "name": "NEON (South China Sea Neutrino Observatory)",
+  "full_name": "Neutrino Observatory in the Nanhai",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed South China Sea optical telescope explores a large high-energy neutrino observatory complementary to existing global detectors.",
+  "physics_targets": [
+    "High-energy cosmic-neutrino astronomy",
+    "Diffuse and point-source sensitivity"
+  ],
+  "detection_principle": "Underwater strings of multi-photomultiplier optical modules would record Cherenkov light from neutrino-induced particles; the design is evaluated using detector simulations.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; candidate deep-sea site in the South China Sea",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; candidate deep-sea site in the South China Sea",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "The founding paper explicitly presents a proposed telescope; the 2026 PDG review retains it among future concepts.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Initial telescope concept and sensitivity study released.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Included in the PDG inventory of future neutrino-telescope concepts.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NEON (South China Sea Neutrino Observatory) Collaboration",
+    "lead_institutions": [
+      "Sun Yat-sen University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed instrumented volume",
+      "value": "Approximately 10 km³ class",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Medium",
+      "value": "Deep South China Sea water",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Multi-PMT optical modules in simulated string-array configurations",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Concept study",
+      "summary": "Published sensitivity calculations describe a possible future telescope; no deployed full NEON neutrino observatory is established by these sources.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "trident",
+    "hunt"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2408.05122",
+      "https://ccwww.kek.jp/pdg/2026/reviews/rpp2026-rev-particle-detectors-non-accel.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2408.05122",
+      "caption": "Proposed NEON marine array and multi-photomultiplier modules, shown in top and interior views.",
+      "credit": "NEON Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2408.05122",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 450,
+      "height": 506,
+      "sha256": "d8b739deec627068e8f7d0e6e8d93ec2d4cc8c2a34e410fb9d28ac026cdb27d1",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NEON Collaboration, A proposed deep sea Neutrino Observatory in the Nanhai",
+      "url": "https://arxiv.org/abs/2408.05122",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Particle Data Group, non-accelerator particle detectors",
+      "url": "https://ccwww.kek.jp/pdg/2026/reviews/rpp2026-rev-particle-detectors-non-accel.pdf",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "This NEON is the proposed Nanhai telescope, not the operating NaI reactor-neutrino experiment in South Korea."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

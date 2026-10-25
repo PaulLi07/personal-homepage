@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "gerda",
+  "name": "GERDA",
+  "full_name": "GERmanium Detector Array",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "GERDA was an enriched-germanium double-beta-decay experiment at LNGS. Its low-background energy spectrum also supports searches for direct absorption of bosonic dark matter and dark Compton scattering.",
+  "physics_targets": [
+    "Axion-like dark matter",
+    "Dark photons",
+    "Bosonic super-WIMPs"
+  ],
+  "detection_principle": "Bare germanium detectors operate in liquid argon. Liquid-argon scintillation anticoincidence and germanium spectroscopy suppress backgrounds; full dark-matter energy deposition can produce a narrow peak.",
+  "technologies": [
+    "Enriched 76Ge",
+    "Liquid-argon cooling and anticoincidence",
+    "Germanium ionization"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2020-02",
+    "evidence": "The GERDA website states that data taking stopped in February 2020. Main Phase-II data extend chiefly through December 2019, followed by continued analysis of historical data.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020-02",
+      "event": "All data taking stops, according to the website",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GERDA Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "Max Planck Institute for Physics",
+      "INFN"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Exposure in the 2024 dark-matter analysis",
+      "value": "105.5 kg·year",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Mass range of the 2024 search",
+      "value": "65–1021 keV/c²",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "No bosonic-dark-matter signal above background was found; direct-absorption and dark-Compton channels were constrained.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "MAJORANA Demonstrator",
+    "LEGEND"
+  ],
+  "resources": {
+    "official_website": "https://www.mpi-hd.mpg.de/gerda/home.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2405.15954",
+      "https://arxiv.org/abs/2005.14184"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.mpi-hd.mpg.de/gerda/home.html",
+      "caption": "Overall GERDA model, cut away to show the large water-shield tank, central cryostat and upper clean room.",
+      "credit": "GERDA collaboration / MPIK; no individual illustrator is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.mpi-hd.mpg.de/gerda/GERDA-Modell_web.jpg",
+      "width": 625,
+      "height": 469,
+      "sha256": "9f43afd75eb1a84a56821281078b29a90ae1dd11dd7e4de620bff1312baae0f9",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2405.15954",
+      "caption": "GERDA apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "GERDA Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Searches for new physics below twice the electron mass with GERDA",
+      "url": "https://arxiv.org/abs/2405.15954",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-05-24",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "GERDA Home Page",
+      "url": "https://www.mpi-hd.mpg.de/gerda/home.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "The first search for bosonic super-WIMPs with masses up to 1 MeV/c² with GERDA",
+      "url": "https://arxiv.org/abs/2005.14184",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-05-28",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "solid_state"
+    ]
+  }
+}

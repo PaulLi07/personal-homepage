@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "supernemo",
+  "name": "SuperNEMO",
+  "full_name": "SuperNEMO tracking calorimeter experiment",
+  "aliases": [
+    "supernemo"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "gas",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SuperNEMO develops a modular tracking calorimeter for neutrinoless double-beta decay. Its demonstrator at Modane follows NEMO-3 while improving isotope loading, energy resolution and background control.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Thin enriched selenium foils are placed between gas tracking volumes and scintillator calorimeters. Two reconstructed electron tracks with a common vertex supply energy and angular information for signal and background discrimination.",
+  "technologies": [
+    "Gas time projection chambers",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Laboratoire Souterrain de Modane",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Laboratoire Souterrain de Modane",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2025-09",
+    "evidence": "The council report records official physics data taking from 10 April 2025 before the radon-free air factory. The October 2025 low-radon run and December 2026 end date are schedules in that report, not subsequently confirmed milestones.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-04-10",
+      "event": "Official start of physics data taking, initially without the LSM radon-free-air factory.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "supernemo Collaboration",
+    "lead_institutions": [
+      "CNRS/IN2P3",
+      "University College London"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Demonstrator isotope",
+      "value": "82Se",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Source scale",
+      "value": "Approximately 6-7 kg in the demonstrator design",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Location",
+      "value": "Modane Underground Laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": null,
+      "summary": "The collaboration documents demonstrator construction, commissioning and reconstruction work; the full modular design is distinct from the demonstrator.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "nemo"
+  ],
+  "resources": {
+    "official_website": "https://supernemo.org/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/2412.18021",
+      "caption": "Split view of the SuperNEMO demonstrator tracking and calorimeter modules, Figure 1 of the calorimeter commissioning paper.",
+      "credit": "SuperNEMO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2412.18021",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1132,
+      "height": 620,
+      "sha256": "8378caac79c20499eb7ce7cab6eeeec75be5fc82f046454c1b21ae9d5dfb2810",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "supernemo: official experiment / institutional overview",
+      "url": "https://supernemo.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SuperNEMO Collaboration: detector publications and progress",
+      "url": "https://supernemo.org/publications.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SuperNEMO report to the IN2P3 Scientific Council, September 2025",
+      "url": "https://atrium.in2p3.fr/nuxeo/nxfile/default/b81354ac-cdbb-437a-adc7-9f0d06083802/blobholder%3A0/IN2P3_CSI_SuperNEMO_Sept2025.pdf",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "2025-09",
+      "supports": [
+        "Status and results checked during the 2026-10-23 audit"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "gas",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

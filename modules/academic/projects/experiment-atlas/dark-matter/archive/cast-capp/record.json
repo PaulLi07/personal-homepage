@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "cast-capp",
+  "name": "CAST-CAPP",
+  "full_name": "CAST-CAPP axion haloscope",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An independent cavity dark-matter search installed inside the CAST dipole magnet, targeting a different source population from CAST's solar-axion observations.",
+  "physics_targets": [
+    "Galactic-halo axions"
+  ],
+  "detection_principle": "Four rectangular cavities combine with matched phases to receive narrowband microwaves from Galactic-axion conversion in a magnetic field.",
+  "technologies": [
+    "Rectangular-resonant-cavity arrays",
+    "Phase matching",
+    "Magnets"
+  ],
+  "sites": [
+    {
+      "name": "CERN CAST apparatus, Meyrin",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN CAST apparatus, Meyrin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2022",
+    "evidence": "2022 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Search for Dark Matter Axions with CAST-CAPP",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CAST-CAPP Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "IBS"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Data",
+      "value": "2019–2021, 4124 h",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scan interval",
+      "value": "19.74–22.47 μeV；4.774–5.434 GHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Reported 90% CL axion–photon coupling limits reaching 8×10⁻¹⁴ GeV⁻¹, with no signal found.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "CAST",
+    "CAPP / IBS-DMAG",
+    "RADES"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2211.02902"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2211.02902",
+      "caption": "Photograph of a CAST-CAPP single-cavity assembly and design of its sapphire-strip tuning system (Fig. 1, 2022 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2211.02902v1/cavity_assembly.png",
+      "width": 1404,
+      "height": 780,
+      "sha256": "e6d3ba5160023a1df411b43a34460bdeac333282cbbcb65b2417a3619155abc9",
+      "mime_type": "image/webp",
+      "source_sha256": "ff972aeef19391b6498f5f3a49adbea7a6885cf1870055057831818d90b57fee",
+      "source_dimensions": {
+        "width": 1404,
+        "height": 780
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2211.02902",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "CAST-CAPP Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for Dark Matter Axions with CAST-CAPP",
+      "url": "https://arxiv.org/abs/2211.02902",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf"
+    ]
+  }
+}

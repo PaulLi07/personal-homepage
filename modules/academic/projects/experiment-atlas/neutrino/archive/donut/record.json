@@ -1,0 +1,208 @@
+{
+  "schema_version": "1.0",
+  "id": "donut",
+  "name": "DONUT",
+  "full_name": "Direct Observation of the NU Tau",
+  "aliases": [
+    "Fermilab E872"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "DONUT at Fermilab made the first direct observation of tau-neutrino charged-current interactions using a prompt neutrino beam and a hybrid nuclear-emulsion detector.",
+  "physics_targets": [
+    "Direct identification of tau-neutrino interactions",
+    "Tau-neutrino charged-current cross section",
+    "Lepton-flavour universality and neutrino properties"
+  ],
+  "detection_principle": "An 800 GeV proton beam struck a dense target, producing charmed mesons and tau neutrinos through their decays. Emulsion sheets interleaved with target material resolved the short tau flight and decay kink; electronic tracking directed the microscope searches.",
+  "technologies": [
+    "Nuclear emulsions"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2007",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1997",
+      "event": "Neutrino exposure collected",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2000-07-21",
+      "event": "First direct tau-neutrino evidence announced",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2007",
+      "event": "Final interaction cross-section analysis submitted",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DONUT Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Driver",
+      "value": "800 GeV Tevatron protons on a dense production target",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "Hybrid nuclear emulsion with electronic trackers and spectrometer",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Initial discovery sample",
+      "value": "Four tau-neutrino interaction candidates",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2000",
+      "summary": "Resolved tau-decay topologies in neutrino interactions, directly identifying the third neutrino flavour.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "date": "2007",
+      "summary": "Published an interaction cross-section measurement from the final sample.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "fnal-e-0531",
+    "opera",
+    "faser",
+    "dstau"
+  ],
+  "resources": {
+    "official_website": "https://news.fnal.gov/2000/07/physicists-find-first-direct-evidence-tau-neutrino-fermilab/",
+    "publication_links": [
+      "https://arxiv.org/abs/0711.0728",
+      "https://arxiv.org/abs/hep-ex/0012035"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/0711.0728",
+      "caption": "Plan view of the DONUT emulsion target and electronic spectrometer.",
+      "credit": "DONUT Collaboration, Figure 5",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/0711.0728",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1521,
+      "height": 792,
+      "sha256": "440c12c0662d8f4e6afb7a745fa68bd4695711cfe6d020aaad9e42c8656fe33d",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fermilab, First direct evidence for tau neutrino",
+      "url": "https://news.fnal.gov/2000/07/physicists-find-first-direct-evidence-tau-neutrino-fermilab/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2000-07-21",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DONUT Collaboration, A first measurement of the interaction cross section of the tau neutrino",
+      "url": "https://arxiv.org/abs/0711.0728",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007-11-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "DONUT Collaboration, Observation of Tau Neutrino Interactions",
+      "url": "https://arxiv.org/abs/hep-ex/0012035",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2000-12-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "emulsion"
+    ],
+    "technology_tags": [
+      "emulsion"
+    ],
+    "is_europe": false
+  }
+}

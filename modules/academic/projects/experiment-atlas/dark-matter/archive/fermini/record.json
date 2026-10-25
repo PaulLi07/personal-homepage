@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0",
+  "id": "fermini",
+  "name": "FerMINI",
+  "full_name": "Fermilab Millicharged particle experiment proposal",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "FerMINI is a named millicharged-particle experiment proposal with candidate sites in the Fermilab MINOS or DUNE near-detector halls, Illinois. The sites remain candidates rather than a falsely asserted selected location.",
+  "physics_targets": [
+    "Millicharged dark particles"
+  ],
+  "detection_principle": "A movable multilayer coincidence-scintillator detector downstream of a proton fixed target would test MeV–GeV small-charge particles through weak ionization and timing/directional correlations.",
+  "technologies": [
+    "Multilayer plastic scintillators",
+    "PMT",
+    "Proton fixed target"
+  ],
+  "sites": [
+    {
+      "name": "Candidate Fermilab MINOS or DUNE near-detector halls, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Candidate Fermilab MINOS or DUNE near-detector halls, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2019 concept proposal; candidate halls and beam deployments are not finally approved sites",
+    "as_of": "2019",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "2019 concept proposal; candidate halls and beam deployments are not finally approved sites",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FerMINI Collaboration / project team",
+    "lead_institutions": [
+      "FerMINI proposal authors"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate mass range",
+      "value": "MeV to several GeV, depending on layout and coupling",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Potential charge sensitivity",
+      "value": "A charge scale around 10⁻⁴ e is a design projection, not a measured limit",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "FerMINI",
+      "status": "proposed",
+      "description": "2019 concept proposal; candidate halls and beam deployments are not finally approved sites"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "milliQan",
+    "SUBMET",
+    "DUNE near detector",
+    "SLAC-mQ"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://repo.scoap3.org/records/48823"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2206.04220",
+      "caption": "Proposed FerMINI layout downstream of the NuMI beamline, showing target, focusing horns, decay pipe, absorber, rock and segmented detector; a proposal design.",
+      "credit": "Edited by Philip Ilten, Nhan Tran et al., Fig. 12 of the 2022 accelerator-dark-sector white paper; FerMINI design proposed by Kevin J. Kelly and Yu-Dai Tsai",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2206.04220",
+      "width": 1128,
+      "height": 253,
+      "sha256": "644aee9411db70ced9eee3b230210e73b6324d04cd320a4fb97bd55483f104f4",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://repo.scoap3.org/records/48823",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Proton fixed-target scintillation experiment to search for millicharged dark matter",
+      "url": "https://repo.scoap3.org/records/48823",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2019-07-29",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "baikal-nt200",
+  "name": "Baikal NT200 / NT200+",
+  "full_name": "Baikal NT200 neutrino telescope",
+  "aliases": [
+    "Baikal",
+    "NT200",
+    "NT200+"
+  ],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The historical deep-water array in Lake Baikal preceded Baikal-GVD and demonstrated underwater detection of upward-going neutrino-induced muons.",
+  "physics_targets": [
+    "Atmospheric muon neutrinos",
+    "Diffuse high-energy neutrinos",
+    "Neutrino telescope technology"
+  ],
+  "detection_principle": "Pairs of optical modules on a compact set of strings recorded Cherenkov light. Local coincidences reduced noise, while upward-going tracks identified neutrino candidates.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Baikal NT200 site",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Southern Lake Baikal",
+      "latitude": 51.77,
+      "longitude": 104.4,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "NT200 is preserved as a historical detector; present-day large-volume operation belongs to Baikal-GVD.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1993",
+      "event": "Early NT36 array operated.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1996",
+      "event": "Upward-going neutrino candidates reconstructed with predecessor configurations.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1998",
+      "event": "NT200 completed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2005",
+      "event": "NT200+ outer-string extension installed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Baikal Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Russian Academy of Sciences",
+      "DESY"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "NT200",
+      "value": "192 optical modules on eight strings",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 1.1 km below the lake surface",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "NT200+ extension",
+      "value": "Three additional outer strings deployed in 2005",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Historical programme",
+      "summary": "Detected atmospheric neutrinos and constrained diffuse high-energy fluxes, providing the engineering and analysis basis for Baikal-GVD.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "baikal-gvd"
+  ],
+  "resources": {
+    "official_website": "https://baikal-gvd.jinr.ru/history",
+    "publication_links": [
+      "https://www.zeuthen.desy.de/~wischnew/baikal/publications/baikal2006/neutrino2006.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.zeuthen.desy.de/~wischnew/baikal/publications/baikal2006/neutrino2006.pdf",
+      "caption": "Deployment diagram of the central eight-string NT200 array and three additional NT200+ strings. The dense central part is NT200; the long outer strings belong to the 2005 upgrade.",
+      "credit": "Baikal Collaboration / V. Aynutdinov et al., Neutrino 2006 status report, PDF page 2, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.zeuthen.desy.de/~wischnew/baikal/publications/baikal2006/neutrino2006.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 698,
+      "height": 922,
+      "sha256": "6fa5dfe99327fb1a351a5b9b240bd977d0a30d325b466b36d66930e3c15c4212",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Baikal Collaboration, historical development",
+      "url": "https://baikal-gvd.jinr.ru/history",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Baikal Collaboration, neutrino telescope status at Neutrino 2006",
+      "url": "https://www.zeuthen.desy.de/~wischnew/baikal/publications/baikal2006/neutrino2006.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2006",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

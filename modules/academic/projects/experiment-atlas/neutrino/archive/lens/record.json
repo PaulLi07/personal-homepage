@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "lens",
+  "name": "LENS",
+  "full_name": "Low Energy Neutrino Spectroscopy",
+  "aliases": [
+    "LENS-Sol",
+    "MiniLENS"
+  ],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "LENS developed an indium-loaded scintillator concept for real-time spectroscopy of low-energy solar electron neutrinos. Its segmented optical lattice and delayed coincidence tag were also studied for artificial-source sterile-neutrino searches. The reviewed sources document detector R&D and proposed full-scale operation.",
+  "physics_targets": [
+    "Solar pp, beryllium-7 and CNO neutrinos",
+    "Source-based sterile-neutrino disappearance"
+  ],
+  "detection_principle": "Electron-neutrino capture on indium-115 produces an electron and a delayed gamma cascade from an excited tin-115 state. A three-dimensional scintillation lattice localizes the prompt and delayed deposits to suppress accidental backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Kimballton Underground Research Facility",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Giles County, Virginia",
+      "latitude": 37.37,
+      "longitude": -80.67,
+      "precision": "approximate_site",
+      "site_status": "historical_R&D_and_candidate_fullscale_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Historical R&D / full-scale operation unverified",
+    "as_of": "2014",
+    "evidence": "The FY2014 institutional report lists LENS as an R&D programme at KURF. A full-scale solar-neutrino detector operating in 2026 was not verified.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007",
+      "event": "Detailed source-oscillation sensitivity study published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2014",
+      "event": "Institutional report documents ongoing detector R&D",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LENS Collaboration",
+    "lead_institutions": [
+      "Virginia Tech",
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Capture threshold",
+      "value": "Approximately 115 keV",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Capture target",
+      "value": "Indium-115 in loaded liquid scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Illustrative LENS-Sol design",
+      "value": "9.9 tonnes of indium in 125 tonnes total mass, 8 wt% loading",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design studies",
+      "summary": "Solar spectra and source-oscillation sensitivities are simulations, not measured solar-neutrino results.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gallex",
+    "gno",
+    "sage",
+    "nulat"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/chemistry/nnc/collaborations.php",
+    "publication_links": [
+      "https://arxiv.org/abs/0705.2769",
+      "https://cnp.phys.vt.edu/reports/CNP_Annual_Report_FY14.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "sensitivity_plot",
+      "source_url": "https://arxiv.org/abs/0705.2769",
+      "caption": "Simulated five-year solar-neutrino spectrum for the proposed LENS detector; this is a sensitivity illustration, not observed data.",
+      "credit": "C. Grieb et al. / LENS",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://arxiv.org/abs/0705.2769",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1025,
+      "height": 710,
+      "sha256": "2e89ced71990c8862cdee304be58629d9925cd0985d399f299ebf3f119f1938c",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected final local figure and checked its apparatus identity and design/measurement stage against the public source."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Brookhaven National Laboratory, LENS collaboration and detection concept",
+      "url": "https://www.bnl.gov/chemistry/nnc/collaborations.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "C. Grieb et al., LENS as a Probe of Sterile Neutrino Mediated Oscillations",
+      "url": "https://arxiv.org/abs/0705.2769",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007-05-18",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Virginia Tech Center for Neutrino Physics, FY2014 annual report",
+      "url": "https://cnp.phys.vt.edu/reports/CNP_Annual_Report_FY14.pdf",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A current full-scale deployment and new solar-neutrino exposure were not established."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

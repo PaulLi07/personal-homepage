@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "abracadabra",
+  "name": "ABRACADABRA",
+  "full_name": "A Broadband/Resonant Approach to Cosmic Axion Detection with an Amplifying B-field Ring Apparatus",
+  "aliases": [
+    "ABRA-10cm",
+    "ABRACADABRA-10cm"
+  ],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A toroidal-magnet experiment for sub-microelectronvolt axions; ABRACADABRA-10cm is a small prototype that has produced search results.",
+  "physics_targets": [
+    "Ultralight axions",
+    "Axionlike dark matter"
+  ],
+  "detection_principle": "An axion background generates an effective alternating current in a toroidal static field; a pickup loop and SQUID measure oscillating flux in the nominally near-zero-field center.",
+  "technologies": [
+    "Toroidal magnets",
+    "Pickup coils",
+    "SQUID",
+    "Broadband magnetic-flux measurements"
+  ],
+  "sites": [
+    {
+      "name": "Massachusetts Institute of Technology，Cambridge",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Massachusetts Institute of Technology，Cambridge",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "The search for low-mass axion dark matter with ABRACADABRA-10cm",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ABRACADABRA Collaboration / project team",
+    "lead_institutions": [
+      "MIT"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 search",
+      "value": "0.41–8.27 neV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "No significant signal; the best 95% upper limit reaches 3.2×10⁻¹¹ GeV⁻¹.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "DMRadio"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2102.06722",
+      "https://arxiv.org/abs/1810.12257",
+      "https://arxiv.org/abs/2505.02821"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2102.06722",
+      "caption": "ABRACADABRA-10 cm toroidal magnet, pickup cylinder and axion-induced flux schematic (upper half of Fig. 1, 2021 results paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2102.06722v1/Plots/magnetOnlyDiagram_cleaned_small.png",
+      "width": 1885,
+      "height": 1920,
+      "sha256": "999ddc145995011d8cd312776606d1d3d5297f0e3767f2c9e6c1ba96f059f3f9",
+      "mime_type": "image/webp",
+      "source_sha256": "3a3aebe8ab213f565417c86b1872f1e3ea8426cedf08477f6bd723eb7e91876e",
+      "source_dimensions": {
+        "width": 2800,
+        "height": 2852
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2102.06722",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ABRACADABRA Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The search for low-mass axion dark matter with ABRACADABRA-10cm",
+      "url": "https://arxiv.org/abs/2102.06722",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "First Results from ABRACADABRA-10cm",
+      "url": "https://arxiv.org/abs/1810.12257",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "High-Frequency Gravitational Wave Search with ABRACADABRA-10cm",
+      "url": "https://arxiv.org/abs/2505.02821",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "spin_magnetometry",
+      "quantum_sensor"
+    ]
+  }
+}

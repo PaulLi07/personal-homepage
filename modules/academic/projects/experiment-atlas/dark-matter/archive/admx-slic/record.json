@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "admx-slic",
+  "name": "ADMX SLIC",
+  "full_name": "Superconducting Lc circuit Investigating Cold axions",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "An independent ADMX-related low-frequency LC-circuit prototype demonstrating an axion search with a superconducting lumped-element resonator.",
+  "physics_targets": [
+    "Low-mass axions"
+  ],
+  "detection_principle": "A tunable superconducting LC resonator enhances axion-induced current in a magnetic field, with piezoelectric capacitance adjustment scanning frequency.",
+  "technologies": [
+    "Superconducting LC circuits",
+    "Piezoelectric tuning",
+    "Cryogenic magnets"
+  ],
+  "sites": [
+    {
+      "name": "University of Florida，Gainesville",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of Florida，Gainesville",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2019",
+    "evidence": "2019 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "ADMX SLIC: Results from a Superconducting LC Circuit Investigating Cold Axions",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ADMX SLIC Collaboration / project team",
+    "lead_institutions": [
+      "University of Florida",
+      "University of Washington"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Scanned frequency band",
+      "value": "42.31–42.36、42.88–42.89、43.54–43.56 MHz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Fields used for individual scans",
+      "value": "4.5、5.0、7.0 T",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "Reported coupling exclusions below the 10⁻¹² GeV⁻¹ scale, without claiming axion discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "ADMX",
+    "DMRadio"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1911.05772"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1911.05772",
+      "caption": "Magnet and circuit layout of the ADMX SLIC superconducting-LC experiment (Fig. 1, 2019 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/1911.05772v1/Fig1_annotated_rendered_v1_2.png",
+      "width": 1200,
+      "height": 900,
+      "sha256": "51446a138f6753edf50cbee2b6ed89de59e0a16fd45b1e4db877fa91d2c346f7",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1911.05772",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ADMX SLIC Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ADMX SLIC: Results from a Superconducting LC Circuit Investigating Cold Axions",
+      "url": "https://arxiv.org/abs/1911.05772",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

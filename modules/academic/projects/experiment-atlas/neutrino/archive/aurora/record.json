@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "aurora",
+  "name": "Aurora",
+  "full_name": "Aurora cadmium-116 double-beta-decay experiment",
+  "aliases": [
+    "aurora"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Aurora studied cadmium-116 double-beta decay with enriched cadmium-tungstate scintillators at Gran Sasso. It extended the earlier Solotvina scintillator programme with a larger, cleaner isotope sample.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "CdWO4 crystals embedded in liquid scintillator measure decay light through low-background light guides and photomultipliers. Pulse-shape and time-correlated-event rejection suppress internal contamination.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso National Laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso National Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2017",
+    "evidence": "The final Aurora analysis measured two-neutrino decay and constrained neutrinoless and other rare cadmium-decay modes.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "aurora Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Kyiv",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Enriched crystal mass",
+      "value": "1.162 kg of 116CdWO4",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Principal isotope",
+      "value": "116Cd",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Site shielding",
+      "value": "Gran Sasso underground laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "The final Aurora analysis measured two-neutrino decay and constrained neutrinoless and other rare cadmium-decay modes.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "solotvina"
+  ],
+  "resources": {
+    "official_website": "https://lpd.kinr.kyiv.ua/",
+    "publication_links": [
+      "https://arxiv.org/abs/1811.06398"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/1811.06398",
+      "caption": "Cross-sectional schematic of the Aurora enriched-cadmium scintillator setup, Figure 2 of the final-results paper.",
+      "credit": "Aurora Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1811.06398",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 711,
+      "height": 560,
+      "sha256": "7bec7db05571e1a1e650ce62d2995de28ef5a6c327c202310b561984dfe1741c",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "aurora: official experiment / institutional overview",
+      "url": "https://lpd.kinr.kyiv.ua/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Final results of the Aurora experiment to study double-beta decay of 116Cd with enriched crystal scintillators",
+      "url": "https://arxiv.org/abs/1811.06398",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

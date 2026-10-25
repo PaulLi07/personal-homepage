@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "ihep-jinr",
+  "name": "IHEP-JINR",
+  "full_name": "IHEP-JINR neutrino detector at the U-70 accelerator",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The joint IHEP-JINR neutrino detector at Protvino studied neutrino-nucleon interactions and oscillation or heavy-neutrino signatures in U-70 beams, including dedicated beam-dump configurations.",
+  "physics_targets": [
+    "Neutrino-nucleon structure functions at low momentum transfer",
+    "Electron-neutrino disappearance and heavy neutral leptons",
+    "Prompt neutrino production in beam-dump running"
+  ],
+  "detection_principle": "A massive segmented calorimetric target with tracking and muon analysis reconstructed charged-current and neutral-current interactions. Beam configuration and event topology separated muon and electron components and supported structure-function measurements.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Russia; IHEP accelerator neutrino beam area, Protvino",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; IHEP accelerator neutrino beam area, Protvino",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1999",
+      "event": "Low-Q-squared structure-function analysis submitted",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2001",
+      "event": "High-twist structure-function analysis submitted",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2003",
+      "event": "Detector overview published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "IHEP-JINR Collaboration",
+    "lead_institutions": [
+      "Institute for High Energy Physics, Protvino",
+      "Joint Institute for Nuclear Research, Dubna"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Facility",
+      "value": "U-70 proton synchrotron at Protvino, Russia",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Primary beam",
+      "value": "70 GeV proton accelerator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis modes",
+      "value": "Neutrino-nucleon scattering and dedicated beam-dump exposures",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1999-2001",
+      "summary": "Measured neutrino structure functions in the low-momentum-transfer region and investigated higher-twist contributions.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "skat"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1023/A:1024406219896",
+      "https://arxiv.org/abs/hep-ex/9908037",
+      "https://arxiv.org/abs/hep-ex/0104013"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://cds.cern.ch/record/748253",
+      "caption": "Overall layout of the IHEP–JINR neutrino detector, including its muon spectrometer, electromagnetic-shower detector and target calorimeter (Figure 1 of the 2002 apparatus report). Original diagram labels are in Russian.",
+      "credit": "L. S. Barabash et al., Joint Institute for Nuclear Research, report P13-2002-152 (2002)",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www1.jinr.ru/Preprints/2002/152(P13-2002-152).pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 885,
+      "height": 654,
+      "sha256": "bbe887ed390ccd13bab50b11442f1bc9f25f1ef3ab5d01507bc5a91ca44f14b4",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IHEP-JINR authors, The IHEP-JINR neutrino detector at neutrino beams of the U-70 accelerator",
+      "url": "https://doi.org/10.1023/A:1024406219896",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IHEP-JINR Collaboration, F2 and xF3 structure functions in the low-Q-squared region",
+      "url": "https://arxiv.org/abs/hep-ex/9908037",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "IHEP-JINR authors, Determination of the high-twist contribution to xF3",
+      "url": "https://arxiv.org/abs/hep-ex/0104013",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The record groups the named IHEP-JINR detector programme; run-specific target, energy cuts and beam-dump geometry must be taken from the individual publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "sampling"
+    ],
+    "technology_tags": [
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

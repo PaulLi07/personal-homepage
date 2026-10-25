@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "id": "borexino",
+  "name": "Borexino",
+  "full_name": "Borexino solar-neutrino experiment",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "geo",
+    "solar",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Borexino performed real-time low-energy solar-neutrino spectroscopy in an exceptionally radiopure liquid-scintillator target at Gran Sasso. It measured components of the proton-proton chain and established the CNO-cycle neutrino signal, while also observing geoneutrinos.",
+  "physics_targets": [
+    "pp-chain and CNO solar neutrinos",
+    "Solar flavour conversion",
+    "Uranium/thorium geoneutrinos",
+    "Low-energy astrophysical neutrinos"
+  ],
+  "detection_principle": "Neutrino-electron elastic scattering produces scintillation light collected by photomultiplier tubes. Purification, a nested nylon containment system, a water muon veto and spectral analysis suppress and separate radioactive backgrounds; inverse beta decay identifies antineutrinos.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso underground laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2021",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007",
+      "event": "Physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "First CNO-neutrino observation announced",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Data taking ended",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Final combined spectral and directional CNO result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Borexino Collaboration",
+    "lead_institutions": [
+      "INFN Laboratori Nazionali del Gran Sasso",
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator",
+      "value": "About 278 tonnes of organic liquid scintillator; analysis fiducial masses vary",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 3,800 metres water equivalent",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "CNO interaction rate",
+      "value": "6.7 +1.2/-0.8 counts per day per 100 tonnes in the final combined analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "The final CNO result combines spectral information with early Cherenkov-photon directionality and strengthens tests of the solar core composition.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2019",
+      "summary": "Geoneutrino spectroscopy constrained terrestrial radiogenic heat and mantle contributions.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "kamland",
+    "sno-plus",
+    "juno"
+  ],
+  "resources": {
+    "official_website": "https://www.lngs.infn.it/en/borexino",
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.102005",
+      "https://arxiv.org/abs/1909.02257"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/0806.2400",
+      "caption": "The Borexino stainless-steel sphere's inner surface and installed photomultipliers, viewed from the main entrance (Fig. 3, the collaboration's 2008 detector paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/0806.2400v1/bx_sphere.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 407,
+      "height": 352,
+      "sha256": "6bb5b43e54bbc09058a0844b947271d11bfcfd039dc41d0c052652f5292e3dde",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Borexino Collaboration, Final results on CNO solar neutrinos",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.108.102005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-11-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "LNGS: Borexino experimental overview",
+      "url": "https://www.lngs.infn.it/en/borexino",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Borexino Collaboration, Comprehensive geoneutrino analysis",
+      "url": "https://arxiv.org/abs/1909.02257",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-09-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

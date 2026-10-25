@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "glue",
+  "name": "GLUE",
+  "full_name": "Goldstone Lunar Ultra-high-energy neutrino Experiment",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical lunar-radio search used NASA Deep Space Network dishes to look for particle cascades in the Moon, turning the lunar regolith into a vast neutrino target.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic neutrinos",
+    "Lunar Askaryan radio-pulse detection"
+  ],
+  "detection_principle": "A neutrino-induced cascade in lunar material can emit a coherent radio pulse that escapes toward Earth. Coincident detection at separated antennas suppresses terrestrial radio interference.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "United States; Goldstone Deep Space Communications antennas in California, with the Moon as the target",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Goldstone Deep Space Communications antennas in California, with the Moon as the target",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The cited publications describe a completed historical observing campaign, not a continuously operating dedicated detector.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "Late 1990s",
+      "event": "Coincident Goldstone lunar observing campaigns.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2000",
+      "event": "Initial results published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2004",
+      "event": "120-hour diffuse-neutrino flux limit reported.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GLUE Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Goldstone dishes",
+      "value": "70 m DSS-14 and 34 m DSS-13",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Antenna separation",
+      "value": "Approximately 21.7 km",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Published final livetime",
+      "value": "Approximately 120 hours",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "Lunar regolith observed at radio frequencies",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2004",
+      "summary": "No convincing lunar neutrino pulse was observed; flux limits constrained ultra-high-energy models.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "anita",
+    "rice"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/0310232",
+      "https://ntrs.nasa.gov/citations/20000074077"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://arxiv.org/abs/astro-ph/0310232",
+      "caption": "Lunar Askaryan-emission and observing geometry used by GLUE.",
+      "credit": "GLUE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/astro-ph/0310232v3/moongeom_fig1.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 798,
+      "height": 577,
+      "sha256": "34481d4d35a4fddeae2e6dadd0f08347d2d7122112b208731586814365339015",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "GLUE Collaboration, Experimental limit on the cosmic diffuse UHE neutrino flux",
+      "url": "https://arxiv.org/abs/astro-ph/0310232",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2004",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "GLUE investigators, Initial results from lunar radio emission search",
+      "url": "https://ntrs.nasa.gov/citations/20000074077",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2000",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "babar",
+  "name": "BaBar",
+  "full_name": "BaBar experiment at PEP-II",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "BaBar was located at SLAC National Accelerator Laboratory, Menlo Park, California. Its single-photon results from the historical B-factory experiment provide important light-dark-sector constraints.",
+  "physics_targets": [
+    "Light dark matter",
+    "Invisible dark photons",
+    "Dark photons and dark Higgs bosons"
+  ],
+  "detection_principle": "A single energetic photon with missing energy/momentum is sought in e⁺e⁻ collisions; the invisible-system mass is reconstructed from initial-state and photon four-momenta.",
+  "technologies": [
+    "Drift chambers",
+    "Silicon vertexing",
+    "CsI calorimeter",
+    "DIRC"
+  ],
+  "sites": [
+    {
+      "name": "SLAC National Accelerator Laboratory, Menlo Park, California",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "SLAC National Accelerator Laboratory, Menlo Park, California",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Historical PEP-II samples continue to support dark-sector analyses",
+    "as_of": "2017",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Historical PEP-II samples continue to support dark-sector analyses",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BaBar Collaboration / project team",
+    "lead_institutions": [
+      "SLAC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed single-photon analysis sample",
+      "value": "53 fb⁻¹",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "BaBar",
+      "status": "completed",
+      "description": "Historical PEP-II samples continue to support dark-sector analyses"
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "No invisible-dark-photon signal; model-dependent 90% confidence upper bounds on coupling were obtained for mediators up to 8 GeV.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "Belle",
+    "Belle II",
+    "LDMX"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1702.03327"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www6.slac.stanford.edu/media/babar2jpg",
+      "caption": "Inside SLAC's BaBar detector, with its endcap open for maintenance.",
+      "credit": "Peter Ginter / SLAC National Accelerator Laboratory",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www6.slac.stanford.edu/sites/default/files/styles/scale_large/public/babar2_0.jpg?itok=gfByywtE",
+      "width": 600,
+      "height": 389,
+      "sha256": "2cf0777f4ca62aa07e40275c5652688bc04d86e032322a4d93a369bfd4679e3b",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1702.03327",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for Invisible Decays of a Dark Photon Produced in e+e- Collisions at BaBar",
+      "url": "https://arxiv.org/abs/1702.03327",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-02-10",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

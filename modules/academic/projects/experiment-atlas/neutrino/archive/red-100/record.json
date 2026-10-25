@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "red-100",
+  "name": "RED-100",
+  "full_name": "Russian Emission Detector RED-100",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "RED-100 is a two-phase noble-liquid detector programme for coherent reactor-antineutrino scattering. It operated a xenon target at Kalinin and subsequently prepared an argon phase to reduce delayed-electron backgrounds.",
+  "physics_targets": [
+    "Reactor CEvNS on noble-liquid nuclei",
+    "Few-electron response and backgrounds"
+  ],
+  "detection_principle": "Recoil ionization electrons are drifted through liquid and extracted into gas, where electroluminescence amplifies the charge signal. The few-electron response permits low-threshold searches, with delayed single-electron backgrounds requiring detailed control.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; deployments associated with the Kalinin nuclear power plant",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; deployments associated with the Kalinin nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2025-10",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021–2022",
+      "event": "Xenon detector deployed at Kalinin",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "First xenon reactor-CEvNS constraints published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Argon-phase preparation reported",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RED-100 Collaboration",
+    "lead_institutions": [
+      "NRNU MEPhI",
+      "Institute for Theoretical and Experimental Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Xenon detector",
+      "value": "Approximately 200 kg total xenon inventory, with analysis-dependent fiducial target",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "Approximately 19 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Reactor power",
+      "value": "3.1 GW thermal",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Active xenon target",
+      "value": "126 kg liquid xenon in the first reactor-CEvNS analysis",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The xenon campaign set an upper limit; the argon configuration remained under preparation and is not a completed neutrino observation.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "relics",
+    "conus-plus"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://indico.fnal.gov/event/64969/contributions/324174/",
+      "https://doi.org/10.1103/PhysRevD.111.072012"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2411.18641",
+      "caption": "Geometry of the RED-100 top and bottom photomultiplier arrays, from its first reactor-CEvNS constraints paper.",
+      "credit": "RED-100 Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://arxiv.org/html/2411.18641v1/images/PMTscheme_noLED.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1769,
+      "height": 1014,
+      "sha256": "5a21574547ea4ef41842478ad830369ce18c41b940411c9059c642815e65a47e",
+      "mime_type": "image/png",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RED-100 Collaboration, Current status at NuInt2025",
+      "url": "https://indico.fnal.gov/event/64969/contributions/324174/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "RED-100 Collaboration, First reactor-antineutrino CEvNS constraints on xenon",
+      "url": "https://doi.org/10.1103/PhysRevD.111.072012",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

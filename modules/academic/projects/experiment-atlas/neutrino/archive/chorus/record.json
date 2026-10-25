@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "chorus",
+  "name": "CHORUS",
+  "full_name": "CERN Hybrid Oscillation Research apparatus",
+  "aliases": [
+    "CERN WA96"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CHORUS searched for tau-neutrino appearance in the CERN SPS wide-band beam using a hybrid emulsion detector and later produced extensive charm measurements from the same exposure.",
+  "physics_targets": [
+    "Short-baseline muon-to-tau appearance",
+    "Neutrino-induced charm production",
+    "Nuclear fragmentation and hadronic final states"
+  ],
+  "detection_principle": "A nuclear-emulsion target resolved short-lived tau and charm decays. Fibre trackers linked electronic tracks to emulsion, while a magnetic spectrometer, calorimeter and muon system reconstructed outgoing particles and selected candidate regions for microscopy.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN SPS",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN SPS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2011",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1994-1997",
+      "event": "Emulsion target exposed to the SPS neutrino beam",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2003",
+      "event": "Charm-analysis progress published",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2011",
+      "event": "Large charm-production analysis published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CHORUS Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Emulsion target",
+      "value": "About 770 kg in the main instrumented target described in CHORUS operation reports",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "CERN SPS wide-band muon-neutrino beam",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Mean neutrino energy",
+      "value": "About 27 GeV for the charm-analysis exposure",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "Published charm-production measurements from the emulsion sample, exploiting resolved decay vertices and automated scanning.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "nomad",
+    "donut",
+    "fnal-e-0531"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://inspirehep.net/literature/410782",
+      "https://arxiv.org/abs/1107.0613",
+      "https://arxiv.org/abs/hep-ex/0305030"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://inspirehep.net/literature/410782",
+      "caption": "The CHORUS emulsion target, trackers, calorimeter and muon spectrometer.",
+      "credit": "CHORUS Collaboration, Figure 2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/literature/410782",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1341,
+      "height": 624,
+      "sha256": "082b0c36a112ac46e3b5a199f9e20e18022858488bff63943a5ea4aa06533382",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CHORUS Collaboration, Status of the CHORUS experiment",
+      "url": "https://inspirehep.net/literature/410782",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "1995",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CHORUS Collaboration, Measurement of charm production in neutrino charged-current interactions",
+      "url": "https://arxiv.org/abs/1107.0613",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011-07-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "CHORUS Collaboration, Recent Results from CHORUS Charm Analysis",
+      "url": "https://arxiv.org/abs/hep-ex/0305030",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003-05-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "sampling"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "sampling"
+    ],
+    "is_europe": true
+  }
+}

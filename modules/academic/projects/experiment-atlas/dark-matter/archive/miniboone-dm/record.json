@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "id": "miniboone-dm",
+  "name": "MiniBooNE-DM",
+  "full_name": "MiniBooNE dedicated dark-matter beam-dump run",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "MiniBooNE-DM is a dedicated running program within MiniBooNE on the Fermilab Booster Neutrino Beam, Batavia, Illinois. Website statistics should preserve its connection to the parent MiniBooNE experiment.",
+  "physics_targets": [
+    "Light dark matter",
+    "Vector portal",
+    "Leptophobic dark matter"
+  ],
+  "detection_principle": "The proton beam bypasses the normal beryllium target and strikes a downstream steel dump, suppressing conventional neutrinos while retaining dark-particle production. A mineral-oil detector searches for nucleon-, electron- or π⁰-associated scattering.",
+  "technologies": [
+    "Mineral-oil Cherenkov/scintillation detection",
+    "PMT",
+    "Off-target beam mode"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Booster Neutrino Beam, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab Booster Neutrino Beam, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Dedicated 2013–2014 dark-matter data-taking completed",
+    "as_of": "2014",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "Dedicated 2013–2014 dark-matter data-taking completed",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MiniBooNE-DM Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Proton-beam energy",
+      "value": "8 GeV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Dark-matter-mode exposure",
+      "value": "1.86×10²⁰ POT",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Apparatus",
+      "value": "Approximately 818 tonnes of mineral oil; approximately 490 m from beam dump to detector",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MiniBooNE-DM",
+      "status": "completed",
+      "description": "Dedicated 2013–2014 dark-matter data-taking completed"
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "The first dedicated nucleon-scattering analysis found no signal, constraining a sub-GeV vector portal.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "date": "2018",
+      "summary": "Combined nucleon, π⁰ and electron channels improve limits on some light-dark-matter models.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "LSND",
+    "MicroBooNE",
+    "CCM"
+  ],
+  "resources": {
+    "official_website": "https://indico.fnal.gov/event/8982/contributions/111746/attachments/72812/87446/Pavlovic_UsersMeeting_MBDM.pdf",
+    "publication_links": [
+      "https://arxiv.org/abs/1702.02688",
+      "https://arxiv.org/abs/1807.06137"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1702.02688",
+      "caption": "Fig. 1 of the original MiniBooNE-DM paper: dark-matter-search layout with off-target beam, steel dump and MiniBooNE detector. Source PDF p. 1.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1702.02688",
+      "width": 612,
+      "height": 181,
+      "sha256": "b131cad9ee59a925c1407edac74538859aeb1b93660b396edca9301529349cc2",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://lss.fnal.gov/archive/2017/pub/fermilab-pub-17-059-ad-e-nd.pdf",
+      "caption": "Dedicated beam-dump layout schematic and detector description",
+      "credit": "MiniBooNE-DM Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dark Matter Search in a Proton Beam Dump with MiniBooNE",
+      "url": "https://arxiv.org/abs/1702.02688",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-02-09",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark Matter Search in Nucleon, Pion, and Electron Channels from a Proton Beam Dump with MiniBooNE",
+      "url": "https://arxiv.org/abs/1807.06137",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-07-16",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "MiniBooNE dark matter run — Fermilab Users Meeting",
+      "url": "https://indico.fnal.gov/event/8982/contributions/111746/attachments/72812/87446/Pavlovic_UsersMeeting_MBDM.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle",
+      "cherenkov_airshower"
+    ]
+  }
+}

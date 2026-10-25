@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "ship",
+  "name": "SHiP",
+  "full_name": "Search for Hidden Particles",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "SHiP is a selected future project proposed for the High-Intensity ECN3 / Beam Dump Facility in the CERN SPS North Area, dedicated to hidden particles and light dark matter.",
+  "physics_targets": [
+    "Light dark matter",
+    "Dark photons",
+    "Dark scalars",
+    "ALP",
+    "Heavy neutral leptons"
+  ],
+  "detection_principle": "A high-intensity proton beam strikes a thick target to produce weakly coupled particles. Behind a muon shield, a visible-decay spectrometer and scattering detector seek long-lived-particle decays and dark-matter recoils respectively.",
+  "technologies": [
+    "Proton beam dump",
+    "Active muon shielding",
+    "Decay spectrometer",
+    "Scattering target"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS North Area, proposed High-Intensity ECN3 / Beam Dump Facility",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN SPS North Area, proposed High-Intensity ECN3 / Beam Dump Facility",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "CERN selected SHiP as the new beam-dump flagship; preparation must still be distinguished from operation",
+    "as_of": "2024",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "CERN selected SHiP as the new beam-dump flagship; preparation must still be distinguished from operation",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHiP Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "SPS proton beam",
+      "value": "400 GeV (design)",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Study scale",
+      "value": "MeV–GeV weakly coupled particles; exact coverage is model dependent",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SHiP",
+      "status": "planned",
+      "description": "CERN selected SHiP as the new beam-dump flagship; preparation must still be distinguished from operation"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "NA64",
+    "SHADOWS",
+    "SND@LHC"
+  ],
+  "resources": {
+    "official_website": "https://ship.web.cern.ch/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://ship.web.cern.ch/",
+      "caption": "Overall SHiP layout showing target area, shielding and downstream detectors; a design rather than a photograph of a completed apparatus.",
+      "credit": "SHiP Collaboration; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://ship.web.cern.ch/wp-content/uploads/2025/04/image.png",
+      "width": 1268,
+      "height": 485,
+      "sha256": "82e16aedcaeac7fb67f491b3594c51aea2407f9f306a3c7916e400a5b2c4908f",
+      "mime_type": "image/webp",
+      "source_sha256": "e93df2469cdf55fd3fec9d96953236e4e1e707370a85d0fe39216cbb4990b768",
+      "source_dimensions": {
+        "width": 1268,
+        "height": 485
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://ship.web.cern.ch/",
+      "caption": "SHiP design and facility-image page",
+      "credit": "SHiP Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SHiP official project",
+      "url": "https://ship.web.cern.ch/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "SHiP to chart hidden sector",
+      "url": "https://cerncourier.com/a/ship-to-chart-hidden-sector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

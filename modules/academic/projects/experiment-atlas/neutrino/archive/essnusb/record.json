@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "essnusb",
+  "name": "ESSnuSB",
+  "full_name": "European Spallation Source neutrino Super Beam",
+  "aliases": [
+    "ESSnuSB+"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "ESSnuSB is a proposed Swedish accelerator-neutrino facility designed to measure CP violation near the second oscillation maximum. ESSnuSB+ develops enabling beam and detector concepts; it is not an operating neutrino-oscillation experiment.",
+  "physics_targets": [
+    "Leptonic CP violation at the second oscillation maximum",
+    "Precision oscillation measurements",
+    "Low-energy monitored and stored-muon beam development"
+  ],
+  "detection_principle": "An upgraded ESS proton linac and accumulator would feed a pion-production target and horn system. Muon-neutrino and antineutrino beams would be measured with near detectors and a large underground water-Cherenkov detector at a candidate Swedish mine.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Sweden; ESS beam source in Lund and candidate underground far-detector sites in Sweden",
+      "country": "Sweden",
+      "country_code": "SWE",
+      "location": "Sweden; ESS beam source in Lund and candidate underground far-detector sites in Sweden",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026",
+    "evidence": "The official project site lists ESSnuSB+ work packages for 2023-2026.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018-2022",
+      "event": "ESSnuSB conceptual-design study",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Conceptual Design Report published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2023-2026",
+      "event": "ESSnuSB+ engineering and beam-development work packages",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ESSnuSB Collaboration",
+    "lead_institutions": [
+      "Lund University",
+      "Uppsala University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proton driver concept",
+      "value": "ESS multi-megawatt linac with additional beam delivery for neutrino production",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Far-detector concept",
+      "value": "Water-Cherenkov detector at a few-hundred-kilometre baseline in Sweden",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Physics strategy",
+      "value": "Second oscillation maximum, enhancing relative CP sensitivity",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ESSnuSB+ design and development study",
+      "status": "research_development",
+      "description": "The 2023-2026 follow-up study develops engineering, monitored-neutrino-beam and stored-muon concepts; it is not an operating ESS neutrino-oscillation exposure.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Published conceptual design and projected oscillation sensitivity; these are design forecasts, not observed neutrino data.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "nuscope",
+    "nustorm"
+  ],
+  "resources": {
+    "official_website": "https://essnusb.eu/wps/",
+    "publication_links": [
+      "https://arxiv.org/abs/2206.01208"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://indico.global/event/15740/contributions/155590/attachments/72593/140736/BK_Neutrino_2026_v3_split.pdf#page=22",
+      "caption": "ESSnuSB far-detector design and simulated response.",
+      "credit": "ESSnuSB Collaboration, Neutrino 2026, slide 22",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico.global/event/15740/contributions/155590/attachments/72593/140736/BK_Neutrino_2026_v3_split.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1300,
+      "height": 732,
+      "sha256": "e9b420c628b24a65f79e9e8e040ee0a7fd7bdc7c704e34707bb8de44a419d3a3",
+      "mime_type": "image/webp",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible.",
+      "source_sha256": "0cabe8959d188b5af1bdfbbedcfca1ab06b0280cc417626935945aa5a31ccb6c",
+      "source_dimensions": {
+        "width": 1300,
+        "height": 732
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ESSnuSB/ESSnuSB+, work packages and 2023-2026 programme",
+      "url": "https://essnusb.eu/wps/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ESSnuSB Collaboration, The European Spallation Source neutrino Super Beam Conceptual Design Report",
+      "url": "https://arxiv.org/abs/2206.01208",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-06-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "SWE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": true
+  }
+}

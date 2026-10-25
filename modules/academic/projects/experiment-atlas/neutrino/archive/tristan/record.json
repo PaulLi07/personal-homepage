@@ -1,0 +1,178 @@
+{
+  "schema_version": "1.0",
+  "id": "tristan",
+  "name": "TRISTAN",
+  "full_name": "TRitium Investigation on STerile to Active Neutrino mixing",
+  "aliases": [
+    "tristan"
+  ],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile",
+    "mass"
+  ],
+  "technology_tags": [
+    "semiconductor",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "TRISTAN is the named KATRIN detector upgrade for a high-statistics search for keV-scale sterile neutrinos. It measures a much wider tritium beta-energy range than the standard endpoint neutrino-mass analysis.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "A segmented silicon-drift-detector system records electron energies at high rate. A sterile-neutrino admixture would introduce a kink in the differential beta spectrum below the ordinary endpoint.",
+  "technologies": [
+    "Semiconductor detectors",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Tritium Laboratory Karlsruhe, KIT Campus North",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Tritium Laboratory Karlsruhe, KIT Campus North",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "Commissioning",
+    "as_of": "2026-05-27",
+    "evidence": "The 2026 study forecasts sterile-neutrino reach; a May 2026 institutional report identifies commissioning of the new detector.",
+    "source_ids": [
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "tristan Collaboration",
+    "lead_institutions": [
+      "Karlsruhe Institute of Technology",
+      "Technical University of Munich"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Host experiment",
+      "value": "KATRIN at KIT",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector technology",
+      "value": "Segmented silicon drift detectors",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target mass regime",
+      "value": "keV-scale sterile neutrinos; spectral-shape search",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The 2026 study forecasts sterile-neutrino reach; a May 2026 institutional report identifies commissioning of the new detector.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "TRISTAN is a named upgrade within KATRIN, not an independent beam or source facility. Its sterile-neutrino search is distinguished from the effective active-neutrino mass measured near the tritium endpoint.",
+  "related_experiments": [
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://www.katrin.kit.edu/1293.php",
+    "publication_links": [
+      "https://arxiv.org/abs/2603.23256"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/2603.23256",
+      "caption": "KATRIN beamline schematic equipped with the TRISTAN detector, Figure 2 of the 2026 sterile-neutrino sensitivity study.",
+      "credit": "KATRIN Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2603.23256",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1267,
+      "height": 420,
+      "sha256": "da081219add052e3c830544fb01085786dd46a171163f6abd5e96441d2aa922a",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "tristan: official experiment / institutional overview",
+      "url": "https://www.katrin.kit.edu/1293.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KATRIN Sensitivity to keV Sterile Neutrinos with the TRISTAN Detector Upgrade",
+      "url": "https://arxiv.org/abs/2603.23256",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KATRIN reaches 1000 measurement days and inaugurates TRISTAN commissioning",
+      "url": "https://www.polimi.it/en/the-politecnico/news/news-detail/weighing-the-invisible-the-challenge-of-the-katrin-project",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "semiconductor",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "genius",
+  "name": "GENIUS",
+  "full_name": "GErmanium in liquid NItrogen Underground Setup",
+  "aliases": [
+    "GENIUS-TF"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "GENIUS was a large bare-germanium detector proposal for double-beta decay, dark matter and low-energy solar neutrinos. GENIUS-TF was its much smaller implemented test facility at Gran Sasso.",
+  "physics_targets": [
+    "Double-beta and rare weak decays",
+    "Solar electron neutrinos"
+  ],
+  "detection_principle": "Unencapsulated high-purity germanium detectors operate directly in ultra-clean liquid nitrogen to reduce nearby radioactive materials. The tonne-scale enriched-isotope concept and the natural-germanium test facility have different capabilities.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso Underground Laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso Underground Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_test_facility_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2003-06-30",
+    "evidence": "Four bare germanium detectors were installed in liquid nitrogen on 5 May 2003 in GENIUS-TF. This prototype operation is not evidence that the full proposed GENIUS array was built.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "GENIUS Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "GENIUS-TF initial installation",
+      "value": "Four bare HPGe detectors",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Cooling and shielding concept",
+      "value": "High-purity liquid nitrogen",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Double-beta target in full proposal",
+      "value": "Enriched 76Ge",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003-06-30",
+      "summary": "Four bare germanium detectors were installed in liquid nitrogen on 5 May 2003 in GENIUS-TF. This prototype operation is not evidence that the full proposed GENIUS array was built.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "heidelberg-moscow",
+    "gerda",
+    "legend"
+  ],
+  "resources": {
+    "official_website": "https://cern-courier.web.cern.ch/a/naked-crystals-go-underground/",
+    "publication_links": [
+      "https://arxiv.org/abs/nucl-ex/9801004"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/hep-ph/0307329",
+      "caption": "The GENIUS test facility at Gran Sasso in 2003 (Fig. 1); this is the implemented small prototype.",
+      "credit": "GENIUS Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/hep-ph/0307329#page=3",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 454,
+      "height": 341,
+      "sha256": "a4fb8b2d51d752709405c071840bff7fd7c215d21261465e4558d9afdcf4a0ba",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A Large Scale Double Beta and Dark Matter Experiment: GENIUS",
+      "url": "https://arxiv.org/abs/nucl-ex/9801004",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1998-01-21",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Naked crystals go underground",
+      "url": "https://cern-courier.web.cern.ch/a/naked-crystals-go-underground/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2003-06-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

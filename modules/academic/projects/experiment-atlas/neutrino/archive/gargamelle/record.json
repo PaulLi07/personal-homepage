@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "gargamelle",
+  "name": "Gargamelle",
+  "full_name": "Gargamelle heavy-liquid bubble-chamber experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bubble"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Gargamelle discovered weak neutral currents in neutrino interactions at CERN, providing decisive experimental support for electroweak unification.",
+  "physics_targets": [
+    "Weak neutral-current interactions",
+    "Quark structure of nucleons",
+    "Purely leptonic neutrino reactions"
+  ],
+  "detection_principle": "Charged secondaries formed bubble tracks in dense liquid freon. Neutral-current candidates contained an interaction vertex and hadrons or an electron, without the outgoing charged muon expected from a muon-neutrino charged-current interaction.",
+  "technologies": [
+    "Bubble chambers"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1979",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1970",
+      "event": "PS neutrino operation began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1973-07",
+      "event": "Weak-neutral-current discovery announced",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1976",
+      "event": "Moved to the SPS programme",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1979",
+      "event": "Operation ended following irreparable chamber cracks",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Gargamelle Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Chamber dimensions",
+      "value": "About 4.8 m long and 2 m diameter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Active liquid",
+      "value": "Nearly 12 cubic metres of heavy freon, CF3Br",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam sites",
+      "value": "CERN Proton Synchrotron, then Super Proton Synchrotron",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1973",
+      "summary": "Established both hadronic and leptonic neutral-current evidence, an essential test of the electroweak theory.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "bebc",
+    "charm",
+    "cdhsw"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/gargamelle/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/gargamelle/",
+      "caption": "The Gargamelle heavy-liquid bubble chamber.",
+      "credit": "CERN",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://home.cern/wp-content/uploads/2026/03/gargamelle_1.jpg.webp",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1080,
+      "height": 1080,
+      "sha256": "1889ddc5ba0fc763f3557b6248914b85e723abbd627ae278752ef49986ba169b",
+      "mime_type": "image/webp"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CERN, Gargamelle experiment history",
+      "url": "https://home.cern/science/experiments/gargamelle/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CERN PhotoLab, Gargamelle first neutral-current event",
+      "url": "https://cds.cern.ch/record/39468",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1973",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bubble"
+    ],
+    "technology_tags": [
+      "bubble"
+    ],
+    "is_europe": true
+  }
+}

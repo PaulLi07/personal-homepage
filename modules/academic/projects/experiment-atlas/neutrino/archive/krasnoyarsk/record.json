@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "krasnoyarsk",
+  "name": "Krasnoyarsk",
+  "full_name": "Krasnoyarsk underground reactor-neutrino experiments",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "neutron",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Krasnoyarsk programme studied reactor-antineutrino disappearance, weak interactions and deuteron disintegration in an underground reactor environment. Several detector configurations and baselines belong to this historical series.",
+  "physics_targets": [
+    "Reactor-antineutrino disappearance",
+    "Deuteron breakup cross sections",
+    "Neutrino electromagnetic properties"
+  ],
+  "detection_principle": "Hydrogenous targets convert antineutrinos through inverse beta decay; neutron counters identify the released neutrons. Additional heavy-water configurations measured charged- and neutral-current deuteron breakup.",
+  "technologies": [
+    "Neutron counting",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; underground reactor facility in the Krasnoyarsk region",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; underground reactor facility in the Krasnoyarsk region",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2000",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1980s–1990s",
+      "event": "Reactor-neutrino interaction and oscillation campaigns",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1999–2000",
+      "event": "Deuteron-breakup analysis reported",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Krasnoyarsk Collaboration",
+    "lead_institutions": [
+      "Kurchatov Institute"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Site",
+      "value": "Underground reactor-neutrino laboratory near Krasnoyarsk",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Targets",
+      "value": "Hydrogenous and heavy-water configurations in different campaigns",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Programme",
+      "value": "Multiple historical runs, not one fixed detector configuration",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2000",
+      "summary": "The deuteron programme reported charged- and neutral-current antineutrino cross-section information.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "rovno",
+    "ill",
+    "bugey"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/9811020",
+      "https://arxiv.org/abs/hep-ex/9912047"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf#page=22",
+      "caption": "Historical disappearance exclusion comparison including the Krasnoyarsk constraint, reproduced in a reactor-neutrino lecture. This is a result figure, not an apparatus photograph.",
+      "credit": "F. A. Danevich / Institute for Nuclear Research, 2015 lecture; original diagram credits retained",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf#page=22",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 385,
+      "height": 428,
+      "sha256": "e84505eb084f844fb70c11fb214ad6f4bca2543634a86c77cca775f4b7c3515d",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Y. V. Kozlov et al., Status of the Krasnoyarsk underground neutrino laboratory",
+      "url": "https://arxiv.org/abs/hep-ex/9811020",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1998-11-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Y. V. Kozlov et al., Antineutrino deuteron experiment at Krasnoyarsk",
+      "url": "https://arxiv.org/abs/hep-ex/9912047",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999-12-28",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "neutron",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "neutron",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

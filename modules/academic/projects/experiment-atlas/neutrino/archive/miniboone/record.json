@@ -1,0 +1,231 @@
+{
+  "schema_version": "1.0",
+  "id": "miniboone",
+  "name": "MiniBooNE",
+  "full_name": "Mini Booster Neutrino Experiment",
+  "aliases": [
+    "BooNE"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MiniBooNE searched for short-baseline flavour conversion with a mineral-oil Cherenkov detector and produced a persistent low-energy electron-like event excess, as well as many neutrino-interaction measurements.",
+  "physics_targets": [
+    "Short-baseline muon-to-electron flavour appearance",
+    "Neutrino-nucleus cross sections around 1 GeV",
+    "Beam-dump dark-sector searches"
+  ],
+  "detection_principle": "Photomultiplier tubes in a mineral-oil sphere record Cherenkov and scintillation light. Ring patterns distinguish muon-like tracks from electron-like electromagnetic showers; the detector has limited event-by-event separation between an electron and a photon.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab Booster beam",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab Booster beam",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "Fermilab programme page lists MiniBooNE as Analyzing, Finished Running.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1997-06",
+      "event": "BooNE letter of intent described the initial experiment and a possible two-detector extension.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2002",
+      "event": "First Booster-beam neutrino events",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2018",
+      "event": "Combined electron-like excess analysis published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026 archive review",
+      "event": "Classified by Fermilab as finished running",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MiniBooNE Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "541 m from the Booster beam target",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target",
+      "value": "Mineral oil in a photomultiplier-instrumented spherical tank",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Typical beam energy",
+      "value": "Sub-GeV to GeV accelerator neutrinos and antineutrinos",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original BooNE two-detector upgrade proposal",
+      "status": "proposed",
+      "description": "The 1997 letter of intent considered a later two-detector BooNE configuration after MiniBooNE. That historical upgrade was not the implemented single-detector MiniBooNE exposure, and its proposed geometry must not replace the measured experiment baseline.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2018",
+      "summary": "Reported an electron-like excess in neutrino and antineutrino samples. Its interpretation requires flux, backgrounds and detector response; it is not by itself a unique demonstration of sterile neutrinos.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "lsnd",
+    "microboone",
+    "sciboone",
+    "jsns2"
+  ],
+  "resources": {
+    "official_website": "https://www-boone.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1805.12028",
+      "https://arxiv.org/abs/nucl-ex/9706011"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1702.02688",
+      "caption": "Fig. 1 of the original MiniBooNE-DM paper: dark-matter-search layout with off-target beam, steel dump and MiniBooNE detector. Source PDF p. 1.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1702.02688",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 612,
+      "height": 181,
+      "sha256": "b131cad9ee59a925c1407edac74538859aeb1b93660b396edca9301529349cc2",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MiniBooNE Collaboration, experiment website",
+      "url": "https://www-boone.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MiniBooNE Collaboration, Observation of a Significant Excess of Electron-Like Events",
+      "url": "https://arxiv.org/abs/1805.12028",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-05-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fermilab Neutrino Physics, experiments programme",
+      "url": "https://neutrinophysics.fnal.gov/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "BooNE Collaboration, A letter of intent for an experiment to measure muon-to-electron neutrino oscillations and muon-neutrino disappearance at the Fermilab Booster",
+      "url": "https://arxiv.org/abs/nucl-ex/9706011",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "1997-06-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

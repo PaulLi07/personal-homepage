@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "baikal-gvd",
+  "name": "Baikal-GVD",
+  "full_name": "Baikal Gigaton Volume Detector",
+  "aliases": [
+    "Baikal-GVD",
+    "Baikal successor array"
+  ],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A growing deep-water neutrino telescope in Lake Baikal that uses independently operating clusters to search for high-energy cosmic neutrinos in the Northern Hemisphere.",
+  "physics_targets": [
+    "High-energy astrophysical neutrinos",
+    "Neutrino point sources and transients",
+    "Diffuse cosmic neutrino flux"
+  ],
+  "detection_principle": "Optical modules suspended on strings detect Cherenkov photons in freshwater. Each cluster contains a central string and surrounding strings, allowing reconstruction and expansion one cluster at a time.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Baikal-GVD deep-water site",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Southern Lake Baikal, approximately 4 km offshore",
+      "latitude": 51.77,
+      "longitude": 104.4,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The official site provides a 2026 sixteen-cluster configuration; expansion continues.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Demonstration cluster deployed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Eight-cluster first phase completed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Evidence for a cosmic component in cascade events reported.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Official site lists sixteen clusters.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Baikal Collaboration",
+    "lead_institutions": [
+      "Joint Institute for Nuclear Research",
+      "Institute for Nuclear Research, Russian Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "2026 configuration",
+      "value": "16 clusters; approximately 0.8 km³ reported detector volume on the official project site",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Standard cluster",
+      "value": "Eight strings with 288 optical modules",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Lake depth at site",
+      "value": "Approximately 1,366 m",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Cascade data from 2018–2022 indicated an astrophysical component consistent with the flux observed by IceCube.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "baikal-nt200",
+    "icecube",
+    "km3net"
+  ],
+  "resources": {
+    "official_website": "https://baikalgvd.jinr.ru/",
+    "publication_links": [
+      "https://arxiv.org/abs/2309.16310"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://baikalgvd.jinr.ru/telescope/",
+      "caption": "Detector-string and optical-module deployment illustration from the Baikal-GVD collaboration website, with an event display above.",
+      "credit": "Baikal-GVD Collaboration; collaboration website",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://baikalgvd.jinr.ru/wp-content/uploads/2018/08/Screenshot-at-Aug-16-17-16-01.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 504,
+      "height": 790,
+      "sha256": "601933c27dbcd6f758a078eec60b9f050b849811c70f6fdaf4b65316862128c9",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Baikal-GVD Collaboration, detector construction stages and site",
+      "url": "https://baikalgvd.jinr.ru/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Baikal-GVD Collaboration, Large neutrino telescope Baikal-GVD: recent status",
+      "url": "https://arxiv.org/abs/2309.16310",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

@@ -47,6 +47,8 @@
 
 ## 功能边界与文件职责
 
+- 实验地图集独立归 `modules/academic/projects/experiment-atlas/`：Projects只登记入口，各地图保留自己的页面、脚本、样式、完整英文档案、图片和中文说明。用户明确要求全部所需源码复制到主页，原 `/Users/paulli/coding/HEP/Web` 可能移除；禁止运行时或日常重建依赖该目录、符号链接、绝对本机路径及其后台服务。首次导入工具仅在明确再次导入时读取指定外源，不能成为日常维护必需步骤。
+- 地图新增入口通过 `registry.js`，统计从本地 catalog 生成 `metadata.js`，公共顶栏由同一登记生成。各地图独立 HTML 在 `app/site.json` 的所属模块 `standalonePages` 声明，使只读检查按页面自身目录解析资源；不要把整张地图或其数据塞进主页脚本。维护与兼容证据见[地图集说明](modules/academic/projects/experiment-atlas/README.md)和[记录](docs/modules/experiment-atlas.md)。
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
 - Life照片堆归 `modules/life/stack/`，配置、控制器、样式和本地字体独立维护；仅通过公开详情与粒子接口接入，不把博客、作者登录或私密资料合并进入口控制器。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
@@ -111,6 +113,7 @@
 - 仓库根目录为本目录，`origin` 使用上述 HTTPS 地址获取，推送地址为 `git@github.com:PaulLi07/personal-homepage.git`，`main` 跟踪 `origin/main`。当前电脑已验证 SSH 推送；普通 `git push origin main` 使用该推送地址，不在配置中保存令牌。
 - 开始先检查状态；同步或发布前获取远端，检查未提交用户改动和远端差异。保留远端历史，使用快进拉取，不硬重置用户文件或强制推送共享历史。
 - 小范围任务可在 `main` 本地提交；跨模块或较大功能使用任务分支，检查后整合到本地 `main`。
+- 2026-10-25实验地图集任务分支 `feat/projects-experiment-atlas`，回退 `backup/pre-experiment-atlas-2026-10-25`（`3d4abd2`）。本轮只做本地维护，未授权推送；保留用户未提交的About原人像与Home雨景文件，不随地图任务暂存或回退。
 - 2026-10-23 Apple 风格改版在 `feat/apple-homepage-design` 进行，原点为 `28880ba`，改版前回退分支为 `backup/pre-apple-design-2026-10-23`。用户已有的人像图片独立保留，不能因回退样式而用旧山水图覆盖；回退方法与图片备份见 [设计约定](docs/DESIGN-APPLE.md)。本轮尚未推送，当前设计授权不等于远端发布授权。
 - 后续 Academic 专题精修分支为 `feat/academic-science-directory`，回退分支 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`；尚未推送，保留前一轮分支及人像保护约定。
 - **2026-10-14 发布授权：**用户确认当前效果并明确要求更新到 GitHub，允许将已验证的 `feat/emergent-particle-background` 快进整合到 `main` 并推送，取代 2026-10-11 暂不合并和推送的阶段约定。此次授权仅适用于当前版本，后续普通维护仍按发布请求推送。保留功能分支、`backup/pre-emergence-2026-10-11`（`93bf256`）及其他历史备份；发布前的远端版本另存 `backup/pre-publish-2026-10-14`（`3c8c364`）。先保存未提交改动再切回旧分支，不硬重置或强制覆盖。接口、参数与回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)，本轮新功能须有独立实测记录，不能沿用旧通过结论。

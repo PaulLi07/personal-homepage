@@ -1,0 +1,222 @@
+{
+  "schema_version": "1.0",
+  "id": "nusex",
+  "name": "NUSEX",
+  "full_name": "NUSEX nucleon stability experiment",
+  "aliases": [],
+  "category": "atmospheric",
+  "physics_categories": [
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "sampling",
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A compact historical iron tracking calorimeter in the Mont Blanc tunnel searched for nucleon decay and measured atmospheric-neutrino interactions.",
+  "physics_targets": [
+    "Nucleon decay",
+    "Atmospheric neutrino flavour ratio",
+    "Underground muons and monopoles"
+  ],
+  "detection_principle": "Iron plates supplied target mass while plastic streamer-tube layers recorded charged-particle tracks. Event topology distinguished muon-like tracks and electron-like showers.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Mont Blanc underground experimental facility",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Mont Blanc underground experimental facility",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The historical review identifies the 1982–1988 experiment; retained for archival coverage.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1982",
+      "event": "Data taking began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1988",
+      "event": "Historical operating period ended.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1989",
+      "event": "Atmospheric-neutrino result published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NUSEX Collaboration",
+    "lead_institutions": [
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target mass",
+      "value": "Approximately 150 tonnes",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Envelope",
+      "value": "Approximately 3.5 × 3.5 × 3.5 m³",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Sampling structure",
+      "value": "Approximately 134 iron plates with streamer-tube tracking layers",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Shielding",
+      "value": "Approximately 4,800–5,000 m water equivalent",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1989",
+      "summary": "The measured atmospheric muon-to-electron ratio was compatible with expectation within substantial statistical uncertainty.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "frejus",
+    "lsd"
+  ],
+  "resources": {
+    "official_website": "https://www.nu.to.infn.it/exp/all/nusex/",
+    "publication_links": [
+      "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "https://doi.org/10.1209/0295-5075/8/7/005"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "caption": "NUSEX detector, reproduced from Yuichi Oyama’s historical neutrino-detector lecture (page 31).",
+      "credit": "Original experiment collaboration / Yuichi Oyama, KEK/J-PARC",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf#page=31",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 940,
+      "height": 670,
+      "sha256": "0b3800a677fd79d6fbc3afdf26aab19861c1e6166c9455ef5f71b2a6ee119951",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INFN neutrino experimental bibliography, NUSEX",
+      "url": "https://www.nu.to.infn.it/exp/all/nusex/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Y. Oyama, neutrino-physics lectures, historical NUSEX apparatus and results",
+      "url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NUSEX Collaboration, atmospheric neutrino interactions",
+      "url": "https://doi.org/10.1209/0295-5075/8/7/005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling",
+      "gas"
+    ],
+    "technology_tags": [
+      "sampling",
+      "gas"
+    ],
+    "is_europe": true
+  }
+}

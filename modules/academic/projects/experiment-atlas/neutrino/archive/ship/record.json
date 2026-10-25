@@ -1,0 +1,235 @@
+{
+  "schema_version": "1.0",
+  "id": "ship",
+  "name": "SHiP / NA67",
+  "full_name": "Search for Hidden Particles / CERN NA67 neutrino programme",
+  "aliases": [
+    "SHiP",
+    "NA67"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "sampling",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SHiP is an approved future SPS beam-dump experiment with both hidden-particle searches and a dedicated high-statistics neutrino-scattering programme, including tau neutrinos.",
+  "physics_targets": [
+    "Tau-neutrino interactions and lepton-flavour universality",
+    "Neutrino scattering and nucleon structure",
+    "Heavy neutral leptons and other hidden-sector particles"
+  ],
+  "detection_principle": "High-intensity protons strike a dense target that produces heavy-flavour hadrons and neutrinos. Muon shielding suppresses backgrounds; a compact scattering detector records neutrino interactions, while a downstream spectrometer searches for decays of feebly interacting particles.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Layered detectors (sampling calorimeters)",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS ECN3 Beam Dump Facility",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN North Area, Prevessin, France",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Planned",
+    "as_of": "2026-06",
+    "evidence": "The 2026 collaboration paper describes the approved future experiment and projected programme.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "SHiP and Beam Dump Facility approved",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024-09-18",
+      "event": "CERN assigned experiment number NA67",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-06",
+      "event": "Updated facility and physics programme paper submitted",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHiP / NA67 Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Driver",
+      "value": "400 GeV SPS proton beam in the ECN3 Beam Dump Facility concept",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Neutrino source",
+      "value": "Heavy-flavour and other hadron decays in a thick proton dump",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Projected tau yield",
+      "value": "Order 1,000 detected tau-neutrino interactions per year in the 2026 design discussion; a forecast, not observed data",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Approved-project design and projected neutrino programme published; no full SHiP physics exposure is yet established.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "donut",
+    "dstau",
+    "snd-lhc",
+    "faser"
+  ],
+  "resources": {
+    "official_website": "https://ship.web.cern.ch/",
+    "publication_links": [
+      "https://arxiv.org/abs/2606.11039"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://ship.web.cern.ch/",
+      "caption": "Overall SHiP layout showing target area, shielding and downstream detectors; a design rather than a photograph of a completed apparatus.",
+      "credit": "SHiP Collaboration; no separate illustrator is credited on the page",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://ship.web.cern.ch/wp-content/uploads/2025/04/image.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1268,
+      "height": 485,
+      "sha256": "82e16aedcaeac7fb67f491b3594c51aea2407f9f306a3c7916e400a5b2c4908f",
+      "mime_type": "image/webp",
+      "source_sha256": "e93df2469cdf55fd3fec9d96953236e4e1e707370a85d0fe39216cbb4990b768",
+      "source_dimensions": {
+        "width": 1268,
+        "height": 485
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SHiP Collaboration, experiment overview",
+      "url": "https://ship.web.cern.ch/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SHiP Collaboration, The SHiP/NA67 experiment at the ECN3 high-intensity facility",
+      "url": "https://arxiv.org/abs/2606.11039",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SHiP Collaboration, organisation and NA67 designation",
+      "url": "https://ship.web.cern.ch/organisation/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-09-18",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "CERN, North Area and ECN3 facilities at the Prevessin site",
+      "url": "https://home.cern/north-area-getting-fresh-look/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2021-10-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "CERN, Directions to Prevessin: physical address in France",
+      "url": "https://home.cern/directions-prevessin/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "sampling",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "sampling",
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

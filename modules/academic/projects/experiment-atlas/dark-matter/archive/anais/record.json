@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "anais",
+  "name": "ANAIS-112",
+  "full_name": "Annual modulation with NaI Scintillators",
+  "aliases": [
+    "ANAIS",
+    "ANAIS-112"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "ANAIS-112 is the University of Zaragoza's same-target annual-modulation test at Canfranc, using NaI(Tl) to compare with DAMA/LIBRA while reducing target-material model dependence.",
+  "physics_targets": [
+    "WIMP",
+    "Test of DAMA modulation"
+  ],
+  "detection_principle": "Stable long-term ultralow-background NaI spectra are recorded. Annual-modulation amplitudes are fitted with controlled thresholds, efficiencies and background models.",
+  "technologies": [
+    "NaI(Tl)",
+    "Low-background scintillation",
+    "Annual modulation"
+  ],
+  "sites": [
+    {
+      "name": "LSC",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory, Pyrenees, Aragon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": "2025-07-28",
+    "evidence": "The 2025 six-year-data paper reviews data taking that began in August 2017.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017-08",
+      "event": "Physics data taking begins",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANAIS-112 Collaboration",
+    "lead_institutions": [
+      "University of Zaragoza"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Total mass",
+      "value": "112.5 kg",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Modules",
+      "value": "9×12.5 kg",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Six years of data show no modulation expected from DAMA and provide a same-target test of its interpretation.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMA/LIBRA",
+    "COSINE",
+    "SABRE"
+  ],
+  "resources": {
+    "official_website": "https://anaisexperiment.github.io/",
+    "publication_links": [
+      "https://journals.aps.org/prl/abstract/10.1103/ntnl-zrn9"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://gifna.unizar.es/anais/",
+      "caption": "Copper-encapsulated NaI(Tl) crystal modules and cables in the ANAIS-112 array.",
+      "credit": "ANAIS collaboration / Universidad de Zaragoza; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://gifna.unizar.es/anais/wp-content/uploads/2017/05/ANAIS112_9modules.jpg",
+      "width": 768,
+      "height": 1024,
+      "sha256": "f3d6cd724804e980c38255a65f552d03f379c3780662cc497a1296b6f7633bf5",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://anaisexperiment.github.io/",
+      "caption": "ANAIS-112 apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "ANAIS-112 Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The ANAIS Experiment",
+      "url": "https://anaisexperiment.github.io/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Towards a Robust Model-Independent Test of the DAMA/LIBRA Dark Matter Signal: ANAIS-112 Results with Six Years of Data",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/ntnl-zrn9",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-28",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "milliqan",
+  "name": "milliQan",
+  "full_name": "milliQan experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "milliQan is a dedicated low-ionization-signal experiment in underground tunnels near CMS at CERN LHC Point 5. Millicharge is a dark-sector clue, rather than automatically all of cosmic dark matter.",
+  "physics_targets": [
+    "Millicharged particles",
+    "Small-charge dark-sector particles"
+  ],
+  "detection_principle": "Coincidences in multiple layers of long plastic-scintillator bars detect extremely small ionization; single-photoelectron readout and timing/directional correlations suppress dark counts and cosmic rays.",
+  "technologies": [
+    "Plastic-scintillator bars and slabs",
+    "Photomultiplier tubes",
+    "Multilayer timing coincidences"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC Point 5, underground tunnel near CMS",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN LHC Point 5, underground tunnel near CMS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Bar detector taking data since 2023; slab-detector physics data-taking since 2025",
+    "as_of": "2026-06",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-06",
+      "event": "Bar detector taking data since 2023; slab-detector physics data-taking since 2025",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "milliQan Collaboration / project team",
+    "lead_institutions": [
+      "University of California Davis",
+      "Ohio State University",
+      "New York University"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Sample for first 2025 bar results",
+      "value": "Approximately 124.7 fb⁻¹, 13.6 TeV; see the listed report for specific results",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Run 2 demonstrator",
+      "status": "completed",
+      "description": "Early small prototype"
+    },
+    {
+      "name": "bar detector",
+      "status": "operating",
+      "description": "Focus on low charge / low mass"
+    },
+    {
+      "name": "slab detector",
+      "status": "operating",
+      "description": "Extends higher-mass and higher-charge coverage"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Initial Run 3 results constrain millicharged particles, without a discovery claim.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "FORMOSA",
+    "SUBMET",
+    "MoEDAL-MAPP"
+  ],
+  "resources": {
+    "official_website": "https://indico.in2p3.fr/event/33627/contributions/154656/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/1493037/contributions/6522070/attachments/3122693/5537716/MilliQan_Neha_LP2025-1.pdf",
+      "caption": "milliQan bar detector in the tunnel, from the 2025 Lepton Photon collaboration report. Source PDF p. 5.",
+      "credit": "Sai Neha Santpur / milliQan Collaboration (Lepton Photon 2025)",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/1493037/contributions/6522070/attachments/3122693/5537716/MilliQan_Neha_LP2025-1.pdf",
+      "width": 528,
+      "height": 855,
+      "sha256": "4af5f5a5e03de188a303d50810df1de51cdcbdd22b86c93eb9f28fc3f0b4ade7",
+      "mime_type": "image/webp",
+      "source_sha256": "eeaa8910bcae9b77c6d1cafef243e7aba359091e9fa33676797ddfc9f33b840e",
+      "source_dimensions": {
+        "width": 528,
+        "height": 855
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.in2p3.fr/event/33627/contributions/154656/",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Status of the milliQan Experiment during Run 3",
+      "url": "https://indico.in2p3.fr/event/33627/contributions/154656/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-11",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "LLP2026 contribution list — Updated Results from milliQan",
+      "url": "https://indico.cern.ch/event/1592699/contributions/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "milliQan Lepton Photon 2025 report",
+      "url": "https://indico.cern.ch/event/1493037/contributions/6522070/attachments/3122693/5537716/MilliQan_Neha_LP2025-1.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "id": "neutrino-4",
+  "name": "Neutrino-4",
+  "full_name": "Neutrino-4 reactor sterile-neutrino experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Neutrino-4 searches for metre-scale oscillations at the compact SM-3 research reactor in Dimitrovgrad. Its movable segmented detector compares antineutrino spectra across baselines and has reported a sterile-mixing interpretation that remains unconfirmed.",
+  "physics_targets": [
+    "eV-scale sterile-neutrino disappearance",
+    "Very-short-baseline reactor spectra"
+  ],
+  "detection_principle": "Gadolinium-loaded segmented liquid scintillator detects inverse beta decay. Moving the detector changes the source distance; ratios across position and energy are used to seek a periodic L/E pattern.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Russia; SM-3 research reactor, Dimitrovgrad",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; SM-3 research reactor, Dimitrovgrad",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2024",
+    "evidence": "A funded follow-up project documents detector-upgrade work; exact current reactor running is not inferred.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2016",
+      "event": "Full-detector measurement programme underway",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Updated claimed oscillation result published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2024–2026",
+      "event": "Detector upgrade and follow-up validation project",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Neutrino-4 Collaboration",
+    "lead_institutions": [
+      "Petersburg Nuclear Physics Institute",
+      "Dimitrovgrad reactor facility"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline range",
+      "value": "Approximately 6–12 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "SM-3 compact research reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Claimed best-fit scale",
+      "value": "Delta-m² approximately 7.3 eV² in the published analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "A sterile-mixing signal was claimed by the collaboration; the result is disputed and must not be treated as an established discovery.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "The independent KATRIN beta-spectrum search strongly challenged the claimed preferred parameter region.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "danss",
+    "neos",
+    "prospect",
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://rscf.ru/project/24-12-00091/",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.104.032003",
+      "https://www.nature.com/articles/s41586-025-09739-9"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2005.05301",
+      "caption": "Neutrino-4 passive shielding, detector travel rails and apparatus at the SM-3 reactor; Figure 3 of the collaboration paper.",
+      "credit": "Neutrino-4 Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/pdf/2005.05301#page=5",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1178,
+      "height": 497,
+      "sha256": "cc83d6e65720130268d3e0fff990571a79ec2428d00a609c9345b1cf7a48fe5f",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "0d69e6db1fe591b6f8029e7ed795b80136ff52a6f19eb32babb4ea59ce333c38",
+      "source_dimensions": {
+        "width": 1178,
+        "height": 497
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Neutrino-4 Collaboration, Search for a sterile neutrino at the SM-3 reactor",
+      "url": "https://doi.org/10.1103/PhysRevD.104.032003",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KATRIN Collaboration, Sterile-neutrino search and comparison with Neutrino-4",
+      "url": "https://www.nature.com/articles/s41586-025-09739-9",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Russian Science Foundation project: Neutrino-4 detector upgrades",
+      "url": "https://rscf.ru/project/24-12-00091/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

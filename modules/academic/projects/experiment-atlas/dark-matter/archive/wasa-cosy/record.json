@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "id": "wasa-cosy",
+  "name": "WASA-at-COSY",
+  "full_name": "Wide Angle Shower Apparatus at COSY",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "WASA-at-COSY operated at COSY, Forschungszentrum Jülich. WASA had previously operated in Sweden, but the dark-photon sample in this record comes from its German COSY deployment, not Uppsala.",
+  "physics_targets": [
+    "Dark photons"
+  ],
+  "detection_principle": "π⁰ mesons produced in pp reactions are reconstructed in π⁰→γe⁺e⁻, with dark-photon decay peaks sought in the electron-pair mass spectrum.",
+  "technologies": [
+    "Nearly 4π detector",
+    "Electromagnetic calorimeter",
+    "Charged tracks",
+    "Particle identification"
+  ],
+  "sites": [
+    {
+      "name": "Forschungszentrum Jülich，COSY",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Forschungszentrum Jülich，COSY",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "This record covers the completed dark-photon search published in 2013",
+    "as_of": "2013",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "This record covers the completed dark-photon search published in 2013",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WASA-at-COSY Collaboration / project team",
+    "lead_institutions": [
+      "Forschungszentrum Jülich"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Reconstructed π⁰ sample",
+      "value": "Approximately 5×10⁵ π⁰→γe⁺e⁻ events",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Listed dark-photon mass interval",
+      "value": "20–100 MeV/c²",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "WASA-at-COSY",
+      "status": "completed",
+      "description": "This record covers the completed dark-photon search published in 2013"
+    }
+  ],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "No dark photons; a 90% confidence upper limit on ε² at approximately 5×10⁻⁶ was obtained. See the paper for the mass dependence.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "HADES",
+    "NA48/2"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1304.0671"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.fz-juelich.de/en/ikp/ikp-2/research/previous-list/wasa-at-cosy",
+      "caption": "WASA-at-COSY detector photograph showing its central detector, surrounding supports and cables.",
+      "credit": "WASA-at-COSY Collaboration",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.fz-juelich.de/en/ikp/ikp-2/images/wasa/wasa/@@images/image/teaser",
+      "width": 340,
+      "height": 227,
+      "sha256": "b5e658193b4a2980ebd858b2e1e4ffae5ead04b2786eccf3cefbb0f57d33f97e",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1304.0671",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for a dark photon in the pi0 to e+e- gamma decay",
+      "url": "https://arxiv.org/abs/1304.0671",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-08-27",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "spats",
+  "name": "SPATS",
+  "full_name": "South Pole Acoustic Test Setup",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "acoustic"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "A dedicated acoustic R&D array deployed in IceCube boreholes measured sound propagation, attenuation and noise in Antarctic ice to test the feasibility of a future acoustic ultra-high-energy neutrino detector.",
+  "physics_targets": [
+    "Acoustic neutrino detection feasibility",
+    "Sound propagation in Antarctic ice",
+    "Ultra-high-energy neutrino backgrounds"
+  ],
+  "detection_principle": "Piezoelectric transmitters and receivers between several boreholes measure acoustic pulses through ice. The resulting sound speed, attenuation and background measurements determine whether pressure pulses from neutrino showers could be identified by a sparse array.",
+  "technologies": [
+    "Thermo-acoustic particle detection with hydrophones or piezoelectric sensors"
+  ],
+  "sites": [
+    {
+      "name": "Amundsen–Scott South Pole Station, Antarctica",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Amundsen–Scott South Pole Station, Antarctica",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "This record describes the historical dedicated acoustic test programme. The cited papers establish its deployed configuration and measurements, not continuous operation through 2026.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007-01",
+      "event": "First three strings deployed in IceCube boreholes.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2007-12",
+      "event": "Fourth string extended the array to 500 m depth.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2011–2012",
+      "event": "Detector-performance and background results published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SPATS Collaboration",
+    "lead_institutions": [
+      "DESY",
+      "Ghent University",
+      "Uppsala University",
+      "Stockholm University",
+      "University of California, Berkeley"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "Completed R&D array",
+      "value": "Four vertical strings with seven acoustic stages per string",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Instrumented depths",
+      "value": "80–500 m; configurations differ between strings",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Maximum baseline",
+      "value": "543 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Main acoustic frequency range",
+      "value": "10–100 kHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2012",
+      "summary": "Noise and transient-source measurements constrained the feasibility and thresholds of acoustic neutrino detection; no astrophysical neutrino observation by the acoustic system was established.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "icecube",
+    "saund",
+    "amadeus",
+    "acorne"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1105.4339",
+      "https://arxiv.org/abs/1103.1216",
+      "https://arxiv.org/abs/1210.7974"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1105.4339",
+      "caption": "A fully assembled SPATS acoustic stage with transmitter and sensor modules (2011 detector paper, Figure 3).",
+      "credit": "Y. Abdou et al. / SPATS",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1105.4339",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 521,
+      "height": 1389,
+      "sha256": "8d9cb51ae0cd882816cf931b379cb02f2254290c0d06fc09b20c8948b862bd23",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Y. Abdou et al., Design and performance of the South Pole Acoustic Test Setup",
+      "url": "https://arxiv.org/abs/1105.4339",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IceCube Collaboration, Background studies for acoustic neutrino detection at the South Pole",
+      "url": "https://arxiv.org/abs/1103.1216",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "T. Karg, Acoustic Neutrino Detection in Ice: Past, Present, and Future",
+      "url": "https://arxiv.org/abs/1210.7974",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A precise final shutdown date is not established by the cited sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "acoustic"
+    ],
+    "technology_tags": [
+      "acoustic"
+    ],
+    "is_europe": false
+  }
+}

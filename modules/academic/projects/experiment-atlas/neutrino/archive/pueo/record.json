@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "pueo",
+  "name": "PUEO",
+  "full_name": "Payload for Ultrahigh Energy Observations",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The successor to ANITA uses interferometric triggering to search for faint radio signatures of ultra-high-energy neutrinos from a stratospheric balloon over Antarctica.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic neutrinos",
+    "Transient neutrino sources",
+    "Air-shower radio signatures"
+  ],
+  "detection_principle": "A large dual-polarisation antenna payload detects Askaryan pulses from ice and radio pulses from tau-induced air showers. Real-time beamforming lowers the trigger threshold compared with earlier balloon instruments.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; high-altitude balloon flights observing Antarctic ice",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; high-altitude balloon flights observing Antarctic ice",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "First flight completed in January 2026; the recovered dataset is in analysis.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Instrument and sensitivity design published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-12-20",
+      "event": "First flight launched from Antarctica.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-01-12",
+      "event": "Payload landed after a successful flight; data recovered.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PUEO Collaboration",
+    "lead_institutions": [
+      "University of Chicago"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "2020 white-paper instrument design",
+      "value": "108 dual-polarisation horn antennas with beamforming trigger; the flight configuration evolved during development",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "First flight",
+      "value": "20 December 2025 to 12 January 2026; approximately 23 days",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Observing altitude",
+      "value": "Approximately 120,000 feet, or 37 km",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The university reports a completed flight and recovered data. A completed flight is not a published neutrino detection.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "anita",
+    "ara",
+    "rno-g"
+  ],
+  "resources": {
+    "official_website": "https://news.uchicago.edu/story/antarctica-balloon-lands-after-23-day-search-particles-outer-space",
+    "publication_links": [
+      "https://arxiv.org/abs/2010.02892"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2010.02892",
+      "caption": "PUEO payload concept in the 2020 white paper, with a person shown for scale.",
+      "credit": "PUEO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2010.02892v3/pueo_with_scale.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 906,
+      "height": 1920,
+      "sha256": "76d4bd4cb74dbc73057e4cb09127a41eb949bf6b5c8968c88be19fa64f0b411d",
+      "mime_type": "image/webp",
+      "source_sha256": "83f8447357dd8f9ff44e54a217dec064bceae787207c001332ab3649a5faa0aa",
+      "source_dimensions": {
+        "width": 1203,
+        "height": 2550
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "University of Chicago, successful PUEO flight and recovery",
+      "url": "https://news.uchicago.edu/story/antarctica-balloon-lands-after-23-day-search-particles-outer-space",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PUEO Collaboration, The Payload for Ultrahigh Energy Observations",
+      "url": "https://arxiv.org/abs/2010.02892",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

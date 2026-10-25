@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "id": "submet",
+  "name": "SUBMET",
+  "full_name": "SUB-Millicharge ExperimenT",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "SUBMET is deployed on basement level 2 of the J-PARC Neutrino Monitor Building, Tokai. Although led by a Korean team, the detector is in Japan; its geography follows the apparatus site.",
+  "physics_targets": [
+    "Millicharged and submillicharged particles"
+  ],
+  "detection_principle": "Small-charge particles produced by the J-PARC proton target traverse shielding and leave single-photoelectron-level coincidences in two layers of long scintillator bars pointing toward the target; beam timing gates suppress backgrounds.",
+  "technologies": [
+    "Plastic-scintillator bars",
+    "PMT",
+    "Two-layer coincidence",
+    "Beam synchronization"
+  ],
+  "sites": [
+    {
+      "name": "J-PARC Neutrino Monitor Building, basement level 2, Tokai",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "J-PARC Neutrino Monitor Building, basement level 2, Tokai",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Installation completed in May 2024; initial beam data-taking began in June",
+    "as_of": "2024-07-01",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-07-01",
+      "event": "Installation completed in May 2024; initial beam data-taking began in June",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SUBMET Collaboration / project team",
+    "lead_institutions": [
+      "Korea University",
+      "J-PARC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Proton-beam energy",
+      "value": "30 GeV",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Target-to-detector distance",
+      "value": "Approximately 280 m",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "2024 apparatus layout",
+      "value": "Two layers, each with 10×8 scintillator bars of 1.5 m length",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SUBMET",
+      "status": "operating",
+      "description": "Installation completed in May 2024; initial beam data-taking began in June"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Installation and initial beam data-taking completed; charge/mass curves in the listed material primarily show design sensitivity rather than a discovery.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "milliQan",
+    "FORMOSA",
+    "LANSCE-mQ"
+  ],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1381368/contributions/6010754/attachments/2887269/5060672/LLP2024_HY.pdf",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/1381368/contributions/6010754/attachments/2887269/5060672/LLP2024_HY.pdf",
+      "caption": "Three-dimensional SUBMET system design with two scintillator-module arrays and readout racks (LLP2024 collaboration report). Source PDF p. 16.",
+      "credit": "Hoyong Jeong / SUBMET Collaboration (LLP2024)",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/1381368/contributions/6010754/attachments/2887269/5060672/LLP2024_HY.pdf",
+      "width": 1920,
+      "height": 1043,
+      "sha256": "b1b2d9a7b2a5bec273e1707bcfd8c37019584eeafc1cf553bf292d6dfd888034",
+      "mime_type": "image/webp",
+      "source_sha256": "d5438f78f27ffacc0d7c0bd870a5237b828d0b16310cb518a801951256e38ea5",
+      "source_dimensions": {
+        "width": 2304,
+        "height": 1251
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://indico.cern.ch/event/1381368/contributions/6010754/attachments/2887269/5060672/LLP2024_HY.pdf",
+      "caption": "SUBMET installation photographs, scintillator-bar layout and site schematic",
+      "credit": "SUBMET Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SUB-Millicharge ExperimenT status at LLP2024",
+      "url": "https://indico.cern.ch/event/1381368/contributions/6010754/attachments/2887269/5060672/LLP2024_HY.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-07-01",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

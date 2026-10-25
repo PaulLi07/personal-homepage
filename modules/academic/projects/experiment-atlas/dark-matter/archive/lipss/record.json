@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "lipss",
+  "name": "LIPSS",
+  "full_name": "Light Pseudoscalar and Scalar Particle Search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A historical light-shining-through-a-wall dark-sector search using a high-average-power free-electron laser.",
+  "physics_targets": [
+    "Light scalars and ALPs",
+    "Hidden photons"
+  ],
+  "detection_principle": "Laser light passes through a production magnet; hypothetical weakly coupled particles cross an optical barrier and reconvert to ordinary photons in a downstream magnet.",
+  "technologies": [
+    "Free-electron lasers",
+    "Dipole magnets",
+    "Light shining through a wall",
+    "Low-noise cameras"
+  ],
+  "sites": [
+    {
+      "name": "Jefferson Laboratory FEL，Newport News",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Jefferson Laboratory FEL，Newport News",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2009",
+    "evidence": "2009 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009",
+      "event": "Search for Dark Matter Particles with Jefferson Lab’s Free Electron Laser",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LIPSS Collaboration / project team",
+    "lead_institutions": [
+      "Jefferson Laboratory",
+      "Hampton University",
+      "Yale University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Operating laser",
+      "value": "0.935±0.010 μm; approximately 180 W average",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam diameter",
+      "value": "Approximately 8 mm",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2009",
+      "summary": "No new scalar or hidden-photon signal; corresponding coupling and mass limits were reported.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://proceedings.jacow.org/FEL2009/papers/wepc29.pdf",
+      "https://misportal.jlab.org/sti/publications/14859/attachments/3619/fulltext.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://misportal.jlab.org/sti/publications/14859/attachments/3619/fulltext.pdf",
+      "caption": "LIPSS apparatus photograph showing two light-blue dipole magnets and the optical system (Fig. 5, 2017 conference paper).",
+      "credit": "LIPSS paper authors; no separate photographer is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://misportal.jlab.org/sti/publications/14859/attachments/3619/fulltext.pdf",
+      "width": 999,
+      "height": 579,
+      "sha256": "5127d066676ea90a478ab15c419a7bbd6d847dde5be6117ea72a0876bca4664a",
+      "mime_type": "image/webp",
+      "source_sha256": "f01bbc4cbc1bf819d5d96297c1e3ba2069e9205c18145cc0285370d713c7c870",
+      "source_dimensions": {
+        "width": 999,
+        "height": 579
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://misportal.jlab.org/sti/publications/14859/attachments/3619/fulltext.pdf",
+      "caption": "LIPSS apparatus photograph, Fig. 5, showing two light-blue dipole magnets.",
+      "credit": "Original authors / Jefferson Laboratory",
+      "reuse_status": "Figure number and content confirmed by the source description; reuse permission still requires verification before formal webpage publication"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for Dark Matter Particles with Jefferson Lab’s Free Electron Laser",
+      "url": "https://proceedings.jacow.org/FEL2009/papers/wepc29.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Dark-sector photo-magnetic luminescence — apparatus photograph",
+      "url": "https://misportal.jlab.org/sti/publications/14859/attachments/3619/fulltext.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

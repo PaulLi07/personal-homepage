@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "id": "lampf-0764",
+  "name": "LAMPF-0764",
+  "full_name": "Los Alamos Meson Physics Facility Experiment E764",
+  "aliases": [
+    "LAMPF E764"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "LAMPF E764 studied neutrino interactions and searched for muon-to-electron appearance at energies near the muon-production threshold using the Los Alamos accelerator source.",
+  "physics_targets": [
+    "Muon-neutrino to electron-neutrino appearance",
+    "Muon-neutrino interactions on carbon near threshold"
+  ],
+  "detection_principle": "A liquid-scintillator detector measured charged-particle light from neutrino interactions, with neutrinos from pion decay in flight providing the muon-neutrino sample. Electron-like events were compared with intrinsic and non-neutrino backgrounds to test flavour appearance.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; LAMPF at Los Alamos",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; LAMPF at Los Alamos",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1992-12",
+    "evidence": "The EPAC 1988 experiment-team report describes the bare-target exposure as finished; a final carbon cross-section paper appeared in December 1992.",
+    "source_ids": [
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1986-08",
+      "event": "Abbreviated data acquisition completed",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1987",
+      "event": "Appearance-search result published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1989",
+      "event": "Independent checks of the neutrino-flux calculation completed according to the PI report",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1992-12",
+      "event": "Final inclusive and exclusive carbon charged-current measurement published",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LAMPF-0764 Collaboration",
+    "lead_institutions": [
+      "Los Alamos National Laboratory",
+      "Valparaiso University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Facility",
+      "value": "LAMPF, Los Alamos National Laboratory",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Proton beam",
+      "value": "800 MeV protons on a bare water target",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Neutrino source",
+      "value": "Pion decay in flight along a 12 m channel",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "4.5-ton liquid-scintillator cylinder, approximately 2 m in diameter and height",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Baseline and shielding",
+      "value": "Detector centre 21 m from the target, behind 8 m of iron and magnetite",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Cross-section sample",
+      "value": "Average interacting muon-neutrino energy 202 MeV",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1987",
+      "summary": "Published limits on muon-to-electron appearance near the muon threshold.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1992",
+      "summary": "Measured the flux-averaged inclusive carbon charged-current cross section as (15.9 +/- 2.6 statistical +/- 3.7 systematic) x 10^-39 square centimetres, and also isolated a small exclusive nitrogen-12 ground-state sample.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "lampf-0645",
+    "lsnd"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1016/0370-2693(87)90240-1",
+      "https://www.osti.gov/servlets/purl/5473781",
+      "https://proceedings.jacow.org/e88/PDF/EPAC1988_1044.PDF",
+      "https://doi.org/10.1103/PhysRevC.46.2554"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://proceedings.jacow.org/e88/PDF/EPAC1988_1044.PDF",
+      "caption": "LAMPF E764 decay-in-flight neutrino beamline and scintillator-detector layout: water target, decay channel, iron and magnetite shielding, and the detector 21 m from the target (Figure 1, Dombeck et al., EPAC 1988). The original source also discusses a future pion-focusing upgrade.",
+      "credit": "T. Dombeck, D. D. Koetke, D. S. Koetke and R. Fisk, Proceedings of EPAC 1988, pp. 1044–1046",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://proceedings.jacow.org/e88/PDF/EPAC1988_1044.PDF",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1440,
+      "height": 534,
+      "sha256": "3670b5d5163d6b2257e9b0a8326eb79282a23762a2546847ea4cd2a8ad715d5f",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "T. Dombeck et al., Search for neutrino oscillations in the appearance mode near the muon threshold",
+      "url": "https://doi.org/10.1016/0370-2693(87)90240-1",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Valparaiso University, PI progress report on LAMPF E764 and neutrino interactions",
+      "url": "https://www.osti.gov/servlets/purl/5473781",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "T. Dombeck et al., A CW-pion focusing horn for low-energy muon neutrino beams, including the completed bare-target E764 apparatus",
+      "url": "https://proceedings.jacow.org/e88/PDF/EPAC1988_1044.PDF",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "D. D. Koetke et al., Muon-neutrino carbon charged-current interaction near the muon threshold",
+      "url": "https://doi.org/10.1103/PhysRevC.46.2554",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1992-12-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "E764 is distinct from the later 15-ton LCD/E1015 neutrino-electron scattering detector; their apparatus parameters are not interchanged. The focusing device drawn beside the actual beamline was a subsequent proposal, not part of the completed E764 exposure."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

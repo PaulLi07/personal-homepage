@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "id": "microboone",
+  "name": "MicroBooNE",
+  "full_name": "Micro Booster Neutrino Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MicroBooNE is a completed Fermilab liquid-argon neutrino exposure whose analyses test the MiniBooNE low-energy excess and provide extensive neutrino-argon interaction measurements.",
+  "physics_targets": [
+    "Nature of the MiniBooNE low-energy excess",
+    "Neutrino-argon differential and exclusive cross sections",
+    "Sterile neutrinos, dark sectors and detector methods"
+  ],
+  "detection_principle": "Three wire planes measure ionization electrons drifting through liquid argon, while optical detectors time the interaction. Fine imaging distinguishes single electrons from converted photons by their initial ionization and event topology.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab Booster beam, also receiving the off-axis NuMI beam",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab Booster beam, also receiving the off-axis NuMI beam",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The laboratory classifies MicroBooNE under Analyzing, Finished Running; the collaboration lists continuing 2025 results.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015-10",
+      "event": "Neutrino data taking started",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "First major low-energy-excess analyses released",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "New single-photon and electron-positron dark-sector analyses listed",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MicroBooNE Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Argon inventory",
+      "value": "About 170 tonnes total, with an approximately 85-ton active TPC",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "Booster Neutrino Beam and off-axis NuMI flux at Fermilab",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Three wire planes plus scintillation-light detection",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The collaboration continues to publish low-energy-excess and cross-section analyses from its completed exposure; exclusion results depend on the signal model tested.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025-12",
+      "summary": "Combined the on-axis Booster and off-axis NuMI beam samples in a light-sterile-neutrino oscillation search. The constraints apply to the tested mixing model and parameter region; they do not exclude every possible sterile-neutrino scenario.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "miniboone",
+    "icarus",
+    "sbnd",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://microboone.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1612.05824",
+      "https://doi.org/10.1038/s41586-025-09757-7"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://scitechdaily.com/science-made-simple-what-are-sterile-neutrinos/",
+      "caption": "MicroBooNE cryostat installation site",
+      "credit": "MicroBooNE / Fermilab; image republished by SciTechDaily",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/legacy-091.jpg",
+      "original_url": "https://scitechdaily.com/science-made-simple-what-are-sterile-neutrinos/",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1100,
+      "height": 733,
+      "sha256": "03472457ebd8a1909e346314c354e34ede5d8baaa9155b9aff284012f2d196b8",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MicroBooNE Collaboration, experiment and publications",
+      "url": "https://microboone.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MicroBooNE Collaboration, Design and Construction of the MicroBooNE Detector",
+      "url": "https://arxiv.org/abs/1612.05824",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016-12-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fermilab Neutrino Physics, experiments programme",
+      "url": "https://neutrinophysics.fnal.gov/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "MicroBooNE Collaboration, Search for light sterile neutrinos with two neutrino beams at MicroBooNE",
+      "url": "https://doi.org/10.1038/s41586-025-09757-7",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": false
+  }
+}

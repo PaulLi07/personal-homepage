@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "cross",
+  "name": "CROSS",
+  "full_name": "Cryogenic Rare-event Observatory with Surface Sensitivity",
+  "aliases": [
+    "cross"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CROSS is a cryogenic double-beta-decay demonstrator at Canfranc. Its programme develops low-background bolometers, surface-event rejection and sensitive light detection for molybdenum-100 and related rare-decay searches.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Cryogenic absorbers measure deposited energy, with scintillation-light signals and surface-sensitive response used to distinguish alpha and surface backgrounds. Fast light sensors also reduce accidental coincidence backgrounds.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Canfranc Underground Laboratory",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026",
+    "evidence": "CEA reported that CROSS began data taking at the end of 2025.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "cross Collaboration",
+    "lead_institutions": [
+      "IJCLab, CNRS/IN2P3",
+      "CEA IRFU"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "Canfranc Underground Laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Principal scintillator",
+      "value": "Enriched lithium molybdate",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Physics priority",
+      "value": "Low-background 100Mo double-beta decay",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "CEA reported that CROSS began data taking at the end of 2025.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cupid-mo",
+    "cupid"
+  ],
+  "resources": {
+    "official_website": "https://irfu.cea.fr/Phocea/Vie_des_labos/Ast/ast.php?id_ast=5509&t=fait_marquant",
+    "publication_links": [
+      "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2418/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/1907.11411",
+      "caption": "CROSS prototype bolometer assemblies and superconducting aluminium coatings, Figure 1 of the 2019 detector-development paper; these precede the Canfranc demonstrator.",
+      "credit": "CROSS Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/1907.11411",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 764,
+      "height": 540,
+      "sha256": "ec768db299768f38eea1b10c3b5d2983c31ea7477d85df1df3d70740a7a8f37d",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "d23be57676b1c346e33515a1c9e082fe6a47ae1f5a42a1982d3d6ee943d97bef",
+      "source_dimensions": {
+        "width": 764,
+        "height": 540
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "cross: official experiment / institutional overview",
+      "url": "https://irfu.cea.fr/Phocea/Vie_des_labos/Ast/ast.php?id_ast=5509&t=fait_marquant",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CROSS installs at Canfranc and takes its first data",
+      "url": "https://irfu.cea.fr/Phocea/Vie_des_labos/Ast/ast.php?id_ast=5509&t=fait_marquant",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The CROSS demonstrator: structure, performance and physics reach",
+      "url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2418/",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

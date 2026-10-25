@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "swgo",
+  "name": "SWGO",
+  "full_name": "Southern Wide-field Gamma-ray Observatory",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Proposed wide-field gamma-ray observatory in the Southern Hemisphere, enabling long-term observations of the Galactic center and high-energy dark-matter targets.",
+  "physics_targets": [
+    "Indirect searches for heavy dark matter"
+  ],
+  "detection_principle": "A large area of ground water-Cherenkov detectors samples air showers, providing a wide field of view and high duty cycle.",
+  "technologies": [
+    "Water-Cherenkov array"
+  ],
+  "sites": [
+    {
+      "name": "Pampa La Bola，Atacama Astronomical Park",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "Pampa La Bola，Atacama Astronomical Park",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Announced plan",
+    "as_of": "2024",
+    "evidence": "The 2024 site-selection announcement anticipated construction beginning in 2026; no independent evidence of a formal construction start was obtained in this review.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Announcement of the Pampa La Bola site in Chile",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SWGO collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Site altitude",
+      "value": "4770 m",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Research, development and design",
+      "status": "research_development",
+      "description": "Technology and layout studies"
+    },
+    {
+      "name": "Complete array",
+      "status": "planned",
+      "description": "Site announced; engineering progress requires separate verification"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "HAWC",
+    "LHAASO",
+    "CTAO"
+  ],
+  "resources": {
+    "official_website": "https://www.swgo.org/SWGOWiki/doku.php",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.minciencia.gob.cl/noticias/nuevo-logro-para-la-astronomia-local-chile-es-elegido-para-instalar-el-primer-observatorio-de-rayos-gamma-del-hemisferio-sur/",
+      "caption": "Design illustration of the SWGO water-Cherenkov array and air-shower measurement principle; a concept for the future array.",
+      "credit": "Project illustration published by Chile's Ministry of Science, MinCiencia, in its 2024 site announcement; no individual illustrator is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.minciencia.gob.cl/uploads/filer_public_thumbnails/filer_public/1c/f0/1cf0e507-b2f1-4f7c-a1be-d1f27309ec9c/maqueta_proyecto_swgo.jpg__4210x3062_q85_subsampling-2.jpg",
+      "width": 1920,
+      "height": 1396,
+      "sha256": "c7ec8111052b93c3d1a4989e881c968aa7891cc4ed40b89a8f8539fb27c32cf3",
+      "mime_type": "image/webp",
+      "source_sha256": "3b1843051f3c69cff6630cb01b0d480fc5a79fac03d73a4672091796bf982a31",
+      "source_dimensions": {
+        "width": 4210,
+        "height": 3062
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.swgo.org/SWGOWiki/doku.php",
+      "caption": "SWGO project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.swgo.org/SWGOWiki/doku.php",
+      "title": "SWGO project overview",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.minciencia.gob.cl/noticias/nuevo-logro-para-la-astronomia-local-chile-es-elegido-para-instalar-el-primer-observatorio-de-rayos-gamma-del-hemisferio-sur/",
+      "title": "Chile MinCiencia: SWGO site selected",
+      "source_date": "2024",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Specific construction status in 2026 requires a recent engineering announcement."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHL"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

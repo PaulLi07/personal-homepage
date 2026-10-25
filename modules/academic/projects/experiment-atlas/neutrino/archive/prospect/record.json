@@ -1,0 +1,223 @@
+{
+  "schema_version": "1.0",
+  "id": "prospect",
+  "name": "PROSPECT",
+  "full_name": "Precision Reactor Oscillation and Spectrum Experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "PROSPECT measured the uranium-235 antineutrino spectrum and searched for metre-scale sterile oscillations at Oak Ridge HFIR. Its optically segmented detector was designed for operation at the surface close to a compact highly enriched reactor core.",
+  "physics_targets": [
+    "Uranium-235 antineutrino spectrum",
+    "eV-scale sterile-neutrino disappearance",
+    "Surface-level reactor detection"
+  ],
+  "detection_principle": "Lithium-6-loaded liquid scintillator tags inverse beta decay. Positron energy and delayed lithium-capture pulses are localized by segmentation; pulse-shape discrimination rejects neutron and gamma backgrounds. Relative spectra across detector baselines test oscillations.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Oak Ridge HFIR research reactor",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Oak Ridge HFIR research reactor",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2020",
+    "evidence": "The community white paper reports that the original PROSPECT detector was decommissioned in 2020. The 2018 sample is a data-taking period, not the entire lifetime of the apparatus.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018",
+      "event": "PROSPECT-I reactor data acquired",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Improved Phase-I results and Phase-II opportunities published",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Original detector decommissioned; PROSPECT-II developed as a successor",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PROSPECT Collaboration",
+    "lead_institutions": [
+      "Yale University",
+      "Oak Ridge National Laboratory",
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator mass",
+      "value": "Approximately 4 tonnes",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Optical segments",
+      "value": "154 segments",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Baselines",
+      "value": "Approximately 7–9 m for the deployed detector",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "HFIR highly enriched uranium research reactor",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Phase-I relative spectra excluded the reactor-anomaly best-fit sterile point at high confidence and measured the uranium-235 spectrum.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "prospect-ii",
+    "stereo",
+    "solid"
+  ],
+  "resources": {
+    "official_website": "https://prospect.yale.edu/publications",
+    "publication_links": [
+      "https://arxiv.org/abs/2006.11210",
+      "https://arxiv.org/abs/2107.03934",
+      "https://arxiv.org/abs/2203.07323"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2006.11210",
+      "caption": "Top and side views of PROSPECT-I in the HFIR reactor building.",
+      "credit": "PROSPECT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2006.11210v2/PRD_1_exp.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1440,
+      "sha256": "4b920bca8e77ea537ea0b012caf156ec1e79cf1de3a6a18a9b2f057aad62527d",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "2542f06facce424f1ce4841706acc7605db9a1a229a8e1d6147b62ec400cc670",
+      "source_dimensions": {
+        "width": 2046,
+        "height": 1535
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PROSPECT collaboration publications",
+      "url": "https://prospect.yale.edu/publications",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PROSPECT Collaboration, Improved oscillation search and spectrum",
+      "url": "https://arxiv.org/abs/2006.11210",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-06-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PROSPECT Collaboration, PROSPECT-II physics opportunities",
+      "url": "https://arxiv.org/abs/2107.03934",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-07-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "White Paper on Light Sterile Neutrino Searches and Related Phenomenology, section 6.3.5",
+      "url": "https://arxiv.org/abs/2203.07323",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

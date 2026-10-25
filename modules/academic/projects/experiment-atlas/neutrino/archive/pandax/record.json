@@ -1,0 +1,240 @@
+{
+  "schema_version": "1.0",
+  "id": "pandax",
+  "name": "PandaX",
+  "full_name": "Particle and Astrophysical Xenon Experiments - neutrino programme",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "gas",
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "PandaX is a xenon-detector programme at Jinping studying dark matter, solar neutrinos and rare decays. Its liquid-xenon PandaX-4T stage completed operation in April 2026 and the collaboration is constructing PandaX-20T. PandaX-III is a separate gaseous-xenon double-beta project.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays",
+    "Solar-neutrino interactions",
+    "Rare xenon weak decays"
+  ],
+  "detection_principle": "The dual-phase xenon TPC measures prompt light and delayed charge-induced electroluminescence. Position reconstruction and the charge-to-light ratio separate backgrounds and interaction types.",
+  "technologies": [
+    "Gas time projection chambers",
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Jinping underground laboratory, Sichuan",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Jinping underground laboratory, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-09-04",
+    "evidence": "PandaX-4T stopped operation on 17 April 2026 after Run 11162. The collaboration is constructing PandaX-20T; deployment in late 2026 and construction completion in 2027 are plans, not completed milestones.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-04-17",
+      "event": "PandaX-4T completed its final data-taking run.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PandaX Collaboration",
+    "lead_institutions": [
+      "Shanghai Jiao Tong University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "PandaX-4T target",
+      "value": "Approximately 4 tonnes of active liquid xenon",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "China Jinping Underground Laboratory",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Neutrino signals",
+      "value": "Solar electron recoils, coherent nuclear recoils and xenon rare decays",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PandaX-I / PandaX-II",
+      "status": "completed",
+      "description": "Earlier liquid-xenon dark-matter and rare-event stages."
+    },
+    {
+      "name": "PandaX-4T",
+      "status": "completed",
+      "description": "Stopped operation on 17 April 2026; analyses of accumulated data continue.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "PandaX-20T",
+      "status": "construction",
+      "description": "Construction underway; late-2026 deployment and 2027 completion were forecast in September 2026.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": null,
+      "summary": "The PandaX programme has published neutrino and rare-decay analyses; the future PandaX-xT scale is documented separately.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-07-02",
+      "summary": "The collaboration reported a solar pp-neutrino flux measurement from its 2024-2026 Run 2 electron-recoil data; publication after shutdown does not mean the detector is still taking data.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "science_scope": "Neutrino interaction measurements and double-beta-decay searches are part of a multipurpose dark-matter detector programme. Different analyses use different event selections, fiducial masses and exposure periods.",
+  "related_experiments": [
+    "lz-lux-zeplin",
+    "pandax-iii",
+    "pandax-xt",
+    "xenon"
+  ],
+  "resources": {
+    "official_website": "https://pandax.sjtu.edu.cn/",
+    "publication_links": [
+      "https://arxiv.org/abs/2407.10892",
+      "https://arxiv.org/abs/2607.02405"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://pandax.sjtu.edu.cn/",
+      "caption": "PandaX-II predecessor time projection chamber during assembly; representative hardware of the liquid-xenon PandaX programme.",
+      "credit": "PandaX Collaboration / Shanghai Jiao Tong University",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.jpg",
+      "original_url": "https://pandax.sjtu.edu.cn/sites/pandax/themes/sjtu/images/slides/pandax.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 888,
+      "height": 500,
+      "sha256": "eb99aa600e1728a9370f113a4b2d21647e0cac63a196d13200751ae6d442b78b",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PandaX: official experiment / institutional overview",
+      "url": "https://pandax.sjtu.edu.cn/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PandaX Collaboration: detectors and scientific programme",
+      "url": "https://pandax.sjtu.edu.cn/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "First indication of solar 8B neutrinos through coherent elastic neutrino-nucleus scattering in PandaX-4T",
+      "url": "https://arxiv.org/abs/2407.10892",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "PandaX-4T Concludes Staged Operation as PandaX Transitions to the 20T Phase",
+      "url": "https://pandax.sjtu.edu.cn/node/499",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-04",
+      "supports": [
+        "Status and results checked during the 2026-10-23 audit"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Measurement of solar pp neutrino flux with the new PandaX-4T data",
+      "url": "https://arxiv.org/abs/2607.02405",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-02",
+      "supports": [
+        "Channel-specific neutrino result"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "gas",
+      "xenon"
+    ],
+    "technology_tags": [
+      "gas",
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

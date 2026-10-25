@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "id": "coherent",
+  "name": "COHERENT",
+  "full_name": "COHERENT experiment at the Spallation Neutron Source",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "COHERENT is based at the Spallation Neutron Source, Oak Ridge National Laboratory, Tennessee. Its multitarget program primarily studies coherent elastic neutrino–nucleus scattering, while actual data also constrain beam-produced light dark matter.",
+  "physics_targets": [
+    "Sub-GeV light dark matter",
+    "Leptophobic dark matter",
+    "Vector portal"
+  ],
+  "detection_principle": "Proton collisions at a spallation-neutron-source target produce candidate particles; low-threshold detectors measure nuclear recoils. Beam timing and recoil spectra distinguish dark-matter scattering from coherent neutrino scattering.",
+  "technologies": [
+    "CsI[Na] scintillator",
+    "Multiple targets including liquid argon",
+    "Pulsed-beam timing"
+  ],
+  "sites": [
+    {
+      "name": "Oak Ridge National Laboratory, Spallation Neutron Source, Tennessee",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Oak Ridge National Laboratory, Spallation Neutron Source, Tennessee",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Two types of dark-matter searches published with CsI data; current operating status of each subdetector requires separate tracking",
+    "as_of": "2022",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Two types of dark-matter searches published with CsI data; current operating status of each subdetector requires separate tracking",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "COHERENT Collaboration / project team",
+    "lead_institutions": [
+      "Oak Ridge National Laboratory"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Recoil threshold of the listed CsI search",
+      "value": "Approximately 9 keVnr",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "2022 leptophobic-model mediator range",
+      "value": "2–400 MeV/c²; this is mediator mass, rather than every dark-matter candidate's mass",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CsI[Na]",
+      "status": "completed",
+      "description": "Specific sample with an existing dark-matter analysis"
+    },
+    {
+      "name": "Multitarget COHERENT program",
+      "status": "operating",
+      "description": "Different technologies including liquid argon share the beam facility; not counted separately as independent dark-matter experiments"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The CsI result found no dark-matter evidence and constrained quark couplings of a leptophobic vector portal.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "date": "2023",
+      "summary": "Another CsI analysis probes model parameters of scalar dark matter at 1–220 MeV/c², reaching part of the expected thermal-relic region.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "CCM"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2110.11453",
+      "https://arxiv.org/abs/2205.12414"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://sites.duke.edu/coherent/photo-gallery/",
+      "caption": "COHERENT CsI detector installation, with personnel examining the apparatus beside shielding.",
+      "credit": "COHERENT collaboration photo gallery; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://sites.duke.edu/coherent/files/2017/06/1600px-Csina-install-IMG_1723-150x150.jpg",
+      "width": 150,
+      "height": 150,
+      "sha256": "96ad1c6f4a6f248b68f231e123309c662c3f28360f6816675e08634416e268b9",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2110.11453",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Probe of Sub-GeV Dark Matter Beyond the Cosmological Expectation with the COHERENT CsI Detector at the SNS",
+      "url": "https://arxiv.org/abs/2110.11453",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-02-14",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "A COHERENT constraint on leptophobic dark matter using CsI data",
+      "url": "https://arxiv.org/abs/2205.12414",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-05-26",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "id": "pierre-auger",
+  "name": "Pierre Auger Observatory",
+  "full_name": "Pierre Auger Cosmic Ray Observatory",
+  "aliases": [
+    "Auger",
+    "AugerPrime"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Hybrid ultrahigh-energy cosmic-ray observatory in Argentina. Alongside cosmic-ray origins and composition, the collaboration uses ultrahigh-energy photon and neutrino searches to test superheavy-dark-matter models. AugerPrime is an upgrade phase of the same observatory.",
+  "physics_targets": [
+    "Superheavy dark-matter decay",
+    "Ultrahigh-energy photons",
+    "Cosmogenic photon background"
+  ],
+  "detection_principle": "A surface water-Cherenkov array measures extensive-air-shower particles, while fluorescence telescopes measure longitudinal development. Waveform timing, lateral distributions and muon content separate photon from hadron showers; photon-flux upper limits are then interpreted in specified superheavy-dark-matter models.",
+  "technologies": [
+    "Surface water-Cherenkov array",
+    "Atmospheric fluorescence telescopes",
+    "AugerPrime plastic scintillators",
+    "Radio antennas",
+    "Underground muon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Pampa Amarilla / Malargüe",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Pampa Amarilla plain near Malargüe, Mendoza Province, Argentina",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation and upgrade data supported by evidence",
+    "as_of": "2025-08-11",
+    "evidence": "A 2025 collaboration report presents initial AugerPrime results, describes final-component commissioning nearing completion and the enhanced array coming online.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1991",
+      "event": "Cronin and Watson proposed a large-scale observatory for the highest-energy cosmic rays.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2004-01/2020-06",
+      "event": "Data period used in the ultrahigh-energy photon result cited here.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Published a surface-array photon search above 10^19 eV and its superheavy-dark-matter interpretation.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2025-08-11",
+      "event": "Collaboration reported AugerPrime status and initial results.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Pierre Auger Collaboration",
+    "lead_institutions": [],
+    "participants_note": "International collaboration with the physical observatory in Argentina. Institutions and authors follow the list for each paper's period; no single lead institution is designated here."
+  },
+  "key_parameters": [
+    {
+      "name": "Surface-array area",
+      "value": "About 3000 km²",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Surface stations and fluorescence telescopes",
+      "value": "Overall configuration: 1660 particle-detector stations and 27 optical telescopes, including low-energy extensions; differs from counts of 1600 stations / 24 telescopes for the main array alone",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Energy thresholds in the cited photon search",
+      "value": "10^19, 2×10^19 and 4×10^19 eV; zenith angles 30°–60°",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Baseline hybrid observatory",
+      "status": "operating_history",
+      "description": "Long-term data taking with the water-Cherenkov array and fluorescence telescopes; the example result here uses only 2004–2020 data."
+    },
+    {
+      "name": "AugerPrime",
+      "status": "commissioning_and_operation",
+      "description": "Improves electromagnetic / muon separation. The 2025 report describes added scintillators, radio antennas, electronics and underground muon detectors."
+    }
+  ],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "For a diffuse photon flux with an assumed E^-2 spectrum, 95% CL upper limits above 10^19, 2×10^19 and 4×10^19 eV are respectively 2.11×10^-3, 3.12×10^-4 and 1.72×10^-4 km^-2 sr^-1 yr^-1. The paper discusses superheavy-dark-matter constraints; flux limits alone are not model-independent dark-matter-lifetime bounds.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Multipurpose cosmic-ray observatory included on the basis of the collaboration's original photon searches and their superheavy-dark-matter interpretation. Identifying an air shower as an ordinary cosmic ray or rare photon does not identify a dark-matter particle; mass, decay channel and Galactic-halo model affect lifetime limits.",
+  "related_experiments": [
+    "Telescope Array",
+    "IceCube",
+    "LHAASO"
+  ],
+  "resources": {
+    "official_website": "https://www.auger.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2209.05926",
+      "https://arxiv.org/abs/2508.08056"
+    ],
+    "data_links": [
+      "https://opendata.auger.org/"
+    ]
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.auger.org/",
+      "caption": "Pierre Auger surface water-Cherenkov station, with the AugerPrime scintillator upgrade module and solar-power components visible above.",
+      "credit": "Pierre Auger Collaboration; collaboration-website image pao_ssd",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.auger.org/images/Observatory/pao_ssd.png",
+      "width": 1100,
+      "height": 640,
+      "sha256": "56b59aee4babed1548171680259df570c6dbacd1858d2203d7ef258f29773ad4",
+      "mime_type": "image/webp",
+      "source_sha256": "d811ac7bca30be135dec9fd949bc08bd8f0bec1952d69468390b023bb0bc5e38",
+      "source_dimensions": {
+        "width": 1100,
+        "height": 640
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.auger.org/",
+      "caption": "Pierre Auger Observatory official source page for instrument, mission or facility images",
+      "credit": "Original institution / collaboration; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only, with no downloaded image for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Pierre Auger Observatory official overview",
+      "url": "https://www.auger.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Pierre Auger Observatory timeline",
+      "url": "https://auger.org/observatory/timeline-observatory",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Pierre Auger Collaboration: Search for photons above 10^19 eV",
+      "url": "https://arxiv.org/abs/2209.05926",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-04-04",
+      "supports": [
+        "2004–2020 data, ultrahigh-energy photon-flux upper limits and superheavy-dark-matter interpretation; JCAP 2023/05/021"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Pierre Auger Collaboration: AugerPrime Status and first results",
+      "url": "https://arxiv.org/abs/2508.08056",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-11",
+      "supports": [
+        "Upgraded detectors, first results and status"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Auger Open Data portal",
+      "url": "https://opendata.auger.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Public-data source page and array geometry"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Locations are facility / orbit descriptions; unverified map coordinates have not been entered.",
+      "Status extends only to the date supported by the evidence; source-access dates are not operational-status dates."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ARG"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov_airshower",
+      "radio"
+    ]
+  }
+}

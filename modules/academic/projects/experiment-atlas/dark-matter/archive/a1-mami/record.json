@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "a1-mami",
+  "name": "A1 / MAMI dark-photon search",
+  "full_name": "A1 Collaboration dark-photon search at the Mainz Microtron",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "A1 / MAMI dark-photon search is based at the Mainz Microtron (MAMI), Johannes Gutenberg-Universität Mainz. This named dark-photon analysis uses the multipurpose A1 nuclear-physics apparatus; the record is limited to that dark-sector program.",
+  "physics_targets": [
+    "Dark photons",
+    "Light U(1) gauge bosons"
+  ],
+  "detection_principle": "An electron beam striking a target produces e⁺e⁻ pairs; high-resolution magnetic spectrometers measure dilepton invariant masses to seek narrow resonances above a smooth QED background.",
+  "technologies": [
+    "Continuous electron beam",
+    "High-resolution magnetic spectrometers",
+    "Dilepton-mass reconstruction"
+  ],
+  "sites": [
+    {
+      "name": "Johannes Gutenberg-Universität Mainz，Mainz Microtron (MAMI)",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Johannes Gutenberg-Universität Mainz，Mainz Microtron (MAMI)",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The listed dark-photon run and analysis are complete; this status does not mean the entire MAMI or A1 program has stopped",
+    "as_of": "2014",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "The listed dark-photon run and analysis are complete; this status does not mean the entire MAMI or A1 program has stopped",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "A1 / MAMI dark-photon search Collaboration / project team",
+    "lead_institutions": [
+      "Johannes Gutenberg-Universität Mainz"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2014 mass range",
+      "value": "40–300 MeV/c²",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "2014 mixing-parameter sensitivity",
+      "value": "ε² reaches approximately 8×10⁻⁷, varying with mass",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "A1 / MAMI dark-photon search",
+      "status": "completed",
+      "description": "The listed dark-photon run and analysis are complete; this status does not mean the entire MAMI or A1 program has stopped"
+    }
+  ],
+  "results": [
+    {
+      "date": "2014",
+      "summary": "No light U(1) boson; mass-dependent exclusion curves were obtained.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "MAGIX",
+    "DarkMESA",
+    "APEX"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1404.5502",
+      "https://arxiv.org/abs/1101.4091"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://wwwa1.kph.uni-mainz.de/",
+      "caption": "A1 spectrometer hall at MAMI, Mainz, showing the large magnetic spectrometers.",
+      "credit": "A1 Collaboration / Johannes Gutenberg University Mainz; no separate photographer credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.blogs.uni-mainz.de/fb08-kpha1/files/2020/09/a1pic0.jpg",
+      "width": 1296,
+      "height": 930,
+      "sha256": "a6c4ab5ad22afddf1d5c3925e4de412fd5a2feaae3f71386bc4e68da571dc012",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1404.5502",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for light massive gauge bosons as an explanation of the muon g-2 anomaly at MAMI",
+      "url": "https://arxiv.org/abs/1404.5502",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014-04-22",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Search for Light Gauge Bosons of the Dark Sector at the Mainz Microtron",
+      "url": "https://arxiv.org/abs/1101.4091",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011-01-21",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "id": "cosi",
+  "name": "COSI",
+  "full_name": "Compton Spectrometer and Imager",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "COSI is a selected NASA SMEX gamma-ray mission for a proposed low Earth orbit. A historical prototype flew by balloon from Wanaka, New Zealand, in 2016; balloon and future satellite phases are distinguished here.",
+  "physics_targets": [
+    "MeV dark-matter decay",
+    "Light-dark-matter portals",
+    "Origin of 511 keV positrons"
+  ],
+  "detection_principle": "Cryogenic germanium detectors measure successive Compton-scattering positions and energies to reconstruct gamma-ray images, line spectra and polarization with high spectral resolution. Dark-matter studies require Galactic-continuum and astrophysical-line background models.",
+  "technologies": [
+    "Cryogenic germanium three-dimensional position detection",
+    "Compton imaging",
+    "BGO shielding"
+  ],
+  "sites": [
+    {
+      "name": "COSI SMEX",
+      "country": "Space",
+      "country_code": null,
+      "location": "Proposed low Earth orbit; under construction",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "planned"
+    },
+    {
+      "name": "COSI 2016 balloon",
+      "country": "New Zealand",
+      "country_code": "NZL",
+      "location": "Launch from Wanaka Airport; the balloon trajectory is not a fixed station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Passed critical design review in 2024; 16 detectors installed in 2025. NASA currently targets satellite launch in 2027",
+    "as_of": "2025-11-20",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-11-20",
+      "event": "Passed critical design review in 2024; 16 detectors installed in 2025. NASA currently targets satellite launch in 2027",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "COSI Collaboration / project team",
+    "lead_institutions": [
+      "University of California Berkeley",
+      "UC San Diego",
+      "Naval Research Laboratory",
+      "NASA GSFC"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Satellite design energy range",
+      "value": "0.2–5 MeV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "Number of satellite detectors",
+      "value": "16 cryogenic germanium detectors; not interchangeable with the 2016 balloon configuration",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "COSI balloon",
+      "status": "completed",
+      "description": "2016 New Zealand balloon technology and science demonstration"
+    },
+    {
+      "name": "COSI SMEX satellite",
+      "status": "construction",
+      "description": "Formal NASA Small Explorer mission, planned for launch in 2027"
+    }
+  ],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "The balloon prototype completed a flight and validated technology; it is not evidence of current satellite data taking.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "date": "2026-10",
+      "summary": "Recent studies forecast COSI's sensitivity to MeV dark-matter decay; no satellite dark-matter results yet.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "COMPTEL",
+    "AMEGO-X",
+    "e-ASTROGAM"
+  ],
+  "resources": {
+    "official_website": "https://science.nasa.gov/mission/cosi/",
+    "publication_links": [
+      "https://arxiv.org/abs/2610.17217",
+      "https://arxiv.org/abs/2508.15891"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://science.nasa.gov/mission/cosi/",
+      "caption": "Artist's concept of the COSI space mission and payload in orbit; not a photograph of the 2016 balloon prototype.",
+      "credit": "NASA COSI mission page; no individual artist is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://assets.science.nasa.gov/content/dam/science/missions/cosi-(compton-spectrometer-and-imager)/COSI_graphic_b_image_landscape_16_9_ratio_crop.png/jcr:content/renditions/cq5dam.web.1280.1280.png",
+      "width": 1280,
+      "height": 710,
+      "sha256": "b35a3ed0b2f78c57cc237c586db0d3fde2d6536e44bc96da8a3b2bd40cee0dec",
+      "mime_type": "image/webp",
+      "source_sha256": "a2dc4e23216bca22f33e54bf58e81c144c8f16e7eb9a5cfe488dbc8dc2a584a6",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 710
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://science.nasa.gov/mission/cosi/",
+      "caption": "COSI satellite concepts and historical balloon information; note the phase represented in each image",
+      "credit": "NASA / Northrop Grumman / COSI",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "COSI NASA mission page",
+      "url": "https://science.nasa.gov/mission/cosi/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "COSI official collaboration website",
+      "url": "https://cosi.ssl.berkeley.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "MeV dark matter decay forecasts for the COSI mission",
+      "url": "https://arxiv.org/abs/2610.17217",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-12",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Constraining light dark matter in vector-scalar portals with COSI and AMEGO-X",
+      "url": "https://arxiv.org/abs/2508.15891",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-01-22",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE",
+      "NZL"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "photon_telescope",
+      "quantum_sensor"
+    ]
+  }
+}

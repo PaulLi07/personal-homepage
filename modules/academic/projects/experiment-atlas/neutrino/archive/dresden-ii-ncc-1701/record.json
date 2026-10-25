@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "dresden-ii-ncc-1701",
+  "name": "Dresden-II (NCC-1701)",
+  "full_name": "Dresden-II NCC-1701 reactor-neutrino experiment",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The NCC-1701 experiment placed an ultra-low-noise germanium detector near the Dresden-II reactor to search for very small nuclear recoils. It reported suggestive evidence for reactor CEvNS, with an interpretation strongly dependent on germanium quenching and background treatment.",
+  "physics_targets": [
+    "Reactor CEvNS on germanium",
+    "Low-energy nuclear-recoil ionization response"
+  ],
+  "detection_principle": "A p-type point-contact germanium detector measures ionization from recoil interactions. Low electronic noise enables a sub-keV threshold. Reactor-on and reactor-off spectra are fitted with background and recoil-response models.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Dresden nuclear power plant, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Dresden nuclear power plant, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": "2022",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "First site-search analysis published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Suggestive-evidence result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Dresden-II (NCC-1701) Collaboration",
+    "lead_institutions": [
+      "University of Chicago"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector mass",
+      "value": "2.924 kg of germanium",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Distance",
+      "value": "10.39 m from the reactor core",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Ionization threshold",
+      "value": "Approximately 0.2 keV electron equivalent",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor-on exposure",
+      "value": "96.4 days for the suggestive-evidence analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The collaboration reported a preference for a CEvNS component under its response and background assumptions. This archive preserves the qualified claim and does not label it an unambiguous discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "conus",
+    "conus-plus",
+    "nugen"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2202.09672",
+      "https://arxiv.org/abs/2108.02880"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2108.02880",
+      "caption": "NCC-1701 placement at Dresden-II, detector cross section and compact deployed shielding (Figure 1).",
+      "credit": "J. Colaresi et al. / NCC-1701 experiment",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2108.02880",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1517,
+      "height": 1920,
+      "sha256": "124390962f8fa0e35ad71ceb4f733db0cfe261ed369a35cf81566e68ab03a260",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "c71de20287c0dde2cab820f948f503ffd0ffb53577f200ff6bf5c893ab6aba6e",
+      "source_dimensions": {
+        "width": 1915,
+        "height": 2424
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "J. Colaresi et al., Suggestive evidence for reactor CEvNS",
+      "url": "https://arxiv.org/abs/2202.09672",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-02-20",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "J. Colaresi et al., First reactor-site CEvNS search results",
+      "url": "https://arxiv.org/abs/2108.02880",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-08-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "A current continuation or shutdown date beyond the published campaign was not established."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

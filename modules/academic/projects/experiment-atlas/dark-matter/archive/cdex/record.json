@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "cdex",
+  "name": "CDEX",
+  "full_name": "China Dark Matter Experiment",
+  "aliases": [
+    "CDEX-1",
+    "CDEX-10",
+    "CDEX-50",
+    "CDEX-300"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "CDEX uses low-threshold high-purity germanium at the China Jinping Underground Laboratory to search for light dark matter, while also studying axions, dark photons and other rare processes.",
+  "physics_targets": [
+    "Light WIMPs",
+    "Dark photons",
+    "Axion-like particles",
+    "Superheavy dark matter"
+  ],
+  "detection_principle": "Point-contact germanium detectors reduce electronic noise through very low electrode capacitance and measure ionization from scattering or absorption. Anticoincidence and bulk/surface-event discrimination control low-energy backgrounds.",
+  "technologies": [
+    "Point-contact high-purity germanium",
+    "Liquid-nitrogen cooling",
+    "Ionization readout"
+  ],
+  "sites": [
+    {
+      "name": "CJPL",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China Jinping Underground Laboratory, Liangshan, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": "2025-10",
+    "evidence": "A 2025 CDEX-10 collaboration paper reports a superheavy-dark-matter search. The operating designation refers to an implemented programme, not confirmation of uninterrupted hardware data taking that month.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CDEX Collaboration",
+    "lead_institutions": [
+      "Tsinghua University"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "CDEX-10 prototype array",
+      "value": "Approximately 10 kg of germanium immersed in liquid nitrogen",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CDEX-1",
+      "status": "completed",
+      "description": "Single-detector phase and subsequent analyses"
+    },
+    {
+      "name": "CDEX-10",
+      "status": "operating",
+      "description": "Array in liquid nitrogen, with published search results"
+    },
+    {
+      "name": "Larger-mass CDEX phases",
+      "status": "planned",
+      "description": "Scale and construction schedule require verification against the latest design."
+    }
+  ],
+  "results": [
+    {
+      "date": "2014",
+      "summary": "CDEX-1 sets low-mass WIMP limits, testing interpretations of low-energy excesses in similar germanium experiments.",
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "TEXONO",
+    "CoGeNT"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1810.08808",
+      "https://arxiv.org/abs/2510.21458",
+      "https://arxiv.org/abs/1404.4946"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://cdex.ep.tsinghua.edu.cn/column/Experiment",
+      "caption": "The CDEX-10 germanium array immersed in liquid nitrogen and its copper shielding; the right panel shows a three-unit detector string.",
+      "credit": "CDEX collaboration / Tsinghua University; no individual illustrator is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://cdex.ep.tsinghua.edu.cn/upload_files/image/20181109/1541755024129009355.jpg",
+      "width": 651,
+      "height": 614,
+      "sha256": "c7567369c0cc20666cdc61709ecc3809a45dcccddd8b289e8b036faf0335f152",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1810.08808",
+      "caption": "CDEX apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "CDEX Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Performances of a prototype point-contact germanium detector immersed in liquid nitrogen for light dark matter search",
+      "url": "https://arxiv.org/abs/1810.08808",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018-10",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Constraints on ultra-heavy dark matter from the CDEX-10 experiment at the China Jinping Underground Laboratory",
+      "url": "https://arxiv.org/abs/2510.21458",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Limits on light WIMPs from the CDEX-1 experiment with a p-type point-contact germanium detector",
+      "url": "https://arxiv.org/abs/1404.4946",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "The latest construction and detector-loading status of CDEX-50/300 has not been checked individually."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

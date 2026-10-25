@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "hunter",
+  "name": "HUNTER",
+  "full_name": "HUNTER sterile-neutrino kinematic-reconstruction experiment",
+  "aliases": [],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "HUNTER is a laboratory-scale proposal for keV sterile-neutrino searches using laser-cooled radioactive atoms. It reconstructs missing neutrino mass from the complete visible products of electron capture.",
+  "physics_targets": [
+    "keV sterile-neutrino admixtures",
+    "Missing-mass reconstruction of electron capture"
+  ],
+  "detection_principle": "131Cs atoms are held in a magneto-optical trap. X rays, recoil ions and Auger electrons are measured in coincidence, permitting energy-momentum reconstruction. A massive-neutrino component would appear in the missing-mass distribution.",
+  "technologies": [
+    "Magneto-optical atom trapping",
+    "Ion and electron time-of-flight spectroscopy",
+    "Coincident X-ray detection"
+  ],
+  "sites": [
+    {
+      "name": "Laboratory spectrometer; final measurement site not fixed in the cited design",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Laboratory spectrometer; final measurement site not fixed in the cited design",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "unconfirmed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2022",
+    "evidence": "The design and white paper describe a staged search and forecast sensitivity; they do not establish a completed sterile-neutrino discovery experiment.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Published the named experiment design.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HUNTER Collaboration",
+    "lead_institutions": [
+      "Temple University",
+      "University of California, Los Angeles",
+      "University of Houston",
+      "Racah Institute of Physics",
+      "Princeton University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source isotope",
+      "value": "131Cs",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target mass regime",
+      "value": "Approximately 10-300 keV/c2 in the white-paper programme",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Measured products",
+      "value": "131Xe recoil ion, X rays and Auger electrons",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Presented an apparatus design and forecast sensitivity, rather than a measured exclusion.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A sterile state is sought through missing kinematics in nuclear decay. Forecast sensitivity depends on source statistics and detector resolution; the apparatus drawing does not imply an observation.",
+  "related_experiments": [
+    "beest",
+    "katrin",
+    "tristan"
+  ],
+  "resources": {
+    "official_website": "https://hudsongroup.physics.ucla.edu/research/hunter/publications/",
+    "publication_links": [
+      "https://doi.org/10.1088/2058-9565/abdb9b",
+      "https://arxiv.org/abs/2203.07323"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/2203.07323",
+      "caption": "CAD drawing of the proposed HUNTER recoil-ion and electron spectrometer, Figure 124 of the sterile-neutrino white paper; magnetic shielding and coils are omitted in the design view.",
+      "credit": "HUNTER Collaboration; reproduced in the 2022 sterile-neutrino white paper",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2203.07323",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 526,
+      "height": 540,
+      "sha256": "8520d29a2f039b08f8af93cb1bfd7b54f184c162c9a513e0b247fe6c434024b4",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "HUNTER: precision massive-neutrino search based on a laser cooled atomic source",
+      "url": "https://doi.org/10.1088/2058-9565/abdb9b",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "White Paper on Light Sterile Neutrino Searches and Related Phenomenology",
+      "url": "https://arxiv.org/abs/2203.07323",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "UCLA Hudson Group: HUNTER research and publications",
+      "url": "https://hudsongroup.physics.ucla.edu/research/hunter/publications/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

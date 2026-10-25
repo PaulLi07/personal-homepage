@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "minos",
+  "name": "MINOS",
+  "full_name": "Main Injector Neutrino Oscillation Search (including MINOS+)",
+  "aliases": [
+    "MINOS+"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "atmospheric",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MINOS compared magnetized detectors at Fermilab and Soudan to measure muon-neutrino disappearance. MINOS+ reused the detectors with the higher-energy NuMI configuration; both phases completed data taking in 2016.",
+  "physics_targets": [
+    "Atmospheric-scale muon-neutrino and antineutrino oscillations",
+    "Sterile-neutrino searches with two baselines",
+    "Atmospheric neutrinos and neutrino propagation tests"
+  ],
+  "detection_principle": "Alternating magnetized steel and plastic-scintillator planes track muons and sample hadron showers. Muon curvature measures charge and momentum. Comparing near and far energy spectra reduces shared beam and cross-section uncertainties.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; near detector at Fermilab and far detector in the Soudan mine, Minnesota",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; near detector at Fermilab and far detector in the Soudan mine, Minnesota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2016-06-29",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "NuMI beam running with MINOS began",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2013-09",
+      "event": "MINOS+ medium-energy-beam phase began",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2016-06-29",
+      "event": "MINOS and MINOS+ concluded their runs",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MINOS Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "735 km from Fermilab to Soudan, Minnesota",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Far detector",
+      "value": "5.4-kiloton magnetized steel-scintillator sampling calorimeter",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Near detector",
+      "value": "Approximately 1-kiloton detector at Fermilab",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005-2016",
+      "summary": "Produced precision disappearance measurements and complementary antineutrino, atmospheric and sterile-neutrino constraints.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "nova",
+    "minerva",
+    "argoneut"
+  ],
+  "resources": {
+    "official_website": "https://news.fnal.gov/2016/08/fermilab-bids-fond-farewell-minos/",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0507018",
+      "https://arxiv.org/abs/1502.07715"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/hep-ex/0507018#page=2",
+      "caption": "MINOS far- and near-detector sampling-plane geometry.",
+      "credit": "MINOS Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/hep-ex/0507018",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 653,
+      "height": 264,
+      "sha256": "a2d834d9ce7e14acc9dc511d3ecb6f220286c6027218fdbf00705591870948f3",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Fermilab, Fermilab bids a fond farewell to MINOS",
+      "url": "https://news.fnal.gov/2016/08/fermilab-bids-fond-farewell-minos/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2016-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MINOS Collaboration, The MINOS Detectors",
+      "url": "https://arxiv.org/abs/hep-ex/0507018",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2005-07-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MINOS Collaboration, First MINOS+ Data and New Results from MINOS",
+      "url": "https://arxiv.org/abs/1502.07715",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-02-26",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

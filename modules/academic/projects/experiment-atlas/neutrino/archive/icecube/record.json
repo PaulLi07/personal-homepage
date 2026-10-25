@@ -1,0 +1,267 @@
+{
+  "schema_version": "1.0",
+  "id": "icecube",
+  "name": "IceCube",
+  "full_name": "IceCube Neutrino Observatory",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [
+    2026
+  ],
+  "role": "dedicated",
+  "summary": "A cubic-kilometre observatory in South Pole ice that established the high-energy astrophysical neutrino flux and now studies its sources, neutrino properties and transient phenomena.",
+  "physics_targets": [
+    "Astrophysical neutrino spectra and sources",
+    "Atmospheric neutrino oscillations",
+    "Supernova bursts and multimessenger alerts",
+    "Indirect dark matter and exotic-particle searches"
+  ],
+  "detection_principle": "Digital optical modules measure the timing and brightness of Cherenkov light from charged particles produced in neutrino interactions. Tracks, cascades and tau signatures give complementary direction, energy and flavour information; DeepCore provides a denser low-energy region.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Amundsen–Scott South Pole Station",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctic ice at the geographic South Pole",
+      "latitude": -90,
+      "longitude": 0,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The collaboration describes the existing observatory as operating and announced Upgrade deployment in February 2026.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2005",
+      "event": "First IceCube string deployed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2010–2011",
+      "event": "Installation completed in December 2010; full detector science operation followed in 2011.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2013",
+      "event": "Discovery evidence for a high-energy astrophysical neutrino population published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Upgrade deployment announced complete in February.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-10-06",
+      "event": "The 2026 Nobel Prize in Physics recognized Francis Halzen for contributions to IceCube and astrophysical-neutrino discoveries.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "IceCube Collaboration",
+    "lead_institutions": [
+      "University of Wisconsin–Madison",
+      "DESY"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original in-ice array",
+      "value": "5,160 optical modules on 86 strings; approximately 1 km³",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Original sensor depths",
+      "value": "1,450–2,450 m below the ice surface",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "DeepCore",
+      "value": "Densely instrumented internal array for atmospheric-neutrino measurements down to a few GeV",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Upgrade",
+      "value": "More than 600 new sensors and calibration devices deployed in 2025–2026; the collaboration February release describes five new strings",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "A population of high-energy events inconsistent with atmospheric backgrounds established astrophysical neutrino detection.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2018–2023",
+      "summary": "Multimessenger studies, evidence for NGC 1068 emission and a Galactic-plane neutrino signal expanded the source programme.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "amanda",
+    "icecube-gen2",
+    "km3net"
+  ],
+  "resources": {
+    "official_website": "https://icecube.wisc.edu/science/icecube/",
+    "publication_links": [
+      "https://arxiv.org/abs/1311.5238"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://icecube.wisc.edu/science/icecube/",
+      "caption": "Overall deployment diagram of the IceCube in-ice optical array, DeepCore and surface facilities.",
+      "credit": "IceCube Collaboration; from the collaboration's detector-information page",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://res.cloudinary.com/icecube/images/q_auto/v1653683283/gal_MnOrenewal_icecube_detector_9996b6adb/gal_MnOrenewal_icecube_detector_9996b6adb.jpg?_i=AA",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1440,
+      "sha256": "e37dbb5cf86cbd30bc4a2aa4adc231a213a7b6207e4b2ca05b426dc804b05b0a",
+      "mime_type": "image/webp",
+      "source_sha256": "be0ae6728a5f75259ec3816d46c4e80199269e24c00258c386ceaba0fbed4b74",
+      "source_dimensions": {
+        "width": 4320,
+        "height": 3240
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IceCube Collaboration, IceCube detector",
+      "url": "https://icecube.wisc.edu/science/icecube/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IceCube Collaboration, Evidence for High-Energy Extraterrestrial Neutrinos at the IceCube Detector",
+      "url": "https://arxiv.org/abs/1311.5238",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "IceCube Collaboration, successful Upgrade deployment",
+      "url": "https://icecube.wisc.edu/news/press-releases/2026/02/the-icecube-neutrino-observatory-gets-a-major-upgrade-beneath-the-ice/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "2026 Nobel Prize in physics awarded for NSF IceCube neutrino discoveries",
+      "url": "https://www.nsf.gov/mps/updates/2026-nobel-prize-physics-awarded-nsf-icecube-neutrino",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The February 2026 collaboration press release reports five new Upgrade strings, while some participating-institution releases report six; the original design envisaged seven. Installed sensor counts are therefore preferred over an unqualified final string count."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

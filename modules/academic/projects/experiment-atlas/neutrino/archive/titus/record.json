@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "titus",
+  "name": "TITUS",
+  "full_name": "Tokai Intermediate Tank for the Unoscillated Spectrum",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "TITUS was a proposed gadolinium-loaded water-Cherenkov intermediate detector for the J-PARC to Hyper-Kamiokande programme. Its concept combined neutron tagging with magnetic muon measurement to reduce flux and interaction uncertainties.",
+  "physics_targets": [
+    "Neutrino flux and neutrino-water interaction constraints for Hyper-Kamiokande",
+    "Neutrino-antineutrino discrimination with neutron tagging",
+    "Supernova and other non-beam neutrino searches"
+  ],
+  "detection_principle": "A water-Cherenkov tank would reconstruct charged leptons from neutrino interactions, with gadolinium enhancing delayed-neutron capture signals. A magnetized muon-range detector would provide momentum and charge information for tracks leaving the tank.",
+  "technologies": [
+    "Gadolinium-loaded water Cherenkov detector",
+    "Magnetized muon range detector"
+  ],
+  "sites": [
+    {
+      "name": "Proposed J-PARC intermediate-detector site",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Tokai, Ibaraki; approximately 2 km from the neutrino target",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2016",
+    "evidence": "The cited TITUS publications describe a proposal. A separate TITUS-named liquid-argon event-display software package is unrelated; the current IWCD is recorded as part of Hyper-Kamiokande.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Initial intermediate-detector concept published.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2016",
+      "event": "Detailed design and projected physics reach released.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TITUS Collaboration",
+    "lead_institutions": [
+      "Queen Mary University of London",
+      "University of Warwick",
+      "University of Geneva"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Water target design",
+      "value": "Approximately 2 kilotonnes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Baseline design",
+      "value": "Approximately 2 km from the J-PARC neutrino target",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Gadolinium concept",
+      "value": "Approximately 0.1% loading for neutron tagging in the proposal",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "Reported simulated reduction of Hyper-Kamiokande systematic uncertainties and other sensitivity projections; no TITUS neutrino data are reported.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This dossier preserves a named historical proposal. Design parameters and sensitivity estimates are not measured neutrino results; later programmes using the same laboratory or technology are distinct.",
+  "related_experiments": [
+    "hyper-kamiokande",
+    "t2k",
+    "annie"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1606.08114",
+      "https://arxiv.org/abs/1504.08272"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_rendering",
+      "source_url": "https://arxiv.org/abs/1606.08114",
+      "caption": "Proposed TITUS water-Cherenkov tank and magnetized muon-range detector.",
+      "credit": "TITUS proponents, Figure 2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/1606.08114",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 759,
+      "height": 518,
+      "sha256": "ff8d2ec38337a7a7e18abdad4157e4090598cc32f4e413f3a4702c8d0b95da93",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TITUS: the Tokai Intermediate Tank for the Unoscillated Spectrum",
+      "url": "https://arxiv.org/abs/1606.08114",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2016-06-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "TITUS: An Intermediate Distance Detector for the Hyper-Kamiokande Neutrino Beam",
+      "url": "https://arxiv.org/abs/1504.08272",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2015-04-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "sampling"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

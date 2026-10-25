@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "taroge-m",
+  "name": "TAROGE-M",
+  "full_name": "Taiwan Astroparticle Radiowave Observatory for Geo-synchrotron Emissions: Mount Melbourne",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A high-mountain Antarctic radio array observes near-horizontal ultra-high-energy air showers and tests interpretations of unusual ANITA-like events.",
+  "physics_targets": [
+    "Cosmic rays above approximately 10¹⁷ eV",
+    "Earth-skimming tau-neutrino signatures",
+    "ANITA anomalous-event follow-up"
+  ],
+  "detection_principle": "Directional antennas view the horizon for impulsive geomagnetic emission. A broad visible area, radio-quiet setting and strong local magnetic field enhance air-shower detection; timing reconstructs arrival direction.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Mount Melbourne",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Victoria Land, Antarctica",
+      "latitude": -74.35,
+      "longitude": 164.7,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The 2025 collaboration update explicitly reports two stations operating after the January upgrade.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "First ultra-high-energy cosmic-ray detections.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "First major station upgrade.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Second upgrade completed; two operating stations reported.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TAROGE-M Collaboration",
+    "lead_institutions": [
+      "National Taiwan University",
+      "University of California, Irvine"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Site",
+      "value": "Mount Melbourne, Antarctica; approximately 2.7 km elevation",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Radio band",
+      "value": "Approximately 180–450 MHz in the founding detector description",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "2025 configuration",
+      "value": "Two upgraded stations reported operating",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Initial analysis of 148 days identified about 34 UHE cosmic-ray candidates. These are air-shower candidates, not a reported neutrino discovery.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "anita",
+    "pueo",
+    "beacon",
+    "arianna"
+  ],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1258933/contributions/6485775/",
+    "publication_links": [
+      "https://arxiv.org/abs/2207.10616"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2207.10616",
+      "caption": "TAROGE-M antennas installed on Mount Melbourne in January 2020.",
+      "credit": "TAROGE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2207.10616v3/figure/TarogeM-20200130.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1652,
+      "height": 830,
+      "sha256": "b78008c354931b1824cc22f6e7755a1c79dd9672936dc5c0162c2c2a1c1a05ee",
+      "mime_type": "image/webp",
+      "source_sha256": "9c40684bb546236db4ea0b6ba6460b1919ea1244e52278ad033205793f996334",
+      "source_dimensions": {
+        "width": 1652,
+        "height": 830
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TAROGE Collaboration, TAROGE-M apparatus and first results",
+      "url": "https://arxiv.org/abs/2207.10616",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "TAROGE and ARIANNA Collaborations, recent TAROGE-M upgrades",
+      "url": "https://indico.cern.ch/event/1258933/contributions/6485775/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

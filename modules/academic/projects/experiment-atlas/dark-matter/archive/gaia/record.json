@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "gaia",
+  "name": "Gaia",
+  "full_name": "ESA Gaia astrometric mission",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Precision astrometry mission whose stellar positions and motions trace the Galactic gravitational potential, stellar streams and dark-matter distribution. Data processing continues after observations end.",
+  "physics_targets": [
+    "Galactic dark-matter potential",
+    "Dark subhalos",
+    "Local dark-matter density"
+  ],
+  "detection_principle": "Continuous scanning measures stellar positions, parallaxes, proper motions and some spectroscopic velocities; dynamical models infer visible and invisible mass.",
+  "technologies": [
+    "Astrometric CCDs",
+    "Photometry",
+    "Radial-velocity spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "Orbit near Sun–Earth L2 during science observations",
+      "country": "Space",
+      "country_code": null,
+      "location": "Orbit near Sun–Earth L2 during science observations",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2025-01-15",
+    "evidence": "Official sources explicitly state that nominal science observations ended; later data releases do not imply resumed data taking.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013-12-19",
+      "event": "Launch",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2014-07-27",
+      "event": "Science observations began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025-01-15",
+      "event": "Science observations ended",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Gaia collaboration / mission team",
+    "lead_institutions": [
+      "ESA"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Cumulative targets",
+      "value": "About 2 billion stars and other objects, official mission summary",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "DESI",
+    "Rubin/LSST"
+  ],
+  "resources": {
+    "official_website": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.dlr.de/de/aktuelles/nachrichten/2025/ende-einer-aera-wissenschaftssatellit-gaia-wird-abgeschaltet/der-satellit-gaia-im-reinraum",
+      "caption": "Photograph of Gaia in a cleanroom during launch preparations in 2013, with the deployable sunshield being fitted around it.",
+      "credit": "ESA–M. Pedoussaut, 2013",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.dlr.de/de/aktuelles/nachrichten/2025/ende-einer-aera-wissenschaftssatellit-gaia-wird-abgeschaltet/der-satellit-gaia-im-reinraum/@@images/image-2000-7f5ed8865c355ab70f45ef24ef29232a.jpeg",
+      "width": 1920,
+      "height": 1079,
+      "sha256": "ffd1a42db6af057705ef306aa3ba7f6384e56b0c78b58635b65ea88f681b8c37",
+      "mime_type": "image/webp",
+      "source_sha256": "c9c93ce9f070d516533736c16b0adf4f7606ed581b145e2b070d53dd4ae5cff1",
+      "source_dimensions": {
+        "width": 2000,
+        "height": 1124
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
+      "caption": "Gaia project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.esa.int/Science_Exploration/Space_Science/Gaia",
+      "title": "ESA: Gaia mission",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.cosmos.esa.int/web/gaia/end-of-observations",
+      "title": "ESA: Gaia end of observations",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Specific dark-matter dynamical parameters require the corresponding analyses and cannot be derived directly from the mission overview."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

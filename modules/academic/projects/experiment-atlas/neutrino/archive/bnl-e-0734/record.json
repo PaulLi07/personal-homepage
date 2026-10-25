@@ -1,0 +1,198 @@
+{
+  "schema_version": "1.0",
+  "id": "bnl-e-0734",
+  "name": "BNL-E-0734",
+  "full_name": "Brookhaven AGS Experiment E734",
+  "aliases": [
+    "BNL E734"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BNL E734 was a fine-grained neutrino detector designed for elastic neutral-current and charged-current reactions around the GeV scale, including neutrino-electron and neutrino-proton scattering.",
+  "physics_targets": [
+    "Weak neutral-current couplings and the weak mixing angle",
+    "Neutrino- and antineutrino-proton elastic scattering",
+    "Nucleon axial and strange form factors"
+  ],
+  "detection_principle": "A highly active, segmented target used liquid scintillator and proportional drift tubes to reconstruct recoil protons, muons and electron showers. A downstream calorimeter and muon system helped identify final states and reject inelastic backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; Brookhaven AGS",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Brookhaven AGS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1987",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1981",
+      "event": "Early operation documented in Brookhaven historical reporting",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "1987",
+      "event": "Neutrino-proton and antineutrino-proton elastic results published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BNL-E-0734 Collaboration",
+    "lead_institutions": [
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target mass",
+      "value": "170 metric tonnes in the published elastic-scattering measurement",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "Brookhaven AGS wide-band neutrino and antineutrino beams",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Energy scale",
+      "value": "Average incident energy of order 1 GeV",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1987",
+      "summary": "Published differential elastic cross sections and an axial-vector form-factor measurement consistent with the electroweak Standard Model within the reported uncertainties.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "bnl-e-0776",
+    "miniboone"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/bnlweb/pubaf/bulletin/files/1984/19840217.pdf",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.35.785",
+      "https://doi.org/10.1016/0168-9002(87)90023-4"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://osksn2.hep.sci.osaka-u.ac.jp/theses/doctor/1990/yamaguchi_dthesis_scanned.pdf",
+      "caption": "E734 scintillator-calorimeter modules, proportional drift tubes, gamma catcher and downstream muon spectrometer.",
+      "credit": "Yamaguchi / E734 Collaboration, Osaka University doctoral thesis (1990), Figure 2.8",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://osksn2.hep.sci.osaka-u.ac.jp/theses/doctor/1990/yamaguchi_dthesis_scanned.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1414,
+      "sha256": "a125b58d4d89ab24dcd69bb792732b3d0ebb378b2597017c7838572446b65252",
+      "mime_type": "image/webp",
+      "source_sha256": "eb47fa87d8f6ca1eee1011cc6fd52b527753a1c58bced0f84bc187261536d6ae",
+      "source_dimensions": {
+        "width": 2028,
+        "height": 1494
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "L. A. Ahrens et al., Measurement of neutrino-proton and antineutrino-proton elastic scattering",
+      "url": "https://doi.org/10.1103/PhysRevD.35.785",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987-02-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "L. A. Ahrens et al., A massive fine-grained detector for neutrino elastic reactions",
+      "url": "https://doi.org/10.1016/0168-9002(87)90023-4",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Brookhaven Bulletin, E734 and the AGS neutrino programme",
+      "url": "https://www.bnl.gov/bnlweb/pubaf/bulletin/files/1984/19840217.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1984-02-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

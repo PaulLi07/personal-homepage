@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "bdx",
+  "name": "BDX",
+  "full_name": "Beam Dump eXperiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "BDX is proposed downstream of the Jefferson Lab Hall A beam dump in Newport News, Virginia. It is a dedicated electron-beam-dump dark-matter experiment, including the MINI validation phase.",
+  "physics_targets": [
+    "MeV–GeV dark matter",
+    "Dark-photon portal"
+  ],
+  "detection_principle": "Electrons in a thick target produce dark-sector particles while ordinary particles are shielded. A downstream calorimeter seeks dark-matter–electron scattering, with outer vetoes and shielding suppressing backgrounds.",
+  "technologies": [
+    "Electromagnetic calorimeter",
+    "Scintillator veto",
+    "Beam dump"
+  ],
+  "sites": [
+    {
+      "name": "Downstream of Jefferson Lab Hall A beam dump, Newport News, Virginia",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Downstream of Jefferson Lab Hall A beam dump, Newport News, Virginia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Full BDX has experimental-program approval; the BDX-MINI prototype took data, but full-detector operation must not be inferred from the prototype",
+    "as_of": "2025",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Full BDX has experimental-program approval; the BDX-MINI prototype took data, but full-detector operation must not be inferred from the prototype",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BDX Collaboration / project team",
+    "lead_institutions": [
+      "Jefferson Lab",
+      "INFN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Full-design electron beam",
+      "value": "11 GeV CEBAF electron beam (design)",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "BDX-MINI location",
+      "value": "26 m downstream of the Hall A beam dump",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "BDX-MINI",
+      "status": "completed",
+      "description": "2019–2020 prototype data-taking"
+    },
+    {
+      "name": "BDX",
+      "status": "planned",
+      "description": "Full calorimeter and underground-facility design"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "BDX-MINI published its 2019–2020 dark-matter search; expected sensitivity of full BDX is presented separately.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "LDMX",
+    "DarkMESA"
+  ],
+  "resources": {
+    "official_website": "https://www.jlab.org/accel/ops/ops_liaison/BDX/BDX.html",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.106.072011",
+      "https://arxiv.org/abs/2510.09652"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2208.01387",
+      "caption": "Cross section of the BDX-MINI prototype, showing PbWO4 crystals, inner and outer vetoes, tungsten shielding and container; represents the 2019–2020 prototype run.",
+      "credit": "M. Battaglieri et al. (BDX-MINI), 2022 paper Fig. 2",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2208.01387",
+      "width": 583,
+      "height": 253,
+      "sha256": "f43628c8acf6c1f1c9c79ebbde5140fd24caf32cdc3658921cc201a7c1b5d852",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://doi.org/10.1103/PhysRevD.106.072011",
+      "caption": "The paper includes apparatus-location and prototype schematics",
+      "credit": "BDX Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Dark matter search with the BDX-MINI experiment",
+      "url": "https://doi.org/10.1103/PhysRevD.106.072011",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "A Beamdump Facility at Jefferson Lab",
+      "url": "https://arxiv.org/abs/2510.09652",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "BDX Liaison Page",
+      "url": "https://www.jlab.org/accel/ops/ops_liaison/BDX/BDX.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

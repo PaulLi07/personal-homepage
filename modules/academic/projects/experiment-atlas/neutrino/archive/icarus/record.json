@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "id": "icarus",
+  "name": "ICARUS",
+  "full_name": "Imaging Cosmic And Rare Underground Signals",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "ICARUS pioneered large liquid-argon TPC operation at Gran Sasso and now serves as the far detector of Fermilab's Short-Baseline Neutrino programme. The Italian and US deployments are phases of the same T600 detector.",
+  "physics_targets": [
+    "Short-baseline neutrino oscillations and sterile-neutrino tests",
+    "Neutrino-argon cross sections",
+    "Large-scale liquid-argon detector performance"
+  ],
+  "detection_principle": "Ionization charge drifts through purified liquid argon to wire planes, creating detailed three-dimensional tracks and electromagnetic showers. Scintillation light supplies event timing; external cosmic-ray tagging is essential for the shallow Fermilab deployment.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab ICARUS T600 hall",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "current_site"
+    },
+    {
+      "name": "Laboratori Nazionali del Gran Sasso, former ICARUS deployment",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Assergi, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The laboratory programme page retrieved on 23 October 2026 lists ICARUS as operating.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010-2013",
+      "event": "CNGS neutrino programme at Gran Sasso",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2017",
+      "event": "Detector delivered to Fermilab following refurbishment at CERN",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Fermilab neutrino commissioning phase",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ICARUS Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector",
+      "value": "T600, two liquid-argon cryostats; about 476 tonnes of active argon in the SBN design",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Fermilab baseline",
+      "value": "About 600 m from the Booster neutrino-production target",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Additional beam",
+      "value": "Also receives an off-axis NuMI neutrino flux",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-03",
+      "summary": "The first BNB oscillation analysis, using 2022-2023 data, found no statistically significant muon-neutrino disappearance and reported 90% confidence exclusion contours within its stated two-neutrino approximation of a 3+1 model. Flux and interaction uncertainties limit the single-detector result.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2026-04",
+      "summary": "Published the first Fermilab ICARUS neutrino cross-section measurement using off-axis NuMI data, with differential quasielastic-like interaction distributions on argon.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "sbnd",
+    "microboone",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://icarus.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/1503.01520",
+      "https://arxiv.org/abs/2603.22557",
+      "https://arxiv.org/abs/2604.24925"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://indico.global/event/15740/contributions/155584/attachments/72490/140561/ICARUS_Neutrino2026_26_06_22.pdf#page=5",
+      "caption": "ICARUS T600 liquid-argon TPC, light-detection and cosmic-ray-tagging systems.",
+      "credit": "ICARUS Collaboration, Neutrino 2026, slide 5",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://indico.global/event/15740/contributions/155584/attachments/72490/140561/ICARUS_Neutrino2026_26_06_22.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1300,
+      "height": 732,
+      "sha256": "4c4770d114d74830318db4df455a44717357fe606363bd21355d8e5b64a21d30",
+      "mime_type": "image/webp",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible.",
+      "source_sha256": "7c3b11d6aa7531b6ab194f05adffae73580fb019d1398003be7bdf84d14ebd14",
+      "source_dimensions": {
+        "width": 1300,
+        "height": 732
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ICARUS Collaboration, Fermilab experiment overview",
+      "url": "https://icarus.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SBN Collaborations, A Proposal for a Three Detector Short-Baseline Neutrino Oscillation Program",
+      "url": "https://arxiv.org/abs/1503.01520",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-03-05",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fermilab Neutrino Physics, experiments programme",
+      "url": "https://neutrinophysics.fnal.gov/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "ICARUS Collaboration, First search for sterile neutrino oscillation leading to muon-neutrino disappearance in the Booster Neutrino Beam at ICARUS",
+      "url": "https://arxiv.org/abs/2603.22557",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-03-23",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "ICARUS Collaboration, Measurement of muon (anti-)neutrino charged-current quasielastic-like cross section using off-axis NuMI beam at ICARUS",
+      "url": "https://arxiv.org/abs/2604.24925",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-04-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": true
+  }
+}

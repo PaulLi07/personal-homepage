@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "simons-observatory",
+  "name": "Simons Observatory",
+  "full_name": "Simons Observatory",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "CMB temperature and polarization observatory with multiple telescope apertures, using lensing and cosmic structure to study dark matter alongside objectives such as primordial gravitational waves.",
+  "physics_targets": [
+    "Dark-matter structure",
+    "Dark-sector interactions"
+  ],
+  "detection_principle": "Cryogenic millimeter-wave detectors measure multifrequency CMB temperature and polarization, reconstructing gravitational lensing and matter distributions.",
+  "technologies": [
+    "CMB polarization",
+    "TES arrays",
+    "Large- and small-aperture millimeter-wave telescopes"
+  ],
+  "sites": [
+    {
+      "name": "Cerro Toco，Atacama",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "Cerro Toco，Atacama",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Partly operating, with further construction continuing",
+    "as_of": "2025-04-01",
+    "evidence": "Three SATs are operating. The LAT achieved first light in 2025-02 and is progressing toward science operation; first light does not mean completion of a full survey's results.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-02-22",
+      "event": "LAT first-light observation of Mars",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Simons Observatory collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Large-aperture telescope",
+      "value": "About 6 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Original design frequency coverage",
+      "value": "27–270 GHz, 2018 design version",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SAT",
+      "status": "operating",
+      "description": "Operation of three small-aperture telescopes supported by evidence"
+    },
+    {
+      "name": "LAT",
+      "status": "commissioning",
+      "description": "First light in 2025; subsequent status requires updating"
+    }
+  ],
+  "results": [],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "ACT",
+    "SPT",
+    "Planck"
+  ],
+  "resources": {
+    "official_website": "https://ias.universite-paris-saclay.fr/en/content/first-light-simons-observatorys-large-aperture-telescope",
+    "publication_links": [
+      "https://arxiv.org/abs/1808.06648"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.simonsfoundation.org/news/simons-observatory-large-aperture-telescope-achieves-first-light-milestone/",
+      "caption": "Installation of a reflector on the Simons Observatory Large Aperture Telescope, with a crane lifting the mirror structure.",
+      "credit": "Mark Devlin, via the Simons Foundation source page",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.simonsfoundation.org/wp-content/uploads/2026/03/Lede_SO_M-Devlin.jpg",
+      "width": 1620,
+      "height": 938,
+      "sha256": "c231217c3336bce0954a0a60d935fca69a4feea8a4e2a2f1169a65154b0bf4fe",
+      "mime_type": "image/webp",
+      "source_sha256": "b72fdbadc30a9b50d578e618c87cf9b7fa3a9ebe0dee2de22ac57081a16442b6",
+      "source_dimensions": {
+        "width": 1620,
+        "height": 938
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://ias.universite-paris-saclay.fr/en/content/first-light-simons-observatorys-large-aperture-telescope",
+      "caption": "Simons Observatory project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://ias.universite-paris-saclay.fr/en/content/first-light-simons-observatorys-large-aperture-telescope",
+      "title": "IAS: SO first light",
+      "source_date": "2025-04-01",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1808.06648",
+      "title": "Simons Observatory large aperture receiver simulation overview",
+      "source_date": "2018-08-20",
+      "type": "technical_design",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.simonsfoundation.org/news/simons-observatory-large-aperture-telescope-achieves-first-light-milestone/",
+      "title": "Simons Foundation: LAT first light",
+      "source_date": "2025-03-17",
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "The full array's 2026 status, latest upgrade configuration and dedicated dark-matter results have not all been verified individually."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHL"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "optical_survey",
+      "quantum_sensor"
+    ]
+  }
+}

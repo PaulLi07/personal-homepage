@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "dcba",
+  "name": "DCBA",
+  "full_name": "Drift Chamber Beta-ray Analyzer",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "DCBA is a KEK detector-development programme for double-beta decay. It measures the momenta and trajectories of the two emitted electrons, providing kinematic information complementary to a calorimetric energy measurement.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "A thin isotope foil is placed in a magnetic tracking detector. Drift-chamber hit positions reconstruct electron helices and curvature, allowing a momentum estimate and a common-vertex requirement.",
+  "technologies": [
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "KEK, Tsukuba",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "KEK, Tsukuba",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2017",
+    "evidence": "The DCBA prototype paper measured tracking and momentum performance for a future double-beta-decay apparatus.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DCBA Collaboration",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Technique",
+      "value": "Magnetic tracking with a drift chamber",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate programme",
+      "value": "Neodymium-150 double-beta decay",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Prototype family",
+      "value": "DCBA-T series",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "The DCBA prototype paper measured tracking and momentum performance for a future double-beta-decay apparatus.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www2.kek.jp/ipns/en/",
+    "publication_links": [
+      "https://academic.oup.com/ptep/article/2017/7/073H01/4056194"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Session_IV.pdf#page=6",
+      "caption": "Photograph of the DCBA-T magnetic tracking detector, Figure 3 of the collaboration NDM 2003 report.",
+      "credit": "DCBA Collaboration, NDM 2003 proceedings",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Session_IV.pdf#page=6",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 510,
+      "height": 380,
+      "sha256": "e3ea018cf70255568ccb9c39b873875849e4205e849ec67ee5e9e825f0c14648",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "DCBA: official experiment / institutional overview",
+      "url": "https://www2.kek.jp/ipns/en/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Performance of the drift chamber beta-ray momentum analyzer for double beta decay experiments",
+      "url": "https://academic.oup.com/ptep/article/2017/7/073H01/4056194",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "gas"
+    ],
+    "technology_tags": [
+      "gas"
+    ],
+    "is_europe": false
+  }
+}

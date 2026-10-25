@@ -1,0 +1,161 @@
+{
+  "schema_version": "1.0",
+  "id": "cdex",
+  "name": "CDEX",
+  "full_name": "China Dark matter EXperiment - neutrino and double-beta programme",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "CDEX uses low-background germanium detectors at Jinping for dark-matter, neutrino and rare-decay research. Its natural-germanium CDEX-1 and CDEX-1B data have also been used to search for germanium-76 neutrinoless double-beta decay.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays",
+    "Solar-neutrino interactions",
+    "Germanium-76 neutrinoless double-beta decay"
+  ],
+  "detection_principle": "Germanium crystals serve as both isotope source and ionization calorimeter. Point-contact readout enables low thresholds, while high-energy pulse-shape selection and anticoincidence reject backgrounds in double-beta analyses.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Jinping underground laboratory, Sichuan",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Jinping underground laboratory, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2024",
+    "evidence": "CDEX-1B reported a neutrinoless-decay half-life constraint from a natural-germanium dataset.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CDEX Collaboration",
+    "lead_institutions": [
+      "Tsinghua University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "CDEX-1B double-beta exposure",
+      "value": "504.3 kg day of natural germanium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "CDEX-1B published limit",
+      "value": "T1/2 above 1.0 x 10^23 yr at 90% confidence",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "CDEX-1B reported a neutrinoless-decay half-life constraint from a natural-germanium dataset.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "CDEX is a multipurpose dark-matter and rare-event programme. Its implemented natural-germanium searches and proposed enriched-germanium arrays have different masses, backgrounds and projected sensitivities.",
+  "related_experiments": [
+    "gerda",
+    "legend"
+  ],
+  "resources": {
+    "official_website": "https://cdex.ep.tsinghua.edu.cn/info/PUBLIC_DATA/1411",
+    "publication_links": [
+      "https://arxiv.org/abs/2305.00894"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://cdex.ep.tsinghua.edu.cn/column/Experiment",
+      "caption": "The CDEX-10 germanium array immersed in liquid nitrogen and its copper shielding; the right panel shows a three-unit detector string.",
+      "credit": "CDEX collaboration / Tsinghua University; no individual illustrator is credited.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://cdex.ep.tsinghua.edu.cn/upload_files/image/20181109/1541755024129009355.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 651,
+      "height": 614,
+      "sha256": "c7567369c0cc20666cdc61709ecc3809a45dcccddd8b289e8b036faf0335f152",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CDEX: official experiment / institutional overview",
+      "url": "https://cdex.ep.tsinghua.edu.cn/info/PUBLIC_DATA/1411",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Searching for 76Ge neutrinoless double beta decay with the CDEX-1B experiment",
+      "url": "https://arxiv.org/abs/2305.00894",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,1348 @@
+{
+  "updated": "2026-10-23",
+  "locale": "en",
+  "methodology": {
+    "geography": "The map summarizes countries and regions, without plotting exact detector coordinates. Membership uses documented current, historical, prototype and candidate detector sites in each independent archive. FORTE additionally retains its explicitly documented Greenland ice interaction volume alongside its orbital receiver. Collaboration headquarters, membership and image locations are not substitute sites.",
+    "map_entries": "Every clickable country label from the shared map template has a corresponding navigation region. A zero-record country entry preserves map selection and URL restoration; it does not add a detector site or imply archive coverage in that country.",
+    "counting": "The counting unit is an independent dossier or named programme, not a detector count or a count of independent discoveries. Related phases and successors can have separate dossiers. A multi-site dossier contributes only once to the global total.",
+    "europe": "Europe is an explicit aggregate of the listed detector-site countries, using the same convention as the dark-matter map. Russia and Greenland are separate buckets and are excluded from that aggregate.",
+    "status": "Status follows the dated evidence in each dossier and may predate the catalog update. Mixed preserves different stages within one programme; it is not automatically interpreted as operating or future.",
+    "technology": "Detector technologies use the archive's explicit technology_tags. One dossier can belong to several technology and physics categories. Filters retain every listed category, rather than using only the primary category.",
+    "year": "year is the final explicit year in status.as_of, for evidence-date sorting. It is not inferred as a construction or first-data year.",
+    "coverage": "This page browses 252 neutrino-related dossiers, including dedicated experiments, multipurpose facilities, prototypes, historical searches and proposals. It does not claim to exhaust every neutrino project worldwide.",
+    "image": "Representative images are loaded from each experiment's local images directory. The original captions identify apparatus, design or published-result figures and their experimental stage.",
+    "details": "Navigation summaries are built from independent English dossiers and images stored inside this map. Each dossier is loaded only when opened; no external archive directory is required."
+  },
+  "europe_members": [
+    "BEL",
+    "CHE",
+    "DEU",
+    "ESP",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GRC",
+    "ITA",
+    "NLD",
+    "SWE",
+    "UKR"
+  ],
+  "geography_notes": [
+    {
+      "id": "amanda",
+      "name": "AMANDA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; South Pole ice, US-led",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; South Pole ice, US-led",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "anita",
+      "name": "ANITA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; high-altitude circumpolar balloon",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; high-altitude circumpolar balloon",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "ara",
+      "name": "ARA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; ice near the South Pole",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; ice near the South Pole",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "arianna",
+      "name": "ARIANNA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; Ross Ice Shelf and associated test sites",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; Ross Ice Shelf and associated test sites",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "baikal-gvd",
+      "name": "Baikal-GVD",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Baikal-GVD deep-water site",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Southern Lake Baikal, approximately 4 km offshore",
+          "latitude": 51.77,
+          "longitude": 104.4,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "baikal-nt200",
+      "name": "Baikal NT200 / NT200+",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Baikal NT200 site",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Southern Lake Baikal",
+          "latitude": 51.77,
+          "longitude": 104.4,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "baksan",
+      "name": "Baksan",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Baksan underground observatory, North Caucasus",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Baksan underground observatory, North Caucasus",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "best",
+      "name": "BEST",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Baksan underground observatory",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Baksan underground observatory",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "best-2",
+      "name": "BEST-2",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Baksan Neutrino Observatory",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Caucasus, Russia",
+          "latitude": 43.275,
+          "longitude": 42.69,
+          "precision": "approximate_site",
+          "site_status": "proposed_followup_in_existing_gallium_infrastructure"
+        }
+      ]
+    },
+    {
+      "id": "bingo",
+      "name": "BINGO",
+      "regions": [
+        "ESP",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Canfranc Underground Laboratory: prototype modules",
+          "country": "Spain",
+          "country_code": "ESP",
+          "location": "Canfranc Underground Laboratory: prototype modules",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_prototype_site"
+        },
+        {
+          "name": "Modane Underground Laboratory: MINI-BINGO",
+          "country": "France",
+          "country_code": "FRA",
+          "location": "Modane Underground Laboratory: MINI-BINGO",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "demonstrator_site"
+        }
+      ]
+    },
+    {
+      "id": "danss",
+      "name": "DANSS",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; beneath a reactor at the Kalinin nuclear power plant",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; beneath a reactor at the Kalinin nuclear power plant",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "darwin",
+      "name": "DARWIN",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Full-scale detector site not selected in the cited design",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Full-scale detector site not selected in the cited design",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "site_not_selected"
+        }
+      ]
+    },
+    {
+      "id": "eva",
+      "name": "EVA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Proposed Antarctic balloon observing region",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Proposed Antarctic balloon observing region",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "forte",
+      "name": "FORTE neutrino search",
+      "regions": [
+        "SPACE",
+        "GRL"
+      ],
+      "notes": [
+        "SPACE denotes the orbital radio receiver; GRL denotes the explicitly documented Greenland ice target and historical neutrino-search exposure region. This is not a receiver installed in Greenland. See the original analysis, doi:10.1103/PhysRevD.69.013008.",
+        "Greenland is a separate detector-site bucket and is excluded from the Europe aggregate.",
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Low Earth orbit; Greenland ice target",
+          "country": "Space / Greenland",
+          "country_code": null,
+          "location": "Satellite observations of the Greenland ice sheet; not a detector sited at LANL headquarters.",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_applicable",
+          "site_status": "historical_observing_region"
+        }
+      ]
+    },
+    {
+      "id": "gemma",
+      "name": "GEMMA",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Kalinin nuclear power plant",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Kalinin nuclear power plant",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "grand",
+      "name": "GRAND",
+      "regions": [
+        "CHN",
+        "ARG",
+        "FRA",
+        "GLOBAL",
+        "EUROPE"
+      ],
+      "notes": [
+        "CHN, ARG and FRA are named prototype or test sites. GLOBAL denotes the planned multinational array; it does not assert that a worldwide detector already exists.",
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "GRANDProto300",
+          "country": "China",
+          "country_code": "CHN",
+          "location": "Xiao Dushan near Dunhuang, Gansu",
+          "latitude": 40.9,
+          "longitude": 94.3,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "GRAND@Auger",
+          "country": "Argentina",
+          "country_code": "ARG",
+          "location": "Pierre Auger Observatory site near Malargüe",
+          "latitude": -35.2,
+          "longitude": -69.3,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "GRAND@Nançay",
+          "country": "France",
+          "country_code": "FRA",
+          "location": "Nançay Radio Observatory",
+          "latitude": 47.38,
+          "longitude": 2.2,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "heron-helium",
+      "name": "HERON (superfluid helium)",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Full-scale site not fixed",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Brown University R&D was carried out in Providence, Rhode Island; no full-scale underground observatory was constructed.",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "not_selected"
+        }
+      ]
+    },
+    {
+      "id": "hunt",
+      "name": "HUNT",
+      "regions": [
+        "CHN",
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map.",
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+          "country": "China",
+          "country_code": "CHN",
+          "location": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "International project proposed by a Chinese team; tests in Lake Baikal and the South China Sea",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "hunter",
+      "name": "HUNTER",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Laboratory spectrometer; final measurement site not fixed in the cited design",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Laboratory spectrometer; final measurement site not fixed in the cited design",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "unconfirmed_site"
+        }
+      ]
+    },
+    {
+      "id": "icarus",
+      "name": "ICARUS",
+      "regions": [
+        "USA",
+        "ITA",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab ICARUS T600 hall",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "Batavia, Illinois",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "current_site"
+        },
+        {
+          "name": "Laboratori Nazionali del Gran Sasso, former ICARUS deployment",
+          "country": "Italy",
+          "country_code": "ITA",
+          "location": "Assergi, Abruzzo",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical_site"
+        }
+      ]
+    },
+    {
+      "id": "icecube",
+      "name": "IceCube",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Amundsen–Scott South Pole Station",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctic ice at the geographic South Pole",
+          "latitude": -90,
+          "longitude": 0,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "icecube-gen2",
+      "name": "IceCube-Gen2",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "South Pole expansion area",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Proposed area around IceCube",
+          "latitude": -90,
+          "longitude": 0,
+          "precision": "approximate_site",
+          "site_status": "proposed_site"
+        }
+      ]
+    },
+    {
+      "id": "igex",
+      "name": "IGEX",
+      "regions": [
+        "USA",
+        "RUS",
+        "ESP",
+        "EUROPE"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map.",
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "country": "Spain",
+          "country_code": "ESP",
+          "location": "Canfranc, Spain, and other underground laboratories; multiple sites were used in the early stages",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "ihep-jinr",
+      "name": "IHEP-JINR",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; IHEP accelerator neutrino beam area, Protvino",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; IHEP accelerator neutrino beam area, Protvino",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "km3net",
+      "name": "KM3NeT",
+      "regions": [
+        "ITA",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "KM3NeT-ARCA",
+          "country": "Italy",
+          "country_code": "ITA",
+          "location": "Ionian Sea offshore Portopalo di Capo Passero, Sicily",
+          "latitude": 36.27,
+          "longitude": 16.1,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "KM3NeT-ORCA",
+          "country": "France",
+          "country_code": "FRA",
+          "location": "Mediterranean Sea offshore Toulon",
+          "latitude": 42.8,
+          "longitude": 6.03,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "krasnoyarsk",
+      "name": "Krasnoyarsk",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; underground reactor facility in the Krasnoyarsk region",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; underground reactor facility in the Krasnoyarsk region",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "lena",
+      "name": "LENA",
+      "regions": [
+        "FIN",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Pyhäsalmi mine",
+          "country": "Finland",
+          "country_code": "FIN",
+          "location": "Pyhäjärvi, Finland",
+          "latitude": 63.66,
+          "longitude": 26.04,
+          "precision": "approximate_site",
+          "site_status": "historical_candidate_site"
+        },
+        {
+          "name": "Fréjus / Modane underground site",
+          "country": "France",
+          "country_code": "FRA",
+          "location": "French Alps, near Modane",
+          "latitude": 45.18,
+          "longitude": 6.69,
+          "precision": "approximate_site",
+          "site_status": "historical_candidate_site"
+        }
+      ]
+    },
+    {
+      "id": "moon",
+      "name": "MOON",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Full-scale MOON site not established in the prototype publication",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Full-scale MOON site not established in the prototype publication",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "site_not_selected"
+        }
+      ]
+    },
+    {
+      "id": "neutrino-4",
+      "name": "Neutrino-4",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; SM-3 research reactor, Dimitrovgrad",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; SM-3 research reactor, Dimitrovgrad",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "nugen",
+      "name": "nuGeN",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Kalinin nuclear power plant",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Kalinin nuclear power plant",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "nustorm",
+      "name": "nuSTORM",
+      "regions": [
+        "CHE",
+        "USA",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Candidate CERN implementation",
+          "country": "Switzerland",
+          "country_code": "CHE",
+          "location": "CERN SPS complex",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "candidate_site"
+        },
+        {
+          "name": "Original Fermilab candidate implementation",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "Batavia, Illinois; historical proposal",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical_candidate_site"
+        }
+      ]
+    },
+    {
+      "id": "poemma",
+      "name": "POEMMA",
+      "regions": [
+        "SPACE"
+      ],
+      "notes": [
+        "The explicitly orbital site makes this a SPACE proposal, despite the canonical site's generic Global network country label."
+      ],
+      "source_sites": [
+        {
+          "name": "Low Earth orbit concept",
+          "country": "Global network",
+          "country_code": null,
+          "location": "Proposed pair of Earth-orbiting spacecraft",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed_site"
+        }
+      ]
+    },
+    {
+      "id": "pueo",
+      "name": "PUEO",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; high-altitude balloon flights observing Antarctic ice",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; high-altitude balloon flights observing Antarctic ice",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "red-100",
+      "name": "RED-100",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; deployments associated with the Kalinin nuclear power plant",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; deployments associated with the Kalinin nuclear power plant",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "ret",
+      "name": "RET / RET-CR / RET-N",
+      "regions": [
+        "GRL"
+      ],
+      "notes": [
+        "Greenland is a separate detector-site bucket and is excluded from the Europe aggregate."
+      ],
+      "source_sites": [
+        {
+          "name": "RET-CR site near Summit Station, Greenland",
+          "country": "Greenland (Denmark)",
+          "country_code": "GRL",
+          "location": "RET-CR site near Summit Station, Greenland",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "rice",
+      "name": "RICE",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Antarctica; South Pole ice",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Antarctica; South Pole ice",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "rno-g",
+      "name": "RNO-G",
+      "regions": [
+        "GRL"
+      ],
+      "notes": [
+        "Greenland is a separate detector-site bucket and is excluded from the Europe aggregate."
+      ],
+      "source_sites": [
+        {
+          "name": "RNO-G, Summit Station",
+          "country": "Greenland (Denmark)",
+          "country_code": "GRL",
+          "location": "Central Greenland ice sheet",
+          "latitude": 72.58,
+          "longitude": -38.46,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "sage",
+      "name": "SAGE",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Baksan underground observatory",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Baksan underground observatory",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "saturne",
+      "name": "SATURNE",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "National Centre for Physics and Mathematics, Sarov",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "National Centre for Physics and Mathematics, Sarov",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "development_site"
+        }
+      ]
+    },
+    {
+      "id": "sbc",
+      "name": "SBC",
+      "regions": [
+        "USA",
+        "CAN",
+        "MEX"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab MINOS underground facility",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "Batavia, Illinois",
+          "latitude": 41.84,
+          "longitude": -88.26,
+          "precision": "approximate_site",
+          "site_status": "calibration_detector"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "Canada",
+          "country_code": "CAN",
+          "location": "Sudbury, Ontario",
+          "latitude": 46.47,
+          "longitude": -81.19,
+          "precision": "approximate_site",
+          "site_status": "planned_low_background_darkmatter_detector"
+        },
+        {
+          "name": "ININ TRIGA reactor",
+          "country": "Mexico",
+          "country_code": "MEX",
+          "location": "Near Mexico City",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "candidate_reactor_site"
+        },
+        {
+          "name": "Laguna Verde nuclear power station",
+          "country": "Mexico",
+          "country_code": "MEX",
+          "location": "Veracruz, Mexico",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "candidate_reactor_site"
+        }
+      ]
+    },
+    {
+      "id": "selena",
+      "name": "Selena",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Full-scale detector site not selected in the cited design",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Full-scale detector site not selected in the cited design",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "site_not_selected"
+        }
+      ]
+    },
+    {
+      "id": "skat",
+      "name": "SKAT",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; IHEP, Protvino",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; IHEP, Protvino",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "spats",
+      "name": "SPATS",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Amundsen–Scott South Pole Station, Antarctica",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Amundsen–Scott South Pole Station, Antarctica",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "taroge-m",
+      "name": "TAROGE-M",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "Antarctica is a separate region; stations and Antarctic balloon flights are not assigned to an operating institution's home country."
+      ],
+      "source_sites": [
+        {
+          "name": "Mount Melbourne",
+          "country": "Antarctica",
+          "country_code": "ATA",
+          "location": "Victoria Land, Antarctica",
+          "latitude": -74.35,
+          "longitude": 164.7,
+          "precision": "approximate_site",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "theia",
+      "name": "Theia",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "United States; candidate site at SURF",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "United States; candidate site at SURF",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Canada; candidate site at SNOLAB",
+          "country": "Canada",
+          "country_code": "CAN",
+          "location": "Canada; candidate site at SNOLAB",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "troitsk",
+      "name": "Troitsk",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "Russia is a separate country bucket and is excluded from this map's explicit Europe aggregate, consistently with the dark-matter map."
+      ],
+      "source_sites": [
+        {
+          "name": "Russia; Troitsk, near Moscow",
+          "country": "Russia",
+          "country_code": "RUS",
+          "location": "Russia; Troitsk, near Moscow",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "watchman",
+      "name": "WATCHMAN / AIT-NEO",
+      "regions": [
+        "USA",
+        "GBR",
+        "EUROPE"
+      ],
+      "notes": [
+        "This multi-site or multi-stage dossier appears in multiple geographic groups, but contributes once to the global record count."
+      ],
+      "source_sites": [
+        {
+          "name": "Morton Fairport Harbor mine",
+          "country": "United States",
+          "country_code": "USA",
+          "location": "Ohio; historical United States candidate",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "2015_candidate_site_not_realized"
+        },
+        {
+          "name": "Boulby Underground Laboratory",
+          "country": "United Kingdom",
+          "country_code": "GBR",
+          "location": "North Yorkshire, England",
+          "latitude": 54.556,
+          "longitude": -0.821,
+          "precision": "approximate_site",
+          "site_status": "historical_fullscale_candidate_site"
+        }
+      ]
+    },
+    {
+      "id": "xlzd",
+      "name": "XLZD",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Underground site selection is part of the XLZD design programme",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Underground site selection is part of the XLZD design programme",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "site_not_selected"
+        }
+      ]
+    },
+    {
+      "id": "zicos",
+      "name": "ZICOS",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "No confirmed full-scale facility country is recorded. R&D institutions are not substituted for a selected detector site."
+      ],
+      "source_sites": [
+        {
+          "name": "Full-scale detector site not selected in the cited design",
+          "country": "Site unconfirmed",
+          "country_code": null,
+          "location": "Full-scale detector site not selected in the cited design",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "site_not_selected"
+        }
+      ]
+    }
+  ],
+  "template_zero_record_regions": [
+    {
+      "id": "AUT",
+      "name": "Austria",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    },
+    {
+      "id": "CHL",
+      "name": "Chile",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    },
+    {
+      "id": "NAM",
+      "name": "Namibia",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    }
+  ],
+  "counts": {
+    "records": 252,
+    "country_or_territory_buckets": 28,
+    "regions": {
+      "EUROPE": 90,
+      "ARG": 4,
+      "ATA": 11,
+      "AUS": 1,
+      "AUT": 0,
+      "BEL": 1,
+      "BHS": 1,
+      "BRA": 2,
+      "CAN": 7,
+      "CHE": 17,
+      "CHL": 0,
+      "CHN": 17,
+      "DEU": 5,
+      "ESP": 4,
+      "FIN": 1,
+      "FRA": 24,
+      "GBR": 4,
+      "GRC": 1,
+      "GRL": 3,
+      "IND": 1,
+      "ITA": 32,
+      "JPN": 20,
+      "KOR": 5,
+      "MEX": 1,
+      "NAM": 0,
+      "NLD": 1,
+      "NZL": 2,
+      "PER": 1,
+      "RUS": 18,
+      "SWE": 1,
+      "TWN": 1,
+      "UKR": 2,
+      "USA": 69,
+      "SPACE": 3,
+      "GLOBAL": 1,
+      "UNSITED": 7
+    }
+  }
+}

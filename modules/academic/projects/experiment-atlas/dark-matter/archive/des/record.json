@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "des",
+  "name": "DES",
+  "full_name": "Dark Energy Survey",
+  "aliases": [
+    "Dark Energy Survey"
+  ],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Wide-area optical cosmology survey that, despite its dark-energy name, also studies dark matter through weak gravitational lensing, clustering, dwarf galaxies and dark subhalos.",
+  "physics_targets": [
+    "Dark-matter distribution",
+    "Growth of structure",
+    "Dwarf galaxies"
+  ],
+  "detection_principle": "DECam multiband imaging measures galaxy shapes, positions and photometric redshifts to reconstruct mass distributions statistically and constrain cosmological models jointly.",
+  "technologies": [
+    "DECam CCD",
+    "Weak gravitational lensing",
+    "Galaxy clustering"
+  ],
+  "sites": [
+    {
+      "name": "Cerro Tololo Inter-American Observatory，Blanco telescope",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "Cerro Tololo Inter-American Observatory，Blanco telescope",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2019",
+    "evidence": "The official overview states that the planned six-year survey ran from 2013 to 2019 and is complete; data analysis continues.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013—2019",
+      "event": "Main survey observations",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DES collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Telescope / camera",
+      "value": "4 m Blanco telescope; 570-megapixel DECam",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Survey area",
+      "value": "About 5000 deg², 5 bands",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Y3 data use lensing and clustering to test matter distributions and cosmological parameters.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "KiDS",
+    "Rubin/LSST",
+    "SPT",
+    "Euclid"
+  ],
+  "resources": {
+    "official_website": "https://www.darkenergysurvey.org/the-des-project/overview/",
+    "publication_links": [
+      "https://www.darkenergysurvey.org/wp-content/uploads/2021/05/desy3_2x2pt_bias_cosmology.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.darkenergysurvey.org/the-des-project/overview/",
+      "caption": "Night view of Cerro Tololo, home to DES, showing the Blanco telescope dome and Milky Way.",
+      "credit": "Dark Energy Survey source page; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.darkenergysurvey.org/wp-content/uploads/2015/03/12-0326-29D.hr_-scaled.jpg",
+      "width": 1920,
+      "height": 1277,
+      "sha256": "45e8c5c284de05314b8159e7c5949d6cd5146ab9505c47174e65448fd6c43bcc",
+      "mime_type": "image/webp",
+      "source_sha256": "1b3c7748acf4fb2c95b8d0cc0416dcf2b494e24f4054316ae3033c298ac734e1",
+      "source_dimensions": {
+        "width": 2560,
+        "height": 1703
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.darkenergysurvey.org/the-des-project/overview/",
+      "caption": "DES project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.darkenergysurvey.org/the-des-project/overview/",
+      "title": "DES project overview",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.darkenergysurvey.org/wp-content/uploads/2021/05/desy3_2x2pt_bias_cosmology.pdf",
+      "title": "DES Y3 clustering and cosmology",
+      "source_date": "2021",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHL"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

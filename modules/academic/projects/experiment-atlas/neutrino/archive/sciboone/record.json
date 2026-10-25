@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "sciboone",
+  "name": "SciBooNE",
+  "full_name": "SciBar Booster Neutrino Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SciBooNE measured sub-GeV neutrino interactions close to the Booster source, reusing the K2K SciBar tracker and supplying interaction and flux information relevant to MiniBooNE.",
+  "physics_targets": [
+    "Muon-neutrino and antineutrino cross sections",
+    "Pion production and interaction-model tests",
+    "Joint SciBooNE-MiniBooNE disappearance searches"
+  ],
+  "detection_principle": "Fine extruded scintillator strips with wavelength-shifting-fibre readout reconstructed short charged-particle tracks. A downstream electromagnetic calorimeter and iron-scintillator muon range detector identified showers and measured muon range.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2008-08",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007-06",
+      "event": "Data taking began in antineutrino mode",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2008-08",
+      "event": "Physics data taking completed",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2008-11",
+      "event": "First physics results presented",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SciBooNE Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "About 100 m from the Booster neutrino target",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Tracker",
+      "value": "15-ton SciBar plastic-scintillator detector; analysis fiducial masses are smaller",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Beam energies",
+      "value": "Characteristic neutrino energy around 0.7 GeV",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "Published an inclusive muon-neutrino charged-current interaction measurement on carbon, supporting interpretation of accelerator-neutrino samples.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "k2k",
+    "miniboone",
+    "annie"
+  ],
+  "resources": {
+    "official_website": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/SciBooNE.html",
+    "publication_links": [
+      "https://indico.in2p3.fr/event/1399/contributions/16153/attachments/13490/16555/tanaka_sciboone_v1.1_.pdf",
+      "https://arxiv.org/abs/1011.2131"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/SciBooNE.html",
+      "caption": "SciBar scintillator detector being assembled for SciBooNE.",
+      "credit": "M. Yokoyama / Kyoto University / SciBooNE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/img/SciBooNE-SB-lastlayer.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 360,
+      "height": 240,
+      "sha256": "f99431efb616d12c713dd2b4a718625852cf186d49de3fb63c7904012390bb95",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Kyoto University neutrino group, SciBooNE experiment",
+      "url": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/SciBooNE.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SciBooNE Collaboration, SciBooNE experiment overview and timeline",
+      "url": "https://indico.in2p3.fr/event/1399/contributions/16153/attachments/13490/16555/tanaka_sciboone_v1.1_.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SciBooNE Collaboration, Measurement of Inclusive Charged Current Interactions on Carbon",
+      "url": "https://arxiv.org/abs/1011.2131",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010-11-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

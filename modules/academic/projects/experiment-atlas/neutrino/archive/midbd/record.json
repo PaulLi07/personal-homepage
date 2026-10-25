@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "midbd",
+  "name": "MiDBD (TeO2)",
+  "full_name": "Milano double-beta-decay bolometer experiment",
+  "aliases": [
+    "MiDBD",
+    "Mi-DBD",
+    "MiBeta-TeO2",
+    "MIBETA"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MiDBD, also called MiBeta in historical double-beta literature, was the 20-crystal tellurium bolometer programme preceding CUORICINO. It is distinct from the rhenium-187 MiBeta neutrino-mass experiment.",
+  "physics_targets": [
+    "Double-beta and rare weak decays"
+  ],
+  "detection_principle": "Tellurium dioxide crystals act as source and cryogenic calorimeter. A double-beta decay deposits heat; anticoincidence between crystals rejects multi-site backgrounds near the tellurium-130 endpoint.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso Underground Laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso Underground Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2003-02-25",
+    "evidence": "The final 20-detector analysis reported no neutrinoless-decay signal and a 130Te half-life lower limit of 2.1 x 10^23 yr at 90% confidence.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "MiDBD (TeO2) Collaboration",
+    "lead_institutions": [
+      "University of Milano-Bicocca",
+      "INFN",
+      "Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "20 TeO2 crystals, 6.8 kg total",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Operating temperature",
+      "value": "Approximately 10 mK",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Final 130Te limit",
+      "value": "T1/2 greater than 2.1 x 10^23 yr, 90% confidence",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003-02-25",
+      "summary": "The final 20-detector analysis reported no neutrinoless-decay signal and a 130Te half-life lower limit of 2.1 x 10^23 yr at 90% confidence.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "mibeta",
+    "cuoricino",
+    "cuore"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0211071"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/hep-ex/0211071",
+      "caption": "Old and rebuilt configurations of the MiDBD twenty-bolometer array (Fig. 1).",
+      "credit": "MiDBD (TeO2) Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/hep-ex/0211071#page=4",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 714,
+      "height": 409,
+      "sha256": "d2ef3656758c6d7464d1c8e0b531219afa9da6130e49ae5bb0d790636f3ef698",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A Calorimetric Search on Double Beta Decay of 130Te",
+      "url": "https://arxiv.org/abs/hep-ex/0211071",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003-02-25",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer"
+    ],
+    "technology_tags": [
+      "bolometer"
+    ],
+    "is_europe": true
+  }
+}

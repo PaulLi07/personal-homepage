@@ -1,0 +1,242 @@
+{
+  "schema_version": "1.0",
+  "id": "ccm",
+  "name": "CCM",
+  "full_name": "Coherent CAPTAIN-Mills",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "CCM is located at the LANSCE Lujan Center, Los Alamos National Laboratory, New Mexico. It is a series of liquid-argon experiments for beam-produced light dark matter and sterile neutrinos.",
+  "physics_targets": [
+    "Sub-GeV light dark matter",
+    "Leptophobic dark matter",
+    "ALP",
+    "Sterile neutrinos"
+  ],
+  "detection_principle": "An 800 MeV pulsed proton beam strikes a target to produce dark-matter candidates. Liquid argon records recoils or electromagnetic energy; arrival time relative to the beam and shielding suppress neutron/neutrino backgrounds.",
+  "technologies": [
+    "Single-phase liquid-argon scintillation",
+    "Photomultiplier tubes",
+    "Beam-time measurements"
+  ],
+  "sites": [
+    {
+      "name": "Los Alamos National Laboratory, LANSCE Lujan Center, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Los Alamos National Laboratory, LANSCE Lujan Center, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "CCM200 accumulated data in 2021–2023; detection-technology results published in 2025",
+    "as_of": "2023",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "CCM200 accumulated data in 2021–2023; detection-technology results published in 2025",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CCM Collaboration / project team",
+    "lead_institutions": [
+      "Los Alamos National Laboratory"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Overall CCM liquid-argon scale",
+      "value": "Approximately 10 tonnes, about 20 m from the neutron/neutrino source",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "CCM200 readout",
+      "value": "200 eight-inch PMTs; the 2025 technical paper uses a 7-tonne fiducial volume",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "800 MeV protons; pulse structure discriminates backgrounds",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CCM120",
+      "status": "completed",
+      "description": "2019 engineering data-taking"
+    },
+    {
+      "name": "CCM200",
+      "status": "operating",
+      "description": "Upgraded 200-PMT detector; 2021–2023 operation confirmed"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The 2019 CCM120 engineering sample constrains light dark matter and leptophobic models, without a discovery claim.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "CCM200 achieved event-by-event Cherenkov-light identification for sub-MeV electron events; this is a detector-technology result, rather than a dark-matter discovery.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "COHERENT",
+    "MiniBooNE-DM"
+  ],
+  "resources": {
+    "official_website": "https://indico.fnal.gov/event/59963/contributions/286989/attachments/177034/240888/NuInt_CEvNS_Figueroa.pdf",
+    "publication_links": [
+      "https://arxiv.org/abs/2105.14020",
+      "https://arxiv.org/abs/2109.14146",
+      "https://lss.fnal.gov/archive/2025/pub/fermilab-pub-25-0464-ppd.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2105.14020",
+      "caption": "Photomultipliers on the inner wall of CCM120 (original paper Fig. 5), representing the early apparatus with 120 inner PMTs. Source PDF p. 5.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2105.14020",
+      "width": 589,
+      "height": 200,
+      "sha256": "3a2ee6ba09d49fce860406ce08657663fd14f19cb5b4fef51bd20f4c441b3012",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://lss.fnal.gov/archive/2025/pub/fermilab-pub-25-0464-ppd.pdf",
+      "caption": "CCM200 technical-paper and apparatus-layout resources",
+      "credit": "CCM Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Dark Matter Search Results From Coherent CAPTAIN-Mills",
+      "url": "https://arxiv.org/abs/2105.14020",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-05-28",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "First Leptophobic Dark Matter Search from Coherent CAPTAIN-Mills",
+      "url": "https://arxiv.org/abs/2109.14146",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-09-29",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Recent CCM highlights — NuInt 2024",
+      "url": "https://indico.fnal.gov/event/59963/contributions/286989/attachments/177034/240888/NuInt_CEvNS_Figueroa.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "First Event-by-Event Identification of Cherenkov Light in a High Light-Yield Liquid Argon Detector",
+      "url": "https://lss.fnal.gov/archive/2025/pub/fermilab-pub-25-0464-ppd.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-09-30",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "id": "rno-g",
+  "name": "RNO-G",
+  "full_name": "Radio Neutrino Observatory Greenland",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A staged in-ice radio observatory near Summit Station extends ultra-high-energy neutrino searches into the Northern Hemisphere.",
+  "physics_targets": [
+    "Astrophysical and cosmogenic neutrinos above about 10 PeV",
+    "Northern-sky transient follow-up"
+  ],
+  "detection_principle": "Deep and shallow antennas detect Askaryan radio pulses from showers in Greenland ice. A low-threshold phased trigger, surface veto and complementary antenna polarisations improve event identification and reconstruction.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "RNO-G, Summit Station",
+      "country": "Greenland (Denmark)",
+      "country_code": "GRL",
+      "location": "Central Greenland ice sheet",
+      "latitude": 72.58,
+      "longitude": -38.46,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "Eight stations were operational in the August 2026 DESY account, with continued construction toward 35.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "First stations deployed and science data taking began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Eight deployed stations reported; beamforming trigger operation described.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-08",
+      "event": "DESY described eight operating stations and plans to add four.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RNO-G Collaboration",
+    "lead_institutions": [
+      "DESY",
+      "University of Chicago"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Full design",
+      "value": "35 autonomous stations",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Station boreholes",
+      "value": "Three holes extending to approximately 100 m depth",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Documented installed configuration",
+      "value": "Eight stations operational in the DESY August 2026 report; further additions were prospective",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Site ice thickness",
+      "value": "Approximately 3 km",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025–2026",
+      "summary": "Construction, commissioning and radio-background studies demonstrate operating stations; no UHE-neutrino discovery is claimed by these sources.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "ara",
+    "arianna",
+    "icecube-gen2"
+  ],
+  "resources": {
+    "official_website": "https://desy.de/desy_latest_news/2026/greenland/index_eng.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2010.12279",
+      "https://pos.sissa.it/501/1168/pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/2010.12279",
+      "caption": "Deployment design for one RNO-G station, showing in-ice antenna strings and surface antennas.",
+      "credit": "RNO-G Collaboration design paper, arXiv:2010.12279",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/2010.12279v5/figures/RNO-G_Figure_v7_122220.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1111,
+      "height": 1491,
+      "sha256": "7838a1dc9bb3e5fceb057ec89f906422bbd19b57f9020f44a544db4d92845fb2",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "DESY, RNO-G construction and operation update",
+      "url": "https://desy.de/desy_latest_news/2026/greenland/index_eng.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "RNO-G Collaboration, Design and sensitivity of RNO-G",
+      "url": "https://arxiv.org/abs/2010.12279",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "RNO-G Collaboration, construction, commissioning and operation",
+      "url": "https://pos.sissa.it/501/1168/pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "GRL"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "hess",
+  "name": "H.E.S.S.",
+  "full_name": "High Energy Stereoscopic System",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Ground-based stereoscopic imaging Cherenkov array searching the Galactic center, dwarf galaxies and unidentified gamma-ray sources for dark-matter annihilation.",
+  "physics_targets": [
+    "TeV dark-matter annihilation",
+    "Dark subhalos"
+  ],
+  "detection_principle": "Multiple mirror telescopes image atmospheric Cherenkov light from gamma rays simultaneously, reconstructing direction and energy and rejecting hadronic backgrounds.",
+  "technologies": [
+    "Imaging atmospheric Cherenkov telescopes"
+  ],
+  "sites": [
+    {
+      "name": "Khomas Highlands, Namibia",
+      "country": "Namibia",
+      "country_code": "NAM",
+      "location": "Khomas Highlands, Namibia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": null,
+    "evidence": "The institution's current page describes operation and science plans. No separate 2026 status announcement was established, so the date remains null.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "H.E.S.S. collaboration / mission team",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "4 telescopes of 12 m aperture + 1 telescope of 28 m aperture",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Representative energy band",
+      "value": "50 GeV–100 TeV, depending on analysis selections",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "H.E.S.S. I",
+      "status": "implemented",
+      "description": "Four-telescope stereoscopic array"
+    },
+    {
+      "name": "H.E.S.S. II",
+      "status": "implemented",
+      "description": "Addition of the large central telescope"
+    }
+  ],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Tests unidentified Fermi sources as dark subhalos; results require interpretation alongside the astrophysical properties of each source.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "CTAO",
+    "Fermi-LAT"
+  ],
+  "resources": {
+    "official_website": "https://www-hfm.mpi-hd.mpg.de/mpi/en/research/scientific-divisions-and-groups/non-thermal-astrophysics/projects/hess",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.mpi-hd.mpg.de/hfm/HESS/pages/press/2012/HESS_II_first_light/",
+      "caption": "Photograph of the five-telescope H.E.S.S. array in Namibia: the central 28 m H.E.S.S.-II telescope is surrounded by four 12 m telescopes. From the collaboration's official 2012 H.E.S.S.-II first-light gallery.",
+      "credit": "H.E.S.S. Collaboration / Clementina Medina, credited for Image_13.JPG in the official gallery.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.mpi-hd.mpg.de/hfm/HESS/pages/press/2012/HESS_II_first_light/images/Image_13.JPG",
+      "width": 1920,
+      "height": 1280,
+      "sha256": "a1b3818b96259fbcc23c576330c5d997eef64a875afe91bc54473c6a102b5e95",
+      "mime_type": "image/webp",
+      "source_sha256": "8597c643b7924666f2eda783108bddc949939f42eb91a4b8b4dc72ebf425b034",
+      "source_dimensions": {
+        "width": 5284,
+        "height": 3523
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www-hfm.mpi-hd.mpg.de/mpi/en/research/scientific-divisions-and-groups/non-thermal-astrophysics/projects/hess",
+      "caption": "H.E.S.S. project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www-hfm.mpi-hd.mpg.de/mpi/en/research/scientific-divisions-and-groups/non-thermal-astrophysics/projects/hess",
+      "title": "MPIK: H.E.S.S.",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.mpi-hd.mpg.de/HESS/pages/home/som/2021/07/",
+      "title": "H.E.S.S.: Tracking UFOs",
+      "source_date": "2021-07",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.mpi-hd.mpg.de/hfm/HESS/pages/about/telescopes/",
+      "title": "H.E.S.S.: The telescopes",
+      "source_date": null,
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "NAM"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

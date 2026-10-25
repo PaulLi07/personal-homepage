@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "rovno",
+  "name": "Rovno",
+  "full_name": "Rovno reactor-antineutrino experiments",
+  "aliases": [
+    "Rivne"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Rovno programme measured reactor-antineutrino spectra, yields and power/fuel evolution at the site now known as Rivne in Ukraine. Its multiple detector configurations are part of the historical short-baseline reactor dataset.",
+  "physics_targets": [
+    "Reactor antineutrino yield and spectrum",
+    "Short-baseline disappearance",
+    "Reactor power and fuel monitoring"
+  ],
+  "detection_principle": "Electron antineutrinos interact with protons through inverse beta decay. Scintillator and neutron-counting configurations were used in distinct campaigns; changes with distance, thermal power and fuel evolution were compared with reactor calculations.",
+  "technologies": [
+    "Scintillator detectors",
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "Ukraine; Rivne / Rovno nuclear power plant",
+      "country": "Ukraine",
+      "country_code": "UKR",
+      "location": "Ukraine; Rivne / Rovno nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1991",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1988",
+      "event": "Detailed antineutrino-interaction study published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1991",
+      "event": "Precision yield/cross-section result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Rovno Collaboration",
+    "lead_institutions": [
+      "Kurchatov Institute"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Site",
+      "value": "Rovno/Rivne nuclear power plant, Ukraine",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Representative baseline",
+      "value": "18 m for the precision integral-yield measurement",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Programme",
+      "value": "Several detector and reactor configurations in the 1980s–1990s",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1991",
+      "summary": "The measured inverse-beta-decay yield became a reference input to later reactor-flux comparisons.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "krasnoyarsk",
+    "bugey",
+    "songs"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.jetpletters.ac.ru/ps/1248/article_18875.shtml",
+      "https://jetp.ras.ru/cgi-bin/e/index/e/67/2/p213?a=list"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf#page=21",
+      "caption": "Rovno reactor-antineutrino detector arrangement reproduced in a reactor-neutrino lecture.",
+      "credit": "F. A. Danevich / Institute for Nuclear Research, 2015 lecture; A. I. Afonin et al. original diagram",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://lpd.kinr.kyiv.ua/teaching/Tor-Vergata_2015/2nd-semester/07-reactor-neutrino_15-Apr-2015.pdf#page=21",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 365,
+      "height": 435,
+      "sha256": "f9d090ec72ec38c375bc0ea5272d8f516daf6a52370979aeaa0f9a6f350bc7ba",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A. A. Kuvshinnikov et al., Rovno inverse-beta-decay cross section",
+      "url": "https://www.jetpletters.ac.ru/ps/1248/article_18875.shtml",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1991",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "A. I. Afonin et al., Study of inverse beta decay at Rovno",
+      "url": "https://jetp.ras.ru/cgi-bin/e/index/e/67/2/p213?a=list",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UKR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "neutron"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "neutron"
+    ],
+    "is_europe": true
+  }
+}

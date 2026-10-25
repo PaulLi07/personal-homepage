@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "dm-ice",
+  "name": "DM-Ice",
+  "full_name": "DM-Ice",
+  "aliases": [
+    "DM-Ice17"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DM-Ice17 deployed low-background NaI(Tl) detectors deep in Antarctic ice as a Southern Hemisphere direct-dark-matter demonstrator. The team later joined KIMS to form COSINE.",
+  "physics_targets": [
+    "Dark-matter annual modulation"
+  ],
+  "detection_principle": "Long-term NaI scintillation readout in the stable deep-ice environment uses annual modulation to distinguish Galactic dark matter from seasonal backgrounds.",
+  "technologies": [
+    "NaI(Tl)",
+    "Deep-ice deployment",
+    "Remote low-background operation"
+  ],
+  "sites": [
+    {
+      "name": "South Pole ice",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Deep IceCube borehole near Amundsen–Scott South Pole Station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2014",
+    "evidence": "The 2014 paper establishes successful deployment and operation. The website's undated data-taking statement does not establish the 2026 status.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010-12",
+      "event": "Deployed at the bottom of an IceCube borehole at the South Pole",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DM-Ice Collaboration",
+    "lead_institutions": [
+      "Yale University",
+      "University of Wisconsin–Madison"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "NaI(Tl) target",
+      "value": "2×8.47 kg, approximately 17 kg",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2450 m in ice",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2014",
+      "summary": "Demonstrated remote calibration and operation of a low-background NaI detector in deep Antarctic ice.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "COSINE",
+    "KIMS",
+    "SABRE"
+  ],
+  "resources": {
+    "official_website": "https://dm-ice.yale.edu/about-dm-ice/dm-ice17",
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.90.092005"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://dm-ice.yale.edu/about-dm-ice/dm-ice17",
+      "caption": "Pressure vessel and internal NaI(Tl) crystal and photomultiplier layout of a single DM-Ice17 detector module.",
+      "credit": "DM-Ice collaboration / Yale University; no individual illustrator is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://dm-ice.yale.edu/sites/default/files/resize/images/DM-Ice17_detectorDetail-300x525.jpg",
+      "width": 300,
+      "height": 525,
+      "sha256": "406d96d8c2c4f45dfe488528468f186dc99a5cbd5c711a23a9edb91e4dff8529",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://dm-ice.yale.edu/about-dm-ice/dm-ice17",
+      "caption": "DM-Ice apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DM-Ice Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "DM-Ice17 official experiment page",
+      "url": "https://dm-ice.yale.edu/about-dm-ice/dm-ice17",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "First data from DM-Ice17",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.90.092005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov_airshower"
+    ]
+  }
+}

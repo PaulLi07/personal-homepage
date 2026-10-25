@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "id": "warp",
+  "name": "WArP",
+  "full_name": "WIMP Argon Programme",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "WArP was an early direct liquid-argon WIMP-search programme. Its small dual-phase prototype investigated ionization/scintillation discrimination and argon-39 backgrounds.",
+  "physics_targets": [
+    "WIMP"
+  ],
+  "detection_principle": "The detector records initial liquid-argon scintillation and proportional scintillation after electron extraction into gas. Pulse timing also discriminates nuclear recoils.",
+  "technologies": [
+    "Dual-phase liquid argon",
+    "Pulse-shape discrimination"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2007",
+    "evidence": "Prototype operation and results around 2007 have been verified; a definite project termination date was not obtained.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "WArP Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "Princeton University"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Prototype active volume",
+      "value": "2.3 L",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "2.3 L prototype",
+      "status": "completed",
+      "description": "Low-background and WIMP-search studies"
+    },
+    {
+      "name": "100 L-scale detector",
+      "status": "unknown",
+      "description": "Historical upgrade programme; final operating details require rechecking."
+    }
+  ],
+  "results": [
+    {
+      "date": "2007",
+      "summary": "Measured 39Ar activity in natural argon, providing experimental input for liquid-argon dark-matter background control.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DarkSide",
+    "ArDM"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://collaborate.princeton.edu/en/publications/measurement-of-the-specific-activity-of-sup39supar-in-natural-arg/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/129268/contribution/1348798/attachments/88212/126278/WArP_GLA2011.pdf",
+      "caption": "Historical installation of the WArP 100-litre detector into its main cryostat at LNGS. The left panel shows the installation; the right shows the outer active liquid-argon veto and photomultiplier tubes. Dated 17 December 2008 in Claudio Montanari's GLA2011 collaboration presentation, page 9.",
+      "credit": "Claudio Montanari / WArP collaboration (INFN Pavia), GLA2011 presentation; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/129268/contribution/1348798/attachments/88212/126278/WArP_GLA2011.pdf",
+      "width": 1440,
+      "height": 888,
+      "sha256": "53af6c7a0f16386577f1f3a3552a807c615971f41c71b9b553660fe450c38daa",
+      "mime_type": "image/webp",
+      "source_sha256": "6e1fb1660121a51005da14ef5472e6e316c50a7c091d6af4c81965756af30276",
+      "source_dimensions": {
+        "width": 1440,
+        "height": 888
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://collaborate.princeton.edu/en/publications/measurement-of-the-specific-activity-of-sup39supar-in-natural-arg/",
+      "caption": "WArP apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "WArP Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Measurement of the specific activity of 39Ar in natural argon",
+      "url": "https://collaborate.princeton.edu/en/publications/measurement-of-the-specific-activity-of-sup39supar-in-natural-arg/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Double phase Argon: WArP results",
+      "url": "https://llr.in2p3.fr/services/llr_seminaires/upload/2010_06_Grandi_DarkMatterArgon.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid"
+    ]
+  }
+}

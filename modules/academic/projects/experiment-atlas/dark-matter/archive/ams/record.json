@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "ams",
+  "name": "AMS-02",
+  "full_name": "Alpha Magnetic Spectrometer",
+  "aliases": [
+    "AMS",
+    "AMS-01",
+    "Alpha Magnetic Spectrometer"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Space magnetic spectrometer measuring positrons, antiprotons, antinuclei and other cosmic rays precisely to constrain a dark-matter contribution to antimatter.",
+  "physics_targets": [
+    "Indirect WIMP signatures",
+    "Positrons / antiprotons / antinuclei"
+  ],
+  "detection_principle": "A magnetic field and silicon tracking measure charge sign and rigidity; time-of-flight, Cherenkov, transition-radiation and calorimetric measurements identify particle species.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "Silicon tracking",
+    "TOF",
+    "RICH",
+    "TRD",
+    "Electromagnetic calorimeter"
+  ],
+  "sites": [
+    {
+      "name": "External platform of the International Space Station",
+      "country": "Space",
+      "country_code": null,
+      "location": "External platform of the International Space Station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2025-06-23",
+    "evidence": "CERN's 2025 update explicitly describes operation on the ISS and qualification work for the Layer-0 upgrade.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2011-05-16",
+      "event": "Launched aboard Endeavour",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2011-05-19",
+      "event": "Science data returned",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025-06-23",
+      "event": "Upgrade components passed qualification tests, according to the announcement",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMS-02 collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Total instrument mass",
+      "value": "About 8.5 t",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMS-01",
+      "status": "completed",
+      "description": "Precursor flight, grouped within the same series"
+    },
+    {
+      "name": "AMS-02",
+      "status": "operating",
+      "description": "Long-duration experiment on the ISS"
+    },
+    {
+      "name": "Layer-0 upgrade",
+      "status": "planned",
+      "description": "Delivery progress should follow the announcements"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "PAMELA",
+    "GAPS",
+    "CALET"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/ams",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/ams",
+      "caption": "Photograph of the AMS-02 magnetic spectrometer installed on the exterior of the International Space Station.",
+      "credit": "Photograph on CERN's experiment page; no individual photographer is identified beside the image",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://home.cern/wp-content/uploads/2026/03/ams_on_iss_2.jpeg.webp",
+      "width": 1440,
+      "height": 956,
+      "sha256": "a20a39d15a8cca82e6d27c03508d012232554b922d2ac7ff950346e555b12e74",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://home.cern/science/experiments/ams",
+      "caption": "AMS-02 project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://home.cern/science/experiments/ams",
+      "title": "CERN: AMS",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://home.cern/news/news/experiments/ams-upgrade-passes-qualification-tests-flying-colours",
+      "title": "CERN: AMS upgrade passes qualification tests",
+      "source_date": "2025-06-23",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Antinucleus candidates and spectral anomalies alone do not establish dark matter; the latest statistical significance must be taken from specific papers."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

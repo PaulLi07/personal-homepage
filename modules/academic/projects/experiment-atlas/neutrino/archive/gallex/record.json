@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "gallex",
+  "name": "GALLEX",
+  "full_name": "Gallium Experiment at Gran Sasso",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "GALLEX measured low-energy solar electron neutrinos with a gallium-chloride target. Its sensitivity to pp neutrinos extended the solar-neutrino programme below the chlorine-experiment threshold and helped establish the low-energy neutrino deficit.",
+  "physics_targets": [
+    "Integrated pp-sensitive solar-neutrino capture rate",
+    "Solar neutrino deficit",
+    "Artificial-source detector calibration"
+  ],
+  "detection_principle": "Solar electron neutrinos transform gallium-71 into germanium-71. Chemical gas extraction isolates the few produced germanium atoms, whose decays are counted in low-background proportional counters. Chromium source calibrations test the full detection chain.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1997",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1991",
+      "event": "Solar exposures began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1997",
+      "event": "GALLEX exposures ended",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1998",
+      "event": "Successor GNO programme began",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GALLEX Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "INFN Laboratori Nazionali del Gran Sasso"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Gallium inventory",
+      "value": "Approximately 30 tonnes of gallium in a chloride solution",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Capture threshold",
+      "value": "233 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Location",
+      "value": "Hall A, Gran Sasso underground laboratory",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "A reanalysis revisited event selection and counting efficiencies for the solar and chromium-source datasets.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gno",
+    "sage",
+    "best"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1001.2731",
+      "https://doi.org/10.1016/S0370-2693(98)01579-2"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1001.2731",
+      "caption": "GALLEX proportional-counter pulse and reconstructed primary current used to distinguish germanium decays from background (Figure 1).",
+      "credit": "F. Kaether et al. / GALLEX",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1001.2731",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 558,
+      "height": 798,
+      "sha256": "b70d0605e4b2479982d0242daa719281bfb2a3d2bb0ab36d29a0a27e4316ac71",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "F. Kaether et al., Reanalysis of GALLEX solar-neutrino and source experiments",
+      "url": "https://arxiv.org/abs/1001.2731",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010-01-15",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "GALLEX Collaboration, Final solar-neutrino results",
+      "url": "https://doi.org/10.1016/S0370-2693(98)01579-2",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1999",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": true
+  }
+}

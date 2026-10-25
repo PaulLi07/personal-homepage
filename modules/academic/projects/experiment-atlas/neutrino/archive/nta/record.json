@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "nta",
+  "name": "NTA",
+  "full_name": "Neutrino Telescope Array",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed Hawaiian optical array builds on Ashra technology to survey PeV–EeV tau neutrinos with high-resolution imaging of upward air showers.",
+  "physics_targets": [
+    "PeV–EeV tau neutrinos",
+    "Neutrino-source identification",
+    "Nonthermal hadronic accelerators"
+  ],
+  "detection_principle": "Separated wide-field Cherenkov and fluorescence stations would observe showers from taus produced by Earth-skimming neutrinos. Stereo geometry would constrain shower direction and reject backgrounds.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Hawaii Island proposed network",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Candidate mountain and central sites on Hawaii Island",
+      "latitude": 19.6,
+      "longitude": -155.5,
+      "precision": "approximate_site",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-10-23",
+    "evidence": "The primary document is explicitly a letter of intent; full-array deployment is not established.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2002",
+      "event": "NTA concept proposed in the programme chronology.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2013–2014",
+      "event": "Letter of intent developed and published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NTA Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "National Taiwan University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed network",
+      "value": "Four observation sites in the Hawaii Island design",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Baseline optical concept",
+      "value": "Ashra-derived wide-field light collectors with Cherenkov and fluorescence readout",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Target energy",
+      "value": "PeV–EeV tau neutrinos",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Concept study",
+      "summary": "Projected acceptance and background discrimination were calculated; this is a proposal rather than an installed four-site neutrino observatory.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "ashra",
+    "trinity",
+    "tambo"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1408.6244",
+      "https://www.icrr.u-tokyo.ac.jp/prwps/wp-content/uploads/2019/06/2014_sasaki.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1408.6244",
+      "caption": "Proposed NTA detector unit using multiple high-resolution light collectors.",
+      "credit": "M. Sasaki and G. W.-S. Hou / NTA proposal",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1408.6244v2/NTA-DU.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1185,
+      "height": 1122,
+      "sha256": "223ed50598294e11721939b38bce1496e70b1896ddab5809cbe6c2bcd7c847df",
+      "mime_type": "image/webp",
+      "source_sha256": "cb3af210e0d461d8b7ae7db1ffacba6733558dfc116e505c97e4ef219f1be052",
+      "source_dimensions": {
+        "width": 1185,
+        "height": 1122
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "M. Sasaki and G. W.-S. Hou, Neutrino Telescope Array Letter of Intent",
+      "url": "https://arxiv.org/abs/1408.6244",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ICRR, NTA concept and development chronology",
+      "url": "https://www.icrr.u-tokyo.ac.jp/prwps/wp-content/uploads/2019/06/2014_sasaki.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,162 @@
+{
+  "schema_version": "1.0",
+  "id": "mace",
+  "name": "MACE",
+  "full_name": "Major Atmospheric Cherenkov Experiment",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "High-altitude Cherenkov telescope built and operated by BARC; a multipurpose gamma-ray facility with indirect dark-matter-search capability.",
+  "physics_targets": [
+    "Very-high-energy gamma-ray dark-matter searches"
+  ],
+  "detection_principle": "A large mirror focuses air-shower Cherenkov light onto a PMT imaging camera.",
+  "technologies": [
+    "Imaging atmospheric Cherenkov telescopes",
+    "PMT camera"
+  ],
+  "sites": [
+    {
+      "name": "Hanle，Ladakh，Indian Astronomical Observatory",
+      "country": "India",
+      "country_code": "IND",
+      "location": "Hanle，Ladakh，Indian Astronomical Observatory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2026-03-05",
+    "evidence": "IIA's current facility page describes operation by BARC; formal inauguration took place in 2024.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-10-04",
+      "event": "Formal inauguration",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MACE collaboration / mission team",
+    "lead_institutions": [
+      "BARC"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Light-collecting area",
+      "value": "356 m², comprising 356 mirror panels",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Camera",
+      "value": "1088 PMT pixels",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Altitude",
+      "value": "About 4300 m",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "CTAO",
+    "MAGIC"
+  ],
+  "resources": {
+    "official_website": "https://www.iiap.res.in/centers/iao/facilities/mace/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://barc.gov.in/barc_nl/2022/2022070818.pdf",
+      "caption": "Photograph of the MACE imaging atmospheric Cherenkov telescope at Hanle, India, during commissioning.",
+      "credit": "BARC Newsletter, July–August 2022, “MACE Telescope: Commissioning Activities,” PDF page 2 / printed page 84",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://barc.gov.in/barc_nl/2022/2022070818.pdf",
+      "width": 1432,
+      "height": 807,
+      "sha256": "a71fb210ccb0129b86dd06dd4208e2f7a264b0a0dc57549a77a29d9d494b54f5",
+      "mime_type": "image/webp",
+      "source_sha256": "315eacc70325180c514ae955c3a32a70429ff35b0dcd1b007e00e98c68b6f8a5",
+      "source_dimensions": {
+        "width": 1432,
+        "height": 807
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.iiap.res.in/centers/iao/facilities/mace/",
+      "caption": "MACE project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.iiap.res.in/centers/iao/facilities/mace/",
+      "title": "Indian Institute of Astrophysics: MACE",
+      "source_date": "2026-03-05",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://dae.gov.in/dae-inaugurates-mace-asias-largest-and-worlds-highest-imaging-cherenkov-observatory-at-hanle-ladakh/",
+      "title": "DAE: MACE inaugurated",
+      "source_date": "2024-10-08",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "The facility and operational status have been verified; dedicated dark-matter-result papers remain to be added. No sensitivity figures without a source are supplied."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "IND"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

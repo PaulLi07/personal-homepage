@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "id": "pandax",
+  "name": "PandaX",
+  "full_name": "Particle and Astrophysical Xenon Experiments",
+  "aliases": [
+    "PandaX-I",
+    "PandaX-II",
+    "PandaX-4T",
+    "PandaX-xT",
+    "PandaX-20T"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "A xenon-detector programme at the China Jinping Underground Laboratory, led by Shanghai Jiao Tong University, studying dark matter, neutrinos and rare decays. Distinguish data-taking phases I, II and 4T from next-generation xT; the gaseous-xenon double-beta detector PandaX-III is not a liquid-xenon dark-matter phase.",
+  "physics_targets": [
+    "WIMP",
+    "Axion/dark-photon absorption",
+    "Light dark matter"
+  ],
+  "detection_principle": "Dual-phase liquid-xenon TPCs combine scintillation and ionization to reconstruct interaction positions and recoil types. Electron-recoil spectra also support searches such as bosonic-dark-matter absorption.",
+  "technologies": [
+    "Dual-phase liquid-xenon TPC",
+    "Cryogenic purification and distillation"
+  ],
+  "sites": [
+    {
+      "name": "CJPL",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China Jinping Underground Laboratory, Liangshan, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2026-09-04",
+    "evidence": "Official news states that PandaX-4T completed this phase of operation on 17 April 2026, with the programme moving toward the 20T stage.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009",
+      "event": "PandaX programme established",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "First dark-matter results from 4T commissioning data",
+      "source_ids": [
+        "S4"
+      ]
+    },
+    {
+      "date": "2026-04-17",
+      "event": "PandaX-4T phase of operation ends",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PandaX Collaboration",
+    "lead_institutions": [
+      "Shanghai Jiao Tong University",
+      "Tsung-Dao Lee Institute"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Active target mass (I / II / 4T)",
+      "value": "120 kg / 580 kg / 3.7 tonnes",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Full-scale xT design",
+      "value": "Approximately 43 tonnes of active liquid xenon in the design paper",
+      "source_ids": [
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PandaX-I / II",
+      "status": "completed",
+      "description": "Early liquid-xenon detectors"
+    },
+    {
+      "name": "PandaX-4T",
+      "status": "completed",
+      "description": "This operating phase ended in April 2026; data analysis can continue."
+    },
+    {
+      "name": "PandaX-20T / xT",
+      "status": "planned",
+      "description": "Next-generation implementation stage; designed target mass must not be described as deployed mass."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "XENON",
+    "LZ"
+  ],
+  "resources": {
+    "official_website": "https://pandax.sjtu.edu.cn/",
+    "publication_links": [
+      "https://arxiv.org/abs/2402.03596",
+      "https://arxiv.org/abs/2107.13438"
+    ],
+    "data_links": [
+      "https://pandax.sjtu.edu.cn/public/data_release"
+    ]
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://pandax.sjtu.edu.cn/",
+      "caption": "PandaX-II TPC during assembly, showing field-cage electrodes and the lower readout assembly.",
+      "credit": "PandaX collaboration / Shanghai Jiao Tong University; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://pandax.sjtu.edu.cn/sites/pandax/themes/sjtu/images/slides/pandax.jpg",
+      "width": 888,
+      "height": 500,
+      "sha256": "eb99aa600e1728a9370f113a4b2d21647e0cac63a196d13200751ae6d442b78b",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://pandax.sjtu.edu.cn/",
+      "caption": "PandaX apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "PandaX Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "PandaX official website",
+      "url": "https://pandax.sjtu.edu.cn/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "PandaX-4T Concludes Staged Operation as PandaX Transitions to the 20T Phase",
+      "url": "https://pandax.sjtu.edu.cn/news",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "PandaX-xT: a Multi-ten-tonne Liquid Xenon Observatory at the China Jinping Underground Laboratory",
+      "url": "https://arxiv.org/abs/2402.03596",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-02",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S4",
+      "title": "Dark Matter Search Results from the PandaX-4T Commissioning Run",
+      "url": "https://arxiv.org/abs/2107.13438",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-07-28",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "quantum_sensor"
+    ]
+  }
+}

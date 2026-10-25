@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "nasduck",
+  "name": "NASDUCK",
+  "full_name": "Noble and Alkali Spin Detectors for Ultralight Coherent darK matter",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A search for ultralight field dark matter using noble-gas nuclear spins and alkali-metal optical magnetometers.",
+  "physics_targets": [
+    "Axion–nucleon coupling",
+    "Dark photons"
+  ],
+  "detection_principle": "Polarized xenon nuclei interact with the axion background, read out by a rubidium Floquet magnetometer; later SERF and triaxial magnetometers provide complementary noise rejection.",
+  "technologies": [
+    "Polarized xenon",
+    "Rubidium optical magnetometers",
+    "Floquet readout",
+    "SERF comagnetometers"
+  ],
+  "sites": [
+    {
+      "name": "Israeli spin-sensing teams; laboratories differ by apparatus and publication",
+      "country": "Israel",
+      "country_code": "ISR",
+      "location": "Israeli spin-sensing teams; laboratories differ by apparatus and publication",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "NASDUCK: New Constraints on Axion-like Dark Matter from Floquet Quantum Detector",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NASDUCK Collaboration / project team",
+    "lead_institutions": [
+      "Tel Aviv University",
+      "Weizmann Institute of Science",
+      "Hebrew University of Jerusalem"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "First dataset",
+      "value": "Five months; 4×10⁻¹⁵–4×10⁻¹² eV/c²",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Floquet NASDUCK",
+      "status": "results_published",
+      "description": "Xenon/rubidium spin system."
+    },
+    {
+      "name": "NASDUCK SERF",
+      "status": "results_published",
+      "description": "Spin-exchange-relaxation-free comagnetometer."
+    },
+    {
+      "name": "NASDUCK-prime",
+      "status": "results_published",
+      "description": "2026 dark-photon search using a triaxial magnetometer."
+    }
+  ],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "New axion–proton and axion–neutron coupling constraints were obtained.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2105.04603",
+      "https://arxiv.org/abs/2209.13588",
+      "https://arxiv.org/abs/2602.22308"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2105.04603",
+      "caption": "NASDUCK Floquet detector concept showing the magnetically shielded cell, pump/probe lasers and rubidium/xenon spin readout (Fig. 1, 2022 paper).",
+      "credit": "NASDUCK paper authors; no separate illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2105.04603",
+      "width": 1290,
+      "height": 672,
+      "sha256": "38663743d3a14b66afb1cf088fd1ab699bddb9aa6e1fc615199d617b6d9bf83e",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2105.04603",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "NASDUCK Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NASDUCK: New Constraints on Axion-like Dark Matter from Floquet Quantum Detector",
+      "url": "https://arxiv.org/abs/2105.04603",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NASDUCK SERF: New constraints on axion-like dark matter from a SERF comagnetometer",
+      "url": "https://arxiv.org/abs/2209.13588",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NASDUCK-prime: Laboratory Limits on Ultralight Dark-Photon Dark Matter with Null-Axis Magnetometry",
+      "url": "https://arxiv.org/abs/2602.22308",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-25",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "spin_magnetometry"
+    ]
+  }
+}

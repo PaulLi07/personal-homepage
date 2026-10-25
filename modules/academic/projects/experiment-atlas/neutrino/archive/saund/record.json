@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "saund",
+  "name": "SAUND",
+  "full_name": "Study of Acoustic Ultra-high-energy Neutrino Detection",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "acoustic"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "A historical feasibility experiment used US Navy hydrophones in the Bahamas to search for bipolar acoustic pulses from ultra-high-energy neutrino interactions in a very large volume of sea water.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic neutrinos",
+    "Thermo-acoustic neutrino detection"
+  ],
+  "detection_principle": "A particle cascade deposits energy rapidly and heats a narrow volume of water, producing a short bipolar pressure pulse. Several hydrophone coincidences and reconstructed source positions are used to distinguish this signal from marine and instrumental backgrounds.",
+  "technologies": [
+    "Thermo-acoustic particle detection with hydrophones or piezoelectric sensors"
+  ],
+  "sites": [
+    {
+      "name": "AUTEC range, Tongue of the Ocean, Bahamas",
+      "country": "Bahamas",
+      "country_code": "BHS",
+      "location": "AUTEC range, Tongue of the Ocean, Bahamas",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The project pages and publications describe completed SAUND-I/II data campaigns; the Stanford page explicitly says it is no longer maintained.",
+    "source_ids": [
+      "s1",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2001",
+      "event": "SAUND-I installed at the AUTEC hydrophone range.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2006–2007",
+      "event": "SAUND-II recorded data with the enlarged 49-hydrophone array.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2010",
+      "event": "SAUND-II search result published.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SAUND Collaboration",
+    "lead_institutions": [
+      "Stanford University",
+      "SLAC National Accelerator Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "Hydrophones",
+      "value": "7 in SAUND-I; 49 in SAUND-II",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "SAUND-II array",
+      "value": "Approximately 20 × 50 km; hydrophones at 1,340–1,880 m depth",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "SAUND-II analysed exposure",
+      "value": "130 days spanning 2006–2007",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Readout sampling",
+      "value": "156 kHz in SAUND-II",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "Two events survived the radiation-pattern selection. Their nature could not be established with the small sample and incompletely known impulsive backgrounds; conservative upper limits counted them as possible signal, without claiming an acoustic-neutrino discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "acorne",
+    "amadeus",
+    "spats"
+  ],
+  "resources": {
+    "official_website": "https://web.stanford.edu/group/grattalab/saund/saund1/",
+    "publication_links": [
+      "https://arxiv.org/abs/1007.5517"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1007.5517",
+      "caption": "SAUND-II hydrophone positions and ocean-floor depth at the AUTEC site (2010 paper, Figure 1).",
+      "credit": "N. Kurahashi, J. Vandenbroucke and G. Gratta",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1007.5517",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 535,
+      "height": 673,
+      "sha256": "8cfc70117ca411b2672c0695708be53cb31197cecbc12d1b3eb51da8105a9789",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "N. Kurahashi, J. Vandenbroucke and G. Gratta, Search for Acoustic Signals from Ultra-High Energy Neutrinos in 1500 km^3 of Sea Water",
+      "url": "https://arxiv.org/abs/1007.5517",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Stanford Gratta group, SAUND-I",
+      "url": "https://web.stanford.edu/group/grattalab/saund/saund1/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Stanford Gratta group, SAUND-II",
+      "url": "https://web.stanford.edu/group/grattalab/saund/saund2/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "BHS"
+    ],
+    "technology_groups": [
+      "acoustic"
+    ],
+    "technology_tags": [
+      "acoustic"
+    ],
+    "is_europe": false
+  }
+}

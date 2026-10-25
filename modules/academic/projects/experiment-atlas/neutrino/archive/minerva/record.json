@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "minerva",
+  "name": "MINERvA",
+  "full_name": "Main Injector Experiment for v-A",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MINERvA measured neutrino and antineutrino interactions on several nuclear targets in the NuMI beam, separating nuclear effects from the underlying neutrino scattering process.",
+  "physics_targets": [
+    "Exclusive and inclusive neutrino-nucleus cross sections",
+    "Nuclear effects, multinucleon processes and final-state interactions",
+    "Flux constraints using standard-candle reactions"
+  ],
+  "detection_principle": "Fine plastic-scintillator tracking measures outgoing charged particles, surrounded by electromagnetic and hadronic sampling calorimeters. Upstream carbon, iron and lead targets and other target configurations permit controlled comparisons; MINOS supplies downstream muon measurements.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; near end of the Fermilab NuMI beam",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; near end of the Fermilab NuMI beam",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "Fermilab programme page classifies MINERvA as Analyzing, Finished Running.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010",
+      "event": "Full detector physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2013",
+      "event": "Detector calibration and performance paper submitted",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026 archive review",
+      "event": "Fermilab lists MINERvA among experiments that have finished running",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MINERvA Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Energy range",
+      "value": "Neutrino interactions at roughly 1-20 GeV in the detector-design programme",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Core detector",
+      "value": "Finely segmented plastic-scintillator tracker",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Nuclear targets",
+      "value": "Carbon, iron and lead target planes; detector configurations also support additional target samples",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2014 detector report",
+      "summary": "Documented sustained tracking and calorimetry performance enabling precision multi-target neutrino measurements.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "minos",
+    "nova",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://minerva.fnal.gov/how-it-works/",
+    "publication_links": [
+      "https://arxiv.org/abs/1305.5199"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/1305.5199#page=7",
+      "caption": "Front and side schematic views of the MINERvA tracking and calorimeter detector.",
+      "credit": "MINERvA Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/1305.5199",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 824,
+      "height": 324,
+      "sha256": "50798f6256f9a1a0bc64abe779cf7c8c275f7ac3b26785f345ab9c320db1c385",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MINERvA Collaboration, How it works",
+      "url": "https://minerva.fnal.gov/how-it-works/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MINERvA Collaboration, Design, Calibration, and Performance of the MINERvA Detector",
+      "url": "https://arxiv.org/abs/1305.5199",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-05-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Fermilab Neutrino Physics, experiments programme",
+      "url": "https://neutrinophysics.fnal.gov/experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "sampling",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

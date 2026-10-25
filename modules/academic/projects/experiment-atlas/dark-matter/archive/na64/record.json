@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "id": "na64",
+  "name": "NA64",
+  "full_name": "NA64 dark-sector experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "NA64 is a series of dedicated dark-sector fixed-target experiments in the CERN SPS North Area, Prévessin, France, operating since 2016.",
+  "physics_targets": [
+    "Light dark matter",
+    "Dark photons",
+    "Lμ−Lτ mediators",
+    "Invisible meson decays"
+  ],
+  "detection_principle": "A beam of known energy strikes an active target. Calorimeters seek large missing energy while vetoes reject ordinary particles escaping detection; visible decays are also sought. Electron, muon and hadron programs probe different couplings.",
+  "technologies": [
+    "Active target",
+    "Electromagnetic calorimeter",
+    "Hadronic calorimeter",
+    "Tracking and veto"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS North Area，Prévessin",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN SPS North Area, Prévessin; NA64 electron-beam H4 and associated beamlines",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Electron-beam experiment has operated, with dark-sector results also from hadron beams",
+    "as_of": "2024",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Electron-beam experiment has operated, with dark-sector results also from hadron beams",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NA64 Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Electron-beam energy",
+      "value": "100–150 GeV (official-site description)",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "NA64e",
+      "status": "operating",
+      "description": "Electron/positron-beam missing-energy searches"
+    },
+    {
+      "name": "NA64μ",
+      "status": "operating",
+      "description": "Muon-related dark-sector studies"
+    },
+    {
+      "name": "NA64h",
+      "status": "operating",
+      "description": "Invisible-meson-decay studies with hadron beams"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "NA64h searches for invisible decays of η and η′ produced by pion beams, demonstrating a hadron-beam dark-sector method.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "LDMX",
+    "BaBar"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/na64",
+    "publication_links": [
+      "https://cds.cern.ch/record/2899036"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/na64",
+      "caption": "CERN experimental area and beamline apparatus housing NA64.",
+      "credit": "CERN; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://cds.cern.ch/images/CERN-PHOTO-201611-278-2/file?size=large",
+      "width": 1440,
+      "height": 960,
+      "sha256": "19d1905ed4130043b831f4f5b0021a087069b45e87b684d58b633c7f0fa8ca65",
+      "mime_type": "image/webp",
+      "source_sha256": "40305b908856cc892089dd283ec4d3c349bb35b4529ff9bb2f755270b121cd75",
+      "source_dimensions": {
+        "width": 1440,
+        "height": 960
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://home.cern/science/experiments/na64",
+      "caption": "NA64 apparatus photographs and operating description",
+      "credit": "CERN",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "NA64 — CERN experiment overview",
+      "url": "https://home.cern/science/experiments/na64",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark-Sector Search via Pion-Produced eta and eta prime Mesons Decaying Invisibly in the NA64h Detector",
+      "url": "https://cds.cern.ch/record/2899036",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

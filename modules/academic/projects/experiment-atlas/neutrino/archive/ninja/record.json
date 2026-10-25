@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "ninja",
+  "name": "NINJA",
+  "full_name": "Neutrino Interaction research with Nuclear emulsion and J-PARC Accelerator",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NINJA uses nuclear-emulsion detectors with water and other targets in the J-PARC beam to measure the low-momentum hadrons that are difficult to resolve in conventional neutrino detectors.",
+  "physics_targets": [
+    "Neutrino-water and neutrino-nucleus cross sections",
+    "Low-momentum proton and pion production",
+    "Reduction of interaction-model uncertainties for T2K and Hyper-Kamiokande"
+  ],
+  "detection_principle": "Sub-micron emulsion tracking records charged particles emerging from neutrino vertices inside target layers. External scintillator timing and muon detectors associate emulsion events with the beam and measure muon kinematics.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; sites associated with the J-PARC neutrino beam",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; sites associated with the J-PARC neutrino beam",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-08",
+    "evidence": "The 2026 publication documents continuing analysis; the 2025 run schedule is retained as a plan rather than proof of actual completion.",
+    "source_ids": [
+      "s1",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "First water-target inclusive cross-section measurement published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-01",
+      "event": "Collaboration published preparation plans for a further water-target run",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-08",
+      "event": "Water-target hadronic-kinematics analysis submitted",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NINJA Collaboration",
+    "lead_institutions": [
+      "Nagoya University",
+      "Kyoto University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Tracking",
+      "value": "Nuclear emulsion with sub-micron position resolution",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Low-momentum reach",
+      "value": "Proton momentum sensitivity down to about 200 MeV/c",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "name": "Next-run target design",
+      "value": "About 130 kg of water in the third-run plan",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-08",
+      "summary": "Reported reconstructed proton and muon final-state distributions on water, with sensitivity to proton momenta near 200 MeV/c.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "t2k",
+    "wagasci-babymind"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2501.04119",
+      "https://doi.org/10.1103/PhysRevD.102.072006",
+      "https://arxiv.org/abs/2608.16063"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2501.04119",
+      "caption": "NINJA emulsion and external tracking detector arrangement.",
+      "credit": "NINJA Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2501.04119",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 500,
+      "height": 420,
+      "sha256": "602567416ce68d33b06a08de9cbbe4d65fce9e31a0fc3be2b498a67f186cf41c",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NINJA Collaboration, Preparation Status and Plan for the Next Physics Run",
+      "url": "https://arxiv.org/abs/2501.04119",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-01-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NINJA Collaboration, First measurement of charged-current inclusive interactions on water using nuclear emulsion",
+      "url": "https://doi.org/10.1103/PhysRevD.102.072006",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-10-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "NINJA Collaboration, Reconstructed final-state kinematics on water using the J-PARC muon-neutrino beam",
+      "url": "https://arxiv.org/abs/2608.16063",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The retrieved 2025 publication planned a 2025-2026 run. A final operating log was not retrieved, so the exact end of that exposure is not asserted."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

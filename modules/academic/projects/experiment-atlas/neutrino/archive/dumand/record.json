@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "id": "dumand",
+  "name": "DUMAND",
+  "full_name": "Deep Underwater Muon and Neutrino Detector",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A pioneering Hawaii-based project developed deep-ocean neutrino-telescope technology but ended before the planned complete array could operate.",
+  "physics_targets": [
+    "High-energy neutrino astronomy",
+    "Deep-ocean optical detection and positioning"
+  ],
+  "detection_principle": "Underwater optical modules were intended to reconstruct Cherenkov light from muons produced near a deep-sea array. A short prototype string measured cosmic-ray muons and a later shore-cabled deployment tested full-depth infrastructure.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "DUMAND offshore site",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Pacific Ocean west of Keahole Point, Hawaii",
+      "latitude": 19.75,
+      "longitude": -156.15,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The University of Hawaii explicitly dates the programme to approximately 1976–1995 and describes cancellation.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1970s",
+      "event": "International design workshops initiated the programme.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1980s",
+      "event": "Short prototype string demonstrated underwater muon measurements.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1993",
+      "event": "First full-depth shore-cabled string deployed, then affected by electrical faults.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1995",
+      "event": "US Department of Energy cancelled further support.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DUMAND Collaboration",
+    "lead_institutions": [
+      "University of Hawaii at Mānoa",
+      "University of Washington"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Planned depth",
+      "value": "Approximately 4,800 m offshore Keahole Point, Hawaii",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "DUMAND-II design",
+      "value": "Nine strings carrying 216 optical modules",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Implemented hardware",
+      "value": "Short prototype string; one full-depth string plus junction box and shore cable in 1993",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Legacy",
+      "summary": "Developed ocean-optics, optical-module and cabling techniques that influenced later water and ice telescopes; the complete planned neutrino observatory was never realised.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "nestor",
+    "amanda",
+    "baikal-nt200"
+  ],
+  "resources": {
+    "official_website": "https://www.phys.hawaii.edu/~dumand/dumand.html",
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/9412060"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1111.0507",
+      "caption": "Early DUMAND cubic-kilometre concept and the smaller nine-string DUMAND-II design; neither full array was completed.",
+      "credit": "DUMAND Collaboration, reproduced in U. Katz and C. Spiering",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1111.0507",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 900,
+      "height": 500,
+      "sha256": "a9b838628b85d3cd7060f7e923e62bafa265cd85c1e0c57dd6693a2251cc27da",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "University of Hawaii, DUMAND project history",
+      "url": "https://www.phys.hawaii.edu/~dumand/dumand.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "University of Hawaii physics department, DUMAND development history",
+      "url": "https://www.phys.hawaii.edu/about/history/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "DUMAND Collaboration, DUMAND-II progress report",
+      "url": "https://arxiv.org/abs/astro-ph/9412060",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1994",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "U. Katz and C. Spiering, High-Energy Neutrino Astrophysics: Status and Perspectives",
+      "url": "https://arxiv.org/abs/1111.0507",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

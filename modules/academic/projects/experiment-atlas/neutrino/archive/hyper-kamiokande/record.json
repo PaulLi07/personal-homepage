@@ -1,0 +1,229 @@
+{
+  "schema_version": "1.0",
+  "id": "hyper-kamiokande",
+  "name": "Hyper-Kamiokande",
+  "full_name": "Hyper-Kamiokande",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "atmospheric",
+    "solar",
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A next-generation Japanese underground water Cherenkov observatory will extend Kamioka’s accelerator, atmospheric, solar and supernova-neutrino programme with a much larger fiducial mass.",
+  "physics_targets": [
+    "Leptonic CP violation with accelerator neutrinos",
+    "Atmospheric neutrino oscillations and mass ordering",
+    "Supernova and solar neutrinos",
+    "Nucleon decay"
+  ],
+  "detection_principle": "High-sensitivity photomultipliers detect Cherenkov rings in a very large water tank. The detector will also serve as the far detector for a J-PARC beam programme.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground in the Kamioka area, Gifu Prefecture",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground in the Kamioka area, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-10-23",
+    "evidence": "The official overview identifies Hyper-K as a project aiming to begin experimentation in 2028.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018",
+      "event": "Design report released.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Construction project began.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2028 target",
+      "event": "Official project overview aims to start observation in 2028.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Hyper-Kamiokande Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline water mass",
+      "value": "260,000 tonnes total; 190,000 tonnes fiducial",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Tank dimensions",
+      "value": "Approximately 68 m diameter and 71 m height",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Main photodetectors",
+      "value": "Current construction configuration: approximately 20,000 50-cm PMTs and about 800 multi-PMT modules; the earlier design allowed up to 40,000 large photosensors.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "name": "Accelerator baseline",
+      "value": "Approximately 295 km from J-PARC",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Construction programme",
+      "summary": "The collaboration reports detector construction and projected sensitivities; no Hyper-K neutrino-physics result is claimed before operation.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "super-kamiokande",
+    "kamiokande",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://www-sk.icrr.u-tokyo.ac.jp/en/hk/about/outline/",
+    "publication_links": [
+      "https://arxiv.org/abs/1805.04163",
+      "https://agenda.infn.it/event/47073/contributions/276250/",
+      "https://indico.global/event/14705/contributions/156862/attachments/72667/140855/DiLodovico_PASCOS_2026.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.ppd.stfc.ac.uk/experiment/hyper-kamiokande-hyper-k/",
+      "caption": "Cutaway design illustration of the Hyper-Kamiokande underground water-Cherenkov detector and access passages.",
+      "credit": "Illustration on STFC's Hyper-Kamiokande project page; no individual illustrator is listed",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.ppd.stfc.ac.uk/wp-content/uploads/2026/02/pr_photo_17-1.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1500,
+      "height": 1429,
+      "sha256": "86fb7a6115eefe6b53e0ccff43e2de547173c684f831235c8e5b3a9b6725ebd0",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Hyper-Kamiokande Collaboration, project overview and target start",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/hk/about/outline/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Hyper-Kamiokande Collaboration, Design Report",
+      "url": "https://arxiv.org/abs/1805.04163",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Hyper-Kamiokande Collaboration, Preparation status of the Hyper-Kamiokande 50 cm photomultiplier tubes",
+      "url": "https://agenda.infn.it/event/47073/contributions/276250/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Hyper-Kamiokande Collaboration, Advancing the Neutrino Frontier to the Megaton Regime and Beyond",
+      "url": "https://indico.global/event/14705/contributions/156862/attachments/72667/140855/DiLodovico_PASCOS_2026.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "Multi-PMT module counts differ slightly across design iterations; the approximately 800-module construction configuration is identified by its 2026 collaboration source."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

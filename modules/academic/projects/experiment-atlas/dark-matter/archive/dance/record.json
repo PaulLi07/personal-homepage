@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "id": "dance",
+  "name": "DANCE",
+  "full_name": "Dark matter Axion search with riNg Cavity Experiment",
+  "aliases": [
+    "DANCE Act-1"
+  ],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A search for axion-induced polarization rotation using an optical ring cavity without an applied magnetic field.",
+  "physics_targets": [
+    "Ultralight axions",
+    "Axion–photon coupling"
+  ],
+  "detection_principle": "An axion background produces a small periodic difference in the phase velocities of left- and right-circularly polarized light; a bow-tie cavity enhances the measurable rotation of linear polarization.",
+  "technologies": [
+    "Optical ring cavities",
+    "Laser polarimetry",
+    "Low-noise readout"
+  ],
+  "sites": [
+    {
+      "name": "University of Tokyo",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "University of Tokyo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "First results of axion dark matter search with DANCE",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DANCE Collaboration / project team",
+    "lead_institutions": [
+      "University of Tokyo"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Target interval",
+      "value": "10⁻¹⁷–10⁻¹¹ eV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First exposure",
+      "value": "24 h",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "DANCE Act-1 found no axion evidence and first validated cavity-polarization searches without an external magnetic field.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "ADBC"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2303.03594",
+      "https://arxiv.org/abs/1911.05196"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2303.03594",
+      "caption": "DANCE Act-1 ring optical cavity and polarization-readout schematic (Fig. 1, 2023 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2303.03594v4/fig_setup_ver6-crop.svg",
+      "width": 1490,
+      "height": 576,
+      "sha256": "cfe809f0a0f7236466109c3f7851df276932b50148a65be5886f216f8e1d12fc",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2303.03594",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "DANCE Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First results of axion dark matter search with DANCE",
+      "url": "https://arxiv.org/abs/2303.03594",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DANCE experimental principles and prototype",
+      "url": "https://arxiv.org/abs/1911.05196",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

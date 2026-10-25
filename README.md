@@ -10,6 +10,8 @@
 
 Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
 
+Projects现含独立的 Experiment Atlas 板块，中微子252条、暗物质297条实验记录通过卡片进入各自地图。页面、源码、完整英文档案和549张图片全部随主页保存，移除原 HEP Web 工作目录后仍可运行和维护。新增地图与数据更新见[地图集说明](modules/academic/projects/experiment-atlas/README.md)，本轮桌面/手机、独立副本和51项测试见[实测记录](docs/modules/experiment-atlas.md)。
+
 2026-10-25 Life改为四张横向白边拍立得的交错照片堆，取消旧整区白框与滚动漂移；悬停/聚焦置顶并切换亮黄色手写标题，触摸先选中下层再点正面进入，下方为白色生活语录。局部手写字体随源码本地加载并保留OFL许可，其余页面仍用正常系统字体。接口、构图及验证要求见[照片堆说明](modules/life/stack/README.md)，实测单独登记在[Life记录](docs/modules/life.md)。任务分支 `feat/life-polaroid-stack`，回退 `backup/pre-life-polaroids-2026-10-25`（`0783998`）；只做本地维护。
 
 场景人物新增可调的随机动作素材库，动作/导演/SVG骨架独立维护；尺寸、权重、速度与衔接见 [人物说明](modules/academic/exploration/character/README.md)，本轮验证见 [记录](docs/modules/academic.md#walker-actions-2026-10-23)。
@@ -26,7 +28,7 @@ npm run preview     # 先装配再预览：http://127.0.0.1:8767/
 npm run package     # 先装配再生成 ../outputs/personal-homepage-source.zip
 ```
 
-网站运行时只读取普通 HTML、CSS、JavaScript 和本地资源，无外部运行时依赖。装配只在维护时进行；上传包已包含生成页面，GitHub Pages 无需构建。也可直接在浏览器中打开生成的 `index.html`；模块不依赖运行时请求 HTML 片段。
+网站运行时只读取普通 HTML、CSS、JavaScript 和本地资源，无外部运行时依赖。装配只在维护时进行；上传包已包含生成页面，GitHub Pages 无需构建。生成的主页也可直接打开 `index.html`；实验地图使用 ES Module 和本地数据请求，须通过 `npm run preview` 或 Pages 的 HTTP 服务访问。
 
 常驻 `preview` 没有热更新。修改并装配后，必须刷新用户实际打开的预览标签，确认新版图片、结构、样式和资源 URL。装配为 CSS 与静态 JS 加入内容 SHA256 前 12 位的 `?v=`；两份在线文章数据 `entries.js` / `posts.js` 由清单 `liveScripts` 保持原 URL，直接发布文章无需重装 HTML。图片仍归所属模块；About 人像的片段手动使用内容散列查询参数，换图时同步更新，需核对实际显示。
 
@@ -67,6 +69,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/home/` | 首屏介绍与独立摄影背景 |
 | `modules/about/` | 个人简介与资料 |
 | `modules/academic/` | Experience、Publications、Notes、Projects；对应 `experience/`、`publications/`、`notes/`、`projects/` |
+| `modules/academic/projects/experiment-atlas/` | 地图目录登记、入口视图、统一顶栏，以及各地图独立源码、数据、图片和维护工具 |
 | `modules/life/` | 四栏目生活概览；`stack/`管拍立得入口，各子目录分别保存Moments博客、Travels、Creations与Relationship加密内容 |
 | `modules/author/` | Experience 与 Moments 共用的密码登录、GitHub 连接、表单编辑和独立发布器 |
 | `modules/article-photos/` | 无首页分区的照片服务：数据规范、处理、选图、图库及 ZIP；照片文件仍归各文章 |

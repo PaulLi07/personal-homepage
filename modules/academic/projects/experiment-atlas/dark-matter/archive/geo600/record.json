@@ -1,0 +1,187 @@
+{
+  "schema_version": "1.0",
+  "id": "geo600",
+  "name": "GEO600 — dark matter searches",
+  "full_name": "GEO600 gravitational-wave interferometer dark-matter searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "An independent dark-matter analysis of the German–British gravitational-wave interferometer, using the beam-splitter material's response to scalar dark matter.",
+  "physics_targets": [
+    "Ultralight scalar dark matter"
+  ],
+  "detection_principle": "An ultralight scalar field changes the electron mass or electromagnetic constants, modulating the beam splitter's size and refractive index and leaving a narrowband signal in the arm phase difference.",
+  "technologies": [
+    "Laser interferometry",
+    "Squeezed light",
+    "Precision optical beam splitters"
+  ],
+  "sites": [
+    {
+      "name": "GEO600, Ruthe, near Hannover",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "GEO600, Ruthe, near Hannover",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Direct limits for scalar field dark matter from a gravitational-wave detector",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GEO600 — dark matter searches Collaboration / project team",
+    "lead_institutions": [
+      "Max Planck Institute for Gravitational Physics",
+      "Leibniz Universität Hannover",
+      "Cardiff University",
+      "University of Glasgow"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Searched masses",
+      "value": "10⁻¹³–10⁻¹¹ eV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis data",
+      "value": "Seven segments of approximately 10⁵ s each in 2016 and 2019",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "No credible dark-matter signal; model-dependent scalar-coupling limits were obtained.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "DarkGEO",
+    "LIDA",
+    "AURIGA"
+  ],
+  "resources": {
+    "official_website": "https://www.geo600.org/235259/very-high-frequency-observations",
+    "publication_links": [
+      "https://www.nature.com/articles/s41586-021-04031-y",
+      "https://arxiv.org/abs/2401.11907"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.geo600.org/235259/very-high-frequency-observations",
+      "caption": "Optical crystal assembly in GEO600's new laser system, from the official high-frequency-observing upgrade description.",
+      "credit": "GEO600 / Max Planck Institute for Gravitational Physics; the source page does not identify a specific photographer.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.geo600.org/219819/original-1772782222.jpg?t=ZXlKM2FXUjBhQ0k2TXpReExDSm1hV3hsWDJWNGRHVnVjMmx2YmlJNkltcHdaeUlzSW05aWFsOXBaQ0k2TWpFNU9ERTVmUT09LS0xMGUxNDBiOTQ4YjY0OWRmMGExM2Q4MDZiODhkODdiMzJjNzg0Yjdj",
+      "width": 341,
+      "height": 226,
+      "sha256": "3cf20cd9eebaa4e34694888ceef9933475f61b9532da11e911149783c63f4291",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.nature.com/articles/s41586-021-04031-y",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "GEO600 — dark matter searches Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Direct limits for scalar field dark matter from a gravitational-wave detector",
+      "url": "https://www.nature.com/articles/s41586-021-04031-y",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DarkGEO proposal specifying the GEO600 site",
+      "url": "https://arxiv.org/abs/2401.11907",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "sites",
+        "related_experiments"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "GEO600 very high frequency observations",
+      "url": "https://www.geo600.org/235259/very-high-frequency-observations",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "beam_particle"
+    ]
+  }
+}

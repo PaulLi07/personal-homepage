@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "kamland",
+  "name": "KamLAND / KamLAND-Zen — dark matter searches",
+  "full_name": "Kamioka Liquid Scintillator Antineutrino Detector and KamLAND-Zen dark-matter searches",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Large liquid-scintillator neutrino experiment and its xenon-loaded phase, searching both for dark-matter annihilation neutrinos and bound-state formation of charged excited dark matter with xenon.",
+  "physics_targets": [
+    "Light-dark-matter annihilation",
+    "Charged excited-state WIMPs"
+  ],
+  "detection_principle": "KamLAND searches for astrophysical antineutrinos through inverse beta decay; KamLAND-Zen searches for MeV energy released when dark matter forms a bound state with a xenon nucleus.",
+  "technologies": [
+    "Liquid scintillator",
+    "Xenon-loaded scintillator",
+    "Antineutrino delayed coincidence"
+  ],
+  "sites": [
+    {
+      "name": "Kamioka underground laboratory，Hida，Gifu",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kamioka underground laboratory，Hida，Gifu",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Public experimental records available; current overall operational status not verified",
+    "as_of": "2024",
+    "evidence": "The listed 2024 source supports the phase recorded here, not real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Search for Charged Excited States of Dark Matter with KamLAND-Zen",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KamLAND / KamLAND-Zen — dark matter searches collaboration / project team",
+    "lead_institutions": [
+      "Tohoku University",
+      "KamLAND / KamLAND-Zen Collaboration"
+    ],
+    "participants_note": "Only principal institutions supported by evidence are listed; full author and institution lists are in the sources. Institutional locations do not substitute for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative KamLAND-Zen model",
+      "value": "WIMP mass 1 TeV, excited-state mass splitting 17 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Released-energy scale",
+      "value": "About 1–10 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "KamLAND",
+      "status": "results_published",
+      "description": "Antineutrino data constrain the dark-matter annihilation rate."
+    },
+    {
+      "name": "KamLAND-Zen",
+      "status": "results_published",
+      "description": "Xenon-loaded data test bound-state formation by charged excited-state WIMPs."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "KamLAND-Zen found no significant events; for the representative model, the recombination cross section times velocity is limited to 9.2×10⁻³⁰ cm³/s at 90% CL.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022",
+      "summary": "In the 8.3–30.8 MeV neutrino-energy interval with 6.72 kt·yr exposure, 18 candidate events were observed, compatible with background, constraining light-dark-matter pair annihilation into neutrinos.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Explicit dark-matter studies with a multipurpose neutrino and double-beta-decay instrument, including indirect annihilation searches and a specific inelastic direct-capture model. Ordinary neutrino-oscillation measurements are not counted as dark-matter discoveries.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www.awa.tohoku.ac.jp/en/kamland/Research_results_paper_eng.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2311.09676",
+      "https://arxiv.org/abs/2108.08527"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/Pictures.html",
+      "caption": "Cutaway design of the underground KamLAND liquid-scintillator detector, showing the spherical vessel and photodetector region.",
+      "credit": "Stanford Gratta Lab / KamLAND collaboration gallery",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/kamland-detector_new_illustration_websize.jpg",
+      "width": 581,
+      "height": 800,
+      "sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2311.09676",
+      "caption": "Instrument source page; specific images or paper figure numbers should be checked before website production.",
+      "credit": "KamLAND / KamLAND-Zen — dark matter searches collaboration / original authors",
+      "reuse_status": "No image downloaded for this entry; specific images, copyright, attribution and reuse permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for Charged Excited States of Dark Matter with KamLAND-Zen",
+      "url": "https://arxiv.org/abs/2311.09676",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Limits on astrophysical antineutrinos with the KamLAND experiment",
+      "url": "https://arxiv.org/abs/2108.08527",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "results",
+        "key_parameters"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KamLAND official publications",
+      "url": "https://www.awa.tohoku.ac.jp/en/kamland/Research_results_paper_eng.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise facility latitude and longitude have not been verified.",
+      "Individual image copyrights and reuse permissions have not been verified.",
+      "The institutional list is not a complete collaboration membership list.",
+      "Not all subsequent developments have been checked individually; status follows the listed evidence dates."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

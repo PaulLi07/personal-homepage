@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "faser2",
+  "name": "FASER2",
+  "full_name": "ForwArd Search ExpeRiment 2",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "FASER2 is proposed for CERN's Forward Physics Facility west of ATLAS. It is retained as a separately named successor; FPF is the facility framework, rather than an additional dark-matter detector.",
+  "physics_targets": [
+    "Dark photons",
+    "Dark Higgs bosons",
+    "ALP",
+    "Long-lived dark sector"
+  ],
+  "detection_principle": "A larger far-forward decay volume and magnetic-spectrometer acceptance search for long-lived weakly coupled particles produced at the LHC and visibly decaying after traversing rock.",
+  "technologies": [
+    "Large-acceptance magnetic spectrometer",
+    "Tracking",
+    "Calorimeter",
+    "Long-lived-particle decay volume"
+  ],
+  "sites": [
+    {
+      "name": "Proposed CERN Forward Physics Facility, west of ATLAS",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Proposed CERN Forward Physics Facility, west of ATLAS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2025 design and performance reports contribute to FPF and European strategy, rather than an operating upgrade",
+    "as_of": "2025-03",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-03",
+      "event": "2025 design and performance reports contribute to FPF and European strategy, rather than an operating upgrade",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FASER2 Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "FASER2 project team"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed facility location",
+      "value": "Approximately 617–682 m west of the ATLAS interaction point, on CERN land in France",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Phase relationships",
+      "value": "Named FASER successor proposed for the High-Luminosity LHC",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "FASER2",
+      "status": "proposed",
+      "description": "2025 design and performance reports contribute to FPF and European strategy, rather than an operating upgrade"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "FASER",
+    "FLArE",
+    "FORMOSA"
+  ],
+  "resources": {
+    "official_website": "https://fpf.web.cern.ch/papers/",
+    "publication_links": [
+      "https://cds.cern.ch/record/2927003"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://fpf.web.cern.ch/location",
+      "caption": "Proposed FPF hall layout identifying FASER2 and its position relative to FLArE and FORMOSA; a proposed design.",
+      "credit": "Forward Physics Facility / CERN; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://fpf.web.cern.ch/wp-content/uploads/2019/09/middle-figure-thumbnail_EXP_baseline.png",
+      "width": 1208,
+      "height": 434,
+      "sha256": "e45412e08b271618fc68c3e1c86279adc7756c2d64c8bd3f030d1f7a620309d0",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://fpf.web.cern.ch/location",
+      "caption": "Proposed FPF cavern and detector locations, rather than a completed-facility photograph",
+      "credit": "FPF Collaboration / CERN",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FASER2: Detector Design and Performance",
+      "url": "https://cds.cern.ch/record/2927003",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-17",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "FPF papers and design notes",
+      "url": "https://fpf.web.cern.ch/papers/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Forward Physics Facility location",
+      "url": "https://fpf.web.cern.ch/location",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

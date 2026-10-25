@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "id": "mainz",
+  "name": "Mainz",
+  "full_name": "Mainz tritium neutrino-mass experiment",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "The Mainz experiment was a precision tritium beta-spectroscopy measurement of the electron-antineutrino mass. Its solid-tritium source and electrostatic spectrometer were important predecessors of KATRIN.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "Electrons emitted by a frozen tritium source were selected by a MAC-E filter. Fits to the integrated beta spectrum close to the endpoint constrained the mass carried by the undetected antineutrino.",
+  "technologies": [
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Germany; Johannes Gutenberg University Mainz",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Germany; Johannes Gutenberg University Mainz",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2001",
+    "evidence": "The final phase-II analysis reported no nonzero neutrino mass and set the 2.3 eV/c2 upper limit.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Mainz Collaboration",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source",
+      "value": "Quench-condensed molecular tritium film",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Spectrometer",
+      "value": "Magnetic adiabatic collimation with an electrostatic filter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Final limit",
+      "value": "m_beta below 2.3 eV/c2 at 95% confidence",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005",
+      "summary": "The final phase-II analysis reported no nonzero neutrino mass and set the 2.3 eV/c2 upper limit.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "troitsk",
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://www.katrin.kit.edu/79.php",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0412056"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/hep-ex/0412056",
+      "caption": "Schematic of the improved Mainz MAC-E filter, Figure 3 of the final phase-II experiment paper.",
+      "credit": "Mainz neutrino-mass collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0412056",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 680,
+      "height": 216,
+      "sha256": "c031269e21370db481175ef9805cc88506e46b9312ff241dd7d5b443755cbfb3",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Final Results from phase II of the Mainz Neutrino Mass Search in Tritium beta Decay",
+      "url": "https://arxiv.org/abs/hep-ex/0412056",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2005",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KATRIN: beta decay, MAC-E filtering and predecessor methods",
+      "url": "https://www.katrin.kit.edu/79.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

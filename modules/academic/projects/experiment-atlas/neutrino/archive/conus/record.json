@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "conus",
+  "name": "CONUS",
+  "full_name": "COherent Neutrino nUcleus Scattering experiment at Brokdorf",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CONUS used low-threshold germanium detectors at the Brokdorf power reactor in Germany to search for coherent elastic reactor-antineutrino scattering. Its completed Brokdorf campaign provided the technical and background-control foundation for CONUS+ in Switzerland.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Sub-keV germanium response",
+    "Neutrino interactions beyond the Standard Model"
+  ],
+  "detection_principle": "Point-contact high-purity germanium spectrometers measure small ionization pulses. Passive shielding and a cosmic-ray veto reduce backgrounds; reactor-on/off exposures and detailed background modelling constrain nuclear-recoil signals and neutrino electromagnetic interactions.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Brokdorf nuclear power plant",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Schleswig-Holstein, Germany",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "completed_CONUS_campaign"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2022-12",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018-04",
+      "event": "Brokdorf data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022-12",
+      "event": "Brokdorf campaign ended",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Apparatus moved and upgraded for CONUS+ at Leibstadt",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CONUS Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics",
+      "PreussenElektra"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Germanium",
+      "value": "Four approximately 1 kg spectrometers",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "17.1 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Reactor",
+      "value": "3.9 GW thermal Brokdorf power reactor",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The final Brokdorf result constrained the CEvNS rate to within a factor 1.6 of the Standard Model expectation; it was a limit rather than a positive signal.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Brokdorf phase only. The Leibstadt observation is recorded separately as CONUS+.",
+  "related_experiments": [
+    "conus-plus"
+  ],
+  "resources": {
+    "official_website": "https://www.mpi-hd.mpg.de/lin/research_conus.en.html",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevLett.133.251802"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.mpi-hd.mpg.de/lin/research_experiment.en.html",
+      "caption": "CONUS detector at Brokdorf with its shield opened.",
+      "credit": "CONUS Collaboration / MPIK",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.mpi-hd.mpg.de/lin/images/conus-shield-open_small.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1644,
+      "height": 1084,
+      "sha256": "a715a3d4e3953660cab69043cad9dac3be35af2ffd6d5424a24cb55b16d66df8",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "d4fb093caa008e286db7d817ab747ea3e603c658a3b2af5625b5d0cbf3ae6415",
+      "source_dimensions": {
+        "width": 1644,
+        "height": 1084
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MPIK: CONUS and the transition to CONUS+",
+      "url": "https://www.mpi-hd.mpg.de/lin/research_conus.en.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CONUS Collaboration, Final CONUS results at Brokdorf",
+      "url": "https://doi.org/10.1103/PhysRevLett.133.251802",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

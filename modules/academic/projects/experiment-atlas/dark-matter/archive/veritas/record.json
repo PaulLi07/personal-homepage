@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "veritas",
+  "name": "VERITAS",
+  "full_name": "Very Energetic Radiation Imaging Telescope Array System",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "US ground-based very-high-energy gamma-ray array conducting combined indirect searches of dwarf spheroidal galaxies and other dark-matter-rich targets.",
+  "physics_targets": [
+    "WIMP annihilation",
+    "Superheavy dark matter"
+  ],
+  "detection_principle": "Four telescopes measure Cherenkov images of the same atmospheric shower; multi-target likelihood analyses constrain the dark-matter annihilation cross section.",
+  "technologies": [
+    "Imaging atmospheric Cherenkov telescopes"
+  ],
+  "sites": [
+    {
+      "name": "Fred Lawrence Whipple Observatory，Arizona",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fred Lawrence Whipple Observatory，Arizona",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2024",
+    "evidence": "Collaboration's 2024 results page and institutional facility page.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007",
+      "event": "Complete four-telescope array began observations",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "VERITAS collaboration / mission team",
+    "lead_institutions": [
+      "Center for Astrophysics | Harvard & Smithsonian"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "4 telescopes of 12 m aperture",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Representative combined-analysis sample",
+      "value": "17 dwarf spheroidal galaxies; not the total of all observations over all years",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Combined dwarf-galaxy searches set dark-matter annihilation-cross-section upper limits.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "MAGIC",
+    "H.E.S.S.",
+    "CTAO"
+  ],
+  "resources": {
+    "official_website": "https://www.cfa.harvard.edu/index.php/facilities-technology/telescopes-instruments/very-energetic-radiation-imaging-telescope",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.cfa.harvard.edu/index.php/facilities-technology/telescopes-instruments/very-energetic-radiation-imaging-telescope",
+      "caption": "One of VERITAS's four 12 m Cherenkov telescopes at the Whipple Observatory in Arizona, USA.",
+      "credit": "CfA / Rick Peterson, original image-caption credit",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.cfa.harvard.edu/sites/default/files/styles/news_feature/public/2019-05/VERITAS_2.jpg?itok=2FDrdHZ0",
+      "width": 1200,
+      "height": 800,
+      "sha256": "55b101531785b9f435b4b3652550c2796dd58b53956cccad05632b6a5aa72ac4",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.cfa.harvard.edu/index.php/facilities-technology/telescopes-instruments/very-energetic-radiation-imaging-telescope",
+      "caption": "VERITAS project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.cfa.harvard.edu/index.php/facilities-technology/telescopes-instruments/very-energetic-radiation-imaging-telescope",
+      "title": "Harvard-Smithsonian CfA: VERITAS",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://veritas.sao.arizona.edu/the-science-of-veritas/veritas-results/570-dm-combined",
+      "title": "VERITAS: combined analysis of dwarf spheroidal galaxies",
+      "source_date": "2024",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

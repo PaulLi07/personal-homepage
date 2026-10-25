@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "relics",
+  "name": "RELICS",
+  "full_name": "REactor neutrino LIquid xenon Coherent elastic Scattering experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "cevns",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "RELICS develops a compact dual-phase xenon time projection chamber for coherent reactor-antineutrino scattering at Sanmen. Prototype studies establish charge response, purification and operational performance before a full reactor-neutrino measurement.",
+  "physics_targets": [
+    "Reactor CEvNS on xenon",
+    "Low-threshold charge detection",
+    "New neutrino interactions"
+  ],
+  "detection_principle": "Ionization electrons from low-energy recoils are drifted and extracted into xenon gas to produce electroluminescence. The programme emphasizes few-electron sensitivity and control of impurities and delayed-electron backgrounds.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; proposed deployment site at the Sanmen nuclear power plant, Zhejiang",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; proposed deployment site at the Sanmen nuclear power plant, Zhejiang",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Physics design and projected sensitivity published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Prototype construction and performance report published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RELICS Collaboration",
+    "lead_institutions": [
+      "Tsinghua University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed target",
+      "value": "50 kg xenon detector",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Proposed baseline",
+      "value": "Approximately 25 m at Sanmen",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Prototype single-electron gain",
+      "value": "34.30 ± 0.01 statistical photoelectrons per electron",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Calibration demonstration",
+      "value": "0.27 keV argon-37 L-shell events detected",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The prototype demonstrated sub-keV calibration and single-electron response. The full-scale reactor event yield remains a sensitivity projection.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "red-100",
+    "recode"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://link.springer.com/article/10.1140/epjc/s10052-026-15529-y",
+      "https://arxiv.org/abs/2405.05554"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2405.05554",
+      "caption": "Design cutaway of the proposed RELICS xenon detector; this rendering is not a photograph of a completed reactor deployment.",
+      "credit": "RELICS Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2405.05554v3/fig1_relics_tpc.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1280,
+      "height": 1241,
+      "sha256": "dfb0df671bd71d8c11429c65f033c39611fab1bed7676b76bbebd594935bf952",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "4e50d89be43aad03d4188f665332ed96a55e8109cfc24958100a6458b8299ddf",
+      "source_dimensions": {
+        "width": 1280,
+        "height": 1241
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RELICS Collaboration, Dual-phase xenon TPC prototype development",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-026-15529-y",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "RELICS Collaboration, Experiment proposal and sensitivity",
+      "url": "https://arxiv.org/abs/2405.05554",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-05-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "troitsk",
+  "name": "Troitsk",
+  "full_name": "Troitsk nu-mass experiment",
+  "aliases": [],
+  "category": "mass",
+  "physics_categories": [
+    "mass",
+    "sterile"
+  ],
+  "technology_tags": [
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Troitsk nu-mass uses a windowless gaseous tritium source and electrostatic spectroscopy at INR RAS near Moscow. Its completed endpoint-mass dataset was followed by a sterile-neutrino programme and silicon-detector development, so the facility did not end with the 1994-2004 mass measurements.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass",
+    "Sterile-neutrino admixtures in tritium beta decay"
+  ],
+  "detection_principle": "A windowless gaseous tritium source emits beta electrons into a MAC-E spectrometer. The historical endpoint analysis constrained the effective neutrino mass; later integral and differential spectrum measurements with silicon drift detectors search for additional neutrino mass eigenstates.",
+  "technologies": [
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Troitsk, near Moscow",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Troitsk, near Moscow",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Completed mass dataset / continuing detector research",
+    "as_of": "2026",
+    "evidence": "The 1994-2004 standard-mass dataset is complete. Subsequent sterile-neutrino measurements used a TRISTAN prototype detector, while the INR facility page describes continuing detector development and plans for measurement sessions in May and autumn 2026; the schedule alone does not confirm that those sessions occurred.",
+    "source_ids": [
+      "s1",
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Troitsk Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Moscow"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source",
+      "value": "Windowless gaseous molecular tritium",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector method",
+      "value": "MAC-E-filter beta spectroscopy",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Final standard-mass analysis",
+      "value": "Data collected during 1994-2004; published reanalysis in 2011",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Endpoint neutrino-mass campaign",
+      "status": "completed",
+      "description": "The standard-mass result uses data collected during 1994-2004 and reanalysed in 2011.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Sterile-neutrino searches and detector development",
+      "status": "research_development",
+      "description": "Integral and differential beta-spectrum measurements continued with prototype silicon drift detectors. The facility advertises further research and measurement plans for 2026.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "The reanalysis reported a mass-squared result consistent with zero and an upper bound on the effective neutrino mass.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2019",
+      "summary": "A seven-pixel TRISTAN prototype enabled integral and differential beta-spectrum measurements and reported sterile-neutrino mixing limits over mass ranges extending to about 6 keV.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "mainz",
+    "katrin"
+  ],
+  "resources": {
+    "official_website": "https://www.inr.ru/~numass/index_eng.html",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.84.112003",
+      "https://inspirehep.net/literature/925051",
+      "https://arxiv.org/abs/1909.02898"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://doi.org/10.1103/PhysRevD.84.112003",
+      "caption": "Troitsk windowless tritium source and electrostatic spectrometer installation, Figure 1 of the final mass analysis.",
+      "credit": "Troitsk nu-mass Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://doi.org/10.1103/PhysRevD.84.112003",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1329,
+      "height": 520,
+      "sha256": "4e51688878859035f0f6fff1c7dbc5dc0f95f4452348675965e746524e5abe2f",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "An upper limit on electron antineutrino mass from the Troitsk experiment",
+      "url": "https://doi.org/10.1103/PhysRevD.84.112003",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Troitsk Collaboration: publication record and abstract",
+      "url": "https://inspirehep.net/literature/925051",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "INR RAS, Troitsk nu-mass facility and 2026 research plans",
+      "url": "https://www.inr.ru/~numass/index_eng.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Continuing facility programme, detector development and explicitly provisional 2026 measurement schedule"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Measurements with a TRISTAN prototype detector system at the Troitsk nu-mass experiment in integral and differential mode",
+      "url": "https://arxiv.org/abs/1909.02898",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Post-2004 measurements with a seven-pixel detector and sterile-neutrino search results"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The current facility page gives plans for two 2026 sessions; their completion was not independently established in this review."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

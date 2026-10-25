@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "microboone",
+  "name": "MicroBooNE",
+  "full_name": "Micro Booster Neutrino Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "MicroBooNE is located at Fermilab, Batavia, Illinois. The neutrino detector conducts original dark-sector analyses; electron or neutrino anomalies cannot directly be treated as dark matter.",
+  "physics_targets": [
+    "Dark-trident scattering",
+    "Light dark matter",
+    "Higgs-portal scalars"
+  ],
+  "detection_principle": "A liquid-argon TPC performs topology searches for dark matter produced by the off-axis NuMI beam. In the dark-trident mechanism, a dark particle scatters on argon and radiates a dark photon that decays to e⁺e⁻.",
+  "technologies": [
+    "Liquid-argon time-projection chamber",
+    "Scintillation-light readout",
+    "Three-dimensional track reconstruction"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Detector data-taking completed in 2015–2021; analysis of historical samples continues",
+    "as_of": "2021",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Detector data-taking completed in 2015–2021; analysis of historical samples continues",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MicroBooNE Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Exposure of the listed dark-trident analysis",
+      "value": "NuMI-mode exposure of 7.2×10²⁰ POT",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Dark-photon mass scan in the paper",
+      "value": "10–400 MeV/c²; results depend on the chosen dark-matter/mediator model",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MicroBooNE",
+      "status": "completed",
+      "description": "Detector data-taking completed in 2015–2021; analysis of historical samples continues"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The first dark-trident-process search found no signal and set 90% confidence limits.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "MiniBooNE-DM",
+    "SBND",
+    "ICARUS"
+  ],
+  "resources": {
+    "official_website": "https://sbn.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/2312.13945"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://microboone.fnal.gov/",
+      "caption": "MicroBooNE cryostat during transport and installation.",
+      "credit": "MicroBooNE / Fermilab; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "http://microboone.fnal.gov/wp-content/uploads/2017/03/14-0138-04D-thumb.jpg",
+      "width": 400,
+      "height": 195,
+      "sha256": "bb45a98b70688cdb9d5d1139cb0791dfdbd6e962882f87b7b6a4075b800860ee",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://scoap3-prod-backend.s3.cern.ch/media/files/86207/10.1103/PhysRevLett.132.241801.pdf",
+      "caption": "Dark-trident process and event-topology figures; individual captions distinguish schematics from candidates",
+      "credit": "MicroBooNE Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "First Search for Dark-Trident Processes Using the MicroBooNE Detector",
+      "url": "https://arxiv.org/abs/2312.13945",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-12-21",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Short-Baseline Neutrino Program — Fermilab",
+      "url": "https://sbn.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

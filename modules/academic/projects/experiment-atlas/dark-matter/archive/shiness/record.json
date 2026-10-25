@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "shiness",
+  "name": "SHiNESS",
+  "full_name": "Search for Hidden Neutrinos at the European Spallation Source",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "SHiNESS is proposed at the European Spallation Source, Lund. This hidden-neutrino proposal has explicit dark-sector extensions; not every sterile-neutrino mass and mixing range can account for cosmic dark matter.",
+  "physics_targets": [
+    "Hidden / heavy neutral leptons",
+    "Long-lived light neutralinos",
+    "ALP"
+  ],
+  "detection_principle": "A liquid-scintillator detector near the ESS target would study anomalous scattering, oscillations and multilepton decays. Subsequent studies assess visible long-lived signals from broader dark sectors, including ALPs.",
+  "technologies": [
+    "Liquid scintillator",
+    "Optical readout",
+    "Beam timing"
+  ],
+  "sites": [
+    {
+      "name": "European Spallation Source, Lund (proposed)",
+      "country": "Sweden",
+      "country_code": "SWE",
+      "location": "European Spallation Source, Lund (proposed)",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "2023–2024 experimental concept and dark-sector sensitivity studies; no evidence of completion",
+    "as_of": "2024",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "2023–2024 experimental concept and dark-sector sensitivity studies; no evidence of completion",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHiNESS Collaboration / project team",
+    "lead_institutions": [
+      "SHiNESS proposal authors"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Conceptual-design active mass",
+      "value": "42 tonnes of liquid scintillator",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Design distance from ESS target",
+      "value": "25 m",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SHiNESS",
+      "status": "proposed",
+      "description": "2023–2024 experimental concept and dark-sector sensitivity studies; no evidence of completion"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "The original proposal primarily gives hidden-neutrino sensitivity; later papers analyze long-lived neutralinos and ALPs, all as projections.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "COHERENT",
+    "CCM"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2311.18509",
+      "https://arxiv.org/abs/2408.05995"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2311.18509",
+      "caption": "Three-dimensional SHiNESS detector proposal (original paper Fig. 6), showing cylindrical tank, liquid-scintillator volume, PMTs and LAPPD photosensors. Source PDF p. 11.",
+      "credit": "Original paper/report authors and collaboration; this figure has no separate credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/2311.18509",
+      "width": 738,
+      "height": 771,
+      "sha256": "de10469508d0f8f0fed3a4ce45868a5d1c8000a78e9b39943bbfedf7809e83f7",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2311.18509",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for Hidden Neutrinos at the European Spallation Source: the SHiNESS experiment",
+      "url": "https://arxiv.org/abs/2311.18509",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2024-02-26",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Searching for long-lived light neutralinos and axionlike particles at the SHiNESS experiment",
+      "url": "https://arxiv.org/abs/2408.05995",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-08",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SWE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

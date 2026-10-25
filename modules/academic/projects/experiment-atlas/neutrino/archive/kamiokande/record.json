@@ -1,0 +1,254 @@
+{
+  "schema_version": "1.0",
+  "id": "kamiokande",
+  "name": "Kamiokande",
+  "full_name": "Kamioka Nucleon Decay Experiment / Kamioka Neutrino Detection Experiment",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "atmospheric",
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [
+    2002
+  ],
+  "role": "dedicated",
+  "summary": "The original Kamioka water Cherenkov detector began as a nucleon-decay experiment and became a landmark instrument for supernova, solar and atmospheric neutrino physics.",
+  "physics_targets": [
+    "Supernova 1987A neutrinos",
+    "Solar electron neutrinos",
+    "Atmospheric flavour ratios",
+    "Nucleon decay"
+  ],
+  "detection_principle": "Large photomultipliers recorded Cherenkov light patterns in ultrapure water. Upgraded shielding and timing lowered backgrounds sufficiently to observe MeV-scale neutrino interactions.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground in the Kamioka mine, Gifu Prefecture",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground in the Kamioka mine, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The observatory lists Kamiokande as the historical 1983–1996 detector.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1983",
+      "event": "Kamiokande-I began operation.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1986-12",
+      "event": "Low-energy refurbishment for solar-neutrino observation completed; data taking resumed.",
+      "source_ids": [
+        "s5"
+      ]
+    },
+    {
+      "date": "1987",
+      "event": "SN1987A burst observed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1996",
+      "event": "Main data taking ended as Super-Kamiokande began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Kamiokande Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Water tank",
+      "value": "Approximately 3,000 tonnes of water in the tank; surrounding cavern water definitions differ",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Inner photomultipliers",
+      "value": "948 50-cm PMTs in the official historical comparison",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Underground location",
+      "value": "Approximately 1,000 m below the mountain at Kamioka",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1987",
+      "summary": "Detected a neutrino burst from SN1987A, providing direct experimental evidence for neutrino emission in stellar core collapse.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "1988 onward",
+      "summary": "Directional solar-neutrino observations and atmospheric flavour studies broadened its legacy.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "super-kamiokande",
+    "hyper-kamiokande",
+    "imb"
+  ],
+  "resources": {
+    "official_website": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/",
+    "publication_links": [
+      "https://inspirehep.net/experiments/1110455",
+      "https://doi.org/10.1103/PhysRevLett.58.1490"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "caption": "Kamiokande detector, reproduced from Yuichi Oyama’s historical neutrino-detector lecture (page 7).",
+      "credit": "Original experiment collaboration / Yuichi Oyama, KEK/J-PARC",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf#page=7",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 501,
+      "height": 337,
+      "sha256": "892acdfb98c72c652eecf5c8c5201aa24af6b021f112d9299adefaa10faa0bfe",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Kamioka Observatory, Kamiokande history and detector specifications",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/hk/about/outline/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "INSPIRE experimental record, Kamiokande",
+      "url": "https://inspirehep.net/experiments/1110455",
+      "type": "database",
+      "accessed": "2026-10-23",
+      "source_date": "1996",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Kamiokande-II Collaboration, Observation of a Neutrino Burst from the Supernova SN1987A",
+      "url": "https://doi.org/10.1103/PhysRevLett.58.1490",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Yuichi Oyama, Neutrino physics and detectors: From Kamiokande to T2K",
+      "url": "https://indico.cern.ch/event/630418/contributions/2813642/attachments/1575333/2487472/oyama_lecture.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Representative apparatus image"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Kamioka Observatory, Research History",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/history/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Kamiokande refurbishment completion and historical programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

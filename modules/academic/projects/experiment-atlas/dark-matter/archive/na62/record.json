@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "na62",
+  "name": "NA62",
+  "full_name": "NA62 experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "NA62 is based in the CERN SPS North Area, Prévessin. The rare-kaon experiment also conducts actual dark-sector beam-mode runs; its full normal kaon-decay exposure is not dark-matter exposure.",
+  "physics_targets": [
+    "Dark photons",
+    "ALP",
+    "Invisible light particles"
+  ],
+  "detection_principle": "Alongside rare charged-kaon decays, a proton-beam-dump mode produces weakly coupled particles sought as displaced electron- or muon-pair decay vertices behind shielding; invisible-dark-photon searches in π⁰ decays are also conducted.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "Straw tracking",
+    "RICH",
+    "Liquid-krypton calorimeter",
+    "Photon veto"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS North Area，Prévessin",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN SPS North Area，Prévessin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Dedicated beam-dump data-taking completed in 2021; dark-sector analyses published in 2023–2024",
+    "as_of": "2021",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Dedicated beam-dump data-taking completed in 2021; dark-sector analyses published in 2023–2024",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NA62 Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 dark-photon sample",
+      "value": "1.4×10¹⁷ protons on target",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Start of the listed decay region",
+      "value": "Approximately 80 m downstream of the target, according to the beam-dump analysis geometry",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "NA62",
+      "status": "operating",
+      "description": "Dedicated beam-dump data-taking completed in 2021; dark-sector analyses published in 2023–2024"
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Dilepton-decay searches found no signal; combined electron and muon channels constrain dark photons. Mass/mixing coverage must be read within the paper's models and lifetime intervals.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "NA48/2",
+    "SHiP",
+    "SHADOWS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2303.08666",
+      "https://arxiv.org/abs/2312.12055",
+      "https://arxiv.org/abs/1903.08767"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://be-dep-ea.web.cern.ch/na62-experiment",
+      "caption": "NA62 beamline and detector hall; official photograph CERN-PHOTO-201909-262-3.",
+      "credit": "CERN; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://be-dep-ea.web.cern.ch/wp-content/uploads/2026/04/CERN-PHOTO-201909-262-3.jpg.webp",
+      "width": 1440,
+      "height": 910,
+      "sha256": "0d59e89c395066ab2f42add52d788a9e12838b7a929a032bac9b1bcced04a4e4",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2303.08666",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for dark photon decays to mu+mu- at NA62",
+      "url": "https://arxiv.org/abs/2303.08666",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-03-15",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Search for Leptonic Decays of Dark Photons at NA62",
+      "url": "https://arxiv.org/abs/2312.12055",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-09-18",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Search for production of an invisible dark photon in pi0 decays",
+      "url": "https://arxiv.org/abs/1903.08767",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-03-20",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

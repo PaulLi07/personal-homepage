@@ -1,0 +1,247 @@
+{
+  "schema_version": "1.0",
+  "id": "recode",
+  "name": "RECODE",
+  "full_name": "REactor neutrino COherent scattering Detection Experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "cevns",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "RECODE is a high-purity germanium programme at the Sanmen reactor laboratory designed to measure coherent reactor-antineutrino scattering. Multiple detector locations and low ionization thresholds are intended to test background and distance dependence.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Low-energy neutrino interactions",
+    "Germanium detector arrays"
+  ],
+  "detection_principle": "Point-contact germanium detectors measure low-energy ionization from nuclear recoils. Active/passive shielding and reactor-correlated comparisons isolate the signal; planned arrays at different distances provide complementary flux and systematic checks.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; Sanmen nuclear power plant, Zhejiang",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; Sanmen nuclear power plant, Zhejiang",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "Detector site tests / preparing physics deployment",
+    "as_of": "2026-07-14",
+    "evidence": "The July 2026 collaboration report describes completed tests at 65 m from the core. Safety confirmation for the intended 11 m and 22 m sites was still in progress, with physics running projected for late 2026.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "RECODE experimental plan presented",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Sanmen continuation of the reactor-scattering programme documented",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-12–2026-04",
+      "event": "Detector stability and acquisition tests performed at the 65 m reactor site",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RECODE Collaboration",
+    "lead_institutions": [
+      "Tsinghua University",
+      "Academia Sinica"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector technology",
+      "value": "Low-threshold high-purity germanium arrays",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Sanmen nuclear power plant, Zhejiang",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Configuration",
+      "value": "Multiple-baseline reactor-scattering programme",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Completed site tests",
+      "value": "Three Ge detectors at 65 m from the core; more than 50 days of stable operation for each",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Intended physics baselines",
+      "value": "11 m near and 22 m far; deployment still prospective in July 2026",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Demonstrated test analysis threshold",
+      "value": "250 eV electron equivalent; lower than 200 eV remained an upgrade goal",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Sanmen detector tests",
+      "status": "Completed test dataset",
+      "description": "Three detectors operated in a container at 65 m from the core.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Near/far physics programme",
+      "status": "Preparing deployment",
+      "description": "11 m and 22 m sites were undergoing safety confirmation in the July 2026 report; late-2026 running was a projection.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2026-07",
+      "summary": "The collaboration demonstrated stable detector/site-test performance and background analysis. This should not be confused with a completed CEvNS measurement at the intended near/far baselines.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "texono",
+    "conus-plus"
+  ],
+  "resources": {
+    "official_website": "https://www.phys.sinica.edu.tw/index_detail.php?eng=T&id=research&newsid=1158",
+    "publication_links": [
+      "https://indico.ihep.ac.cn/event/18269/contributions/134880/",
+      "https://plan.events.mpg.de/event/603/contributions/3497/attachments/1158/2761/Magnificent2026-RECODE_v2.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://plan.events.mpg.de/event/603/contributions/3497/",
+      "caption": "Liquid-nitrogen-cooled point-contact germanium detector used in RECODE site tests; collaboration presentation, July 2026.",
+      "credit": "Y. Wang, L. Yang / RECODE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.png",
+      "original_url": "https://plan.events.mpg.de/event/603/contributions/3497/attachments/1158/2761/Magnificent2026-RECODE_v2.pdf#page=6",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 571,
+      "height": 444,
+      "sha256": "81b94f9f69df0c0f399854e659b57ddbaa884b1ab13717c985996ea1e5703eca",
+      "mime_type": "image/png",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RECODE collaboration contribution, Weak Interactions and Neutrinos workshop",
+      "url": "https://indico.ihep.ac.cn/event/18269/contributions/134880/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Academia Sinica: reactor-scattering programme continuing at Sanmen",
+      "url": "https://www.phys.sinica.edu.tw/index_detail.php?eng=T&id=research&newsid=1158",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "J. Hakenmüller, Review on coherent elastic neutrino nucleus scattering, Neutrino 2026",
+      "url": "https://indico.global/event/15740/contributions/155565/attachments/72426/140828/cevns_review_neutrino_2026_jhakenmueller.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Y. Wang and L. Yang, Status and Prospects of the RECODE Experiment at Sanmen, Magnificent CEvNS 2026",
+      "url": "https://plan.events.mpg.de/event/603/contributions/3497/attachments/1158/2761/Magnificent2026-RECODE_v2.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The current commissioning date is supported by the supplied conference source, rather than an independently retrieved public run announcement."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

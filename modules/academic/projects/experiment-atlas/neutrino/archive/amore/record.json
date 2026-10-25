@@ -1,0 +1,244 @@
+{
+  "schema_version": "1.0",
+  "id": "amore",
+  "name": "AMoRE",
+  "full_name": "Advanced Mo-based Rare process Experiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "AMoRE searches for neutrinoless double-beta decay of molybdenum-100 with scintillating crystals at millikelvin temperatures. Its pilot and AMoRE-I stages at Yangyang established the method for the larger AMoRE-II programme at Yemilab.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "A molybdate crystal absorbs the decay energy. Metallic magnetic calorimeters measure heat and scintillation simultaneously; their ratio separates alpha backgrounds from electron events near the double-beta endpoint.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Yangyang Underground Laboratory",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "Yangyang Underground Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Yemilab, Jeongseon",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "Yemilab, Jeongseon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "construction_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Completed pilot and AMoRE-I / AMoRE-II construction",
+    "as_of": "2025-08-25",
+    "evidence": "AMoRE-I completed its two-year dataset and published its final search in 2025. The August 2025 collaboration report describes AMoRE-II detector construction and commissioning of its housing at Yemilab; completion of the first stage later in 2025 was a schedule, not an established milestone.",
+    "source_ids": [
+      "s4",
+      "s5"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "AMoRE Collaboration",
+    "lead_institutions": [
+      "Institute for Basic Science Center for Underground Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate isotope",
+      "value": "100Mo",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "AMoRE-I detector",
+      "value": "18 molybdate crystals at Yangyang; predecessor demonstrator",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "AMoRE-I isotope exposure",
+      "value": "3.89 kg yr of 100Mo (8.02 kg yr of total crystals)",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "AMoRE-I published half-life bound",
+      "value": "T1/2 above 2.9 x 10^24 yr at 90% confidence; no observed neutrinoless-decay signal",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "Cryogenic heat and scintillation with metallic magnetic calorimeters",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMoRE-Pilot / AMoRE-I",
+      "status": "completed",
+      "description": "Predecessor molybdate-calorimeter stages at Yangyang established the detection method and published rare-decay constraints.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "name": "AMoRE-II",
+      "status": "construction",
+      "description": "Lithium-molybdate array under staged construction at Yemilab in the August 2025 collaboration report. Its housing was undergoing commissioning; forecast construction dates and sensitivity are not achieved measurements.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2025-02-27",
+      "summary": "The AMoRE-I final analysis found no neutrinoless double-beta decay of 100Mo and set T1/2 above 2.9 x 10^24 yr at 90% confidence from 3.89 kg yr of isotope exposure.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://amore.ibs.re.kr/",
+    "publication_links": [
+      "https://indico.cern.ch/event/1439855/contributions/6461604/",
+      "https://arxiv.org/abs/2407.05618"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://amore.ibs.re.kr/",
+      "caption": "AMoRE-Pilot detector assembly; the pilot configuration precedes AMoRE-I and the Yemilab AMoRE-II installation.",
+      "credit": "AMoRE Collaboration / Institute for Basic Science",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://amore.ibs.re.kr/wp-content/uploads/2017/09/AMoRE-pilot_detector.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 645,
+      "height": 965,
+      "sha256": "d1c46ab7635ba66ba17966898a75e080892b240e61f8b9b8535eddef2bc6f250",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "58d7f6332ac428b879095535fd9b93062f2c5bb5f1cafcd23c5b1d58d3c82337",
+      "source_dimensions": {
+        "width": 645,
+        "height": 965
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "AMoRE: official experiment / institutional overview",
+      "url": "https://amore.ibs.re.kr/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "AMoRE Collaboration: experiment and detector stages",
+      "url": "https://amore.ibs.re.kr/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "AMoRE Experiment: European Strategy input",
+      "url": "https://indico.cern.ch/event/1439855/contributions/6461604/",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "AMoRE Collaboration, Improved limit on neutrinoless double beta decay of 100Mo from AMoRE-I",
+      "url": "https://arxiv.org/abs/2407.05618",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-02-27",
+      "supports": [
+        "AMoRE-I detector, exposure and published half-life limit; completed dataset"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "SeungCheon Kim for AMoRE, AMoRE-II construction status, TAUP2025",
+      "url": "https://indico-cdex.ep.tsinghua.edu.cn/event/175/contributions/2313/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-25",
+      "supports": [
+        "Staged AMoRE-II construction and commissioning of detector housing; dates described as schedules"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The cited 2025 construction report schedules the first AMoRE-II stage for later that year; this review did not establish an actual start date for full AMoRE-II physics data taking."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "KOR"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

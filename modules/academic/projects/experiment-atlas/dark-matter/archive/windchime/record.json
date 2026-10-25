@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "windchime",
+  "name": "Windchime",
+  "full_name": "Windchime Project",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "proposal",
+  "summary": "A proposal using a large array of precision mechanical sensors to detect correlated weak forces from passing ultraheavy dark matter, also investigating ultralight-field signals.",
+  "physics_targets": [
+    "Ultraheavy dark matter",
+    "Ultralight dark matter",
+    "Long-range-force couplings"
+  ],
+  "detection_principle": "A passing particle leaves time-correlated impulse tracks in multiple sensors; ultralight fields may instead generate coherent periodic forces.",
+  "technologies": [
+    "Mechanical-resonator arrays",
+    "Quantum-enhanced readout",
+    "Track-correlation analysis"
+  ],
+  "sites": [
+    {
+      "name": "Multi-institution US quantum-mechanical-sensing R&D; final large-array site undetermined",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Multi-institution US quantum-mechanical-sensing R&D; final large-array site undetermined",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2022",
+    "evidence": "2022 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Snowmass 2021 White Paper: The Windchime Project",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Windchime Collaboration / project team",
+    "lead_institutions": [
+      "Purdue University",
+      "Oak Ridge National Laboratory",
+      "NIST"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Long-term target",
+      "value": "Purely gravitational searches for Planck-mass-scale dark matter",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The white paper discusses design and open R&D challenges; purely gravitational detection remains a long-term objective rather than a present capability.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A mechanical-sensing project covering ultraheavy and ultralight dark matter. Its classification reflects quantum-sensing technology rather than an exclusive focus on axions; purely gravitational sensitivity must be distinguished from nearer-term achievable goals.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2203.07242",
+      "https://arxiv.org/abs/2503.11645"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2203.07242",
+      "caption": "Conceptual suspended-mechanical-sensor array for Windchime (left panel of Fig. 1, 2022 white paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2203.07242v1/pic-array.png",
+      "width": 448,
+      "height": 474,
+      "sha256": "da1da960afda31c5403055e594202132de663f972111a474a8b2d584158ab92f",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2203.07242",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "Windchime Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Snowmass 2021 White Paper: The Windchime Project",
+      "url": "https://arxiv.org/abs/2203.07242",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Mechanical Sensors for Ultraheavy Dark Matter Searches via Long-range Forces",
+      "url": "https://arxiv.org/abs/2503.11645",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

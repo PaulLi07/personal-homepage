@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "wagasci-babymind",
+  "name": "WAGASCI-BabyMIND",
+  "full_name": "Water Grid And Scintillator detector with Baby Magnetized Iron Neutrino Detector",
+  "aliases": [
+    "WAGASCI",
+    "Baby MIND"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "WAGASCI-BabyMIND is a J-PARC near-site neutrino-interaction programme comparing water and hydrocarbon targets, with magnetized muon tracking supplied by Baby MIND.",
+  "physics_targets": [
+    "Water-to-hydrocarbon neutrino cross-section ratios",
+    "Muon-neutrino and antineutrino interaction modelling",
+    "Systematic constraints for T2K and Hyper-Kamiokande"
+  ],
+  "detection_principle": "Three-dimensional scintillator grids surround water volumes to reconstruct charged tracks, with hydrocarbon samples for target comparison. Side muon range detectors and the downstream magnetized iron detector measure exiting muons; curvature determines the muon charge.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "J-PARC neutrino near-detector hall",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Tokai, Ibaraki",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2020-04",
+    "evidence": "The retrieved first-run report establishes implemented operation in 2019-2020; it does not establish the exact 2026 beam-cycle status.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Baby MIND construction and design report",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2019-11 to 2020-02",
+      "event": "First combined WAGASCI-BabyMIND physics run",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WAGASCI-BabyMIND Collaboration",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "J-PARC neutrino near-detector building, Tokai, Japan",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Targets",
+      "value": "Water and hydrocarbon scintillator in complementary modules",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First-run exposure",
+      "value": "4.8 x 10^20 protons on target delivered in the November 2019-February 2020 run",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "Published first-run detector operation, demonstrating the combined target and magnetized-muon system on the T2K beam.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "t2k",
+    "ninja"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1705.10406",
+      "https://arxiv.org/abs/2004.05245"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/1705.10406",
+      "caption": "WAGASCI target modules, side muon range detectors and downstream Baby MIND.",
+      "credit": "Baby MIND Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1705.10406",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1374,
+      "height": 480,
+      "sha256": "d5c2c0a388d9acc6e42a17e94c9159b48564bc7fb0c069d2bbcc6fe7bd73dd57",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Baby MIND Collaboration, A magnetized segmented neutrino detector for WAGASCI",
+      "url": "https://arxiv.org/abs/1705.10406",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-05-29",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Baby MIND Collaboration, First physics run",
+      "url": "https://arxiv.org/abs/2004.05245",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-04-10",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The most recent directly retrieved operating report covers the first run; an exact current exposure or shutdown date is not inferred."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

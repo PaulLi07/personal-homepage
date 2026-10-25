@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "k2k",
+  "name": "K2K",
+  "full_name": "KEK to Kamioka",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "K2K was the first long-baseline accelerator experiment to confirm neutrino oscillation with a controlled beam, sending muon neutrinos from KEK to Super-Kamiokande.",
+  "physics_targets": [
+    "Muon-neutrino disappearance at the atmospheric mass splitting",
+    "Beam-based confirmation of atmospheric-neutrino oscillations",
+    "Neutrino interaction measurements with near detectors"
+  ],
+  "detection_principle": "Near detectors characterized the beam at KEK. Super-Kamiokande used water-Cherenkov ring reconstruction to measure the far muon-neutrino event rate and energy spectrum. The near-to-far comparison tested both event disappearance and spectral distortion.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; near site at KEK, Tsukuba, and far site at Super-K, Kamioka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; near site at KEK, Tsukuba, and far site at Super-K, Kamioka",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2006",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1999",
+      "event": "Long-baseline beam programme began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2004",
+      "event": "Final K2K exposure completed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2006",
+      "event": "Final oscillation measurement published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "K2K Collaboration",
+    "lead_institutions": [
+      "KEK",
+      "Institute for Cosmic Ray Research, University of Tokyo"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Baseline",
+      "value": "250 km, KEK to Kamioka",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Accelerator-produced muon-neutrino beam of order 1 GeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Far target",
+      "value": "Super-Kamiokande water-Cherenkov detector",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2006",
+      "summary": "Observed 112 beam-originated events against 158.1 expected without oscillation, together with an energy-spectrum distortion; the no-oscillation probability was 0.0015%.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "t2k",
+    "sciboone",
+    "super-kamiokande"
+  ],
+  "resources": {
+    "official_website": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/SciBooNE.html",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0606032"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/hep-ex/0606032",
+      "caption": "The K2K proton extraction and neutrino-production beamline at KEK.",
+      "credit": "K2K Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0606032",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 774,
+      "height": 487,
+      "sha256": "89839fceb8f7cc7a12f9af7d0ff19e5ec519b52125bf6af63108361e616aa0f1",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "K2K Collaboration, Measurement of Neutrino Oscillation by the K2K Experiment",
+      "url": "https://arxiv.org/abs/hep-ex/0606032",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2006-06-15",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Kyoto University neutrino group, K2K SciBar and SciBooNE programme",
+      "url": "https://hepsrv.scphys.kyoto-u.ac.jp/member/masashi/kenkyu/SciBooNE.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

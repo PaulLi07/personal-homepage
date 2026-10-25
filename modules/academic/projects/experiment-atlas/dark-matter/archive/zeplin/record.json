@@ -1,0 +1,169 @@
+{
+  "schema_version": "1.0",
+  "id": "zeplin",
+  "name": "ZEPLIN",
+  "full_name": "ZonEd Proportional scintillation in LIquid Noble gases",
+  "aliases": [
+    "ZEPLIN-I",
+    "ZEPLIN-II",
+    "ZEPLIN-III"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "A historical liquid-xenon dark-matter programme at Boulby in the UK, studying single- and dual-phase xenon technology. ZEPLIN-III's high-field dual-phase approach later contributed to LZ.",
+  "physics_targets": [
+    "WIMP"
+  ],
+  "detection_principle": "ZEPLIN-I primarily used scintillation. Later dual-phase detectors measured scintillation and ionization together to distinguish nuclear from electron recoils.",
+  "technologies": [
+    "Liquid-xenon scintillation",
+    "Dual-phase liquid-xenon TPC"
+  ],
+  "sites": [
+    {
+      "name": "Boulby Underground Laboratory",
+      "country": "United Kingdom",
+      "country_code": "GBR",
+      "location": "Boulby mine, North Yorkshire, England",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2012",
+    "evidence": "The official Imperial College project page states that the entire ZEPLIN programme at Boulby ended in 2012.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "ZEPLIN programme at Boulby ends",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ZEPLIN Collaboration",
+    "lead_institutions": [
+      "Imperial College London"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "ZEPLIN-III target",
+      "value": "12 kg of dual-phase xenon",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ZEPLIN-I",
+      "status": "completed",
+      "description": "Single-phase liquid-xenon stage"
+    },
+    {
+      "name": "ZEPLIN-II",
+      "status": "completed",
+      "description": "Dual-phase liquid-xenon stage"
+    },
+    {
+      "name": "ZEPLIN-III",
+      "status": "completed",
+      "description": "High-field dual-phase liquid-xenon stage"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "LUX",
+    "LZ"
+  ],
+  "resources": {
+    "official_website": "https://www.hep.ph.imperial.ac.uk/ZEPLIN-III-Project/",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.80.052010"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.hep.ph.imperial.ac.uk/ZEPLIN-III-Project/",
+      "caption": "A circular photomultiplier-array assembly of the ZEPLIN-III detector.",
+      "credit": "ZEPLIN-III collaboration / Imperial College London; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.hep.ph.imperial.ac.uk/ZEPLIN-III-Project/index_files/image003.jpg",
+      "width": 209,
+      "height": 158,
+      "sha256": "e20b959fa3e85490532dfcaaefc07ff8b77b4c05452807e0156020a4a324df9a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.hep.ph.imperial.ac.uk/ZEPLIN-III-Project/",
+      "caption": "ZEPLIN apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "ZEPLIN Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "ZEPLIN-III official project page",
+      "url": "https://www.hep.ph.imperial.ac.uk/ZEPLIN-III-Project/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Results from the first science run of the ZEPLIN-III dark matter search experiment",
+      "url": "https://doi.org/10.1103/PhysRevD.80.052010",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GBR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator"
+    ]
+  }
+}

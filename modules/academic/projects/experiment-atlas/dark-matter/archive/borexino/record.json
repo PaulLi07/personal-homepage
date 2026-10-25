@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "borexino",
+  "name": "Borexino — axion searches",
+  "full_name": "Borexino liquid-scintillator detector axion searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A liquid-scintillator solar-neutrino detector that also searches for solar axions and ALPs; this record focuses on its dark-matter-candidate studies.",
+  "physics_targets": [
+    "Solar axions",
+    "Solar ALPs"
+  ],
+  "detection_principle": "Solar p+d reactions produce 5.5 MeV axions that can deposit visible energy through inverse Primakoff conversion, Compton-like conversion, the axioelectric effect or two-photon decay.",
+  "technologies": [
+    "Ultralow-background liquid scintillator",
+    "Photomultiplier tubes",
+    "Underground shielding"
+  ],
+  "sites": [
+    {
+      "name": "INFN Laboratori Nazionali del Gran Sasso，Assergi",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Laboratori Nazionali del Gran Sasso，Assergi",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2025",
+    "evidence": "The collaboration's 2025 paper explicitly uses the full Borexino dataset. This status denotes completed detector data-taking; analysis may continue.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Search for high energy 5.5 MeV solar axions with the complete Borexino dataset",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Borexino — axion searches Collaboration / project team",
+    "lead_institutions": [
+      "Borexino Collaboration"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Full-analysis livetime",
+      "value": "3995 days",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target solar nuclear-reaction axion energy",
+      "value": "5.5 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The full 2025 dataset showed no signal. For mA<1 MeV it sets coupling-product bounds |gAγ g3AN|≤2.3×10⁻¹¹ GeV⁻¹ and |gAe g3AN|≤1.9×10⁻¹³ (90% CL).",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [
+    "CAST",
+    "KamLAND"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2504.19135",
+      "https://arxiv.org/abs/1203.6258"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/0806.2400",
+      "caption": "The Borexino stainless-steel sphere's inner surface and installed photomultipliers, viewed from the main entrance (Fig. 3, the collaboration's 2008 detector paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/0806.2400v1/bx_sphere.png",
+      "width": 407,
+      "height": 352,
+      "sha256": "6bb5b43e54bbc09058a0844b947271d11bfcfd039dc41d0c052652f5292e3dde",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2504.19135",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "Borexino — axion searches Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for high energy 5.5 MeV solar axions with the complete Borexino dataset",
+      "url": "https://arxiv.org/abs/2504.19135",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Earlier Borexino solar-axion result",
+      "url": "https://arxiv.org/abs/1203.6258",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

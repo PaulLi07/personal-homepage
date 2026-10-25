@@ -1,0 +1,176 @@
+{
+  "schema_version": "1.0",
+  "id": "damic-m",
+  "name": "DAMIC-M",
+  "full_name": "Dark Matter In CCDs at Modane",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DAMIC-M is a low-background Skipper-CCD dark-matter programme at Modane, increasing silicon mass and using repeated nondestructive readout to improve single-electron resolution.",
+  "physics_targets": [
+    "Dark-matter–electron scattering",
+    "Light dark matter",
+    "Dark-photon absorption"
+  ],
+  "detection_principle": "Repeated measurements of each pixel's charge average down electronic noise, resolving few-charge signals in thick silicon. Clean materials and underground shielding reduce low-energy backgrounds.",
+  "technologies": [
+    "Skipper-CCD",
+    "Ionization in silicon",
+    "Repeated nondestructive readout"
+  ],
+  "sites": [
+    {
+      "name": "LSM",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Underground laboratory in the Fréjus tunnel, Modane",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2025",
+    "evidence": "The Low Background Chamber prototype has produced results. A 2025 institutional annual report describes new results and preparation of the main detector; full-detector completion requires current confirmation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DAMIC-M Collaboration",
+    "lead_institutions": [
+      "University of Zurich"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Exposure objective",
+      "value": "1 kg·year in the 2022 plan",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Technology approach",
+      "value": "Thick, fully depleted silicon CCDs with Skipper readout",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Low Background Chamber",
+      "status": "operating",
+      "description": "Prototype physics results"
+    },
+    {
+      "name": "Full DAMIC-M",
+      "status": "construction",
+      "description": "Larger-mass low-background system"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The prototype provided initial physics searches with low-noise silicon CCDs.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMIC",
+    "SENSEI",
+    "OSCURA"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2210.12070"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.physik.uzh.ch/en/researcharea/damic.html",
+      "caption": "DAMIC-M's copper CCD box, upper lead shielding and in-vacuum electronics being inserted into the copper vacuum vessel.",
+      "credit": "DAMIC-M collaboration / Universität Zürich; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.physik.uzh.ch/dam/jcr:fbf8c752-9d46-4418-a937-53805b99615b/damic-m-insert.jpg",
+      "width": 1200,
+      "height": 1478,
+      "sha256": "eff859670af8e4f7b27538f6d6a9b37671a87c25c5479e453d82931d4d82aafa",
+      "mime_type": "image/webp",
+      "source_sha256": "12a1d33cce860c4d126eb678ab5d381105fdc7209cc9c37837a16e14cc749b7d",
+      "source_dimensions": {
+        "width": 1200,
+        "height": 1478
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2210.12070",
+      "caption": "DAMIC-M apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DAMIC-M Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The DAMIC-M Experiment: Status and First Results",
+      "url": "https://arxiv.org/abs/2210.12070",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-10",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "University of Zurich DAMIC research report",
+      "url": "https://www.physik.uzh.ch/dam/jcr%3A17710cb9-8976-4777-bf05-1f21b03fd084/Astrophysics.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

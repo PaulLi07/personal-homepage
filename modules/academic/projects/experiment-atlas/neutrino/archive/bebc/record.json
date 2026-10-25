@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "bebc",
+  "name": "BEBC",
+  "full_name": "Big European Bubble Chamber",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bubble"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BEBC was a large CERN bubble chamber used with several target fills and neutrino beams. It supported multiple collaborations and exposure programmes rather than a single fixed target-and-beam configuration.",
+  "physics_targets": [
+    "Neutrino and antineutrino interactions on nucleons and nuclei",
+    "Hadron production, charm and nucleon structure",
+    "Rare processes and short-baseline oscillation searches"
+  ],
+  "detection_principle": "Charged particles created bubble trails in a superheated liquid inside a superconducting magnet. Photographs reconstructed tracks and secondary decays; external muon identification and selected ancillary detectors enhanced neutrino-event classification.",
+  "technologies": [
+    "Bubble chambers"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN experimental area, Geneva",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN experimental area, Geneva",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1980s",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1973",
+      "event": "Early particle tracks recorded and commissioning described",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1970s-1980s",
+      "event": "Neutrino, antineutrino and hadron exposure programmes",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BEBC Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Chamber",
+      "value": "Large European bubble chamber, about 3.7 m scale",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Target fills",
+      "value": "Liquid hydrogen, deuterium and neon-hydrogen mixtures across distinct exposures",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Facility",
+      "value": "CERN PS and SPS experimental programmes",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Historical programme",
+      "summary": "Produced detailed exclusive interaction samples and nucleon-level measurements; results must be associated with their particular BEBC collaboration, fill and exposure.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "gargamelle",
+    "fnal-e-0031"
+  ],
+  "resources": {
+    "official_website": "https://repository.cern/records/j95hs-s5y38",
+    "publication_links": [
+      "https://ccwww.kek.jp/pdg/2018/reviews/rpp2018-rev-particle-detectors-accel.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://lappweb.in2p3.fr/neutrinos/anhistory.html",
+      "caption": "BEBC bubble chamber and its magnet at CERN.",
+      "credit": "CERN / CNRS-IN2P3 LAPP",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://lappweb.in2p3.fr/neutrinos/neutimg/nhistory/bebc.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 631,
+      "height": 656,
+      "sha256": "37570cf81812451a24612de9d8df0db22d3818b63329b89b9fc13e89cfc0345e",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CERN, Experiments with BEBC, historical commissioning account",
+      "url": "https://repository.cern/records/j95hs-s5y38",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1973",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CNRS/IN2P3 LAPP, neutrino history and BEBC photographs",
+      "url": "https://lappweb.in2p3.fr/neutrinos/anhistory.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Particle Data Group, Particle detectors at accelerators, bubble-chamber section",
+      "url": "https://ccwww.kek.jp/pdg/2018/reviews/rpp2018-rev-particle-detectors-accel.pdf",
+      "type": "official_review",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "BEBC names an apparatus supporting many numbered exposures; no single mass, target composition or physics-run interval represents all of them."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bubble"
+    ],
+    "technology_tags": [
+      "bubble"
+    ],
+    "is_europe": true
+  }
+}

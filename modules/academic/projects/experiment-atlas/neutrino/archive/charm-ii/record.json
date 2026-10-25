@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "id": "charm-ii",
+  "name": "CHARM-II",
+  "full_name": "CHARM-II precision neutrino-electron scattering experiment",
+  "aliases": [
+    "CERN WA95"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CHARM-II was a distinct successor detector at CERN, optimized for precision neutrino-electron scattering using a much larger and more finely segmented low-density target.",
+  "physics_targets": [
+    "Weak mixing angle from purely leptonic scattering",
+    "Vector and axial neutral-current couplings",
+    "Neutrino trident production and new interactions"
+  ],
+  "detection_principle": "Glass target plates alternated with streamer-tube tracking and scintillator planes. Fine shower-angle reconstruction selected the narrow forward electron signal, while an iron muon spectrometer characterized charged-current control samples.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; CERN",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; CERN",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1993",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1980s",
+      "event": "Detector assembled and exposed to CERN neutrino beams",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1993",
+      "event": "Detailed calibration and detector performance publication",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CHARM-II Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target calorimeter",
+      "value": "Approximately 700 tonnes of glass-based sampling calorimetry",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Segmentation",
+      "value": "Glass plates about half a radiation length thick with streamer planes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Muon analysis",
+      "value": "Downstream magnetized iron modules reused from CDHS",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1993",
+      "summary": "Published measured detector response, electron/hadron discrimination and muon resolution supporting precision leptonic weak-interaction measurements.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "charm",
+    "cdhsw"
+  ],
+  "resources": {
+    "official_website": "https://lappweb.in2p3.fr/neutrinos/anhistory.html",
+    "publication_links": [
+      "https://inspirehep.net/literature/233264",
+      "https://doi.org/10.1016/0168-9002(93)91010-K"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://lappweb.in2p3.fr/neutrinos/anhistory.html",
+      "caption": "The CHARM-II detector at CERN.",
+      "credit": "CERN / CNRS-IN2P3 LAPP",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://lappweb.in2p3.fr/neutrinos/neutimg/nhistory/charm2.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 665,
+      "height": 497,
+      "sha256": "aa72b45e711c446fe68a952269f925180c306ee359e04c378e82b36641e77e9e",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CHARM-II Collaboration, Neutrino-electron scattering: prospects with the CHARM-II detector",
+      "url": "https://inspirehep.net/literature/233264",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "1986",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CHARM-II Collaboration, Calibration and performance of the CHARM-II detector",
+      "url": "https://doi.org/10.1016/0168-9002(93)91010-K",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1993",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "CNRS/IN2P3 LAPP, CHARM-II detector photograph",
+      "url": "https://lappweb.in2p3.fr/neutrinos/anhistory.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "sampling",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

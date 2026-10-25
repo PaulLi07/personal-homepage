@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "legend",
+  "name": "LEGEND-200",
+  "full_name": "Large Enriched Germanium Experiment for Neutrinoless double-beta Decay - LEGEND-200",
+  "aliases": [
+    "LEGEND"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "LEGEND-200 builds on GERDA and the Majorana Demonstrator to search for germanium-76 neutrinoless double-beta decay at Gran Sasso. This dossier covers the implemented 200-kg-class stage; LEGEND-1000 has its own future-project record.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Enriched germanium detectors operate in an instrumented liquid-argon bath. Germanium pulse shapes, coincidence cuts and scintillation vetoes suppress backgrounds while retaining a narrow decay-energy peak.",
+  "technologies": [
+    "Scintillator detectors",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; LEGEND-200 at Gran Sasso; a kilotonne phase is planned separately",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; LEGEND-200 at Gran Sasso; a kilotonne phase is planned separately",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-01-16",
+    "evidence": "LEGEND-200 published its first neutrinoless-decay search results; its 1000-kg successor remains a distinct planned stage.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "LEGEND-200 Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory",
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Design scale",
+      "value": "Up to approximately 200 kg of enriched germanium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Location",
+      "value": "Former GERDA infrastructure, Gran Sasso",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-01-16",
+      "summary": "LEGEND-200 published its first neutrinoless-decay search results; its 1000-kg successor remains a distinct planned stage.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "legend-1000",
+    "gerda",
+    "majorana"
+  ],
+  "resources": {
+    "official_website": "https://legend-exp.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2505.10440"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://legend-exp.org/",
+      "caption": "Location and cryostat layout of LEGEND-200 in the Gran Sasso underground halls; a technical rendering.",
+      "credit": "LEGEND Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://legend-exp.org/fileadmin/user_upload/Redaktion/Images/Experimental_Setup/Technical_Drawings/lngs_l200_focus.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "3452443126087589543c0c875dbddd95870d408acbdb31b99a06322cf3373ddd",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "fa3f98c5830ec15528d805894d2fb4d3276c245dd203b343f8a1ddcfe0dd7884",
+      "source_dimensions": {
+        "width": 4000,
+        "height": 2250
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LEGEND-200: official experiment / institutional overview",
+      "url": "https://legend-exp.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "First results on the search for lepton number violating neutrinoless double-beta decay with the LEGEND-200 experiment",
+      "url": "https://arxiv.org/abs/2505.10440",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-01-16",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

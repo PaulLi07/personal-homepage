@@ -1,0 +1,158 @@
+{
+  "schema_version": "1.0",
+  "id": "koto",
+  "name": "KOTO",
+  "full_name": "K0 at Tokai",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "KOTO is based at the J-PARC Hadron Experimental Facility, Tokai. It studies rare neutral-kaon decays. X⁰ denotes a hypothetical invisible particle, rather than established dark matter.",
+  "physics_targets": [
+    "Invisible light particle X⁰",
+    "Neutral dark-sector particles"
+  ],
+  "detection_principle": "A CsI calorimeter reconstructs π⁰→γγ, requires no additional visible activity and uses transverse momentum and decay vertices to search for KL→π⁰ plus an invisible final state.",
+  "technologies": [
+    "CsI electromagnetic calorimeter",
+    "Hermetic veto system",
+    "Neutral-kaon beam"
+  ],
+  "sites": [
+    {
+      "name": "J-PARC Hadron Experimental Facility, Tokai",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "J-PARC Hadron Experimental Facility, Tokai",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Listed dark-sector results use 2015 run data; no inference is made about the accelerator's 2026 status",
+    "as_of": "2015",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Listed dark-sector results use 2015 run data; no inference is made about the accelerator's 2026 status",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KOTO Collaboration / project team",
+    "lead_institutions": [
+      "J-PARC",
+      "KEK"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "2015 sample",
+      "value": "2.2×10¹⁹ protons on target",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "X⁰ hypothesis masses listed in 2019",
+      "value": "135 MeV/c²",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "KOTO",
+      "status": "operating",
+      "description": "Listed dark-sector results use 2015 run data; no inference is made about the accelerator's 2026 status"
+    }
+  ],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "No candidate in the KL→π⁰νν signal region; an invisible X⁰ of 135 MeV/c² is constrained to BR(KL→π⁰X⁰)<2.4×10⁻⁹ (90% CL).",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1810.09655"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://koto.kek.jp/exp/detector/index.html",
+      "caption": "KOTO detector vacuum vessel and surrounding equipment; the official site dates the photograph to 30 December 2012.",
+      "credit": "KOTO Collaboration; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://koto.kek.jp/exp/detector/overview-Dec30-2012.jpg",
+      "width": 1024,
+      "height": 768,
+      "sha256": "2840b57692a9ee0db2320f4340d54ae411c61613d4c0616476411511bc8c6c99",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1810.09655",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for KL to pi0 nu nu and KL to pi0 X0 Decays at the J-PARC KOTO Experiment",
+      "url": "https://arxiv.org/abs/1810.09655",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-02-26",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

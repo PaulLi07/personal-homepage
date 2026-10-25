@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "daedalus",
+  "name": "DAEdeltaALUS",
+  "full_name": "Decay-At-rest Experiment for delta-CP studies At the Laboratory for Underground Science",
+  "aliases": [
+    "DAEdALUS",
+    "DAEδALUS"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "DAEdeltaALUS was a proposed multi-source decay-at-rest programme to measure the leptonic CP phase. Its original concept paired three cyclotron-driven neutrino sources with a very large underground detector. IsoDAR developed as a related lower-energy source programme.",
+  "physics_targets": [
+    "Leptonic CP violation through antineutrino appearance",
+    "High-power cyclotron decay-at-rest neutrino sources"
+  ],
+  "detection_principle": "Protons produce positive pions that stop and decay, followed by positive-muon decay. The resulting muon antineutrinos would oscillate to electron antineutrinos, detected through inverse beta decay. Source timing and different source distances separate the oscillation samples.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Original DUSEL / Homestake candidate implementation",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Lead, South Dakota; source sites around the proposed detector",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2011",
+    "evidence": "The expression of interest and source paper describe an unbuilt proposal, with no full DAEdeltaALUS neutrino exposure established. The INFN directory classifies it among expired projects.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010",
+      "event": "Expression of interest released for a CP-violation programme associated with DUSEL.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2011",
+      "event": "High-power cyclotron source design described.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DAEdeltaALUS Collaboration",
+    "lead_institutions": [
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "Laboratori Nazionali del Sud, INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source baselines",
+      "value": "1.5 km, 8 km and 20 km in the original design",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Cyclotron concept",
+      "value": "Molecular-hydrogen acceleration to 800 MeV per nucleon with stripping extraction",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Appearance channel",
+      "value": "Muon antineutrino to electron antineutrino, observed by inverse beta decay",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010-2011",
+      "summary": "Published a multi-baseline source concept and forecast CP sensitivity; no DAEdeltaALUS oscillation result is claimed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This dossier preserves a named historical proposal. Design parameters and sensitivity estimates are not measured neutrino results; later programmes using the same laboratory or technology are distinct.",
+  "related_experiments": [
+    "isodar",
+    "dune",
+    "hyper-kamiokande"
+  ],
+  "resources": {
+    "official_website": "https://www2.lns.mit.edu/~conrad/daedalus.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1006.0260",
+      "https://arxiv.org/abs/1109.6861"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/1006.0260",
+      "caption": "Original DAEdeltaALUS three-source geometry around an underground detector.",
+      "credit": "DAEdeltaALUS proponents, Figure 1.2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/1006.0260",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 482,
+      "height": 286,
+      "sha256": "3aaeada200012bce3960920d9bf2874d954630db06a8badc771e9cc97e33137e",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Expression of Interest for a Novel Search for CP Violation in the Neutrino Sector: DAEdALUS",
+      "url": "https://arxiv.org/abs/1006.0260",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2010-06-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "High Power, High Energy Cyclotrons for Decay-At-Rest Neutrino Sources: The DAEdALUS Project",
+      "url": "https://arxiv.org/abs/1109.6861",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2011-09-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MIT Conrad Group, DAEdeltaALUS programme",
+      "url": "https://www2.lns.mit.edu/~conrad/daedalus.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

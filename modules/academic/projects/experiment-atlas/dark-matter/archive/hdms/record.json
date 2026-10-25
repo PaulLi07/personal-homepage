@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "hdms",
+  "name": "HDMS",
+  "full_name": "Heidelberg Dark Matter Search",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "HDMS was a historical WIMP experiment using concentric germanium crystals to reduce low-energy backgrounds. Heidelberg refers to the research team; the detector actually operated at LNGS.",
+  "physics_targets": [
+    "WIMP",
+    "Spin-dependent WIMPs"
+  ],
+  "detection_principle": "The inner germanium crystal is the primary target; the outer crystal vetoes multiply scattered photons. Low-energy ionization is recorded. The final detector replaced the inner crystal with enriched 73Ge.",
+  "technologies": [
+    "High-purity germanium ionization",
+    "Concentric germanium anticoincidence"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2002",
+    "evidence": "The 2002 final-configuration paper reports operation at LNGS; the shutdown date has not been verified.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "HDMS Collaboration",
+    "lead_institutions": [
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Core structure",
+      "value": "Two concentric Ge crystals in a single cryostat",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Final inner target",
+      "value": "Enriched 73Ge",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2002",
+      "summary": "Background performance and dark-matter searches with the final enriched-germanium configuration were reported.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "IGEX",
+    "CoGeNT"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/0008339",
+      "https://arxiv.org/abs/hep-ph/0206151"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/astro-ph/0008339",
+      "caption": "HDMS during installation at Gran Sasso with shielding open, showing inner copper and outer lead shielding (original paper, Figure 4).",
+      "credit": "H. V. Klapdor-Kleingrothaus et al. / HDMS collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/astro-ph/0008339",
+      "width": 900,
+      "height": 753,
+      "sha256": "88cb1ec162cf54fe6e3d2fee49cd1875e5b762cb199972b5811878ef99d8716a",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "dad456f4fee2ed177f0b7f407ce2eef9062384bf978692a3617183fa68798ef7",
+      "source_dimensions": {
+        "width": 900,
+        "height": 753
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/astro-ph/0008339",
+      "caption": "HDMS apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "HDMS Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "First Results from the Heidelberg Dark Matter Search Experiment",
+      "url": "https://arxiv.org/abs/astro-ph/0008339",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2000-08-22",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "First Results from the HDMS experiment in the Final Setup",
+      "url": "https://arxiv.org/abs/hep-ph/0206151",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2002-06-17",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

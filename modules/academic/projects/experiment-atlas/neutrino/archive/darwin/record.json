@@ -1,0 +1,167 @@
+{
+  "schema_version": "1.0",
+  "id": "darwin",
+  "name": "DARWIN",
+  "full_name": "DARk matter WImp search with liquid xenoN",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar",
+    "cevns",
+    "supernova"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "DARWIN is the historical large liquid-xenon observatory design for dark matter, solar and supernova neutrinos, and xenon-136 double-beta decay. Its collaboration helped form the larger XLZD programme; the two concepts must not be counted as two completed facilities.",
+  "physics_targets": [
+    "Double-beta and rare weak decays",
+    "Solar electron neutrinos",
+    "Coherent elastic neutrino-nucleus scattering",
+    "Core-collapse supernova neutrinos"
+  ],
+  "detection_principle": "A dual-phase xenon time projection chamber records prompt scintillation and delayed electroluminescence. Low backgrounds and a large isotope inventory enable electron-recoil, nuclear-recoil and rare-decay searches.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Full-scale detector site not selected in the cited design",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Full-scale detector site not selected in the cited design",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "site_not_selected"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2024-04-30",
+    "evidence": "Published DARWIN studies present neutrino and double-beta sensitivity forecasts. The subsequent DARWIN/XLZD development does not constitute an observed neutrinoless-decay signal.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DARWIN Collaboration",
+    "lead_institutions": [
+      "University of Zurich",
+      "University of Freiburg",
+      "Karlsruhe Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original active xenon design scale",
+      "value": "Approximately 40 tonnes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Double-beta isotope",
+      "value": "136Xe in natural xenon",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino channels",
+      "value": "Neutrino-electron scattering and coherent nuclear scattering",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024-04-30",
+      "summary": "Published DARWIN studies present neutrino and double-beta sensitivity forecasts. The subsequent DARWIN/XLZD development does not constitute an observed neutrinoless-decay signal.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "xlzd",
+    "xenon",
+    "lz-lux-zeplin"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2003.13407",
+      "https://arxiv.org/abs/2404.19524"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/pdf/1606.07001",
+      "caption": "Historical DARWIN observatory cross-section in its 2016 white paper (Fig. 2); a concept, including shielding options then under study.",
+      "credit": "DARWIN Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/1606.07001",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 621,
+      "height": 690,
+      "sha256": "cd821265be1b5cefbaf8b900775fdd21695080840872f8cc3764c3b84932dfc8",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Sensitivity of the DARWIN observatory to the neutrinoless double beta decay of 136Xe",
+      "url": "https://arxiv.org/abs/2003.13407",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-09-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DARWIN/XLZD: a future xenon observatory for dark matter and other rare interactions",
+      "url": "https://arxiv.org/abs/2404.19524",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "chandler",
+  "name": "CHANDLER",
+  "full_name": "Carbon Hydrogen AntiNeutrino Detector with a Lithium Enhanced Raghavan optical lattice",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CHANDLER develops a mobile segmented scintillator reactor-antineutrino detector. Its MiniCHANDLER demonstrator observed reactor neutrinos at North Anna, motivating an enlarged system for monitoring and compact detector studies.",
+  "physics_targets": [
+    "Mobile reactor-antineutrino detection",
+    "Reactor monitoring",
+    "Scintillator optical-lattice technology"
+  ],
+  "detection_principle": "Plastic scintillator cubes detect the positron from inverse beta decay, while lithium-6-loaded zinc-sulfide sheets capture the neutron. Total internal reflection channels light along the optical lattice and spatial topology separates signal from cosmic backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "North Anna nuclear power station",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "North Anna nuclear power station",
+      "latitude": 38.06,
+      "longitude": -77.789,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2025-05-08",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017-06",
+      "event": "MiniCHANDLER deployed to North Anna",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Reactor-antineutrino observation published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Expanded detector optics and electronics developments reported",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CHANDLER Collaboration",
+    "lead_institutions": [
+      "Virginia Tech"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "MiniCHANDLER baseline",
+      "value": "Approximately 25 m at North Anna",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "MiniCHANDLER lattice",
+      "value": "320 cubes arranged 8 × 8 × 5",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Expanded detector",
+      "value": "650 kg design under development in the 2025 dissertation",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "MiniCHANDLER demonstrated surface-level reactor-antineutrino detection; this is a prototype result rather than a completed 650 kg campaign.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "solid",
+    "nulat",
+    "songs"
+  ],
+  "resources": {
+    "official_website": "https://cnp.phys.vt.edu/chandler/",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevApplied.13.034028",
+      "https://vtechworks.lib.vt.edu/items/084d8660-308f-456b-834b-d6368b7bcd79"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://cnp.phys.vt.edu/chandler/",
+      "caption": "MiniCHANDLER prototype during assembly, showing its scintillator-cube optical lattice.",
+      "credit": "CHANDLER Collaboration / Virginia Tech",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://cnp.phys.vt.edu/chandler/MiniCHANDLER_Open.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 749,
+      "height": 509,
+      "sha256": "c740d3439f246418a7f1358600272f3dbbfd7382fbe31f07837d8d9d6c6cd880",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Virginia Tech: CHANDLER programme and MiniCHANDLER result",
+      "url": "https://cnp.phys.vt.edu/chandler/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CHANDLER Collaboration, Reactor antineutrinos with a rapidly deployable surface detector",
+      "url": "https://doi.org/10.1103/PhysRevApplied.13.034028",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "K. Walkup, CHANDLER detector upgrades dissertation",
+      "url": "https://vtechworks.lib.vt.edu/items/084d8660-308f-456b-834b-d6368b7bcd79",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-05-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

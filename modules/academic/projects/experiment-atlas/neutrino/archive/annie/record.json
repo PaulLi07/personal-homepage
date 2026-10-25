@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "id": "annie",
+  "name": "ANNIE",
+  "full_name": "Accelerator Neutrino Neutron Interaction Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "ANNIE measures neutrons released in accelerator-neutrino interactions on water and tests advanced optical neutrino-detector technology in Fermilab's Booster beam.",
+  "physics_targets": [
+    "Final-state neutron multiplicity in neutrino-oxygen interactions",
+    "Nuclear effects and energy reconstruction in oscillation experiments",
+    "Gadolinium-water, LAPPD and water-based liquid-scintillator detector development"
+  ],
+  "detection_principle": "Prompt Cherenkov light identifies the charged lepton, while delayed neutron capture on gadolinium produces detectable gamma cascades. A downstream muon range detector measures escaping muons; picosecond photosensors improve vertex and track reconstruction.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; Fermilab Booster neutrino beam",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Fermilab Booster neutrino beam",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2025-08",
+    "evidence": "The 2025 LAPPD publication and official overview document the implemented Phase II programme.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Phase I neutron-background programme completed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Phase II physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023-03",
+      "event": "SANDI vessel deployed",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANNIE Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target",
+      "value": "26-ton gadolinium-loaded water tank",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino source",
+      "value": "Fermilab Booster Neutrino Beam; muon neutrinos at sub-GeV to GeV energies",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scintillator test",
+      "value": "366-litre SANDI water-based liquid-scintillator vessel",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025-08",
+      "summary": "Reported the first beam-neutrino observations using a large-area picosecond photodetector.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2023-12",
+      "summary": "Demonstrated simultaneous Cherenkov and scintillation-light detection from the deployed WbLS volume.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "sciboone",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://annie.fnal.gov/",
+    "publication_links": [
+      "https://arxiv.org/abs/2508.11111",
+      "https://arxiv.org/abs/2312.09335"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/2508.11111#page=5",
+      "caption": "ANNIE detector arrangement with gadolinium-loaded water, LAPPD and muon-range systems.",
+      "credit": "ANNIE Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2508.11111",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 481,
+      "height": 353,
+      "sha256": "c882f816fc219ca58869304f9faeaf5d74efdfe00772c73685d0bc82e23d5b9b",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ANNIE Collaboration, experiment overview",
+      "url": "https://annie.fnal.gov/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ANNIE Collaboration, First Light from Beam Neutrinos on an LAPPD in ANNIE",
+      "url": "https://arxiv.org/abs/2508.11111",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "ANNIE Collaboration, Deployment of Water-based Liquid Scintillator in ANNIE",
+      "url": "https://arxiv.org/abs/2312.09335",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-12-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

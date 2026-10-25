@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "lsnd",
+  "name": "LSND",
+  "full_name": "Liquid Scintillator Neutrino Detector",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "LSND operated at LAMPF/LANSCE, Los Alamos National Laboratory, New Mexico. Its dark-matter role in this record primarily comes from later theoretical reinterpretations of a historical neutrino experiment.",
+  "physics_targets": [
+    "MeV light dark matter (historical-data reinterpretation)",
+    "Higgs-portal scalars"
+  ],
+  "detection_principle": "Data from the original neutrino detector test electron scattering of beam-associated dark matter and visible light-scalar decays; acceptance and backgrounds must be recalculated for new production and detection models.",
+  "technologies": [
+    "Liquid-scintillation/Cherenkov detection",
+    "PMT",
+    "Proton beam"
+  ],
+  "sites": [
+    {
+      "name": "Los Alamos National Laboratory, LAMPF/LANSCE, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Los Alamos National Laboratory, LAMPF/LANSCE, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "This record includes dark-sector reinterpretations of historical data in 2011 and 2020",
+    "as_of": "2011",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2011",
+      "event": "This record includes dark-sector reinterpretations of historical data in 2011 and 2020",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LSND Collaboration / project team",
+    "lead_institutions": [
+      "Los Alamos National Laboratory"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Model-study scope",
+      "value": "The 2011 paper discusses MeV-scale dark matter produced through a kinetically mixed vector mediator",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "LSND",
+      "status": "completed",
+      "description": "This record includes dark-sector reinterpretations of historical data in 2011 and 2020"
+    }
+  ],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "Studies of historical LSND samples constrain part of MeV-dark-matter parameter space, without new data-taking.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "date": "2020",
+      "summary": "Historical data were further used to constrain light Higgs-portal scalars.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "MiniBooNE-DM",
+    "CCM"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1107.4580",
+      "https://arxiv.org/abs/2004.14515"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://hep.phys.lsu.edu/lsnd/lsnd.html",
+      "caption": "Interior of the LSND detector at Los Alamos, showing the inner photomultiplier array.",
+      "credit": "LSND / Louisiana State University source page; no separate photographer credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://hep.phys.lsu.edu/lsnd/bolton.jpg",
+      "width": 842,
+      "height": 768,
+      "sha256": "f4e3495cc86738ac6439464d830703f2cff44ccbabe7cf1cabe8587f90c1be2a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1107.4580",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Observing a light dark matter beam with neutrino experiments",
+      "url": "https://arxiv.org/abs/1107.4580",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2013-08-14",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "LSND Constraints on the Higgs Portal",
+      "url": "https://arxiv.org/abs/2004.14515",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-06-12",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle",
+      "cherenkov_airshower"
+    ]
+  }
+}

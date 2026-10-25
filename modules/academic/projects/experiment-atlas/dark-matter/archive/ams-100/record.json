@@ -1,0 +1,193 @@
+{
+  "schema_version": "1.0",
+  "id": "ams-100",
+  "name": "AMS-100",
+  "full_name": "Alpha Magnetic Spectrometer 100 concept",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "AMS-100 is a high-acceptance space cosmic-ray and antimatter observatory concept for a proposed Sun–Earth L2 orbit. Its name must not be interpreted as an approved AMS-02 upgrade.",
+  "physics_targets": [
+    "Antiparticles from dark-matter annihilation / decay",
+    "Antiprotons",
+    "Antideuterons / antihelium",
+    "Positrons",
+    "Gamma rays"
+  ],
+  "detection_principle": "A high-acceptance superconducting magnetic spectrometer measures charge sign, rigidity and species of charged cosmic rays, combining deep calorimetry for antiparticles and gamma rays to test rare antimatter components related to dark matter.",
+  "technologies": [
+    "High-temperature superconducting solenoid",
+    "Silicon tracking",
+    "Scintillating fibers",
+    "LYSO calorimeter",
+    "Time of flight"
+  ],
+  "sites": [
+    {
+      "name": "Proposed Sun–Earth L2 orbit",
+      "country": "Space / international project",
+      "country_code": null,
+      "location": "Proposed Sun–Earth L2 orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "2019 concept design followed by 2022 magnet, fiber and TOF prototype reports; approval for launch has not been established",
+    "as_of": "2022-07",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022-07",
+      "event": "2019 concept design followed by 2022 magnet, fiber and TOF prototype reports; approval for launch has not been established",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMS-100 Collaboration / project team",
+    "lead_institutions": [
+      "RWTH Aachen University",
+      "AMS-100 project team"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design geometrical acceptance",
+      "value": "100 m² sr",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Design magnetic field and maximum detectable rigidity",
+      "value": "1 T; 100 TV, silicon-tracker design",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Design mission lifetime",
+      "value": "At least 10 years at Sun–Earth L2",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMS-100",
+      "status": "research_development",
+      "description": "2019 concept design followed by 2022 magnet, fiber and TOF prototype reports; approval for launch has not been established"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Key-component prototype-development performance has been published; no space dark-matter observations by AMS-100 yet.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "AMS-02",
+    "ALADInO"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1907.04168",
+      "https://www1b.physik.rwth-aachen.de/~kirn/papers/kirn_AMS-100-VCI-NIM.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/1907.04168",
+      "caption": "Conceptual AMS-100 space magnetic spectrometer, showing the superconducting magnet, tracking system and other subsystems; a proposal illustration.",
+      "credit": "AMS-100 paper authors / collaboration, original Figure 1",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/1907.04168v1/figures/AMS100_Concept_small.jpg",
+      "width": 936,
+      "height": 699,
+      "sha256": "202c81fbac1a1e85900ba779e6de00f77ba41b865a829fa8a974041e6ca8ead2",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1907.04168",
+      "caption": "Source page for original research / design documents and figures; design drawings do not establish that an instrument has been built.",
+      "credit": "See the paper authors, collaboration and figure caption",
+      "reuse_status": "Individual reuse permission remains to be verified; no image was downloaded for this entry"
+    }
+  ],
+  "sources": [
+    {
+      "title": "AMS-100: The Next Generation Magnetic Spectrometer in Space",
+      "url": "https://arxiv.org/abs/1907.04168",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2019-07-09",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "The AMS-100 experiment: the next generation magnetic spectrometer in space",
+      "url": "https://www1b.physik.rwth-aachen.de/~kirn/papers/kirn_AMS-100-VCI-NIM.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022-07-14",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "lux",
+  "name": "LUX",
+  "full_name": "Large Underground Xenon",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "LUX was a low-background liquid-xenon WIMP-search experiment at SURF. Its completed observations and technology laid the foundation for its successor LZ.",
+  "physics_targets": [
+    "WIMP nuclear scattering"
+  ],
+  "detection_principle": "Dual-phase xenon S1/S2 signals measure nuclear recoils; position reconstruction and electron-recoil discrimination reduce backgrounds.",
+  "technologies": [
+    "Dual-phase liquid-xenon TPC",
+    "Photomultiplier tubes"
+  ],
+  "sites": [
+    {
+      "name": "SURF",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Sanford Underground Research Facility, Lead, South Dakota",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2016-07-21",
+    "evidence": "The Berkeley Lab announcement reports the final 20 months of running data. Data taking ended in May 2016.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "First underground science run",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "date": "2014-10—2016-05",
+      "event": "Final main data collection",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LUX Collaboration",
+    "lead_institutions": [
+      "Brown University",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Final main exposure",
+      "value": "3.35×10^4 kg·day",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "The full exposure was compatible with background, yielding limits on spin-independent WIMP–nucleon scattering.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "LZ",
+    "ZEPLIN"
+  ],
+  "resources": {
+    "official_website": "https://newscenter.lbl.gov/2016/07/21/worlds-sensitive-dark-matter-detector-completes-search/",
+    "publication_links": [
+      "https://arxiv.org/abs/1608.07648"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://sanfordlab.org/experiments/lux",
+      "caption": "The LUX photomultiplier array mounted within its white PTFE reflector structure.",
+      "credit": "Sanford Underground Research Facility / LUX collaboration; the page names no individual photographer.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://sanfordlab.org/sites/default/files/styles/small_768w_284h/public/images/hero/120329_LUX-detector_0056-1.jpg.webp?itok=-Vm3dEA9",
+      "width": 768,
+      "height": 284,
+      "sha256": "5bb55f2d504d079d8c7c2a4f9af86045fb5209f50eadb5d0a014c183e2901073",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://newscenter.lbl.gov/2016/07/21/worlds-sensitive-dark-matter-detector-completes-search/",
+      "caption": "LUX apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "LUX Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "World’s Most Sensitive Dark Matter Detector Completes Search",
+      "url": "https://newscenter.lbl.gov/2016/07/21/worlds-sensitive-dark-matter-detector-completes-search/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2016-07-21",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Results from a search for dark matter in the complete LUX exposure",
+      "url": "https://arxiv.org/abs/1608.07648",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016-08-27",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid"
+    ]
+  }
+}

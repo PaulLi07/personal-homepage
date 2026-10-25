@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "spt",
+  "name": "SPT",
+  "full_name": "South Pole Telescope",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "South Pole millimeter-wave telescope using CMB, galaxy-cluster and lensing measurements to study dark-matter structure; SPT-3G also studies time-varying birefringence from ultralight axions.",
+  "physics_targets": [
+    "Dark-matter distribution",
+    "Ultralight axion dark matter"
+  ],
+  "detection_principle": "An off-axis reflecting telescope and cryogenic multifrequency detectors measure CMB temperature and polarization, reconstruct lensing and test time-dependent polarization angles.",
+  "technologies": [
+    "Cryogenic millimeter-wave cameras",
+    "CMB polarization",
+    "CMB lensing"
+  ],
+  "sites": [
+    {
+      "name": "Amundsen–Scott South Pole Station",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Amundsen–Scott South Pole Station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2025",
+    "evidence": "2025 collaboration science plan and data results; subsequent observing status follows the website.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "SPT collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Telescope aperture",
+      "value": "10 m",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Representative frequency bands",
+      "value": "About 90, 150 and 220 GHz",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SPT-SZ",
+      "status": "implemented",
+      "description": "Early camera"
+    },
+    {
+      "name": "SPTpol",
+      "status": "implemented",
+      "description": "Polarization phase"
+    },
+    {
+      "name": "SPT-3G",
+      "status": "operating",
+      "description": "Third-generation multifrequency polarization camera"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "SPT-3G tests axion-like dark matter through time-varying cosmic birefringence.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "ACT",
+    "Planck",
+    "DES"
+  ],
+  "resources": {
+    "official_website": "https://pole.uchicago.edu/public/News.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://pole.uchicago.edu/public/Home.html",
+      "caption": "Daytime photograph of the South Pole Telescope (SPT) at the South Pole station, showing its 10 m reflector, support structure and adjacent work buildings.",
+      "credit": "South Pole Telescope Collaboration; no individual photographer is listed on the source page",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://pole.uchicago.edu/public/Home/3d992719948542c125d04c0a10303f7f.jpg",
+      "width": 1920,
+      "height": 1440,
+      "sha256": "ed8d821f1fc3460a55ca615e8a236a242d1d3cd729a730f39245dd31a00acfb5",
+      "mime_type": "image/webp",
+      "source_sha256": "0ae857cc1a2cb5bf498b1c6779b6c49b158179e4d99e8ad9999d693a2880e1eb",
+      "source_dimensions": {
+        "width": 4000,
+        "height": 3000
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://pole.uchicago.edu/public/News.html",
+      "caption": "SPT project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://pole.uchicago.edu/public/News.html",
+      "title": "SPT science highlights",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://pole.uchicago.edu/spt/hep_summary_dmp/Summary%20for%20HEP%20of%20Data%20Management%20Principles%20%28SPT%29.pdf",
+      "title": "SPT Data Management Principles",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "optical_survey",
+      "quantum_sensor"
+    ]
+  }
+}

@@ -1,0 +1,185 @@
+{
+  "schema_version": "1.0",
+  "id": "cast",
+  "name": "CAST",
+  "full_name": "CERN Axion Solar Telescope",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A Sun-tracking axion telescope using a retired LHC test magnet and X-ray detectors, and an important technological precursor to IAXO.",
+  "physics_targets": [
+    "Solar axions",
+    "ALP"
+  ],
+  "detection_principle": "Solar axions convert to X-rays through the inverse Primakoff effect in a Sun-pointing magnet bore, followed by focusing and low-background detection.",
+  "technologies": [
+    "Superconducting dipole magnets",
+    "X-ray optics",
+    "Micromegas",
+    "Solar tracking"
+  ],
+  "sites": [
+    {
+      "name": "CERN，Meyrin",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN，Meyrin",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "A new upper limit on the axion-photon coupling with an extended CAST run with a Xe-based Micromegas detector",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CAST Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Apparatus",
+      "value": "Approximately 9 T, 10 m magnet",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Applicability of 2024 limit",
+      "value": "Axion mass below approximately 0.02 eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Vacuum and buffer-gas solar searches",
+      "status": "results_published",
+      "description": "Different gas densities cover different mass intervals."
+    },
+    {
+      "name": "Later low-background detector runs",
+      "status": "results_published",
+      "description": "An extended dataset was published in 2024."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Extended exposure found no signal; the 2024 analysis sets g_aγ < 5.8×10⁻¹¹ GeV⁻¹ (95% CL).",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [
+    "IAXO",
+    "BabyIAXO",
+    "CAST-CAPP",
+    "RADES"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/cast/",
+    "publication_links": [
+      "https://arxiv.org/abs/2406.16840"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/cast/",
+      "caption": "The CAST solar-axion telescope's magnet and Sun-tracking support, from CERN's experiment page.",
+      "credit": "CERN; the source page provides no separate photographer name.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://home.cern/wp-content/uploads/2026/03/cast_2.jpg.webp",
+      "width": 1440,
+      "height": 938,
+      "sha256": "3130ba6fdd30c101e385b8d08f85116bc1e1def8826fe7fb02c86eccaaadc447",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2406.16840",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "CAST Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A new upper limit on the axion-photon coupling with an extended CAST run with a Xe-based Micromegas detector",
+      "url": "https://arxiv.org/abs/2406.16840",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CERN CAST experiment overview",
+      "url": "https://home.cern/science/experiments/cast/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas_tpc",
+      "photon_telescope"
+    ]
+  }
+}

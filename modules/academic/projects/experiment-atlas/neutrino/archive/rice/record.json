@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "rice",
+  "name": "RICE",
+  "full_name": "Radio Ice Cherenkov Experiment",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A pioneering in-ice radio experiment at the South Pole used Antarctic ice to search for ultra-high-energy neutrino showers and establish techniques later adopted by ARA.",
+  "physics_targets": [
+    "Diffuse neutrinos above 100 PeV",
+    "Radio attenuation, reflection and propagation in polar ice"
+  ],
+  "detection_principle": "Buried dipole antennas measured impulsive radio Cherenkov emission from the net charge in a neutrino-induced shower. Coincident waveforms and reconstructed vertices were used to suppress noise.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; South Pole ice",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; South Pole ice",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The final major exposure is explicitly 1999–2010; ARA is identified as the succeeding initiative.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1995–1998",
+      "event": "Early antennas deployed in association with AMANDA boreholes.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "1999",
+      "event": "First-generation RICE programme began.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2011–2012",
+      "event": "Final twelve-year search published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RICE Collaboration",
+    "lead_institutions": [
+      "University of Kansas",
+      "University of Delaware"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original sensor array",
+      "value": "20 dipole antennas in a three-dimensional in-ice grid",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Published exposure period",
+      "value": "1999–2010",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Technique",
+      "value": "Radio-frequency Askaryan emission in ice",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "No convincing neutrino candidates were found in the twelve-year exposure; 95% confidence flux limits and ice-property studies were published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "ara",
+    "amanda"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1106.1164",
+      "https://www.sciencedirect.com/science/article/abs/pii/S016890021002454X"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://arxiv.org/abs/1106.1164",
+      "caption": "Three-dimensional layout of the RICE in-ice radio antennas.",
+      "credit": "RICE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/1106.1164v2/viewer.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 515,
+      "height": 885,
+      "sha256": "186bdcc958ac146076d64ad7fcb1521a3a954af0f3ad7ae3f16e56c50573d5cc",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "RICE Collaboration, updated results and future prospects",
+      "url": "https://arxiv.org/abs/1106.1164",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "RICE Collaboration, Recent results from the RICE experiment at the South Pole",
+      "url": "https://www.sciencedirect.com/science/article/abs/pii/S016890021002454X",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

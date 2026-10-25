@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "ara",
+  "name": "ARA",
+  "full_name": "Askaryan Radio Array",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "An array of deep radio stations near the South Pole searches for ultra-high-energy neutrinos interacting in Antarctic ice.",
+  "physics_targets": [
+    "Cosmogenic and astrophysical neutrinos above tens of PeV",
+    "In-ice radio detection and reconstruction"
+  ],
+  "detection_principle": "Antennas buried in boreholes detect coherent Askaryan emission from particle cascades. Timing across a station reconstructs a radio source and rejects surface and instrumental backgrounds; a phased-array trigger has also been deployed.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; ice near the South Pole",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; ice near the South Pole",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "The physical station array is implemented and recent papers analyse its recorded exposures; uninterrupted 2026 operation is not inferred from the old homepage.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010–2011",
+      "event": "Testbed deployment established the programme.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2012–2018",
+      "event": "Deep stations and a phased-array system deployed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Progress toward the first array-wide diffuse-neutrino search reported; the fully analysed sample was still in development.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ARA Collaboration",
+    "lead_institutions": [
+      "University of Wisconsin–Madison",
+      "University of Kansas",
+      "Pennsylvania State University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "Five autonomous stations with approximately 2 km spacing",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Antenna depth",
+      "value": "Up to approximately 200 m",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Main search scale",
+      "value": "Ultra-high energies, typically above 10–100 PeV depending on station and analysis",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The cited contribution describes an ongoing array-wide search using approximately 28 station-years. Its projected sensitivity and progress toward a fully analysed sample are not a completed unblinded flux measurement or a neutrino discovery.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "rice",
+    "rno-g",
+    "icecube-gen2"
+  ],
+  "resources": {
+    "official_website": "https://ara.wipac.wisc.edu/home",
+    "publication_links": [
+      "https://arxiv.org/abs/2509.16414"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://arxiv.org/abs/2509.16414",
+      "caption": "ARA station geometry with phased-array trigger antennas and standard deep antennas.",
+      "credit": "ARA Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2509.16414v1/ARA5layout.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1670,
+      "sha256": "ba764e95cc01e0d6a5d3a933008d5a1abf18f77bbc71d075ba4eebaa9c49fa85",
+      "mime_type": "image/webp",
+      "source_sha256": "4ca3af03a1775e57837bff8633949e105a777266de387d365b3e71dfbc4193ba",
+      "source_dimensions": {
+        "width": 2021,
+        "height": 1758
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ARA Collaboration, project description",
+      "url": "https://ara.wipac.wisc.edu/home",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ARA Collaboration, first array-wide search for diffuse UHE neutrinos",
+      "url": "https://arxiv.org/abs/2509.16414",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The project homepage retains early construction language. Recent collaboration analyses establish the five-station dataset, but not a complete current station-by-station uptime inventory."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

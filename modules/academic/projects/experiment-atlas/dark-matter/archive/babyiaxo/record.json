@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "babyiaxo",
+  "name": "BabyIAXO",
+  "full_name": "Baby International Axion Observatory",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An intermediate-scale IAXO instrument that validates subsystems while providing an independent solar-axion search capability.",
+  "physics_targets": [
+    "Solar axions",
+    "ALP",
+    "Subsequent Galactic-axion cavity concepts"
+  ],
+  "detection_principle": "A Sun-tracking magnet converts axions to X-rays, read out by two focusing-optics and low-background detection chains.",
+  "technologies": [
+    "Superconducting magnets",
+    "X-ray optics",
+    "Micromegas",
+    "Solar tracking"
+  ],
+  "sites": [
+    {
+      "name": "DESY, Hamburg (construction / planned site)",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "DESY, Hamburg (construction / planned site)",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-09-07",
+    "evidence": "Zaragoza CAPA's official page reports DFG approval of magnet-construction funding; the magnet is intended for BabyIAXO at DESY.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "Conceptual Design of BabyIAXO, the intermediate stage towards the International Axion Observatory",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BabyIAXO Collaboration / project team",
+    "lead_institutions": [
+      "DESY",
+      "University of Zaragoza",
+      "University of Bonn"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Conceptual design",
+      "value": "Two magnet bores, each 10 m long and 70 cm in diameter",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Projected sensitivity",
+      "value": "g_aγ approximately 1.5×10⁻¹¹ GeV⁻¹; mass reach can extend to approximately 0.25 eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "The conceptual design sets detection targets; official 2026 updates show funding for the key magnet, rather than the start of solar data-taking.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [
+    "IAXO",
+    "CAST",
+    "RADES"
+  ],
+  "resources": {
+    "official_website": "https://capa.unizar.es/a-la-caza-del-axion-con-un-iman-gigante/",
+    "publication_links": [
+      "https://arxiv.org/abs/2010.12076"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2010.12076",
+      "caption": "Overall BabyIAXO CAD design: magnet, X-ray telescopes, detectors, support and tracking platform (Fig. 5, 2020 design paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2010.12076v3/pics/BabyIAXO_overall.PNG",
+      "width": 1116,
+      "height": 807,
+      "sha256": "4542a6a2c72c428a15ad041c550c94e2299141b2752ba166ac843e4a0d5ddc7d",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2010.12076",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "BabyIAXO Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Conceptual Design of BabyIAXO, the intermediate stage towards the International Axion Observatory",
+      "url": "https://arxiv.org/abs/2010.12076",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "A la caza del axión con un imán gigante",
+      "url": "https://capa.unizar.es/a-la-caza-del-axion-con-un-iman-gigante/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-07",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas_tpc",
+      "photon_telescope"
+    ]
+  }
+}

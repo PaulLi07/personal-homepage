@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "candles",
+  "name": "CANDLES",
+  "full_name": "CAlcium fluoride for studies of Neutrino and Dark matters by Low Energy Spectrometer",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CANDLES studies calcium-48 double-beta decay in calcium-fluoride scintillators at Kamioka. The isotope has a high decay energy, helping separate a possible signal from much of the natural gamma background.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Pure CaF2 crystals act as source and scintillator. Surrounding liquid scintillator provides an active veto, while pulse shapes and event timing reject internal radioactive sequences.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground at Kamioka",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground at Kamioka",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2021",
+    "evidence": "The CANDLES-III analysis reported a low-background search and a half-life constraint, rather than an observed neutrinoless decay.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CANDLES Collaboration",
+    "lead_institutions": [
+      "Osaka University Research Center for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "CANDLES-III crystals",
+      "value": "96 CaF2 crystals; 305 kg total",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "48Ca inventory",
+      "value": "Approximately 350 g in natural calcium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate Q value",
+      "value": "About 4.27 MeV",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The CANDLES-III analysis reported a low-background search and a half-life constraint, rather than an observed neutrinoless decay.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "elegant"
+  ],
+  "resources": {
+    "official_website": "https://www.rcnp.osaka-u.ac.jp/candles/",
+    "publication_links": [
+      "https://arxiv.org/abs/2008.09288"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/candles/",
+      "caption": "CANDLES-III detector configuration, with calcium-fluoride scintillators used as the calcium-48 source and detector.",
+      "credit": "CANDLES Collaboration / Osaka University RCNP",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www.rcnp.osaka-u.ac.jp/candles/image/candles_candlesiii.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 302,
+      "height": 321,
+      "sha256": "186fc7bf6ff9d610b23fc7b95e4dead4970b75d9f20c8388c4334748e63ccec4",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CANDLES: official experiment / institutional overview",
+      "url": "https://www.rcnp.osaka-u.ac.jp/candles/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Low background measurement in CANDLES-III for studying the neutrinoless double beta decay of 48Ca",
+      "url": "https://arxiv.org/abs/2008.09288",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

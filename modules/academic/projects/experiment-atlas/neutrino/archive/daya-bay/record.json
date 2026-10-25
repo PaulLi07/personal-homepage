@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "id": "daya-bay",
+  "name": "Daya Bay",
+  "full_name": "Daya Bay Reactor Neutrino Experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Daya Bay compared reactor-antineutrino rates and spectra in multiple near and far detector halls in southern China. It discovered a nonzero theta13 and delivered a precise measurement of this mixing angle from its full data set.",
+  "physics_targets": [
+    "Theta13",
+    "Effective atmospheric mass splitting",
+    "Reactor spectra and isotope-dependent yields",
+    "Sterile-neutrino constraints"
+  ],
+  "detection_principle": "Nominally identical gadolinium-loaded liquid-scintillator modules identify inverse beta decay using prompt positron light and delayed neutron-capture gamma rays. Near detectors constrain the emitted flux, while far detectors measure oscillation-induced disappearance.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; underground experimental halls near the Daya Bay and Ling Ao nuclear power plants, Shenzhen, Guangdong",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; underground experimental halls near the Daya Bay and Ling Ao nuclear power plants, Shenzhen, Guangdong",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2020",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2011",
+      "event": "Data taking began",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2012-03",
+      "event": "Nonzero theta13 discovery reported",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "Data taking completed",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Full-dataset oscillation result announced",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Daya Bay Collaboration",
+    "lead_institutions": [
+      "Institute of High Energy Physics, Chinese Academy of Sciences",
+      "Lawrence Berkeley National Laboratory",
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector configuration",
+      "value": "Eight antineutrino modules in three halls in the final configuration",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Target per module",
+      "value": "Approximately 20 tonnes Gd-loaded liquid scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Full exposure",
+      "value": "3,158 days and approximately 5.55 million nGd IBD candidates",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The full sample improved the precision of theta13 and the effective atmospheric mass splitting; the final result uses the complete 2011–2020 campaign.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "juno",
+    "reno",
+    "double-chooz"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/newsroom/news.php?a=119583",
+    "publication_links": [
+      "https://arxiv.org/abs/2211.14988",
+      "https://arxiv.org/abs/1203.1669"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "presentation_slide",
+      "source_url": "https://www.bnl.gov/newsroom/news.php?a=119583",
+      "caption": "Antineutrino detectors in the far hall water pool (during installation)",
+      "credit": "Scientific presentation reproduced in the supplied neutrino-map source; original figure credits retained.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/legacy-082.jpg",
+      "original_url": "https://www.bnl.gov/newsroom/news.php?a=119583",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1000,
+      "height": 665,
+      "sha256": "af072f7c5e3988acdf572fa6d8b06a5a983d45cc21b092962d693ff0c68cb97d",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Brookhaven Lab: First results from Daya Bay final dataset",
+      "url": "https://www.bnl.gov/newsroom/news.php?a=119583",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2022-05-31",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Daya Bay Collaboration, Precision measurement with the full dataset",
+      "url": "https://arxiv.org/abs/2211.14988",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-11-28",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Daya Bay Collaboration, Observation of electron-antineutrino disappearance",
+      "url": "https://arxiv.org/abs/1203.1669",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012-03-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,210 @@
+{
+  "schema_version": "1.0",
+  "id": "cuore",
+  "name": "CUORE",
+  "full_name": "Cryogenic Underground Observatory for Rare Events",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CUORE is a large cryogenic array searching for tellurium-130 neutrinoless double-beta decay at Gran Sasso. Its unsegmented crystal calorimeters also measure two-neutrino decay and other rare processes.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "TeO2 crystals operated near 10 mK convert deposited energy into a small temperature rise. Thermistors measure the heat pulses; anticoincidence between crystals suppresses events depositing energy at several locations.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso underground laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-06",
+    "evidence": "The CUORE neutrinoless-double-beta data-taking programme ended on 9 June 2026. INFN reported the completed scientific programme and its 5 October celebration after reaching 3 tonne-years of crystal exposure.",
+    "source_ids": [
+      "s4",
+      "s5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-06-09",
+      "event": "Completed the neutrinoless-double-beta data-taking programme.",
+      "source_ids": [
+        "s5"
+      ]
+    },
+    {
+      "date": "2026-10-05",
+      "event": "Celebrated the completed scientific programme after 3 tonne-years of crystal exposure.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CUORE Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory",
+      "University of Milano-Bicocca",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector array",
+      "value": "988 TeO2 crystals in 19 towers",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Crystal mass",
+      "value": "About 742 kg of TeO2",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Operating temperature",
+      "value": "Approximately 10 mK",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "Physics operation began in 2017; published searches constrain the 130Te neutrinoless-decay half-life.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cuoricino",
+    "cupid"
+  ],
+  "resources": {
+    "official_website": "https://cuore.lngs.infn.it/",
+    "publication_links": [
+      "https://www.nature.com/articles/s41586-022-04497-4"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.infn.it/cuore-completa-il-programma-scientifico-e-apre-una-nuova-frontiera-nella-ricerca-sui-neutrini/",
+      "caption": "CUORE cryogenic detector assembly, published by INFN in its report on the completed scientific programme.",
+      "credit": "CUORE Collaboration / INFN",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.jpg",
+      "original_url": "https://www.infn.it/wp-content/uploads/2022/02/womeninscience_2022_cuore.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1200,
+      "height": 667,
+      "sha256": "e108aaa507e5997c3f0c5586fe45b7c022a66e5c997242a78d8aca320a751f93",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CUORE: official experiment / institutional overview",
+      "url": "https://cuore.lngs.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CUORE Collaboration: apparatus and scientific results",
+      "url": "https://cuore.lngs.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Search for Majorana neutrinos exploiting millikelvin cryogenics with CUORE",
+      "url": "https://www.nature.com/articles/s41586-022-04497-4",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-04-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "CUORE completes its scientific programme and opens a new frontier in neutrino research",
+      "url": "https://www.infn.it/cuore-completa-il-programma-scientifico-e-apre-una-nuova-frontiera-nella-ricerca-sui-neutrini/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-10-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "CUORE results and programme completion: Neutrino 2026 collaboration report",
+      "url": "https://indico.global/event/15740/contributions/155607/attachments/72745/140998/MonicaSisti_CUORE_Neutrino2026.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer"
+    ],
+    "technology_tags": [
+      "bolometer"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,263 @@
+{
+  "schema_version": "1.0",
+  "id": "rno-g",
+  "name": "RNO-G",
+  "full_name": "Radio Neutrino Observatory in Greenland",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "RNO-G is a radio-neutrino observatory in the Greenland ice at Summit Station. Its dark-matter role derives from ultrahigh-energy neutrino physics and future model tests.",
+  "physics_targets": [
+    "Neutrinos from superheavy dark-matter decay",
+    "Dark-matter–neutrino interactions",
+    "Ultrahigh-energy neutrinos"
+  ],
+  "detection_principle": "Detects Askaryan radio pulses from neutrino-induced cascades in ice. Deep phased-array triggering and shallow antennas jointly reconstruct directions and reject surface backgrounds.",
+  "technologies": [
+    "In-ice radio antennas",
+    "Phased-array triggering",
+    "Shallow and deep stations",
+    "Autonomous power"
+  ],
+  "sites": [
+    {
+      "name": "Summit Station, Greenland ice sheet",
+      "country": "Greenland, Kingdom of Denmark",
+      "country_code": "GRL",
+      "location": "Summit Station, Greenland ice sheet",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "8 autonomous stations operating; construction of the full 35-station array continues",
+    "as_of": "2026-06-08",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-06-08",
+      "event": "8 autonomous stations operating; construction of the full 35-station array continues",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RNO-G Collaboration / project team",
+    "lead_institutions": [
+      "RNO-G Collaboration"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Operating / planned station counts",
+      "value": "8 stations in June 2026; full target 35 stations",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "name": "Target neutrino-energy range",
+      "value": "Above about 10¹⁶ eV; the energy threshold depends on the analysis",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "name": "Deep-antenna deployment depth",
+      "value": "Up to about 100 m",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Initial RNO-G array",
+      "status": "operating",
+      "description": "Deployment began in 2021; 8 stations confirmed in June 2026"
+    },
+    {
+      "name": "Full 35-station RNO-G",
+      "status": "construction",
+      "description": "Expansion continues; projected deployment schedules do not establish full completion"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Studies cosmic-ray, solar-flare, aircraft and other backgrounds, alongside full-array neutrino searches; no dark-matter discovery claimed.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "date": "2023",
+      "summary": "Model studies forecast RNO-G constraints on ultrahigh-energy neutrinos from heavy dark-matter decay.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "GRAND",
+    "IceCube-Gen2",
+    "ARA",
+    "ARIANNA"
+  ],
+  "resources": {
+    "official_website": "https://www.rno-g.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2010.12279",
+      "https://arxiv.org/abs/2103.03254",
+      "https://pos.sissa.it/444/1485/pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/2010.12279",
+      "caption": "Deployment design for one RNO-G station, showing in-ice antenna strings and surface antennas.",
+      "credit": "RNO-G Collaboration design paper, arXiv:2010.12279",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/2010.12279v5/figures/RNO-G_Figure_v7_122220.jpg",
+      "width": 1111,
+      "height": 1491,
+      "sha256": "7838a1dc9bb3e5fceb057ec89f906422bbd19b57f9020f44a544db4d92845fb2",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.rno-g.org/",
+      "caption": "RNO-G Greenland-site and instrument-photograph source page",
+      "credit": "RNO-G Collaboration",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "RNO-G official collaboration site",
+      "url": "https://www.rno-g.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Design and Sensitivity of the Radio Neutrino Observatory in Greenland",
+      "url": "https://arxiv.org/abs/2010.12279",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2024-07-30",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "RNO-G status update at ARENA 2026",
+      "url": "https://indico.kit.edu/event/5380/contributions/22645/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-06-08",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Heavy decaying dark matter at future neutrino radio telescopes",
+      "url": "https://arxiv.org/abs/2103.03254",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-05-31",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    },
+    {
+      "title": "Multimessenger Potential of RNO-G",
+      "url": "https://pos.sissa.it/444/1485/pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S5"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GRL"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower",
+      "radio"
+    ]
+  }
+}

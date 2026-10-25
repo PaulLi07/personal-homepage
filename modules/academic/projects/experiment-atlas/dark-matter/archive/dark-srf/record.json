@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "dark-srf",
+  "name": "Dark SRF",
+  "full_name": "Dark SRF superconducting radio-frequency cavity search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A high-Q microwave light-shining-through-a-wall search for dark-photon mixing using two superconducting radio-frequency cavities.",
+  "physics_targets": [
+    "Dark photons",
+    "Dark-sector vector bosons"
+  ],
+  "detection_principle": "The emitting cavity drives a dark-photon field through a barrier to regenerate in a receiving cavity; high Q enhances the stored field and weak received signal.",
+  "technologies": [
+    "Superconducting radio-frequency cavities",
+    "Microwave light shining through a wall",
+    "Cryogenic readout"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab，Batavia",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab，Batavia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "New Exclusion Limit for Dark Photons from an SRF Cavity-Based Search (Dark SRF)",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Dark SRF Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Operating frequencies",
+      "value": "1.3 GHz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Masses covered in this run",
+      "value": "2.1×10⁻⁷–5.7×10⁻⁶ eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Prototype operation set kinetic-mixing limits as low as approximately 1.6×10⁻⁹.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [
+    "CROWS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2301.11512"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2301.11512",
+      "caption": "Photograph of the two superconducting radio-frequency cavities assembled for Dark SRF (left panel of Fig. 1, 2023 first-search paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2301.11512v1/DarkSRF_real.png",
+      "width": 276,
+      "height": 704,
+      "sha256": "03ec7091e2a8ffe4e119c3703a332a94f5014b751b1a45db0a56e6ec3a63aef1",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2301.11512",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "Dark SRF Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New Exclusion Limit for Dark Photons from an SRF Cavity-Based Search (Dark SRF)",
+      "url": "https://arxiv.org/abs/2301.11512",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

@@ -1,0 +1,171 @@
+{
+  "schema_version": "1.0",
+  "id": "e137",
+  "name": "E137",
+  "full_name": "SLAC E137 beam-dump experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "E137 operated at SLAC, Menlo Park, California. Originally a historical beam experiment for light weakly coupled particles, it is included because of later dark-matter reinterpretations.",
+  "physics_targets": [
+    "Sub-GeV light dark matter (reinterpretation)",
+    "Dark photons",
+    "Axionlike particles"
+  ],
+  "detection_principle": "Electrons striking a target produce weakly coupled particles that traverse shielding and generate distant electromagnetic showers. Modern light-dark-matter reinterpretations model mediator production of dark matter followed by scattering on detector electrons.",
+  "technologies": [
+    "Electron beam dump",
+    "Shielding",
+    "Downstream electromagnetic detector"
+  ],
+  "sites": [
+    {
+      "name": "SLAC, Menlo Park, California",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "SLAC, Menlo Park, California",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Historical experiment taking data in 1980–1982; the 2014 dark-matter reinterpretation does not imply a restart",
+    "as_of": "1982",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1982",
+      "event": "Historical experiment taking data in 1980–1982; the 2014 dark-matter reinterpretation does not imply a restart",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "E137 Collaboration / project team",
+    "lead_institutions": [
+      "SLAC"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original beam",
+      "value": "High-energy SLAC electron beam; approximately 20 GeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "E137",
+      "status": "completed",
+      "description": "Historical experiment taking data in 1980–1982; the 2014 dark-matter reinterpretation does not imply a restart"
+    }
+  ],
+  "results": [
+    {
+      "date": "2014",
+      "summary": "Analysis of historical E137 data constrains sub-GeV dark matter and light mediators, with model and acceptance dependence.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "E141",
+    "E774",
+    "SLAC-mQ",
+    "BDX"
+  ],
+  "resources": {
+    "official_website": "https://indico.triumf.ca/event/89/contributions/2730/attachments/2076/2305/Doria_ARIEL2020.pdf",
+    "publication_links": [
+      "https://arxiv.org/abs/1406.2698"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1406.2698",
+      "caption": "Historical E137 layout and dark-matter production/detection schematic (Fig. 1, 2014 reinterpretation paper); the upper part shows the target, hill shielding and detector positions. Source PDF p. 2.",
+      "credit": "Brian Batell, Rouven Essig, Z. Surujon; Fig. 1 adapted from original E137 material",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1406.2698",
+      "width": 596,
+      "height": 678,
+      "sha256": "af717bf296223c2043785215d6e948d2a86eca7048fc937bb2295cfc66735711",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1406.2698",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Strong Constraints on Sub-GeV Dark Matter from SLAC Beam Dump E137",
+      "url": "https://arxiv.org/abs/1406.2698",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014-06-10",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark matter at electron accelerators — ARIEL 2020",
+      "url": "https://indico.triumf.ca/event/89/contributions/2730/attachments/2076/2305/Doria_ARIEL2020.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

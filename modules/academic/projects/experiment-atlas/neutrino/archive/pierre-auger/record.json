@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "pierre-auger",
+  "name": "Pierre Auger Observatory",
+  "full_name": "Pierre Auger Observatory — neutrino searches",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "A large Argentine cosmic-ray observatory also performs dedicated ultra-high-energy neutrino searches using inclined air showers and Earth-skimming tau signatures.",
+  "physics_targets": [
+    "Diffuse EeV neutrinos",
+    "Earth-skimming tau neutrinos",
+    "Transient and steady neutrino-source limits"
+  ],
+  "detection_principle": "Water-Cherenkov surface stations measure shower timing and particle content. Neutrinos can generate unusually young, electromagnetic-rich inclined showers, unlike ordinary cosmic-ray showers that have traversed much more atmosphere.",
+  "technologies": [
+    "Water-Cherenkov surface stations for neutrino air-shower searches"
+  ],
+  "sites": [
+    {
+      "name": "Pierre Auger Observatory",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Malargüe, Mendoza Province",
+      "latitude": -35.2,
+      "longitude": -69.3,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "An operating multipurpose observatory with a documented dedicated neutrino-search programme; cosmic-ray detections are not classified as neutrino discoveries.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2004",
+      "event": "Surface-detector exposure used in the principal neutrino analyses began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2008",
+      "event": "Original observatory construction completed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Diffuse and directional neutrino searches using data through August 2018 published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Pierre Auger Observatory Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Surface array",
+      "value": "Approximately 1,660 water-Cherenkov stations over 3,000 km²",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Neutrino sensitivity",
+      "value": "Approximately 10¹⁷–10²⁰ eV, depending on direction",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Additional instrumentation",
+      "value": "Fluorescence telescopes and AugerPrime upgrades support the wider cosmic-ray programme",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "No neutrino candidates were found in the approximately 14.7-year exposure. Diffuse and source-specific upper limits constrain ultra-high-energy cosmic-ray production scenarios.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "telescope-array",
+    "grand"
+  ],
+  "resources": {
+    "official_website": "https://www.auger.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/1906.07422",
+      "https://arxiv.org/abs/1906.07419"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.auger.org/",
+      "caption": "Pierre Auger surface water-Cherenkov station, with the AugerPrime scintillator upgrade module and solar-power components visible above.",
+      "credit": "Pierre Auger Collaboration; collaboration-website image pao_ssd",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.auger.org/images/Observatory/pao_ssd.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1100,
+      "height": 640,
+      "sha256": "56b59aee4babed1548171680259df570c6dbacd1858d2203d7ef258f29773ad4",
+      "mime_type": "image/webp",
+      "source_sha256": "d811ac7bca30be135dec9fd949bc08bd8f0bec1952d69468390b023bb0bc5e38",
+      "source_dimensions": {
+        "width": 1100,
+        "height": 640
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Pierre Auger Collaboration, observatory",
+      "url": "https://www.auger.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Pierre Auger Collaboration, probing cosmic-ray origins with EeV neutrinos",
+      "url": "https://arxiv.org/abs/1906.07422",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Pierre Auger Collaboration, limits on point-like UHE neutrino sources",
+      "url": "https://arxiv.org/abs/1906.07419",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ARG"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

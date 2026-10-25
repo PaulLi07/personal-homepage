@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "trident",
+  "name": "TRIDENT",
+  "full_name": "Tropical Deep-sea Neutrino Telescope",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed multi-cubic-kilometre neutrino observatory in the South China Sea would provide near-equatorial sky coverage with hybrid optical sensors.",
+  "physics_targets": [
+    "High-energy neutrino sources",
+    "All-flavour cosmic-neutrino spectra",
+    "Time-dependent multimessenger astronomy"
+  ],
+  "detection_principle": "A large three-dimensional array of hybrid digital optical modules would combine photomultiplier and silicon-photomultiplier timing to reconstruct Cherenkov light in deep seawater.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "China; candidate deep-water site in the South China Sea",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China; candidate deep-water site in the South China Sea",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "A selected site, completed conceptual design and laboratory construction are documented; full telescope science operation is not established.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "T-REX pathfinder measured the candidate marine environment.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Site-selection and telescope concept published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "Current project stage",
+      "event": "Laboratory construction and detector development described by the collaboration.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TRIDENT Collaboration",
+    "lead_institutions": [
+      "Shanghai Jiao Tong University",
+      "Tsung-Dao Lee Institute"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Conceptual scale",
+      "value": "Approximately 7.5 km³ instrumented volume in the published design",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Candidate site depth",
+      "value": "Approximately 3.5 km",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "2021 pathfinder",
+      "value": "100 m string with three optical modules deployed at approximately 3,420 m",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Pathfinder results",
+      "summary": "In-situ optical and environmental measurements supported a candidate telescope site; the pathfinder is not the full TRIDENT neutrino array.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "hunt",
+    "neon-south-china-sea",
+    "p-one"
+  ],
+  "resources": {
+    "official_website": "https://trident.sjtu.edu.cn/",
+    "publication_links": [
+      "https://arxiv.org/abs/2207.04519",
+      "https://arxiv.org/abs/2312.12327"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2207.04519",
+      "caption": "TRIDENT array layout with detection strings arranged in a Penrose-tiling pattern.",
+      "credit": "TRIDENT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2207.04519v2/penrose_tiling_update.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1040,
+      "height": 1040,
+      "sha256": "b8965a79bb41103d468150b55af7a7e015a007575c1245c6cd0d6872ce10bd2e",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "TRIDENT Collaboration, project overview",
+      "url": "https://trident.sjtu.edu.cn/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "TRIDENT Collaboration, A multi-cubic-kilometre neutrino telescope in the western Pacific Ocean",
+      "url": "https://arxiv.org/abs/2207.04519",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "TRIDENT Collaboration, PMT system of the pathfinder",
+      "url": "https://arxiv.org/abs/2312.12327",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

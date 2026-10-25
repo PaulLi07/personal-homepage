@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0",
+  "id": "nuscope",
+  "name": "nuSCOPE",
+  "full_name": "Monitored and tagged short-baseline neutrino experiment at CERN",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "nuSCOPE is a proposed CERN precision-neutrino facility combining the ENUBET monitored-beam concept with NuTag event tagging. It aims to control both flux and incident-neutrino energy for cross-section measurements.",
+  "physics_targets": [
+    "Precision electron- and muon-neutrino cross sections",
+    "Nuclear effects relevant to DUNE and Hyper-Kamiokande",
+    "Short-baseline oscillation and other new-physics sensitivity"
+  ],
+  "detection_principle": "Instrumented decay regions identify charged leptons accompanying neutrino production, while fast beamline tracking associates selected parent decays with neutrino interactions. Monitoring constrains flux and tagging provides an energy estimate independent of nuclear final-state reconstruction.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; planned beam facility at CERN SPS",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; planned beam facility at CERN SPS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2026-05-07",
+    "evidence": "The May 2026 meeting describes a proto-collaboration preparing an expression of interest, not a constructed facility.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-03",
+      "event": "Physics and facility study submitted to the European Strategy update",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025-10",
+      "event": "First workshop after merging ENUBET and NuTag efforts",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "event": "Proto-collaboration discussed the path toward an expression of interest",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "nuSCOPE Collaboration",
+    "lead_institutions": [
+      "CERN",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate accelerator",
+      "value": "CERN SPS complex",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Flux goal",
+      "value": "Percent-level monitored neutrino flux",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Energy method",
+      "value": "Parent-decay tagging independent of neutrino final-state calorimetry",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025-2026",
+      "summary": "Published physics projections and developed the proposed facility. No dedicated nuSCOPE neutrino exposure is established by these sources.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "enubet",
+    "nustorm",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1548855/overview",
+    "publication_links": [
+      "https://arxiv.org/abs/2503.21589",
+      "https://indico.cern.ch/event/1657437/sessions/660943/attachments/3269961/5841070/terranova_nuscope_collmeeting_7may2026.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2503.21589",
+      "caption": "Proposed nuSCOPE monitored and tagged neutrino beamline.",
+      "credit": "nuSCOPE proponents, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2503.21589",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1391,
+      "height": 432,
+      "sha256": "98baf2ae874e9f3964cdc3264f9693b9f9551978b6e8f7f7f4b44e7a2ee8d541",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "nuSCOPE proponents, A short-baseline neutrino beam at CERN for high-precision cross-section measurements",
+      "url": "https://arxiv.org/abs/2503.21589",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "nuSCOPE Collaboration, October 2025 workshop overview",
+      "url": "https://indico.cern.ch/event/1548855/overview",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10-13",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "nuSCOPE Collaboration, second proto-collaboration meeting",
+      "url": "https://indico.cern.ch/event/1657437/sessions/660943/attachments/3269961/5841070/terranova_nuscope_collmeeting_7may2026.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling",
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

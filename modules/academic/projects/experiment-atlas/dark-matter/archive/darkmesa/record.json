@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "darkmesa",
+  "name": "DarkMESA",
+  "full_name": "DarkMESA beam-dump experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "DarkMESA is proposed downstream of the MESA P2 beam dump at Johannes Gutenberg University Mainz. It is a dedicated dark-matter experiment parasitically using the P2 electron beam dump; P2 itself is not counted again as a dark-matter experiment.",
+  "physics_targets": [
+    "Light dark matter",
+    "Dark-sector particles"
+  ],
+  "detection_principle": "MESA electrons produce dark-sector particles in the downstream P2 dump. A shielded calorimeter measures scattering energy, with plastic-scintillator vetoes suppressing backgrounds.",
+  "technologies": [
+    "Calorimeter",
+    "Plastic-scintillator veto",
+    "Electron beam dump"
+  ],
+  "sites": [
+    {
+      "name": "Johannes Gutenberg University Mainz, downstream of MESA P2 dump",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Johannes Gutenberg University Mainz, downstream of MESA P2 dump",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "The official site describes the MAGIX collaboration advancing the experiment alongside MESA construction; the exact completion date requires verification",
+    "as_of": null,
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DarkMESA Collaboration / project team",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "MESA beam energy",
+      "value": "Up to 155 MeV depending on operating mode; not a statement of accumulated physics running",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "veto",
+      "value": "Approximately 80 plastic scintillators (facility description)",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "DarkMESA",
+      "status": "construction",
+      "description": "The official site describes the MAGIX collaboration advancing the experiment alongside MESA construction; the exact completion date requires verification"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "MAGIX",
+    "BDX"
+  ],
+  "resources": {
+    "official_website": "https://www.kernphysik.uni-mainz.de/en/accelerator-mesa-experiments/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://magix.uni-mainz.de/",
+      "caption": "Official MESA experimental-area layout, explicitly identifying DarkMESA's detector position downstream of the beam dump at lower right; a design schematic.",
+      "credit": "MAGIX Collaboration / Johannes Gutenberg University Mainz; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://magix.uni-mainz.de/images/magixWallpaper.png",
+      "width": 1920,
+      "height": 687,
+      "sha256": "6a64866d24610b6a81857d631ad56052241dcb7a2b63a61e659ef42ff7ff5a10",
+      "mime_type": "image/webp",
+      "source_sha256": "95b33e5cc9efd2c319835c6db265de1691637eba655472ab46dc933771c7bbdc",
+      "source_dimensions": {
+        "width": 2520,
+        "height": 902
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.kernphysik.uni-mainz.de/en/accelerator-mesa-experiments/",
+      "caption": "MESA and experiment-apparatus descriptions",
+      "credit": "Mainz Institute for Nuclear Physics",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MESA accelerator and experiments",
+      "url": "https://www.kernphysik.uni-mainz.de/en/accelerator-mesa-experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "MAGIX collaboration mission",
+      "url": "https://magix.uni-mainz.de/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

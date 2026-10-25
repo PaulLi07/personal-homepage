@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "casper",
+  "name": "CASPEr",
+  "full_name": "Cosmic Axion Spin Precession Experiment",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An international program using nuclear spins to sense axion dark matter, with Electric and Gradient / Wind approaches.",
+  "physics_targets": [
+    "Axion–nucleon coupling",
+    "Axion-induced electric dipole moments"
+  ],
+  "detection_principle": "Axion-induced oscillating electric dipole moments or spin-gradient coupling exert resonant torques on nuclear spins; nuclear magnetic resonance detects their precession.",
+  "technologies": [
+    "Nuclear magnetic resonance",
+    "Ferroelectric crystals",
+    "Polarized nuclear spins",
+    "Low-noise magnetometry"
+  ],
+  "sites": [
+    {
+      "name": "Boston University：CASPEr-Electric",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Boston University：CASPEr-Electric",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Helmholtz Institute Mainz: CASPEr-Gradient R&D",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Helmholtz Institute Mainz: CASPEr-Gradient R&D",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "research_development"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Search for axion-like dark matter using solid-state nuclear magnetic resonance",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CASPEr Collaboration / project team",
+    "lead_institutions": [
+      "Boston University",
+      "Johannes Gutenberg University Mainz",
+      "Helmholtz Institute Mainz"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Electric 2021",
+      "value": "207Pb ferroelectric crystal; approximately 4.4 T field",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scanned range",
+      "value": "162–166 neV; approximately 39.65 MHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CASPEr-Electric",
+      "status": "results_published",
+      "description": "Uses internal electric fields to detect oscillating electric dipole moments."
+    },
+    {
+      "name": "CASPEr-Gradient / Wind",
+      "status": "research_development",
+      "description": "Uses the nuclear-spin response to dark-matter-field gradients."
+    }
+  ],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The solid-state NMR experiment found no signal and constrained axion electric-dipole and gradient couplings.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www.hi-mainz.de/research/research-sections/mam-matter-antimatter-asymmetry",
+    "publication_links": [
+      "https://arxiv.org/abs/2101.01241"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2101.01241",
+      "caption": "CASPEr-electric solid sample, magnetic-resonance excitation and readout schematic (Fig. 1, 2021 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2101.01241v3/Fig1.png",
+      "width": 1920,
+      "height": 714,
+      "sha256": "f79abb6422141490d0b2aa8f4894e4f1a1d00750e0f89bbd8686cfcb95a7d010",
+      "mime_type": "image/webp",
+      "source_sha256": "a0b4dfe74a6551fe589f43755af2202c6eef9cc3dba060df1b5d0418e6d20abf",
+      "source_dimensions": {
+        "width": 2040,
+        "height": 759
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2101.01241",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "CASPEr Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for axion-like dark matter using solid-state nuclear magnetic resonance",
+      "url": "https://arxiv.org/abs/2101.01241",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Matter Antimatter Asymmetry research section",
+      "url": "https://www.hi-mainz.de/research/research-sections/mam-matter-antimatter-asymmetry",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "resonator_rf",
+      "spin_magnetometry"
+    ]
+  }
+}

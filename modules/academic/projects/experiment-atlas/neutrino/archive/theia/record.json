@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "id": "theia",
+  "name": "Theia",
+  "full_name": "Theia hybrid optical neutrino-detector concept",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "geo",
+    "reactor",
+    "supernova",
+    "accelerator",
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Theia is a proposed large hybrid optical detector intended to combine the directional information of Cherenkov light with the low threshold and energy resolution of scintillation. Its broad physics case spans solar, reactor, supernova, accelerator and double-beta-decay studies.",
+  "physics_targets": [
+    "Solar and geoneutrinos",
+    "Supernova neutrinos",
+    "Long-baseline oscillations",
+    "Neutrinoless double-beta decay"
+  ],
+  "detection_principle": "Water-based liquid scintillator or tailored slow scintillator, fast photodetectors and timing/spectral separation distinguish Cherenkov and scintillation photons. The detector concepts include approximately 25- and 100-kilotonne scales; these remain proposed configurations.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; candidate site at SURF",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; candidate site at SURF",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Canada; candidate site at SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Canada; candidate site at SNOLAB",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2025",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019–2020",
+      "event": "Comprehensive detector/physics white paper",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Updated strategy input and technology programme",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Theia Collaboration",
+    "lead_institutions": [
+      "University of California, Berkeley",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed scales",
+      "value": "Theia-25 and Theia-100 detector concepts",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Medium",
+      "value": "Water-based liquid scintillator or slow scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Status distinction",
+      "value": "EOS is a technology demonstrator; Theia is a proposed full-scale detector",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Published sensitivities describe a prospective detector. They are not measured neutrino event samples from an operating Theia observatory.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "eos",
+    "jne",
+    "sno-plus"
+  ],
+  "resources": {
+    "official_website": "https://nino.lbl.gov/eos/detector.html",
+    "publication_links": [
+      "https://indico.cern.ch/event/1439855/contributions/6461664/attachments/3046044/5382027/Theia_EPPSU.pdf",
+      "https://arxiv.org/abs/1911.03501"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1911.03501",
+      "caption": "Theia-25 reference design in a possible DUNE cavern, from the 2020 concept paper; a proposed configuration.",
+      "credit": "Theia Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/1911.03501v2/theia25_surf.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1600,
+      "height": 900,
+      "sha256": "d86dec04a69ca5bd90f81d76c4880cba0b70f32bf1cafb78a2d47f5699c08e38",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "0016a741fe4d0d2af48ad9cad3df67df4e4ab5aff4a70c82f867081393f10ec7",
+      "source_dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Theia Collaboration, European Strategy physics and technology input",
+      "url": "https://indico.cern.ch/event/1439855/contributions/6461664/attachments/3046044/5382027/Theia_EPPSU.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Theia Collaboration, An advanced optical neutrino detector",
+      "url": "https://arxiv.org/abs/1911.03501",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-11-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Berkeley Lab EOS detector and Theia technology overview",
+      "url": "https://nino.lbl.gov/eos/detector.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

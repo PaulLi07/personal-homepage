@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "gnome",
+  "name": "GNOME",
+  "full_name": "Global Network of Optical Magnetometers for Exotic physics searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A worldwide atomic-magnetometer network searching for structures such as axionlike-field domain walls through correlated transients at multiple stations.",
+  "physics_targets": [
+    "Axionlike-field domain walls",
+    "Topological-defect dark matter"
+  ],
+  "detection_principle": "A hypothetical dark-matter domain wall passing Earth produces a pseudomagnetic field acting on atomic spins; GPS-synchronized stations search for signals with consistent propagation delays.",
+  "technologies": [
+    "Optically pumped atomic magnetometers",
+    "Magnetic shielding",
+    "GPS synchronization",
+    "Interstation correlation analysis"
+  ],
+  "sites": [
+    {
+      "name": "Magnetometer network across Europe, North America, Asia, the Middle East and Australia",
+      "country": "Undetermined / international / space",
+      "country_code": null,
+      "location": "Magnetometer network across Europe, North America, Asia, the Middle East and Australia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Experimental operation in the phase documented by the source",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Search for topological defect dark matter with a global network of optical magnetometers",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "GNOME Collaboration / project team",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz",
+      "California State University East Bay",
+      "Jagiellonian University",
+      "IBS"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 analysis",
+      "value": "Approximately one month of continuous network data",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "No statistically significant correlated signal; constraints were obtained for the adopted domain-wall model.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Targets transient spin interactions from dark-matter topological defects; sensitivity depends on domain-wall thickness, encounter rate and coupling assumptions. It is not a detector at a single fixed geographic point.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2102.13379",
+      "https://pmc.ncbi.nlm.nih.gov/articles/8654677/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1807.09391",
+      "caption": "The GNOME magnetometer station at Fribourg, Switzerland: cesium-vapor cell, magnetic shielding, pump/probe optics and GPS data acquisition (Fig. 1, 2018 apparatus paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/1807.09391v1/ExptSetup-Fribourg-v5.svg",
+      "width": 1896,
+      "height": 666,
+      "sha256": "757127449c185e0aa072456bba8f935d6690404403330ca313314a5ad4a08af5",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2102.13379",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "GNOME Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for topological defect dark matter with a global network of optical magnetometers",
+      "url": "https://arxiv.org/abs/2102.13379",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Published GNOME network paper with station table",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/8654677/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "A country map should first build a station-by-station inventory from the paper's station table; this global network must not be forced into a single country."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GLOBAL"
+    ],
+    "technology_groups": [
+      "spin_magnetometry"
+    ]
+  }
+}

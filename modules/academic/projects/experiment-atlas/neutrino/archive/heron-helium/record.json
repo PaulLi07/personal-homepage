@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "heron-helium",
+  "name": "HERON (superfluid helium)",
+  "full_name": "Helium Roton Observation of Neutrinos",
+  "aliases": [
+    "HERON",
+    "HERON solar",
+    "Helium Roton Observation of Neutrinos"
+  ],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "A historical Brown University R&D programme developed superfluid helium as a target for real-time measurements of low-energy solar neutrinos. Full-scale performance was studied in a detector design rather than measured in an operating solar observatory.",
+  "physics_targets": [
+    "Solar pp neutrinos",
+    "Solar beryllium-7 neutrinos",
+    "Low-background cryogenic detection"
+  ],
+  "detection_principle": "Solar neutrinos would scatter elastically from electrons in superfluid helium. Scintillation photons, drifting ionisation electrons and helium excitations would be detected by cryogenic calorimeter arrays above the liquid; coded-aperture imaging would reject gamma-ray backgrounds.",
+  "technologies": [
+    "Cryogenic superfluid-helium scintillation, charge extraction and calorimetry"
+  ],
+  "sites": [
+    {
+      "name": "Full-scale site not fixed",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Brown University R&D was carried out in Providence, Rhode Island; no full-scale underground observatory was constructed.",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "not_selected"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical R&D; full-detector status not established",
+    "as_of": "2026-10-23",
+    "evidence": "The historical programme is documented by a final DOE R&D report and a subsequent design simulation; a full-scale operating HERON solar detector is not established.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1987",
+      "event": "Superfluid-helium solar-neutrino detection method proposed.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2007",
+      "event": "Full detector simulation and projected solar-flux precision published.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HERON (superfluid helium) Collaboration",
+    "lead_institutions": [
+      "Brown University"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "2007 design helium target",
+      "value": "21.6 tonnes total, with an 8-tonne fiducial region",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Operating temperature concept",
+      "value": "Approximately 30–50 mK in the 2007 detector design",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Simulated five-year precision",
+      "value": "pp: ±1.68%; beryllium-7: ±2.97%; forecasts including specified systematics",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Laboratory R&D",
+      "summary": "Laboratory work demonstrated key helium signal-production and detection processes, without observing a solar-neutrino flux.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2007",
+      "summary": "Simulation quantified possible pp and beryllium-7 flux precision for a five-year design exposure.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This historical solar-neutrino concept is distinct from the 2025 Hybrid Elevated Radio Observatory for Neutrinos. Forecast precisions from simulations are not measured solar-neutrino fluxes.",
+  "related_experiments": [
+    "heron"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0711.4095",
+      "https://www.osti.gov/servlets/purl/878465",
+      "https://doi.org/10.1103/PhysRevLett.58.2498"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/0711.4095",
+      "caption": "HERON superfluid-helium detector concept from the 2007 solar-neutrino design study (Figure 1).",
+      "credit": "Y. H. Huang et al. / HERON",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/0711.4095",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 658,
+      "height": 525,
+      "sha256": "adde33f5ac677abd05cc749d4f1461a88cef247728f431b68f5304df58e87299",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Y. H. Huang et al., Potential for Precision Measurement of Solar Neutrino Luminosity by HERON",
+      "url": "https://arxiv.org/abs/0711.4095",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Brown University, Final report on superfluid-helium solar-neutrino detector R&D",
+      "url": "https://www.osti.gov/servlets/purl/878465",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "R. E. Lanou, H. J. Maris and G. M. Seidel, Detection of solar neutrinos in superfluid helium",
+      "url": "https://doi.org/10.1103/PhysRevLett.58.2498",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1987",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The cited records do not establish construction of the proposed full-scale underground solar detector or a precise project-cancellation date."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "bolometer"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "bolometer"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "id": "admx-orpheus",
+  "name": "ADMX-Orpheus",
+  "full_name": "ADMX-Orpheus high-frequency haloscope",
+  "aliases": [
+    "ORPHEUS",
+    "Orpheus"
+  ],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "An independent approach retaining effective volume at high frequencies with dielectric-loaded higher-order cavity modes; the first search targeted dark photons.",
+  "physics_targets": [
+    "Dark photons",
+    "Axions (subsequent concept)"
+  ],
+  "detection_principle": "Dielectric plates match higher-order standing-wave fields, preventing the rapid loss of detection volume with increasing frequency found in simple cylindrical cavities.",
+  "technologies": [
+    "Dielectric-loaded cavities",
+    "Higher-order modes",
+    "Microwave reception"
+  ],
+  "sites": [
+    {
+      "name": "University of Washington，Seattle",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of Washington，Seattle",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2022",
+    "evidence": "2022 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "ADMX-Orpheus First Search for 70 μeV Dark Photon Dark Matter: Detailed Design, Operations, and Analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ADMX-Orpheus Collaboration / project team",
+    "lead_institutions": [
+      "University of Washington",
+      "Pacific Northwest National Laboratory",
+      "Lawrence Livermore National Laboratory"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "First scan",
+      "value": "15.8–16.8 GHz；65.5–69.3 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The first dark-photon data set limits; axion searches require a later magnetic-field configuration and other additions.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "ADMX"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2204.09475"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2204.09475",
+      "caption": "Mechanical design of the ADMX-Orpheus dielectric-loaded Fabry–Pérot resonator (Fig. 4, 2022 paper); this is distinct from the superconducting-granule ORPHEUS experiment.",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2204.09475v3/resonator_for_paper.png",
+      "width": 974,
+      "height": 857,
+      "sha256": "ce266b60dbed5d447d28280afe5e8d51f14a8ca2f273dbf0c1a14e9800b6301e",
+      "mime_type": "image/webp",
+      "source_sha256": "fc1021233bf7e1736dc3c2cd6a53f7c8c33bf3580089fa34f95022b00d477104",
+      "source_dimensions": {
+        "width": 974,
+        "height": 857
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2204.09475",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ADMX-Orpheus Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ADMX-Orpheus First Search for 70 μeV Dark Photon Dark Matter: Detailed Design, Operations, and Analysis",
+      "url": "https://arxiv.org/abs/2204.09475",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "Distinct from the superheated superconducting-granule ORPHEUS (SSG) experiment in Bern, Switzerland; names and locations must not be merged."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf"
+    ]
+  }
+}

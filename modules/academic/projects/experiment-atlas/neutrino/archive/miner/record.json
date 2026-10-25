@@ -1,0 +1,200 @@
+{
+  "schema_version": "1.0",
+  "id": "miner",
+  "name": "MINER",
+  "full_name": "Mitchell Institute Neutrino Experiment at Reactor",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MINER develops low-threshold cryogenic detectors near the Texas A&M TRIGA reactor to search for coherent reactor-neutrino scattering. The programme also uses the same apparatus to test reactor-produced particles beyond the Standard Model.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Low-energy calorimeter development",
+    "Reactor-produced new particles"
+  ],
+  "detection_principle": "Cryogenic crystals convert recoil energy into small phonon signals. Low-noise thermal sensors, shielding and reactor-on/off comparisons probe nuclear recoils below the energy scale accessible to conventional scintillator detectors.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "United States; near the Texas A&M University TRIGA research reactor",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; near the Texas A&M University TRIGA research reactor",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2025-10-14",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Sapphire reactor-on/off datasets acquired",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "CEvNS and complementary particle-search results reported",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MINER Collaboration",
+    "lead_institutions": [
+      "Texas A&M University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source",
+      "value": "1 MW thermal TRIGA reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Distance",
+      "value": "Approximately 4 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reported target",
+      "value": "Cryogenic sapphire detectors, including a 72 g primary detector",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Baseline resolution",
+      "value": "Approximately 40 eV in the reported sapphire analysis",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The sapphire analysis found no significant CEvNS signal; reported future HFIR sensitivity is a projection rather than a completed deployment.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nucleus",
+    "ricochet"
+  ],
+  "resources": {
+    "official_website": "https://people.tamu.edu/~mahapatra/index.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2510.15999",
+      "https://arxiv.org/abs/2504.20960"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2504.20960",
+      "caption": "Stacked configuration of the three germanium detectors used in the MINER reactor-ALP search (Fig. 4, 2025 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2504.20960v1/detector_schematic.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1497,
+      "height": 883,
+      "sha256": "fa5cf64fbb6b94be0962471765a93a937931df6730184c4fc580b43cffde16b7",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MINER Collaboration, CEvNS search with cryogenic sapphire detectors",
+      "url": "https://arxiv.org/abs/2510.15999",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Texas A&M Mahapatra Group: MINER programme",
+      "url": "https://people.tamu.edu/~mahapatra/index.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MINER Collaboration, Reactor-based ALP search with sapphire",
+      "url": "https://arxiv.org/abs/2504.20960",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-04-29",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

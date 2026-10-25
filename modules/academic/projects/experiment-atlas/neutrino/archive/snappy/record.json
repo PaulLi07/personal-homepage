@@ -1,0 +1,181 @@
+{
+  "schema_version": "1.0",
+  "id": "snappy",
+  "name": "SNAPPY",
+  "full_name": "Solar Neutrino Astro-Particle PhYsics CubeSat",
+  "aliases": [
+    "nuSol",
+    "νSOL"
+  ],
+  "category": "solar",
+  "physics_categories": [
+    "solar"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "SNAPPY is a launched CubeSat technology demonstrator for space-based solar-neutrino detection. It tests detector operation and background signatures in orbit to support possible future missions closer to the Sun; launch does not by itself demonstrate neutrino detection.",
+  "physics_targets": [
+    "Solar electron neutrinos"
+  ],
+  "detection_principle": "A compact scintillation detector studies charged-particle and gamma backgrounds and the double-pulse signature expected from gallium neutrino-capture reactions. Its present role is flight qualification and background measurement.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Low Earth orbit",
+      "country": "Earth orbit",
+      "country_code": null,
+      "location": "Orbital detector; not a fixed terrestrial site",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "in_orbit"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-09-04",
+    "evidence": "NASA confirms launch on 3 May 2026. Wichita State reports detector activation and first data on 4 August and full-power downloads on 21 August; these are detector and background data, not a claimed solar-neutrino discovery.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "SNAPPY Collaboration",
+    "lead_institutions": [
+      "Wichita State University",
+      "NASA Marshall Space Flight Center"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Spacecraft",
+      "value": "3U CubeSat, approximately 10 x 10 x 30 cm3",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Orbit",
+      "value": "Low Earth orbit; approximately 95-minute period",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Mission role",
+      "value": "Detector flight qualification and interaction-signature background measurements",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-09-04",
+      "summary": "NASA confirms launch on 3 May 2026. Wichita State reports detector activation and first data on 4 August and full-power downloads on 21 August; these are detector and background data, not a claimed solar-neutrino discovery.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The orbital demonstrator and a future near-Sun neutrino observatory are different mission stages. The cited reports do not claim that solar neutrinos have been identified in flight.",
+  "related_experiments": [
+    "borexino",
+    "sno",
+    "heron-helium"
+  ],
+  "resources": {
+    "official_website": "https://www.nasa.gov/directorates/stmd/nasa-supported-small-spacecraft-launches-to-study-solar-particles/",
+    "publication_links": [
+      "https://arxiv.org/abs/2607.00295"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.nasa.gov/directorates/stmd/nasa-supported-small-spacecraft-launches-to-study-solar-particles/",
+      "caption": "SNAPPY CubeSat during pre-launch preparation; the orbital technology demonstrator launched in May 2026.",
+      "credit": "Exolaunch / NASA",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://www.nasa.gov/wp-content/uploads/2026/05/exolaunch3.jpeg?w=2048",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1280,
+      "sha256": "4b573d8f974ca4158634cd506892b94e01f9033f3d16c4c1db8a2b51286eb678",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "e48b42a7d887e5427d5a0165458ff27834e8a9c00e7f4141392dac90a12f7969",
+      "source_dimensions": {
+        "width": 2048,
+        "height": 1365
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NASA-Supported Small Spacecraft Launches to Study Solar Particles",
+      "url": "https://www.nasa.gov/directorates/stmd/nasa-supported-small-spacecraft-launches-to-study-solar-particles/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Wichita State satellite prototype hits milestone with first transfer of data from orbit",
+      "url": "https://www.wichita.edu/about/wsunews-releases/2026/08-aug/SNAPPYdata_release_3.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The Solar Neutrino and Astro-Particle PhYsics (SNAPPY) CubeSat Development",
+      "url": "https://arxiv.org/abs/2607.00295",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,252 @@
+{
+  "schema_version": "1.0",
+  "id": "admx",
+  "name": "ADMX",
+  "full_name": "Axion Dark Matter eXperiment",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "ADMX is a major QCD axion dark-matter search using cryogenic microwave cavities, with successive phases at LLNL and the University of Washington.",
+  "physics_targets": [
+    "QCD axions",
+    "Axion–photon coupling"
+  ],
+  "detection_principle": "A static field converts axions to microwave photons; cavity tuning scans axion masses while low-noise receivers measure narrowband power.",
+  "technologies": [
+    "Microwave cavities",
+    "Superconducting magnets",
+    "Cryogenic refrigeration",
+    "Quantum amplifiers"
+  ],
+  "sites": [
+    {
+      "name": "University of Washington CENPA, Seattle",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of Washington CENPA, Seattle",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Listed as an ongoing experiment on the university's 2025 project page",
+    "as_of": "2025",
+    "evidence": "The University of Washington's 2025 project description explicitly discusses ADMX operation, new channels and upgrades.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Extended Search for the Invisible Axion with the Axion Dark Matter Experiment",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "1.10–1.31 GHz axion-search results published.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ADMX Collaboration / project team",
+    "lead_institutions": [
+      "University of Washington",
+      "Lawrence Livermore National Laboratory"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Study type",
+      "value": "Low-mass microwave-cavity axion searches; scan intervals differ between publications",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scan published in 2025",
+      "value": "1.10–1.31 GHz, approximately 4.54–5.41 μeV; see the run's paper for model-specific sensitivity.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Early LLNL phase",
+      "status": "historical",
+      "description": "Early main-apparatus phase."
+    },
+    {
+      "name": "University of Washington / Gen 2",
+      "status": "documented",
+      "description": "Cryogenic-cavity and quantum-amplifier upgrades."
+    },
+    {
+      "name": "Sidecar",
+      "status": "research_development",
+      "description": "High-frequency auxiliary-cavity R&D within the same project; not counted as a separate experiment in this catalog."
+    }
+  ],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "The 2019 extended search reached benchmark invisible-axion sensitivity in its scanned interval, without reporting an axion discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "summary": "The published 1.10–1.31 GHz search reaches extended-KSVZ sensitivity, without claiming axion discovery.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "HAYSTAC",
+    "ADMX SLIC",
+    "ADMX-Orpheus"
+  ],
+  "resources": {
+    "official_website": "https://depts.washington.edu/admx/publications.shtml",
+    "publication_links": [
+      "https://arxiv.org/abs/1910.08638",
+      "https://arxiv.org/abs/2504.07279"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://depts.washington.edu/admx/",
+      "caption": "The cryogenic axion apparatus shown on the official ADMX website.",
+      "credit": "ADMX Collaboration; the official site provides no separate photographer credit.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://depts.washington.edu/admx/images/web_front.png",
+      "width": 1206,
+      "height": 855,
+      "sha256": "6a4d727f545eecc6698320397e8fd8ad7d0db6634e7eee01ce87b3fc33e9b771",
+      "mime_type": "image/webp",
+      "source_sha256": "61e9fc167630f4d02f4cfcf4bffccf5c26f1f7154cc09ac4afbf04cf4738eaa8",
+      "source_dimensions": {
+        "width": 1206,
+        "height": 855
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1910.08638",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ADMX Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Extended Search for the Invisible Axion with the Axion Dark Matter Experiment",
+      "url": "https://arxiv.org/abs/1910.08638",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CENPA About Us",
+      "url": "https://npl.washington.edu/cenpa/about",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "University of Washington REU 2025 Project List",
+      "url": "https://sites.google.com/uw.edu/uw-reu2025/project-list",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases",
+        "status"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Search for Axion Dark Matter from 1.1 to 1.3 GHz with ADMX",
+      "url": "https://arxiv.org/abs/2504.07279",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "results",
+        "key_parameters",
+        "timeline"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "ADMX official publications and limit data",
+      "url": "https://depts.washington.edu/admx/publications.shtml",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

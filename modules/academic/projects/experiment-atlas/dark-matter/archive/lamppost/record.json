@@ -1,0 +1,155 @@
+{
+  "schema_version": "1.0",
+  "id": "lamppost",
+  "name": "LAMPOST",
+  "full_name": "Light A-prime Multilayer Periodic Optical SNSPD Target",
+  "aliases": [
+    "LAMPPOST"
+  ],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A proof-of-concept eV-scale dark-photon search using a multilayer dielectric structure and superconducting-nanowire single-photon detectors.",
+  "physics_targets": [
+    "Dark photons"
+  ],
+  "detection_principle": "Dark photons coherently convert in a periodic multilayer dielectric, with the optical signal detected by extremely low-dark-count SNSPDs.",
+  "technologies": [
+    "Multilayer dielectrics",
+    "SNSPD",
+    "Cryogenic single-photon counting"
+  ],
+  "sites": [
+    {
+      "name": "Cryogenic optical prototype involving NIST / MIT; deployment laboratory unverified",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Cryogenic optical prototype involving NIST / MIT; deployment laboratory unverified",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "New Constraints on Dark Photon Dark Matter with Superconducting Nanowire Detectors in an Optical Haloscope",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LAMPOST Collaboration / project team",
+    "lead_institutions": [
+      "NIST",
+      "MIT"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Searched masses",
+      "value": "Approximately 0.7–0.8 eV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Dark-count rate",
+      "value": "Approximately 6×10⁻⁶ s⁻¹",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "No signal; kinetic mixing is constrained at approximately the 10⁻¹² level in the relevant mass interval.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2110.01582"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2110.01582",
+      "caption": "Exploded assembly and dielectric-stack target of the LAMPOST prototype (Fig. 2, 2021 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2110.01582v2/apparatus_small.png",
+      "width": 1290,
+      "height": 930,
+      "sha256": "f81d6f77742af9d609c3affdcec9bb1b6567d7e88dd2b1bff52993e8309139bf",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2110.01582",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "LAMPOST Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "New Constraints on Dark Photon Dark Matter with Superconducting Nanowire Detectors in an Optical Haloscope",
+      "url": "https://arxiv.org/abs/2110.01582",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

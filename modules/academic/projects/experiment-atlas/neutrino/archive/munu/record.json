@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "munu",
+  "name": "MUNU",
+  "full_name": "MUNU neutrino magnetic-moment experiment",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "gas",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MUNU measured low-energy reactor-antineutrino electron scattering at Bugey with a tracking gas detector. Reconstructing the recoil-electron direction allowed a forward signal region and background control regions to be compared.",
+  "physics_targets": [
+    "Electron-antineutrino magnetic moment",
+    "Low-energy directional neutrino detection"
+  ],
+  "detection_principle": "A carbon-tetrafluoride gas time projection chamber reconstructs electron tracks and ionization energy. A surrounding scintillator anti-Compton veto suppresses external gamma backgrounds; forward/backward angular information constrains magnetic scattering.",
+  "technologies": [
+    "Gas time projection chambers",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; Bugey nuclear power plant",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Bugey nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2005",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1990s–2000s",
+      "event": "Detector and reactor-scattering programme",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2005",
+      "event": "Final magnetic-moment analysis published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MUNU Collaboration",
+    "lead_institutions": [
+      "University of Neuchâtel",
+      "University of Zurich",
+      "LPSC Grenoble",
+      "INFN Padova"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "TPC volume",
+      "value": "Approximately 1 cubic metre of CF4 gas",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "18 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Operating pressures",
+      "value": "3 bar and 1 bar in different runs",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Magnetic-moment bound",
+      "value": "Less than 9 × 10^-11 Bohr magnetons at 90% confidence",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005",
+      "summary": "The final analysis set a magnetic-moment upper limit and demonstrated reconstruction of electron tracks down to 150 keV at 1 bar.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "gemma",
+    "texono"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0502037",
+      "https://arxiv.org/abs/hep-ex/0106104"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/hep-ex/0502037",
+      "caption": "MUNU gas time projection chamber and surrounding scintillator veto at Bugey (Figure 1).",
+      "credit": "MUNU Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/hep-ex/0502037",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 540,
+      "height": 411,
+      "sha256": "259055cf01347c38af3596b73189c62de8d69d37098116c2c896fd4921f2cffe",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MUNU Collaboration, Final neutrino magnetic-moment results",
+      "url": "https://arxiv.org/abs/hep-ex/0502037",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2005-02-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MUNU Collaboration, Sub-MeV particle detection and identification",
+      "url": "https://arxiv.org/abs/hep-ex/0106104",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001-06-28",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "gas",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

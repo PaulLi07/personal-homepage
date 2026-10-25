@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "eva",
+  "name": "EVA",
+  "full_name": "ExaVolt Antenna",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "A balloon-neutrino mission concept developed a large radio reflector integrated into the balloon surface. Feasibility studies and a scale-model hang test were performed, while a full EVA neutrino science flight is not established.",
+  "physics_targets": [
+    "Ultra-high-energy cosmic neutrinos",
+    "Balloon-integrated radio-reflector technology",
+    "Ultra-high-energy cosmic rays"
+  ],
+  "detection_principle": "An equatorial reflecting band on a super-pressure balloon would focus impulsive radio signals onto an internal antenna feed array. It would observe Askaryan pulses from neutrino showers in Antarctic ice and geomagnetic emission from cosmic-ray air showers.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Proposed Antarctic balloon observing region",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Proposed Antarctic balloon observing region",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Status not established",
+    "as_of": "2026-10-23",
+    "evidence": "The available programme evidence documents a historical mission concept and scale-model R&D. A full EVA science flight or a precise current project disposition is not established.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2011",
+      "event": "Mission design and simulated performance published; NASA development grant announced.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "date": "2016",
+      "event": "Feasibility and scale-model test results reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "EVA Collaboration",
+    "lead_institutions": [
+      "University of Hawaii at Manoa",
+      "Ohio State University",
+      "NASA Jet Propulsion Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "Concept frequency band",
+      "value": "150–600 MHz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reflector concept",
+      "value": "Balloon-surface toroidal reflector with an internal membrane-mounted feed array",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Implemented development test",
+      "value": "1:20-scale hang test, reported in the 2016 update",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "A 1:20-scale model demonstrated focusing in a ground hang test. Predicted event yields in a future balloon flight are simulations, not measured neutrino events.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "anita",
+    "pueo"
+  ],
+  "resources": {
+    "official_website": "https://www.hawaii.edu/news/article.php?aId=4633",
+    "publication_links": [
+      "https://arxiv.org/abs/1102.3883",
+      "https://indico.cern.ch/event/461474/contributions/2152658/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico.cern.ch/event/461474/contributions/2152658/",
+      "caption": "EVA balloon-surface reflector and internal feed-array concept, from the ARENA2016 project update.",
+      "credit": "Carl Pfendner / EVA Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://indico.cern.ch/event/461474/contributions/2152658/attachments/1296011/1932349/2016-06-10-ARENA-EVA-2.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 551,
+      "height": 666,
+      "sha256": "70bf2262052b11b5ba0088e986f4cd87398a80aa4fb36dd842a8e0515342ba33",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "P. W. Gorham et al., The ExaVolt Antenna: A Large-Aperture, Balloon-embedded Antenna for Ultra-high Energy Particle Detection",
+      "url": "https://arxiv.org/abs/1102.3883",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "C. G. Pfendner, The ExaVolt Antenna: Concept and Development Updates",
+      "url": "https://indico.cern.ch/event/461474/contributions/2152658/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2016",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "University of Hawaii, Astrophysics research group wins NASA grant for EVA",
+      "url": "https://www.hawaii.edu/news/article.php?aId=4633",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "No full EVA neutrino flight or final project cancellation date is established by the cited sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

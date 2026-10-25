@@ -1,0 +1,202 @@
+{
+  "schema_version": "1.0",
+  "id": "numoon",
+  "name": "NuMoon",
+  "full_name": "NuMoon lunar Askaryan neutrino searches",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A lunar-radio programme used the Westerbork Synthesis Radio Telescope to set limits on neutrinos above 10^22 eV, and developed a lower-frequency search strategy for LOFAR.",
+  "physics_targets": [
+    "Extremely high-energy neutrinos",
+    "Lunar radio pulses",
+    "Future LOFAR lunar observations"
+  ],
+  "detection_principle": "Askaryan radio pulses from showers in the lunar regolith are sought in two telescope beams on the Moon. At wavelengths comparable to shower dimensions the emission is less narrowly beamed, increasing the effective aperture at extreme energies.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Westerbork Synthesis Radio Telescope, Drenthe, Netherlands",
+      "country": "Netherlands",
+      "country_code": "NLD",
+      "location": "Westerbork Synthesis Radio Telescope, Drenthe, Netherlands",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "The WSRT measurement is a completed historical campaign. LOFAR follow-up is described as technology development in the cited 2015 contribution; present-day dedicated lunar observing status is not established.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2007–2008",
+      "event": "WSRT lunar observing campaigns provided the published exposure.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2009–2010",
+      "event": "Neutrino limits from WSRT lunar observations published.",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "LOFAR implementation and trigger developments reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NuMoon Collaboration",
+    "lead_institutions": [
+      "Radboud University",
+      "University of Groningen",
+      "ASTRON"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "WSRT observing band",
+      "value": "113–175 MHz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Published WSRT exposure",
+      "value": "46.7 hours of analysed data",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "WSRT observing mode",
+      "value": "Two beams on different parts of the Moon, each with four frequency sub-bands",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "After interference rejection the WSRT sample yielded a 90% confidence upper limit on the ultra-high-energy neutrino flux, without a neutrino discovery.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "glue",
+    "lunaska",
+    "resun"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1004.0274",
+      "https://pos.sissa.it/236/684/pdf",
+      "https://arxiv.org/abs/0910.4745"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "published_result",
+      "source_url": "https://arxiv.org/abs/1004.0274",
+      "caption": "Published NuMoon WSRT neutrino-flux upper limits from the 46.7-hour sample (2010 paper, Figure 12); this is a result plot, not a detected neutrino spectrum.",
+      "credit": "S. Buitink et al. / NuMoon",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1004.0274",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 669,
+      "height": 673,
+      "sha256": "945f34cc7627514027642fffa90ee0ff1f241e9076e7e73149a27cc1f9fe584a",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "S. Buitink et al., Constraints on the flux of Ultra-High Energy neutrinos from WSRT observations",
+      "url": "https://arxiv.org/abs/1004.0274",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "S. ter Veen et al., NuMoon: Status of ultra high energy particle searches with LOFAR",
+      "url": "https://pos.sissa.it/236/684/pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "O. Scholten et al., Improved Flux Limits for Neutrinos with Energies above 10^22 eV from Observations with the Westerbork Synthesis Radio Telescope",
+      "url": "https://arxiv.org/abs/0910.4745",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "Continuous operation of a dedicated LOFAR neutrino search is not established by the cited sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "NLD",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": true
+  }
+}

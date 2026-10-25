@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "nndex",
+  "name": "NνDEx",
+  "full_name": "No neutrino Double-beta-decay Experiment",
+  "aliases": [
+    "NvDEx",
+    "NnDEx",
+    "NνDEx-100"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "gas",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NνDEx develops a high-pressure selenium-hexafluoride time projection chamber for selenium-82 neutrinoless double-beta decay at Jinping. NνDEx-100 denotes the 100-kg gas stage, rather than 100 kg of selenium-82 isotope.",
+  "physics_targets": [
+    "Double-beta and rare weak decays"
+  ],
+  "detection_principle": "Ionization in electronegative SeF6 forms drifting negative ions. Low-noise Topmetal silicon sensors measure charge without gas avalanche multiplication, allowing energy and event-topology reconstruction.",
+  "technologies": [
+    "Gas time projection chambers",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "China Jinping Underground Laboratory, Sichuan",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "China Jinping Underground Laboratory, Sichuan",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "planned_detector_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2025-08-19",
+    "evidence": "Design and simulation publications document NνDEx-100 development. The earlier installation target of 2025 is a schedule, not evidence that physics operation has begun.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NνDEx Collaboration",
+    "lead_institutions": [
+      "Institute of Modern Physics, Chinese Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Initial gas inventory",
+      "value": "100 kg of SeF6",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Candidate isotope",
+      "value": "82Se; Q value approximately 2.996 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Design gas pressure",
+      "value": "Approximately 1 MPa",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025-08-19",
+      "summary": "Design and simulation publications document NνDEx-100 development. The earlier installation target of 2025 is a schedule, not evidence that physics operation has begun.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "pandax-iii",
+    "next"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2304.08362",
+      "https://arxiv.org/abs/2508.13582"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2304.08362",
+      "caption": "Pressure-vessel design for NνDEx-100 (Fig. 2); a design drawing.",
+      "credit": "NνDEx Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2304.08362#page=3",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 425,
+      "height": 489,
+      "sha256": "fb6550c842cd026cc598a1cd695b3aca1203021fd6bb54e62d90e62d6e3e0d7d",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NvDEx-100 Conceptual Design Report",
+      "url": "https://arxiv.org/abs/2304.08362",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-12-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Studies of simulation framework for NνDEx experiment",
+      "url": "https://arxiv.org/abs/2508.13582",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "gas",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "gas",
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

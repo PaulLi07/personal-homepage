@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "cupid-0",
+  "name": "CUPID-0",
+  "full_name": "CUPID-0 enriched-zinc-selenide double-beta demonstrator",
+  "aliases": [
+    "cupid-0"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CUPID-0 was a scintillating-bolometer demonstrator at Gran Sasso searching for selenium-82 neutrinoless double-beta decay. It demonstrated particle identification with crystals developed through LUCIFER.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Enriched ZnSe crystals measure heat, and thin germanium light detectors measure scintillation. Combined pulse-shape and light-to-heat selections reject alpha backgrounds around the decay energy.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso National Laboratory",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso National Laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2020",
+    "evidence": "The final dataset provided a selenium-82 neutrinoless-decay limit and demonstrated the scintillating-bolometer method.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "cupid-0 Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Array",
+      "value": "26 ZnSe crystals",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate isotope",
+      "value": "82Se",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Cryogenic readout",
+      "value": "Separate heat and scintillation-light channels",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "The final dataset provided a selenium-82 neutrinoless-decay limit and demonstrated the scintillating-bolometer method.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "lucifer",
+    "cupid"
+  ],
+  "resources": {
+    "official_website": "https://cupid-0.lngs.infn.it/detector/",
+    "publication_links": [
+      "https://arxiv.org/abs/2206.05130"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.lngs.infn.it/en/cupid",
+      "caption": "CUPID-0 ZnSe detector and light-sensor arrangement developed through the LUCIFER programme.",
+      "credit": "LUCIFER / CUPID-0 Collaboration and INFN LNGS",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.lngs.infn.it/images/ricerca/lucifer/cupid_1.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 940,
+      "height": 703,
+      "sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "cupid-0: official experiment / institutional overview",
+      "url": "https://cupid-0.lngs.infn.it/detector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Final Result on the Neutrinoless Double Beta Decay of 82Se with CUPID-0",
+      "url": "https://arxiv.org/abs/2206.05130",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

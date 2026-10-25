@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "bnl-e-0427",
+  "name": "BNL-E-0427",
+  "full_name": "Brookhaven AGS Experiment E427",
+  "aliases": [
+    "BNL E427",
+    "7-foot bubble chamber neutrino programme"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bubble"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BNL E427 used the seven-foot bubble chamber to measure neutrino scattering on protons and neutrons, supplying important low-energy nucleon cross-section and hadronic-final-state data.",
+  "physics_targets": [
+    "Charged-current neutrino-proton and neutrino-neutron cross sections",
+    "Quasi-elastic axial form factor",
+    "Single-pion and strange-particle production"
+  ],
+  "detection_principle": "Charged secondaries from neutrino interactions left visible bubble tracks in liquid deuterium. Magnetic curvature and topology allowed muons, protons, pions and strange-particle decays to be reconstructed, with quasi-elastic events helping normalize the flux.",
+  "technologies": [
+    "Bubble chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; Brookhaven AGS neutrino beam area",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; Brookhaven AGS neutrino beam area",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1982",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1981",
+      "event": "Quasi-elastic form-factor measurement published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1982",
+      "event": "Separate neutron and proton total cross-section results published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BNL-E-0427 Collaboration",
+    "lead_institutions": [
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target",
+      "value": "Deuterium in the Brookhaven 7-foot bubble chamber",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Cross-section energy range",
+      "value": "0.4-10 GeV in the published total-cross-section analysis",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam",
+      "value": "AGS wide-band muon-neutrino beam",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1982",
+      "summary": "Measured the neutron-to-proton charged-current cross-section ratio and found compatibility with the quark-parton description above 1.6 GeV.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "fnal-e-0545"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/bnlweb/pubaf/bulletin/files/1984/19840217.pdf",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevD.25.617",
+      "https://doi.org/10.1103/PhysRevD.23.2499"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.bnl.gov/about/history/accelerators.php",
+      "caption": "The Brookhaven 7-foot bubble-chamber apparatus.",
+      "credit": "Brookhaven National Laboratory",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.bnl.gov/about/history/images/7-foot-287px.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 287,
+      "height": 160,
+      "sha256": "753ba992e75e6ffb35d54d0392d75e46c73cca8f9d514ae44115d01975240e7d",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "N. J. Baker et al., Total cross sections for muon-neutrino neutron and proton charged-current interactions in the 7-ft bubble chamber",
+      "url": "https://doi.org/10.1103/PhysRevD.25.617",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1982-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "N. J. Baker et al., Quasielastic neutrino scattering: weak nucleon axial-vector form factor",
+      "url": "https://doi.org/10.1103/PhysRevD.23.2499",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1981",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Brookhaven Bulletin, historical neutrino programme",
+      "url": "https://www.bnl.gov/bnlweb/pubaf/bulletin/files/1984/19840217.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "1984-02-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "bubble"
+    ],
+    "technology_tags": [
+      "bubble"
+    ],
+    "is_europe": false
+  }
+}

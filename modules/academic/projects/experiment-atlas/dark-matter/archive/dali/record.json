@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "dali",
+  "name": "DALI",
+  "full_name": "Dark-photons & Axion-Like particles Interferometer",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "DALI combines a magnetized phased array and Fabry–Pérot tuners to retain a large conversion area at high frequencies; its prototype published its first axion limits in 2026.",
+  "physics_targets": [
+    "Axions",
+    "Dark photons"
+  ],
+  "detection_principle": "Dielectric plates and an open resonator enhance axion-generated electromagnetic waves in a magnetic field; low-noise receivers analyze narrow frequency spectra.",
+  "technologies": [
+    "Dielectric phased arrays",
+    "Fabry–Pérot resonators",
+    "Cryogenic magnets"
+  ],
+  "sites": [
+    {
+      "name": "Instituto de Astrofísica de Canarias, Tenerife; final Teide site planned",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Instituto de Astrofísica de Canarias, Tenerife; final Teide site planned",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2026",
+    "evidence": "2026 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "First limits on axion dark matter from a DALI prototype",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DALI Collaboration / project team",
+    "lead_institutions": [
+      "Instituto de Astrofísica de Canarias",
+      "Universidad de La Laguna",
+      "RIKEN"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2026 prototype",
+      "value": "36 h of data; 6.88691–6.91792 GHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Scaled cryogenic prototype",
+      "status": "results_published",
+      "description": "First axion-search results in 2026."
+    },
+    {
+      "name": "Full DALI",
+      "status": "planned",
+      "description": "Subsequent broad-range search proposed at Teide Observatory."
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "No significant axion signal; coupling sensitivity near 28.54 μeV reaches approximately 9.7×10⁻¹² GeV⁻¹.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/q5yq-jj9m",
+      "https://arxiv.org/abs/2303.03997"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2303.03997",
+      "caption": "Conceptual DALI design with magnet, independent cryogenic system, dielectric plates and receiver (Fig. 1, 2023 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2303.03997v6/fig_1.png",
+      "width": 1682,
+      "height": 1028,
+      "sha256": "10cb86a902ee95e33b0c99393c57fefab4374c4c683ff5f3971996023c0a6844",
+      "mime_type": "image/webp",
+      "source_sha256": "83dfd264fd89aa88bc3847338614b870f6baefad3238f08ffe4c6123f81d9e1d",
+      "source_dimensions": {
+        "width": 1682,
+        "height": 1028
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/q5yq-jj9m",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "DALI Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First limits on axion dark matter from a DALI prototype",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/q5yq-jj9m",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Discovery prospects with the Dark-photons & Axion-Like particles Interferometer",
+      "url": "https://arxiv.org/abs/2303.03997",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "The prototype laboratory and final Teide observatory must not be treated as one completed facility; the full apparatus paper is needed to further establish the prototype's location."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

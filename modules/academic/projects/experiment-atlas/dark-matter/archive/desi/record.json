@@ -1,0 +1,170 @@
+{
+  "schema_version": "1.0",
+  "id": "desi",
+  "name": "DESI",
+  "full_name": "Dark Energy Spectroscopic Instrument",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Large spectroscopic survey studying dark energy and large-scale structure, and probing dark matter through dwarf galaxies and Milky-Way / M31 stellar streams.",
+  "physics_targets": [
+    "Dark-matter distribution",
+    "Dwarf-galaxy masses",
+    "Stellar streams and subhalos"
+  ],
+  "detection_principle": "Robotic fibers simultaneously obtain spectra of thousands of objects, measuring redshifts and stellar radial velocities; spatial distributions reconstruct gravitational potentials and structure.",
+  "technologies": [
+    "Robotic fibers",
+    "Multi-object spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "Kitt Peak，Mayall 4 m telescope",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Kitt Peak，Mayall 4 m telescope",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2026-04-15",
+    "evidence": "The 2026 announcement states that the original five-year observations are complete, while the extended survey continues.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DESI collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Fibers",
+      "value": "5000 science-target fibers",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Main telescope",
+      "value": "4 m Mayall",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original five-year survey",
+      "status": "completed",
+      "description": "Original goals completed in 2026-04"
+    },
+    {
+      "name": "Extended survey",
+      "status": "operating",
+      "description": "Continued expansion of sky coverage and dark-matter-related targets"
+    }
+  ],
+  "results": [],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "Gaia",
+    "DES",
+    "Rubin/LSST"
+  ],
+  "resources": {
+    "official_website": "https://www.desi.lbl.gov/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.desi.lbl.gov/fiber-system/",
+      "caption": "Close-up photograph of the DESI fiber system, showing fiber bundles and their mounting structure.",
+      "credit": "DESI / Berkeley Lab source page; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.desi.lbl.gov/wp-content/uploads/sites/8/2018/07/screen-shot-2017-11-13-at-2-15-16-pm.png",
+      "width": 1182,
+      "height": 604,
+      "sha256": "693afa2bfa0171a5d507ee4b051b5317d3981becdcb63e43768eb2162ec8e0b4",
+      "mime_type": "image/webp",
+      "source_sha256": "44a3852081f7140b32ccd8eb7a8aeadd132a53c9eb8bb4668631986001c443e0",
+      "source_dimensions": {
+        "width": 1182,
+        "height": 604
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.desi.lbl.gov/",
+      "caption": "DESI project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.desi.lbl.gov/",
+      "title": "DESI official project",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.desi.lbl.gov/2026/04/15/desi-reaches-mapping-milestone-surpassing-expectations/",
+      "title": "DESI mapping milestone and extended science",
+      "source_date": "2026-04-15",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.desi.lbl.gov/fiber-system/",
+      "title": "DESI fiber system",
+      "source_date": null,
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "miner",
+  "name": "MINER",
+  "full_name": "Mitchell Institute Neutrino Experiment at Reactor",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A low-threshold cryogenic experiment near a reactor that has published measured searches for reactor-produced ALPs in addition to neutrino measurements.",
+  "physics_targets": [
+    "Reactor-produced ALPs",
+    "Axion–photon and axion–electron couplings"
+  ],
+  "detection_principle": "Reactor photon processes can produce ALPs, which scatter or decay in sapphire crystals and deposit energy; TES sensors read out athermal phonons.",
+  "technologies": [
+    "Cryogenic Al₂O₃ crystals",
+    "TES",
+    "Athermal phonons",
+    "Reactor-on/off background comparison"
+  ],
+  "sites": [
+    {
+      "name": "Texas A&M University Nuclear Science Center，College Station",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Texas A&M University Nuclear Science Center，College Station",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Oak Ridge National Laboratory HFIR, Oak Ridge: proposed relocation",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Oak Ridge National Laboratory HFIR, Oak Ridge: proposed relocation",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "planned"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2025",
+    "evidence": "2025 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "MINER reactor based search for axionlike particles using sapphire detectors",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MINER Collaboration / project team",
+    "lead_institutions": [
+      "Texas A&M University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Reactor",
+      "value": "1 MWth TRIGA",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Documented apparatus distance from reactor core",
+      "value": "Approximately 4 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector threshold",
+      "value": "Approximately 100 eV; ALP analysis uses only data above 3 keV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "TRIGA sapphire",
+      "status": "results_published",
+      "description": "Reactor-ALP and CEνNS analyses already exist."
+    },
+    {
+      "name": "HFIR relocation",
+      "status": "planned",
+      "description": "The 2025 literature proposes relocation to ORNL HFIR. This is a subsequent neutrino plan and does not establish new ALP data."
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The first 2025 ALP search constrains photon and electron couplings. The region below 3 keV is reserved for a separate CEνNS analysis; the hardware threshold is not this ALP analysis threshold.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2504.20960",
+      "https://journals.aps.org/prd/abstract/10.1103/tbwx-b5lx",
+      "https://arxiv.org/abs/2510.15999"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2504.20960",
+      "caption": "Stacked configuration of the three germanium detectors used in the MINER reactor-ALP search (Fig. 4, 2025 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2504.20960v1/detector_schematic.png",
+      "width": 1497,
+      "height": 883,
+      "sha256": "fa5cf64fbb6b94be0962471765a93a937931df6730184c4fc580b43cffde16b7",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2504.20960",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "MINER Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MINER reactor based search for axionlike particles using sapphire detectors",
+      "url": "https://arxiv.org/abs/2504.20960",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "MINER published ALP result",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/tbwx-b5lx",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "MINER CEνNS results and HFIR future sensitivity",
+      "url": "https://arxiv.org/abs/2510.15999",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "quantum_sensor"
+    ]
+  }
+}

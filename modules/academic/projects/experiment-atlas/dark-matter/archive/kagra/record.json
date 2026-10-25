@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "kagra",
+  "name": "KAGRA — dark matter searches",
+  "full_name": "Kamioka Gravitational Wave Detector dark-matter searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A Japanese underground cryogenic gravitational-wave detector conducting an independent ultralight vector-dark-matter search through differential responses of mirrors made of different materials.",
+  "physics_targets": [
+    "U(1)B−L vector dark matter"
+  ],
+  "detection_principle": "Sapphire and fused-silica mirrors have different compositions and accelerations under a B−L vector field; auxiliary length channels are searched for coherent narrowband oscillations.",
+  "technologies": [
+    "Cryogenic sapphire mirrors",
+    "Fused-silica auxiliary mirrors",
+    "Auxiliary length channels",
+    "Underground laser interferometry"
+  ],
+  "sites": [
+    {
+      "name": "Kamioka underground facility, Hida, Gifu",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kamioka underground facility, Hida, Gifu",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Ultralight vector dark matter search using data from the KAGRA O3GK run",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KAGRA — dark matter searches Collaboration / project team",
+    "lead_institutions": [
+      "ICRR / University of Tokyo",
+      "KAGRA Collaboration"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Data used",
+      "value": "KAGRA auxiliary length channels during the joint KAGRA O3GK and GEO600 observing period",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Design arm length",
+      "value": "3 km; the optical system includes cryogenic sapphire mirrors.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Analysis of actual 2024 data found no credible signal and set coupling limits. Although weaker than some existing constraints, it demonstrates the feasibility of this low-mass search method.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This analysis actually uses KAGRA's own data, unlike some other LVK publications whose authorship merely includes KAGRA. The instrument's gravitational-wave role does not change the direct-interaction nature of this ultralight-field search.",
+  "related_experiments": [
+    "LIGO",
+    "Virgo",
+    "GEO600"
+  ],
+  "resources": {
+    "official_website": "https://ligo.org/science-summaries/O3KAGRADM/",
+    "publication_links": [
+      "https://arxiv.org/abs/2403.03004"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/kagra-gallery",
+      "caption": "A sapphire mirror in KAGRA's cryogenic suspension (January 2019, official gallery image D3).",
+      "credit": "© Rohan Mehra; provided by ICRR, The University of Tokyo.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://gwcenter.icrr.u-tokyo.ac.jp/wp-content/uploads/2019/11/RMOV5233.jpg",
+      "width": 1280,
+      "height": 1920,
+      "sha256": "14ac6b726124004e0ed78ca04ba3ada4c07b35b2f4b5612cc93e4533acb606d4",
+      "mime_type": "image/webp",
+      "source_sha256": "473650534ef06d3305aaad1d758d184b5fefd12846b0a78c995966c4a1be76e1",
+      "source_dimensions": {
+        "width": 5184,
+        "height": 3456
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/kagra-gallery",
+      "caption": "KAGRA official gallery: underground arm tunnels, central area and sapphire mirrors in cryogenic suspensions.",
+      "credit": "KAGRA Collaboration; see the gallery for individual credits",
+      "reuse_status": "Not downloaded in this entry; reuse permission and credit unverified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ultralight vector dark matter search using data from the KAGRA O3GK run",
+      "url": "https://arxiv.org/abs/2403.03004",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KAGRA dark matter result — collaboration summary",
+      "url": "https://ligo.org/science-summaries/O3KAGRADM/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "detection_principle",
+        "results"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KAGRA official gallery",
+      "url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/kagra-gallery",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "sites",
+        "key_parameters",
+        "media"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "KAGRA official access and site information",
+      "url": "https://gwcenter.icrr.u-tokyo.ac.jp/en/about-kagra-project/access-information",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "sites"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "Project status, approval / construction milestones and subsequent results after the 2024 source require further verification.",
+      "The LVK O4a three-model paper must not be described as using KAGRA data; it actually uses LIGO H1/L1."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

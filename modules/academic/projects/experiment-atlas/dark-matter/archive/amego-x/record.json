@@ -1,0 +1,238 @@
+{
+  "schema_version": "1.0",
+  "id": "amego-x",
+  "name": "AMEGO-X",
+  "full_name": "All-sky Medium Energy Gamma-ray Observatory eXplorer",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "AMEGO-X is an independently named MIDEX-scale concept for a proposed low Earth orbit. The website's old “launch before 2028” statement was an original proposal target, not a currently approved schedule.",
+  "physics_targets": [
+    "Sub-GeV dark matter",
+    "Vector–scalar portal",
+    "Gamma-ray lines and continua",
+    "Primordial-black-hole-related radiation"
+  ],
+  "detection_principle": "AstroPix monolithic silicon pixels and a CsI calorimeter reconstruct photoelectric, Compton and pair-conversion events, mapping all-sky gamma rays to constrain low-mass dark-matter models.",
+  "technologies": [
+    "AstroPix silicon pixels",
+    "CsI calorimeter",
+    "Anticoincidence system"
+  ],
+  "sites": [
+    {
+      "name": "Proposed low Earth orbit",
+      "country": "Space / international project",
+      "country_code": null,
+      "location": "Proposed low Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "The 2021 MIDEX proposal received no further mission funding; component development continued in 2025 with plans to resubmit",
+    "as_of": "2025-07-16",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4",
+      "S5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025-07-16",
+      "event": "The 2021 MIDEX proposal received no further mission funding; component development continued in 2025 with plans to resubmit",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMEGO-X Collaboration / project team",
+    "lead_institutions": [
+      "NASA Goddard Space Flight Center",
+      "AMEGO-X Team"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design survey energy range",
+      "value": "About 100 keV–1 GeV; transient triggering down to about 25 keV",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    },
+    {
+      "name": "Baseline mission concept",
+      "value": "3 years; near-all-sky coverage every two orbits, both design values",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "AMEGO-X",
+      "status": "research_development",
+      "description": "The 2021 MIDEX proposal received no further mission funding; component development continued in 2025 with plans to resubmit"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Vector–scalar-portal studies forecast AMEGO-X and COSI sensitivity to sub-GeV dark matter; these are not exclusions.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4",
+        "S5"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "AMEGO",
+    "COSI",
+    "e-ASTROGAM"
+  ],
+  "resources": {
+    "official_website": "https://ntrs.nasa.gov/api/citations/20220015184/downloads/AMEGO-X.pdf",
+    "publication_links": [
+      "https://arxiv.org/abs/2208.04990",
+      "https://arxiv.org/abs/2508.15891"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/2208.04990",
+      "caption": "Concept illustration of the AMEGO-X space observatory, showing its payload and solar arrays.",
+      "credit": "Authors of the original AMEGO-X paper, arXiv:2208.04990",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2208.04990v2/AMEGO-X_Image.png",
+      "width": 960,
+      "height": 487,
+      "sha256": "28c1a77bf89f9a7d7aa441c4ddccef7be3d1a11862dcb185e4e467663fc08658",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://asd.gsfc.nasa.gov/amego-x/",
+      "caption": "AMEGO-X concept and instrument-figure source page; read the website's old timeline in light of updated status",
+      "credit": "AMEGO-X / NASA GSFC",
+      "reuse_status": "Source-page reference only; image permission and attribution requirements remain to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The AMEGO-X Mission Concept",
+      "url": "https://arxiv.org/abs/2208.04990",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022-11-04",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Surveying the MeV gamma-ray sky with AMEGO-X — funding status",
+      "url": "https://ntrs.nasa.gov/api/citations/20220015184/downloads/AMEGO-X.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "AMEGO-X status at ICRC2025",
+      "url": "https://indico.cern.ch/event/1258933/contributions/6491188/attachments/3104707/5502586/YusukeSuda_AMEGO-X_ICRC2025.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-16",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Constraining light dark matter in vector-scalar portals with COSI and AMEGO-X",
+      "url": "https://arxiv.org/abs/2508.15891",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-01-22",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    },
+    {
+      "title": "AMEGO-X — NASA GSFC",
+      "url": "https://asd.gsfc.nasa.gov/amego-x/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2022-03-23",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S5"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle",
+      "photon_telescope"
+    ]
+  }
+}

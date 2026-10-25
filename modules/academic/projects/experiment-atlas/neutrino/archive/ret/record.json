@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "id": "ret",
+  "name": "RET / RET-CR / RET-N",
+  "full_name": "Radar Echo Telescope programme",
+  "aliases": [
+    "RET",
+    "RET-CR",
+    "RET-N",
+    "Radar Echo Telescope for Cosmic Rays",
+    "Radar Echo Telescope for Neutrinos"
+  ],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "A radar-detection programme uses an implemented cosmic-ray pathfinder in Greenland to develop technology for a future neutrino observatory. RET-CR tests cascades entering ice; RET-N is the proposed neutrino array.",
+  "physics_targets": [
+    "Ultra-high-energy neutrino detection technology",
+    "Radar echoes from particle cascades",
+    "Cosmic-ray calibration"
+  ],
+  "detection_principle": "An energetic particle cascade ionises ice, temporarily creating a radio-reflecting plasma. A transmitter illuminates the ice and receivers search for a radar echo; cosmic-ray triggers and accelerator tests validate the method before neutrino observations.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "RET-CR site near Summit Station, Greenland",
+      "country": "Greenland (Denmark)",
+      "country_code": "GRL",
+      "location": "RET-CR site near Summit Station, Greenland",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "RET-CR is an implemented cosmic-ray pathfinder with 2023 and 2024 field data. RET-N remains a proposed neutrino array in the 2026 contribution.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020",
+      "event": "T576 accelerator measurements demonstrated radar echoes from particle cascades.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023-05",
+      "event": "RET-CR deployed in Greenland.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Improved RET-CR field campaign collected further data.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "RET-N remained a future neutrino-observatory concept in conference studies.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RET / RET-CR / RET-N Collaboration",
+    "lead_institutions": [
+      "University of Kansas",
+      "Vrije Universiteit Brussel",
+      "Ohio State University",
+      "Pennsylvania State University",
+      "SLAC National Accelerator Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "RET-CR site",
+      "value": "Near Summit Station, Greenland",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "First field exposure",
+      "value": "May 2023 deployment, four-week commissioning, then nine days of data",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "RET-N target energy",
+      "value": "Above approximately 10 PeV; prospective design",
+      "source_ids": [
+        "s1",
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "T576 accelerator validation",
+      "status": "Completed tests",
+      "description": "Electron-beam-induced cascades provided a controlled demonstration of radar echoes, distinct from neutrino observation.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "RET-CR Greenland pathfinder",
+      "status": "Implemented R&D",
+      "description": "Cosmic-ray-triggered field instrument with 2023 and 2024 campaigns.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "RET-N neutrino observatory",
+      "status": "Proposed",
+      "description": "A future in-ice neutrino detector developed from pathfinder measurements. Its full-scale site and configuration are not fixed by these sources.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "RET-CR initial performance demonstrated technical operation of a radar-based particle-cascade detector in ice. This did not establish detection of astrophysical neutrinos.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "rno-g",
+    "icecube-gen2"
+  ],
+  "resources": {
+    "official_website": "https://www.radarechotelescope.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2409.07511",
+      "https://arxiv.org/abs/2104.00459",
+      "https://indico-icehap.phys.s.chiba-u.ac.jp/event/3/contributions/476/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.radarechotelescope.org/",
+      "caption": "RET-CR cosmic-ray pathfinder concept, showing the surface trigger, in-ice cascade and radar transmitter/receiver; this is a design diagram, not a neutrino event.",
+      "credit": "Radar Echo Telescope Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.radarechotelescope.org/images/retCRConcept.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1444,
+      "height": 1772,
+      "sha256": "61d196d87c0485ffda4447274b44e482d4cdd74e6c1a1d67557444a6e9b0868c",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked.",
+      "source_sha256": "5eff55cf300d0a698a72c3262d0ec30578f6ce8a0d6ce92c797e544ff7b8ec2b",
+      "source_dimensions": {
+        "width": 1444,
+        "height": 1772
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Radar Echo Telescope Collaboration, Science and project status",
+      "url": "https://www.radarechotelescope.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "P. Allison et al., Initial performance of the Radar Echo Telescope for Cosmic Rays, RET-CR",
+      "url": "https://arxiv.org/abs/2409.07511",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "P. Allison et al., The Radar Echo Telescope for Cosmic Rays: Pathfinder Experiment for a Next-Generation Neutrino Observatory",
+      "url": "https://arxiv.org/abs/2104.00459",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "J. Loonen, RET-N reconstruction and detector development at TeVPA 2026",
+      "url": "https://indico-icehap.phys.s.chiba-u.ac.jp/event/3/contributions/476/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "GRL"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

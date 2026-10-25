@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "wispdmx",
+  "name": "WISPDMX",
+  "full_name": "WISP Dark Matter eXperiment",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A search for lower-mass hidden photons using multiple radio-frequency cavity modes and broadband reception.",
+  "physics_targets": [
+    "Dark photons",
+    "WISP"
+  ],
+  "detection_principle": "Dark-photon kinetic mixing generates weak electromagnetic signals in the cavity; four tunable resonant modes and nonresonant spectra simultaneously constrain different mass ranges.",
+  "technologies": [
+    "Radio-frequency cavities",
+    "Multimode tuning",
+    "Broadband spectrometers"
+  ],
+  "sites": [
+    {
+      "name": "University of Hamburg / DESY research environment",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "University of Hamburg / DESY research environment",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2019",
+    "evidence": "2019 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "First results from the WISPDMX radio frequency cavity searches for hidden photon dark matter",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WISPDMX Collaboration / project team",
+    "lead_institutions": [
+      "University of Hamburg",
+      "Max Planck Institute for Radio Astronomy",
+      "DESY"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Resonant coverage",
+      "value": "0.8–2.07 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First dataset",
+      "value": "Approximately 61 h; 500 MHz bandwidth; 50 Hz resolution",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "No credible dark-matter candidate; resonant and broadband kinetic-mixing upper limits were obtained.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "WISPLC",
+    "BRASS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1907.12449"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1907.12449",
+      "caption": "Mechanical model of the 208 MHz resonant cavity used by WISPDMX (Fig. 5, 2019 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1907.12449v3/figure05.png",
+      "width": 1004,
+      "height": 330,
+      "sha256": "e024697ad734039bc6f508b8c16d496a1357ef1d2945ec9d0d89b3318cbfa8f5",
+      "mime_type": "image/webp",
+      "source_sha256": "0d45ff21771040085ccba0b316cea26c148acc04b9280ba54c8043c45de50c75",
+      "source_dimensions": {
+        "width": 1004,
+        "height": 330
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1907.12449",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "WISPDMX Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First results from the WISPDMX radio frequency cavity searches for hidden photon dark matter",
+      "url": "https://arxiv.org/abs/1907.12449",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf"
+    ]
+  }
+}

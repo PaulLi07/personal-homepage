@@ -1,0 +1,206 @@
+{
+  "schema_version": "1.0",
+  "id": "amadeus",
+  "name": "AMADEUS",
+  "full_name": "ANTARES Modules for the Acoustic Detection Under the Sea",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "acoustic"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "An acoustic test system integrated into the ANTARES deep-sea neutrino telescope studied whether ultra-high-energy neutrino showers could be detected through their pressure pulses. It recorded data from 2008 to 2015.",
+  "physics_targets": [
+    "Acoustic detection of ultra-high-energy neutrinos",
+    "Deep-sea acoustic backgrounds",
+    "Acoustic sensor technology"
+  ],
+  "detection_principle": "Hydrophones and acoustic sensors in glass spheres record the thermo-acoustic pressure pulse that a compact particle shower could create in sea water. Correlations between sensors reconstruct transient directions and constrain ambient backgrounds.",
+  "technologies": [
+    "Thermo-acoustic particle detection with hydrophones or piezoelectric sensors"
+  ],
+  "sites": [
+    {
+      "name": "ANTARES site, approximately 40 km offshore Toulon, Mediterranean Sea",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "ANTARES site, approximately 40 km offshore Toulon, Mediterranean Sea",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The official ANTARES acoustic page explicitly states that AMADEUS recorded data from 2008 to 2015.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "Completed acoustic system began operation within ANTARES.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2011",
+      "event": "Detector description and initial in-situ performance published.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "Acoustic-system data taking ended.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AMADEUS Collaboration",
+    "lead_institutions": [
+      "Friedrich-Alexander University Erlangen-Nuremberg",
+      "ANTARES Collaboration"
+    ],
+    "participants_note": "Institutions listed here are selected participants named in the cited project publications."
+  },
+  "key_parameters": [
+    {
+      "name": "Acoustic channels",
+      "value": "36 sensors in six storeys, with six sensors per storey",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Sensor spacings",
+      "value": "About 1 m within a storey and distances up to 340 m between storeys",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2,050–2,300 m for acoustic sensors at the ANTARES site",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Data-taking interval",
+      "value": "2008–2015",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "Measured ambient noise and transient acoustic backgrounds and demonstrated directional reconstruction. No confirmed acoustic-neutrino detection was reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Published limits are not neutrino detections. Instrument or exposure parameters refer to the explicitly named campaign; research prototypes and future designs are distinguished.",
+  "related_experiments": [
+    "antares",
+    "saund",
+    "acorne",
+    "spats"
+  ],
+  "resources": {
+    "official_website": "https://antares.in2p3.fr/science/acoustic/",
+    "publication_links": [
+      "https://arxiv.org/abs/1009.4179",
+      "https://doi.org/10.1016/j.nima.2010.12.053"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1009.4179",
+      "caption": "Three AMADEUS acoustic storey configurations photographed during deployment (detector paper, Figure 3).",
+      "credit": "J. A. Aguilar et al. / ANTARES Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1009.4179",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 918,
+      "height": 534,
+      "sha256": "f4c29d49c6616968e806e03a307702fd3966efe6f930bef7373ce0fbda4c5150",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected against the cited original paper/project page and the final 12-image contact sheet; identity, full axes/labels or apparatus extent, and caption checked."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ANTARES Collaboration, Acoustic studies and AMADEUS",
+      "url": "https://antares.in2p3.fr/science/acoustic/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "J. A. Aguilar et al., AMADEUS – The Acoustic Neutrino Detection Test System of the ANTARES Deep-Sea Neutrino Telescope",
+      "url": "https://arxiv.org/abs/1009.4179",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "J. A. Aguilar et al., AMADEUS detector description",
+      "url": "https://doi.org/10.1016/j.nima.2010.09.053",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "acoustic"
+    ],
+    "technology_tags": [
+      "acoustic"
+    ],
+    "is_europe": true
+  }
+}

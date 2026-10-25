@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "legend-1000",
+  "name": "LEGEND-1000",
+  "full_name": "Large Enriched Germanium Experiment for Neutrinoless double-beta Decay - LEGEND-1000",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "LEGEND-1000 is a tonne-scale germanium-76 neutrinoless double-beta-decay proposal. It extends the low-background germanium and liquid-argon methods tested by GERDA, Majorana and LEGEND-200.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Enriched germanium crystals provide precise calorimetry inside liquid argon. The larger design relies on radiopure materials, pulse-shape rejection and argon scintillation detection to reduce backgrounds over a long exposure.",
+  "technologies": [
+    "Scintillator detectors",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso candidate/selected programme site",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso candidate/selected programme site",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_site"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "Planned",
+    "as_of": "2025",
+    "evidence": "The design report describes the tonne-scale concept and projected sensitivity; it does not establish a completed detector.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "LEGEND-1000 Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory",
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Design isotope mass scale",
+      "value": "Approximately 1000 kg of enriched germanium",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate isotope",
+      "value": "76Ge",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Sensitivity class",
+      "value": "10^28-year half-life scale; forecast, not a measured limit",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The design report describes the tonne-scale concept and projected sensitivity; it does not establish a completed detector.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "legend",
+    "gerda",
+    "majorana"
+  ],
+  "resources": {
+    "official_website": "https://legend-exp.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2107.11462"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2107.11462",
+      "caption": "Baseline LEGEND-1000 array and detector-string concept in its preconceptual design report (Fig. 12).",
+      "credit": "LEGEND-1000 Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2107.11462#page=25",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 612,
+      "height": 270,
+      "sha256": "d4e78f424292244580f4dbaf61373013fdfde9a25f823ff19a0f2b41756e11bb",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LEGEND-1000: official experiment / institutional overview",
+      "url": "https://legend-exp.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "LEGEND-1000 Preconceptual Design Report",
+      "url": "https://arxiv.org/abs/2107.11462",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

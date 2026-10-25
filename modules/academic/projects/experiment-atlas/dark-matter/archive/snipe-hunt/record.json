@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "snipe-hunt",
+  "name": "SNIPE Hunt",
+  "full_name": "Search for Non-Interacting Particles Experimental Hunt",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "Synchronized magnetic measurements at multiple field stations, using Earth and its ionosphere as a conversion system for ultralight dark matter.",
+  "physics_targets": [
+    "Ultralight axions",
+    "Dark photons"
+  ],
+  "detection_principle": "Axions interacting with the geomagnetic field, or dark photons interacting with conducting boundaries, produce oscillating magnetic fields with characteristic spatial patterns; correlations between sites reject local noise.",
+  "technologies": [
+    "Magnetometer networks",
+    "Low-noise field stations",
+    "Correlation analysis"
+  ],
+  "sites": [
+    {
+      "name": "Multiple low-magnetic-noise field stations in the United States",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Multiple low-magnetic-noise field stations in the United States",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "A Hunt for Magnetic Signatures of Hidden-Photon and Axion Dark Matter in the Wilderness",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SNIPE Hunt Collaboration / project team",
+    "lead_institutions": [
+      "Bucknell University",
+      "California State University East Bay",
+      "Oberlin College"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "First frequency band",
+      "value": "0.5–5.0 Hz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Documented data-taking",
+      "value": "July 2022, three stations",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "No dark-matter magnetic-field evidence; limits were obtained on kinetic mixing and axion–photon coupling.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "SuperMAG",
+    "GNOME"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2306.11575",
+      "https://arxiv.org/html/2306.11575v2"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2306.11575",
+      "caption": "Adjustable pitch, roll and azimuth mount for the SNIPE HUNT portable magnetic-field sensor (Fig. 2, 2023 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2306.11575v2/Mount.png",
+      "width": 600,
+      "height": 600,
+      "sha256": "094ec98e896423aa27400a8c1398c9f6c720f1de22f20211892b58a96b0f0022",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2306.11575",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SNIPE Hunt Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A Hunt for Magnetic Signatures of Hidden-Photon and Axion Dark Matter in the Wilderness",
+      "url": "https://arxiv.org/abs/2306.11575",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SNIPE Hunt full experimental details",
+      "url": "https://arxiv.org/html/2306.11575v2",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "Field-station place names and coordinates have not yet been compiled individually; participating-university addresses must not substitute for field deployment locations."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "spin_magnetometry"
+    ]
+  }
+}

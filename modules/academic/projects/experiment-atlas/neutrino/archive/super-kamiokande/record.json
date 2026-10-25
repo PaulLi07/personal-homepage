@@ -1,0 +1,292 @@
+{
+  "schema_version": "1.0",
+  "id": "super-kamiokande",
+  "name": "Super-Kamiokande",
+  "full_name": "Super-Kamiokande",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "atmospheric",
+    "astronomy",
+    "supernova",
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [
+    2015
+  ],
+  "role": "dedicated",
+  "summary": "A large underground water Cherenkov detector at Kamioka measures solar, atmospheric and accelerator neutrinos and searches for supernova neutrinos and nucleon decay. Its gadolinium-loaded phase strengthens antineutrino identification.",
+  "physics_targets": [
+    "Atmospheric and accelerator neutrino oscillations",
+    "Solar neutrinos",
+    "Galactic supernovae and diffuse supernova neutrino background",
+    "Nucleon decay"
+  ],
+  "detection_principle": "Photomultipliers image Cherenkov rings from charged particles in water, separating electron-like showers from muon-like tracks. Gadolinium captures neutrons and adds a delayed gamma signal after inverse beta decay.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; underground at Kamioka, Hida, Gifu Prefecture",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; underground at Kamioka, Hida, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "The official SK-Gd page explicitly describes stable operation with 0.03% gadolinium in 2026.",
+    "source_ids": [
+      "s3",
+      "s5"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1996",
+      "event": "Science operation began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "date": "1998",
+      "event": "Atmospheric-neutrino oscillation evidence published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "date": "2020",
+      "event": "First gadolinium loading initiated SK-Gd.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Second loading increased neutron-capture efficiency.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Super-Kamiokande Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Water and fiducial masses",
+      "value": "50,000 tonnes total; 22,500 tonnes fiducial",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "name": "Tank dimensions",
+      "value": "Approximately 39 m diameter and 42 m height",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "name": "SK-Gd loading",
+      "value": "Approximately 0.03% elemental gadolinium by mass after the 2022 loading",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "name": "Neutron capture",
+      "value": "Approximately 75% capture on gadolinium at this concentration",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SK-I to SK-V",
+      "description": "Pure-water running with successive detector and electronics configurations.",
+      "source_ids": [
+        "s1"
+      ],
+      "status": "Completed historical phases"
+    },
+    {
+      "name": "SK-Gd",
+      "description": "Gadolinium-loaded water operation began in 2020; concentration increased in 2022.",
+      "source_ids": [
+        "s3",
+        "s4"
+      ],
+      "status": "Operating"
+    }
+  ],
+  "results": [
+    {
+      "date": "1998",
+      "summary": "A zenith-dependent muon-neutrino deficit established strong evidence for atmospheric-neutrino oscillations.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    },
+    {
+      "date": "SK-Gd programme",
+      "summary": "Improved neutron tagging supports diffuse-supernova-antineutrino searches; the cited current project description presents first detection as a goal.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3",
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "kamiokande",
+    "hyper-kamiokande",
+    "t2k"
+  ],
+  "resources": {
+    "official_website": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/9807003",
+      "https://arxiv.org/abs/2403.07796"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://t2k-experiment.org/photo/super-kamiokande/",
+      "caption": "Photograph of the photomultiplier-tube array inside the Super-Kamiokande detector.",
+      "credit": "Kamioka Observatory / ICRR, University of Tokyo; supplied through the T2K collaboration gallery. See the source for individual photographer credits",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "http://t2k-experiment.org/wp-content/uploads/slideshow3-700x468.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 700,
+      "height": 468,
+      "sha256": "47679b24d7a18a7a1b4a07af867dd5bbf1dfb7aa93b54048924f55d00af05e07",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Kamioka Observatory, detector comparison and history",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/hk/about/outline/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Super-Kamiokande Collaboration, Evidence for oscillation of atmospheric neutrinos",
+      "url": "https://arxiv.org/abs/hep-ex/9807003",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1998",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Super-Kamiokande Collaboration, SK-Gd current status",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/sk/about/detector/sk-gd/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Super-Kamiokande Collaboration, second gadolinium loading",
+      "url": "https://arxiv.org/abs/2403.07796",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "Kamioka Observatory, 30 Years of Super-Kamiokande Operations",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/en/news/detail/1162",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-23",
+      "supports": [
+        "Operating status and Super-Kamiokande identity"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

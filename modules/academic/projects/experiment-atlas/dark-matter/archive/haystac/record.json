@@ -1,0 +1,195 @@
+{
+  "schema_version": "1.0",
+  "id": "haystac",
+  "name": "HAYSTAC",
+  "full_name": "Haloscope At Yale Sensitive To Axion CDM",
+  "aliases": [
+    "ADMX-HF"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "HAYSTAC is a high-frequency cryogenic-cavity axion search, initially named ADMX-HF, that developed squeezed-state receivers.",
+  "physics_targets": [
+    "QCD axions",
+    "Axion–photon coupling"
+  ],
+  "detection_principle": "A magnetized cavity converts axions to microwaves; squeezed-vacuum readout lowers effective quantum noise to improve scanning speed.",
+  "technologies": [
+    "Microwave cavities",
+    "Josephson parametric amplifiers",
+    "Quantum squeezing",
+    "Dilution refrigeration"
+  ],
+  "sites": [
+    {
+      "name": "Yale University Wright Laboratory, New Haven",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Yale University Wright Laboratory, New Haven",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2024",
+    "evidence": "2024 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Dark Matter Axion Search with HAYSTAC Phase II",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HAYSTAC Collaboration / project team",
+    "lead_institutions": [
+      "Yale University",
+      "University of California, Berkeley",
+      "University of Colorado Boulder"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Phase",
+      "value": "Phase I and Phase II; Phase II uses a squeezed-state receiver",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Phase I",
+      "status": "completed",
+      "description": "Conventional quantum-limited receiver chain."
+    },
+    {
+      "name": "Phase II",
+      "status": "results_published",
+      "description": "Squeezed-state readout."
+    },
+    {
+      "name": "RAY",
+      "status": "research_development",
+      "description": "Rydberg Atoms at Yale, a subsequent approach using Rydberg-atom single-photon readout."
+    }
+  ],
+  "results": [
+    {
+      "date": "2024",
+      "summary": "Phase II excludes couplings in particular mass intervals and validates the scanning-rate improvement from quantum squeezing.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://haystac.yale.edu/about-haystac",
+    "publication_links": [
+      "https://arxiv.org/abs/2409.08998"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://lamoreauxgroup.yale.edu/",
+      "caption": "HAYSTAC Phase II cryogenic insert, with refrigeration and microwave components above the tunable microwave cavity.",
+      "credit": "Steve Lamoreaux Research Lab, Yale University; no separate photographer is credited on the page.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://lamoreauxgroup.yale.edu/sites/default/files/resize/images/Picture5-200x430.jpg",
+      "width": 200,
+      "height": 430,
+      "sha256": "40c5c2ab34f775f08dcb2217585a835d6a4da601cb3d6a6211ab2c87a58153cf",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2409.08998",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "HAYSTAC Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Dark Matter Axion Search with HAYSTAC Phase II",
+      "url": "https://arxiv.org/abs/2409.08998",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "About HAYSTAC",
+      "url": "https://haystac.yale.edu/about-haystac",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The Experiment",
+      "url": "https://haystac.yale.edu/subpage-1",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "quantum_sensor"
+    ]
+  }
+}

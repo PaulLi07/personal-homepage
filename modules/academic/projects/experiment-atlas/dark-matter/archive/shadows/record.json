@@ -1,0 +1,196 @@
+{
+  "schema_version": "1.0",
+  "id": "shadows",
+  "name": "SHADOWS",
+  "full_name": "Search for Hidden And Dark Objects With the SPS",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "SHADOWS is a named, unimplemented dark-sector proposal for the CERN SPS North Area ECN3 site. Its archival value is retained without counting it as an operating experiment.",
+  "physics_targets": [
+    "Dark photons",
+    "Dark scalars",
+    "ALP",
+    "Heavy neutral leptons"
+  ],
+  "detection_principle": "A proposed off-axis decay volume and magnetic spectrometer near a 400 GeV proton beam dump would search for visible long-lived decays of weakly coupled particles.",
+  "technologies": [
+    "Off-axis decay volume",
+    "Magnetic spectrometer",
+    "Timing",
+    "Calorimeter"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS North Area ECN3 candidate site",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN SPS North Area ECN3 candidate site",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Historical ECN3 candidate proposal; CERN ultimately selected SHiP, so SHADOWS must not be treated as approved for construction",
+    "as_of": "2024",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024",
+      "event": "Historical ECN3 candidate proposal; CERN ultimately selected SHiP, so SHADOWS must not be treated as approved for construction",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SHADOWS Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "INFN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original proposal beam",
+      "value": "400 GeV SPS proton beam",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "Original technical-proposal submission",
+      "value": "18 August 2023",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SHADOWS",
+      "status": "proposed",
+      "description": "Historical ECN3 candidate proposal; CERN ultimately selected SHiP, so SHADOWS must not be treated as approved for construction"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "NA62",
+    "SHiP"
+  ],
+  "resources": {
+    "official_website": "https://cerncourier.com/a/ship-to-chart-hidden-sector/",
+    "publication_links": [
+      "https://cds.cern.ch/record/2799412/files/SPSC-EOI-022.pdf",
+      "https://indico.cern.ch/event/1303571/contributions/5482376/attachments/2708706/4703125/SHADOWS_SPSC_Sept2023.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.cern.ch/event/1303571/contributions/5482376/attachments/2708706/4703125/SHADOWS_SPSC_Sept2023.pdf",
+      "caption": "Proposed TCC8 tunnel layout presented by SHADOWS at the 2023 SPSC meeting, identifying beam, target station, magnetized iron blocks, detector and downstream shielding; a proposal-stage design.",
+      "credit": "SHADOWS Collaboration, public SPSC report of 5 September 2023, p. 5",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/1303571/contributions/5482376/attachments/2708706/4703125/SHADOWS_SPSC_Sept2023.pdf",
+      "width": 1920,
+      "height": 959,
+      "sha256": "346507b05ec457bb6439976e2d144baca2340cb8d0917d479bb1995cd2c70219",
+      "mime_type": "image/webp",
+      "source_sha256": "e3446af17d7d6c85d3501968340fbc8e68efd07e91fa28f12c9d3879f3fdc269",
+      "source_dimensions": {
+        "width": 2333,
+        "height": 1165
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://cds.cern.ch/record/2799412/files/SPSC-EOI-022.pdf",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "SHADOWS Expression of Interest",
+      "url": "https://cds.cern.ch/record/2799412/files/SPSC-EOI-022.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "SHADOWS SPSC presentation",
+      "url": "https://indico.cern.ch/event/1303571/contributions/5482376/attachments/2708706/4703125/SHADOWS_SPSC_Sept2023.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2023-09",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "SHiP to chart hidden sector",
+      "url": "https://cerncourier.com/a/ship-to-chart-hidden-sector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "darklight",
+  "name": "DarkLight",
+  "full_name": "DarkLight @ ARIEL",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "DarkLight is deployed at the TRIUMF ARIEL electron linac, Vancouver. It is a dedicated low-energy electron-beam dark-sector search, currently located in Canada.",
+  "physics_targets": [
+    "Dark photons",
+    "Low-mass new bosons",
+    "X17-related hypotheses"
+  ],
+  "detection_principle": "A low-energy electron beam strikes a thin metal target. Two magnetic spectrometers measure coincident e⁺e⁻ pairs for a narrow invariant-mass peak; the X17 motivation is an anomaly interpretation to be tested.",
+  "technologies": [
+    "Magnetic spectrometer",
+    "GEM",
+    "Scintillator trigger"
+  ],
+  "sites": [
+    {
+      "name": "TRIUMF ARIEL electron linac, Vancouver",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "TRIUMF ARIEL electron linac, Vancouver",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "commissioning",
+    "label": "The current TRIUMF apparatus is in installation / commissioning-related phases; a dated latest confirmation of physics data-taking is lacking",
+    "as_of": null,
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "DarkLight Collaboration / project team",
+    "lead_institutions": [
+      "TRIUMF",
+      "MIT"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Electron-beam design range",
+      "value": "30–50 MeV",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Target and readout",
+      "value": "Approximately 1 μm tantalum target; two-arm spectrometer with GEMs and scintillator triggers",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Early Jefferson Lab concept",
+      "status": "research_development",
+      "description": "Early project approach; do not conflate its location with the actual ARIEL apparatus"
+    },
+    {
+      "name": "DarkLight @ ARIEL",
+      "status": "commissioning",
+      "description": "Canadian deployment; installation and beam stages distinguished according to collaboration sources"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "APEX",
+    "HPS",
+    "PADME"
+  ],
+  "resources": {
+    "official_website": "https://sites.mit.edu/darklightatariel/",
+    "publication_links": [
+      "https://indico.triumf.ca/event/284/contributions/3503/attachments/2664/3174/DarkLight-5yp-2022.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.triumf.ca/event/284/contributions/3503/attachments/2664/3174/DarkLight-5yp-2022.pdf",
+      "caption": "Early DarkLight design at ARIEL from a 2022 project report, showing the two spectrometer arms, target chamber, GEMs and scintillator triggers. Source PDF p. 12.",
+      "credit": "Kate Pachal / DarkLight Collaboration (TRIUMF report)",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.triumf.ca/event/284/contributions/3503/attachments/2664/3174/DarkLight-5yp-2022.pdf",
+      "width": 1920,
+      "height": 1150,
+      "sha256": "37076d77f919ab6ffe11bd479efa4bd913f791cb19d88eeebdf7e21b666e1bbc",
+      "mime_type": "image/webp",
+      "source_sha256": "4dc5d516901d7acf1689594bbc1d4852c37a8dbd58ccc474f1d1449c21df8f35",
+      "source_dimensions": {
+        "width": 2413,
+        "height": 1445
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://sites.mit.edu/darklightatariel/",
+      "caption": "ARIEL DarkLight apparatus and spectrometer description",
+      "credit": "DarkLight Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "DarkLight @ ARIEL",
+      "url": "https://sites.mit.edu/darklightatariel/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "DarkLight experiment 2022 proposal timeline",
+      "url": "https://indico.triumf.ca/event/284/contributions/3503/attachments/2664/3174/DarkLight-5yp-2022.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The official apparatus-status page is undated; the access year must not be treated as the start of operation."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

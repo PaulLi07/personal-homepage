@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "nestor",
+  "name": "NESTOR",
+  "full_name": "Neutrino Extended Submarine Telescope with Oceanographic Research",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A historical Greek deep-sea telescope programme tested rigid star-shaped optical-detector floors off Pylos and contributed to the development of Mediterranean neutrino observatories.",
+  "physics_targets": [
+    "Deep-sea high-energy neutrino-telescope technology",
+    "Atmospheric muons",
+    "Future astrophysical neutrino searches"
+  ],
+  "detection_principle": "Upward- and downward-facing photomultiplier pairs on titanium arms observed Cherenkov light. A shore-connected prototype floor demonstrated deep-water timing and muon reconstruction.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Greece; Mediterranean Sea off Pylos",
+      "country": "Greece",
+      "country_code": "GRC",
+      "location": "Greece; Mediterranean Sea off Pylos",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "Historical prototype operation is documented. A later paper describes future tower work; that is not evidence of a completed full array.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2003",
+      "event": "First shore-connected floor deployed in March.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2003",
+      "event": "Atmospheric-muon reconstruction from the prototype reported.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "Later programme",
+      "event": "Design work fed into the broader KM3NeT effort; the original full tower was not established as an operating observatory.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NESTOR Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Implemented prototype",
+      "value": "One reduced-size detector floor deployed in 2003",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 4,000 m in the Ionian Sea",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Full tower design",
+      "value": "12 rigid floors with paired PMTs on six arms; proposed floor diameter approximately 32 m",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "The prototype reconstructed the angular distribution of atmospheric muons in agreement with simulations, validating the basic deep-water readout concept.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "km3net",
+    "antares",
+    "nemo-telescope",
+    "dumand"
+  ],
+  "resources": {
+    "official_website": "https://cerncourier.com/a/light-in-the-darkness/",
+    "publication_links": [
+      "https://doi.org/10.1016/j.nima.2008.12.216"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://cerncourier.com/a/light-in-the-darkness/",
+      "caption": "A NESTOR prototype detector floor before deep-sea deployment.",
+      "credit": "NESTOR Collaboration / CERN Courier",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://cerncourier.com/wp-content/uploads/2003/11/cernnes2_11-03.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 300,
+      "height": 199,
+      "sha256": "52abba8e21c74208c98d30dd84e86af78242ff6d553e2e195d75840fdffbb97b",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A. Ball and A. Tsirigotis, first NESTOR results",
+      "url": "https://cerncourier.com/a/light-in-the-darkness/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2003-11-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NESTOR Collaboration, underwater neutrino telescope project",
+      "url": "https://doi.org/10.1016/j.nima.2008.12.216",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2009",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "GRC",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": true
+  }
+}

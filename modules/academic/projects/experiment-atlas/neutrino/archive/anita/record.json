@@ -1,0 +1,214 @@
+{
+  "schema_version": "1.0",
+  "id": "anita",
+  "name": "ANITA",
+  "full_name": "Antarctic Impulsive Transient Antenna",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A series of long-duration Antarctic balloon flights searched for coherent radio pulses from the highest-energy neutrinos over enormous volumes of polar ice.",
+  "physics_targets": [
+    "Ultra-high-energy diffuse neutrinos",
+    "Cosmic-ray air showers",
+    "Unusual upward-going radio events"
+  ],
+  "detection_principle": "A high-altitude array of dual-polarisation horn antennas measured nanosecond radio impulses. Askaryan signals from showers in ice were distinguished from geomagnetic air-shower emission and anthropogenic backgrounds.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; high-altitude circumpolar balloon",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; high-altitude circumpolar balloon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The documented four-flight ANITA programme is historical; PUEO is its successor.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2006",
+      "event": "First full science flight.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2016",
+      "event": "Fourth flight completed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "ANITA-IV diffuse-neutrino search published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANITA Collaboration",
+    "lead_institutions": [
+      "University of Hawaii at Mānoa",
+      "University of Chicago"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "ANITA-IV payload",
+      "value": "48 dual-polarisation horn antennas",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Float altitude",
+      "value": "Approximately 37–40 km",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Fourth flight",
+      "value": "28 days during December 2016; earlier flights in 2006, 2008 and 2014",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "Each of two blind searches retained one signal-region event compatible with its background estimate; flux limits were reported rather than a neutrino discovery.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "Programme legacy",
+      "summary": "Anomalous air-shower-like events motivate follow-up; they do not by themselves establish an astrophysical tau-neutrino flux.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "pueo",
+    "taroge-m"
+  ],
+  "resources": {
+    "official_website": "https://www.qmul.ac.uk/spcs/epp/research/neutrino-physics/anitapueo/",
+    "publication_links": [
+      "https://arxiv.org/abs/1902.04005"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://indico.cern.ch/event/432527/contributions/1072289/attachments/1320625/1980337/ICHEP16_ANITA_Deaconu.pdf",
+      "caption": "ANITA-III payload at its Antarctic landing site.",
+      "credit": "ANITA Collaboration; photograph by Josh F., Australian Antarctic Division",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://indico.cern.ch/event/432527/contributions/1072289/attachments/1320625/1980337/ICHEP16_ANITA_Deaconu.pdf#page=8",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1024,
+      "height": 683,
+      "sha256": "58c093950b39078b7858ba77fabc554ecfb73c9f40f1cbf33f0bd4ba2d27842b",
+      "mime_type": "image/webp",
+      "source_sha256": "76de8097de2ffd0ae89c38283e34f46cc663b6b37ee6aefdb6cd88cddacb831a",
+      "source_dimensions": {
+        "width": 1024,
+        "height": 683
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Queen Mary University of London, ANITA and PUEO",
+      "url": "https://www.qmul.ac.uk/spcs/epp/research/neutrino-physics/anitapueo/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ANITA Collaboration, fourth-flight cosmic neutrino constraints",
+      "url": "https://arxiv.org/abs/1902.04005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "ANITA Collaboration; photograph by Josh F., Australian Antarctic Division — representative apparatus image",
+      "url": "https://indico.cern.ch/event/432527/contributions/1072289/attachments/1320625/1980337/ICHEP16_ANITA_Deaconu.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

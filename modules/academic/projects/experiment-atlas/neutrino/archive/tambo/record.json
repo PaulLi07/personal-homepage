@@ -1,0 +1,228 @@
+{
+  "schema_version": "1.0",
+  "id": "tambo",
+  "name": "TAMBO",
+  "full_name": "Tau Air-shower Mountain-Based Observatory",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A proposed deep-valley observatory in the Peruvian Andes targets a clean sample of high-energy tau neutrinos using mountains as the interaction target.",
+  "physics_targets": [
+    "Astrophysical tau-neutrino spectrum from approximately 1–100 PeV",
+    "Neutrino source localisation",
+    "High-energy flavour physics"
+  ],
+  "detection_principle": "Tau neutrinos interact in one mountain wall, and emerging tau leptons decay into air showers across the valley. An array of particle detectors on the opposite slope would sample those showers.",
+  "technologies": [
+    "Scintillator detectors",
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Colca Valley candidate site",
+      "country": "Peru",
+      "country_code": "PER",
+      "location": "Arequipa region, Peruvian Andes",
+      "latitude": -15.6,
+      "longitude": -71.98,
+      "precision": "approximate_site",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "Primary Peruvian institutions describe TAMBO as proposed and in early prototype development.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2020s",
+      "event": "Valley-detector concept and sensitivity studies developed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Detailed collaboration concept released.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Peruvian partners describe early prototype development; full operation remains future.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "TAMBO Collaboration",
+    "lead_institutions": [
+      "Harvard University",
+      "Pontificia Universidad Católica del Perú"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Candidate site",
+      "value": "Colca Valley, Arequipa region, Peru",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Detector concept",
+      "value": "Several thousand small water-Cherenkov or plastic-scintillator stations; evolving design",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Main neutrino range",
+      "value": "Approximately 1–100 PeV",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Prototype",
+      "value": "TAMBO-4/TAMBITO instrumentation and reconstruction development",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design programme",
+      "summary": "Sensitivity and tau-flavour purity are evaluated in simulations; site engagement and prototype work precede the full observatory.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "trinity",
+    "nta",
+    "grand"
+  ],
+  "resources": {
+    "official_website": "https://investigacion.pucp.edu.pe/grupos/hep/proyecto/tambo/",
+    "publication_links": [
+      "https://arxiv.org/abs/2507.08070"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2507.08070",
+      "caption": "TAMBO deep-valley detector concept and Earth-skimming tau-neutrino geometry.",
+      "credit": "TAMBO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2507.08070v1/TAMBO_cartoon.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1080,
+      "sha256": "93a8c7e494b50530655a6aa61d6cbbc37803c366ee9478551b95579abecc6b7c",
+      "mime_type": "image/webp",
+      "source_sha256": "c77ed5f4091de7815e18dc44edcd93cf0e13cd542ad69adaf6723cf38b6b8311",
+      "source_dimensions": {
+        "width": 2027,
+        "height": 1140
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "PUCP high-energy physics group, TAMBO and prototype",
+      "url": "https://investigacion.pucp.edu.pe/grupos/hep/proyecto/tambo/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "TAMBO Collaboration, A Deep-Valley Neutrino Observatory",
+      "url": "https://arxiv.org/abs/2507.08070",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Universidad del Pacífico, TAMBO development in Peru",
+      "url": "https://www.up.edu.pe/prensa/noticias/proyecto-tambo-telescopio-andes-canon-colca",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-25",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "PER"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

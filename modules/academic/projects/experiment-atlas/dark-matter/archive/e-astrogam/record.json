@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "id": "e-astrogam",
+  "name": "e-ASTROGAM / All-Sky-ASTROGAM",
+  "full_name": "enhanced ASTROGAM and All-Sky-ASTROGAM mission concepts",
+  "aliases": [
+    "All-Sky-ASTROGAM",
+    "as-ASTROGAM"
+  ],
+  "category": "indirect_detection",
+  "role": "proposal",
+  "summary": "e-ASTROGAM is proposed for low Earth orbit, while All-Sky-ASTROGAM is proposed for Sun–Earth L2. They are grouped here as a related concept family; the two designs have different geometries, energy ranges and orbits.",
+  "physics_targets": [
+    "MeV–GeV dark-matter gamma rays",
+    "WIMP",
+    "511 keV positron backgrounds",
+    "Light-dark-matter absorption"
+  ],
+  "detection_principle": "Combines Compton-scattering and pair-conversion imaging to measure low-energy gamma-ray continua, narrow lines, polarization and spatial distributions, helping separate dark-matter signals from Galactic foregrounds / pulsars.",
+  "technologies": [
+    "Silicon tracking",
+    "CsI calorimeter",
+    "Anticoincidence system",
+    "Compton and pair-conversion imaging"
+  ],
+  "sites": [
+    {
+      "name": "e-ASTROGAM proposed low Earth orbit; All-Sky-ASTROGAM proposed Sun–Earth L2",
+      "country": "Space / international project",
+      "country_code": null,
+      "location": "e-ASTROGAM proposed low Earth orbit; All-Sky-ASTROGAM proposed Sun–Earth L2",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "e-ASTROGAM and the 2019 All-Sky concept are both proposals; parameters and orbits are distinguished by design",
+    "as_of": "2019",
+    "evidence": "Status follows the listed sources and the periods of their data / proposals; the access date does not constitute a new confirmation of operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "e-ASTROGAM and the 2019 All-Sky concept are both proposals; parameters and orbits are distinguished by design",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "e-ASTROGAM / All-Sky-ASTROGAM Collaboration / project team",
+    "lead_institutions": [
+      "INAF",
+      "INFN",
+      "CNRS",
+      "e-ASTROGAM Collaboration"
+    ],
+    "participants_note": "Host or principal associated institutions are listed here. For complete membership and its evolution, consult the collaboration website and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "e-ASTROGAM energy range",
+      "value": "About 0.3 MeV to several GeV, original 2017 design",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "All-Sky-ASTROGAM energy range",
+      "value": "100 keV to several hundred MeV; 2019 fast-mission concept",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "All-Sky-ASTROGAM field of view",
+      "value": "Nearly 4π sr, design target",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "e-ASTROGAM",
+      "status": "proposed",
+      "description": "Larger MeV–GeV observatory concept"
+    },
+    {
+      "name": "All-Sky-ASTROGAM / as-ASTROGAM",
+      "status": "proposed",
+      "description": "Fast-mission candidate; the 2028 launch in the 2019 paper is a target, not an approved schedule"
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "The white paper describes potential for WIMP, positron and Galactic-background studies; no flight data.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "date": "2024",
+      "summary": "Independent model studies assess the sensitivity of future telescopes including e-ASTROGAM to nuclear-absorption gamma-ray lines from dark matter at about 10–30 MeV.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Searches cosmic gamma-ray, antiparticle or neutrino spectra, directions and fluxes for indirect signatures of dark-matter annihilation, decay or related new physics. Conventional astrophysical sources and propagation can produce similar signals, requiring background modeling; design sensitivity is not a measured limit or discovery.",
+  "related_experiments": [
+    "AMEGO",
+    "AMEGO-X",
+    "GRAMS",
+    "COSI"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/pdf/1611.02232",
+      "https://arxiv.org/abs/1905.07806",
+      "https://arxiv.org/abs/2404.17418"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/html/1611.02232",
+      "caption": "Satellite and payload concept for e-ASTROGAM, showing the gamma-ray detector, solar arrays and platform; a proposed design.",
+      "credit": "Authors of the e-ASTROGAM white paper, arXiv:1611.02232",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/1611.02232v5/figs/e-ASTROGAM_Deployed_with_labels.jpg",
+      "width": 720,
+      "height": 328,
+      "sha256": "9efdf50cb5006223518833863955fafd2799a12f96b85035ccb2359abd90b385",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1611.02232",
+      "caption": "Source page for original research / design documents and figures; design drawings do not establish that an instrument has been built.",
+      "credit": "See the paper authors, collaboration and figure caption",
+      "reuse_status": "Individual reuse permission remains to be verified; no image was downloaded for this entry"
+    }
+  ],
+  "sources": [
+    {
+      "title": "The e-ASTROGAM mission",
+      "url": "https://arxiv.org/pdf/1611.02232",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2017-06-04",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "All-Sky-ASTROGAM: The MeV Gamma-Ray Companion to Multimessenger Astronomy",
+      "url": "https://arxiv.org/abs/1905.07806",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2019-05-19",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Indirect detection of dark matter absorption in the Galactic Center",
+      "url": "https://arxiv.org/abs/2404.17418",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04-26",
+      "supports": [
+        "Dark-matter / dark-sector research objectives",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No claim is made to exhaustively list collaboration members, publications or engineering parameters.",
+      "Coordinates have not been independently verified; an operating space mission must not be assigned the coordinates of a ground laboratory.",
+      "A representative image has been saved and visually verified; see media for the caption and source. Website reuse still requires confirmation of copyright permission.",
+      "No confirmed flight or full science-operation data are available. Launch years and sensitivities in the papers are plans or forecasts; the latest approval status may require further updating."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle",
+      "photon_telescope"
+    ]
+  }
+}

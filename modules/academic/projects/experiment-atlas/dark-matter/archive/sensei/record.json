@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "sensei",
+  "name": "SENSEI",
+  "full_name": "Sub-Electron Noise Skipper-CCD Experimental Instrument",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "SENSEI uses single-electron-resolving Skipper CCDs to directly search for light dark matter, through Fermilab prototypes and an underground phase at SNOLAB.",
+  "physics_targets": [
+    "Sub-GeV dark-matter–electron scattering",
+    "Dark-photon absorption"
+  ],
+  "detection_principle": "Repeated nondestructive pixel measurements reduce electronic noise below one electron. Few-electron distributions are analyzed while controlling dark current, light leaks and radiation backgrounds.",
+  "technologies": [
+    "Skipper-CCD",
+    "Ionization in silicon",
+    "Single-electron counting"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermi National Accelerator Laboratory, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "SNOLAB",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Underground laboratory in the Creighton mine, Sudbury, Ontario",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": "2025-02-07",
+    "evidence": "SNOLAB's 2025 announcement states that SENSEI has operated underground since 2021 and reports new limits.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "SNOLAB phase begins",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SENSEI Collaboration",
+    "lead_institutions": [
+      "Fermilab"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Key capability",
+      "value": "Pixel-by-pixel single-electron resolution; low readout noise is not equivalent to zero physical background.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Underground Skipper-CCD low-mass dark-matter search limits were released.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMIC",
+    "DAMIC-M",
+    "OSCURA"
+  ],
+  "resources": {
+    "official_website": "https://www.snolab.ca/news/the-sensei-experiment-sets-new-limits-on-the-search-for-dark-matter%EF%BF%BC/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2312.13342",
+      "caption": "SENSEI components at SNOLAB: CCDs in copper trays, copper CCD boxes inside the vessel, and the vacuum vessel before outer shielding was wrapped around it (paper, Figure 1).",
+      "credit": "SENSEI collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/2312.13342",
+      "width": 768,
+      "height": 372,
+      "sha256": "665a14a0c3479533290cee459dfad2fbf6899749ce79d627c7bd64469363c343",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "c0aa3b4a11564e57a19c142994a133aa47c5d3a48b1c61e233dbde30ea150466",
+      "source_dimensions": {
+        "width": 768,
+        "height": 372
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.snolab.ca/news/the-sensei-experiment-sets-new-limits-on-the-search-for-dark-matter%EF%BF%BC/",
+      "caption": "SENSEI apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "SENSEI Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The SENSEI experiment sets new limits on the search for dark matter",
+      "url": "https://www.snolab.ca/news/the-sensei-experiment-sets-new-limits-on-the-search-for-dark-matter%EF%BF%BC/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-02-07",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "SNOLAB Annual Report 2023–2024",
+      "url": "https://www.snolab.ca/wp-content/uploads/2024/11/2023-2024-Annual-Report_Final_RGB-2.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "CAN"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

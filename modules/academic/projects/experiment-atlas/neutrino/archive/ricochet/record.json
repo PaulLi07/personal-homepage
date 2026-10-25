@@ -1,0 +1,207 @@
+{
+  "schema_version": "1.0",
+  "id": "ricochet",
+  "name": "Ricochet",
+  "full_name": "Ricochet reactor-neutrino experiment",
+  "aliases": [],
+  "category": "cevns",
+  "physics_categories": [
+    "cevns",
+    "crosssection",
+    "reactor"
+  ],
+  "technology_tags": [
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Ricochet measures low-energy reactor-neutrino recoils at ILL using cryogenic germanium detectors. Its heat-plus-ionization readout aims to distinguish nuclear recoils from dominant electromagnetic backgrounds and test CEvNS in the fully coherent regime.",
+  "physics_targets": [
+    "Reactor CEvNS",
+    "Nuclear recoil discrimination",
+    "Low-energy weak-interaction tests"
+  ],
+  "detection_principle": "Germanium crystals at millikelvin temperatures measure both phonons and ionization. The relative charge yield discriminates electronic from nuclear recoils; reactor cycles and layered shielding provide background control.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)"
+  ],
+  "sites": [
+    {
+      "name": "France; ILL research reactor, Grenoble",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; ILL research reactor, Grenoble",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-01-30",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "Cryogenic apparatus installed at ILL",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "Initial detector commissioning began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "event": "Full CryoCube payload entered first science phase",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-01",
+      "event": "Run017 continued the science phase",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Ricochet Collaboration",
+    "lead_institutions": [
+      "IP2I Lyon",
+      "IJCLab",
+      "Institut Laue-Langevin"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source distance",
+      "value": "8.8 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source power",
+      "value": "Approximately 58 MW thermal",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "CryoCube payload",
+      "value": "18 approximately 42 g Ge detectors, about 0.75 kg total",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Operating temperature",
+      "value": "Approximately 10–15 mK",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The commissioning publication established detector performance and background characterization. A first science run is distinct from a confirmed CEvNS observation.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nucleus",
+    "miner",
+    "stereo"
+  ],
+  "resources": {
+    "official_website": "https://ricochet-experiment.github.io/",
+    "publication_links": [
+      "https://arxiv.org/abs/2507.22751"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2507.22751",
+      "caption": "Ricochet cryostat at ILL during RUN014, with the mini-CryoCube and internal shielding visible.",
+      "credit": "Ricochet Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/2507.22751v1/plots/DSC_1159_4N.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1279,
+      "height": 1920,
+      "sha256": "bdbcb51d8d553d0c5b2edced4a03cb4765feb845c552a69269bb13c598d7da49",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "94116018f3a09052a206df6c8e6d2f3c6d41ada3d2d17467e6bd8515f1748569",
+      "source_dimensions": {
+        "width": 4031,
+        "height": 6053
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Ricochet collaboration status and run timeline",
+      "url": "https://ricochet-experiment.github.io/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Ricochet Collaboration, Mini-CryoCube commissioning at ILL",
+      "url": "https://arxiv.org/abs/2507.22751",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer"
+    ],
+    "technology_tags": [
+      "bolometer"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "id": "nudoubt-plus-plus",
+  "name": "NuDoubt++",
+  "full_name": "NuDoubt++ positive double-beta-decay experiment",
+  "aliases": [
+    "NuDoubt⁺⁺"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "NuDoubt++ proposes a detector for rare positron-emitting double weak decays, including standard two-neutrino modes and lepton-number-violating neutrinoless modes. Its primary example isotope is krypton-78.",
+  "physics_targets": [
+    "Double-beta and rare weak decays"
+  ],
+  "detection_principle": "A hybrid slow and opaque scintillator separates Cherenkov and scintillation light while localizing energy deposits near wavelength-shifting fibres. Positron annihilation topology provides additional background rejection.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Gran Sasso: sensitivity-study assumption",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Gran Sasso: sensitivity-study assumption",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_site_in_simulation"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2025",
+    "evidence": "The publication presents detector concepts, R&D and sensitivity forecasts. Its tonne-week discovery prospects are not an observed two-neutrino double-beta-plus signal.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NuDoubt++ Collaboration",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Initial isotope",
+      "value": "78Kr",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector medium",
+      "value": "Hybrid slow, opaque liquid scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Prototype concept",
+      "value": "Approximately one tonne of scintillator, with a smaller loaded central volume",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The publication presents detector concepts, R&D and sensitivity forecasts. Its tonne-week discovery prospects are not an observed two-neutrino double-beta-plus signal.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "theia"
+  ],
+  "resources": {
+    "official_website": "https://nudoubt.uni-mainz.de/",
+    "publication_links": [
+      "https://arxiv.org/abs/2407.05999"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/2407.05999",
+      "caption": "Basic proposed NuDoubt++ detector, including the scintillator, fibres and central loaded volume (Fig. 7); a concept rendering.",
+      "credit": "NuDoubt++ Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2407.05999#page=13",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 335,
+      "height": 211,
+      "sha256": "d58d9d51135b3ff4d5c48d2786612e63c711547c8c7adcc8e64c2acebc8c548b",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Combining Hybrid and Opaque Scintillator Techniques in the Search for Double Beta Plus Decays",
+      "url": "https://arxiv.org/abs/2407.05999",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NuDoubt++ collaboration overview",
+      "url": "https://nudoubt.uni-mainz.de/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

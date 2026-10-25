@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "codex-b",
+  "name": "CODEX-b",
+  "full_name": "COmpact Detector for EXotics at LHCb",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "CODEX-b is proposed in shielded underground space near LHCb at CERN LHC Point 8, as a long-lived dark-sector particle program.",
+  "physics_targets": [
+    "Long-lived dark sector",
+    "Dark photons",
+    "Dark scalars",
+    "Inelastic dark matter"
+  ],
+  "detection_principle": "Tracks in shielded space next to LHCb reconstruct vertices of long-lived particles decaying to charged particles; a prototype measures backgrounds and validates the detection concept.",
+  "technologies": [
+    "RPC tracking",
+    "Shielding",
+    "Displaced vertices"
+  ],
+  "sites": [
+    {
+      "name": "CERN LHC Point 8, shielded underground space near LHCb",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "CERN LHC Point 8, shielded underground space near LHCb",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "CODEX-beta began data-taking in May 2026; full CODEX-b remains proposed",
+    "as_of": "2026-07-13",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-07-13",
+      "event": "CODEX-beta began data-taking in May 2026; full CODEX-b remains proposed",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CODEX-b Collaboration / project team",
+    "lead_institutions": [
+      "CERN",
+      "DESY"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "CODEX-beta dimensions",
+      "value": "Approximately 2 m per side",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Full CODEX-b scale",
+      "value": "Prototype linear scale approximately one fifth of the full design; subject to the final technical design",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CODEX-beta",
+      "status": "operating",
+      "description": "First prototype data in May 2026"
+    },
+    {
+      "name": "CODEX-b",
+      "status": "proposed",
+      "description": "Proposed full-size displaced-vertex experiment"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "Initial prototype data validate the design and backgrounds in the real LHC environment; they are not full-experiment dark-matter physics results.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "LHCb",
+    "MATHUSLA",
+    "ANUBIS"
+  ],
+  "resources": {
+    "official_website": "https://desy.de/desy_latest_news/2026/codex_b_start/index_eng.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://desy.de/desy_latest_news/2026/codex_b_start/index_eng.html",
+      "caption": "CODEX-beta prototype photograph showing its frame and readout components, rather than the full CODEX-b detector.",
+      "credit": "DESY source page; the image element provides no separate photographer credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://desy.de/sites/desy/main/content/e18959/e23869/e26468/e21625/e21627/Codex_ger.jpg",
+      "width": 712,
+      "height": 530,
+      "sha256": "67bd7e8674c61453d3d552df0b3293c79824f1932c3b2826cb1115cce9a37db9",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://desy.de/desy_latest_news/2026/codex_b_start/index_eng.html",
+      "caption": "CODEX-beta prototype news and photographs",
+      "credit": "DESY / CODEX-b",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Could unknown particles be hiding at the LHC?",
+      "url": "https://desy.de/desy_latest_news/2026/codex_b_start/index_eng.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-13",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "The CODEX-b Experiment, LHCP 2024",
+      "url": "https://indico.cern.ch/event/1253590/contributions/5854370/attachments/2870889/5026160/LHCP%202024%20-%20CODEX-b.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

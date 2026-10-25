@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "kamland2",
+  "name": "KamLAND2",
+  "full_name": "KamLAND2 neutrino-detector upgrade",
+  "aliases": [],
+  "category": "solar",
+  "physics_categories": [
+    "solar",
+    "geo",
+    "reactor",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "KamLAND2 upgrades the Kamioka liquid-scintillator observatory after the original KamLAND campaign ended in August 2024. Improved light collection and response target precision low-energy neutrino studies and support the related xenon-loaded double-beta programme.",
+  "physics_targets": [
+    "Low-energy solar and geoneutrinos",
+    "Reactor oscillations",
+    "Optical response improvements"
+  ],
+  "detection_principle": "A large scintillator target detects optical light from electron recoils and inverse beta decay. Upgraded photosensors, light collection and scintillator performance improve energy resolution; isotope-loaded KamLAND2-Zen is a related configuration rather than identical physics programme.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Kamioka underground observatory",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kamioka underground observatory",
+      "latitude": 36.4225,
+      "longitude": 137.3153,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2024-08",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-08",
+      "event": "Original observations ended and major upgrade phase began",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KamLAND2 Collaboration",
+    "lead_institutions": [
+      "Tohoku University Research Center for Neutrino Science"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Predecessor",
+      "value": "Original KamLAND observations ended in August 2024",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Kamioka, Gifu, Japan",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Configuration distinction",
+      "value": "KamLAND2 low-energy programme and KamLAND2-Zen xenon loading",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The official programme describes an upgraded observatory under development; no new full-scale KamLAND2 oscillation or solar-neutrino result is asserted here.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "kamland",
+    "kamland2-zen"
+  ],
+  "resources": {
+    "official_website": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/Pictures.html",
+      "caption": "Predecessor KamLAND detector cutaway illustrating the underground infrastructure being upgraded for KamLAND2; this is not a completed KamLAND2 detector photograph.",
+      "credit": "Stanford Gratta Lab / KamLAND collaboration gallery",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://web.stanford.edu/group/grattalab/kamland/Pictures/kamland-detector_new_illustration_websize.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 581,
+      "height": 800,
+      "sha256": "64c268c90d64e70b95f2051e1d371ab8d4954428a619087adbbe0cc36768996a",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Tohoku RCNS: KamLAND2 upgrade programme",
+      "url": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_profiles.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Tohoku RCNS research results and detector developments",
+      "url": "https://www.scienceweb.tohoku.ac.jp/rcns/Research_results.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

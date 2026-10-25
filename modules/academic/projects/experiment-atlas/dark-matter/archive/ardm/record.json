@@ -1,0 +1,165 @@
+{
+  "schema_version": "1.0",
+  "id": "ardm",
+  "name": "ArDM",
+  "full_name": "Argon Dark Matter",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "technology_demonstrator",
+  "summary": "ArDM is a tonne-scale liquid-argon TPC technology project, first tested at the surface at CERN and then deployed at Canfranc. Subsequent use of the equipment includes underground-argon background measurements.",
+  "physics_targets": [
+    "WIMP",
+    "Low-background liquid-argon technology"
+  ],
+  "detection_principle": "The design combines liquid-argon scintillation and ionization for WIMP nuclear recoils. Published first underground data include single-phase commissioning runs; they do not establish full dual-phase physics operation.",
+  "technologies": [
+    "Liquid-argon TPC",
+    "Single-phase commissioning",
+    "Dual-phase design"
+  ],
+  "sites": [
+    {
+      "name": "LSC",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory, Pyrenees, Aragon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2025",
+    "evidence": "Distinguish the historical ArDM detector from later DArT-in-ArDM argon-activity measurements. The LSC strategic plan lists the latter as an ongoing project.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "ArDM Run I single-phase underground data",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ArDM Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector scale",
+      "value": "Tonne-scale liquid-argon TPC",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ArDM Run I",
+      "status": "completed",
+      "description": "Single-phase underground commissioning in 2015"
+    },
+    {
+      "name": "DArT-in-ArDM",
+      "status": "operating",
+      "description": "Subsequent use for underground-argon radioactivity measurements; not counted as a separate dark-matter candidate-event search."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DarkSide",
+    "ARGO"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1612.06375"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1612.06375",
+      "caption": "Overall ArDM layout at Canfranc and internal structure in single-phase operation (detector paper, Figure 1).",
+      "credit": "ArDM collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/1612.06375",
+      "width": 1188,
+      "height": 810,
+      "sha256": "808b2a6023b5b949f7431bb5be8eae01101bf66d50a1e90d912a2dcf868f0bc1",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "50e93a1c3766254d0b57dfcc2e1b68ede750937a0e545649472de5994cfdb561",
+      "source_dimensions": {
+        "width": 1188,
+        "height": 810
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1612.06375",
+      "caption": "ArDM apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "ArDM Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The ArDM Liquid Argon Time Projection Chamber at the Canfranc Underground Laboratory",
+      "url": "https://arxiv.org/abs/1612.06375",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016-12",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "LSC Strategic Plan 2025–2028",
+      "url": "https://lsc-canfranc.es/wp-content/uploads/2026/01/StrategicPlanLSC2025-2028.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid"
+    ]
+  }
+}

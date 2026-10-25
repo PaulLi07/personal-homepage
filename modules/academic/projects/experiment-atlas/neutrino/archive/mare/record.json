@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "mare",
+  "name": "MARE",
+  "full_name": "Microcalorimeter Arrays for a Rhenium Experiment",
+  "aliases": [
+    "mare"
+  ],
+  "category": "mass",
+  "physics_categories": [
+    "mass"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "MARE was a coordinated research programme to scale calorimetric neutrino-mass measurements beyond MANU and MiBeta. It investigated rhenium absorbers and large cryogenic arrays, but was discontinued in 2013 after detector-performance difficulties; later efforts concentrated on holmium-163.",
+  "physics_targets": [
+    "Direct effective electron-neutrino mass"
+  ],
+  "detection_principle": "The radioactive isotope is contained inside a low-temperature absorber. Arrays measure beta-decay energy calorimetrically, seeking the small endpoint distortion due to the undetected neutrino mass.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Precision spectroscopy / kinematics"
+  ],
+  "sites": [
+    {
+      "name": "Milano-Bicocca / Como detector-development laboratories",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Milano-Bicocca / Como detector-development laboratories",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Programme discontinued / historical",
+    "as_of": "2013",
+    "evidence": "The participating Bicocca detector laboratory states that MARE was abandoned in 2013 after rhenium-based microcalorimeters failed to meet the reproducible performance required for a sub-eV neutrino-mass experiment. The intended final sensitivity was never achieved.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "The MARE programme was discontinued following detector-performance difficulties; subsequent work concentrated on holmium-163 calorimetry.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "mare Collaboration",
+    "lead_institutions": [
+      "University of Milano-Bicocca",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original isotope",
+      "value": "187Re",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Original long-term goal",
+      "value": "Sub-eV effective neutrino-mass sensitivity; design goal",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Implemented research",
+      "value": "Low-temperature detector arrays and absorber studies",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005",
+      "summary": "The collaboration described a staged development programme; its final sub-eV configuration was not an achieved measurement.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This is a laboratory kinematic measurement of the effective electron-flavour neutrino mass. Its observable differs from the effective Majorana mass in neutrinoless double-beta decay and the sum of neutrino masses inferred from cosmology.",
+  "related_experiments": [
+    "genova",
+    "mibeta",
+    "holmes"
+  ],
+  "resources": {
+    "official_website": "https://holmes0.mib.infn.it/anucc/doku.php?id=public%3Aresearch",
+    "publication_links": [
+      "https://arxiv.org/abs/hep-ex/0509038",
+      "https://doi.org/10.1016/j.phpro.2014.12.037"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_figure",
+      "source_url": "https://arxiv.org/abs/1511.00968",
+      "caption": "MARE-I AgReO4 microcalorimeter array and measured detector response, Figure 24 of the experimental review.",
+      "credit": "A. Nucciotti / MARE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1511.00968",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1132,
+      "height": 560,
+      "sha256": "29613c282c2c490860d329bf8ec5ad9cd635d5edcd81566e32a4c00df4c79e3f",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "mare: official experiment / institutional overview",
+      "url": "https://holmes0.mib.infn.it/anucc/doku.php?id=public%3Aresearch",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The Microcalorimeter Arrays for a Rhenium Experiment: a next-generation calorimetric neutrino mass experiment",
+      "url": "https://arxiv.org/abs/hep-ex/0509038",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2005",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "The Status of the MARE Experiment with 187Re and 163Ho Isotopes",
+      "url": "https://doi.org/10.1016/j.phpro.2014.12.037",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "Bicocca Low Temperature Devices Lab, MARE programme retrospective",
+      "url": "https://holmes1.mib.infn.it/nucriomib/news?catid=12&id=3%3Amare&view=article",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-11-30",
+      "supports": [
+        "MARE programme, detector-development outcome and explicit abandonment in 2013"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "spectroscopy"
+    ],
+    "is_europe": true
+  }
+}

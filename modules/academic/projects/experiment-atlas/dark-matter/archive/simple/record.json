@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "simple",
+  "name": "SIMPLE",
+  "full_name": "Superheated Instrument for Massive ParticLe Experiments",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "SIMPLE used superheated droplets at LSBB in France to study WIMPs and later explored a bubble-chamber upgrade. Portuguese teams contributed detector and calibration R&D.",
+  "physics_targets": [
+    "Spin-dependent WIMPs",
+    "Spin-independent WIMPs"
+  ],
+  "detection_principle": "Nuclear recoils nucleate bubbles in C2ClF5 superheated droplets suspended in gel. Acoustic signals and temperature-dependent thresholds discriminate backgrounds.",
+  "technologies": [
+    "Superheated C2ClF5 droplets",
+    "Acoustic readout"
+  ],
+  "sites": [
+    {
+      "name": "LSBB",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Rustrel，Laboratoire Souterrain à Bas Bruit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2014",
+    "evidence": "Phase II has a final analysis. A 2014 institutional paper still describes phases III/IV as prototypes and future plans.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "SIMPLE Collaboration",
+    "lead_institutions": [
+      "Universidade de Lisboa",
+      "NOVA University Lisbon"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Phase-II target material",
+      "value": "C2ClF5",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Successor prototype",
+      "value": "Approximately 1 kg bubble chamber, under test in 2014",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Phase II",
+      "status": "completed",
+      "description": "Final superheated-droplet analysis"
+    },
+    {
+      "name": "Phase III / IV",
+      "status": "research_development",
+      "description": "2014 prototype and expansion concept; latest implementation status unverified."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "PICASSO",
+    "PICO"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.072013",
+      "https://researchportal.ulisboa.pt/en/publications/phase-iii-and-maybe-iv-of-the-simple-dark-matter-search-experimen/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1404.4309",
+      "caption": "Installation of a SIMPLE Phase-II C₂ClF₅ superheated-droplet science detector, showing the glass vessel, gel and acoustic-readout wiring (paper, Figure 2).",
+      "credit": "M. Felizardo et al. / SIMPLE collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/1404.4309",
+      "width": 516,
+      "height": 849,
+      "sha256": "36595c6ac4be567c30b8115012b9848c64d62d97ff116ee082641fa6f90befc6",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "e7f7f49a5f75b592fc20538ee1dbf18de4328450c940a02af3109bb38772ffcc",
+      "source_dimensions": {
+        "width": 516,
+        "height": 849
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.072013",
+      "caption": "SIMPLE apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "SIMPLE Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The SIMPLE Phase II dark matter search",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.89.072013",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Phase III (and maybe IV) of the SIMPLE dark matter search experiment at the LSBB",
+      "url": "https://researchportal.ulisboa.pt/en/publications/phase-iii-and-maybe-iv-of-the-simple-dark-matter-search-experimen/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2014",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Completion of the upgrade programme after 2014 has not been verified."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bubble"
+    ]
+  }
+}

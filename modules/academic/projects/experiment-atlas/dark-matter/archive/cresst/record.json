@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "cresst",
+  "name": "CRESST",
+  "full_name": "Cryogenic Rare Event Search with Superconducting Thermometers",
+  "aliases": [
+    "CRESST-I",
+    "CRESST-II",
+    "CRESST-III"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "CRESST measures tiny nuclear recoils with cryogenic crystal calorimeters at LNGS. Small CaWO4 modules in its third generation extend the search to sub-GeV dark matter.",
+  "physics_targets": [
+    "Sub-GeV dark matter",
+    "WIMP nuclear scattering"
+  ],
+  "detection_principle": "Superconducting temperature sensors measure phonons, and a separate light detector measures scintillation. Light yield helps identify recoil species and backgrounds, while small absorbers reduce heat capacity and the detection threshold.",
+  "technologies": [
+    "CaWO4 crystals",
+    "TES",
+    "Phonons and scintillation light"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation / data analysis",
+    "as_of": null,
+    "evidence": "A collaboration technical review summarizes CRESST-III and discusses next-generation upgrades. Only the indexed abstract was obtained here; the publication date and current hardware status have not been independently confirmed.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CRESST Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Target material",
+      "value": "Primarily CaWO4, with other targets also investigated.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Low-threshold approach",
+      "value": "Lower-mass crystals, low heat capacity and materials with low radioactivity",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "CRESST-I / II",
+      "status": "completed",
+      "description": "Early cryogenic phase"
+    },
+    {
+      "name": "CRESST-III",
+      "status": "operating",
+      "description": "Low-threshold small modules"
+    },
+    {
+      "name": "Next-generation upgrade",
+      "status": "research_development",
+      "description": "Projected performance must not be treated as already achieved."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "COSINUS",
+    "EDELWEISS",
+    "EURECA"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://doi.org/10.1038/s42005-025-02476-5"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.mpp.mpg.de/en/research/cresst",
+      "caption": "A CRESST cryogenic detector module: a crystal in a copper support with superconducting temperature sensors.",
+      "credit": "T. Dettlaff / Max-Planck-Institut für Physik",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.mpp.mpg.de/fileadmin/_processed_/4/f/csm_Detektormodul_5_01_ebefa6ca24.jpg",
+      "width": 300,
+      "height": 214,
+      "sha256": "1425ecc4e2ba835cfc17c288b319d4e717097e912a268c1c7e1a7a4d88bd6d3d",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://doi.org/10.1038/s42005-025-02476-5",
+      "caption": "CRESST apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "CRESST Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "The CRESST experiment towards the next generation of sub GeV direct dark matter detection",
+      "url": "https://doi.org/10.1038/s42005-025-02476-5",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Access to the Nature article body was restricted; the date and specific 2026 operating configuration require further verification."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "quantum_sensor"
+    ]
+  }
+}

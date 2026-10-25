@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "dama-nai",
+  "name": "DAMA/NaI",
+  "full_name": "DAMA sodium-iodide experiment",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "DAMA/NaI was the DAMA programme's first large-mass NaI(Tl) dark-matter detector, searching for Galactic dark matter through annual modulation of multiyear energy spectra. DAMA/LIBRA is its successor.",
+  "physics_targets": [
+    "WIMP",
+    "Less model-dependent annual modulation"
+  ],
+  "detection_principle": "High-purity NaI(Tl) scintillation crystals record low-energy single-hit events to search for rate variations with the phase and period expected from Earth's orbit. Annual modulation alone does not automatically exclude all environmental or instrumental explanations.",
+  "technologies": [
+    "NaI(Tl) scintillating crystals",
+    "Annual modulation"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2002-07",
+    "evidence": "The collaboration states that DAMA/NaI stopped operating in July 2002 after seven annual cycles.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2002-07",
+      "event": "Operation ends",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DAMA Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Target mass",
+      "value": "Approximately 100 kg of NaI(Tl)",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Data cycles",
+      "value": "Seven annual cycles",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2002",
+      "summary": "The collaboration reported an annual-modulation signal. Its dark-matter interpretation remains disputed, and subsequent same-target tests have not reproduced the same signal.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Historical direct-detection experiment; the observed annual modulation must be distinguished from its interpretation as dark matter.",
+  "related_experiments": [
+    "DAMA/LIBRA",
+    "ANAIS-112",
+    "COSINE"
+  ],
+  "resources": {
+    "official_website": "https://dama.web.roma2.infn.it/?page_id=56",
+    "publication_links": [
+      "https://journals.aps.org/prl/abstract/10.1103/ntnl-zrn9"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/0804.2738",
+      "caption": "Historical photograph of DAMA/NaI being dismantled under high-purity nitrogen during replacement by DAMA/LIBRA (DAMA/LIBRA detector paper, upper-right panel of Figure 1, 2008, PDF page 2).",
+      "credit": "R. Bernabei et al. / DAMA collaboration, 2008 detector paper; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/0804.2738",
+      "width": 537,
+      "height": 402,
+      "sha256": "9ebaed83d6af268cc79128a523a3a9fdc8cba2a41ec99487641bb5a347178d56",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://dama.web.roma2.infn.it/?page_id=56",
+      "caption": "DAMA/NaI apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "DAMA Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Experiments — The DAMA Project",
+      "url": "https://dama.web.roma2.infn.it/?page_id=56",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "ANAIS-112 Results with Six Years of Data",
+      "url": "https://journals.aps.org/prl/abstract/10.1103/ntnl-zrn9",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07-28",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

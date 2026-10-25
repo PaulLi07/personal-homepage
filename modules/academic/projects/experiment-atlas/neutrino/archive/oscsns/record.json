@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "oscsns",
+  "name": "OscSNS",
+  "full_name": "Oscillation search at the Spallation Neutron Source",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "sterile",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "OscSNS was a proposed short-baseline neutrino-oscillation detector at Oak Ridge. It sought to test the LSND anomaly with the pulsed pion- and muon-decay-at-rest neutrino source at the SNS.",
+  "physics_targets": [
+    "Short-baseline sterile-neutrino appearance and disappearance tests",
+    "Low-energy neutrino interactions on carbon and electrons"
+  ],
+  "detection_principle": "A mineral-oil detector with a small scintillator admixture would identify electron-antineutrino appearance through prompt positrons and delayed neutron capture. Neutrino interactions on carbon and electron scattering provide additional channels; beam timing suppresses cosmic backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "SNS, Oak Ridge National Laboratory",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Oak Ridge, Tennessee; proposed detector location",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2013",
+    "evidence": "The white paper is a design proposal; no operating OscSNS detector is established. The INFN directory lists OscSNS under expired projects.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013-07",
+      "event": "Collaboration white paper released.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "OscSNS Collaboration",
+    "lead_institutions": [
+      "Oak Ridge National Laboratory",
+      "Los Alamos National Laboratory",
+      "University of Tennessee"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Detector concept",
+      "value": "800-tonne cylindrical mineral-oil/scintillator detector",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Baseline",
+      "value": "Approximately 60 m from the SNS target, in the backward direction",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "Pion and muon decay at rest, with the muon-decay spectrum ending near 52.8 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "Published detector design and projected sensitivity; its simulated contours are not measured exclusion limits.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This dossier preserves a named historical proposal. Design parameters and sensitivity estimates are not measured neutrino results; later programmes using the same laboratory or technology are distinct.",
+  "related_experiments": [
+    "lsnd",
+    "karmen",
+    "coherent",
+    "orland"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1307.7097",
+      "https://www.nu.to.infn.it/exp/all/oscsns/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_rendering",
+      "source_url": "https://arxiv.org/abs/1307.7097",
+      "caption": "Proposed OscSNS cylindrical detector and optical instrumentation.",
+      "credit": "OscSNS Collaboration, Figure 5.1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/1307.7097",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 631,
+      "height": 512,
+      "sha256": "cfc4cba498264da124bb9e33cb0a5e6cfb4162b2db1c372aba799020a4abe30a",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "OscSNS Collaboration, The OscSNS White Paper",
+      "url": "https://arxiv.org/abs/1307.7097",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2013-07-26",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "INFN Neutrino Unbound, OscSNS bibliography",
+      "url": "https://www.nu.to.infn.it/exp/all/oscsns/",
+      "type": "database",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

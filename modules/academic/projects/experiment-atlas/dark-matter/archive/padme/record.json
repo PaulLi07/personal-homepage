@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "padme",
+  "name": "PADME",
+  "full_name": "Positron Annihilation into Dark Matter Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "PADME is a dedicated positron-annihilation dark-sector experiment at the DAΦNE Beam Test Facility, INFN Laboratori Nazionali di Frascati.",
+  "physics_targets": [
+    "Dark photons",
+    "Light dark sector",
+    "X17-related bosons"
+  ],
+  "detection_principle": "Positrons strike electrons in a thin target to seek a missing-mass peak in e⁺e⁻→γA′; positron-energy scans can also test resonant production of new particles in e⁺e⁻ annihilation.",
+  "technologies": [
+    "Diamond active target",
+    "BGO calorimeter",
+    "PbF2 small-angle calorimeter",
+    "Magnet and veto"
+  ],
+  "sites": [
+    {
+      "name": "INFN Laboratori Nazionali di Frascati，DAΦNE Beam Test Facility",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "INFN Laboratori Nazionali di Frascati，DAΦNE Beam Test Facility",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple runs completed and analyses continue; the 2026 report covers Run III to Run IV upgrades",
+    "as_of": "2026-03",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026-03",
+      "event": "Multiple runs completed and analyses continue; the 2026 report covers Run III to Run IV upgrades",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PADME Collaboration / project team",
+    "lead_institutions": [
+      "INFN-LNF"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original-design dark-photon mass reach",
+      "value": "26 MeV/c² (original beam design, not a discovered particle)",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "name": "First data-taking",
+      "value": "October 2018 to February 2019",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PADME",
+      "status": "mixed",
+      "description": "Multiple runs completed and analyses continue; the 2026 report covers Run III to Run IV upgrades"
+    }
+  ],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Published an e⁺e⁻→γγ cross-section measurement validating a Standard Model process.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    },
+    {
+      "date": "2026",
+      "summary": "The collaboration continues to report X17 searches and upgrades; nuclear-physics anomalies motivating them must not be described as a dark-matter discovery.",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "DarkLight",
+    "NA64"
+  ],
+  "resources": {
+    "official_website": "https://padme.lnf.infn.it/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://padme.lnf.infn.it/experiment/",
+      "caption": "PADME detector overview at the Frascati Beam Test Facility, from a 2019 apparatus photograph on the source page.",
+      "credit": "PADME / INFN-LNF; no separate photographer is credited on the source page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://padme.lnf.infn.it/wp-content/uploads/sites/37/2019/03/Ref2019_03_12_Detector-1200x280.jpg",
+      "width": 1200,
+      "height": 280,
+      "sha256": "cb927dcdba6d5d5fcdb1625d256925748fbd99b0b0d7d6cc52c187382b35b924",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://padme.lnf.infn.it/experiment/",
+      "caption": "PADME detector CAD and component schematics",
+      "credit": "PADME Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "PADME official overview",
+      "url": "https://padme.lnf.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "PADME detector",
+      "url": "https://padme.lnf.infn.it/experiment/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "PADME talks",
+      "url": "https://padme.lnf.infn.it/talks/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

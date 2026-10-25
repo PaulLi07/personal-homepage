@@ -1,0 +1,179 @@
+{
+  "schema_version": "1.0",
+  "id": "nustar",
+  "name": "NuSTAR",
+  "full_name": "Nuclear Spectroscopic Telescope Array",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Focusing hard-X-ray observatory whose Galactic-center and M31 observations test radiatively decaying sterile-neutrino dark matter.",
+  "physics_targets": [
+    "keV sterile neutrinos",
+    "Radiatively decaying dark matter"
+  ],
+  "detection_principle": "Hard-X-ray focusing optics and energy-resolving detectors measure narrow spectral lines. Unfocused photons and instrumental backgrounds must also be modeled.",
+  "technologies": [
+    "Hard-X-ray focusing mirrors",
+    "Energy-resolving semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Low Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Low Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": null,
+    "evidence": "NASA's current mission page labels the observatory an “Active Mission.”",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012-06-13",
+      "event": "Launch",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NuSTAR collaboration / mission team",
+    "lead_institutions": [
+      "NASA"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Exposure in the representative M31 analysis",
+      "value": "1.2 Ms, 2019 analysis",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "Galactic-center X-ray searches constrain radiative sterile-neutrino decay.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2019",
+      "summary": "Deep M31 exposures provide independent constraints.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "XMM-Newton",
+    "Chandra"
+  ],
+  "resources": {
+    "official_website": "https://science.nasa.gov/mission/nustar/",
+    "publication_links": [
+      "https://arxiv.org/abs/1609.00667",
+      "https://arxiv.org/abs/1901.01262"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://science.nasa.gov/mission/nustar/",
+      "caption": "Artist's impression of NuSTAR in orbit with its long mast and solar array deployed.",
+      "credit": "NASA NuSTAR mission page, original image identifier PIA15265; see the source for the individual artist credit",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://science.nasa.gov/wp-content/uploads/2023/06/nustar-jpegpia15265.jpg",
+      "width": 1920,
+      "height": 1083,
+      "sha256": "6c46cf9c2a3b7c20c4930a4a9a19709154e475363ec86d9f6bdd43a229dd9335",
+      "mime_type": "image/webp",
+      "source_sha256": "acd58e6d895ec464fbf5b5c464e5d113e6cd588fe8d4b7df8a1f4b59c73ca388",
+      "source_dimensions": {
+        "width": 2958,
+        "height": 1668
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://science.nasa.gov/mission/nustar/",
+      "caption": "NuSTAR project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://science.nasa.gov/mission/nustar/",
+      "title": "NASA: NuSTAR mission",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1609.00667",
+      "title": "Closing the nuMSM sterile neutrino window with NuSTAR",
+      "source_date": "2016",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1901.01262",
+      "title": "New constraints on sterile neutrino dark matter from NuSTAR M31",
+      "source_date": "2019",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "photon_telescope"
+    ]
+  }
+}

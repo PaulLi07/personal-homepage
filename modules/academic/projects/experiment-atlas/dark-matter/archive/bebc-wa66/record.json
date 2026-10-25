@@ -1,0 +1,160 @@
+{
+  "schema_version": "1.0",
+  "id": "bebc-wa66",
+  "name": "BEBC / WA66 beam-dump run",
+  "full_name": "Big European Bubble Chamber — WA66 beam-dump search",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "BEBC / WA66 beam-dump run operated in CERN's historical West Area at BEBC. BEBC is the host detector and WA66 the specific beam program; they are grouped to avoid double counting.",
+  "physics_targets": [
+    "Millicharged dark particles (reinterpretation)",
+    "Electric/magnetic-dipole dark particles"
+  ],
+  "detection_principle": "New particles from a high-energy proton dump can cause forward-electron scattering in a downstream bubble chamber; the old event sample is reanalyzed in modern dark-sector models.",
+  "technologies": [
+    "Large-volume bubble chamber",
+    "Magnetic fields",
+    "Proton beam dump"
+  ],
+  "sites": [
+    {
+      "name": "Historical CERN West Area, BEBC",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Historical CERN West Area, BEBC",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "1982 WA66 beam-dump sample, reinterpreted in 2020",
+    "as_of": "1982",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1982",
+      "event": "1982 WA66 beam-dump sample, reinterpreted in 2020",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BEBC / WA66 beam-dump run Collaboration / project team",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Original proton beam",
+      "value": "400 GeV",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Type of dark-sector analysis",
+      "value": "Theoretical reinterpretation of historical WA66 electron-scattering data, rather than a new run",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "BEBC / WA66 beam-dump run",
+      "status": "completed",
+      "description": "1982 WA66 beam-dump sample, reinterpreted in 2020"
+    }
+  ],
+  "results": [
+    {
+      "date": "2020",
+      "summary": "Limits were obtained for millicharged and electromagnetic-dipole light dark matter, extending to GeV scales in some regions.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "CHARM",
+    "NuCal"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2011.08153"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://repository.cern/records/5t6ea-6k552",
+      "caption": "Historical photograph of the Big European Bubble Chamber BEBC during installation in the early 1970s. WA66 later used this chamber; the image does not show WA66 beam running.",
+      "credit": "CERN PhotoLab; included in CERN archives and the 2004 CERN Bulletin",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://repository.cern/api/records/5t6ea-6k552/files/na-2004-094_7112223.jpg/content",
+      "width": 340,
+      "height": 348,
+      "sha256": "743f6f10f9e7d735f6258ff48a7394919f1a3593ce4099432561c3f1c8c88bd4",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2011.08153",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Blast from the past: Constraints on the dark sector from the BEBC WA66 beam dump experiment",
+      "url": "https://arxiv.org/abs/2011.08153",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-11-16",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bubble",
+      "beam_particle"
+    ]
+  }
+}

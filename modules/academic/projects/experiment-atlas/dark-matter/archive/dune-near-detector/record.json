@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "dune-near-detector",
+  "name": "DUNE near detector — dark-sector program",
+  "full_name": "Deep Underground Neutrino Experiment near-detector dark-sector program",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "DUNE near detector — dark-sector program is proposed for the LBNF near-detector facility at Fermilab, Batavia, Illinois. It is cataloged as a distinct near-site beam dark-sector program, which should link to its parent DUNE experiment and remain distinct from far-detector Galactic-dark-matter searches.",
+  "physics_targets": [
+    "Sub-GeV light dark matter",
+    "Heavy neutral leptons",
+    "Dark-sector scattering"
+  ],
+  "detection_principle": "A high-intensity proton beam produces dark-matter candidates, with near detectors recording electron/nucleon scattering or visible decays. DUNE-PRISM off-axis movement changes beam composition to help distinguish backgrounds.",
+  "technologies": [
+    "Liquid-argon TPC",
+    "Magnetized spectrometer",
+    "Off-axis DUNE-PRISM movement",
+    "Beam monitoring"
+  ],
+  "sites": [
+    {
+      "name": "Proposed Fermilab LBNF near-detector facility, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Proposed Fermilab LBNF near-detector facility, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "planned",
+    "label": "2021 near-detector conceptual design published; this record tracks the evidence stage of the near-site dark-sector program only",
+    "as_of": "2021",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "2021 near-detector conceptual design published; this record tracks the evidence stage of the near-site dark-sector program only",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DUNE near detector — dark-sector program Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab",
+      "DUNE Collaboration"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Deployment target",
+      "value": "Fermilab near detector, rather than the far-site SURF liquid-argon modules",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Design function",
+      "value": "Multicomponent near detector and DUNE-PRISM off-axis sampling",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "DUNE near detector — dark-sector program",
+      "status": "planned",
+      "description": "2021 near-detector conceptual design published; this record tracks the evidence stage of the near-site dark-sector program only"
+    }
+  ],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Sensitivity studies show off-axis data can improve several light-dark-matter and heavy-neutral-lepton scenarios; these are projections.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "DUNE",
+    "SBND",
+    "MicroBooNE"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2103.13910",
+      "https://arxiv.org/abs/2102.03383"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://warwick.ac.uk/fac/sci/physics/research/epp/exp/dune/",
+      "caption": "On-axis DUNE near-detector system design, showing the relative positions of liquid-argon, gaseous-argon and fixed-monitor subsystems; a research-stage schematic.",
+      "credit": "University of Warwick DUNE research group source page; no separate illustrator credit",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://warwick.ac.uk/fac/sci/physics/research/epp/exp/dune/on_axis.png?maxWidth=600",
+      "width": 600,
+      "height": 379,
+      "sha256": "3648ebd994b76d5dd6ac3effcb5c3d8caa0c5fce2f5bffeee8822ea48184bb35",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2103.13910",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Deep Underground Neutrino Experiment Near Detector Conceptual Design Report",
+      "url": "https://arxiv.org/abs/2103.13910",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2021-03-25",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Searching for Physics Beyond the Standard Model in an Off-Axis DUNE Near Detector",
+      "url": "https://arxiv.org/abs/2102.03383",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-02-05",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed.",
+      "status.as_of denotes the era of the cited evidence; the immediate 2026 operating/approval status of the apparatus or specific subprogram was not comprehensively verified in this pass."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "beam_particle"
+    ]
+  }
+}

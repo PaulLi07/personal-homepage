@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "magix",
+  "name": "MAGIX",
+  "full_name": "MAinz Gas Injection target eXperiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "MAGIX is based at MESA, Johannes Gutenberg University Mainz. This multipurpose precision electron-scattering experiment explicitly includes dark-sector research.",
+  "physics_targets": [
+    "Dark photons",
+    "Light dark sector"
+  ],
+  "detection_principle": "A high-intensity low-energy electron beam interacts with an internal gas-jet target; dual-arm high-resolution magnetic spectrometers and recoil detectors search for narrow resonances and missing mass.",
+  "technologies": [
+    "Gas-jet target",
+    "Magnetic spectrometer",
+    "TPC tracking",
+    "Silicon recoil detection"
+  ],
+  "sites": [
+    {
+      "name": "Johannes Gutenberg University Mainz，MESA",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Johannes Gutenberg University Mainz，MESA",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "The official site lists MESA and the experiment as under construction; the page has no explicit publication date",
+    "as_of": null,
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "MAGIX Collaboration / project team",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Apparatus design",
+      "value": "Internal gas-jet target, two high-resolution magnetic spectrometers and supplementary recoil detectors",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "MAGIX",
+      "status": "construction",
+      "description": "The official site lists MESA and the experiment as under construction; the page has no explicit publication date"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "DarkMESA",
+    "A1/MAMI"
+  ],
+  "resources": {
+    "official_website": "https://magix.uni-mainz.de/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://magix.uni-mainz.de/",
+      "caption": "MESA experimental-area layout identifying MAGIX at left and the accelerator and DarkMESA locations.",
+      "credit": "MAGIX Collaboration / University of Mainz; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://magix.uni-mainz.de/images/magixWallpaper.png",
+      "width": 1920,
+      "height": 687,
+      "sha256": "6a64866d24610b6a81857d631ad56052241dcb7a2b63a61e659ef42ff7ff5a10",
+      "mime_type": "image/webp",
+      "source_sha256": "95b33e5cc9efd2c319835c6db265de1691637eba655472ab46dc933771c7bbdc",
+      "source_dimensions": {
+        "width": 2520,
+        "height": 902
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://magix.uni-mainz.de/",
+      "caption": "MAGIX collaboration apparatus description and images",
+      "credit": "MAGIX Collaboration",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "MAGIX @ MESA",
+      "url": "https://magix.uni-mainz.de/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "MESA accelerator and experiments",
+      "url": "https://www.kernphysik.uni-mainz.de/en/accelerator-mesa-experiments/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle"
+    ]
+  }
+}

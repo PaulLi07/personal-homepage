@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "isodar",
+  "name": "IsoDAR",
+  "full_name": "Isotope Decay At Rest",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "sterile",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "IsoDAR is developing an intense electron-antineutrino source for an underground liquid-scintillator detector at Yemilab in South Korea. Its cyclotron and isotope-production target provide a controlled source for short-baseline oscillation and precision-interaction studies.",
+  "physics_targets": [
+    "Short-baseline electron-antineutrino disappearance and sterile-neutrino tests",
+    "Neutrino-electron scattering and electroweak interactions",
+    "Intense underground isotope-decay-at-rest source technology"
+  ],
+  "detection_principle": "A cyclotron accelerates molecular hydrogen ions, which are stripped into protons and directed onto a beryllium target. Produced neutrons are captured in an enriched lithium-7 sleeve, creating beta-decaying lithium-8. The emitted electron antineutrinos are measured primarily through prompt-positron and delayed-neutron inverse beta decay.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Yemilab, near the Handeok mine",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "Jeongseon-gun, Gangwon Province",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "planned_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-10-23",
+    "evidence": "The collaboration website states that construction at Yemilab is underway. The 2025 source design is a preliminary design report; an operating neutrino exposure is not established.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2024-04",
+      "event": "Cyclotron-driver preliminary design report released.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-08",
+      "event": "Beam-transport, source and shielding preliminary design report released.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "IsoDAR Collaboration",
+    "lead_institutions": [
+      "Massachusetts Institute of Technology",
+      "Columbia University",
+      "University of Michigan",
+      "Institute for Basic Science"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proton beam design",
+      "value": "60 MeV, 10 mA",
+      "source_ids": [
+        "s1",
+        "s3"
+      ]
+    },
+    {
+      "name": "Antineutrino source",
+      "value": "Lithium-8 beta decay following neutron capture on lithium-7",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Five-year source projection",
+      "value": "Approximately 1.15 x 10^23 electron antineutrinos in five calendar years at the design exposure",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Detector concept",
+      "value": "A nearby kiloton-scale liquid-scintillator detector",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024-2025",
+      "summary": "Published accelerator and source engineering designs and projected physics capabilities; these documents are not a sterile-neutrino discovery measurement.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "daedalus",
+    "kamland",
+    "juno"
+  ],
+  "resources": {
+    "official_website": "https://www.nevis.columbia.edu/isodar/setup.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2404.06281",
+      "https://arxiv.org/abs/2508.11774"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_rendering",
+      "source_url": "https://www.nevis.columbia.edu/isodar/setup.html",
+      "caption": "IsoDAR source and nearby detector concept inside Yemilab.",
+      "credit": "IsoDAR Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://www.nevis.columbia.edu/isodar/img/isodar-in-yemilab.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 792,
+      "height": 412,
+      "sha256": "0806e104faf79a4f47d8eedfc064de082395b50583a82ea4bc93cc9a16dcd38e",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "IsoDAR Collaboration, Experimental Setup",
+      "url": "https://www.nevis.columbia.edu/isodar/setup.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "IsoDAR@Yemilab: Preliminary Design Report -- Volume I: Cyclotron Driver",
+      "url": "https://arxiv.org/abs/2404.06281",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "IsoDAR@Yemilab: Preliminary Design Report -- Volume II: Medium Energy Beam Transport, Neutrino Source, and Shielding",
+      "url": "https://arxiv.org/abs/2508.11774",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025-08-15",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The collaboration states that construction is underway, but no final commissioning or first-neutrino date is assigned from the retrieved sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "KOR"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

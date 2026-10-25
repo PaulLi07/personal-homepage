@@ -1,0 +1,157 @@
+{
+  "schema_version": "1.0",
+  "id": "phenix",
+  "name": "PHENIX",
+  "full_name": "Pioneering High Energy Nuclear Interaction eXperiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "PHENIX operated at RHIC, Brookhaven National Laboratory, Upton, New York. This record summarizes only the historical heavy-ion / nuclear-physics experiment's dark-photon search.",
+  "physics_targets": [
+    "Dark photons"
+  ],
+  "detection_principle": "Narrow e⁺e⁻ mass peaks in radiative π⁰ and η decays from high-energy pp and dAu collisions test new vector particles kinetically mixed with the photon.",
+  "technologies": [
+    "Central-arm tracking",
+    "RICH",
+    "Electromagnetic calorimeter",
+    "Lepton identification"
+  ],
+  "sites": [
+    {
+      "name": "Brookhaven National Laboratory, RHIC, Upton, New York",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Brookhaven National Laboratory, RHIC, Upton, New York",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Dark-photon analysis of historical RHIC samples published in 2015",
+    "as_of": "2015",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "Dark-photon analysis of historical RHIC samples published in 2015",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "PHENIX Collaboration / project team",
+    "lead_institutions": [
+      "Brookhaven National Laboratory"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Listed collision energy",
+      "value": "√sNN = 200 GeV",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Principal mass interval",
+      "value": "Approximately 30–90 MeV/c²",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "PHENIX",
+      "status": "completed",
+      "description": "Dark-photon analysis of historical RHIC samples published in 2015"
+    }
+  ],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "No dark-photon peak; upper limits on mixing squared reach approximately 2×10⁻⁶ and vary with mass.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "HADES"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1409.0851"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.phenix.bnl.gov/",
+      "caption": "PHENIX detector hall at RHIC, with detector components open.",
+      "credit": "PHENIX / Brookhaven National Laboratory; no separate photographer is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.phenix.bnl.gov/images/carousel/4905161591_f0ff404782_k_400x400.jpg",
+      "width": 400,
+      "height": 400,
+      "sha256": "8aaacceb8a12e2a97e0a7a39825f6cdd2ff6c95e3f40d40fd3a3ace39eae968a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1409.0851",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Search for dark photons from neutral meson decays in p+p and d+Au collisions at sqrt(sNN)=200 GeV",
+      "url": "https://arxiv.org/abs/1409.0851",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-03-16",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

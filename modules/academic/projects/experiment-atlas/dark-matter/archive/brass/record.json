@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "brass",
+  "name": "BRASS",
+  "full_name": "Broadband Radiometric Axion SearcheS",
+  "aliases": [
+    "BRASS-p"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An experiment applying broadband radio-astronomy receivers to dark-photon and axion searches; BRASS-p is the prototype phase.",
+  "physics_targets": [
+    "Dark photons",
+    "Axions and ALPs"
+  ],
+  "detection_principle": "A conducting surface converts dark photons to electromagnetic waves, which are focused and measured with heterodyne radio-frequency receivers; axion operation requires a magnetized conversion surface.",
+  "technologies": [
+    "Conversion surfaces",
+    "Radio heterodyne receivers",
+    "Permanent-magnet arrays"
+  ],
+  "sites": [
+    {
+      "name": "University of Hamburg, SHELL experimental hall",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "University of Hamburg, SHELL experimental hall",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2023",
+    "evidence": "2023 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023",
+      "event": "First results from BRASS-p broadband searches for hidden photon dark matter",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BRASS Collaboration / project team",
+    "lead_institutions": [
+      "University of Hamburg",
+      "Max Planck Institute for Radio Astronomy",
+      "DESY"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Prototype frequency band",
+      "value": "12–18 GHz；49.63–74.44 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2023",
+      "summary": "Initial dark-photon searches constrain kinetic mixing; magnetized axion-conversion surfaces are under subsequent development.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www.physik.uni-hamburg.de/en/iexp/gruppe-horns/forschung/brass.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2306.05934",
+      "https://arxiv.org/abs/2509.20583"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2306.05934",
+      "caption": "BRASS-p reflector, conversion surface and receiver in the University of Hamburg shielded laboratory (Fig. 3, 2023 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://arxiv.org/html/2306.05934v2/figure/BRASS_setup.jpeg",
+      "width": 1280,
+      "height": 960,
+      "sha256": "858f1109def02f19abdabb2cf09e6385232db58946e91fa67e4557969e37f172",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2306.05934",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "BRASS Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First results from BRASS-p broadband searches for hidden photon dark matter",
+      "url": "https://arxiv.org/abs/2306.05934",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "BRASS — University of Hamburg",
+      "url": "https://www.physik.uni-hamburg.de/en/iexp/gruppe-horns/forschung/brass.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Permanently magnetized axion-photon conversion surface for direct dark matter searches with BRASS-p",
+      "url": "https://arxiv.org/abs/2509.20583",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "radio"
+    ]
+  }
+}

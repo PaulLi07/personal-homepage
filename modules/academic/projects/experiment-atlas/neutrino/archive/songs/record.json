@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "songs",
+  "name": "SONGS1",
+  "full_name": "SONGS1 antineutrino-monitoring experiment",
+  "aliases": [
+    "SONGS"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SONGS1 demonstrated unattended antineutrino monitoring of a commercial reactor at San Onofre. It tested whether a small detector outside containment could track reactor power and fuel evolution without disturbing plant operation.",
+  "physics_targets": [
+    "Reactor power monitoring",
+    "Fuel-evolution sensitivity",
+    "Applied antineutrino detector demonstration"
+  ],
+  "detection_principle": "Gadolinium-loaded liquid scintillator detects prompt positron and delayed neutron-capture light from inverse beta decay. Passive shielding and a cosmic veto suppress backgrounds; automated analysis follows the antineutrino rate over long periods.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "San Onofre nuclear generating station",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "San Onofre nuclear generating station",
+      "latitude": 33.369,
+      "longitude": -117.556,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2008",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2003",
+      "event": "Initial reactor data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2004-08",
+      "event": "Four-cell target fully instrumented",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2008",
+      "event": "Experimental deployments removed for reactor maintenance",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SONGS1 Collaboration",
+    "lead_institutions": [
+      "Lawrence Livermore National Laboratory",
+      "Sandia National Laboratories"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target mass",
+      "value": "0.64 tonnes in four cells",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Distance",
+      "value": "Approximately 25 m",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Tendon gallery of San Onofre Unit 2, California",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2006–2008",
+      "summary": "The campaign demonstrated long-term stable monitoring and sensitivity to reactor power and fuel-cycle changes.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "nucifer",
+    "chandler",
+    "neutrinos-angra"
+  ],
+  "resources": {
+    "official_website": "https://www.sandia.gov/labnews/2008/08/14/080829/",
+    "publication_links": [
+      "https://resources.inmm.org/annual-meeting-proceedings/recent-results-test-reactor-monitoring-cubic-meter-scale-antineutrino"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.llnl.gov/sites/www/files/2020-05/antineutrino-str-julaug-08.pdf",
+      "caption": "Cutaway of the SONGS1 compact reactor-antineutrino detector and shielding.",
+      "credit": "Lawrence Livermore National Laboratory, Science and Technology Review, July/August 2008",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www.llnl.gov/sites/www/files/2020-05/antineutrino-str-julaug-08.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 550,
+      "height": 399,
+      "sha256": "1eca66edf3729c0c37c40717ace13f1c16b70851ddde4513eebd7ba114567f7a",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LLNL/Sandia, SONGS1 monitoring results",
+      "url": "https://resources.inmm.org/annual-meeting-proceedings/recent-results-test-reactor-monitoring-cubic-meter-scale-antineutrino",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2006",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Sandia: antineutrino reactor monitoring",
+      "url": "https://www.sandia.gov/labnews/2008/08/14/080829/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2008-08-14",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "LLNL Science and Technology Review: antineutrino detectors",
+      "url": "https://www.llnl.gov/sites/www/files/2020-05/antineutrino-str-julaug-08.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2008-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

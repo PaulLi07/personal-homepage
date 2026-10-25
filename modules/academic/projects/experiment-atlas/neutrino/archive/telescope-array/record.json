@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0",
+  "id": "telescope-array",
+  "name": "Telescope Array",
+  "full_name": "Telescope Array — neutrino searches",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "A Utah cosmic-ray observatory uses a large scintillator surface array and fluorescence telescopes. Its surface data also support dedicated searches for ultra-high-energy neutrinos.",
+  "physics_targets": [
+    "Down-going neutrinos above 1 EeV",
+    "Ultra-high-energy cosmic rays and multimessenger constraints"
+  ],
+  "detection_principle": "Scintillator stations sample charged particles and shower-front timing. Multivariate classifiers distinguish deeply developing neutrino showers from the dominant proton and nuclear cosmic-ray background.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Telescope Array",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Millard County, Utah",
+      "latitude": 39.3,
+      "longitude": -112.9,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "An operating cosmic-ray observatory with a published dedicated neutrino analysis.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "Full surface-array data taking began.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Nine-year neutrino-search result published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "Later development",
+      "event": "TA×4 expands the cosmic-ray array; it is an observatory phase rather than a separate neutrino discovery.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Telescope Array Collaboration",
+    "lead_institutions": [
+      "ICRR, University of Tokyo",
+      "University of Utah"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original surface array",
+      "value": "507 plastic-scintillator stations over approximately 700 km²",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Station spacing",
+      "value": "Approximately 1.2 km in the original array",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Neutrino dataset",
+      "value": "Nine years, 2008–2017, in the cited search",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Discrimination",
+      "value": "Sixteen shower-front and lateral-distribution observables in the published classifier",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "Reported an upper bound on the ultra-high-energy down-going neutrino flux above 10¹⁸ eV. The result is a neutrino limit, not a detected neutrino population.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "pierre-auger",
+    "grand"
+  ],
+  "resources": {
+    "official_website": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+    "publication_links": [
+      "https://arxiv.org/abs/1905.03738",
+      "https://arxiv.org/abs/1201.4964"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+      "caption": "A Telescope Array surface detector in the Utah desert, USA, with a solar panel and communications antenna.",
+      "credit": "ICRR / Telescope Array project website; no individual photographer is identified beside the image",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.icrr.u-tokyo.ac.jp/ta/assets/images/top_img/01.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 620,
+      "height": 280,
+      "sha256": "58056105210ba8e4ced4edda1b9cd1316eea8a2fe4d7b0cc922a1c41435ae3d5",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Telescope Array Collaboration, observatory overview",
+      "url": "https://www.icrr.u-tokyo.ac.jp/ta/ta_public/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Telescope Array Collaboration, UHE neutrino search with the surface detector",
+      "url": "https://arxiv.org/abs/1905.03738",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Telescope Array Collaboration, surface detector array",
+      "url": "https://arxiv.org/abs/1201.4964",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2012",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

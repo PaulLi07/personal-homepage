@@ -1,0 +1,199 @@
+{
+  "schema_version": "1.0",
+  "id": "jsns2",
+  "name": "JSNS2",
+  "full_name": "J-PARC Sterile Neutrino Search at J-PARC Spallation Neutron Source",
+  "aliases": [
+    "J-PARC E56"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "JSNS2 tests the LSND appearance anomaly using the same muon-decay-at-rest source and inverse-beta-decay interaction, with the pulsed J-PARC source providing strong timing-based background rejection.",
+  "physics_targets": [
+    "Muon-antineutrino to electron-antineutrino appearance near an eV-squared mass splitting",
+    "Carbon and neutrino cross sections at tens of MeV",
+    "Kaon-decay-at-rest neutrino interactions"
+  ],
+  "detection_principle": "Electron antineutrinos are sought through inverse beta decay on hydrogen. A prompt positron scintillation signal is followed by gamma rays from neutron capture on gadolinium. Beam timing and pulse-shape discrimination suppress cosmic and fast-neutron backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Japan; J-PARC MLF, with a second detector to be added later",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Japan; J-PARC MLF, with a second detector to be added later",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-05-22",
+    "evidence": "The May 2026 collaboration workshop contribution explicitly reports continuing JSNS2 data taking.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Physics data taking began",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "First electron-neutrino flux measurement published",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026-05",
+      "event": "Collaboration reports continuing data taking",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "JSNS2 Collaboration",
+    "lead_institutions": [
+      "KEK"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Fiducial target",
+      "value": "17 tonnes of gadolinium-loaded liquid scintillator",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Baseline",
+      "value": "24 m from the mercury target",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Primary source",
+      "value": "3 GeV protons at J-PARC MLF; stopped positive-muon decays",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Published a first electron-neutrino flux measurement with the carbon charged-current reaction, providing an experimental flux constraint for the oscillation programme.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "lsnd",
+    "karmen",
+    "jsns2-ii"
+  ],
+  "resources": {
+    "official_website": "https://research.kek.jp/group/mlfnu/eng/publications.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1705.08629",
+      "https://indico.neutrino.or.kr/event/505/contributions/2023/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/1705.08629#page=7",
+      "caption": "JSNS2 design at the J-PARC MLF and its 24-m source-to-detector geometry.",
+      "credit": "JSNS2 Collaboration, Technical Design Report, Figure 2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/1705.08629",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 635,
+      "height": 349,
+      "sha256": "8365fd3c037d379c7f4fb1b998ad088d8031e9eac5cb10202774b92b2a310cb1",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "JSNS2 Collaboration, publications and presentations",
+      "url": "https://research.kek.jp/group/mlfnu/eng/publications.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "JSNS2 Collaboration, Technical Design Report",
+      "url": "https://arxiv.org/abs/1705.08629",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-05-24",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "JSNS2 Collaboration, Status of JSNS2 and JSNS2-II, CPNR-OMEG workshop",
+      "url": "https://indico.neutrino.or.kr/event/505/contributions/2023/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-05-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

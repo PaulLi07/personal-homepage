@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "id": "minsis",
+  "name": "MINSIS",
+  "full_name": "Main Injector Non-Standard Interaction Search",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "MINSIS was a proposed short-baseline tau-neutrino appearance experiment near the Fermilab NuMI source. The 2009 workshop and 2010 report studied how tau detection could probe non-standard flavour transitions.",
+  "physics_targets": [
+    "Non-standard muon-to-tau flavour transitions",
+    "Short-baseline tau-neutrino appearance",
+    "High-rate tau-detection technology"
+  ],
+  "detection_principle": "An emulsion cloud chamber or related high-resolution silicon/emulsion detector would resolve short tau decays in neutrino interactions near the source. A prompt tau-flavour component over such a short distance could test interactions or mixing beyond the standard long-baseline oscillation expectation.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab NuMI near-source candidate",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Batavia, Illinois; proposed near detector",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2010",
+    "evidence": "The primary report describes a proposal under discussion, and the INFN catalogue lists the programme among expired projects. No operating MINSIS detector is established.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2009-12-10 to 2009-12-11",
+      "event": "Madrid workshop examined physics reach and detector requirements.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2010-09",
+      "event": "Workshop summary released.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MINSIS Collaboration",
+    "lead_institutions": [
+      "Fermilab",
+      "Universidad Autonoma de Madrid",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Studied baseline scale",
+      "value": "Approximately 1 km in representative near-detector calculations",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Appearance channel",
+      "value": "Muon neutrino to tau neutrino",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Detector options",
+      "value": "Emulsion cloud chamber, silicon, or hybrid silicon-emulsion designs",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "Compared possible detectors, non-standard-interaction models and projected sensitivities. The figures are phenomenological forecasts rather than measured appearance signals.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "This dossier preserves a named historical proposal. Design parameters and sensitivity estimates are not measured neutrino results; later programmes using the same laboratory or technology are distinct.",
+  "related_experiments": [
+    "nomad",
+    "chorus",
+    "opera"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1009.0476",
+      "https://www.research.unipd.it/handle/11577/2529951"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_plot",
+      "source_url": "https://arxiv.org/abs/1009.0476",
+      "caption": "Illustrative non-standard-interaction appearance probabilities in the MINSIS workshop report; theoretical curves, not measured data.",
+      "credit": "MINSIS workshop report, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/1009.0476",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 470,
+      "height": 388,
+      "sha256": "98bfc7e3fcffc86b5504c32c7d12f0e491ad64a09db6a813c9dfab7bf642899f",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Summary report of MINSIS workshop in Madrid",
+      "url": "https://arxiv.org/abs/1009.0476",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "2010-09-02",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "University of Padua, Summary report of MINSIS workshop in Madrid",
+      "url": "https://www.research.unipd.it/handle/11577/2529951",
+      "type": "database",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "semiconductor"
+    ],
+    "is_europe": false
+  }
+}

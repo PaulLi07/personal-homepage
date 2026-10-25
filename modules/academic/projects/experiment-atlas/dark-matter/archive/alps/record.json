@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "alps",
+  "name": "ALPS",
+  "full_name": "Any Light Particle Search",
+  "aliases": [
+    "ALPS I",
+    "ALPS II"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "The ALPS series searches for axions and other light bosons with light shining through a wall; ALPS II uses long magnet strings and precision optical resonators.",
+  "physics_targets": [
+    "Axions and ALPs",
+    "Light dark-sector bosons"
+  ],
+  "detection_principle": "Laser photons convert to weakly coupled particles in a magnetic field, pass through an opaque wall and convert back to photons, read out by heterodyne or single-photon detection.",
+  "technologies": [
+    "Light-shining-through-wall",
+    "Superconducting magnets",
+    "Optical resonant cavities",
+    "Heterodyne readout"
+  ],
+  "sites": [
+    {
+      "name": "DESY HERA tunnel，Hamburg",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "DESY HERA tunnel，Hamburg",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiphase project: completed experiments alongside further construction / design",
+    "as_of": "2026",
+    "evidence": "2026 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "Any Light Particle Searches with ALPS II: first science campaign",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ALPS Collaboration / project team",
+    "lead_institutions": [
+      "DESY",
+      "University of Florida",
+      "Leibniz Universität Hannover",
+      "Cardiff University"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "ALPS II",
+      "value": "Magnet strings exceeding 100 m on each side of the wall",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "First science run",
+      "value": "February–May 2024",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ALPS I",
+      "status": "completed",
+      "description": "Early light-shining-through-a-wall apparatus."
+    },
+    {
+      "name": "ALPS II first science run",
+      "status": "results_published",
+      "description": "2024 data, published in 2025–2026."
+    },
+    {
+      "name": "ALPS II optical upgrade",
+      "status": "development",
+      "description": "Enhances the production-cavity buildup."
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The first science run found no new bosons; later optical upgrades are expected to improve sensitivity.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2601.18684",
+      "https://arxiv.org/abs/2512.14110"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.desy.de/news/news_search/index_eng.html?openDirectAnchor=2758&two_columns=1",
+      "caption": "The ALPS II superconducting magnet string in the DESY HERA tunnel (apparatus photograph accompanying the 2023 startup announcement).",
+      "credit": "DESY / Marta Mayer",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.desy.de/e409/e116959/e119238/media/12841/20220929_ALPS_Tunnel_MM-9297_thumbnail.jpg",
+      "width": 1000,
+      "height": 666,
+      "sha256": "3e37b4859ffb561d55dd8f9f4b64d5e35777cb1b16f3c316e94285964a0d453f",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2601.18684",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "ALPS Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Any Light Particle Searches with ALPS II: first science campaign",
+      "url": "https://arxiv.org/abs/2601.18684",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ALPS II first science results",
+      "url": "https://arxiv.org/abs/2512.14110",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "optical_precision"
+    ]
+  }
+}

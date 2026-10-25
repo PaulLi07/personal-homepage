@@ -1,0 +1,225 @@
+{
+  "schema_version": "1.0",
+  "id": "nustorm",
+  "name": "nuSTORM",
+  "full_name": "Neutrinos from STORed Muons",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection",
+    "sterile"
+  ],
+  "technology_tags": [
+    "sampling",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "nuSTORM is a proposed stored-muon neutrino facility for precision electron- and muon-flavour scattering, with an implementation at CERN studied through Physics Beyond Colliders.",
+  "physics_targets": [
+    "Precision neutrino-nucleus cross sections for oscillation experiments",
+    "Electron- versus muon-flavour interaction comparisons",
+    "Light sterile-neutrino searches and muon-accelerator development"
+  ],
+  "detection_principle": "Pions injected into a storage ring decay into muons that are captured and circulate. Muon decays in a straight section provide neutrinos of known flavour composition; stored-muon instrumentation constrains the flux and changing the muon momentum scans the spectrum.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Candidate CERN implementation",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "CERN SPS complex",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_site"
+    },
+    {
+      "name": "Original Fermilab candidate implementation",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Batavia, Illinois; historical proposal",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2025-05-09",
+    "evidence": "The 2025 strategy submission describes a design and proposed implementation at CERN.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013",
+      "event": "Original Fermilab implementation proposal released.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2012",
+      "event": "Earlier Fermilab facility proposal",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "CERN implementation and updated physics case submitted",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "nuSTORM Collaboration",
+    "lead_institutions": [
+      "CERN",
+      "Imperial College London"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Stored-muon range",
+      "value": "Design central momentum 1-6 GeV/c",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Momentum spread",
+      "value": "Design acceptance approximately 16%",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Flux precision goal",
+      "value": "1% or better from stored-beam instrumentation",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Original Fermilab nuSTORM proposal",
+      "status": "proposed",
+      "description": "The 2013 Fermilab proposal was an earlier site and detector design; its parameters should not be mixed with the later CERN Physics Beyond Colliders version.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Reported a facility design and projected physics programme; no operating nuSTORM neutrino storage ring is established by these sources.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "nuscope",
+    "essnusb",
+    "dune"
+  ],
+  "resources": {
+    "official_website": "https://indico.cern.ch/event/1439855/contributions/6461582/",
+    "publication_links": [
+      "https://arxiv.org/abs/2505.06137",
+      "https://arxiv.org/abs/1308.6822"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/2505.06137",
+      "caption": "The proposed nuSTORM muon storage ring lattice.",
+      "credit": "nuSTORM Collaboration, Figure 5",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/2505.06137",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1137,
+      "height": 492,
+      "sha256": "634155f710be7d1634f067b8338792a7bbd71edd9f7d03ad52c082e7586e255a",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "nuSTORM Collaboration, Neutrinos from Stored Muons",
+      "url": "https://arxiv.org/abs/2505.06137",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-05-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "nuSTORM Collaboration, input to the 2026 European Strategy update",
+      "url": "https://indico.cern.ch/event/1439855/contributions/6461582/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-31",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "nuSTORM - Neutrinos from STORed Muons: Proposal to the Fermilab PAC",
+      "url": "https://arxiv.org/abs/1308.6822",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2013-07-31",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "USA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "sampling",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

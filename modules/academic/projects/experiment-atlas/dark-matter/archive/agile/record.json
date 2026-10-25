@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0",
+  "id": "agile",
+  "name": "AGILE",
+  "full_name": "Astrorivelatore Gamma ad Immagini LEggero",
+  "aliases": [
+    "AGILE-GRID",
+    "SuperAGILE"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Italian multipurpose high-energy astronomy satellite conducting X-ray and gamma-ray observations from 2007 to 2024. Its original team science white paper identified deep Andromeda exposures testing dark-matter models as an objective. This primary-source objective is retained without equating generic gamma-ray observations with published dark-matter limits.",
+  "physics_targets": [
+    "Gamma radiation from dark-matter-rich objects, an original science objective",
+    "Testing dark-matter models in Andromeda; objective, with no independent result verified"
+  ],
+  "detection_principle": "GRID's silicon tracker reconstructs electron–positron pairs from gamma conversion, with a minicalorimeter and anticoincidence system measuring events and rejecting charged-particle backgrounds. SuperAGILE simultaneously images hard X-rays. Dark-matter tests require models of target gamma radiation and astrophysical backgrounds.",
+  "technologies": [
+    "Silicon-tracker gamma-ray imaging",
+    "Minicalorimeter",
+    "Anticoincidence system",
+    "Hard-X-ray imaging"
+  ],
+  "sites": [
+    {
+      "name": "Historical AGILE satellite low Earth equatorial orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Historical AGILE satellite low Earth equatorial orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Scientific data taking ended; data archived",
+    "as_of": "2024-02-14",
+    "evidence": "AGILE team GCN 35726 explicitly states that science observations stopped on 2024-01-18 and reentry occurred on 2024-02-14.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2004-11-30",
+      "event": "The team's science document listed deep Andromeda exposures testing dark-matter models as an objective.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2007-04-23",
+      "event": "Launched from Sriharikota, India, into a low-background equatorial orbit.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2024-01-18",
+      "event": "Science observations stopped.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2024-02-14",
+      "event": "Reentered the atmosphere after natural orbital decay.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AGILE Collaboration / ASI",
+    "lead_institutions": [
+      "ASI",
+      "INAF",
+      "INFN",
+      "ASI SSDC"
+    ],
+    "participants_note": "Based on institutional affiliations in the team's mission papers and end-of-mission announcement; no complete membership list is supplied."
+  },
+  "key_parameters": [
+    {
+      "name": "GRID nominal energy band",
+      "value": "30 MeV–50 GeV, as described in the mission paper",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "GRID field of view",
+      "value": "About 2.5 sr",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "SuperAGILE energy band",
+      "value": "18—60 keV",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Minicalorimeter nominal energy band",
+      "value": "300 keV—100 MeV",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "In-orbit X-ray / gamma-ray observations",
+      "status": "completed",
+      "description": "From launch in 2007 to the end of science observations in 2024; GRID and SuperAGILE are payloads on one satellite, not separate experiments."
+    },
+    {
+      "name": "Historical data and catalogs",
+      "status": "archival",
+      "description": "SSDC preserves data and catalogs for further research."
+    }
+  ],
+  "results": [
+    {
+      "date": "2004-11-30",
+      "summary": "The original science-objective document explicitly supports a dark-matter research scope. No dedicated published AGILE-data dark-matter-limit paper was verified in this search, so no invented cross-section limit is supplied.",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2024-02-14",
+      "summary": "The end-of-mission announcement confirms that science archives and catalogs are available to researchers; this does not establish a dark-matter discovery.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Multipurpose gamma-ray astronomy mission included on the basis of the collaboration's primary science objectives, not a generic community-catalog label. Specific AGILE dark-matter search results remain unverified; its presentation should identify a confirmed dark-matter science objective with dedicated results pending, distinguished from projects with published particle-dark-matter limits.",
+  "related_experiments": [
+    "Fermi-LAT",
+    "EGRET",
+    "DAMPE"
+  ],
+  "resources": {
+    "official_website": "https://agile.ssdc.asi.it/",
+    "publication_links": [
+      "https://arxiv.org/abs/0807.4254"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/agile.html",
+      "caption": "Photograph of the AGILE satellite, showing its payload body and solar panels.",
+      "credit": "Italian Space Agency ASI AGILE mission page; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://heasarc.gsfc.nasa.gov/Images/agile/agile.jpg",
+      "width": 250,
+      "height": 298,
+      "sha256": "92becc74ab2c26bf140220bb0182b0a92cf7cda1fbefad019fc83e40cb8c1ce7",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://agile.ssdc.asi.it/",
+      "caption": "AGILE official source page for instrument, mission or facility images",
+      "credit": "Original institution / collaboration; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only, with no downloaded image for this entry; individual reuse permission remains to be verified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ASI SSDC: AGILE mission and archive",
+      "url": "https://agile.ssdc.asi.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Project identity, instruments or relevant research; specific references appear in individual fields"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The AGILE Collaboration: The AGILE Mission",
+      "url": "https://arxiv.org/abs/0807.4254",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008-07-26",
+      "supports": [
+        "Instrument, actual launch, field of view and energy bands; published in A&A in 2009"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "AGILE team: GCN 35726, ceased operations and re-entry",
+      "url": "https://gcn.nasa.gov/circulars/35726",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-02-14",
+      "supports": [
+        "End of science observations, reentry and archive availability"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "AGILE Team: Science with AGILE, AP-27, Table 1",
+      "url": "https://agile.ssdc.asi.it/a-science-27.pdf",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2004-11-30",
+      "supports": [
+        "Table 1 on page 5 explicitly lists deep Andromeda exposures testing dark-matter models; a prelaunch science objective"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "No confirmed dedicated AGILE measured-dark-matter-limit paper was found in this review; s4 is a 2004 science-objective document, not a completed dark-matter result.",
+      "Web parsing of the full s4 document timed out, but PDF text was obtained from the same official URL and Table 1 on page 5 was checked.",
+      "Launch expectations and energy bands in the 2004 design document do not supersede actual launch and instrument parameters in the 2008 mission paper.",
+      "Image permissions and historical orbital coordinates have not been verified individually."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "beam_particle",
+      "photon_telescope"
+    ]
+  }
+}

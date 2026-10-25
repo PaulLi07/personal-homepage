@@ -1,0 +1,275 @@
+{
+  "schema_version": "1.0",
+  "id": "snd-lhc",
+  "name": "SND@LHC",
+  "full_name": "Scattering and Neutrino Detector at the Large Hadron Collider",
+  "aliases": [
+    "AdvSND",
+    "SND@HL-LHC"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion",
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "SND@LHC is a compact collider-neutrino experiment in the TI18 tunnel, probing a very forward angular region complementary to FASER and especially sensitive to neutrinos from charm decays.",
+  "physics_targets": [
+    "High-energy neutrino interactions of all three flavours",
+    "Forward charm production and very small momentum fractions",
+    "Lepton-flavour universality and rare signatures"
+  ],
+  "detection_principle": "Tungsten-emulsion targets resolve neutrino vertices and charged-lepton signatures, while scintillating-fibre tracking and an iron-scintillator hadron calorimeter provide electronic measurements and muon identification. Upstream vetoes reject the intense muon flux.",
+  "technologies": [
+    "Nuclear emulsions",
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Switzerland; TI18 tunnel at the CERN LHC",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Switzerland; TI18 tunnel at the CERN LHC",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Run 3 exposure complete / LS3 and upgrade preparations",
+    "as_of": "2026-10-23",
+    "evidence": "CERN confirms Run 3 collision physics ended in June 2026 and LS3 began on 29 June. The collaboration programme and analyses continue, with an approved Run 4 upgrade described in the 2026 primary paper.",
+    "source_ids": [
+      "s5",
+      "s6"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Experiment approved",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Installed and commissioned for LHC Run 3",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "First collider-neutrino observations",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-06",
+      "event": "LHC Run 3 exposure ended before Long Shutdown 3.",
+      "source_ids": [
+        "s5"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SND@LHC Collaboration",
+    "lead_institutions": [
+      "CERN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Location",
+      "value": "TI18 tunnel, approximately 480 m from ATLAS",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Acceptance",
+      "value": "Pseudorapidity approximately 7.2 to 8.4",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Hybrid detector",
+      "value": "Tungsten-emulsion target, scintillating fibres and muon/hadron detector",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "SND@LHC Run 3",
+      "status": "completed",
+      "description": "Tungsten-emulsion target, scintillating-fibre tracker and downstream electronic detector operated during the 2022-2026 LHC Run 3 exposure.",
+      "source_ids": [
+        "s2",
+        "s5"
+      ]
+    },
+    {
+      "name": "SND@HL-LHC / approved Run 4 upgrade",
+      "status": "planned",
+      "description": "Upgrade approved in June 2025. A fully electronic detector replaces emulsion and adds magnetic analysis; the collaboration name remains SND@LHC. The 2026 paper studies installation scenarios rather than reporting Run 4 data.",
+      "source_ids": [
+        "s6"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2024-11",
+      "summary": "Observed neutrino interactions without a final-state muon with 6.4-sigma significance, using 2022-2023 collision data.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2026-02",
+      "summary": "Published muon-background measurements covering proton and heavy-ion operation through 2025.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "faser",
+    "ship"
+  ],
+  "resources": {
+    "official_website": "https://snd-lhc.web.cern.ch/about-sndlhc/",
+    "publication_links": [
+      "https://arxiv.org/abs/2210.02784",
+      "https://arxiv.org/abs/2411.18787",
+      "https://arxiv.org/abs/2602.23412",
+      "https://arxiv.org/abs/2602.21881"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/pdf/2210.02784#page=5",
+      "caption": "Schematic layout of the SND@LHC detector.",
+      "credit": "SND@LHC Collaboration, Figure 1",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/2210.02784",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 690,
+      "height": 221,
+      "sha256": "764ecb341ae2d5d5060315979b396db03cdd669180f9f5f1a4355d4a3a122dfa",
+      "mime_type": "image/png",
+      "visual_review_note": "Rendered directly from the public source and inspected in the audit contact sheets; labels and apparatus geometry are legible."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SND@LHC Collaboration, About SND@LHC",
+      "url": "https://snd-lhc.web.cern.ch/about-sndlhc/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SND@LHC Collaboration, The Scattering and Neutrino Detector at the LHC",
+      "url": "https://arxiv.org/abs/2210.02784",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-10-06",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "SND@LHC Collaboration, Observation of collider neutrinos without final state muons",
+      "url": "https://arxiv.org/abs/2411.18787",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-11-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "SND@LHC Collaboration, Measurement of the Muon Flux: 2023-2025 periods",
+      "url": "https://arxiv.org/abs/2602.23412",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-26",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "CERN, Accelerator Report: Pushing the LHC towards HiLumi LHC conditions and cut",
+      "url": "https://home.cern/accelerator-report-pushing-the-lhc-towards-hilumi-lhc-conditions-and-cut/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-06",
+      "supports": [
+        "Run 3 exposure ended and the LHC entered Long Shutdown 3"
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "SND@LHC Collaboration, SND@LHC upgrade for the high-luminosity LHC: physics reach and installation scenarios",
+      "url": "https://arxiv.org/abs/2602.21881",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-25",
+      "supports": [
+        "Approved Run 4 upgrade and detector technology"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion",
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "emulsion",
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": true
+  }
+}

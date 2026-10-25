@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "cygnus",
+  "name": "CYGNUS",
+  "full_name": "CYGNUS Galactic Nuclear Recoil Observatory",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "proposal",
+  "summary": "CYGNUS is an international collaboration and planning framework for a distributed network of directional nuclear-recoil observatories, encompassing regional R&D programmes. The overall concept must not be counted alongside its member prototypes as multiple completed detectors.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-matter directional distribution"
+  ],
+  "detection_principle": "Low-pressure gas TPCs record recoil energies and directions. The different directions of the Galactic dark-matter wind and solar neutrinos can alleviate background degeneracies in energy-only measurements.",
+  "technologies": [
+    "Directional gas TPC",
+    "Negative-ion drift",
+    "Optical/charge readout R&D"
+  ],
+  "sites": [],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2024",
+    "evidence": "The 2020 feasibility report and 2024 solar-neutrino study discuss future network capabilities; neither reports operation of a completed thousand-cubic-metre detector.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CYGNUS Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative conceptual volume",
+      "value": "1000 m³ in the CYGNUS-1000 feasibility concept",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Regional technology programmes",
+      "status": "research_development",
+      "description": "Projects such as CYGNO have separate records."
+    },
+    {
+      "name": "CYGNUS-1000 network",
+      "status": "proposed",
+      "description": "Concept for a large distributed nuclear-recoil observatory"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CYGNO",
+    "DRIFT",
+    "NEWAGE",
+    "MIMAC"
+  ],
+  "resources": {
+    "official_website": "https://cygnus.phys.hawaii.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2008.12587",
+      "https://arxiv.org/abs/2404.03690"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/2008.12587",
+      "caption": "Modular concept for a scalable CYGNUS directional detector: multiple back-to-back TPC units within common shielding (white paper, Figure 1).",
+      "credit": "CYGNUS collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://arxiv.org/pdf/2008.12587",
+      "width": 1551,
+      "height": 786,
+      "sha256": "7d4a63fb1a146ef2355bee94fe44b558fcc30ad00a4bbc7ace11a7bc43ae364e",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "a088ead6a2657a83fda1f9d467b9d552a9dfc08664fd78810e7350e79d2abca1",
+      "source_dimensions": {
+        "width": 1551,
+        "height": 786
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2008.12587",
+      "caption": "CYGNUS apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "CYGNUS Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "CYGNUS: Feasibility of a nuclear recoil observatory with directional sensitivity to dark matter and neutrinos",
+      "url": "https://arxiv.org/abs/2008.12587",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020-08-28",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "CYGNUS official collaboration website",
+      "url": "https://cygnus.phys.hawaii.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "CYGνS: Detecting solar neutrinos with directional gas time projection chambers",
+      "url": "https://arxiv.org/abs/2404.03690",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Candidate sites and collaborating countries are not deployed observatories; operating-site coordinates have not been assigned to them."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "gas_tpc"
+    ]
+  }
+}

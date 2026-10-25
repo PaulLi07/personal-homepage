@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "id": "uf-axion",
+  "name": "UF axion search",
+  "full_name": "University of Florida early axion haloscope",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An early University of Florida resonant-cavity Galactic-halo axion experiment and an important precursor to later high-sensitivity searches.",
+  "physics_targets": [
+    "Galactic-halo axions"
+  ],
+  "detection_principle": "A tunable high-Q cavity in a strong field is immersed in liquid helium; cryogenic HEMT amplifiers detect narrow axion-conversion spectral peaks.",
+  "technologies": [
+    "Microwave cavities",
+    "Liquid-helium cooling",
+    "HEMT amplifiers"
+  ],
+  "sites": [
+    {
+      "name": "University of Florida，Gainesville",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "University of Florida，Gainesville",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "1990",
+    "evidence": "1990 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1990",
+      "event": "Results from a search for cosmic axions",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "UF axion search Collaboration / project team",
+    "lead_institutions": [
+      "University of Florida"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Core configuration",
+      "value": "Tunable high-Q cavity at liquid-helium temperature and cryogenic HEMT readout; numerical masses require verification against the full paper",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1990",
+      "summary": "The 1990 result constrains axion coupling and Galactic abundance; no axions were observed.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "RBF axion search",
+    "ADMX",
+    "ADMX SLIC"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.42.1297"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://doi.org/10.1063/1.38760",
+      "caption": "Schematic of the early University of Florida axion apparatus and receiver: tunable copper cavity in a superconducting magnet, liquid-helium environment, low-noise HEMT amplifier and mixer/FFT readout. Fig. 1 of Hagmann et al., “A cosmic axion detector” (1989), extracted from a 2024 archive of an author's university webpage.",
+      "credit": "C. Hagmann, P. Sikivie, N. S. Sullivan, D. B. Tanner; original paper © 1989 American Institute of Physics.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://web.archive.org/web/20240329195055id_/https://www.phys.ufl.edu/~tanner/PDFS/Hagmann89aip.pdf",
+      "width": 1020,
+      "height": 765,
+      "sha256": "d6852906d1744cb611e853426e81c92b18fc865995f832571432b45206a51b04",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.42.1297",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "UF axion search Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Results from a search for cosmic axions",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.42.1297",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1990",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "radio",
+      "quantum_sensor"
+    ]
+  }
+}

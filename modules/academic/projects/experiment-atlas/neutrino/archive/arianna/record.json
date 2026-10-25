@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0",
+  "id": "arianna",
+  "name": "ARIANNA",
+  "full_name": "Antarctic Ross Ice-Shelf ANtenna Neutrino Array",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A shallow-radio pilot programme on the Ross Ice Shelf tested autonomous stations and the use of the reflective ice–ocean boundary for neutrino detection.",
+  "physics_targets": [
+    "Cosmogenic neutrinos above approximately 100 PeV",
+    "Radio-station autonomy and polar-ice calibration"
+  ],
+  "detection_principle": "Downward-facing log-periodic antennas listen for Askaryan impulses from neutrino-induced showers, including pulses reflected from the base of the ice shelf. Additional upward antennas help reject cosmic-ray air showers.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Antarctica; Ross Ice Shelf and associated test sites",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Antarctica; Ross Ice Shelf and associated test sites",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "Implemented pilot and subsequent R&D are documented; a full large-area ARIANNA observatory is not claimed operational.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012–2014",
+      "event": "Initial pilot stations deployed and first neutrino search performed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2014–2015",
+      "event": "Seven-station pilot completed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2017 onward",
+      "event": "Pilot performance, calibration and further station tests published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ARIANNA Collaboration",
+    "lead_institutions": [
+      "University of California, Irvine"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Pilot geometry",
+      "value": "Seven-station Hexagonal Radio Array",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Typical station spacing",
+      "value": "Approximately 1 km",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Second-generation electronics",
+      "value": "Up to 2 Gsample/s digitisation with low-power autonomous operation",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Pilot programme",
+      "summary": "Demonstrated low-noise autonomous radio operation and published UHE-neutrino flux limits. Large-area sensitivity projections do not imply the full proposed array was built.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "ara",
+    "rno-g",
+    "taroge-m"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1511.07525",
+      "https://escholarship.org/uc/item/1340083p"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1511.07525",
+      "caption": "An ARIANNA pilot-station power and communications tower.",
+      "credit": "ARIANNA Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/1511.07525#page=1",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 285,
+      "height": 820,
+      "sha256": "92e0ca811fd6e8b00175957ad59fed67203ad8f2da86683da8c7c17e30c7e891",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ARIANNA Collaboration, second-generation detector systems",
+      "url": "https://arxiv.org/abs/1511.07525",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ARIANNA Collaboration, performance and simulation of the pilot array",
+      "url": "https://escholarship.org/uc/item/1340083p",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

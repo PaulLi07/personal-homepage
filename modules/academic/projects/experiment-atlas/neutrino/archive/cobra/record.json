@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "id": "cobra",
+  "name": "COBRA",
+  "full_name": "Cadmium Zinc Telluride 0-Neutrino Double-Beta experiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "semiconductor"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "COBRA developed room-temperature CdZnTe semiconductor arrays for double-beta-decay searches. Its Gran Sasso demonstrator tested low-background operation, pulse-shape selection and background control for a larger array.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "The semiconductor is both source and calorimeter. Coplanar-grid electrodes measure deposited electron energy; pulse shapes distinguish surface backgrounds and different charge-collection topologies.",
+  "technologies": [
+    "Semiconductor detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; prototype array at Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; prototype array at Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2015",
+    "evidence": "The detector paper documented the 64-detector array and its low-background performance.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "COBRA Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory",
+      "University of Hamburg",
+      "TU Dresden"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Demonstrator",
+      "value": "64 CdZnTe detectors",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Total demonstrator mass",
+      "value": "380 g",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector geometry",
+      "value": "1 cm3 coplanar-grid crystals in the original demonstrator",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2015",
+      "summary": "The detector paper documented the 64-detector array and its low-background performance.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "gerda"
+  ],
+  "resources": {
+    "official_website": "https://www.lngs.infn.it/en/cobra",
+    "publication_links": [
+      "https://arxiv.org/abs/1507.08177",
+      "https://arxiv.org/abs/1509.04113"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.lngs.infn.it/en/cobra",
+      "caption": "COBRA low-background semiconductor detector setup at Gran Sasso.",
+      "credit": "COBRA Collaboration / INFN Laboratori Nazionali del Gran Sasso",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.lngs.infn.it/images/ricerca/cobra/setup.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1295,
+      "height": 893,
+      "sha256": "d6e9506f79e9ef2e18d62c69af0ef6c5c0a45366e83cc65d698d8f61f60d3358",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "COBRA: official experiment / institutional overview",
+      "url": "https://www.lngs.infn.it/en/cobra",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The COBRA demonstrator at the LNGS underground laboratory",
+      "url": "https://arxiv.org/abs/1507.08177",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Results of a search for neutrinoless double-beta decay using the COBRA demonstrator",
+      "url": "https://arxiv.org/abs/1509.04113",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "semiconductor"
+    ],
+    "technology_tags": [
+      "semiconductor"
+    ],
+    "is_europe": true
+  }
+}

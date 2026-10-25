@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "hanohano",
+  "name": "Hanohano",
+  "full_name": "Hawaii Antineutrino Observatory concept",
+  "aliases": [],
+  "category": "geo",
+  "physics_categories": [
+    "geo",
+    "reactor",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Hanohano is a proposed movable deep-ocean liquid-scintillator observatory. An oceanic site far from continental crust and reactors would provide a distinctive mantle-geoneutrino measurement; deployment near reactors could instead address oscillation physics.",
+  "physics_targets": [
+    "Mantle geoneutrinos",
+    "Reactor oscillation measurements",
+    "Oceanic low-background observatory design"
+  ],
+  "detection_principle": "A large submerged scintillator target would tag electron antineutrinos through inverse beta decay. Ocean depth suppresses cosmic backgrounds, while relocation changes the balance of crust, mantle and reactor contributions.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Proposed deep Pacific deployment",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Proposed deep Pacific deployment",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2008",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2000s",
+      "event": "Ocean-observatory concept and physics studies developed",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Hanohano Collaboration",
+    "lead_institutions": [
+      "University of Hawaii at Manoa"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed target",
+      "value": "Approximately 10 kilotonnes of liquid scintillator",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Concept",
+      "value": "Transportable deep-ocean observatory",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Ocean deployment concept; no built permanent station established",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2008",
+      "summary": "Published studies projected geoneutrino and reactor physics reach; they do not constitute an operating observatory or detected sample.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "kamland",
+    "borexino"
+  ],
+  "resources": {
+    "official_website": "https://www.phys.hawaii.edu/~jgl/hanohano.html",
+    "publication_links": [
+      "https://arxiv.org/abs/0810.4975"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/0810.4975",
+      "caption": "Cross section of the proposed 10-kilotonne Hanohano detector and support barge (Figure 1); a concept drawing.",
+      "credit": "J. G. Learned, S. T. Dye and S. Pakvasa / Hanohano",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/0810.4975",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 372,
+      "height": 166,
+      "sha256": "8598ecfa87e26b2a9acfe2a419ba92e267d36c4679e361006aa3d42ef6cdc9f1",
+      "mime_type": "image/png",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "University of Hawaii: Hanohano project",
+      "url": "https://www.phys.hawaii.edu/~jgl/hanohano.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "J. G. Learned et al., Hanohano deep-ocean antineutrino observatory",
+      "url": "https://arxiv.org/abs/0810.4975",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008-10-28",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "No current funded construction or full-detector deployment was verified."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

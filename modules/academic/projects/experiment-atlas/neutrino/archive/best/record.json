@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "best",
+  "name": "BEST",
+  "full_name": "Baksan Experiment on Sterile Transitions",
+  "aliases": [],
+  "category": "sterile",
+  "physics_categories": [
+    "sterile"
+  ],
+  "technology_tags": [
+    "radiochemical"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BEST tested the gallium source anomaly using an intense chromium-51 electron-neutrino source and two concentric liquid-gallium targets at Baksan. It compared capture rates at metre-scale distances, providing a source-based complement to reactor disappearance experiments.",
+  "physics_targets": [
+    "Gallium source anomaly",
+    "Short-baseline electron-neutrino disappearance",
+    "Sterile-neutrino interpretations"
+  ],
+  "detection_principle": "Electron neutrinos convert gallium-71 into germanium-71. Germanium atoms are chemically extracted after each exposure and their electron-capture decays counted in low-background proportional counters; the inner and outer zones probe different path lengths.",
+  "technologies": [
+    "Radiochemical detection"
+  ],
+  "sites": [
+    {
+      "name": "Russia; Baksan underground observatory",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "Russia; Baksan underground observatory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2022",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019",
+      "event": "Chromium-source exposure campaign at Baksan",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Source-calibration results published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BEST Collaboration",
+    "lead_institutions": [
+      "Institute for Nuclear Research, Russian Academy of Sciences",
+      "Los Alamos National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source activity",
+      "value": "3.414 MCi of chromium-51",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Gallium target",
+      "value": "Approximately 47 tonnes, divided into two zones",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Capture threshold",
+      "value": "233 keV for gallium-71",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Both zones showed deficits relative to calculated production rates. Their similar suppression confirms the gallium anomaly but does not by itself identify a sterile neutrino or resolve cross-section and other explanations.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "An artificial-source radiochemical experiment, rather than a separate solar-neutrino observatory.",
+  "related_experiments": [
+    "sage",
+    "gallex"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.nist.gov/publications/results-baksan-experiment-sterile-transitions-best",
+      "https://arxiv.org/abs/2201.07364"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.energy.gov/science/np/articles/testing-gallium-anomaly",
+      "caption": "BEST two-zone target under construction, with a researcher in the outer tank beside the inner vessel.",
+      "credit": "A. A. Shikhin / U.S. Department of Energy",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.energy.gov/sites/default/files/styles/full_article_width/public/2024-01/010824-np-gallium-anomaly.jpg?itok=KgJbwj7d",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1350,
+      "height": 808,
+      "sha256": "31559763a1239ad999f08acf05c48b52b5cc0fdae69a3e3d96596a6cc1559923",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "V. Barinov et al., Results from BEST, Physical Review Letters 128, 232501",
+      "url": "https://www.nist.gov/publications/results-baksan-experiment-sterile-transitions-best",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-06-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "V. Barinov et al., Search for electron-neutrino transitions to sterile states in BEST",
+      "url": "https://arxiv.org/abs/2201.07364",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-01-19",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "radiochemical"
+    ],
+    "technology_tags": [
+      "radiochemical"
+    ],
+    "is_europe": false
+  }
+}

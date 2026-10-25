@@ -1,0 +1,159 @@
+{
+  "schema_version": "1.0",
+  "id": "cuoricino",
+  "name": "CUORICINO",
+  "full_name": "CUORICINO cryogenic double-beta-decay experiment",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "CUORICINO was the cryogenic tellurium-130 predecessor of CUORE at Gran Sasso. It demonstrated an array of massive bolometers and established the background and construction experience used for later CUORE detectors.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "TeO2 crystals served simultaneously as isotope source and calorimeter. Neutron-transmutation-doped germanium thermistors measured temperature pulses produced by particle energy deposition.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2008",
+    "evidence": "The final CUORICINO search reported no neutrinoless signal and constrained the 130Te half-life.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CUORICINO Collaboration",
+    "lead_institutions": [
+      "University of Milano-Bicocca",
+      "INFN Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Crystal array",
+      "value": "62 TeO2 crystals",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Total crystal mass",
+      "value": "Approximately 40.7 kg",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Candidate isotope",
+      "value": "130Te",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2011",
+      "summary": "The final CUORICINO search reported no neutrinoless signal and constrained the 130Te half-life.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cuore"
+  ],
+  "resources": {
+    "official_website": "https://cuore.lngs.infn.it/",
+    "publication_links": [
+      "https://arxiv.org/abs/1012.3266"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/0802.3439",
+      "caption": "The CUORICINO detector tower and individual four- and nine-crystal modules, Figure 1 of the collaboration paper.",
+      "credit": "CUORICINO Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/0802.3439",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 464,
+      "height": 540,
+      "sha256": "07ed28370def5ac4f32ed3184b0f16deeedba857cb00661837c0e1927a10d38c",
+      "mime_type": "image/png",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CUORICINO: official experiment / institutional overview",
+      "url": "https://cuore.lngs.infn.it/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "130Te Neutrinoless Double-Beta Decay with CUORICINO",
+      "url": "https://arxiv.org/abs/1012.3266",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer"
+    ],
+    "technology_tags": [
+      "bolometer"
+    ],
+    "is_europe": true
+  }
+}

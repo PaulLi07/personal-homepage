@@ -1,0 +1,166 @@
+{
+  "schema_version": "1.0",
+  "id": "subaru-hsc",
+  "name": "Subaru/HSC",
+  "full_name": "Subaru Hyper Suprime-Cam dark matter programmes",
+  "aliases": [],
+  "category": "cosmology_structure",
+  "role": "multipurpose",
+  "summary": "Wide-field camera on Japan's Subaru telescope, used for weak-lensing dark-matter mapping and high-cadence M31 microlensing searches. The facility is in Hawaii and must not be placed in Japan based on collaboration nationality.",
+  "physics_targets": [
+    "Primordial black holes",
+    "Dark-matter distribution"
+  ],
+  "detection_principle": "Wide-field precision imaging measures background-galaxy distortions, or high-cadence M31 stellar observations search for short magnifications to constrain primordial black holes.",
+  "technologies": [
+    "Wide-field optical CCD imaging",
+    "Weak gravitational lensing",
+    "Microlensing"
+  ],
+  "sites": [
+    {
+      "name": "Maunakea，Hawaii，Subaru Telescope",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Maunakea，Hawaii，Subaru Telescope",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2019",
+    "evidence": "The official 2019 study and observing instrument have been checked; the latest operational cycle requires separate verification.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "Subaru/HSC collaboration / mission team",
+    "lead_institutions": [
+      "Subaru Telescope / NAOJ"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative high-cadence M31 exposure",
+      "value": "7 hours; a single-night search, not the entire HSC survey",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "Microlensing upper limits constrain part of the sublunar-mass primordial-black-hole parameter space.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2020",
+      "summary": "Subsequent work shows that assumptions such as finite source size strongly affect limits in some mass ranges.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Constrains dark-matter distribution and properties through gravity, microlensing or structure statistics; does not directly identify dark-matter particles.",
+  "related_experiments": [
+    "OGLE",
+    "Euclid",
+    "DES"
+  ],
+  "resources": {
+    "official_website": "https://subarutelescope.org/en/results/2019/04/01/2732.html",
+    "publication_links": [
+      "https://www.nature.com/articles/s41550-019-0723-1",
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.101.063005"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://subarutelescope.org/en/gallery/facility/2023/03/23/3353.html",
+      "caption": "Photograph of Hyper Suprime-Cam installed at Subaru's prime focus.",
+      "credit": "Kazuhito Dobashi / NAOJ",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://subarutelescope.org/en/gallery/facility/2023/03/23/DSCF4347_S.jpg",
+      "width": 1000,
+      "height": 667,
+      "sha256": "f7f23973d0d0f7359f2116cbb33b949ba6601a2bf397d74556b2e005395b9a2a",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://subarutelescope.org/en/results/2019/04/01/2732.html",
+      "caption": "Subaru/HSC project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://subarutelescope.org/en/results/2019/04/01/2732.html",
+      "title": "Subaru: dark matter and tiny primordial black holes",
+      "source_date": "2019-04-01",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.nature.com/articles/s41550-019-0723-1",
+      "title": "Microlensing constraints on primordial black holes with Subaru/HSC",
+      "source_date": "2019-04-01",
+      "type": "primary_paper",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.101.063005",
+      "title": "Updated asteroid-mass PBH constraints and finite-source effects",
+      "source_date": "2020",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_survey"
+    ]
+  }
+}

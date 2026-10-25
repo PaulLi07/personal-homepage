@@ -1,0 +1,149 @@
+{
+  "schema_version": "1.0",
+  "id": "picolon",
+  "name": "PICOLON",
+  "full_name": "Pure Inorganic Crystal Observatory for LOw-energy Neutr(al)ino",
+  "aliases": [
+    "PICO-LON"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "PICOLON is a Japanese high-purity NaI(Tl) programme developing low-background crystals and annual-modulation dark-matter measurements in the Kamioka KamLAND facility environment.",
+  "physics_targets": [
+    "WIMP",
+    "Test of DAMA modulation"
+  ],
+  "detection_principle": "Purification of crystal feedstock, background measurements and high-light-yield scintillation readout enable searches for low-energy nuclear-recoil rates and annual variations.",
+  "technologies": [
+    "High-purity NaI(Tl)",
+    "Annual modulation"
+  ],
+  "sites": [
+    {
+      "name": "Kamioka Observatory",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kamioka underground experimental facility, Hida, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "R&D",
+    "as_of": "2024-09-06",
+    "evidence": "A 2024 collaboration report describes tests at the KamLAND site in Kamioka. The designed scale is not evidence that the full array is already operating.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "PICOLON Collaboration",
+    "lead_institutions": [
+      "Tokushima University"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 phase-I concept",
+      "value": "At least four crystal modules, 23.4 kg total mass (planned)",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DAMA/LIBRA",
+    "ANAIS-112"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://academic.oup.com/ptep/article/2021/4/043F01/6137844"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://indico.ibs.re.kr/event/664/contributions/5898/attachments/4412/5866/KKotera_PICOLON2024_DMNet.pdf",
+      "caption": "PICOLON's shielded experimental apparatus at Kamioka, from K. Kotera's 2024 presentation, page 6.",
+      "credit": "K. Kotera / PICOLON collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://indico.ibs.re.kr/event/664/contributions/5898/attachments/4412/5866/KKotera_PICOLON2024_DMNet.pdf",
+      "width": 876,
+      "height": 693,
+      "sha256": "7333d47650d8d4bb7c229b97a546d794766a0ee126b26e7732ca0bfb372e99bf",
+      "mime_type": "image/webp",
+      "local_path": "images/representative.webp",
+      "source_sha256": "4aad2c9c7de00dfacf02cb71dc092e6ca8f592616912196a98b35d983f49f143",
+      "source_dimensions": {
+        "width": 876,
+        "height": 693
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://indico.ibs.re.kr/event/664/contributions/5898/attachments/4412/5866/KKotera_PICOLON2024_DMNet.pdf",
+      "caption": "PICOLON apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "PICOLON Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Present status of PICOLON project",
+      "url": "https://indico.ibs.re.kr/event/664/contributions/5898/attachments/4412/5866/KKotera_PICOLON2024_DMNet.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-09-06",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Development of highly radiopure NaI(Tl) scintillator for PICOLON dark matter search project",
+      "url": "https://academic.oup.com/ptep/article/2021/4/043F01/6137844",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Despite its similar name, this is a different experiment from the PICO bubble chamber."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

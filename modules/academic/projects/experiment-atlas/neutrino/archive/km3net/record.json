@@ -1,0 +1,283 @@
+{
+  "schema_version": "1.0",
+  "id": "km3net",
+  "name": "KM3NeT",
+  "full_name": "Cubic Kilometre Neutrino Telescope",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "atmospheric",
+    "supernova"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A Mediterranean research infrastructure with two complementary neutrino telescopes: ARCA offshore Sicily for high-energy astronomy and ORCA offshore France for atmospheric-neutrino oscillations.",
+  "physics_targets": [
+    "Cosmic neutrino sources and diffuse emission",
+    "Neutrino mass ordering and atmospheric oscillations",
+    "Supernova burst monitoring"
+  ],
+  "detection_principle": "Vertical detection units carry pressure spheres containing multiple small photomultipliers. Precise photon timing reconstructs Cherenkov light from neutrino-induced tracks and cascades in seawater.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "KM3NeT-ARCA",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Ionian Sea offshore Portopalo di Capo Passero, Sicily",
+      "latitude": 36.27,
+      "longitude": 16.1,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "KM3NeT-ORCA",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Mediterranean Sea offshore Toulon",
+      "latitude": 42.8,
+      "longitude": 6.03,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "Both partial arrays take data during staged construction; current official pages describe ARCA with 51 detection units and ORCA with 28 detection units.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "First ARCA detection units deployed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2017",
+      "event": "First ORCA detection unit deployed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "KM3-230213A recorded by a partial ARCA detector.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Ultra-high-energy event published.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "KM3NeT Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "CNRS/IN2P3",
+      "Nikhef"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "ARCA design",
+      "value": "Two blocks of 115 detection units; approximately 1 km³ total instrumented volume",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "ORCA design",
+      "value": "One dense block of 115 detection units for GeV-scale atmospheric neutrinos",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Optical module",
+      "value": "31 small photomultiplier tubes per digital optical module",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Site depths",
+      "value": "Approximately 3,500 m for ARCA; 2,450 m for ORCA",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Currently documented partial arrays",
+      "value": "ARCA51 and ORCA28 on the official project pages; the 230/115-unit arrays remain the full KM3NeT 2.0 designs.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "ARCA",
+      "description": "Sparse offshore-Italian array optimised for TeV–PeV neutrino astronomy.",
+      "source_ids": [
+        "s1"
+      ],
+      "status": "Taking data during construction"
+    },
+    {
+      "name": "ORCA",
+      "description": "Dense offshore-French array optimised for GeV atmospheric-neutrino physics.",
+      "source_ids": [
+        "s2"
+      ],
+      "status": "Taking data during construction"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "KM3-230213A was interpreted as an exceptionally energetic cosmic neutrino; the estimated neutrino energy is around 220 PeV with substantial uncertainty.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "Ongoing",
+      "summary": "Partial arrays already support atmospheric-neutrino and astrophysical analyses while construction continues.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "antares",
+    "nestor",
+    "nemo-telescope",
+    "icecube"
+  ],
+  "resources": {
+    "official_website": "https://www.km3net.org/research/physics/astronomy-with-arca/",
+    "publication_links": [
+      "https://doi.org/10.1038/s41586-024-08543-1"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.km3net.org/pictures-and-videos/picture-galleries/album-optical-module/",
+      "caption": "A KM3NeT optical module photographed in the deep sea.",
+      "credit": "Credits KM3NeT",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.km3net.org/wp-content/uploads/2022/04/Optical-module-in-deep-sea.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1600,
+      "height": 900,
+      "sha256": "dac510aaf2277964391c5533e04fcb1224c01b57b00d5657ab848eaca875c45b",
+      "mime_type": "image/webp",
+      "source_sha256": "56c4f8fa34868eeba589f1675c94e09c82e017d1e084b0623d886973dfb0d641",
+      "source_dimensions": {
+        "width": 1600,
+        "height": 900
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "KM3NeT Collaboration, astroparticle physics with ARCA",
+      "url": "https://www.km3net.org/research/physics/astronomy-with-arca/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "KM3NeT Collaboration, Particle physics with ORCA",
+      "url": "https://www.km3net.org/research/physics/particle-physics-with-orca/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "KM3NeT Collaboration, Observation of an ultra-high-energy cosmic neutrino with KM3NeT",
+      "url": "https://doi.org/10.1038/s41586-024-08543-1",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": true
+  }
+}

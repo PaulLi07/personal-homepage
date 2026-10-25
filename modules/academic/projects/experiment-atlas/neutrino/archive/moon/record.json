@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "moon",
+  "name": "MOON",
+  "full_name": "Mo Observatory Of Neutrinos",
+  "aliases": [
+    "MOON-1"
+  ],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "sampling"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "MOON is a historical molybdenum-100 double-beta and solar-neutrino detector concept. Its MOON-1 prototype tested a layered scintillator approach; it did not realize the proposed tonne-scale physics experiment.",
+  "physics_targets": [
+    "Double-beta and rare weak decays",
+    "Solar electron neutrinos"
+  ],
+  "detection_principle": "Thin double-beta source foils alternate with plastic scintillator plates. Coincident electrons provide energy and topology information; optical collection determines resolution and rejection of two-neutrino-decay backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Layered detectors (sampling calorimeters)"
+  ],
+  "sites": [
+    {
+      "name": "Full-scale MOON site not established in the prototype publication",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Full-scale MOON site not established in the prototype publication",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "site_not_selected"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2006-09-12",
+    "evidence": "MOON-1 measured scintillator response with calibration electrons. The reported 6.8% FWHM resolution near 3 MeV is prototype performance, not a neutrinoless-decay sensitivity achieved with a tonne of isotope.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "MOON Collaboration",
+    "lead_institutions": [
+      "Osaka University",
+      "University of Washington",
+      "Los Alamos National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Prototype",
+      "value": "Six layers of plastic scintillator",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scintillator plate dimensions",
+      "value": "53 x 53 x 1 cm3",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Measured energy resolution",
+      "value": "6.8 +/- 0.3% FWHM near 3 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2006-09-12",
+      "summary": "MOON-1 measured scintillator response with calibration electrons. The reported 6.8% FWHM resolution near 3 MeV is prototype performance, not a neutrinoless-decay sensitivity achieved with a tonne of isotope.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "nemo",
+    "supernemo",
+    "dcba"
+  ],
+  "resources": {
+    "official_website": "https://www.nu.to.infn.it/exp/all/moon/",
+    "publication_links": [
+      "https://arxiv.org/abs/nucl-ex/0609008"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/nucl-ex/0609008",
+      "caption": "MOON-1 six-layer scintillator prototype design (Fig. 1).",
+      "credit": "MOON Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/pdf/nucl-ex/0609008#page=3",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 437,
+      "height": 302,
+      "sha256": "74bf748c49261ad2fdbf951ef62554d32143c2879c4c2ec82d26cc4da4445479",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Multi-layer scintillation detector for the MOON double beta decay experiment: Scintillation photon responses studied by a prototype detector MOON-1",
+      "url": "https://arxiv.org/abs/nucl-ex/0609008",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2006-09-12",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Neutrino Unbound: MOON experiment bibliography",
+      "url": "https://www.nu.to.infn.it/exp/all/moon/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "sampling"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "sampling"
+    ],
+    "is_europe": false
+  }
+}

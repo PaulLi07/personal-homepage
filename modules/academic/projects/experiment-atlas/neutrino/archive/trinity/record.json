@@ -1,0 +1,190 @@
+{
+  "schema_version": "1.0",
+  "id": "trinity",
+  "name": "Trinity",
+  "full_name": "Trinity PeV Neutrino Observatory",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A staged imaging-Cherenkov programme targets Earth-skimming tau neutrinos. A demonstrator telescope at Frisco Peak tests the technology before a proposed eighteen-telescope observatory.",
+  "physics_targets": [
+    "Astrophysical neutrinos from approximately 1 PeV to 1 EeV",
+    "Air-shower Cherenkov imaging",
+    "Transient source follow-up"
+  ],
+  "detection_principle": "A tau emerging from the Earth can decay into an upward-going air shower. Telescopes pointed near the horizon would image the brief atmospheric Cherenkov flash with silicon-photomultiplier cameras.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Trinity Demonstrator",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Frisco Peak, Utah",
+      "latitude": 38.46,
+      "longitude": -113.29,
+      "precision": "approximate_site",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple stages",
+    "as_of": "2026-10-23",
+    "evidence": "The project states the demonstrator has taken data since October 2023 and describes the programme as the first of three development phases.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2023-10",
+      "event": "Demonstrator began taking data at Frisco Peak, Utah.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Commissioning and performance paper published.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Trinity Collaboration",
+    "lead_institutions": [
+      "Georgia Institute of Technology"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Demonstrator camera",
+      "value": "256 silicon-photomultiplier pixels",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Demonstrator field of view",
+      "value": "Approximately 3.87° × 3.87°",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Mirrors",
+      "value": "77 facets, each 15 cm diameter",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Full concept",
+      "value": "18 telescopes; proposed scale",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Demonstrated camera, optics and remote-operation performance. The full observatory’s quoted neutrino sensitivity remains prospective.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "tambo",
+    "ashra",
+    "nta",
+    "euso-spb2"
+  ],
+  "resources": {
+    "official_website": "https://trinity.physics.gatech.edu/",
+    "publication_links": [
+      "https://arxiv.org/abs/2503.11864"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://trinity.physics.gatech.edu/",
+      "caption": "The Trinity Demonstrator deployed on Frisco Peak, Utah.",
+      "credit": "Trinity Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://trinity.physics.gatech.edu/wp-content/uploads/2023/11/20231001_163809-1-2-768x1024.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 768,
+      "height": 1024,
+      "sha256": "57ec66efdd6cb3a3db99594eb0f242d1b0d37b0212d469e4951ad32250686d7d",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Trinity Collaboration, programme and demonstrator",
+      "url": "https://trinity.physics.gatech.edu/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Trinity Collaboration, commissioning and performance of the demonstrator",
+      "url": "https://arxiv.org/abs/2503.11864",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

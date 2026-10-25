@@ -1,0 +1,156 @@
+{
+  "schema_version": "1.0",
+  "id": "dampe",
+  "name": "DAMPE",
+  "full_name": "Dark Matter Particle Explorer",
+  "aliases": [
+    "Wukong"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "China's Dark Matter Particle Explorer satellite searches high-resolution electron–positron and gamma-ray spectra for indirect dark-matter features while measuring high-energy cosmic rays.",
+  "physics_targets": [
+    "Features in the electron–positron spectrum",
+    "Gamma-ray lines"
+  ],
+  "detection_principle": "Plastic scintillators identify charge and provide anticoincidence, a silicon–tungsten tracker measures direction, a BGO calorimeter measures shower energy, and a neutron detector assists electron–hadron separation.",
+  "technologies": [
+    "PSD",
+    "STK",
+    "BGO",
+    "NUD"
+  ],
+  "sites": [
+    {
+      "name": "Wukong satellite, low Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Wukong satellite, low Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operation supported by evidence",
+    "as_of": "2021-09-07",
+    "evidence": "The specific verified announcement concerns the 2021 data release. Its date is retained and does not establish the complete 2026 mission status.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015-12-17",
+      "event": "Launch from Jiuquan",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2021-09-07",
+      "event": "First gamma-ray science-data release",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DAMPE collaboration / mission team",
+    "lead_institutions": [
+      "Purple Mountain Observatory, Chinese Academy of Sciences"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "BGO calorimeter",
+      "value": "308 crystals in 14 layers with alternating orientations",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "CALET",
+    "HERD",
+    "AMS-02"
+  ],
+  "resources": {
+    "official_website": "https://www.pmo.cas.cn/dqyd2019/djdt2019/sxxd2019/202109/t20210906_6192392.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/dampe.html",
+      "caption": "Artist's impression of DAMPE (Wukong) in orbit, showing the solar arrays and payload body.",
+      "credit": "Illustration on the NASA HEASARC DAMPE mission page; no individual image creator is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://heasarc.gsfc.nasa.gov/Images/dampe/DAMPE_AutoB_sm.jpg",
+      "width": 279,
+      "height": 158,
+      "sha256": "f3ae9b4605d9039fe113cd1bb441d51b74ca03c1be72fca20f73d1e4cae0fc21",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.pmo.cas.cn/dqyd2019/djdt2019/sxxd2019/202109/t20210906_6192392.html",
+      "caption": "DAMPE project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.pmo.cas.cn/dqyd2019/djdt2019/sxxd2019/202109/t20210906_6192392.html",
+      "title": "Purple Mountain Observatory: DAMPE gamma-ray data release",
+      "source_date": "2021-09-07",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/dampe.html",
+      "title": "NASA HEASARC: DAMPE",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Dedicated announcements are needed to update the latest 2026 mission extension and data-set status."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

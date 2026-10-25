@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "tesseract",
+  "name": "TESSERACT",
+  "full_name": "Transition Edge Sensors with Sub-Ev Resolution And Cryogenic Targets",
+  "aliases": [
+    "HeRALD",
+    "SPICE",
+    "TESSERACT@LSM"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "TESSERACT is a multitarget, ultralow-threshold dark-matter programme combining HeRALD superfluid helium, SPICE polar/scintillating crystals and French cryogenic Ge/Si technology. This record covers the overall programme, with its subprojects listed as phases.",
+  "physics_targets": [
+    "Sub-GeV dark matter",
+    "Dark-matter–electron scattering",
+    "Dark-matter nuclear recoils"
+  ],
+  "detection_principle": "TES sensors measure tiny energies from phonons, photons or quantum-evaporated helium atoms. Different targets and signal combinations probe different masses and couplings and help investigate nonparticle low-energy backgrounds.",
+  "technologies": [
+    "TES",
+    "Superfluid 4He",
+    "Polar crystals",
+    "Scintillating crystals",
+    "Ge/Si calorimeters"
+  ],
+  "sites": [
+    {
+      "name": "LSM",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Underground laboratory in the Fréjus tunnel, Modane",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Planned final underground deployment site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "R&D",
+    "as_of": "2025-03-26",
+    "evidence": "The 2025 collaboration report explicitly describes R&D and planning, including development of a shielded dilution-refrigerator facility at Modane.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "TESSERACT Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Technology objectives",
+      "value": "Sub-eV energy resolution and multiple target materials; R&D objectives.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Example target materials",
+      "value": "4He、Al2O3、SiO2、GaAs、Ge/Si",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "HeRALD",
+      "status": "research_development",
+      "description": "Superfluid-helium target and quantum evaporation"
+    },
+    {
+      "name": "SPICE",
+      "status": "research_development",
+      "description": "Polar and scintillating crystals"
+    },
+    {
+      "name": "Ge/Si technology",
+      "status": "research_development",
+      "description": "French semiconductor-calorimeter approach"
+    },
+    {
+      "name": "Modane underground facility",
+      "status": "planned",
+      "description": "Final deployment concept for multitarget experiments"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "DELight",
+    "EDELWEISS",
+    "SuperCDMS"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.sciencedirect.com/science/article/pii/S0550321324000312"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://physicalsciences.lbl.gov/2025/03/05/small-but-mighty-tesseract-joins-the-hunt-for-dark-matter/",
+      "caption": "Maggie Reed and Roger Romani display a detector beside the TESSERACT dilution refrigerator, in a 2025 official Berkeley Lab photograph. It shows R&D equipment and a detector component.",
+      "credit": "Marilyn Sargent / Berkeley Lab, explicitly credited on the official page.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://physicalsciences.lbl.gov/wp-content/uploads/sites/2/2025/03/2025-BLDS-NEWS-IMAGE-1025x685px-TESSERACT-PR-March-2025-Photo-Marilyn-Sargent-4web.jpg",
+      "width": 1025,
+      "height": 685,
+      "sha256": "a2e03c615bdaa23c10f9cb11fd4947b8e542c7fc5ca62adf023314a2c76b1e8b",
+      "mime_type": "image/webp",
+      "source_sha256": "6f89bf203b6a8d62d16c1a5f2e5e03848ddce300dda64961978941af28165b71",
+      "source_dimensions": {
+        "width": 1025,
+        "height": 685
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0550321324000312",
+      "caption": "TESSERACT apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "TESSERACT Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "TESSERACT at the underground laboratory of Modane",
+      "url": "https://www.sciencedirect.com/science/article/pii/S0550321324000312",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-06",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "UCLA Dark Matter 2025 — The TESSERACT Project",
+      "url": "https://indico.global/event/652/contributions/contributions.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-03-26",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "This parent record summarizes the R&D consortium. Independently deployed subexperiments may later receive separate records while retaining parent–child links."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle",
+      "quantum_sensor"
+    ]
+  }
+}

@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0",
+  "id": "elegant-v",
+  "name": "ELEGANT V",
+  "full_name": "ELEGANT V",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "ELEGANT V was a multipurpose rare-event experiment at Japan's Oto underground facility, using a large NaI(Tl) target for WIMP nuclear-recoil searches alongside double-beta-decay research.",
+  "physics_targets": [
+    "WIMP nuclear recoils"
+  ],
+  "detection_principle": "NaI crystals record low-energy recoils, and plastic scintillators reject cosmic-ray backgrounds crossing the apparatus. Separate drift chambers serve double-beta-decay studies.",
+  "technologies": [
+    "NaI(Tl)",
+    "Plastic-scintillator anticoincidence",
+    "Drift chamber"
+  ],
+  "sites": [
+    {
+      "name": "Oto Cosmo Observatory",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Oto underground cosmic observatory, Nara Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2003",
+    "evidence": "A 2003 collaboration conference paper confirms dark-matter operation; the exact end date has not been verified.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "ELEGANT V Collaboration",
+    "lead_institutions": [
+      "Osaka University",
+      "Tokushima University"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "NaI modules",
+      "value": "20",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Anticoincidence",
+      "value": "16 plastic-scintillator modules",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Double-beta system",
+      "value": "Three drift chambers",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2003",
+      "summary": "A conference paper describes the Oto NaI dark-matter search and apparatus.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "PICOLON",
+    "DAMA/NaI"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Proceedings_of_NDM03.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Proceedings_of_NDM03.pdf",
+      "caption": "Cross section of ELEGANT V showing NaI(Tl) detectors, drift chambers, copper/lead shielding and the radon-monitoring gas circuit (original NDM03 report, Figure 1).",
+      "credit": "S. Yoshida et al. / ELEGANT collaboration",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "original_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Proceedings_of_NDM03.pdf",
+      "width": 1359,
+      "height": 672,
+      "sha256": "7d1ab07024d4e1df3e3263929f74a6e1d5042270cd9fdef9ee84ee9f8154a447",
+      "mime_type": "image/png",
+      "local_path": "images/representative.png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Proceedings_of_NDM03.pdf",
+      "caption": "ELEGANT V apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "ELEGANT V Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Search for WIMPs by means of the ELEGANT V NaI detectors — NDM03 proceedings",
+      "url": "https://www.rcnp.osaka-u.ac.jp/~umehara/ndm03/proc/PDF/Proceedings_of_NDM03.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2003",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "The source is a conference proceedings volume. Figure 1 of the original ELEGANT V report in NDM03 has been located and archived; see media for provenance.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

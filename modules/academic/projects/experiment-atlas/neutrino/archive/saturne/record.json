@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "saturne",
+  "name": "SATURNE",
+  "full_name": "SArov Tritium neutRiNo Experiment",
+  "aliases": [],
+  "category": "crosssection",
+  "physics_categories": [
+    "crosssection"
+  ],
+  "technology_tags": [
+    "bolometer"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "SATURNE is a Sarov programme using an intense tritium antineutrino source to study low-energy scattering and the neutrino magnetic moment. Its planned coherent scattering on entire atoms is distinct from coherent neutrino-nucleus scattering and from beta-endpoint mass spectroscopy.",
+  "physics_targets": [
+    "Low-energy neutrino interactions"
+  ],
+  "detection_principle": "Sub-keV atomic recoils in superfluid helium can produce quasiparticles and quantum evaporation, sensed by cryogenic detectors. Complementary silicon and scintillator concepts probe electromagnetic neutrino interactions.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)"
+  ],
+  "sites": [
+    {
+      "name": "National Centre for Physics and Mathematics, Sarov",
+      "country": "Russia",
+      "country_code": "RUS",
+      "location": "National Centre for Physics and Mathematics, Sarov",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "development_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-07-30",
+    "evidence": "Conference reports describe implementation and detector concepts. Projected magnetic-moment reach and a first observation of coherent atom scattering are goals, not measured results.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "SATURNE Collaboration",
+    "lead_institutions": [
+      "National Centre for Physics and Mathematics, Sarov",
+      "Joint Institute for Nuclear Research",
+      "Lomonosov Moscow State University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source concept",
+      "value": "At least 1 kg, potentially up to 4 kg of T2",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Helium concept",
+      "value": "Approximately 1000 litres of superfluid 4He",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino energy endpoint",
+      "value": "18.6 keV from tritium beta decay",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-07-30",
+      "summary": "Conference reports describe implementation and detector concepts. Projected magnetic-moment reach and a first observation of coherent atom scattering are goals, not measured results.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "texono",
+    "gemma",
+    "heron-helium"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://indico.particle.mephi.ru/event/436/contributions/4282/attachments/2608/4779/SATURNE_ICPPA-2024.pdf",
+      "https://doi.org/10.1142/S0218301324410118",
+      "https://indico.cern.ch/event/1522800/contributions/6986004/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://indico.particle.mephi.ru/event/436/contributions/4282/attachments/2608/4779/SATURNE_ICPPA-2024.pdf",
+      "caption": "SATURNE superfluid-helium detector concept for coherent neutrino-atom scattering, from the 2024 status presentation.",
+      "credit": "SATURNE Collaboration / K. Kouzakov",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://indico.particle.mephi.ru/event/436/contributions/4282/attachments/2608/4779/SATURNE_ICPPA-2024.pdf#page=10",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 582,
+      "height": 630,
+      "sha256": "24be86d7ba196b0c573014aa0b9da621514716ab40b71a36caab8a62eb6c5e34",
+      "mime_type": "image/png",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Status and Physics Potential of SATURNE",
+      "url": "https://indico.particle.mephi.ru/event/436/contributions/4282/attachments/2608/4779/SATURNE_ICPPA-2024.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2024-10-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "SATURNE: The Sarov Tritium Neutrino Experiment",
+      "url": "https://doi.org/10.1142/S0218301324410118",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Project SATURNE: coherent elastic scattering of tritium antineutrinos and neutrino magnetic moment",
+      "url": "https://indico.cern.ch/event/1522800/contributions/6986004/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2026-07-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "RUS"
+    ],
+    "technology_groups": [
+      "bolometer"
+    ],
+    "technology_tags": [
+      "bolometer"
+    ],
+    "is_europe": false
+  }
+}

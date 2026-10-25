@@ -1,0 +1,1252 @@
+{
+  "updated": "2026-10-23",
+  "methodology": {
+    "counting": "Unique named projects or experiment series. Multiple sites may contribute to more than one country, but the global total counts each dossier once.",
+    "geography": "Country-level counts from documented detector or candidate sites; no inferred exact coordinates or headquarters locations.",
+    "status": "Statuses retain their individual evidence dates. The index update date is not a new measurement of operating status.",
+    "details": "Navigation summaries are built from independent English dossiers and images stored inside this map. Each dossier is loaded only when opened; no external archive directory is required."
+  },
+  "europe_members": [
+    "AUT",
+    "CHE",
+    "DEU",
+    "ESP",
+    "FRA",
+    "GBR",
+    "ITA",
+    "SWE"
+  ],
+  "geography_notes": [
+    {
+      "id": "adept",
+      "name": "AdEPT",
+      "regions": [
+        "SPACE",
+        "UNSITED"
+      ],
+      "notes": [
+        "SPACE 表示未来空间任务概念；气球阶段未给出明确基地，故同时列为未定位，不能视为已经发射的卫星。",
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "拟议高空气球及后续空间部署，未定最终场址",
+          "country": "太空 / 气球概念",
+          "country_code": null,
+          "location": "拟议高空气球及后续空间部署，未定最终场址",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "amanda",
+      "name": "AMANDA",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "南极站冰盖下",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "南极站冰盖下",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "apt-adapt",
+      "name": "APT / ADAPT",
+      "regions": [
+        "SPACE",
+        "ATA"
+      ],
+      "notes": [
+        "同一系列同时含空间任务与明确基地的气球阶段；两个地理分组并列，不是两份独立实验档案。",
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。",
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "APT空间任务",
+          "country": "太空",
+          "country_code": null,
+          "location": "拟议空间轨道，未批准",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        },
+        {
+          "name": "ADAPT气球",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "McMurdo长航时气球设施；计划2026–2027南极季",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "planned"
+        }
+      ]
+    },
+    {
+      "id": "atic",
+      "name": "ATIC",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "南极高空气球飞行",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "南极高空气球飞行",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "baikal-gvd",
+      "name": "Baikal-GVD",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "贝加尔湖南部深水区，离岸约4 km",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "贝加尔湖南部深水区，离岸约4 km",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "baikal-nt200",
+      "name": "Baikal NT200",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "Lake Baikal，Siberia",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "Lake Baikal，Siberia",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "baksan-bust",
+      "name": "Baksan BUST",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "Baksan地下实验室，北高加索",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "Baksan地下实验室，北高加索",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "bess",
+      "name": "BESS",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极归属仅依据档案明确记载的 BESS-Polar 飞行；档案未逐项定位其他历史发射基地，未按日美合作身份归国。",
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "历次高空气球任务；BESS-Polar从南极飞行",
+          "country": "南极洲及其他气球基地",
+          "country_code": null,
+          "location": "历次高空气球任务；BESS-Polar从南极飞行",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "casper",
+      "name": "CASPEr",
+      "regions": [
+        "USA",
+        "DEU",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Boston University：CASPEr-Electric",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "Boston University：CASPEr-Electric",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Helmholtz Institute Mainz：CASPEr-Gradient 研发",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "Helmholtz Institute Mainz：CASPEr-Gradient 研发",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "research_development"
+        }
+      ]
+    },
+    {
+      "id": "cosi",
+      "name": "COSI",
+      "regions": [
+        "SPACE",
+        "NZL"
+      ],
+      "notes": [
+        "同一系列同时含空间任务与明确基地的气球阶段；两个地理分组并列，不是两份独立实验档案。",
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "COSI SMEX",
+          "country": "太空",
+          "country_code": null,
+          "location": "拟议近地轨道，建设中",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "planned"
+        },
+        {
+          "name": "COSI 2016 balloon",
+          "country": "新西兰",
+          "country_code": "NZL",
+          "location": "Wanaka机场起飞；气球航迹非固定台站",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "coupp",
+      "name": "COUPP",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "伊利诺伊州 Batavia，费米国家加速器实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "ctao",
+      "name": "CTAO",
+      "regions": [
+        "ESP",
+        "CHL",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "La Palma，CTAO-North",
+          "country": "西班牙",
+          "country_code": "ESP",
+          "location": "La Palma，CTAO-North",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Atacama Desert，CTAO-South",
+          "country": "智利",
+          "country_code": "CHL",
+          "location": "Atacama Desert，CTAO-South",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "cygnus",
+      "name": "CYGNUS",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "档案未列出经核实的设施场址；未按合作机构、拟任意地点或图片所在地补点。"
+      ],
+      "source_sites": []
+    },
+    {
+      "id": "damic",
+      "name": "DAMIC",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "伊利诺伊州 Batavia，费米国家加速器实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "danae",
+      "name": "DANAE",
+      "regions": [
+        "DEU",
+        "AUT",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "半导体实验室 HLL",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "慕尼黑，Max Planck 半导体实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "HEPHY",
+          "country": "奥地利",
+          "country_code": "AUT",
+          "location": "维也纳，高能物理研究所",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "darwin",
+      "name": "DARWIN",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "档案未列出经核实的设施场址；未按合作机构、拟任意地点或图片所在地补点。"
+      ],
+      "source_sites": []
+    },
+    {
+      "id": "delight",
+      "name": "DELight",
+      "regions": [
+        "DEU",
+        "ESP",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Heidelberg 研发实验室",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "海德堡大学",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "原型与技术研发"
+        },
+        {
+          "name": "KIT 研发实验室",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "卡尔斯鲁厄理工学院",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "量子传感器研发"
+        },
+        {
+          "name": "LSC",
+          "country": "西班牙",
+          "country_code": "ESP",
+          "location": "阿拉贡大区，比利牛斯山 Canfranc 地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "2026意向申请候选地下地点"
+        }
+      ]
+    },
+    {
+      "id": "dm-ice",
+      "name": "DM-Ice",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "南极点冰层",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "Amundsen–Scott 南极站附近，IceCube 深冰钻孔",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "eureca",
+      "name": "EURECA",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "档案未列出经核实的设施场址；未按合作机构、拟任意地点或图片所在地补点。"
+      ],
+      "source_sites": []
+    },
+    {
+      "id": "formosa",
+      "name": "FORMOSA",
+      "regions": [
+        "CHE",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "FORMOSA demonstrator，CERN UJ12",
+          "country": "瑞士",
+          "country_code": "CHE",
+          "location": "CERN UJ12原型部署",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented"
+        },
+        {
+          "name": "完整FORMOSA候选FPF",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "ATLAS西侧约617–682 m的FPF拟议洞室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "gaps",
+      "name": "GAPS",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "南极McMurdo附近气球基地及高空飞行",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "南极McMurdo附近气球基地及高空飞行",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "grams",
+      "name": "GRAMS",
+      "regions": [
+        "SPACE",
+        "UNSITED"
+      ],
+      "notes": [
+        "SPACE 表示未来空间任务概念；气球阶段未给出明确基地，故同时列为未定位，不能视为已经发射的卫星。",
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "气球／未来卫星任务；研发机构在美国等地",
+          "country": "太空／高空气球",
+          "country_code": null,
+          "location": "气球／未来卫星任务；研发机构在美国等地",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "grand",
+      "name": "GRAND",
+      "regions": [
+        "CHN",
+        "ARG",
+        "FRA",
+        "GLOBAL",
+        "EUROPE"
+      ],
+      "notes": [
+        "中国、阿根廷和法国为具名原型 / 测试阵列；GLOBAL 表示未来完整跨国阵列，不表示全球设施已全部建成。",
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "GRANDProto300",
+          "country": "中国",
+          "country_code": "CHN",
+          "location": "甘肃敦煌附近戈壁，原型部署",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented"
+        },
+        {
+          "name": "GRAND@Auger",
+          "country": "阿根廷",
+          "country_code": "ARG",
+          "location": "Pierre Auger Observatory，原型部署",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented"
+        },
+        {
+          "name": "GRAND@Nançay",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "Nançay射电台，测试阵列",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented"
+        },
+        {
+          "name": "完整GRAND多阵列",
+          "country": "国际",
+          "country_code": null,
+          "location": "全球多候选场址，尚未最终落实",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "heat",
+      "name": "HEAT",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fort Sumner，New Mexico 气球发射",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "Fort Sumner，New Mexico 气球发射",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        },
+        {
+          "name": "Lynn Lake，Manitoba 气球发射",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "Lynn Lake，Manitoba 气球发射",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "icecube",
+      "name": "IceCube",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "Amundsen–Scott 南极站下方冰层",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "Amundsen–Scott 南极站下方冰层",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "icecube-gen2",
+      "name": "IceCube-Gen2",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "南极IceCube周边冰层（规划）",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "南极IceCube周边冰层（规划）",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "km3net",
+      "name": "KM3NeT",
+      "regions": [
+        "ITA",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "ARCA，Sicily外海",
+          "country": "意大利",
+          "country_code": "ITA",
+          "location": "ARCA，Sicily外海",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "ORCA，Toulon外海",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "ORCA，Toulon外海",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "lamppost",
+      "name": "LAMPOST",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "原 sites 仅写 NIST / MIT 参与，具体部署实验室待核；不以参与机构所在地替代装置所在地。"
+      ],
+      "source_sites": [
+        {
+          "name": "NIST / MIT 参与的低温光学原型；具体部署实验室待核",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "NIST / MIT 参与的低温光学原型；具体部署实验室待核",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "madmax",
+      "name": "MADMAX",
+      "regions": [
+        "DEU",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "DESY / University of Hamburg 原型建设",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "DESY / University of Hamburg 原型建设",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "CERN SPS North Area / Morpurgo 磁体，Prévessin",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "CERN SPS North Area / Morpurgo 磁体，Prévessin",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "nasduck",
+      "name": "NASDUCK",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "原 sites 仅写以色列实验团队，具体装置实验室尚需按论文区分；不以团队所在国替代装置所在地。"
+      ],
+      "source_sites": [
+        {
+          "name": "以色列自旋传感实验团队；各装置实验室需按论文区分",
+          "country": "以色列",
+          "country_code": "ISR",
+          "location": "以色列自旋传感实验团队；各装置实验室需按论文区分",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "nedm-axion",
+      "name": "nEDM — axion dark matter searches",
+      "regions": [
+        "CHE",
+        "FRA",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Paul Scherrer Institute UCN source，Villigen",
+          "country": "瑞士",
+          "country_code": "CHE",
+          "location": "Paul Scherrer Institute UCN source，Villigen",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "Institut Laue-Langevin PF2，Grenoble",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "Institut Laue-Langevin PF2，Grenoble",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "historical"
+        }
+      ]
+    },
+    {
+      "id": "news-g",
+      "name": "NEWS-G",
+      "regions": [
+        "FRA",
+        "CAN",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "LSM",
+          "country": "法国",
+          "country_code": "FRA",
+          "location": "Modane，Fréjus 隧道地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "nucal",
+      "name": "NuCal",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "U-70加速器，Protvino，Serpukhov地区",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "U-70加速器，Protvino，Serpukhov地区",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented"
+        }
+      ]
+    },
+    {
+      "id": "rades",
+      "name": "RADES",
+      "regions": [
+        "CHE",
+        "DEU",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "CERN CAST 装置，Meyrin",
+          "country": "瑞士",
+          "country_code": "CHE",
+          "location": "CERN CAST 装置，Meyrin",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        },
+        {
+          "name": "DESY Hamburg：RADES-BabyIAXO 计划位置",
+          "country": "德国",
+          "country_code": "DEU",
+          "location": "DESY Hamburg：RADES-BabyIAXO 计划位置",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "sabre",
+      "name": "SABRE",
+      "regions": [
+        "ITA",
+        "AUS",
+        "EUROPE"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "LNGS",
+          "country": "意大利",
+          "country_code": "ITA",
+          "location": "阿布鲁佐，格兰萨索国家实验室地下大厅",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SUPL",
+          "country": "澳大利亚",
+          "country_code": "AUS",
+          "location": "维多利亚州 Stawell 金矿地下物理实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "sbc",
+      "name": "SBC",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "伊利诺伊州 Batavia，费米国家加速器实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "低本底暗物质搜索计划场址"
+        }
+      ]
+    },
+    {
+      "id": "sensei",
+      "name": "SENSEI",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "伊利诺伊州 Batavia，费米国家加速器实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "spt",
+      "name": "SPT",
+      "regions": [
+        "ATA"
+      ],
+      "notes": [
+        "南极洲单独列为区域；不将南极台站按运营机构所属国家分配。"
+      ],
+      "source_sites": [
+        {
+          "name": "Amundsen–Scott南极站",
+          "country": "南极洲",
+          "country_code": "ATA",
+          "location": "Amundsen–Scott南极站",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "squad",
+      "name": "SQuAD",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "原 sites 写 Fermilab / 参与机构研发，但最终装置场址待核；从严保留为未定位。"
+      ],
+      "source_sites": [
+        {
+          "name": "Fermilab / 参与机构研发，最终装置场址待核",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "Fermilab / 参与机构研发，最终装置场址待核",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "supercdms",
+      "name": "SuperCDMS",
+      "regions": [
+        "USA",
+        "CAN"
+      ],
+      "notes": [
+        "多址 / 多阶段档案可出现在多个分组，但总档案数只计一次。"
+      ],
+      "source_sites": [
+        {
+          "name": "Soudan Underground Laboratory",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "明尼苏达州 Soudan 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        },
+        {
+          "name": "SNOLAB",
+          "country": "加拿大",
+          "country_code": "CAN",
+          "location": "安大略省 Sudbury，Creighton 矿地下实验室",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "实验所在地（阶段见正文）"
+        }
+      ]
+    },
+    {
+      "id": "taiga",
+      "name": "TAIGA",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "Tunka Valley，Siberia",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "Tunka Valley，Siberia",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "taste",
+      "name": "TASTE",
+      "regions": [
+        "RUS"
+      ],
+      "notes": [
+        "俄罗斯按档案国家代码归组；欧洲概览不包含 RUS，以避免将西伯利亚台站计入欧洲。"
+      ],
+      "source_sites": [
+        {
+          "name": "Institute for Nuclear Research，Troitsk",
+          "country": "俄罗斯",
+          "country_code": "RUS",
+          "location": "Institute for Nuclear Research，Troitsk",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "proposed"
+        }
+      ]
+    },
+    {
+      "id": "windchime",
+      "name": "Windchime",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "原 sites 仅写美国多机构研发，且明确最终大阵列场址未定；不以团队所在国替代装置所在地。"
+      ],
+      "source_sites": [
+        {
+          "name": "美国多机构量子机械传感研发；最终大阵列场址未定",
+          "country": "美国",
+          "country_code": "USA",
+          "location": "美国多机构量子机械传感研发；最终大阵列场址未定",
+          "latitude": null,
+          "longitude": null,
+          "precision": "not_verified",
+          "site_status": "documented_site"
+        }
+      ]
+    },
+    {
+      "id": "xlzd",
+      "name": "XLZD",
+      "regions": [
+        "UNSITED"
+      ],
+      "notes": [
+        "档案未列出经核实的设施场址；未按合作机构、拟任意地点或图片所在地补点。"
+      ],
+      "source_sites": []
+    }
+  ],
+  "counts": {
+    "records": 297,
+    "country_or_territory_buckets": 23,
+    "regions": {
+      "EUROPE": 106,
+      "ARG": 2,
+      "ATA": 9,
+      "AUS": 5,
+      "AUT": 1,
+      "BRA": 1,
+      "CAN": 14,
+      "CHE": 15,
+      "CHL": 9,
+      "CHN": 10,
+      "DEU": 23,
+      "ESP": 11,
+      "FRA": 30,
+      "GBR": 7,
+      "GRL": 1,
+      "IND": 1,
+      "ITA": 25,
+      "JPN": 19,
+      "KOR": 3,
+      "MEX": 1,
+      "NAM": 1,
+      "NZL": 1,
+      "RUS": 6,
+      "SWE": 1,
+      "USA": 63,
+      "SPACE": 44,
+      "GLOBAL": 3,
+      "UNSITED": 15
+    }
+  }
+}

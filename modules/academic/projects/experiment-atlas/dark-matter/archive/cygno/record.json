@@ -1,0 +1,172 @@
+{
+  "schema_version": "1.0",
+  "id": "cygno",
+  "name": "CYGNO",
+  "full_name": "A CYGNus TPC with Optical readout",
+  "aliases": [
+    "CYGNO/INITIUM",
+    "LIME",
+    "CYGNO04"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "CYGNO is an Italian gas-TPC project with optical readout within the international CYGNUS directional-detection programme. It uses He/CF4 gas to study light WIMPs and directional neutrino signals.",
+  "physics_targets": [
+    "Directional WIMP detection",
+    "Light dark matter"
+  ],
+  "detection_principle": "Ionization electrons drift to GEMs, where they are amplified and generate light. High-resolution sCMOS images provide two-dimensional tracks; PMT timing adds the third coordinate.",
+  "technologies": [
+    "He/CF4 gas TPC",
+    "GEM",
+    "sCMOS",
+    "PMT"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2026-02-23",
+    "evidence": "A 2026 collaboration presentation reports LIME prototype results and the subsequent detector roadmap.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "CYGNO Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "Sapienza University of Rome",
+      "GSSI"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "LIME prototype volume",
+      "value": "50 L",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Readout characteristics",
+      "value": "Combined optical tracking and timing information",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "LIME",
+      "status": "operating",
+      "description": "Underground 50 L technological prototype"
+    },
+    {
+      "name": "CYGNO04",
+      "status": "construction",
+      "description": "Subsequent demonstration phase"
+    },
+    {
+      "name": "Large-volume CYGNO",
+      "status": "proposed",
+      "description": "Long-term directional-observation concept"
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CYGNUS",
+    "DMTPC"
+  ],
+  "resources": {
+    "official_website": "https://web.infn.it/cygnus/the-experiment/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://web.infn.it/cygnus/the-experiment/",
+      "caption": "The CYGNO-04 detector in a clean room; the person beside it provides a size reference.",
+      "credit": "CYGNO collaboration / INFN; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://web.infn.it/cygnus/wp-content/themes/cygno-theme/assets/images/detectors/cygno04-cleanroom.webp",
+      "width": 1600,
+      "height": 1588,
+      "sha256": "22e5c3a93e9f08f0bac5b4466a3beae77cd16cb6c26ea34dc7cede16ef109f7d",
+      "mime_type": "image/webp"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://web.infn.it/cygnus/the-experiment/",
+      "caption": "CYGNO apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "CYGNO Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "CYGNO: The Experiment",
+      "url": "https://web.infn.it/cygnus/the-experiment/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "The CYGNO experiment — CYGNUS 2026",
+      "url": "https://indico.global/event/15704/contributions/142321/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026-02-23",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "INITIUM is a related negative-ion R&D programme, not a separately established dark-matter observatory."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas_tpc",
+      "beam_particle"
+    ]
+  }
+}

@@ -1,0 +1,163 @@
+{
+  "schema_version": "1.0",
+  "id": "igex",
+  "name": "IGEX",
+  "full_name": "International Germanium Experiment",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "multipurpose",
+  "summary": "IGEX was an enriched-76Ge double-beta-decay experiment whose Canfranc apparatus was also upgraded for WIMP nuclear-recoil searches. Only deployments with explicit dark-matter data are included on this map.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-matter nuclear recoils"
+  ],
+  "detection_principle": "Low-background high-purity germanium measures the ionization spectrum of WIMP-induced nuclear recoils; optimized low-energy shielding and pulse processing control backgrounds.",
+  "technologies": [
+    "Enriched high-purity germanium",
+    "Ionization spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "LSC",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Canfranc Underground Laboratory, Pyrenees, Aragon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical phase established; present status unverified",
+    "as_of": "2002",
+    "evidence": "Original 2001–2002 papers confirm dark-matter operation at Canfranc; the project's termination date requires verification.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "IGEX Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Target isotope",
+      "value": "Enriched 76Ge; the 78Ge typographical error on some secondary pages must not be repeated.",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Original purpose",
+      "value": "Double-beta decay and low-background rare processes",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2001",
+      "summary": "WIMP-scattering limits were obtained with germanium ionization detectors.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "HDMS",
+    "COSME",
+    "GEDEON"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/0211535",
+      "https://arxiv.org/abs/hep-ex/0111073"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://zaguan.unizar.es/record/48716/files/icon.pdf",
+      "caption": "Historical photograph of the IGEX-DM RG-2 germanium-detector cryostat inside lead shielding, explicitly associated with dark-matter data taking. From María Luisa Sarsa's 2008 review of dark-matter experiments at Canfranc, Figure 19(b), PDF page 78 (journal page 81).",
+      "credit": "María Luisa Sarsa (Universidad de Zaragoza), Rev. Real Academia de Ciencias de Zaragoza 63 (2008); no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://zaguan.unizar.es/record/48716/files/icon.pdf",
+      "width": 619,
+      "height": 438,
+      "sha256": "ea86fe37ee4c8e42a170d3d61e26b2e7f8ead95b4de836bc59d87b29a0f001c4",
+      "mime_type": "image/webp",
+      "source_sha256": "7eac22db3097d10bbd34ccd094e263768bbe2c3d694c141592af068480cc6a7f",
+      "source_dimensions": {
+        "width": 619,
+        "height": 438
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/astro-ph/0211535",
+      "caption": "IGEX apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "IGEX Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Status of IGEX dark matter search at Canfranc Underground Laboratory",
+      "url": "https://arxiv.org/abs/astro-ph/0211535",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2002-11",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Present status of IGEX dark matter search at Canfranc Underground Laboratory",
+      "url": "https://arxiv.org/abs/hep-ex/0111073",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2001-11",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Dated evidence sufficient to confirm operating status in October 2026 was not obtained; this record retains the last verified phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state"
+    ]
+  }
+}

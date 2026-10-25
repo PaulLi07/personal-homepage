@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "aion",
+  "name": "AION",
+  "full_name": "Atom Interferometer Observatory and Network",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A British cold-strontium atom-interferometry program for ultralight dark matter, gravitational waves and quantum sensing.",
+  "physics_targets": [
+    "Ultralight scalar dark matter",
+    "Gravitational waves (complementary target)"
+  ],
+  "detection_principle": "Ultralight scalar fields can alter atomic energy levels and fundamental constants; spatially separated atom clouds interrogated by shared lasers have their interference phases compared.",
+  "technologies": [
+    "Cold strontium atoms",
+    "Single-photon clock transitions",
+    "Atom interferometry"
+  ],
+  "sites": [
+    {
+      "name": "R&D at multiple British sites; Oxford AION-10 approach",
+      "country": "United Kingdom",
+      "country_code": "GBR",
+      "location": "R&D at multiple British sites; Oxford AION-10 approach",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2025",
+    "evidence": "2025 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "A Prototype Atom Interferometer to Detect Dark Matter and Gravitational Waves",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "AION Collaboration / project team",
+    "lead_institutions": [
+      "University of Oxford",
+      "Imperial College London",
+      "University of Birmingham",
+      "University of Cambridge",
+      "STFC"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2025 prototype",
+      "value": "87Sr clock transition; reaches the atomic shot-noise limit",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Tabletop prototype",
+      "status": "demonstrated",
+      "description": "Single-photon interferometry and phase-noise suppression."
+    },
+    {
+      "name": "AION-10",
+      "status": "development",
+      "description": "10 m-scale phase."
+    },
+    {
+      "name": "AION-100 / km-scale",
+      "status": "proposed",
+      "description": "Subsequent long-baseline approach."
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The tabletop prototype validated expected noise performance; it is not a dark-matter result from the final long-baseline instrument.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "MAGIS-100",
+    "AEDGE"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2504.09158",
+      "https://arxiv.org/abs/1911.11755"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2504.09158",
+      "caption": "Operating sequence and optical layout of the AION dual-cloud atom-interferometry demonstrator (Fig. 3, 2025 paper), rather than a completed kilometer-scale facility.",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2504.09158v3/figure2ian.png",
+      "width": 1920,
+      "height": 971,
+      "sha256": "097050df54a37b342e66e1c93c8b0c759ba76f4827d6b471d9daca25b818c9dc",
+      "mime_type": "image/webp",
+      "source_sha256": "eab19b857ee7e04568f0f5ff7d45cabd31a7a9acc6cd5ceb8f2b1274bee58cdc",
+      "source_dimensions": {
+        "width": 2025,
+        "height": 1024
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2504.09158",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "AION Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "A Prototype Atom Interferometer to Detect Dark Matter and Gravitational Waves",
+      "url": "https://arxiv.org/abs/2504.09158",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "AION: An Atom Interferometer Observatory and Network",
+      "url": "https://arxiv.org/abs/1911.11755",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "GBR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "quantum_sensor"
+    ]
+  }
+}

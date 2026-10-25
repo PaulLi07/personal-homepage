@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "id": "nedm-axion",
+  "name": "nEDM — axion dark matter searches",
+  "full_name": "ILL and PSI neutron Electric Dipole Moment axion searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "Neutron electric-dipole-moment data are used to search for axion-induced oscillating electric dipole moments and axion-wind spin precession, extending tests of axion–gluon and axion–nucleon couplings.",
+  "physics_targets": [
+    "Ultralight axions",
+    "Axion–gluon coupling",
+    "Axion–nucleon coupling"
+  ],
+  "detection_principle": "Comparisons of ultracold-neutron and mercury-199 comagnetometer spin-precession frequencies search for electric-field-correlated oscillating electric dipole moments and time-dependent axion-wind responses.",
+  "technologies": [
+    "Ultracold-neutron storage",
+    "Mercury-199 comagnetometers",
+    "Electromagnetic shielding",
+    "Precision spin precession"
+  ],
+  "sites": [
+    {
+      "name": "Paul Scherrer Institute UCN source，Villigen",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Paul Scherrer Institute UCN source，Villigen",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Institut Laue-Langevin PF2，Grenoble",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Institut Laue-Langevin PF2，Grenoble",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2017",
+    "evidence": "ETH's official description states that the former PSI nEDM finished taking data in 2017. This record covers dark-matter analyses of the historical ILL/PSI apparatus; the successor n2EDM is not assumed to have completed the same searches.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2017",
+      "event": "Search for Axionlike Dark Matter through Nuclear Spin Precession in Electric and Magnetic Fields",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "nEDM — axion dark matter searches Collaboration / project team",
+    "lead_institutions": [
+      "PSI",
+      "ETH Zürich",
+      "University of Sussex",
+      "Institut Laue-Langevin"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Documented data",
+      "value": "ILL 1998–2002；PSI 2015–2016",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Frequency-coverage scale",
+      "value": "nHz–mHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Sussex-RAL-ILL",
+      "status": "completed",
+      "description": "Data from the former ILL apparatus provide a longer time baseline."
+    },
+    {
+      "name": "PSI nEDM",
+      "status": "completed",
+      "description": "The upgraded apparatus adds sensitivity to shorter periods; the full data-taking campaign ended in 2017."
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "No axion dark-matter signal; direct laboratory axion–gluon coupling limits were obtained and some nucleon-coupling constraints improved.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "CASPEr",
+    "JEDI",
+    "n2EDM"
+  ],
+  "resources": {
+    "official_website": "https://www.psi.ch/en/ltp-ucn-physics/dark-matter-search",
+    "publication_links": [
+      "https://doi.org/10.1103/PhysRevX.7.041034"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.phys.ethz.ch/news-and-events/d-phys-news/2017/11/a-null-result-full-of-insights.html",
+      "caption": "Interior of PSI's former nEDM apparatus, from the 2017 axion dark-matter-search results report; this represents the nEDM phase.",
+      "credit": "nEDM Collaboration / Paul Scherrer Institute",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.phys.ethz.ch/news-and-events/d-phys-news/2017/11/a-null-result-full-of-insights/_jcr_content/wide_content/fullwidthimage/image.imageformat.lightbox.448207766.png",
+      "width": 865,
+      "height": 649,
+      "sha256": "a551aef164cc2ecb78d84a0217c31e341992d87b1c147e2933eb49cf0feba4c1",
+      "mime_type": "image/webp",
+      "source_sha256": "26679f7424624827c688faed63c7a635510c8ae0ff451805ca25d181ce5e70a0",
+      "source_dimensions": {
+        "width": 865,
+        "height": 649
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.psi.ch/en/cnm/scientific-highlights/axions",
+      "caption": "Interior photograph of the nEDM apparatus in PSI's 2017 results report.",
+      "credit": "Paul Scherrer Institute / nEDM Collaboration",
+      "reuse_status": "Not downloaded in this entry; image permission and credit unverified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for Axionlike Dark Matter through Nuclear Spin Precession in Electric and Magnetic Fields",
+      "url": "https://doi.org/10.1103/PhysRevX.7.041034",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "PSI Dark Matter Search",
+      "url": "https://www.psi.ch/en/ltp-ucn-physics/dark-matter-search",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "PSI 2017 axion results announcement",
+      "url": "https://www.psi.ch/en/cnm/scientific-highlights/axions",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2017-11-14",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "ETH nEDM and n2EDM project history",
+      "url": "https://edm.ethz.ch/research-and-funding/nedm.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "spin_magnetometry",
+      "quantum_sensor"
+    ]
+  }
+}

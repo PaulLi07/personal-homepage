@@ -1,0 +1,218 @@
+{
+  "schema_version": "1.0",
+  "id": "cosine",
+  "name": "COSINE",
+  "full_name": "COSINE dark matter search experiment",
+  "aliases": [
+    "COSINE-100",
+    "COSINE-100U",
+    "COSINE-200"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "COSINE combines the KIMS and DM-Ice teams to test DAMA/LIBRA's annual modulation with NaI(Tl). COSINE-100 operated at Yangyang; the upgraded and larger phases move to Yemilab.",
+  "physics_targets": [
+    "WIMP",
+    "Test of DAMA modulation"
+  ],
+  "detection_principle": "A NaI(Tl) array is surrounded by a liquid-scintillator anticoincidence system. Multiyear low-energy single-hit rates and energy spectra are used for dark-matter searches, with reduced crystal backgrounds such as potassium.",
+  "technologies": [
+    "NaI(Tl)",
+    "Liquid-scintillator anticoincidence",
+    "Annual modulation"
+  ],
+  "sites": [
+    {
+      "name": "Yangyang Underground Laboratory",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "Yangyang Underground Laboratory (Y2L), Gangwon Province",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    },
+    {
+      "name": "Yemilab",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "Yemilab underground laboratory, Jeongseon, Gangwon Province",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Multiple phases with different statuses",
+    "as_of": "2025-09-05",
+    "evidence": "The 2025 full-dataset and upgrade papers cover COSINE-100 results and the COSINE-100U design respectively; the COSINE-200 website still describes R&D.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2016",
+      "event": "COSINE-100 data taking begins",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "COSINE Collaboration",
+    "lead_institutions": [
+      "IBS Center for Underground Physics",
+      "Yale University"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Initial COSINE-100 target mass",
+      "value": "106 kg",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Full dataset duration",
+      "value": "5.8 years of high-quality data",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "COSINE-100",
+      "status": "completed",
+      "description": "Full-dataset phase at Y2L"
+    },
+    {
+      "name": "COSINE-100U",
+      "status": "commissioning",
+      "description": "Upgrade at Yemilab; latest continuous data-taking status requires verification."
+    },
+    {
+      "name": "COSINE-200",
+      "status": "research_development",
+      "description": "R&D on a larger NaI crystal array"
+    }
+  ],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The full-dataset annual-modulation result challenges the dark-matter interpretation of DAMA/LIBRA.",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "KIMS",
+    "DM-Ice",
+    "DAMA/LIBRA",
+    "ANAIS-112"
+  ],
+  "resources": {
+    "official_website": "https://cosine.ibs.re.kr/",
+    "publication_links": [
+      "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407068/",
+      "https://www.nature.com/articles/s42005-025-02067-4"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://cosine.ibs.re.kr/",
+      "caption": "The COSINE-100 NaI(Tl) crystal detector array inside its transparent liquid-scintillator vessel.",
+      "credit": "COSINE collaboration / IBS; no individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://cosine.ibs.re.kr/wp-content/uploads/2016/10/COSINE100.jpg",
+      "width": 1600,
+      "height": 1200,
+      "sha256": "2bb16d59d1b0fa73ca96f643933c4b680bc240543031bb0e95d7a3cfc2f5d18e",
+      "mime_type": "image/webp",
+      "source_sha256": "6df43c22d2ad102de666e13f3434b0a6c7c77f8a882af943f9ad0ffb89eb6811",
+      "source_dimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://cosine.ibs.re.kr/",
+      "caption": "COSINE apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "COSINE Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "COSINE official collaboration page",
+      "url": "https://cosine.ibs.re.kr/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "COSINE-100 full dataset challenges the annual modulation signal of DAMA/LIBRA",
+      "url": "https://pmc.ncbi.nlm.nih.gov/articles/PMC12407068/",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025-09-05",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S3",
+      "title": "Upgrading the COSINE-100 experiment for enhanced sensitivity to low-mass dark matter detection",
+      "url": "https://www.nature.com/articles/s42005-025-02067-4",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "KOR"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ]
+  }
+}

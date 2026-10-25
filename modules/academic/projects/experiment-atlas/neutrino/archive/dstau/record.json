@@ -1,0 +1,260 @@
+{
+  "schema_version": "1.0",
+  "id": "dstau",
+  "name": "DsTau / NA65",
+  "full_name": "DsTau / CERN NA65 tau-neutrino production experiment",
+  "aliases": [
+    "DsTau",
+    "NA65"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "emulsion"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "DsTau measures charm-meson production and decay chains that generate tau neutrinos, reducing a key source uncertainty for tau-neutrino interaction measurements. Data taking finished in 2023 and emulsion analysis continues. It measures the source process rather than detecting the neutrino itself.",
+  "physics_targets": [
+    "Tau-neutrino production normalization",
+    "Differential Ds production in proton-nucleus collisions",
+    "Inputs to lepton-flavour-universality tests"
+  ],
+  "detection_principle": "High-resolution emulsion layers record proton-nucleus interactions and the successive short flights in Ds-to-tau-to-daughter decays. Resolving the double-kink topology constrains the differential Ds production rate and hence the associated tau-neutrino flux.",
+  "technologies": [
+    "Nuclear emulsions"
+  ],
+  "sites": [
+    {
+      "name": "CERN SPS North Area",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Prevessin, France; CERN fixed-target area",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2025-07",
+    "evidence": "The EPS-HEP 2025 collaboration presentation states that data taking was completed in 2023; emulsion scanning and physics analyses continue.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018",
+      "event": "Pilot exposure collected",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2019",
+      "event": "Experiment approved by CERN and feasibility study published",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2021-09-22",
+      "event": "Main physics data taking began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2023",
+      "event": "Data taking completed",
+      "source_ids": [
+        "s4"
+      ]
+    },
+    {
+      "date": "2024-11",
+      "event": "First proton-nucleus pilot-run analysis submitted",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "DsTau / NA65 Collaboration",
+    "lead_institutions": [
+      "Nagoya University",
+      "University of Bern",
+      "Middle East Technical University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Driver",
+      "value": "400 GeV protons from the CERN SPS",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Detector",
+      "value": "High-resolution nuclear-emulsion modules with dense target plates",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Observable",
+      "value": "Double-kink Ds and tau decay topology",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2024-11",
+      "summary": "Measured the proton interaction length in tungsten as 93.7 +/- 2.6 mm and compared charged-particle multiplicities with interaction models.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "A dedicated tau-neutrino source-calibration experiment. It is included because its central observable constrains the neutrino flux; it is not counted as a direct neutrino observation.",
+  "related_experiments": [
+    "donut",
+    "ship",
+    "faser"
+  ],
+  "resources": {
+    "official_website": "https://home.cern/science/experiments/na65",
+    "publication_links": [
+      "https://arxiv.org/abs/1906.03487",
+      "https://arxiv.org/abs/2411.05452",
+      "https://indico.in2p3.fr/event/33627/contributions/154584/attachments/94119/144469/DsTau_EPS_HEP_2025.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://home.cern/science/experiments/na65",
+      "caption": "DsTau emulsion modules installed at the CERN SPS beamline.",
+      "credit": "DsTau Collaboration / CERN",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://cds.cern.ch/images/CERN-PHOTO-202204-170-8/file?size=large",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1440,
+      "height": 1078,
+      "sha256": "327256f384a3acaec04fc864dfdb51d43c1706b748df9016ef33337cccf87315",
+      "mime_type": "image/webp",
+      "source_sha256": "08ece6c03b1eae11280838151ebe8efd5e685776c09b657af7b315249082ce01",
+      "source_dimensions": {
+        "width": 1440,
+        "height": 1078
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "CERN, NA65 / DsTau overview",
+      "url": "https://home.cern/science/experiments/na65",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "DsTau Collaboration, Study of tau-neutrino production with 400 GeV protons",
+      "url": "https://arxiv.org/abs/1906.03487",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-06-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "DsTau Collaboration, Study of Proton-Nucleus Interactions in the DsTau/NA65 Experiment at the CERN-SPS",
+      "url": "https://arxiv.org/abs/2411.05452",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-11-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "A. M. Guler / DsTau Collaboration, Results from the DsTau/NA65 experiment at CERN, EPS-HEP 2025",
+      "url": "https://indico.in2p3.fr/event/33627/contributions/154584/attachments/94119/144469/DsTau_EPS_HEP_2025.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2025-07",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s5",
+      "title": "CERN, North Area facilities at the Prevessin site",
+      "url": "https://home.cern/north-area-getting-fresh-look/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2021-10-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s6",
+      "title": "CERN, Directions to Prevessin: physical address in France",
+      "url": "https://home.cern/directions-prevessin/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The final tau-neutrino production precision remains an analysis goal; published proton-nucleus pilot-run results are distinct from a final Ds production result."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "emulsion"
+    ],
+    "technology_tags": [
+      "emulsion"
+    ],
+    "is_europe": true
+  }
+}

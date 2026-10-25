@@ -1,0 +1,180 @@
+{
+  "schema_version": "1.0",
+  "id": "next",
+  "name": "NEXT",
+  "full_name": "Neutrino Experiment with a Xenon Time projection chamber",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NEXT uses high-pressure xenon gas to combine precise calorimetry with two-electron track imaging. NEXT-White established the technology before NEXT-100 began taking data at Canfranc in May 2024.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "Ionization electrons drift into an electroluminescence region. Photomultipliers measure energy and the initial scintillation time; silicon photomultipliers image the track, including enhanced energy deposits near both electron endpoints.",
+  "technologies": [
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Spain; Canfranc underground laboratory",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "Spain; Canfranc underground laboratory",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-09-11",
+    "evidence": "The detector paper documented operation and commissioning of NEXT-100; later work reports its first low-pressure physics run.",
+    "source_ids": [
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NEXT Collaboration",
+    "lead_institutions": [
+      "Instituto de Fisica Corpuscular",
+      "Canfranc Underground Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "NEXT-100 nominal xenon scale",
+      "value": "100 kg class",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Design gas pressure",
+      "value": "13.5 bar",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Readout",
+      "value": "PMT energy plane and SiPM tracking plane",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The detector paper documented operation and commissioning of NEXT-100; later work reports its first low-pressure physics run.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "gotthard",
+    "nexo"
+  ],
+  "resources": {
+    "official_website": "https://next-experiment.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2505.17848",
+      "https://arxiv.org/abs/2609.12973"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://next-experiment.org/",
+      "caption": "NEXT-100 high-pressure xenon detector at the Canfranc Underground Laboratory.",
+      "credit": "NEXT Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://next-experiment.org/wp-content/uploads/2024/05/next-100.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1711,
+      "height": 904,
+      "sha256": "80730bc49f45e8d18edc3aec8f71704408e42b49074b72896e915ac9b60e2a7b",
+      "mime_type": "image/webp",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption.",
+      "source_sha256": "e77b214f98687c842feff7ae014c38aa4dc4f4974a92640a468302ebe8074122",
+      "source_dimensions": {
+        "width": 1711,
+        "height": 904
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NEXT: official experiment / institutional overview",
+      "url": "https://next-experiment.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "The NEXT-100 Detector",
+      "url": "https://arxiv.org/abs/2505.17848",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Demonstrating topological identification capabilities of the NEXT experiment at low pressure",
+      "url": "https://arxiv.org/abs/2609.12973",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-09-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "gas"
+    ],
+    "technology_tags": [
+      "gas"
+    ],
+    "is_europe": true
+  }
+}

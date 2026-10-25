@@ -1,0 +1,250 @@
+{
+  "schema_version": "1.0",
+  "id": "watchman",
+  "name": "WATCHMAN / AIT-NEO",
+  "full_name": "Water Cherenkov Monitor for Antineutrinos / Advanced Instrumentation Testbed–Neutrino Experiment One",
+  "aliases": [
+    "WATCHMAN",
+    "AIT/NEO",
+    "AIT-NEO",
+    "NEO"
+  ],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "supernova",
+    "sterile"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "WATCHMAN studied remote reactor-antineutrino monitoring with a large water-based detector. The concept evolved from a United States design to the AIT/NEO proposal at Boulby in the United Kingdom. Full-scale Boulby deployment was subsequently questioned, while smaller technology-testbed work was discussed.",
+  "physics_targets": [
+    "Remote reactor-antineutrino monitoring",
+    "Water-based detector technology",
+    "Supernova neutrinos",
+    "Source-based oscillation and weak-interaction tests"
+  ],
+  "detection_principle": "Inverse beta decay would produce a prompt positron signal and delayed neutron capture. Gadolinium loading enhances the neutron tag in water Cherenkov detection, while water-based scintillator and fast photosensors were considered for later performance improvements.",
+  "technologies": [
+    "Cherenkov detectors",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Morton Fairport Harbor mine",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Ohio; historical United States candidate",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "2015_candidate_site_not_realized"
+    },
+    {
+      "name": "Boulby Underground Laboratory",
+      "country": "United Kingdom",
+      "country_code": "GBR",
+      "location": "North Yorkshire, England",
+      "latitude": 54.556,
+      "longitude": -0.821,
+      "precision": "approximate_site",
+      "site_status": "historical_fullscale_candidate_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Historical proposal / full-scale realization unverified",
+    "as_of": "2022-04",
+    "evidence": "The Boulby director’s April 2022 report states that the full AIT-NEO detector was unlikely to proceed at Boulby and describes smaller testbeds. An older future-tense institutional overview is not proof of construction or operation.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015",
+      "event": "United States WATCHMAN design and physics white paper submitted",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022-04",
+      "event": "Boulby report says full AIT-NEO deployment is unlikely; smaller technology work discussed",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WATCHMAN / AIT-NEO Collaboration",
+    "lead_institutions": [
+      "Lawrence Livermore National Laboratory",
+      "Brookhaven National Laboratory",
+      "University of California, Davis"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Original United States design",
+      "value": "Kiloton-scale fiducial gadolinium-loaded water detector, 13 km from the Perry reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "AIT/NEO concept scale",
+      "value": "Approximately 5,000 tonnes of purified liquid in the later institutional description",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Boulby depth and reactor distance",
+      "value": "Approximately 1.1 km underground and 25 km from Hartlepool",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "United States WATCHMAN concept",
+      "status": "Historical design",
+      "description": "Fairport/Perry configuration described in the 2015 white paper.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "AIT/NEO at Boulby",
+      "status": "Historical proposal; full-scale realization unverified",
+      "description": "Large detector near Hartlepool; later project report questions full-scale deployment.",
+      "source_ids": [
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Smaller antineutrino testbeds",
+      "status": "Technology development discussed",
+      "description": "BOLEYN and approximately 30-tonne work appear in the 2022 facility report; forecast operation dates are not treated as achieved.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "Design programme",
+      "summary": "Published studies describe expected remote-monitoring and physics performance. A full-scale WATCHMAN/AIT-NEO reactor-neutrino measurement was not verified.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "theia",
+    "eos",
+    "annie",
+    "isodar"
+  ],
+  "resources": {
+    "official_website": "https://www.bnl.gov/chemistry/nnc/collaborations.php",
+    "publication_links": [
+      "https://arxiv.org/abs/1502.01132",
+      "https://indico.stfc.ac.uk/event/324/contributions/2838/attachments/1036/1830/STFCBoulby_IOP_April2022_Final.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://arxiv.org/abs/1502.01132",
+      "caption": "Original 2015 WATCHMAN detector concept for the United States candidate site; not a photograph of a built AIT/NEO detector.",
+      "credit": "WATCHMAN Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/1502.01132v1/DetectorLayout-eps-converted-to.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1312,
+      "height": 1320,
+      "sha256": "55180a56829552b25c65fb5ef85f49f796f704cdaf3bfba2d3783826a3368647",
+      "mime_type": "image/webp",
+      "visual_review_note": "Final local design image inspected against the original paper figure and its proposed detector configuration.",
+      "source_sha256": "4098e9eead2a17109f4c63f95b9c6826a13f001ee50eac5c389ee48f384aaf64",
+      "source_dimensions": {
+        "width": 1312,
+        "height": 1320
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "M. Askins et al., The Physics and Nuclear Nonproliferation Goals of WATCHMAN",
+      "url": "https://arxiv.org/abs/1502.01132",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2015-02-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Brookhaven National Laboratory, AIT/NEO programme description",
+      "url": "https://www.bnl.gov/chemistry/nnc/collaborations.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "S. Paling, Boulby Underground Laboratory: status, plans and opportunities for growth",
+      "url": "https://indico.stfc.ac.uk/event/324/contributions/2838/attachments/1036/1830/STFCBoulby_IOP_April2022_Final.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2022-04",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The eventual full-scale project disposition and any later site change require a newer direct project-status source."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA",
+      "GBR",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

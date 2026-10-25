@@ -1,0 +1,168 @@
+{
+  "schema_version": "1.0",
+  "id": "newsdm",
+  "name": "NEWSdm",
+  "full_name": "Nuclear Emulsions for WIMP Search – directional measurement",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "NEWSdm records extremely short recoil tracks in ultrahigh-resolution nuclear emulsions to develop directional direct dark-matter detection. It also studies surface deployment for cosmic-ray-boosted dark matter.",
+  "physics_targets": [
+    "Directional WIMP signals",
+    "Cosmic-ray-boosted dark matter"
+  ],
+  "detection_principle": "Particles leave latent tracks in silver-halide nanocrystal emulsions. Development and optical scanning reconstruct directions; an equatorial mount can maintain the target's orientation relative to the Galaxy.",
+  "technologies": [
+    "Nano Imaging Tracker nuclear emulsion",
+    "Nanoscale tracks",
+    "Automated optical scanning"
+  ],
+  "sites": [
+    {
+      "name": "LNGS",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Underground halls of Laboratori Nazionali del Gran Sasso, Abruzzo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "R&D",
+    "as_of": "2023",
+    "evidence": "The 2023 paper presents directional-sensitivity projections for a 10 kg module, rather than measured dark-matter exclusions.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "NEWSdm Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "2023 module design",
+      "value": "10 kg of nuclear emulsion",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Designed exposure",
+      "value": "One year, for projected-sensitivity calculations",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Emulsion and scanning R&D",
+      "status": "research_development",
+      "description": "Development of nanoscale track reconstruction"
+    },
+    {
+      "name": "10 kg module",
+      "status": "proposed",
+      "description": "Surface boosted-dark-matter concept; not a complete underground array."
+    }
+  ],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CYGNUS",
+    "DRIFT",
+    "NEWAGE"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2305.00112",
+      "https://link.springer.com/article/10.1140/epjc/s10052-018-6060-1"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://agenda.infn.it/event/13938/contributions/88577/attachments/63949/77133/DAmbrosio_NEWSdm.pdf",
+      "caption": "The NEWSdm shielding and cooling prototype during technical tests at LNGS, from N. D'Ambrosio's WIN 2019 collaboration presentation, page 22. The prototype supported background assessment and preparations for a pilot experiment.",
+      "credit": "NEWSdm Collaboration; N. D'Ambrosio collaboration presentation (WIN 2019). No individual photographer is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://agenda.infn.it/event/13938/contributions/88577/attachments/63949/77133/DAmbrosio_NEWSdm.pdf",
+      "width": 706,
+      "height": 498,
+      "sha256": "4bf34c0ae33c401b01581712ffe7672d36f86e31551df1eec6f0a2f991261a0f",
+      "mime_type": "image/webp",
+      "source_sha256": "f0ec697ff539f10611cba687d93a3671f41ca7c5a3d1cf689d765f29511f265e",
+      "source_dimensions": {
+        "width": 706,
+        "height": 498
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2305.00112",
+      "caption": "NEWSdm apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "NEWSdm Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Directional Sensitivity of the NEWSdm Experiment to Cosmic Ray Boosted Dark Matter",
+      "url": "https://arxiv.org/abs/2305.00112",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023-05",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "Discovery potential for directional Dark Matter detection with nuclear emulsions",
+      "url": "https://link.springer.com/article/10.1140/epjc/s10052-018-6060-1",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "Surface and underground Gran Sasso concepts must be distinguished by paper; the map must not imply that every phase is underground."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "gas_tpc"
+    ]
+  }
+}

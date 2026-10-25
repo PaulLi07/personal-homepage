@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0",
+  "id": "rbf",
+  "name": "RBF axion search",
+  "full_name": "Rochester–Brookhaven–Fermilab axion search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "One of the earliest Galactic-halo microwave-cavity axion searches, jointly conducted by Rochester, Brookhaven and Fermilab.",
+  "physics_targets": [
+    "Galactic-halo axions"
+  ],
+  "detection_principle": "A strong field converts nonrelativistic axions to narrowband photons in a tunable microwave cavity, with power spectra tested for excesses.",
+  "technologies": [
+    "Microwave resonant cavities",
+    "Cryogenic magnets",
+    "Radio-frequency power spectra"
+  ],
+  "sites": [
+    {
+      "name": "Brookhaven National Laboratory，Upton",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Brookhaven National Laboratory，Upton",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "1989",
+    "evidence": "1989 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1989",
+      "event": "Results of a laboratory search for cosmic axions and other weakly coupled light particles",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "RBF axion search Collaboration / project team",
+    "lead_institutions": [
+      "University of Rochester",
+      "Brookhaven National Laboratory",
+      "Fermilab"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Scanned range",
+      "value": "4.5–16.3 μeV；1.09–3.93 GHz",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1989",
+      "summary": "Upper limits on axion coupling and abundance were obtained; sensitivity remains above benchmark invisible-axion predictions.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [
+    "ADMX",
+    "UF axion search"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.40.3153"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.40.3153",
+      "caption": "Cutaway of the first-generation RBF haloscope: liquid-helium vessel, preamplifier, tuning rods, superconducting solenoid and microwave cavity (Fig. 7, original 1989 paper; preprint p. 35).",
+      "credit": "W. U. Wuensch et al. / RBF Collaboration; no separate illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/acb83924a8e526ca0b68f292111fc8c5",
+      "width": 1050,
+      "height": 1350,
+      "sha256": "066b99487654301e9d28e1f4677e2f500c286b394882bfcefb30cf6c677b9488",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.40.3153",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "RBF axion search Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Results of a laboratory search for cosmic axions and other weakly coupled light particles",
+      "url": "https://journals.aps.org/prd/abstract/10.1103/PhysRevD.40.3153",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "radio",
+      "quantum_sensor"
+    ]
+  }
+}

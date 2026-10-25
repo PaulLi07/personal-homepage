@@ -1,0 +1,233 @@
+{
+  "schema_version": "1.0",
+  "id": "halo",
+  "name": "HALO",
+  "full_name": "Helium and Lead Observatory",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "neutron"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A low-maintenance supernova neutrino detector at SNOLAB uses recycled lead and SNO helium-3 counters to detect a sudden burst of neutrons.",
+  "physics_targets": [
+    "Galactic core-collapse supernova neutrinos",
+    "Low-latency supernova early warning"
+  ],
+  "detection_principle": "Charged-current and neutral-current neutrino interactions excite lead nuclei, which may emit one or two neutrons. Moderated neutrons are captured in helium-3 proportional counters; the detector records neutron multiplicity rather than Cherenkov rings.",
+  "technologies": [
+    "Neutron counting"
+  ],
+  "sites": [
+    {
+      "name": "Canada; SNOLAB in Sudbury",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Canada; SNOLAB in Sudbury",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "SNOLAB labels HALO Running and the 2025 collaboration talk documents thirteen years of operation.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012",
+      "event": "First acquisition from the full set of proportional counters.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "Low-threshold alerts integrated into SNEWS.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2025",
+      "event": "Collaboration reported thirteen years of operation.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HALO Collaboration",
+    "lead_institutions": [
+      "SNOLAB",
+      "Laurentian University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Lead target",
+      "value": "79 tonnes",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Neutron counters",
+      "value": "128 helium-3 tubes repurposed from SNO",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Average neutron efficiency",
+      "value": "Approximately 28% in the 2025 status report",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Overburden",
+      "value": "SNOLAB, approximately 2 km underground",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "Long-lived operation and low-latency neutron-burst alarms were reported. HALO-1kT is a separate future enlargement concept, not the installed detector mass.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "sno",
+    "sno-plus",
+    "lvd"
+  ],
+  "resources": {
+    "official_website": "https://www.snolab.ca/experiment/halo/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://agenda.infn.it/event/12166/contributions/12610/attachments/9378/10583/HALO_HALO-1kT_CNNP.pdf",
+      "caption": "HALO lead-block assembly during construction at SNOLAB.",
+      "credit": "HALO Collaboration / SNOLAB",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://agenda.infn.it/event/12166/contributions/12610/attachments/9378/10583/HALO_HALO-1kT_CNNP.pdf#page=11",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1600,
+      "height": 1200,
+      "sha256": "393256c69ff21d0898e10f4734c5533b5f2aa875d0405bc921e6e5c612e2bf26",
+      "mime_type": "image/webp",
+      "source_sha256": "eba997f917d06e4b1d33bf6b42d721534be2f12897023c773dbe757b4bbe9490",
+      "source_dimensions": {
+        "width": 1600,
+        "height": 1200
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "SNOLAB, HALO experimental overview",
+      "url": "https://www.snolab.ca/experiment/halo/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "HALO Collaboration, NNN25 detector status",
+      "url": "https://indico.snolab.ca/event/21/contributions/572/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-10-01",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "HALO Collaboration, first operation announcement",
+      "url": "https://www.snolab.ca/halo/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2012-05-08",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "HALO Collaboration / SNOLAB — representative apparatus image",
+      "url": "https://agenda.infn.it/event/12166/contributions/12610/attachments/9378/10583/HALO_HALO-1kT_CNNP.pdf",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Representative apparatus image"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "neutron"
+    ],
+    "technology_tags": [
+      "neutron"
+    ],
+    "is_europe": false
+  }
+}

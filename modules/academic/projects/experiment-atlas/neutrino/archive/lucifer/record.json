@@ -1,0 +1,174 @@
+{
+  "schema_version": "1.0",
+  "id": "lucifer",
+  "name": "LUCIFER",
+  "full_name": "Low-background Underground Cryogenic Installation For Elusive Rates",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta"
+  ],
+  "technology_tags": [
+    "bolometer",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "LUCIFER developed scintillating bolometers for background rejection in neutrinoless double-beta-decay searches. Its enriched zinc-selenide crystal technology fed directly into the CUPID-0 demonstrator at Gran Sasso.",
+  "physics_targets": [
+    "Neutrinoless double-beta decay",
+    "Two-neutrino and rare weak decays"
+  ],
+  "detection_principle": "A cryogenic crystal measures particle energy as heat, while a separate light absorber records scintillation. Their relative response separates alpha particles from the electron events of interest.",
+  "technologies": [
+    "Bolometers (cryogenic calorimetry)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2016",
+    "evidence": "The LUCIFER crystal-development programme enabled the enriched-ZnSe CUPID-0 detector.",
+    "source_ids": [
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "LUCIFER Collaboration",
+    "lead_institutions": [
+      "INFN Gran Sasso National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Primary development isotope",
+      "value": "82Se in enriched ZnSe",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Technique",
+      "value": "Scintillating bolometers",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "name": "Successor configuration",
+      "value": "CUPID-0",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": null,
+      "summary": "The LUCIFER crystal-development programme enabled the enriched-ZnSe CUPID-0 detector.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless double-beta-decay signal would establish lepton-number violation. Converting a half-life constraint into an effective Majorana mass requires a decay mechanism and nuclear matrix elements; a null search is not a neutrino-mass measurement.",
+  "related_experiments": [
+    "cupid-0",
+    "cupid"
+  ],
+  "resources": {
+    "official_website": "https://www.lngs.infn.it/en/cupid",
+    "publication_links": [
+      "https://arxiv.org/abs/1802.07791"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.lngs.infn.it/en/cupid",
+      "caption": "Scintillating-bolometer assembly associated with the LUCIFER and CUPID-0 development programme.",
+      "credit": "LUCIFER / CUPID-0 Collaboration and INFN LNGS",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.lngs.infn.it/images/ricerca/lucifer/cupid_1.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 940,
+      "height": 703,
+      "sha256": "a0cd227336c5792e5ab2a7c090c65e70e9ec7ba1305b0f0601beb3352e329690",
+      "mime_type": "image/jpeg",
+      "visual_review_note": "The final image was visually checked against its named experiment, detector stage and cited source. Photograph, apparatus design or published-result status is stated in the caption."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LUCIFER: official experiment / institutional overview",
+      "url": "https://www.lngs.infn.it/en/cupid",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CUPID-0 Collaboration: detector and LUCIFER crystal development",
+      "url": "https://cupid-0.lngs.infn.it/detector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "First Result on the Neutrinoless Double-beta Decay of 82Se with CUPID-0",
+      "url": "https://arxiv.org/abs/1802.07791",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2018",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "bolometer",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "bolometer",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

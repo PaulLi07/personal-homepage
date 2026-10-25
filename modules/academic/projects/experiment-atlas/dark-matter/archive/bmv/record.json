@@ -1,0 +1,148 @@
+{
+  "schema_version": "1.0",
+  "id": "bmv",
+  "name": "BMV",
+  "full_name": "Biréfringence Magnétique du Vide",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "An axion–photon oscillation and regeneration search within a French vacuum magnetic-birefringence program.",
+  "physics_targets": [
+    "ALP",
+    "QED vacuum birefringence"
+  ],
+  "detection_principle": "Laser light acquires tiny polarization changes in a strong transverse pulsed magnetic field, or converts to ALPs that regenerate as photons in a second field.",
+  "technologies": [
+    "Strong pulsed magnetic fields",
+    "Optical polarimeters",
+    "Photon regeneration"
+  ],
+  "sites": [
+    {
+      "name": "Toulouse high-field laboratory; related measurements at LULI Palaiseau",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Toulouse high-field laboratory; related measurements at LULI Palaiseau",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2008",
+    "evidence": "2008 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2008",
+      "event": "The BMV project: Search for photon oscillations into massive particles",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BMV Collaboration / project team",
+    "lead_institutions": [
+      "CNRS",
+      "Université de Toulouse",
+      "LULI / École Polytechnique"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Scope of documentation",
+      "value": "Photon-oscillation / regeneration work reported in 2008",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2008",
+      "summary": "The source reports results with LULI and the preliminary Toulouse apparatus; this record includes only stages with an explicit ALP connection.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/0812.1006"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/0812.1006",
+      "caption": "Laser, pulsed magnet and photon-detection layout of the BMV light-shining-through-a-wall search (Fig. 1, 2008 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/0812.1006v1/Figure1.png",
+      "width": 893,
+      "height": 360,
+      "sha256": "8e9d19eddab6207c525447883226786f43ed598520a8f1fa302d3e6d64edbeff",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/0812.1006",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "BMV Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The BMV project: Search for photon oscillations into massive particles",
+      "url": "https://arxiv.org/abs/0812.1006",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2008",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

@@ -1,0 +1,197 @@
+{
+  "schema_version": "1.0",
+  "id": "bacon",
+  "name": "BACON",
+  "full_name": "Boulder Atomic Clock Optical Network",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "A precision optical-clock network that also tests ultralight bosonic dark matter through frequency ratios of different atomic transitions.",
+  "physics_targets": [
+    "Ultralight bosonic dark matter",
+    "Oscillations of fundamental constants"
+  ],
+  "detection_principle": "If an ultralight scalar field changes fundamental constants, different atomic transitions respond differently; optical-clock frequency ratios are compared for shared oscillations.",
+  "technologies": [
+    "Aluminum-ion optical clocks",
+    "Ytterbium optical-lattice clocks",
+    "Strontium optical-lattice clocks",
+    "Fiber and free-space frequency transfer"
+  ],
+  "sites": [
+    {
+      "name": "NIST and JILA, Boulder, Colorado",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "NIST and JILA, Boulder, Colorado",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Frequency ratio measurements at 18-digit accuracy using an optical clock network",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BACON Collaboration / project team",
+    "lead_institutions": [
+      "NIST",
+      "JILA / University of Colorado Boulder"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Atomic species",
+      "value": "²⁷Al⁺、¹⁷¹Yb、⁸⁷Sr",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Frequency-ratio uncertainty",
+      "value": "No greater than 8×10⁻¹⁸",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Free-space link",
+      "value": "1.5 km",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "Published precision frequency ratios and improved limits on couplings between ultralight dark matter and Standard Model fields.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://www.nature.com/articles/s41586-021-03253-4",
+      "https://arxiv.org/abs/2005.14694",
+      "https://tf.nist.gov/general/pdf/3104.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2005.14694",
+      "caption": "Clock stations, optical-frequency combs and optical links of the Boulder Atomic Clock Optical Network (Fig. 1, 2020 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2005.14694v1/figure_1.png",
+      "width": 1920,
+      "height": 798,
+      "sha256": "fbf3515f90dfb21a3f0199bb0ddddf531b79d0db1ad9cbb1902198086911edf3",
+      "mime_type": "image/webp",
+      "source_sha256": "960ec97b3ba75fbfc60e175d85d25e5f9357d4cf876b34b0f5aee26ce884ca7d",
+      "source_dimensions": {
+        "width": 3150,
+        "height": 1310
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://www.nature.com/articles/s41586-021-03253-4",
+      "caption": "Paper Fig. 1: overview of the BACON optical-clock network; specific reuse permission remains unverified.",
+      "credit": "BACON Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Frequency ratio measurements at 18-digit accuracy using an optical clock network",
+      "url": "https://www.nature.com/articles/s41586-021-03253-4",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "BACON author manuscript",
+      "url": "https://arxiv.org/abs/2005.14694",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "BACON published article hosted by NIST",
+      "url": "https://tf.nist.gov/general/pdf/3104.pdf",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

@@ -1,0 +1,173 @@
+{
+  "schema_version": "1.0",
+  "id": "xmass",
+  "name": "XMASS",
+  "full_name": "Xenon MASSive detector",
+  "aliases": [
+    "XMASS-I"
+  ],
+  "category": "direct_detection",
+  "role": "dedicated",
+  "summary": "XMASS was a single-phase liquid-xenon rare-event experiment at Kamioka, Japan. Its main detector, XMASS-I, used high-light-yield scintillation to search for WIMPs, annual modulation and dark-matter absorption.",
+  "physics_targets": [
+    "WIMP",
+    "Dark-matter annual modulation",
+    "Bosonic dark-matter absorption"
+  ],
+  "detection_principle": "Many photomultiplier tubes surround the xenon target. Light yield, timing and spatial distributions reconstruct low-energy events and suppress surface backgrounds; no dual-phase-TPC-style S2 signal is measured.",
+  "technologies": [
+    "Single-phase liquid xenon",
+    "Scintillation light",
+    "Photomultiplier array"
+  ],
+  "sites": [
+    {
+      "name": "Kamioka Observatory",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kamioka underground experimental facility, Hida, Gifu Prefecture",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "Experiment site; see the phase descriptions"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed",
+    "as_of": "2024-10-10",
+    "evidence": "The official announcement closes the XMASS project after long-term data analysis and summary papers. Main data taking ended in 2019.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2013-11",
+      "event": "Data taking resumes after refurbishment",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "date": "2019-02",
+      "event": "Main data taking ends",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "date": "2024-10-10",
+      "event": "Project completion officially announced",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "XMASS Collaboration",
+    "lead_institutions": [
+      "University of Tokyo ICRR",
+      "Kavli IPMU"
+    ],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "XMASS-I active target",
+      "value": "834 kg of liquid xenon",
+      "source_ids": [
+        "S2"
+      ]
+    },
+    {
+      "name": "Data after the 2013 refurbishment",
+      "value": "More than 1600 days",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "XENON",
+    "DAMA/LXe"
+  ],
+  "resources": {
+    "official_website": "https://www-sk.icrr.u-tokyo.ac.jp/xmass/news/article/20241010.html",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.ipmu.jp/en/story/8009",
+      "caption": "Construction of XMASS-I on 25 February 2010, showing the spherical detector assembly and staff.",
+      "credit": "© Kamioka Observatory, ICRR, The University of Tokyo, as credited in the official IPMU article.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.ipmu.jp/sites/default/files/images/DSC_9695-m.jpg",
+      "width": 680,
+      "height": 455,
+      "sha256": "3840e8b932bdcceb6c491a2ea14ea2bfa5ce52695fc1b250d3db25e260e02182",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www-sk.icrr.u-tokyo.ac.jp/xmass/news/article/20241010.html",
+      "caption": "XMASS apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "XMASS Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "Completion of the XMASS experiment",
+      "url": "https://www-sk.icrr.u-tokyo.ac.jp/xmass/news/article/20241010.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2024-10-10",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "XMASS — Kavli IPMU",
+      "url": "https://www.ipmu.jp/en/research-activities/research-program/xmass",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "scintillator"
+    ]
+  }
+}

@@ -1,0 +1,215 @@
+{
+  "schema_version": "1.0",
+  "id": "supax",
+  "name": "SUPAX",
+  "full_name": "SUPerconduction AXion search",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A superconducting-cavity axion-search project that first tests dark-photon and axion signal readout with a copper-cavity prototype.",
+  "physics_targets": [
+    "Axions and ALPs",
+    "Dark photons"
+  ],
+  "detection_principle": "A magnetized cavity converts axions to microwaves; the same low-noise radio-frequency system also measures dark-photon conversion signals in the cavity.",
+  "technologies": [
+    "Cryogenic cavities",
+    "Strong magnetic fields",
+    "Radio-frequency reception",
+    "Superconducting-cavity R&D"
+  ],
+  "sites": [
+    {
+      "name": "Johannes Gutenberg University Mainz",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Johannes Gutenberg University Mainz",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype with published axion-search results; full instrument under development",
+    "as_of": "2026",
+    "evidence": "The collaboration's 2026 prototype paper reports a copper cavity at 2 K searching for approximately 34 μeV axions in a 12 T field.",
+    "source_ids": [
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2026",
+      "event": "First Axion Search Results of the SUPAX Prototype Experiment",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SUPAX Collaboration / project team",
+    "lead_institutions": [
+      "Johannes Gutenberg University Mainz"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2026 prototype",
+      "value": "Copper cavity at 2 K, 12 T; approximately 34 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Future design",
+      "value": "8–30 μeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "2026 prototype",
+      "value": "Copper cavity at approximately 2 K, magnetic field 12 T, searching near 34 μeV.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The prototype sets upper limits on axion–photon coupling and dark-photon mixing; the future superconducting instrument's coverage is a design goal.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2026",
+      "summary": "The prototype search near 34 μeV reached axion–photon sensitivity of 1.6×10⁻¹³ GeV⁻¹; the same data also constrain dark photons.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Directly searches for Galactic-halo axions, axionlike particles or other ultralight dark matter. Limits depend on assumed local density, velocity distribution and coupling models; separate scanned mass intervals do not amount to exclusion of the entire range.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/2603.10943",
+      "https://arxiv.org/abs/2505.07541",
+      "https://arxiv.org/abs/2308.08337",
+      "https://arxiv.org/abs/2603.10943"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2603.10943",
+      "caption": "SUPAX prototype microwave-cavity dark-matter-search schematic (Fig. 2, 2026 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2603.10943v1/Fig_Prototype_Supax_Schematic.svg",
+      "width": 1693,
+      "height": 1610,
+      "sha256": "5cb2fc35146a793f7fa70e7b60f3595d62f1eee908b82d7edc2dc4e8c812beab",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2603.10943",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SUPAX Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "First Axion Search Results of the SUPAX Prototype Experiment",
+      "url": "https://arxiv.org/abs/2603.10943",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Conceptual Design Report of the SUPAX Experiment",
+      "url": "https://arxiv.org/abs/2505.07541",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "First results of the SUPAX Experiment: Probing Dark Photons",
+      "url": "https://arxiv.org/abs/2308.08337",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2023",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "First Axion Search Results of the SUPAX Prototype Experiment",
+      "url": "https://arxiv.org/abs/2603.10943",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "results",
+        "key_parameters",
+        "status",
+        "timeline"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "resonator_rf",
+      "radio",
+      "quantum_sensor"
+    ]
+  }
+}

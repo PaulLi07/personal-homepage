@@ -1,0 +1,192 @@
+{
+  "schema_version": "1.0",
+  "id": "lvd",
+  "name": "LVD",
+  "full_name": "Large Volume Detector",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy",
+    "supernova"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A modular underground scintillator observatory at Gran Sasso monitors the Galaxy for neutrino bursts from stellar core collapse.",
+  "physics_targets": [
+    "Galactic supernova neutrino bursts",
+    "Low-energy neutrino interactions",
+    "Cosmic-ray muon monitoring"
+  ],
+  "detection_principle": "Hydrocarbon scintillator tanks detect prompt positron light and delayed neutron capture from inverse beta decay; timing across independent counters distinguishes bursts from backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "Italy; Gran Sasso",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "Italy; Gran Sasso",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "operating",
+    "label": "Operating / data taking",
+    "as_of": "2026-10-23",
+    "evidence": "INFN Torino explicitly describes continuous operation since 1992 and the full configuration since 2001.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1992",
+      "event": "Continuous monitoring began with a partial detector.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2001",
+      "event": "Final approximately 1,000-tonne configuration reached.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "Ongoing programme",
+      "event": "Stellar-collapse burst monitoring continues in the institutional description.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LVD Collaboration",
+    "lead_institutions": [
+      "INFN",
+      "Institute for Nuclear Research, Russian Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active target",
+      "value": "Approximately 1,000 tonnes liquid scintillator at full configuration",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Segmentation",
+      "value": "840 independent counters in three towers",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Counter readout",
+      "value": "Three photomultipliers view each approximately 1.5 m³ counter",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Burst-search programme",
+      "summary": "Developed online burst selection and long-duration Galactic-collapse monitoring; no new Galactic core-collapse burst is claimed in the cited apparatus and trigger sources.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "baksan",
+    "halo",
+    "lsd"
+  ],
+  "resources": {
+    "official_website": "https://www.to.infn.it/attivita-scientifica/fisica-astroparticellare/lvd/",
+    "publication_links": [
+      "https://arxiv.org/abs/0710.0259"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "detector_diagram",
+      "source_url": "https://arxiv.org/abs/0710.0259",
+      "caption": "LVD schematic: eight scintillator counters form a module and 35 modules form a tower.",
+      "credit": "LVD Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/abs/0710.0259",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 425,
+      "height": 355,
+      "sha256": "2d2ad13d8fbf9fb3c5af0fb90b68ed0fb7d25646e90d72715846d884682ad08a",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "INFN Torino, LVD detector and operation",
+      "url": "https://www.to.infn.it/attivita-scientifica/fisica-astroparticellare/lvd/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "LVD Collaboration, On-line recognition of supernova neutrino bursts in LVD",
+      "url": "https://arxiv.org/abs/0710.0259",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2007",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

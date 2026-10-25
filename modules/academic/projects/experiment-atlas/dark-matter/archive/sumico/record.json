@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "sumico",
+  "name": "SUMICO / Tokyo Axion Helioscope",
+  "full_name": "Tokyo Axion Helioscope",
+  "aliases": [
+    "Tokyo axion helioscope"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "A historical Japanese solar-axion telescope extending its coherent mass reach with helium gas at different densities.",
+  "physics_targets": [
+    "Solar axions"
+  ],
+  "detection_principle": "Solar axions convert to X-rays in a superconducting magnet; helium gas tunes the effective photon mass and PIN photodiodes measure the signal.",
+  "technologies": [
+    "Superconducting magnets",
+    "Helium-filled conversion bores",
+    "PIN X-ray detectors"
+  ],
+  "sites": [
+    {
+      "name": "University of Tokyo",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "University of Tokyo",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "The documented historical experimental phase is complete",
+    "as_of": "2010",
+    "evidence": "2010 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2010",
+      "event": "Tokyo axion helioscope experiment",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SUMICO / Tokyo Axion Helioscope Collaboration / project team",
+    "lead_institutions": [
+      "University of Tokyo",
+      "KEK"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Magnets",
+      "value": "4 T × 2.3 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "2007–2008 scan",
+      "value": "0.84–1.00 eV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Early vacuum / low-density-gas phases",
+      "status": "completed",
+      "description": "The region below approximately 0.27 eV has been explored."
+    },
+    {
+      "name": "Third phase",
+      "status": "completed",
+      "description": "Mass matching with higher-density helium gas."
+    }
+  ],
+  "results": [
+    {
+      "date": "2010",
+      "summary": "No signal; 95% CL coupling upper limits of 5.6–13.4×10⁻¹⁰ GeV⁻¹ were obtained in this mass interval.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Primarily searches for solar-produced axions or hidden photons as complementary tests of dark-matter candidates. Solar flux is distinct from cold Galactic-halo dark matter; a solar-axion discovery alone would not establish the composition of cosmic dark matter.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1002.0468"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/1002.0468",
+      "caption": "Magnet, gas vessel and X-ray detectors of the Tokyo SUMICO V solar-axion telescope (Fig. 2, 2010 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/1002.0468v1/fig_sumico_grey.png",
+      "width": 437,
+      "height": 260,
+      "sha256": "535c768bc32b9c620e559497ceb0d6587b3391ba8e8c620f6457646ebd8e4691",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1002.0468",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SUMICO / Tokyo Axion Helioscope Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Tokyo axion helioscope experiment",
+      "url": "https://arxiv.org/abs/1002.0468",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2010",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

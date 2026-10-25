@@ -1,0 +1,154 @@
+{
+  "schema_version": "1.0",
+  "id": "apex",
+  "name": "APEX",
+  "full_name": "A Prime EXperiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "dedicated",
+  "summary": "APEX is based in Jefferson Lab Hall A, Newport News, Virginia. It is a dedicated dark-photon search using the existing Hall A spectrometers.",
+  "physics_targets": [
+    "Dark photons"
+  ],
+  "detection_principle": "Electron bremsstrahlung produces weakly coupled vector particles; a high-resolution dual-arm spectrometer searches for narrow resonances in the measured e⁺e⁻ invariant mass.",
+  "technologies": [
+    "High-resolution magnetic spectrometers",
+    "Tungsten multifoil target",
+    "Electron beam"
+  ],
+  "sites": [
+    {
+      "name": "Jefferson Lab Hall A，Newport News，Virginia",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Jefferson Lab Hall A，Newport News，Virginia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Official site lists the main run as 2019-02-08 to 2019-03-17; completed here denotes completion of that run",
+    "as_of": "2019-03-17",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019-03-17",
+      "event": "Official site lists the main run as 2019-02-08 to 2019-03-17; completed here denotes completion of that run",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "APEX Collaboration / project team",
+    "lead_institutions": [
+      "Jefferson Lab"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Proposed beam energy",
+      "value": "Approximately 1–4 GeV",
+      "source_ids": [
+        "S1"
+      ]
+    },
+    {
+      "name": "Proposed mass coverage",
+      "value": "65–525 MeV depending on energy and spectrometer settings; not a claim of full-range exclusion",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "APEX",
+      "status": "completed",
+      "description": "Official site lists the main run as 2019-02-08 to 2019-03-17; completed here denotes completion of that run"
+    }
+  ],
+  "results": [
+    {
+      "date": "2019",
+      "summary": "The main run listed on the official site completed; this record does not compile final full-sample exclusion curves.",
+      "source_ids": [
+        "S1"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "A1/MAMI",
+    "HPS"
+  ],
+  "resources": {
+    "official_website": "https://www.jlab.org/physics/experiments/e12-10-009-experiment-apex-search-new-vector-boson-decaying-ee",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/pdf/1001.2557",
+      "caption": "Dual high-resolution-spectrometer layout from the original APEX design paper, showing the tungsten target, septum magnet and arms measuring electrons and positrons separately; a design schematic.",
+      "credit": "R. Essig, P. Schuster, N. Toro, B. Wojtsekhowski, paper Fig. 5",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/pdf/1001.2557",
+      "width": 640,
+      "height": 391,
+      "sha256": "9f8a54c67d789357ce5ecd2cc3cdcb3e3b4cd256c0db128345236e7560b545b0",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.jlab.org/physics/experiments/e12-10-009-experiment-apex-search-new-vector-boson-decaying-ee",
+      "caption": "Photograph of Hall A; must not be mislabeled as a detail of the local APEX detector",
+      "credit": "Jefferson Lab / Aileen Devlin",
+      "reuse_status": "Source page recorded only; image permission and attribution requirements remain unverified"
+    }
+  ],
+  "sources": [
+    {
+      "title": "E12-10-009: The A prime Experiment (APEX)",
+      "url": "https://www.jlab.org/physics/experiments/e12-10-009-experiment-apex-search-new-vector-boson-decaying-ee",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle"
+    ]
+  }
+}

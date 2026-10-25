@@ -1,0 +1,194 @@
+{
+  "schema_version": "1.0",
+  "id": "lampf-0645",
+  "name": "LAMPF-0645",
+  "full_name": "Los Alamos Meson Physics Facility Experiment E645",
+  "aliases": [
+    "LAMPF E645"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "scintillator",
+    "gas"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "LAMPF E645 searched for electron-antineutrino appearance from a stopped-muon neutrino source, preceding LSND with a segmented scintillator and tracking detector.",
+  "physics_targets": [
+    "Short-baseline muon-antineutrino to electron-antineutrino appearance",
+    "Stopped-pion and stopped-muon neutrino detection"
+  ],
+  "detection_principle": "Positive-muon decay at rest supplied muon antineutrinos. Appearance candidates were sought through positrons and correlated neutrons from inverse beta decay, using fine segmentation and extensive active and passive shielding to reject accelerator and cosmic backgrounds.",
+  "technologies": [
+    "Scintillator detectors",
+    "Gas time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "United States; LAMPF at Los Alamos, New Mexico",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "United States; LAMPF at Los Alamos, New Mexico",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1988",
+    "evidence": "Historical apparatus and published data are documented by the cited experiment publications.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1981",
+      "event": "Experiment first proposed",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1984",
+      "event": "Full-scale construction began",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1986",
+      "event": "First completed-detector data; subsequent shielding improvements addressed neutron backgrounds",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "1988",
+      "event": "Appearance-oscillation limits published",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LAMPF-0645 Collaboration",
+    "lead_institutions": [
+      "Los Alamos National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Source",
+      "value": "LAMPF A6 beam stop, Los Alamos",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Central detector",
+      "value": "Alternating liquid-scintillator and proportional-drift-tube planes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino scale",
+      "value": "Muon-decay-at-rest spectrum ending near 52.8 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1988",
+      "summary": "No evidence for the searched appearance mode was observed and mixing limits were reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "lsnd",
+    "karmen",
+    "lampf-0764"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://inspirehep.net/files/09cb7a110e1f63b2f23d648e985b2621",
+      "https://doi.org/10.1103/PhysRevLett.61.1811"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://inspirehep.net/files/09cb7a110e1f63b2f23d648e985b2621",
+      "caption": "The E645 central tracking-scintillator detector and active cosmic-ray shield.",
+      "credit": "E645 Collaboration, Figure 2.6",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/09cb7a110e1f63b2f23d648e985b2621",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1492,
+      "height": 1368,
+      "sha256": "46295872bb800b3a1603fabd892c49848aa4b5d597e5660690cb0a67ba03dc52",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "E645 collaboration dissertation, design, operation and analysis of experiment E645",
+      "url": "https://inspirehep.net/files/09cb7a110e1f63b2f23d648e985b2621",
+      "type": "thesis",
+      "accessed": "2026-10-23",
+      "source_date": "1989",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "L. S. Durkin et al., Limits on antineutrino appearance oscillations",
+      "url": "https://doi.org/10.1103/PhysRevLett.61.1811",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1988",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "gas"
+    ],
+    "technology_tags": [
+      "scintillator",
+      "gas"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,164 @@
+{
+  "schema_version": "1.0",
+  "id": "sapphires",
+  "name": "SAPPHIRES",
+  "full_name": "Search for Axion-like Particles via optical Parametric effects with High-Intensity laseRs in Empty Space",
+  "aliases": [
+    "SAPPHIRES00"
+  ],
+  "category": "axion_ultralight",
+  "role": "dedicated",
+  "summary": "An international laser-collision search producing and stimulating the decay of light scalars or pseudoscalars with two-color lasers; it is distinct from the Hefei spin experiment SAPPHIRE.",
+  "physics_targets": [
+    "Sub-eV scalars",
+    "Sub-eV pseudoscalar ALPs"
+  ],
+  "detection_principle": "Focused creation-beam photons undergo quasi-parallel collisions; a second inducing laser stimulates possible resonant ALP decay, with frequency-shifted photons sought.",
+  "technologies": [
+    "Ti:sapphire femtosecond lasers",
+    "Nd:YAG lasers",
+    "Vacuum photon collisions"
+  ],
+  "sites": [
+    {
+      "name": "Kyoto University Institute for Chemical Research laser facility, Uji",
+      "country": "Japan",
+      "country_code": "JPN",
+      "location": "Kyoto University Institute for Chemical Research laser facility, Uji",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Search for sub-eV axion-like resonance states via stimulated quasi-parallel laser collisions with the parameterization including fully asymmetric collisional geometry",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "SAPPHIRES Collaboration / project team",
+    "lead_institutions": [
+      "Hiroshima University",
+      "Kyoto University",
+      "ELI-NP / IFIN-HH"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "2021 laser pulses",
+      "value": "0.10 mJ / 31 fs and 0.20 mJ / 9 ns",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "No significant scattering signal; 95% confidence limits on scalar and pseudoscalar mass–coupling parameters were obtained.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [],
+  "resources": {
+    "official_website": "https://www.hiroshima-u.ac.jp/news/68436",
+    "publication_links": [
+      "https://arxiv.org/abs/2105.01224"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2105.01224",
+      "caption": "Beam-transport and interaction chambers of the SAPPHIRES two-laser search (Fig. 5, 2021 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://arxiv.org/html/2105.01224v2/Fig5.png",
+      "width": 973,
+      "height": 572,
+      "sha256": "596c712a4e90014e99dc079f46bc284d90f9dee13ce20b3974037b7cc417c8f2",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2105.01224",
+      "caption": "Apparatus-resource page; verify the specific image or paper figure number before building a webpage.",
+      "credit": "SAPPHIRES Collaboration / original authors",
+      "reuse_status": "Image not downloaded in this entry; specific image, copyright, credit and reuse permission require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Search for sub-eV axion-like resonance states via stimulated quasi-parallel laser collisions with the parameterization including fully asymmetric collisional geometry",
+      "url": "https://arxiv.org/abs/2105.01224",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Hiroshima University: SAPPHIRES laser search for dark-matter candidates begins",
+      "url": "https://www.hiroshima-u.ac.jp/news/68436",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "SAPPHIRES is an international series that can operate at multiple laser facilities; this location represents the Kyoto phase documented in the literature, not every phase."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "JPN"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

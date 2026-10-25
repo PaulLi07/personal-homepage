@@ -1,0 +1,175 @@
+{
+  "schema_version": "1.0",
+  "id": "ctao",
+  "name": "CTAO",
+  "full_name": "Cherenkov Telescope Array Observatory",
+  "aliases": [
+    "CTA"
+  ],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Next-generation Cherenkov observatory with northern and southern sites. Dark matter is a core fundamental-physics objective; precursor telescopes must be distinguished from the complete array.",
+  "physics_targets": [
+    "TeV dark-matter annihilation",
+    "ALP-related propagation effects"
+  ],
+  "detection_principle": "Telescopes of different apertures stereoscopically image atmospheric showers, improving gamma-ray searches through greater effective area and better background separation.",
+  "technologies": [
+    "Large-, medium- and small-sized imaging atmospheric Cherenkov telescopes"
+  ],
+  "sites": [
+    {
+      "name": "La Palma，CTAO-North",
+      "country": "Spain",
+      "country_code": "ESP",
+      "location": "La Palma，CTAO-North",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    },
+    {
+      "name": "Atacama Desert，CTAO-South",
+      "country": "Chile",
+      "country_code": "CHL",
+      "location": "Atacama Desert，CTAO-South",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2025",
+    "evidence": "The Swiss authority's 2025 page states that construction has begun and telescopes are expected to enter service progressively from 2027; this forecast is not an acceptance milestone.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022",
+      "event": "Construction began, according to the responsible authority",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2025-07",
+      "event": "Switzerland joined CTAO ERIC",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "CTAO collaboration / mission team",
+    "lead_institutions": [
+      "CTAO ERIC"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Overall plan",
+      "value": "More than 60 telescopes across two sites; the detailed configuration may evolve",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Precursors / individual telescope delivery",
+      "status": "mixed",
+      "description": "Some telescopes have already taken data; this does not imply completion of the entire array"
+    },
+    {
+      "name": "Complete two-site observatory",
+      "status": "construction",
+      "description": "Phased deployment"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "MAGIC",
+    "H.E.S.S.",
+    "VERITAS"
+  ],
+  "resources": {
+    "official_website": "https://www.ctao.org/emission-to-discovery/array-sites/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.sbfi.admin.ch/en/cherenkov-telescope-array-observatory-next-generation-gamma-ray-astronomy",
+      "caption": "Night view of CTAO's Large-Sized Telescope precursor on La Palma. This represents one telescope and does not imply completion of both full arrays.",
+      "credit": "Photograph on the Swiss SERI CTAO project page; no individual photographer is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://prod-sbfitestch-hcms-sdweb.imgix.net/dam/en/sd-web/5VdJXnBMXlWD/Cherenkov%20Telescope%20Array%20Observatory.jpg?w=1024&auto=format",
+      "width": 1024,
+      "height": 576,
+      "sha256": "5a32a0c3ac9f9da880675039ae87a39aa2d94e798b9e8dc8b17f77d97176a82f",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.ctao.org/emission-to-discovery/array-sites/",
+      "caption": "CTAO project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://www.ctao.org/emission-to-discovery/array-sites/",
+      "title": "CTAO: Array Sites",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.sbfi.admin.ch/en/cherenkov-telescope-array-observatory-next-generation-gamma-ray-astronomy",
+      "title": "SERI Switzerland: CTAO",
+      "source_date": "2025",
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Individual telescope delivery status should be updated from the latest engineering announcements when the website is published."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ESP",
+      "CHL",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower"
+    ]
+  }
+}

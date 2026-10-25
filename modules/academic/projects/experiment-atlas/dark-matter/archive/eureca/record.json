@@ -1,0 +1,132 @@
+{
+  "schema_version": "1.0",
+  "id": "eureca",
+  "name": "EURECA",
+  "full_name": "European Underground Rare Event Calorimeter Array",
+  "aliases": [],
+  "category": "direct_detection",
+  "role": "proposal",
+  "summary": "EURECA was a historical large-scale multitarget calorimeter proposal combining cryogenic experience from CRESST and EDELWEISS. Its design is archived; an old project website remaining online does not establish current construction.",
+  "physics_targets": [
+    "WIMP"
+  ],
+  "detection_principle": "Different targets would share a large cryogenic system, using heat/light or heat/ionization to identify nuclear recoils. Responses in multiple elements would cross-check dark-matter interpretations.",
+  "technologies": [
+    "Multitarget cryogenic calorimeters",
+    "Ge",
+    "CaWO4"
+  ],
+  "sites": [],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2014",
+    "evidence": "The 2014 conceptual design report establishes the proposal; evidence of a completed, independent full experiment has not been obtained.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "EURECA Collaboration",
+    "lead_institutions": [],
+    "participants_note": "Only verified representative institutions are listed, not a complete membership roster. See the collaboration pages and author affiliations in the references."
+  },
+  "key_parameters": [
+    {
+      "name": "Early two-stage concept",
+      "value": "Initial 150 kg followed by tonne-scale expansion, in the historical design",
+      "source_ids": [
+        "S2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [],
+  "science_scope": "This record covers experiments that directly measure possible interactions between dark matter and ordinary matter. Published exclusion limits, background events and projected sensitivities do not constitute a dark-matter discovery.",
+  "related_experiments": [
+    "CRESST",
+    "EDELWEISS"
+  ],
+  "resources": {
+    "official_website": "https://www.iap.kit.edu/dm/english/eureca.php",
+    "publication_links": [
+      "https://www.sciencedirect.com/science/article/pii/S2212686414000090"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.iap.kit.edu/dm/english/eureca.php",
+      "caption": "Early EURECA layout showing water shielding, the cryostat and service platform. This is a design rather than a completed installation.",
+      "credit": "EURECA / KIT; no individual illustrator is credited.",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original authors or institutions; this does not establish permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://www.iap.kit.edu/dm/img/eureca-tank.png",
+      "width": 673,
+      "height": 563,
+      "sha256": "b44afe60987942c690d73c0a566c9f2653f8d1b600ba8c4d1bd3862e0221455e",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2212686414000090",
+      "caption": "EURECA apparatus documentation and paper figures; select and verify the specific image before use.",
+      "credit": "EURECA Collaboration",
+      "reuse_status": "Permission has not been verified; unrestricted reuse must not be assumed."
+    }
+  ],
+  "sources": [
+    {
+      "id": "S1",
+      "title": "EURECA Conceptual Design Report",
+      "url": "https://www.sciencedirect.com/science/article/pii/S2212686414000090",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2014-04",
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    },
+    {
+      "id": "S2",
+      "title": "The EURECA experiment — KIT",
+      "url": "https://www.iap.kit.edu/dm/english/eureca.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experiment name and objectives",
+        "Detector and measurement principle",
+        "Phases and results described in the references"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Precise geographic coordinates have not been verified. An institution's address has not been substituted for the detector location.",
+      "A representative image is stored locally, with the specific image and credit checked. Reuse permission should still be established from the original source before public website publication.",
+      "This is a historical proposal, excluded from counts of currently approved construction.",
+      "The final site and subsequent disposition of the project have not been established in primary sources."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "solid_state",
+      "scintillator",
+      "beam_particle",
+      "quantum_sensor"
+    ]
+  }
+}

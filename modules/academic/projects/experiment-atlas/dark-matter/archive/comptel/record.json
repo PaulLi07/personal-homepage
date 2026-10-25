@@ -1,0 +1,186 @@
+{
+  "schema_version": "1.0",
+  "id": "comptel",
+  "name": "COMPTEL",
+  "full_name": "Imaging Compton Telescope",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "CGRO's MeV Compton telescope, whose diffuse gamma-ray observations provide important historical data for light-dark-matter annihilation or decay.",
+  "physics_targets": [
+    "MeV dark matter",
+    "Decaying dark matter"
+  ],
+  "detection_principle": "Measures energies, positions and time of flight for Compton scattering in an upper liquid-scintillator layer and absorption in a lower NaI layer to reconstruct incident-photon directions.",
+  "technologies": [
+    "Two-layer Compton telescope",
+    "Liquid scintillator",
+    "NaI(Tl)"
+  ],
+  "sites": [
+    {
+      "name": "Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2000-06-04",
+    "evidence": "The CGRO mission has ended; public data continue to support subsequent research.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1991-04-05",
+      "event": "Launched aboard CGRO",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2000-06-04",
+      "event": "Host mission ended",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "COMPTEL collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Energy band",
+      "value": "About 0.8–30 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Field of view",
+      "value": "About 1 sr",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Layer separation",
+      "value": "1.5 m",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2013",
+      "summary": "Historical diffuse data have been reanalyzed to constrain light dark matter.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "EGRET",
+    "COSI",
+    "AMEGO"
+  ],
+  "resources": {
+    "official_website": "https://heasarc.gsfc.nasa.gov/docs/cgro/comptel/compteldesc.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1309.4091"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://images-assets.nasa.gov/image/s37-99-056/collection.json",
+      "caption": "Photograph of the Compton Gamma Ray Observatory, carrying four instruments including COMPTEL and EGRET, during deployment on the Space Shuttle robotic arm. The image shows the entire host observatory.",
+      "credit": "NASA Image and Video Library / JSC",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://images-assets.nasa.gov/image/s37-99-056/s37-99-056~medium.jpg",
+      "width": 1280,
+      "height": 1280,
+      "sha256": "63f48573cbc5303a3bd69f930956e70b6051b540bd0e5bddc1ddbc888d771eae",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/cgro/comptel/compteldesc.html",
+      "caption": "COMPTEL project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/cgro/comptel/compteldesc.html",
+      "title": "NASA: COMPTEL instrument description",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/cgro.html",
+      "title": "NASA: CGRO mission",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1309.4091",
+      "title": "Constraining Light Dark Matter with Diffuse X-Ray and Gamma-Ray Observations",
+      "source_date": "2013",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "photon_telescope"
+    ]
+  }
+}

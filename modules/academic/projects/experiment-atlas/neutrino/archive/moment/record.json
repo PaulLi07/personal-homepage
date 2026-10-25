@@ -1,0 +1,182 @@
+{
+  "schema_version": "1.0",
+  "id": "moment",
+  "name": "MOMENT",
+  "full_name": "MuOn-decay MEdium-baseline NeuTrino beam facility",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "cherenkov",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "proposal",
+  "summary": "MOMENT is a proposed Chinese facility using low-energy neutrinos from muon decay to investigate leptonic CP violation. It remains a facility and sensitivity study in the cited literature.",
+  "physics_targets": [
+    "Leptonic CP violation and neutrino oscillations",
+    "Low-energy muon-decay neutrino-beam development"
+  ],
+  "detection_principle": "A multi-megawatt proton linac would create pions in a high-field target station. Pions decay into muons, and a transport and decay channel supplies electron- and muon-flavour neutrinos and antineutrinos. A distant detector would compare flavour transitions for different source polarities.",
+  "technologies": [
+    "Muon-decay neutrino source",
+    "Candidate gadolinium-loaded water Cherenkov or scintillator detector"
+  ],
+  "sites": [
+    {
+      "name": "Proposed Chinese source and medium-baseline detector",
+      "country": "China",
+      "country_code": "CHN",
+      "location": "Candidate implementation; no final construction site established",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "candidate_site"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2022",
+    "evidence": "The facility paper and 2022 physics overview describe a proposal and projected sensitivity. They do not establish construction or operation.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2014",
+      "event": "Named facility design proposed.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Physics-prospects overview published.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "MOMENT Collaboration",
+    "lead_institutions": [
+      "Institute of High Energy Physics, Chinese Academy of Sciences"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Proton-driver goal",
+      "value": "15 MW continuous-wave beam in the facility concept",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Typical neutrino energy",
+      "value": "Approximately 200-300 MeV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Studied baseline",
+      "value": "Approximately 150 km in the cited concept",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2022",
+      "summary": "Studied projected oscillation and new-physics sensitivity for assumed detector performance and exposure. No MOMENT neutrino data are reported.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "This dossier preserves a named historical proposal. Design parameters and sensitivity estimates are not measured neutrino results; later programmes using the same laboratory or technology are distinct.",
+  "related_experiments": [
+    "essnusb",
+    "nustorm"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1401.8125",
+      "https://arxiv.org/abs/2202.05509"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/1401.8125",
+      "caption": "Proposed MOMENT proton driver, pion and muon channels, and distant detector.",
+      "credit": "MOMENT proponents, Figure 2",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://arxiv.org/abs/1401.8125",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 727,
+      "height": 325,
+      "sha256": "f11b295ca59db1233a7e060879232fe38f6cb7e19415dc5f52e962a7876bca31",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "MOMENT: a muon-decay medium-baseline neutrino beam facility",
+      "url": "https://arxiv.org/abs/1401.8125",
+      "type": "technical_design",
+      "accessed": "2026-10-23",
+      "source_date": "2014-01-31",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Overview of the physics prospects in MOMENT",
+      "url": "https://arxiv.org/abs/2202.05509",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2022-02-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The historical design is retained without asserting a funded 2026 construction schedule or a final site."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "CHN"
+    ],
+    "technology_groups": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "cherenkov",
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "xlzd",
+  "name": "XLZD",
+  "full_name": "XENON-LUX-ZEPLIN-DARWIN observatory",
+  "aliases": [],
+  "category": "doublebeta",
+  "physics_categories": [
+    "doublebeta",
+    "solar",
+    "cevns",
+    "supernova"
+  ],
+  "technology_tags": [
+    "xenon"
+  ],
+  "nobel_prize_years": [],
+  "role": "multipurpose",
+  "summary": "XLZD brings together xenon-detector groups to develop a next-generation observatory for dark matter, neutrinos and rare decays. It succeeds the separate DARWIN design effort and draws on XENON and LZ detector experience.",
+  "physics_targets": [
+    "Double-beta and rare weak decays",
+    "Solar electron neutrinos",
+    "Coherent elastic neutrino-nucleus scattering",
+    "Core-collapse supernova neutrinos"
+  ],
+  "detection_principle": "A large dual-phase liquid-xenon time projection chamber provides three-dimensional localization, scintillation and ionization measurements. Solar and supernova neutrinos and xenon-136 double-beta decay form part of the programme.",
+  "technologies": [
+    "Liquid-xenon detectors"
+  ],
+  "sites": [
+    {
+      "name": "Underground site selection is part of the XLZD design programme",
+      "country": "Site unconfirmed",
+      "country_code": null,
+      "location": "Underground site selection is part of the XLZD design programme",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "site_not_selected"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposed",
+    "as_of": "2025",
+    "evidence": "The design and sensitivity papers study a 60-80-tonne active xenon observatory. Their half-life and neutrino sensitivities are projections for a future instrument.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "XLZD Collaboration",
+    "lead_institutions": [
+      "University of Zurich",
+      "Karlsruhe Institute of Technology",
+      "University of Oxford",
+      "Lawrence Berkeley National Laboratory"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active xenon design range",
+      "value": "60-80 tonnes",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Double-beta isotope",
+      "value": "136Xe at natural isotopic abundance",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Neutrino programme",
+      "value": "Solar scattering, supernova bursts and rare weak processes",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The design and sensitivity papers study a 60-80-tonne active xenon observatory. Their half-life and neutrino sensitivities are projections for a future instrument.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "A neutrinoless decay would violate lepton number. Half-life sensitivity is a forecast unless explicitly reported as an experimental limit; its interpretation as an effective Majorana mass depends on the decay mechanism and nuclear matrix elements.",
+  "related_experiments": [
+    "darwin",
+    "xenon",
+    "lz-lux-zeplin",
+    "nexo"
+  ],
+  "resources": {
+    "official_website": "https://xlzd.org/",
+    "publication_links": [
+      "https://arxiv.org/abs/2410.17137",
+      "https://arxiv.org/abs/2410.19016"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.physik.uzh.ch/en/groups/baudis/Research/XLZD.html",
+      "caption": "XLZD liquid-xenon time projection chamber concept, with photomultiplier arrays and cryostat; a design rendering.",
+      "credit": "XLZD Collaboration / University of Zurich",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.webp",
+      "original_url": "https://www.physik.uzh.ch/dam/jcr:04cace72-2d88-4397-916e-6c1ad63bdba0/xlzd_tpc.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1176,
+      "height": 1480,
+      "sha256": "328b970d81e54736591ac72d7cecda000c6387d4d1851ba3768f5b5a6b075309",
+      "mime_type": "image/webp",
+      "visual_review_note": "The actual local image was visually inspected against its public source. Prototype, predecessor hardware, conceptual design and measured apparatus are distinguished in the caption.",
+      "source_sha256": "aecb2801c2ef16a90367cc78af43f7b1feae4a1530a46ae93236b390700f43a1",
+      "source_dimensions": {
+        "width": 1176,
+        "height": 1480
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "The XLZD Design Book: Towards the Next-Generation Liquid Xenon Observatory for Dark Matter and Neutrino Physics",
+      "url": "https://arxiv.org/abs/2410.17137",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-10-22",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Neutrinoless Double Beta Decay Sensitivity of the XLZD Rare Event Observatory",
+      "url": "https://arxiv.org/abs/2410.19016",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "XLZD collaboration",
+      "url": "https://xlzd.org/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "UNSITED"
+    ],
+    "technology_groups": [
+      "xenon"
+    ],
+    "technology_tags": [
+      "xenon"
+    ],
+    "is_europe": false
+  }
+}

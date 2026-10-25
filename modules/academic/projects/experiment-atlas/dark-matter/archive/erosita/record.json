@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "erosita",
+  "name": "eROSITA",
+  "full_name": "extended ROentgen Survey with an Imaging Telescope Array",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "German-led SRG soft-X-ray survey instrument whose data support sterile-neutrino / ALP decay-line searches and dark-matter structure studies.",
+  "physics_targets": [
+    "keV sterile neutrinos",
+    "ALP decay",
+    "Sub-GeV dark matter",
+    "PBH"
+  ],
+  "detection_principle": "Grazing-incidence X-ray mirrors and CCD detectors record sky positions and energy spectra to search for narrow lines or diffuse radiation.",
+  "technologies": [
+    "X-ray mirror assemblies",
+    "CCD imaging spectroscopy"
+  ],
+  "sites": [
+    {
+      "name": "SRG satellite, near Sun–Earth L2",
+      "country": "Space",
+      "country_code": null,
+      "location": "SRG satellite, near Sun–Earth L2",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "mixed",
+    "label": "Partly operating, with further construction continuing",
+    "as_of": "2026",
+    "evidence": "Data taking paused in safe mode from 2022-02; existing data are still released and analyzed in 2026. The mixed status denotes suspended hardware observations alongside continuing scientific analysis.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2019-07-13",
+      "event": "SRG launched",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2022-02-26",
+      "event": "Operation paused in safe mode",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "eROSITA collaboration / mission team",
+    "lead_institutions": [
+      "Max Planck Institute for Extraterrestrial Physics"
+    ],
+    "participants_note": "Only examples of lead or participating institutions directly established by the sources are listed. This is not a complete collaboration list, and listing does not imply equal institutional roles."
+  },
+  "key_parameters": [
+    {
+      "name": "Nominal energy band",
+      "value": "About 0.2–8 keV",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Representative dark-matter mass range",
+      "value": "2–18 keV in the 2026 Large Magellanic Cloud analysis",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Sky observations",
+      "status": "suspended",
+      "description": "Safe mode in 2022; continued non-operation is supported by a 2026 institutional announcement"
+    },
+    {
+      "name": "Data releases and analysis",
+      "status": "operating",
+      "description": "Continuing use of previously collected data"
+    }
+  ],
+  "results": [
+    {
+      "date": "2026",
+      "summary": "The Large Magellanic Cloud line search found no dark-matter signal, setting lifetime and coupling constraints.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "XMM-Newton",
+    "XRISM"
+  ],
+  "resources": {
+    "official_website": "https://erosita.mpe.mpg.de/",
+    "publication_links": [
+      "https://arxiv.org/abs/2603.19109"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.mpe.mpg.de/eROSITA",
+      "caption": "Artist's illustration of the eROSITA and ART-XC payloads on SRG, identifying eROSITA's location.",
+      "credit": "Max Planck Institute for Extraterrestrial Physics (MPE) project page; no individual artist is listed",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.mpe.mpg.de/7301027/original-1560244460.jpg?t=ZXlKM2FXUjBhQ0k2TkRneUxDSm1hV3hsWDJWNGRHVnVjMmx2YmlJNkltcHdaeUlzSW05aWFsOXBaQ0k2TnpNd01UQXlOMzA9LS1iNGYyOTE0MzAwYjlkNDJjNTA2Yjc1ZDY1MmZkYWVlZjUyZWFkYzQ5",
+      "width": 482,
+      "height": 271,
+      "sha256": "2a12ffc5aeed6eb601eaa9fe097284c8edaadff24ff18b37f2cae2962c7e25e6",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://erosita.mpe.mpg.de/",
+      "caption": "eROSITA project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://erosita.mpe.mpg.de/",
+      "title": "MPE: eROSITA-DE",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/srg/erosita/",
+      "title": "NASA: eROSITA mission status",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://www.uni-bonn.de/de/neues/der-roentgenhimmel-rueckt-in-den-fokus",
+      "title": "University of Bonn: eROSITA remains in safe mode",
+      "source_date": "2026",
+      "type": "official",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/2603.19109",
+      "title": "Searching for dark matter X-ray lines from the Large Magellanic Cloud with eROSITA",
+      "source_date": "2026-03-19",
+      "type": "primary_paper",
+      "id": "s4",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "photon_telescope"
+    ]
+  }
+}

@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "egret",
+  "name": "EGRET",
+  "full_name": "Energetic Gamma Ray Experiment Telescope",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "High-energy gamma-ray instrument on CGRO. Its diffuse-sky data were used for dark-matter annihilation searches and historical discussion of a GeV excess.",
+  "physics_targets": [
+    "WIMP annihilation",
+    "Diffuse gamma-ray background"
+  ],
+  "detection_principle": "Gamma rays convert to electron–positron pairs in spark chambers. A calorimeter measures energy, and plastic-scintillator anticoincidence rejects charged particles.",
+  "technologies": [
+    "Spark chambers",
+    "NaI(Tl) calorimeter",
+    "Plastic-scintillator anticoincidence"
+  ],
+  "sites": [
+    {
+      "name": "Earth orbit",
+      "country": "Space",
+      "country_code": null,
+      "location": "Earth orbit",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Data taking ended / historical experiment",
+    "as_of": "2000-06-04",
+    "evidence": "The host CGRO mission ended on June 4, 2000.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3",
+      "s4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1991-04-05",
+      "event": "Launched aboard CGRO",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2000-06-04",
+      "event": "CGRO mission ended",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "EGRET collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Energy band",
+      "value": "20 MeV to about 30 GeV",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2005",
+      "summary": "External reanalyses proposed dark-matter interpretations. These historical claims are recorded without treating them as confirmed discoveries.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2013",
+      "summary": "Public data constrain light-dark-matter models.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "Fermi-LAT",
+    "COMPTEL"
+  ],
+  "resources": {
+    "official_website": "https://heasarc.gsfc.nasa.gov/docs/cgro/egret/egret_tech.html",
+    "publication_links": [
+      "https://arxiv.org/abs/astro-ph/0508617",
+      "https://arxiv.org/abs/1309.4091"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/cgro/egret/egret_tech.html",
+      "caption": "Structure of the EGRET payload on CGRO, showing spark chambers, calorimeter and anticoincidence components.",
+      "credit": "NASA HEASARC / CGRO EGRET technical information, original Figure IV-1",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://heasarc.gsfc.nasa.gov/docs/cgro/images/egret/egret_tech/fig1_small.gif",
+      "width": 256,
+      "height": 300,
+      "sha256": "92e746a193d14b0bce53d8d12299fd4a5ba44c57b9137af6579172457395bcfa",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://heasarc.gsfc.nasa.gov/docs/cgro/egret/egret_tech.html",
+      "caption": "EGRET project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/cgro/egret/egret_tech.html",
+      "title": "NASA: EGRET technical information",
+      "source_date": null,
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://heasarc.gsfc.nasa.gov/docs/heasarc/missions/cgro.html",
+      "title": "NASA: CGRO mission",
+      "source_date": null,
+      "type": "official",
+      "id": "s2",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/astro-ph/0508617",
+      "title": "EGRET Excess of Diffuse Galactic Gamma Rays as Tracer of Dark Matter",
+      "source_date": "2005",
+      "type": "primary_paper",
+      "id": "s3",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    },
+    {
+      "url": "https://arxiv.org/abs/1309.4091",
+      "title": "Constraining Light Dark Matter with Diffuse X-Ray and Gamma-Ray Observations",
+      "source_date": "2013",
+      "type": "primary_paper",
+      "id": "s4",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "SPACE"
+    ],
+    "technology_groups": [
+      "scintillator",
+      "beam_particle"
+    ]
+  }
+}

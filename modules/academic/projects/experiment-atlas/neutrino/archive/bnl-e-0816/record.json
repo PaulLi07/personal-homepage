@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "bnl-e-0816",
+  "name": "BNL-E-0816",
+  "full_name": "Brookhaven AGS Experiment E816",
+  "aliases": [
+    "BNL E816",
+    "E816"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "sterile"
+  ],
+  "technology_tags": [
+    "sampling",
+    "spectroscopy"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "BNL E816 searched for electron-flavour appearance in the Brookhaven AGS neutrino beam using a fine-grained calorimeter. It reported a modest electron-like event excess whose statistical significance did not establish oscillations.",
+  "physics_targets": [
+    "Short-baseline muon-to-electron neutrino and antineutrino appearance",
+    "Electron and photon separation in neutrino interactions"
+  ],
+  "detection_principle": "Flash-tube tracking planes interleaved with iron and downstream shower-absorber material reconstruct electromagnetic showers. Fine sampling distinguishes electrons emerging from the neutrino vertex from photons converting after a measurable gap; scintillator hodoscopes provide the trigger.",
+  "technologies": [
+    "Fine-grained iron/flash-tube calorimeter",
+    "Scintillator trigger hodoscopes"
+  ],
+  "sites": [
+    {
+      "name": "Brookhaven AGS neutrino-beam area",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Upton, Long Island, New York",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "1990",
+    "evidence": "The final historical analysis is published in Nuclear Physics B335 (1990).",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1989-09-27",
+      "event": "Detailed final report issued as CERN-EP-89-128.",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "1990",
+      "event": "Full neutrino-oscillation analysis published.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "BNL-E-0816 Collaboration",
+    "lead_institutions": [
+      "Boston University",
+      "Brookhaven National Laboratory",
+      "CERN",
+      "LPNHE, Paris"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Target-to-detector distance",
+      "value": "175 m; approximately 130 m from the decay-tunnel midpoint",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Calorimeter dimensions",
+      "value": "Approximately 6 m wide, 3 m high and 3.3 m long",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Analysis fiducial mass",
+      "value": "7 tonnes in the selected interaction region",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Flux peak",
+      "value": "Approximately 0.8 GeV in the original beam calculation",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "1990",
+      "summary": "Electron-like events were approximately twice the beam-composition expectation, with only about two-standard-deviation significance. This was not a confirmed neutrino-oscillation observation.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The Brookhaven E816 apparatus is distinct from CERN PS191 even though the programmes shared participants and scientific motivation. Baseline conventions are stated explicitly rather than confusing target distance with decay-midpoint distance.",
+  "related_experiments": [
+    "cern-ps-191",
+    "bnl-e-0776",
+    "bnl-e-0734"
+  ],
+  "resources": {
+    "official_website": "https://www.phy.bnl.gov/history/experiments.php",
+    "publication_links": [
+      "https://doi.org/10.1016/0550-3213(90)90516-G",
+      "https://cds.cern.ch/record/201690"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://cds.cern.ch/record/201690",
+      "caption": "Side view of the E816 calorimeter with flash-tube module and beam-timing insets.",
+      "credit": "E816 Collaboration, CERN-EP-89-128, Figure 3",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative-audit.png",
+      "original_url": "https://lib-extopc.kek.jp/preprints/PDF/1989/8911/8911028.pdf",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 886,
+      "height": 468,
+      "sha256": "c186c94280fce30403a118afd4d10c775fc9f1db85a2b12685c47c271d535144",
+      "mime_type": "image/png",
+      "visual_review_note": "Primary-source figure or official design image visually inspected; proposed designs and simulated curves are explicitly identified."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "P. Astier et al., A Search for Neutrino Oscillations",
+      "url": "https://doi.org/10.1016/0550-3213(90)90516-G",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "1990",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "CERN Document Server, CERN-EP-89-128: A search for neutrino oscillations",
+      "url": "https://cds.cern.ch/record/201690",
+      "type": "database",
+      "accessed": "2026-10-23",
+      "source_date": "1989-09-27",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Brookhaven National Laboratory, historical AGS experiment catalogue",
+      "url": "https://www.phy.bnl.gov/history/experiments.php",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "sampling",
+      "spectroscopy"
+    ],
+    "technology_tags": [
+      "sampling",
+      "spectroscopy"
+    ],
+    "is_europe": false
+  }
+}

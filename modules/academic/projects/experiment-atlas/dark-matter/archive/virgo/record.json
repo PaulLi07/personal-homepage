@@ -1,0 +1,201 @@
+{
+  "schema_version": "1.0",
+  "id": "virgo",
+  "name": "Virgo — dark matter searches",
+  "full_name": "Virgo gravitational-wave interferometer dark-matter searches",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "multipurpose",
+  "summary": "The Italian Virgo gravitational-wave interferometer, participating in an ultralight dark-photon search using actual O3 data.",
+  "physics_targets": [
+    "Ultralight vector dark matter",
+    "Dark photons"
+  ],
+  "detection_principle": "Dark photons coupled to baryons or neutrons in the instrument can move its mirrors; strain channels are searched for narrowband excesses with a dark-matter linewidth.",
+  "technologies": [
+    "Laser interferometry",
+    "Spectral-power searches",
+    "Ground-based gravitational-wave networks"
+  ],
+  "sites": [
+    {
+      "name": "European Gravitational Observatory, Cascina, near Pisa",
+      "country": "Italy",
+      "country_code": "ITA",
+      "location": "European Gravitational Observatory, Cascina, near Pisa",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "unknown",
+    "label": "Published experimental record; current overall operating status unverified",
+    "as_of": "2021",
+    "evidence": "2021 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2021",
+      "event": "Constraints on dark photon dark matter using data from LIGO’s and Virgo’s third observing run",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Virgo — dark matter searches Collaboration / project team",
+    "lead_institutions": [
+      "EGO",
+      "Virgo Collaboration",
+      "INFN",
+      "CNRS"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Representative analysis in this record",
+      "value": "O3 data from Advanced LIGO and Advanced Virgo",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Search frequencies",
+      "value": "10–2000 Hz",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Interferometer arm length",
+      "value": "Two perpendicular 3 km arms.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021",
+      "summary": "The joint analysis found no dark-photon signal and set upper limits on coupling to ordinary matter.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The representative result in this record is a search for direct coupling of ultralight fields to the instrument. Virgo also participates in gravitational-wave astronomy and astronomical dark-matter-candidate studies; LVK authorship does not imply all three facilities supplied data to every analysis.",
+  "related_experiments": [
+    "LIGO",
+    "KAGRA",
+    "GEO600"
+  ],
+  "resources": {
+    "official_website": "https://www.virgo-gw.eu/science/detector/",
+    "publication_links": [
+      "https://arxiv.org/abs/2105.13085",
+      "https://arxiv.org/html/2510.27022"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://www.virgo-gw.eu/science/detector/",
+      "caption": "Aerial photograph of Virgo's three-kilometer laser interferometer at EGO, Italy.",
+      "credit": "© Nicola Baldocchi / EGO",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.virgo-gw.eu/wp-content/uploads/2022/02/11.jpg",
+      "width": 1920,
+      "height": 1080,
+      "sha256": "789f76930f572d01d362abd960982b65ace5be514fb2976ca1e69b0a2c90f81b",
+      "mime_type": "image/webp",
+      "source_sha256": "f58ed65295f356897e3e9ce7eec1fc8ffc862c72589ce8f66649a08dfbe7176c",
+      "source_dimensions": {
+        "width": 1920,
+        "height": 1080
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.virgo-gw.eu/science/detector/",
+      "caption": "Aerial view and operating-principle illustration from Virgo's official detector page.",
+      "credit": "Nicola Baldocchi / EGO (credited on the page)",
+      "reuse_status": "Not downloaded in this entry; reuse permission unverified"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Constraints on dark photon dark matter using data from LIGO’s and Virgo’s third observing run",
+      "url": "https://arxiv.org/abs/2105.13085",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Virgo detector — official instrument description",
+      "url": "https://www.virgo-gw.eu/science/detector/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "sites",
+        "key_parameters",
+        "media"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "O4a direct DM paper — actual LIGO-only data selection",
+      "url": "https://arxiv.org/html/2510.27022",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "science_scope",
+        "review"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "Project status, approval / construction milestones and subsequent results after the 2021 source require further verification.",
+      "The 2026 LVK O4a three-model paper analyzes only LIGO H1/L1; Virgo was not taking data then, so this is not a measured Virgo O4a result."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ITA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision",
+      "radio"
+    ]
+  }
+}

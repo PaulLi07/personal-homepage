@@ -1,0 +1,184 @@
+{
+  "schema_version": "1.0",
+  "id": "wispfi",
+  "name": "WISPFI",
+  "full_name": "WISP Searches on a Fiber Interferometer",
+  "aliases": [],
+  "category": "axion_ultralight",
+  "role": "technology_demonstrator",
+  "summary": "A hollow-core photonic-crystal-fiber interferometer in a magnetic field, testing axion–photon mixing through photon disappearance.",
+  "physics_targets": [
+    "Laboratory-produced axions and ALPs"
+  ],
+  "detection_principle": "A hollow-core fiber in one arm is placed in a magnetic field; a phase-locked, modulated Mach–Zehnder interferometer reads out amplitude differences from resonant conversion.",
+  "technologies": [
+    "Hollow-core photonic-crystal fibers",
+    "Mach–Zehnder interferometry",
+    "Permanent-magnet arrays"
+  ],
+  "sites": [
+    {
+      "name": "Universität Hamburg",
+      "country": "Germany",
+      "country_code": "DEU",
+      "location": "Universität Hamburg",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Prototype experiments / R&D",
+    "as_of": "2025",
+    "evidence": "2025 sources support the phase recorded here, rather than a real-time status of the entire project as of the access date.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "WISPFI Experiment: Prototype Development",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "WISPFI Collaboration / project team",
+    "lead_institutions": [
+      "Universität Hamburg"
+    ],
+    "participants_note": "Only documented principal institutions are listed; full author and affiliation lists are in the sources. Collaborating-institution addresses are not substituted for detector locations."
+  },
+  "key_parameters": [
+    {
+      "name": "Prototype",
+      "value": "2 W, 1550 nm laser; 1 m fiber; approximately 2 T magnetic field",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2025",
+      "summary": "The 2025 paper reports the first prototype and projected sensitivity, not yet a dark-matter-exclusion result.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "Produces and detects axions or dark-sector particles in the laboratory, rather than directly measuring Galactic-halo dark-matter flux. It tests interactions of dark-matter candidates; identifying a discovered particle as dark matter would also require establishing its cosmic abundance.",
+  "related_experiments": [
+    "WINTER",
+    "WISPLC"
+  ],
+  "resources": {
+    "official_website": "https://www.physik.uni-hamburg.de/en/iexp/gruppe-horns/forschung/wispfi.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2510.01221",
+      "https://arxiv.org/abs/2305.12969"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/html/2510.01221",
+      "caption": "Optical and magnet prototype of WISPFI during commissioning at the University of Hamburg; red lines mark free-space paths and blue lines hollow-core fiber (Fig. 4, 2025 paper).",
+      "credit": "Source-paper authors; no separate photographer or illustrator is credited in the figure.",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/html/2510.01221v2/Figures/wispfi_schematic.png",
+      "width": 1028,
+      "height": 460,
+      "sha256": "43feeeb2b396ac1d691741e613d4b06873f3ea2891c3da82979bfba5c24fb350",
+      "mime_type": "image/webp",
+      "source_sha256": "d7e76792d0c6c91767582c473fb7f881b5a0d43cf1d85359555507b80735e6d9",
+      "source_dimensions": {
+        "width": 1028,
+        "height": 460
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://www.physik.uni-hamburg.de/en/iexp/gruppe-horns/forschung/wispfi.html",
+      "caption": "Official-page Fig. 2: the WISPFI prototype under commissioning at the University of Hamburg; Fig. 1 shows the fiber microstructure.",
+      "credit": "Universität Hamburg / WISPFI",
+      "reuse_status": "The source explicitly lists the image; verify permission and credit before formal reuse"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "WISPFI Experiment: Prototype Development",
+      "url": "https://arxiv.org/abs/2510.01221",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "summary",
+        "detection_principle",
+        "key_parameters",
+        "results",
+        "timeline",
+        "status"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "WISP Searches on a Fiber Interferometer under a Strong Magnetic Field",
+      "url": "https://arxiv.org/abs/2305.12969",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "WISPFI — Universität Hamburg",
+      "url": "https://www.physik.uni-hamburg.de/en/iexp/gruppe-horns/forschung/wispfi.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "summary",
+        "sites",
+        "collaboration",
+        "phases"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Exact facility coordinates have not been verified.",
+      "Image copyright and reuse permissions have not been verified individually.",
+      "The collaborating-institution list is not a complete membership list.",
+      "All later developments have not been individually checked; the recorded status is tied to the dates of the cited evidence.",
+      "Older search-index text for the 2025 abstract inconsistently used μeV/meV; the current body and official prototype page give approximately 49 meV. The parameter table retains only apparatus parameters to avoid conflation."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "DEU",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "optical_precision"
+    ]
+  }
+}

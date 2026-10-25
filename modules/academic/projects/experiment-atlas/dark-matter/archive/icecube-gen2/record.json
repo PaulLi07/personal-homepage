@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0",
+  "id": "icecube-gen2",
+  "name": "IceCube-Gen2",
+  "full_name": "IceCube-Gen2 Neutrino Observatory",
+  "aliases": [],
+  "category": "indirect_detection",
+  "role": "multipurpose",
+  "summary": "Proposed major successor expansion of IceCube, covering high-energy neutrino and multimessenger astronomy and extending new-physics tests including heavy dark-matter decay.",
+  "physics_targets": [
+    "Heavy dark-matter decay",
+    "High-energy neutrino anomalies"
+  ],
+  "detection_principle": "A larger optical ice-Cherenkov array combined with high-energy radio-detection concepts; deep ice is the interaction medium.",
+  "technologies": [
+    "Ice Cherenkov detection",
+    "Radio neutrino detection"
+  ],
+  "sites": [
+    {
+      "name": "Ice surrounding IceCube at the South Pole, planned",
+      "country": "Antarctica",
+      "country_code": "ATA",
+      "location": "Ice surrounding IceCube at the South Pole, planned",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Proposal",
+    "as_of": "2020-08-18",
+    "evidence": "The design announcement describes a future expansion, distinct from the IceCube Upgrade currently being deployed.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [],
+  "collaboration": {
+    "name": "IceCube-Gen2 collaboration / mission team",
+    "lead_institutions": [],
+    "participants_note": "Institutional participation refers to the period covered by each source; this dossier does not claim to provide a complete membership list."
+  },
+  "key_parameters": [
+    {
+      "name": "Optical volume",
+      "value": "About 8 km³, a 2020 design target rather than a constructed value",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "Complete Gen2 array",
+      "status": "proposed",
+      "description": "Separate from the smaller upgrade of existing IceCube"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-matter models through astrophysical radiation, cosmic rays or neutrinos. Astrophysical backgrounds and propagation models affect interpretation; an anomaly alone does not establish dark matter.",
+  "related_experiments": [
+    "IceCube"
+  ],
+  "resources": {
+    "official_website": "https://icecube.wisc.edu/news/research/2020/08/icecube-gen2-will-open-new-window-on-universe/",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://icecube.wisc.edu/news/research/2020/08/icecube-gen2-will-open-new-window-on-universe/",
+      "caption": "IceCube-Gen2 optical-array concept: blue indicates the expanded volume, red the existing IceCube and green a denser region.",
+      "credit": "IceCube Collaboration, original image-caption credit",
+      "reuse_status": "Locally archived from a public source for research. Copyright remains with the original author / institution; public access does not imply permission for unrestricted publication or commercial use.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.jpg",
+      "original_url": "https://res.cloudinary.com/icecube/images/w_1110,h_674,c_scale/q_auto/v1608000108/news_attachment.file_.96c6694441e3d328.47656e32736368656d617469632e6a7067/news_attachment.file_.96c6694441e3d328.47656e32736368656d617469632e6a7067.jpg?_i=AA",
+      "width": 1110,
+      "height": 674,
+      "sha256": "690e367d5f035b4071ed6748b4fe36b73a29e44987d52ad3001a7bae50daa45e",
+      "mime_type": "image/jpeg"
+    },
+    {
+      "kind": "apparatus_page",
+      "source_url": "https://icecube.wisc.edu/news/research/2020/08/icecube-gen2-will-open-new-window-on-universe/",
+      "caption": "IceCube-Gen2 project / instrument source page, retained for selecting photographs, design drawings or observation illustrations",
+      "credit": "Original project / institution; see the source page for individual image credits",
+      "reuse_status": "Source-page reference only; no image was downloaded for this entry. Specific image attribution and reuse permission require individual verification."
+    }
+  ],
+  "sources": [
+    {
+      "url": "https://icecube.wisc.edu/news/research/2020/08/icecube-gen2-will-open-new-window-on-universe/",
+      "title": "IceCube: Gen2 science and design",
+      "source_date": "2020-08-18",
+      "type": "official",
+      "id": "s1",
+      "accessed": "2026-10-23",
+      "supports": [
+        "Project identity and experimental information in this dossier; numerical references appear in the corresponding fields"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Geographic coordinates have not been verified site by site and remain null.",
+      "Operational status is limited to the date of the cited evidence. Past operation or a planned start year does not establish continued data taking in 2026.",
+      "Formal 2026 approval, funding and design updates still require a dedicated check."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "ATA"
+    ],
+    "technology_groups": [
+      "cherenkov_airshower",
+      "radio"
+    ]
+  }
+}

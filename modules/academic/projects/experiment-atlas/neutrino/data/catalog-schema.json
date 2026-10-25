@@ -1,0 +1,443 @@
+{
+  "updated": "2026-10-23",
+  "locale": "en",
+  "categories": [
+    {
+      "id": "reactor",
+      "label": "Reactor neutrino experiments",
+      "color": "#f19b58"
+    },
+    {
+      "id": "accelerator",
+      "label": "Accelerator neutrino experiments",
+      "color": "#6bc5e8"
+    },
+    {
+      "id": "solar",
+      "label": "Solar neutrino experiments",
+      "color": "#f0cf70"
+    },
+    {
+      "id": "atmospheric",
+      "label": "Atmospheric neutrino experiments",
+      "color": "#b29aff"
+    },
+    {
+      "id": "astronomy",
+      "label": "Astrophysical neutrino experiments",
+      "color": "#80c6a7"
+    },
+    {
+      "id": "supernova",
+      "label": "Supernova neutrino experiments",
+      "color": "#ee9bb8"
+    },
+    {
+      "id": "crosssection",
+      "label": "Neutrino cross-section experiments",
+      "color": "#9cc6f0"
+    },
+    {
+      "id": "doublebeta",
+      "label": "Neutrinoless double-beta decay experiments",
+      "color": "#d7abf0"
+    },
+    {
+      "id": "geo",
+      "label": "Geoneutrino experiments",
+      "color": "#b9cd83"
+    },
+    {
+      "id": "mass",
+      "label": "Direct neutrino-mass measurements",
+      "color": "#e7ba8b"
+    },
+    {
+      "id": "sterile",
+      "label": "Sterile-neutrino searches",
+      "color": "#81ceca"
+    },
+    {
+      "id": "cevns",
+      "label": "Coherent elastic neutrino–nucleus scattering",
+      "color": "#e5a593"
+    },
+    {
+      "id": "relic",
+      "label": "Cosmic neutrino background searches",
+      "color": "#c6c7eb"
+    }
+  ],
+  "technologies": [
+    {
+      "id": "cherenkov",
+      "label": "Cherenkov detectors"
+    },
+    {
+      "id": "scintillator",
+      "label": "Scintillator detectors"
+    },
+    {
+      "id": "lar",
+      "label": "Liquid-argon time projection chambers"
+    },
+    {
+      "id": "sampling",
+      "label": "Layered detectors (sampling calorimeters)"
+    },
+    {
+      "id": "bolometer",
+      "label": "Bolometers (cryogenic calorimetry)"
+    },
+    {
+      "id": "emulsion",
+      "label": "Nuclear emulsions"
+    },
+    {
+      "id": "semiconductor",
+      "label": "Semiconductor detectors"
+    },
+    {
+      "id": "radio",
+      "label": "Radio detection"
+    },
+    {
+      "id": "bubble",
+      "label": "Bubble chambers"
+    },
+    {
+      "id": "radiochemical",
+      "label": "Radiochemical detection"
+    },
+    {
+      "id": "gas",
+      "label": "Gas time projection chambers"
+    },
+    {
+      "id": "xenon",
+      "label": "Liquid-xenon detectors"
+    },
+    {
+      "id": "spectroscopy",
+      "label": "Precision spectroscopy / kinematics"
+    },
+    {
+      "id": "neutron",
+      "label": "Neutron counting"
+    },
+    {
+      "id": "acoustic",
+      "label": "Acoustic detection"
+    }
+  ],
+  "statuses": [
+    {
+      "id": "operating",
+      "label": "Operating / data analysis"
+    },
+    {
+      "id": "completed",
+      "label": "Completed / historical"
+    },
+    {
+      "id": "research_development",
+      "label": "Prototype / research and development"
+    },
+    {
+      "id": "proposed",
+      "label": "Proposed"
+    },
+    {
+      "id": "planned",
+      "label": "Planned"
+    },
+    {
+      "id": "construction",
+      "label": "Under construction"
+    },
+    {
+      "id": "commissioning",
+      "label": "Commissioning"
+    },
+    {
+      "id": "mixed",
+      "label": "Multiple stages / mixed status"
+    },
+    {
+      "id": "unknown",
+      "label": "Status not established"
+    }
+  ],
+  "future_statuses": [
+    "proposed",
+    "planned",
+    "research_development",
+    "construction",
+    "commissioning"
+  ],
+  "regions": [
+    {
+      "id": "EUROPE",
+      "label": "Europe",
+      "label_en": "Europe",
+      "kind": "aggregate",
+      "members": [
+        "BEL",
+        "CHE",
+        "DEU",
+        "ESP",
+        "FIN",
+        "FRA",
+        "GBR",
+        "GRC",
+        "ITA",
+        "NLD",
+        "SWE",
+        "UKR"
+      ],
+      "note": "An explicit aggregate of listed European detector-site countries, matching the shared map convention. Russia and Greenland are shown separately."
+    },
+    {
+      "id": "ARG",
+      "label": "Argentina",
+      "label_en": "Argentina",
+      "kind": "country"
+    },
+    {
+      "id": "ATA",
+      "label": "Antarctica",
+      "label_en": "Antarctica",
+      "kind": "special"
+    },
+    {
+      "id": "AUS",
+      "label": "Australia",
+      "label_en": "Australia",
+      "kind": "country"
+    },
+    {
+      "id": "AUT",
+      "label": "Austria",
+      "label_en": "Austria",
+      "kind": "country",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    },
+    {
+      "id": "BEL",
+      "label": "Belgium",
+      "label_en": "Belgium",
+      "kind": "country"
+    },
+    {
+      "id": "BHS",
+      "label": "Bahamas",
+      "label_en": "Bahamas",
+      "kind": "country"
+    },
+    {
+      "id": "BRA",
+      "label": "Brazil",
+      "label_en": "Brazil",
+      "kind": "country"
+    },
+    {
+      "id": "CAN",
+      "label": "Canada",
+      "label_en": "Canada",
+      "kind": "country"
+    },
+    {
+      "id": "CHE",
+      "label": "Switzerland",
+      "label_en": "Switzerland",
+      "kind": "country"
+    },
+    {
+      "id": "CHL",
+      "label": "Chile",
+      "label_en": "Chile",
+      "kind": "country",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    },
+    {
+      "id": "CHN",
+      "label": "China",
+      "label_en": "China",
+      "kind": "country"
+    },
+    {
+      "id": "DEU",
+      "label": "Germany",
+      "label_en": "Germany",
+      "kind": "country"
+    },
+    {
+      "id": "ESP",
+      "label": "Spain",
+      "label_en": "Spain",
+      "kind": "country"
+    },
+    {
+      "id": "FIN",
+      "label": "Finland",
+      "label_en": "Finland",
+      "kind": "country"
+    },
+    {
+      "id": "FRA",
+      "label": "France",
+      "label_en": "France",
+      "kind": "country"
+    },
+    {
+      "id": "GBR",
+      "label": "United Kingdom",
+      "label_en": "United Kingdom",
+      "kind": "country"
+    },
+    {
+      "id": "GRC",
+      "label": "Greece",
+      "label_en": "Greece",
+      "kind": "country"
+    },
+    {
+      "id": "GRL",
+      "label": "Greenland",
+      "label_en": "Greenland",
+      "kind": "country"
+    },
+    {
+      "id": "IND",
+      "label": "India",
+      "label_en": "India",
+      "kind": "country"
+    },
+    {
+      "id": "ITA",
+      "label": "Italy",
+      "label_en": "Italy",
+      "kind": "country"
+    },
+    {
+      "id": "JPN",
+      "label": "Japan",
+      "label_en": "Japan",
+      "kind": "country"
+    },
+    {
+      "id": "KOR",
+      "label": "South Korea",
+      "label_en": "South Korea",
+      "kind": "country"
+    },
+    {
+      "id": "MEX",
+      "label": "Mexico",
+      "label_en": "Mexico",
+      "kind": "country"
+    },
+    {
+      "id": "NAM",
+      "label": "Namibia",
+      "label_en": "Namibia",
+      "kind": "country",
+      "note": "Retained as a clickable country entry from the shared world-map template. No experiment in the current archive is assigned to this country; this navigation entry does not imply an unarchived detector or verified site."
+    },
+    {
+      "id": "NLD",
+      "label": "Netherlands",
+      "label_en": "Netherlands",
+      "kind": "country"
+    },
+    {
+      "id": "NZL",
+      "label": "New Zealand",
+      "label_en": "New Zealand",
+      "kind": "country"
+    },
+    {
+      "id": "PER",
+      "label": "Peru",
+      "label_en": "Peru",
+      "kind": "country"
+    },
+    {
+      "id": "RUS",
+      "label": "Russia",
+      "label_en": "Russia",
+      "kind": "country"
+    },
+    {
+      "id": "SWE",
+      "label": "Sweden",
+      "label_en": "Sweden",
+      "kind": "country"
+    },
+    {
+      "id": "TWN",
+      "label": "Taiwan",
+      "label_en": "Taiwan",
+      "kind": "country"
+    },
+    {
+      "id": "UKR",
+      "label": "Ukraine",
+      "label_en": "Ukraine",
+      "kind": "country"
+    },
+    {
+      "id": "USA",
+      "label": "United States",
+      "label_en": "United States",
+      "kind": "country"
+    },
+    {
+      "id": "SPACE",
+      "label": "Space missions",
+      "label_en": "Space missions",
+      "kind": "special",
+      "note": "Orbital detectors and orbital proposals. Balloon experiments remain assigned to their documented terrestrial flight or launch region."
+    },
+    {
+      "id": "GLOBAL",
+      "label": "Global networks",
+      "label_en": "Global networks",
+      "kind": "special",
+      "note": "Documented network concepts; named prototypes retain their own detector-site countries."
+    },
+    {
+      "id": "UNSITED",
+      "label": "Site unconfirmed",
+      "label_en": "Site unconfirmed",
+      "kind": "special",
+      "note": "A full-scale detector site has not been selected or verified. Collaboration headquarters do not supply an inferred site."
+    }
+  ],
+  "europe_members": [
+    "BEL",
+    "CHE",
+    "DEU",
+    "ESP",
+    "FIN",
+    "FRA",
+    "GBR",
+    "GRC",
+    "ITA",
+    "NLD",
+    "SWE",
+    "UKR"
+  ],
+  "methodology": {
+    "geography": "The map summarizes countries and regions, without plotting exact detector coordinates. Membership uses documented current, historical, prototype and candidate detector sites in each independent archive. FORTE additionally retains its explicitly documented Greenland ice interaction volume alongside its orbital receiver. Collaboration headquarters, membership and image locations are not substitute sites.",
+    "map_entries": "Every clickable country label from the shared map template has a corresponding navigation region. A zero-record country entry preserves map selection and URL restoration; it does not add a detector site or imply archive coverage in that country.",
+    "counting": "The counting unit is an independent dossier or named programme, not a detector count or a count of independent discoveries. Related phases and successors can have separate dossiers. A multi-site dossier contributes only once to the global total.",
+    "europe": "Europe is an explicit aggregate of the listed detector-site countries, using the same convention as the dark-matter map. Russia and Greenland are separate buckets and are excluded from that aggregate.",
+    "status": "Status follows the dated evidence in each dossier and may predate the catalog update. Mixed preserves different stages within one programme; it is not automatically interpreted as operating or future.",
+    "technology": "Detector technologies use the archive's explicit technology_tags. One dossier can belong to several technology and physics categories. Filters retain every listed category, rather than using only the primary category.",
+    "year": "year is the final explicit year in status.as_of, for evidence-date sorting. It is not inferred as a construction or first-data year.",
+    "coverage": "This page browses 252 neutrino-related dossiers, including dedicated experiments, multipurpose facilities, prototypes, historical searches and proposals. It does not claim to exhaust every neutrino project worldwide.",
+    "image": "Representative images are loaded from each experiment's local images directory. The original captions identify apparatus, design or published-result figures and their experimental stage.",
+    "details": "Navigation summaries are built from independent English dossiers and images stored inside this map. Each dossier is loaded only when opened; no external archive directory is required."
+  }
+}

@@ -1,0 +1,188 @@
+{
+  "schema_version": "1.0",
+  "id": "p-one",
+  "name": "P-ONE",
+  "full_name": "Pacific Ocean Neutrino Experiment",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A Canadian deep-Pacific neutrino-telescope project uses Ocean Networks Canada infrastructure to expand Northern Hemisphere coverage for high-energy astronomy.",
+  "physics_targets": [
+    "High-energy neutrino astronomy",
+    "Neutrino source localisation and multimessenger observation",
+    "Deep-ocean detector technology"
+  ],
+  "detection_principle": "Instrumented mooring lines carry optical and calibration modules that measure Cherenkov photons in deep seawater. Existing cabled ocean infrastructure provides power and communication.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "Canada; Cascadia Basin in the northeastern Pacific, off British Columbia",
+      "country": "Canada",
+      "country_code": "CAN",
+      "location": "Canada; Cascadia Basin in the northeastern Pacific, off British Columbia",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "construction",
+    "label": "Under construction",
+    "as_of": "2026-10-23",
+    "evidence": "The project describes advanced construction and completed first-line integration; the first-line page still phrases 2026 deployment as the next milestone.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2018–2020",
+      "event": "STRAW and STRAW-b pathfinders characterised the optical environment.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2021",
+      "event": "Development of P-ONE-1 began.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "First-line integration completed; deployment was scheduled for 2026 on the project site.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "P-ONE Collaboration",
+    "lead_institutions": [
+      "Technical University of Munich",
+      "Ocean Networks Canada"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "First line P-ONE-1",
+      "value": "1,000 m mooring line with 20 optical and calibration modules",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Site",
+      "value": "Cascadia Basin, approximately 2.7 km underwater",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Infrastructure",
+      "value": "Ocean Networks Canada NEPTUNE cabled network",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Pathfinder programme",
+      "summary": "Deep-sea site and optical-background measurements support the detector design; a scheduled line deployment is not treated as completion of the full array.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "km3net",
+    "icecube",
+    "trident"
+  ],
+  "resources": {
+    "official_website": "https://www.pacific-neutrino.org/p-one",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.pacific-neutrino.org/main-menu/prototype",
+      "caption": "P-ONE optical-module design with multiple small photomultipliers.",
+      "credit": "P-ONE Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.jpg",
+      "original_url": "https://www.pacific-neutrino.org/fileadmin/_processed_/f/0/csm_P-OM_aa97617ab2.jpg",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 800,
+      "height": 600,
+      "sha256": "b7ee49c15b87349041273fa17c8bd143c85f55393f1149f058b6b170154e49b0",
+      "mime_type": "image/jpeg"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "P-ONE Collaboration, project and construction overview",
+      "url": "https://www.pacific-neutrino.org/p-one",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "P-ONE Collaboration, first instrumented line P-ONE-1",
+      "url": "https://www.pacific-neutrino.org/main-menu/prototype",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CAN"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": false
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "schema_version": "1.0",
+  "id": "lariat",
+  "name": "LArIAT",
+  "full_name": "Liquid Argon In A Testbeam",
+  "aliases": [
+    "FNAL-T-1034"
+  ],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator"
+  ],
+  "technology_tags": [
+    "lar"
+  ],
+  "nobel_prize_years": [],
+  "role": "technology_demonstrator",
+  "summary": "LArIAT used a liquid-argon TPC in a charged-particle test beam at Fermilab to calibrate the detector response and measure particle-argon interactions important for neutrino experiments. It reused the ArgoNeuT cryostat and detector with dedicated modifications.",
+  "physics_targets": [
+    "Calibration and reconstruction for liquid-argon neutrino detectors",
+    "Hadron-argon cross sections and final-state interactions",
+    "MeV-scale activity and pion-muon discrimination"
+  ],
+  "detection_principle": "A tagged tertiary beam supplies pions, muons, electrons, protons and kaons. Ionization tracks and scintillation light in liquid argon are compared with independently measured incoming-particle properties, allowing calorimetric calibration, particle identification and hadron-interaction measurements.",
+  "technologies": [
+    "Liquid-argon time projection chambers"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab Test Beam Facility",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "historical_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2017-06-23",
+    "evidence": "Fermilab marks the T-1034 beam experiment completed on 23 June 2017. Later papers analyze its stored test-beam data.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015-2017",
+      "event": "Charged-particle test-beam campaigns.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2017-06-23",
+      "event": "Fermilab records completion of FNAL-T-1034.",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "LArIAT Collaboration",
+    "lead_institutions": [
+      "Fermilab",
+      "Yale University",
+      "University of Manchester"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Active argon mass",
+      "value": "Approximately 0.24 tonnes",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "name": "Charged-particle momentum range",
+      "value": "300-1400 MeV/c in the apparatus report",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Pion cross-section analysis",
+      "value": "Negative-pion kinetic energies of 100-700 MeV",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2021-2022",
+      "summary": "Measured the negative-pion total hadronic cross section on argon with the thin-slice method, providing a direct input to detector-interaction modelling.",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2024",
+      "summary": "Measured MeV-scale deposits from stopped negative-pion and muon capture, demonstrating a particle-discrimination observable for neutrino LArTPCs.",
+      "source_ids": [
+        "s4"
+      ]
+    }
+  ],
+  "science_scope": "This is a neutrino-detector technology and calibration experiment. Its charged-particle beam measurements are not neutrino cross-section measurements or evidence of neutrino oscillation.",
+  "related_experiments": [
+    "argoneut",
+    "microboone",
+    "dune",
+    "sbnd"
+  ],
+  "resources": {
+    "official_website": "https://lss.fnal.gov/fermilab-experiments.html",
+    "publication_links": [
+      "https://arxiv.org/abs/1911.10379",
+      "https://arxiv.org/abs/2108.00040",
+      "https://arxiv.org/abs/2408.05133"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/1911.10379",
+      "caption": "LArIAT TPC inside its open cryostat and the sealed cryostat during commissioning.",
+      "credit": "LArIAT Collaboration, Figure 10",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/1911.10379",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 756,
+      "height": 501,
+      "sha256": "22ffb4d5890b685df38e33539189581b40bf0eb0175cbc337c1e66b2965526bf",
+      "mime_type": "image/webp",
+      "source_sha256": "e86aae008b4742e6b5dbaeae45e0f869878584ac61a56a83250c06bfc561c1c8",
+      "source_dimensions": {
+        "width": 756,
+        "height": 501
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "LArIAT Collaboration, The Liquid Argon In A Testbeam (LArIAT) Experiment",
+      "url": "https://arxiv.org/abs/1911.10379",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019-11-23",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "Fermilab historical experiments, proposals and tests: FNAL-T-1034",
+      "url": "https://lss.fnal.gov/fermilab-experiments.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "LArIAT Collaboration, Measurement of the negative-pion-argon total hadronic cross section at the LArIAT experiment",
+      "url": "https://arxiv.org/abs/2108.00040",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-07-30",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s4",
+      "title": "LArIAT Collaboration, Measurements of Pion and Muon Nuclear Capture at Rest on Argon in the LArIAT Experiment",
+      "url": "https://arxiv.org/abs/2408.05133",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2024-08-09",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "lar"
+    ],
+    "technology_tags": [
+      "lar"
+    ],
+    "is_europe": false
+  }
+}

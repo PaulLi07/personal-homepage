@@ -1,0 +1,212 @@
+{
+  "schema_version": "1.0",
+  "id": "flare",
+  "name": "FLArE",
+  "full_name": "Forward Liquid Argon Experiment",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "proposal",
+  "summary": "FLArE is proposed for CERN's Forward Physics Facility west of ATLAS. This multipurpose forward-neutrino and light-dark-matter detector has published projected event yields and sensitivity curves.",
+  "physics_targets": [
+    "Light-dark-matter scattering",
+    "Forward dark sector"
+  ],
+  "detection_principle": "A far-forward liquid-argon TPC uses detailed three-dimensional tracking and calorimetry to identify isolated forward electrons from dark-matter–electron scattering and distinguish high-energy neutrino and muon backgrounds.",
+  "technologies": [
+    "Modular liquid-argon TPC",
+    "Cryogenic systems",
+    "Downstream magnetized hadron/muon calorimeter"
+  ],
+  "sites": [
+    {
+      "name": "Proposed CERN Forward Physics Facility, west of ATLAS",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "Proposed CERN Forward Physics Facility, west of ATLAS",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "proposed"
+    }
+  ],
+  "status": {
+    "code": "proposed",
+    "label": "Liquid-argon-detector design R&D within FPF; no evidence of completed construction and operation",
+    "as_of": "2025",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2",
+      "S3",
+      "S4"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Liquid-argon-detector design R&D within FPF; no evidence of completed construction and operation",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "FLArE Collaboration / project team",
+    "lead_institutions": [
+      "FLArE international working groups",
+      "CERN"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Design measurement dynamic range",
+      "value": "Particle kinetic energies from approximately 10 MeV to several hundred GeV, rather than a dark-matter mass range",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    },
+    {
+      "name": "Proposed facility location",
+      "value": "Candidate FPF cavern in France west of ATLAS",
+      "source_ids": [
+        "S1",
+        "S2",
+        "S3",
+        "S4"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "FLArE",
+      "status": "proposed",
+      "description": "Liquid-argon-detector design R&D within FPF; no evidence of completed construction and operation"
+    }
+  ],
+  "results": [],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered.",
+  "related_experiments": [
+    "FASER2",
+    "FORMOSA",
+    "SND@LHC"
+  ],
+  "resources": {
+    "official_website": "https://fpf.web.cern.ch/flare/",
+    "publication_links": [
+      "https://arxiv.org/abs/2101.10338"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://fpf.web.cern.ch/flare/",
+      "caption": "FLArE design in the FPF underground hall, showing its liquid-argon volume, hadronic calorimeter and muon system.",
+      "credit": "Forward Physics Facility / FLArE; no separate illustrator is credited on the page",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.webp",
+      "original_url": "https://fpf.web.cern.ch/wp-content/uploads/2025/12/layout-flare.png",
+      "width": 1640,
+      "height": 930,
+      "sha256": "68cf0d99d454ec539d7ae9e44f08af83041df02c814a5699cdff1e33f25f10c6",
+      "mime_type": "image/webp",
+      "source_sha256": "f3297237102eebd80ab612c742d84789db83f696bf61b9fdf22a4c2e13372f18",
+      "source_dimensions": {
+        "width": 1640,
+        "height": 930
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/2101.10338",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "FLArE official project description",
+      "url": "https://fpf.web.cern.ch/flare/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "FPF papers and design notes",
+      "url": "https://fpf.web.cern.ch/papers/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    },
+    {
+      "title": "Detecting Dark Matter with Far-Forward Emulsion and Liquid Argon Detectors at the LHC",
+      "url": "https://arxiv.org/abs/2101.10338",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2021-01-25",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S3"
+    },
+    {
+      "title": "Forward Physics Facility location",
+      "url": "https://fpf.web.cern.ch/location",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S4"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "noble_liquid",
+      "beam_particle",
+      "quantum_sensor"
+    ]
+  }
+}

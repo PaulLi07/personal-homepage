@@ -1,0 +1,204 @@
+{
+  "schema_version": "1.0",
+  "id": "enubet",
+  "name": "ENUBET",
+  "full_name": "Enhanced NeUtrino BEams from kaon Tagging",
+  "aliases": [],
+  "category": "accelerator",
+  "physics_categories": [
+    "accelerator",
+    "crosssection"
+  ],
+  "technology_tags": [
+    "sampling",
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "ENUBET is a monitored-neutrino-beam research programme that developed an instrumented decay-tunnel demonstrator. Its demonstrated hardware and the later nuSCOPE facility proposal are recorded separately.",
+  "physics_targets": [
+    "Percent-level neutrino flux monitoring",
+    "Electron-neutrino cross-section normalization",
+    "Scalable decay-tunnel instrumentation"
+  ],
+  "detection_principle": "Sampling calorimeters and fast photon-veto layers identify positrons and other charged leptons from meson decay in the tunnel. Counting these particles constrains the associated neutrino flux without relying only on hadron-production simulations.",
+  "technologies": [
+    "Layered detectors (sampling calorimeters)",
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "CERN East Area beam-test facility",
+      "country": "Switzerland",
+      "country_code": "CHE",
+      "location": "Meyrin, Geneva",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-08-03",
+    "evidence": "The dated 2026 paper reports demonstrator performance from 2022-2024 tests.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2022-2024",
+      "event": "CERN East Area demonstrator beam-test campaigns",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2024",
+      "event": "NP06/ENUBET annual progress report",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2026-08",
+      "event": "Demonstrator performance paper submitted",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ENUBET Collaboration",
+    "lead_institutions": [
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Demonstrator",
+      "value": "Full-size prototype section of the instrumented decay tunnel",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Technology",
+      "value": "Iron-scintillator longitudinal sampling calorimeter, wavelength-shifting fibres and SiPMs",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Beam tests",
+      "value": "Electrons, muons and pions up to 5 GeV in the reported campaigns",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2026-08",
+      "summary": "Demonstrated scalable instrumentation and particle-identification performance meeting the monitored-beam design requirements; this is a charged-particle prototype result, not a completed neutrino cross-section exposure.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "The record describes the named experiment as one programme; detector subsystems and repeated analyses are not counted as independent experiments.",
+  "related_experiments": [
+    "nuscope"
+  ],
+  "resources": {
+    "official_website": "https://www.pd.infn.it/eng/enubet/dissemination/",
+    "publication_links": [
+      "https://arxiv.org/abs/2608.02164",
+      "https://cds.cern.ch/record/2896594/files/SPSC-SR-349.pdf"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "photograph",
+      "source_url": "https://arxiv.org/abs/2608.02164",
+      "caption": "ENUBET demonstrator during the 2023 charged-particle beam test.",
+      "credit": "ENUBET Collaboration, Figure 10",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/2608.02164",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1121,
+      "height": 636,
+      "sha256": "a2d969dd169f88474965d8d623269a69fa203eae7373cfbca4ef4a4a471b8406",
+      "mime_type": "image/webp",
+      "source_sha256": "67e83d65511819ab0a4e93342073f08d077881be8fe6a375b6a3755511335738",
+      "source_dimensions": {
+        "width": 1121,
+        "height": 636
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ENUBET Collaboration, Construction, commissioning, and performance of the ENUBET demonstrator",
+      "url": "https://arxiv.org/abs/2608.02164",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2026-08-03",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ENUBET Collaboration, NP06/ENUBET annual report 2024 for the SPSC",
+      "url": "https://cds.cern.ch/record/2896594/files/SPSC-SR-349.pdf",
+      "type": "technical_report",
+      "accessed": "2026-10-23",
+      "source_date": "2024",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "INFN Padova, ENUBET dissemination and programme",
+      "url": "https://www.pd.infn.it/eng/enubet/dissemination/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "CHE",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "sampling",
+      "scintillator"
+    ],
+    "technology_tags": [
+      "sampling",
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

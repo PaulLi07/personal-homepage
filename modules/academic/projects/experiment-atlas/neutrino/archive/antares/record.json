@@ -1,0 +1,191 @@
+{
+  "schema_version": "1.0",
+  "id": "antares",
+  "name": "ANTARES",
+  "full_name": "Astronomy with a Neutrino Telescope and Abyss environmental RESearch",
+  "aliases": [],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "cherenkov"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A first-generation deep-sea neutrino telescope off Toulon that operated for sixteen years and established methods for Mediterranean neutrino astronomy before KM3NeT.",
+  "physics_targets": [
+    "Southern-sky neutrino point sources",
+    "Diffuse astrophysical neutrinos",
+    "Multimessenger and dark matter searches"
+  ],
+  "detection_principle": "Photomultiplier modules on anchored flexible lines measured Cherenkov photons from relativistic particles. Timing, acoustic positioning and optical calibration supported reconstruction despite sea currents.",
+  "technologies": [
+    "Cherenkov detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; Mediterranean seabed off Toulon",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; Mediterranean seabed off Toulon",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2026-10-23",
+    "evidence": "The collaboration explicitly reports end of data taking and full dismantling in 2022.",
+    "source_ids": [
+      "s1",
+      "s2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2006",
+      "event": "First detection line began operation.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2008",
+      "event": "Twelve-line detector completed.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "Data taking ended in February; active elements recovered by June.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "ANTARES Collaboration",
+    "lead_institutions": [
+      "CNRS/IN2P3",
+      "INFN"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Complete configuration",
+      "value": "12 detection lines and 885 optical modules",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Depth",
+      "value": "Approximately 2,475 m",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    },
+    {
+      "name": "Location",
+      "value": "Approximately 40 km offshore Toulon in the Mediterranean Sea",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2006–2022 programme",
+      "summary": "Measured atmospheric neutrinos and placed limits on astrophysical sources, diffuse fluxes and dark matter scenarios; the observatory handed over to KM3NeT.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "Parameters refer to the named apparatus or explicitly identified design phase. Projections describe sensitivity goals and are not observations.",
+  "related_experiments": [
+    "km3net",
+    "nestor",
+    "nemo-telescope"
+  ],
+  "resources": {
+    "official_website": "https://antares.in2p3.fr/antares-is-now-fully-dismantled/",
+    "publication_links": [
+      "https://arxiv.org/abs/1104.1607"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.infn.it/en/the-antares-adventure-has-come-to-an-end/",
+      "caption": "Conceptual illustration of the optical detection lines of the ANTARES undersea neutrino telescope; not an underwater photograph.",
+      "credit": "ANTARES instrument illustration published by INFN; the individual illustrator is not identified",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.png",
+      "original_url": "https://www.infn.it/wp-content/uploads/2022/03/anatares.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 792,
+      "height": 528,
+      "sha256": "d662279aeb3d1090c1893e4793952a39a14b83665e2f950465a58c292199afff",
+      "mime_type": "image/png"
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "ANTARES Collaboration, dismantling and end of operation",
+      "url": "https://antares.in2p3.fr/antares-is-now-fully-dismantled/",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2022-06-23",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "ANTARES Collaboration, ANTARES: the first undersea neutrino telescope",
+      "url": "https://arxiv.org/abs/1104.1607",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2011",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "cherenkov"
+    ],
+    "technology_tags": [
+      "cherenkov"
+    ],
+    "is_europe": true
+  }
+}

@@ -1,0 +1,209 @@
+{
+  "schema_version": "1.0",
+  "id": "heron",
+  "name": "HERON (radio)",
+  "full_name": "Hybrid Elevated Radio Observatory for Neutrinos",
+  "aliases": [
+    "HERON",
+    "HERON radio"
+  ],
+  "category": "astronomy",
+  "physics_categories": [
+    "astronomy"
+  ],
+  "technology_tags": [
+    "radio"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "A planned hybrid radio observatory in Argentina combines compact phased stations with a sparse antenna array to search for ultra-high-energy tau neutrinos.",
+  "physics_targets": [
+    "Neutrinos above approximately 10–100 PeV",
+    "Transient cosmic accelerators",
+    "Hybrid radio reconstruction"
+  ],
+  "detection_principle": "Earth-skimming tau neutrinos can interact in mountains and produce upward air showers. Dense phased arrays lower the radio threshold while separated autonomous antennas constrain shower geometry.",
+  "technologies": [
+    "Radio detection"
+  ],
+  "sites": [
+    {
+      "name": "Argentina; San Juan Province",
+      "country": "Argentina",
+      "country_code": "ARG",
+      "location": "Argentina; San Juan Province",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "research_development",
+    "label": "Research and development",
+    "as_of": "2026-10-23",
+    "evidence": "Funding selection and site-development work are documented; full science-array operation remains a future phase.",
+    "source_ids": [
+      "s1",
+      "s2",
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2025",
+      "event": "Concept study released and ERC Synergy funding selected.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "date": "2026",
+      "event": "Local project page describes site-characterisation campaigns and consortium preparation.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "HERON Collaboration",
+    "lead_institutions": [
+      "Institut d’Astrophysique de Paris",
+      "LPNHE",
+      "Pennsylvania State University",
+      "CNEA"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Preliminary layout",
+      "value": "24 phased stations with 24 antennas each, plus 360 standalone antennas",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Terrain",
+      "value": "A roughly 72 km mountain range in San Juan Province",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    },
+    {
+      "name": "Projected elevation",
+      "value": "An elevation of approximately 1,000 m in the preliminary layout, along a 72-km mountain range overlooking a valley",
+      "source_ids": [
+        "s2"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "Design stage",
+      "summary": "Hybrid sensitivity and reconstruction studies motivate the funded development; no full HERON science exposure is claimed.",
+      "source_ids": [
+        "s1",
+        "s2",
+        "s3"
+      ]
+    }
+  ],
+  "science_scope": "This Argentine radio-array project is distinct from the historical superfluid-helium solar-neutrino proposal also called HERON. Design parameters and sensitivities are forecasts, not observations.",
+  "related_experiments": [
+    "grand",
+    "beacon",
+    "heron-helium"
+  ],
+  "resources": {
+    "official_website": "https://www.iap.fr/actualites/laune/2025/HERON/HERON-2025-en.html",
+    "publication_links": [
+      "https://arxiv.org/abs/2507.04382"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "design_diagram",
+      "source_url": "https://www.iap.fr/actualites/laune/2025/HERON/HERON-2025-en.html",
+      "caption": "HERON hybrid radio-array concept combining phased stations and distributed antennas.",
+      "credit": "HERON Collaboration / Institut d’Astrophysique de Paris",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://www.iap.fr/actualites/laune/2025/HERON/heron.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 703,
+      "sha256": "f449ce405a4f58c398240b8de0137a923c628542309cd350b721d59b1fcd9188",
+      "mime_type": "image/webp",
+      "source_sha256": "ce57f96dffebfdea0617db2f56ce4fad526000e4a76f4794260ded76c56575ff",
+      "source_dimensions": {
+        "width": 3246,
+        "height": 1189
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Institut d’Astrophysique de Paris, HERON ERC Synergy award",
+      "url": "https://www.iap.fr/actualites/laune/2025/HERON/HERON-2025-en.html",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2025-11",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "HERON Collaboration, The HERON Project",
+      "url": "https://arxiv.org/abs/2507.04382",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2025",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "Universidad Nacional de San Juan, HERON phases and site work",
+      "url": "https://ledyt.fi.unsj.edu.ar/proyectos/heron",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2026",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "ARG"
+    ],
+    "technology_groups": [
+      "radio"
+    ],
+    "technology_tags": [
+      "radio"
+    ],
+    "is_europe": false
+  }
+}

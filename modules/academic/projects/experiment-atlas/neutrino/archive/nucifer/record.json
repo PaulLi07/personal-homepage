@@ -1,0 +1,203 @@
+{
+  "schema_version": "1.0",
+  "id": "nucifer",
+  "name": "Nucifer",
+  "full_name": "Nucifer reactor-antineutrino monitoring demonstrator",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "Nucifer demonstrated compact antineutrino monitoring beside the Osiris research reactor at Saclay. It was designed to test whether reactor power and fissile evolution could be followed with a robust detector suitable for safeguards research.",
+  "physics_targets": [
+    "Reactor monitoring",
+    "Absolute very-short-baseline antineutrino yield",
+    "Compact detector technology"
+  ],
+  "detection_principle": "A compact gadolinium-loaded liquid-scintillator target identifies inverse beta decay. Delayed coincidences, shielding and cosmic-ray vetoes separate neutrinos from intense reactor-related gamma and neutron backgrounds.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "France; near the OSIRIS research reactor, Saclay",
+      "country": "France",
+      "country_code": "FRA",
+      "location": "France; near the OSIRIS research reactor, Saclay",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed / historical",
+    "as_of": "2015",
+    "evidence": "The cited publication documents this stage; its publication date is distinct from the data-taking period.",
+    "source_ids": [
+      "s1"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2012–2015",
+      "event": "Autonomous reactor-monitoring programme at Osiris",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2015",
+      "event": "First neutrino results submitted",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2016",
+      "event": "Detailed monitoring result published",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "Nucifer Collaboration",
+    "lead_institutions": [
+      "CEA",
+      "SUBATECH",
+      "Max Planck Institute for Nuclear Physics"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Core distance",
+      "value": "7.21 ± 0.11 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Source",
+      "value": "70 MW thermal Osiris reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Scintillator volume",
+      "value": "Approximately 0.85 cubic metres",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "phases": [],
+  "results": [
+    {
+      "date": "2016",
+      "summary": "Reactor antineutrinos were detected despite a challenging near-core background environment, validating an important safeguards demonstrator.",
+      "source_ids": [
+        "s1"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "stereo",
+    "songs",
+    "neutrinos-angra"
+  ],
+  "resources": {
+    "official_website": "https://irfu.cea.fr/Phocea/Video/index.php?id=266",
+    "publication_links": [
+      "https://arxiv.org/abs/1509.05610",
+      "https://doi.org/10.1088/1742-6596/1216/1/012005"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://arxiv.org/abs/1509.05610",
+      "caption": "Nucifer detector assembly and surrounding shielding in the Osiris reactor-monitoring paper.",
+      "credit": "Nucifer Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/representative.webp",
+      "original_url": "https://arxiv.org/abs/1509.05610",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1920,
+      "height": 1567,
+      "sha256": "aeb604044d50bf3a5c9f9e1411c434283ee3a287a8de25522642f00f3636da3b",
+      "mime_type": "image/webp",
+      "visual_review_note": "Inspected source figure and final contact-sheet rendering; apparatus, design stage or result-figure nature checked against the caption.",
+      "source_sha256": "6ee00cfec328ea365c99d33f239655f0997488aceadababb25aa08f18e2a457c",
+      "source_dimensions": {
+        "width": 2580,
+        "height": 2106
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "Nucifer Collaboration, Online monitoring of Osiris",
+      "url": "https://arxiv.org/abs/1509.05610",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2015-09-18",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "M. Vivier, Nucifer demonstrator for reactor monitoring",
+      "url": "https://doi.org/10.1088/1742-6596/1216/1/012005",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2019",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "CEA: Nucifer first-results overview",
+      "url": "https://irfu.cea.fr/Phocea/Video/index.php?id=266",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2016-04-13",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": []
+  },
+  "map_navigation": {
+    "regions": [
+      "FRA",
+      "EUROPE"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": true
+  }
+}

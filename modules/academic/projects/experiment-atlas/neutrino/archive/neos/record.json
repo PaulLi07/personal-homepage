@@ -1,0 +1,236 @@
+{
+  "schema_version": "1.0",
+  "id": "neos",
+  "name": "NEOS",
+  "full_name": "Neutrino Experiment for Oscillation at Short Baseline",
+  "aliases": [],
+  "category": "reactor",
+  "physics_categories": [
+    "reactor",
+    "sterile"
+  ],
+  "technology_tags": [
+    "scintillator"
+  ],
+  "nobel_prize_years": [],
+  "role": "dedicated",
+  "summary": "NEOS used a compact liquid-scintillator detector near Hanbit to examine the reactor-antineutrino spectrum in two measurement campaigns. Its short-baseline spectrum tests eV-scale sterile mixing, while the NEOS-II full-fuel-cycle data also probe uranium/plutonium spectral evolution.",
+  "physics_targets": [
+    "Sterile-neutrino oscillations",
+    "Reactor spectral shape"
+  ],
+  "detection_principle": "Gadolinium-loaded scintillator detects inverse beta decay with prompt and delayed light. Pulse-shape information and reactor-off data constrain cosmogenic and reactor-site backgrounds; the spectral ratio is fitted for disappearance distortions.",
+  "technologies": [
+    "Scintillator detectors"
+  ],
+  "sites": [
+    {
+      "name": "South Korea; Hanbit nuclear power plant",
+      "country": "South Korea",
+      "country_code": "KOR",
+      "location": "South Korea; Hanbit nuclear power plant",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented_site"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Completed measurement campaigns",
+    "as_of": "2020-10",
+    "evidence": "NEOS-I ran in 2015–2016 and NEOS-II collected a complete fuel cycle from September 2018 to October 2020. This status refers to those documented campaigns; analysis continued afterwards.",
+    "source_ids": [
+      "s3"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "2015–2016",
+      "event": "Initial reactor-on/off measurement campaign",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "date": "2017",
+      "event": "Initial sterile-neutrino spectral search published",
+      "source_ids": [
+        "s2"
+      ]
+    },
+    {
+      "date": "2018-09–2020-10",
+      "event": "NEOS-II recorded a full reactor fuel cycle",
+      "source_ids": [
+        "s3"
+      ]
+    },
+    {
+      "date": "2022",
+      "event": "NEOS-II response and preliminary analysis reported at Neutrino 2022",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "NEOS Collaboration",
+    "lead_institutions": [
+      "Institute for Basic Science",
+      "Chung-Ang University"
+    ],
+    "participants_note": "Institutions listed here are selected documented participants; the official collaboration page provides the complete membership."
+  },
+  "key_parameters": [
+    {
+      "name": "Scintillator target",
+      "value": "Approximately 1 tonne",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Core distance",
+      "value": "Approximately 24 m",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "Reactor",
+      "value": "2.8 GW thermal Hanbit reactor",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "NEOS-II exposure",
+      "value": "388 reactor-on and 112 reactor-off live days",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "NEOS-I",
+      "status": "Completed campaign",
+      "description": "August 2015–May 2016; first published spectral sterile-neutrino search.",
+      "source_ids": [
+        "s1"
+      ]
+    },
+    {
+      "name": "NEOS-II",
+      "status": "Completed campaign; analysis programme",
+      "description": "September 2018–October 2020; 388 reactor-on and 112 reactor-off live days in the 2022 detector-response report.",
+      "source_ids": [
+        "s3"
+      ]
+    }
+  ],
+  "results": [
+    {
+      "date": "2017",
+      "summary": "The initial spectral comparison found no conclusive sterile-neutrino signal and constrained electron-antineutrino disappearance in the eV-scale region.",
+      "source_ids": [
+        "s1",
+        "s2"
+      ]
+    }
+  ],
+  "science_scope": "",
+  "related_experiments": [
+    "danss",
+    "prospect",
+    "stereo"
+  ],
+  "resources": {
+    "official_website": null,
+    "publication_links": [
+      "https://arxiv.org/abs/1610.05134",
+      "https://doi.org/10.1103/PhysRevLett.118.121802",
+      "https://indico.kps.or.kr/event/30/contributions/359/"
+    ],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "apparatus_diagram",
+      "source_url": "https://arxiv.org/abs/1610.05134",
+      "caption": "Cross-section of the NEOS-I detector, showing the Gd-loaded target, photomultipliers and shielding.",
+      "credit": "NEOS Collaboration",
+      "reuse_status": "Copyright and any stated reuse conditions remain with the original source. Public access is not a reuse licence.",
+      "local_path": "images/public-representative.webp",
+      "original_url": "https://arxiv.org/html/1610.05134v4/fig1.png",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "width": 1707,
+      "height": 1280,
+      "sha256": "eb9dd572d3ec79bafcd567bd0611cb0813649458045e22167a6c7f8bf78b5e59",
+      "mime_type": "image/webp",
+      "visual_review_note": "Visually inspected the final local figure against its public primary-source caption; construction stage, design or measurement status is stated explicitly.",
+      "source_sha256": "d9a33e3e5f8132b4daa83cf3f0f3581fd412d9a847a23ebd8f95df4c1a7bdcbe",
+      "source_dimensions": {
+        "width": 1707,
+        "height": 1280
+      },
+      "derivation": "Web copy resized to a maximum edge of 1920 pixels and encoded as WebP (quality 90). Scientific captions, credits and source links are retained."
+    }
+  ],
+  "sources": [
+    {
+      "id": "s1",
+      "title": "NEOS Collaboration, Sterile-neutrino search at NEOS",
+      "url": "https://arxiv.org/abs/1610.05134",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2016-10-17",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s2",
+      "title": "NEOS Collaboration, Published sterile-neutrino search",
+      "url": "https://doi.org/10.1103/PhysRevLett.118.121802",
+      "type": "primary_paper",
+      "accessed": "2026-10-23",
+      "source_date": "2017-03-29",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    },
+    {
+      "id": "s3",
+      "title": "J. Kim for NEOS, Studies on the response of NEOS-II Detector, Neutrino 2022",
+      "url": "https://indico.kps.or.kr/event/30/contributions/359/",
+      "type": "conference_presentation",
+      "accessed": "2026-10-23",
+      "source_date": "2022",
+      "supports": [
+        "Experimental identity, apparatus and scientific programme"
+      ]
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "detailed",
+    "uncertainties": [
+      "The historical Phase-I result is verified; the latest completion date and status of subsequent campaigns require a current collaboration report."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "KOR"
+    ],
+    "technology_groups": [
+      "scintillator"
+    ],
+    "technology_tags": [
+      "scintillator"
+    ],
+    "is_europe": false
+  }
+}

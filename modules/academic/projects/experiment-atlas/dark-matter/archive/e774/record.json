@@ -1,0 +1,177 @@
+{
+  "schema_version": "1.0",
+  "id": "e774",
+  "name": "E774",
+  "full_name": "Fermilab E774 Electron Beam Dump Particle Search",
+  "aliases": [],
+  "category": "accelerator",
+  "role": "multipurpose",
+  "summary": "E774 operated at Fermilab, Batavia, Illinois. Its original fixed-target light-particle search must be distinguished from later dark-sector applications.",
+  "physics_targets": [
+    "Short-lived light particles",
+    "Dark photons (historical reinterpretation)"
+  ],
+  "detection_principle": "A high-energy electron beam strikes a dense absorber; a downstream magnetic spectrometer searches for e⁺e⁻ from new-particle decays, with synchrotron radiation aiding electron identification.",
+  "technologies": [
+    "Electron beam dump",
+    "Magnetic spectrometer",
+    "Synchrotron-radiation electron identification"
+  ],
+  "sites": [
+    {
+      "name": "Fermilab, Batavia, Illinois",
+      "country": "United States",
+      "country_code": "USA",
+      "location": "Fermilab, Batavia, Illinois",
+      "latitude": null,
+      "longitude": null,
+      "precision": "not_verified",
+      "site_status": "documented"
+    }
+  ],
+  "status": {
+    "code": "completed",
+    "label": "Historical 1987–1988 and 1990 runs; principal results published in 1991",
+    "as_of": "1990",
+    "evidence": "Status follows the listed sources and the eras of their data/proposals; the access date is not confirmation of new operation.",
+    "source_ids": [
+      "S1",
+      "S2"
+    ]
+  },
+  "timeline": [
+    {
+      "date": "1990",
+      "event": "Historical 1987–1988 and 1990 runs; principal results published in 1991",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "collaboration": {
+    "name": "E774 Collaboration / project team",
+    "lead_institutions": [
+      "Fermilab",
+      "University of Illinois",
+      "Northeastern University"
+    ],
+    "participants_note": "This record lists host or principal associated institutions; complete membership changes over time and follows official collaboration pages and paper affiliations."
+  },
+  "key_parameters": [
+    {
+      "name": "Electron-beam energy",
+      "value": "Approximately 275 GeV; historical high-energy electron-beam conditions",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    },
+    {
+      "name": "Original motivation",
+      "value": "Short-lived particles related to light-e⁺e⁻ resonance anomalies; not originally designed specifically for cosmic dark matter",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "phases": [
+    {
+      "name": "E774",
+      "status": "completed",
+      "description": "Historical 1987–1988 and 1990 runs; principal results published in 1991"
+    }
+  ],
+  "results": [
+    {
+      "date": "1991",
+      "summary": "No events consistent with the hypothesized light particle; lifetime-dependent limits were obtained, with additional model dependence in modern dark-photon reinterpretations.",
+      "source_ids": [
+        "S1",
+        "S2"
+      ]
+    }
+  ],
+  "science_scope": "Tests dark-sector models by producing candidate particles or portal mediators at accelerators. Invisible accelerator final states or mediator particles alone do not establish cosmic-dark-matter identity; lifetimes, abundance and other experiments must also be considered. This record includes reinterpretations of historical data in new models. A reinterpretation paper's publication year is not the apparatus operating year, and the original experiment may primarily have targeted neutrinos, axions or other light particles.",
+  "related_experiments": [
+    "E137",
+    "E141"
+  ],
+  "resources": {
+    "official_website": "https://conferences.fnal.gov/tevft/book/SECTION6.htm",
+    "publication_links": [],
+    "data_links": []
+  },
+  "media": [
+    {
+      "kind": "paper_figure",
+      "source_url": "https://inspirehep.net/files/02fb80786dd074b93d1f352366c36d2f",
+      "caption": "Apparatus schematic from the original E774 paper, showing the 275 GeV electron beam, target calorimeter, counters, trigger calorimeter and hadronic calorimeter; explicitly not drawn to scale.",
+      "credit": "A. Bross et al., FERMILAB-PUB-89-138-E, Fig. 1",
+      "reuse_status": "Locally archived for research from a public source. Copyright remains with the original author/institution; this does not imply unrestricted publication or commercial reuse.",
+      "accessed": "2026-10-23",
+      "visual_reviewed": true,
+      "local_path": "images/representative.png",
+      "original_url": "https://inspirehep.net/files/02fb80786dd074b93d1f352366c36d2f",
+      "width": 925,
+      "height": 1055,
+      "sha256": "cbb6d1d417aa906ed54c7411569694c70b5599b769609aeaeed9421ad1f6d746",
+      "mime_type": "image/png"
+    },
+    {
+      "kind": "paper_figure",
+      "source_url": "https://conferences.fnal.gov/tevft/book/SECTION6.htm",
+      "caption": "Figure resources in research papers or technical reports; apparatus photographs were not individually confirmed in this entry, and result curves must not be presented as apparatus images.",
+      "credit": "Follow the captions and author credits in the linked papers/reports",
+      "reuse_status": "Source recorded only; apparatus-image selection and permissions require individual verification"
+    }
+  ],
+  "sources": [
+    {
+      "title": "Fermilab fixed-target experiments — E774 historical description",
+      "url": "https://conferences.fnal.gov/tevft/book/SECTION6.htm",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": null,
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S1"
+    },
+    {
+      "title": "Dark matter at electron accelerators — ARIEL 2020",
+      "url": "https://indico.triumf.ca/event/89/contributions/2730/attachments/2076/2305/Doria_ARIEL2020.pdf",
+      "type": "official",
+      "accessed": "2026-10-23",
+      "source_date": "2020",
+      "supports": [
+        "Dark-matter / dark-sector research targets",
+        "Detection method",
+        "Representative parameters or results"
+      ],
+      "id": "S2"
+    }
+  ],
+  "review": {
+    "verified_on": "2026-10-23",
+    "completeness": "basic",
+    "uncertainties": [
+      "Coordinates have not been independently surveyed or verified.",
+      "No claim is made to list every paper, participating institution or engineering parameter.",
+      "A representative image and source credits have been saved locally; local archiving does not confer webpage-publication permission. See media.reuse_status and the original source for reuse conditions.",
+      "The representative image's facility, prototype or design phase is identified in media; these phase descriptions must remain in webpage use and permission must be confirmed."
+    ]
+  },
+  "map_navigation": {
+    "regions": [
+      "USA"
+    ],
+    "technology_groups": [
+      "beam_particle",
+      "radio"
+    ]
+  }
+}

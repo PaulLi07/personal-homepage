@@ -1,0 +1,197 @@
+[
+  {
+    "iso": "USA",
+    "name": "United States",
+    "x": 257.0,
+    "y": 127.0
+  },
+  {
+    "iso": "CAN",
+    "name": "Canada",
+    "x": 255.0,
+    "y": 68.0
+  },
+  {
+    "iso": "GRL",
+    "name": "Greenland (Denmark)",
+    "x": 423.0,
+    "y": 24.0
+  },
+  {
+    "iso": "BRA",
+    "name": "Brazil",
+    "x": 365.0,
+    "y": 282.0
+  },
+  {
+    "iso": "ARG",
+    "name": "Argentina",
+    "x": 335.0,
+    "y": 367.0
+  },
+  {
+    "iso": "RUS",
+    "name": "Russia",
+    "x": 753.0,
+    "y": 59.0
+  },
+  {
+    "iso": "CHN",
+    "name": "China",
+    "x": 753.0,
+    "y": 158.0
+  },
+  {
+    "iso": "IND",
+    "name": "India",
+    "x": 709.0,
+    "y": 235.0,
+    "line": "710,185 710,216 710,223"
+  },
+  {
+    "iso": "JPN",
+    "name": "Japan",
+    "x": 865.0,
+    "y": 135.0,
+    "align": "start",
+    "line": "835,136 854,135 861,135"
+  },
+  {
+    "iso": "KOR",
+    "name": "South Korea",
+    "x": 865.0,
+    "y": 182.0,
+    "align": "start",
+    "line": "814,134 842,182 861,182"
+  },
+  {
+    "iso": "ATA",
+    "name": "Antarctica",
+    "x": 635.0,
+    "y": 469.0
+  },
+  {
+    "iso": "GBR",
+    "name": "United Kingdom",
+    "x": 430.0,
+    "y": 67.0,
+    "align": "end",
+    "line": "494,83 460,67 435,67"
+  },
+  {
+    "iso": "BEL",
+    "name": "Belgium",
+    "x": 430.0,
+    "y": 89.0,
+    "align": "end",
+    "line": "510,92 460,89 435,89"
+  },
+  {
+    "iso": "FRA",
+    "name": "France",
+    "x": 430.0,
+    "y": 111.0,
+    "align": "end",
+    "line": "511,107 460,111 435,111"
+  },
+  {
+    "iso": "ESP",
+    "name": "Spain",
+    "x": 430.0,
+    "y": 138.0,
+    "align": "end",
+    "line": "492,124 460,138 435,138"
+  },
+  {
+    "iso": "SWE",
+    "name": "Sweden",
+    "x": 561.0,
+    "y": 23.0,
+    "align": "start",
+    "line": "537,59 550,23 557,23"
+  },
+  {
+    "iso": "DEU",
+    "name": "Germany",
+    "x": 602.0,
+    "y": 58.0,
+    "align": "start",
+    "line": "524,91 576,58 598,58"
+  },
+  {
+    "iso": "CHE",
+    "name": "Switzerland",
+    "x": 602.0,
+    "y": 81.0,
+    "align": "start",
+    "line": "519,104 576,81 598,81"
+  },
+  {
+    "iso": "ITA",
+    "name": "Italy",
+    "x": 602.0,
+    "y": 127.0,
+    "align": "start",
+    "line": "532,119 576,127 598,127"
+  },
+  {
+    "iso": "UKR",
+    "name": "Ukraine",
+    "x": 602.0,
+    "y": 104.0,
+    "align": "start",
+    "line": "572,98 588,104 598,104"
+  },
+  {
+    "iso": "GRC",
+    "name": "Greece",
+    "x": 602.0,
+    "y": 150.0,
+    "align": "start",
+    "line": "556,134 580,150 598,150"
+  },
+  {
+    "iso": "AUT",
+    "name": "Austria",
+    "x": 602,
+    "y": 173,
+    "align": "start",
+    "line": "535,102 585,173 598,173"
+  },
+  {
+    "iso": "AUS",
+    "name": "Australia",
+    "x": 856,
+    "y": 338
+  },
+  {
+    "iso": "CHL",
+    "name": "Chile",
+    "x": 282,
+    "y": 332,
+    "align": "end",
+    "line": "321,317 300,332 286,332"
+  },
+  {
+    "iso": "MEX",
+    "name": "Mexico",
+    "x": 235,
+    "y": 188
+  },
+  {
+    "iso": "NAM",
+    "name": "Namibia",
+    "x": 608,
+    "y": 329,
+    "align": "start",
+    "line": "547,313 587,329 604,329"
+  },
+  {
+    "iso": "NZL",
+    "name": "New Zealand",
+    "x": 934,
+    "y": 408,
+    "align": "end",
+    "line": "946,368 946,398 938,408"
+  }
+]
