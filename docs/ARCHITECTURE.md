@@ -17,6 +17,7 @@ modules/
       internal-note/ arxiv/ published/  各自的数据与说明
   life/                    生活概览
     stack/                 拍立得入口配置、交互、样式与本地手写字体
+    decor/                 摄影手账装饰的透明SVG与局部样式，无脚本
     moments/ travels/ creations/ relationship/
   contact/                 联系
   credits/                 独立素材署名页
@@ -99,6 +100,8 @@ Academic 概览现由 `modules/academic/exploration/` 独立管理探索场景�
 当前Life取消整区白色主框/副框与滚动漂移，桌面、手机均为轻微不规则的横向白边拍立得堆。鼠标悬停或键盘聚焦置顶，黄色花体标题同步；触摸/笔首点下层选中、再点正面进入。标题不拦截指针，各卡保留外露入口；仅照片及纸边排除粒子，间隙和下方语录区透明。全站正常字体不变，Life局部的Kaushan Script / Caveat按SIL OFL 1.1随资源保留原版权/许可，见[字体说明](../modules/life/stack/fonts/README.md)。
 
 模块接口及维护见[照片堆说明](../modules/life/stack/README.md)，离线回归为 `npm run test:life-stack`，实测另在[Life记录](modules/life.md)登记。任务分支 `feat/life-polaroid-stack`；`backup/pre-life-polaroids-2026-10-25` 保留 `0783998`，只做本地维护。旧整区相框、漂移及手机错落双列描述属于此前版本历史，不能作为当前布局要求。
+
+摄影手账装饰独立归 `modules/life/decor/`：父片段只增加两个隐藏于辅助技术的装饰节点，回形针在Travels纸面内跟随层级，胶片在舞台中位于全部照片之后；清单在照片堆CSS后加载装饰CSS，不新增JS或共享接口。原生SVG以透明CSS背景绘制，不截获指针；遵循Academic透明造景例外，不新增矩形粒子排除，普通照片保持原排除。≤760px只保留缩小的回形针。维护见[装饰说明](../modules/life/decor/README.md)，本轮验证见[Life记录](modules/life.md#life-photo-decor-2026-10-25)。
 
 ## 注册接口与共享服务
 

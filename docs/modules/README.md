@@ -14,6 +14,8 @@ About组合全宽与Academic全幅场景的最新布局及实测见[About记录]
 
 Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明](../../modules/life/stack/README.md)，当前证据见[2026-10-25记录](life.md#life-polaroids-2026-10-25)；旧整区相框测试保留为历史。
 
+Life摄影手账装饰独立归 `decor/`，透明回形针与胶片的维护见[装饰说明](../../modules/life/decor/README.md)，本轮实测范围与限制见[装饰记录](life.md#life-photo-decor-2026-10-25)，不沿用前述初版照片堆测试结论。
+
 ## 主模块
 
 | 模块 | 就近说明 | 测试记录 |

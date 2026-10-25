@@ -1,0 +1,36 @@
+/* 透明的摄影手账装饰：回形针随纸面叠层，胶片留在照片后方。 */
+.life-decor {
+  position: absolute;
+  display: block;
+  background: transparent center / contain no-repeat;
+  pointer-events: none;
+  user-select: none;
+}
+
+.life-decor--clip {
+  --clip-height: 50px;
+  top: -14px;
+  right: 5%;
+  width: calc(var(--clip-height) * .4);
+  height: var(--clip-height);
+  z-index: 1;
+  background-image: url("paperclip.svg");
+  transform: rotate(14deg);
+}
+
+.life-decor--film {
+  --film-width: clamp(110px, 12.5vw, 140px);
+  left: 5%;
+  top: 86%;
+  width: var(--film-width);
+  aspect-ratio: 160 / 94;
+  z-index: 0;
+  opacity: .76;
+  background-image: url("film-strip.svg");
+  transform: rotate(-12deg);
+}
+
+@media (max-width: 760px) {
+  .life-decor--film { display: none; }
+  .life-decor--clip { --clip-height: 36px; top: -10px; right: 5%; }
+}

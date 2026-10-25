@@ -95,6 +95,7 @@
       "styles": [
         "modules/life/styles.css",
         "modules/life/stack/styles.css",
+        "modules/life/decor/styles.css",
         "modules/life/moments/blog.css",
         "modules/life/relationship/security.css"
       ],
