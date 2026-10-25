@@ -51,3 +51,5 @@ Academic自己的表现子模块：路牌、悬浮图窗、地面和步行人物
 高树冠修正回退为 `c9848a9`、分支 `style/academic-tall-palms`。本次实际高度、最低叶尖间距、布局和兼容性见[最新记录](../../../docs/modules/academic.md#tall-palms-2026-10-24)。
 
 最新紧凑构图回退为 `b156e06`，分支 `style/academic-compact-grove`；实测见[记录](../../../docs/modules/academic.md#compact-grove-2026-10-24)。以上当前规则覆盖历史的全幅贴右、整排树冠留白和超长手机树要求。
+
+2026-10-25位置微调：`--scene-shift:clamp(8px,.85vw,16px)` 同时用于图窗与椰林的水平transform，宽高和原素材不变；≤760px归零以防满宽相框越界。路牌 `--pole-height` 从原值增加12px，立柱高度和导航padding-bottom共同使用它；不要只改立柱造成牌组脱节。1440实际右移12.24px、图窗仍792×445.5px、椰林432×672px，路牌总高从386到398px。实测见[本轮记录](../../../docs/modules/academic.md#front-layout-2026-10-25)。

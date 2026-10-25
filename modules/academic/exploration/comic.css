@@ -43,7 +43,7 @@
 }
 
 /* 三冠交叠、曲干聚根；原生720×1120，根y1107，13px底余量按比例补偿。 */
-.academic-tree { position: absolute; z-index: 0; right: max(4px, calc(var(--academic-inset) - 28px)); bottom: calc(var(--ground-line-offset) - var(--palm-width) * .01805556); width: var(--palm-width); aspect-ratio: 720 / 1120; background: transparent url("coconut-palms.svg?v=8edef2deb96a") center bottom / contain no-repeat; pointer-events: none; user-select: none; }
+.academic-tree { position: absolute; z-index: 0; right: max(4px, calc(var(--academic-inset) - 28px)); bottom: calc(var(--ground-line-offset) - var(--palm-width) * .01805556); width: var(--palm-width); aspect-ratio: 720 / 1120; background: transparent url("coconut-palms.svg?v=8edef2deb96a") center bottom / contain no-repeat; transform: translateX(var(--scene-shift)); pointer-events: none; user-select: none; }
 @media (max-width: 760px) {
   .academic-tree { right: -10px; background-image: url("coconut-palms-mobile.svg?v=8edef2deb96a"); }
 }

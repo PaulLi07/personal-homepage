@@ -1,7 +1,7 @@
 /* 紧凑三角构图：图窗左移，路牌接地，交叠椰冠仅占右上方而非整排留白。 */
-.academic-scene { --sign-width: clamp(240px, 18vw, 270px); --ground-line-offset: 70px; --pole-height: clamp(64px, 5vw, 80px); --scene-gap: clamp(20px, 1.6vw, 28px); --palm-width: clamp(350px, 30vw, 500px); --photo-top: 64px; --scene-left: clamp(40px, 4.2vw, 72px); position: relative; display: grid; grid-template-columns: var(--sign-width) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; min-height: 610px; padding: var(--photo-top) var(--academic-inset) 112px var(--scene-left); }
+.academic-scene { --sign-width: clamp(240px, 18vw, 270px); --ground-line-offset: 70px; --pole-height: clamp(76px, calc(5vw + 12px), 92px); --scene-gap: clamp(20px, 1.6vw, 28px); --palm-width: clamp(350px, 30vw, 500px); --photo-top: 64px; --scene-shift: clamp(8px, .85vw, 16px); --scene-left: clamp(40px, 4.2vw, 72px); position: relative; display: grid; grid-template-columns: var(--sign-width) minmax(0, 1fr); column-gap: var(--scene-gap); width: 100%; min-height: 610px; padding: var(--photo-top) var(--academic-inset) 112px var(--scene-left); }
 .academic-signpost { position: absolute; z-index: 3; left: var(--scene-left); bottom: var(--ground-line-offset); width: var(--sign-width); padding-bottom: var(--pole-height); background: transparent; }
-.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: start; width: min(calc(100% - clamp(90px, 9vw, 180px)), clamp(700px, 55vw, 1040px)); min-width: 0; position: relative; z-index: 1; background: transparent; }
+.academic-image-window { grid-column: 2; grid-row: 1; align-self: start; justify-self: start; width: min(calc(100% - clamp(90px, 9vw, 180px)), clamp(700px, 55vw, 1040px)); min-width: 0; position: relative; z-index: 1; background: transparent; transform: translateX(var(--scene-shift)); }
 .academic-image-entry { display: block; width: 100%; padding: 0; text-align: left; border-radius: 0; background: transparent; }
 .preview-stack { display: block; position: relative; width: 100%; aspect-ratio: 16 / 9; overflow: hidden; background: #111114; border: 2px solid #ffffff8a; box-shadow: 0 20px 45px #ffffff04; }
 .preview-stack img { position: absolute; inset: 0; opacity: 0; transition: opacity .25s ease; }
@@ -37,7 +37,7 @@
   .academic-window-caption { gap: 12px; }
 }
 @media (max-width: 760px) {
-  .academic-scene { --sign-width: min(78%, 270px); --pole-height: 64px; --palm-width: clamp(180px, 56vw, 290px); display: flex; flex-direction: column; min-height: 0; padding: 20px var(--academic-inset) 0; }
+  .academic-scene { --sign-width: min(78%, 270px); --pole-height: 76px; --scene-shift: 0px; --palm-width: clamp(180px, 56vw, 290px); display: flex; flex-direction: column; min-height: 0; padding: 20px var(--academic-inset) 0; }
   .academic-image-window { order: 0; width: 100%; margin: 0 0 28px; }
   .academic-signpost { order: 1; position: relative; left: auto; bottom: auto; width: var(--sign-width); margin: 0 0 var(--ground-line-offset) 0; }
   .academic-window-caption { gap: 12px; padding-top: 12px; }
