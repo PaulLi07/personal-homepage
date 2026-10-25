@@ -3,7 +3,7 @@
 @supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 700px)); } }
 .scaleImage { filter: brightness(.72) saturate(.72); transform: scale(1.035); object-position: 50% 46%; }
 .hero-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #070b102b, transparent 30%, #05080d7a 68%, #000d), linear-gradient(90deg, #05080d30, transparent 75%); }
-.landing-div { --hero-inset: max(24px, calc(var(--gutter) - 16px)); position: relative; min-height: max(100svh, 700px); padding: calc(var(--navigation-height, 76px) + 70px) var(--hero-inset) clamp(112px, 12svh, 150px); display: flex; align-items: flex-end; scroll-margin-top: 0; }
+.landing-div { --hero-inset: max(20px, calc(var(--gutter) - 40px)); position: relative; min-height: max(100svh, 700px); padding: calc(var(--navigation-height, 76px) + 70px) var(--hero-inset) clamp(112px, 12svh, 150px); display: flex; align-items: flex-end; scroll-margin-top: 0; }
 .hero-marker { display: flex; flex-wrap: wrap; align-items: center; column-gap: 12px; row-gap: 4px; margin-top: 26px; color: #f5f5f7c7; font-size: 14px; line-height: 1.55; }
 .hero-marker p:first-child { font-weight: 500; }
 .hero-marker p + p { display: inline-flex; align-items: center; gap: 12px; color: #f5f5f7ad; }
