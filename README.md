@@ -66,7 +66,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 
 | 目录 | 负责内容 |
 |---|---|
-| `modules/home/` | 首屏介绍与独立摄影背景 |
+| `modules/home/` | 首屏介绍与独立图片背景 |
 | `modules/about/` | 个人简介与资料 |
 | `modules/academic/` | Experience、Publications、Notes、Projects；对应 `experience/`、`publications/`、`notes/`、`projects/` |
 | `modules/academic/projects/experiment-atlas/` | 地图目录登记、入口视图、统一顶栏，以及各地图独立源码、数据、图片和维护工具 |
@@ -146,7 +146,7 @@ npm run relationship:check
 
 粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About、Academic、Life 各自的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
 
-Academic 与 Life 均无整区背景图；Academic保留分隔和漫画场景，Life为横向白边拍立得照片堆与局部手写标题/语录，旧整区相框已移除。Home 使用用户最新提供的黑白雨景，独立保存为 `hero-rain.jpg` 网页副本（2400×1348 JPEG）；Contact 使用用户提供的原始 `background.png`，两者原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。
+Academic 与 Life 均无整区背景图；Academic保留分隔和漫画场景，Life为横向白边拍立得照片堆与局部手写标题/语录，旧整区相框已移除。Home 使用站主最新提供的人物与龙的幻想插画，`1342979.jpeg` 原字节独立保存为 `hero-dragon.jpg`（3840×2160 JPEG）；Contact 使用用户提供的原始 `background.png`，两者原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。Home本轮验证见[首页记录](docs/modules/home.md#home-dragon-background-2026-10-25)，旧雨景及其他背景保留在Git历史。
 
 局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 最终回归于北京时间 16:33–16:37 完成：基础三内核九环境及正常 Life 导航的 24 项检查、作者 144 流程、粒子 255 流程 / 12234 断言通过，生产源码未被测试修改，外部请求与真实写入为 0。16:04 记录和此前 237 / 8088 保留为历史；照片 / PDF 专门矩阵及离线核心未重跑，227 条离线断言仍仅为此前证据。参数、接口、截图范围、实测限制和回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
 

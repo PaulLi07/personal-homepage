@@ -4,7 +4,7 @@
 
 | 模块中的文件 | 使用位置 | 来源与署名 | 建议替换内容 |
 |---|---|---|---|
-| `modules/home/images/hero-rain.jpg` | 首屏背景 | 用户提供的 `cbb849309852f71168c9c839a017ff331799346026.jpg`（2848×1600 JPEG）；画面为雨中水面、两人背影及雨伞，不推断人物身份、关系或地点。网站使用独立的2400×1348 JPEG网页副本，原文件不放入源码。摄影者与原始来源尚未确认 | 用户确认可公开的背景，补充确认的作者和原始来源 |
+| `modules/home/images/hero-dragon.jpg` | 首屏背景 | 站主提供的 `1342979.jpeg` 原字节副本，3840×2160 JPEG、1,860,297字节；画面为人物与龙、雾气、飞鸟的幻想插画，不推断角色身份、作者或地点。SHA256：`1711785419aed2063fa114ce9f6c445587f2c219f8c2a2b865f6d1aa8d850adf`。原作者与来源尚未确认 | 用户确认可公开的背景，补充确认的作者和原始来源 |
 | `modules/about/gallery/images/portrait-landscape.jpg` | About相册首图 | 用户现有人像的1920×1280网页副本，301619字节；原6240×4160图片保留，副本移除隐私元数据；摄影者和来源尚未确认 | 横向个人照片，补充确认的署名 |
 | `modules/about/gallery/images/misty-lake.jpg` | About相册占位第二张 | 已下载Creations雾湖的原字节独立副本，Kalen Emsley / Unsplash | 用户个人照片 |
 | `modules/about/gallery/images/coastal-cliffs.jpg` | About相册占位第三张 | 已下载Travels海岸的原字节独立副本，Benjamin Chambon / Unsplash | 用户个人照片 |
@@ -18,9 +18,9 @@
 | `modules/life/relationship/images/cover.jpg` | 关系空间（Relationship）的公开封面 | [海岸线](https://unsplash.com/fr/photos/un-plan-deau-pres-dune-falaise-rocheuse-tbTUtOJMs_0)，Tomáš Malík / Unsplash | 仅使用可公开的封面；私密图片不能作为普通资源上传 |
 | `modules/contact/images/background.png` | 联系区独立背景 | 用户提供，原字节复制的 PNG（3024 × 1964，7,070,826 字节），不裁剪或重新编码；原作者与来源尚未确认 | 用户确认可公开的联系背景；补充真实来源后再更新署名 |
 
-Academic 与 Life 已移除整区背景图，改为各自的纯黑 `#000` 和公开粒子表面。其栏目封面与生活照片仍保留署名；纯黑背景及程序绘制的白点没有新增图片来源。Home 已独立替换为用户最新提供的黑白雨景，Moments 保留原山间湖泊；About 为用户独立提供的人像，各自文件可独立替换，不通过其他模块路径读取。
+Academic 与 Life 已移除整区背景图，改为各自的纯黑 `#000` 和公开粒子表面。其栏目封面与生活照片仍保留署名；纯黑背景及程序绘制的白点没有新增图片来源。Home 已独立替换为站主最新提供的人物与龙的幻想插画，Moments 保留原山间湖泊；About 为用户独立提供的人像，各自文件可独立替换，不通过其他模块路径读取。
 
-此前 Home 从原 About 占位图原字节复制 633,840 字节的山水 JPEG，2026-10-25曾换为用户提供的舷窗地球图，随后按用户要求改为当前黑白雨景。舷窗图保留在 Git 历史，原山水及来源保留在 Git 历史与 Moments 独立封面中。Contact 保留用户 PNG 原字节。旧 `modules/academic/images/background.jpg`、`modules/life/images/background.jpg`、`modules/contact/images/background.jpg` 已退出当前资源清单，旧来源保留在 Git 与回退包中；不删除仍用于 Experience、Publications、Creations 的同源封面。
+此前 Home 从原 About 占位图原字节复制 633,840 字节的山水 JPEG，2026-10-25曾换为用户提供的舷窗地球图及黑白雨景，随后按用户要求改为当前幻想插画。旧 `hero-rain.jpg` 从当前源码移除；雨景与舷窗图保留在 Git 历史，原山水及来源保留在 Git 历史与 Moments 独立封面中。Contact 保留用户 PNG 原字节。旧 `modules/academic/images/background.jpg`、`modules/life/images/background.jpg`、`modules/contact/images/background.jpg` 已退出当前资源清单，旧来源保留在 Git 与回退包中；不删除仍用于 Experience、Publications、Creations 的同源封面。
 
 ## 替换方法
 

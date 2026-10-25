@@ -41,7 +41,7 @@ index.html, credits.html   装配生成的发布页面
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-主页面固定素材使用13个图片文件（不含实验地图档案）：10个下载占位图（含About相册独立副本）、2个用户提供图片的JPEG网页副本和1个用户提供的PNG。Home 的 `images/hero-rain.jpg` 为用户提供的黑白雨景网页副本，2400×1348 JPEG，原输入为2848×1600 JPEG；片段与预载共同引用新路径以避开旧图缓存。只注明站主提供，摄影者和来源未确认，不推断人物身份、关系或地点；此前舷窗地球图保留在Git历史。About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景；Academic保留分隔与漫画场景，Life使用独立的白边拍立得照片堆而非整区白框；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
+主页面固定素材使用13个图片文件（不含实验地图档案）：10个下载占位图（含About相册独立副本）、2个用户提供图片的JPEG资源（Home原字节与About相册缩放副本）和1个用户提供的PNG。Home 的 `images/hero-dragon.jpg` 为站主提供的 `1342979.jpeg` 原字节副本，3840×2160 JPEG、1,860,297字节；片段与预载共同引用新路径以避开旧图缓存。只描述人物与龙、雾气、飞鸟的幻想插画，只注明站主提供、原作者和来源未确认，不推断角色身份或地点；旧 `hero-rain.jpg` 从当前源码移除，雨景、舷窗地球与山水旧版保留在Git历史。About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景；Academic保留分隔与漫画场景，Life使用独立的白边拍立得照片堆而非整区白框；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
@@ -95,7 +95,7 @@ index.html, credits.html   装配生成的发布页面
 
 ## 2026-10-23 视觉维护入口
 
-Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或运行时远程字体依赖；Life拍立得局部手写字体使用随源码保存并附许可的本地WOFF2。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的摄影构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立摄影背景。
+Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或运行时远程字体依赖；Life拍立得局部手写字体使用随源码保存并附许可的本地WOFF2。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的图片构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立图片背景。
 
 后续样式维护见 [设计约定](DESIGN-APPLE.md)。前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`，验证见 [Apple 兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，备份 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`，尚未推送；本轮证据见 [Academic 记录](modules/academic.md#academic-science-2026-10-23)。
 
