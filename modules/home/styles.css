@@ -1,4 +1,4 @@
-/* 首页：舷窗地球摄影、清晰身份层级与简洁入口，背景不接入粒子。 */
+/* 首页：黑白雨景摄影、清晰身份层级与简洁入口，背景不接入粒子。 */
 .hero-backdrop { position: sticky; top: 0; height: 100svh; min-height: 700px; margin-bottom: max(-100svh, -700px); overflow: hidden; pointer-events: none; }
 @supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 700px)); } }
 .scaleImage { filter: brightness(.72) saturate(.72); transform: scale(1.035); object-position: 50% 50%; }
