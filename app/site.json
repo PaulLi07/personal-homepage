@@ -94,6 +94,7 @@
       "view": "modules/life/section.html",
       "styles": [
         "modules/life/styles.css",
+        "modules/life/stack/styles.css",
         "modules/life/moments/blog.css",
         "modules/life/relationship/security.css"
       ],
@@ -110,6 +111,8 @@
         "modules/life/relationship/encrypted.js",
         "modules/life/relationship/security.js",
         "modules/life/relationship/integration.js",
+        "modules/life/stack/config.js",
+        "modules/life/stack/controller.js",
         "modules/life/module.js"
       ],
       "liveScripts": [

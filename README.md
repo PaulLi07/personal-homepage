@@ -10,6 +10,8 @@
 
 Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
 
+2026-10-25 Life改为四张横向白边拍立得的交错照片堆，取消旧整区白框与滚动漂移；悬停/聚焦置顶并切换亮黄色手写标题，触摸先选中下层再点正面进入，下方为白色生活语录。局部手写字体随源码本地加载并保留OFL许可，其余页面仍用正常系统字体。接口、构图及验证要求见[照片堆说明](modules/life/stack/README.md)，实测单独登记在[Life记录](docs/modules/life.md)。任务分支 `feat/life-polaroid-stack`，回退 `backup/pre-life-polaroids-2026-10-25`（`0783998`）；只做本地维护。
+
 场景人物新增可调的随机动作素材库，动作/导演/SVG骨架独立维护；尺寸、权重、速度与衔接见 [人物说明](modules/academic/exploration/character/README.md)，本轮验证见 [记录](docs/modules/academic.md#walker-actions-2026-10-23)。
 
 ## 快速开始
@@ -42,10 +44,13 @@ npm run test:features
 npm run test:author
 npm run test:photos
 npm run test:academic-profile
+npm run test:life-stack
 npm run test:author-security
 npm run test:security
 npm run relationship:check
 ```
+
+`npm run test:life-stack` 不需要浏览器依赖，离线验证照片堆输入顺序、焦点、有限层级、详情参数及清理；本次15流程、101断言通过。它不能代替实际叠层命中、字体加载、触摸或手机真机预览。
 
 Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/path/to/playwright npm run test:compat` 指定模块路径。它是可选测试工具，网站运行、普通检查、预览和打包不依赖它；`npm run check` 不安装依赖或下载浏览器。
 
@@ -62,7 +67,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 | `modules/home/` | 首屏介绍与宇宙背景 |
 | `modules/about/` | 个人简介与资料 |
 | `modules/academic/` | Experience、Publications、Notes、Projects；对应 `experience/`、`publications/`、`notes/`、`projects/` |
-| `modules/life/` | Moments 博客、Travels 旅行、Creations 创作、Relationship 加密空间；各自保存内容、行为和资源 |
+| `modules/life/` | 四栏目生活概览；`stack/`管拍立得入口，各子目录分别保存Moments博客、Travels、Creations与Relationship加密内容 |
 | `modules/author/` | Experience 与 Moments 共用的密码登录、GitHub 连接、表单编辑和独立发布器 |
 | `modules/article-photos/` | 无首页分区的照片服务：数据规范、处理、选图、图库及 ZIP；照片文件仍归各文章 |
 | `modules/article-documents/` | 两栏 PDF 附件规范、选择及 Open / Download 链接；原文件仍归各文章 |
@@ -138,7 +143,7 @@ npm run relationship:check
 
 粒子按用户最新要求呈现为微小、密集、清晰的白色实心圆点，不使用模糊光晕。仅在 `data-particle-surface="black"` 标记的纯黑背景矩形内绘制，当前为 About、Academic、Life 各自的 `#000` 背景；图片背景区域不绘粒子，标记区域内的图片也排除。默认半径为 `0.4`–`0.85` CSS 像素，透明度为 `0.85`。
 
-Academic 与 Life 去掉整区背景图，分别采用学术细线和白色细框、克制叠层相框。Home 使用 Ivan Rohovchenko / Unsplash 的山水图，独立保存于自己的 `hero.jpg`；Contact 使用用户提供的原始 `background.png`，原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。
+Academic 与 Life 均无整区背景图；Academic保留分隔和漫画场景，Life为横向白边拍立得照片堆与局部手写标题/语录，旧整区相框已移除。Home 使用 Ivan Rohovchenko / Unsplash 的山水图，独立保存于自己的 `hero.jpg`；Contact 使用用户提供的原始 `background.png`，原作者与来源尚未确认。图片由各模块维护，署名见 [素材清单](docs/image-sources.md)，首页和联系区不绘粒子。
 
 局部规则和流场形成尘埃流及涡旋；参数集中在模块 `config.js`，手机限数、像素比上限、慢帧降级、后台 / 详情暂停及减少动态效果由服务负责，可临时 `configure({ enabled: false })` 关闭。艺术性运动不等于严格物理仿真。2026-10-11 最终回归于北京时间 16:33–16:37 完成：基础三内核九环境及正常 Life 导航的 24 项检查、作者 144 流程、粒子 255 流程 / 12234 断言通过，生产源码未被测试修改，外部请求与真实写入为 0。16:04 记录和此前 237 / 8088 保留为历史；照片 / PDF 专门矩阵及离线核心未重跑，227 条离线断言仍仅为此前证据。参数、接口、截图范围、实测限制和回退步骤见 [粒子维护指南](docs/PARTICLE-BACKGROUND.md)与[测试记录](docs/modules/particle-background.md)。
 

@@ -25,7 +25,7 @@ const routes = {
   academic: { experience: "Experience.", publications: "Publications.", notes: "Notes.", projects: "Projects." },
   life: { moments: "Moments.", travels: "Travels.", creations: "Creations.", relationship: "Relationship." }
 };
-const mime = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json" };
+const mime = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".json": "application/json", ".woff2": "font/woff2" };
 const server = http.createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);
@@ -128,7 +128,7 @@ async function assertNavigationExposed(page,id) {
   assert.ok(value.title.width>0&&value.title.height>0,message);
   assert.ok(value.title.top>=value.navbarBottom-.5,message);
   assert.ok(value.title.bottom<=value.height+.5&&value.title.left>=-.5&&value.title.right<=value.width+.5,message);
-  if(value.frame)assert.ok(value.frame.top>=value.navbarBottom-.5,"Life框顶被导航覆盖："+JSON.stringify(value));
+  if(value.frame)assert.ok(value.frame.top>=value.navbarBottom-.5,"Life内容区顶被导航覆盖："+JSON.stringify(value));
   return value;
 }
 
@@ -156,6 +156,7 @@ async function runNavigationLayout(browser,engine,viewport,url,{baseline}={}) {
       await fs.mkdir(path.join(root,"artifacts/screenshots"),{recursive:true});
       await page.screenshot({path:path.join(root,screenshot)});
     }
+    await page.locator('[data-life="moments"]').focus();
     await page.locator('[data-life="moments"]').click();await assertOpen(page,"Moments.");
     await page.keyboard.press("Escape");await page.waitForFunction(()=>!document.getElementById("detail-dialog").open);
     await page.waitForFunction(()=>document.activeElement===document.querySelector('[data-life="moments"]'));
@@ -205,6 +206,8 @@ async function runViewport(browser, engine, viewport, url) {
   for (const [group, items] of Object.entries(routes)) {
     for (const [key, title] of Object.entries(items)) {
       const button = page.locator(`[data-${group}="${key}"]`);
+      // 拍立得可互相覆盖；键盘聚焦先置顶，再验证真实中心命中，不能force点击。
+      if (group === "life") await button.focus();
       if (viewport.width < 700 && engine !== "firefox") await button.tap();
       else await button.click();
       await assertOpen(page, title);
@@ -262,6 +265,7 @@ async function runViewport(browser, engine, viewport, url) {
   }
   await page.goto(url + "#home");
   await page.locator('[data-life="moments"]').scrollIntoViewIfNeeded();
+  await page.locator('[data-life="moments"]').focus();
   const pageY = await page.evaluate(() => window.scrollY);
   await page.locator('[data-life="moments"]').click();
   await assertOpen(page, "Moments.");
@@ -300,9 +304,20 @@ async function runEngine(engine, url) {
     await page.waitForFunction(() => !document.getElementById("detail-dialog").open);
     await page.emulateMedia({ reducedMotion: "reduce" });
     await page.locator("#life").scrollIntoViewIfNeeded();
-    await page.waitForFunction(() => Array.from(document.querySelectorAll("[data-life]"))
-      .every(node => !node.style.getPropertyValue("--drift")));
-    assert.equal(await page.locator("[data-life]").evaluateAll(nodes => nodes.every(node => !node.style.getPropertyValue("--drift"))), true);
+    await page.waitForFunction(() => {
+      const stack = document.querySelector("[data-life-stack]");
+      const paper = stack?.querySelector(".life-polaroid.is-active .life-paper");
+      return stack?.dataset.reducedMotion === "true" && paper && getComputedStyle(paper).transform === "none"
+        && Array.from(stack.querySelectorAll(".life-paper, .life-graffiti")).every(node =>
+          getComputedStyle(node).transitionDuration.split(",").every(value => parseFloat(value) === 0));
+    });
+    const lifeMotion = await page.locator("[data-life-stack]").evaluate(stack => ({
+      reduced: stack.dataset.reducedMotion,
+      paperTransform: getComputedStyle(stack.querySelector(".life-polaroid.is-active .life-paper")).transform,
+      transitionsStopped: Array.from(stack.querySelectorAll(".life-paper, .life-graffiti")).every(node =>
+        getComputedStyle(node).transitionDuration.split(",").every(value => parseFloat(value) === 0))
+    }));
+    assert.deepEqual(lifeMotion, { reduced: "true", paperTransform: "none", transitionsStopped: true });
     assert.deepEqual(errors, []);
     await context.close();
     const fileContext = await browser.newContext({ viewport: viewports[0], reducedMotion: "reduce" });

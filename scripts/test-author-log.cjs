@@ -65,7 +65,7 @@ catch {
   process.exit(1);
 }
 const mime = {".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml",
-  ".jpg": "image/jpeg", ".png": "image/png", ".json": "application/json"};
+  ".jpg": "image/jpeg", ".png": "image/png", ".json": "application/json", ".woff2": "font/woff2"};
 const server = http.createServer(async (request, response) => {
   try {
     const pathname = decodeURIComponent(new URL(request.url, "http://localhost").pathname);

@@ -13,3 +13,6 @@
 *.webp binary
 *.gif binary
 *.pdf binary
+*.woff2 binary
+# 上游字体许可保留原始字节及行尾空格。
+modules/life/stack/fonts/*-OFL.txt -text whitespace=-blank-at-eol

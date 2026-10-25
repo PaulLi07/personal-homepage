@@ -16,6 +16,7 @@ modules/
     publications/          论文分类目录与视图
       internal-note/ arxiv/ published/  各自的数据与说明
   life/                    生活概览
+    stack/                 拍立得入口配置、交互、样式与本地手写字体
     moments/ travels/ creations/ relationship/
   contact/                 联系
   credits/                 独立素材署名页
@@ -37,7 +38,7 @@ index.html, credits.html   装配生成的发布页面
 
 `shared/` 只接收有实际跨模块复用需求的能力。模块不直接读取其他模块的内部实现；共享接口变化需回归所有使用者，单模块业务应留在该模块内。相同占位图片在不同主模块分别保存，便于独立替换。
 
-当前网页使用13个固定图片文件：11个下载占位图（含About相册独立副本）、1个人像网页缩放副本和1个用户提供的PNG。Home 的 `images/hero.jpg` 继续保留 Ivan Rohovchenko / Unsplash 原山水图；About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景、学术细线和克制的相框层次；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
+当前网页使用13个固定图片文件：11个下载占位图（含About相册独立副本）、1个人像网页缩放副本和1个用户提供的PNG。Home 的 `images/hero.jpg` 继续保留 Ivan Rohovchenko / Unsplash 原山水图；About 的 `images/portrait.jpg` 已由用户独立替换为 6240×4160 户外人像，本轮不改其原字节，不推断身份、地点、摄影者或来源。两模块不再要求图片同源或字节一致。Contact 独立使用保留原图的 `images/background.png`，只知用户提供，原作者与来源待确认。Academic 和 Life 不使用整区背景图，分别由自己的样式提供纯黑背景；Academic保留分隔与漫画场景，Life使用独立的白边拍立得照片堆而非整区白框；各自子栏目封面保持独立。公开文章附图仍随记录新增，另存各自 `images/posts/<id>/`，不替换公共封面。固定素材与当前归属见 [图片清单](image-sources.md)。
 
 ## 装配与运行
 
@@ -53,6 +54,7 @@ index.html, credits.html   装配生成的发布页面
 | `scripts/test-author-log.cjs` | 用随机作者密码、临时双集合与模拟 GitHub 验证统一会话、加密缓存和独立发布 |
 | `scripts/test-photos.cjs` | 临时照片与 PDF、混合 ZIP、同次提交与 Git 请求边界；真实写入全部拦截 |
 | `scripts/test-academic-profile.cjs` | 三分类导航、论文元信息与外链、ORCID 及 BESIII 资料 |
+| `scripts/test-life-stack.cjs` | 离线拍立得输入、有限层级、详情参数与生命周期回归，不代替浏览器视觉及触摸测试 |
 | `scripts/test-particle-simulation.cjs` | 离线粒子参数、局部规则、指针与数值边界；不需要浏览器依赖 |
 | `scripts/test-particles.cjs` | 三内核粒子绘制、层级、输入、暂停恢复、性能预算与失效回退 |
 | `scripts/test-security.cjs`、`scripts/relationship.cjs` | 离线算法回归与本地密文生成 / 格式检查；不参与网页运行 |
@@ -82,13 +84,21 @@ index.html, credits.html   装配生成的发布页面
 
 ## 2026-10-23 视觉维护入口
 
-Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或外部字体依赖。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的摄影构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立摄影背景。
+Apple 风格优化保留原生 HTML、CSS、普通脚本及现有注册接口，不新增框架或运行时远程字体依赖；Life拍立得局部手写字体使用随源码保存并附许可的本地WOFF2。共享层维护中性色令牌、系统字体、按钮、紧凑导航与详情阅读外壳；各模块继续维护自己的摄影构图、内容分组和响应式布局。About / Academic / Life 保持纯黑粒子表面，石墨灰内容卡片不改变公开粒子接口；Home / Contact 保留独立摄影背景。
 
 后续样式维护见 [设计约定](DESIGN-APPLE.md)。前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份 `backup/pre-apple-design-2026-10-23` 指向 `28880ba`，验证见 [Apple 兼容性记录](COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，备份 `backup/pre-academic-science-2026-10-23` 指向 `c7cdd07`，尚未推送；本轮证据见 [Academic 记录](modules/academic.md#academic-science-2026-10-23)。
 
 Academic 概览现由 `modules/academic/exploration/` 独立管理探索场景，替代此前四正方形卡片。配置、轮播、路牌导航、人物、精选索引分别维护，`scene.js`连接工厂及详情订阅，父 `module.js` 仅挂载。清单声明CSS/普通脚本顺序，无新增服务、框架或运行时网络依赖。桌面30%左下路牌与右侧大图错位，手机上下排列；地面/人物为SVG与CSS，显式声明粒子排除。参数与接口见 [场景说明](../modules/academic/exploration/README.md)，验证见 [当前记录](modules/academic.md#academic-scene-2026-10-23)。任务分支 `feat/academic-exploration-scene`，回退 `backup/pre-academic-scene-2026-10-23`（`ed981de`）。
 
 栏目标题、说明仍经 `details.getItem()`读取，精选论文仍经公开 `getPublicationCategories()`读取，不复制子模块资料。人物与轮播分别响应可见性和减少动态效果；详情状态仅从公开URL与原生事件同步。原作者、附件与论文分类接口保持。
+
+## Life 拍立得入口（2026-10-25）
+
+`modules/life/stack/` 独立维护四入口配置、固定位置/转角、输入选择与本地字体，父 `module.js` 只注册分区并传入 `{ root, details, reducedMotion }`。脚本由清单按配置→控制器→父胶水装配；控制器通过既有 `details.open("life", key, { trigger, source })` 打开栏目，Moments博客/作者和Relationship加密模块均不改。
+
+当前Life取消整区白色主框/副框与滚动漂移，桌面、手机均为轻微不规则的横向白边拍立得堆。鼠标悬停或键盘聚焦置顶，黄色花体标题同步；触摸/笔首点下层选中、再点正面进入。标题不拦截指针，各卡保留外露入口；仅照片及纸边排除粒子，间隙和下方语录区透明。全站正常字体不变，Life局部的Kaushan Script / Caveat按SIL OFL 1.1随资源保留原版权/许可，见[字体说明](../modules/life/stack/fonts/README.md)。
+
+模块接口及维护见[照片堆说明](../modules/life/stack/README.md)，离线回归为 `npm run test:life-stack`，实测另在[Life记录](modules/life.md)登记。任务分支 `feat/life-polaroid-stack`；`backup/pre-life-polaroids-2026-10-25` 保留 `0783998`，只做本地维护。旧整区相框、漂移及手机错落双列描述属于此前版本历史，不能作为当前布局要求。
 
 ## 注册接口与共享服务
 

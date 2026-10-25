@@ -34,7 +34,7 @@ const fixtures = [
 ];
 const blogSource = posts => "window.Homepage.registerBlogPosts(" + JSON.stringify(posts) + ");\n";
 const mime = { ".html": "text/html", ".css": "text/css", ".js": "text/javascript",
-  ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".png": "image/png", ".json": "application/json" };
+  ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".png": "image/png", ".json": "application/json", ".woff2": "font/woff2" };
 let playwright;
 try { playwright = require(process.env.HOMEPAGE_PLAYWRIGHT_MODULE || "playwright"); }
 catch {
@@ -330,6 +330,7 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
         && Array.from(node.querySelectorAll("input,textarea")).every(input => input.value === "")), true, "关闭后作者视图仍连接或字段未清除");
       assert.equal(await page.locator(".author-workspace").count(), 0);
       assert.equal(await page.evaluate(() => window.Homepage.authorSession.isUnlocked() && window.Homepage.authorSession.isConnected()), true);
+      await page.locator('[data-life="moments"]').focus();
       await page.locator('[data-life="moments"]').click();
       await page.locator("[data-blog-author]").click();
       await page.locator('.author-workspace input[name="title"]').waitFor({state: "visible"});
@@ -374,6 +375,7 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
       await page.keyboard.press("Escape");
       await page.waitForFunction(() => !document.getElementById("detail-dialog").open);
       await assertNoLeaks(page, {locked: true});
+      await page.locator('[data-life="relationship"]').focus();
       await page.locator('[data-life="relationship"]').click();
       assert.equal(await page.locator('input[name="relationship-password"]').inputValue(), "");
       await assertNoLeaks(page, {locked: true});
@@ -384,6 +386,7 @@ async function runViewport(browser, engine, viewport, url, encryptedSource) {
       await page.goto(url + "#home");
       await page.evaluate(() => window.scrollTo({top: document.querySelector("#life").offsetTop + 125, behavior: "instant"}));
       await page.waitForTimeout(50);
+      await page.locator('[data-life="moments"]').focus();
       const position = await page.evaluate(() => ({x: scrollX, y: scrollY}));
       await page.locator('[data-life="moments"]').click();
       await page.locator(".moments-blog").waitFor({state: "visible"});

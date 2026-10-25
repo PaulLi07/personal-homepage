@@ -23,7 +23,8 @@
     "test:walker-actions": "node scripts/test-walker-actions.cjs",
     "test:walker-lifecycle": "node scripts/test-walker-lifecycle.cjs",
     "test:math": "node scripts/test-math.cjs",
-    "test:about-gallery": "node scripts/test-about-gallery.cjs"
+    "test:about-gallery": "node scripts/test-about-gallery.cjs",
+    "test:life-stack": "node scripts/test-life-stack.cjs"
   },
   "engines": {
     "node": ">=18"

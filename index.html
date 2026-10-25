@@ -25,7 +25,8 @@
   <link rel="stylesheet" href="modules/academic/exploration/walker.css?v=b967326f05d6">
   <link rel="stylesheet" href="modules/academic/experience/log.css?v=0c8545612cd9">
   <link rel="stylesheet" href="modules/academic/publications/styles.css?v=489038781827">
-  <link rel="stylesheet" href="modules/life/styles.css?v=9dc28c88ca9e">
+  <link rel="stylesheet" href="modules/life/styles.css?v=1ce13484c187">
+  <link rel="stylesheet" href="modules/life/stack/styles.css?v=14b3d8bc8770">
   <link rel="stylesheet" href="modules/life/moments/blog.css?v=5c85e6ece6a5">
   <link rel="stylesheet" href="modules/life/relationship/security.css?v=b002b81d73d0">
   <link rel="stylesheet" href="modules/contact/styles.css?v=326334a075e8">
@@ -87,7 +88,9 @@
   <script defer src="modules/life/relationship/encrypted.js?v=40e2caa1ac79"></script>
   <script defer src="modules/life/relationship/security.js?v=11f4fab86db6"></script>
   <script defer src="modules/life/relationship/integration.js?v=db468a0badc9"></script>
-  <script defer src="modules/life/module.js?v=fefaa8412881"></script>
+  <script defer src="modules/life/stack/config.js?v=588a0c0421c0"></script>
+  <script defer src="modules/life/stack/controller.js?v=a05e827fde12"></script>
+  <script defer src="modules/life/module.js?v=b6a8a0a7c0c8"></script>
   <script defer src="modules/contact/module.js?v=86a07369dbf8"></script>
   <script defer src="app/main.js?v=e87bd3150c4f"></script>
 </head>
@@ -211,12 +214,26 @@
 </section>
 <section class="page3" id="life" aria-labelledby="life-title" data-particle-surface="black">
   <div class="life-frame" data-particle-foreground>
-    <div class="life-heading"><p class="eyebrow">03 · Beyond the desk</p><h2 class="section-heading" id="life-title">Life, in fragments.</h2></div>
-    <button class="movable photo-one" data-life="moments" data-particle-exclude aria-label="Open Moments blog" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/moments/images/cover.jpg" alt="A lake surrounded by mountains" loading="lazy"></span><span class="life-caption">Moments ↗</span></button>
-    <button class="movable photo-two" data-life="travels" data-particle-exclude aria-label="Open Travels gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/travels/images/cover.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy"></span><span class="life-caption">Travels ↗</span></button>
-    <button class="movable photo-three" data-life="creations" data-particle-exclude aria-label="Open Creations gallery" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/creations/images/cover.jpg" alt="Mountains reflected in a misty lake" loading="lazy"></span><span class="life-caption">Creations ↗</span></button>
-    <button class="movable photo-four" data-life="relationship" data-particle-exclude aria-label="Open Relationship space" aria-haspopup="dialog"><span class="life-image"><img src="modules/life/relationship/images/cover.jpg" alt="Blue water and an open coastline" loading="lazy"></span><span class="life-caption">Relationship ↗</span></button>
-    <p class="life-footnote">A few borrowed views for now.<br>Personal photographs and stories to follow.</p>
+    <header class="life-heading"><p class="eyebrow">03 · Beyond the desk</p><h2 class="section-heading" id="life-title">Life, in fragments.</h2></header>
+    <div class="life-stack" data-life-stack data-selected="moments" role="region" aria-label="Explore life sections">
+      <div class="life-stack__stage">
+        <button class="life-polaroid is-active" type="button" data-life="moments" data-particle-exclude aria-label="Open Moments blog" aria-haspopup="dialog" aria-pressed="true" style="--stack-order:4">
+          <span class="life-paper"><span class="life-image"><img src="modules/life/moments/images/cover.jpg" alt="A lake surrounded by mountains" loading="lazy" width="1200" height="800"></span><span class="life-caption"><span class="life-card-index">01</span><span>Moments</span><span class="life-card-arrow" aria-hidden="true">↗</span></span></span>
+        </button>
+        <button class="life-polaroid" type="button" data-life="travels" data-particle-exclude aria-label="Open Travels gallery" aria-haspopup="dialog" aria-pressed="false" style="--stack-order:2">
+          <span class="life-paper"><span class="life-image"><img src="modules/life/travels/images/cover.jpg" alt="Waves breaking below rocky coastal cliffs" loading="lazy" width="1200" height="800"></span><span class="life-caption"><span class="life-card-index">02</span><span>Travels</span><span class="life-card-arrow" aria-hidden="true">↗</span></span></span>
+        </button>
+        <button class="life-polaroid" type="button" data-life="creations" data-particle-exclude aria-label="Open Creations gallery" aria-haspopup="dialog" aria-pressed="false" style="--stack-order:1">
+          <span class="life-paper"><span class="life-image"><img src="modules/life/creations/images/cover.jpg" alt="Mountains reflected in a misty lake" loading="lazy" width="1200" height="800"></span><span class="life-caption"><span class="life-card-index">03</span><span>Creations</span><span class="life-card-arrow" aria-hidden="true">↗</span></span></span>
+        </button>
+        <button class="life-polaroid" type="button" data-life="relationship" data-particle-exclude aria-label="Open Relationship space" aria-haspopup="dialog" aria-pressed="false" style="--stack-order:3">
+          <span class="life-paper"><span class="life-image"><img src="modules/life/relationship/images/cover.jpg" alt="Blue water and an open coastline" loading="lazy" width="1200" height="800"></span><span class="life-caption"><span class="life-card-index">04</span><span>Relationship</span><span class="life-card-arrow" aria-hidden="true">↗</span></span></span>
+        </button>
+        <div class="life-graffiti" aria-hidden="true"><span data-life-title>Moments</span></div>
+      </div>
+      <p class="life-stack-hint"><span class="life-hint-pointer">Hover to bring a photo forward. Click to explore.</span><span class="life-hint-touch">Tap a photo to bring it forward. Tap the front photo to explore.</span></p>
+    </div>
+    <blockquote class="life-quote"><p>Some days become stories.</p><p>Others become part of us.</p></blockquote>
   </div>
 </section>
 <section class="page4" id="contact" aria-labelledby="contact-title">

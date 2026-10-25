@@ -18,7 +18,7 @@ const ENGINES = ["chromium", "firefox", "webkit"];
 const VIEWPORTS = [{width:1440,height:900},{width:390,height:844},{width:320,height:780}];
 const CANVAS = "canvas.particle-background__canvas";
 const BLACK_SECTIONS = ["about", "academic", "life"];
-const MIME = {".html":"text/html", ".css":"text/css", ".js":"text/javascript", ".svg":"image/svg+xml", ".jpg":"image/jpeg", ".png":"image/png", ".webp":"image/webp"};
+const MIME = {".html":"text/html", ".css":"text/css", ".js":"text/javascript", ".svg":"image/svg+xml", ".jpg":"image/jpeg", ".png":"image/png", ".webp":"image/webp", ".woff2":"font/woff2"};
 let playwright;
 try { playwright = require(process.env.HOMEPAGE_PLAYWRIGHT_MODULE || "playwright"); }
 catch { console.error("未找到 Playwright；请用 HOMEPAGE_PLAYWRIGHT_MODULE 指定已有维护环境。"); process.exit(1); }
@@ -330,7 +330,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       rendering={surface,sections,home,contact,trace,simulationCount:painted.count,renderedCount:painted.renderedCount,geometryBoundaryToleranceDevicePixels:1};
       await page.evaluate(()=>window.__restoreParticlePaintMethods());
     });
-    await step("学术封面切换和生活白框叠层、四卡键盘交互",async()=>{
+    await step("学术封面切换和生活拍立得纸面、四卡键盘交互",async()=>{
       for(const [key,label]of [["experience","Experience"],["publications","Publications"],["notes","Notes"],["projects","Projects"]]){
         const button=page.locator('[data-academic="'+key+'"]');await button.scrollIntoViewIfNeeded();await button.focus();
         assert.equal(await page.locator("#preview-label").textContent(),label);
@@ -342,21 +342,39 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
       if(viewport.width>700){await page.locator('[data-academic="notes"]').hover();assert.equal(await page.locator("#preview-label").textContent(),"Notes");}
       await scrollSection(page,"life");
       const frame=await page.locator(".life-frame").evaluate(node=>{
-        const style=getComputedStyle(node),layer=getComputedStyle(node,"::before"),rect=node.getBoundingClientRect();
+        const style=getComputedStyle(node),rect=node.getBoundingClientRect();
         return {width:rect.width,height:rect.height,foreground:node.hasAttribute("data-particle-foreground"),excluded:node.hasAttribute("data-particle-exclude"),
-          border:style.borderTopWidth,color:style.borderTopColor,borderStyle:style.borderTopStyle,
-          layerContent:layer.content,layerBorder:layer.borderTopWidth,layerColor:layer.borderTopColor,layerPosition:layer.position,
-          layerInset:[layer.top,layer.right,layer.bottom,layer.left]};
+          borders:[style.borderTopWidth,style.borderRightWidth,style.borderBottomWidth,style.borderLeftWidth],
+          outlines:["::before","::after"].map(pseudo=>{const layer=getComputedStyle(node,pseudo);return {content:layer.content,
+            borders:[layer.borderTopWidth,layer.borderRightWidth,layer.borderBottomWidth,layer.borderLeftWidth]};})};
       });
-      assert.ok(frame.width>0&&frame.height>0);assert.equal(frame.foreground,true);assert.equal(frame.excluded,false,"生活整框被排除，框内没有粒子");
-      assert.ok(parseFloat(frame.border)>=1);assert.equal(frame.borderStyle,"solid");assert.match(frame.color,/rgba?\(255, 255, 255(?:\)|,)/);
-      assert.ok(!["none","normal"].includes(frame.layerContent));assert.ok(parseFloat(frame.layerBorder)>0);
-      assert.match(frame.layerColor,/rgba?\(255, 255, 255(?:\)|,)/);assert.equal(frame.layerPosition,"absolute");
-      assert.ok(frame.layerInset.some(value=>parseFloat(value)!==0),"生活第二轮廓未偏移");
+      assert.ok(frame.width>0&&frame.height>0);assert.equal(frame.foreground,true);assert.equal(frame.excluded,false,"生活整区被排除，照片空隙没有粒子");
+      assert.ok(frame.borders.every(value=>parseFloat(value)===0),"生活整区仍有旧白色边框");
+      assert.ok(frame.outlines.every(layer=>["none","normal"].includes(layer.content)
+        &&layer.borders.every(value=>parseFloat(value)===0)),"生活整区仍有旧偏移副框");
+      const papers=await page.locator("#life .life-polaroid").evaluateAll(buttons=>buttons.map(button=>{
+        const paper=button.querySelector(".life-paper"),image=button.querySelector("img"),style=getComputedStyle(paper);
+        return {key:button.dataset.life,excluded:button.hasAttribute("data-particle-exclude"),background:style.backgroundColor,
+          radius:style.borderTopLeftRadius,paddingTop:style.paddingTop,paddingRight:style.paddingRight,
+          borderColor:style.borderTopColor,imageCount:button.querySelectorAll("img").length,hasImage:Boolean(image),
+          captionHeight:button.querySelector(".life-caption").getBoundingClientRect().height};
+      }));
+      assert.deepEqual(papers.map(paper=>paper.key),["moments","travels","creations","relationship"]);
+      for(const paper of papers){
+        const channels=paper.background.match(/[\d.]+/g).map(Number);
+        assert.equal(paper.excluded,true,paper.key+"白色纸面未排除粒子");
+        assert.ok(channels.slice(0,3).every(value=>value>=235)&&Math.max(...channels.slice(0,3))-Math.min(...channels.slice(0,3))<15
+          &&(channels.length<4||channels[3]===1),paper.key+"纸面不是不透明近白色");
+        assert.equal(parseFloat(paper.radius),0,paper.key+"纸面不是直角");
+        assert.ok(parseFloat(paper.paddingTop)>=8&&parseFloat(paper.paddingRight)>=8,paper.key+"缺少拍立得白边");
+        assert.match(paper.borderColor,/rgba?\(255, 255, 255(?:\)|,)/);
+        assert.equal(paper.imageCount,1);assert.equal(paper.hasImage,true);assert.ok(paper.captionHeight>0);
+      }
       for(const [key,title]of [["moments","Moments."],["travels","Travels."],["creations","Creations."],["relationship","Relationship."]]){
         const selector='[data-life="'+key+'"]',button=page.locator(selector);await button.scrollIntoViewIfNeeded();
         await page.waitForFunction(selector=>{const image=document.querySelector(selector+" img");return image.complete&&image.naturalWidth>0;},selector);
-        await hitTest(page,selector);await button.focus();await page.keyboard.press("Enter");
+        await button.focus();await settleGeometry(page);
+        await hitTest(page,selector);await page.keyboard.press("Enter");
         await page.waitForFunction(()=>document.getElementById("detail-dialog").open);
         assert.equal(new URL(page.url()).hash,"#life/"+key);assert.equal(await page.locator("#detail-title").textContent(),title);
         assert.equal((await stats(page)).running,false);
@@ -364,7 +382,7 @@ async function runViewport(browser,engine,viewport,reducedMotion,url) {
         await page.waitForFunction(selector=>document.activeElement===document.querySelector(selector),selector);
         assert.equal((await stats(page)).running,!reduced);await assertBlackSurface(page,"life");
       }
-      rendering.lifeFrame=frame;await scrollSection(page,"about");await assertBlackSurface(page);
+      rendering.lifeStack={frame,papers};await scrollSection(page,"about");await assertBlackSurface(page);
     });
     await step("非纯黑、渐变或半透明surface拒绝绘制",async()=>{
       for(const patch of [{backgroundColor:"rgb(1, 1, 1)"},{backgroundImage:"linear-gradient(#000, #000)"},{opacity:"0.5"}]){

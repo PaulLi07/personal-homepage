@@ -20,10 +20,10 @@
 - 仓库：<https://github.com/PaulLi07/personal-homepage>。
 - 网站：<https://paulli07.github.io/personal-homepage/>。
 - 研究课题、论文、成果和个人故事目前仍有占位内容，使用用户提供的事实，不得编造。
-- 采用简洁学术风与宇宙主题，保持优雅、艺术感和克制；使用常规字体和适中标题，用户拒绝窄体超大展示文字。
+- 采用简洁学术风与宇宙主题，保持优雅、艺术感和克制；全站普通信息使用常规字体和适中标题，用户拒绝窄体超大展示文字。Life拍立得入口的黄色涂鸦、照片标签和白色生活语录为2026-10-25批准的局部手写字体例外；字体及OFL原始版权/许可只归Life本地目录，不改全局字体或依赖远程字体服务。
 - 粒子必须微小、密集、清晰，呈白色实心圆点；禁止模糊光晕、渐变精灵或模糊滤镜。只在公开标记的纯黑背景区域显示，不能覆盖图片背景或区域内图片。当前 About、Academic、Life 各自用 `data-particle-surface="black"` 声明纯黑 `#000` 背景；Academic 与 Life 不再使用整区背景图。粒径参数表示 CSS 像素半径，默认 `0.4`–`0.85`，透明度 `0.85`。
 - 用户于 2026-10-14 澄清：粒子须随滚轮引起的页面滚动同向、等距移动，不能固定在屏幕；不是整层随鼠标指针移动。取消上一轮误解产生的鼠标视差及参数，保留原局部搅动。Canvas 仅作视口绘制窗口，粒子按文档坐标减去实际 `scrollX/Y` 后绘制，周期补齐视口，不为整页创建巨大画布；模拟与绘制使用相同滚动偏移。减少动态效果只停自主运动，滚动仍更新粒子和图片遮罩。必须隔离自主漂移，实测滚轮上下、返回原位、键盘滚动及照片零覆盖。
-- About 与 Academic 之间使用白色横线和中央小菱形分隔，由 Academic 自己管理装饰。用户于 2026-10-13 要求加粗白色边线：Academic 主线 3px、次线和图片框 2px；Life 保留错落照片，主框和照片边框 3px、偏移副框 2px，通过明暗区分叠层。保持简洁，不让装饰遮挡内容。
+- About 与 Academic 之间使用白色横线和中央小菱形分隔，由 Academic 自己管理装饰。用户于 2026-10-13 要求加粗白色边线：Academic 主线 3px、次线和图片框 2px；Life当时的主框/照片3px、偏移副框2px属于历史，已由2026-10-25拍立得方案取代，当前不保留整区白框。保持简洁，不让装饰遮挡内容。
 - Home 继续独立使用 `modules/home/images/hero.jpg` 原山水图，署名为 Ivan Rohovchenko / Unsplash；不再要求与 About 图片相同。About 的 `modules/about/images/portrait.jpg` 已由用户替换为 6240×4160 户外人像，本轮保留原字节；只按观察描述图片，不推断人物身份、拍摄地点、摄影者或来源。Contact 使用用户提供的原始 PNG，独立保存为 `modules/contact/images/background.png`；只注明用户提供、原作者与来源尚未确认，不能称为用户亲自拍摄。Home 与 Contact 均保留图片背景，不声明黑色粒子表面。
 - 2026-10-23 用户批准 Apple 风格优化：保留摄影首屏、宇宙粒子、学术四栏目与生活照片叠层，使用系统字体、正常字形、适中标题、石墨灰面板、克制磨砂和清楚的主次按钮；不引入窄体巨字或无层次的大块黑色。视觉令牌与模块边界见 [设计约定](docs/DESIGN-APPLE.md)，本轮实际验证统一链接 [兼容性记录](docs/COMPATIBILITY.md#apple-design-2026-10-23)，不得沿用旧测试结论。
 - 同日后续批准仅精修 Academic：参考 NASA Science 的专题层次，四入口整卡 `1:1`、`0px` 圆角，图片、标题说明内嵌，桌面四列、≤900px 两列；大预览也改直角，仅覆盖本区旧圆角约定。保留纯黑粒子表面、前景与图片 `data-particle-exclude`。上部标题/说明从 `details.getItem()` 读取，序号随栏目切换；精选论文仅从公开 `getPublicationCategories()` 取 arXiv 首条，否则首个非空分类首条，不复制资料，缺失、抛错或全空则隐藏。实际验证见 [Academic 本轮记录](docs/modules/academic.md#academic-science-2026-10-23)，其他板块规则不变。
@@ -39,6 +39,7 @@
 - 2026-10-24最新构图纠正覆盖上一条超长树与整排树冠留白：三株椰树聚根交干、树冠高低交叠，缩短树干，取消最低叶尖决定整行照片留白。桌面图片左移（1440约x343、宽792px），主冠在右上自然高出图片，部分叶片允许在照片后交叠；不再强迫所有叶尖高于照片。≤760px改照片在上、路牌与紧凑椰林在下，避免手机超长树；≥1800px将主体收拢到居中1800px范围，分隔/草地仍全宽。两SVG统一720×1120、根y1107，保留透明前景与真实16:9，更新SVG引用版本避免旧图缓存。分支 `style/academic-compact-grove`，回退 `backup/pre-compact-grove-2026-10-24`（`b156e06`），未请求推送。
 - 2026-10-25前部布局微调：Home姓名、正常字形领域、学校/身份集中在同一左侧内容轴，右侧欢迎语自然换行；About个人说明跨越Gallery＋资料整组宽度，桌面双栏、≤900px单列，原文不变。Academic照片及椰林素材/宽高保持，只在>760px共同右移8–16px（1440约12.24px），手机保留完整相框；路牌杆与下方留空同步增加12px，接地基线不变。分支 `style/front-layout-refinement`，回退 `backup/pre-front-layout-2026-10-25`（`612895b`），未请求推送。
 - 2026-10-25欢迎区后续对称要求：左身份组小幅左移、右欢迎组右移更多，两组等宽（最多440px）、外侧留白相同；1440视口左移16px、右移约111px，两侧各64px。文字继续左对齐，≤760px保持原单列与边距；仅Home局部调整。回退 `733d68e`，任务分支 `style/home-balanced-columns`，未请求推送。随后用户要求两侧再外移，最新1440两组各再外移24px、外留白各40px，窄桌面最少20px；手机覆盖保持原值，回退 `1431105`。
+- 2026-10-25用户批准Life大改：去掉整区白色主框/副框，Moments / Travels / Creations / Relationship改为横向白边拍立得轻微不规则堆叠；基础坐标固定，悬停/聚焦仅置顶并同步亮黄色花体涂鸦标题，离开保留；点击进入原详情，触摸/笔首点下层仅选中、再点正面进入。照片堆下方为白色手写生活语录。无自动洗牌、滚动漂移或手机旧错落双列；四张须始终有外露入口，标题不截获指针。局部资源/配置/输入/样式归 `modules/life/stack/`，父module只挂载与清理，Moments与Relationship业务不改。Kaushan Script / Caveat随源码本地加载并保留SIL OFL 1.1版权/许可；粒子只排除单张照片及纸边，堆叠间隙保持透明。运行 `npm run test:life-stack` 并重新实测桌面、手机与输入；分支 `feat/life-polaroid-stack`，回退 `backup/pre-life-polaroids-2026-10-25`（`0783998`），本次未授权推送。
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
@@ -46,6 +47,7 @@
 ## 功能边界与文件职责
 
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
+- Life照片堆归 `modules/life/stack/`，配置、控制器、样式和本地字体独立维护；仅通过公开详情与粒子接口接入，不把博客、作者登录或私密资料合并进入口控制器。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
 - 学术和生活详情子模块各自保存 `content.js`、`images/cover.jpg` 和 `README.md`；不要将其数据重新集中到一个大文件。Experience 学术日志与 Moments 文章分别保存自己的数据、读者视图和接入行为；Relationship 的加密行为留在自己的目录。
 - 用户已要求统一作者登录与编辑能力，允许独立的 `modules/author/` 服务模块被 Experience 和 Moments 共同使用。它管理作者会话、GitHub 连接、通用编辑器与独立发布器，不合并两栏的数据或读者界面；不需要 HTML 根节点或 `registerSection`。

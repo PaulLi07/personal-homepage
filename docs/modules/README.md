@@ -12,6 +12,8 @@ About最新横向相册、图内半透明序号/两侧箭头、右侧资料及�
 
 About组合全宽与Academic全幅场景的最新布局及实测见[About记录](about.md#edge-layout-2026-10-23)和[Academic记录](academic.md#edge-layout-2026-10-23)，不将相册单独铺满桌面整行。
 
+Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明](../../modules/life/stack/README.md)，当前证据见[2026-10-25记录](life.md#life-polaroids-2026-10-25)；旧整区相框测试保留为历史。
+
 ## 主模块
 
 | 模块 | 就近说明 | 测试记录 |
