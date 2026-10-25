@@ -3,17 +3,17 @@
 @supports (height: 100svh) { .hero-backdrop { margin-bottom: calc(-1 * max(100svh, 700px)); } }
 .scaleImage { filter: brightness(.72) saturate(.72); transform: scale(1.035); object-position: 50% 46%; }
 .hero-backdrop::after { content: ""; position: absolute; inset: 0; background: linear-gradient(180deg, #070b102b, transparent 30%, #05080d7a 68%, #000d), linear-gradient(90deg, #05080d30, transparent 75%); }
-.landing-div { position: relative; min-height: max(100svh, 700px); padding: calc(var(--navigation-height, 76px) + 70px) var(--gutter) clamp(112px, 12svh, 150px); display: flex; align-items: flex-end; scroll-margin-top: 0; }
+.landing-div { --hero-inset: max(24px, calc(var(--gutter) - 16px)); position: relative; min-height: max(100svh, 700px); padding: calc(var(--navigation-height, 76px) + 70px) var(--hero-inset) clamp(112px, 12svh, 150px); display: flex; align-items: flex-end; scroll-margin-top: 0; }
 .hero-marker { display: flex; flex-wrap: wrap; align-items: center; column-gap: 12px; row-gap: 4px; margin-top: 26px; color: #f5f5f7c7; font-size: 14px; line-height: 1.55; }
 .hero-marker p:first-child { font-weight: 500; }
 .hero-marker p + p { display: inline-flex; align-items: center; gap: 12px; color: #f5f5f7ad; }
 .hero-marker p + p::before { content: ""; width: 3px; height: 3px; flex: 0 0 3px; border-radius: 50%; background: currentColor; opacity: .7; }
-.bottomtext { width: 100%; display: grid; grid-template-columns: minmax(0, 1.15fr) minmax(0, 1fr); gap: clamp(44px, 8vw, 116px); align-items: start; }
-.maintext { min-width: 0; }
+.bottomtext { width: 100%; display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: clamp(44px, 8vw, 116px); align-items: start; }
+.maintext { min-width: 0; width: 100%; max-width: 440px; justify-self: start; }
 .maintext .eyebrow { color: #e7eaf0c7; margin-bottom: 22px; }
 .maintext h1 { font-size: clamp(48px, 4.4vw, 60px); font-weight: 600; line-height: 1.08; letter-spacing: -.045em; }
 .hero-discipline { margin-top: 12px; color: #ecf0f5dc; font-size: clamp(26px, 2.4vw, 34px); font-weight: 400; line-height: 1.25; letter-spacing: -.025em; }
-.subtext { min-width: 0; width: 100%; max-width: 440px; padding-top: 2px; }
+.subtext { min-width: 0; width: 100%; max-width: 440px; justify-self: end; padding-top: 2px; }
 .subtext > p { margin-top: 19px; color: #f5f5f7cf; font-size: 16px; line-height: 1.65; max-width: 39ch; }
 .alagtext { max-width: 23ch; font-size: clamp(25px, 2.2vw, 32px); line-height: 1.25; font-weight: 500; letter-spacing: -.025em; text-wrap: balance; }
 .buttons { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 27px; }
@@ -40,7 +40,7 @@
 
 @media (max-width:760px) {
   .hero-backdrop { min-height: 810px; margin-bottom: calc(-1 * max(100svh, 810px)); }
-  .landing-div { min-height: max(100svh, 810px); padding-block: calc(var(--navigation-height, 104px) + 88px) 118px; }
+  .landing-div { --hero-inset: var(--gutter); min-height: max(100svh, 810px); padding-block: calc(var(--navigation-height, 104px) + 88px) 118px; }
   .scaleImage { object-position: 48% 46%; }
   .scroll-note { bottom: 65px; font-size: 12px; }
   .hero-marker { margin-top: 22px; font-size: 13px; column-gap: 10px; }
@@ -49,7 +49,8 @@
   .maintext h1 { font-size: clamp(44px, 8vw, 54px); }
   .hero-discipline { font-size: clamp(26px, 4.8vw, 30px); margin-top: 10px; }
   .maintext .eyebrow { margin-bottom: 17px; font-size: 12px; }
-  .subtext { width: min(100%, 440px); max-width: none; }
+  .maintext { max-width: none; }
+  .subtext { width: min(100%, 440px); max-width: none; justify-self: start; }
   .subtext > p { font-size: 16px; margin-top: 14px; }
   .alagtext { max-width: 24ch; font-size: 24px; }
   .buttons { margin-top: 23px; }
