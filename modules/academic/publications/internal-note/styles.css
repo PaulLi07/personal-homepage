@@ -1,0 +1,44 @@
+/* 内部材料按课题组独立排版；公式仅在本段内必要时横向滚动，不撑宽页面。 */
+.internal-notes__library { min-width: 0; }
+.internal-notes__header { padding-bottom: 22px; border-bottom: 1px solid var(--line); }
+.internal-notes__heading { font-size: 29px; line-height: 1.3; letter-spacing: -.03em; overflow-wrap: anywhere; }
+.internal-notes__eyebrow { margin-bottom: 10px; color: var(--muted); font-size: 12px; letter-spacing: .09em; text-transform: uppercase; }
+.internal-notes__navigation { display: flex; flex-wrap: wrap; gap: 0 24px; margin-top: 12px; }
+.internal-notes__back { min-height: 44px; padding: 8px 0; color: var(--accent); font-size: 14px; line-height: 1.6; text-align: left; }
+.internal-notes__back:hover, .internal-notes__link:hover { text-decoration: underline; text-underline-offset: 4px; }
+.internal-notes__intro { margin-top: 23px; color: var(--muted); font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
+.internal-notes__total { margin-top: 12px; color: var(--accent); font-size: 13px; line-height: 1.7; font-variant-numeric: tabular-nums; }
+.internal-notes__groups { display: grid; gap: 12px; margin-top: 25px; }
+.internal-notes__group { display: grid; grid-template-columns: 25px minmax(0, 1fr) 18px; gap: 14px; align-items: start; width: 100%; padding: 24px 22px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); text-align: left; transition: background .2s, border-color .2s; }
+.internal-notes__group:hover { background: var(--surface-raised); border-color: #ffffff45; }
+.internal-notes__group:hover .internal-notes__group-label { color: var(--accent); }
+.internal-notes__group-copy { display: flex; flex-direction: column; gap: 10px; min-width: 0; }
+.internal-notes__group-label { font-size: 24px; font-weight: 500; line-height: 1.35; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.internal-notes__group-description { color: var(--muted); font-size: 15px; line-height: 1.75; overflow-wrap: anywhere; }
+.internal-notes__number { padding-top: 5px; color: var(--muted); font-size: 13px; font-variant-numeric: tabular-nums; }
+.internal-notes__count { color: var(--accent); font-size: 13px; line-height: 1.6; }
+.internal-notes__arrow { padding-top: 3px; color: var(--muted); font-size: 18px; }
+.internal-notes__list { min-width: 0; margin-top: 5px; }
+.internal-notes__entry { min-width: 0; padding-block: 30px; border-bottom: 1px solid var(--line); }
+.internal-notes__identifier { margin-bottom: 12px; color: var(--accent); font-size: 13px; font-weight: 500; letter-spacing: .05em; }
+.internal-notes__title { max-width: 100%; margin: 0 0 15px; overflow-x: auto; overflow-wrap: anywhere; padding-bottom: .15em; font-size: 24px; font-weight: 500; line-height: 1.55; letter-spacing: -.02em; scrollbar-width: thin; }
+.internal-notes__authors { color: #e0e0e6; font-size: 16px; line-height: 1.75; overflow-wrap: anywhere; }
+.internal-notes__summary { min-width: 0; margin-top: 22px; }
+.internal-notes__summary-paragraph { max-width: 100%; overflow-x: auto; overflow-wrap: anywhere; padding-bottom: .15em; color: var(--muted); font-size: 16px; line-height: 1.85; scrollbar-width: thin; }
+.internal-notes__summary-paragraph + .internal-notes__summary-paragraph { margin-top: 16px; }
+.internal-notes__entry-footer { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px; margin-top: 23px; }
+.internal-notes__link { display: inline-flex; align-items: center; min-height: 44px; padding: 9px 14px; border: 1px solid var(--line); border-radius: 10px; background: var(--surface); color: var(--accent); font-size: 14px; line-height: 1.7; }
+.internal-notes__access { color: var(--muted); font-size: 12px; line-height: 1.65; }
+.internal-notes__state { margin-top: 26px; padding: 26px; border: 1px solid var(--line); border-radius: 14px; background: var(--surface); }
+.internal-notes__state h4 { margin: 0 0 13px; font-size: 23px; font-weight: 500; line-height: 1.4; letter-spacing: -.02em; }
+.internal-notes__state p { max-width: 480px; color: var(--muted); font-size: 16px; line-height: 1.8; }
+@media (max-width: 760px) {
+  .internal-notes__heading { font-size: 27px; }
+  .internal-notes__group { gap: 10px; padding: 22px 18px; grid-template-columns: 19px minmax(0, 1fr) 16px; }
+  .internal-notes__group-label, .internal-notes__title { font-size: 22px; }
+  .internal-notes__navigation { gap: 0 18px; }
+  .internal-notes__state { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .internal-notes__group { transition: none; }
+}

@@ -9,7 +9,7 @@ const ENGINES = ["chromium", "firefox", "webkit"];
 const VIEWPORTS = [{width: 1440, height: 900}, {width: 390, height: 844}, {width: 320, height: 780}];
 const ROUTE = "#academic/publications", ORCID = "https://orcid.org/0009-0005-6858-4000";
 const TITLE = "Observation of χcJ → Λ K⁰S Ξ̄⁰ + c.c. and improved measurements of χcJ → Λ K⁻ Ξ̄⁺ + c.c.";
-const TYPES = {".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp"};
+const TYPES = {".html": "text/html", ".css": "text/css", ".js": "text/javascript", ".svg": "image/svg+xml", ".jpg": "image/jpeg", ".png": "image/png", ".webp": "image/webp", ".woff2": "font/woff2"};
 let playwright;
 try { playwright = require(process.env.HOMEPAGE_PLAYWRIGHT_MODULE || "playwright"); }
 catch { console.error("未找到 Playwright；请用 HOMEPAGE_PLAYWRIGHT_MODULE 指定已有维护环境。"); process.exit(1); }
@@ -33,7 +33,27 @@ async function directory(page) {
   assert.deepEqual(await page.locator("button[data-publication-category]").evaluateAll(nodes => nodes.map(node => node.dataset.publicationCategory)), ["internal-note", "arxiv", "published"]);
 }
 async function category(page, id) {
+  if (id === "internal-note" || id === "internal-note-besiii") {
+    await page.locator('[data-internal-note-view="' + (id === "internal-note" ? "groups" : "group") + '"]').waitFor({state: "visible"});
+    return;
+  }
   await page.locator('.publication-library[data-publication-view="category"][data-publication-category="' + id + '"]').waitFor({state: "visible"});
+}
+async function besiiiNotes(page) {
+  assert.deepEqual(await page.locator("[data-internal-note-id]").evaluateAll(nodes => nodes.map(node => node.dataset.internalNoteId)), ["bam1027", "bam1089"]);
+  const urls = ["https://docbes3.ihep.ac.cn/DocDB/0016/001613/020/MEMO_final.pdf", "https://docbes3.ihep.ac.cn/DocDB/0017/001747/005/MEMO_chicJ_SigmaXiK_v2.3.pdf"];
+  for (const [index, id] of ["bam1027", "bam1089"].entries()) {
+    const article = page.locator('[data-internal-note-id="' + id + '"]');
+    assert.equal(await article.locator(".internal-notes__authors").textContent(), "Li Yuhong, Ma Hailong, Zhao Minggang");
+    assert.ok(await article.locator(".internal-notes__title .katex-html").count() > 0);
+    assert.ok(await article.locator(".internal-notes__summary p").count() >= 3);
+    assert.ok(await article.locator(".internal-notes__summary .katex-html").count() > 0);
+    const link = article.locator("[data-internal-note-link]");
+    assert.equal(await link.getAttribute("href"), urls[index]);
+    assert.equal(await link.getAttribute("target"), "_blank");
+    assert.equal(await link.getAttribute("rel"), "noopener noreferrer");
+    assert.equal(await article.locator("time, iframe, object, embed").count(), 0);
+  }
 }
 async function layout(page) {
   assert.equal(await page.evaluate(() => document.documentElement.scrollWidth <= innerWidth + 1), true, "页面横向溢出");
@@ -73,19 +93,25 @@ async function runViewport(browser, engine, viewport, url) {
       await page.locator('[data-academic="publications"]').click(); await page.waitForURL(url + ROUTE); await directory(page);
       await screenshot(page, engine, viewport, "directory", screenshots);
     });
-    await step("三分类点击、返回目录及明确空状态", async () => {
+    await step("三分类、Internal note课题组与明确空状态", async () => {
       for (const id of ["internal-note", "arxiv", "published"]) {
         await page.locator('button[data-publication-category="' + id + '"]').click(); await page.waitForURL(url + ROUTE + "/" + id); await category(page, id);
         await page.waitForFunction(() => document.activeElement?.matches(".publication-library [data-view-heading]"));
-        if (id !== "arxiv") {
+        if (id === "internal-note") {
+          const group = page.locator('button[data-internal-note-group="besiii"]');
+          assert.ok((await group.innerText()).includes("2 notes"));
+          await group.click(); await page.waitForURL(url + ROUTE + "/internal-note-besiii"); await category(page, "internal-note-besiii");
+          await besiiiNotes(page);
+          await page.locator('[data-internal-note-back="groups"]').click(); await category(page, "internal-note");
+        } else if (id === "published") {
           assert.equal(await page.locator(".publication-library__entry").count(), 0);
-          assert.ok((await page.locator(".publication-library__state").innerText()).includes(id === "internal-note" ? "No internal notes yet" : "No published papers yet"));
+          assert.ok((await page.locator(".publication-library__state").innerText()).includes("No published papers yet"));
         }
         await page.locator("button[data-publication-back]").click(); await page.waitForURL(url + ROUTE); await directory(page);
       }
     });
-    await step("三分类直达、刷新及关闭按钮焦点", async () => {
-      for (const id of ["internal-note", "arxiv", "published"]) {
+    await step("分类及BESIII分组直达、刷新与关闭按钮焦点", async () => {
+      for (const id of ["internal-note", "internal-note-besiii", "arxiv", "published"]) {
         await page.goto(url + ROUTE + "/" + id); await category(page, id); await page.reload(); await category(page, id);
         await page.waitForFunction(() => document.activeElement?.id === "close-detail");
       }
@@ -93,7 +119,9 @@ async function runViewport(browser, engine, viewport, url) {
     await step("arXiv 真实元信息与安全外链", async () => {
       await navigate(page, url, ROUTE + "/arxiv"); await category(page, "arxiv");
       const article = page.locator('[data-publication-id="arxiv-2610-11981"]');
-      assert.equal(await article.locator(".publication-library__title").textContent(), TITLE);
+      assert.equal(await page.evaluate(() => window.Homepage.getPublicationCategories().find(category => category.id === "arxiv").entries[0].title), TITLE);
+      assert.ok((await article.locator(".publication-library__title").textContent()).startsWith("Observation of "));
+      assert.equal(await article.locator(".publication-library__title .math-inline").count(), 2);
       assert.equal(await article.locator(".publication-library__authors").textContent(), "BESIII Collaboration");
       assert.equal(await article.locator("time").getAttribute("datetime"), "2026-10-08");
       assert.ok((await article.innerText()).includes("arXiv:2610.11981"));
@@ -121,12 +149,12 @@ async function runViewport(browser, engine, viewport, url) {
     await step("About/Contact ORCID 与 Projects BESIII 真实链接", async () => {
       const links = page.locator("[data-orcid-link]"); assert.equal(await links.count(), 2);
       for (const link of await links.all()) { assert.equal(await link.getAttribute("href"), ORCID); assert.equal(await link.getAttribute("target"), "_blank"); assert.equal(await link.getAttribute("rel"), "noopener noreferrer"); }
-      await navigate(page, url, "#academic/projects"); const link = page.locator('.detail-entry a[href="http://bes3.ihep.ac.cn/"]'); await link.waitFor({state: "visible"});
-      assert.ok((await link.locator("..").innerText()).includes("BESIII Collaboration")); assert.equal(await page.locator(".detail-entry").count(), 1);
+      await navigate(page, url, "#academic/projects"); const link = page.locator('.project-directory__collaboration a[href="http://bes3.ihep.ac.cn/"]'); await link.waitFor({state: "visible"});
+      assert.ok((await link.locator("..").innerText()).includes("BESIII Collaboration")); assert.equal(await page.locator(".project-directory__collaboration").count(), 1);
     });
     await step("元信息纯文字及字段白名单，危险链接拒绝呈现", async () => {
       const malicious = 'Temporary title <img src=x onerror=window.__academicExecuted=true>';
-      await page.evaluate(text => { const entry = window.Homepage.getData("publications.arxiv").entries[0]; entry.title = text; entry.authors = text; entry.privateMetadata = "discard"; }, malicious);
+      await page.evaluate(text => { const entry = window.Homepage.getData("publications.arxiv").entries[0]; entry.title = text; delete entry.titleTex; entry.authors = text; entry.privateMetadata = "discard"; }, malicious);
       await navigate(page, url, ROUTE + "/arxiv"); await category(page, "arxiv");
       assert.equal(await page.locator(".publication-library__title").textContent(), malicious); assert.equal(await page.locator(".publication-library__entry img").count(), 0);
       assert.equal(await page.evaluate(() => "privateMetadata" in window.Homepage.getPublicationCategories().find(category => category.id === "arxiv").entries[0]), false);

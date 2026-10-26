@@ -114,7 +114,7 @@ Experience 的 `#academic/experience` 展示学术日志，支持 Research / Lea
 
 About 与 Contact 展示用户提供的 [ORCID](https://orcid.org/0009-0005-6858-4000)，Projects 包含 [BESIII Collaboration](http://bes3.ihep.ac.cn/) 官方链接。
 
-[Publications](modules/academic/publications/README.md) 的 `#academic/publications` 是分类目录，子路由为 `/internal-note`、`/arxiv`、`/published`；各分类独立保存 `data.js` 和中文说明。当前 arXiv 收录用户指定的 [2610.11981](https://arxiv.org/abs/2610.11981)，题名、2026-10-08 日期及 BESIII Collaboration 署名已经官方页面核实；Internal note 和 Published 保持空数组。页面不推断用户贡献、合作组角色或正式发表状态，Abstract / PDF 保留原始外链。
+[Publications](modules/academic/publications/README.md) 的 `#academic/publications` 是分类目录，子路由为 `/internal-note`、`/arxiv`、`/published`；各分类独立保存 `data.js` 和中文说明。当前 arXiv 收录用户指定的 [2610.11981](https://arxiv.org/abs/2610.11981)，题名、2026-10-08 日期及 BESIII Collaboration 署名已经官方页面核实；Internal note按课题组展示BESIII的bam1027与bam1089（标题、作者、简介及DocDB内部链接），Published保持空数组。页面不推断用户贡献、合作组角色或正式发表状态，Abstract / PDF 保留原始外链。
 
 ## Relationship 加密空间
 

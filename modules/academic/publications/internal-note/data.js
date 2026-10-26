@@ -1,8 +1,8 @@
-/* 未提供可公开的内部材料，保持空数组；禁止把受限材料放入公开仓库。 */
+/* 分类外壳保持独立；分组与摘要在 groups.js 及各组目录登记，不复制内部PDF。 */
 window.Homepage.registerPublicationCategory({
   "id": "internal-note",
   "label": "Internal note",
-  "description": "Research notes and internal documents that are ready to share.",
+  "description": "Research notes organized by collaboration and research group.",
   "emptyTitle": "No internal notes yet",
   "emptyMessage": "Internal notes will appear here when they are ready to share.",
   "entries": []

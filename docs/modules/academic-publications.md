@@ -1,5 +1,9 @@
 # 论文成果详情测试记录
 
+## 2026-10-26：Internal note课题组子目录
+
+先按课题组选择，再显示BESIII的bam1027和bam1089；父目录计数来自公开组getter，原arXiv/Published数据不变。独立数据、视图、中文说明及9流程125断言随功能交付；实际桌面/手机、公式、深链/历史、键盘、子路径与限制统一见[本轮分组记录](academic-publications-internal-note.md#internal-note-groups-2026-10-26)。既有跨浏览器测试记录保留为历史，不替代本轮。
+
 ## 2026-10-23：LaTeX题名与字号
 
 可选titleTex通过[本地KaTeX封装](../../shared/math/README.md)在详情和Academic精选入口共用，纯文本title保留。1440×1000检查数学斜体、上下标、反粒子横线及字体加载；320×780论文题名宽/滚动宽均269px、两公式正常换行且无错误；820×1180回归三分类、目录返回及Notes/Projects切换。离线数学93断言通过。环境、截图和未测试项见[统一记录](../COMPATIBILITY.md#readability-math-2026-10-23)，本轮未请求发布。

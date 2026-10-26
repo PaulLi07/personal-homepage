@@ -1,6 +1,6 @@
 # 本地行内公式排版
 
-用于显式包含公式的公开学术题名；Publications 与 Academic 精选入口共用。普通英文、作者资料、文章正文仍按文本处理，不扫描整页，不接入作者发布或私密内容。
+用于显式包含公式的公开学术题名，以及Internal note的简介段落；Publications、Academic精选入口与内部材料视图共用。普通英文、作者资料和博客正文仍按文本处理，不扫描整页，不接入作者发布或私密内容。
 
 ## 文件和装配
 
@@ -44,3 +44,5 @@ sha512-v6Tznz3zJ7u3niRCoDTsumM2+HA2XXcCu+WAacCeHD2z3p9A9Ks987o5FzfTGBN0e8A0vjEgI
 更新时从官方发行包成组替换 JS、CSS、字体及许可证，重新完成 WOFF2 引用裁剪、`node scripts/test-math.cjs`、装配、检查和桌面/窄屏浏览器实测。离线测试包含真实 KaTeX 排版结果、上下标/横线/数学斜体、宏隔离、安全回退、可选数据字段及两处公开使用者；不能代替浏览器字体加载与实际视觉验证。
 
 浏览器兼容性记录由本轮主任务统一登记；未实际测试的环境不能标记通过。本文中文，公式周围的网页文本、替代内容保持英文。
+
+2026-10-26新增Internal note调用者：每段独立传入 `summary[].tex` 和 `summary[].text` 回退，源长度不超过现有2400字符上限，未扩大数学服务权限或更改渲染实现。回归及浏览器范围见[内部材料记录](../../docs/modules/academic-publications-internal-note.md#internal-note-groups-2026-10-26)。

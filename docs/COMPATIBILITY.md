@@ -1,5 +1,10 @@
 # 兼容性与功能实测
 
+<a id="internal-note-groups-2026-10-26"></a>
+## 2026-10-26：研究方向与内部材料分组
+
+About更新两项研究方向并修复长资料的图文等高；Internal note新增课题组选择与BESIII两篇记录、简介公式和指定内部链接。应用内浏览器实际预览桌面1440及901/1024窄桌面、390/320手机模拟；视图、导航/历史/键盘、子路径、公式与无横向溢出通过。9流程125条内部材料、7流程93条数学、17流程149条相册离线断言通过，不能代替多内核/真机。内部PDF认证、真实触摸、原生动态偏好与线上部署未测，本轮未推送。具体证据见[内部材料](modules/academic-publications-internal-note.md#internal-note-groups-2026-10-26)及[About](modules/about.md#research-interests-2026-10-26)。
+
 <a id="home-dragon-background-2026-10-25"></a>
 ## 2026-10-25：欢迎区幻想插画背景
 

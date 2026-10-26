@@ -46,6 +46,7 @@ Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明
 | academic / 学术经历 | [experience](../../modules/academic/experience/README.md) | [academic-experience.md](academic-experience.md) |
 | academic / 论文成果 | [publications](../../modules/academic/publications/README.md) | [academic-publications.md](academic-publications.md) |
 | publications / Internal note | [internal-note](../../modules/academic/publications/internal-note/README.md) | [分类测试](academic-publications-internal-note.md) |
+| internal-note / BESIII | [besiii](../../modules/academic/publications/internal-note/besiii/README.md) | [记录测试](academic-publications-internal-note-besiii.md) |
 | publications / arXiv | [arxiv](../../modules/academic/publications/arxiv/README.md) | [分类测试](academic-publications-arxiv.md) |
 | publications / Published | [published](../../modules/academic/publications/published/README.md) | [分类测试](academic-publications-published.md) |
 | academic / 学术笔记 | [notes](../../modules/academic/notes/README.md) | [academic-notes.md](academic-notes.md) |

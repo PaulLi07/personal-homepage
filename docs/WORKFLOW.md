@@ -9,12 +9,12 @@
 - 全站普通信息保持常规字形、适中字号、简洁学术风与宇宙主题，只使用用户提供的真实资料。2026-10-25批准的Life拍立得黄色标题、照片标签与白色语录使用局部手写字体；只从Life本地目录加载并保留SIL OFL 1.1原版权/许可，不扩散到全站，不请求远程字体。
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
 - 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。Experience 学术日志与 Moments 生活文章分别维护，没有用户资料时保持空数组，不编造内容。
-- Publications 再分 Internal note、arXiv、Published，各目录独立 `data.js` 与中文 README；分类目录及 `/internal-note`、`/arxiv`、`/published` 子路由使用既有自定义详情接口，不建立另一套弹窗。仅登记用户提供并核对的论文资料；当前内部材料和已发表分类为空。
+- Publications 再分 Internal note、arXiv、Published，各目录独立 `data.js` 与中文 README；分类目录及 `/internal-note`、`/arxiv`、`/published` 子路由使用既有自定义详情接口，不建立另一套弹窗。仅登记用户提供并核对的论文资料；内部材料当前按课题组登记BESIII两条用户指定记录，已发表分类仍为空。
 - ORCID 在 About 与 Contact 同步显示，BESIII 官方链接在 Projects；arXiv:2610.11981 展示官方题名、2026-10-08 日期及 BESIII Collaboration 署名。不据此推断个人贡献、合作组角色或正式发表状态。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
 - `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与混合 ZIP，`modules/article-documents/` 独立提供 PDF 规范、选择与阅读链接。加载顺序为照片、PDF、作者，再加载栏目数据。集合数据、读者和实际文件仍由各自模块负责，Relationship 不接入公开附件。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
-- 粒子背景独立作为 `modules/particle-background/` 服务，胶水只挂载公共根节点及状态；参数、局部规则、鼠标输入、Canvas 层级、暂停和清理不放回胶水或栏目。只绘制模块声明的纯黑区域，图片及公开排除区域保持干净。当前 About / Academic / Life 为黑区，Academic保留分隔/漫画场景，Life使用各张照片的拍立得白边堆叠，已取消整区白框与滚动漂移；Home 用户提供的黑白雨景与 Contact 用户夜景各自维护独立图片。调整时同步验证前景可读性、手机数量、DPR、减少动态效果、详情与失效回退。
+- 粒子背景独立作为 `modules/particle-background/` 服务，胶水只挂载公共根节点及状态；参数、局部规则、鼠标输入、Canvas 层级、暂停和清理不放回胶水或栏目。只绘制模块声明的纯黑区域，图片及公开排除区域保持干净。当前 About / Academic / Life 为黑区，Academic保留分隔/漫画场景，Life使用各张照片的拍立得白边堆叠，已取消整区白框与滚动漂移；Home 用户提供的人物与龙插画与 Contact 用户夜景各自维护独立图片。调整时同步验证前景可读性、手机数量、DPR、减少动态效果、详情与失效回退。
 - 修改前读取相关源码和说明，保留用户未提交的改动。新增框架、依赖或跨模块接口须对应具体需求。
 - 根 `index.html`、`credits.html` 是生成产物，修改源片段或模板后显式装配，禁止手改生成页面。保持相对资源路径、普通脚本和直接文件打开能力。
 - CSS 与静态 JS 由装配器添加内容 SHA256 前 12 位 `?v=`；`liveScripts` 必须属于本模块 `scripts`，当前仅两份在线数据 `entries.js` / `posts.js` 保留原 URL。直接发布文章无需重装 HTML；图片仍使用原路径，不把内容版本机制写成热更新，也不改变作者权限与发布流程。

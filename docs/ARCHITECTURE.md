@@ -17,7 +17,8 @@ modules/
       experiment-atlas/    地图登记、入口视图、公共顶栏与本地维护工具
         neutrino/ dark-matter/  各自页面、代码、数据、档案与图片
     publications/          论文分类目录与视图
-      internal-note/ arxiv/ published/  各自的数据与说明
+      internal-note/       课题组注册、独立视图与besiii/记录
+      arxiv/ published/    各自的数据与说明
   life/                    生活概览
     stack/                 拍立得入口配置、交互、样式与本地手写字体
     moments/ travels/ creations/ relationship/
@@ -235,3 +236,5 @@ About只在自己的styles.css/gallery/styles.css以局部 `--about-inset` 组�
 后续高度修正仍只归Academic探索模块：原生桌面高椰林720×1660，新增窄屏 `coconut-palms-mobile.svg` 720×2940，仅延长曲干、叶冠比例相同；CSS按宽度和原生根基线推导地面与照片留白，确保最低叶尖高于照片。图窗缩至中间尺度，图片/文字高于装饰层；没有新JS、共享接口或清单变化。见[最新验证](COMPATIBILITY.md#tall-palms-2026-10-24)。
 
 2026-10-24最新紧凑构图取代上一轮整排树冠留白与超长手机树：两份原生SVG统一720×1120、根y1107，三冠高低交叠、聚根交干，桌面图片左移，≤760px照片在上而漫画造景在下；≥1800px主体收拢至居中1800px范围，草地/分隔仍全宽。允许叶片在照片后自然交叠，不再强迫全部最低叶尖高于照片；透明层级、英文页面与中文说明原则保持。CSS素材引用须同步内容版本，装配后刷新原预览核实；接口与胶水不变。分支 `style/academic-compact-grove`，回退 `b156e06`，实际验证见[最新记录](COMPATIBILITY.md#compact-grove-2026-10-24)。
+
+2026-10-26内部材料分组：`internal-note/groups.js`提供登记及深复制getter，各组独立数据，`internal-note/view.js`管理所属DOM和清理，父Publications视图只委托路由并从公开getter汇总计数。组路由沿用单slug `internal-note-<id>`，共享详情、作者及博客接口不变。具体扩展见[说明](../modules/academic/publications/internal-note/README.md)。

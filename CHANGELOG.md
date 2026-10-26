@@ -2,6 +2,12 @@
 
 记录影响功能、结构或工作方式的重要变化；细节以 Git 提交为准。
 
+## 2026-10-26：About研究方向与Internal note课题组
+
+- About改为High energy physics、Theory beyond the Standard Model，个人说明同步；长资料行按内容分高，相册保持等高，宽度比例不变。
+- Internal note先选择课题组；新增BESIII的bam1027、bam1089，按用户要求显示标题、作者、简介及内部链接。数据/视图按模块分离，简介使用本地LaTeX，不捏造日期或复制内部PDF。
+- 367条相关离线断言及桌面/手机模拟、子路径实测见[记录](docs/COMPATIBILITY.md#internal-note-groups-2026-10-26)。回退 `19a6246`，本次仅本地维护。
+
 ## 2026-10-25：欢迎页幻想插画与发布
 
 - 按用户要求换为所提供的人物与龙幻想插画，3840×2160 JPEG原字节归Home保存；新文件名、预载、尺寸与英文来源同步，旧雨景保留Git历史。

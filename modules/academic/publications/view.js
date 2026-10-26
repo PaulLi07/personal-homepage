@@ -23,25 +23,39 @@
     link.setAttribute("aria-label", "Open " + kind.toUpperCase() + " for " + entry.identifier);
     return link;
   }
+  function countLabel(category) {
+    let count = category.entries.length;
+    if (category.id === "internal-note") {
+      try { count = api.getInternalNoteGroups().reduce((total, group) => total + group.entries.length, 0); }
+      catch (_) { return "Groups unavailable"; }
+    }
+    return count ? count + (count === 1 ? " record" : " records") : "No entries yet";
+  }
   api.createPublicationsView = function ({categories = api.getPublicationCategories, onNavigate} = {}) {
     let active = null;
     return {
       render({host, route = null, signal} = {}) {
         if (!host || typeof host.replaceChildren !== "function") throw new TypeError("A publications host is required.");
-        active?.abort();
+        active?.();
         if (signal?.aborted) return;
+        if (route === "internal-note" || (typeof route === "string" && route.startsWith("internal-note-"))) {
+          const internal = api.createInternalNotesView({onNavigate});
+          const cleanup = internal.render({host, route, signal});
+          active = typeof cleanup === "function" ? cleanup : null;
+          return active;
+        }
         const controller = new AbortController();
-        active = controller;
         const dispose = () => {
           controller.abort();
           signal?.removeEventListener("abort", dispose);
-          if (active === controller) active = null;
+          if (active === dispose) active = null;
         };
         controller.signal.addEventListener("abort", () => {
           signal?.removeEventListener("abort", dispose);
-          if (active === controller) active = null;
+          if (active === dispose) active = null;
         }, {once: true});
         signal?.addEventListener("abort", dispose, {once: true});
+        active = dispose;
         const navigate = category => { if (typeof onNavigate === "function") onNavigate(category); };
         const section = node("section", "publication-library");
         section.setAttribute("aria-label", "Publication library");
@@ -79,7 +93,7 @@
             const copy = node("span", "publication-library__category-copy");
             copy.append(node("span", "publication-library__category-label", category.label),
               node("span", "publication-library__category-description", category.description),
-              node("span", "publication-library__count", category.entries.length ? category.entries.length + (category.entries.length === 1 ? " record" : " records") : "No entries yet"));
+              node("span", "publication-library__count", countLabel(category)));
             const arrow = node("span", "publication-library__arrow", "→");
             arrow.setAttribute("aria-hidden", "true");
             card.append(copy, arrow);

@@ -13,7 +13,7 @@
 
 ## 已确认资料与设计偏好
 
-- 姓名：Yuhong Li；学校：Nankai University（南开大学）；身份：研究生；领域：理论物理。
+- 姓名：Yuhong Li；学校：Nankai University（南开大学）；身份：研究生；领域：理论物理；About研究方向为 High energy physics、Theory beyond the Standard Model。
 - 邮箱：2310408@mail.nankai.edu.cn；GitHub：PaulLi07。
 - 用户提供的 ORCID：<https://orcid.org/0009-0005-6858-4000>，在 About 和 Contact 同步展示；Projects 展示 BESIII Collaboration 官方链接 <http://bes3.ihep.ac.cn/>，不推断个人角色或贡献。
 - 用户指定论文 arXiv:2610.11981，官方元信息已核对为 2026-10-08 提交、BESIII Collaboration 署名；只展示核实的题名、日期及 Abstract / PDF 链接，不推断个人主导角色或正式发表状态。
@@ -44,6 +44,7 @@
 - 保留参考网站 <https://swarajsingh-portfolio-25.pages.dev/> 的全屏摄影首屏、分栏简介、学术缩略图与详情、散落生活照片和联系区框架。
 - 导航为 About、Academic、Life、Contact；学术包括 Experience、Publications、Notes、Projects；生活包括 Moments、Travels、Creations、Relationship。用户本次栏目命名优先于旧版 Research / Places / Little things / Outside。
 - 使用下载的占位图，直到用户替换或要求寻找其他网络图片；未经用户改变偏好，不生成替换图片。
+- 2026-10-26：About资料及个人说明使用用户指定研究方向。Internal note先选课题组，BESIII独立保存bam1027/bam1089的标题、作者、简介及用户指定DocDB外链；不虚构日期，不上传或内嵌内部PDF。作者顺序固定为Li Yuhong, Ma Hailong, Zhao Minggang，不能改写arXiv合作组署名。组数据/校验/视图归internal-note子模块，URL使用现有单slug `internal-note-besiii`，不扩展共享路由。以后各组独立目录维护；长简介分段调用本地数学服务并保留纯文本回退。任务分支 `feat/internal-note-groups`，回退 `backup/pre-internal-note-groups-2026-10-26`（`19a6246`），本轮未请求推送。
 
 ## 功能边界与文件职责
 

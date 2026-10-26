@@ -56,6 +56,7 @@
         "modules/academic/exploration/walker.css",
         "modules/academic/experience/log.css",
         "modules/academic/publications/styles.css",
+        "modules/academic/publications/internal-note/styles.css",
         "modules/academic/projects/experiment-atlas/styles.css"
       ],
       "scripts": [
@@ -67,6 +68,9 @@
         "modules/academic/publications/content.js",
         "modules/academic/publications/data.js",
         "modules/academic/publications/internal-note/data.js",
+        "modules/academic/publications/internal-note/groups.js",
+        "modules/academic/publications/internal-note/besiii/data.js",
+        "modules/academic/publications/internal-note/view.js",
         "modules/academic/publications/arxiv/data.js",
         "modules/academic/publications/published/data.js",
         "modules/academic/publications/view.js",
