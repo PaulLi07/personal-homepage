@@ -1,8 +1,8 @@
-/* 地图目录属于Projects自己的详情视图，不更改共享弹窗或其他栏目。 */
-.project-directory { width: 100%; min-width: 0; }
-.project-directory__section-heading h3 { margin: 0; font-size: clamp(25px, 2.25vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -.035em; }
-.project-directory__eyebrow { margin: 0 0 11px; color: var(--muted); font-size: 12px; line-height: 1.6; letter-spacing: .075em; text-transform: uppercase; }
-.project-directory__intro { margin-top: 15px; color: var(--muted); font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
+/* Physics Maps只维护本项目的地图卡片，不承载父项目目录或合作组。 */
+.experiment-atlas__project { width: 100%; min-width: 0; }
+.experiment-atlas__heading h3 { margin: 0; font-size: clamp(25px, 2.25vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -.035em; }
+.experiment-atlas__eyebrow { margin: 0 0 11px; color: var(--muted); font-size: 12px; line-height: 1.6; letter-spacing: .075em; text-transform: uppercase; }
+.experiment-atlas__intro { margin-top: 15px; color: var(--muted); font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
 .experiment-atlas__grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); align-items: stretch; gap: 16px; margin-top: 25px; }
 .experiment-atlas__card { display: flex; flex-direction: column; min-width: 0; border: 1px solid #ffffff30; border-radius: 0; background: #18181c; color: var(--white); text-decoration: none; transition: background .18s ease, border-color .18s ease; }
 .experiment-atlas__card:hover { border-color: #ffffff80; background: #202025; }
@@ -17,17 +17,7 @@
 .experiment-atlas__count { color: #e3e3e9; }
 .experiment-atlas__action { display: flex; justify-content: space-between; gap: 14px; align-items: center; width: 100%; min-height: 44px; margin-top: 3px; border-top: 1px solid #ffffff25; color: var(--accent); font-size: 14px; line-height: 1.5; }
 .experiment-atlas__action span { font-size: 18px; }
-.project-directory__collaborations { margin-top: 42px; padding-top: 29px; border-top: 1px solid #ffffff30; }
-.project-directory__collaborations .project-directory__section-heading h3 { font-size: 24px; }
-.project-directory__collaboration { margin-top: 22px; padding-bottom: 23px; border-bottom: 1px solid var(--line); }
-.project-directory__collaboration h4 { margin: 0; font-size: 19px; font-weight: 500; line-height: 1.5; overflow-wrap: anywhere; }
-.project-directory__collaboration-meta { margin-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.6; }
-.project-directory__collaboration .project-directory__intro { margin-top: 8px; }
-.project-directory__external { display: inline-flex; align-items: center; min-height: 44px; color: var(--white); }
-.project-directory__external:hover, .project-directory__github:hover { text-decoration: underline; text-underline-offset: 4px; }
-.project-directory__github { display: inline-flex; align-items: center; min-height: 44px; margin-top: 15px; color: var(--accent); font-size: 14px; line-height: 1.6; }
-.project-directory__external:focus-visible, .project-directory__github:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
-.project-directory__empty { margin-top: 25px; padding: 22px; border: 1px solid var(--line); color: var(--muted); font-size: 15px; line-height: 1.8; }
+.experiment-atlas__empty { margin-top: 25px; padding: 22px; border: 1px solid var(--line); color: var(--muted); font-size: 15px; line-height: 1.8; }
 @media (max-width: 1000px) and (min-width: 761px) {
   .experiment-atlas__grid { gap: 12px; }
   .experiment-atlas__copy { padding: 16px 13px 13px; }
@@ -37,7 +27,6 @@
   .experiment-atlas__grid { grid-template-columns: minmax(0, 1fr); gap: 18px; }
   .experiment-atlas__preview { aspect-ratio: 2.2 / 1; }
   .experiment-atlas__copy { padding: 20px; }
-  .project-directory__collaborations { margin-top: 34px; }
 }
 @media (prefers-reduced-motion: reduce) {
   .experiment-atlas__card { transition: none; }

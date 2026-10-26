@@ -51,7 +51,8 @@ Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明
 | publications / Published | [published](../../modules/academic/publications/published/README.md) | [分类测试](academic-publications-published.md) |
 | academic / 学术笔记 | [notes](../../modules/academic/notes/README.md) | [academic-notes.md](academic-notes.md) |
 | academic / 项目 | [projects](../../modules/academic/projects/README.md) | [academic-projects.md](academic-projects.md) |
-| projects / 实验地图集 | [experiment-atlas](../../modules/academic/projects/experiment-atlas/README.md) | [experiment-atlas.md](experiment-atlas.md) |
+| projects / Physics Maps | [experiment-atlas](../../modules/academic/projects/experiment-atlas/README.md) | [experiment-atlas.md](experiment-atlas.md) |
+| projects / Physicists | [physicists](../../modules/academic/projects/physicists/README.md) | [academic-projects-physicists.md](academic-projects-physicists.md) |
 | experiment-atlas / 中微子地图 | [neutrino](../../modules/academic/projects/experiment-atlas/neutrino/README.md) | [地图集实测](experiment-atlas.md) |
 | experiment-atlas / 暗物质地图 | [dark-matter](../../modules/academic/projects/experiment-atlas/dark-matter/README.md) | [地图集实测](experiment-atlas.md) |
 | life / Moments 博客 | [moments](../../modules/life/moments/README.md) | [life-moments.md](life-moments.md) |

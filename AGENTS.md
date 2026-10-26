@@ -48,6 +48,8 @@
 
 ## 功能边界与文件职责
 
+- 2026-10-27：Projects先列Physics Maps与Physicists两个项目，再独立展示Research collaborations。父目录的registry/view/integration/styles管理项目登记、导航和生命周期；Physics Maps沿用experiment-atlas目录，仅进入项目后显示两地图，地图顶栏返回 `/physics-maps`。Physicists先建独立占位目录，内容与功能等待用户提供，不编造人物资料。新项目与新地图分开扩展，禁止重新把子资源提升到父项目平级；共享路由仍用单slug。任务分支 `feat/projects-directory`，回退 `backup/pre-project-directory-2026-10-27`（`9df31f1`），本轮未请求推送。
+
 - 实验地图集独立归 `modules/academic/projects/experiment-atlas/`：Projects只登记入口，各地图保留自己的页面、脚本、样式、完整英文档案、图片和中文说明。用户明确要求全部所需源码复制到主页，原 `/Users/paulli/coding/HEP/Web` 可能移除；禁止运行时或日常重建依赖该目录、符号链接、绝对本机路径及其后台服务。首次导入工具仅在明确再次导入时读取指定外源，不能成为日常维护必需步骤。
 - 地图新增入口通过 `registry.js`，统计从本地 catalog 生成 `metadata.js`，公共顶栏由同一登记生成。各地图独立 HTML 在 `app/site.json` 的所属模块 `standalonePages` 声明，使只读检查按页面自身目录解析资源；不要把整张地图或其数据塞进主页脚本。维护与兼容证据见[地图集说明](modules/academic/projects/experiment-atlas/README.md)和[记录](docs/modules/experiment-atlas.md)。
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。

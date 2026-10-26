@@ -3,19 +3,19 @@ window.Homepage.registerDetail("academic", "projects", {
   "title": "Projects.",
   "label": "Projects",
   "kicker": "Academic · 04",
-  "subtitle": "Interactive experiment maps, research collaborations, and code.",
+  "subtitle": "Independent projects, research tools, and collaborations.",
   "image": "modules/academic/projects/images/cover.jpg",
   "imageAlt": "Earth rising above the Moon, photographed by Apollo 8",
   "credit": "NASA / Bill Anders · Apollo 8 Earthrise",
   "source": "https://science.nasa.gov/resource/apollo-8s-iconic-earthrise/",
   "description": [
-    "Explore interactive experiment maps alongside research collaborations and academic projects.",
-    "Each map opens in its own full-width workspace, with experiment records, filters, and reference material."
+    "Explore Physics Maps and Physicists as distinct projects, alongside research collaborations.",
+    "Open a project to browse its own collection and updates."
   ],
   "facts": [
     {
       "label": "Collection",
-      "value": "Experiment Atlas & collaborations"
+      "value": "Physics Maps · Physicists"
     },
     {
       "label": "Profile",

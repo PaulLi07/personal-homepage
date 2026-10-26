@@ -2,6 +2,12 @@
 
 记录影响功能、结构或工作方式的重要变化；细节以 Git 提交为准。
 
+## 2026-10-27：Projects独立项目目录
+
+- Physics Maps作为一个项目收纳中微子与暗物质两张地图；新增Physicists独立占位，等待后续要求。合作组和GitHub独立展示。
+- 父目录注册、视图与胶水独立维护，各项目自有视图/样式/说明；地图返回指向Physics Maps，原数据资源保持原位置。
+- 桌面/手机、子路径、历史与76条离线断言见[记录](docs/modules/academic-projects.md#project-directory-2026-10-27)。回退 `9df31f1`，本次仅本地更新。
+
 ## 2026-10-26：About研究方向与Internal note课题组
 
 - About改为High energy physics、Theory beyond the Standard Model，个人说明同步；长资料行按内容分高，相册保持等高，宽度比例不变。

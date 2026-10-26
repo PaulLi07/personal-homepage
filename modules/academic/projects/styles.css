@@ -1,0 +1,40 @@
+/* Projects父目录仅呈现项目入口及合作组，各项目样式由自己的模块维护。 */
+.project-directory { width: 100%; min-width: 0; }
+.project-directory__section-heading h3 { margin: 0; font-size: clamp(25px, 2.25vw, 30px); font-weight: 500; line-height: 1.25; letter-spacing: -.035em; overflow-wrap: anywhere; }
+.project-directory__eyebrow { margin: 0 0 11px; color: var(--muted); font-size: 12px; line-height: 1.6; letter-spacing: .075em; text-transform: uppercase; }
+.project-directory__intro { margin-top: 15px; color: var(--muted); font-size: 15px; line-height: 1.8; overflow-wrap: anywhere; }
+.project-directory__list { display: grid; gap: 14px; margin-top: 25px; }
+.project-directory__card { display: grid; grid-template-columns: 26px minmax(0, 1fr) 20px; gap: 17px; width: 100%; min-width: 0; padding: 25px 23px; border: 1px solid #ffffff30; border-radius: 0; background: var(--surface); color: var(--white); text-align: left; transition: background .18s ease, border-color .18s ease; }
+.project-directory__card:hover { border-color: #ffffff70; background: var(--surface-raised); }
+.project-directory__card:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-directory__number { padding-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.6; font-variant-numeric: tabular-nums; }
+.project-directory__copy { display: flex; flex-direction: column; align-items: flex-start; gap: 10px; min-width: 0; }
+.project-directory__title { font-size: 24px; font-weight: 500; line-height: 1.3; letter-spacing: -.025em; overflow-wrap: anywhere; }
+.project-directory__description { color: var(--muted); font-size: 15px; line-height: 1.75; overflow-wrap: anywhere; }
+.project-directory__summary { display: inline-flex; align-items: center; max-width: 100%; margin-top: 3px; padding: 3px 9px; border: 1px solid #ffffff24; border-radius: 5px; color: #d4d7df; background: #ffffff05; font-size: 13px; line-height: 1.6; overflow-wrap: anywhere; }
+.project-directory__arrow { align-self: center; color: var(--accent); font-size: 20px; line-height: 1.5; }
+.project-directory__back { display: inline-flex; align-items: center; min-height: 44px; margin: 0 0 20px; padding: 8px 0; color: var(--accent); font-size: 14px; line-height: 1.6; }
+.project-directory__back:hover, .project-directory__external:hover, .project-directory__github:hover { text-decoration: underline; text-underline-offset: 4px; }
+.project-directory__back:focus-visible, .project-directory__external:focus-visible, .project-directory__github:focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.project-directory__project-host { min-width: 0; }
+.project-directory__collaborations { margin-top: 38px; padding-top: 29px; border-top: 1px solid #ffffff30; }
+.project-directory__collaborations .project-directory__section-heading h3 { font-size: 24px; }
+.project-directory__collaboration { margin-top: 22px; padding-bottom: 23px; border-bottom: 1px solid var(--line); }
+.project-directory__collaboration h4 { margin: 0; font-size: 19px; font-weight: 500; line-height: 1.5; overflow-wrap: anywhere; }
+.project-directory__collaboration-meta { margin-top: 5px; color: var(--muted); font-size: 13px; line-height: 1.6; }
+.project-directory__collaboration .project-directory__intro { margin-top: 8px; }
+.project-directory__external { display: inline-flex; align-items: center; min-height: 44px; color: var(--white); }
+.project-directory__github { display: inline-flex; align-items: center; min-height: 44px; margin-top: 15px; color: var(--accent); font-size: 14px; line-height: 1.6; }
+.project-directory__state { padding: 25px; border: 1px solid var(--line); background: var(--surface); }
+.project-directory__state .project-directory__section-heading h3 { font-size: 24px; }
+@media (max-width: 760px) {
+  .project-directory__list { gap: 12px; }
+  .project-directory__card { grid-template-columns: 22px minmax(0, 1fr) 18px; gap: 12px; padding: 22px 17px; }
+  .project-directory__title { font-size: 22px; }
+  .project-directory__description { font-size: 15px; }
+  .project-directory__collaborations { margin-top: 32px; }
+  .project-directory__state { padding: 22px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .project-directory__card { transition: none; }
+}

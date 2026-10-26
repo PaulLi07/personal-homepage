@@ -10,7 +10,7 @@
 
 Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
 
-Projects现含独立的 Experiment Atlas 板块，中微子252条、暗物质297条实验记录通过卡片进入各自地图。页面、源码、完整英文档案和549张图片全部随主页保存，移除原 HEP Web 工作目录后仍可运行和维护。新增地图与数据更新见[地图集说明](modules/academic/projects/experiment-atlas/README.md)，本轮桌面/手机、独立副本和51项测试见[实测记录](docs/modules/experiment-atlas.md)。
+Projects先展示Physics Maps和Physicists两个独立项目。Physics Maps内含中微子与暗物质地图，Physicists暂为待补充占位；合作组与GitHub仍单独列出。地图的549份档案及549张图片全部随主页保存，日常维护不依赖原HEP Web。项目扩展见[Projects说明](modules/academic/projects/README.md)，新增地图见[地图说明](modules/academic/projects/experiment-atlas/README.md)，2026-10-27目录实测见[记录](docs/modules/academic-projects.md#project-directory-2026-10-27)。
 
 2026-10-25 Life改为四张横向白边拍立得的交错照片堆，取消旧整区白框与滚动漂移；悬停/聚焦置顶并切换亮黄色手写标题，触摸先选中下层再点正面进入，下方为白色生活语录。局部手写字体随源码本地加载并保留OFL许可，其余页面仍用正常系统字体。接口、构图及验证要求见[照片堆说明](modules/life/stack/README.md)，实测单独登记在[Life记录](docs/modules/life.md)。任务分支 `feat/life-polaroid-stack`，回退 `backup/pre-life-polaroids-2026-10-25`（`0783998`）；只做本地维护。
 

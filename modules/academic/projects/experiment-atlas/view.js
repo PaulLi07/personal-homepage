@@ -1,4 +1,4 @@
-/* Projects 目录只渲染传入host；地图使用普通链接进入独立页面。 */
+/* Physics Maps项目只渲染自己的地图目录，地图保留普通链接与独立页面。 */
 (function () {
   "use strict";
   const api = window.Homepage;
@@ -48,55 +48,22 @@
     return link;
   }
 
-  function collaborations(content) {
-    const section = node("section", "project-directory__collaborations");
-    section.setAttribute("aria-label", "Research collaborations");
-    const header = node("header", "project-directory__section-heading");
-    header.append(node("p", "project-directory__eyebrow", "Research network"), node("h3", "", "Research collaborations"));
-    section.append(header);
-    const entries = Array.isArray(content?.entries) ? content.entries : [];
-    if (!entries.length) section.append(node("p", "project-directory__intro", content?.emptyMessage || "Collaboration information will be added here."));
-    entries.forEach(entry => {
-      const article = node("article", "project-directory__collaboration");
-      const title = node("h4", "");
-      if (entry.url) {
-        const link = node("a", "project-directory__external", entry.title + " ↗");
-        link.href = entry.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        title.append(link);
-      } else title.textContent = entry.title;
-      article.append(title);
-      if (entry.meta) article.append(node("p", "project-directory__collaboration-meta", entry.meta));
-      if (entry.description) article.append(node("p", "project-directory__intro", entry.description));
-      section.append(article);
-    });
-    if (content?.link?.url) {
-      const link = node("a", "project-directory__github", content.link.label);
-      link.href = content.link.url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      section.append(link);
-    }
-    return section;
-  }
-
-  api.createProjectsView = function ({maps = api.getExperimentMaps, content} = {}) {
+  api.createExperimentAtlasView = function ({maps = api.getExperimentMaps} = {}) {
     let activeCleanup = null;
     return {
       render({host, signal} = {}) {
         if (!host || typeof host.replaceChildren !== "function") throw new TypeError("A projects host is required.");
         activeCleanup?.();
         if (signal?.aborted) return;
-        const root = node("div", "project-directory");
+        const root = node("div", "experiment-atlas__project");
         const atlas = node("section", "experiment-atlas");
-        atlas.setAttribute("aria-label", "Experiment Atlas");
-        const header = node("header", "project-directory__section-heading");
-        const heading = node("h3", "", "Experiment Atlas");
+        atlas.setAttribute("aria-label", "Physics Maps");
+        const header = node("header", "experiment-atlas__heading");
+        const heading = node("h3", "", "Physics Maps");
         heading.tabIndex = -1;
         heading.setAttribute("data-view-heading", "");
-        header.append(node("p", "project-directory__eyebrow", "Interactive research maps"), heading);
-        atlas.append(header, node("p", "project-directory__intro", "A growing collection of interactive maps for exploring experiments, techniques, and the questions they investigate."));
+        header.append(node("p", "experiment-atlas__eyebrow", "Interactive research maps"), heading);
+        atlas.append(header, node("p", "experiment-atlas__intro", "A growing collection of interactive maps for exploring experiments, techniques, and the questions they investigate."));
         let records;
         try { records = typeof maps === "function" ? maps() : maps; }
         catch (_) { records = null; }
@@ -104,11 +71,8 @@
           const grid = node("div", "experiment-atlas__grid");
           records.forEach((map, index) => grid.append(mapCard(map, index)));
           atlas.append(grid);
-        } else atlas.append(node("p", "project-directory__empty", "Maps are temporarily unavailable. Please return to this page later."));
-        let projects;
-        try { projects = typeof content === "function" ? content() : content; }
-        catch (_) { projects = null; }
-        root.append(atlas, collaborations(projects));
+        } else atlas.append(node("p", "experiment-atlas__empty", "Maps are temporarily unavailable. Please return to this page later."));
+        root.append(atlas);
         host.replaceChildren(root);
         let disposed = false;
         const dispose = () => {

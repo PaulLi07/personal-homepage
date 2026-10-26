@@ -1,0 +1,9 @@
+/* 独立占位项目保持克制阅读布局，不添加未确定的视觉或功能。 */
+.physicists-project { width: 100%; min-width: 0; }
+.physicists-project__heading { margin: 0; font-size: clamp(25px, 2.25vw, 30px); font-weight: 500; line-height: 1.3; letter-spacing: -.03em; overflow-wrap: anywhere; }
+.physicists-project__panel { margin-top: 25px; padding: 26px; border: 1px solid var(--line); background: var(--surface); }
+.physicists-project__status { margin: 0; color: var(--accent); font-size: 13px; line-height: 1.7; }
+.physicists-project__description { margin: 12px 0 0; color: var(--muted); font-size: 16px; line-height: 1.8; overflow-wrap: anywhere; }
+@media (max-width: 760px) {
+  .physicists-project__panel { padding: 22px; }
+}

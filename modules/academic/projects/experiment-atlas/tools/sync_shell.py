@@ -93,13 +93,13 @@ def replace_block(source: str, start: str, end: str, block: str, pattern: str, *
 def shell_html(current: dict[str, object], maps: list[dict[str, object]], site: Path) -> str:
     page = current["page"]
     assert isinstance(page, Path)
-    back = relative(site / "index.html", page.parent) + "#academic/projects"
+    back = relative(site / "index.html", page.parent) + "#academic/projects/physics-maps"
     lines = [
         NAV_START,
-        '<nav class="atlas-shell" aria-label="Experiment Atlas navigation">',
+        '<nav class="atlas-shell" aria-label="Physics Maps navigation">',
         '  <div class="atlas-shell__inner">',
-        f'    <a class="atlas-shell__back" href="{html.escape(back, quote=True)}">← Back to Projects</a>',
-        '    <p class="atlas-shell__brand">Experiment Atlas</p>',
+        f'    <a class="atlas-shell__back" href="{html.escape(back, quote=True)}">← Physics Maps</a>',
+        '    <p class="atlas-shell__brand">Physics Maps</p>',
         '    <ul class="atlas-shell__maps" aria-label="Experiment maps">',
     ]
     for item in maps:

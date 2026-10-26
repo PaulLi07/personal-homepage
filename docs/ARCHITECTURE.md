@@ -13,8 +13,9 @@ modules/
   about/                   简介
   academic/                学术概览
     experience/ notes/
-    projects/              项目与合作组
-      experiment-atlas/    地图登记、入口视图、公共顶栏与本地维护工具
+    projects/              项目登记、父目录视图、合作组与接线
+      physicists/          独立项目占位，等待后续资料
+      experiment-atlas/    Physics Maps项目、地图登记、顶栏与本地维护工具
         neutrino/ dark-matter/  各自页面、代码、数据、档案与图片
     publications/          论文分类目录与视图
       internal-note/       课题组注册、独立视图与besiii/记录
@@ -88,7 +89,7 @@ index.html, credits.html   装配生成的发布页面
 
 ## 实验地图集（2026-10-25）
 
-`academic/projects/experiment-atlas/` 自己维护登记、Projects视图、元数据和地图顶栏；`integration.js` 通过 `registerDetailView` 接线，合作组继续读取公开的Projects内容。每图独立保存HTML/CSS/JS、`data/catalog.json`、`archive/<id>/record.json`及相应图片，不读取其他工作目录，不使用符号链接或本机后台服务。地图之间只用原生链接切换，不共用检索状态。
+`academic/projects/` 的registry/view/integration管理项目登记、父目录、合作组与子项目生命周期，通过 `registerDetailView`接入共享详情。各项目用 `registerAcademicProject(descriptor, view)`登记，元信息经冻结getter读取，视图经独立getter委托；项目摘要可从所属模块动态计算。Physics Maps位于experiment-atlas，Physicists位于physicists，父目录不读项目内部实现。`academic/projects/experiment-atlas/`仅维护本项目地图目录、元数据和独立地图顶栏，不再负责父Projects视图。每图独立保存HTML/CSS/JS、`data/catalog.json`、`archive/<id>/record.json`及相应图片，不读取其他工作目录，不使用符号链接或本机后台服务。地图之间只用原生链接切换，不共用检索状态。
 
 `registry.js` 是入口标题/路径的唯一登记；`refresh_metadata.py` 从本地索引生成统计，`sync_shell.py` 从登记生成两图顶栏。每图 `tools/build_data.py` 从自己的英文档案重建索引及计数缩略图，`verify_portable.py` 检查资源路径闭合。日常维护全部在主页内完成；再次导入外源属于单独明确操作，不能成为构建依赖。
 

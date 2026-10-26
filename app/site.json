@@ -57,7 +57,9 @@
         "modules/academic/experience/log.css",
         "modules/academic/publications/styles.css",
         "modules/academic/publications/internal-note/styles.css",
-        "modules/academic/projects/experiment-atlas/styles.css"
+        "modules/academic/projects/styles.css",
+        "modules/academic/projects/experiment-atlas/styles.css",
+        "modules/academic/projects/physicists/styles.css"
       ],
       "scripts": [
         "modules/academic/experience/content.js",
@@ -77,10 +79,15 @@
         "modules/academic/publications/integration.js",
         "modules/academic/notes/content.js",
         "modules/academic/projects/content.js",
+        "modules/academic/projects/registry.js",
         "modules/academic/projects/experiment-atlas/metadata.js",
         "modules/academic/projects/experiment-atlas/registry.js",
         "modules/academic/projects/experiment-atlas/view.js",
         "modules/academic/projects/experiment-atlas/integration.js",
+        "modules/academic/projects/physicists/view.js",
+        "modules/academic/projects/physicists/integration.js",
+        "modules/academic/projects/view.js",
+        "modules/academic/projects/integration.js",
         "modules/academic/exploration/config.js",
         "modules/academic/exploration/gallery.js",
         "modules/academic/exploration/navigation.js",

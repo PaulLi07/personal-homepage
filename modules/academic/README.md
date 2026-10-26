@@ -8,7 +8,7 @@
 - `styles.css`：概览外壳、标题、精选论文与导航留白。
 - `module.js`：初始化接线；场景位于独立的 [exploration/](exploration/README.md)，不再在入口中混合轮播、动画与论文业务。
 - 四个详情子目录分别维护自己的内容、数据、封面和中文说明；图窗直接引用各自封面，不新建重复图片目录。
-- Projects的[实验地图集](projects/experiment-atlas/README.md)在同一详情内展示独立地图入口，中微子与暗物质地图的源码、档案、数据、图片及重建工具均归其子目录，不依赖原HEP工作目录；不把地图交互逻辑并入Academic场景。
+- Projects的[项目目录](projects/README.md)先展示Physics Maps和Physicists，再在Physics Maps子项目内展示独立地图入口，中微子与暗物质地图的源码、档案、数据、图片及重建工具均归其子目录，不依赖原HEP工作目录；不把地图交互逻辑并入Academic场景。
 
 ## 当前布局与行为
 
@@ -56,3 +56,5 @@
 Projects新增Experiment Atlas目录，桌面两列直角卡片、手机单列，保留下方BESIII Collaboration与GitHub链接。卡片进入各地图独立全宽页面，公共顶栏可返回Projects或切换地图；原Academic路牌、图窗、人物、粒子及其他详情的接口不变。
 
 中微子252条、暗物质297条，549份完整英文档案及549张代表图片全部保存在个人主页。每张地图独立重建索引与 `assets/preview.svg`，地图登记、入口统计和顶栏经公开接口及小型胶水连接。新增地图同时登记 `projects/experiment-atlas/registry.js` 和 `app/site.json` 的Academic `standalonePages`；日常维护无需原Web目录。命令、资源边界及新增流程见[地图集README](projects/experiment-atlas/README.md)，本轮兼容性和未覆盖项统一见[接入记录](../../docs/modules/experiment-atlas.md)。
+
+2026-10-27：Projects项目层级与地图返回路径已更新，Physicists目前仅占位，具体内容以后提供；目录/子项目独立说明和实际验证见[Projects记录](../../docs/modules/academic-projects.md#project-directory-2026-10-27)。上述2026-10-25地图直接入口描述保留为历史。

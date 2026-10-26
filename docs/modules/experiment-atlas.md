@@ -1,5 +1,9 @@
 # 实验地图集接入记录
 
+## 2026-10-27：归入Physics Maps项目
+
+地图目录现位于 `#academic/projects/physics-maps`，先从Projects父目录选择Physics Maps。两张地图顶栏返回此项目页；内部源目录仍叫experiment-atlas，档案、地图代码及图片未搬动。父目录与地图目录职责已分离，当前层级/返回/手机和子路径证据见[Projects记录](academic-projects.md#project-directory-2026-10-27)，下方549记录等首次接入细节作为历史保存。
+
 维护入口：[地图集说明](../../modules/academic/projects/experiment-atlas/README.md)。本板块归 Academic → Projects，地图在各自独立页面运行，所需源码、目录数据、档案和图片全部保存在主页源码内。原 HEP 目录不属于部署或运行依赖。
 
 ## 2026-10-25：首次接入

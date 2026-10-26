@@ -1,5 +1,22 @@
 # 项目详情测试记录
 
+<a id="project-directory-2026-10-27"></a>
+## 2026-10-27：独立项目目录与Physicists占位
+
+父Projects只展示Physics Maps与Physicists两个项目；进入Physics Maps后才显示中微子、暗物质两地图。Physicists仅有准备中状态及简短说明，等待用户提供具体内容；BESIII与GitHub保留在父目录独立的Research collaborations区。父目录、注册接口、子视图及各自样式分开维护，沿用共享详情单slug路由和焦点/历史；地图顶栏品牌和返回目标改为Physics Maps，原地图档案/科学数据/图片未变。
+
+### 实际验证
+
+- `npm run test:projects-directory`：8流程76断言，离线内存DOM验证注册冻结/动态地图数/非法和重复登记、父目录无地图、子页两图元数据、合作组隔离、Physicists占位、未知/故障项目回退、导航/取消/重复挂载与幂等清理。
+- macOS / Codex应用内浏览器实看1440×1000、390×844、320×780；工具未提供引擎/精确版本，手机为模拟。父目录2项目且地图卡片0，Physics Maps两地图252/297计数，Physicists文案和状态正确；各检查视口整页与详情横向溢出0，手机地图单列分别339/269px。
+- 两地图均实际进入并加载252/297目录，地图页切换和Physics Maps返回链接通过；返回后仍在地图子项目、两图可见且没有合作组混入。新项目Enter进入、直达刷新、All projects返回、浏览器后退/前进通过；未知项目有英文提示并可Enter返回目录。Escape关闭、从Academic路牌以Enter重开再关闭，焦点恢复到Projects入口。
+- 临时 `/personal-homepage/` HTTP前缀下实际执行项目目录→Physics Maps→中微子地图→Physics Maps返回，最终路径保留仓库前缀，两图可见且无横向溢出。临时服务已停止，正式8767预览保留。Notes切换时项目DOM清理为0，返回Projects恢复2入口；最终浏览器警告/错误日志为空。
+- `sync_shell.py --check`通过；`verify_portable.py --json`通过，549档案、549本地图片、1681项本地引用错误0。该工具只证明资源路径闭合，本轮未重跑旧51项地图逻辑测试或完整筛选/档案矩阵；已有科学数据无差异。
+
+装配、只读检查与差异检查通过。截图/报告位于忽略目录 `artifacts/projects-directory-2026-10-27/`，含 `directory-desktop.png`、`directory-mobile-390.png`、`physics-maps-desktop.png`、`physics-maps-mobile-390.png`、`physicists-desktop.png`、`physicists-mobile-320.png`、`offline-tests.txt`和`portable-static.json`。未测试独立Chrome/Firefox/Safari、真机/真实触摸、原生减少动态偏好、file://与线上部署；单内核模拟不等于跨浏览器或真机。
+
+分支 `feat/projects-directory`，回退 `backup/pre-project-directory-2026-10-27`（`9df31f1`）。保留用户未提交的人像文件，未请求推送。以下旧测试属于其对应历史阶段。
+
 ## 2026-10-25：Experiment Atlas接入
 
 本轮Projects使用自定义详情视图，分为Experiment Atlas与Research collaborations：桌面两列、手机单列直角地图卡片，保留原BESIII合作组、GitHub和Earthrise封面资料。中微子与暗物质各有独立页面、返回入口、地图切换，以及完全保存在主页内的源码、数据、英文档案和图片；当前合计549条记录、549张代表图片，日常重建不需要原Web目录。

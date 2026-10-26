@@ -25,7 +25,8 @@
     "test:math": "node scripts/test-math.cjs",
     "test:about-gallery": "node scripts/test-about-gallery.cjs",
     "test:life-stack": "node scripts/test-life-stack.cjs",
-    "test:internal-notes": "node scripts/test-internal-notes.cjs"
+    "test:internal-notes": "node scripts/test-internal-notes.cjs",
+    "test:projects-directory": "node scripts/test-projects-directory.cjs"
   },
   "engines": {
     "node": ">=18"
