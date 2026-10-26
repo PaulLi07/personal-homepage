@@ -1,53 +1,53 @@
-# Early physical milestones: source and dating review
+# 早期物理成果：来源与定年复核
 
-Reviewed 2026-10-26. Source file: `events-early.json`.
+复核日期：2026-10-26。源文件：`events-early.json`。
 
-94 curated events, 84 with an exact, approximate or source-bounded date; 10 deliberately undated. The events link 76 existing archive profiles. Five historical conjectures/models are retained for history but explicitly excluded from the breakthrough index with `indexEligible: false`. One item, the dating of Ibn al-Haytham’s Book of Optics, is provisional. This is a reviewed initial selection, not a claim to complete early physical history.
+共精选94项事件，其中84项具有确切日期、约年或受来源限定的日期，另10项有意保留为未定年。事件关联76份现有档案。5项历史猜想或模型保留为历史记录，但以 `indexEligible: false` 明确排除出突破指数。Ibn al-Haytham 的 Book of Optics 定年暂定，待进一步复核。这是经过复核的初步选集，不代表完整覆盖早期物理史。
 
-## Selection and scoring
+## 选择与计分
 
-Events are claims, discoveries or instrumental/mathematical advances, rather than one event per person or per paper. Two authors of one discovery do not create two index contributions. A published collection is not automatically split into many scores. Separate, identifiable physical results can be recorded separately (e.g. Bernoulli’s fluid analysis and kinetic account of gases). Awards and modern reputation do not determine event dates or weight. The 1/2/4/8 weights are editorial assessments with a bilingual rationale on every event. Nine events have weight 4 or 8; all have at least two source records.
+事件对应具体主张、发现或仪器与数学方法进展，不按人物或论文一人一项、一篇一项建立。同一发现有两位作者，不会产生两份指数贡献；出版一部文集，也不自动拆出多份分数。可以辨识的独立物理结果可分别记录，例如 Bernoulli 的流体分析与气体动力学解释。获奖和现代声誉不决定事件年代或权重。1/2/4/8权重是编辑评估，每项均附双语理由。9项事件权重为4或8，均至少有两份来源记录。
 
-The highest weight in this selection is the 1687 Principia as a single unified framework. It is not divided into three separately scored laws plus an independently scored universal-gravitation book. Democritus’s speculative atomism, Aristarchus’s undeveloped ancient heliocentric proposal, Buridan’s impetus account, Boscovich’s speculative force system and Ptolemy’s historical geocentric model remain historical records without adding established-physics points. The geometry in Euclid’s Optics is scored for geometrical treatment, not its obsolete extramission account.
+本选集中权重最高的是1687年的 Principia，作为一个统一框架计分；不拆成三条分别计分的定律，再给万有引力著作独立计分。Democritus 的思辨原子论、Aristarchus 尚未展开的古代日心说提案、Buridan 的冲力解释、Boscovich 的思辨力体系，以及 Ptolemy 的历史地心模型，均作为历史记录保留，不增加已确立物理成果的分数。Euclid 的 Optics 因几何处理而计分，而非因其已被取代的视觉外射解释。
 
-## Dating decisions actually checked
+## 实际核对的定年决定
 
-- Euclid’s Optics: about 300 BCE, explicitly dated by MacTutor’s specialist history of classical optics. Approximate date retained; no invented ± interval.
-- Archimedes, On Floating Bodies: about 250 BCE in John McCuan’s Georgia Tech mathematical research chronology. The separate statics work remains undated.
-- Ancient atomism: Cambridge’s Early Greek Philosophy chapter dates its creation to the fifth century BCE. This gives the historical-calendar interval [-500,-401], but the conjecture does not enter the index.
-- Mohist Canons: Stanford describes later, anonymous Mohist authors, not secure authorship by Mozi. They are linked to a school in `groups`, not assigned to Mozi’s lifetime. No arbitrary exact year is introduced.
-- Hipparchus: the star catalogue is only probably completed in 129 BCE. Precession’s discovery is not assigned the catalogue’s date.
-- Aryabhatiya: 499 is the date stated within the work, as explained by MacTutor.
-- Philoponus: 517 dates the initial Physics commentary; later revisions are explicitly retained as a qualification.
-- Ibn al-Haytham: the Cambridge pupillometry history gives composition in 1011–1021. The event preserves this range and marks the dating provisional pending specialist textual review; neither 1021 nor a guessed midpoint is asserted as exact.
-- Dream Pool Essays: the University of Washington Press study places completion between 1088 and 1095; the interval is retained, rather than forcing the customary single year 1088.
-- Benedetti: the 1553 proposal mishandled the resisting medium; the 1554 revision limited exact equality of fall to a vacuum. The event uses that corrected physical claim rather than the much later 1585 collection.
-- Castelli: the Museo Galileo library’s first-edition catalogue gives 1628. Its abbreviated biography says 1629; the primary edition record is preferred and the discrepancy is noted.
-- Brahe: the 1572 nova is anchored to the 1573 public book; observations of the 1577 comet to the 1588 published report.
-- Torricelli: the mercury experiment began in 1643; the dated 1644 Ricci communication is the retained scientific report. The separate efflux result is dated by the 1644 Opera geometrica.
-- Newton’s colour report: 1672; Old Style 1671/72 is not treated as a second event. The 1704 Opticks is not counted again for the same white-light claim.
-- Hooke: the law was known around 1660, but the general formulation in Of Spring was public in 1678.
-- Huygens: wave optics uses the 1678 French Academy presentation; 1690 is the printed treatise, not a second breakthrough. Some brief biographies conflate these dates; Kanazawa Institute of Technology’s original-book record distinguishes them.
-- Bradley: discovery is often called 1728; the Royal Society report was read in January 1729, used here under the public-report convention.
-- Gray: conduction work began in 1729; the preserved Royal Society communication was read in May 1731.
-- d’Alembert: the vibrating-string work was presented in 1747; the corresponding Academy volume was printed later. This is recorded as a presentation date, not an assertion about imprint year.
-- Euler’s fluid equations: written in 1755, actually published in 1757. The Euler Archive and BnF independently distinguish these dates.
-- Black: the university biography dates the public Glasgow society report to 1762, rather than substituting the often cited 1761 experiments.
-- Watt: 1765 models and the 1769 separate-condenser patent form one event, anchored to the public patent.
-- Atwood: the first French description is 1780; 1784 is his detailed English treatise.
-- Galvani: the Bologna source specifies academy presentation in 1789, then printing in 1791. The first presentation is used once.
-- Lavoisier and Laplace: the Vienna university collection history specifies the first academy presentation of the calorimeter principle in 1780, used here. The later 1783 heat memoir is not a second event. Earlier prototypes and later publications do not multiply the same method’s score.
-- Cavendish: the original 1798 paper measured Earth’s mean density; the event does not anachronistically claim his stated objective was a direct measurement of G.
-- Volta: the March 1800 Banks letter and public Royal Society communication are one event. Individual cells, later editions and associated awards are not extra points.
+- Euclid 的 Optics：约公元前300年，MacTutor 的古典光学专题史明确给出这一约年。保留近似日期，不编造±区间。
+- Archimedes 的 On Floating Bodies：Georgia Tech 的 John McCuan 数学研究年表给出约公元前250年。独立的静力学著作仍保留为未定年。
+- 古代原子论：Cambridge 的 Early Greek Philosophy 章节将其形成定于公元前5世纪，对应历史历法区间[-500,-401]；该猜想不进入指数。
+- Mohist Canons：Stanford 说明作者是后期匿名墨家，并不能确认为 Mozi 所著。在 `groups` 中关联学派，不套用 Mozi 的生卒年代，也不任意指定确切年份。
+- Hipparchus：星表仅被认为可能于公元前129年完成；不把星表年代套用为岁差发现日期。
+- Aryabhatiya：499年是作品内部记载的日期，MacTutor 对此有说明。
+- Philoponus：517年对应最初的 Physics 注疏；明确保留后来修订这一限定。
+- Ibn al-Haytham：Cambridge 的瞳孔测量史将成书定于1011–1021年。事件保留该区间，定年标为暂定，等待专业文本复核；不将1021年或猜测的中点声称为确切年份。
+- Dream Pool Essays：University of Washington Press 的研究将完成时间置于1088至1095年之间。保留区间，不强行采用惯常的单一年份1088年。
+- Benedetti：1553年的提案错误处理了阻力介质；1554年修订将下落完全相等限定于真空。事件采用这一修正后的物理主张，而非晚得多的1585年文集。
+- Castelli：Museo Galileo 图书馆的初版目录给出1628年，其简略传记写作1629年。优先采用原始版本记录，并注明差异。
+- Brahe：1572年新星以1573年公开著作为锚点；1577年彗星观测以1588年出版报告为锚点。
+- Torricelli：水银实验始于1643年；保留有明确日期的1644年致 Ricci 通信作为科学报告。独立的流出结果依据1644年的 Opera geometrica 定年。
+- Newton 的颜色报告：1672年；旧历1671/72不视为第二项事件。1704年的 Opticks 不因同一白光主张再次计分。
+- Hooke：约1660年已经知晓该定律，但一般表述于1678年的 Of Spring 公开。
+- Huygens：波动光学采用1678年在法国科学院的报告日期；1690年是印刷论著的年份，不算第二项突破。一些简略传记混淆这两个日期，Kanazawa Institute of Technology 的原书记录予以区分。
+- Bradley：发现常被称为发生于1728年；Royal Society 报告于1729年1月宣读，本记录依公开报告口径采用后者。
+- Gray：导电研究始于1729年；保存的 Royal Society 通信于1731年5月宣读。
+- d’Alembert：振动弦研究于1747年报告，对应的科学院卷册后来才印刷。此处记录为报告日期，不将其声称为印本年份。
+- Euler 的流体方程：写于1755年，实际发表于1757年。Euler Archive 与 BnF 分别独立区分这两个日期。
+- Black：大学传记将 Glasgow 学会的公开报告定于1762年，不以常被引用的1761年实验替代。
+- Watt：1765年模型与1769年独立冷凝器专利合为一项事件，以公开专利为锚点。
+- Atwood：首次法文描述为1780年；1784年是其详尽的英文论著。
+- Galvani：Bologna 来源明确指出1789年在科学院报告，1791年印刷。首次报告只使用一次。
+- Lavoisier 与 Laplace：Vienna 大学藏品史明确指出量热器原理于1780年首次在科学院报告，此处采用该年。后来的1783年热学论文不算第二项事件；早期原型与后续出版不会使同一方法的分数倍增。
+- Cavendish：1798年原始论文测量的是地球平均密度；事件不将其陈述的目标时代错置地说成直接测量G。
+- Volta：1800年3月致 Banks 的信与 Royal Society 公开通信合为一项事件。单个电池单元、后续版本和相关奖项不另加分。
 
-## Source coverage
+## 来源覆盖
 
-Browsed the relevant St Andrews MacTutor biographies and specialist histories; Stanford Encyclopedia entries; original Royal Society manuscript records and papers; holdings at Glasgow, Oklahoma, Museo Galileo, ETH/e-rara, the Library of Congress and Wellcome; institutional histories at Edinburgh, Bologna, Georgia Tech, Washington, Geneva, Kanazawa, NIST, Smithsonian and National Museums Scotland; and Kepler’s original-work project at the Bavarian Academy of Sciences. Each event carries its own concrete source URLs, not just this aggregate list. Sources are used to establish dates/physical content; weights remain documented editorial choices.
+原复核浏览了相关的 St Andrews MacTutor 传记与专题史、Stanford Encyclopedia 条目、Royal Society 原始手稿记录与论文；Glasgow、Oklahoma、Museo Galileo、ETH/e-rara、Library of Congress 和 Wellcome 藏品；Edinburgh、Bologna、Georgia Tech、Washington、Geneva、Kanazawa、NIST、Smithsonian 和 National Museums Scotland 的机构历史；以及 Bavarian Academy of Sciences 的 Kepler 原著项目。每项事件均保留具体来源URL，不只依赖这份汇总清单。来源用于确定年代与物理内容；权重仍是附有记录的编辑选择。
 
-## Limits preserved in data
+## 数据中保留的局限
 
-Many ancient and medieval works cannot be securely assigned a year. They remain available as historical events without invented temporal precision. Original authorship, independent discovery and manuscript/publication distinctions are noted where material. This selection has stronger surviving publication evidence for European early-modern science than for ancient, Indian, Chinese and Islamic traditions; sparse bars must not be read as proof of no activity. Current coverage does not support calling the index an objective total measure of all early physics.
+许多古代与中世纪作品无法可靠地确定年份，仍作为历史事件提供，不编造时间精度。涉及重要差别时，注明原作者、独立发现及手稿与出版的区别。相比古代、印度、中国和伊斯兰传统，本选集对欧洲近代早期科学保留了更充分的出版证据；稀疏柱形不能被解释为没有活动的证明。当前覆盖不足以将指数称为全部早期物理的客观总量衡量。
 
-## Structural checks
+## 结构检查
 
-Checked unique event IDs, existing person IDs, allowed weights, bilingual titles/rationales/date notes, source presence, dates not later than 1800, historical-calendar ranges and at least two source records for weights ≥4. No profile, image, UI or build file was modified by this data task.
+原数据任务核对了事件ID唯一性、人物ID存在性、允许的权重、双语题名与理由及日期说明、来源是否齐备、不晚于1800年的日期、历史历法区间，以及权重≥4时至少两份来源记录。该任务没有修改人物档案、图片、界面或构建文件。

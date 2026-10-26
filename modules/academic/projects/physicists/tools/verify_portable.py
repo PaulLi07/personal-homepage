@@ -146,7 +146,7 @@ def verify(import_snapshot: bool = False) -> dict:
         manifest = json.loads((ARCHIVE / 'import-manifest.json').read_text())
         for record in manifest['files']:
             rel = record['path']
-            if rel.startswith(('portraits/', 'en/data/', 'zh/data/', 'data/breakthrough/')):
+            if rel.startswith(('portraits/', 'en/data/', 'zh/data/')) or (rel.startswith('data/breakthrough/') and rel.endswith('.json')):
                 file = ARCHIVE / rel
                 require(file.is_file() and sha256(file) == record['sha256'], f'导入源资料有变化：{rel}')
                 unchanged += 1

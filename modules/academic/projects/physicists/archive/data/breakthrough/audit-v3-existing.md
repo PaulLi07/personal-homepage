@@ -1,76 +1,78 @@
-# v3 existing-event assessment and date audit
+# v3既有成果评估与日期审计
 
-Review date: 2026-10-27. Scope: the 390 pre-existing milestone records and one new sustained Tycho observational dataset. This audit changes no original event source file. `event-assessments.json` is the explicit assessment overlay; `events-historical-foundations.json` adds the missing dataset. Later `editorial-event-patches.json` can refine the ten previously undated records without duplicating them.
+复核日期：2026-10-27。范围为390项既有成果记录，以及一项新增的第谷持续行星观测资料集。本审计不改动任何原始成果源文件；`event-assessments.json` 是明确的评估覆盖层，`events-historical-foundations.json` 补入缺失的观测资料集。后续的 `editorial-event-patches.json` 可细化此前10项未定年记录，而不重复建项。
 
-## Assessment policy
+## 评估规则
 
-- Scores use the fixed editorial levels 1, 2, 4, 8 and 16. They evaluate a physical result, observational foundation or method, not the prestige, fame, author count or number of papers. Each of the 390 records has an explicit bilingual assessment with route, confidence and version. Existing specific result rationales are retained where adequate; the new level assessment is recorded separately.
-- Levels: 1 focused advance; 2 important improvement; 4 major advance within a field; 8 key law, decisive evidence or a new direction; 16 a revolution in the basic framework. These are review judgments, not publisher-provided scores.
-- Historical route (before 1600): evaluate systematic quantitative knowledge, observations and instruments in their historical setting; a modern journal publication is not required. Classical route (1600–1899): evaluate laws, empirical tests and experimental/mathematical methods. Modern route (1900 onward): evaluate distinct original results and decisive tests; publication volume never multiplies a result. These routes describe evidence evaluation, not automatic era bonuses.
-- The five level-16 records are Newton’s unified mechanics, Maxwell’s electromagnetic unification, special relativity, general relativity and matrix quantum mechanics. Wave mechanics receives 8 for an independent, broadly useful formulation rather than duplicating the same quantum-framework maximum.
-- Copernicus receives 8 for the moving-Earth mathematical reorganization, not for every circular-orbit detail. Kepler’s first two laws receive 8 jointly and the third law 4. Tycho’s calibrated planetary dataset receives a separate total score of 8. His nova/comet conclusions are distinct results.
-- Higgs mechanism (1964) and Higgs-boson discovery (2012) each receive 8 and have different family identifiers. Neither theorists’ life dates nor the Nobel year can move these contributions. ATLAS and CMS do not double the experimental discovery score.
-- Original `indexEligible:false` historical claims remain excluded. Their nonzero assessment level is metadata only and must not enter the physical-result total. Intellectual or methodological contributions must be separately named and assessed.
-- Existing reviewed papers, institutional records and journal collections are reused; the whole set is assessed from titles, specific rationales, attribution and date notes. This audit does not claim a new full-text reading of all 390 original papers. Newly checked chronology sources are explicitly appended on the affected overlay records.
+- 评分使用固定的编辑档位1、2、4、8、16，评价物理成果、观测基础或方法，不以声望、名气、作者数或论文篇数计分。390项记录分别有明确的双语评估，保留评价路径、把握程度与版本；原有具体成果理由充分时继续保留，新增档位评估单独记录。
+- 档位含义：1为范围明确的推进，2为重要改进，4为领域内重大进展，8为关键定律、决定性证据或新方向，16为基础框架变革。这些是复核判断，不是出版机构提供的评分。
+- 历史路径（1600年以前）在当时背景下评价系统定量知识、观测与仪器，不要求现代期刊论文；经典路径（1600—1899年）评价定律、实证检验及实验／数学方法；现代路径（1900年起）评价可区分的原创成果与决定性检验，论文数量不使同一成果倍增。这些路径描述证据评价方式，不是自动年代加分。
+- 5项16分成果分别为牛顿统一力学、麦克斯韦电磁统一、狭义相对论、广义相对论及矩阵量子力学。波动力学作为独立且广泛有用的表述获8分，不为同一量子框架重复给出最高分。
+- 哥白尼的8分对应运动地球的数学重组，不对应每个圆轨道细节。开普勒前两定律合计8分，第三定律4分。第谷经校准的行星观测资料集另有一份总计8分的预算；他对新星和彗星的结论是不同成果。
+- 希格斯机制（1964）与希格斯玻色子发现（2012）分别获8分，使用不同问题族标识。理论家的生卒年与诺贝尔奖年份都不能移动这些贡献；ATLAS与CMS也不会使实验发现评分翻倍。
+- 原有 `indexEligible:false` 的历史主张继续排除，其非零评估档位只是元信息，不进入物理成果总分。思想或方法贡献必须另行具名并单独评估。
+- 沿用既有已复核论文、机构记录及期刊精选，根据题名、具体理由、归属与日期说明评估整组记录。本审计不声称重新阅读全文中的全部390篇原始论文；新增核对的年代来源明确附在相应覆盖记录中。
 
-## Date policy and substantive corrections
+## 日期规则与实质修正
 
-Dates distinguish achieved/observed results from their announcement and publication. `first-public-record` is an explicit fallback where an earlier completed result cannot be reliably dated; it does not assert that the work was first done that year. Dating uncertainty and importance are independent. Each overlay carries `dateConfidence`: documented, approximate-source, estimated, or undated; `assessment.confidence` refers to the importance judgment. Editorial intervals are not source-reported confidence intervals.
+日期区分成果实际完成／观测时间及其公布、发表时间。无法可靠确定更早完成时间时，`first-public-record` 是明确的回退依据，不表示工作首次在该年完成。日期不确定性与重要性相互独立；每项覆盖记录带有 `dateConfidence`，取值为 `documented`、`approximate-source`、`estimated` 或 `undated`，而 `assessment.confidence` 指重要性判断的把握程度。编辑区间不是来源报告的置信区间。
 
-| Record | Prior index date | v3 index allocation | Reporting metadata / reason |
+| 记录 | 原指数日期 | v3指数分配 | 报告元信息／理由 |
 |---|---:|---|---|
-| Tycho nova | 1573 | 1572 observation | 1573 book remains publication metadata |
-| Tycho comet | 1588 | 1577 observation | 1588 book remains publication metadata |
-| Tycho planetary dataset | missing | one total 8-point budget across 1576–1597 | Hven core phase; original logbooks span wider 1563–1601 career |
-| Copernican heliocentric proposal | 1543 | editorial 1502–1514 theory-formation interval | Commentariolus recorded by 1514; full De revolutionibus published 1543 |
-| Kepler first two laws | 1609 | editorial dating interval 1602–1609 | 1609 public book; avoids a fictitious common exact discovery date |
-| Kepler third law | 1619 | 1618 achieved | independently supported 15 May 1618 confirmation; 1619 publication |
-| Newton framework | 1687 | 1687 first public record | complete public system, not a date for all prior insights |
-| Grimaldi diffraction | 1665 | editorial 1650–1663 formation interval | 1665 is posthumous publication; author died in 1663 |
-| Fraunhofer spectrum | 1817 | 1814 observation/chart | 1817 paper retained |
-| Galactic radio emission | 1933 | 1932 identification | 1931 signals, 1933 public report retained |
-| Parity violation | 1956–1957 | 1956 proposal and December experiment | 1957 final checks/publication retained |
-| First direct gravitational-wave detection | 2016 | 2015 observation | GW150914, 14 September 2015; 2016 announcement/paper retained |
-| Higgs theory / experiment | 1964 / 2012 | 1964 / 2012 | distinct, correctly timed milestones retained |
+| 第谷新星 | 1573 | 1572年观测 | 1573年著作保留为出版元信息 |
+| 第谷彗星 | 1588 | 1577年观测 | 1588年著作保留为出版元信息 |
+| 第谷行星观测资料集 | 缺失 | 一份总计8分的预算，分配至1576—1597年 | 汶岛核心阶段；原始观测日志覆盖其1563—1601年更长的研究生涯 |
+| 哥白尼日心体系提案 | 1543 | 编辑估计的1502—1514年理论形成区间 | Commentariolus至迟于1514年已有记录，完整De revolutionibus于1543年出版 |
+| 开普勒前两定律 | 1609 | 编辑日期区间1602—1609年 | 1609年公开著作；避免虚构两项共同的确切发现日期 |
+| 开普勒第三定律 | 1619 | 1618年完成 | 1618年5月15日确认有独立依据；1619年出版 |
+| 牛顿框架 | 1687 | 1687年首次公开记录 | 完整公开体系，不是此前全部见解的日期 |
+| 格里马尔迪衍射 | 1665 | 编辑估计的1650—1663年形成区间 | 1665年为身后出版，作者于1663年逝世 |
+| 夫琅禾费光谱 | 1817 | 1814年观测／图谱 | 保留1817年论文 |
+| 银河射电辐射 | 1933 | 1932年辨识 | 保留1931年信号与1933年公开报告 |
+| 宇称不守恒 | 1956—1957 | 1956年提议及12月实验 | 保留1957年最终检验／发表 |
+| 首次直接引力波探测 | 2016 | 2015年观测 | GW150914，2015年9月14日；保留2016年公布／论文 |
+| 希格斯理论／实验 | 1964 / 2012 | 1964 / 2012 | 保留相互独立且年代正确的成果 |
 
-Compound result families receive one total score, allocated to documented stages. Fractions are editorial judgments and are not measurements of individual researchers’ credit:
+复合成果族只有一份总评分，分配到有据的阶段。份额是编辑判断，不是对个人研究贡献的测量：
 
-- `nuclear-fission`: Allocate 75% to the 1938 experimental discovery and 25% to its 1939 basic interpretation; together these are one eight-point family, not eight points in each year.
-- `renormalized-qed`: Renormalized QED formed through several theoretical and unifying contributions in 1946–1949; a single assessed budget is distributed over the formation period.
-- `density-functional-theory`: Allocate half of one family budget to the 1964 Hohenberg–Kohn foundations and half to the 1965 Kohn–Sham construction.
-- `bkt-transition`: Distribute one topological-transition family in stages: 40% to Berezinskii’s 1970 work and 60% to Kosterlitz–Thouless in 1973; no fictional events are added to intervening years.
-- `bell-inequality-experiments`: Allocate half of one validation-family budget to Freedman–Clauser in 1972 and half to Aspect in 1982, without inventing annual experiments in between.
-- `cosmic-inflation`: Treat Starobinsky 1980, Guth 1981 and new inflation 1982 as one model family with editorial allocations of 30%, 40% and 30%, not measured paper-level quantities.
-- `efficient-blue-led`: Allocate one technology-family budget to p-type GaN in 1989 (40%) and high-brightness devices in 1993 (60%), rather than treating each engineering year as an equal breakthrough.
-- `neutrino-flavour-oscillations`: Allocate 50% to atmospheric oscillations in 1998 and 25% each to solar flavour conversion in 2001 and 2002; the discovery family shares one total score.
+- `nuclear-fission`：75%分配到1938年实验发现，25%分配到1939年基本解释；两者共同构成一个8分成果族，不在每年分别记8分。
+- `renormalized-qed`：重整化QED在1946—1949年的多个理论及统一工作中形成，将一份评估预算分配到形成时期。
+- `density-functional-theory`：一份成果族预算的一半分配到1964年Hohenberg–Kohn基础，另一半分配到1965年Kohn–Sham构造。
+- `bkt-transition`：一个拓扑相变成果族分阶段分配，40%给Berezinskii的1970年工作，60%给Kosterlitz–Thouless的1973年工作，不给中间年份虚构事件。
+- `bell-inequality-experiments`：一份验证成果族预算的一半给1972年Freedman–Clauser实验，另一半给1982年Aspect实验，不在中间年份虚构逐年实验。
+- `cosmic-inflation`：将Starobinsky 1980年、Guth 1981年及1982年新暴胀视为一个模型族，编辑份额为30%、40%、30%，不是论文层面测得的量。
+- `efficient-blue-led`：一份技术成果族预算分配到1989年p型GaN（40%）及1993年高亮度器件（60%），不把每个工程年份都当成同等突破。
+- `neutrino-flavour-oscillations`：50%给1998年大气中微子振荡，2001年和2002年太阳中微子味转换各25%，发现成果族共用一份总评分。
 
-For early approximate dates, bounded editorial uncertainty replaces an apparently exact point; no year inside such a range is asserted as a known completion year. The ten fully undated records are intentionally left for the coordinated editorial-event patch, rather than independently making inconsistent estimates in two overlays.
+早期近似日期以有界的编辑不确定区间代替貌似确切的时间点，不把区间内任一年宣称为已知完成年份。10项完全未定年的记录有意留给协调后的编辑事件补丁，而不是在两个覆盖层中独立作出不一致估计。
 
-## Sources newly consulted for critical chronology
+## 关键年代新增核对来源
 
-- [Royal Danish Library: original planetary-observation manuscripts](https://permalink.kb.dk/permalink/2006/manus/742/) — original logbook dates and 1563–1601 overall span.
-- [University of Copenhagen, Niels Bohr Institute: Hven 1576–1597](https://nbi.ku.dk/english/www/tycho/brahe/the_life) — used only for the documented observation period; unrelated outdated biographical claims on the page are not imported.
-- [Rice University Galileo Project: Tycho](https://galileo.library.rice.edu/sci/brahe.html) — nova/comet chronology, precision, calibration and Kepler’s use of the dataset.
-- [Bavarian Academy of Sciences: planetary laws and original formulations](https://kepler.badw.de/en/on-johannes-kepler/the-planetary-laws.html) — Kepler’s mathematical content and 1609/1619 publications.
-- [NASA APOD: third-law discovery in 1618](https://science.nasa.gov/image-article/apod-2018-may-15-keplers-house-in-linz/) — achieved date distinct from publication.
-- [University of Stuttgart: Kepler historical exhibition volume](https://www.project.uni-stuttgart.de/kepler2022/dokumente/Kepler-Begleitband_screen-Version.pdf) — cites Kepler’s own recorded 15 May 1618 discovery date; the search-index excerpt was accessible, but the web text extractor could not ingest the 32 MB full volume, so this is supplementary, not a claimed complete reading.
-- [Smithsonian Libraries: original Harmonices mundi](https://doi.org/10.5479/sil.135810.39088002800316) — original 1619 publication.
-- [University of Bremen: Kepler biobibliography](https://www.presseforschung.uni-bremen.de/dokuwiki/doku.php?id=kepler_johannes) — stages of the first two laws.
-- [Library of Congress: original Sidereus nuncius](https://www.loc.gov/item/2010667904/) and [Oxford: observing chronology](https://www.cabinet.ox.ac.uk/node/6002) — telescopic observations and 1610 publication.
-- [Coulomb’s original 1785 memoir, scholarly facsimile](https://webusers.imj-prg.fr/~david.aubin/cours/Textes/Coulomb.pdf) — inverse-square measurement.
-- [Fraunhofer Society](https://www.fraunhofer.de/en/about-fraunhofer/profile-structure/chronicles/joseph-von-fraunhofer.html) and [Deutsches Museum](https://www.deutsches-museum.de/en/museumsinsel/ausstellung/academy-collection) — 1814 spectrum observations/chart.
-- [Max Planck Institute for Radio Astronomy](https://www.mpifr-bonn.mpg.de/582352/einfuehrung) and [NRAO archive](https://www.nrao.edu/archives/jansky-finding-aid) — Jansky observing and publication chronology.
-- [NIST: The Fall of Parity](https://www.nist.gov/pml/fall-parity) and [APS: December 27, 1956](https://www.aps.org/apsnews/2001/12/fall-parity-conservation-1956) — December 1956 decisive results.
-- [LIGO collaboration: GW150914](https://ligo.org/detections/gw150914/) and [original February 2016 release](https://www.ligo.caltech.edu/system/media_files/binaries/302/original/detection-press-release.pdf) — September 2015 detection.
+- [皇家丹麦图书馆：行星观测原始手稿](https://permalink.kb.dk/permalink/2006/manus/742/)——原始日志日期及1563—1601年总体跨度。
+- [哥本哈根大学Niels Bohr Institute：汶岛1576—1597年](https://nbi.ku.dk/english/www/tycho/brahe/the_life)——仅用于有据的观测时期，不引入该页无关的过时生平主张。
+- [Rice University Galileo Project：第谷](https://galileo.library.rice.edu/sci/brahe.html)——新星／彗星年代、精度、校准及开普勒对资料集的使用。
+- [巴伐利亚科学院：行星定律及原始表述](https://kepler.badw.de/en/on-johannes-kepler/the-planetary-laws.html)——开普勒的数学内容及1609／1619年出版记录。
+- [NASA APOD：第三定律于1618年发现](https://science.nasa.gov/image-article/apod-2018-may-15-keplers-house-in-linz/)——区分完成日期与出版日期。
+- [斯图加特大学：开普勒历史展览文集](https://www.project.uni-stuttgart.de/kepler2022/dokumente/Kepler-Begleitband_screen-Version.pdf)——引用开普勒本人记录的1618年5月15日发现日期；可访问搜索索引摘要，但网页文本提取器无法读取32 MB完整文集，因此只作补充，不声称已通读。
+- [Smithsonian Libraries：Harmonices mundi原本](https://doi.org/10.5479/sil.135810.39088002800316)——1619年原始出版。
+- [不来梅大学：开普勒生平书目](https://www.presseforschung.uni-bremen.de/dokuwiki/doku.php?id=kepler_johannes)——前两定律的形成阶段。
+- [美国国会图书馆：Sidereus nuncius原本](https://www.loc.gov/item/2010667904/)及[牛津大学：观测年代](https://www.cabinet.ox.ac.uk/node/6002)——望远镜观测与1610年出版。
+- [库仑1785年原始论文的学术影印本](https://webusers.imj-prg.fr/~david.aubin/cours/Textes/Coulomb.pdf)——平方反比测量。
+- [Fraunhofer Society](https://www.fraunhofer.de/en/about-fraunhofer/profile-structure/chronicles/joseph-von-fraunhofer.html)及[Deutsches Museum](https://www.deutsches-museum.de/en/museumsinsel/ausstellung/academy-collection)——1814年光谱观测／图谱。
+- [Max Planck Institute for Radio Astronomy](https://www.mpifr-bonn.mpg.de/582352/einfuehrung)及[NRAO档案](https://www.nrao.edu/archives/jansky-finding-aid)——Jansky的观测与发表年代。
+- [NIST：The Fall of Parity](https://www.nist.gov/pml/fall-parity)及[APS：1956年12月27日](https://www.aps.org/apsnews/2001/12/fall-parity-conservation-1956)——1956年12月的决定性结果。
+- [LIGO合作组：GW150914](https://ligo.org/detections/gw150914/)及[2016年2月原始新闻稿](https://www.ligo.caltech.edu/system/media_files/binaries/302/original/detection-press-release.pdf)——2015年9月探测。
 
-## Coverage and review ledger
+## 覆盖与复核台账
 
-- Existing events assessed: 390; changed score: 234; unchanged score: 156.
-- Level counts: {1: 20, 2: 75, 4: 222, 8: 68, 16: 5}.
-- Assessment routes: {'historical': 30, 'classical': 120, 'modern': 240}.
-- Assessment level is not automatically doubled from the previous scale. New source-count requirements must follow evidence quality: a single original paper can support a level-4 result; a second URL is not an independent measurement of importance. All level-8/16 results retain at least two supporting URLs after source overlays, but this does not make editorial judgments objective.
+- 已评估的既有成果：390项；评分改变234项，不变156项。
+- 档位数量：`{1: 20, 2: 75, 4: 222, 8: 68, 16: 5}`。
+- 评估路径：`{'historical': 30, 'classical': 120, 'modern': 240}`。
+- 评估档位不是旧尺度的自动翻倍。新增来源数量要求须服从证据质量，一篇原始论文也可支持4分成果，第二个网址不是重要性的独立测量。应用来源覆盖层后，所有8／16分成果仍有至少两个支持网址，但这不会使编辑判断变成客观量。
 
-| Existing event | Prior → v3 score | v3 dating model |
+下表保留原成果ID及 `dateModel` 相关代码枚举标识，便于逐项对照源数据；`excluded` 表示排除计分。
+
+| 既有成果 | 原评分 → v3评分 | v3日期模型 |
 |---|---:|---|
 | `early-democritus-atomism` | 2 → 2 | first-public-record; uncertain-range; -500–-401; excluded |
 | `early-euclid-geometric-optics` | 2 → 4 | editorial-interval; uncertain-range; -325–-275 |
@@ -463,22 +465,22 @@ For early approximate dates, bounded editorial uncertainty replaces an apparentl
 | `journal-element-118-confirmation` | 1 → 1 | first-public-record; point; 2006–2006 |
 | `journal-three-dimensional-topological-insulator` | 2 → 4 | first-public-record; point; 2007–2007 |
 
-## Posthumous-publication boundary check
+## 身后出版的边界检查
 
-A programmatic comparison of the 391 original-plus-Tycho event date models against all linked archived death years found Grimaldi as the sole date model wholly after a linked contributor’s death. Its 1665 posthumous publication is now separate metadata, while the substantive result uses a clearly labelled 1650–1663 editorial formation interval. The University of Bologna museum explicitly states that the work was published after the author’s death; the interval is an estimate, not a documented sequence of annual observations. The current 300 new editorial records also passed year/range, future-date and lifespan-boundary checks.
+程序将原始记录加第谷资料集共391项成果的日期模型，与全部关联档案中的逝世年份作比较；发现只有格里马尔迪的一项日期模型完全位于关联贡献者逝世之后。现将1665年身后出版另存元信息，实质成果采用明确标注的1650—1663年编辑形成区间。博洛尼亚大学博物馆明确说明该著作在作者去世后出版；该区间是估计，不是有据的逐年观测序列。当前300项新增编辑记录也通过了单年／区间、未来日期和生平边界检查。
 
-- [University of Bologna Museum — Grimaldi and diffraction](https://sma.unibo.it/it/qr-code/righi-e-linsegnamento-della-fisica/esperimento-grimaldi)
-- [University of Bologna — Grimaldi](https://www.scienzagiovane.unibo.it/English/scientists/grimaldi-1.html)
+- [博洛尼亚大学博物馆：格里马尔迪与衍射](https://sma.unibo.it/it/qr-code/righi-e-linsegnamento-della-fisica/esperimento-grimaldi)
+- [博洛尼亚大学：格里马尔迪](https://www.scienzagiovane.unibo.it/English/scientists/grimaldi-1.html)
 
-## Copernican early proposal versus the 1543 complete treatise
+## 哥白尼早期提案与1543年完整著作的区别
 
-The same eight-point event is now explicitly the **early proposal of the moving-Earth heliocentric planetary system**, rather than the first printed edition as an event in publishing history. This event definition follows the requested actual-result chronology: Commentariolus already contained the reordered planetary scheme before De revolutionibus appeared. There is no second eight-point score for the later complete work.
+同一8分事件现明确对应**运动地球的日心行星体系早期提案**，而不是将第一版印刷本作为出版史事件。此定义遵循所要求的实际成果年代：Commentariolus在De revolutionibus出版前已包含重排行星次序的体系，不为后来的完整著作再记第二份8分。
 
-Owen Gingerich’s IAU historical review (Harvard–Smithsonian, published by Cambridge) explains that the anonymous draft existed by the 1514 private-library inventory of Matthew of Miechów. The University of São Paulo bibliographic description of an annotated translation of the primary text places its composition around 1510. The resulting conservative 1502–1514 allocation is a practical **editorial dating estimate**, not securely attested work in each of those years or a source confidence interval; approximately 1510 is a common estimate, not a securely known lower bound. `dateConfidence` remains estimated; the documented circulation upper bound and 1543 complete-treatise publication are separate metadata.
+Owen Gingerich的IAU历史综述（Harvard–Smithsonian，Cambridge出版）解释，无名草稿至迟已见于Matthew of Miechów的1514年私人藏书目录。圣保罗大学对原始文献注释译本的书目描述将其形成时间置于约1510年。由此采用的保守1502—1514年分配是实用的**编辑日期估计**，并不表示各年都有确证的工作，也不是来源置信区间；约1510年是常见估年，不是确知下界。`dateConfidence` 保持 `estimated`，有据的流传上界与1543年完整著作出版分别保存为元信息。
 
-Dating remains disputed. The University of Bristol historical analysis distinguishes the traditional broad documentary limits (after 1502 and by May 1514) from the contextual reconstruction around 1510. More recent stylometric research has argued for still earlier composition (including a summer-1503 hypothesis); this is an alternative historical reconstruction accommodated by the conservative 1502–1514 interval, not adopted as an exact date here. A future historiographical update can widen or move this event’s dating distribution without adding a duplicate theory event. Retaining 1543 would be appropriate only if the event were defined narrowly as the complete published mathematical treatise; it would then fail to represent the substantially earlier proposal requested for this index.
+定年仍有争议。布里斯托大学的历史分析区分了传统宽泛文献界限（1502年之后、1514年5月之前）与约1510年的情境重建。较新的文体计量研究提出更早形成的可能性，包括1503年夏季假说；这是保守1502—1514年区间容纳的另一种历史重建，本项目并未将其采用为确切日期。未来史学更新可以扩展或移动该事件的日期分布，而不增加重复理论事件。只有把事件严格限定为完整出版的数学著作时，保留1543年才合适，但那不能表示本指数要求纳入的、实质上更早的提案。
 
-- [Gingerich, The Astronomy and Cosmology of Copernicus](https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/92CFF685FEA0F86E3AF3DA1415D2195D/S1539299600001830a.pdf/astronomy_and_cosmology_of_copernicus.pdf)
-- [University of São Paulo, annotated Commentariolus translation](https://www.ghtc.usp.br/ram-r37.htm)
-- [University of Bristol, Copernicus’s Development in Context](https://research-information.bris.ac.uk/files/52397418/Copernicus_s_development_in_context_v20.pdf)
-- [Borski and Kokowski, 2025 stylometric dating hypothesis](https://academic.oup.com/dsh/article/40/1/15/7933816)
+- [Gingerich历史综述：The Astronomy and Cosmology of Copernicus](https://resolve.cambridge.org/core/services/aop-cambridge-core/content/view/92CFF685FEA0F86E3AF3DA1415D2195D/S1539299600001830a.pdf/astronomy_and_cosmology_of_copernicus.pdf)
+- [圣保罗大学：Commentariolus注释译本](https://www.ghtc.usp.br/ram-r37.htm)
+- [布里斯托大学：Copernicus’s Development in Context](https://research-information.bris.ac.uk/files/52397418/Copernicus_s_development_in_context_v20.pdf)
+- [Borski与Kokowski：2025年文体计量定年假说](https://academic.oup.com/dsh/article/40/1/15/7933816)
