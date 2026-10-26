@@ -1,12 +1,15 @@
-/* 项目登记与父目录接线；不假定后续人物资料或具体功能。 */
+/* 项目登记只连接本地摘要和入口，不将整份档案加载进主页。 */
 (function () {
   "use strict";
   const api = window.Homepage;
   api.registerAcademicProject({
     id: "physicists",
     title: "Physicists",
-    description: "A new project, ready for future updates.",
-    summary: "In preparation"
+    description: "Explore the people and milestones that have shaped physics through an interactive historical archive.",
+    summary() {
+      const count = api.getData("physicists:archive")?.peopleCount;
+      return Number.isSafeInteger(count) && count > 0 ? count.toLocaleString("en") + " physicists" : "";
+    }
   }, {
     render({host, signal}) {
       return api.createPhysicistsView().render({host, signal});

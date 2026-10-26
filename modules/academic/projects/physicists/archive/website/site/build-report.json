@@ -1,0 +1,77 @@
+{
+  "buildFormat": "homepage-physicists-v1",
+  "asOf": "2026-10-26",
+  "people": 721,
+  "languages": [
+    "en"
+  ],
+  "sourceLanguages": [
+    "zh",
+    "en"
+  ],
+  "portraitDirectory": "../../portraits",
+  "images": 721,
+  "imageKinds": {
+    "posthumous_depiction": 29,
+    "context_image": 20,
+    "portrait": 672
+  },
+  "imagePermissionUnverified": 62,
+  "sourceSha256": {
+    "zh/data/physicists.json": "4cd45eb1948cf4c60b0577693af3cd3d5e1480aee66f5748243c06d7e16fe7b2",
+    "en/data/physicists.json": "2dd2a31d7608129e018ef52d51d485b6e7d14541f66392e281bb8f1e091afec4"
+  },
+  "dataScriptSha256": "ba5a20c89dd23d4abb6f80adc24f150ac53c0cb48a897de40bc2d02fe4a7fc6d",
+  "staticFiles": [
+    "app.js",
+    "breakthrough.js",
+    "core.js",
+    "density-palette.js",
+    "favicon.svg",
+    "help/method.en.md",
+    "index.html",
+    "plot-display.js",
+    "scroll-sync.js",
+    "styles.css",
+    "timeline.js"
+  ],
+  "entrypointPresent": true,
+  "entrypoint": "index.html",
+  "sourceDirectory": "website/src",
+  "sourceEntrypointSha256": "e49f86167df6dd31e770fa42da8e3eeefc7084868d713620c971ff46f2e6b580",
+  "entrypointSha256": "e49f86167df6dd31e770fa42da8e3eeefc7084868d713620c971ff46f2e6b580",
+  "breakthrough": {
+    "asOf": "2026-10-27",
+    "methodVersion": "3.0",
+    "counts": {
+      "events": 691,
+      "dated": 689,
+      "indexDated": 686,
+      "linkedPeople": 720,
+      "estimatedEvents": 308,
+      "estimatedPeople": 332,
+      "navigationOnlyPeople": 1,
+      "navigablePeople": 721,
+      "totalPeople": 721
+    },
+    "years": 2626,
+    "from": -600,
+    "to": 2026,
+    "totalScore": 2828.000000000002,
+    "peak": 44.00218360071301
+  },
+  "methodVersion": "3.0",
+  "checks": [
+    "stable IDs and order",
+    "date values and precision",
+    "life status",
+    "source URL alignment",
+    "complete localized text",
+    "canonical image hashes",
+    "portable image paths",
+    "canonical frontend",
+    "complete achievement ledger",
+    "complete navigation",
+    "self-contained archive module"
+  ]
+}

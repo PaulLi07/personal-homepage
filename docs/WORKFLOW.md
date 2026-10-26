@@ -60,6 +60,8 @@ git switch -c feat/short-topic
 
 实验地图各自的完整HTML在 `app/site.json` 所属模块的 `standalonePages` 登记，保持页面相对路径；新增地图同时更新地图集登记、生成元数据和顶栏，并补中文说明、英文页面及实际测试记录。先运行本地数据生成检查及资源闭合工具，再验证HTTP子路径、桌面/手机、筛选、档案与返回。使用独立复制副本验证原目录不可见时仍能运行；不要为测试而移动或删除用户原目录。
 
+Physicists同样保存运行与重建的完整副本。先改本模块源数据或前端，运行 `npm run build:physicists`，再运行 `npm run test:physicists`、项目目录测试、装配与只读检查。不得直接改生成的 `archive/website/site/`；需要资源位于同模块上级目录时，打包必须包含整个模块。独立HTML在清单声明，前端模板使用非 `.html` 扩展名，避免被当成未生成的页面检查。复查英文展示、引用、图片许可、HTTP仓库前缀、搜索筛选、时间轴、档案弹窗、返回及手机；新增资料不复用旧测试结论。
+
 地图使用 ES Module 和本地数据请求，必须通过HTTP预览，不以 `file://` 打开结果作为地图验收。具体生成、只读检查和新增地图步骤统一见[地图集说明](../modules/academic/projects/experiment-atlas/README.md)。
 
 ## 4. 兼容性测试

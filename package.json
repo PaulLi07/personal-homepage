@@ -26,7 +26,9 @@
     "test:about-gallery": "node scripts/test-about-gallery.cjs",
     "test:life-stack": "node scripts/test-life-stack.cjs",
     "test:internal-notes": "node scripts/test-internal-notes.cjs",
-    "test:projects-directory": "node scripts/test-projects-directory.cjs"
+    "test:projects-directory": "node scripts/test-projects-directory.cjs",
+    "build:physicists": "python3 modules/academic/projects/physicists/archive/scripts/build_website.py && python3 modules/academic/projects/physicists/tools/refresh_metadata.py",
+    "test:physicists": "node --test modules/academic/projects/physicists/archive/website/tests/*.test.cjs && python3 modules/academic/projects/physicists/tools/verify_portable.py && python3 modules/academic/projects/physicists/tools/refresh_metadata.py --check"
   },
   "engines": {
     "node": ">=18"

@@ -14,7 +14,7 @@ modules/
   academic/                学术概览
     experience/ notes/
     projects/              项目登记、父目录视图、合作组与接线
-      physicists/          独立项目占位，等待后续资料
+      physicists/          独立人物档案入口、完整源码、数据、图片和构建
       experiment-atlas/    Physics Maps项目、地图登记、顶栏与本地维护工具
         neutrino/ dark-matter/  各自页面、代码、数据、档案与图片
     publications/          论文分类目录与视图
@@ -94,6 +94,12 @@ index.html, credits.html   装配生成的发布页面
 `registry.js` 是入口标题/路径的唯一登记；`refresh_metadata.py` 从本地索引生成统计，`sync_shell.py` 从登记生成两图顶栏。每图 `tools/build_data.py` 从自己的英文档案重建索引及计数缩略图，`verify_portable.py` 检查资源路径闭合。日常维护全部在主页内完成；再次导入外源属于单独明确操作，不能成为构建依赖。
 
 清单 `standalonePages` 仅声明完整独立页面；`scripts/check.mjs` 按各自HTML目录检查其资源、重复ID和锚点，其他装配片段仍按站点根解析。地图目录随普通静态文件打包上传，Pages无需额外后台。维护步骤见[地图集说明](../modules/academic/projects/experiment-atlas/README.md)，本轮独立副本及桌面/手机证据见[记录](modules/experiment-atlas.md)。
+
+## Physicists独立档案（2026-10-27）
+
+`academic/projects/physicists/`以轻量view/integration和生成的metadata接入父项目目录；完整应用留在同目录 `archive/`，不合并进主页脚本、不使用iframe。完整前端源码在 `archive/website/src/`，维护模板名为 `index.template`，本地构建映射为 `archive/website/site/index.html`。人物规范数据、具名成果、科学计算与测试均归本目录；721份图片只保存于 `archive/portraits/`，生成页面以相对路径读取。此完整模块是最小交付单位。
+
+`npm run build:physicists`先重建独立页面与数据，再从本地产物更新主页摘要；普通装配不暗中重建科学资料。`npm run test:physicists`只读核对核心与资源，`verify_portable.py --rebuild-in-copy`验证异地副本可重建。原HEP工程只用于本次复制；不需要其源码、Git、采集缓存、服务或本机配置。网页固定英文，中文校对数据与中文维护方法保留；英文网页帮助属于读者呈现内容。详细入口、来源与实测见[模块说明](../modules/academic/projects/physicists/README.md)及[本轮记录](modules/academic-projects-physicists.md#physicists-import-2026-10-27)。
 
 ## 2026-10-23 视觉维护入口
 

@@ -5,7 +5,7 @@
 | 项目 | 入口与职责 |
 |---|---|
 | [Physics Maps](experiment-atlas/README.md) | `#academic/projects/physics-maps`；目前包含中微子和暗物质两张地图，使用原 `experiment-atlas/` 源码目录 |
-| [Physicists](physicists/README.md) | `#academic/projects/physicists`；按用户要求先建立独立占位项目，具体资料和功能以后补充 |
+| [Physicists](physicists/README.md) | `#academic/projects/physicists`；独立的Physics Pioneers人物与成果档案，源码、数据和图片均保存在主页内 |
 
 ## 文件与接口
 
@@ -25,6 +25,8 @@
 
 ## 维护与验证
 
-全部说明中文，网页内容英文。修改后装配并检查项目目录、Physics Maps两地图、Physicists占位、返回、直达/刷新、历史、键盘、桌面/手机与BESIII/GitHub；共享或子项目异常须有可读回退，卸载清理只处理所属内容。
+全部说明中文，网页内容英文。修改后装配并检查项目目录、Physics Maps两地图、Physicists档案入口与独立页面、返回、直达/刷新、历史、键盘、桌面/手机与BESIII/GitHub；共享或子项目异常须有可读回退，卸载清理只处理所属内容。
 
 本轮2026-10-27结构、实际验证和未覆盖项统一见[Projects记录](../../../docs/modules/academic-projects.md#project-directory-2026-10-27)。地图的既有549份档案和549张图片未搬动，运行与日常维护仍不依赖原HEP Web；地图具体交互和来源历史见[地图集接入记录](../../../docs/modules/experiment-atlas.md)。旧BESIII测试或旧地图测试不能代替本次目录扩展实测。
+
+2026-10-27后续已接入Physicists完整档案，维护见[人物项目](physicists/README.md)，最新验证见[记录](../../../docs/modules/academic-projects-physicists.md#physicists-import-2026-10-27)。

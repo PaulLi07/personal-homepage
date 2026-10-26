@@ -33,3 +33,9 @@ Academic 与 Life 已移除整区背景图，改为各自的纯黑 `#000` 和公
 2026-10-11 本轮素材替换、署名及黑色区域在 255 个流程 / 12234 条断言与基础兼容性回归中通过，外部请求和真实写入为 0；24 张截图中的桌面、手机关键画面已查看。当前范围与未覆盖项见 [粒子记录](modules/particle-background.md)，旧测试结论保留为历史。
 
 2026-10-23相册素材由 [photos.js](../modules/about/gallery/photos.js) 独立维护，尺寸/散列及原图保护见[素材说明](../modules/about/gallery/images/README.md)。原 `modules/about/images/portrait.JPG`（Git登记portrait.jpg）未改名/覆盖/暂存，已退出网页直接引用；更新相册不改变Home和Life的独立图片。暂无用户新个人照片时，两张风景均明确为占位素材。
+
+## 2026-10-27：Physicists人物档案图片
+
+人物项目独立保存721份原字节图片，位于 `modules/academic/projects/physicists/archive/portraits/`。672份肖像、29份后世/纪念形象、20份相关文献或资料图，不能将后两类称为真实肖像；62份原资料标有再发布授权未确认，网页继续保留原提示。每条记录的原作者、来源URL、许可、图像种类与SHA256在同模块 `archive/en/data/physicists.json`，来源与许可在人物档案中可展开；不据此推断全部图片均已授权。
+
+项目入口预览使用本目录的Isaac Newton、Marie Curie和Albert Einstein三份图片，原记录均为Public domain，分别保留Godfrey Kneller、Henri Manuel、Oren Jack Turner署名。未新下载或生成图片，不读取原HEP工程的图片路径；其他模块原有素材与署名保持独立。

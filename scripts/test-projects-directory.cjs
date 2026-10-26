@@ -58,7 +58,7 @@ function fixture({registered = true} = {}) {
   const load = name => vm.runInContext(fs.readFileSync(path.join(ROOT, BASE + name), "utf8"), context, {filename: BASE + name, timeout: 1000});
   load("registry.js"); load("content.js");
   if (registered) {
-    for (const name of ["experiment-atlas/metadata.js", "experiment-atlas/registry.js", "experiment-atlas/view.js", "experiment-atlas/integration.js", "physicists/view.js", "physicists/integration.js"]) load(name);
+    for (const name of ["experiment-atlas/metadata.js", "experiment-atlas/registry.js", "experiment-atlas/view.js", "experiment-atlas/integration.js", "physicists/metadata.js", "physicists/view.js", "physicists/integration.js"]) load(name);
   }
   load("view.js");
   return {api, data, content, document, load, host: document.createElement("div")};
@@ -73,7 +73,7 @@ test("两个项目独立登记，返回元信息冻结且没有泄露实现字�
   const f = fixture(), projects = f.api.getAcademicProjects();
   equal(plain(projects.map(item => item.id)), ["physics-maps", "physicists"]);
   equal(plain(projects.map(item => item.title)), ["Physics Maps", "Physicists"]);
-  equal(plain(projects.map(item => item.summary)), ["2 maps", "In preparation"]);
+  equal(plain(projects.map(item => item.summary)), ["2 maps", "721 physicists"]);
   ok(Object.isFrozen(projects)); ok(projects.every(Object.isFrozen));
   throws(() => { projects[0].title = "Changed"; }, TypeError);
   equal(f.api.getAcademicProjects()[0].title, "Physics Maps");
@@ -81,7 +81,7 @@ test("两个项目独立登记，返回元信息冻结且没有泄露实现字�
   equal(f.api.getAcademicProjectView("missing"), null);
 });
 
-test("登记拒绝歧义路由与重复标识，统计从地图getter动态读取并隔离故障", () => {
+test("登记拒绝歧义路由与重复标识，两项目统计动态读取并隔离故障", () => {
   const f = fixture({registered: false}), view = {render() {}};
   for (const patch of [{id: "Bad ID"}, {id: "a/b"}, {id: "a".repeat(65)}, {title: ""}, {description: ""}, {summary: ""}, {summary: "x".repeat(121)}]) throws(() => f.api.registerAcademicProject({...sample(), ...patch}, view), /Invalid academic project/);
   throws(() => f.api.registerAcademicProject(sample(), {}), /Invalid academic project/);
@@ -89,7 +89,12 @@ test("登记拒绝歧义路由与重复标识，统计从地图getter动态读�
   equal(f.api.getAcademicProjects()[0].title, "Sample"); equal(Object.hasOwn(f.api.getAcademicProjects()[0], "internal"), false);
   throws(() => f.api.registerAcademicProject(sample(), view), /Duplicate academic project/);
   const real = fixture(); real.api.getExperimentMaps = () => [{id: "one"}]; equal(real.api.getAcademicProjects()[0].summary, "1 map");
-  real.api.getExperimentMaps = () => { throw new Error("unavailable"); }; equal(real.api.getAcademicProjects()[0].summary, ""); equal(real.api.getAcademicProjects()[1].summary, "In preparation");
+  real.api.getExperimentMaps = () => { throw new Error("unavailable"); }; equal(real.api.getAcademicProjects()[0].summary, ""); equal(real.api.getAcademicProjects()[1].summary, "721 physicists");
+  const independent = fixture(), getData = independent.api.getData;
+  independent.api.getData = key => key === "physicists:archive" ? {peopleCount: 12} : getData(key);
+  equal(independent.api.getAcademicProjects()[1].summary, "12 physicists"); equal(independent.api.getAcademicProjects()[0].summary, "2 maps");
+  independent.api.getData = key => { if (key === "physicists:archive") throw new Error("archive metadata unavailable"); return getData(key); };
+  equal(independent.api.getAcademicProjects()[1].summary, ""); equal(independent.api.getAcademicProjects()[0].summary, "2 maps");
 });
 
 test("Projects父目录只有两个项目入口，BESIII与GitHub属于独立合作组区", () => {
@@ -116,12 +121,61 @@ test("Physics Maps下才显示两张地图，原统计与本地普通链接保�
   byData(f.host, "projectBack")[0].click(); equal(routes.pop(), null);
 });
 
-test("Physicists只有明确占位，不混入地图、人员数据或无效入口", () => {
+test("Physicists展示本地档案入口与真实统计，只加载三幅缩略图而不嵌套应用", () => {
   const f = fixture(); render(f, {route: "physicists"});
   equal(byData(f.host, "projectId", "physicists").length, 1); equal(byData(f.host, "physicistsProject").length, 1);
-  ok(f.host.textContent.includes("In preparation")); ok(f.host.textContent.includes("Project details will be added here."));
+  ok(f.host.textContent.includes("721 physicists")); ok(f.host.textContent.includes("691 milestones"));
+  ok(!f.host.textContent.includes("In preparation"));
   equal(byData(f.host, "experimentMap").length, 0); equal(byClass(f.host, "project-directory__collaboration").length, 0);
-  const project = byData(f.host, "physicistsProject")[0]; equal(nodes(project).filter(node => ["img", "a", "iframe"].includes(node.tagName)).length, 0);
+  const project = byData(f.host, "physicistsProject")[0], anchors = nodes(project).filter(node => node.tagName === "a");
+  equal(anchors.length, 1); equal(anchors[0].getAttribute("aria-label"), "Open Physics Pioneers");
+  equal(anchors[0].href, BASE + "physicists/archive/website/site/index.html");
+  ok(fs.statSync(path.join(ROOT, anchors[0].href)).isFile());
+  equal(nodes(project).filter(node => ["iframe", "script"].includes(node.tagName)).length, 0);
+  const portraits = nodes(project).filter(node => node.tagName === "img"); equal(portraits.length, 3);
+  for (const image of portraits) {
+    ok(image.src.startsWith(BASE + "physicists/archive/portraits/"));
+    ok(fs.statSync(path.join(ROOT, image.src)).isFile()); ok(typeof image.alt === "string" && image.alt.length > 0);
+  }
+  equal(f.data.get("physicists:archive").people, undefined);
+});
+
+test("人物摘要失效时保留可读外壳与返回，错误图片路径不会成为网页资源", () => {
+  const f = fixture(), view = f.api.createPhysicistsView({archive: () => { throw new Error("unavailable"); }});
+  view.render({host: f.host}); ok(f.host.textContent.includes("The archive is temporarily unavailable"));
+  equal(byData(f.host, "physicistsOpen").length, 0); equal(byData(f.host, "physicistsProject").length, 1);
+  for (const archive of [null, {peopleCount: 0, milestoneCount: 0}, {peopleCount: 1, milestoneCount: -1}]) {
+    f.api.createPhysicistsView({archive}).render({host: f.host});
+    equal(byData(f.host, "physicistsOpen").length, 0); ok(f.host.textContent.includes("temporarily unavailable"));
+  }
+  const valid = f.data.get("physicists:archive").portraits[0];
+  const supplied = {peopleCount: 721, milestoneCount: 691, href: "javascript:alert(1)", portraits: [
+    {...valid, src: "https://example.invalid/portrait.jpg"}, {...valid, src: BASE + "physicists/archive/portraits/../../../../../outside.jpg"}, valid
+  ]};
+  const before = JSON.stringify(supplied);
+  f.api.createPhysicistsView({archive: supplied}).render({host: f.host});
+  const images = nodes(f.host).filter(node => node.tagName === "img"); equal(images.length, 1); equal(images[0].src, valid.src);
+  equal(byData(f.host, "physicistsOpen")[0].href, BASE + "physicists/archive/website/site/index.html");
+  equal(JSON.stringify(supplied), before);
+  const routes = []; f.api.getData = () => { throw new Error("metadata unavailable"); };
+  f.api.createProjectsView({onNavigate: route => routes.push(route)}).render({host: f.host, route: "physicists"});
+  ok(f.host.textContent.includes("temporarily unavailable")); byData(f.host, "projectBack")[0].click(); equal(routes.pop(), null);
+});
+
+test("人物项目重复挂载和取消只清理所属根节点，切换地图不残留档案入口", () => {
+  const f = fixture(), view = f.api.createPhysicistsView(), controller = new AbortController();
+  const outside = f.document.createElement("aside"); outside.textContent = "Other module";
+  const first = view.render({host: f.host}), previous = byData(f.host, "physicistsProject")[0];
+  const second = view.render({host: f.host, signal: controller.signal});
+  equal(previous.parentNode, null); equal(byData(f.host, "physicistsProject").length, 1);
+  first(); equal(byData(f.host, "physicistsProject").length, 1);
+  controller.abort(); equal(f.host.children.length, 0); second(); second(); equal(f.host.children.length, 0);
+  equal(outside.textContent, "Other module");
+  const aborted = new AbortController(); aborted.abort(); view.render({host: f.host, signal: aborted.signal}); equal(f.host.children.length, 0);
+  const parent = f.api.createProjectsView(); parent.render({host: f.host, route: "physicists"});
+  equal(byData(f.host, "physicistsOpen").length, 1); parent.render({host: f.host, route: "physics-maps"});
+  equal(byData(f.host, "physicistsProject").length, 0); equal(byData(f.host, "physicistsOpen").length, 0);
+  equal(byData(f.host, "experimentMap").length, 2);
 });
 
 test("未知或故障项目提供可用返回，失败子视图的取消不影响父导航", () => {

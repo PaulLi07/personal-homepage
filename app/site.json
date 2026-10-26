@@ -84,6 +84,7 @@
         "modules/academic/projects/experiment-atlas/registry.js",
         "modules/academic/projects/experiment-atlas/view.js",
         "modules/academic/projects/experiment-atlas/integration.js",
+        "modules/academic/projects/physicists/metadata.js",
         "modules/academic/projects/physicists/view.js",
         "modules/academic/projects/physicists/integration.js",
         "modules/academic/projects/view.js",
@@ -104,7 +105,9 @@
       ],
       "standalonePages": [
         "modules/academic/projects/experiment-atlas/neutrino/index.html",
-        "modules/academic/projects/experiment-atlas/dark-matter/index.html"
+        "modules/academic/projects/experiment-atlas/dark-matter/index.html",
+        "modules/academic/projects/physicists/archive/index.html",
+        "modules/academic/projects/physicists/archive/website/site/index.html"
       ],
       "detailGroup": "academic"
     },

@@ -2,6 +2,12 @@
 
 记录影响功能、结构或工作方式的重要变化；细节以 Git 提交为准。
 
+## 2026-10-27：Physicists独立人物档案
+
+- 将站主原Web_Pioneers项目的必要源码、721人物、691成果、721图片及离线构建/测试完整复制到主页；不依赖原工作目录，异地副本可重建。
+- 替换Physicists占位，新增轻量入口与独立完整页面，保留时间轴、检索、领域筛选、人物/成果/年度档案；英文展示，保留原引用和图像来源/许可。
+- 本地构建、资源闭合与桌面/手机实测见[记录](docs/modules/academic-projects-physicists.md#physicists-import-2026-10-27)。任务分支 `feat/physicists-archive`，回退 `cd4ea84`；本次仅本地更新。
+
 ## 2026-10-27：Projects独立项目目录
 
 - Physics Maps作为一个项目收纳中微子与暗物质两张地图；新增Physicists独立占位，等待后续要求。合作组和GitHub独立展示。
