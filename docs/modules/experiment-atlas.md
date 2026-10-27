@@ -57,3 +57,11 @@ python3 modules/academic/projects/experiment-atlas/tools/verify_portable.py --js
 ## 2026-10-27 架构维护与本地SQLite
 
 本项目已接入独立本地维护数据库，规范JSON仍为唯一编辑源。结构/适配器/迁移在项目database/，网页路径与布局保持；Physicists资料只维护英文。当前实际数据库、独立源码包重建、桌面/手机及发布包子路径结果统一见[本轮记录](project-data-maintenance.md)。以该记录为本轮证据，旧段落为历史。
+
+## 2026-10-27：本地预览服务停止后的恢复
+
+用户报告进入Physics Maps后画面未加载。本轮实际复现：缓存的Projects文档仍能响应hash入口，但8767无HTTP监听，两个SVG缩略图加载失败，独立地图及JSON请求也无法完成。通过系统代理请求localhost出现502；绕开代理核对后确认本地服务停止，非SQLite或地图源码变更。
+
+已从正式源码目录启动绑定127.0.0.1:8767的独立后台HTTP进程，并刷新用户原Projects标签。运行状态与日志只存忽略的.maintenance/preview/，不进入Git或源码包；未改网页代码、数据、路径或设计。日常手动npm run preview须保持终端进程运行，旧标签有缓存不能证明服务在线。
+
+本轮实际检查：两preview.svg和两catalog.json均HTTP200；普通点击进入两独立地图、地图几何均正常，分别显示252/297条记录，返回Physics Maps正常；浏览器新页面错误/警告为空。项目目录离线回归退出0。内嵌浏览器桌面1280×720，未重测其他内核/手机真机，服务恢复不作为跨浏览器通过。恢复前后截图及HTTP诊断存artifacts/maps-entry-fix-2026-10-27/；无远端写入。
