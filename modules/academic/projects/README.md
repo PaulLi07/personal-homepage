@@ -27,3 +27,7 @@
 全部维护说明中文、网页呈现英文。更新后装配并检查两项目入口、Physicists一步打开与返回、Maps两地图、原生链接/键盘、修改键点击、直达/刷新、历史、桌面/手机及失败清理。BESIII的删除仅限Projects入口，不改变Publications、Internal note或科学引用。
 
 本次布局、验证与未覆盖范围统一见[项目卡片记录](../../../docs/modules/academic-projects.md#project-cards-2026-10-27)。既有地图资源及人物完整副本继续由主页独立维护；[原项目目录记录](../../../docs/modules/academic-projects.md#project-directory-2026-10-27)与[人物导入记录](../../../docs/modules/academic-projects-physicists.md#physicists-import-2026-10-27)保留为历史，不代替本次实测。
+
+## 本地数据维护
+
+两个项目各自database/维护结构、适配器和领域校验；公共事务、备份与只读查询由maintenance/提供。规范JSON是唯一编辑源，SQLite仅本地可重建，不改变网页加载；人物资料只保留英文。入口和操作见[数据指南](../../../docs/DATA-MAINTENANCE.md)，本轮验收见[记录](../../../docs/modules/project-data-maintenance.md)。

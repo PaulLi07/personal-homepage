@@ -4,15 +4,7 @@
 
 每次扩展模块同步两者，使用 [测试模板](TEMPLATE.md)，遵守 [工作协议](../WORKFLOW.md)。文档正文中文，网页文字英文；模块文件名使用简短的小写英文标识。
 
-本轮 Apple 风格设计、逐模块实际预览和限制见 [2026-10-23 记录](../COMPATIBILITY.md#apple-design-2026-10-23)；维护约定见 [设计说明](../DESIGN-APPLE.md)。以下旧矩阵保留为历史，不能代替本轮验证。
-
-Academic最新路牌、悬浮图窗与步行场景见 [模块说明](../../modules/academic/exploration/README.md)，漫画路牌与草地本次验证见 [专项记录](academic.md#academic-comic-2026-10-23)，不沿用前一轮结果。
-
-About最新横向相册、图内半透明序号/两侧箭头、右侧资料及无标题说明见[模块说明](../../modules/about/README.md)与[本轮记录](about.md#about-gallery-2026-10-23)。
-
-About组合全宽与Academic全幅场景的最新布局及实测见[About记录](about.md#edge-layout-2026-10-23)和[Academic记录](academic.md#edge-layout-2026-10-23)，不将相册单独铺满桌面整行。
-
-Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明](../../modules/life/stack/README.md)，当前证据见[2026-10-25记录](life.md#life-polaroids-2026-10-25)；旧整区相框测试保留为历史。
+当前架构及数据库维护验收见[本轮记录](project-data-maintenance.md)。视觉与功能演变按各模块日期记录；旧测试不代表本轮通过。
 
 ## 主模块
 
@@ -65,3 +57,9 @@ Life最新拍立得入口、黄色花体与白色生活语录见[照片堆说明
 本轮九图/PDF 测试 297 流程与学术分类/ORCID/BESIII 测试 72 流程均已在同样九环境实测通过，结果分别见 [附件](article-photos.md)、[PDF](article-documents.md) 和 [Publications](academic-publications.md)。
 
 Academic人物随机动作的素材库、接口和调参见 [人物说明](../../modules/academic/exploration/character/README.md)，当前验证见 [动作记录](academic.md#walker-actions-2026-10-23)。
+
+## 本地维护模块
+
+| 模块 | 就近说明 | 兼容性记录 |
+|---|---|---|
+| 两项目SQLite维护 | [通用引擎](../../maintenance/README.md)、[Maps](../../modules/academic/projects/experiment-atlas/database/README.md)、[Physicists](../../modules/academic/projects/physicists/database/README.md) | [架构维护](project-data-maintenance.md) |

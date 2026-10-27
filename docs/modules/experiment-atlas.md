@@ -53,3 +53,7 @@ python3 modules/academic/projects/experiment-atlas/tools/verify_portable.py --js
 - `isolated-copy-xenon-mobile.png`：独立复制副本、子路径下的 XENON 档案。
 
 本轮未进行独立 Chrome / Firefox / Safari、手机真机、真实触摸、线上 Pages 部署或外部参考链接可用性测试，也未重新进行科学资料审核或图片复用许可确认。视口模拟不等于真机，复制副本的本地通过不等于线上发布已完成。后续维护需按实际改动重新验证，不沿用本轮数字。
+
+## 2026-10-27 架构维护与本地SQLite
+
+本项目已接入独立本地维护数据库，规范JSON仍为唯一编辑源。结构/适配器/迁移在项目database/，网页路径与布局保持；Physicists资料只维护英文。当前实际数据库、独立源码包重建、桌面/手机及发布包子路径结果统一见[本轮记录](project-data-maintenance.md)。以该记录为本轮证据，旧段落为历史。

@@ -30,7 +30,7 @@
 
 导航样式公开 `--navigation-height`：桌面 76px、宽度 ≤760 时 104px，导航自身的最小高度使用同一值。共享基础为分区设置同值的锚点滚动留白，Home 为 0；Academic 与 Life 在各自模块再加 16px，避免分隔线和相框靠近固定栏，不查询导航内部结构。修改高度或断点时须真实点击导航并检查标题与相框顶线，不以只检查 hash 或元素 `isVisible` 代替无遮挡验证。
 
-2026-10-23 Apple 风格调整的中性色令牌、系统字体、圆角、留白与动效约定见 [设计说明](../docs/DESIGN-APPLE.md)。`base.css` 提供 `--surface`、`--surface-raised`、`--white`、`--muted`、`--accent`、`--primary` 等共享变量，模块负责自己的构图，不把模块选择器集中到共享层。Home 继续独立保存原山水背景；About 为用户已替换的人像，两者无需同源。共享代码不能读取或交换这两张图片。
+2026-10-23 Apple 风格调整的中性色令牌、系统字体、圆角、留白与动效约定见 [设计说明](../docs/DESIGN-APPLE.md)。`base.css` 提供 `--surface`、`--surface-raised`、`--white`、`--muted`、`--accent`、`--primary` 等共享变量，模块负责自己的构图，不把模块选择器集中到共享层。Home当前独立保存站主提供的hero-dragon.jpg；About使用独立相册与人像副本，两者无需同源。共享代码不能读取或交换这两张图片。
 
 前一轮 Apple 改版分支为 `feat/apple-homepage-design`，备份为 `backup/pre-apple-design-2026-10-23`（`28880ba`）；对应验证见 [Apple 兼容性记录](../docs/COMPATIBILITY.md#apple-design-2026-10-23)。随后 Academic 专题精修使用 `feat/academic-science-directory`，回退点为 `backup/pre-academic-science-2026-10-23`（`c7cdd07`），尚未推送；可选 `route` 接口的本轮证据见 [Academic 记录](../docs/modules/academic.md#academic-science-2026-10-23)，不沿用历史通过结论。
 

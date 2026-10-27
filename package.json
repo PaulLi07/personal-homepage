@@ -28,7 +28,13 @@
     "test:internal-notes": "node scripts/test-internal-notes.cjs",
     "test:projects-directory": "node scripts/test-projects-directory.cjs",
     "build:physicists": "python3 modules/academic/projects/physicists/archive/scripts/build_website.py && python3 modules/academic/projects/physicists/tools/refresh_metadata.py",
-    "test:physicists": "node --test modules/academic/projects/physicists/archive/website/tests/*.test.cjs && python3 modules/academic/projects/physicists/tools/verify_portable.py && python3 modules/academic/projects/physicists/tools/refresh_metadata.py --check"
+    "test:physicists": "node --test modules/academic/projects/physicists/archive/website/tests/*.test.cjs && python3 modules/academic/projects/physicists/tools/verify_portable.py && python3 modules/academic/projects/physicists/tools/refresh_metadata.py --check",
+    "package:publish": "npm run assemble && python3 scripts/package.py --mode publish",
+    "data:init": "python3 scripts/data.py init all",
+    "data:check": "python3 scripts/data.py check all",
+    "data:stats": "python3 scripts/data.py stats all",
+    "data:rebuild": "python3 scripts/data.py rebuild all",
+    "test:data-maintenance": "python3 -m unittest discover -s maintenance/tests -v && python3 -m unittest discover -s modules/academic/projects/experiment-atlas/database -p \"test_*.py\" -v && python3 -m unittest discover -s modules/academic/projects/physicists/database/tests -v && python3 scripts/tests/test-maintenance-layout.py"
   },
   "engines": {
     "node": ">=18"

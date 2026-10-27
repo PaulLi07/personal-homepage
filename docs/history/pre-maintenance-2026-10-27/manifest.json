@@ -1,0 +1,32 @@
+[
+  {
+    "source": "AGENTS.md",
+    "snapshot": "AGENTS.snapshot.md",
+    "source_sha256": "299fa261c54d32ae2f1701453fcfc8b307660ce6e07f5b623210bedbe0c4b565"
+  },
+  {
+    "source": "README.md",
+    "snapshot": "README.md",
+    "source_sha256": "3e8ba3dca944e8ad272fe8ae6dced186925698f06328b64838ec2033490c6ff8"
+  },
+  {
+    "source": "docs/ARCHITECTURE.md",
+    "snapshot": "docs__ARCHITECTURE.md",
+    "source_sha256": "e3e1684bb95d6eb14c40bf9d997a394bc0a1e48097db31be05595fbedca13cc4"
+  },
+  {
+    "source": "docs/WORKFLOW.md",
+    "snapshot": "docs__WORKFLOW.md",
+    "source_sha256": "2c1ce52a6dc3cdc4b99e604319e2f0453ed7c21ca7be06eecaf3eb8f2e5c28a1"
+  },
+  {
+    "source": "docs/COMPATIBILITY.md",
+    "snapshot": "docs__COMPATIBILITY.md",
+    "source_sha256": "77afd5cfd41e9c36fd1bb4e5a53dacde2c8b6deb9a894fcc398cff15b9b8c612"
+  },
+  {
+    "source": "modules/academic/README.md",
+    "snapshot": "modules__academic__README.md",
+    "source_sha256": "e5f59807c9cc7a3bac4f3774431ed8281e6cc843b1e3fd7291aee27c005eb3da"
+  }
+]
