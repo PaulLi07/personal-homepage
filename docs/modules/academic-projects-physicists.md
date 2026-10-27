@@ -1,5 +1,7 @@
 # Physicists项目记录
 
+2026-10-27后续入口已更新，最新结构和兼容性见[Projects图文卡片记录](academic-projects.md#project-cards-2026-10-27)；以下各轮记录保留其当时范围。
+
 维护入口：[模块说明](../../modules/academic/projects/physicists/README.md)。当前入口 `#academic/projects/physicists` 已接入完整Physics Pioneers档案，原占位记录保留在文末作为历史。
 
 <a id="physicists-import-2026-10-27"></a>

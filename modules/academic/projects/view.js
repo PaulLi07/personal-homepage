@@ -1,4 +1,4 @@
-/* 项目目录只管理入口、合作组和子视图生命周期；各项目独立提供内容。 */
+/* 项目目录委托各项目呈现视觉入口，并管理导航与子视图生命周期。 */
 (function () {
   "use strict";
   const api = window.Homepage;
@@ -39,37 +39,31 @@
       return ["https:", "http:"].includes(parsed.protocol) && !parsed.username && !parsed.password;
     } catch (_) { return false; }
   }
-  function collaborations(content) {
-    const section = node("section", "project-directory__collaborations");
-    section.setAttribute("aria-label", "Research collaborations");
-    const header = node("header", "project-directory__section-heading");
-    header.append(node("p", "project-directory__eyebrow", "Research network"), node("h3", "", "Research collaborations"));
-    section.append(header);
-    const entries = Array.isArray(content?.entries) ? content.entries : [];
-    if (!entries.length) section.append(node("p", "project-directory__intro", content?.emptyMessage || "Collaboration information will be added here."));
-    entries.forEach(entry => {
-      const article = node("article", "project-directory__collaboration");
-      const title = node("h4", "");
-      if (entry.url && publicLink(entry.url)) {
-        const link = node("a", "project-directory__external", entry.title + " ↗");
-        link.href = entry.url;
-        link.target = "_blank";
-        link.rel = "noopener noreferrer";
-        title.append(link);
-      } else title.textContent = entry.title;
-      article.append(title);
-      if (entry.meta) article.append(node("p", "project-directory__collaboration-meta", entry.meta));
-      if (entry.description) article.append(node("p", "project-directory__intro", entry.description));
-      section.append(article);
-    });
-    if (content?.link?.url && publicLink(content.link.url)) {
-      const link = node("a", "project-directory__github", content.link.label);
-      link.href = content.link.url;
-      link.target = "_blank";
-      link.rel = "noopener noreferrer";
-      section.append(link);
-    }
-    return section;
+  function projectLinks(content) {
+    if (!content?.link?.url || !publicLink(content.link.url)) return null;
+    const footer = node("footer", "project-directory__links");
+    const link = node("a", "project-directory__github", content.link.label);
+    link.href = content.link.url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    footer.append(link);
+    return footer;
+  }
+  function basicCard(project, index, navigate, signal) {
+    const card = node("button", "project-directory__card");
+    card.type = "button";
+    card.dataset.academicProject = project.id;
+    card.setAttribute("aria-label", "Open " + project.title);
+    const number = node("span", "project-directory__number", String(index + 1).padStart(2, "0"));
+    number.setAttribute("aria-hidden", "true");
+    const copy = node("span", "project-directory__copy");
+    copy.append(node("span", "project-directory__title", project.title), node("span", "project-directory__description", project.description));
+    if (project.summary) copy.append(node("span", "project-directory__summary", project.summary));
+    const arrow = node("span", "project-directory__arrow", "→");
+    arrow.setAttribute("aria-hidden", "true");
+    card.append(number, copy, arrow);
+    card.addEventListener("click", () => navigate(project.id), {signal});
+    return card;
   }
 
   api.createProjectsView = function ({projects = api.getAcademicProjects, viewFor = api.getAcademicProjectView, content, onNavigate} = {}) {
@@ -82,6 +76,7 @@
         const controller = new AbortController();
         const root = node("div", "project-directory");
         let childCleanup = null;
+        const entryRenders = [];
         let childController = null;
         let disposed = false;
         const dispose = () => {
@@ -89,6 +84,10 @@
           disposed = true;
           controller.abort();
           childController?.abort();
+          entryRenders.forEach(entry => {
+            entry.controller.abort();
+            try { entry.cleanup?.(); } catch (_) { /* 单入口清理不阻断其余项目。 */ }
+          });
           try { childCleanup?.(); }
           catch (_) { /* 子项目清理故障不阻断父目录恢复。 */ }
           finally {
@@ -99,7 +98,7 @@
         };
         activeCleanup = dispose;
         signal?.addEventListener("abort", dispose, {once: true});
-        const navigate = next => { if (typeof onNavigate === "function") onNavigate(next); };
+        const navigate = next => { if (!controller.signal.aborted && typeof onNavigate === "function") onNavigate(next); };
         let items;
         try { items = typeof projects === "function" ? projects() : projects; }
         catch (_) { items = null; }
@@ -125,28 +124,30 @@
             node("p", "project-directory__intro", "Explore each project and its resources."));
           const list = node("div", "project-directory__list");
           items.forEach((project, index) => {
-            const card = node("button", "project-directory__card");
-            card.type = "button";
-            card.dataset.academicProject = project.id;
-            card.setAttribute("aria-label", "Open " + project.title);
-            const number = node("span", "project-directory__number", String(index + 1).padStart(2, "0"));
-            number.setAttribute("aria-hidden", "true");
-            const copy = node("span", "project-directory__copy");
-            copy.append(node("span", "project-directory__title", project.title),
-              node("span", "project-directory__description", project.description));
-            if (project.summary) copy.append(node("span", "project-directory__summary", project.summary));
-            const arrow = node("span", "project-directory__arrow", "→");
-            arrow.setAttribute("aria-hidden", "true");
-            card.append(number, copy, arrow);
-            card.addEventListener("click", () => navigate(project.id), {signal: controller.signal});
-            list.append(card);
+            const entryHost = node("div", "project-directory__entry");
+            entryHost.dataset.projectEntryHost = project.id;
+            list.append(entryHost);
+            const entry = {controller: new AbortController(), cleanup: null};
+            entryRenders.push(entry);
+            try {
+              const view = typeof viewFor === "function" ? viewFor(project.id) : null;
+              if (typeof view?.renderEntry === "function") {
+                const cleanup = view.renderEntry({host: entryHost, signal: entry.controller.signal, navigate});
+                if (typeof cleanup === "function") entry.cleanup = cleanup;
+              } else entryHost.append(basicCard(project, index, navigate, entry.controller.signal));
+            } catch (_) {
+              entry.controller.abort();
+              entryHost.replaceChildren(state(project.title, "This project is temporarily unavailable. Please try again later."));
+            }
           });
           if (!items.length) section.append(state("No projects yet", "Projects will appear here when they are ready."));
           else section.append(list);
           let links;
           try { links = typeof content === "function" ? content() : content; }
           catch (_) { links = null; }
-          root.append(section, collaborations(links));
+          root.append(section);
+          const footer = projectLinks(links);
+          if (footer) root.append(footer);
         } else if (!selected) {
           root.dataset.projectView = "not-found";
           root.append(state("Project not found", "Return to the project directory to choose an available project."));

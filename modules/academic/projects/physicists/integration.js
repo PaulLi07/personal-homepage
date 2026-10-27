@@ -11,6 +11,9 @@
       return Number.isSafeInteger(count) && count > 0 ? count.toLocaleString("en") + " physicists" : "";
     }
   }, {
+    renderEntry({host, signal}) {
+      return api.createPhysicistsView().render({host, signal, entryOnly: true});
+    },
     render({host, signal}) {
       return api.createPhysicistsView().render({host, signal});
     }

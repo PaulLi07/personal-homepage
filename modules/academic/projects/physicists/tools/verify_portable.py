@@ -117,10 +117,10 @@ def verify(import_snapshot: bool = False) -> dict:
     app = (SITE / 'app.js').read_text()
     require(bool(re.search(r'\blang\s*:\s*[\'"]en[\'"]', app)), '应用初始语言未固定为英文')
     require('function setLanguage' not in app, '英文站不能切换到中文界面')
-    return_links = [link for link in html.links if link.endswith('#academic/projects/physicists')]
-    require(len(return_links) == 1, '缺少唯一的 Physicists 返回入口')
+    return_links = [link for link in html.links if link.endswith('#academic/projects')]
+    require(len(return_links) == 1, '缺少唯一的 Projects 返回入口')
     homepage = (MODULE.parents[3] / 'index.html').resolve()
-    require((SITE / urlsplit(return_links[0]).path).resolve() == homepage, 'Physicists 返回链接的层级错误')
+    require((SITE / urlsplit(return_links[0]).path).resolve() == homepage, 'Projects 返回链接的层级错误')
     require(homepage.is_file(), '缺少主页返回目标')
     for ref in html.assets:
         file = local_file(ref, SITE)

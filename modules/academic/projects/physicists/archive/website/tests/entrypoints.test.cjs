@@ -31,13 +31,16 @@ test('the English standalone page loads its scripts and styles from the copied m
   assert.doesNotMatch(app,/\/Users\/|file:\/\/|127\.0\.0\.1|localhost|design-review|\.\.\/dist\//);
 });
 
-test('the archive has a native return link to the homepage Physicists project',()=>{
+test('the archive returns directly to the homepage Projects directory without an intermediate project page',()=>{
   const html=fs.readFileSync(path.join(site,'index.html'),'utf8');
-  const match=html.match(/<a\b[^>]*href="([^"]*#academic\/projects\/physicists)"[^>]*>/);
+  const match=html.match(/<a\b[^>]*href="([^"]*#academic\/projects)"[^>]*>/);
   assert.ok(match,'Missing homepage return link');
   const target=new URL(match[1],'https://example.test/personal-homepage/modules/academic/projects/physicists/archive/website/site/index.html');
   assert.equal(target.pathname,'/personal-homepage/index.html');
-  assert.equal(target.hash,'#academic/projects/physicists');
+  assert.equal(target.hash,'#academic/projects');
+  assert.match(html, /title="Back to Projects"/);
+  assert.match(html, /aria-hidden="true">←<\/span> Projects<\/a>/);
+  assert.doesNotMatch(html, /#academic\/projects\/physicists/);
 });
 
 test('all721 independent local portraits retain their audited original bytes and rights notices',()=>{

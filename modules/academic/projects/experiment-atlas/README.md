@@ -1,6 +1,6 @@
 # Physics Maps物理地图项目
 
-本项目入口为 `#academic/projects/physics-maps`，先在Projects项目目录中选择Physics Maps，再选择其中的中微子或暗物质地图。两张地图通过普通链接进入各自独立页面，桌面两列直角卡片、手机单列；不是Projects的两个平级项目。
+本项目入口为Projects目录中的Physics Maps图文卡片，与Physicists入口采用同一结构和对齐方式。点击进入 `#academic/projects/physics-maps`，再选择其中的中微子或暗物质地图。两张地图通过普通链接进入各自独立页面，桌面两列直角卡片、手机单列；不是Projects的两个平级项目。
 
 公开项目名为Physics Maps，源码继续保存在 `experiment-atlas/`，保留原地图路径与资源位置，不搬动既有档案。项目通过父目录的注册接口接入，沿用共享详情，不创建新弹窗或新路由机制。
 
@@ -10,9 +10,10 @@
 
 - `registry.js`：登记地图的 `id`、英文标题/简介、站点根相对入口与地图缩略图，公开 `Homepage.getExperimentMaps()`。返回数组与条目均冻结，方便后续增加地图。
 - `metadata.js`：由 `tools/refresh_metadata.py` 读取各地图本地 `data/catalog.json` 生成，通过 `Homepage.getData("experiment-atlas:catalogs")` 提供各地图的 `recordCount` / `updated`；不是第二份手工统计表。缺少合法数量或日期时，入口隐去对应字段。
+- `entry.js`：提供 `Homepage.createPhysicsMapsEntry()`及目录入口渲染，读取本项目公开地图getter，把两张本地地图缩略图和统计传给父目录公共入口工厂；普通点击进入地图目录，修改键点击保留原生链接行为。
 - `view.js`：公开 `Homepage.createExperimentAtlasView({ maps })`，其 `render({ host, signal })`只修改传入宿主，返回幂等清理函数；只显示Physics Maps及本项目地图，不再管理Projects目录或科研合作组。地图链接保留原生导航。
-- `integration.js`：通过 `registerAcademicProject(descriptor, view)`登记 `physics-maps`项目，名称为Physics Maps；目录摘要动态计算 `getExperimentMaps().length`。父Projects接线管理共享详情和All projects返回，本项目不重复登记父详情。
-- `styles.css`：只维护地图卡片与本项目局部样式；父项目目录、合作组及其共享排版由上一级 `styles.css`维护，不改其他Academic栏目。
+- `integration.js`：通过 `registerAcademicProject(descriptor, view)`登记 `physics-maps`项目，名称为Physics Maps；通过可选 `renderEntry({host, signal, navigate})`贡献目录卡片，摘要动态计算 `getExperimentMaps().length`。父Projects接线管理共享详情和All projects返回，本项目不重复登记父详情。
+- `styles.css`：只维护地图卡片与本项目局部样式；父项目目录与共用入口排版由上一级 `styles.css`维护，不改其他Academic栏目。
 - `map-shell.css`：地图独立页面公共顶栏，品牌为Physics Maps，返回 `#academic/projects/physics-maps`，再由项目页返回总目录。地图切换使用原生链接，选中项为 `aria-current="page"`，手机两行；只限定顶栏类名，不改地图正文样式。
 - `tools/sync_shell.py`：通过 Node VM 执行 `registry.js` 取得同一地图登记，自动计算页面返回与切换相对路径，幂等同步每张地图 `index.html` 中的顶栏和共享CSS引用；不维护第二份地图列表。
 - `tools/verify_portable.py`：只读检查发布目录的资源和数据路径闭合，包括本地档案、图片、HTML/CSS/JS引用、符号链接及本机地址；不访问网络或外部源目录。
@@ -62,3 +63,5 @@ git diff --check
 ## 项目层与地图层
 
 新地图只进入本项目清单；新项目则在父 `projects/`下另建独立目录并使用项目注册接口，不在本地图registry中混入Physicists等其他项目。当前目录与地图返回路径的2026-10-27验证统一见[Projects本轮记录](../../../../docs/modules/academic-projects.md#project-directory-2026-10-27)，地图旧版本记录保留为历史。
+
+2026-10-27目录卡片改为与Physicists一致的图文范式，未搬动地图、档案或图片；本轮入口和对齐效果的验证统一见[项目卡片记录](../../../../docs/modules/academic-projects.md#project-cards-2026-10-27)。

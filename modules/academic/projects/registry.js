@@ -9,12 +9,14 @@
       || !/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(descriptor.id)
       || !text(descriptor.title, 120) || !text(descriptor.description, 600)
       || !(typeof descriptor.summary === "function" || text(descriptor.summary, 120))
-      || !view || typeof view.render !== "function") throw new Error("Invalid academic project.");
+      || !view || typeof view.render !== "function"
+      || (view.renderEntry !== undefined && typeof view.renderEntry !== "function")) throw new Error("Invalid academic project.");
     if (projects.has(descriptor.id)) throw new Error("Duplicate academic project.");
     projects.set(descriptor.id, {
       id: descriptor.id, title: descriptor.title.trim(), description: descriptor.description.trim(),
       summary: descriptor.summary,
-      view: Object.freeze({render: options => view.render(options)})
+      view: Object.freeze({render: options => view.render(options),
+        ...(typeof view.renderEntry === "function" ? {renderEntry: options => view.renderEntry(options)} : {})})
     });
   };
   api.getAcademicProjects = function () {

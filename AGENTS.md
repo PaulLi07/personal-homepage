@@ -15,7 +15,7 @@
 
 - 姓名：Yuhong Li；学校：Nankai University（南开大学）；身份：研究生；领域：理论物理；About研究方向为 High energy physics、Theory beyond the Standard Model。
 - 邮箱：2310408@mail.nankai.edu.cn；GitHub：PaulLi07。
-- 用户提供的 ORCID：<https://orcid.org/0009-0005-6858-4000>，在 About 和 Contact 同步展示；Projects 展示 BESIII Collaboration 官方链接 <http://bes3.ihep.ac.cn/>，不推断个人角色或贡献。
+- 用户提供的 ORCID：<https://orcid.org/0009-0005-6858-4000>，在About和Contact同步展示；用户于2026-10-27要求移除Projects中的BESIII Collaboration入口，论文、Internal note及科学引用的合作组资料保留，不推断个人角色或贡献。
 - 用户指定论文 arXiv:2610.11981，官方元信息已核对为 2026-10-08 提交、BESIII Collaboration 署名；只展示核实的题名、日期及 Abstract / PDF 链接，不推断个人主导角色或正式发表状态。
 - 仓库：<https://github.com/PaulLi07/personal-homepage>。
 - 网站：<https://paulli07.github.io/personal-homepage/>。
@@ -53,6 +53,7 @@
 - 实验地图集独立归 `modules/academic/projects/experiment-atlas/`：Projects只登记入口，各地图保留自己的页面、脚本、样式、完整英文档案、图片和中文说明。用户明确要求全部所需源码复制到主页，原 `/Users/paulli/coding/HEP/Web` 可能移除；禁止运行时或日常重建依赖该目录、符号链接、绝对本机路径及其后台服务。首次导入工具仅在明确再次导入时读取指定外源，不能成为日常维护必需步骤。
 - 2026-10-27后续：Physicists已接入原Web_Pioneers的完整档案，取代上条占位。源码、规范人物数据、成果源数据、721图片、Python/Node构建与测试独立复制到 `projects/physicists/archive/`；原用户所指Physics_Pioneers目录实际已更名Web_Pioneers。日常运行/重建不得访问原HEP Web，不用外部硬链接或符号链接。图片单一归属 `archive/portraits/`，交付整个模块；源码 `website/src/index.template` 构建为 `website/site/index.html`，两入口在清单声明。先运行 `npm run build:physicists`，再运行对应测试、装配与检查；元数据从本地产物生成，主页只加载轻量摘要与预览图。固定英文UI，保留原来源、图像种类、科学审计和62份未确认授权提示；不把英文网页方法帮助误当中文维护文档。任务分支 `feat/physicists-archive`，回退 `backup/pre-physicists-import-2026-10-27`（`cd4ea84`）；本轮仅本地维护。最新兼容性见[人物档案记录](docs/modules/academic-projects-physicists.md#physicists-import-2026-10-27)。
 - 地图新增入口通过 `registry.js`，统计从本地 catalog 生成 `metadata.js`，公共顶栏由同一登记生成。各地图独立 HTML 在 `app/site.json` 的所属模块 `standalonePages` 声明，使只读检查按页面自身目录解析资源；不要把整张地图或其数据塞进主页脚本。维护与兼容证据见[地图集说明](modules/academic/projects/experiment-atlas/README.md)和[记录](docs/modules/experiment-atlas.md)。
+- 2026-10-27后续：Projects改为对齐的图文入口。Physicists直接复用既有三张人物照片卡片，上移到项目目录，点击即打开完整档案；Physics Maps使用两张本地地图缩略图及同一范式，点击进入地图目录。父 `entry.js`提供公共结构，项目通过可选 `renderEntry({host, signal, navigate})`贡献入口，父目录只接线和管理生命周期，不能读项目私有图片或资料。旧 `/physicists`保留书签兼容，正常流程不再经过；完整档案返回Projects。移除Projects的BESIII Collaboration入口和空合作组区，保留GitHub，不改动论文/Internal note/科学引用。分支 `style/projects-visual-entries`，回退 `backup/pre-project-cards-2026-10-27`（`6a6fbd9`），本轮仅本地维护；本次验证见[项目卡片记录](docs/modules/academic-projects.md#project-cards-2026-10-27)。
 - `modules/home/`、`about/`、`academic/`、`life/`、`contact/`、`credits/` 按用户理解的功能组织源码；不再把全部功能分散到统一的 HTML、CSS、JS 文件中。
 - Life照片堆归 `modules/life/stack/`，配置、控制器、样式和本地字体独立维护；仅通过公开详情与粒子接口接入，不把博客、作者登录或私密资料合并进入口控制器。
 - 主模块保存自己的 `section.html`（署名页使用 `page.html`）、`styles.css`、按需的 `module.js`、`images/` 与 `README.md`。
@@ -108,7 +109,7 @@
 
 基础兼容性使用 `npm run test:compat`；博客与加密视图使用 `npm run test:features`；统一作者、加密连接缓存和双集合发布使用 `npm run test:author`；离线作者会话使用 `npm run test:author-security`；Relationship 算法使用 `npm run test:security`，正式密文格式使用 `npm run relationship:check`。作者密码配置工具为 `npm run author:password`，只在本地终端交互输入，测试不使用真实配置密码。按改动范围运行对应案例，测试数据与 GitHub 模拟不能替代真实部署或凭据验证。共用证据见 [兼容性记录](docs/COMPATIBILITY.md)，统一作者记录见 [author](docs/modules/author.md)，后续修改仍需重新验证。
 
-照片及 PDF 扩展运行 `npm run test:photos`，实际测试照片处理、9 张与 18 MiB 边界、PDF 原字节与基本检查、3 份与 30 MiB 边界、顺序、英文描述、阅读链接、混合 ZIP、同提交发布、冲突与请求白名单，并回归零附件 Contents 发布。`npm run test:academic-profile` 验证 Publications 三分类、题名元信息、导航与外链，以及 About / Contact ORCID 和 Projects BESIII。只用临时附件及模拟 GitHub，不读取浏览器真实凭据，不替用户发表测试文章；旧测试记录不替代本轮结果。
+照片及 PDF 扩展运行 `npm run test:photos`，实际测试照片处理、9 张与 18 MiB 边界、PDF 原字节与基本检查、3 份与 30 MiB 边界、顺序、英文描述、阅读链接、混合 ZIP、同提交发布、冲突与请求白名单，并回归零附件 Contents 发布。`npm run test:academic-profile` 验证 Publications 三分类、题名元信息、导航与外链，以及 About / Contact ORCID、Projects入口及BESIII入口移除。只用临时附件及模拟 GitHub，不读取浏览器真实凭据，不替用户发表测试文章；旧测试记录不替代本轮结果。
 
 粒子背景扩展使用 `npm run test:particle-simulation` 验证离线配置、局部规则、指针作用与数值边界，再使用 `npm run test:particles` 实测三内核、三视口、正常与减少动态效果、鼠标与触摸、配置、层级、暂停恢复、DPR、文件打开、失效回退及卸载。慢帧降级使用明确标注的人工负载，不能作为真实性能；诊断中的运动偏好按原生 change 事件维护。报告写入被忽略的 `artifacts/particle-results.json`，结果及限制同步 [粒子记录](docs/modules/particle-background.md)。
 

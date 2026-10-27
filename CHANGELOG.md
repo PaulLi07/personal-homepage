@@ -2,6 +2,13 @@
 
 记录影响功能、结构或工作方式的重要变化；细节以 Git 提交为准。
 
+## 2026-10-27：Projects图文入口上移与对齐
+
+- 将既有Physics Pioneers三张照片入口直接移到Projects目录，作为Physicists入口，一次点击打开完整档案；旧中间路由仅作书签兼容，独立档案返回Projects。
+- Physics Maps使用同范式图文卡片和两张本地地图缩略图，进入其两地图目录；公共结构与模块入口渲染分开维护，原有数据和图片不搬动。
+- 移除Projects的BESIII Collaboration入口及空合作组区，保留GitHub；论文、Internal note与科学引用保持原资料。
+- 本次验证与未覆盖范围见[项目卡片记录](docs/modules/academic-projects.md#project-cards-2026-10-27)。分支 `style/projects-visual-entries`，回退 `6a6fbd9`；本次仅本地维护。
+
 ## 2026-10-27：Physicists独立人物档案
 
 - 将站主原Web_Pioneers项目的必要源码、721人物、691成果、721图片及离线构建/测试完整复制到主页；不依赖原工作目录，异地副本可重建。

@@ -10,7 +10,7 @@
 - 按功能维护 `modules/<功能>/`，结构、样式、行为、内容、资源和说明放在同一模块；详情子模块独立贡献数据，不集中到一个总内容文件。
 - 当前学术栏目为 Experience、Publications、Notes、Projects；生活栏目为 Moments、Travels、Creations、Relationship。Experience 学术日志与 Moments 生活文章分别维护，没有用户资料时保持空数组，不编造内容。
 - Publications 再分 Internal note、arXiv、Published，各目录独立 `data.js` 与中文 README；分类目录及 `/internal-note`、`/arxiv`、`/published` 子路由使用既有自定义详情接口，不建立另一套弹窗。仅登记用户提供并核对的论文资料；内部材料当前按课题组登记BESIII两条用户指定记录，已发表分类仍为空。
-- ORCID 在 About 与 Contact 同步显示，BESIII 官方链接在 Projects；arXiv:2610.11981 展示官方题名、2026-10-08 日期及 BESIII Collaboration 署名。不据此推断个人贡献、合作组角色或正式发表状态。
+- ORCID在About与Contact同步显示；Projects已按用户要求移除BESIII Collaboration入口，不改动论文和Internal note中的合作组资料；arXiv:2610.11981 展示官方题名、2026-10-08 日期及 BESIII Collaboration 署名。不据此推断个人贡献、合作组角色或正式发表状态。
 - 模块不直接读取其他模块内部；通过声明清单和注册接口使用共享服务。`shared/` 仅承载实际跨模块复用能力，不能堆放单模块业务。
 - `modules/author/` 以无 HTML 根节点的 `services` 提供统一会话、表单与独立发布器；`modules/article-photos/` 独立提供图片规范、处理、选图、图库与混合 ZIP，`modules/article-documents/` 独立提供 PDF 规范、选择与阅读链接。加载顺序为照片、PDF、作者，再加载栏目数据。集合数据、读者和实际文件仍由各自模块负责，Relationship 不接入公开附件。
 - 胶水只负责声明、接入和启动，隔离单模块初始化异常；具体模块行为留在模块内，不让一个模块故障阻断其他模块启动。
@@ -54,6 +54,12 @@ git switch -c feat/short-topic
 5. `registerData` / `getData` 只登记数据，模块维护自己的 getter、校验和业务。单模块能力留在模块中，胶水只传视图注册表与共享服务；接口变化注明使用者并回归。
 6. 修改完成后运行 `npm run assemble`，再检查及实测。源码、生成页面、模块说明和测试记录一起提交，不留到以后补写。
 
+### 项目目录入口
+
+目录图文卡片由各项目通过可选 `renderEntry({host, signal, navigate})`提供，并调用父目录公共入口工厂。共享结构与排版由父目录维护，图片、统计和目标仍归所属项目；新增或改入口时验证取消清理、异常隔离、原生链接、键盘及修改键点击。当前Physicists从目录一步打开完整档案，Physics Maps进入地图目录；人物档案的返回链接回到Projects，不恢复被移除的中间点击。旧 `/physicists`仅作书签兼容，不能重新成为正常流程。
+
+Projects中删除BESIII Collaboration仅涉及该入口，不删除Publications、Internal note或科学资料的合作组内容。目录也不保留空Research collaborations区。当前卡片验证及限制见[记录](modules/academic-projects.md#project-cards-2026-10-27)，不能沿用原占位或导入阶段的测试结论。
+
 ### 独立项目与实验地图
 
 集成其他目录的项目时，必须把运行和日常维护所需的源码、数据、图片及说明复制到主页所属模块，不使用符号链接、绝对本机路径或外部工作目录的服务。原项目可能被用户移除；不得把“本机当前可访问”当成部署依赖已经闭合。
@@ -95,7 +101,7 @@ Physicists同样保存运行与重建的完整副本。先改本模块源数据�
 
 `npm run test:photos` 验证旧记录零附件兼容、9 张 / 18 MiB 照片边界、输入格式和尺寸、JPEG 输出、英文 alt / 纯文本 caption、受控路径、预览排序删除、关闭取消与原比例图库；还需覆盖 PDF 3 份 / 30 MiB、每份 10 MiB、英文标题、原字节与基本头尾检查、阅读链接及混合 ZIP。发布测试覆盖零附件 Contents、任意附件同版 head / tree / 数据读取、文件和数据的一次提交、已有照片和 PDF 保留、分支冲突及未更新 `main` 时不显示文章。使用临时文件和模拟 GitHub，不上传示例资料；报告为 `artifacts/photo-results.json`，对应证据由本轮验证后登记。
 
-`npm run test:academic-profile` 验证 Publications 三分类点击、直达、刷新、返回、空状态与安全文本，核对 arXiv 题名、元信息及 Abstract / PDF 外链，同时检查 About / Contact ORCID、Projects BESIII 和窄屏布局。既有历史测试记录保持原样，本轮附件 297 流程与学术资料 72 流程在三内核/三视口通过，证据见对应模块记录；后续修改仍须重新实测。
+`npm run test:academic-profile` 验证 Publications 三分类点击、直达、刷新、返回、空状态与安全文本，核对 arXiv 题名、元信息及 Abstract / PDF 外链，同时检查 About / Contact ORCID、Projects入口与BESIII入口移除，以及窄屏布局。既有历史测试记录保持原样，本轮附件 297 流程与学术资料 72 流程在三内核/三视口通过，证据见对应模块记录；后续修改仍须重新实测。
 
 ## 5. 装配、检查与提交
 

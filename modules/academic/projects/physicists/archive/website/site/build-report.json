@@ -38,8 +38,8 @@
   "entrypointPresent": true,
   "entrypoint": "index.html",
   "sourceDirectory": "website/src",
-  "sourceEntrypointSha256": "e49f86167df6dd31e770fa42da8e3eeefc7084868d713620c971ff46f2e6b580",
-  "entrypointSha256": "e49f86167df6dd31e770fa42da8e3eeefc7084868d713620c971ff46f2e6b580",
+  "sourceEntrypointSha256": "e5b1853bd9802d6b184de9f159771a3a009e169de574ed2197a2150c956cbd63",
+  "entrypointSha256": "e5b1853bd9802d6b184de9f159771a3a009e169de574ed2197a2150c956cbd63",
   "breakthrough": {
     "asOf": "2026-10-27",
     "methodVersion": "3.0",

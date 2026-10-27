@@ -10,7 +10,7 @@
 
 Academic后续更新为独立维护的路牌、悬浮图窗和步行场景，接口及调参见 [场景说明](modules/academic/exploration/README.md)，验证及限制见 [本次记录](docs/modules/academic.md#academic-scene-2026-10-23)。
 
-Projects先展示Physics Maps和Physicists两个独立项目。Physics Maps内含中微子与暗物质地图，Physicists内含721位人物、691条成果的独立Physics Pioneers档案；合作组与GitHub仍单独列出。地图的549份档案及549张图片全部随主页保存，日常维护不依赖原HEP Web。人物项目的完整源码、数据、721份图片和离线构建也全部保存在主页内，见[人物项目说明](modules/academic/projects/physicists/README.md)。项目扩展见[Projects说明](modules/academic/projects/README.md)，新增地图见[地图说明](modules/academic/projects/experiment-atlas/README.md)，2026-10-27目录实测见[记录](docs/modules/academic-projects.md#project-directory-2026-10-27)。
+Projects直接展示Physics Maps与Physicists两张对齐的图文卡片：Physics Maps进入中微子与暗物质地图目录；Physicists沿用三张人物照片，点击直接进入721位人物、691条成果的Physics Pioneers档案。BESIII Collaboration入口已按用户要求移除，底部保留GitHub链接。地图的549份档案及549张图片全部随主页保存，日常维护不依赖原HEP Web。人物项目的完整源码、数据、721份图片和离线构建也全部保存在主页内，见[人物项目说明](modules/academic/projects/physicists/README.md)。项目扩展见[Projects说明](modules/academic/projects/README.md)，新增地图见[地图说明](modules/academic/projects/experiment-atlas/README.md)，本次入口布局与验证见[记录](docs/modules/academic-projects.md#project-cards-2026-10-27)。
 
 2026-10-25 Life改为四张横向白边拍立得的交错照片堆，取消旧整区白框与滚动漂移；悬停/聚焦置顶并切换亮黄色手写标题，触摸先选中下层再点正面进入，下方为白色生活语录。局部手写字体随源码本地加载并保留OFL许可，其余页面仍用正常系统字体。接口、构图及验证要求见[照片堆说明](modules/life/stack/README.md)，实测单独登记在[Life记录](docs/modules/life.md)。任务分支 `feat/life-polaroid-stack`，回退 `backup/pre-life-polaroids-2026-10-25`（`0783998`）；只做本地维护。
 
@@ -60,7 +60,7 @@ Playwright 位于项目外时，可用 `HOMEPAGE_PLAYWRIGHT_MODULE=/absolute/pat
 
 2026-10-10 统一作者与学术日志在三个内核、三个视口通过，共 144 个流程；离线作者会话 21 项通过，真实 GitHub 写入为 0，正式配置与两栏数据文件保持不变。环境及范围见 [author 记录](docs/modules/author.md)，基础与 Relationship 证据见 [兼容性实测](docs/COMPATIBILITY.md)。模拟视口不等于手机真机，模拟发布不等于真实账号或线上部署验证。
 
-`test:photos` 验证照片、PDF、混合 ZIP、Git 请求边界与两栏附件发布；报告为 `artifacts/photo-results.json`。`test:academic-profile` 验证 Publications 三分类、论文元信息及 ORCID / BESIII 链接。实际证据见对应模块记录；既有测试历史保持原样，本轮照片/PDF 297 流程与学术资料 72 流程在三内核、三视口全部通过，原作者 144、旧功能 81 与离线会话 21 项回归通过；详见 [附件记录](docs/modules/article-photos.md)、[PDF 记录](docs/modules/article-documents.md) 和 [Publications 记录](docs/modules/academic-publications.md)。模拟接口不能代替线上实测。
+`test:photos` 验证照片、PDF、混合 ZIP、Git 请求边界与两栏附件发布；报告为 `artifacts/photo-results.json`。`test:academic-profile` 验证 Publications 三分类、论文元信息及 ORCID / Projects 入口。实际证据见对应模块记录；既有测试历史保持原样，本轮照片/PDF 297 流程与学术资料 72 流程在三内核、三视口全部通过，原作者 144、旧功能 81 与离线会话 21 项回归通过；详见 [附件记录](docs/modules/article-photos.md)、[PDF 记录](docs/modules/article-documents.md) 和 [Publications 记录](docs/modules/academic-publications.md)。模拟接口不能代替线上实测。
 
 ## 功能入口
 
@@ -113,7 +113,7 @@ Experience 的 `#academic/experience` 展示学术日志，支持 Research / Lea
 
 ## 学术资料与论文分类
 
-About 与 Contact 展示用户提供的 [ORCID](https://orcid.org/0009-0005-6858-4000)，Projects 包含 [BESIII Collaboration](http://bes3.ihep.ac.cn/) 官方链接。
+About 与 Contact 展示用户提供的 [ORCID](https://orcid.org/0009-0005-6858-4000)。Projects已移除BESIII Collaboration入口；论文、Internal note中的合作组署名和引用不受影响。
 
 [Publications](modules/academic/publications/README.md) 的 `#academic/publications` 是分类目录，子路由为 `/internal-note`、`/arxiv`、`/published`；各分类独立保存 `data.js` 和中文说明。当前 arXiv 收录用户指定的 [2610.11981](https://arxiv.org/abs/2610.11981)，题名、2026-10-08 日期及 BESIII Collaboration 署名已经官方页面核实；Internal note按课题组展示BESIII的bam1027与bam1089（标题、作者、简介及DocDB内部链接），Published保持空数组。页面不推断用户贡献、合作组角色或正式发表状态，Abstract / PDF 保留原始外链。
 

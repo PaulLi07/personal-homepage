@@ -13,7 +13,7 @@ modules/
   about/                   简介
   academic/                学术概览
     experience/ notes/
-    projects/              项目登记、父目录视图、合作组与接线
+    projects/              项目登记、父目录视图、共用图文入口与接线
       physicists/          独立人物档案入口、完整源码、数据、图片和构建
       experiment-atlas/    Physics Maps项目、地图登记、顶栏与本地维护工具
         neutrino/ dark-matter/  各自页面、代码、数据、档案与图片
@@ -58,7 +58,7 @@ index.html, credits.html   装配生成的发布页面
 | `scripts/test-features.cjs` | 可选博客、模拟作者发布和加密视图测试；临时夹具通过请求拦截提供，不发布真实文章 |
 | `scripts/test-author-log.cjs` | 用随机作者密码、临时双集合与模拟 GitHub 验证统一会话、加密缓存和独立发布 |
 | `scripts/test-photos.cjs` | 临时照片与 PDF、混合 ZIP、同次提交与 Git 请求边界；真实写入全部拦截 |
-| `scripts/test-academic-profile.cjs` | 三分类导航、论文元信息与外链、ORCID 及 BESIII 资料 |
+| `scripts/test-academic-profile.cjs` | 三分类导航、论文元信息与外链、ORCID及Projects入口 |
 | `scripts/test-life-stack.cjs` | 离线拍立得输入、有限层级、详情参数与生命周期回归，不代替浏览器视觉及触摸测试 |
 | `scripts/test-particle-simulation.cjs` | 离线粒子参数、局部规则、指针与数值边界；不需要浏览器依赖 |
 | `scripts/test-particles.cjs` | 三内核粒子绘制、层级、输入、暂停恢复、性能预算与失效回退 |
@@ -89,11 +89,17 @@ index.html, credits.html   装配生成的发布页面
 
 ## 实验地图集（2026-10-25）
 
-`academic/projects/` 的registry/view/integration管理项目登记、父目录、合作组与子项目生命周期，通过 `registerDetailView`接入共享详情。各项目用 `registerAcademicProject(descriptor, view)`登记，元信息经冻结getter读取，视图经独立getter委托；项目摘要可从所属模块动态计算。Physics Maps位于experiment-atlas，Physicists位于physicists，父目录不读项目内部实现。`academic/projects/experiment-atlas/`仅维护本项目地图目录、元数据和独立地图顶栏，不再负责父Projects视图。每图独立保存HTML/CSS/JS、`data/catalog.json`、`archive/<id>/record.json`及相应图片，不读取其他工作目录，不使用符号链接或本机后台服务。地图之间只用原生链接切换，不共用检索状态。
+`academic/projects/`的registry/view/integration管理项目登记、父目录与入口/子项目生命周期，通过 `registerDetailView`接入共享详情。各项目用 `registerAcademicProject(descriptor, view)`登记，元信息经冻结getter读取，视图经独立getter委托；可选 `renderEntry({host, signal, navigate})`提供本模块的目录入口，项目摘要从所属模块动态计算。父目录的 `entry.js`提供共用图文卡片工厂，不持有人物或地图资料。Physics Maps位于experiment-atlas，Physicists位于physicists，父目录不读项目内部实现。`academic/projects/experiment-atlas/`仅维护本项目地图目录、元数据和独立地图顶栏，不再负责父Projects视图。每图独立保存HTML/CSS/JS、`data/catalog.json`、`archive/<id>/record.json`及相应图片，不读取其他工作目录，不使用符号链接或本机后台服务。地图之间只用原生链接切换，不共用检索状态。
 
 `registry.js` 是入口标题/路径的唯一登记；`refresh_metadata.py` 从本地索引生成统计，`sync_shell.py` 从登记生成两图顶栏。每图 `tools/build_data.py` 从自己的英文档案重建索引及计数缩略图，`verify_portable.py` 检查资源路径闭合。日常维护全部在主页内完成；再次导入外源属于单独明确操作，不能成为构建依赖。
 
 清单 `standalonePages` 仅声明完整独立页面；`scripts/check.mjs` 按各自HTML目录检查其资源、重复ID和锚点，其他装配片段仍按站点根解析。地图目录随普通静态文件打包上传，Pages无需额外后台。维护步骤见[地图集说明](../modules/academic/projects/experiment-atlas/README.md)，本轮独立副本及桌面/手机证据见[记录](modules/experiment-atlas.md)。
+
+## Projects图文入口（2026-10-27后续）
+
+目录的两张入口共用 `projects/entry.js`结构与父级样式，图片、描述、统计和目的地由所属项目提供；父视图只挂载入口并处理清理、故障回退及目录导航。Physicists的 `renderEntry()`复用既有人物照片卡片并省略中间介绍外壳，原生链接直接打开完整档案；Physics Maps的 `entry.js`使用本项目两张地图缩略图，点击进入地图目录。二者不交换私有数据或图片。
+
+完整人物页面的返回链接指向 `#academic/projects`；旧 `/physicists`仅为历史书签保留兼容视图。目录不再渲染BESIII Collaboration或空合作组区，只保留GitHub链接。入口修改不改变地图、人物、论文或Internal note数据。实际布局与兼容性见[本次记录](modules/academic-projects.md#project-cards-2026-10-27)。
 
 ## Physicists独立档案（2026-10-27）
 
@@ -175,7 +181,7 @@ Experience 的 `entries.js` 使用 `Homepage.registerAcademicLogs(JSON数组)` �
 
 Publications 的 `content.js` 保存外壳，`data.js` 提供 `registerPublicationCategory()` / `getPublicationCategories()`；`internal-note/`、`arxiv/`、`published/` 各自保存分类 `data.js` 与中文 README。条目白名单为 `{ id, title, authors, date, identifier, abstractUrl, pdfUrl? }`，题名与元信息按文本呈现，外链仅 HTTPS。`view.js` 提供独立分类目录与条目，`integration.js` 接入同一详情弹窗。当前只有官方元信息已核实的 arXiv:2610.11981，日期为 2026-10-08、署名为 BESIII Collaboration；另外两分类为空，不推断个人贡献或发表状态。
 
-About 与 Contact 显示用户提供的 ORCID 链接，Projects 保存 BESIII Collaboration 官方链接；资料在各自模块显式维护，不跨目录读内部源码，也不推断合作组角色。Publications 的外部 arXiv PDF 链接不使用两栏受控附件路径。
+About与Contact显示用户提供的ORCID链接。Projects已按用户要求移除BESIII Collaboration入口，不据此删除Publications、Internal note或科学引用中的合作组资料；资料仍在各自模块显式维护，不跨目录读内部源码，也不推断合作组角色。Publications 的外部 arXiv PDF 链接不使用两栏受控附件路径。
 
 `modules/author/config.js` 只保存随机盐、PBKDF2-SHA256 600000 次派生校验值及 owner / repo，不保存原密码。`Homepage.authorSession` 提供 `isUnlocked`、`isConnected`、`unlock`、`connect`、`signOut`、`forgetConnection`、`request`、`subscribe`；订阅状态包含 `unlocked`、`connected`、`remembered`、`restoreError`。首次密码登录后连接 GitHub PAT，核验 `PaulLi07`、仓库所有者与 push 权限，真正的授权由 GitHub 执行。
 

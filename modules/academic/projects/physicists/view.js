@@ -5,7 +5,7 @@
   api.createPhysicistsView = function ({archive = () => api.getData("physicists:archive")} = {}) {
     let activeCleanup = null;
     return {
-      render({host, signal} = {}) {
+      render({host, signal, entryOnly = false} = {}) {
         if (!host || typeof host.replaceChildren !== "function") throw new TypeError("A physicists project host is required.");
         activeCleanup?.();
         if (signal?.aborted) return;
@@ -22,15 +22,11 @@
         const heading = node("h3", "physicists-project__heading", "Physicists");
         heading.tabIndex = -1;
         heading.setAttribute("data-view-heading", "");
-        root.append(node("p", "physicists-project__eyebrow", "Physics · History · People"), heading,
+        if (!entryOnly) root.append(node("p", "physicists-project__eyebrow", "Physics · History · People"), heading,
           node("p", "physicists-project__intro", "An interactive archive of the people and milestones that have shaped physics."));
         let data;
         try { data = typeof archive === "function" ? archive() : archive; } catch (_) { data = null; }
         if (data && Number.isSafeInteger(data.peopleCount) && data.peopleCount > 0 && Number.isSafeInteger(data.milestoneCount) && data.milestoneCount >= 0) {
-          const link = node("a", "physicists-project__card");
-          link.href = "modules/academic/projects/physicists/archive/website/site/index.html";
-          link.setAttribute("aria-label", "Open Physics Pioneers");
-          link.setAttribute("data-physicists-open", "");
           const portraits = node("div", "physicists-project__portraits");
           for (const portrait of (Array.isArray(data.portraits) ? data.portraits : []).slice(0, 3)) {
             if (!/^modules\/academic\/projects\/physicists\/archive\/portraits\/[a-z\d.-]+\.(?:jpe?g|png|webp|gif)$/.test(portrait.src || "")) continue;
@@ -43,17 +39,15 @@
             figure.append(image, node("figcaption", "", portrait.name));
             portraits.append(figure);
           }
-          const copy = node("div", "physicists-project__copy");
-          copy.append(node("h4", "physicists-project__title", "Physics Pioneers"),
-            node("p", "physicists-project__description", "Follow a timeline of contributions, explore research fields, and open detailed biographies with their sources."));
-          const statistics = node("p", "physicists-project__statistics");
-          statistics.append(node("span", "", data.peopleCount.toLocaleString("en") + " physicists"), node("span", "", data.milestoneCount.toLocaleString("en") + " milestones"));
-          const action = node("span", "physicists-project__action", "Explore the archive");
-          const arrow = node("span", "", "↗");
-          arrow.setAttribute("aria-hidden", "true");
-          action.append(arrow);
-          copy.append(statistics, action);
-          link.append(portraits, copy);
+          const link = api.createAcademicProjectEntry({
+            document, id: "physicists", title: "Physicists",
+            description: "Follow a timeline of contributions, explore research fields, and open detailed biographies with their sources.",
+            href: "modules/academic/projects/physicists/archive/website/site/index.html",
+            preview: portraits,
+            statistics: [data.peopleCount.toLocaleString("en") + " physicists", data.milestoneCount.toLocaleString("en") + " milestones"],
+            action: "Explore the archive", signal
+          });
+          link.setAttribute("data-physicists-open", "");
           root.append(link);
         } else root.append(node("p", "physicists-project__empty", "The archive is temporarily unavailable. Please return to this page later."));
         host.replaceChildren(root);

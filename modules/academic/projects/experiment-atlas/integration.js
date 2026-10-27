@@ -11,6 +11,9 @@
       return count + (count === 1 ? " map" : " maps");
     }
   }, {
+    renderEntry({host, signal, navigate}) {
+      return api.createPhysicsMapsEntry().render({host, signal, navigate});
+    },
     render({host, signal}) {
       return api.createExperimentAtlasView({maps: api.getExperimentMaps}).render({host, signal});
     }

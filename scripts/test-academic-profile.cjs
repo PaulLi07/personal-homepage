@@ -146,11 +146,17 @@ async function runViewport(browser, engine, viewport, url) {
       await page.locator('[data-academic="publications"]').focus(); await page.keyboard.press("Enter"); await directory(page);
       await page.keyboard.press("Escape"); await page.waitForFunction(() => document.activeElement?.matches('[data-academic="publications"]'));
     });
-    await step("About/Contact ORCID 与 Projects BESIII 真实链接", async () => {
+    await step("About/Contact ORCID 与 Projects 独立入口及 GitHub 链接", async () => {
       const links = page.locator("[data-orcid-link]"); assert.equal(await links.count(), 2);
       for (const link of await links.all()) { assert.equal(await link.getAttribute("href"), ORCID); assert.equal(await link.getAttribute("target"), "_blank"); assert.equal(await link.getAttribute("rel"), "noopener noreferrer"); }
-      await navigate(page, url, "#academic/projects"); const link = page.locator('.project-directory__collaboration a[href="http://bes3.ihep.ac.cn/"]'); await link.waitFor({state: "visible"});
-      assert.ok((await link.locator("..").innerText()).includes("BESIII Collaboration")); assert.equal(await page.locator(".project-directory__collaboration").count(), 1);
+      await navigate(page, url, "#academic/projects");
+      const people = page.getByRole("link", {name: "Open Physicists", exact: true}); await people.waitFor({state: "visible"});
+      assert.equal(await people.getAttribute("href"), "modules/academic/projects/physicists/archive/website/site/index.html");
+      assert.equal(await page.getByRole("link", {name: "Open Physics Maps", exact: true}).getAttribute("href"), "#academic/projects/physics-maps");
+      assert.equal(await page.locator('.project-directory a[href="http://bes3.ihep.ac.cn/"]').count(), 0);
+      assert.equal(await page.locator(".project-directory__collaboration").count(), 0);
+      const github = page.locator('.project-directory a[href="https://github.com/PaulLi07"]');
+      assert.equal(await github.count(), 1); assert.equal(await github.getAttribute("target"), "_blank"); assert.equal(await github.getAttribute("rel"), "noopener noreferrer");
     });
     await step("元信息纯文字及字段白名单，危险链接拒绝呈现", async () => {
       const malicious = 'Temporary title <img src=x onerror=window.__academicExecuted=true>';
