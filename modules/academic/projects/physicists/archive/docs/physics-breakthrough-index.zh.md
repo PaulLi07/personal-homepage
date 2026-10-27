@@ -178,17 +178,17 @@ k = 1
 - `index-config.json`：评估版本、日期及显示参数。
 - `journal-sources.json`：实际使用的期刊精选集合。
 
-正式前端源码统一在 `website/src/`，默认网页与根入口使用 `website/site/`。完整构建器先生成双语人物数据，再读取成果、应用来源补丁、评估补丁、编辑补丁，处理替换关系、验证、生成导航与计算年度账本，全部成功后原子替换 `site/`。导航辅助模块位于 `scripts/lib/navigation-estimates.cjs`。`score / weight` 保持镜像。人物档案来自 `website/site/data/archive.js`，成果的 `people` 必须引用已存在人物ID。
+正式前端源码统一在 `website/src/`，默认网页与根入口使用 `website/site/`。完整构建器先生成英文人物数据，再读取成果、应用来源补丁、评估补丁、编辑补丁，处理替换关系、验证、生成导航与计算年度账本，全部成功后原子替换 `site/`。导航辅助模块位于 `scripts/lib/navigation-estimates.cjs`。`score / weight` 保持镜像。人物档案来自 `website/site/data/archive.js`，成果的 `people` 必须引用已存在人物ID。
 
 `data/breakthrough/` 只保存源记录、评估、配置与科学审计；所有计算衍生文件统一写入 `website/site/data/`，包括 `breakthrough-data.js`、`events.json`、`yearly-index.json`、`navigation-estimates.json`、`coverage.json`、`sensitivity.json`、`build-summary.json` 和英文网页方法说明副本。不再生成已退役的 `contribution-estimates.json`。不要直接编辑生成文件。
 
 ## 9. 新增与修订步骤
 
 1. 查找已有事件与问题族，明确此次补充是新成果、来源增补还是旧条目的替换，先排除重复计分。
-2. 核对事实、参与者与实际成果日期；分别提供中英文标题、贡献说明、日期说明和真实来源。
+2. 核对事实、参与者与实际成果日期；提供英文标题、贡献说明、日期说明和真实来源。
 3. 选择历史评估路线，确定五档总分，写明理由与评分把握；日期不确定时单独记录日期依据。
 4. 设置 `eventFamilyId`、`assessment.version` 与日期模型；持续工作核对各阶段预算。必要时填写 `supersedes`。
-5. 若新增人物，先更新中英文人物档案并重建人物数据；已有参与者使用稳定ID。
+5. 若新增人物，先更新英文人物档案并重建人物数据；已有参与者使用稳定ID。
 6. 在项目根目录运行：
 
 ```bash
@@ -197,9 +197,9 @@ node --test website/tests/*.test.cjs
 python3 -m http.server 8769 --bind 127.0.0.1
 ```
 
-完整构建一条命令同时生成双语人物库、成果库和网页资源，并验证输出完整后发布。仅调整成果库时，可用 `node scripts/build_breakthrough.cjs` 替代完整构建。预览访问 `http://127.0.0.1:8769/website/site/`；直接打开本模块 `index.html` 也进入同一生成网站。
+完整构建一条命令同时生成英文人物库、成果库和网页资源，并验证输出完整后发布。仅调整成果库时，可用 `node scripts/build_breakthrough.cjs` 替代完整构建。预览访问 `http://127.0.0.1:8769/website/site/`；直接打开本模块 `index.html` 也进入同一生成网站。
 
-核查年度总和等于全部可计分事件预算之和；1964/2012等分离案例正确；未知日期不会凭空记账，0年、未来年份与阶段重复预算被拒绝；人物导航覆盖完整；中英文成果标题、日期与方法文档一致。浏览器复核成果颜色、时间轴拖拽与正文同步。敏感性输出比较主尺度 `1/2/4/8/16` 与替代尺度 `1/2/4/6/8`，不改变日期或成果划分。
+核查年度总和等于全部可计分事件预算之和；1964/2012等分离案例正确；未知日期不会凭空记账，0年、未来年份与阶段重复预算被拒绝；人物导航覆盖完整；英文成果标题、日期与方法文档一致。浏览器复核成果颜色、时间轴拖拽与正文同步。敏感性输出比较主尺度 `1/2/4/8/16` 与替代尺度 `1/2/4/6/8`，不改变日期或成果划分。
 
 ## 10. v2到v3的迁移与后续版本
 

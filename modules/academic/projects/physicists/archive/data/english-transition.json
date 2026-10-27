@@ -1,0 +1,82 @@
+{
+  "schemaVersion": 1,
+  "date": "2026-10-27",
+  "baselineCommit": "2d8dcdadd92f561164193d35cc910b08c9d34fbd",
+  "reason": "Maintain a single English edition while preserving existing English presentation, reviewed domain membership, navigation and scientific calculations.",
+  "originalImportManifest": "import-manifest.json",
+  "removedFiles": [
+    {
+      "path": "zh/data/audit-summary.json",
+      "sha256": "f34b29322011fe3f15d129386cfbf19ddcd255dbffd13672001bcecc27b6fe28"
+    },
+    {
+      "path": "zh/data/physicists.json",
+      "sha256": "4cd45eb1948cf4c60b0577693af3cd3d5e1480aee66f5748243c06d7e16fe7b2"
+    },
+    {
+      "path": "zh/data/timeline.json",
+      "sha256": "2b8513eaf9cf91fc032c9e87c775d96e2955b88c596a1c901a27606fc8717ee9"
+    },
+    {
+      "path": "zh/data/validation-report.json",
+      "sha256": "de0eeff27ca1259d3e9f9de2aa3ab9c801c20116ee4b2678cd568fa5caf90e8e"
+    }
+  ],
+  "changedSources": [
+    {
+      "path": "data/breakthrough/editorial-event-patches.json",
+      "beforeSha256": "0215a5979f7167fd2cc7202088a6866fa0a8c902cf828399bbb194d7f8b0c442",
+      "afterSha256": "dd60ca3fdb9193040b740c56567a00f741d38e4890df7bc722add676880e4c55"
+    },
+    {
+      "path": "data/breakthrough/event-assessments.json",
+      "beforeSha256": "b553aef450374073583f2e0ec86f5eb529ffba5c32e0c98d9a7d7c5083962fb6",
+      "afterSha256": "33bc74e87f35ba666340753ed1c51dc97d4dbd154d1bced948661e4cae4400e0"
+    },
+    {
+      "path": "data/breakthrough/events-1801-1929.json",
+      "beforeSha256": "e5a3e56da74891c2242ec9c8516c2a39a5c632a3a92e0fce69b335e29588f167",
+      "afterSha256": "4bc23b474ec269e20e838b1386fac63bdd750705c0874a3e907c9d12aada27aa"
+    },
+    {
+      "path": "data/breakthrough/events-1930-present.json",
+      "beforeSha256": "ff90ab9f5f8c1d79767a8e5546720fad806de64f4a6c813efb114fb80aafeec0",
+      "afterSha256": "c69f0d4cf2d8012a90ba337b4eb98a6ca00e7a1800ebf630b101b590349032ff"
+    },
+    {
+      "path": "data/breakthrough/events-early.json",
+      "beforeSha256": "a6cac3e46f3be60b75c96f14a1c2568031bcc7608df71cda36f679533e53e630",
+      "afterSha256": "598c642bfae7d90cd179ef7d968659baf1d0872706bb95ee39d29a8dcfae27ed"
+    },
+    {
+      "path": "data/breakthrough/events-editorial-assessments.json",
+      "beforeSha256": "24de59f932d59f6c286ad9978156499057ae99463727743a798d3b902789d278",
+      "afterSha256": "c0733c78fba17e79fbd64a663431eaf37e4232b2411338c22d76c28958c6a3c3"
+    },
+    {
+      "path": "data/breakthrough/events-historical-foundations.json",
+      "beforeSha256": "5584d76bb44b6eebc5292c91a538241565e77d42e9544a914e9db88591deec0f",
+      "afterSha256": "b7b721c8b66cb74f8dd3927e991c3274fc817da008408c45122370d520491599"
+    },
+    {
+      "path": "data/breakthrough/events-journal-milestones.json",
+      "beforeSha256": "90376d1e281affe39c4b9fff6e51077164f1fcdb37fe1b4e1e2a2c1d457b1203",
+      "afterSha256": "cfd84ed36b6a250b1f177c6a445a5ab7419c69dcf9c36efc693063cc457e6b35"
+    },
+    {
+      "path": "en/data/physicists.json",
+      "beforeSha256": "2dd2a31d7608129e018ef52d51d485b6e7d14541f66392e281bb8f1e091afec4",
+      "afterSha256": "437956644dbe74dbf7e8cdb987903237f402372c6b2925de58f993c0d83a5132"
+    }
+  ],
+  "semanticDigests": {
+    "PHYSICS_ARCHIVE": "1769745bf8846086eab42783cf54d15ada1ff01e9bb9fce687c66640838eea5f",
+    "BREAKTHROUGH_ARCHIVE": "807b3cfbd7d1bcb5a6d0754104a15834bdfb5fb56379fc3d2eba69b53cef1ae0",
+    "browseDomains": "db92b0f27fa00647af782598bb3207fb47c5a6b94feee35ff1e8319cfe139987"
+  },
+  "notes": [
+    "Browse and navigation domain IDs and date clues were frozen from the reviewed pre-migration inputs, avoiding language-dependent reclassification.",
+    "Original image filenames, author credits, legal metadata and source URLs remain source-faithful; these are provenance records rather than a translated edition.",
+    "The original import manifest remains unmodified; removed and transformed source files are accounted for here."
+  ]
+}

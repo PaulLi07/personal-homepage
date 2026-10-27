@@ -1,7 +1,7 @@
 'use strict';
 const test=require('node:test'),assert=require('node:assert/strict');
 const {createEstimates}=require('../../scripts/lib/navigation-estimates.cjs');
-function person(id,birth,death=null,extra={}){return {id,sortYear:birth,birth:{date:String(birth),precision:'year'},death:death===null?null:{date:String(death),precision:'year'},deathStatus:death===null?'alive':'deceased',fields:{zh:['量子物理'],en:['Quantum physics']},contributions:{zh:['研究微观体系'],en:['Studied microscopic systems']},biography:{zh:'',en:''},notes:{zh:[],en:[]},sources:{zh:[{title:'Biography',url:'https://example.org/'+id}],en:[]},...extra};}
+function person(id,birth,death=null,extra={}){return {id,sortYear:birth,birth:{date:String(birth),precision:'year'},death:death===null?null:{date:String(death),precision:'year'},deathStatus:death===null?'alive':'deceased',fields:{en:['Quantum physics']},contributions:{en:['Studied microscopic systems']},biography:{en:''},notes:{en:[]},sources:{en:[{title:'Biography',url:'https://example.org/'+id}]},...extra};}
 function event(id,year,people,weight=2,extra={}){return {id,year,precision:year===null?'unknown':'year',people,weight,field:'quantum',...extra};}
 const serial=y=>y<0?y+1:y;
 test('every unanchored profile receives one separate estimate without mutating inputs',()=>{
@@ -20,7 +20,7 @@ test('estimated ranges stay within documented lifetimes and never use birth as c
   const p=person('young',1900,1914),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.ok(r.year>1900&&r.year<=1914);assert.ok(r.range[0]>1900&&r.range[1]<=1914);assert.ok(r.year>=r.range[0]&&r.year<=r.range[1]);
 });
 test('an unresolved death uses the last-known activity bound rather than assuming living',()=>{
-  const p=person('missing',1906,null,{deathStatus:'unknown',biography:{zh:'1938年失踪，此后经历未有定论。',en:'Disappeared in 1938.'}}),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.ok(r.year<=1938);assert.ok(r.range[1]<=1938);assert.equal(r.biographicalBounds.kind,'last-known-activity');
+  const p=person('missing',1906,null,{deathStatus:'unknown',biography:{en:'Disappeared in 1938.'}}),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.ok(r.year<=1938);assert.ok(r.range[1]<=1938);assert.equal(r.biographicalBounds.kind,'last-known-activity');
 });
 test('modern profiles never receive a contribution after the data cutoff',()=>{
   const p=person('living',2000),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.ok(r.year<=2026);assert.ok(r.range[1]<=2026);
@@ -33,7 +33,7 @@ test('calibration learns contribution ages and can absorb new profiles without s
   const r=createEstimates(people,events,{asOfYear:2026});assert.equal(r.records[0].year,1940);assert.equal(r.records[0].calibration.sampleSize,8);assert.equal(r.records[0].calibration.scope,'era-and-field');assert.ok(r.records[0].contributionFactor<=.75);
 });
 test('a year mentioned in a contribution is only an estimate clue, not a fabricated publication',()=>{
-  const p=person('clue',1900,1980,{contributions:{zh:['1933年提出一个物理模型'],en:['Proposed a physical model in 1933']}}),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.equal(r.year,1933);assert.equal(r.yearBasis,'unverified-profile-year-clue');assert.equal(r.verifiedEvent,false);assert.ok(r.range[0]<1933&&r.range[1]>1933);assert.equal(r.evidencePeopleSource[0].url,'https://example.org/clue');
+  const p=person('clue',1900,1980,{contributions:{en:['Proposed a physical model in 1933']}}),r=createEstimates([p],[],{asOfYear:2026}).records[0];assert.equal(r.year,1933);assert.equal(r.yearBasis,'unverified-profile-year-clue');assert.equal(r.verifiedEvent,false);assert.ok(r.range[0]<1933&&r.range[1]>1933);assert.equal(r.evidencePeopleSource[0].url,'https://example.org/clue');
 });
 test('excluded philosophical claims are not republished as verified discoveries',()=>{
   const p=person('historical',-460,-370),e=event('excluded',-430,['historical'],8,{indexEligible:false}),r=createEstimates([p],[e],{asOfYear:2026});assert.equal(r.coverage.datedNavigationPeople,1);assert.equal(r.coverage.verifiedScoredPeople,0);assert.ok(r.records[0].contributionFactor<=.15);assert.deepEqual(r.records[0].excludedEventsNotRecounted,['excluded']);assert.equal(r.records[0].contributionBasis,'general-historical-context-residual');assert.equal(r.records[0].verifiedEvent,false);

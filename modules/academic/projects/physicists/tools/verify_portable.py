@@ -142,15 +142,29 @@ def verify(import_snapshot: bool = False) -> dict:
     for name in ['events.json','yearly-index.json','navigation-estimates.json','coverage.json','sensitivity.json','method.en.md']:
         require((SITE / 'data' / name).is_file(), f'生成资料缺失：{name}')
     unchanged = 0
+    transformed = 0
+    retired = 0
+    require(not (ARCHIVE / 'zh').exists(), 'Physicists 不再维护中文数据副本')
     if import_snapshot:
         manifest = json.loads((ARCHIVE / 'import-manifest.json').read_text())
+        transition = json.loads((ARCHIVE / 'data/english-transition.json').read_text())
+        changed = {row['path']: row for row in transition['changedSources']}
+        removed = {row['path']: row for row in transition['removedFiles']}
         for record in manifest['files']:
             rel = record['path']
             if rel.startswith(('portraits/', 'en/data/', 'zh/data/')) or (rel.startswith('data/breakthrough/') and rel.endswith('.json')):
                 file = ARCHIVE / rel
-                require(file.is_file() and sha256(file) == record['sha256'], f'导入源资料有变化：{rel}')
-                unchanged += 1
-    return {'people': runtime['count'], 'milestones': len(event_ids), 'portraits': len(images), 'imageKinds': image_kinds, 'permissionUnverified': rights.get('permission_required', 0), 'localResourceReferences': len(references), 'moduleFiles': len(files), 'importSnapshotFiles': unchanged}
+                if rel in removed:
+                    require(removed[rel]['sha256'] == record['sha256'] and not file.exists(), f'退役中文副本与原导入追溯不符：{rel}')
+                    retired += 1
+                elif rel in changed:
+                    require(changed[rel]['beforeSha256'] == record['sha256'], f'英文迁移前哈希与原导入不符：{rel}')
+                    require(file.is_file() and sha256(file) == changed[rel]['afterSha256'], f'英文迁移后的源资料变化：{rel}')
+                    transformed += 1
+                else:
+                    require(file.is_file() and sha256(file) == record['sha256'], f'导入源资料有变化：{rel}')
+                    unchanged += 1
+    return {'people': runtime['count'], 'milestones': len(event_ids), 'portraits': len(images), 'imageKinds': image_kinds, 'permissionUnverified': rights.get('permission_required', 0), 'localResourceReferences': len(references), 'moduleFiles': len(files), 'importSnapshotFiles': unchanged, 'englishTransitionFiles': transformed, 'retiredEditionFiles': retired}
 
 
 def rebuild_in_copy() -> dict:

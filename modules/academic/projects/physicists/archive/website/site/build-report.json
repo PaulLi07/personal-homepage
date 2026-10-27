@@ -1,12 +1,11 @@
 {
-  "buildFormat": "homepage-physicists-v1",
+  "buildFormat": "homepage-physicists-v2",
   "asOf": "2026-10-26",
   "people": 721,
   "languages": [
     "en"
   ],
   "sourceLanguages": [
-    "zh",
     "en"
   ],
   "portraitDirectory": "../../portraits",
@@ -18,10 +17,9 @@
   },
   "imagePermissionUnverified": 62,
   "sourceSha256": {
-    "zh/data/physicists.json": "4cd45eb1948cf4c60b0577693af3cd3d5e1480aee66f5748243c06d7e16fe7b2",
-    "en/data/physicists.json": "2dd2a31d7608129e018ef52d51d485b6e7d14541f66392e281bb8f1e091afec4"
+    "en/data/physicists.json": "437956644dbe74dbf7e8cdb987903237f402372c6b2925de58f993c0d83a5132"
   },
-  "dataScriptSha256": "ba5a20c89dd23d4abb6f80adc24f150ac53c0cb48a897de40bc2d02fe4a7fc6d",
+  "dataScriptSha256": "4325cf80812c6a4fe5cc6b251dc5c5f539d2fc555cbcc310bb561a24555c0b2a",
   "staticFiles": [
     "app.js",
     "breakthrough.js",
@@ -65,8 +63,8 @@
     "stable IDs and order",
     "date values and precision",
     "life status",
-    "source URL alignment",
-    "complete localized text",
+    "English source URLs",
+    "complete English text",
     "canonical image hashes",
     "portable image paths",
     "canonical frontend",

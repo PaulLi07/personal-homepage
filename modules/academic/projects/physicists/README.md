@@ -22,10 +22,14 @@ npm run assemble
 npm run check
 ```
 
-改人物资料：编辑 `archive/en/data/physicists.json` 及对应中文校对记录；改成果：编辑 `archive/data/breakthrough/`；改独立页面：编辑 `archive/website/src/`。`archive/website/site/`是生成物，不直接修改。人物稳定ID、日期、来源和图片SHA256须一致，不静默联网补图，不篡改图像作者、许可及未确认授权提示。
+改人物资料：只编辑 `archive/en/data/physicists.json`；改成果：编辑 `archive/data/breakthrough/`；改独立页面：编辑 `archive/website/src/`。`archive/website/site/`是生成物，不直接修改。人物稳定ID、日期、来源和图片SHA256须一致，不静默联网补图，不篡改图像作者、许可及未确认授权提示。
 
-所有维护说明使用中文，网页内容使用英文；原中英资料为源数据保留，当前网站只开放英文界面。英文方法帮助位于 `archive/website/src/help/`，属于网页呈现内容。日常维护以主页内副本为准，原项目的改动不会自动同步。
+所有维护说明使用中文，网页与规范资料仅维护英文，不再保留中文人物/成果副本。图像原作者、版权及来源元数据仍按原记录保留。英文方法帮助位于 `archive/website/src/help/`，属于网页呈现内容。日常维护以主页内副本为准，原项目的改动不会自动同步。
 
 完整页面与重定向入口在 `app/site.json` 的 `standalonePages` 声明。交付时保留整个 `physicists/`；图片由 `archive/portraits/`唯一持有，不能只上传 `website/site/`。兼容性、独立构建及回退证据见[本轮记录](../../../../docs/modules/academic-projects-physicists.md#physicists-import-2026-10-27)。
 
 2026-10-27入口上移后的卡片、一步进入、返回和手机排版需按[本次记录](../../../../docs/modules/academic-projects.md#project-cards-2026-10-27)重新验证；上次导入测试仅保留为对应历史。
+
+## 本地数据库
+
+[database/](database/README.md)保存独立SQL结构、适配器和测试。人物、原始成果、补丁、来源及图片索引可重建到主页 `.maintenance/databases/physicists.sqlite`；规范JSON仍是唯一资料源，数据库不参与网页加载或科学数值计算。更新JSON后运行 `python3 scripts/data.py rebuild physicists`，交付前运行 `python3 scripts/data.py check physicists`。英文迁移追溯见 `archive/data/english-transition.json`；原导入清单保留历史。

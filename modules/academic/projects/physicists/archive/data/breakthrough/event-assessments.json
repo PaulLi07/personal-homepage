@@ -6,7 +6,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "保留思想史记录，因原论断未满足本库既有物理成果口径，仍不计入指数。以微观构成解释物质变化的历史思想，不等同现代原子理论。",
         "en": "Retained as intellectual history and still excluded under the existing physical-result criterion. A historical microscopic account of matter, distinct from modern atomic theory."
       },
       "confidence": "medium",
@@ -29,7 +28,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：以几何推理系统研究视觉角和表观大小。",
         "en": "Rated as a major advance within a field: Systematized visual angles and apparent size through geometry."
       },
       "confidence": "medium",
@@ -43,7 +41,6 @@
       "end": -275
     },
     "dateNote": {
-      "zh": "原来源将《光学》置于约公元前300年，具体成书年不详；所用公元前325—275年区间为编辑年代估计，并非来源给出的统计误差。",
       "en": "The source places Optica around 300 BCE; its exact composition year is unknown. The 325–275 BCE interval is an editorial dating estimate, not a source-reported statistical error."
     },
     "dateConfidence": "estimated"
@@ -55,7 +52,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：为浮力和浮体稳定性提供数学处理。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Provided a mathematical treatment of buoyancy and floating stability."
       },
       "confidence": "medium",
@@ -69,7 +65,6 @@
       "end": -230
     },
     "dateNote": {
-      "zh": "原来源给约公元前250年，具体成书年不详；公元前260—230年为编辑年代估计区间。",
       "en": "The source gives about 250 BCE, with no exact composition year; 260–230 BCE is an editorial dating interval."
     },
     "dateConfidence": "estimated"
@@ -81,7 +76,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：建立定量恒星位置资料，推动观测天文学。",
         "en": "Rated as a major advance within a field: Advanced quantitative positional astronomy through a stellar catalogue."
       },
       "confidence": "medium",
@@ -95,7 +89,6 @@
       "end": -125
     },
     "dateNote": {
-      "zh": "原来源称星表可能于公元前129年完成；公元前150—125年是结合其成熟观测期所作的编辑年代估计。",
       "en": "The source suggests the catalogue may have been completed in 129 BCE; 150–125 BCE is an editorial dating estimate within the mature observing period."
     },
     "dateConfidence": "estimated"
@@ -107,7 +100,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：将机械响应用于远方地震方向指示。",
         "en": "Rated as an important improvement: Applied a mechanical response to indicating distant earthquake direction."
       },
       "confidence": "high",
@@ -129,7 +121,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "保留思想史记录，因原论断未满足本库既有物理成果口径，仍不计入指数。组织观测和数学模型，形成长期使用的预测体系。",
         "en": "Retained as intellectual history and still excluded under the existing physical-result criterion. Organized observations and mathematical models into a durable predictive system."
       },
       "confidence": "medium",
@@ -144,7 +135,6 @@
     },
     "indexEligible": false,
     "dateNote": {
-      "zh": "原来源给约公元150年出版；127—151年为编辑年代估计区间，该著作仍按地心天文学的历史模型介绍。",
       "en": "The source gives publication around 150 CE; 127–151 CE is an editorial dating interval. The work is presented as a historical geocentric astronomical model."
     },
     "dateConfidence": "estimated"
@@ -156,7 +146,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：结合地球自转思想和日月食的几何计算。",
         "en": "Rated as an important improvement: Combined a rotating-Earth account with geometrical eclipse calculations."
       },
       "confidence": "high",
@@ -178,7 +167,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：质疑抛射运动和下落速度的传统解释。",
         "en": "Rated as an important improvement: Challenged traditional accounts of projectile motion and falling speed."
       },
       "confidence": "high",
@@ -200,7 +188,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为局部推进：改进天体位置、日月食和观测工具的计算。",
         "en": "Rated as a focused advance: Developed calculations of celestial positions, eclipses and instruments."
       },
       "confidence": "high",
@@ -222,7 +209,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：用等价于正弦折射关系的几何方法设计聚焦透镜。",
         "en": "Rated as a major advance within a field: Used geometry equivalent to a sine refraction relation in lens design."
       },
       "confidence": "medium",
@@ -236,7 +222,6 @@
       "end": 990
     },
     "dateNote": {
-      "zh": "原来源通常把论著置于约984年；980—990年为编辑年代估计区间，精确实验日期不详。",
       "en": "The source conventionally dates the treatise to about 984; 980–990 is an editorial dating interval, and the exact experiment date is unknown."
     },
     "dateConfidence": "estimated"
@@ -248,7 +233,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：结合实验与几何分析，系统发展外界光入眼的视觉解释。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Combined experiments and geometry in a systematic account of vision."
       },
       "confidence": "medium",
@@ -270,7 +254,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：记录磁北与真北的偏离，并讨论小孔成像。",
         "en": "Rated as an important improvement: Recorded magnetic declination and discussed pinhole imaging."
       },
       "confidence": "medium",
@@ -292,7 +275,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为局部推进：将几何光学和经验研究纳入系统学术论述。",
         "en": "Rated as a focused advance: Integrated geometrical optics and experiential inquiry into a systematic work."
       },
       "confidence": "high",
@@ -314,7 +296,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：把炮弹轨迹和射角问题纳入系统数学研究。",
         "en": "Rated as an important improvement: Brought projectile paths and firing angles into systematic mathematical study."
       },
       "confidence": "high",
@@ -336,7 +317,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为8级关键方向开辟：评价的是《短论》中成形的地动日心行星体系，而不是等到1543年才首次产生该思想。1543完整数学著作保留为后续展开与传播元数据，同一理论主线不重复给完整评分。1502—1514采用较保守的编辑形成期，涵盖常见约1510以及更早成书的历史重建，不声称精确提出年。",
         "en": "Rated level 8 for opening a decisive direction: the assessed result is the moving-Earth heliocentric planetary system formulated in Commentariolus, not an idea first created in 1543. The complete mathematical treatise of 1543 is retained as later development and dissemination metadata without another full theory score. The conservative editorial 1502–1514 formation interval accommodates both the conventional date around 1510 and earlier historical reconstructions without asserting an exact proposal year."
       },
       "confidence": "high",
@@ -351,11 +331,9 @@
     },
     "dateConfidence": "estimated",
     "title": {
-      "zh": "哥白尼日心行星体系的提出",
       "en": "The proposal of the Copernican heliocentric planetary system"
     },
     "rationale": {
-      "zh": "以地球自转与绕日公转解释天体视运动和行星逆行，重组行星的次序与相对尺度，为近代天体力学开辟新的理论路线。",
       "en": "Used Earth’s rotation and annual revolution to explain apparent celestial motion and planetary retrogression, reorganizing planetary order and relative scales and opening a new route toward celestial mechanics."
     },
     "timelineDates": {
@@ -364,7 +342,6 @@
       "published": 1543
     },
     "dateNote": {
-      "zh": "《短论》的确切成书时间有争议，通常估于约1510年前后；1514年5月1日的私人藏书目录已记录相符的地动日静手稿。1502—1514年为保守的编辑形成期估计，其中1514为有记录的流传上限；完整《天体运行论》于1543年出版。",
       "en": "The composition date of Commentariolus is disputed and conventionally estimated around 1510. A private-library inventory of 1 May 1514 records a matching moving-Earth, stationary-Sun manuscript. The conservative 1502–1514 interval estimates the formation period, with 1514 as the documented circulation upper bound; the complete De revolutionibus appeared in 1543."
     },
     "sources": [
@@ -389,7 +366,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为局部推进：质疑重量与下落速度的简单比例关系。",
         "en": "Rated as a focused advance: Questioned a simple proportionality between weight and falling speed."
       },
       "confidence": "high",
@@ -411,7 +387,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：用精确视差观测证明新星位于月球之外，给天界可变性提供重要实验证据。",
         "en": "Rated as a major advance within a field: Precise parallax observations placed the nova beyond the Moon and supplied major observational evidence that the heavens change."
       },
       "confidence": "high",
@@ -425,7 +400,6 @@
       "end": 1572
     },
     "dateNote": {
-      "zh": "新星位置与视差观测发生于1572年，相关著作《新星论》出版于1573年。",
       "en": "The nova-position and parallax observations were made in 1572; De nova stella appeared in 1573."
     },
     "timelineDates": {
@@ -451,7 +425,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：明确液体压力与深度及受压面的关系。",
         "en": "Rated as a major advance within a field: Clarified relations among liquid pressure, depth and loaded area."
       },
       "confidence": "high",
@@ -473,7 +446,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：系统研究斜面、平衡与力的几何关系。",
         "en": "Rated as a major advance within a field: Systematically treated inclined planes, equilibrium and force geometry."
       },
       "confidence": "high",
@@ -495,7 +467,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：以彗星距离的观测证据排除固体天球图景；与长期行星测量数据是不同成果。",
         "en": "Rated as a major advance within a field: Comet-distance evidence undermined solid celestial spheres; this result is distinct from the sustained planetary measurement dataset."
       },
       "confidence": "high",
@@ -509,7 +480,6 @@
       "end": 1577
     },
     "dateNote": {
-      "zh": "彗星距离证据来自1577年的视差观测，相关著作于1588年出版。",
       "en": "The comet-distance evidence came from parallax observations in 1577; the related book appeared in 1588."
     },
     "timelineDates": {
@@ -531,7 +501,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以系统实验将地球看作磁体，并区分电性与磁性。",
         "en": "Rated as a major advance within a field: Systematically investigated Earth as a magnet and distinguished electrical effects."
       },
       "confidence": "high",
@@ -553,7 +522,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把视觉成像作为光学系统的几何问题处理。",
         "en": "Rated as a major advance within a field: Treated visual imaging as a geometrical optical-system problem."
       },
       "confidence": "high",
@@ -575,7 +543,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以椭圆轨道和面积规律取代匀速圆周约束，建立由观测支持的关键定量规律。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Replaced uniform-circle constraints with ellipses and the area law, establishing decisive quantitative relations supported by observations."
       },
       "confidence": "high",
@@ -589,7 +556,6 @@
       "end": 1609
     },
     "dateNote": {
-      "zh": "前两条定律分别形成、修订于1602—1609年的研究过程中，不能给出共同的精确发现年；1609年为《新天文学》出版年。",
       "en": "The first two laws formed and were revised at different stages during 1602–1609; there is no common exact discovery year. Astronomia nova was published in 1609."
     },
     "timelineDates": {
@@ -614,7 +580,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以新仪器展示月面地形、木星卫星和更多恒星。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Used telescopes to reveal lunar relief, Jovian moons and additional stars."
       },
       "confidence": "high",
@@ -642,7 +607,6 @@
       "published": 1610
     },
     "dateNote": {
-      "zh": "木星卫星等望远镜观测发生于1610年初，《星际信使》于同年3月出版。",
       "en": "The telescopic observations, including Jupiter’s satellites, date to early 1610; Sidereus nuncius appeared that March."
     },
     "dateConfidence": "documented"
@@ -654,7 +618,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：为折射透镜组合和望远镜提供系统几何分析。",
         "en": "Rated as a major advance within a field: Provided systematic geometrical analysis of lenses and telescopes."
       },
       "confidence": "high",
@@ -676,7 +639,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：将角度测量网络用于地球尺寸的定量估计。",
         "en": "Rated as an important improvement: Used an angular survey network for quantitative Earth measurement."
       },
       "confidence": "high",
@@ -698,7 +660,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把不同轨道的周期与尺度联系为统一定量关系，是对前两条定律的领域重大扩展。",
         "en": "Rated as a major advance within a field: Unified the periods and sizes of different orbits in one quantitative relation, a major extension of the first two laws."
       },
       "confidence": "high",
@@ -712,7 +673,6 @@
       "end": 1618
     },
     "dateNote": {
-      "zh": "周期—轨道尺度关系于1618年形成并得到确认，《宇宙和谐论》于1619年出版。NASA与斯图加特大学的历史资料记载其确认日期为1618年5月15日。",
       "en": "The period–orbital-size relation was established and confirmed in 1618; Harmonices mundi appeared in 1619. NASA and the University of Stuttgart historical account identify confirmation on 15 May 1618."
     },
     "timelineDates": {
@@ -742,7 +702,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：推进水流截面、速度与流量的定量联系。",
         "en": "Rated as an important improvement: Advanced quantitative relations between flow area, speed and discharge."
       },
       "confidence": "high",
@@ -764,7 +723,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把声音与弦长、张力和振动频率联系到定量实验。",
         "en": "Rated as an important improvement: Related sound and string properties through quantitative experiments."
       },
       "confidence": "high",
@@ -786,7 +744,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：公开系统表述折射关系与透镜成像分析。",
         "en": "Rated as an important improvement: Published a systematic treatment of refraction and lens imaging."
       },
       "confidence": "high",
@@ -808,7 +765,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：将定量实验与数学运动规律结合，奠定近代运动学。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Joined quantitative experiments with mathematical laws of motion."
       },
       "confidence": "high",
@@ -830,7 +786,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：为流体流出问题提供数学关系。",
         "en": "Rated as an important improvement: Provided a mathematical relation for fluid discharge."
       },
       "confidence": "high",
@@ -852,7 +807,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以可维持的真空和水银柱阐明大气压力。",
         "en": "Rated as a major advance within a field: Used a sustained vacuum and mercury column to explain atmospheric pressure."
       },
       "confidence": "high",
@@ -874,7 +828,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：用不同高度的水银柱读数检验大气压解释。",
         "en": "Rated as a major advance within a field: Tested atmospheric-pressure explanations through measurements at different heights."
       },
       "confidence": "high",
@@ -896,7 +849,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：使真空与低压环境成为可重复研究的实验条件。",
         "en": "Rated as an important improvement: Made low-pressure environments accessible to repeatable experiments."
       },
       "confidence": "high",
@@ -918,7 +870,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立可复现实验支持的定量气体关系。",
         "en": "Rated as a major advance within a field: Established a reproducible quantitative gas relation."
       },
       "confidence": "high",
@@ -940,7 +891,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以变分式原则连接光路与传播速度。",
         "en": "Rated as a major advance within a field: Connected optical paths and propagation speed through an extremal principle."
       },
       "confidence": "high",
@@ -962,7 +912,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：揭示几何光学阴影之外的光传播结构。",
         "en": "Rated as a major advance within a field: Revealed light structures beyond geometrical shadow boundaries."
       },
       "confidence": "high",
@@ -977,14 +926,12 @@
     },
     "dateConfidence": "estimated",
     "title": {
-      "zh": "光的衍射观测与描述",
       "en": "Observation and description of optical diffraction"
     },
     "timelineDates": {
       "published": 1665
     },
     "dateNote": {
-      "zh": "衍射实验及文字描述在格里马尔迪1663年去世以前已经形成，相关遗著于1665年出版。1650—1663年为成熟研究期的编辑年代估计，具体观测年不详。",
       "en": "The diffraction experiments and their written description were completed before Grimaldi died in 1663; the book appeared posthumously in 1665. The 1650–1663 interval is an editorial estimate within his mature research period; the exact observing year is unknown."
     },
     "sources": [
@@ -1005,7 +952,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把颜色与不同折射性质的光联系起来。",
         "en": "Rated as a major advance within a field: Connected colours with rays having distinct refractive properties."
       },
       "confidence": "high",
@@ -1027,7 +973,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：扩展对刚体摆动、等时曲线和离心作用的研究。",
         "en": "Rated as a major advance within a field: Extended treatments of pendulums, tautochrones and circular motion."
       },
       "confidence": "high",
@@ -1049,7 +994,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：为光传播需要时间提供天文观测证据。",
         "en": "Rated as a major advance within a field: Provided astronomical evidence that light propagation takes time."
       },
       "confidence": "high",
@@ -1071,7 +1015,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立弹性力与形变的定量联系。",
         "en": "Rated as a major advance within a field: Established a quantitative relation between elastic force and deformation."
       },
       "confidence": "high",
@@ -1093,7 +1036,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以传播波前解释反射、折射及双折射。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Explained reflection, refraction and double refraction through propagating wavefronts."
       },
       "confidence": "high",
@@ -1115,7 +1057,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：为运动、变化和极值问题提供可推广的分析工具。",
         "en": "Rated as a major advance within a field: Provided general analytical tools for motion, change and extrema."
       },
       "confidence": "high",
@@ -1137,7 +1078,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为基础框架革命：以同一动力学和普适引力框架统一地面与天体运动；《原理》整体计一次，三条定律不再各计一份。",
         "en": "Rated as a revolution in the basic framework: A common dynamics and universal-gravitation framework unified terrestrial and celestial motion; Principia is one framework, not one score per law."
       },
       "confidence": "high",
@@ -1151,7 +1091,6 @@
       "end": 1687
     },
     "dateNote": {
-      "zh": "《自然哲学的数学原理》于1687年出版，首次以完整体系公开了运动定律与普适引力的统一论证；其中部分思想形成得更早。",
       "en": "Principia appeared in 1687, publicly presenting a complete unified argument for the laws of motion and universal gravitation; some component ideas formed earlier."
     },
     "timelineDates": {
@@ -1166,7 +1105,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把蒸汽、真空和活塞联系成热动力装置方案。",
         "en": "Rated as an important improvement: Connected steam, vacuum and a piston in a heat-engine proposal."
       },
       "confidence": "high",
@@ -1188,7 +1126,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把牛顿动力学用于跨历次观测的轨道预测。",
         "en": "Rated as an important improvement: Applied Newtonian dynamics to orbital prediction across apparitions."
       },
       "confidence": "high",
@@ -1210,7 +1147,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：改进电与低压气体发光的实验方法。",
         "en": "Rated as an important improvement: Developed experimental methods for electricity and low-pressure luminescence."
       },
       "confidence": "high",
@@ -1232,7 +1168,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把蒸汽冷凝与大气压转化为实用机械功。",
         "en": "Rated as an important improvement: Turned steam condensation and atmospheric pressure into practical mechanical work."
       },
       "confidence": "high",
@@ -1254,7 +1189,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：推进温度测量的标准化与跨实验比较。",
         "en": "Rated as a focused advance: Advanced reproducible thermometry and comparison across experiments."
       },
       "confidence": "high",
@@ -1276,7 +1210,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把有限光速与地球公转联系到观测位移。",
         "en": "Rated as an important improvement: Connected finite light speed and Earth’s orbit with observed stellar displacement."
       },
       "confidence": "high",
@@ -1298,7 +1231,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：区分电性传递与材料绝缘作用。",
         "en": "Rated as an important improvement: Distinguished the transmission of electrical effects and insulating behaviour."
       },
       "confidence": "high",
@@ -1320,7 +1252,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：区分两类带电行为，为电荷理论提供实验基础。",
         "en": "Rated as an important improvement: Distinguished two electrical behaviours that informed later charge theories."
       },
       "confidence": "high",
@@ -1342,7 +1273,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把运动问题系统写成可分析的微分方程。",
         "en": "Rated as a major advance within a field: Systematically cast dynamical problems into differential equations."
       },
       "confidence": "high",
@@ -1364,7 +1294,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：将能量思路用于流体运动的定量分析。",
         "en": "Rated as a major advance within a field: Applied energetic reasoning to quantitative fluid motion."
       },
       "confidence": "high",
@@ -1386,7 +1315,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以粒子运动解释气体宏观性质的早期定量模型。",
         "en": "Rated as a major advance within a field: An early quantitative model relating particle motion to macroscopic gas properties."
       },
       "confidence": "high",
@@ -1408,7 +1336,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：把牛顿与莱布尼茨传统的关键问题纳入系统讨论。",
         "en": "Rated as a focused advance: Systematically examined issues across Newtonian and Leibnizian traditions."
       },
       "confidence": "high",
@@ -1430,7 +1357,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：使温标与可重复的相变固定点关联。",
         "en": "Rated as a focused advance: Related a temperature scale to reproducible phase-transition fixed points."
       },
       "confidence": "high",
@@ -1452,7 +1378,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：用动量转移把高速运动转化为可测的摆动。",
         "en": "Rated as an important improvement: Converted high-speed motion into measurable pendulum displacement."
       },
       "confidence": "high",
@@ -1474,7 +1399,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：将大地测量与旋转流体的引力理论连接。",
         "en": "Rated as an important improvement: Connected geodetic measurements with rotating-fluid gravitation."
       },
       "confidence": "high",
@@ -1496,7 +1420,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把约束系统动力学联系到平衡与虚功分析。",
         "en": "Rated as a major advance within a field: Related constrained dynamics to equilibrium and virtual-work reasoning."
       },
       "confidence": "high",
@@ -1518,7 +1441,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把波动运动表述为偏微分方程。",
         "en": "Rated as a major advance within a field: Expressed wave motion through a partial differential equation."
       },
       "confidence": "high",
@@ -1540,7 +1462,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把多种静电现象组织成可检验的电性解释。",
         "en": "Rated as a major advance within a field: Organized electrostatic phenomena into a testable electrical account."
       },
       "confidence": "high",
@@ -1562,7 +1483,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立连续介质流动的统一微分方程表述。",
         "en": "Rated as a major advance within a field: Established a general differential-equation formulation of continuum flow."
       },
       "confidence": "high",
@@ -1584,7 +1504,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "保留思想史记录，因原论断未满足本库既有物理成果口径，仍不计入指数。探索统一的物质相互作用模型，具有历史影响但非现代原子理论。",
         "en": "Retained as intellectual history and still excluded under the existing physical-result criterion. Explored a historically influential unified interaction model, not modern atomic theory."
       },
       "confidence": "high",
@@ -1607,7 +1526,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把电荷作用与感应问题纳入数学化模型。",
         "en": "Rated as an important improvement: Brought electrical interactions and induction into a mathematical model."
       },
       "confidence": "high",
@@ -1629,7 +1547,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立可测量的光强与几何关系。",
         "en": "Rated as a major advance within a field: Established measurable relations between illumination and geometry."
       },
       "confidence": "high",
@@ -1651,7 +1568,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：区分热量输入与温度变化，推进定量热学。",
         "en": "Rated as a major advance within a field: Distinguished heat input from temperature change in quantitative thermal study."
       },
       "confidence": "high",
@@ -1673,7 +1589,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：将动力学从质点扩展到一般刚体运动。",
         "en": "Rated as a major advance within a field: Extended dynamics from particles to general rigid-body motion."
       },
       "confidence": "high",
@@ -1695,7 +1610,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：减少汽缸反复冷却的损失，改进热机效率。",
         "en": "Rated as a major advance within a field: Reduced repeated cylinder-cooling losses and improved heat-engine efficiency."
       },
       "confidence": "high",
@@ -1717,7 +1631,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：降低有效加速度以测量和展示运动规律。",
         "en": "Rated as a focused advance: Reduced effective acceleration to measure and demonstrate motion."
       },
       "confidence": "high",
@@ -1739,7 +1652,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：用融冰量测量物体、化学变化与呼吸放热。",
         "en": "Rated as a major advance within a field: Used ice melting to quantify heat from bodies, reactions and respiration."
       },
       "confidence": "high",
@@ -1761,7 +1673,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把太阳系行星的观测范围扩展到古代已知行星之外。",
         "en": "Rated as an important improvement: Extended the observed planetary system beyond the planets known in antiquity."
       },
       "confidence": "high",
@@ -1783,7 +1694,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：以统一机械分析讨论碰撞与机器中的效应损失。",
         "en": "Rated as a focused advance: Analyzed losses of mechanical effect in impacts and machines."
       },
       "confidence": "high",
@@ -1805,7 +1715,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把静电相互作用建立为定量实验定律。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established electrostatic interaction as a quantitative experimental law."
       },
       "confidence": "high",
@@ -1833,7 +1742,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：贡献独立天体观测，扩充可靠的太阳系资料。",
         "en": "Rated as a focused advance: Added independent observations to reliable Solar System records."
       },
       "confidence": "high",
@@ -1855,7 +1763,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：使固体振动模态成为可重复观察的实验图样。",
         "en": "Rated as an important improvement: Made solid-body vibration modes visible in repeatable experiments."
       },
       "confidence": "high",
@@ -1877,7 +1784,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以统一分析方法处理受约束的机械系统。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Unified the analytical treatment of constrained mechanical systems."
       },
       "confidence": "high",
@@ -1899,7 +1805,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：为电与生理过程的关系提供系统实验。",
         "en": "Rated as an important improvement: Provided systematic experiments linking electricity and physiological processes."
       },
       "confidence": "high",
@@ -1921,7 +1826,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：纠正观测索引并补入遗漏恒星，改善观测基础资料。",
         "en": "Rated as a focused advance: Corrected observational indexing and added omitted stars."
       },
       "confidence": "high",
@@ -1943,7 +1847,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把微弱引力的实验测量用于确定地球密度。",
         "en": "Rated as a major advance within a field: Used measurements of weak gravitational attraction to determine Earth’s density."
       },
       "confidence": "high",
@@ -1965,7 +1868,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：用机械摩擦不断生热质疑热质作为有限物质的解释。",
         "en": "Rated as a major advance within a field: Used sustained frictional heating to challenge material caloric accounts."
       },
       "confidence": "high",
@@ -1987,7 +1889,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把辐射研究扩展到可见光谱之外。",
         "en": "Rated as a major advance within a field: Extended the study of radiation beyond the visible spectrum."
       },
       "confidence": "high",
@@ -2009,7 +1910,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：提供持续电流的可用实验来源，开启新的电化学与电磁研究。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Provided a sustained-current source for new electrochemical and electromagnetic experiments."
       },
       "confidence": "high",
@@ -2031,7 +1931,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：将平衡问题转化为严格的几何论证。",
         "en": "Rated as a major advance within a field: Turned equilibrium problems into geometrical demonstrations."
       },
       "confidence": "medium",
@@ -2048,7 +1947,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "保留思想史记录，因原论断未满足本库既有物理成果口径，仍不计入指数。提出地球运动的早期宇宙模型；现存依据主要为后人记述。",
         "en": "Retained as intellectual history and still excluded under the existing physical-result criterion. An early moving-Earth cosmology known mainly through later testimony."
       },
       "confidence": "medium",
@@ -2066,7 +1964,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：将山高与俯角测量结合到地球尺度的几何估计。",
         "en": "Rated as an important improvement: Combined height and dip-angle measurements in a geometrical Earth estimate."
       },
       "confidence": "medium",
@@ -2083,7 +1980,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "保留思想史记录，因原论断未满足本库既有物理成果口径，仍不计入指数。推进对持续运动及阻力的中世纪讨论，不等同牛顿惯性。",
         "en": "Retained as intellectual history and still excluded under the existing physical-result criterion. Advanced medieval accounts of persistence and resistance, distinct from Newtonian inertia."
       },
       "confidence": "medium",
@@ -2101,7 +1997,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：用实验模型和光路分析推进彩虹解释。",
         "en": "Rated as a major advance within a field: Advanced rainbow explanations with experimental models and ray paths."
       },
       "confidence": "medium",
@@ -2118,7 +2013,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为局部推进：记录压力驱动装置与反作用旋转装置。",
         "en": "Rated as a focused advance: Recorded pressure-driven mechanisms and a reaction-driven rotating device."
       },
       "confidence": "medium",
@@ -2135,7 +2029,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：通过跨时代观测比较识别天球坐标的长期变化。",
         "en": "Rated as a major advance within a field: Recognized secular changes through comparisons of observations across epochs."
       },
       "confidence": "medium",
@@ -2152,7 +2045,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：中国早期光学的系统论述；不是现代意义上的完整光学理论。",
         "en": "Rated as an important improvement: A systematic early Chinese treatment of optics, not a modern optical theory."
       },
       "confidence": "medium",
@@ -2169,7 +2061,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为重要改进：以几何面积和图形分析均匀变化的量。",
         "en": "Rated as an important improvement: Used geometrical areas and figures to analyze uniformly varying quantities."
       },
       "confidence": "medium",
@@ -2186,7 +2077,6 @@
       "basis": "editorial-review",
       "route": "historical",
       "rationale": {
-        "zh": "评为领域重大成果：把单个水滴中的折射和内反射与虹的形成联系起来。",
         "en": "Rated as a major advance within a field: Linked refraction and internal reflection in drops with rainbow formation."
       },
       "confidence": "medium",
@@ -2203,7 +2093,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：将可测电磁辐射拓展到可见紫光之外。",
         "en": "Rated as a major advance within a field: Extended experimental radiation studies beyond visible violet."
       },
       "confidence": "high",
@@ -2225,7 +2114,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以波的叠加解释明暗条纹，奠定波动光学。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Made wave superposition central to physical optics."
       },
       "confidence": "high",
@@ -2247,7 +2135,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以原子量和简单结合比例连接微观假说与实验计量。",
         "en": "Rated as a major advance within a field: Connected atomism to quantitative composition and atomic weights."
       },
       "confidence": "high",
@@ -2269,7 +2156,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：揭示光的偏振性质，为横波解释提供实验问题。",
         "en": "Rated as a major advance within a field: Established a key polarization phenomenon for wave optics."
       },
       "confidence": "high",
@@ -2291,7 +2177,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：将最小二乘与误差概率、轨道测定系统联系。",
         "en": "Rated as an important improvement: Linked least squares to error probability and orbit determination."
       },
       "confidence": "high",
@@ -2313,7 +2198,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：区分原子与分子并解释气体结合体积。",
         "en": "Rated as a major advance within a field: Connected gas-volume relations with a molecular description."
       },
       "confidence": "high",
@@ -2335,7 +2219,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立以谱线作为精密测量基准的研究方法。",
         "en": "Rated as a major advance within a field: Established spectral lines as precise observational reference points."
       },
       "confidence": "high",
@@ -2349,7 +2232,6 @@
       "end": 1814
     },
     "dateNote": {
-      "zh": "系统太阳光谱暗线观测与图谱形成于1814年，相关论文于1817年出版。",
       "en": "The systematic solar dark-line observations and chart date to 1814; the paper appeared in 1817."
     },
     "timelineDates": {
@@ -2375,7 +2257,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：揭示固体热容与原子量的规律性联系。",
         "en": "Rated as an important improvement: Established an empirical connection between heat capacity and atomic weight."
       },
       "confidence": "high",
@@ -2397,7 +2278,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：首次明确建立电流与磁现象的实验联系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established the experimental connection between current and magnetism."
       },
       "confidence": "high",
@@ -2419,7 +2299,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把电磁相互作用转化为持续机械运动。",
         "en": "Rated as an important improvement: Converted electromagnetic interaction into sustained mechanical rotation."
       },
       "confidence": "high",
@@ -2441,7 +2320,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立温差与电流之间的新实验联系。",
         "en": "Rated as a major advance within a field: Established an experimental link between temperature difference and current."
       },
       "confidence": "high",
@@ -2463,7 +2341,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以偏微分方程与级数建立可计算的热传导理论。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a mathematical framework for heat conduction."
       },
       "confidence": "high",
@@ -2485,7 +2362,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：提出热机效率极限，成为热力学的基础节点。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established the limiting-efficiency problem at the foundation of thermodynamics."
       },
       "confidence": "high",
@@ -2507,7 +2383,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把稳恒电路研究纳入统一的定量关系。",
         "en": "Rated as a major advance within a field: Made steady-current circuits quantitatively tractable."
       },
       "confidence": "high",
@@ -2529,7 +2404,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立后来广泛用于边值问题的势函数方法。",
         "en": "Rated as a major advance within a field: Established mathematical methods fundamental to physical boundary-value problems."
       },
       "confidence": "high",
@@ -2551,7 +2425,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：揭示变化磁场产生电流，打开电磁能量转换研究。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established current induction by changing magnetic conditions."
       },
       "confidence": "high",
@@ -2573,7 +2446,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把卡诺循环转为可操作的图形和数学表达。",
         "en": "Rated as an important improvement: Made Carnot’s analysis mathematically and graphically operational."
       },
       "confidence": "high",
@@ -2595,7 +2467,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：形成经典动力学与后续量子理论的重要数学语言。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a central mathematical formulation of dynamics."
       },
       "confidence": "high",
@@ -2617,7 +2488,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：明确旋转体系中与相对速度相关的惯性项。",
         "en": "Rated as an important improvement: Identified velocity-dependent inertial terms in rotating systems."
       },
       "confidence": "high",
@@ -2639,7 +2509,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：把波的观测频率与相对运动联系起来。",
         "en": "Rated as a major advance within a field: Connected observed wave frequency with relative motion."
       },
       "confidence": "high",
@@ -2661,7 +2530,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以早期独立论证把热与机械过程联系起来，作为能量守恒综合表述的先驱节点。",
         "en": "Rated as a major advance within a field: An independent precursor connecting heat and mechanical processes, distinguished from later comprehensive formulations."
       },
       "confidence": "high",
@@ -2683,7 +2551,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：直接建立光与磁场作用的实验联系。",
         "en": "Rated as a major advance within a field: Established a direct experimental connection between light and magnetism."
       },
       "confidence": "high",
@@ -2705,7 +2572,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：建立具有广泛适用性的连续介质黏性描述。",
         "en": "Rated as a major advance within a field: Established a general continuum description of viscous motion."
       },
       "confidence": "high",
@@ -2727,7 +2593,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把多类物理过程纳入统一守恒原则。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Unified physical processes under a conservation principle."
       },
       "confidence": "high",
@@ -2749,7 +2614,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以热力学方式建立温度的统一尺度。",
         "en": "Rated as a major advance within a field: Established an absolute basis for thermometry."
       },
       "confidence": "high",
@@ -2771,7 +2635,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：在能量守恒下重新建立热机与热流的理论关系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Recast heat engines and heat flow within energy conservation."
       },
       "confidence": "high",
@@ -2793,7 +2656,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：定量检验功与热之间的等效关系。",
         "en": "Rated as a major advance within a field: Quantitatively tested the equivalence of work and heat."
       },
       "confidence": "high",
@@ -2815,7 +2677,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：用地面力学实验直接展示地球自转效应。",
         "en": "Rated as a major advance within a field: Demonstrated Earth’s rotation with a terrestrial mechanics experiment."
       },
       "confidence": "high",
@@ -2837,7 +2698,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：使低雷诺数阻力与沉降过程可定量求解。",
         "en": "Rated as an important improvement: Made slow viscous drag and sedimentation quantitatively solvable."
       },
       "confidence": "high",
@@ -2859,7 +2719,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为局部推进：把气体成分与大气温度问题联系起来。",
         "en": "Rated as a focused advance: Linked gas composition to atmospheric warming questions."
       },
       "confidence": "high",
@@ -2881,7 +2740,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：用光谱连接实验室物质与天体成分分析。",
         "en": "Rated as a major advance within a field: Made spectra a bridge between laboratory matter and astronomical composition."
       },
       "confidence": "high",
@@ -2903,7 +2761,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以统计分布替代单一分子速度，推进统计物理。",
         "en": "Rated as a major advance within a field: Introduced statistical velocity distributions into kinetic theory."
       },
       "confidence": "high",
@@ -2925,7 +2782,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为基础框架革命：统一电、磁与光并预言电磁波，是跨领域的理论框架革命。",
         "en": "Rated as a revolution in the basic framework: Unified electricity, magnetism and light and predicted electromagnetic waves, changing the theoretical framework across fields."
       },
       "confidence": "high",
@@ -2947,7 +2803,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把可逆热量与温度关系组织为新的状态量。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established entropy as a thermodynamic state quantity."
       },
       "confidence": "high",
@@ -2969,7 +2824,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：使恒星运动可由光谱位移定量研究。",
         "en": "Rated as an important improvement: Made stellar line-of-sight motion accessible through spectroscopy."
       },
       "confidence": "high",
@@ -2991,7 +2845,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：建立小尺度散射的定量波长规律。",
         "en": "Rated as an important improvement: Established a quantitative wavelength law for small-particle scattering."
       },
       "confidence": "high",
@@ -3013,7 +2866,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：在碰撞统计假设下研究趋于热平衡的过程。",
         "en": "Rated as a major advance within a field: Connected kinetic collisions to approach toward equilibrium."
       },
       "confidence": "high",
@@ -3035,7 +2887,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：明确显微分辨率与波长、孔径之间的限制。",
         "en": "Rated as a major advance within a field: Established the wavelength and aperture limits of microscopy."
       },
       "confidence": "high",
@@ -3057,7 +2908,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以分子体积与吸引力解释非理想行为。",
         "en": "Rated as a major advance within a field: Connected nonideal fluid behavior to molecular size and attraction."
       },
       "confidence": "high",
@@ -3079,7 +2929,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立多相平衡、化学势与热力学势的系统方法。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a systematic thermodynamic treatment of multiphase equilibrium."
       },
       "confidence": "high",
@@ -3101,7 +2950,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：用微观构型计数连接概率与宏观热力学。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Connected microscopic configuration counting with macroscopic entropy."
       },
       "confidence": "high",
@@ -3123,7 +2971,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：为电荷输运与载流子研究提供横向电压探针。",
         "en": "Rated as an important improvement: Provided a transverse-voltage probe of electrical transport."
       },
       "confidence": "high",
@@ -3145,7 +2992,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：建立总热辐射随绝对温度变化的定量规律。",
         "en": "Rated as an important improvement: Established a quantitative temperature law for total thermal radiation."
       },
       "confidence": "high",
@@ -3167,7 +3013,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：建立机械应力与晶体电极化的联系。",
         "en": "Rated as an important improvement: Connected mechanical stress with electrical polarization in crystals."
       },
       "confidence": "high",
@@ -3189,7 +3034,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：使层流与湍流的转变可进行定量比较。",
         "en": "Rated as an important improvement: Made laminar–turbulent transition quantitatively comparable."
       },
       "confidence": "high",
@@ -3211,7 +3055,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：把经验辐射规律与电磁场热力学联系起来。",
         "en": "Rated as an important improvement: Connected an empirical radiation law to field thermodynamics."
       },
       "confidence": "high",
@@ -3233,7 +3076,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：明确电磁能量在空间中的流动与局部守恒。",
         "en": "Rated as a major advance within a field: Made electromagnetic energy flow and local conservation explicit."
       },
       "confidence": "high",
@@ -3255,7 +3097,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：找出氢谱线的简单定量结构，为原子模型提供约束。",
         "en": "Rated as a major advance within a field: Exposed quantitative structure in hydrogen spectral lines."
       },
       "confidence": "high",
@@ -3277,7 +3118,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以精密干涉限制以太漂移模型。",
         "en": "Rated as a major advance within a field: Used precision interferometry to constrain ether-drift models."
       },
       "confidence": "high",
@@ -3299,7 +3139,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：用独立实验检验电磁波的传播与光学性质。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Experimentally established electromagnetic-wave propagation and optical properties."
       },
       "confidence": "high",
@@ -3321,7 +3160,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为重要改进：建立控制表面面积、测量薄膜性质的实验方法。",
         "en": "Rated as an important improvement: Established controlled-area methods for studying surface films."
       },
       "confidence": "high",
@@ -3343,7 +3181,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：发现新的穿透性辐射并开辟结构探测方法。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Opened new radiation and structural-probing methods."
       },
       "confidence": "high",
@@ -3365,7 +3202,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：揭示原子内部自发辐射的全新现象。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established spontaneous radiation as a new atomic phenomenon."
       },
       "confidence": "high",
@@ -3387,7 +3223,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：以光谱检验带电粒子与磁场的相互作用。",
         "en": "Rated as a major advance within a field: Connected atomic spectra to magnetic interactions."
       },
       "confidence": "high",
@@ -3409,7 +3244,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：确认比原子更轻的普遍带电组分。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a light charged constituent of matter."
       },
       "confidence": "high",
@@ -3431,7 +3265,6 @@
       "basis": "editorial-review",
       "route": "classical",
       "rationale": {
-        "zh": "评为领域重大成果：发展放射性测量并揭示新的强放射性物质。",
         "en": "Rated as a major advance within a field: Expanded radioactivity research through newly identified substances."
       },
       "confidence": "high",
@@ -3453,7 +3286,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：用电子动力学统一讨论金属电导与热导。",
         "en": "Rated as an important improvement: Connected metallic electrical and thermal transport to electron dynamics."
       },
       "confidence": "high",
@@ -3475,7 +3307,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把量子常数与离散能量引入辐射理论。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Introduced energy quantization into the foundations of radiation theory."
       },
       "confidence": "high",
@@ -3497,7 +3328,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：建立统计力学的普遍系综语言。",
         "en": "Rated as a major advance within a field: Established the general ensemble language of statistical mechanics."
       },
       "confidence": "high",
@@ -3519,7 +3349,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把放射性解释为元素转化及其衰变过程。",
         "en": "Rated as a major advance within a field: Interpreted radioactivity through elemental transformation and decay."
       },
       "confidence": "high",
@@ -3541,7 +3370,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：连接理想流体外场与近壁黏性效应。",
         "en": "Rated as a major advance within a field: Connected outer inviscid flow with near-wall viscous dynamics."
       },
       "confidence": "high",
@@ -3563,7 +3391,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把分子热运动连接到可测的介观位移。",
         "en": "Rated as a major advance within a field: Connected molecular thermal motion with measurable mesoscopic displacement."
       },
       "confidence": "high",
@@ -3585,7 +3412,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：赋予辐射量子独立物理意义并提出可检验关系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Made light quanta physically substantive through testable relations."
       },
       "confidence": "high",
@@ -3607,7 +3433,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：给出物体惯性与能量含量之间的关系。",
         "en": "Rated as a major advance within a field: Connected inertia with energy content."
       },
       "confidence": "high",
@@ -3629,7 +3454,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为基础框架革命：重建空间、时间与惯性系变换的基础框架；质量—能量关系另作有限的派生成果，不重复给框架最高分。",
         "en": "Rated as a revolution in the basic framework: Rebuilt the framework of space, time and inertial transformations; mass–energy equivalence receives separate, limited derivative credit."
       },
       "confidence": "high",
@@ -3651,7 +3475,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：将量子化用于物质热容而非仅用于辐射。",
         "en": "Rated as a major advance within a field: Extended quantization from radiation to material heat capacity."
       },
       "confidence": "high",
@@ -3673,7 +3496,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：为颗粒光散射与吸收提供完整电磁求解。",
         "en": "Rated as an important improvement: Provided an electromagnetic solution for particle scattering and absorption."
       },
       "confidence": "high",
@@ -3695,7 +3517,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：打开可重复研究数开尔文物性的新温区。",
         "en": "Rated as a major advance within a field: Opened a reproducible regime of few-kelvin experimental physics."
       },
       "confidence": "high",
@@ -3717,7 +3538,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：发现电阻消失的低温物态并开辟超导研究。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Opened superconductivity as a new low-temperature state of matter."
       },
       "confidence": "high",
@@ -3739,7 +3559,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：由大角散射建立原子的核式结构。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established nuclear atomic structure from scattering evidence."
       },
       "confidence": "high",
@@ -3761,7 +3580,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把不可见电离粒子的轨迹转化为可摄影实验记录。",
         "en": "Rated as a major advance within a field: Made ionizing-particle trajectories photographically observable."
       },
       "confidence": "high",
@@ -3783,7 +3601,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：把弹性振动谱与低温固体热容联系起来。",
         "en": "Rated as an important improvement: Connected elastic vibration spectra to low-temperature heat capacity."
       },
       "confidence": "high",
@@ -3805,7 +3622,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：揭示来自地外的高穿透性辐射。",
         "en": "Rated as a major advance within a field: Established a highly penetrating extraterrestrial radiation source."
       },
       "confidence": "high",
@@ -3827,7 +3643,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：同时检验X射线波性与晶体周期结构。",
         "en": "Rated as a major advance within a field: Linked X-ray wave behavior with periodic crystal structure."
       },
       "confidence": "high",
@@ -3849,7 +3664,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：为天体距离测量建立可校准的观测关系。",
         "en": "Rated as a major advance within a field: Established a calibratable observational basis for cosmic distances."
       },
       "confidence": "high",
@@ -3871,7 +3685,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把原子稳定性、能级与线状光谱联系起来。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Connected atomic stability and line spectra with discrete energy states."
       },
       "confidence": "high",
@@ -3893,7 +3706,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：定量检验电荷离散性并精密测量元电荷。",
         "en": "Rated as a major advance within a field: Quantitatively tested charge discreteness and measured elementary charge."
       },
       "confidence": "high",
@@ -3915,7 +3727,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：独立揭示原子吸收能量的非连续性。",
         "en": "Rated as a major advance within a field: Independently established discrete energy uptake by atoms."
       },
       "confidence": "high",
@@ -3937,7 +3748,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为基础框架革命：用时空几何重建引力理论，改变引力与宇宙学的基础框架。",
         "en": "Rated as a revolution in the basic framework: Reformulated gravitation in terms of spacetime geometry, changing the foundations of gravity and cosmology."
       },
       "confidence": "high",
@@ -3959,7 +3769,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：为受激辐射及量子光学建立基础关系。",
         "en": "Rated as a major advance within a field: Established foundational relations for stimulated emission and quantum optics."
       },
       "confidence": "high",
@@ -3981,7 +3790,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：给出广义相对论的关键精确解。",
         "en": "Rated as a major advance within a field: Provided a key exact solution of general relativity."
       },
       "confidence": "high",
@@ -4003,7 +3811,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把连续对称性与守恒量置于统一数学框架。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Unified continuous symmetries and conservation laws."
       },
       "confidence": "high",
@@ -4025,7 +3832,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用粒子轰击实现并研究核转化。",
         "en": "Rated as a major advance within a field: Established nuclear transformation by particle bombardment."
       },
       "confidence": "high",
@@ -4047,7 +3853,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：将原子电离平衡与恒星光谱连接起来。",
         "en": "Rated as a major advance within a field: Connected atomic ionization equilibrium with stellar spectra."
       },
       "confidence": "high",
@@ -4069,7 +3874,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：揭示广义相对论允许随时间演化的宇宙。",
         "en": "Rated as a major advance within a field: Established dynamical cosmologies within general relativity."
       },
       "confidence": "high",
@@ -4091,7 +3895,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以原子束分裂展示角动量投影的离散性。",
         "en": "Rated as a major advance within a field: Demonstrated discrete angular-momentum projections in an atomic beam."
       },
       "confidence": "high",
@@ -4113,7 +3916,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用能量动量关系解释X射线散射的波长变化。",
         "en": "Rated as a major advance within a field: Established photon energy–momentum behavior in X-ray scattering."
       },
       "confidence": "high",
@@ -4135,7 +3937,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：将波粒关系推广到有质量物质。",
         "en": "Rated as a major advance within a field: Extended wave–particle relations to material particles."
       },
       "confidence": "high",
@@ -4157,7 +3958,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立不可区分量子的统计计数方法。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established statistical counting for indistinguishable quanta."
       },
       "confidence": "high",
@@ -4179,7 +3979,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为基础框架革命：首次形成可计算的现代量子力学框架；波动力学作为随后独立表述另记8级，不再重复给同一框架16级。",
         "en": "Rated as a revolution in the basic framework: Established a calculable framework of modern quantum mechanics; the later independent wave formulation receives level 8 rather than duplicating the framework maximum."
       },
       "confidence": "high",
@@ -4201,7 +4000,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立电子态占据的基本限制。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a fundamental restriction on electronic state occupancy."
       },
       "confidence": "high",
@@ -4223,7 +4021,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把恒星光谱与物质丰度的物理推断联系起来。",
         "en": "Rated as a major advance within a field: Established a physical inference of stellar composition from spectra."
       },
       "confidence": "high",
@@ -4245,7 +4042,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：明确量子振幅与实验概率的物理联系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Connected quantum amplitudes with experimental probabilities."
       },
       "confidence": "high",
@@ -4267,7 +4063,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立服从不相容原理的多粒子统计。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established statistics for particles obeying the exclusion principle."
       },
       "confidence": "high",
@@ -4289,7 +4084,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立独立而通用的波动表述与求解工具；对已在1925年建立的量子框架作关键推进，评8而非再次计16。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Provided an independent, general wave formulation and solution tools; it critically advanced the quantum framework established in 1925, earning 8 rather than another 16."
       },
       "confidence": "high",
@@ -4311,7 +4105,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以独立实验检验物质波。",
         "en": "Rated as a major advance within a field: Established experimental evidence for matter waves."
       },
       "confidence": "high",
@@ -4333,7 +4126,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：揭示共轭可观测量的量子限制。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established quantum limits for conjugate observables."
       },
       "confidence": "high",
@@ -4355,7 +4147,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把动力学宇宙模型与当时天文数据联系起来。",
         "en": "Rated as a major advance within a field: Connected dynamical cosmology with astronomical observations."
       },
       "confidence": "high",
@@ -4377,7 +4168,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：统一自旋半粒子的量子运动与狭义相对论。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Unified spin-half quantum dynamics with special relativity."
       },
       "confidence": "high",
@@ -4399,7 +4189,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以非弹性光散射开辟分子能谱研究。",
         "en": "Rated as a major advance within a field: Opened molecular spectroscopy through inelastic light scattering."
       },
       "confidence": "high",
@@ -4421,7 +4210,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：为宇宙膨胀提供定量观测关系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Established a quantitative observational relation supporting cosmic expansion."
       },
       "confidence": "high",
@@ -4443,7 +4231,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以中性粒子解释β衰变的连续能谱，开启中微子物理。",
         "en": "Rated as a major advance within a field: A neutral particle accounted for missing beta-decay energy and opened neutrino physics."
       },
       "confidence": "high",
@@ -4465,7 +4252,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：相对论性电子简并压导出恒星遗迹的质量上限。",
         "en": "Rated as a major advance within a field: Relativistic electron degeneracy established a limiting mass for white dwarfs."
       },
       "confidence": "high",
@@ -4487,7 +4273,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：循环加速使核反应研究进入更高能量范围。",
         "en": "Rated as a major advance within a field: Repeated acceleration made higher-energy nuclear experiments practical."
       },
       "confidence": "high",
@@ -4509,7 +4294,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：电子透镜成像开辟超越光学显微镜分辨率的路线。",
         "en": "Rated as a major advance within a field: Electron optics opened a route beyond optical microscopy resolution."
       },
       "confidence": "high",
@@ -4531,7 +4315,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把微观可逆性与非平衡线性输运系数联系起来。",
         "en": "Rated as a major advance within a field: Microscopic reversibility constrained coupled transport near equilibrium."
       },
       "confidence": "high",
@@ -4553,7 +4336,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：人工加速粒子首次实现可控的核反应实验。",
         "en": "Rated as a major advance within a field: Artificially accelerated particles enabled controlled nuclear-reaction experiments."
       },
       "confidence": "high",
@@ -4575,7 +4357,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：中性核子的确认奠定现代核结构与中子反应研究。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: The neutral nucleon transformed nuclear structure and neutron-reaction research."
       },
       "confidence": "high",
@@ -4597,7 +4378,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：首个反粒子的观测验证了反物质的物理实在性。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Observation of the first antiparticle established antimatter experimentally."
       },
       "confidence": "high",
@@ -4619,7 +4399,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：星系运动与可见质量的不符推动暗物质问题形成。",
         "en": "Rated as a major advance within a field: Cluster dynamics exposed a mismatch between luminous and gravitating mass."
       },
       "confidence": "high",
@@ -4641,7 +4420,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：识别来自银河的无线电信号，开辟射电天文学。",
         "en": "Rated as a major advance within a field: Identifying Galactic radio emission opened radio astronomy."
       },
       "confidence": "high",
@@ -4655,7 +4433,6 @@
       "end": 1932
     },
     "dateNote": {
-      "zh": "1931年已有异常信号记录，1932年识别出随恒星时变化的银河射电信号，1933年公开报告。",
       "en": "Anomalous signals were recorded in 1931; the sidereal Galactic radio signal was identified in 1932 and publicly reported in 1933."
     },
     "timelineDates": {
@@ -4683,7 +4460,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：超导体排斥磁场，表明超导是一种独立热力学相。",
         "en": "Rated as a major advance within a field: Magnetic-field expulsion distinguished superconductivity as a thermodynamic phase."
       },
       "confidence": "high",
@@ -4705,7 +4481,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：核反应产生新放射性核素，扩展同位素研究与应用。",
         "en": "Rated as a major advance within a field: Induced radioactive nuclides expanded isotope research and applications."
       },
       "confidence": "high",
@@ -4727,7 +4502,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：介质中高速带电粒子的特征辐射成为粒子鉴别工具。",
         "en": "Rated as an important improvement: Characteristic radiation from fast charges became a particle-identification tool."
       },
       "confidence": "high",
@@ -4749,7 +4523,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：建立弱相互作用的首个定量理论和有效相互作用范式。",
         "en": "Rated as a major advance within a field: A quantitative beta-decay theory established the weak-interaction effective description."
       },
       "confidence": "high",
@@ -4771,7 +4544,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：减速中子显著增强活化，成为反应堆和核实验的重要依据。",
         "en": "Rated as an important improvement: Neutron moderation enhanced activation and informed reactor physics."
       },
       "confidence": "high",
@@ -4793,7 +4565,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：使量子关联与局域实在性的冲突成为可精确讨论的问题。",
         "en": "Rated as an important improvement: Quantum correlations made locality and completeness sharply testable questions."
       },
       "confidence": "high",
@@ -4815,7 +4586,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用有质量交换粒子说明核力的短程性质。",
         "en": "Rated as a major advance within a field: Massive exchanged particles explained the short range of nuclear forces."
       },
       "confidence": "high",
@@ -4837,7 +4607,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：发现不同于电子的新轻子，扩展基本粒子的谱系。",
         "en": "Rated as a major advance within a field: A heavier lepton extended the known particle families."
       },
       "confidence": "high",
@@ -4859,7 +4628,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：宏观无黏滞流动开辟量子流体物理。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Macroscopic frictionless flow established quantum-fluid physics."
       },
       "confidence": "high",
@@ -4881,7 +4649,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：共振测量显著提高核磁矩与原子性质的精度。",
         "en": "Rated as a major advance within a field: Resonance methods enabled precision nuclear-moment and atomic measurements."
       },
       "confidence": "high",
@@ -4903,7 +4670,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：裂变的实验识别打开新的核能和核反应机制；1938实验与1939基本解释合为一族，1939液滴模型计算只计其进一步定量内容。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Identifying fission opened a new nuclear-energy and reaction mechanism; the 1938 experiment and 1939 basic interpretation form one family, distinct from additional quantitative liquid-drop modelling."
       },
       "confidence": "medium",
@@ -4929,7 +4695,6 @@
       ]
     },
     "dateNote": {
-      "zh": "1938年12月获得裂变实验结果，1939年发表并形成基本物理解释。",
       "en": "Experimental fission results were obtained in December 1938, followed by publication and the basic physical interpretation in 1939."
     },
     "dateConfidence": "documented"
@@ -4941,7 +4706,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：相对论坍缩解揭示黑洞形成的一条理论路径。",
         "en": "Rated as a major advance within a field: A relativistic collapse solution revealed a route to black-hole formation."
       },
       "confidence": "high",
@@ -4963,7 +4727,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：定量建立质子链与碳氮循环解释恒星能源。",
         "en": "Rated as a major advance within a field: Proton-chain and carbon–nitrogen reactions explained stellar energy generation."
       },
       "confidence": "high",
@@ -4985,7 +4748,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用能量级联与局部统计假设描述高雷诺数湍流。",
         "en": "Rated as a major advance within a field: Energy cascades and local statistical assumptions described high-Reynolds-number turbulence."
       },
       "confidence": "high",
@@ -5007,7 +4769,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：耦合磁场与导电流体运动，奠定磁流体波理论。",
         "en": "Rated as a major advance within a field: Coupling magnetic fields to conducting-fluid motion established magnetohydrodynamic waves."
       },
       "confidence": "high",
@@ -5029,7 +4790,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：Chicago Pile-1验证了可控释放核裂变能的可行性。",
         "en": "Rated as a major advance within a field: Chicago Pile-1 demonstrated controlled release of nuclear-fission energy."
       },
       "confidence": "high",
@@ -5051,7 +4811,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：精确可解的相变展示非平均场临界行为。",
         "en": "Rated as a major advance within a field: An exact phase-transition solution demonstrated non-mean-field critical behaviour."
       },
       "confidence": "high",
@@ -5073,7 +4832,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：独立方法实现体材料核磁共振，成为光谱与成像基础。",
         "en": "Rated as a major advance within a field: Independent bulk-resonance methods became foundations for spectroscopy and imaging."
       },
       "confidence": "high",
@@ -5095,7 +4853,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：建立可计算且高精度的量子场论，成为现代规范理论的范式。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: A predictive quantum field theory became a template for modern gauge theories."
       },
       "confidence": "medium",
@@ -5116,7 +4873,6 @@
       ]
     },
     "dateNote": {
-      "zh": "重整化量子电动力学由1946—1949年多组独立理论及统一工作逐步形成。",
       "en": "Renormalized QED formed through several independent theoretical and unifying contributions in 1946–1949."
     },
     "dateConfidence": "documented"
@@ -5128,7 +4884,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：电子磁矩偏离Dirac值，为量子辐射效应提供精密检验。",
         "en": "Rated as a major advance within a field: A deviation from the Dirac moment provided a precision test of radiative effects."
       },
       "confidence": "high",
@@ -5150,7 +4905,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：氢原子精细能级差推动辐射修正与量子电动力学重整化。",
         "en": "Rated as a major advance within a field: A hydrogen-level splitting drove radiative corrections and QED renormalization."
       },
       "confidence": "high",
@@ -5172,7 +4926,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：核乳胶揭示参与强相互作用的介子与其衰变链。",
         "en": "Rated as a major advance within a field: Nuclear emulsions revealed the strongly interacting meson and its decay chain."
       },
       "confidence": "high",
@@ -5194,7 +4947,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：半导体中实现信号放大，开启固态电子学时代。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Semiconductor amplification opened the era of solid-state electronics."
       },
       "confidence": "high",
@@ -5216,7 +4968,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：边界条件改变量子电磁零点能，预言中性导体间的力。",
         "en": "Rated as a major advance within a field: Boundary conditions changed electromagnetic zero-point energy, predicting a force between neutral conductors."
       },
       "confidence": "high",
@@ -5238,7 +4989,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：记录波前相位与振幅，使三维波前重建成为可能。",
         "en": "Rated as a major advance within a field: Recording phase and amplitude enabled reconstruction of wavefronts."
       },
       "confidence": "high",
@@ -5260,7 +5010,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：从热宇宙演化推导今天仍应存在的背景辐射。",
         "en": "Rated as an important improvement: Hot-universe evolution predicted a surviving radiation background."
       },
       "confidence": "high",
@@ -5282,7 +5031,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：自旋轨道耦合解释核幻数与稳定性规律。",
         "en": "Rated as a major advance within a field: Spin–orbit coupling explained nuclear magic numbers and shell stability."
       },
       "confidence": "high",
@@ -5304,7 +5052,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：序参量与自由能泛函描述超导相与空间非均匀结构。",
         "en": "Rated as a major advance within a field: An order parameter and free-energy functional described superconducting phases and spatial structure."
       },
       "confidence": "high",
@@ -5326,7 +5073,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：通过重新聚相测量自旋弛豫，拓展核磁共振控制。",
         "en": "Rated as a major advance within a field: Refocusing spin ensembles enabled new relaxation measurements and coherent control."
       },
       "confidence": "high",
@@ -5348,7 +5094,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：过热液体中的粒子轨迹成像成为高能实验的重要方法。",
         "en": "Rated as an important improvement: Tracks in superheated liquid became a major high-energy detection method."
       },
       "confidence": "high",
@@ -5370,7 +5115,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用平衡分布采样计算多体体系，广泛影响统计物理。",
         "en": "Rated as a major advance within a field: Equilibrium-distribution sampling made many-body statistical calculations practical."
       },
       "confidence": "high",
@@ -5392,7 +5136,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：受激辐射产生相干微波，为激光与精密频标奠基。",
         "en": "Rated as a major advance within a field: Stimulated emission produced coherent microwaves for lasers and precision standards."
       },
       "confidence": "high",
@@ -5414,7 +5157,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把局域对称性推广到非阿贝尔群，成为标准模型的基础结构。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Non-Abelian local symmetry supplied the structural foundation of the Standard Model."
       },
       "confidence": "high",
@@ -5436,7 +5178,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：在加速器中确认反重子，扩展对反物质的实验研究。",
         "en": "Rated as a major advance within a field: Accelerator production established antibaryons and expanded antimatter research."
       },
       "confidence": "high",
@@ -5458,7 +5199,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：反应堆反中微子反应首次确证这一弱相互作用粒子。",
         "en": "Rated as a major advance within a field: Reactor antineutrino interactions established the elusive weakly interacting particle."
       },
       "confidence": "high",
@@ -5480,7 +5220,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：理论检验建议与钴-60实验推翻弱作用的镜像对称性。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Theoretical scrutiny and cobalt-60 experiments overturned weak-interaction mirror symmetry."
       },
       "confidence": "medium",
@@ -5494,7 +5233,6 @@
       "end": 1956
     },
     "dateNote": {
-      "zh": "李政道与杨振宁于1956年提出检验，吴健雄与NBS团队同年12月得到关键不对称结果，后续核验与论文发表在1957年。",
       "en": "Lee and Yang proposed tests in 1956; Wu and the NBS team obtained decisive asymmetry that December, followed by further checks and publication in 1957."
     },
     "timelineDates": {
@@ -5521,7 +5259,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：磁通量子化涡旋说明第二类超导体的混合态。",
         "en": "Rated as a major advance within a field: Quantized flux vortices explained the mixed state of type-II superconductors."
       },
       "confidence": "high",
@@ -5543,7 +5280,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：库珀对与集体凝聚给出常规超导的微观理论。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Cooper pairing and condensation provided a microscopic theory of conventional superconductivity."
       },
       "confidence": "high",
@@ -5565,7 +5301,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：系统关联恒星反应与元素起源，建立现代核天体物理路线。",
         "en": "Rated as a major advance within a field: Stellar reaction networks connected element origins with nuclear astrophysics."
       },
       "confidence": "high",
@@ -5587,7 +5322,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：无序可抑制波的扩散，改变对固体输运的认识。",
         "en": "Rated as a major advance within a field: Disorder can suppress wave diffusion, changing the understanding of electronic transport."
       },
       "confidence": "high",
@@ -5609,7 +5343,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：无反冲γ共振吸收开辟极高精度的核光谱。",
         "en": "Rated as a major advance within a field: Recoil-free gamma resonance enabled exceptionally precise nuclear spectroscopy."
       },
       "confidence": "high",
@@ -5631,7 +5364,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：半导体中的量子隧穿表现为负微分电阻。",
         "en": "Rated as an important improvement: Quantum tunnelling produced negative differential resistance in semiconductors."
       },
       "confidence": "high",
@@ -5653,7 +5385,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：说明无局域电磁力的路径仍可出现可观测量子相位差。",
         "en": "Rated as a major advance within a field: Quantum phase differences can arise along paths without local electromagnetic forces."
       },
       "confidence": "high",
@@ -5675,7 +5406,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：首次实现相干光受激放大，成为现代光学核心工具。",
         "en": "Rated as a major advance within a field: Coherent optical amplification established a central tool of modern optics."
       },
       "confidence": "high",
@@ -5697,7 +5427,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把逻辑不可逆的信息擦除与最低散热联系起来。",
         "en": "Rated as a major advance within a field: Logically irreversible information erasure was linked with a minimum heat cost."
       },
       "confidence": "high",
@@ -5719,7 +5448,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：预测超导结中相干库珀对隧穿，连接量子相位与电测量。",
         "en": "Rated as a major advance within a field: Coherent Cooper-pair tunnelling linked quantum phase with electrical measurement."
       },
       "confidence": "high",
@@ -5741,7 +5469,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：加速器中微子束证实轻子具有不同味。",
         "en": "Rated as a major advance within a field: Accelerator neutrino beams established distinct lepton flavours."
       },
       "confidence": "high",
@@ -5763,7 +5490,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以局域相互作用和电子跃迁研究金属、磁性与绝缘态。",
         "en": "Rated as a major advance within a field: Local interactions and hopping provided a model for metals, magnetism, and insulating states."
       },
       "confidence": "high",
@@ -5785,7 +5511,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：获得旋转真空时空的精确解，成为天体黑洞模型基础。",
         "en": "Rated as a major advance within a field: An exact rotating vacuum solution became central to astrophysical black-hole models."
       },
       "confidence": "high",
@@ -5807,7 +5532,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：低维确定性流体模型展示对初始条件的敏感依赖。",
         "en": "Rated as a major advance within a field: A low-dimensional deterministic fluid model exhibited sensitive dependence on initial conditions."
       },
       "confidence": "high",
@@ -5829,7 +5553,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用量子态与关联函数系统描述光子统计。",
         "en": "Rated as a major advance within a field: Quantum states and correlation functions systematized photon statistics."
       },
       "confidence": "high",
@@ -5851,7 +5574,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：3C 273的红移揭示致密高光度河外天体。",
         "en": "Rated as a major advance within a field: The redshift of 3C 273 revealed compact, extremely luminous extragalactic objects."
       },
       "confidence": "high",
@@ -5873,7 +5595,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把局域隐变量模型与量子理论的差异化为可检验不等式。",
         "en": "Rated as a major advance within a field: A testable inequality separated local hidden-variable models from quantum predictions."
       },
       "confidence": "high",
@@ -5895,7 +5616,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：首次发现电荷共轭与宇称联合变换并非严格对称。",
         "en": "Rated as a major advance within a field: The first observation showed that combined charge–parity symmetry is not exact."
       },
       "confidence": "high",
@@ -5917,7 +5637,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以电子密度及辅助单粒子方程处理多电子体系。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Electron density and auxiliary single-particle equations made many-electron calculations tractable."
       },
       "confidence": "medium",
@@ -5943,7 +5662,6 @@
       ]
     },
     "dateNote": {
-      "zh": "Hohenberg–Kohn基础定理发表于1964年，Kohn–Sham构造发表于1965年。",
       "en": "The Hohenberg–Kohn foundations appeared in 1964 and the Kohn–Sham construction in 1965."
     },
     "dateConfidence": "documented"
@@ -5955,7 +5673,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：使自发对称性破缺与规范场质量相容，开辟电弱理论的关键路线；同年三组论证合为一个理论成果。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Made spontaneous symmetry breaking compatible with gauge-field masses, enabling electroweak theory; three groups form one theoretical milestone."
       },
       "confidence": "high",
@@ -5981,7 +5698,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：用分数电荷组分组织强子的谱系与量子数。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Fractionally charged constituents organized hadron spectra and quantum numbers."
       },
       "confidence": "high",
@@ -6003,7 +5719,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：全天微波背景为热大爆炸提供关键观测证据。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: An all-sky microwave background supplied decisive evidence for a hot early universe."
       },
       "confidence": "high",
@@ -6025,7 +5740,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：证明引力坍缩产生时空不完备性并非球对称模型特例。",
         "en": "Rated as a major advance within a field: Gravitational collapse implied spacetime incompleteness beyond symmetric idealizations."
       },
       "confidence": "high",
@@ -6047,7 +5761,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：指出纯化玻璃可降低损耗，建立长距光纤通信路线。",
         "en": "Rated as a major advance within a field: Glass purification offered a route to low-loss long-distance optical communication."
       },
       "confidence": "high",
@@ -6069,7 +5782,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：用自发破缺的规范理论统一电磁与弱相互作用。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: A spontaneously broken gauge theory unified electromagnetic and weak interactions."
       },
       "confidence": "high",
@@ -6091,7 +5803,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：规律射电脉冲揭示快速旋转中子星这一新类天体。",
         "en": "Rated as a major advance within a field: Regular radio pulses revealed a new class of rapidly rotating neutron stars."
       },
       "confidence": "high",
@@ -6113,7 +5824,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：耦合辐射、对流和水汽反馈，定量研究二氧化碳增温。",
         "en": "Rated as a major advance within a field: Radiation, convection, and water-vapour feedback enabled quantitative carbon-dioxide warming calculations."
       },
       "confidence": "high",
@@ -6135,7 +5845,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：质子内点状散射中心为夸克图像提供实验支柱。",
         "en": "Rated as a major advance within a field: Pointlike scattering centres inside protons supplied experimental support for quarks."
       },
       "confidence": "high",
@@ -6157,7 +5866,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：电子读出实现快速定位粒子轨迹，革新探测器数据采集。",
         "en": "Rated as a major advance within a field: Electronic readout enabled fast particle localization and transformed detector acquisition."
       },
       "confidence": "high",
@@ -6179,7 +5887,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：太阳中微子计数偏低，开启太阳模型与中微子性质的交叉检验。",
         "en": "Rated as a major advance within a field: Low solar-neutrino counts initiated tests of solar models and neutrino properties."
       },
       "confidence": "high",
@@ -6201,7 +5908,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：可转移电荷阵列为高灵敏数字成像提供基础。",
         "en": "Rated as a major advance within a field: Transferable charge arrays enabled sensitive digital imaging."
       },
       "confidence": "high",
@@ -6223,7 +5929,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：涡旋束缚与解离建立超越通常对称性破缺的相变机制。",
         "en": "Rated as a major advance within a field: Vortex binding and unbinding established a transition beyond conventional symmetry breaking."
       },
       "confidence": "medium",
@@ -6249,7 +5954,6 @@
       ]
     },
     "dateNote": {
-      "zh": "Berezinskii的俄文工作发表于1970年、英译于1971年，Kosterlitz与Thouless的相关工作发表于1973年。",
       "en": "Berezinskii’s Russian paper appeared in 1970 and its English translation in 1971; Kosterlitz and Thouless published their related work in 1973."
     },
     "dateConfidence": "documented"
@@ -6261,7 +5965,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：通过粲夸克解释味改变中性流的抑制。",
         "en": "Rated as a major advance within a field: A charm quark explained the suppression of flavour-changing neutral currents."
       },
       "confidence": "high",
@@ -6283,7 +5986,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：证明有质量规范理论可系统计算量子修正。",
         "en": "Rated as a major advance within a field: Massive gauge theories became systematically calculable beyond classical order."
       },
       "confidence": "high",
@@ -6305,7 +6007,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：不同尺度上的有效理论解释临界指数与普适性。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Scale-dependent effective theories explained critical exponents and universality."
       },
       "confidence": "high",
@@ -6327,7 +6028,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：受控纠缠实验排除一大类局域隐变量解释。",
         "en": "Rated as a major advance within a field: Controlled entanglement tests ruled out broad classes of local hidden-variable accounts."
       },
       "confidence": "medium",
@@ -6353,7 +6053,6 @@
       ]
     },
     "dateNote": {
-      "zh": "重要节点包括1972年的Freedman–Clauser实验和1982年的Aspect系列实验；后来的无漏洞检验发生于2015年。",
       "en": "Major stages include the Freedman–Clauser experiment of 1972 and Aspect’s series of experiments in 1982; later loophole-free tests were performed in 2015."
     },
     "dateConfidence": "documented"
@@ -6365,7 +6064,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：费米原子配对产生多种量子流体相。",
         "en": "Rated as a major advance within a field: Pairing of fermionic atoms produced multiple quantum-fluid phases."
       },
       "confidence": "high",
@@ -6387,7 +6085,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把视界面积与熵联系，建立广义第二定律的研究路线。",
         "en": "Rated as a major advance within a field: Horizon area was linked to entropy, motivating the generalized second law."
       },
       "confidence": "high",
@@ -6409,7 +6106,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：三代夸克混合中的复相位为CP破坏提供机制。",
         "en": "Rated as a major advance within a field: A complex phase in three-generation quark mixing supplied a CP-violation mechanism."
       },
       "confidence": "high",
@@ -6431,7 +6127,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：磁场梯度编码空间位置，使核磁共振发展为成像方法。",
         "en": "Rated as a major advance within a field: Magnetic gradients encoded spatial position and turned NMR into imaging."
       },
       "confidence": "high",
@@ -6453,7 +6148,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：颜色规范理论与高能耦合减弱建立强相互作用的现代框架。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Colour gauge theory and weakening high-energy coupling established the modern strong-interaction framework."
       },
       "confidence": "high",
@@ -6475,7 +6169,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：无带电轻子的中微子散射为电弱理论提供关键支持。",
         "en": "Rated as a major advance within a field: Neutrino scattering without charged leptons supported electroweak theory."
       },
       "confidence": "high",
@@ -6497,7 +6190,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：双中子星轨道衰减成为引力辐射的精密间接检验。",
         "en": "Rated as a major advance within a field: A neutron-star binary enabled precision indirect tests of gravitational radiation."
       },
       "confidence": "high",
@@ -6519,7 +6211,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：弯曲时空量子场论预言黑洞热辐射，联结引力与热力学。",
         "en": "Rated as a major advance within a field: Quantum fields in curved spacetime predicted thermal black-hole radiation."
       },
       "confidence": "high",
@@ -6541,7 +6232,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：独立共振观测确立粲夸克并推动标准模型建立。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Independent resonance discoveries established charm and strengthened the Standard Model."
       },
       "confidence": "high",
@@ -6563,7 +6253,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：新重轻子揭示第三代轻子结构。",
         "en": "Rated as a major advance within a field: A new heavy lepton revealed a third lepton generation."
       },
       "confidence": "high",
@@ -6585,7 +6274,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：Υ共振建立第三代夸克的重要证据。",
         "en": "Rated as a major advance within a field: Upsilon resonances established the bottom member of a third quark generation."
       },
       "confidence": "high",
@@ -6607,7 +6295,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：辐射压力冷却受囚粒子，为精密频标和量子控制提供技术基础。",
         "en": "Rated as a major advance within a field: Radiation-pressure cooling of trapped particles enabled precision standards and quantum control."
       },
       "confidence": "high",
@@ -6629,7 +6316,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：电子正电子湮灭的三喷注事件验证强力规范玻色子。",
         "en": "Rated as a major advance within a field: Three-jet electron–positron events established the strong-force gauge boson."
       },
       "confidence": "high",
@@ -6651,7 +6337,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：层级序参量描述无序与受挫系统的复杂平衡结构。",
         "en": "Rated as a major advance within a field: Hierarchical order parameters described complex equilibrium structures in disordered, frustrated systems."
       },
       "confidence": "high",
@@ -6673,7 +6358,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：暴胀为早期宇宙提供重要的新解释机制，但具体实现未获直接实验证实，保留暂定评价。",
         "en": "Rated as a major advance within a field: Inflation supplies an important new mechanism for the early Universe, while its specific realization remains unconfirmed and its assessment provisional."
       },
       "confidence": "medium",
@@ -6704,7 +6388,6 @@
       ]
     },
     "dateNote": {
-      "zh": "形成过程包括Starobinsky的1980年模型、Guth的1981年模型以及1982年的新暴胀路线；具体机制尚无直接确证。",
       "en": "The development includes Starobinsky’s 1980 model, Guth’s 1981 model and new inflation in 1982; the specific mechanism remains unconfirmed."
     },
     "dateConfidence": "documented"
@@ -6716,7 +6399,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：精确量子化的霍尔电阻连接拓扑物态与电阻计量。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Precisely quantized Hall resistance linked quantum matter with electrical metrology."
       },
       "confidence": "high",
@@ -6738,7 +6420,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：隧穿电流实现导电表面的原子尺度成像。",
         "en": "Rated as a major advance within a field: Tunnelling currents enabled atomic-scale imaging of conducting surfaces."
       },
       "confidence": "high",
@@ -6760,7 +6441,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：在二维电子系统中发现分数化的量子霍尔平台，确立新的强关联电子现象。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Fractional quantum Hall plateaux in a two-dimensional electron system established a new strongly correlated electronic phenomenon."
       },
       "confidence": "high",
@@ -6782,7 +6462,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：直接产生弱力媒介粒子，检验电弱统一的核心预言。",
         "en": "Rated as a major advance within a field: Direct production tested a central prediction of electroweak unification."
       },
       "confidence": "high",
@@ -6804,7 +6483,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：非正交量子态使窃听引入可检测扰动，奠定量子密码路线。",
         "en": "Rated as a major advance within a field: Nonorthogonal states made eavesdropping disturbance detectable and founded a quantum-cryptography route."
       },
       "confidence": "high",
@@ -6826,7 +6504,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：绝热循环的量子态可积累由参数空间几何决定的相位。",
         "en": "Rated as a major advance within a field: Adiabatic cycles can acquire a phase determined by parameter-space geometry."
       },
       "confidence": "high",
@@ -6848,7 +6525,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：先展宽再放大压缩的方案突破超短激光的损伤限制。",
         "en": "Rated as a major advance within a field: Stretching, amplifying, and recompressing pulses overcame damage limits for intense ultrashort lasers."
       },
       "confidence": "high",
@@ -6870,7 +6546,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：超导电路表现量子隧穿和离散能级，为电路量子技术奠基。",
         "en": "Rated as a major advance within a field: Superconducting circuits displayed tunnelling and discrete levels, enabling circuit quantum technologies."
       },
       "confidence": "high",
@@ -6892,7 +6567,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：多束激光阻尼原子运动，开辟可控超冷原子实验。",
         "en": "Rated as a major advance within a field: Multiple laser beams damped atomic motion and enabled controlled ultracold-atom experiments."
       },
       "confidence": "high",
@@ -6914,7 +6588,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：形式化可执行普适量子计算的计算模型。",
         "en": "Rated as a major advance within a field: A formal model established universal quantum computation."
       },
       "confidence": "high",
@@ -6936,7 +6609,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：力探针成像扩展到非导电表面的纳米结构。",
         "en": "Rated as a major advance within a field: Force-based probes extended nanoscale imaging to insulating surfaces."
       },
       "confidence": "high",
@@ -6958,7 +6630,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：铜氧化物中超导温度突破传统预期，开辟强关联超导研究。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Cuprates exceeded conventional temperature expectations and opened correlated-superconductor research."
       },
       "confidence": "high",
@@ -6980,7 +6651,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：首次探测恒星坍缩中微子爆发，直接检验超新星核心机制。",
         "en": "Rated as a major advance within a field: A stellar-collapse neutrino burst directly tested supernova-core physics."
       },
       "confidence": "high",
@@ -7002,7 +6672,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：自旋相关输运使磁多层膜电阻剧变，推动自旋电子学。",
         "en": "Rated as a major advance within a field: Spin-dependent transport in magnetic multilayers drove spintronics."
       },
       "confidence": "high",
@@ -7024,7 +6693,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：GaN的p型掺杂和异质结构解决高效蓝光发射关键难题。",
         "en": "Rated as a major advance within a field: P-type GaN and heterostructures solved key barriers to efficient blue emission."
       },
       "confidence": "medium",
@@ -7050,7 +6718,6 @@
       ]
     },
     "dateNote": {
-      "zh": "关键进展包括1989年的p型GaN和1993年的高亮度异质结器件。",
       "en": "Key stages include p-type GaN in 1989 and high-brightness heterostructure devices in 1993."
     },
     "dateConfidence": "documented"
@@ -7062,7 +6729,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：精密黑体谱验证宇宙早期的热平衡辐射图像。",
         "en": "Rated as a major advance within a field: A precise blackbody spectrum tested the thermal early-universe picture."
       },
       "confidence": "high",
@@ -7084,7 +6750,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：探测大尺度温度涨落，把结构形成研究与早期宇宙相连。",
         "en": "Rated as a major advance within a field: Large-scale temperature fluctuations connected structure formation with the early universe."
       },
       "confidence": "high",
@@ -7106,7 +6771,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：纠缠与经典通信共同转移未知量子态，拓展量子通信范式。",
         "en": "Rated as a major advance within a field: Entanglement and classical communication enabled transfer of an unknown quantum state."
       },
       "confidence": "high",
@@ -7128,7 +6792,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：量子计算可高效求整数分解和离散对数，显示复杂性优势。",
         "en": "Rated as a major advance within a field: Efficient factoring and discrete logarithms demonstrated a quantum computational advantage in principle."
       },
       "confidence": "high",
@@ -7150,7 +6813,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：实现可操控的宏观相干原子物质波。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Controllable macroscopic coherent atomic matter waves became experimentally accessible."
       },
       "confidence": "high",
@@ -7172,7 +6834,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：51 Pegasi b开辟主序类太阳恒星系外行星研究。",
         "en": "Rated as a major advance within a field: 51 Pegasi b opened exoplanet studies around Sun-like main-sequence stars."
       },
       "confidence": "high",
@@ -7194,7 +6855,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：把量子信息编码为逻辑态，说明未知态也可抗局域误差。",
         "en": "Rated as a major advance within a field: Encoding logical states showed that unknown quantum information could resist local errors."
       },
       "confidence": "high",
@@ -7216,7 +6876,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：Tevatron两实验补齐三代夸克谱系。",
         "en": "Rated as a major advance within a field: Two Tevatron experiments completed the three-generation quark spectrum."
       },
       "confidence": "high",
@@ -7238,7 +6897,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：离子内部态与运动耦合实现可控量子逻辑操作。",
         "en": "Rated as a major advance within a field: Coupling internal and motional states enabled controlled quantum logic."
       },
       "confidence": "high",
@@ -7260,7 +6918,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：提出引力与低维量子场论对偶，为强耦合与量子引力提供工具。",
         "en": "Rated as a major advance within a field: A gravity–field-theory duality supplied tools for strong coupling and quantum gravity."
       },
       "confidence": "high",
@@ -7282,7 +6939,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以纠缠光子验证量子态转移协议。",
         "en": "Rated as a major advance within a field: Entangled photons experimentally demonstrated quantum-state transfer."
       },
       "confidence": "high",
@@ -7304,7 +6960,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：Ia型超新星距离关系显示晚期宇宙膨胀加速。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Type-Ia supernova distances revealed accelerated late-time cosmic expansion."
       },
       "confidence": "high",
@@ -7326,7 +6981,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：大气和太阳中微子的味变化证明中微子具有非零质量差。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Atmospheric and solar flavour changes established nonzero neutrino mass differences."
       },
       "confidence": "medium",
@@ -7357,7 +7011,6 @@
       ]
     },
     "dateNote": {
-      "zh": "主要证据包括1998年的大气中微子振荡，以及2001—2002年的太阳中微子味转变。",
       "en": "Major evidence includes atmospheric-neutrino oscillations in 1998 and solar-neutrino flavour conversion in 2001–2002."
     },
     "dateConfidence": "documented"
@@ -7369,7 +7022,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：相干透明介质显著降低光脉冲群速度，推进光物质控制。",
         "en": "Rated as a focused advance: Coherent transparency slowed optical group velocity and advanced light–matter control."
       },
       "confidence": "high",
@@ -7391,7 +7043,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：DONUT直接辨识τ中微子相互作用，补齐三味中微子。",
         "en": "Rated as a focused advance: DONUT directly identified tau-neutrino interactions, completing the three-flavour set."
       },
       "confidence": "high",
@@ -7413,7 +7064,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：阿秒脉冲列与孤立脉冲使电子运动的时间分辨测量成为可能。",
         "en": "Rated as a major advance within a field: Pulse trains and isolated pulses enabled time-resolved studies of electronic motion."
       },
       "confidence": "high",
@@ -7435,7 +7085,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：可调原子体系实现超流体到Mott绝缘体转变，推进量子模拟。",
         "en": "Rated as a major advance within a field: Tunable atoms realized a superfluid–Mott transition and advanced quantum simulation."
       },
       "confidence": "high",
@@ -7457,7 +7106,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：在可调相互作用的费米气体中连接分子凝聚与配对超流。",
         "en": "Rated as a major advance within a field: Tunable Fermi gases connected molecular condensation with paired superfluidity."
       },
       "confidence": "high",
@@ -7479,7 +7127,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：稳定二维碳材料及其电场效应开辟二维电子体系研究。",
         "en": "Rated as a major advance within a field: Stable atomically thin carbon and its field effect opened two-dimensional electronic-material research."
       },
       "confidence": "high",
@@ -7501,7 +7148,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：稳定演化穿过合并与铃宕，建立引力波波形计算路线。",
         "en": "Rated as a major advance within a field: Stable merger and ringdown evolution opened reliable gravitational-wave waveform calculations."
       },
       "confidence": "high",
@@ -7523,7 +7169,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：RHIC重离子结果显示热QCD物质可呈近理想液体行为。",
         "en": "Rated as a major advance within a field: RHIC results showed hot QCD matter behaving as a nearly ideal liquid."
       },
       "confidence": "high",
@@ -7545,7 +7190,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：HgTe量子阱实现零外磁场下具有边缘导电态的拓扑相。",
         "en": "Rated as a major advance within a field: HgTe quantum wells realized a topological phase with conducting edges at zero magnetic field."
       },
       "confidence": "high",
@@ -7567,7 +7211,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：ATLAS与CMS发现相应新玻色子，完成标准模型的关键实验证验；联合发现只计一次，不挪到1964理论年或2013授奖年。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: ATLAS and CMS discovered the corresponding new boson, completing a decisive Standard Model test; their joint discovery is counted once, separately from 1964 theory and the 2013 award."
       },
       "confidence": "high",
@@ -7594,7 +7237,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：IceCube建立地外高能中微子通量，开辟高能中微子天文学。",
         "en": "Rated as a major advance within a field: IceCube established an extraterrestrial high-energy flux, opening high-energy neutrino astronomy."
       },
       "confidence": "high",
@@ -7616,7 +7258,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：实验同时处理局域性与探测漏洞，强化量子非局域关联证据。",
         "en": "Rated as a major advance within a field: Tests addressed locality and detection loopholes together, strengthening quantum-correlation evidence."
       },
       "confidence": "high",
@@ -7638,7 +7279,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：晶体中的Weyl准粒子与费米弧连接拓扑能带和输运。",
         "en": "Rated as a major advance within a field: Weyl quasiparticles and Fermi arcs connected topological bands with transport."
       },
       "confidence": "high",
@@ -7660,7 +7300,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：直接探测时空引力波并观测双黑洞合并，开辟新的观测窗口；按2015信号探测计分。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Directly detected gravitational waves and a binary-black-hole merger, opening a new observational window; credit follows the 2015 detection."
       },
       "confidence": "high",
@@ -7674,7 +7313,6 @@
       "end": 2015
     },
     "dateNote": {
-      "zh": "GW150914信号于2015年9月14日被直接探测，成果于2016年2月11日公开并在同年发表。",
       "en": "GW150914 was directly detected on 14 September 2015; the result was announced on 11 February 2016 and published that year."
     },
     "timelineDates": {
@@ -7701,7 +7339,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：引力波、γ射线和千新星关联检验中子星合并及重元素起源。",
         "en": "Rated as a major advance within a field: Gravitational waves, gamma rays, and a kilonova tested merger physics and heavy-element origins."
       },
       "confidence": "high",
@@ -7723,7 +7360,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：可调莫尔能带产生关联绝缘与超导，开辟扭转电子学。",
         "en": "Rated as a major advance within a field: Tunable moiré bands produced correlated insulation and superconductivity, opening twistronics."
       },
       "confidence": "high",
@@ -7745,7 +7381,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：首次重建黑洞尺度的阴影图像，提供强引力成像的重大新证据；按2019图像成果定位而非原始2017数据年份。",
         "en": "Rated as a major advance within a field: Reconstructed the first black-hole-scale shadow image, a major strong-gravity imaging result; dated to the 2019 image result rather than the 2017 raw-data campaign."
       },
       "confidence": "high",
@@ -7767,7 +7402,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：直接测得CNO燃烧链的中微子证据，检验恒星核反应。",
         "en": "Rated as a focused advance: Neutrino evidence for CNO burning directly tested stellar nuclear reactions."
       },
       "confidence": "high",
@@ -7789,7 +7423,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：NIF靶丸聚变能量首次超过入射激光能，验证燃烧等离子体路线。",
         "en": "Rated as a major advance within a field: NIF fusion output first exceeded incident laser energy, advancing burning-plasma experiments."
       },
       "confidence": "medium",
@@ -7811,7 +7444,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：脉冲星到达时刻的相关结构开启纳赫兹引力波观测窗口。",
         "en": "Rated as a major advance within a field: Correlated pulsar timing opened the nanohertz gravitational-wave observational window."
       },
       "confidence": "medium",
@@ -7833,7 +7465,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：低于阈值的纠错是可扩展量子计算的重要技术检验，当前尚不足以按成熟物理框架突破评价。",
         "en": "Rated as a focused advance: Below-threshold error correction is an important scalability test for quantum computing, with impact still too recent for a mature framework-level rating."
       },
       "confidence": "medium",
@@ -7855,7 +7486,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：把CP不对称扩展到重子衰变是有价值的新检验，但不等同首次发现CP破坏。",
         "en": "Rated as a focused advance: Extending observed CP asymmetry to baryon decays is a valuable new test, distinct from the first discovery of CP violation."
       },
       "confidence": "medium",
@@ -7877,7 +7507,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：引入电子内禀角动量以理解光谱结构，为自旋量子力学提供关键起点。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Introduced intrinsic electron angular momentum as a key ingredient of atomic spectra."
       },
       "confidence": "high",
@@ -7899,7 +7528,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用量子交换作用说明铁磁自旋关联，奠定量子磁性模型。",
         "en": "Rated as a major advance within a field: Established an exchange-based description of magnetic ordering."
       },
       "confidence": "high",
@@ -7921,7 +7549,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：通过氢同位素光谱确认质量数为2的氢，扩展核结构与同位素物理。",
         "en": "Rated as an important improvement: Established a mass-two hydrogen isotope through spectroscopy."
       },
       "confidence": "high",
@@ -7943,7 +7570,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：对裂变势垒与裂变条件给出定量液滴模型；只计超出裂变首次发现与基本解释的计算进展。",
         "en": "Rated as an important improvement: Quantified fission barriers and conditions in the liquid-drop model; credit is limited to calculation beyond the original discovery and basic interpretation."
       },
       "confidence": "high",
@@ -7965,7 +7591,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以核反应与伽马射线偏振确定中微子的螺旋度。",
         "en": "Rated as a major advance within a field: Determined neutrino helicity using a nuclear reaction and photon polarization."
       },
       "confidence": "high",
@@ -7987,7 +7612,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：将多体相互作用改写为辅助场问题，为量子统计数值计算提供方法。",
         "en": "Rated as an important improvement: Recast interactions using auxiliary fields for quantum statistical calculations."
       },
       "confidence": "high",
@@ -8009,7 +7633,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：通过声子色散测量把非弹性中子散射发展为凝聚态动力学工具。",
         "en": "Rated as a major advance within a field: Established inelastic-neutron measurements of lattice excitations."
       },
       "confidence": "high",
@@ -8031,7 +7654,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：将超导类比引入粒子理论，为自发对称破缺提供动力学途径。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Connected superconducting ideas to dynamical symmetry breaking in particle theory."
       },
       "confidence": "high",
@@ -8053,7 +7675,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用共振伽马射线检验地面高度差产生的引力频移。",
         "en": "Rated as a major advance within a field: Tested gravitational frequency shifts with resonant gamma rays."
       },
       "confidence": "high",
@@ -8075,7 +7696,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以SU(3)对称组织强子多重态，为夸克分类提供前导结构。",
         "en": "Rated as a major advance within a field: Organized hadron multiplets with SU(3), preceding the quark model."
       },
       "confidence": "high",
@@ -8097,7 +7717,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：强激光驱动石英产生倍频光，打开非线性光学实验。",
         "en": "Rated as a major advance within a field: Demonstrated frequency doubling of laser light in quartz."
       },
       "confidence": "high",
@@ -8119,7 +7738,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：火箭探测打开X射线天文学观测窗口。",
         "en": "Rated as a major advance within a field: Rocket observations opened the field of extrasolar X-ray astronomy."
       },
       "confidence": "high",
@@ -8141,7 +7759,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用混合角描述强子弱衰变，成为后续夸克味混合的组成部分。",
         "en": "Rated as a major advance within a field: Introduced a mixing angle into hadronic weak decays."
       },
       "confidence": "high",
@@ -8163,7 +7780,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：交换散射的量子修正解释低温电阻异常，为量子杂质研究建立出发点。",
         "en": "Rated as a major advance within a field: Exchange-scattering corrections explained an anomalous low-temperature resistance trend."
       },
       "confidence": "high",
@@ -8185,7 +7801,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：数值研究展示局域非线性波碰撞后的稳定行为，推动孤子物理。",
         "en": "Rated as an important improvement: Numerical wave studies identified stable localized excitations after collisions."
       },
       "confidence": "high",
@@ -8207,7 +7822,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：严格限制低维各向同性短程模型在有限温度下的长程磁序。",
         "en": "Rated as a major advance within a field: Established a finite-temperature restriction on ordering in low-dimensional isotropic models."
       },
       "confidence": "high",
@@ -8229,7 +7843,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：构造满足对偶性与Regge行为的振幅，成为弦理论史的重要起点。",
         "en": "Rated as an important improvement: Constructed a dual amplitude with Regge behavior, an important antecedent of string theory."
       },
       "confidence": "high",
@@ -8251,7 +7864,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：将测量体系与环境的关联引入量子测量讨论，推动退相干研究。",
         "en": "Rated as an important improvement: Examined correlations with the environment in quantum measurement."
       },
       "confidence": "high",
@@ -8273,7 +7885,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：建立理解氦三多种超流相的理论基础。",
         "en": "Rated as a major advance within a field: Provided theoretical foundations for multiple superfluid phases of helium-3."
       },
       "confidence": "high",
@@ -8295,7 +7906,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：构造可相互作用的四维超对称场论，推进理论工具；不把超对称粒子的存在视为已验证。",
         "en": "Rated as an important improvement: Constructed interacting four-dimensional supersymmetric field theory, advancing theoretical tools without treating superpartner particles as observed."
       },
       "confidence": "high",
@@ -8317,7 +7927,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：把局域超对称与引力联系，扩展理论构造；不声称其自然界实现已被验证。",
         "en": "Rated as an important improvement: Linked local supersymmetry with gravitation, extending theory construction without claiming experimental confirmation."
       },
       "confidence": "high",
@@ -8339,7 +7948,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以部分子分裂概率表述强子内部的尺度演化，支持QCD现象学计算。",
         "en": "Rated as a major advance within a field: Formulated scale evolution through parton splitting probabilities for QCD phenomenology."
       },
       "confidence": "high",
@@ -8361,7 +7969,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：给出二维固体经中间六角相熔化的机制，扩展低维相变理论。",
         "en": "Rated as an important improvement: Proposed an intermediate hexatic phase in two-dimensional melting."
       },
       "confidence": "high",
@@ -8383,7 +7990,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：刻画环境相互作用对稳定测量态的选择，为经典行为的量子描述提供机制。",
         "en": "Rated as an important improvement: Characterized environmentally selected stable measurement states."
       },
       "confidence": "high",
@@ -8405,7 +8011,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：把量子化霍尔电导与能带的整数拓扑不变量联系起来。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Related quantized Hall conductance to integer band topology."
       },
       "confidence": "high",
@@ -8427,7 +8032,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：揭示整数与半整数自旋反铁磁链不同的低能行为，推进量子磁性与拓扑物态研究。",
         "en": "Rated as a major advance within a field: Distinguished low-energy behavior of integer and half-integer antiferromagnetic chains."
       },
       "confidence": "high",
@@ -8449,7 +8053,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为关键规律、决定性证据或方向开辟：以关联多体波函数说明分数量子霍尔态及分数电荷激发。",
         "en": "Rated as a key law, decisive evidence or the opening of a direction: Explained fractional Hall states through correlated many-body wavefunctions and fractional excitations."
       },
       "confidence": "high",
@@ -8471,7 +8074,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：以离散粒子与碰撞规则重现流体方程，拓展计算流体方法。",
         "en": "Rated as an important improvement: Recovered fluid equations from discrete lattice-gas rules."
       },
       "confidence": "high",
@@ -8493,7 +8095,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：用紧聚焦光束稳定俘获介电微粒，开辟精密光学操纵。",
         "en": "Rated as a major advance within a field: Trapped dielectric particles with a focused beam for precise optical manipulation."
       },
       "confidence": "high",
@@ -8515,7 +8116,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：通过电子搁置与荧光间歇直接观测单离子的量子跃迁。",
         "en": "Rated as a major advance within a field: Resolved individual quantum jumps through electron shelving and intermittent fluorescence."
       },
       "confidence": "high",
@@ -8537,7 +8137,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：展示晶格体系无需净磁通也可具有量子霍尔拓扑性质。",
         "en": "Rated as a major advance within a field: Demonstrated a lattice route to quantized Hall topology without net magnetic flux."
       },
       "confidence": "high",
@@ -8559,7 +8158,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：利用小反馈稳定混沌系统的不稳定周期轨道。",
         "en": "Rated as an important improvement: Used small feedback perturbations to stabilize unstable periodic orbits."
       },
       "confidence": "high",
@@ -8581,7 +8179,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：证明适当耦合可使混沌子系统同步，推进非线性动力学控制。",
         "en": "Rated as an important improvement: Showed synchronization of appropriately coupled chaotic subsystems."
       },
       "confidence": "high",
@@ -8603,7 +8200,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：将量子纠缠与Bell检验用于密钥分发，为量子信息安全提供另一条路线。",
         "en": "Rated as an important improvement: Applied entanglement and Bell tests to quantum key distribution."
       },
       "confidence": "high",
@@ -8625,7 +8221,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：以约化密度矩阵选择有效态，显著改进一维强关联体系计算。",
         "en": "Rated as a major advance within a field: Used reduced density matrices to choose effective states for strongly correlated calculations."
       },
       "confidence": "high",
@@ -8647,7 +8242,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：明确特定激光模式的轨道角动量，为结构光与高维量子信息提供工具。",
         "en": "Rated as an important improvement: Identified orbital angular momentum in structured laser modes."
       },
       "confidence": "high",
@@ -8669,7 +8263,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：建立高次谐波谱的强场量子计算方法，支持后来的阿秒物理。",
         "en": "Rated as an important improvement: Developed strong-field quantum calculations of harmonic spectra."
       },
       "confidence": "high",
@@ -8691,7 +8284,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：利用原子探针跟踪腔场量子相干的丧失，检验测量与退相干机制。",
         "en": "Rated as an important improvement: Used atomic probes to track the loss of cavity-field coherence."
       },
       "confidence": "high",
@@ -8713,7 +8305,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：在分子磁体中识别集体自旋态之间的量子隧穿。",
         "en": "Rated as an important improvement: Identified quantum tunnelling between collective spin states in molecular magnets."
       },
       "confidence": "high",
@@ -8735,7 +8326,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：连接非平衡功的统计平均与平衡自由能差，扩展小体系热力学。",
         "en": "Rated as a major advance within a field: Connected nonequilibrium work statistics with equilibrium free-energy differences."
       },
       "confidence": "high",
@@ -8757,7 +8347,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：提出解决层级问题的新几何模型；理论影响明确，但额外维度尚无直接证据，不按已发现新自然规律评分。",
         "en": "Rated as an important improvement: Introduced an influential geometrical hierarchy model; extra dimensions lack direct evidence, so it is not rated as an experimentally established law."
       },
       "confidence": "medium",
@@ -8779,7 +8368,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：实验构造兼具负介电与负磁导响应的复合介质，推动电磁超材料。",
         "en": "Rated as a major advance within a field: Demonstrated a composite electromagnetic medium with simultaneous negative responses."
       },
       "confidence": "high",
@@ -8801,7 +8389,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：建立光频到微波频率的相干桥梁，推动精密光谱与频率计量。",
         "en": "Rated as a major advance within a field: Linked optical and microwave frequencies coherently for precision metrology."
       },
       "confidence": "high",
@@ -8823,7 +8410,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：提出利用负折射恢复近场信息的成像方案；按理论方案的重要改进评分，不等同无条件实现理想透镜。",
         "en": "Rated as an important improvement: Proposed recovering near-field information with negative refraction; rated as an important theoretical proposal rather than unconditional realization of a perfect lens."
       },
       "confidence": "high",
@@ -8845,7 +8431,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为重要改进：用生成函数分析一般度分布网络，扩展统计物理的网络模型。",
         "en": "Rated as an important improvement: Extended generating-function methods to networks with general degree distributions."
       },
       "confidence": "high",
@@ -8867,7 +8452,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：为混合量子态提供可计算的纠缠度量。",
         "en": "Rated as a focused advance: Provided a computable entanglement measure for mixed states."
       },
       "confidence": "high",
@@ -8889,7 +8473,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为局部推进：新增重元素的合成确认是重要核素学进展，但不以新增一个元素等同新物理框架。",
         "en": "Rated as a focused advance: Confirmation of a new superheavy element advances nuclear synthesis without equating one additional element with a new physical framework."
       },
       "confidence": "high",
@@ -8911,7 +8494,6 @@
       "basis": "editorial-review",
       "route": "modern",
       "rationale": {
-        "zh": "评为领域重大成果：将拓扑绝缘态推广到三维，为材料寻找提供分类标准。",
         "en": "Rated as a major advance within a field: Extended topological insulating phases to three dimensions."
       },
       "confidence": "high",

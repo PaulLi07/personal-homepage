@@ -40,91 +40,65 @@ def load_edition(language: str) -> tuple[dict, Path]:
     return data, path
 
 
-def bilingual_date(chinese: dict | None, english: dict | None, label: str) -> dict | None:
-    require(bool(chinese) == bool(english), f'{label}: date presence differs')
-    if chinese is None:
+def english_date(value: dict | None, label: str) -> dict | None:
+    if value is None:
         return None
-    require(chinese['date'] == english['date'], f'{label}: date value differs')
-    require(chinese['precision'] == english['precision'], f'{label}: precision differs')
-    require(bool(chinese['display']) and bool(english['display']), f'{label}: empty date display')
-    return {
-        'date': chinese['date'],
-        'precision': chinese['precision'],
-        'display': {'zh': chinese['display'], 'en': english['display']},
-    }
+    require(bool(value['display']), f'{label}: empty English date display')
+    return {'date': value['date'], 'precision': value['precision'], 'display': {'en': value['display']}}
 
 
 def archive_data() -> tuple[dict, dict[str, Path], dict]:
-    zh, zh_path = load_edition('zh')
     en, en_path = load_edition('en')
-    require(zh['as_of'] == en['as_of'], 'Edition review dates differ')
-    require([p['id'] for p in zh['people']] == [p['id'] for p in en['people']],
-            'Edition IDs or chronological order differ')
     people, assets = [], {}
     verified_assets = {}
-    for chinese, english in zip(zh['people'], en['people']):
-        identity = chinese['id']
-        for field in ['order', 'sort_year', 'death_status', 'nobel_physics_years']:
-            require(chinese.get(field) == english.get(field), f'{identity}: {field} differs')
-        for language, person in [('zh', chinese), ('en', english)]:
-            require(bool(person['biography']) and len(person['contributions']) >= 2,
-                    f'{identity}: incomplete {language} biography or contributions')
-            require(bool(person['fields']) and bool(person['sources']),
-                    f'{identity}: missing {language} fields or sources')
-            for source in person['sources']:
-                require(bool(source['title']) and source['url'].startswith(('https://', 'http://')),
-                        f'{identity}: invalid {language} source')
-        require({s['url'] for s in chinese['sources']} == {s['url'] for s in english['sources']},
-                f'{identity}: bilingual source URL sets differ')
-        zp, ep = chinese['portrait'], english['portrait']
-        for field in ['local_path', 'sha256', 'kind', 'rights_status', 'license_url', 'source_page', 'commons_page']:
-            require(zp.get(field) == ep.get(field), f'{identity}: portrait {field} differs')
-        relative = PurePosixPath(zp['local_path'])
+    for english in en['people']:
+        identity = english['id']
+        require(bool(english['biography']) and len(english['contributions']) >= 2,
+                f'{identity}: incomplete English biography or contributions')
+        require(bool(english['fields']) and bool(english['sources']), f'{identity}: missing English fields or sources')
+        for source in english['sources']:
+            require(bool(source['title']) and source['url'].startswith(('https://', 'http://')),
+                    f'{identity}: invalid English source')
+        ep = english['portrait']
+        relative = PurePosixPath(ep['local_path'])
         require(not relative.is_absolute() and len(relative.parts) == 2 and relative.parts[0] == 'portraits',
                 f'{identity}: invalid local portrait path')
         image_path = '../../portraits/' + relative.name
         path = ROOT / str(relative)
         require(not (ROOT / 'portraits').is_symlink(), 'Canonical portrait directory must be local')
         require(path.is_file() and not path.is_symlink(), f'{identity}: missing canonical local image')
-        require(path.resolve().is_relative_to((ROOT / 'portraits').resolve()),
-                f'{identity}: image escapes the module')
+        require(path.resolve().is_relative_to((ROOT / 'portraits').resolve()), f'{identity}: image escapes the module')
         stat = path.stat()
         inode = (stat.st_dev, stat.st_ino, stat.st_size)
         if inode not in verified_assets:
             verified_assets[inode] = file_hash(path)
-        require(verified_assets[inode] == zp['sha256'], f'{identity}: image hash differs')
+        require(verified_assets[inode] == ep['sha256'], f'{identity}: image hash differs')
         if image_path in assets:
-            require(file_hash(assets[image_path]) == zp['sha256'], f'{identity}: colliding image basenames')
+            require(file_hash(assets[image_path]) == ep['sha256'], f'{identity}: colliding image basenames')
         assets[image_path] = path
         people.append({
-            'id': identity,
-            'order': chinese['order'],
-            'sortYear': chinese['sort_year'],
-            'names': {'zh': chinese.get('name') or chinese['name_zh'], 'en': english.get('name') or english['name_en']},
-            'birth': bilingual_date(chinese['birth'], english['birth'], identity + ' birth'),
-            'death': bilingual_date(chinese.get('death'), english.get('death'), identity + ' death'),
-            'deathStatus': chinese['death_status'],
-            'fields': {'zh': chinese['fields'], 'en': english['fields']},
-            'biography': {'zh': chinese['biography'], 'en': english['biography']},
-            'contributions': {'zh': chinese['contributions'], 'en': english['contributions']},
-            'notes': {'zh': chinese['notes'], 'en': english['notes']},
-            'sources': {'zh': chinese['sources'], 'en': english['sources']},
-            'nobelYears': chinese['nobel_physics_years'],
+            'id': identity, 'order': english['order'], 'sortYear': english['sort_year'],
+            'names': {'en': english.get('name') or english['name_en']},
+            'birth': english_date(english['birth'], identity + ' birth'),
+            'death': english_date(english.get('death'), identity + ' death'),
+            'deathStatus': english['death_status'],
+            'fields': {'en': english['fields']}, 'biography': {'en': english['biography']},
+            'contributions': {'en': english['contributions']}, 'notes': {'en': english['notes']},
+            'sources': {'en': english['sources']}, 'nobelYears': english['nobel_physics_years'],
+            'browseDomains': english['browse_domains'], 'navigationFields': english['navigation_fields'],
+            'navigationYearClues': english['navigation_year_clues'],
+            'navigationSourceUrls': english['navigation_source_urls'],
+            **({'lastKnownYear': english['last_known_year']} if 'last_known_year' in english else {}),
             'portrait': {
-                'path': image_path,
-                'kind': zp['kind'],
-                'note': {'zh': zp['depiction_note'], 'en': ep['depiction_note']},
-                'alt': {'zh': zp.get('alt_zh') or chinese['name_zh'], 'en': ep['alt']},
-                'artist': {'zh': zp.get('artist', ''), 'en': ep.get('artist', '')},
-                'credit': {'zh': zp.get('credit', ''), 'en': ep.get('credit', '')},
-                'license': {'zh': zp['license'], 'en': ep['license']},
-                'licenseUrl': zp.get('license_url', ''),
-                'sourceUrl': zp.get('source_page') or zp.get('commons_page', ''),
-                'rightsStatus': zp.get('rights_status') or 'source_license_recorded',
+                'path': image_path, 'kind': ep['kind'],
+                'note': {'en': ep['depiction_note']}, 'alt': {'en': ep['alt']},
+                'artist': {'en': ep.get('artist', '')}, 'credit': {'en': ep.get('credit', '')},
+                'license': {'en': ep['license']}, 'licenseUrl': ep.get('license_url', ''),
+                'sourceUrl': ep.get('source_page') or ep.get('commons_page', ''),
+                'rightsStatus': ep.get('rights_status') or 'source_license_recorded',
             },
         })
-        require(people[-1]['portrait']['sourceUrl'].startswith(('https://', 'http://')),
-                f'{identity}: image source URL missing')
+        require(people[-1]['portrait']['sourceUrl'].startswith(('https://', 'http://')), f'{identity}: image source URL missing')
     require([p['order'] for p in people] == list(range(1, len(people) + 1)), 'Chronological order indices are invalid')
     require([p['sortYear'] for p in people] == sorted(p['sortYear'] for p in people), 'Birth chronology is invalid')
     date_keys = []
@@ -134,8 +108,8 @@ def archive_data() -> tuple[dict, dict[str, Path], dict]:
         year, month, day = match.groups()
         date_keys.append((int(year), int(month or 1), int(day or 1)))
     require(date_keys == sorted(date_keys), 'Birth-date chronology is invalid within a year')
-    return ({'asOf': zh['as_of'], 'count': len(people), 'people': people}, assets,
-            {str(zh_path.relative_to(ROOT)): file_hash(zh_path), str(en_path.relative_to(ROOT)): file_hash(en_path)})
+    return ({'asOf': en['as_of'], 'count': len(people), 'people': people}, assets,
+            {str(en_path.relative_to(ROOT)): file_hash(en_path)})
 
 
 def main() -> None:
@@ -161,7 +135,7 @@ def main() -> None:
                 shutil.copyfile(source, destination)
                 static_files.append(name)
         require((staging / 'core.js').is_file(), 'Missing canonical website/src/core.js')
-        script = '// Generated from the audited bilingual archive. Rebuild with scripts/build_website.py.\n'
+        script = '// Generated from the audited English archive. Rebuild with scripts/build_website.py.\n'
         script += 'globalThis.PHYSICS_ARCHIVE = ' + json.dumps(data, ensure_ascii=False, separators=(',', ':')).replace('</', '<\\/').replace('\u2028', '\\u2028').replace('\u2029', '\\u2029') + ';\n'
         (staging / 'data').mkdir(parents=True, exist_ok=True)
         (staging / 'data/archive.js').write_text(script, encoding='utf-8')
@@ -177,7 +151,7 @@ def main() -> None:
         require(summary_path.is_file(), 'Missing breakthrough build summary')
         breakthrough = json.loads(summary_path.read_text(encoding='utf-8'))
         require(breakthrough['counts']['totalPeople'] == data['count'],
-                'Breakthrough archive does not match the bilingual people archive')
+                'Breakthrough archive does not match the English people archive')
         require(breakthrough['counts']['navigablePeople'] == data['count'],
                 'Breakthrough navigation is incomplete')
         for artifact in ['breakthrough-data.js', 'events.json', 'yearly-index.json',
@@ -185,11 +159,11 @@ def main() -> None:
                          'method.en.md']:
             require((staging / 'data' / artifact).is_file(), 'Missing built artifact: ' + artifact)
         report = {
-            'buildFormat': 'homepage-physicists-v1',
+            'buildFormat': 'homepage-physicists-v2',
             'asOf': data['asOf'],
             'people': data['count'],
             'languages': ['en'],
-            'sourceLanguages': ['zh', 'en'],
+            'sourceLanguages': ['en'],
             'portraitDirectory': '../../portraits',
             'images': len(assets),
             'imageKinds': dict(collections.Counter(p['portrait']['kind'] for p in data['people'])),
@@ -204,8 +178,8 @@ def main() -> None:
             'entrypointSha256': file_hash(staging / 'index.html'),
             'breakthrough': breakthrough,
             'methodVersion': breakthrough['methodVersion'],
-            'checks': ['stable IDs and order', 'date values and precision', 'life status', 'source URL alignment',
-                       'complete localized text', 'canonical image hashes', 'portable image paths',
+            'checks': ['stable IDs and order', 'date values and precision', 'life status', 'English source URLs',
+                       'complete English text', 'canonical image hashes', 'portable image paths',
                        'canonical frontend', 'complete achievement ledger', 'complete navigation',
                        'self-contained archive module'],
         }

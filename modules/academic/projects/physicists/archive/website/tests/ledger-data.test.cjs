@@ -93,8 +93,8 @@ test('every retired personal estimate is traced to a named contribution or an ex
 
 test('public editorial descriptions contain the science and dates rather than scoring instructions',()=>{
   for(const e of data.events.filter(e=>e.assessment.basis==='editorial-estimate')){
-    assert.doesNotMatch(e.dateNote.zh,/总分|预算|年龄校准/,e.id);
-    assert.doesNotMatch(e.rationale.zh,/本版评分|高等级锚点|本项评价/,e.id);
+    assert.doesNotMatch(e.dateNote.en,/total budget|age calibration/i,e.id);
+    assert.doesNotMatch(e.rationale.en,/high.level anchor|this assessment/i,e.id);
   }
   const diffraction=byId.get('early-grimaldi-diffraction');
   if(diffraction){

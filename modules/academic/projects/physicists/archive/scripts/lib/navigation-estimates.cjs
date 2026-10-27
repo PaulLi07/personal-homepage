@@ -14,15 +14,15 @@
   const rounded=v=>Math.round(v*10000)/10000;
   const version='residual-contribution-v1';
   const fieldPatterns=[
-    ['history',/自然哲学|科学史|物理史|natural philosophy|history of (?:physics|science)/i],
-    ['mechanics',/经典力学|流体|弹性|固体力学|天体力学|classical mechanics|fluid|elastic|continuum|celestial mechanics/i],
-    ['light',/光学|光谱|电磁|电学|磁学|electromag|optic|spectroscop|magnet|electric|photonics/i],
-    ['heat',/热学|热力|低温|统计|therm|statistic|cryogen|heat/i],
-    ['quantum',/量子|原子|分子|quantum|atomic|molecular/i],
-    ['matter',/凝聚|固体|半导体|超导|晶体|材料|condensed|solid.state|semiconductor|superconduct|crystal|material|mesoscopic/i],
-    ['particle',/粒子|核物理|核科学|核反应|核结构|核力|场论|加速器|particle|nuclear|field theory|high.energy|accelerator/i],
-    ['cosmos',/天体|宇宙|引力|相对论|astrophys|astronom|cosmolog|gravit|relativ/i],
-    ['methods',/数学|计算|实验|仪器|计量|测量|mathemat|computation|experiment|instrument|metrolog|measurement|detector/i]
+    ['history',/natural philosophy|history of (?:physics|science)/i],
+    ['mechanics',/classical mechanics|fluid|elastic|continuum|celestial mechanics/i],
+    ['light',/electromag|optic|spectroscop|magnet|electric|photonics/i],
+    ['heat',/therm|statistic|cryogen|heat/i],
+    ['quantum',/quantum|atomic|molecular/i],
+    ['matter',/condensed|solid.state|semiconductor|superconduct|crystal|material|mesoscopic/i],
+    ['particle',/particle|nuclear|field theory|high.energy|accelerator/i],
+    ['cosmos',/astrophys|astronom|cosmolog|gravit|relativ/i],
+    ['methods',/mathemat|computation|experiment|instrument|metrolog|measurement|detector/i]
   ];
   function quantile(values,p){
     if(!values.length)return null;
@@ -31,7 +31,8 @@
   }
   function eraOf(year){return year<1500?'pre-1500':year<1800?'1500-1799':year<1900?'1800-1899':'1900-onwards';}
   function fieldsOf(p){
-    const values=[...(p.fields?.zh||[]),...(p.fields?.en||[])];
+    if(Array.isArray(p.navigationFields))return p.navigationFields.slice();
+    const values=p.fields?.en||[];
     return fieldPatterns.filter(([,pattern])=>values.some(s=>pattern.test(s))).map(([id])=>id);
   }
   function dateYear(date){
@@ -46,9 +47,9 @@
   function disappearanceYear(p){
     if(validYear(p.lastKnownYear))return p.lastKnownYear;
     if(p.deathStatus!=='unknown')return null;
-    const text=[p.biography?.zh,p.biography?.en,...(p.notes?.zh||[]),...(p.notes?.en||[])].filter(Boolean).join(' ');
+    const text=[p.biography?.en,...(p.notes?.en||[])].filter(Boolean).join(' ');
     const years=[];
-    for(const pattern of [/(\d{4})年[^。；\n]{0,12}失踪/g,/disappeared\s+(?:in\s+)?(\d{4})/gi])for(const match of text.matchAll(pattern))years.push(Number(match[1]));
+    for(const pattern of [/disappeared\s+(?:in\s+)?(\d{4})/gi])for(const match of text.matchAll(pattern))years.push(Number(match[1]));
     return years.length?Math.min(...years):null;
   }
   function lifeBounds(p,asOfYear){
@@ -63,18 +64,21 @@
     return {birth,birthSerial:b,lo:adultStart,hi,death,lastKnown,boundKind:lastKnown!==null?'last-known-activity':death!==null?'documented-death':p.deathStatus==='alive'?'as-of-and-career-horizon':'unknown-death-career-horizon'};
   }
   function contributionYearClues(p,bounds){
-    const text=[...(p.contributions?.zh||[]),...(p.contributions?.en||[])].join(' '),years=[];
-    for(const match of text.matchAll(/(?:公元前\s*)?\b(\d{3,4})\s*(?:年|BCE|BC|CE|AD)?/gi)){
-      const full=match[0],year=/公元前|BCE|\bBC\b/i.test(full)?-Number(match[1]):Number(match[1]);
+    if(Array.isArray(p.navigationYearClues))return p.navigationYearClues.filter(year=>validYear(year)&&serial(year)>=bounds.lo&&serial(year)<=bounds.hi);
+    const text=(p.contributions?.en||[]).join(' '),years=[];
+    for(const match of text.matchAll(/\b(\d{3,4})\s*(?:BCE|BC|CE|AD)?/gi)){
+      const full=match[0],year=/BCE|\bBC\b/i.test(full)?-Number(match[1]):Number(match[1]);
       const nearby=text.slice(Math.max(0,match.index-28),match.index+full.length+28);
-      if(/诺贝尔|nobel|获奖|awarded|prize/i.test(nearby))continue;
+      if(/nobel|awarded|prize/i.test(nearby))continue;
       if(validYear(year)&&serial(year)>=bounds.lo&&serial(year)<=bounds.hi)years.push(year);
     }
     return Array.from(new Set(years)).sort((a,b)=>a-b);
   }
   function evidenceOf(p){
     const seen=new Set(),sources=[];
-    for(const s of [...(p.sources?.zh||[]),...(p.sources?.en||[])])if(/^https?:\/\//.test(s.url||'')&&!seen.has(s.url)){seen.add(s.url);sources.push({title:s.title,url:s.url});}
+    const original=p.sources?.en||[],byUrl=new Map(original.map(s=>[s.url,s]));
+    const ordered=Array.isArray(p.navigationSourceUrls)?p.navigationSourceUrls.map(url=>byUrl.get(url)).filter(Boolean):original;
+    for(const s of ordered)if(/^https?:\/\//.test(s.url||'')&&!seen.has(s.url)){seen.add(s.url);sources.push({title:s.title,url:s.url});}
     return sources;
   }
   function createEstimates(people,events,options={}){

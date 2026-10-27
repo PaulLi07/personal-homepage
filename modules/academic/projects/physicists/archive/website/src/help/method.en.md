@@ -108,7 +108,7 @@ When a contribution is identifiable but not directly quantifiable from the exist
 {
   "assessment":{
     "basis":"editorial-estimate","route":"historical",
-    "rationale":{"zh":"具体评估依据","en":"Specific assessment rationale"},
+    "rationale":{"en":"Specific assessment rationale"},
     "confidence":"medium","version":"3.0"
   },
   "sourceEstimate":true
@@ -178,17 +178,17 @@ Source files are in `data/breakthrough/`:
 - `index-config.json`: assessment version, review date and display settings.
 - `journal-sources.json`: journal selection collections actually used.
 
-The current frontend has one source directory, `website/src/`; default browsing and the root entry use `website/site/`. The full builder generates bilingual person data, reads achievements, applies source, assessment and editorial patches, processes replacements, validates records, generates navigation and calculates the annual ledger. It atomically replaces `site/` only after the complete package succeeds. The navigation helper is `scripts/lib/navigation-estimates.cjs`. `score / weight` remain mirrored. Person records come from `website/site/data/archive.js`, and event `people` must reference existing person IDs.
+The current frontend has one source directory, `website/src/`; default browsing and the root entry use `website/site/`. The full builder generates English person data, reads achievements, applies source, assessment and editorial patches, processes replacements, validates records, generates navigation and calculates the annual ledger. It atomically replaces `site/` only after the complete package succeeds. The navigation helper is `scripts/lib/navigation-estimates.cjs`. `score / weight` remain mirrored. Person records come from `website/site/data/archive.js`, and event `people` must reference existing person IDs.
 
 `data/breakthrough/` contains source records, assessments, configuration and scientific audits only. All computed outputs go to `website/site/data/`: `breakthrough-data.js`, `events.json`, `yearly-index.json`, `navigation-estimates.json`, `coverage.json`, `sensitivity.json`, `build-summary.json`, and the English reader-method copy. The retired `contribution-estimates.json` is no longer generated. Do not edit generated files directly.
 
 ## 9. Adding or revising a result
 
 1. Search existing events and families. Decide whether the change is a new result, a source addition or a replacement, and exclude duplicate scoring first.
-2. Check the facts, participants and actual achievement date. Supply Chinese and English titles, contribution descriptions, dating notes and real references.
+2. Check the facts, participants and actual achievement date. Supply English titles, contribution descriptions, dating notes and real references.
 3. Select the evaluation route, assign a five-grade total score, and record the rationale and confidence. Record uncertain dating evidence separately.
 4. Set `eventFamilyId`, `assessment.version` and the date model. Check phase budgets for sustained work; provide `supersedes` where needed.
-5. For a new person, update both biography editions and rebuild person data first. Use stable IDs for existing participants.
+5. For a new person, update the English biography dataset and rebuild person data first. Use stable IDs for existing participants.
 6. Run from the repository root:
 
 ```bash
@@ -197,9 +197,9 @@ node --test website/tests/*.test.cjs
 python3 -m http.server 8769 --bind 127.0.0.1
 ```
 
-One full build generates the bilingual person archive, achievements and website resources, and publishes the output only after package validation. When only achievements change, use `node scripts/build_breakthrough.cjs` instead of the full build. Visit `http://127.0.0.1:8769/website/site/` for a local preview; opening this module’s root `index.html` enters the same generated site.
+One full build generates the English person archive, achievements and website resources, and publishes the output only after package validation. When only achievements change, use `node scripts/build_breakthrough.cjs` instead of the full build. Visit `http://127.0.0.1:8769/website/site/` for a local preview; opening this module’s root `index.html` enters the same generated site.
 
-Check that the annual sum equals the sum of all eligible event budgets, that separated cases such as 1964/2012 retain their dates, and that unknown dates, year zero, future years and duplicated phase budgets are handled correctly. Check full navigation coverage and agreement between Chinese and English titles, dates and method documents. In the browser, verify achievement colors and timeline/list synchronization. Sensitivity output compares the main scale `1/2/4/8/16` with `1/2/4/6/8`, keeping dates and event definitions fixed.
+Check that the annual sum equals the sum of all eligible event budgets, that separated cases such as 1964/2012 retain their dates, and that unknown dates, year zero, future years and duplicated phase budgets are handled correctly. Check full navigation coverage and agreement between English titles, dates and method documents. In the browser, verify achievement colors and timeline/list synchronization. Sensitivity output compares the main scale `1/2/4/8/16` with `1/2/4/6/8`, keeping dates and event definitions fixed.
 
 ## 10. Migration from v2 and future versions
 

@@ -64,7 +64,7 @@
       if(!Array.isArray(e.people)||new Set(e.people).size!==e.people.length||e.people.some(id=>typeof id!=='string'||!id))throw Error('Duplicate or invalid event participant: '+e.id);
       if(personIds&&e.people.some(id=>!personIds.has(id)))throw Error('Unknown participant: '+e.id);
       if(!e.sources?.length||e.sources.some(s=>!/^https?:\/\//.test(s.url||'')||!s.title))throw Error('Missing source: '+e.id);
-      for(const lang of ['zh','en'])if(!e.title?.[lang]||!e.rationale?.[lang]||typeof e.dateNote?.[lang]!=='string')throw Error('Missing bilingual event evidence: '+e.id);
+      for(const lang of ['en'])if(!e.title?.[lang]||!e.rationale?.[lang]||typeof e.dateNote?.[lang]!=='string')throw Error('Missing English event evidence: '+e.id);
       const span=spanOf(e);allocationsOf(e);
       if(options.asOfYear!==undefined){
         if(!validYear(options.asOfYear))throw Error('Invalid index cutoff');
